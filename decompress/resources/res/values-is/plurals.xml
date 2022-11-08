@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_dislike_video_plural">
+        <item quantity="one">Hnappurinn Mislíkar, %1$d öðrum mislíkar þetta vídeó</item>
+        <item quantity="other">Hnappurinn Mislíkar, %1$d öðrum mislíkar þetta vídeó</item>
+    </plurals>
+    <plurals name="accessibility_dtts_fast_forward">
+        <item quantity="one">Spóla fram um %1$d sekúndu</item>
+        <item quantity="other">Spóla fram um %1$d sekúndur</item>
+    </plurals>
+    <plurals name="accessibility_dtts_rewind">
+        <item quantity="one">Spóla aftur um %1$d sekúndu</item>
+        <item quantity="other">Spóla aftur um %1$d sekúndur</item>
+    </plurals>
+    <plurals name="accessibility_duration_description_hours">
+        <item quantity="one">%d klukkustund</item>
+        <item quantity="other">%d klukkustundir</item>
+    </plurals>
+    <plurals name="accessibility_duration_description_minutes">
+        <item quantity="one">%d mínúta</item>
+        <item quantity="other">%d mínútur</item>
+    </plurals>
+    <plurals name="accessibility_duration_description_seconds">
+        <item quantity="one">%d sekúnda</item>
+        <item quantity="other">%d sekúndur</item>
+    </plurals>
+    <plurals name="accessibility_like_video_plural">
+        <item quantity="one">Hnappurinn Líkar við, %1$d öðrum líkar þetta vídeó</item>
+        <item quantity="other">Hnappurinn Líkar við, %1$d öðrum líkar þetta vídeó</item>
+    </plurals>
+    <plurals name="accessibility_seconds_to_skip_ad">
+        <item quantity="one">%1$d sekúnda í sleppa auglýsingu</item>
+        <item quantity="other">%1$d sekúndur í sleppa auglýsingu</item>
+    </plurals>
+    <plurals name="accessibility_skip_ad_in">
+        <item quantity="one">Sleppa auglýsingu eftir %1$d sekúndu</item>
+        <item quantity="other">Sleppa auglýsingu eftir %1$d sekúndur</item>
+    </plurals>
+    <plurals name="accessibility_undo_dislike_video_plural">
+        <item quantity="one">Hnappurinn Mislíkar ekki lengur, %1$d öðrum mislíkar þetta vídeó</item>
+        <item quantity="other">Hnappurinn Mislíkar ekki lengur, %1$d öðrum mislíkar þetta vídeó</item>
+    </plurals>
+    <plurals name="accessibility_undo_like_video_plural">
+        <item quantity="one">Hnappurinn Líkar ekki lengur, %1$d öðrum líkar þetta vídeó</item>
+        <item quantity="other">Hnappurinn Líkar ekki lengur, %1$d öðrum líkar þetta vídeó</item>
+    </plurals>
+    <plurals name="download_new_videos_button_text">
+        <item quantity="one">Sækja %1$d nýtt vídeó</item>
+        <item quantity="other">Sækja %1$d ný vídeó</item>
+    </plurals>
+    <plurals name="download_playlist_unplayable_future_days_plural">
+        <item quantity="one">Sum vídeó krefjast Premium eftir %1$d dag</item>
+        <item quantity="other">Sum vídeó krefjast Premium eftir %1$d daga</item>
+    </plurals>
+    <plurals name="download_playlist_unplayable_future_hours_plural">
+        <item quantity="one">Sum vídeó krefjast Premium eftir %1$d klukkustund</item>
+        <item quantity="other">Sum vídeó krefjast Premium eftir %1$d klukkustundir</item>
+    </plurals>
+    <plurals name="download_playlist_unplayable_future_minutes_plural">
+        <item quantity="one">Sum vídeó krefjast Premium eftir %1$d mínútu</item>
+        <item quantity="other">Sum vídeó krefjast Premium eftir %1$d mínútur</item>
+    </plurals>
+    <plurals name="download_video_unplayable_future_days_plural">
+        <item quantity="one">Premium krafist eftir %1$d dag</item>
+        <item quantity="other">Premium krafist eftir %1$d daga</item>
+    </plurals>
+    <plurals name="download_video_unplayable_future_hours_plural">
+        <item quantity="one">Premium krafist eftir %1$d klukkustund</item>
+        <item quantity="other">Premium krafist eftir %1$d klukkustundir</item>
+    </plurals>
+    <plurals name="download_video_unplayable_future_minutes_plural">
+        <item quantity="one">Premium krafist eftir %1$d mínútu</item>
+        <item quantity="other">Premium krafist eftir %1$d mínútur</item>
+    </plurals>
+    <plurals name="frequency_hours_component">
+        <item quantity="one">%1$d klukkustund</item>
+        <item quantity="other">%1$d klukkustundir</item>
+    </plurals>
+    <plurals name="frequency_hours_only">
+        <item quantity="one">Á %1$d klukkustundar fresti</item>
+        <item quantity="other">Á %1$d klukkustunda fresti</item>
+    </plurals>
+    <plurals name="frequency_minutes_component">
+        <item quantity="one">%1$d mínúta</item>
+        <item quantity="other">%1$d mínútur</item>
+    </plurals>
+    <plurals name="frequency_minutes_only">
+        <item quantity="one">Á %1$d mínútu fresti</item>
+        <item quantity="other">Á %1$d mínútna fresti</item>
+    </plurals>
+    <plurals name="image_picker_max_title">
+        <item quantity="one">%1$d valin (hámark)</item>
+        <item quantity="other">%1$d valdar (hámark)</item>
+    </plurals>
+    <plurals name="image_picker_title">
+        <item quantity="one">%1$d valin</item>
+        <item quantity="other">%1$d valdar</item>
+    </plurals>
+    <plurals name="invalid_uploads_error_msg">
+        <item quantity="one">Ein eða fleiri vídeóskrár eru ótiltækar eða ógildar. Reyndu aftur eða veldu aðrar.</item>
+        <item quantity="other">Ein eða fleiri vídeóskrár eru ótiltækar eða ógildar. Reyndu aftur eða veldu aðrar.</item>
+    </plurals>
+    <plurals name="last_update_in_days_message">
+        <item quantity="one">Uppfært fyrir %1$d degi</item>
+        <item quantity="other">Uppfært fyrir %1$d dögum</item>
+    </plurals>
+    <plurals name="last_update_in_hours_message">
+        <item quantity="one">Uppfært fyrir %1$d klukkustund</item>
+        <item quantity="other">Uppfært fyrir %1$d klukkustundum</item>
+    </plurals>
+    <plurals name="last_update_in_minutes_message">
+        <item quantity="one">Uppfært fyrir %1$d mínútu</item>
+        <item quantity="other">Uppfært fyrir %1$d mínútum</item>
+    </plurals>
+    <plurals name="last_update_in_weeks_message">
+        <item quantity="one">Uppfært fyrir %1$d viku</item>
+        <item quantity="other">Uppfært fyrir %1$d vikum</item>
+    </plurals>
+    <plurals name="notification_playlist_progress_size">
+        <item quantity="one">%1$d af %2$d vídeói</item>
+        <item quantity="other">%1$d af %2$d vídeóum</item>
+    </plurals>
+    <plurals name="offline_go_online_to_renew_dialog_message">
+        <item quantity="one">Niðurhal er tiltækt svo framarlega að tækið þitt sé nettengt á %1$d dags fresti. Ferlið er sjálfvirkt og vídeó er ekki sótt aftur.</item>
+        <item quantity="other">Niðurhal er tiltækt svo framarlega að tækið þitt sé nettengt á %1$d daga fresti. Ferlið er sjálfvirkt og vídeó er ekki sótt aftur.</item>
+    </plurals>
+    <plurals name="offline_go_online_to_renew_snackbar_message">
+        <item quantity="one">Sótt efni er tiltækt í %1$d dag án nettengingar.</item>
+        <item quantity="other">Sótt efni er tiltækt í %1$d daga án nettengingar.</item>
+    </plurals>
+    <plurals name="offline_remember_setting_for_days">
+        <item quantity="one">Muna stillingar í %1$d dag</item>
+        <item quantity="other">Muna stillingar í %1$d daga</item>
+    </plurals>
+    <plurals name="playlist_picker_dialog_done">
+        <item quantity="one">Spilunarlisti uppfærður</item>
+        <item quantity="other">Spilunarlistar uppfærðir</item>
+    </plurals>
+    <plurals name="playlist_size">
+        <item quantity="one">%1$,d vídeó</item>
+        <item quantity="other">%1$,d vídeó</item>
+    </plurals>
+    <plurals name="playlist_size_downloaded">
+        <item quantity="one">%1$,d sótt</item>
+        <item quantity="other">%1$,d sótt</item>
+    </plurals>
+    <plurals name="playlist_size_total">
+        <item quantity="one">%1$,d vídeó</item>
+        <item quantity="other">%1$,d vídeó</item>
+    </plurals>
+    <plurals name="pref_offline_smart_download_storage_hours_of_videos">
+        <item quantity="one">(~%1$d klukkutímar af vídeóum)</item>
+        <item quantity="other">(~%1$d klukkutímar af vídeóum)</item>
+    </plurals>
+    <plurals name="pref_offline_smart_download_storage_minutes_of_videos">
+        <item quantity="one">%1$d mínútur af vídeóum</item>
+        <item quantity="other">%1$d mínútur af vídeóum</item>
+    </plurals>
+    <plurals name="public_notification_text">
+        <item quantity="one">You have a notification</item>
+        <item quantity="other">%1$d new notifications</item>
+    </plurals>
+    <plurals name="quick_seek_x_second">
+        <item quantity="one">%d sekúnda</item>
+        <item quantity="other">%d sekúndur</item>
+    </plurals>
+    <plurals name="recommendation_count">
+        <item quantity="one">%1$d tillaga</item>
+        <item quantity="other">%1$d tillögur</item>
+    </plurals>
+    <plurals name="rental_expiry_notice">
+        <item quantity="one">Þú hefur %1$d klukkustund til að horfa á þetta vídeó eftir að leigutími hefst.</item>
+        <item quantity="other">Þú hefur %1$d klukkustundir til að horfa á þetta vídeó eftir að leigutími hefst.</item>
+    </plurals>
+    <plurals name="rental_long_days_remaining">
+        <item quantity="one">Rennur út eftir %1$d dag</item>
+        <item quantity="other">Rennur út eftir %1$d daga</item>
+    </plurals>
+    <plurals name="rental_long_hours_remaining">
+        <item quantity="one">Rennur út eftir %1$d klukkustund</item>
+        <item quantity="other">Rennur út eftir %1$d klukkustundir</item>
+    </plurals>
+    <plurals name="rental_long_weeks_remaining">
+        <item quantity="one">Rennur út eftir %1$d viku</item>
+        <item quantity="other">Rennur út eftir %1$d vikur</item>
+    </plurals>
+    <plurals name="rental_medium_days_remaining">
+        <item quantity="one">Rennur út eftir %1$d dag</item>
+        <item quantity="other">Rennur út eftir %1$d daga</item>
+    </plurals>
+    <plurals name="rental_medium_hours_remaining">
+        <item quantity="one">Rennur út eftir %1$d klst.</item>
+        <item quantity="other">Rennur út eftir %1$d klst.</item>
+    </plurals>
+    <plurals name="rental_medium_weeks_remaining">
+        <item quantity="one">Rennur út eftir %1$d viku</item>
+        <item quantity="other">Rennur út eftir %1$d vikur</item>
+    </plurals>
+    <plurals name="selected_video_count">
+        <item quantity="one">%1$d vídeó valið</item>
+        <item quantity="other">%1$d vídeó valin</item>
+    </plurals>
+    <plurals name="shorts_a11y_duration_seconds">
+        <item quantity="one">%1$s sekúnda</item>
+        <item quantity="other">%1$s sekúndur</item>
+    </plurals>
+    <plurals name="shorts_a11y_record_tooltip_xs">
+        <item quantity="one">Upptaka í allt að %1$d sekúndu.</item>
+        <item quantity="other">Upptaka í allt að %1$d sekúndur.</item>
+    </plurals>
+    <plurals name="shorts_a11y_record_xs_toggle_ys">
+        <item quantity="one">Upptaka í allt að %1$d sekúndu. Breyttu til að taka upp í allt að %2$d sekúndur.</item>
+        <item quantity="other">Upptaka í allt að %1$d sekúndur. Breyttu til að taka upp í allt að %2$d sekúndur.</item>
+    </plurals>
+    <plurals name="shorts_a11y_timer_duration_seconds">
+        <item quantity="one">Niðurtalning í %1$d sekúndu</item>
+        <item quantity="other">Niðurtalning í %1$d sekúndur</item>
+    </plurals>
+    <plurals name="shorts_a11y_timer_started">
+        <item quantity="one">Kveikt á niðurtalningu í %1$d sekúndu</item>
+        <item quantity="other">Kveikt á niðurtalningu í %1$d sekúndur</item>
+    </plurals>
+    <plurals name="smart_downloads_future_update_text">
+        <item quantity="one">Snjallniðurhal uppfærist sjálfkrafa eftir %1$d dag</item>
+        <item quantity="other">Snjallniðurhal uppfærist sjálfkrafa eftir %1$d daga</item>
+    </plurals>
+    <plurals name="smart_downloads_last_updated_text">
+        <item quantity="one">Uppfært fyrir %1$d degi</item>
+        <item quantity="other">Uppfært fyrir %1$d dögum</item>
+    </plurals>
+    <plurals name="sticker_dialog_title">
+        <item quantity="one">Komdu aftur eftir %1$d dag</item>
+        <item quantity="other">Komdu aftur eftir %1$d daga</item>
+    </plurals>
+    <plurals name="too_many_external_uploads_error_msg">
+        <item quantity="one">Þú getur bara hlaðið upp %1$d vídeói í einu.</item>
+        <item quantity="other">Þú getur bara hlaðið upp %1$d vídeóum í einu.</item>
+    </plurals>
+    <plurals name="transcoding_progress">
+        <item quantity="one">Undirbýr %1$,d%%</item>
+        <item quantity="other">Undirbýr %1$,d%%</item>
+    </plurals>
+    <plurals name="upload_hours_remaing">
+        <item quantity="one">Um %1$,d klst. eftir</item>
+        <item quantity="other">Um %1$,d klst. eftir</item>
+    </plurals>
+    <plurals name="upload_indicator_all_completed">
+        <item quantity="one">%d vídeói hlaðið upp</item>
+        <item quantity="other">%d vídeóum hlaðið upp</item>
+    </plurals>
+    <plurals name="upload_indicator_all_failed">
+        <item quantity="one">Ekki tókst að hlaða upp neinum vídeóum</item>
+        <item quantity="other">Ekki tókst að hlaða upp neinum vídeóum</item>
+    </plurals>
+    <plurals name="upload_indicator_all_uploading">
+        <item quantity="one">Hleður upp %d vídeói</item>
+        <item quantity="other">Hleður upp %d vídeóum</item>
+    </plurals>
+    <plurals name="upload_indicator_partial_fail">
+        <item quantity="one">Ekki tókst að hlaða upp %1$d af %2$d vídeói</item>
+        <item quantity="other">Ekki tókst að hlaða upp %1$d af %2$d vídeóum</item>
+    </plurals>
+    <plurals name="upload_indicator_uploading_and_completed_completed_part">
+        <item quantity="one">%d hlaðið upp</item>
+        <item quantity="other">%d hlaðið upp</item>
+    </plurals>
+    <plurals name="upload_indicator_uploading_and_completed_uploading_part">
+        <item quantity="one">%d enn að hlaðast upp</item>
+        <item quantity="other">%d enn að hlaðast upp</item>
+    </plurals>
+    <plurals name="upload_minutes_remaing">
+        <item quantity="one">Um %1$,d mínúta eftir</item>
+        <item quantity="other">Um %1$,d mínútur eftir</item>
+    </plurals>
+    <plurals name="upload_notification_active_progress">
+        <item quantity="one">Hleður upp %1$d af %2$d vídeói</item>
+        <item quantity="other">Hleður upp %1$d af %2$d vídeóum</item>
+    </plurals>
+    <plurals name="upload_progress">
+        <item quantity="one">%1$,d%% hlaðið upp</item>
+        <item quantity="other">%1$,d%% hlaðið upp</item>
+    </plurals>
+    <plurals name="upload_seconds_remaing">
+        <item quantity="one">Um %1$,d sekúnda eftir</item>
+        <item quantity="other">Um %1$,d sekúndur eftir</item>
+    </plurals>
+    <plurals name="uploads_failed">
+        <item quantity="one">%1$,d upphleðsla tókst ekki</item>
+        <item quantity="other">%1$,d upphleðslur tókust ekki</item>
+    </plurals>
+    <plurals name="uploads_failed_with_in_progress_videos">
+        <item quantity="one">%1$,d/%2$,d upphleðslum tókst ekki</item>
+        <item quantity="other">%1$,d/%2$,d upphleðslum tókust ekki</item>
+    </plurals>
+    <plurals name="uploads_in_progress">
+        <item quantity="one">%1$,d í upphleðslu</item>
+        <item quantity="other">%1$,d í upphleðslu</item>
+    </plurals>
+    <plurals name="user_education_quick_seek">
+        <item quantity="one">Ýttu tvisvar til vinstri eða hægri til að spóla um %d sekúndu</item>
+        <item quantity="other">Ýttu tvisvar til vinstri eða hægri til að spóla um %d sekúndur</item>
+    </plurals>
+    <plurals name="video_count">
+        <item quantity="one">%1$d vídeó</item>
+        <item quantity="other">%1$d vídeó</item>
+    </plurals>
+</resources>

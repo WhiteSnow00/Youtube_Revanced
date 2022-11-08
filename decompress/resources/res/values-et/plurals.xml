@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_dislike_video_plural">
+        <item quantity="one">Mittemeeldivaks märkimise nupp, see video ei meeldi %1$d kasutajale</item>
+        <item quantity="other">Mittemeeldivaks märkimise nupp, see video ei meeldi %1$d kasutajale</item>
+    </plurals>
+    <plurals name="accessibility_dtts_fast_forward">
+        <item quantity="one">Keri %1$d sekund edasi</item>
+        <item quantity="other">Keri %1$d sekundit edasi</item>
+    </plurals>
+    <plurals name="accessibility_dtts_rewind">
+        <item quantity="one">Keri %1$d sekund tagasi</item>
+        <item quantity="other">Keri %1$d sekundit tagasi</item>
+    </plurals>
+    <plurals name="accessibility_duration_description_hours">
+        <item quantity="one">%d tund</item>
+        <item quantity="other">%d tundi</item>
+    </plurals>
+    <plurals name="accessibility_duration_description_minutes">
+        <item quantity="one">%d minut</item>
+        <item quantity="other">%d minutit</item>
+    </plurals>
+    <plurals name="accessibility_duration_description_seconds">
+        <item quantity="one">%d sekund</item>
+        <item quantity="other">%d sekundit</item>
+    </plurals>
+    <plurals name="accessibility_like_video_plural">
+        <item quantity="one">Meeldivaks märkimise nupp, %1$d kasutaja on selle video meeldivaks märkinud</item>
+        <item quantity="other">Meeldivaks märkimise nupp, %1$d kasutajat on selle video meeldivaks märkinud</item>
+    </plurals>
+    <plurals name="accessibility_seconds_to_skip_ad">
+        <item quantity="one">%1$d sekund reklaami vahelejätmiseni</item>
+        <item quantity="other">%1$d sekundit reklaami vahelejätmiseni</item>
+    </plurals>
+    <plurals name="accessibility_skip_ad_in">
+        <item quantity="one">Reklaami saate vahele jätta 1 sekundi pärast</item>
+        <item quantity="other">Reklaami saate vahele jätta %1$d sekundi pärast</item>
+    </plurals>
+    <plurals name="accessibility_undo_dislike_video_plural">
+        <item quantity="one">Mittemeeldivaks märkimise tühistamise nupp, veel %1$d kasutaja on selle video mittemeeldivaks märkinud</item>
+        <item quantity="other">Mittemeeldivaks märkimise tühistamise nupp, veel %1$d kasutajat on selle video mittemeeldivaks märkinud</item>
+    </plurals>
+    <plurals name="accessibility_undo_like_video_plural">
+        <item quantity="one">Meeldivaks märkimise tühistamise nupp, veel %1$d kasutaja on selle video meeldivaks märkinud</item>
+        <item quantity="other">Meeldivaks märkimise tühistamise nupp, veel %1$d kasutajat on selle video meeldivaks märkinud</item>
+    </plurals>
+    <plurals name="download_new_videos_button_text">
+        <item quantity="one">Offlaini %1$d uus video</item>
+        <item quantity="other">Offlaini %1$d uut videot</item>
+    </plurals>
+    <plurals name="download_playlist_unplayable_future_days_plural">
+        <item quantity="one">Mõne video puhul on %1$d päeva pärast vaja Premiumi</item>
+        <item quantity="other">Mõne video puhul on %1$d päeva pärast vaja Premiumi</item>
+    </plurals>
+    <plurals name="download_playlist_unplayable_future_hours_plural">
+        <item quantity="one">Mõne video puhul on %1$d tunni pärast vaja Premiumi</item>
+        <item quantity="other">Mõne video puhul on %1$d tunni pärast vaja Premiumi</item>
+    </plurals>
+    <plurals name="download_playlist_unplayable_future_minutes_plural">
+        <item quantity="one">Mõne video puhul on %1$d minuti pärast vaja Premiumi</item>
+        <item quantity="other">Mõne video puhul on %1$d minuti pärast vaja Premiumi</item>
+    </plurals>
+    <plurals name="download_video_unplayable_future_days_plural">
+        <item quantity="one">%1$d päeva pärast on vaja Premiumi</item>
+        <item quantity="other">%1$d päeva pärast on vaja Premiumi</item>
+    </plurals>
+    <plurals name="download_video_unplayable_future_hours_plural">
+        <item quantity="one">%1$d tunni pärast on vaja Premiumi</item>
+        <item quantity="other">%1$d tunni pärast on vaja Premiumi</item>
+    </plurals>
+    <plurals name="download_video_unplayable_future_minutes_plural">
+        <item quantity="one">%1$d minuti pärast on vaja Premiumi</item>
+        <item quantity="other">%1$d minuti pärast on vaja Premiumi</item>
+    </plurals>
+    <plurals name="frequency_hours_component">
+        <item quantity="one">%1$d tunni</item>
+        <item quantity="other">%1$d tunni</item>
+    </plurals>
+    <plurals name="frequency_hours_only">
+        <item quantity="one">Iga tunni järel</item>
+        <item quantity="other">Iga %1$d tunni järel</item>
+    </plurals>
+    <plurals name="frequency_minutes_component">
+        <item quantity="one">%1$d minuti</item>
+        <item quantity="other">%1$d minuti</item>
+    </plurals>
+    <plurals name="frequency_minutes_only">
+        <item quantity="one">Iga minuti järel</item>
+        <item quantity="other">Iga %1$d minuti järel</item>
+    </plurals>
+    <plurals name="image_picker_max_title">
+        <item quantity="one">%1$d valitud (max)</item>
+        <item quantity="other">%1$d valitud (max)</item>
+    </plurals>
+    <plurals name="image_picker_title">
+        <item quantity="one">%1$d valitud</item>
+        <item quantity="other">%1$d valitud</item>
+    </plurals>
+    <plurals name="invalid_uploads_error_msg">
+        <item quantity="one">See videofail ei ole saadaval või on sobimatu. Proovige uuesti või valige teine fail.</item>
+        <item quantity="other">Vähemalt üks videofail ei ole saadaval või on sobimatu. Proovige uuesti või valige teised failid.</item>
+    </plurals>
+    <plurals name="last_update_in_days_message">
+        <item quantity="one">Värskendatud eile</item>
+        <item quantity="other">Värskendatud %1$d päeva tagasi</item>
+    </plurals>
+    <plurals name="last_update_in_hours_message">
+        <item quantity="one">Värskendatud %1$d tund tagasi</item>
+        <item quantity="other">Värskendatud %1$d tundi tagasi</item>
+    </plurals>
+    <plurals name="last_update_in_minutes_message">
+        <item quantity="one">Värskendatud %1$d minut tagasi</item>
+        <item quantity="other">Värskendatud %1$d minutit tagasi</item>
+    </plurals>
+    <plurals name="last_update_in_weeks_message">
+        <item quantity="one">Värskendatud %1$d nädal tagasi</item>
+        <item quantity="other">Värskendatud %1$d nädalat tagasi</item>
+    </plurals>
+    <plurals name="notification_playlist_progress_size">
+        <item quantity="one">%1$d video 1-st</item>
+        <item quantity="other">%1$d video(t) %2$d-st</item>
+    </plurals>
+    <plurals name="offline_go_online_to_renew_dialog_message">
+        <item quantity="one">Offlainitud videod jäävad kättesaadavaks tingimusel, et seadme internetiühendus ei katke kauemaks kui üks päev. Uuendamine toimub automaatselt ja videot ei laadita uuesti alla.</item>
+        <item quantity="other">Offlainitud videod jäävad kättesaadavaks tingimusel, et seadme internetiühendus ei katke kauemaks kui %1$d päeva. Uuendamine toimub automaatselt ja videot ei laadita uuesti alla.</item>
+    </plurals>
+    <plurals name="offline_go_online_to_renew_snackbar_message">
+        <item quantity="one">Internetiühenduseta jäävad offlainitud videod kättesaadavaks üheks päevaks.</item>
+        <item quantity="other">Internetiühenduseta jäävad offlainitud videod kättesaadavaks %1$d päevaks.</item>
+    </plurals>
+    <plurals name="offline_remember_setting_for_days">
+        <item quantity="one">Jäta mu seaded meelde 1 päevaks</item>
+        <item quantity="other">Jäta mu seaded meelde %1$d päevaks</item>
+    </plurals>
+    <plurals name="playlist_picker_dialog_done">
+        <item quantity="one">Esitusloend värskendati</item>
+        <item quantity="other">Esitusloendid värskendati</item>
+    </plurals>
+    <plurals name="playlist_size">
+        <item quantity="one">1 video</item>
+        <item quantity="other">%1$,d videot</item>
+    </plurals>
+    <plurals name="playlist_size_downloaded">
+        <item quantity="one">%1$,d on offlainitud</item>
+        <item quantity="other">%1$,d on offlainitud</item>
+    </plurals>
+    <plurals name="playlist_size_total">
+        <item quantity="one">1 video</item>
+        <item quantity="other">%1$,d videot</item>
+    </plurals>
+    <plurals name="pref_offline_smart_download_storage_hours_of_videos">
+        <item quantity="one">(~%1$d tund videoid)</item>
+        <item quantity="other">(~%1$d tundi videoid)</item>
+    </plurals>
+    <plurals name="pref_offline_smart_download_storage_minutes_of_videos">
+        <item quantity="one">(~%1$d minut videoid)</item>
+        <item quantity="other">(~%1$d minutit videoid)</item>
+    </plurals>
+    <plurals name="public_notification_text">
+        <item quantity="one">You have a notification</item>
+        <item quantity="other">%1$d new notifications</item>
+    </plurals>
+    <plurals name="quick_seek_x_second">
+        <item quantity="one">%d sekund</item>
+        <item quantity="other">%d sekundit</item>
+    </plurals>
+    <plurals name="recommendation_count">
+        <item quantity="one">1 soovitus</item>
+        <item quantity="other">%1$d soovitust</item>
+    </plurals>
+    <plurals name="rental_expiry_notice">
+        <item quantity="one">Pärast alustamist on teil selle video vaatamiseks 1 tund.</item>
+        <item quantity="other">Pärast alustamist on teil selle video vaatamiseks %1$d tundi.</item>
+    </plurals>
+    <plurals name="rental_long_days_remaining">
+        <item quantity="one">Aegub 1 päeva pärast</item>
+        <item quantity="other">Aegub %1$d päeva pärast</item>
+    </plurals>
+    <plurals name="rental_long_hours_remaining">
+        <item quantity="one">Aegub 1 tunni pärast</item>
+        <item quantity="other">Aegub %1$d tunni pärast</item>
+    </plurals>
+    <plurals name="rental_long_weeks_remaining">
+        <item quantity="one">Aegub 1 nädala pärast</item>
+        <item quantity="other">Aegub %1$d nädala pärast</item>
+    </plurals>
+    <plurals name="rental_medium_days_remaining">
+        <item quantity="one">Aegumiseni 1 päev</item>
+        <item quantity="other">Aegumiseni %1$d päeva</item>
+    </plurals>
+    <plurals name="rental_medium_hours_remaining">
+        <item quantity="one">Aegumiseni 1 tund</item>
+        <item quantity="other">Aegumiseni %1$d tundi</item>
+    </plurals>
+    <plurals name="rental_medium_weeks_remaining">
+        <item quantity="one">Aegumiseni 1 nädal</item>
+        <item quantity="other">Aegumiseni %1$d nädalat</item>
+    </plurals>
+    <plurals name="selected_video_count">
+        <item quantity="one">Valitud on 1 video</item>
+        <item quantity="other">Valitud on %1$d videot</item>
+    </plurals>
+    <plurals name="shorts_a11y_duration_seconds">
+        <item quantity="one">%1$s sekund</item>
+        <item quantity="other">%1$s sekundit</item>
+    </plurals>
+    <plurals name="shorts_a11y_record_tooltip_xs">
+        <item quantity="one">Filmitakse kuni 1 sekund.</item>
+        <item quantity="other">Filmitakse kuni %1$d sekundit.</item>
+    </plurals>
+    <plurals name="shorts_a11y_record_xs_toggle_ys">
+        <item quantity="one">Filmitakse kuni %1$d sekund. Lülitage, et filmida kuni %2$d sekundit.</item>
+        <item quantity="other">Filmitakse kuni %1$d sekundit. Lülitage, et filmida kuni %2$d sekundit.</item>
+    </plurals>
+    <plurals name="shorts_a11y_timer_duration_seconds">
+        <item quantity="one">%1$d-sekundiline taimer</item>
+        <item quantity="other">%1$d-sekundiline taimer</item>
+    </plurals>
+    <plurals name="shorts_a11y_timer_started">
+        <item quantity="one">%1$d-sekundiline taimer aktiveeriti</item>
+        <item quantity="other">%1$d-sekundiline taimer aktiveeriti</item>
+    </plurals>
+    <plurals name="smart_downloads_future_update_text">
+        <item quantity="one">Nutikalt offlainitud sisu värskendatakse automaatselt 1 päeva pärast</item>
+        <item quantity="other">Nutikalt offlainitud sisu värskendatakse automaatselt %1$d päeva pärast</item>
+    </plurals>
+    <plurals name="smart_downloads_last_updated_text">
+        <item quantity="one">Värskendati 1 päev tagasi</item>
+        <item quantity="other">Värskendati %1$d päeva tagasi</item>
+    </plurals>
+    <plurals name="sticker_dialog_title">
+        <item quantity="one">Proovige 1 päeva pärast uuesti</item>
+        <item quantity="other">Proovige %1$d päeva pärast uuesti</item>
+    </plurals>
+    <plurals name="too_many_external_uploads_error_msg">
+        <item quantity="one">Korraga saab üles laadida %1$d video.</item>
+        <item quantity="other">Korraga saab üles laadida kuni %1$d videot.</item>
+    </plurals>
+    <plurals name="transcoding_progress">
+        <item quantity="one">Valmistus %1$,d%%</item>
+        <item quantity="other">Valmistus %1$,d%%</item>
+    </plurals>
+    <plurals name="upload_hours_remaing">
+        <item quantity="one">Jäänud on ligikaudu %1$,d tund</item>
+        <item quantity="other">Jäänud on ligikaudu %1$,d tundi</item>
+    </plurals>
+    <plurals name="upload_indicator_all_completed">
+        <item quantity="one">Video laaditi üles</item>
+        <item quantity="other">%d videot laaditi üles</item>
+    </plurals>
+    <plurals name="upload_indicator_all_failed">
+        <item quantity="one">Teie videot ei õnnestunud üles laadida</item>
+        <item quantity="other">Teie videoid ei õnnestunud üles laadida</item>
+    </plurals>
+    <plurals name="upload_indicator_all_uploading">
+        <item quantity="one">Video üleslaadimine</item>
+        <item quantity="other">%d video üleslaadimine</item>
+    </plurals>
+    <plurals name="upload_indicator_partial_fail">
+        <item quantity="one">%1$d video üleslaadimine %2$d-st ei õnnestunud</item>
+        <item quantity="other">%1$d videot %2$d-st ei õnnestunud üles laadida</item>
+    </plurals>
+    <plurals name="upload_indicator_uploading_and_completed_completed_part">
+        <item quantity="one">%d laaditi üles</item>
+        <item quantity="other">%d laaditi üles</item>
+    </plurals>
+    <plurals name="upload_indicator_uploading_and_completed_uploading_part">
+        <item quantity="one">%d on veel üleslaadimisel</item>
+        <item quantity="other">%d on veel üleslaadimisel</item>
+    </plurals>
+    <plurals name="upload_minutes_remaing">
+        <item quantity="one">Jäänud on ligikaudu %1$,d minut</item>
+        <item quantity="other">Jäänud on ligikaudu %1$,d minutit</item>
+    </plurals>
+    <plurals name="upload_notification_active_progress">
+        <item quantity="one">1 video üleslaadimine</item>
+        <item quantity="other">%1$d. video üleslaadimine %2$d-st</item>
+    </plurals>
+    <plurals name="upload_progress">
+        <item quantity="one">%1$,d%% üles laaditud</item>
+        <item quantity="other">%1$,d%% üles laaditud</item>
+    </plurals>
+    <plurals name="upload_seconds_remaing">
+        <item quantity="one">Jäänud on ligikaudu %1$,d sekund</item>
+        <item quantity="other">Jäänud on ligikaudu %1$,d sekundit</item>
+    </plurals>
+    <plurals name="uploads_failed">
+        <item quantity="one">Üleslaadimine ebaõnnestus</item>
+        <item quantity="other">%1$,d üleslaadimist ebaõnnestus</item>
+    </plurals>
+    <plurals name="uploads_failed_with_in_progress_videos">
+        <item quantity="one">%1$,d üleslaadimine %2$,d-st ebaõnnestus</item>
+        <item quantity="other">%1$,d üleslaadimist %2$,d-st ebaõnnestus</item>
+    </plurals>
+    <plurals name="uploads_in_progress">
+        <item quantity="one">%1$,d üleslaadimine</item>
+        <item quantity="other">%1$,d üleslaadimine</item>
+    </plurals>
+    <plurals name="user_education_quick_seek">
+        <item quantity="one">Vasakul või paremal topeltpuudutades saate %d sekundi vahele jätta</item>
+        <item quantity="other">Vasakul või paremal topeltpuudutades saate %d sekundit vahele jätta</item>
+    </plurals>
+    <plurals name="video_count">
+        <item quantity="one">1 video</item>
+        <item quantity="other">%1$d videot</item>
+    </plurals>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">За апликацијата</string>
+    <string name="about_api">Оваа апликација користи API од SponsorBlock</string>
+    <string name="about_api_sum">Допри за да дознаеш повеќе и видиш преземања за други платформи на: sponsor.ajay.app</string>
+    <string name="about_madeby">Интеграција направена од JakubWeg, снимено од oSumAtrIX</string>
+    <string name="action_browser">SB Прелистувач</string>
+    <string name="action_segments">Делови</string>
+    <string name="api_url_changed">API адресата е променета</string>
+    <string name="api_url_invalid">Внесената API адреса е невалидна</string>
+    <string name="api_url_reset">API адреса ресет</string>
+    <string name="change">Промени</string>
+    <string name="color_change">Дали барате променливи бои?</string>
+    <string name="color_change_sum">Сега можеш да ја промениш бојата на категоријата со кликање врз неа.</string>
+    <string name="color_changed">Бојата е променета</string>
+    <string name="color_choose_category">Промени ја категоријата</string>
+    <string name="color_invalid">Невалиден hex код</string>
+    <string name="color_reset">Ресетирај ја бојата</string>
+    <string name="diff_segments">Што да се прави со различни делови</string>
+    <string name="downloader_not_installed_warning">не е инсталиран. Молам да го инсталирате.</string>
+    <string name="enable_sb">Овозможи SponsorBlock</string>
+    <string name="enable_sb_sum">SponsorBlock е систем за прескокнување на досадни делови во видеата на YouTube</string>
+    <string name="enable_segmadding">Овозможи додавање на нов дел</string>
+    <string name="enable_segmadding_sum">Вклучи го ова за да овозможиш експериментално додавање на делови (има проблеми со видливост на копчето)</string>
+    <string name="enable_voting">Овозможи гласање</string>
+    <string name="enable_voting_sum">Вклучи го ова за да овозможиш гласање.</string>
+    <string name="general">Генерално</string>
+    <string name="general_adjusting">Подесување на чекорот од новиот дел</string>
+    <string name="general_adjusting_sum">Ова е бројот на милисекунди што можеш да го поместиш кога ги користиш копчињата за подесување на времето кога додаваш нов дел</string>
+    <string name="general_api_url">Промени API адреса</string>
+    <string name="general_api_url_sum">Ова е адресата што SponsorBlock ја користи за да го повика серверот. &lt;b&gt;Не го променувај ова освен кога точно знаеш што правиш.&lt;/b&gt;</string>
+    <string name="general_browser_button">Овозможи го SB Прелистувач копчето</string>
+    <string name="general_browser_button_sum">Клик на ова копче под плеерот ќе отвори sb.ltn.fi каде можеш да ги видиш сите делови од видеото.</string>
+    <string name="general_cache">Кеширај ги деловите локално</string>
+    <string name="general_cache_clear">Исчисти го SponsorBlock кешот со деловите</string>
+    <string name="general_cache_sum">Често гледани видеа (пр. музички видеа) може да ги чуваат деловите во кешот за да го направат прескокнувањето на деловите побрзо</string>
+    <string name="general_min_duration">Минимално траење на деловите</string>
+    <string name="general_min_duration_sum">Деловите пократки од поставената вредност (во секунди) нема да бидат прескокнати или прикажани во плеерот</string>
+    <string name="general_skipcount">Прескокни го следењето на статистиката</string>
+    <string name="general_skipcount_sum">Ова му овозможува на SponsorBlock статистичкиот систем да знае време луѓето зачувале. Оваа екстензија праќа порака до серверот секој пат кога ти прескокнуваш дел</string>
+    <string name="general_skiptoast">Прикажи забелешка кога се прескокнува некој дел автоматски</string>
+    <string name="general_skiptoast_sum">Кликни за да видиш пример од забелешка</string>
+    <string name="general_time_without_sb">Прикажи време без деловите</string>
+    <string name="accessibility_settings_edu_opt_in_text">Да се ​​вклучат контролите за пристапност за видео плеерот?</string>
+    <string name="accessibility_settings_edu_opt_out_text">Твоите контроли се изменети затоа што е вклучена услуга за пристапност.</string>
+</resources>

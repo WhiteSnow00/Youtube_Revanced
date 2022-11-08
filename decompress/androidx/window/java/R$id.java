@@ -1,0 +1,95 @@
+// 
+// Decompiled by Procyon v0.6.0
+// 
+
+package androidx.window.java;
+
+public final class R$id
+{
+    public static final int accessibility_action_clickable_span = 2131427378;
+    public static final int accessibility_custom_action_0 = 2131427379;
+    public static final int accessibility_custom_action_1 = 2131427380;
+    public static final int accessibility_custom_action_10 = 2131427381;
+    public static final int accessibility_custom_action_11 = 2131427382;
+    public static final int accessibility_custom_action_12 = 2131427383;
+    public static final int accessibility_custom_action_13 = 2131427384;
+    public static final int accessibility_custom_action_14 = 2131427385;
+    public static final int accessibility_custom_action_15 = 2131427386;
+    public static final int accessibility_custom_action_16 = 2131427387;
+    public static final int accessibility_custom_action_17 = 2131427388;
+    public static final int accessibility_custom_action_18 = 2131427389;
+    public static final int accessibility_custom_action_19 = 2131427390;
+    public static final int accessibility_custom_action_2 = 2131427391;
+    public static final int accessibility_custom_action_20 = 2131427392;
+    public static final int accessibility_custom_action_21 = 2131427393;
+    public static final int accessibility_custom_action_22 = 2131427394;
+    public static final int accessibility_custom_action_23 = 2131427395;
+    public static final int accessibility_custom_action_24 = 2131427396;
+    public static final int accessibility_custom_action_25 = 2131427397;
+    public static final int accessibility_custom_action_26 = 2131427398;
+    public static final int accessibility_custom_action_27 = 2131427399;
+    public static final int accessibility_custom_action_28 = 2131427400;
+    public static final int accessibility_custom_action_29 = 2131427401;
+    public static final int accessibility_custom_action_3 = 2131427402;
+    public static final int accessibility_custom_action_30 = 2131427403;
+    public static final int accessibility_custom_action_31 = 2131427404;
+    public static final int accessibility_custom_action_4 = 2131427405;
+    public static final int accessibility_custom_action_5 = 2131427406;
+    public static final int accessibility_custom_action_6 = 2131427407;
+    public static final int accessibility_custom_action_7 = 2131427408;
+    public static final int accessibility_custom_action_8 = 2131427409;
+    public static final int accessibility_custom_action_9 = 2131427410;
+    public static final int action_container = 2131427465;
+    public static final int action_divider = 2131427471;
+    public static final int action_image = 2131427472;
+    public static final int action_text = 2131427483;
+    public static final int actions = 2131427487;
+    public static final int adjacent = 2131427554;
+    public static final int always = 2131427596;
+    public static final int androidx_window_activity_scope = 2131427607;
+    public static final int async = 2131427644;
+    public static final int blocking = 2131427814;
+    public static final int bottomToTop = 2131427826;
+    public static final int chronometer = 2131428197;
+    public static final int dialog_button = 2131428658;
+    public static final int forever = 2131429077;
+    public static final int icon = 2131429270;
+    public static final int icon_group = 2131429277;
+    public static final int info = 2131429361;
+    public static final int italic = 2131429464;
+    public static final int item1 = 2131429465;
+    public static final int item2 = 2131429466;
+    public static final int item3 = 2131429467;
+    public static final int item4 = 2131429468;
+    public static final int line1 = 2131429543;
+    public static final int line3 = 2131429545;
+    public static final int locale = 2131429684;
+    public static final int ltr = 2131429704;
+    public static final int never = 2131430043;
+    public static final int normal = 2131430079;
+    public static final int notification_background = 2131430086;
+    public static final int notification_main_column = 2131430092;
+    public static final int notification_main_column_container = 2131430093;
+    public static final int right_icon = 2131431202;
+    public static final int right_side = 2131431204;
+    public static final int rtl = 2131431226;
+    public static final int tag_accessibility_actions = 2131431925;
+    public static final int tag_accessibility_clickable_spans = 2131431926;
+    public static final int tag_accessibility_heading = 2131431927;
+    public static final int tag_accessibility_pane_title = 2131431928;
+    public static final int tag_on_apply_window_listener = 2131431931;
+    public static final int tag_on_receive_content_listener = 2131431932;
+    public static final int tag_on_receive_content_mime_types = 2131431933;
+    public static final int tag_screen_reader_focusable = 2131431934;
+    public static final int tag_state_description = 2131431935;
+    public static final int tag_transition_group = 2131431936;
+    public static final int tag_unhandled_key_event_manager = 2131431937;
+    public static final int tag_unhandled_key_listeners = 2131431938;
+    public static final int tag_window_insets_animation_callback = 2131431939;
+    public static final int text = 2131431950;
+    public static final int text2 = 2131431952;
+    public static final int time = 2131432055;
+    public static final int title = 2131432092;
+    public static final int topToBottom = 2131432133;
+    public static final int view_tree_lifecycle_owner = 2131432370;
+}

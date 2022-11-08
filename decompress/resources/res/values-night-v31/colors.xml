@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="aag_widget_adjusted_color_primary">@android:color/search_url_text_pressed</color>
+    <color name="aag_widget_background_color">@android:color/micro_text_light</color>
+    <color name="aag_widget_color_surface_variant">@android:color/lock_pattern_view_error_color</color>
+    <color name="aag_widget_on_background_color">@android:color/search_url_text_selected</color>
+    <color name="sud_system_primary_text">@color/sud_system_neutral1_50</color>
+    <color name="sud_system_secondary_text">@color/sud_system_neutral2_200</color>
+    <color name="widget_button_borderless_icon_color">@android:color/search_url_text_pressed</color>
+</resources>

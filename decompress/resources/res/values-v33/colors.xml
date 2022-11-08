@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sud_glif_v3_nav_bar_divider_color_light">@android:color/transparent</color>
+</resources>

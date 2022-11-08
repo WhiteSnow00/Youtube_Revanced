@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="aag_widget_adjusted_color_primary">@color/gm3_default_color_primary_container</color>
+    <color name="aag_widget_background_color">@color/gm3_dark_default_color_background</color>
+    <color name="aag_widget_color_surface_variant">@color/gm3_dark_default_color_surface_variant</color>
+    <color name="aag_widget_on_background_color">@color/gm3_dark_default_color_on_background</color>
+    <color name="google_daynight_default_color_primary_text">@color/google_dark_default_color_primary_text</color>
+    <color name="google_daynight_default_color_secondary_text">@color/google_dark_default_color_secondary_text</color>
+    <color name="material_google_red_500">#ffee675c</color>
+    <color name="material_grey_white_1000">#ff202124</color>
+    <color name="photo_picker_button_text_color">@color/google_grey200</color>
+    <color name="photo_picker_header_title_text_color">@color/google_grey200</color>
+    <color name="play_protect_auth_accent_color">#ff34a853</color>
+    <color name="sud_system_primary_text">@color/sud_primary_default_text_dark</color>
+    <color name="sud_system_secondary_text">@color/sud_secondary_default_text_dark</color>
+    <color name="survey_smiley">@color/yt_light_blue</color>
+    <color name="widget_button_borderless_icon_color">@color/gm3_default_color_primary_container</color>
+</resources>

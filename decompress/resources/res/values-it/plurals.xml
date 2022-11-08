@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_dislike_video_plural">
+        <item quantity="one">Pulsante Non mi piace; questo video non è piaciuto a %1$d altra persona</item>
+        <item quantity="other">Pulsante Non mi piace; questo video non è piaciuto ad altre %1$d persone</item>
+    </plurals>
+    <plurals name="accessibility_dtts_fast_forward">
+        <item quantity="one">Avanti di %1$d secondo</item>
+        <item quantity="other">Avanti di %1$d secondi</item>
+    </plurals>
+    <plurals name="accessibility_dtts_rewind">
+        <item quantity="one">Indietro di %1$d secondo</item>
+        <item quantity="other">Indietro di %1$d secondi</item>
+    </plurals>
+    <plurals name="accessibility_duration_description_hours">
+        <item quantity="one">%d ora</item>
+        <item quantity="other">%d ore</item>
+    </plurals>
+    <plurals name="accessibility_duration_description_minutes">
+        <item quantity="one">%d minuto</item>
+        <item quantity="other">%d minuti</item>
+    </plurals>
+    <plurals name="accessibility_duration_description_seconds">
+        <item quantity="one">%d secondo</item>
+        <item quantity="other">%d secondi</item>
+    </plurals>
+    <plurals name="accessibility_like_video_plural">
+        <item quantity="one">Pulsante Mi piace; questo video è piaciuto a %1$d altra persona</item>
+        <item quantity="other">Pulsante Mi piace; questo video è piaciuto ad altre %1$d persone</item>
+    </plurals>
+    <plurals name="accessibility_seconds_to_skip_ad">
+        <item quantity="one">%1$d secondo per saltare l&apos;annuncio</item>
+        <item quantity="other">%1$d secondi per saltare l&apos;annuncio</item>
+    </plurals>
+    <plurals name="accessibility_skip_ad_in">
+        <item quantity="one">Salta l&apos;annuncio tra 1 secondo</item>
+        <item quantity="other">Salta l&apos;annuncio tra %1$d secondi</item>
+    </plurals>
+    <plurals name="accessibility_undo_dislike_video_plural">
+        <item quantity="one">Pulsante Annulla Non mi piace; questo video non è piaciuto a %1$d altra persona</item>
+        <item quantity="other">Pulsante Annulla Non mi piace; questo video non è piaciuto ad altre %1$d persone</item>
+    </plurals>
+    <plurals name="accessibility_undo_like_video_plural">
+        <item quantity="one">Pulsante Annulla Mi piace; questo video è piaciuto a %1$d altra persona</item>
+        <item quantity="other">Pulsante Annulla Mi piace; questo video è piaciuto ad altre %1$d persone</item>
+    </plurals>
+    <plurals name="download_new_videos_button_text">
+        <item quantity="one">Scarica %1$d nuovo video</item>
+        <item quantity="other">Scarica %1$d nuovi video</item>
+    </plurals>
+    <plurals name="download_playlist_unplayable_future_days_plural">
+        <item quantity="one">Per alcuni video sarà necessario Premium tra %1$d giorno</item>
+        <item quantity="other">Per alcuni video sarà necessario Premium tra %1$d giorni</item>
+    </plurals>
+    <plurals name="download_playlist_unplayable_future_hours_plural">
+        <item quantity="one">Per alcuni video sarà necessario Premium tra %1$d ora</item>
+        <item quantity="other">Per alcuni video sarà necessario Premium tra %1$d ore</item>
+    </plurals>
+    <plurals name="download_playlist_unplayable_future_minutes_plural">
+        <item quantity="one">Per alcuni video sarà necessario Premium tra %1$d minuto</item>
+        <item quantity="other">Per alcuni video sarà necessario Premium tra %1$d minuti</item>
+    </plurals>
+    <plurals name="download_video_unplayable_future_days_plural">
+        <item quantity="one">Necessario Premium tra %1$d giorno</item>
+        <item quantity="other">Necessario Premium tra %1$d giorni</item>
+    </plurals>
+    <plurals name="download_video_unplayable_future_hours_plural">
+        <item quantity="one">Necessario Premium tra %1$d ora</item>
+        <item quantity="other">Necessario Premium tra %1$d ore</item>
+    </plurals>
+    <plurals name="download_video_unplayable_future_minutes_plural">
+        <item quantity="one">Necessario Premium tra %1$d minuto</item>
+        <item quantity="other">Necessario Premium tra %1$d minuti</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="zero">0 minuti</item>
+        <item quantity="one">1 minuto</item>
+        <item quantity="two">2 minuti</item>
+        <item quantity="few">%1$d minuti</item>
+        <item quantity="many">%1$d minuti</item>
+        <item quantity="other">%1$d minuti</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="zero">0 secondi</item>
+        <item quantity="one">1 secondo</item>
+        <item quantity="two">2 secondi</item>
+        <item quantity="few">%1$d secondi</item>
+        <item quantity="many">%1$d secondi</item>
+        <item quantity="other">%1$d secondi</item>
+    </plurals>
+    <plurals name="frequency_hours_component">
+        <item quantity="one">%1$d ora</item>
+        <item quantity="other">%1$d ore</item>
+    </plurals>
+    <plurals name="frequency_hours_only">
+        <item quantity="one">Ogni ora</item>
+        <item quantity="other">Ogni %1$d ore</item>
+    </plurals>
+    <plurals name="frequency_minutes_component">
+        <item quantity="one">%1$d minuto</item>
+        <item quantity="other">%1$d minuti</item>
+    </plurals>
+    <plurals name="frequency_minutes_only">
+        <item quantity="one">Ogni minuto</item>
+        <item quantity="other">Ogni %1$d minuti</item>
+    </plurals>
+    <plurals name="image_picker_max_title">
+        <item quantity="one">%1$d selezionata (limite raggiunto)</item>
+        <item quantity="other">%1$d selezionate (limite raggiunto)</item>
+    </plurals>
+    <plurals name="image_picker_title">
+        <item quantity="one">%1$d selezionata</item>
+        <item quantity="other">%1$d selezionate</item>
+    </plurals>
+    <plurals name="invalid_uploads_error_msg">
+        <item quantity="one">Questo file video non è disponibile o non è valido. Riprova o scegline un altro.</item>
+        <item quantity="other">Uno o più file video non sono disponibili o non sono validi. Riprova o scegline altri.</item>
+    </plurals>
+    <plurals name="last_update_in_days_message">
+        <item quantity="one">Ultimo aggiornamento: ieri</item>
+        <item quantity="other">Ultimo aggiornamento: %1$d giorni fa</item>
+    </plurals>
+    <plurals name="last_update_in_hours_message">
+        <item quantity="one">Ultimo aggiornamento: %1$d ora fa</item>
+        <item quantity="other">Ultimo aggiornamento: %1$d ore fa</item>
+    </plurals>
+    <plurals name="last_update_in_minutes_message">
+        <item quantity="one">Ultimo aggiornamento: %1$d minuto fa</item>
+        <item quantity="other">Ultimo aggiornamento: %1$d minuti fa</item>
+    </plurals>
+    <plurals name="last_update_in_weeks_message">
+        <item quantity="one">Ultimo aggiornamento: %1$d settimana fa</item>
+        <item quantity="other">Ultimo aggiornamento: %1$d settimane fa</item>
+    </plurals>
+    <plurals name="notification_playlist_progress_size">
+        <item quantity="one">%1$d di 1 video</item>
+        <item quantity="other">%1$d di %2$d video</item>
+    </plurals>
+    <plurals name="offline_go_online_to_renew_dialog_message">
+        <item quantity="one">I download sono disponibili purché il tuo dispositivo venga connesso a Internet ogni giorno. Ciò avviene automaticamente e non comporta un nuovo download del video.</item>
+        <item quantity="other">I download sono disponibili purché il tuo dispositivo venga connesso a Internet ogni %1$d giorni. Ciò avviene automaticamente e non comporta un nuovo download del video.</item>
+    </plurals>
+    <plurals name="offline_go_online_to_renew_snackbar_message">
+        <item quantity="one">Senza una connessione a Internet, i download rimangono disponibili per un giorno.</item>
+        <item quantity="other">Senza una connessione a Internet, i download rimangono disponibili per %1$d giorni.</item>
+    </plurals>
+    <plurals name="offline_remember_setting_for_days">
+        <item quantity="one">Ricorda le mie impostazioni per 1 giorno</item>
+        <item quantity="other">Ricorda le mie impostazioni per %1$d giorni</item>
+    </plurals>
+    <plurals name="playlist_picker_dialog_done">
+        <item quantity="one">Playlist aggiornata</item>
+        <item quantity="other">Playlist aggiornate</item>
+    </plurals>
+    <plurals name="playlist_size">
+        <item quantity="one">1 video</item>
+        <item quantity="other">%1$,d video</item>
+    </plurals>
+    <plurals name="playlist_size_downloaded">
+        <item quantity="one">%1$,d scaricato</item>
+        <item quantity="other">%1$,d scaricati</item>
+    </plurals>
+    <plurals name="playlist_size_total">
+        <item quantity="one">1 video</item>
+        <item quantity="other">%1$,d video</item>
+    </plurals>
+    <plurals name="pref_offline_smart_download_storage_hours_of_videos">
+        <item quantity="one">(~%1$d ora di video)</item>
+        <item quantity="other">(~%1$d ore di video)</item>
+    </plurals>
+    <plurals name="pref_offline_smart_download_storage_minutes_of_videos">
+        <item quantity="one">(~%1$d minuto di video)</item>
+        <item quantity="other">(~%1$d minuti di video)</item>
+    </plurals>
+    <plurals name="public_notification_text">
+        <item quantity="one">Hai una notifica</item>
+        <item quantity="other">%1$d nuove notifiche</item>
+    </plurals>
+    <plurals name="quick_seek_x_second">
+        <item quantity="one">%d secondo</item>
+        <item quantity="other">%d secondi</item>
+    </plurals>
+    <plurals name="recommendation_count">
+        <item quantity="one">1 consiglio</item>
+        <item quantity="other">%1$d consigli</item>
+    </plurals>
+    <plurals name="rental_expiry_notice">
+        <item quantity="one">Una volta avviata la riproduzione, avrai 1 ora di tempo per guardare questo video.</item>
+        <item quantity="other">Una volta avviata la riproduzione, avrai %1$d ore di tempo per guardare questo video.</item>
+    </plurals>
+    <plurals name="rental_long_days_remaining">
+        <item quantity="one">Scade tra 1 giorno</item>
+        <item quantity="other">Scade tra %1$d giorni</item>
+    </plurals>
+    <plurals name="rental_long_hours_remaining">
+        <item quantity="one">Scade tra 1 ora</item>
+        <item quantity="other">Scade tra %1$d ore</item>
+    </plurals>
+    <plurals name="rental_long_weeks_remaining">
+        <item quantity="one">Scade tra 1 settimana</item>
+        <item quantity="other">Scade tra %1$d settimane</item>
+    </plurals>
+    <plurals name="rental_medium_days_remaining">
+        <item quantity="one">Scade tra 1 giorno</item>
+        <item quantity="other">Scade tra %1$d giorni</item>
+    </plurals>
+    <plurals name="rental_medium_hours_remaining">
+        <item quantity="one">Scade tra 1 ora</item>
+        <item quantity="other">Scade tra %1$d ore</item>
+    </plurals>
+    <plurals name="rental_medium_weeks_remaining">
+        <item quantity="one">Scade tra 1 settimana</item>
+        <item quantity="other">Scade tra %1$d settimane</item>
+    </plurals>
+    <plurals name="selected_video_count">
+        <item quantity="one">1 video selezionato</item>
+        <item quantity="other">%1$d video selezionati</item>
+    </plurals>
+    <plurals name="shorts_a11y_duration_seconds">
+        <item quantity="one">%1$s secondo</item>
+        <item quantity="other">%1$s secondi</item>
+    </plurals>
+    <plurals name="shorts_a11y_record_tooltip_xs">
+        <item quantity="one">Registra fino a 1 secondo.</item>
+        <item quantity="other">Registra fino a %1$d secondi.</item>
+    </plurals>
+    <plurals name="shorts_a11y_record_xs_toggle_ys">
+        <item quantity="one">Registra fino a %1$d secondo. Tocca per registrare fino a %2$d secondi.</item>
+        <item quantity="other">Registra fino a %1$d secondi. Tocca per registrare fino a %2$d secondi.</item>
+    </plurals>
+    <plurals name="shorts_a11y_timer_duration_seconds">
+        <item quantity="one">Timer da %1$d secondo</item>
+        <item quantity="other">Timer da %1$d secondi</item>
+    </plurals>
+    <plurals name="shorts_a11y_timer_started">
+        <item quantity="one">Timer di %1$d secondo attivato</item>
+        <item quantity="other">Timer di %1$d secondi attivato</item>
+    </plurals>
+    <plurals name="smart_downloads_future_update_text">
+        <item quantity="one">I download programmati si aggiorneranno automaticamente tra 1 giorno</item>
+        <item quantity="other">I download programmati si aggiorneranno automaticamente tra %1$d giorni</item>
+    </plurals>
+    <plurals name="smart_downloads_last_updated_text">
+        <item quantity="one">Ultimo aggiornamento: 1 giorno fa</item>
+        <item quantity="other">Ultimo aggiornamento: %1$d giorni fa</item>
+    </plurals>
+    <plurals name="sticker_dialog_title">
+        <item quantity="one">Torna tra 1 giorno</item>
+        <item quantity="other">Torna tra %1$d giorni</item>
+    </plurals>
+    <plurals name="too_many_external_uploads_error_msg">
+        <item quantity="one">Puoi caricare solo %1$d video alla volta.</item>
+        <item quantity="other">Puoi caricare solo %1$d video alla volta.</item>
+    </plurals>
+    <plurals name="transcoding_progress">
+        <item quantity="one">Preparazione: %1$,d%%</item>
+        <item quantity="other">Preparazione: %1$,d%%</item>
+    </plurals>
+    <plurals name="upload_hours_remaing">
+        <item quantity="one">Circa %1$,d ora rimanente</item>
+        <item quantity="other">Circa %1$,d ore rimanenti</item>
+    </plurals>
+    <plurals name="upload_indicator_all_completed">
+        <item quantity="one">Video caricato</item>
+        <item quantity="other">%d video caricati</item>
+    </plurals>
+    <plurals name="upload_indicator_all_failed">
+        <item quantity="one">Impossibile caricare il tuo video</item>
+        <item quantity="other">Impossibile caricare i tuoi video</item>
+    </plurals>
+    <plurals name="upload_indicator_all_uploading">
+        <item quantity="one">Caricamento di un video</item>
+        <item quantity="other">Caricamento di %d video</item>
+    </plurals>
+    <plurals name="upload_indicator_partial_fail">
+        <item quantity="one">Impossibile caricare %1$d di %2$d video</item>
+        <item quantity="other">Impossibile caricare %1$d di %2$d video</item>
+    </plurals>
+    <plurals name="upload_indicator_uploading_and_completed_completed_part">
+        <item quantity="one">%d caricato</item>
+        <item quantity="other">%d caricati</item>
+    </plurals>
+    <plurals name="upload_indicator_uploading_and_completed_uploading_part">
+        <item quantity="one">%d ancora in caricamento</item>
+        <item quantity="other">%d ancora in caricamento</item>
+    </plurals>
+    <plurals name="upload_minutes_remaing">
+        <item quantity="one">Circa %1$,d minuto rimanente</item>
+        <item quantity="other">Circa %1$,d minuti rimanenti</item>
+    </plurals>
+    <plurals name="upload_notification_active_progress">
+        <item quantity="one">Caricamento di 1 video</item>
+        <item quantity="other">Caricamento di %1$d su %2$d video</item>
+    </plurals>
+    <plurals name="upload_progress">
+        <item quantity="one">%1$,d%% caricato</item>
+        <item quantity="other">%1$,d%% caricato</item>
+    </plurals>
+    <plurals name="upload_seconds_remaing">
+        <item quantity="one">Circa %1$,d secondo rimanente</item>
+        <item quantity="other">Circa %1$,d secondi rimanenti</item>
+    </plurals>
+    <plurals name="uploads_failed">
+        <item quantity="one">Caricamento non riuscito</item>
+        <item quantity="other">%1$,d caricamenti non riusciti</item>
+    </plurals>
+    <plurals name="uploads_failed_with_in_progress_videos">
+        <item quantity="one">%1$,d/%2$,d caricamenti non riuscito</item>
+        <item quantity="other">%1$,d/%2$,d caricamenti non riusciti</item>
+    </plurals>
+    <plurals name="uploads_in_progress">
+        <item quantity="one">%1$,d in caricamento</item>
+        <item quantity="other">%1$,d in caricamento</item>
+    </plurals>
+    <plurals name="user_education_quick_seek">
+        <item quantity="one">Tocca due volte a sinistra o a destra per andare indietro o avanti di %d secondo</item>
+        <item quantity="other">Tocca due volte a sinistra o a destra per andare indietro o avanti di %d secondi</item>
+    </plurals>
+    <plurals name="video_count">
+        <item quantity="one">1 video</item>
+        <item quantity="other">%1$d video</item>
+    </plurals>
+</resources>

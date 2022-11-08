@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_dislike_video_plural">
+        <item quantity="one">ডিছলাইক বুটাম, অন্য %1$d জনে এই ভিডিঅ’টো ডিছলাইক কৰিছে</item>
+        <item quantity="other">ডিছলাইক বুটাম, অন্য %1$d জনে এই ভিডিঅ’টো ডিছলাইক কৰিছে</item>
+    </plurals>
+    <plurals name="accessibility_dtts_fast_forward">
+        <item quantity="one">%1$dছেকেণ্ড ফাষ্ট ফৰৱাৰ্ড কৰক</item>
+        <item quantity="other">%1$dছেকেণ্ড ফাষ্ট ফৰৱাৰ্ড কৰক</item>
+    </plurals>
+    <plurals name="accessibility_dtts_rewind">
+        <item quantity="one">%1$dছেকেণ্ড ৰিৱাইণ্ড কৰক</item>
+        <item quantity="other">%1$dছেকেণ্ড ৰিৱাইণ্ড কৰক</item>
+    </plurals>
+    <plurals name="accessibility_duration_description_hours">
+        <item quantity="one">%dঘণ্টা</item>
+        <item quantity="other">%dঘণ্টা</item>
+    </plurals>
+    <plurals name="accessibility_duration_description_minutes">
+        <item quantity="one">%dমিনিট</item>
+        <item quantity="other">%dমিনিট</item>
+    </plurals>
+    <plurals name="accessibility_duration_description_seconds">
+        <item quantity="one">%dছেকেণ্ড</item>
+        <item quantity="other">%dছেকেণ্ড</item>
+    </plurals>
+    <plurals name="accessibility_like_video_plural">
+        <item quantity="one">লাইক কৰা বুটাম, অন্য %1$d জনে এই ভিডিঅ’টো লাইক কৰিছে</item>
+        <item quantity="other">লাইক কৰা বুটাম, অন্য %1$d জনে এই ভিডিঅ’টো লাইক কৰিছে</item>
+    </plurals>
+    <plurals name="accessibility_seconds_to_skip_ad">
+        <item quantity="one">%1$d ছেকেণ্ডৰ পাছত বিজ্ঞাপনটো এৰি যাব পাৰিব</item>
+        <item quantity="other">%1$d ছেকেণ্ডৰ পাছত বিজ্ঞাপনটো এৰি যাব পাৰিব</item>
+    </plurals>
+    <plurals name="accessibility_skip_ad_in">
+        <item quantity="one">%1$d মিনিটত বিজ্ঞাপন এৰি যাওক</item>
+        <item quantity="other">%1$d মিনিটত বিজ্ঞাপন এৰি যাওক</item>
+    </plurals>
+    <plurals name="accessibility_undo_dislike_video_plural">
+        <item quantity="one">ডিছলাইক আনডু কৰা বুটাম, অন্য %1$d জনে এই ভিডিঅ’টো ডিছলাইক কৰিছে</item>
+        <item quantity="other">ডিছলাইক আনডু কৰা বুটাম, অন্য %1$d জনে এই ভিডিঅ’টো ডিছলাইক কৰিছে</item>
+    </plurals>
+    <plurals name="accessibility_undo_like_video_plural">
+        <item quantity="one">লাইক আনডু কৰা বুটাম, অন্য %1$d জনে এই ভিডিঅ’টো লাইক কৰিছে</item>
+        <item quantity="other">লাইক আনডু কৰা বুটাম, অন্য %1$d জনে এই ভিডিঅ’টো লাইক কৰিছে</item>
+    </plurals>
+    <plurals name="download_new_videos_button_text">
+        <item quantity="one">Download %1$d new videos</item>
+        <item quantity="other">Download %1$d new videos</item>
+    </plurals>
+    <plurals name="download_playlist_unplayable_future_days_plural">
+        <item quantity="one">কিছুমান ভিডিঅ’ৰ বাবে %1$d দিনত Premiumৰ আৱশ্যক হ’ব</item>
+        <item quantity="other">কিছুমান ভিডিঅ’ৰ বাবে %1$d দিনত Premiumৰ আৱশ্যক হ’ব</item>
+    </plurals>
+    <plurals name="download_playlist_unplayable_future_hours_plural">
+        <item quantity="one">কিছুমান ভিডিঅ’ৰ বাবে %1$d ঘণ্টাত Premiumৰ আৱশ্যক হ’ব</item>
+        <item quantity="other">কিছুমান ভিডিঅ’ৰ বাবে %1$d ঘণ্টাত Premiumৰ আৱশ্যক হ’ব</item>
+    </plurals>
+    <plurals name="download_playlist_unplayable_future_minutes_plural">
+        <item quantity="one">কিছুমান ভিডিঅ’ৰ বাবে %1$d মিনিটত Premiumৰ আৱশ্যক হ’ব</item>
+        <item quantity="other">কিছুমান ভিডিঅ’ৰ বাবে %1$d মিনিটত Premiumৰ আৱশ্যক হ’ব</item>
+    </plurals>
+    <plurals name="download_video_unplayable_future_days_plural">
+        <item quantity="one">%1$d দিনত Premiumৰ আৱশ্যক হ’ব</item>
+        <item quantity="other">%1$d দিনত Premiumৰ আৱশ্যক হ’ব</item>
+    </plurals>
+    <plurals name="download_video_unplayable_future_hours_plural">
+        <item quantity="one">%1$d ঘণ্টাত Premiumৰ আৱশ্যক হ’ব</item>
+        <item quantity="other">%1$d ঘণ্টাত Premiumৰ আৱশ্যক হ’ব</item>
+    </plurals>
+    <plurals name="download_video_unplayable_future_minutes_plural">
+        <item quantity="one">%1$d মিনিটত Premiumৰ আৱশ্যক হ’ব</item>
+        <item quantity="other">%1$d মিনিটত Premiumৰ আৱশ্যক হ’ব</item>
+    </plurals>
+    <plurals name="frequency_hours_component">
+        <item quantity="one">%1$d ঘণ্টা</item>
+        <item quantity="other">%1$d ঘণ্টা</item>
+    </plurals>
+    <plurals name="frequency_hours_only">
+        <item quantity="one">প্ৰত্যেক %1$d ঘণ্টাত</item>
+        <item quantity="other">প্ৰত্যেক %1$d ঘণ্টাত</item>
+    </plurals>
+    <plurals name="frequency_minutes_component">
+        <item quantity="one">%1$d মিনিট</item>
+        <item quantity="other">%1$d মিনিট</item>
+    </plurals>
+    <plurals name="frequency_minutes_only">
+        <item quantity="one">প্ৰত্যেক %1$d মিনিটত</item>
+        <item quantity="other">প্ৰত্যেক %1$d মিনিটত</item>
+    </plurals>
+    <plurals name="image_picker_max_title">
+        <item quantity="one">%1$d খন বাছনি কৰা হৈছে (সৰ্বোচ্চ)</item>
+        <item quantity="other">%1$d খন বাছনি কৰা হৈছে (সৰ্বোচ্চ)</item>
+    </plurals>
+    <plurals name="image_picker_title">
+        <item quantity="one">%1$d খন বাছনি কৰা হৈছে</item>
+        <item quantity="other">%1$d খন বাছনি কৰা হৈছে</item>
+    </plurals>
+    <plurals name="invalid_uploads_error_msg">
+        <item quantity="one">এটা অথবা অধিক ভিডিঅ’ ফাইল উপলব্ধ নহয় অথবা মান্য নহয়। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক অথবা বেলেগ কেইটামান বাছনি কৰক।</item>
+        <item quantity="other">এটা অথবা অধিক ভিডিঅ’ ফাইল উপলব্ধ নহয় অথবা মান্য নহয়। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক অথবা বেলেগ কেইটামান বাছনি কৰক।</item>
+    </plurals>
+    <plurals name="last_update_in_days_message">
+        <item quantity="one">%1$d দিন আগতে আপডে’ট কৰা হৈছে</item>
+        <item quantity="other">%1$d দিন আগতে আপডে’ট কৰা হৈছে</item>
+    </plurals>
+    <plurals name="last_update_in_hours_message">
+        <item quantity="one">%1$d ঘণ্টা পূর্বে আপডে’ট কৰা হৈছে</item>
+        <item quantity="other">%1$d ঘণ্টা পূর্বে আপডে’ট কৰা হৈছে</item>
+    </plurals>
+    <plurals name="last_update_in_minutes_message">
+        <item quantity="one">%1$d মিনিট আগতে আপডে’ট কৰা হৈছে</item>
+        <item quantity="other">%1$d মিনিট আগতে আপডে’ট কৰা হৈছে</item>
+    </plurals>
+    <plurals name="last_update_in_weeks_message">
+        <item quantity="one">%1$d সপ্তাহ পূর্বে আপডে’ট কৰা হৈছে</item>
+        <item quantity="other">%1$d সপ্তাহ পূর্বে আপডে’ট কৰা হৈছে</item>
+    </plurals>
+    <plurals name="notification_playlist_progress_size">
+        <item quantity="one">%2$dটা ভিডিঅ’ৰ %1$dটা</item>
+        <item quantity="other">%2$dটা ভিডিঅ’ৰ %1$dটা</item>
+    </plurals>
+    <plurals name="offline_go_online_to_renew_dialog_message">
+        <item quantity="one">আপোনাৰ ডিভাইচত প্ৰতি %1$dদিনৰ মূৰে মূৰে এটা ইণ্টাৰনেট থকালৈকে ডাউনল’ডসমূহ উপলব্ধ হয়।এই প্ৰক্ৰিয়াটো স্বয়ংক্ৰিয়ভাৱে সম্পন্ন হয় আৰু ভিডিঅ’টো পুনৰ ডাউনল’ড নহয়।</item>
+        <item quantity="other">আপোনাৰ ডিভাইচত প্ৰতি %1$dদিনৰ মূৰে মূৰে এটা ইণ্টাৰনেট থকালৈকে ডাউনল’ডসমূহ উপলব্ধ হয়।এই প্ৰক্ৰিয়াটো স্বয়ংক্ৰিয়ভাৱে সম্পন্ন হয় আৰু ভিডিঅ’টো পুনৰ ডাউনল’ড নহয়।</item>
+    </plurals>
+    <plurals name="offline_go_online_to_renew_snackbar_message">
+        <item quantity="one">ইণ্টাৰনেট সংযোগ নাথাকিলে ডাউনল’ডসমূহ %1$d দিন উপলব্ধ থাকিব।</item>
+        <item quantity="other">ইণ্টাৰনেট সংযোগ নাথাকিলে ডাউনল’ডসমূহ %1$d দিন উপলব্ধ থাকিব।</item>
+    </plurals>
+    <plurals name="offline_remember_setting_for_days">
+        <item quantity="one">মোৰ ছেটিং %1$d দিনলৈ মনত ৰাখক</item>
+        <item quantity="other">মোৰ ছেটিং %1$d দিনলৈ মনত ৰাখক</item>
+    </plurals>
+    <plurals name="playlist_picker_dialog_done">
+        <item quantity="one">প্লে’লিষ্টসমূহ আপডে’ট কৰা হ’ল</item>
+        <item quantity="other">প্লে’লিষ্টসমূহ আপডে’ট কৰা হ’ল</item>
+    </plurals>
+    <plurals name="playlist_size">
+        <item quantity="one">%1$,dটা ভিডিঅ’</item>
+        <item quantity="other">%1$,dটা ভিডিঅ’</item>
+    </plurals>
+    <plurals name="playlist_size_downloaded">
+        <item quantity="one">%1$,d টা ডাউনল’ড কৰা হৈছে</item>
+        <item quantity="other">%1$,d টা ডাউনল’ড কৰা হৈছে</item>
+    </plurals>
+    <plurals name="playlist_size_total">
+        <item quantity="one">%1$,d টা ভিডিঅ’</item>
+        <item quantity="other">%1$,d টা ভিডিঅ’</item>
+    </plurals>
+    <plurals name="pref_offline_smart_download_storage_hours_of_videos">
+        <item quantity="one">(~%1$d ঘণ্টাৰ ভিডিঅ’)</item>
+        <item quantity="other">(~%1$d ঘণ্টাৰ ভিডিঅ’)</item>
+    </plurals>
+    <plurals name="pref_offline_smart_download_storage_minutes_of_videos">
+        <item quantity="one">(~%1$d মিনিটৰ ভিডিঅ’)</item>
+        <item quantity="other">(~%1$d মিনিটৰ ভিডিঅ’)</item>
+    </plurals>
+    <plurals name="public_notification_text">
+        <item quantity="one">%1$d টা নতুন জাননী</item>
+        <item quantity="other">%1$d টা নতুন জাননী</item>
+    </plurals>
+    <plurals name="quick_seek_x_second">
+        <item quantity="one">%d ছেকেণ্ড</item>
+        <item quantity="other">%d ছেকেণ্ড</item>
+    </plurals>
+    <plurals name="recommendation_count">
+        <item quantity="one">%1$dটা চুপাৰিছ</item>
+        <item quantity="other">%1$dটা চুপাৰিছ</item>
+    </plurals>
+    <plurals name="rental_expiry_notice">
+        <item quantity="one">আৰম্ভ হোৱাৰ পাছত, এই ভিডিঅ’টো চাবলৈ আপোনাৰ %1$d ঘণ্টা সময় থাকিব।</item>
+        <item quantity="other">আৰম্ভ হোৱাৰ পাছত, এই ভিডিঅ’টো চাবলৈ আপোনাৰ %1$d ঘণ্টা সময় থাকিব।</item>
+    </plurals>
+    <plurals name="rental_long_days_remaining">
+        <item quantity="one">%1$d দিনত ম্যাদ উকলিব</item>
+        <item quantity="other">%1$d দিনত ম্যাদ উকলিব</item>
+    </plurals>
+    <plurals name="rental_long_hours_remaining">
+        <item quantity="one">%1$d ঘণ্টাত ম্যাদ উকলিব</item>
+        <item quantity="other">%1$d ঘণ্টাত ম্যাদ উকলিব</item>
+    </plurals>
+    <plurals name="rental_long_weeks_remaining">
+        <item quantity="one">%1$d সপ্তাহত ম্যাদ উকলিব</item>
+        <item quantity="other">%1$d সপ্তাহত ম্যাদ উকলিব</item>
+    </plurals>
+    <plurals name="rental_medium_days_remaining">
+        <item quantity="one">%1$d দিনত ম্যাদ উকলিব</item>
+        <item quantity="other">%1$d দিনত ম্যাদ উকলিব</item>
+    </plurals>
+    <plurals name="rental_medium_hours_remaining">
+        <item quantity="one">%1$d ঘণ্টাত ম্যাদ উকলিব।</item>
+        <item quantity="other">%1$d ঘণ্টাত ম্যাদ উকলিব।</item>
+    </plurals>
+    <plurals name="rental_medium_weeks_remaining">
+        <item quantity="one">%1$d সপ্তাহত ম্যাদ উকলিব।</item>
+        <item quantity="other">%1$d সপ্তাহত ম্যাদ উকলিব।</item>
+    </plurals>
+    <plurals name="selected_video_count">
+        <item quantity="one">%1$dটা ভিডিঅ’ বাছনি কৰা হৈছে</item>
+        <item quantity="other">%1$dটা ভিডিঅ’ বাছনি কৰা হৈছে</item>
+    </plurals>
+    <plurals name="shorts_a11y_duration_seconds">
+        <item quantity="one">%1$s ছেকেণ্ড</item>
+        <item quantity="other">%1$s ছেকেণ্ড</item>
+    </plurals>
+    <plurals name="shorts_a11y_record_tooltip_xs">
+        <item quantity="one">%1$d ছেকেণ্ড পৰ্যন্ত ৰেকৰ্ড কৰক।</item>
+        <item quantity="other">%1$d ছেকেণ্ড পৰ্যন্ত ৰেকৰ্ড কৰক।</item>
+    </plurals>
+    <plurals name="shorts_a11y_record_xs_toggle_ys">
+        <item quantity="one">%1$d ছেকেণ্ড পৰ্যন্ত ৰেকৰ্ড কৰক। %2$d ছেকেণ্ড পৰ্যন্ত ৰেকৰ্ড কৰিবলৈ ট’গল কৰক।</item>
+        <item quantity="other">%1$d ছেকেণ্ড পৰ্যন্ত ৰেকৰ্ড কৰক। %2$d ছেকেণ্ড পৰ্যন্ত ৰেকৰ্ড কৰিবলৈ ট’গল কৰক।</item>
+    </plurals>
+    <plurals name="shorts_a11y_timer_duration_seconds">
+        <item quantity="one">%1$d ছেকেণ্ডৰ টাইমাৰ</item>
+        <item quantity="other">%1$d ছেকেণ্ডৰ টাইমাৰ</item>
+    </plurals>
+    <plurals name="shorts_a11y_timer_started">
+        <item quantity="one">%1$d ছেকেণ্ডৰ টাইমাৰ সক্ৰিয় কৰা হৈছে</item>
+        <item quantity="other">%1$d ছেকেণ্ডৰ টাইমাৰ সক্ৰিয় কৰা হৈছে</item>
+    </plurals>
+    <plurals name="smart_downloads_future_update_text">
+        <item quantity="one">স্মাৰ্ট ডাউনল’ডৰ সুবিধাটো %1$d দিনত স্বয়ংক্ৰিয়ভাৱে আপডে’ট হ’ব</item>
+        <item quantity="other">স্মাৰ্ট ডাউনল’ডৰ সুবিধাটো %1$d দিনত স্বয়ংক্ৰিয়ভাৱে আপডে’ট হ’ব</item>
+    </plurals>
+    <plurals name="smart_downloads_last_updated_text">
+        <item quantity="one">%1$d দিন পূৰ্বে আপডে’ট কৰা হৈছে</item>
+        <item quantity="other">%1$d দিন পূৰ্বে আপডে’ট কৰা হৈছে</item>
+    </plurals>
+    <plurals name="sticker_dialog_title">
+        <item quantity="one">%1$dদিন পাছত পুনৰ আহক</item>
+        <item quantity="other">%1$dদিন পাছত পুনৰ আহক</item>
+    </plurals>
+    <plurals name="too_many_external_uploads_error_msg">
+        <item quantity="one">আপুনি এবাৰত মাত্ৰ %1$dটা ভিডিঅ’ আপল’ড কৰিব পাৰিব পাৰে।</item>
+        <item quantity="other">আপুনি এবাৰত মাত্ৰ %1$dটা ভিডিঅ’ আপল’ড কৰিব পাৰিব পাৰে।</item>
+    </plurals>
+    <plurals name="transcoding_progress">
+        <item quantity="one">%1$,d%% তৈয়াৰ হৈ আছে</item>
+        <item quantity="other">%1$,d%% তৈয়াৰ হৈ আছে</item>
+    </plurals>
+    <plurals name="upload_hours_remaing">
+        <item quantity="one">প্ৰায় %1$,d ঘণ্টা বাকী আছে</item>
+        <item quantity="other">প্ৰায় %1$,d ঘণ্টা বাকী আছে</item>
+    </plurals>
+    <plurals name="upload_indicator_all_completed">
+        <item quantity="one">%d টা ভিডিঅ’ আপল’ড হ’ল</item>
+        <item quantity="other">%d টা ভিডিঅ’ আপল’ড হ’ল</item>
+    </plurals>
+    <plurals name="upload_indicator_all_failed">
+        <item quantity="one">আপোনাৰ ভিডিঅ’সমূহৰ এটাও আপল’ড কৰিব পৰা নগ’ল</item>
+        <item quantity="other">আপোনাৰ ভিডিঅ’সমূহৰ এটাও আপল’ড কৰিব পৰা নগ’ল</item>
+    </plurals>
+    <plurals name="upload_indicator_all_uploading">
+        <item quantity="one">%d টা ভিডিঅ’ আপল’ড হৈ আছে</item>
+        <item quantity="other">%d টা ভিডিঅ’ আপল’ড হৈ আছে</item>
+    </plurals>
+    <plurals name="upload_indicator_partial_fail">
+        <item quantity="one">%2$d টা ভিডিঅ’ৰ %1$d টা আপল’ড কৰিব পৰা নগ’ল</item>
+        <item quantity="other">%2$d টা ভিডিঅ’ৰ %1$d টা আপল’ড কৰিব পৰা নগ’ল</item>
+    </plurals>
+    <plurals name="upload_indicator_uploading_and_completed_completed_part">
+        <item quantity="one">%d টা আপল’ড হ’ল</item>
+        <item quantity="other">%d টা আপল’ড হ’ল</item>
+    </plurals>
+    <plurals name="upload_indicator_uploading_and_completed_uploading_part">
+        <item quantity="one">%d টা এতিয়াও আপল’ড হৈ আছে</item>
+        <item quantity="other">%d টা এতিয়াও আপল’ড হৈ আছে</item>
+    </plurals>
+    <plurals name="upload_minutes_remaing">
+        <item quantity="one">প্ৰায় %1$,d মিনিট বাকী আছে</item>
+        <item quantity="other">প্ৰায় %1$,d মিনিট বাকী আছে</item>
+    </plurals>
+    <plurals name="upload_notification_active_progress">
+        <item quantity="one">%2$dৰ ভিতৰত %1$dটা ভিডিঅ&apos; আপল&apos;ড কৰি থকা হৈছে</item>
+        <item quantity="other">%2$dৰ ভিতৰত %1$dটা ভিডিঅ&apos; আপল&apos;ড কৰি থকা হৈছে</item>
+    </plurals>
+    <plurals name="upload_progress">
+        <item quantity="one">%1$,d%% আপল’ড হ’ল</item>
+        <item quantity="other">%1$,d%% আপল’ড হ’ল</item>
+    </plurals>
+    <plurals name="upload_seconds_remaing">
+        <item quantity="one">প্ৰায় %1$,d ছেকেণ্ড বাকী আছে</item>
+        <item quantity="other">প্ৰায় %1$,d ছেকেণ্ড বাকী আছে</item>
+    </plurals>
+    <plurals name="uploads_failed">
+        <item quantity="one">%1$,d টা আপল’ড কৰিব পৰা নগ’ল</item>
+        <item quantity="other">%1$,d টা আপল’ড কৰিব পৰা নগ’ল</item>
+    </plurals>
+    <plurals name="uploads_failed_with_in_progress_videos">
+        <item quantity="one">%1$,d/%2$,d টা আপল’ড কৰিব পৰা নগ’ল</item>
+        <item quantity="other">%1$,d/%2$,d টা আপল’ড কৰিব পৰা নগ’ল</item>
+    </plurals>
+    <plurals name="uploads_in_progress">
+        <item quantity="one">%1$,d আপল’ড কৰি থকা হৈছে</item>
+        <item quantity="other">%1$,d আপল’ড কৰি থকা হৈছে</item>
+    </plurals>
+    <plurals name="user_education_quick_seek">
+        <item quantity="one">%d ছেকেণ্ড এৰি যাবলৈ বাওঁ বা সোঁফালে দুবাৰ টিপক</item>
+        <item quantity="other">%d ছেকেণ্ড এৰি যাবলৈ বাওঁ বা সোঁফালে দুবাৰ টিপক</item>
+    </plurals>
+    <plurals name="video_count">
+        <item quantity="one">%1$dটা ভিডিঅ’</item>
+        <item quantity="other">%1$dটা ভিডিঅ’</item>
+    </plurals>
+</resources>

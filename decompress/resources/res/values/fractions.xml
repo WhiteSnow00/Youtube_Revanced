@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="aspect_ratio_16_9">177.774%</fraction>
+    <fraction name="aspect_ratio_16_9_exact">177.9999%</fraction>
+    <fraction name="aspect_ratio_2_1">200%</fraction>
+    <fraction name="aspect_ratio_sparkles_text_home">190.9973%</fraction>
+    <fraction name="aspect_ratio_sparkles_text_home_square_form">100%</fraction>
+    <fraction name="aspect_ratio_square">100%</fraction>
+    <fraction name="av_dialog_height_ratio">95%</fraction>
+    <fraction name="carousel_default_aspect_ratio">177.9999%</fraction>
+    <fraction name="channel_layer_banner_aspect_ratio">364.9994%</fraction>
+    <fraction name="game_box_art_aspect_ratio">69%</fraction>
+    <fraction name="info_card_square_aspect_ratio">100%</fraction>
+    <fraction name="lc_aspect_ratio_16_9">177.9999%</fraction>
+    <fraction name="live_chat_aspect_ratio_16_9">177.9999%</fraction>
+    <fraction name="movie_poster_aspect_ratio">69%</fraction>
+    <fraction name="peeking_aspect_ratio">239.9994%</fraction>
+    <fraction name="playlist_panel_video_item_thumb_alpha">80%</fraction>
+    <fraction name="playlist_panel_video_item_thumb_selected_alpha">100%</fraction>
+    <fraction name="poster_aspect_ratio">67%</fraction>
+    <fraction name="promo_panel_avatar_end_offset_ratio">19%</fraction>
+    <fraction name="promo_panel_avatar_height_width_ratio">32%</fraction>
+    <fraction name="promo_panel_avatar_top_offset_ratio">12%</fraction>
+    <fraction name="reel_edit_fragment_max_video_height">109.9976%</fraction>
+    <fraction name="reel_portrait_item_width_to_screen_ratio">26%</fraction>
+    <fraction name="remote_watch_thumbnail_aspect_ratio">225%</fraction>
+    <fraction name="rich_list_header_game_box_art_aspect_ratio">72%</fraction>
+    <fraction name="rounded_aspect_ratio_16_9">179.9988%</fraction>
+    <fraction name="set_bar_video_item_thumb_alpha">80%</fraction>
+    <fraction name="set_bar_video_item_thumb_selected_alpha">100%</fraction>
+    <fraction name="shorts_trim_crop_container_ratio">68.75%</fraction>
+    <fraction name="square_aspect_ratio">100%</fraction>
+    <fraction name="thumbnail_aspect_ratio_16_9">177.7771%</fraction>
+    <fraction name="topic_channel_banner_aspect_ratio">331.9977%</fraction>
+    <fraction name="unlimited_header_aspect_ratio">83%</fraction>
+    <fraction name="upload_edit_video_fragment_max_video_height">50%</fraction>
+</resources>

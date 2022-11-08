@@ -1,0 +1,139 @@
+import java.util.Iterator;
+import android.util.Pair;
+import java.util.concurrent.Executor;
+import java.util.ArrayList;
+import org.chromium.base.task.PostTask;
+import J.N;
+import java.util.HashSet;
+import java.util.List;
+import java.util.LinkedList;
+import java.util.Set;
+import java.lang.ref.ReferenceQueue;
+
+// 
+// Decompiled by Procyon v0.6.0
+// 
+
+public final class aubf implements aubd
+{
+    public static final ReferenceQueue a;
+    private static final Set h;
+    public final aubg b;
+    public final String c;
+    public volatile long d;
+    protected final Runnable e;
+    public final Object f;
+    public LinkedList g;
+    private boolean i;
+    private List j;
+    
+    static {
+        a = new ReferenceQueue();
+        h = new HashSet();
+    }
+    
+    public aubf(final aubg aubg) {
+        this.e = (Runnable)new ascx(this, 16);
+        this.f = new Object();
+        this.b = aubg.c();
+        this.c = "TaskRunnerImpl.PreNativeTask.run";
+        c();
+    }
+    
+    private static void c() {
+        while (true) {
+            final aube aube = (aube)aubf.a.poll();
+            if (aube == null) {
+                break;
+            }
+            N.MERCiIV8(aube.a);
+            final Set h = aubf.h;
+            monitorenter(h);
+            try {
+                h.remove(aube);
+                monitorexit(h);
+            }
+            finally {
+                monitorexit(h);
+                while (true) {}
+            }
+        }
+    }
+    
+    public final void a(final Runnable runnable) {
+        if (this.d != 0L) {
+            N.MGnQU$47(this.d, runnable, 0L, runnable.getClass().getName());
+            return;
+        }
+        synchronized (this.f) {
+            Label_0110: {
+                if (this.i) {
+                    break Label_0110;
+                }
+                this.i = true;
+                Object a = PostTask.a;
+                synchronized (a) {
+                    final List b = PostTask.b;
+                    if (b == null) {
+                        monitorexit(a);
+                        this.b();
+                    }
+                    else {
+                        b.add(this);
+                        monitorexit(a);
+                        a = new LinkedList();
+                        this.g = (LinkedList)a;
+                        a = new ArrayList();
+                        this.j = (List)a;
+                    }
+                    if (this.d != 0L) {
+                        N.MGnQU$47(this.d, runnable, 0L, runnable.getClass().getName());
+                        return;
+                    }
+                    this.g.add(runnable);
+                    final Executor e = PostTask.e;
+                    PostTask.d.execute(this.e);
+                }
+            }
+        }
+    }
+    
+    public final void b() {
+        final aubg b = this.b;
+        final int f = b.f;
+        final boolean g = b.g;
+        final boolean h = b.h;
+        final byte i = b.i;
+        final byte[] j = b.j;
+        final long m5_IQXaH = N.M5_IQXaH(0, f, g, h, (byte)0, null);
+        Object o = this.f;
+        monitorenter(o);
+        try {
+            final LinkedList g2 = this.g;
+            if (g2 != null) {
+                for (final Runnable runnable : g2) {
+                    N.MGnQU$47(m5_IQXaH, runnable, 0L, runnable.getClass().getName());
+                }
+                this.g = null;
+            }
+            final List k = this.j;
+            if (k != null) {
+                for (final Pair pair : k) {
+                    N.MGnQU$47(m5_IQXaH, pair.first, (long)pair.second, pair.getClass().getName());
+                }
+                this.j = null;
+            }
+            this.d = m5_IQXaH;
+            monitorexit(o);
+            o = aubf.h;
+            synchronized (o) {
+                ((Set<aube>)o).add(new aube(this));
+                c();
+            }
+        }
+        finally {
+            monitorexit(o);
+            while (true) {}
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="carousel_default_aspect_ratio">233.9996%</fraction>
+    <fraction name="promo_panel_avatar_end_offset_ratio">19%</fraction>
+    <fraction name="promo_panel_avatar_height_width_ratio">32%</fraction>
+    <fraction name="promo_panel_avatar_top_offset_ratio">12%</fraction>
+    <fraction name="unlimited_header_aspect_ratio">232.9987%</fraction>
+</resources>

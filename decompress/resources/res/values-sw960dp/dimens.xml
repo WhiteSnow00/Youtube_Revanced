@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="grid_renderer_channel_avatar_size">48dp</dimen>
+    <dimen name="grid_renderer_details_size">16sp</dimen>
+    <dimen name="grid_renderer_title_layout_marginBottom">8dp</dimen>
+    <dimen name="grid_renderer_title_size">20sp</dimen>
+</resources>

@@ -1,0 +1,59 @@
+import com.google.protobuf.MessageLite;
+
+// 
+// Decompiled by Procyon v0.6.0
+// 
+
+public final class aprf extends agzi implements ahax
+{
+    public static final aprf a;
+    private static volatile ahbe c;
+    public String b;
+    private int d;
+    
+    static {
+        agzi.registerDefaultInstance((Class)aprf.class, (agzi)(a = new aprf()));
+    }
+    
+    private aprf() {
+        this.b = "";
+    }
+    
+    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
+        final agzh a = agzh.a;
+        switch (agzh.ordinal()) {
+            default: {
+                throw new UnsupportedOperationException();
+            }
+            case 6: {
+                final ahbe c;
+                if ((c = aprf.c) == null) {
+                    synchronized (aprf.class) {
+                        if (aprf.c == null) {
+                            aprf.c = (ahbe)new agzb((agzi)aprf.a);
+                        }
+                    }
+                }
+                return c;
+            }
+            case 5: {
+                return aprf.a;
+            }
+            case 4: {
+                return new agza((agzi)aprf.a);
+            }
+            case 3: {
+                return new aprf();
+            }
+            case 2: {
+                return newMessageInfo((MessageLite)aprf.a, "\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u1008\u0000", new Object[] { "d", "b" });
+            }
+            case 1: {
+                return null;
+            }
+            case 0: {
+                return 1;
+            }
+        }
+    }
+}

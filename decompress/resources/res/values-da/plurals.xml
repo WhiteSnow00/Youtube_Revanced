@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_dislike_video_plural">
+        <item quantity="one">Dislike-knap, %1$d anden kan ikke lide denne video</item>
+        <item quantity="other">Dislike-knap, %1$d andre kan ikke lide denne video</item>
+    </plurals>
+    <plurals name="accessibility_dtts_fast_forward">
+        <item quantity="one">Spol %1$d sekund frem</item>
+        <item quantity="other">Spol %1$d sekunder frem</item>
+    </plurals>
+    <plurals name="accessibility_dtts_rewind">
+        <item quantity="one">Spol %1$d sekund tilbage</item>
+        <item quantity="other">Spol %1$d sekunder tilbage</item>
+    </plurals>
+    <plurals name="accessibility_duration_description_hours">
+        <item quantity="one">%d time</item>
+        <item quantity="other">%d timer</item>
+    </plurals>
+    <plurals name="accessibility_duration_description_minutes">
+        <item quantity="one">%d minut</item>
+        <item quantity="other">%d minutter</item>
+    </plurals>
+    <plurals name="accessibility_duration_description_seconds">
+        <item quantity="one">%d sekund</item>
+        <item quantity="other">%d sekunder</item>
+    </plurals>
+    <plurals name="accessibility_like_video_plural">
+        <item quantity="one">Like-knap, %1$d anden kan lide denne video</item>
+        <item quantity="other">Like-knap, %1$d andre kan lide denne video</item>
+    </plurals>
+    <plurals name="accessibility_seconds_to_skip_ad">
+        <item quantity="one">Spring annoncen over om %1$d sekund</item>
+        <item quantity="other">Spring annoncen over om %1$d sekunder</item>
+    </plurals>
+    <plurals name="accessibility_skip_ad_in">
+        <item quantity="one">Spring annoncen over om %1$d sekund</item>
+        <item quantity="other">Spring annoncen over om %1$d sekunder</item>
+    </plurals>
+    <plurals name="accessibility_undo_dislike_video_plural">
+        <item quantity="one">Knap til at fortryde dislike, %1$d anden kan ikke lide denne video</item>
+        <item quantity="other">Knap til at fortryde dislike, %1$d andre kan ikke lide denne video</item>
+    </plurals>
+    <plurals name="accessibility_undo_like_video_plural">
+        <item quantity="one">Knap til at fortryde like, %1$d anden kan lide denne video</item>
+        <item quantity="other">Knap til at fortryde like, %1$d andre kan lide denne video</item>
+    </plurals>
+    <plurals name="download_new_videos_button_text">
+        <item quantity="one">Download %1$d ny video</item>
+        <item quantity="other">Download %1$d nye videoer</item>
+    </plurals>
+    <plurals name="download_playlist_unplayable_future_days_plural">
+        <item quantity="one">Nogle videoer kræver Premium om %1$d dag</item>
+        <item quantity="other">Nogle videoer kræver Premium om %1$d dage</item>
+    </plurals>
+    <plurals name="download_playlist_unplayable_future_hours_plural">
+        <item quantity="one">Nogle videoer kræver Premium om %1$d time</item>
+        <item quantity="other">Nogle videoer kræver Premium om %1$d timer</item>
+    </plurals>
+    <plurals name="download_playlist_unplayable_future_minutes_plural">
+        <item quantity="one">Nogle videoer kræver Premium om %1$d minut</item>
+        <item quantity="other">Nogle videoer kræver Premium om %1$d minutter</item>
+    </plurals>
+    <plurals name="download_video_unplayable_future_days_plural">
+        <item quantity="one">Kræver Premium om %1$d dag</item>
+        <item quantity="other">Kræver Premium om %1$d dage</item>
+    </plurals>
+    <plurals name="download_video_unplayable_future_hours_plural">
+        <item quantity="one">Kræver Premium om %1$d time</item>
+        <item quantity="other">Kræver Premium om %1$d timer</item>
+    </plurals>
+    <plurals name="download_video_unplayable_future_minutes_plural">
+        <item quantity="one">Kræver Premium om %1$d minut</item>
+        <item quantity="other">Kræver Premium om %1$d minutter</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="zero">0 minutter</item>
+        <item quantity="one">1 minut</item>
+        <item quantity="two">2 minutter</item>
+        <item quantity="few">%1$d minutter</item>
+        <item quantity="many">%1$d minutter</item>
+        <item quantity="other">%1$d minutter</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="zero">0 sekunder</item>
+        <item quantity="one">1 sekund</item>
+        <item quantity="two">2 sekunder</item>
+        <item quantity="few">%1$d sekunder</item>
+        <item quantity="many">%1$d sekunder</item>
+        <item quantity="other">%1$d sekunder</item>
+    </plurals>
+    <plurals name="frequency_hours_component">
+        <item quantity="one">%1$d time</item>
+        <item quantity="other">%1$d timer</item>
+    </plurals>
+    <plurals name="frequency_hours_only">
+        <item quantity="one">Hver %1$d. time</item>
+        <item quantity="other">Hver %1$d. time</item>
+    </plurals>
+    <plurals name="frequency_minutes_component">
+        <item quantity="one">%1$d minut</item>
+        <item quantity="other">%1$d minutter</item>
+    </plurals>
+    <plurals name="frequency_minutes_only">
+        <item quantity="one">Hvert %1$d. minut</item>
+        <item quantity="other">Hvert %1$d. minut</item>
+    </plurals>
+    <plurals name="image_picker_max_title">
+        <item quantity="one">%1$d selected (max)</item>
+        <item quantity="other">%1$d er valgt (maks.)</item>
+    </plurals>
+    <plurals name="image_picker_title">
+        <item quantity="one">%1$d selected</item>
+        <item quantity="other">%1$d er valgt</item>
+    </plurals>
+    <plurals name="invalid_uploads_error_msg">
+        <item quantity="one">En eller flere af videofilerne er enten ikke tilgængelige eller ugyldige. Prøv igen, eller vælg en anden fil.</item>
+        <item quantity="other">En eller flere af videofilerne er enten ikke tilgængelige eller ugyldige. Prøv igen, eller vælg nogle andre filer.</item>
+    </plurals>
+    <plurals name="last_update_in_days_message">
+        <item quantity="one">Opdateret for %1$d dag siden</item>
+        <item quantity="other">Opdateret for %1$d dage siden</item>
+    </plurals>
+    <plurals name="last_update_in_hours_message">
+        <item quantity="one">Opdateret for %1$d time siden</item>
+        <item quantity="other">Opdateret for %1$d timer siden</item>
+    </plurals>
+    <plurals name="last_update_in_minutes_message">
+        <item quantity="one">Opdateret for %1$d minut siden</item>
+        <item quantity="other">Opdateret for %1$d minutter siden</item>
+    </plurals>
+    <plurals name="last_update_in_weeks_message">
+        <item quantity="one">Opdateret for %1$d uge siden</item>
+        <item quantity="other">Opdateret for %1$d uger siden</item>
+    </plurals>
+    <plurals name="notification_playlist_progress_size">
+        <item quantity="one">%1$d af %2$d video</item>
+        <item quantity="other">%1$d af %2$d videoer</item>
+    </plurals>
+    <plurals name="offline_go_online_to_renew_dialog_message">
+        <item quantity="one">Downloads vil fortsat være tilgængelige, så længe din enhed har internetforbindelse hver %1$d. dag. Denne proces sker automatisk og downloader ikke videoen igen.</item>
+        <item quantity="other">Downloads vil fortsat være tilgængelige, så længe din enhed har internetforbindelse hver %1$d. dag. Denne proces sker automatisk og downloader ikke videoen igen.</item>
+    </plurals>
+    <plurals name="offline_go_online_to_renew_snackbar_message">
+        <item quantity="one">Downloads vil fortsat være tilgængelige i %1$d dag uden en internetforbindelse.</item>
+        <item quantity="other">Downloads vil fortsat være tilgængelige i %1$d dage uden en internetforbindelse.</item>
+    </plurals>
+    <plurals name="offline_remember_setting_for_days">
+        <item quantity="one">Husk mine indstillinger i %1$d dag</item>
+        <item quantity="other">Husk mine indstillinger i %1$d dage</item>
+    </plurals>
+    <plurals name="playlist_picker_dialog_done">
+        <item quantity="one">Playlisten er blevet opdateret</item>
+        <item quantity="other">Playlisterne er blevet opdateret</item>
+    </plurals>
+    <plurals name="playlist_size">
+        <item quantity="one">%1$,d video</item>
+        <item quantity="other">%1$,d videoer</item>
+    </plurals>
+    <plurals name="playlist_size_downloaded">
+        <item quantity="one">%1$,d downloaded</item>
+        <item quantity="other">%1$,d er downloadet</item>
+    </plurals>
+    <plurals name="playlist_size_total">
+        <item quantity="one">%1$,d video</item>
+        <item quantity="other">%1$,d videoer</item>
+    </plurals>
+    <plurals name="pref_offline_smart_download_storage_hours_of_videos">
+        <item quantity="one">(~%1$d times videoer)</item>
+        <item quantity="other">(~%1$d timers videoer)</item>
+    </plurals>
+    <plurals name="pref_offline_smart_download_storage_minutes_of_videos">
+        <item quantity="one">(~%1$d minuts videoer)</item>
+        <item quantity="other">(~%1$d minutters videoer)</item>
+    </plurals>
+    <plurals name="public_notification_text">
+        <item quantity="one">%1$d ny notifikation</item>
+        <item quantity="other">%1$d nye notifikationer</item>
+    </plurals>
+    <plurals name="quick_seek_x_second">
+        <item quantity="one">%d sekund</item>
+        <item quantity="other">%d sekunder</item>
+    </plurals>
+    <plurals name="recommendation_count">
+        <item quantity="one">%1$d anbefaling</item>
+        <item quantity="other">%1$d anbefalinger</item>
+    </plurals>
+    <plurals name="rental_expiry_notice">
+        <item quantity="one">Når du har startet den, kan du se denne video i %1$d time.</item>
+        <item quantity="other">Når du har startet den, kan du se denne video i %1$d timer.</item>
+    </plurals>
+    <plurals name="rental_long_days_remaining">
+        <item quantity="one">Udløber om %1$d dag</item>
+        <item quantity="other">Udløber om %1$d dage</item>
+    </plurals>
+    <plurals name="rental_long_hours_remaining">
+        <item quantity="one">Udløber om %1$d time</item>
+        <item quantity="other">Udløber om %1$d timer</item>
+    </plurals>
+    <plurals name="rental_long_weeks_remaining">
+        <item quantity="one">Udløber om %1$d uge</item>
+        <item quantity="other">Udløber om %1$d uger</item>
+    </plurals>
+    <plurals name="rental_medium_days_remaining">
+        <item quantity="one">Udløber om %1$d dag</item>
+        <item quantity="other">Udløber om %1$d dage</item>
+    </plurals>
+    <plurals name="rental_medium_hours_remaining">
+        <item quantity="one">Udløber om %1$d time</item>
+        <item quantity="other">Udløber om %1$d timer</item>
+    </plurals>
+    <plurals name="rental_medium_weeks_remaining">
+        <item quantity="one">Udløber om %1$d uge</item>
+        <item quantity="other">Udløber om %1$d uger</item>
+    </plurals>
+    <plurals name="selected_video_count">
+        <item quantity="one">%1$d video valgt</item>
+        <item quantity="other">%1$d videoer valgt</item>
+    </plurals>
+    <plurals name="shorts_a11y_duration_seconds">
+        <item quantity="one">%1$s sekund</item>
+        <item quantity="other">%1$s sekunder</item>
+    </plurals>
+    <plurals name="shorts_a11y_record_tooltip_xs">
+        <item quantity="one">Optag op til %1$d sekunder.</item>
+        <item quantity="other">Optag op til %1$d sekunder.</item>
+    </plurals>
+    <plurals name="shorts_a11y_record_xs_toggle_ys">
+        <item quantity="one">Optag op til %1$d sekund. Skift for at optage op til %2$d sekunder.</item>
+        <item quantity="other">Optag op til %1$d sekunder. Skift for at optage op til %2$d sekunder.</item>
+    </plurals>
+    <plurals name="shorts_a11y_timer_duration_seconds">
+        <item quantity="one">%1$d second timer</item>
+        <item quantity="other">Timer på %1$d sekunder</item>
+    </plurals>
+    <plurals name="shorts_a11y_timer_started">
+        <item quantity="one">%1$d second timer activated</item>
+        <item quantity="other">Timer på %1$d sekunder er aktiveret</item>
+    </plurals>
+    <plurals name="smart_downloads_future_update_text">
+        <item quantity="one">Smart-downloads bliver automatisk opdateret om %1$d dag</item>
+        <item quantity="other">Smart-downloads bliver automatisk opdateret om %1$d dage</item>
+    </plurals>
+    <plurals name="smart_downloads_last_updated_text">
+        <item quantity="one">Opdateret for %1$d dag siden</item>
+        <item quantity="other">Opdateret for %1$d dage siden</item>
+    </plurals>
+    <plurals name="sticker_dialog_title">
+        <item quantity="one">Kom tilbage om %1$d dag</item>
+        <item quantity="other">Kom tilbage om %1$d dage</item>
+    </plurals>
+    <plurals name="too_many_external_uploads_error_msg">
+        <item quantity="one">Du kan kun uploade %1$d video ad gangen.</item>
+        <item quantity="other">Du kan kun uploade %1$d videoer ad gangen.</item>
+    </plurals>
+    <plurals name="transcoding_progress">
+        <item quantity="one">Forbereder %1$,d %%</item>
+        <item quantity="other">Forbereder %1$,d %%</item>
+    </plurals>
+    <plurals name="upload_hours_remaing">
+        <item quantity="one">Der er ca. %1$,d time tilbage</item>
+        <item quantity="other">Der er ca. %1$,d timer tilbage</item>
+    </plurals>
+    <plurals name="upload_indicator_all_completed">
+        <item quantity="one">%d video er uploadet</item>
+        <item quantity="other">%d videoer er uploadet</item>
+    </plurals>
+    <plurals name="upload_indicator_all_failed">
+        <item quantity="one">Din video kunne ikke uploades</item>
+        <item quantity="other">Dine videoer kunne ikke uploades</item>
+    </plurals>
+    <plurals name="upload_indicator_all_uploading">
+        <item quantity="one">Uploader %d video</item>
+        <item quantity="other">Uploader %d videoer</item>
+    </plurals>
+    <plurals name="upload_indicator_partial_fail">
+        <item quantity="one">Couldn&apos;t upload %1$d of %2$d videos</item>
+        <item quantity="other">%1$d af %2$d videoer kunne ikke uploades</item>
+    </plurals>
+    <plurals name="upload_indicator_uploading_and_completed_completed_part">
+        <item quantity="one">%d uploaded</item>
+        <item quantity="other">%d er uploadet</item>
+    </plurals>
+    <plurals name="upload_indicator_uploading_and_completed_uploading_part">
+        <item quantity="one">%d still uploading</item>
+        <item quantity="other">%d uploader stadig</item>
+    </plurals>
+    <plurals name="upload_minutes_remaing">
+        <item quantity="one">Der er ca. %1$,d minut tilbage</item>
+        <item quantity="other">Der er ca. %1$,d minutter tilbage</item>
+    </plurals>
+    <plurals name="upload_notification_active_progress">
+        <item quantity="one">Uploader %1$d af %2$d video</item>
+        <item quantity="other">Uploader %1$d af %2$d videoer</item>
+    </plurals>
+    <plurals name="upload_progress">
+        <item quantity="one">%1$,d %% er uploadet</item>
+        <item quantity="other">%1$,d %% er uploadet</item>
+    </plurals>
+    <plurals name="upload_seconds_remaing">
+        <item quantity="one">Der er ca. %1$,d sekund tilbage</item>
+        <item quantity="other">Der er ca. %1$,d sekunder tilbage</item>
+    </plurals>
+    <plurals name="uploads_failed">
+        <item quantity="one">%1$,d upload mislykkedes</item>
+        <item quantity="other">%1$,d uploads mislykkedes</item>
+    </plurals>
+    <plurals name="uploads_failed_with_in_progress_videos">
+        <item quantity="one">%1$,d/%2$,d uploads failed</item>
+        <item quantity="other">%1$,d/%2$,d uploads mislykkedes</item>
+    </plurals>
+    <plurals name="uploads_in_progress">
+        <item quantity="one">%1$,d uploading</item>
+        <item quantity="other">%1$,d uploades</item>
+    </plurals>
+    <plurals name="user_education_quick_seek">
+        <item quantity="one">Tryk to gange til venstre eller højre for at springe %d sekund</item>
+        <item quantity="other">Tryk to gange til venstre eller højre for at springe %d sekunder</item>
+    </plurals>
+    <plurals name="video_count">
+        <item quantity="one">%1$d video</item>
+        <item quantity="other">%1$d videoer</item>
+    </plurals>
+</resources>
