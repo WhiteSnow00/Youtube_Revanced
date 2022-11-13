@@ -16,7 +16,6 @@ class NativeAssetDownloadCallback implements AssetDownloader$DownloadCallback
     
     private native void nativeFulfillAssetDownload(final long p0, final String p1, final String p2);
     
-    @Override
     public final void onCompletion(final String s, final String s2) {
         this.nativeFulfillAssetDownload(this.a, s, s2);
     }

@@ -6,40 +6,40 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatAction$AddLiveChatTextMessageFromTemplateAction extends agzi implements ahax
+public final class LiveChatAction$AddLiveChatTextMessageFromTemplateAction extends ahbh implements ahcw
 {
     public static final LiveChatAction$AddLiveChatTextMessageFromTemplateAction a;
-    public static final agzg addLiveChatTextMessageFromTemplateAction;
-    private static volatile ahbe e;
+    public static final ahbf addLiveChatTextMessageFromTemplateAction;
+    private static volatile ahdd e;
     public int b;
-    public alnb c;
-    public alnc d;
+    public alpe c;
+    public alpf d;
     private byte f;
     
     static {
         final LiveChatAction$AddLiveChatTextMessageFromTemplateAction a2 = new LiveChatAction$AddLiveChatTextMessageFromTemplateAction();
-        agzi.registerDefaultInstance((Class)LiveChatAction$AddLiveChatTextMessageFromTemplateAction.class, (agzi)(a = a2));
-        addLiveChatTextMessageFromTemplateAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 126084307, ahcm.k, (Class)LiveChatAction$AddLiveChatTextMessageFromTemplateAction.class);
+        ahbh.registerDefaultInstance((Class)LiveChatAction$AddLiveChatTextMessageFromTemplateAction.class, (ahbh)(a = a2));
+        addLiveChatTextMessageFromTemplateAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 126084307, ahek.k, (Class)LiveChatAction$AddLiveChatTextMessageFromTemplateAction.class);
     }
     
     private LiveChatAction$AddLiveChatTextMessageFromTemplateAction() {
         this.f = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = LiveChatAction$AddLiveChatTextMessageFromTemplateAction.e) == null) {
                     synchronized (LiveChatAction$AddLiveChatTextMessageFromTemplateAction.class) {
                         if (LiveChatAction$AddLiveChatTextMessageFromTemplateAction.e == null) {
-                            LiveChatAction$AddLiveChatTextMessageFromTemplateAction.e = (ahbe)new agzb((agzi)LiveChatAction$AddLiveChatTextMessageFromTemplateAction.a);
+                            LiveChatAction$AddLiveChatTextMessageFromTemplateAction.e = (ahdd)new ahba((ahbh)LiveChatAction$AddLiveChatTextMessageFromTemplateAction.a);
                         }
                     }
                 }
@@ -49,7 +49,7 @@ public final class LiveChatAction$AddLiveChatTextMessageFromTemplateAction exten
                 return LiveChatAction$AddLiveChatTextMessageFromTemplateAction.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatAction$AddLiveChatTextMessageFromTemplateAction.a);
+                return new ahaz((ahbh)LiveChatAction$AddLiveChatTextMessageFromTemplateAction.a);
             }
             case 3: {
                 return new LiveChatAction$AddLiveChatTextMessageFromTemplateAction();
@@ -59,9 +59,9 @@ public final class LiveChatAction$AddLiveChatTextMessageFromTemplateAction exten
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

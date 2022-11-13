@@ -19,7 +19,6 @@ final class b extends iw
         this.b = b;
     }
     
-    @Override
     public final void b(final RecyclerView recyclerView, int i) {
         if (i != 0) {
             this.b.set(true);

@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AdsInlineWebsiteRendererOuterClass
 {
-    public static final agzg adsInlineWebsiteRenderer;
+    public static final ahbf adsInlineWebsiteRenderer;
     
     static {
-        adsInlineWebsiteRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ahoy.a, (MessageLite)ahoy.a, (agzn)null, 349616608, ahcm.k, (Class)ahoy.class);
+        adsInlineWebsiteRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ahqw.a, (MessageLite)ahqw.a, (ahbm)null, 349616608, ahek.k, (Class)ahqw.class);
     }
     
     private AdsInlineWebsiteRendererOuterClass() {

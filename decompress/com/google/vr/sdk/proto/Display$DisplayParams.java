@@ -6,28 +6,44 @@ package com.google.vr.sdk.proto;
 
 import com.google.protobuf.MessageLite;
 
-public final class Display$DisplayParams extends agzi implements ahax
+public final class Display$DisplayParams extends ahbh implements ahcw
 {
     public static final int BOTTOM_BEZEL_HEIGHT_FIELD_NUMBER = 3;
     private static final Display$DisplayParams DEFAULT_INSTANCE;
     public static final int DEPRECATED_GYRO_BIAS_FIELD_NUMBER = 4;
-    private static volatile ahbe PARSER;
+    private static volatile ahdd PARSER;
     public static final int X_PPI_FIELD_NUMBER = 1;
     public static final int Y_PPI_FIELD_NUMBER = 2;
     private int bitField0_;
     private float bottomBezelHeight_;
     private int dEPRECATEDGyroBiasMemoizedSerializedSize;
-    private agzp dEPRECATEDGyroBias_;
+    private ahbo dEPRECATEDGyroBias_;
     private float xPpi_;
     private float yPpi_;
     
     static {
-        agzi.registerDefaultInstance(Display$DisplayParams.class, DEFAULT_INSTANCE = new Display$DisplayParams());
+        ahbh.registerDefaultInstance((Class)Display$DisplayParams.class, (ahbh)(DEFAULT_INSTANCE = new Display$DisplayParams()));
     }
     
     private Display$DisplayParams() {
         this.dEPRECATEDGyroBiasMemoizedSerializedSize = -1;
-        this.dEPRECATEDGyroBias_ = agzi.emptyFloatList();
+        this.dEPRECATEDGyroBias_ = emptyFloatList();
+    }
+    
+    static Display$DisplayParams access$000() {
+        return Display$DisplayParams.DEFAULT_INSTANCE;
+    }
+    
+    static void access$100(final Display$DisplayParams display$DisplayParams, final float xPpi) {
+        display$DisplayParams.setXPpi(xPpi);
+    }
+    
+    static void access$300(final Display$DisplayParams display$DisplayParams, final float yPpi) {
+        display$DisplayParams.setYPpi(yPpi);
+    }
+    
+    static void access$500(final Display$DisplayParams display$DisplayParams, final float bottomBezelHeight) {
+        display$DisplayParams.setBottomBezelHeight(bottomBezelHeight);
     }
     
     public static Display$DisplayParams$Builder newBuilder() {
@@ -49,19 +65,18 @@ public final class Display$DisplayParams extends agzi implements ahax
         this.yPpi_ = yPpi_;
     }
     
-    @Override
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe parser;
+                final ahdd parser;
                 if ((parser = Display$DisplayParams.PARSER) == null) {
                     synchronized (Display$DisplayParams.class) {
                         if (Display$DisplayParams.PARSER == null) {
-                            Display$DisplayParams.PARSER = (ahbe)new agzb((agzi)Display$DisplayParams.DEFAULT_INSTANCE);
+                            Display$DisplayParams.PARSER = (ahdd)new ahba((ahbh)Display$DisplayParams.DEFAULT_INSTANCE);
                         }
                     }
                 }
@@ -71,13 +86,13 @@ public final class Display$DisplayParams extends agzi implements ahax
                 return Display$DisplayParams.DEFAULT_INSTANCE;
             }
             case 4: {
-                return new Display$DisplayParams$Builder((Display$1)null);
+                return new Display$DisplayParams$Builder(null);
             }
             case 3: {
                 return new Display$DisplayParams();
             }
             case 2: {
-                return agzi.newMessageInfo((MessageLite)Display$DisplayParams.DEFAULT_INSTANCE, "\u0001\u0004\u0000\u0001\u0001\u0004\u0004\u0000\u0001\u0000\u0001\u1001\u0000\u0002\u1001\u0001\u0003\u1001\u0002\u0004$", new Object[] { "bitField0_", "xPpi_", "yPpi_", "bottomBezelHeight_", "dEPRECATEDGyroBias_" });
+                return newMessageInfo((MessageLite)Display$DisplayParams.DEFAULT_INSTANCE, "\u0001\u0004\u0000\u0001\u0001\u0004\u0004\u0000\u0001\u0000\u0001\u1001\u0000\u0002\u1001\u0001\u0003\u1001\u0002\u0004$", new Object[] { "bitField0_", "xPpi_", "yPpi_", "bottomBezelHeight_", "dEPRECATEDGyroBias_" });
             }
             case 1: {
                 return null;

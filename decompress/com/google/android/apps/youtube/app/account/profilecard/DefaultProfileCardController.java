@@ -8,20 +8,20 @@ import android.content.Context;
 import java.util.concurrent.Executor;
 import com.google.android.apps.youtube.app.common.dialog.DialogFragmentController;
 
-public class DefaultProfileCardController extends DialogFragmentController implements ete
+public class DefaultProfileCardController extends DialogFragmentController implements eth
 {
-    public final fyc a;
-    public final wwv b;
-    public final ohn c;
-    public final vax d;
+    public final fyk a;
+    public final wyw b;
+    public final oiu c;
+    public final vcy d;
     private final Executor f;
-    private final zki g;
-    private final zjy h;
+    private final zmf g;
+    private final zlv h;
     private final bu i;
-    private final vup j;
-    private final adcr k;
+    private final vwa j;
+    private final aeea k;
     
-    public DefaultProfileCardController(final bu i, final ohn c, final vax d, final vup j, final Executor f, final adcr k, final zki g, final fyc a, final wwv b, final zjy h, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4, final byte[] array5, final byte[] array6, final byte[] array7) {
+    public DefaultProfileCardController(final bu i, final oiu c, final vcy d, final vwa j, final Executor f, final aeea k, final zmf g, final fyk a, final wyw b, final zlv h, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4, final byte[] array5, final byte[] array6) {
         super(i, "DefaultProfileCardController");
         this.i = i;
         this.c = c;
@@ -35,30 +35,30 @@ public class DefaultProfileCardController extends DialogFragmentController imple
         this.h = h;
     }
     
-    public final void g(final String s, final String s2, final String s3, final byte[] array, final etf etf) {
-        final vup j = this.j;
-        final addp d = ((vky)agnj.J((Context)j.a, (Class)vky.class, ((zjy)j.b).a(this.g.c()))).D();
-        final vkx vkx = new vkx(this.k, ((eg)d.d).aq(), s, s2, s3, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null);
+    public final void g(final String s, final String s2, final String s3, final byte[] array, final eti eti) {
+        final vwa j = this.j;
+        final adfq d = ((vnd)aefb.O((Context)j.a, (Class)vnd.class, ((zlv)j.b).a(this.g.c()))).D();
+        final vnc vnc = new vnc(this.k, ((eg)d.d).ab(), s, s2, s3, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null);
         if (array != null && array.length > 0) {
-            ((vii)vkx).k(array);
+            ((vkk)vnc).k(array);
         }
         else {
-            ((vii)vkx).i();
+            ((vkk)vnc).i();
         }
-        if (etf != null) {
-            final eth ak = etf.aK();
-            tcp.k(d.w(vkx, this.f), this.f, (tcn)new etc(this, ak, 1), (tco)new erz(ak, 3));
+        if (eti != null) {
+            final etk ak = eti.aK();
+            teu.k(d.w(vnc, this.f), this.f, (tes)new etf(this, ak, 1), (tet)new esc(ak, 3));
             return;
         }
-        tcp.k(d.w(vkx, this.f), this.f, (tcn)new etc(this, s3, 0), (tco)new exa(this, s3, 1));
+        teu.k(d.w(vnc, this.f), this.f, (tes)new etf(this, s3, 0), (tet)new exe(this, s3, 1));
     }
     
-    public final void h(final String s, final String s2, final String s3, final boolean b, final aioe aioe) {
-        final byte[] i = aioe.c.I();
+    public final void h(final String s, final String s2, final String s3, final boolean b, final aiqj aiqj) {
+        final byte[] i = aiqj.c.I();
         if (!b) {
             this.g(s, s2, s3, i, null);
             return;
         }
-        tcp.n((aum)this.i, this.h.b(this.g.c()), (trb)etd.a, (trb)new slo(this, s, s2, s3, aioe, i, 1));
+        teu.n((aun)this.i, this.h.b(this.g.c()), (ttg)etg.a, (ttg)new snt(this, s, s2, s3, aiqj, i, 1));
     }
 }

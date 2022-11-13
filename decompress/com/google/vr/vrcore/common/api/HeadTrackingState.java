@@ -14,7 +14,7 @@ public class HeadTrackingState extends ParcelableProtoLite
     public static final Parcelable$Creator CREATOR;
     
     static {
-        CREATOR = (Parcelable$Creator)new arao(0);
+        CREATOR = (Parcelable$Creator)new ardl(1);
     }
     
     public HeadTrackingState() {
@@ -28,18 +28,22 @@ public class HeadTrackingState extends ParcelableProtoLite
         super(array);
     }
     
+    @Override
     protected final boolean d() {
         return true;
     }
     
+    @Override
     protected final boolean e() {
         return true;
     }
     
+    @Override
     public final boolean equals(final Object o) {
         return o == this || (o instanceof HeadTrackingState && Arrays.equals(((HeadTrackingState)o).a, super.a));
     }
     
+    @Override
     public final String toString() {
         final int a = this.a();
         final StringBuilder sb = new StringBuilder("HeadTrackingState[");

@@ -7,44 +7,44 @@ package com.google.android.apps.youtube.app.ui;
 import android.os.Bundle;
 import com.google.android.apps.youtube.app.common.dialog.DialogFragmentController;
 
-public class YpcOffersListDialogFragmentController extends DialogFragmentController implements hxb
+public class YpcOffersListDialogFragmentController extends DialogFragmentController implements hya
 {
-    private final abyw a;
-    private final zjy b;
-    private final zki c;
-    private final aeby d;
+    private final acay a;
+    private final zlv b;
+    private final zmf c;
+    private final aeea d;
     
-    public YpcOffersListDialogFragmentController(final bu bu, final aeby d, final zjy b, final zki c, final byte[] array, final byte[] array2, final byte[] array3) {
+    public YpcOffersListDialogFragmentController(final bu bu, final aeea d, final zlv b, final zmf c, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4) {
         super(bu, "YpcOffersListDialogFragment");
-        this.a = (abyw)new aagi(this, 1);
+        this.a = (acay)new aaib(this, 1);
         this.d = d;
         this.b = b;
         this.c = c;
     }
     
-    public final void a(final hxc hxc) {
-        if (aeda.v((Object)hxc, (Object)this.i())) {
-            this.d.am(this.a);
+    public final void a(final hyb hyb) {
+        if (adkp.ae((Object)hyb, (Object)this.i())) {
+            this.d.as(this.a);
             super.m();
         }
     }
     
-    public final void g(final aioe aioe) {
+    public final void g(final aiqj aiqj) {
         if (this.i() != null) {
             this.k();
         }
-        aioe.getClass();
-        final hxc hxc = new hxc();
+        aiqj.getClass();
+        final hyb hyb = new hyb();
         final Bundle bundle = new Bundle();
-        bundle.putByteArray("navigation_endpoint", ((agxl)aioe).toByteArray());
-        hxc.ag(bundle);
-        aenz.e((br)hxc, this.b.a(this.c.c()));
-        agot.D(true);
-        this.pL((bi)hxc);
+        bundle.putByteArray("navigation_endpoint", ((agzk)aiqj).toByteArray());
+        hyb.ag(bundle);
+        aepz.e((br)hyb, this.b.a(this.c.c()));
+        adkp.Q(true);
+        this.pQ((bi)hyb);
     }
     
     public final void n() {
-        this.d.aj(this.a);
+        this.d.ap(this.a);
         super.n();
     }
 }

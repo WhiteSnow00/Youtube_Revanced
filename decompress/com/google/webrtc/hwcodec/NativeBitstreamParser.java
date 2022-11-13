@@ -6,7 +6,7 @@ package com.google.webrtc.hwcodec;
 
 import java.nio.ByteBuffer;
 
-abstract class NativeBitstreamParser implements arcd
+abstract class NativeBitstreamParser implements arer
 {
     private final long a;
     private boolean b;

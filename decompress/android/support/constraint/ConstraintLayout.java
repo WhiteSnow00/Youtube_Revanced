@@ -174,7 +174,7 @@ public class ConstraintLayout extends ViewGroup
         }
     }
     
-    protected final void onMeasure(int n, int min) {
+    protected final void onMeasure(int n, int resolveSizeAndState) {
         final int paddingLeft = this.getPaddingLeft();
         final int paddingTop = this.getPaddingTop();
         final al b = this.b;
@@ -182,8 +182,8 @@ public class ConstraintLayout extends ViewGroup
         ((ak)b).x = paddingTop;
         final int mode = View$MeasureSpec.getMode(n);
         int size = View$MeasureSpec.getSize(n);
-        final int mode2 = View$MeasureSpec.getMode(min);
-        int size2 = View$MeasureSpec.getSize(min);
+        final int mode2 = View$MeasureSpec.getMode(resolveSizeAndState);
+        int size2 = View$MeasureSpec.getSize(resolveSizeAndState);
         final int paddingTop2 = this.getPaddingTop();
         final int paddingBottom = this.getPaddingBottom();
         final int paddingLeft2 = this.getPaddingLeft();
@@ -551,60 +551,61 @@ public class ConstraintLayout extends ViewGroup
                 final aa aa3 = (aa)child3.getLayoutParams();
                 final ak y2 = aa3.Y;
                 if (!aa3.Q) {
-                    int f2 = aa3.width;
-                    final int height = aa3.height;
-                    int g2 = 0;
-                    boolean b5 = false;
+                    int width = aa3.width;
+                    int height = aa3.height;
                     int n8 = 0;
-                    Label_2604: {
-                        Label_2487: {
+                    int n9 = 0;
+                    Label_2608: {
+                        Label_2483: {
                             if (!aa3.N && !aa3.O && aa3.E != 1 && aa3.width != -1) {
                                 if (!aa3.O) {
                                     if (aa3.F == 1) {
-                                        break Label_2487;
+                                        break Label_2483;
                                     }
                                     if (aa3.height == -1) {
-                                        break Label_2487;
+                                        break Label_2483;
                                     }
                                 }
-                                g2 = height;
-                                b5 = false;
                                 n8 = 0;
-                                break Label_2604;
+                                n9 = 0;
+                                break Label_2608;
                             }
                         }
-                        int n9;
                         int n10;
-                        if (f2 != 0 && f2 != -1) {
-                            n9 = getChildMeasureSpec(n, n6, f2);
-                            n10 = 0;
-                        }
-                        else {
-                            n9 = getChildMeasureSpec(n, n6, -2);
-                            n10 = 1;
-                        }
                         int n11;
-                        if (height != 0 && height != -1) {
-                            n11 = getChildMeasureSpec(min, n5, height);
-                            b5 = false;
+                        if (width != 0 && width != -1) {
+                            n10 = getChildMeasureSpec(n, n6, width);
+                            n11 = 0;
                         }
                         else {
-                            n11 = getChildMeasureSpec(min, n5, -2);
-                            b5 = true;
+                            n10 = getChildMeasureSpec(n, n6, -2);
+                            n11 = 1;
                         }
-                        child3.measure(n9, n11);
-                        f2 = child3.getMeasuredWidth();
+                        int n12;
+                        int n13;
+                        if (height != 0 && height != -1) {
+                            n12 = getChildMeasureSpec(resolveSizeAndState, n5, height);
+                            n13 = 0;
+                        }
+                        else {
+                            n12 = getChildMeasureSpec(resolveSizeAndState, n5, -2);
+                            n13 = 1;
+                        }
+                        child3.measure(n10, n12);
+                        final int measuredWidth = child3.getMeasuredWidth();
                         final int measuredHeight = child3.getMeasuredHeight();
-                        n8 = n10;
-                        g2 = measuredHeight;
+                        n9 = n11;
+                        width = measuredWidth;
+                        n8 = n13;
+                        height = measuredHeight;
                     }
-                    y2.p(f2);
-                    y2.j(g2);
+                    y2.p(width);
+                    y2.j(height);
+                    if (n9 != 0) {
+                        y2.F = width;
+                    }
                     if (n8 != 0) {
-                        y2.F = f2;
-                    }
-                    if (b5) {
-                        y2.G = g2;
+                        y2.G = height;
                     }
                     if (aa3.P) {
                         final int baseline = child3.getBaseline();
@@ -619,80 +620,80 @@ public class ConstraintLayout extends ViewGroup
             this.a();
         }
         final int size3 = this.d.size();
-        final int n12 = paddingTop + this.getPaddingBottom();
-        final int n13 = paddingLeft + this.getPaddingRight();
+        final int n14 = paddingTop + this.getPaddingBottom();
+        final int n15 = paddingLeft + this.getPaddingRight();
         int combineMeasuredStates;
         if (size3 > 0) {
-            final al b6 = this.b;
-            final int ad = ((ak)b6).ad;
-            final int ae = ((ak)b6).ae;
+            final al b5 = this.b;
+            final int ad = ((ak)b5).ad;
+            final int ae = ((ak)b5).ae;
             combineMeasuredStates = 0;
-            int n14 = 0;
-            int n15 = 0;
-            while (n14 < size3) {
-                final ak ak = this.d.get(n14);
+            int n16 = 0;
+            int n17 = 0;
+            while (n16 < size3) {
+                final ak ak = this.d.get(n16);
                 if (!(ak instanceof am)) {
                     final Object j3 = ak.J;
                     if (j3 != null) {
                         final View view2 = (View)j3;
                         if (view2.getVisibility() != 8) {
                             final aa aa4 = (aa)view2.getLayoutParams();
-                            int n16;
+                            int n18;
                             if (aa4.width == -2) {
-                                n16 = getChildMeasureSpec(n, n13, aa4.width);
+                                n18 = getChildMeasureSpec(n, n15, aa4.width);
                             }
                             else {
-                                n16 = View$MeasureSpec.makeMeasureSpec(ak.h(), 1073741824);
+                                n18 = View$MeasureSpec.makeMeasureSpec(ak.h(), 1073741824);
                             }
-                            int n17;
+                            int n19;
                             if (aa4.height == -2) {
-                                n17 = getChildMeasureSpec(min, n12, aa4.height);
+                                n19 = getChildMeasureSpec(resolveSizeAndState, n14, aa4.height);
                             }
                             else {
-                                n17 = View$MeasureSpec.makeMeasureSpec(ak.d(), 1073741824);
+                                n19 = View$MeasureSpec.makeMeasureSpec(ak.d(), 1073741824);
                             }
-                            view2.measure(n16, n17);
-                            final int measuredWidth = view2.getMeasuredWidth();
+                            view2.measure(n18, n19);
+                            final int measuredWidth2 = view2.getMeasuredWidth();
                             final int measuredHeight2 = view2.getMeasuredHeight();
-                            if (measuredWidth != ak.h()) {
-                                ak.p(measuredWidth);
+                            if (measuredWidth2 != ak.h()) {
+                                ak.p(measuredWidth2);
                                 if (ad == 2 && ak.g() > ((ak)this.b).h()) {
                                     ((ak)this.b).p(Math.max(this.e, ak.g() + ak.t(4).a()));
                                 }
-                                n15 = 1;
+                                n17 = 1;
                             }
-                            int n18;
+                            int n20;
                             if (measuredHeight2 != ak.d()) {
                                 ak.j(measuredHeight2);
                                 if (ae == 2 && ak.a() > ((ak)this.b).d()) {
                                     ((ak)this.b).j(Math.max(this.f, ak.a() + ak.t(5).a()));
                                 }
-                                n18 = 1;
+                                n20 = 1;
                             }
                             else {
-                                n18 = n15;
+                                n20 = n17;
                             }
                             if (aa4.P) {
                                 final int baseline2 = view2.getBaseline();
-                                n15 = n18;
+                                n17 = n20;
                                 if (baseline2 != -1) {
-                                    n15 = n18;
+                                    n17 = n20;
                                     if (baseline2 != ak.C) {
                                         ak.C = baseline2;
-                                        n15 = 1;
+                                        n17 = 1;
                                     }
                                 }
                             }
                             else {
-                                n15 = n18;
+                                n17 = n20;
                             }
                             combineMeasuredStates = combineMeasuredStates(combineMeasuredStates, view2.getMeasuredState());
                         }
                     }
                 }
-                ++n14;
+                ++n16;
             }
-            if (n15 != 0) {
+            if (n17 != 0) {
                 this.a();
             }
         }
@@ -701,22 +702,22 @@ public class ConstraintLayout extends ViewGroup
         }
         final int h3 = ((ak)this.b).h();
         final int d2 = ((ak)this.b).d();
-        n = resolveSizeAndState(h3 + n13, n, combineMeasuredStates);
-        final int resolveSizeAndState = resolveSizeAndState(d2 + n12, min, combineMeasuredStates << 16);
-        min = Math.min(this.g, n);
-        n = Math.min(this.h, resolveSizeAndState);
-        min &= 0xFFFFFF;
-        final int n19 = n & 0xFFFFFF;
-        final al b7 = this.b;
-        n = min;
-        if (b7.aj) {
-            n = (min | 0x1000000);
+        n = resolveSizeAndState(h3 + n15, n, combineMeasuredStates);
+        resolveSizeAndState = resolveSizeAndState(d2 + n14, resolveSizeAndState, combineMeasuredStates << 16);
+        n = Math.min(this.g, n);
+        final int min = Math.min(this.h, resolveSizeAndState);
+        resolveSizeAndState = (n & 0xFFFFFF);
+        final int n21 = min & 0xFFFFFF;
+        final al b6 = this.b;
+        n = resolveSizeAndState;
+        if (b6.aj) {
+            n = (resolveSizeAndState | 0x1000000);
         }
-        min = n19;
-        if (b7.ak) {
-            min = (n19 | 0x1000000);
+        resolveSizeAndState = n21;
+        if (b6.ak) {
+            resolveSizeAndState = (n21 | 0x1000000);
         }
-        this.setMeasuredDimension(n, min);
+        this.setMeasuredDimension(n, resolveSizeAndState);
     }
     
     public final void onViewAdded(final View view) {
@@ -724,7 +725,7 @@ public class ConstraintLayout extends ViewGroup
         final ak d = this.d(view);
         if (view instanceof Guideline && !(d instanceof am)) {
             final aa aa = (aa)view.getLayoutParams();
-            aa.Y = new am();
+            aa.Y = (ak)new am();
             aa.Q = true;
             ((am)aa.Y).A(aa.M);
             final ak y = aa.Y;

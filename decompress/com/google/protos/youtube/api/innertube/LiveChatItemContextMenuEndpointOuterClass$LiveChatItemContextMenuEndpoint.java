@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint extends agzi implements ahax
+public final class LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint extends ahbh implements ahcw
 {
     public static final LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg liveChatItemContextMenuEndpoint;
-    public agyc b;
+    private static volatile ahdd c;
+    public static final ahbf liveChatItemContextMenuEndpoint;
+    public ahab b;
     private int d;
     
     static {
         final LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint a2 = new LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint();
-        agzi.registerDefaultInstance((Class)LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint.class, (agzi)(a = a2));
-        liveChatItemContextMenuEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 122458429, ahcm.k, (Class)LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint.class);
+        ahbh.registerDefaultInstance((Class)LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint.class, (ahbh)(a = a2));
+        liveChatItemContextMenuEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 122458429, ahek.k, (Class)LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint.class);
     }
     
     private LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint() {
-        this.b = agyc.b;
+        this.b = ahab.b;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint.c) == null) {
                     synchronized (LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint.class) {
                         if (LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint.c == null) {
-                            LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint.c = (ahbe)new agzb((agzi)LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint.a);
+                            LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint.c = (ahdd)new ahba((ahbh)LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContext
                 return LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint.a);
+                return new ahaz((ahbh)LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint.a);
             }
             case 3: {
                 return new LiveChatItemContextMenuEndpointOuterClass$LiveChatItemContextMenuEndpoint();

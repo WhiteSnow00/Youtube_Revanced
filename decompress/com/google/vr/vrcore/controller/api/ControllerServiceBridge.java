@@ -4,7 +4,6 @@
 
 package com.google.vr.vrcore.controller.api;
 
-import com.google.vr.vrcore.base.api.ParcelableProtoLite;
 import android.os.IBinder;
 import android.content.ComponentName;
 import com.google.protobuf.MessageLite;
@@ -23,16 +22,17 @@ import android.content.ServiceConnection;
 
 public class ControllerServiceBridge implements ServiceConnection
 {
+    public static final int h = 0;
     private static final AtomicInteger i;
     public final Context a;
     public final Handler b;
     final String c;
     public final SparseArray d;
     public boolean e;
-    public araz f;
-    public aeru g;
+    public ardn f;
+    public aetv g;
     private final int j;
-    private final aray k;
+    private final ardm k;
     
     static {
         i = new AtomicInteger(-1);
@@ -44,11 +44,11 @@ public class ControllerServiceBridge implements ServiceConnection
         this.d = d;
         this.a = context.getApplicationContext();
         j = 0;
-        final aeru g = new aeru(controllerServiceBridge$Callbacks, controllerListenerOptions, 0);
+        final aetv g = new aetv(controllerServiceBridge$Callbacks, controllerListenerOptions, 0);
         this.g = g;
         d.put(g.a, (Object)g);
         this.b = new Handler(Looper.getMainLooper());
-        this.k = new aray(this, 2);
+        this.k = new ardm(this, 2);
         while (true) {
             try {
                 j = VrCoreUtils.getVrCoreClientApiVersion(context);
@@ -58,7 +58,7 @@ public class ControllerServiceBridge implements ServiceConnection
                 sb.append(j);
                 this.c = sb.toString();
             }
-            catch (final aran aran) {
+            catch (final ardc ardc) {
                 continue;
             }
             break;
@@ -72,18 +72,18 @@ public class ControllerServiceBridge implements ServiceConnection
         throw new IllegalStateException("This should be running on the main thread.");
     }
     
-    private final boolean e(final int n, final aeru aeru) {
+    private final boolean e(final int n, final aetv aetv) {
         try {
-            final araz f = this.f;
+            final ardn f = this.f;
             final String c = this.c;
-            final aray aray = new aray(aeru, 0, (byte[])null, (byte[])null);
-            final Parcel qq = ((eny)f).qQ();
-            qq.writeInt(n);
-            qq.writeString(c);
-            eoa.j(qq, (IInterface)aray);
-            final Parcel qr = ((eny)f).qR(5, qq);
-            final boolean k = eoa.k(qr);
-            qr.recycle();
+            final ardm ardm = new ardm(aetv, 0, (byte[])null, (byte[])null);
+            final Parcel qw = ((enz)f).qW();
+            qw.writeInt(n);
+            qw.writeString(c);
+            eob.j(qw, (IInterface)ardm);
+            final Parcel qx = ((enz)f).qX(5, qw);
+            final boolean k = eob.k(qx);
+            qx.recycle();
             if (k) {
                 return true;
             }
@@ -98,15 +98,15 @@ public class ControllerServiceBridge implements ServiceConnection
         d();
         if (this.e) {
             d();
-            final araz f = this.f;
+            final ardn f = this.f;
             if (f != null) {
                 try {
                     final String c = this.c;
-                    final Parcel qq = ((eny)f).qQ();
-                    qq.writeString(c);
-                    final Parcel qr = ((eny)f).qR(6, qq);
-                    eoa.k(qr);
-                    qr.recycle();
+                    final Parcel qw = ((enz)f).qW();
+                    qw.writeString(c);
+                    final Parcel qx = ((enz)f).qX(6, qw);
+                    eob.k(qx);
+                    qx.recycle();
                 }
                 catch (final RemoteException ex) {
                     Log.w("VrCtl.ServiceBridge", "RemoteException while unregistering listeners.", (Throwable)ex);
@@ -114,14 +114,14 @@ public class ControllerServiceBridge implements ServiceConnection
             }
             if (this.j >= 21) {
                 try {
-                    final araz f2 = this.f;
+                    final ardn f2 = this.f;
                     if (f2 != null) {
-                        final aray k = this.k;
-                        final Parcel qq2 = ((eny)f2).qQ();
-                        eoa.j(qq2, (IInterface)k);
-                        final Parcel qr2 = ((eny)f2).qR(9, qq2);
-                        final boolean i = eoa.k(qr2);
-                        qr2.recycle();
+                        final ardm k = this.k;
+                        final Parcel qw2 = ((enz)f2).qW();
+                        eob.j(qw2, (IInterface)k);
+                        final Parcel qx2 = ((enz)f2).qX(9, qw2);
+                        final boolean i = eob.k(qx2);
+                        qx2.recycle();
                         if (!i) {
                             Log.w("VrCtl.ServiceBridge", "Failed to unregister remote service listener.");
                         }
@@ -141,7 +141,7 @@ public class ControllerServiceBridge implements ServiceConnection
     
     public final void b() {
         ((ControllerServiceBridge$Callbacks)this.g.b).onServiceConnected(1);
-        final aeru g = this.g;
+        final aetv g = this.g;
         if (!this.e(g.a, g)) {
             Log.w("VrCtl.ServiceBridge", "Failed to register service listener.");
             ((ControllerServiceBridge$Callbacks)this.g.b).onServiceFailed();
@@ -149,19 +149,19 @@ public class ControllerServiceBridge implements ServiceConnection
             return;
         }
         final SparseArray d = this.d;
-        final aeru g2 = this.g;
+        final aetv g2 = this.g;
         d.put(g2.a, (Object)g2);
     }
     
     public final void c(final int n, final ControllerRequest controllerRequest) {
         d();
-        final araz f = this.f;
+        final ardn f = this.f;
         if (f != null) {
             try {
-                final Parcel qq = ((eny)f).qQ();
-                qq.writeInt(n);
-                eoa.h(qq, (Parcelable)controllerRequest);
-                ((eny)f).qS(11, qq);
+                final Parcel qw = ((enz)f).qW();
+                qw.writeInt(n);
+                eob.h(qw, (Parcelable)controllerRequest);
+                ((enz)f).qY(11, qw);
                 return;
             }
             catch (final RemoteException ex) {
@@ -173,35 +173,35 @@ public class ControllerServiceBridge implements ServiceConnection
     }
     
     public void controllerHapticsEffect(final int n, final int c, final int d) {
-        final agza builder = ((agzi)arbc.a).createBuilder();
-        final agza builder2 = ((agzi)arba.a).createBuilder();
+        final ahaz builder = ((ahbh)ardq.a).createBuilder();
+        final ahaz builder2 = ((ahbh)ardo.a).createBuilder();
         builder2.copyOnWrite();
-        final arba arba = (arba)builder2.instance;
-        arba.b |= 0x1;
-        arba.c = c;
+        final ardo ardo = (ardo)builder2.instance;
+        ardo.b |= 0x1;
+        ardo.c = c;
         builder2.copyOnWrite();
-        final arba arba2 = (arba)builder2.instance;
-        arba2.b |= 0x2;
-        arba2.d = d;
-        final arba d2 = (arba)builder2.build();
+        final ardo ardo2 = (ardo)builder2.instance;
+        ardo2.b |= 0x2;
+        ardo2.d = d;
+        final ardo d2 = (ardo)builder2.build();
         builder.copyOnWrite();
-        final arbc arbc = (arbc)builder.instance;
+        final ardq ardq = (ardq)builder.instance;
         d2.getClass();
-        arbc.d = d2;
-        arbc.b |= 0x2;
-        final arbc arbc2 = (arbc)builder.build();
+        ardq.d = d2;
+        ardq.b |= 0x2;
+        final ardq ardq2 = (ardq)builder.build();
         final ControllerRequest controllerRequest = new ControllerRequest();
-        ((ParcelableProtoLite)controllerRequest).c((MessageLite)arbc2);
-        this.b.post((Runnable)new wqx(this, n, controllerRequest, 12));
+        controllerRequest.c((MessageLite)ardq2);
+        this.b.post((Runnable)new wsx(this, n, controllerRequest, 12));
     }
     
     public boolean createAndConnectController(final int n, final ControllerServiceBridge$Callbacks controllerServiceBridge$Callbacks, int n2) {
         final ControllerListenerOptions controllerListenerOptions = new ControllerListenerOptions(n2);
         d();
-        final araz f = this.f;
+        final ardn f = this.f;
         boolean b = false;
         if (f != null) {
-            final aeru g = new aeru(controllerServiceBridge$Callbacks, controllerListenerOptions, n);
+            final aetv g = new aetv(controllerServiceBridge$Callbacks, controllerListenerOptions, n);
             if (this.e(g.a, g)) {
                 if (g.a == 0) {
                     this.g = g;
@@ -229,20 +229,20 @@ public class ControllerServiceBridge implements ServiceConnection
             }
             else {
                 final IInterface queryLocalInterface = binder.queryLocalInterface("com.google.vr.vrcore.controller.api.IControllerService");
-                if (queryLocalInterface instanceof araz) {
+                if (queryLocalInterface instanceof ardn) {
                     f = queryLocalInterface;
                 }
                 else {
-                    f = new araz(binder);
+                    f = new ardn(binder);
                 }
             }
-            this.f = (araz)f;
+            this.f = (ardn)f;
             try {
-                final Parcel qq = ((eny)f).qQ();
-                qq.writeInt(25);
-                final Parcel qr = ((eny)f).qR(1, qq);
-                final int int1 = qr.readInt();
-                qr.recycle();
+                final Parcel qw = ((enz)f).qW();
+                qw.writeInt(25);
+                final Parcel qx = ((enz)f).qX(1, qw);
+                final int int1 = qx.readInt();
+                qx.recycle();
                 if (int1 != 0) {
                     String string;
                     if (int1 != 0) {
@@ -276,13 +276,13 @@ public class ControllerServiceBridge implements ServiceConnection
                 }
                 if (this.j >= 21) {
                     try {
-                        final araz f2 = this.f;
-                        final aray k = this.k;
-                        final Parcel qq2 = ((eny)f2).qQ();
-                        eoa.j(qq2, (IInterface)k);
-                        final Parcel qr2 = ((eny)f2).qR(8, qq2);
-                        final boolean i = eoa.k(qr2);
-                        qr2.recycle();
+                        final ardn f2 = this.f;
+                        final ardm k = this.k;
+                        final Parcel qw2 = ((enz)f2).qW();
+                        eob.j(qw2, (IInterface)k);
+                        final Parcel qx2 = ((enz)f2).qX(8, qw2);
+                        final boolean i = eob.k(qx2);
+                        qx2.recycle();
                         if (!i) {
                             Log.e("VrCtl.ServiceBridge", "Failed to register remote service listener.");
                             ((ControllerServiceBridge$Callbacks)this.g.b).onServiceInitFailed(0);
@@ -311,37 +311,37 @@ public class ControllerServiceBridge implements ServiceConnection
     }
     
     public void requestBind() {
-        this.b.post((Runnable)new arax(this, 2));
+        this.b.post((Runnable)new arcu(this, 3));
     }
     
     public void requestUnbind() {
-        this.b.post((Runnable)new arax(this, 0));
+        this.b.post((Runnable)new arcu(this, 2));
     }
     
     public void vibrateController(final int n, final int c, final int d, final int e) {
-        final agza builder = ((agzi)arbc.a).createBuilder();
-        final agza builder2 = ((agzi)arbb.a).createBuilder();
+        final ahaz builder = ((ahbh)ardq.a).createBuilder();
+        final ahaz builder2 = ((ahbh)ardp.a).createBuilder();
         builder2.copyOnWrite();
-        final arbb arbb = (arbb)builder2.instance;
-        arbb.b |= 0x1;
-        arbb.c = c;
+        final ardp ardp = (ardp)builder2.instance;
+        ardp.b |= 0x1;
+        ardp.c = c;
         builder2.copyOnWrite();
-        final arbb arbb2 = (arbb)builder2.instance;
-        arbb2.b |= 0x2;
-        arbb2.d = d;
+        final ardp ardp2 = (ardp)builder2.instance;
+        ardp2.b |= 0x2;
+        ardp2.d = d;
         builder2.copyOnWrite();
-        final arbb arbb3 = (arbb)builder2.instance;
-        arbb3.b |= 0x4;
-        arbb3.e = e;
-        final arbb c2 = (arbb)builder2.build();
+        final ardp ardp3 = (ardp)builder2.instance;
+        ardp3.b |= 0x4;
+        ardp3.e = e;
+        final ardp c2 = (ardp)builder2.build();
         builder.copyOnWrite();
-        final arbc arbc = (arbc)builder.instance;
+        final ardq ardq = (ardq)builder.instance;
         c2.getClass();
-        arbc.c = c2;
-        arbc.b |= 0x1;
-        final arbc arbc2 = (arbc)builder.build();
+        ardq.c = c2;
+        ardq.b |= 0x1;
+        final ardq ardq2 = (ardq)builder.build();
         final ControllerRequest controllerRequest = new ControllerRequest();
-        ((ParcelableProtoLite)controllerRequest).c((MessageLite)arbc2);
-        this.b.post((Runnable)new wqx(this, n, controllerRequest, 11));
+        controllerRequest.c((MessageLite)ardq2);
+        this.b.post((Runnable)new wsx(this, n, controllerRequest, 11));
     }
 }

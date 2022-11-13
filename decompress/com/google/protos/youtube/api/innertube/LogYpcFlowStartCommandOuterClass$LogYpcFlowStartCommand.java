@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand extends agzi implements ahax
+public final class LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand extends ahbh implements ahcw
 {
     public static final LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand a;
-    private static volatile ahbe d;
-    public static final agzg logYpcFlowStartCommand;
+    private static volatile ahdd d;
+    public static final ahbf logYpcFlowStartCommand;
     public int b;
     public Object c;
     
     static {
         final LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand a2 = new LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand();
-        agzi.registerDefaultInstance((Class)LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand.class, (agzi)(a = a2));
-        logYpcFlowStartCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 191342865, ahcm.k, (Class)LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand.class);
+        ahbh.registerDefaultInstance((Class)LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand.class, (ahbh)(a = a2));
+        logYpcFlowStartCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 191342865, ahek.k, (Class)LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand.class);
     }
     
     private LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand() {
         this.b = 0;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand.d) == null) {
                     synchronized (LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand.class) {
                         if (LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand.d == null) {
-                            LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand.d = (ahbe)new agzb((agzi)LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand.a);
+                            LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand.d = (ahdd)new ahba((ahbh)LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand exten
                 return LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand.a;
             }
             case 4: {
-                return new agza((agzi)LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand.a);
+                return new ahaz((ahbh)LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand.a);
             }
             case 3: {
                 return new LogYpcFlowStartCommandOuterClass$LogYpcFlowStartCommand();

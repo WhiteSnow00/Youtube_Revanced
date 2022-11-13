@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AdEngagementPanelsRendererOuterClass
 {
-    public static final agzg adEngagementPanelsRenderer;
+    public static final ahbf adEngagementPanelsRenderer;
     
     static {
-        adEngagementPanelsRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ahjh.a, (MessageLite)ahjh.a, (agzn)null, 361256913, ahcm.k, (Class)ahjh.class);
+        adEngagementPanelsRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ahlf.a, (MessageLite)ahlf.a, (ahbm)null, 361256913, ahek.k, (Class)ahlf.class);
     }
     
     private AdEngagementPanelsRendererOuterClass() {

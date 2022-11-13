@@ -6,22 +6,22 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AccountUnlinkCommandOuterClass$AccountUnlinkCommand extends agzi implements ahax
+public final class AccountUnlinkCommandOuterClass$AccountUnlinkCommand extends ahbh implements ahcw
 {
     public static final AccountUnlinkCommandOuterClass$AccountUnlinkCommand a;
-    public static final agzg accountUnlinkCommand;
-    private static volatile ahbe f;
+    public static final ahbf accountUnlinkCommand;
+    private static volatile ahdd f;
     public int b;
-    public aioe c;
-    public aioe d;
+    public aiqj c;
+    public aiqj d;
     public String e;
-    private aioe g;
+    private aiqj g;
     private byte h;
     
     static {
         final AccountUnlinkCommandOuterClass$AccountUnlinkCommand a2 = new AccountUnlinkCommandOuterClass$AccountUnlinkCommand();
-        agzi.registerDefaultInstance((Class)AccountUnlinkCommandOuterClass$AccountUnlinkCommand.class, (agzi)(a = a2));
-        accountUnlinkCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 194259476, ahcm.k, (Class)AccountUnlinkCommandOuterClass$AccountUnlinkCommand.class);
+        ahbh.registerDefaultInstance((Class)AccountUnlinkCommandOuterClass$AccountUnlinkCommand.class, (ahbh)(a = a2));
+        accountUnlinkCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 194259476, ahek.k, (Class)AccountUnlinkCommandOuterClass$AccountUnlinkCommand.class);
     }
     
     private AccountUnlinkCommandOuterClass$AccountUnlinkCommand() {
@@ -29,20 +29,20 @@ public final class AccountUnlinkCommandOuterClass$AccountUnlinkCommand extends a
         this.e = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte h = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe f;
+                final ahdd f;
                 if ((f = AccountUnlinkCommandOuterClass$AccountUnlinkCommand.f) == null) {
                     synchronized (AccountUnlinkCommandOuterClass$AccountUnlinkCommand.class) {
                         if (AccountUnlinkCommandOuterClass$AccountUnlinkCommand.f == null) {
-                            AccountUnlinkCommandOuterClass$AccountUnlinkCommand.f = (ahbe)new agzb((agzi)AccountUnlinkCommandOuterClass$AccountUnlinkCommand.a);
+                            AccountUnlinkCommandOuterClass$AccountUnlinkCommand.f = (ahdd)new ahba((ahbh)AccountUnlinkCommandOuterClass$AccountUnlinkCommand.a);
                         }
                     }
                 }
@@ -52,7 +52,7 @@ public final class AccountUnlinkCommandOuterClass$AccountUnlinkCommand extends a
                 return AccountUnlinkCommandOuterClass$AccountUnlinkCommand.a;
             }
             case 4: {
-                return new agza((agzi)AccountUnlinkCommandOuterClass$AccountUnlinkCommand.a);
+                return new ahaz((ahbh)AccountUnlinkCommandOuterClass$AccountUnlinkCommand.a);
             }
             case 3: {
                 return new AccountUnlinkCommandOuterClass$AccountUnlinkCommand();
@@ -62,9 +62,9 @@ public final class AccountUnlinkCommandOuterClass$AccountUnlinkCommand extends a
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    h = 0;
                 }
-                this.h = (byte)(b ? 1 : 0);
+                this.h = h;
                 return null;
             }
             case 0: {

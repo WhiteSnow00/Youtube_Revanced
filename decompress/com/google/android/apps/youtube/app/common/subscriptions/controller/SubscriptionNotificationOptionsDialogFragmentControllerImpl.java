@@ -9,24 +9,24 @@ import com.google.android.apps.youtube.app.common.dialog.DialogFragmentControlle
 
 public class SubscriptionNotificationOptionsDialogFragmentControllerImpl extends DialogFragmentController
 {
-    private final zki a;
-    private final zjy b;
+    private final zmf a;
+    private final zlv b;
     
-    public SubscriptionNotificationOptionsDialogFragmentControllerImpl(final bu bu, final zki a, final zjy b) {
+    public SubscriptionNotificationOptionsDialogFragmentControllerImpl(final bu bu, final zmf a, final zlv b) {
         super(bu, "SubscriptionNotificationOptionsDialogFragmentController");
         this.a = a;
         this.b = b;
     }
     
-    public final void g(final aokx aokx) {
+    public final void g(final aona aona) {
         this.k();
         if (this.i() == null) {
-            final fwf fwf = new fwf();
+            final fwn fwn = new fwn();
             final Bundle bundle = new Bundle();
-            bundle.putByteArray("model", ((agxl)aokx).toByteArray());
-            fwf.ag(bundle);
-            aenz.e((br)fwf, this.b.a(this.a.c()));
-            this.pL((bi)fwf);
+            bundle.putByteArray("model", ((agzk)aona).toByteArray());
+            fwn.ag(bundle);
+            aepz.e((br)fwn, this.b.a(this.a.c()));
+            this.pQ((bi)fwn);
         }
         this.n();
     }

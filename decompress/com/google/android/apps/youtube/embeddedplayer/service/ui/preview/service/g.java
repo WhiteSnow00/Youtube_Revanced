@@ -121,7 +121,7 @@ public final class g implements Runnable
                     final long currentTimeMillis = System.currentTimeMillis();
                     final long i = mle.i;
                     if (i == 0L || currentTimeMillis - i >= n) {
-                        final ahaz builder = ((ahbh)afqx.a).createBuilder();
+                        final ahaz builder = afqx.a.createBuilder();
                         final String a3 = mle.a;
                         builder.copyOnWrite();
                         final afqx afqx = (afqx)builder.instance;
@@ -137,7 +137,7 @@ public final class g implements Runnable
                         final afqx c = (afqx)builder.build();
                         final ArrayList list = new ArrayList();
                         list.addAll(mle.g);
-                        final ahaz builder2 = ((ahbh)afqw.a).createBuilder();
+                        final ahaz builder2 = afqw.a.createBuilder();
                         builder2.copyOnWrite();
                         final afqw afqw = (afqw)builder2.instance;
                         final ahbp d2 = afqw.d;

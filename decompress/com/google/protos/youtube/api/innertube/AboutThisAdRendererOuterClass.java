@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AboutThisAdRendererOuterClass
 {
-    public static final agzg aboutThisAdRenderer;
+    public static final ahbf aboutThisAdRenderer;
     
     static {
-        aboutThisAdRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ahgh.a, (MessageLite)ahgh.a, (agzn)null, 343935806, ahcm.k, (Class)ahgh.class);
+        aboutThisAdRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ahif.a, (MessageLite)ahif.a, (ahbm)null, 343935806, ahek.k, (Class)ahif.class);
     }
     
     private AboutThisAdRendererOuterClass() {

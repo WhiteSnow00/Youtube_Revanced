@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ShowTooltipCommandOuterClass
 {
-    public static final agzg showTooltipCommand;
+    public static final ahbf showTooltipCommand;
     
     static {
-        showTooltipCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)aoex.a, (MessageLite)aoex.a, (agzn)null, 195335229, ahcm.k, (Class)aoex.class);
+        showTooltipCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)aoha.a, (MessageLite)aoha.a, (ahbm)null, 195335229, ahek.k, (Class)aoha.class);
     }
     
     private ShowTooltipCommandOuterClass() {

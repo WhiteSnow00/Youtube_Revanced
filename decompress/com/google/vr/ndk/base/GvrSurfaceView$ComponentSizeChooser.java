@@ -36,9 +36,9 @@ class GvrSurfaceView$ComponentSizeChooser extends GvrSurfaceView$BaseConfigChoos
         return 0;
     }
     
-    @Override
     public EGLConfig chooseConfig(final EGL10 egl10, final EGLDisplay eglDisplay, final EGLConfig[] array) {
-        for (final EGLConfig eglConfig : array) {
+        for (int i = 0; i < array.length; ++i) {
+            final EGLConfig eglConfig = array[i];
             final int configAttrib = this.findConfigAttrib(egl10, eglDisplay, eglConfig, 12325, 0);
             final int configAttrib2 = this.findConfigAttrib(egl10, eglDisplay, eglConfig, 12326, 0);
             if (configAttrib >= this.mDepthSize && configAttrib2 >= this.mStencilSize) {

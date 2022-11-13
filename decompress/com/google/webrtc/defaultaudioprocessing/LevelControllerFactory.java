@@ -9,7 +9,7 @@ public class LevelControllerFactory
     public long a;
     
     public LevelControllerFactory() {
-        agot.u(true);
+        adkp.H(true);
         this.a = nativeCreateLevelController(1.0f);
     }
     

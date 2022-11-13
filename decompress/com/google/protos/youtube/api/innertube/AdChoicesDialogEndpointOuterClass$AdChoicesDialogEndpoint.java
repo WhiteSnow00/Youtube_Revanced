@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint extends agzi implements ahax
+public final class AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint extends ahbh implements ahcw
 {
     public static final AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint a;
-    public static final agzg adChoicesDialogEndpoint;
-    private static volatile ahbe c;
-    public ahiy b;
+    public static final ahbf adChoicesDialogEndpoint;
+    private static volatile ahdd c;
+    public ahkw b;
     private int d;
     private byte e;
     
     static {
         final AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint a2 = new AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint();
-        agzi.registerDefaultInstance((Class)AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint.class, (agzi)(a = a2));
-        adChoicesDialogEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 83457823, ahcm.k, (Class)AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint.class);
+        ahbh.registerDefaultInstance((Class)AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint.class, (ahbh)(a = a2));
+        adChoicesDialogEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 83457823, ahek.k, (Class)AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint.class);
     }
     
     private AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint.c) == null) {
                     synchronized (AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint.class) {
                         if (AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint.c == null) {
-                            AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint.c = (ahbe)new agzb((agzi)AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint.a);
+                            AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint.c = (ahdd)new ahba((ahbh)AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint ext
                 return AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint.a);
+                return new ahaz((ahbh)AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint.a);
             }
             case 3: {
                 return new AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint();
@@ -58,9 +58,9 @@ public final class AdChoicesDialogEndpointOuterClass$AdChoicesDialogEndpoint ext
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

@@ -12,7 +12,7 @@ import java.util.List;
 
 public class Graph
 {
-    private static final afik a;
+    private static final afkk a;
     private long b;
     private final List c;
     private Map d;
@@ -23,7 +23,7 @@ public class Graph
     private final Object i;
     
     static {
-        a = afik.m("com/google/mediapipe/framework/Graph");
+        a = afkk.m("com/google/mediapipe/framework/Graph");
     }
     
     public Graph() {
@@ -112,10 +112,10 @@ public class Graph
         synchronized (this) {
             final long b = this.b;
             final boolean b2 = true;
-            agot.E(b != 0L, (Object)"Invalid context, tearDown() might have been called already.");
+            adkp.R(b != 0L, (Object)"Invalid context, tearDown() might have been called already.");
             s.getClass();
             packetCallback.getClass();
-            agot.D(!this.g && !this.f && b2);
+            adkp.Q(!this.g && !this.f && b2);
             this.c.add(packetCallback);
             this.nativeAddPacketCallback(this.b, s, packetCallback);
         }
@@ -124,7 +124,7 @@ public class Graph
     public final void c(final String s, Packet b, final long n) {
         monitorenter(this);
         try {
-            agot.E(this.b != 0L, (Object)"Invalid context, tearDown() might have been called.");
+            adkp.R(this.b != 0L, (Object)"Invalid context, tearDown() might have been called.");
             if (this.g) {
                 this.nativeAddPacketToInputStream(this.b, s, b.getNativeHandle(), n);
                 monitorexit(this);
@@ -138,12 +138,12 @@ public class Graph
             if (list.size() > 20) {
                 for (final Map.Entry<Object, V> entry : this.e.entrySet()) {
                     if (entry.getValue() == null) {
-                        ((afii)((afii)((afig)Graph.a).g()).j("com/google/mediapipe/framework/Graph", "addPacketToBuffer", 571, "Graph.java")).t("Stream: %s might be missing.", entry.getKey());
+                        ((afki)((afki)((afkg)Graph.a).g()).j("com/google/mediapipe/framework/Graph", "addPacketToBuffer", 571, "Graph.java")).t("Stream: %s might be missing.", entry.getKey());
                     }
                 }
                 throw new RuntimeException("Graph is not started because of missing streams");
             }
-            list.add(new ahbd(b, n));
+            list.add(new ahdc(b, Long.valueOf(n)));
             monitorexit(this);
         }
         finally {
@@ -154,14 +154,14 @@ public class Graph
     
     public final void d() {
         synchronized (this) {
-            agot.E(this.b != 0L, (Object)"Invalid context, tearDown() might have been called.");
+            adkp.R(this.b != 0L, (Object)"Invalid context, tearDown() might have been called.");
             this.nativeCloseAllInputStreams(this.b);
         }
     }
     
     public final void e(final byte[] array) {
         synchronized (this) {
-            agot.E(this.b != 0L, (Object)"Invalid context, tearDown() might have been called already.");
+            adkp.R(this.b != 0L, (Object)"Invalid context, tearDown() might have been called already.");
             this.nativeLoadBinaryGraphBytes(this.b, array);
         }
     }
@@ -171,8 +171,8 @@ public class Graph
         try {
             final long b = this.b;
             final boolean b2 = true;
-            agot.E(b != 0L, (Object)"Invalid context, tearDown() might have been called.");
-            agot.D(!this.g && !this.f && b2);
+            adkp.R(b != 0L, (Object)"Invalid context, tearDown() might have been called.");
+            adkp.Q(!this.g && !this.f && b2);
             for (final Map.Entry<String, V> entry : map.entrySet()) {
                 this.d.put(entry.getKey(), ((Packet)entry.getValue()).b());
             }
@@ -186,8 +186,8 @@ public class Graph
     
     public final void g(final long n) {
         synchronized (this) {
-            agot.E(this.b != 0L, (Object)"Invalid context, tearDown() might have been called already.");
-            agot.D(this.g ^ true);
+            adkp.R(this.b != 0L, (Object)"Invalid context, tearDown() might have been called already.");
+            adkp.Q(this.g ^ true);
             this.nativeSetParentGlContext(this.b, n);
         }
     }
@@ -195,12 +195,12 @@ public class Graph
     public final void h() {
         monitorenter(this);
         try {
-            agot.E(this.b != 0L, (Object)"Invalid context, tearDown() might have been called.");
+            adkp.R(this.b != 0L, (Object)"Invalid context, tearDown() might have been called.");
             this.f = true;
             final Iterator iterator = this.e.entrySet().iterator();
             while (iterator.hasNext()) {
                 if (((Map.Entry)iterator.next()).getValue() == null) {
-                    ((afii)((afii)((afig)Graph.a).f()).j("com/google/mediapipe/framework/Graph", "startRunningGraph", 326, "Graph.java")).r("MediaPipe graph won't start until all stream headers are available.");
+                    ((afki)((afki)((afkg)Graph.a).f()).j("com/google/mediapipe/framework/Graph", "startRunningGraph", 326, "Graph.java")).r("MediaPipe graph won't start until all stream headers are available.");
                     monitorexit(this);
                     return;
                 }
@@ -214,24 +214,24 @@ public class Graph
             this.nativeStartRunningGraph(this.b, array, array2, array3, array4);
             this.g = true;
             if (!this.h.isEmpty()) {
-            Label_0391:
+            Label_0405:
                 for (final Map.Entry<K, ArrayList> entry : this.h.entrySet()) {
                     final ArrayList list = entry.getValue();
                     final int size = list.size();
                     int i = 0;
                     while (i < size) {
-                        final ahbd ahbd = (ahbd)list.get(i);
+                        final ahdc ahdc = (ahdc)list.get(i);
                         try {
-                            this.nativeMovePacketToInputStream(this.b, (String)entry.getKey(), ((Packet)ahbd.a).getNativeHandle(), (long)ahbd.b);
-                            ((Packet)ahbd.a).release();
+                            this.nativeMovePacketToInputStream(this.b, (String)entry.getKey(), ((Packet)ahdc.a).getNativeHandle(), (long)ahdc.b);
+                            ((Packet)ahdc.a).release();
                             ++i;
                             continue;
                         }
                         catch (final MediaPipeException ex) {
-                            ((afii)((afii)((afig)Graph.a).g()).j("com/google/mediapipe/framework/Graph", "moveBufferedPacketsToInputStream", 590, "Graph.java")).x("AddPacket for stream: %s failed: %s.", (Object)entry.getKey(), (Object)ex.getMessage());
+                            ((afki)((afki)((afkg)Graph.a).g()).j("com/google/mediapipe/framework/Graph", "moveBufferedPacketsToInputStream", 590, "Graph.java")).x("AddPacket for stream: %s failed: %s.", (Object)entry.getKey(), (Object)ex.getMessage());
                             throw ex;
                         }
-                        break Label_0391;
+                        break Label_0405;
                     }
                 }
                 this.h.clear();
@@ -249,7 +249,7 @@ public class Graph
     public final void i() {
         monitorenter(this);
         try {
-            agot.E(this.b != 0L, (Object)"Invalid context, tearDown() might have been called already.");
+            adkp.R(this.b != 0L, (Object)"Invalid context, tearDown() might have been called already.");
             final Iterator iterator = this.d.entrySet().iterator();
             while (iterator.hasNext()) {
                 ((Map.Entry<K, Packet>)iterator.next()).getValue().release();
@@ -265,7 +265,7 @@ public class Graph
             while (iterator3.hasNext()) {
                 final ArrayList list = ((Map.Entry<K, ArrayList>)iterator3.next()).getValue();
                 for (int size = list.size(), i = 0; i < size; ++i) {
-                    ((Packet)((ahbd)list.get(i)).a).release();
+                    ((Packet)((ahdc)list.get(i)).a).release();
                 }
             }
             this.h.clear();
@@ -287,7 +287,7 @@ public class Graph
     
     public final void j() {
         synchronized (this) {
-            agot.E(this.b != 0L, (Object)"Invalid context, tearDown() might have been called.");
+            adkp.R(this.b != 0L, (Object)"Invalid context, tearDown() might have been called.");
             this.nativeWaitUntilGraphDone(this.b);
         }
     }
@@ -295,8 +295,8 @@ public class Graph
     @Deprecated
     public final void k(final long n) {
         synchronized (this) {
-            agot.E(this.b != 0L, (Object)"Invalid context, tearDown() might have been called already.");
-            agot.u(true);
+            adkp.R(this.b != 0L, (Object)"Invalid context, tearDown() might have been called already.");
+            adkp.H(true);
             this.g(n);
         }
     }

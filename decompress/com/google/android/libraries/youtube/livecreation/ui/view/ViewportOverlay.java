@@ -32,10 +32,10 @@ public class ViewportOverlay extends View
         this.b(context, set, n);
     }
     
-    private final void b(Context obtainStyledAttributes, final AttributeSet set, final int n) {
-        int color = agx.a(obtainStyledAttributes, 2131100968);
-        if (set != null) {
-            obtainStyledAttributes = (Context)obtainStyledAttributes.getTheme().obtainStyledAttributes(set, wol.d, n, 0);
+    private final void b(final Context context, AttributeSet obtainStyledAttributes, final int n) {
+        int color = agy.a(context, 2131100968);
+        if (obtainStyledAttributes != null) {
+            obtainStyledAttributes = (AttributeSet)context.getTheme().obtainStyledAttributes(obtainStyledAttributes, wql.d, n, 0);
             try {
                 color = ((TypedArray)obtainStyledAttributes).getColor(0, color);
             }

@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class InputGameTitleRendererOuterClass
 {
-    public static final agzg inputGameTitleRenderer;
+    public static final ahbf inputGameTitleRenderer;
     
     static {
-        inputGameTitleRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)aldn.a, (MessageLite)aldn.a, (agzn)null, 219522706, ahcm.k, (Class)aldn.class);
+        inputGameTitleRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)alfq.a, (MessageLite)alfq.a, (ahbm)null, 219522706, ahek.k, (Class)alfq.class);
     }
     
     private InputGameTitleRendererOuterClass() {

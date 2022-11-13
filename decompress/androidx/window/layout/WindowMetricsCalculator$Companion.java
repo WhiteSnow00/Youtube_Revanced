@@ -23,7 +23,7 @@ public final class WindowMetricsCalculator$Companion
     
     public final void overrideDecorator(final WindowMetricsCalculatorDecorator windowMetricsCalculatorDecorator) {
         windowMetricsCalculatorDecorator.getClass();
-        WindowMetricsCalculator$Companion.decorator = (atng)new WindowMetricsCalculator$Companion$overrideDecorator$1((Object)windowMetricsCalculatorDecorator);
+        WindowMetricsCalculator$Companion.decorator = (atng)new WindowMetricsCalculator$Companion$overrideDecorator$1(windowMetricsCalculatorDecorator);
     }
     
     public final void reset() {

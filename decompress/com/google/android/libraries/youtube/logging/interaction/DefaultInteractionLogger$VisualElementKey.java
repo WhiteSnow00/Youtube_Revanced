@@ -16,7 +16,7 @@ public class DefaultInteractionLogger$VisualElementKey implements Parcelable
     private final int c;
     
     static {
-        CREATOR = (Parcelable$Creator)new vho(9);
+        CREATOR = (Parcelable$Creator)new vjo(9);
     }
     
     public DefaultInteractionLogger$VisualElementKey(final Parcel parcel) {
@@ -36,18 +36,18 @@ public class DefaultInteractionLogger$VisualElementKey implements Parcelable
     }
     
     @Override
-    public final boolean equals(final Object o) {
-        if (this == o) {
+    public final boolean equals(Object a) {
+        if (this == a) {
             return true;
         }
-        if (!(o instanceof DefaultInteractionLogger$VisualElementKey)) {
+        if (!(a instanceof DefaultInteractionLogger$VisualElementKey)) {
             return false;
         }
-        final DefaultInteractionLogger$VisualElementKey defaultInteractionLogger$VisualElementKey = (DefaultInteractionLogger$VisualElementKey)o;
+        final DefaultInteractionLogger$VisualElementKey defaultInteractionLogger$VisualElementKey = (DefaultInteractionLogger$VisualElementKey)a;
         if (this.c != defaultInteractionLogger$VisualElementKey.c) {
             return false;
         }
-        final Object a = this.a;
+        a = this.a;
         if (a != null) {
             if (a.equals(defaultInteractionLogger$VisualElementKey.a)) {
                 return this.b == defaultInteractionLogger$VisualElementKey.b;

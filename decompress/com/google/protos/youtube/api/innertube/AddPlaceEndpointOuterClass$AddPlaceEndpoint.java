@@ -6,21 +6,21 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AddPlaceEndpointOuterClass$AddPlaceEndpoint extends agzi implements ahax
+public final class AddPlaceEndpointOuterClass$AddPlaceEndpoint extends ahbh implements ahcw
 {
     public static final AddPlaceEndpointOuterClass$AddPlaceEndpoint a;
-    public static final agzg addPlaceEndpoint;
-    private static volatile ahbe e;
+    public static final ahbf addPlaceEndpoint;
+    private static volatile ahdd e;
     public int b;
     public String c;
-    public ajsq d;
-    private ajsq f;
+    public ajut d;
+    private ajut f;
     private byte g;
     
     static {
         final AddPlaceEndpointOuterClass$AddPlaceEndpoint a2 = new AddPlaceEndpointOuterClass$AddPlaceEndpoint();
-        agzi.registerDefaultInstance((Class)AddPlaceEndpointOuterClass$AddPlaceEndpoint.class, (agzi)(a = a2));
-        addPlaceEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 153675053, ahcm.k, (Class)AddPlaceEndpointOuterClass$AddPlaceEndpoint.class);
+        ahbh.registerDefaultInstance((Class)AddPlaceEndpointOuterClass$AddPlaceEndpoint.class, (ahbh)(a = a2));
+        addPlaceEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 153675053, ahek.k, (Class)AddPlaceEndpointOuterClass$AddPlaceEndpoint.class);
     }
     
     private AddPlaceEndpointOuterClass$AddPlaceEndpoint() {
@@ -28,20 +28,20 @@ public final class AddPlaceEndpointOuterClass$AddPlaceEndpoint extends agzi impl
         this.c = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte g = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = AddPlaceEndpointOuterClass$AddPlaceEndpoint.e) == null) {
                     synchronized (AddPlaceEndpointOuterClass$AddPlaceEndpoint.class) {
                         if (AddPlaceEndpointOuterClass$AddPlaceEndpoint.e == null) {
-                            AddPlaceEndpointOuterClass$AddPlaceEndpoint.e = (ahbe)new agzb((agzi)AddPlaceEndpointOuterClass$AddPlaceEndpoint.a);
+                            AddPlaceEndpointOuterClass$AddPlaceEndpoint.e = (ahdd)new ahba((ahbh)AddPlaceEndpointOuterClass$AddPlaceEndpoint.a);
                         }
                     }
                 }
@@ -51,7 +51,7 @@ public final class AddPlaceEndpointOuterClass$AddPlaceEndpoint extends agzi impl
                 return AddPlaceEndpointOuterClass$AddPlaceEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)AddPlaceEndpointOuterClass$AddPlaceEndpoint.a);
+                return new ahaz((ahbh)AddPlaceEndpointOuterClass$AddPlaceEndpoint.a);
             }
             case 3: {
                 return new AddPlaceEndpointOuterClass$AddPlaceEndpoint();
@@ -61,9 +61,9 @@ public final class AddPlaceEndpointOuterClass$AddPlaceEndpoint extends agzi impl
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    g = 0;
                 }
-                this.g = (byte)(b ? 1 : 0);
+                this.g = g;
                 return null;
             }
             case 0: {

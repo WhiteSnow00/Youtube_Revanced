@@ -6,11 +6,11 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveCreationEndpointOuterClass$LiveCreationEndpoint extends agzi implements ahax
+public final class LiveCreationEndpointOuterClass$LiveCreationEndpoint extends ahbh implements ahcw
 {
     public static final LiveCreationEndpointOuterClass$LiveCreationEndpoint a;
-    private static volatile ahbe f;
-    public static final agzg liveCreationEndpoint;
+    private static volatile ahdd f;
+    public static final ahbf liveCreationEndpoint;
     public int b;
     public String c;
     public String d;
@@ -18,8 +18,8 @@ public final class LiveCreationEndpointOuterClass$LiveCreationEndpoint extends a
     
     static {
         final LiveCreationEndpointOuterClass$LiveCreationEndpoint a2 = new LiveCreationEndpointOuterClass$LiveCreationEndpoint();
-        agzi.registerDefaultInstance((Class)LiveCreationEndpointOuterClass$LiveCreationEndpoint.class, (agzi)(a = a2));
-        liveCreationEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 122546829, ahcm.k, (Class)LiveCreationEndpointOuterClass$LiveCreationEndpoint.class);
+        ahbh.registerDefaultInstance((Class)LiveCreationEndpointOuterClass$LiveCreationEndpoint.class, (ahbh)(a = a2));
+        liveCreationEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 122546829, ahek.k, (Class)LiveCreationEndpointOuterClass$LiveCreationEndpoint.class);
     }
     
     private LiveCreationEndpointOuterClass$LiveCreationEndpoint() {
@@ -27,18 +27,18 @@ public final class LiveCreationEndpointOuterClass$LiveCreationEndpoint extends a
         this.d = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe f;
+                final ahdd f;
                 if ((f = LiveCreationEndpointOuterClass$LiveCreationEndpoint.f) == null) {
                     synchronized (LiveCreationEndpointOuterClass$LiveCreationEndpoint.class) {
                         if (LiveCreationEndpointOuterClass$LiveCreationEndpoint.f == null) {
-                            LiveCreationEndpointOuterClass$LiveCreationEndpoint.f = (ahbe)new agzb((agzi)LiveCreationEndpointOuterClass$LiveCreationEndpoint.a);
+                            LiveCreationEndpointOuterClass$LiveCreationEndpoint.f = (ahdd)new ahba((ahbh)LiveCreationEndpointOuterClass$LiveCreationEndpoint.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class LiveCreationEndpointOuterClass$LiveCreationEndpoint extends a
                 return LiveCreationEndpointOuterClass$LiveCreationEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)LiveCreationEndpointOuterClass$LiveCreationEndpoint.a);
+                return new ahaz((ahbh)LiveCreationEndpointOuterClass$LiveCreationEndpoint.a);
             }
             case 3: {
                 return new LiveCreationEndpointOuterClass$LiveCreationEndpoint();

@@ -25,7 +25,7 @@ public class Circle extends View
     
     public Circle(Context obtainStyledAttributes, final AttributeSet set) {
         super(obtainStyledAttributes, set);
-        obtainStyledAttributes = (Context)obtainStyledAttributes.getTheme().obtainStyledAttributes(set, wol.a, 0, 0);
+        obtainStyledAttributes = (Context)obtainStyledAttributes.getTheme().obtainStyledAttributes(set, wql.a, 0, 0);
         try {
             final int dimensionPixelSize = ((TypedArray)obtainStyledAttributes).getDimensionPixelSize(0, 100);
             this.e = dimensionPixelSize;

@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AddContactsEndpointOuterClass$AddContactsEndpoint extends agzi implements ahax
+public final class AddContactsEndpointOuterClass$AddContactsEndpoint extends ahbh implements ahcw
 {
     public static final AddContactsEndpointOuterClass$AddContactsEndpoint a;
-    public static final agzg addContactsEndpoint;
-    private static volatile ahbe c;
+    public static final ahbf addContactsEndpoint;
+    private static volatile ahdd c;
     public String b;
     private int d;
     
     static {
         final AddContactsEndpointOuterClass$AddContactsEndpoint a2 = new AddContactsEndpointOuterClass$AddContactsEndpoint();
-        agzi.registerDefaultInstance((Class)AddContactsEndpointOuterClass$AddContactsEndpoint.class, (agzi)(a = a2));
-        addContactsEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 126354119, ahcm.k, (Class)AddContactsEndpointOuterClass$AddContactsEndpoint.class);
+        ahbh.registerDefaultInstance((Class)AddContactsEndpointOuterClass$AddContactsEndpoint.class, (ahbh)(a = a2));
+        addContactsEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 126354119, ahek.k, (Class)AddContactsEndpointOuterClass$AddContactsEndpoint.class);
     }
     
     private AddContactsEndpointOuterClass$AddContactsEndpoint() {
         this.b = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = AddContactsEndpointOuterClass$AddContactsEndpoint.c) == null) {
                     synchronized (AddContactsEndpointOuterClass$AddContactsEndpoint.class) {
                         if (AddContactsEndpointOuterClass$AddContactsEndpoint.c == null) {
-                            AddContactsEndpointOuterClass$AddContactsEndpoint.c = (ahbe)new agzb((agzi)AddContactsEndpointOuterClass$AddContactsEndpoint.a);
+                            AddContactsEndpointOuterClass$AddContactsEndpoint.c = (ahdd)new ahba((ahbh)AddContactsEndpointOuterClass$AddContactsEndpoint.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class AddContactsEndpointOuterClass$AddContactsEndpoint extends agz
                 return AddContactsEndpointOuterClass$AddContactsEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)AddContactsEndpointOuterClass$AddContactsEndpoint.a);
+                return new ahaz((ahbh)AddContactsEndpointOuterClass$AddContactsEndpoint.a);
             }
             case 3: {
                 return new AddContactsEndpointOuterClass$AddContactsEndpoint();

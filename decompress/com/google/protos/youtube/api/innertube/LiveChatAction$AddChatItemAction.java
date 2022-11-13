@@ -6,21 +6,21 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatAction$AddChatItemAction extends agzi implements ahax
+public final class LiveChatAction$AddChatItemAction extends ahbh implements ahcw
 {
     public static final LiveChatAction$AddChatItemAction a;
-    public static final agzg addChatItemAction;
-    private static volatile ahbe f;
+    public static final ahbf addChatItemAction;
+    private static volatile ahdd f;
     public int b;
-    public aloe c;
+    public alqh c;
     public String d;
-    public alnc e;
+    public alpf e;
     private byte g;
     
     static {
         final LiveChatAction$AddChatItemAction a2 = new LiveChatAction$AddChatItemAction();
-        agzi.registerDefaultInstance((Class)LiveChatAction$AddChatItemAction.class, (agzi)(a = a2));
-        addChatItemAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 117298952, ahcm.k, (Class)LiveChatAction$AddChatItemAction.class);
+        ahbh.registerDefaultInstance((Class)LiveChatAction$AddChatItemAction.class, (ahbh)(a = a2));
+        addChatItemAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 117298952, ahek.k, (Class)LiveChatAction$AddChatItemAction.class);
     }
     
     private LiveChatAction$AddChatItemAction() {
@@ -28,20 +28,20 @@ public final class LiveChatAction$AddChatItemAction extends agzi implements ahax
         this.d = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte g = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe f;
+                final ahdd f;
                 if ((f = LiveChatAction$AddChatItemAction.f) == null) {
                     synchronized (LiveChatAction$AddChatItemAction.class) {
                         if (LiveChatAction$AddChatItemAction.f == null) {
-                            LiveChatAction$AddChatItemAction.f = (ahbe)new agzb((agzi)LiveChatAction$AddChatItemAction.a);
+                            LiveChatAction$AddChatItemAction.f = (ahdd)new ahba((ahbh)LiveChatAction$AddChatItemAction.a);
                         }
                     }
                 }
@@ -51,7 +51,7 @@ public final class LiveChatAction$AddChatItemAction extends agzi implements ahax
                 return LiveChatAction$AddChatItemAction.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatAction$AddChatItemAction.a);
+                return new ahaz((ahbh)LiveChatAction$AddChatItemAction.a);
             }
             case 3: {
                 return new LiveChatAction$AddChatItemAction();
@@ -61,9 +61,9 @@ public final class LiveChatAction$AddChatItemAction extends agzi implements ahax
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    g = 0;
                 }
-                this.g = (byte)(b ? 1 : 0);
+                this.g = g;
                 return null;
             }
             case 0: {

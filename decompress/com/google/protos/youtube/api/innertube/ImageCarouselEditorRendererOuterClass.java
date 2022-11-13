@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ImageCarouselEditorRendererOuterClass
 {
-    public static final agzg imageCarouselEditorRenderer;
+    public static final ahbf imageCarouselEditorRenderer;
     
     static {
-        imageCarouselEditorRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)akbr.a, (MessageLite)akbr.a, (agzn)null, 310624609, ahcm.k, (Class)akbr.class);
+        imageCarouselEditorRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)akdu.a, (MessageLite)akdu.a, (ahbm)null, 310624609, ahek.k, (Class)akdu.class);
     }
     
     private ImageCarouselEditorRendererOuterClass() {

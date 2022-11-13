@@ -4,12 +4,12 @@
 
 package com.google.vr.sdk.proto;
 
-final class Preferences$UserPrefs$Handedness$HandednessVerifier implements agzo
+final class Preferences$UserPrefs$Handedness$HandednessVerifier implements ahbn
 {
-    static final agzo INSTANCE;
+    static final ahbn INSTANCE;
     
     static {
-        INSTANCE = (agzo)new Preferences$UserPrefs$Handedness$HandednessVerifier();
+        INSTANCE = (ahbn)new Preferences$UserPrefs$Handedness$HandednessVerifier();
     }
     
     private Preferences$UserPrefs$Handedness$HandednessVerifier() {

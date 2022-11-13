@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AdFeedbackEndpointOuterClass$AdFeedbackEndpoint extends agzi implements ahax
+public final class AdFeedbackEndpointOuterClass$AdFeedbackEndpoint extends ahbh implements ahcw
 {
     public static final AdFeedbackEndpointOuterClass$AdFeedbackEndpoint a;
-    public static final agzg adFeedbackEndpoint;
-    private static volatile ahbe c;
-    public ahji b;
+    public static final ahbf adFeedbackEndpoint;
+    private static volatile ahdd c;
+    public ahlg b;
     private int d;
     private byte e;
     
     static {
         final AdFeedbackEndpointOuterClass$AdFeedbackEndpoint a2 = new AdFeedbackEndpointOuterClass$AdFeedbackEndpoint();
-        agzi.registerDefaultInstance((Class)AdFeedbackEndpointOuterClass$AdFeedbackEndpoint.class, (agzi)(a = a2));
-        adFeedbackEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 79296801, ahcm.k, (Class)AdFeedbackEndpointOuterClass$AdFeedbackEndpoint.class);
+        ahbh.registerDefaultInstance((Class)AdFeedbackEndpointOuterClass$AdFeedbackEndpoint.class, (ahbh)(a = a2));
+        adFeedbackEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 79296801, ahek.k, (Class)AdFeedbackEndpointOuterClass$AdFeedbackEndpoint.class);
     }
     
     private AdFeedbackEndpointOuterClass$AdFeedbackEndpoint() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = AdFeedbackEndpointOuterClass$AdFeedbackEndpoint.c) == null) {
                     synchronized (AdFeedbackEndpointOuterClass$AdFeedbackEndpoint.class) {
                         if (AdFeedbackEndpointOuterClass$AdFeedbackEndpoint.c == null) {
-                            AdFeedbackEndpointOuterClass$AdFeedbackEndpoint.c = (ahbe)new agzb((agzi)AdFeedbackEndpointOuterClass$AdFeedbackEndpoint.a);
+                            AdFeedbackEndpointOuterClass$AdFeedbackEndpoint.c = (ahdd)new ahba((ahbh)AdFeedbackEndpointOuterClass$AdFeedbackEndpoint.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class AdFeedbackEndpointOuterClass$AdFeedbackEndpoint extends agzi 
                 return AdFeedbackEndpointOuterClass$AdFeedbackEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)AdFeedbackEndpointOuterClass$AdFeedbackEndpoint.a);
+                return new ahaz((ahbh)AdFeedbackEndpointOuterClass$AdFeedbackEndpoint.a);
             }
             case 3: {
                 return new AdFeedbackEndpointOuterClass$AdFeedbackEndpoint();
@@ -58,9 +58,9 @@ public final class AdFeedbackEndpointOuterClass$AdFeedbackEndpoint extends agzi 
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

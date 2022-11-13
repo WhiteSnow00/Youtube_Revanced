@@ -4,12 +4,12 @@
 
 package com.google.vr.sdk.proto;
 
-final class Preferences$ControllerConfigurationType$ControllerConfigurationTypeVerifier implements agzo
+final class Preferences$ControllerConfigurationType$ControllerConfigurationTypeVerifier implements ahbn
 {
-    static final agzo INSTANCE;
+    static final ahbn INSTANCE;
     
     static {
-        INSTANCE = (agzo)new Preferences$ControllerConfigurationType$ControllerConfigurationTypeVerifier();
+        INSTANCE = (ahbn)new Preferences$ControllerConfigurationType$ControllerConfigurationTypeVerifier();
     }
     
     private Preferences$ControllerConfigurationType$ControllerConfigurationTypeVerifier() {

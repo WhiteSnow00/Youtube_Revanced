@@ -6,23 +6,23 @@ package com.google.protobuf;
 
 import java.io.OutputStream;
 
-public interface MessageLite extends ahax
+public interface MessageLite extends ahcw
 {
-    ahbe getParserForType();
+    ahdd getParserForType();
     
     int getSerializedSize();
     
-    ahaw newBuilderForType();
+    ahcv newBuilderForType();
     
-    ahaw toBuilder();
+    ahcv toBuilder();
     
     byte[] toByteArray();
     
-    agyc toByteString();
+    ahab toByteString();
     
     void writeDelimitedTo(final OutputStream p0);
     
-    void writeTo(final agym p0);
+    void writeTo(final ahal p0);
     
     void writeTo(final OutputStream p0);
 }

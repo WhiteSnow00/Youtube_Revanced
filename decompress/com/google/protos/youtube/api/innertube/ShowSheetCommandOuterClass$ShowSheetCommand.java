@@ -6,40 +6,40 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowSheetCommandOuterClass$ShowSheetCommand extends agzi implements ahax
+public final class ShowSheetCommandOuterClass$ShowSheetCommand extends ahbh implements ahcw
 {
     public static final ShowSheetCommandOuterClass$ShowSheetCommand a;
-    private static volatile ahbe e;
-    public static final agzg showSheetCommand;
+    private static volatile ahdd e;
+    public static final ahbf showSheetCommand;
     public int b;
-    public amwi c;
-    public anuk d;
+    public amym c;
+    public anwn d;
     private byte f;
     
     static {
         final ShowSheetCommandOuterClass$ShowSheetCommand a2 = new ShowSheetCommandOuterClass$ShowSheetCommand();
-        agzi.registerDefaultInstance((Class)ShowSheetCommandOuterClass$ShowSheetCommand.class, (agzi)(a = a2));
-        showSheetCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 443434441, ahcm.k, (Class)ShowSheetCommandOuterClass$ShowSheetCommand.class);
+        ahbh.registerDefaultInstance((Class)ShowSheetCommandOuterClass$ShowSheetCommand.class, (ahbh)(a = a2));
+        showSheetCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 443434441, ahek.k, (Class)ShowSheetCommandOuterClass$ShowSheetCommand.class);
     }
     
     private ShowSheetCommandOuterClass$ShowSheetCommand() {
         this.f = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = ShowSheetCommandOuterClass$ShowSheetCommand.e) == null) {
                     synchronized (ShowSheetCommandOuterClass$ShowSheetCommand.class) {
                         if (ShowSheetCommandOuterClass$ShowSheetCommand.e == null) {
-                            ShowSheetCommandOuterClass$ShowSheetCommand.e = (ahbe)new agzb((agzi)ShowSheetCommandOuterClass$ShowSheetCommand.a);
+                            ShowSheetCommandOuterClass$ShowSheetCommand.e = (ahdd)new ahba((ahbh)ShowSheetCommandOuterClass$ShowSheetCommand.a);
                         }
                     }
                 }
@@ -49,7 +49,7 @@ public final class ShowSheetCommandOuterClass$ShowSheetCommand extends agzi impl
                 return ShowSheetCommandOuterClass$ShowSheetCommand.a;
             }
             case 4: {
-                return new agza((agzi)ShowSheetCommandOuterClass$ShowSheetCommand.a);
+                return new ahaz((ahbh)ShowSheetCommandOuterClass$ShowSheetCommand.a);
             }
             case 3: {
                 return new ShowSheetCommandOuterClass$ShowSheetCommand();
@@ -59,9 +59,9 @@ public final class ShowSheetCommandOuterClass$ShowSheetCommand extends agzi impl
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

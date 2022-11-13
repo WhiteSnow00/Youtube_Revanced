@@ -30,13 +30,13 @@ public class StreamStatsOverlay extends RelativeLayout
     }
     
     private final void a(final Context context) {
-        inflate(context, 2131624652, (ViewGroup)this);
+        inflate(context, 2131624653, (ViewGroup)this);
         this.setSaveEnabled(true);
-        final TextView textView = (TextView)this.findViewById(2131431709);
-        final TextView textView2 = (TextView)this.findViewById(2131431716);
-        final TextView textView3 = (TextView)this.findViewById(2131431708);
-        final TextView textView4 = (TextView)this.findViewById(2131431715);
-        final TextView textView5 = (TextView)this.findViewById(2131431707);
-        (this.a = (TextView)this.findViewById(2131431706)).setText((CharSequence)"");
+        final TextView textView = (TextView)this.findViewById(2131431712);
+        final TextView textView2 = (TextView)this.findViewById(2131431719);
+        final TextView textView3 = (TextView)this.findViewById(2131431711);
+        final TextView textView4 = (TextView)this.findViewById(2131431718);
+        final TextView textView5 = (TextView)this.findViewById(2131431710);
+        (this.a = (TextView)this.findViewById(2131431709)).setText((CharSequence)"");
     }
 }

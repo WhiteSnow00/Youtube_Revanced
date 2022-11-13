@@ -6,7 +6,7 @@ package com.google.vr.sdk.proto;
 
 import com.google.protobuf.MessageLite;
 
-public final class Preferences$DeveloperPrefs extends agzi implements ahax
+public final class Preferences$DeveloperPrefs extends ahbh implements ahcw
 {
     public static final int ALLOW_AR_SESSION_UPDATE_FIELD_NUMBER = 17;
     public static final int CAPTURE_ENABLED_FIELD_NUMBER = 9;
@@ -19,7 +19,7 @@ public final class Preferences$DeveloperPrefs extends agzi implements ahax
     public static final int FRAME_TRACKER_ENABLED_FIELD_NUMBER = 11;
     public static final int MOTOPHO_PATCH_MODE_FIELD_NUMBER = 12;
     public static final int OPENGL_KHR_DEBUG_ENABLED_FIELD_NUMBER = 14;
-    private static volatile ahbe PARSER;
+    private static volatile ahdd PARSER;
     public static final int PERFORMANCE_HUD_ENABLED_FIELD_NUMBER = 6;
     public static final int PERFORMANCE_LOGGING_ACTIVATED_FIELD_NUMBER = 13;
     public static final int PERFORMANCE_MONITORING_ENABLED_FIELD_NUMBER = 1;
@@ -47,29 +47,32 @@ public final class Preferences$DeveloperPrefs extends agzi implements ahax
     private Preferences$TrackingConfigurationParams trackingConfigurationParams_;
     
     static {
-        agzi.registerDefaultInstance(Preferences$DeveloperPrefs.class, DEFAULT_INSTANCE = new Preferences$DeveloperPrefs());
+        ahbh.registerDefaultInstance((Class)Preferences$DeveloperPrefs.class, (ahbh)(DEFAULT_INSTANCE = new Preferences$DeveloperPrefs()));
     }
     
     private Preferences$DeveloperPrefs() {
+    }
+    
+    static Preferences$DeveloperPrefs access$1300() {
+        return Preferences$DeveloperPrefs.DEFAULT_INSTANCE;
     }
     
     public static Preferences$DeveloperPrefs getDefaultInstance() {
         return Preferences$DeveloperPrefs.DEFAULT_INSTANCE;
     }
     
-    @Override
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe parser;
+                final ahdd parser;
                 if ((parser = Preferences$DeveloperPrefs.PARSER) == null) {
                     synchronized (Preferences$DeveloperPrefs.class) {
                         if (Preferences$DeveloperPrefs.PARSER == null) {
-                            Preferences$DeveloperPrefs.PARSER = (ahbe)new agzb((agzi)Preferences$DeveloperPrefs.DEFAULT_INSTANCE);
+                            Preferences$DeveloperPrefs.PARSER = (ahdd)new ahba((ahbh)Preferences$DeveloperPrefs.DEFAULT_INSTANCE);
                         }
                     }
                 }
@@ -85,7 +88,7 @@ public final class Preferences$DeveloperPrefs extends agzi implements ahax
                 return new Preferences$DeveloperPrefs();
             }
             case 2: {
-                return agzi.newMessageInfo((MessageLite)Preferences$DeveloperPrefs.DEFAULT_INSTANCE, "\u0001\u0011\u0000\u0001\u0001\u0011\u0011\u0000\u0000\u0000\u0001\u1007\u0000\u0002\u1007\u0001\u0003\u1007\u0002\u0004\u1007\u0003\u0005\u1007\u0004\u0006\u1007\u0005\u0007\u1007\u0006\b\u1007\u0007\t\u1007\b\n\u1009\t\u000b\u1007\n\f\u100c\u000b\r\u1007\f\u000e\u1007\r\u000f\u1009\u000e\u0010\u1009\u000f\u0011\u1007\u0010", new Object[] { "bitField0_", "performanceMonitoringEnabled_", "sensorLoggingEnabled_", "dEPRECATEDMotophoPatchEnabled_", "developerLoggingEnabled_", "forceUndistortedRendering_", "performanceHudEnabled_", "dEPRECATEDGvrPlatformLibraryEnabled_", "dEPRECATEDHeadTrackingServiceEnabled_", "captureEnabled_", "safetyCylinderParams_", "frameTrackerEnabled_", "motophoPatchMode_", Preferences$DeveloperPrefs$MotophoPatchMode.internalGetVerifier(), "performanceLoggingActivated_", "openglKhrDebugEnabled_", "trackingConfigurationParams_", "playAreaSettings_", "allowArSessionUpdate_" });
+                return newMessageInfo((MessageLite)Preferences$DeveloperPrefs.DEFAULT_INSTANCE, "\u0001\u0011\u0000\u0001\u0001\u0011\u0011\u0000\u0000\u0000\u0001\u1007\u0000\u0002\u1007\u0001\u0003\u1007\u0002\u0004\u1007\u0003\u0005\u1007\u0004\u0006\u1007\u0005\u0007\u1007\u0006\b\u1007\u0007\t\u1007\b\n\u1009\t\u000b\u1007\n\f\u100c\u000b\r\u1007\f\u000e\u1007\r\u000f\u1009\u000e\u0010\u1009\u000f\u0011\u1007\u0010", new Object[] { "bitField0_", "performanceMonitoringEnabled_", "sensorLoggingEnabled_", "dEPRECATEDMotophoPatchEnabled_", "developerLoggingEnabled_", "forceUndistortedRendering_", "performanceHudEnabled_", "dEPRECATEDGvrPlatformLibraryEnabled_", "dEPRECATEDHeadTrackingServiceEnabled_", "captureEnabled_", "safetyCylinderParams_", "frameTrackerEnabled_", "motophoPatchMode_", Preferences$DeveloperPrefs$MotophoPatchMode.internalGetVerifier(), "performanceLoggingActivated_", "openglKhrDebugEnabled_", "trackingConfigurationParams_", "playAreaSettings_", "allowArSessionUpdate_" });
             }
             case 1: {
                 return null;

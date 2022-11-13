@@ -6,11 +6,11 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint extends agzi implements ahax
+public final class AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint extends ahbh implements ahcw
 {
     public static final AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint a;
-    public static final agzg addToRemoteQueueEndpoint;
-    private static volatile ahbe d;
+    public static final ahbf addToRemoteQueueEndpoint;
+    private static volatile ahdd d;
     public String b;
     public String c;
     private int e;
@@ -18,8 +18,8 @@ public final class AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint e
     
     static {
         final AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint a2 = new AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint();
-        agzi.registerDefaultInstance((Class)AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint.class, (agzi)(a = a2));
-        addToRemoteQueueEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 76177954, ahcm.k, (Class)AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint.class);
+        ahbh.registerDefaultInstance((Class)AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint.class, (ahbh)(a = a2));
+        addToRemoteQueueEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 76177954, ahek.k, (Class)AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint.class);
     }
     
     private AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint() {
@@ -29,20 +29,20 @@ public final class AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint e
         emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint.d) == null) {
                     synchronized (AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint.class) {
                         if (AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint.d == null) {
-                            AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint.d = (ahbe)new agzb((agzi)AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint.a);
+                            AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint.d = (ahdd)new ahba((ahbh)AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint.a);
                         }
                     }
                 }
@@ -52,7 +52,7 @@ public final class AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint e
                 return AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint.a);
+                return new ahaz((ahbh)AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint.a);
             }
             case 3: {
                 return new AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint();
@@ -62,9 +62,9 @@ public final class AddToRemoteQueueEndpointOuterClass$AddToRemoteQueueEndpoint e
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

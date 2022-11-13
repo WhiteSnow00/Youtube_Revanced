@@ -19,7 +19,7 @@ import android.widget.LinearLayout;
 public class StreamStatusView extends LinearLayout
 {
     public TextView a;
-    private wiw b;
+    private wkw b;
     private String c;
     private LinearLayout d;
     private FrameLayout e;
@@ -33,8 +33,8 @@ public class StreamStatusView extends LinearLayout
     
     public StreamStatusView(final Context context, final AttributeSet set) {
         super(context, set);
-        this.b = wiw.a;
-        ((LayoutInflater)context.getSystemService("layout_inflater")).inflate(2131624654, (ViewGroup)this);
+        this.b = wkw.a;
+        ((LayoutInflater)context.getSystemService("layout_inflater")).inflate(2131624655, (ViewGroup)this);
     }
     
     public final void a() {
@@ -46,13 +46,13 @@ public class StreamStatusView extends LinearLayout
         this.f.setBase(base);
     }
     
-    public final void c(wiw a, final String c) {
+    public final void c(wkw a, final String c) {
         String.valueOf(a);
         String.valueOf(this.b);
         this.b = a;
         this.c = c;
-        final boolean b = TextUtils.equals((CharSequence)c, (CharSequence)this.getContext().getString(2132018234)) && !TextUtils.isEmpty((CharSequence)this.c);
-        a = wiw.a;
+        final boolean b = TextUtils.equals((CharSequence)c, (CharSequence)this.getContext().getString(2132018235)) && !TextUtils.isEmpty((CharSequence)this.c);
+        a = wkw.a;
         final int ordinal = this.b.ordinal();
         if (ordinal == 0) {
             this.d.setVisibility(0);
@@ -65,7 +65,7 @@ public class StreamStatusView extends LinearLayout
                 this.i.setText((CharSequence)this.c);
             }
             else {
-                this.i.setText(2132018322);
+                this.i.setText(2132018323);
             }
             this.e.setVisibility(0);
             return;
@@ -78,7 +78,7 @@ public class StreamStatusView extends LinearLayout
             this.i.setText((CharSequence)this.c);
         }
         else {
-            this.i.setText(2132018320);
+            this.i.setText(2132018321);
         }
         this.e.setVisibility(0);
     }
@@ -130,15 +130,15 @@ public class StreamStatusView extends LinearLayout
     protected final void onFinishInflate() {
         super.onFinishInflate();
         this.d = (LinearLayout)this.findViewById(2131429225);
-        this.f = (Chronometer)this.findViewById(2131431771);
-        this.j = this.findViewById(2131431788);
-        this.a = (TextView)this.findViewById(2131431787);
-        this.g = (TextView)this.findViewById(2131431785);
-        this.h = (TextView)this.findViewById(2131431887);
-        this.k = this.findViewById(2131431786);
-        this.l = this.findViewById(2131431888);
-        this.e = (FrameLayout)this.findViewById(2131430621);
-        this.i = (TextView)this.findViewById(2131431784);
+        this.f = (Chronometer)this.findViewById(2131431774);
+        this.j = this.findViewById(2131431791);
+        this.a = (TextView)this.findViewById(2131431790);
+        this.g = (TextView)this.findViewById(2131431788);
+        this.h = (TextView)this.findViewById(2131431890);
+        this.k = this.findViewById(2131431789);
+        this.l = this.findViewById(2131431891);
+        this.e = (FrameLayout)this.findViewById(2131430624);
+        this.i = (TextView)this.findViewById(2131431787);
         this.c(this.b, this.c);
     }
 }

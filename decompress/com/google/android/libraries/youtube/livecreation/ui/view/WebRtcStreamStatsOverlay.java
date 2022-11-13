@@ -28,20 +28,20 @@ public class WebRtcStreamStatsOverlay extends RelativeLayout
     }
     
     private final void a(final Context context) {
-        inflate(context, 2131624657, (ViewGroup)this);
+        inflate(context, 2131624658, (ViewGroup)this);
         this.setSaveEnabled(true);
-        final TextView textView = (TextView)this.findViewById(2131431725);
-        final TextView textView2 = (TextView)this.findViewById(2131431726);
-        final TextView textView3 = (TextView)this.findViewById(2131431719);
-        final TextView textView4 = (TextView)this.findViewById(2131431724);
-        final TextView textView5 = (TextView)this.findViewById(2131431718);
-        final TextView textView6 = (TextView)this.findViewById(2131431720);
-        final TextView textView7 = (TextView)this.findViewById(2131431722);
-        final TextView textView8 = (TextView)this.findViewById(2131431717);
-        final TextView textView9 = (TextView)this.findViewById(2131431723);
-        final TextView textView10 = (TextView)this.findViewById(2131431721);
-        final TextView textView11 = (TextView)this.findViewById(2131431704);
-        final TextView textView12 = (TextView)this.findViewById(2131431702);
-        final TextView textView13 = (TextView)this.findViewById(2131431703);
+        final TextView textView = (TextView)this.findViewById(2131431728);
+        final TextView textView2 = (TextView)this.findViewById(2131431729);
+        final TextView textView3 = (TextView)this.findViewById(2131431722);
+        final TextView textView4 = (TextView)this.findViewById(2131431727);
+        final TextView textView5 = (TextView)this.findViewById(2131431721);
+        final TextView textView6 = (TextView)this.findViewById(2131431723);
+        final TextView textView7 = (TextView)this.findViewById(2131431725);
+        final TextView textView8 = (TextView)this.findViewById(2131431720);
+        final TextView textView9 = (TextView)this.findViewById(2131431726);
+        final TextView textView10 = (TextView)this.findViewById(2131431724);
+        final TextView textView11 = (TextView)this.findViewById(2131431707);
+        final TextView textView12 = (TextView)this.findViewById(2131431705);
+        final TextView textView13 = (TextView)this.findViewById(2131431706);
     }
 }

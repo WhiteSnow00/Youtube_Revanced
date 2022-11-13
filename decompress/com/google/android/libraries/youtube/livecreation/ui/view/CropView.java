@@ -51,8 +51,8 @@ public class CropView extends FrameLayout
     private boolean y;
     private int z;
     
-    public CropView(final Context context, AttributeSet obtainStyledAttributes) {
-        super(context, obtainStyledAttributes);
+    public CropView(Context obtainStyledAttributes, final AttributeSet set) {
+        super(obtainStyledAttributes, set);
         this.t = new PointF();
         this.u = new PointF();
         this.v = 1.0;
@@ -60,8 +60,8 @@ public class CropView extends FrameLayout
         final boolean b = true;
         this.x = true;
         this.y = true;
-        ((LayoutInflater)context.getSystemService("layout_inflater")).inflate(2131624655, (ViewGroup)this);
-        obtainStyledAttributes = (AttributeSet)context.obtainStyledAttributes(obtainStyledAttributes, wol.b);
+        ((LayoutInflater)obtainStyledAttributes.getSystemService("layout_inflater")).inflate(2131624656, (ViewGroup)this);
+        obtainStyledAttributes = (Context)obtainStyledAttributes.obtainStyledAttributes(set, wql.b);
         try {
             this.b = ((TypedArray)obtainStyledAttributes).getInteger(7, 0);
             this.c = ((TypedArray)obtainStyledAttributes).getInteger(1, 0);
@@ -70,15 +70,15 @@ public class CropView extends FrameLayout
             this.k = ((TypedArray)obtainStyledAttributes).getInteger(6, this.b);
             this.l = ((TypedArray)obtainStyledAttributes).getInteger(5, this.c);
             this.m = ((TypedArray)obtainStyledAttributes).getInteger(4, this.k);
-            this.n = tsx.d(((TypedArray)obtainStyledAttributes).getText(0));
+            this.n = tvb.d(((TypedArray)obtainStyledAttributes).getText(0));
             ((TypedArray)obtainStyledAttributes).recycle();
             final int b2 = this.b;
-            agot.x(b2 > 0, "Width ratio must be positive. Was %s.", b2);
+            adkp.K(b2 > 0, "Width ratio must be positive. Was %s.", b2);
             final int c = this.c;
-            agot.x(c > 0, "Height ratio must be positive. Was %s.", c);
+            adkp.K(c > 0, "Height ratio must be positive. Was %s.", c);
             final int m = this.m;
             final int k = this.k;
-            agot.A(m <= k, "A double mask width ratio must be smaller or equal to a single mask width ratio. %s > %s", m, k);
+            adkp.N(m <= k, "A double mask width ratio must be smaller or equal to a single mask width ratio. %s > %s", m, k);
             final int d = this.d;
             boolean b3 = b;
             if (d != 0) {
@@ -88,7 +88,7 @@ public class CropView extends FrameLayout
                     b3 = (d * this.c - e * this.b == 0 && b);
                 }
             }
-            agot.v(b3, (Object)"Min width and height must match the given width and height ratio");
+            adkp.I(b3, (Object)"Min width and height must match the given width and height ratio");
             this.i = new Matrix();
             this.s = new Matrix();
             this.z = 0;
@@ -109,9 +109,9 @@ public class CropView extends FrameLayout
         final int n = (int)Math.ceil(this.w[2]);
         final int n2 = (int)Math.ceil(this.w[5]);
         final float[] w = this.w;
-        final double floor = Math.floor(w[0] * this.g + w[3] * this.h);
+        final int n3 = (int)Math.floor(w[0] * this.g + w[3] * this.h);
         final float[] w2 = this.w;
-        final Rect rect = new Rect(n, n2, (int)floor + n, (int)Math.floor(w2[4] * this.h + w2[1] * this.g) + n2);
+        final Rect rect = new Rect(n, n2, n3 + n, (int)Math.floor(w2[4] * this.h + w2[1] * this.g) + n2);
         rect.sort();
         return rect;
     }
@@ -121,11 +121,11 @@ public class CropView extends FrameLayout
         final int d = this.d;
         final int n = 0;
         Rect c2 = null;
-        Label_0184: {
+        Label_0174: {
             if (d <= 0) {
                 c2 = c;
                 if (this.e <= 0) {
-                    break Label_0184;
+                    break Label_0174;
                 }
             }
             final Rect a = this.a();
@@ -133,10 +133,10 @@ public class CropView extends FrameLayout
             if (this.d >= a.width()) {
                 final double n2 = this.d;
                 final double n3 = a.width();
+                this.y = false;
                 Double.isNaN(n2);
                 Double.isNaN(n3);
                 n4 = n2 / n3;
-                this.y = false;
             }
             else {
                 n4 = 1.0;
@@ -163,10 +163,10 @@ public class CropView extends FrameLayout
         if (this.o.width() >= c2.width()) {
             final double n7 = this.o.width();
             final double n8 = c2.width();
+            this.x = true;
             Double.isNaN(n7);
             Double.isNaN(n8);
             n9 = n7 / n8;
-            this.x = true;
         }
         else {
             n9 = 1.0;
@@ -190,7 +190,7 @@ public class CropView extends FrameLayout
         }
         if (!c3.contains(this.o)) {
             int n14 = 0;
-            Label_0427: {
+            Label_0413: {
                 int n12;
                 int n13;
                 if (this.o.left < c3.left) {
@@ -200,7 +200,7 @@ public class CropView extends FrameLayout
                 else {
                     if (this.o.right <= c3.right) {
                         n14 = 0;
-                        break Label_0427;
+                        break Label_0413;
                     }
                     n12 = this.o.right;
                     n13 = c3.right;
@@ -208,7 +208,7 @@ public class CropView extends FrameLayout
                 n14 = n12 - n13;
             }
             int n17 = 0;
-            Label_0501: {
+            Label_0491: {
                 int n15;
                 int n16;
                 if (this.o.top < c3.top) {
@@ -218,7 +218,7 @@ public class CropView extends FrameLayout
                 else {
                     if (this.o.bottom <= c3.bottom) {
                         n17 = 0;
-                        break Label_0501;
+                        break Label_0491;
                     }
                     n15 = this.o.bottom;
                     n16 = c3.bottom;
@@ -246,21 +246,22 @@ public class CropView extends FrameLayout
         rect.offset(-c.left, -c.top);
         final double n = (int)this.f.first;
         final double n2 = c.width();
+        final double n3 = rect.left;
+        final double n4 = rect.top;
+        final double n5 = rect.width();
         Double.isNaN(n);
         Double.isNaN(n2);
-        final double n3 = n / n2;
-        final double n4 = rect.left;
+        final double n6 = n / n2;
+        Double.isNaN(n5);
+        final int max = Math.max(1, (int)(n5 * n6));
+        final double n7 = rect.height();
+        Double.isNaN(n3);
+        final int n8 = (int)(n3 * n6);
+        Double.isNaN(n7);
+        final int n9 = (int)(n7 * n6);
         Double.isNaN(n4);
-        final int n5 = (int)(n4 * n3);
-        final double n6 = rect.top;
-        Double.isNaN(n6);
-        final int n7 = (int)(n6 * n3);
-        final double n8 = rect.width();
-        Double.isNaN(n8);
-        final int max = Math.max(1, (int)(n8 * n3));
-        final double n9 = rect.height();
-        Double.isNaN(n9);
-        rect.set(n5, n7, max + n5, Math.max(1, (int)(n9 * n3)) + n7);
+        final int n10 = (int)(n4 * n6);
+        rect.set(n8, n10, max + n8, Math.max(1, n9) + n10);
         return rect;
     }
     
@@ -281,46 +282,46 @@ public class CropView extends FrameLayout
     public final void onMeasure(final int n, final int n2) {
         final Rect rect = new Rect(0, 0, View$MeasureSpec.getSize(n), View$MeasureSpec.getSize(n2));
         rect.sort();
-        final int n3 = (int)this.getResources().getDimension(2131167071);
+        final int n3 = (int)this.getResources().getDimension(2131167070);
         final int n4 = rect.width() - n3;
         int n5 = rect.height() - n3;
         if (n4 > 0 && n5 > 0) {
-            final double n6 = n4;
-            final double n7 = n5;
+            final double n6 = this.k;
+            final double n7 = this.l;
+            final double n8 = n5;
+            final double n9 = n4;
+            Double.isNaN(n9);
+            Double.isNaN(n8);
+            final double n10 = n9 / n8;
             Double.isNaN(n6);
             Double.isNaN(n7);
-            final double n8 = n6 / n7;
-            final double n9 = this.k;
-            final double n10 = this.l;
-            Double.isNaN(n9);
-            Double.isNaN(n10);
-            final double n11 = n9 / n10;
+            final double n11 = n6 / n7;
             int n12;
-            if (n8 > n11) {
-                Double.isNaN(n7);
-                n12 = (int)(n7 * n11);
+            if (n10 > n11) {
+                Double.isNaN(n8);
+                n12 = (int)(n8 * n11);
             }
             else {
                 n12 = n4;
-                if (n8 < n11) {
-                    Double.isNaN(n6);
-                    n5 = (int)(n6 / n11);
+                if (n10 < n11) {
+                    Double.isNaN(n9);
+                    n5 = (int)(n9 / n11);
                     n12 = n4;
                 }
             }
-            tmy.aH(this.p, n12, n5);
+            tpe.aH(this.p, n12, n5);
             this.p.setVisibility(0);
             final int m = this.m;
             if (m > 0.0f && this.k > m) {
                 final int n13 = (n12 - m * n5 / this.l) / 2;
-                tmy.aF(this.q, tmy.aD(n13), (Class)ViewGroup$LayoutParams.class);
+                tpe.aF(this.q, tpe.aD(n13), (Class)ViewGroup$LayoutParams.class);
                 this.q.setVisibility(0);
-                tmy.aF(this.r, tmy.aD(n13), (Class)ViewGroup$LayoutParams.class);
+                tpe.aF(this.r, tpe.aD(n13), (Class)ViewGroup$LayoutParams.class);
                 this.r.setVisibility(0);
             }
             final int b = this.b;
-            final int c = this.c;
             final double n14 = b;
+            final int c = this.c;
             final double n15 = c;
             Double.isNaN(n14);
             Double.isNaN(n15);
@@ -336,23 +337,25 @@ public class CropView extends FrameLayout
                     n17 = n12;
                 }
             }
+            final int centerX = rect.centerX();
             final int n18 = n17 / 2;
+            final int centerY = rect.centerY();
             final int n19 = n5 / 2;
-            this.o = new Rect(rect.centerX() - n18, rect.centerY() - n19, rect.centerX() + n18, rect.centerY() + n19);
+            this.o = new Rect(centerX - n18, centerY - n19, rect.centerX() + n18, rect.centerY() + n19);
             if (this.a != null) {
                 this.d();
                 this.j.setImageMatrix(this.i);
             }
         }
         else {
-            trn.b("Crop rectangle width and height must be positive.");
+            ttr.b("Crop rectangle width and height must be positive.");
         }
         super.onMeasure(n, n2);
     }
     
     public final boolean onTouchEvent(final MotionEvent motionEvent) {
         final int n = motionEvent.getAction() & 0xFF;
-        Label_0328: {
+        Label_0367: {
             if (n != 0) {
                 if (n != 1) {
                     if (n == 2) {
@@ -367,8 +370,11 @@ public class CropView extends FrameLayout
                                 final double n2 = b / this.v;
                                 if ((n2 < 1.0 && this.x) || (n2 > 1.0 && this.y)) {
                                     this.i.set(this.s);
+                                    final Matrix i = this.i;
+                                    final float x = this.u.x;
+                                    final float y = this.u.y;
                                     final float n3 = (float)n2;
-                                    this.i.postScale(n3, n3, this.u.x, this.u.y);
+                                    i.postScale(n3, n3, x, y);
                                     if (n2 < 1.0) {
                                         this.y = true;
                                     }
@@ -379,11 +385,11 @@ public class CropView extends FrameLayout
                             }
                         }
                         this.d();
-                        break Label_0328;
+                        break Label_0367;
                     }
                     if (n != 5) {
                         if (n != 6) {
-                            break Label_0328;
+                            break Label_0367;
                         }
                     }
                     else {
@@ -394,7 +400,7 @@ public class CropView extends FrameLayout
                             this.u.set((motionEvent.getX(0) + motionEvent.getX(1)) / 2.0f, (motionEvent.getY(0) + motionEvent.getY(1)) / 2.0f);
                             this.z = 2;
                         }
-                        break Label_0328;
+                        break Label_0367;
                     }
                 }
                 this.z = 0;

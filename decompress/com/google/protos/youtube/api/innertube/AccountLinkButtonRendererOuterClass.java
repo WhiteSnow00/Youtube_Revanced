@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AccountLinkButtonRendererOuterClass
 {
-    public static final agzg accountLinkButtonRenderer;
+    public static final ahbf accountLinkButtonRenderer;
     
     static {
-        accountLinkButtonRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ahgv.a, (MessageLite)ahgv.a, (agzn)null, 265166751, ahcm.k, (Class)ahgv.class);
+        accountLinkButtonRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ahit.a, (MessageLite)ahit.a, (ahbm)null, 265166751, ahek.k, (Class)ahit.class);
     }
     
     private AccountLinkButtonRendererOuterClass() {

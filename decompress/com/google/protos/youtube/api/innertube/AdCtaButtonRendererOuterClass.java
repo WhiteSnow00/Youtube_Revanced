@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AdCtaButtonRendererOuterClass
 {
-    public static final agzg adCtaButtonRenderer;
+    public static final ahbf adCtaButtonRenderer;
     
     static {
-        adCtaButtonRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ahje.a, (MessageLite)ahje.a, (agzn)null, 157534306, ahcm.k, (Class)ahje.class);
+        adCtaButtonRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ahlc.a, (MessageLite)ahlc.a, (ahbm)null, 157534306, ahek.k, (Class)ahlc.class);
     }
     
     private AdCtaButtonRendererOuterClass() {

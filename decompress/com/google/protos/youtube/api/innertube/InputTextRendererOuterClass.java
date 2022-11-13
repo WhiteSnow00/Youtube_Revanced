@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class InputTextRendererOuterClass
 {
-    public static final agzg inputTextRenderer;
+    public static final ahbf inputTextRenderer;
     
     static {
-        inputTextRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)aldq.a, (MessageLite)aldq.a, (agzn)null, 123808475, ahcm.k, (Class)aldq.class);
+        inputTextRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)alft.a, (MessageLite)alft.a, (ahbm)null, 123808475, ahek.k, (Class)alft.class);
     }
     
     private InputTextRendererOuterClass() {

@@ -6,11 +6,11 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint extends agzi implements ahax
+public final class InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint extends ahbh implements ahcw
 {
     public static final InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint a;
-    private static volatile ahbe d;
-    public static final agzg insertInRemoteQueueEndpoint;
+    private static volatile ahdd d;
+    public static final ahbf insertInRemoteQueueEndpoint;
     public String b;
     public String c;
     private int e;
@@ -18,8 +18,8 @@ public final class InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndp
     
     static {
         final InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint a2 = new InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint();
-        agzi.registerDefaultInstance((Class)InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint.class, (agzi)(a = a2));
-        insertInRemoteQueueEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 122330696, ahcm.k, (Class)InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint.class);
+        ahbh.registerDefaultInstance((Class)InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint.class, (ahbh)(a = a2));
+        insertInRemoteQueueEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 122330696, ahek.k, (Class)InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint.class);
     }
     
     private InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint() {
@@ -29,20 +29,20 @@ public final class InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndp
         emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint.d) == null) {
                     synchronized (InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint.class) {
                         if (InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint.d == null) {
-                            InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint.d = (ahbe)new agzb((agzi)InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint.a);
+                            InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint.d = (ahdd)new ahba((ahbh)InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint.a);
                         }
                     }
                 }
@@ -52,7 +52,7 @@ public final class InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndp
                 return InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint.a);
+                return new ahaz((ahbh)InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint.a);
             }
             case 3: {
                 return new InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndpoint();
@@ -62,9 +62,9 @@ public final class InsertInRemoteQueueEndpointOuterClass$InsertInRemoteQueueEndp
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

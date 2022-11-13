@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class IconBadgeRendererOuterClass
 {
-    public static final agzg iconBadgeRenderer;
+    public static final ahbf iconBadgeRenderer;
     
     static {
-        iconBadgeRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)akaz.a, (MessageLite)akaz.a, (agzn)null, 358874198, ahcm.k, (Class)akaz.class);
+        iconBadgeRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)akdc.a, (MessageLite)akdc.a, (ahbm)null, 358874198, ahek.k, (Class)akdc.class);
     }
     
     private IconBadgeRendererOuterClass() {

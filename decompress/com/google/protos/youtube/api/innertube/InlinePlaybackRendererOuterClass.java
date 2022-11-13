@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class InlinePlaybackRendererOuterClass
 {
-    public static final agzg inlinePlaybackRenderer;
+    public static final ahbf inlinePlaybackRenderer;
     
     static {
-        inlinePlaybackRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)akdz.a, (MessageLite)akdz.a, (agzn)null, 83537025, ahcm.k, (Class)akdz.class);
+        inlinePlaybackRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)akgc.a, (MessageLite)akgc.a, (ahbm)null, 83537025, ahek.k, (Class)akgc.class);
     }
     
     private InlinePlaybackRendererOuterClass() {

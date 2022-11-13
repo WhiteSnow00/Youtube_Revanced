@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AlertRendererOuterClass
 {
-    public static final agzg alertRenderer;
+    public static final ahbf alertRenderer;
     
     static {
-        alertRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ahpe.a, (MessageLite)ahpe.a, (agzn)null, 58057493, ahcm.k, (Class)ahpe.class);
+        alertRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ahrc.a, (MessageLite)ahrc.a, (ahbm)null, 58057493, ahek.k, (Class)ahrc.class);
     }
     
     private AlertRendererOuterClass() {

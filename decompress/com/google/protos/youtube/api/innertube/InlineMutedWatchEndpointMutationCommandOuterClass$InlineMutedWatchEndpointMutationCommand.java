@@ -6,40 +6,40 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand extends agzi implements ahax
+public final class InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand extends ahbh implements ahcw
 {
     public static final InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand a;
-    private static volatile ahbe d;
-    public static final agzg inlineMutedWatchEndpointMutationCommand;
-    public aioe b;
+    private static volatile ahdd d;
+    public static final ahbf inlineMutedWatchEndpointMutationCommand;
+    public aiqj b;
     public boolean c;
     private int e;
     private byte f;
     
     static {
         final InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand a2 = new InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand();
-        agzi.registerDefaultInstance((Class)InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand.class, (agzi)(a = a2));
-        inlineMutedWatchEndpointMutationCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 200453700, ahcm.k, (Class)InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand.class);
+        ahbh.registerDefaultInstance((Class)InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand.class, (ahbh)(a = a2));
+        inlineMutedWatchEndpointMutationCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 200453700, ahek.k, (Class)InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand.class);
     }
     
     private InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand() {
         this.f = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand.d) == null) {
                     synchronized (InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand.class) {
                         if (InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand.d == null) {
-                            InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand.d = (ahbe)new agzb((agzi)InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand.a);
+                            InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand.d = (ahdd)new ahba((ahbh)InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand.a);
                         }
                     }
                 }
@@ -49,7 +49,7 @@ public final class InlineMutedWatchEndpointMutationCommandOuterClass$InlineMuted
                 return InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand.a;
             }
             case 4: {
-                return new agza((agzi)InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand.a);
+                return new ahaz((ahbh)InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand.a);
             }
             case 3: {
                 return new InlineMutedWatchEndpointMutationCommandOuterClass$InlineMutedWatchEndpointMutationCommand();
@@ -59,9 +59,9 @@ public final class InlineMutedWatchEndpointMutationCommandOuterClass$InlineMuted
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

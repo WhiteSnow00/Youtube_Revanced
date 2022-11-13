@@ -17,7 +17,7 @@ public class ButtonItem extends AbstractItem implements View$OnClickListener
     
     public ButtonItem(final Context context, final AttributeSet set) {
         super(context, set);
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, aedq.c);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, aefr.c);
         obtainStyledAttributes.getBoolean(1, true);
         obtainStyledAttributes.getText(3);
         obtainStyledAttributes.getResourceId(0, 2132083691);

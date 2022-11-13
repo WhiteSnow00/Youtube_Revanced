@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatAction$CancelVoteAction extends agzi implements ahax
+public final class LiveChatAction$CancelVoteAction extends ahbh implements ahcw
 {
     public static final LiveChatAction$CancelVoteAction a;
-    private static volatile ahbe b;
-    public static final agzg cancelVoteAction;
+    private static volatile ahdd b;
+    public static final ahbf cancelVoteAction;
     
     static {
         final LiveChatAction$CancelVoteAction a2 = new LiveChatAction$CancelVoteAction();
-        agzi.registerDefaultInstance((Class)LiveChatAction$CancelVoteAction.class, (agzi)(a = a2));
-        cancelVoteAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 238715030, ahcm.k, (Class)LiveChatAction$CancelVoteAction.class);
+        ahbh.registerDefaultInstance((Class)LiveChatAction$CancelVoteAction.class, (ahbh)(a = a2));
+        cancelVoteAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 238715030, ahek.k, (Class)LiveChatAction$CancelVoteAction.class);
     }
     
     private LiveChatAction$CancelVoteAction() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = LiveChatAction$CancelVoteAction.b) == null) {
                     synchronized (LiveChatAction$CancelVoteAction.class) {
                         if (LiveChatAction$CancelVoteAction.b == null) {
-                            LiveChatAction$CancelVoteAction.b = (ahbe)new agzb((agzi)LiveChatAction$CancelVoteAction.a);
+                            LiveChatAction$CancelVoteAction.b = (ahdd)new ahba((ahbh)LiveChatAction$CancelVoteAction.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class LiveChatAction$CancelVoteAction extends agzi implements ahax
                 return LiveChatAction$CancelVoteAction.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatAction$CancelVoteAction.a);
+                return new ahaz((ahbh)LiveChatAction$CancelVoteAction.a);
             }
             case 3: {
                 return new LiveChatAction$CancelVoteAction();

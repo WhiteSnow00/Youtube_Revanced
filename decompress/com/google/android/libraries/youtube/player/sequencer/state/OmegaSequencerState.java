@@ -22,7 +22,7 @@ public final class OmegaSequencerState implements SequencerState
     public final boolean f;
     
     static {
-        CREATOR = (Parcelable$Creator)new abcf(8);
+        CREATOR = (Parcelable$Creator)new abdz(8);
     }
     
     public OmegaSequencerState(final Parcel parcel) {

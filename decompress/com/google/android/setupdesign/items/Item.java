@@ -15,7 +15,7 @@ public class Item extends AbstractItem
     
     public Item(final Context context, final AttributeSet set) {
         super(context, set);
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, aedq.m);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, aefr.m);
         obtainStyledAttributes.getBoolean(1, true);
         obtainStyledAttributes.getDrawable(0);
         obtainStyledAttributes.getText(4);
@@ -29,6 +29,6 @@ public class Item extends AbstractItem
     }
     
     protected int b() {
-        return 2131625560;
+        return 2131625565;
     }
 }

@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class HomeAdsPanelShowCommandOuterClass
 {
-    public static final agzg homeAdsPanelShowCommand;
+    public static final ahbf homeAdsPanelShowCommand;
     
     static {
-        homeAdsPanelShowCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ajzr.a, (MessageLite)ajzr.a, (agzn)null, 332520638, ahcm.k, (Class)ajzr.class);
+        homeAdsPanelShowCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)akbu.a, (MessageLite)akbu.a, (ahbm)null, 332520638, ahek.k, (Class)akbu.class);
     }
     
     private HomeAdsPanelShowCommandOuterClass() {

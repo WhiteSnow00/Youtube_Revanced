@@ -5,18 +5,11 @@
 package com.google.android.libraries.youtube.livecreation.ui;
 
 import android.app.AlertDialog$Builder;
-import com.google.android.libraries.youtube.engagementpanel.size.EngagementPanelSizeBehavior;
-import android.view.View$OnTouchListener;
-import android.widget.RelativeLayout;
-import com.google.android.libraries.youtube.common.ui.AccessibilityLayerLayout;
 import java.util.Map;
 import com.google.protos.youtube.api.innertube.LiveCreationEndpointOuterClass$LiveCreationEndpoint;
 import com.google.android.libraries.youtube.livecreation.screencast.ScreencastHostService;
 import com.google.protos.youtube.api.innertube.ElementRendererOuterClass;
 import android.view.ViewStub;
-import android.os.Process;
-import android.os.Binder;
-import com.google.android.libraries.youtube.livecreation.ui.view.CameraStreamViewManager$CameraModelData;
 import android.view.WindowManager$LayoutParams;
 import android.app.AlertDialog;
 import android.text.Spanned;
@@ -26,10 +19,14 @@ import androidx.core.widget.ContentLoadingProgressBar;
 import com.google.android.libraries.youtube.common.ui.YouTubeTextView;
 import android.view.ViewGroup;
 import android.view.LayoutInflater;
+import android.content.DialogInterface$OnKeyListener;
 import java.util.Calendar;
 import j$.util.Objects;
 import android.graphics.Rect;
 import android.media.MediaActionSound;
+import android.os.Process;
+import android.os.Binder;
+import com.google.android.libraries.youtube.livecreation.ui.view.CameraStreamViewManager$CameraModelData;
 import com.google.protos.youtube.api.innertube.VideoManagerEndpointOuterClass$VideoManagerEndpoint;
 import android.app.Activity;
 import android.os.Parcelable;
@@ -37,9 +34,9 @@ import com.google.android.libraries.youtube.proto.lite.util.ParcelableMessageLit
 import android.widget.Toast;
 import com.google.android.libraries.youtube.metadataeditor.geo.Place;
 import android.content.DialogInterface$OnCancelListener;
-import android.graphics.Bitmap;
-import android.content.DialogInterface$OnKeyListener;
 import android.content.DialogInterface$OnClickListener;
+import android.graphics.Bitmap;
+import android.widget.FrameLayout$LayoutParams;
 import com.google.protobuf.ExtensionRegistryLite;
 import java.util.Iterator;
 import java.util.Date;
@@ -51,11 +48,11 @@ import com.google.android.libraries.youtube.livecreation.innertube.StreamMetadat
 import android.os.Bundle;
 import com.google.protos.youtube.api.innertube.ConfirmDialogRendererOuterClass;
 import android.text.TextUtils;
+import android.media.projection.MediaProjectionManager;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;
-import android.media.projection.MediaProjectionManager;
 import android.view.inputmethod.InputMethodManager;
 import android.view.animation.Animation;
 import android.view.animation.Animation$AnimationListener;
@@ -85,50 +82,50 @@ import com.google.android.libraries.youtube.livecreation.controller.StreamConfig
 import com.google.android.libraries.youtube.rendering.ui.permissions.PermissionDescriptor;
 import android.media.AudioManager$OnAudioFocusChangeListener;
 
-public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFocusChangeListener, wrl, wqz, wqk, wjv, wrn, rly, wqt, wou, woq, wqd, wop, whs, whi, whc, wpa, wrc, wpd, acst, reu, wwu, tnt, vpp, whk, wha, wrq, whq, wht, whe, znj, wgx, zco
+public class LiveCreationActivity extends wpx implements AudioManager$OnAudioFocusChangeListener, wtl, wsz, wsk, wlv, wtn, rod, wst, wqu, wqq, wsd, wqp, wjt, wjj, wjc, wra, wtc, wrd, acux, rgw, wyv, tpy, vrr, wjl, wja, wtq, wjr, wju, wje, zpf, wix, zeh
 {
     private static final PermissionDescriptor a;
-    private static final afdu b;
+    private static final afft b;
     private static final long c;
     public static final PermissionDescriptor[] d;
     public static final long e;
-    public static final wju f;
-    public acsm A;
-    public osb B;
-    public woj C;
+    public static final wlu f;
+    public acuq A;
+    public otk B;
+    public uwo C;
     public StreamConfig D;
     public cl E;
-    public wra F;
-    public wrm G;
-    public wql H;
-    public wov I;
-    public wov J;
-    public wor K;
-    public wqe L;
-    public wqe M;
-    public acsu N;
+    public wta F;
+    public wtm G;
+    public wsl H;
+    public wqv I;
+    public wqv J;
+    public wqr K;
+    public wse L;
+    public wse M;
+    public acuy N;
     public ViewportOverlay P;
-    public wpb Q;
+    public wrb Q;
     public String R;
     public ViewAnimatorHelper S;
     AudioManager T;
     public boolean U;
-    public final woe V;
-    public zed W;
-    public uqs X;
+    public final wqg V;
+    public zfw W;
+    public usn X;
     public boolean Y;
-    public wsv Z;
-    private wql aA;
-    private wrm aB;
-    private wrr aC;
-    private rlw aD;
-    private wow aE;
-    private wpe aF;
-    private wro aG;
-    private wro aH;
-    private wqr aI;
+    public wuv Z;
+    private wsl aA;
+    private wtm aB;
+    private wtr aC;
+    private rob aD;
+    private wqw aE;
+    private wre aF;
+    private wto aG;
+    private wto aH;
+    private wsr aI;
     private SurfaceView aJ;
-    private acsq aK;
+    private acuu aK;
     private String aL;
     private String aM;
     private String aN;
@@ -144,82 +141,82 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
     private String aX;
     private String aY;
     private boolean aZ;
-    public woi aa;
+    public wqj aa;
     boolean ab;
     public boolean ac;
     public boolean ad;
     public final List ae;
     public final Handler af;
-    final wod ag;
+    final wqf ag;
     public final Runnable ah;
     final Choreographer$FrameCallback ai;
-    public acss aj;
-    public adno ak;
-    public aagm al;
-    public addr am;
-    public xgc an;
-    public tdg ao;
-    public aeby ap;
-    public auip aq;
-    public adcr ar;
-    public adcr as;
-    public qpt at;
+    public acuw aj;
+    public qqr ak;
+    public adpp al;
+    public xib am;
+    public xib an;
+    public adfs ao;
+    public sqq ap;
+    public aujg aq;
+    public aeea ar;
+    public aeea as;
+    public pvh at;
     private DisplayManager$DisplayListener au;
-    private tnu av;
-    private rlv aw;
+    private tpz av;
+    private roa aw;
     private Parcel ax;
-    private wre ay;
-    private wrb az;
-    private alrx ba;
-    private alrx bb;
-    private alrx bc;
+    private wte ay;
+    private wtb az;
+    private alub ba;
+    private alub bb;
+    private alub bc;
     private int bd;
     public View g;
     public Handler h;
     public Executor i;
-    public tdz j;
-    public wom k;
-    public wog l;
-    public zki m;
-    public zkw n;
-    public wwv o;
-    public req p;
-    public rgm q;
-    public wjx r;
-    public oas s;
+    public tgd j;
+    public wqm k;
+    public wqi l;
+    public zmf m;
+    public zmt n;
+    public wyw o;
+    public rgs p;
+    public riq q;
+    public wlx r;
+    public oby s;
     public Choreographer t;
     public DisplayManager u;
     public ScheduledExecutorService v;
-    public wvu w;
-    public arhr x;
-    public uoe y;
+    public wxx w;
+    public arkg x;
+    public uqb y;
     public SharedPreferences z;
     
     static {
-        a = new PermissionDescriptor(0, wya.c(43000), wya.c(43001));
-        d = new PermissionDescriptor[] { new PermissionDescriptor(1, wya.c(29216), wya.c(29218)), new PermissionDescriptor(2, wya.c(29217), wya.c(29219)) };
-        b = afdu.v((Object)"PRE_STREAM_FRAGMENT", (Object)"LIVE_SHARED_MDE_FRAGMENT", (Object)"PARTICIPANT_PRE_JOIN_FRAGMENT", (Object)"PERMISSION_REQUEST_FRAGMENT");
+        a = new PermissionDescriptor(0, xaa.c(43000), xaa.c(43001));
+        d = new PermissionDescriptor[] { new PermissionDescriptor(1, xaa.c(29216), xaa.c(29218)), new PermissionDescriptor(2, xaa.c(29217), xaa.c(29219)) };
+        b = afft.v((Object)"PRE_STREAM_FRAGMENT", (Object)"LIVE_SHARED_MDE_FRAGMENT", (Object)"PARTICIPANT_PRE_JOIN_FRAGMENT", (Object)"PERMISSION_REQUEST_FRAGMENT");
         c = TimeUnit.MILLISECONDS.convert(15L, TimeUnit.MINUTES);
         e = TimeUnit.MILLISECONDS.convert(1L, TimeUnit.MINUTES);
-        f = (wju)new wny();
+        f = (wlu)new wpz();
     }
     
     public LiveCreationActivity() {
         this.bd = 1;
-        this.V = new woe(this, 0);
-        this.aa = new woi((bu)this);
+        this.V = new wqg(this, 0);
+        this.aa = new wqj((bu)this);
         this.ab = false;
         this.ae = new ArrayList();
         this.af = new Handler();
-        this.ag = new wod(this, 0);
-        this.ah = (Runnable)new wnt(this, 9, (byte[])null);
-        this.ai = (Choreographer$FrameCallback)new dyk(this, 3);
+        this.ag = new wqf(this, 0);
+        this.ah = (Runnable)new wpv(this, 10, (byte[])null);
+        this.ai = (Choreographer$FrameCallback)new dyl(this, 3);
     }
     
-    private final int bO() {
+    private final int bR() {
         int n;
-        if (this.as.be()) {
-            n = this.ar.aQ();
+        if (this.am.y()) {
+            n = this.as.bI();
         }
         else {
             n = this.z.getInt("SHARED_PREF_PORTRAIT_COUNT_KEY", 0);
@@ -227,7 +224,7 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         return n;
     }
     
-    private final int bP() {
+    private final int bS() {
         int v;
         if ((v = this.D.v) == 0) {
             final Point point = new Point();
@@ -239,7 +236,7 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         return v;
     }
     
-    private final int bQ() {
+    private final int bT() {
         int u;
         if ((u = this.D.u) == 0) {
             final Point point = new Point();
@@ -251,27 +248,27 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         return u;
     }
     
-    private final wjd bR() {
-        final wqr ai = this.aI;
+    private final wld bU() {
+        final wsr ai = this.aI;
         if (ai != null) {
-            return (wjd)ai.aE;
+            return (wld)ai.aE;
         }
         return null;
     }
     
-    private final void bS(final View view) {
+    private final void bV(final View view) {
         final String b = this.B();
         if (b != null) {
-            tqt.c((Context)this, view, (CharSequence)b);
+            tsy.c((Context)this, view, (CharSequence)b);
         }
     }
     
-    private final void bT() {
-        final int bq = this.bQ();
-        final int bp = this.bP();
+    private final void bW() {
+        final int bt = this.bT();
+        final int bs = this.bS();
         RelativeLayout$LayoutParams layoutParams;
         if (((fa)this).getResources().getConfiguration().orientation == 2) {
-            final int n = bq / 2;
+            final int n = bt / 2;
             final double w = this.D.w;
             final double n2 = n;
             Double.isNaN(n2);
@@ -279,7 +276,7 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             layoutParams.addRule(15, -1);
         }
         else {
-            final int n3 = bp / 2;
+            final int n3 = bs / 2;
             final double w2 = this.D.w;
             final double n4 = n3;
             Double.isNaN(n4);
@@ -289,32 +286,43 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         this.aJ.setLayoutParams((ViewGroup$LayoutParams)layoutParams);
     }
     
-    private final void bU() {
+    private final void bX() {
         final Animation loadAnimation = AnimationUtils.loadAnimation((Context)this, 2130772058);
-        loadAnimation.setAnimationListener((Animation$AnimationListener)new wnz(this));
+        loadAnimation.setAnimationListener((Animation$AnimationListener)new wqb(this));
         this.P.startAnimation(loadAnimation);
     }
     
-    private final void bV() {
+    private final void bY() {
         final Animation loadAnimation = AnimationUtils.loadAnimation((Context)this, 2130772059);
-        loadAnimation.setAnimationListener((Animation$AnimationListener)new woa(this));
+        loadAnimation.setAnimationListener((Animation$AnimationListener)new wqc(this));
         this.P.startAnimation(loadAnimation);
     }
     
-    private final void bW() {
-        final wrm g = this.G;
+    private final void bZ() {
+        final wtm g = this.G;
         if (g != null && ((br)g).O != null) {
             ((InputMethodManager)this.getSystemService("input_method")).hideSoftInputFromWindow(((br)this.G).O.getWindowToken(), 2);
         }
     }
     
-    private final void bX() {
-        if (zgv.s((br)this.G)) {
+    public static void bi(final Context context, Uri uri) {
+        uri = (Uri)new Intent("android.intent.action.VIEW", uri);
+        ((Intent)uri).setPackage("com.android.chrome");
+        try {
+            context.startActivity((Intent)uri);
+        }
+        catch (final ActivityNotFoundException ex) {
+            context.startActivity(((Intent)uri).setComponent((ComponentName)null));
+        }
+    }
+    
+    private final void ca() {
+        if (zis.s((br)this.G)) {
             this.G.aM();
         }
     }
     
-    private final void bY() {
+    private final void cb() {
         if (this.K != null) {
             final ct i = this.E.i();
             i.n((br)this.K);
@@ -347,188 +355,177 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         }
     }
     
-    private final void bZ() {
+    private final void cc() {
         ((qt)this).startActivityForResult(((MediaProjectionManager)this.getSystemService("media_projection")).createScreenCaptureIntent(), 1000);
     }
     
-    public static void bh(final Context context, Uri uri) {
-        uri = (Uri)new Intent("android.intent.action.VIEW", uri);
-        ((Intent)uri).setPackage("com.android.chrome");
-        try {
-            context.startActivity((Intent)uri);
-        }
-        catch (final ActivityNotFoundException ex) {
-            context.startActivity(((Intent)uri).setComponent((ComponentName)null));
-        }
+    private final void cd(final String s) {
+        teu.n((aun)this, ((qqr)this.as.a).b((aezf)new uig(s, 19), (Executor)afum.a), (ttg)won.g, (ttg)won.h);
     }
     
-    private final void ca(final String s) {
-        tcp.n((aum)this, ((aagm)this.ar.a).c((aexg)new ujo(s, 18), (Executor)afsl.a), (trb)vuq.j, (trb)vuq.k);
-    }
-    
-    private final void cb() {
+    private final void ce() {
         final StreamConfig d = this.D;
         if (!d.a) {
             if (!TextUtils.isEmpty((CharSequence)d.c)) {
                 final String b = this.D.b();
                 if (TextUtils.isEmpty((CharSequence)b)) {
-                    trn.b("Failed to save the live stream state.");
+                    ttr.b("Failed to save the live stream state.");
                     return;
                 }
-                if (this.as.be()) {
-                    this.ca(b);
+                if (this.am.y()) {
+                    this.cd(b);
                     return;
                 }
-                this.i.execute((Runnable)new wmi(this, b, 3));
+                this.i.execute((Runnable)new wmc(this, b, 6));
             }
         }
     }
     
-    private final void cc(final alrx bc) {
+    private final void cf(final alub bc) {
         if (bc != null) {
             this.bc = bc;
-            final wro ah = new wro();
-            anss anss;
-            if ((anss = bc.c) == null) {
-                anss = anss.a;
+            final wto ah = new wto();
+            anuv anuv;
+            if ((anuv = bc.c) == null) {
+                anuv = anuv.a;
             }
-            final agza builder = ((agzi)((agzd)anss).rr((agyr)ConfirmDialogRendererOuterClass.confirmDialogRenderer)).toBuilder();
+            final ahaz builder = ((ahbh)anuv.rx((ahaq)ConfirmDialogRendererOuterClass.confirmDialogRenderer)).toBuilder();
             builder.copyOnWrite();
-            final aiva aiva = (aiva)builder.instance;
-            aiva.b |= 0x20;
-            aiva.f = "CREATOR_EDUCATION";
-            final aiva aiva2 = (aiva)builder.build();
+            final aixf aixf = (aixf)builder.instance;
+            aixf.b |= 0x20;
+            aixf.f = "CREATOR_EDUCATION";
+            final aixf aixf2 = (aixf)builder.build();
             final Bundle bundle = new Bundle();
-            bundle.putByteArray("ARG_RENDERER", ((agxl)aiva2).toByteArray());
+            bundle.putByteArray("ARG_RENDERER", ((agzk)aixf2).toByteArray());
             ah.ag(bundle);
-            this.cm((br)(this.aH = ah), "CREATOR_EDUCATION_FRAGMENT", true);
+            this.cp((br)(this.aH = ah), "CREATOR_EDUCATION_FRAGMENT", true);
         }
     }
     
-    private final void cd(final amhp amhp, final amgq amgq) {
+    private final void cg(final amjt amjt, final amiu amiu) {
         this.k.e();
-        this.bY();
-        if (amhp != null) {
-            this.bp(amhp, null);
+        this.cb();
+        if (amjt != null) {
+            this.bq(amjt, null);
             final StreamConfig d = this.D;
             if (d.d == null) {
                 d.d = new StreamMetadata();
             }
-            this.cb();
+            this.ce();
             return;
         }
-        if (amgq != null) {
-            this.bA((br)(this.J = wov.r(amgq, (String)null, this.aW, this.ab, this.bO())), "CONFIRM_THUMBNAIL_FRAGMENT");
+        if (amiu != null) {
+            this.bD((br)(this.J = wqv.r(amiu, (String)null, this.aW, this.ab, this.bR())), "CONFIRM_THUMBNAIL_FRAGMENT");
         }
     }
     
-    private final void ce(final alrx ba) {
+    private final void ch(final alub ba) {
         if (ba != null) {
             this.ba = ba;
-            final wow ae = new wow();
-            anss anss;
-            if ((anss = ba.c) == null) {
-                anss = anss.a;
+            final wqw ae = new wqw();
+            anuv anuv;
+            if ((anuv = ba.c) == null) {
+                anuv = anuv.a;
             }
-            final aiva aiva = (aiva)((agzd)anss).rr((agyr)ConfirmDialogRendererOuterClass.confirmDialogRenderer);
+            final aixf aixf = (aixf)anuv.rx((ahaq)ConfirmDialogRendererOuterClass.confirmDialogRenderer);
             final Bundle bundle = new Bundle();
-            bundle.putByteArray("ARG_RENDERER", ((agxl)aiva).toByteArray());
+            bundle.putByteArray("ARG_RENDERER", ((agzk)aixf).toByteArray());
             ae.ag(bundle);
-            this.cm((br)(this.aE = ae), "COOL_OFF_FRAGMENT_NAME", true);
+            this.cp((br)(this.aE = ae), "COOL_OFF_FRAGMENT_NAME", true);
         }
     }
     
-    private final void cf(final String c) {
+    private final void ci(final String c) {
         c.getClass();
         this.D.c = c;
         if (this.Q == null) {
-            this.Q = new wpb();
+            this.Q = new wrb();
         }
-        final wpb q = this.Q;
-        q.d = new xgc((Context)this, this.s).r(c);
-        if (zgv.s((br)q.c)) {
+        final wrb q = this.Q;
+        q.d = new xib((Context)this, this.s).D(c);
+        if (zis.s((br)q.c)) {
             q.r();
         }
-        (this.aK = new acsq(acsp.d((bu)this), this.o, (List)Arrays.asList(LiveCreationActivity.a), 2132018296, 2132018300, (Runnable)new wnt(this, 7), (Runnable)thr.e, this.A)).a();
+        (this.aK = new acuu(acut.d((bu)this), this.o, (List)Arrays.asList(LiveCreationActivity.a), 2132018297, 2132018301, (Runnable)new wpv(this, 8), (Runnable)tjv.e, this.A)).a();
     }
     
-    private final void cg(final wpc wpc, final String s) {
+    private final void cj(final wrc wrc, final String s) {
         this.F();
-        final wpe af = new wpe();
+        final wre af = new wre();
         final Bundle bundle = new Bundle();
-        bundle.putSerializable("state", (Serializable)wpc);
+        bundle.putSerializable("state", (Serializable)wrc);
         bundle.putString("message", s);
         af.ag(bundle);
         this.aF = af;
         final ct i = this.E.i();
         i.w(2131428910, (br)this.aF, "ERROR_STATE_FRAGMENT");
-        this.bW();
+        this.bZ();
         i.i = 4099;
         i.d();
         this.D.z = "ERROR_STATE_FRAGMENT";
     }
     
-    private final void ch(final amho amho, final String s, final ajsq ajsq) {
-        final wre ay = this.ay;
+    private final void ck(final amjs amjs, final String s, final ajut ajut) {
+        final wte ay = this.ay;
         if (ay != null && ay.aw()) {
             return;
         }
-        final wpe af = this.aF;
+        final wre af = this.aF;
         if (af != null) {
             final ct i = this.E.i();
             i.m((br)af);
             i.i = 4099;
             i.d();
         }
-        final wre ay2 = new wre();
+        final wte ay2 = new wte();
         final Bundle bundle = new Bundle();
         bundle.putString("ARG_ERROR_MESSAGE", s);
-        if (ajsq != null) {
-            aeda.av(bundle, "ARG_ERROR_MESSAGE_FORMATTED_STRING", (MessageLite)ajsq);
+        if (ajut != null) {
+            adyf.aA(bundle, "ARG_ERROR_MESSAGE_FORMATTED_STRING", (MessageLite)ajut);
         }
-        if (amho != null) {
-            aeda.av(bundle, "ARG_ENDSCREEN_RENDERER", (MessageLite)amho);
+        if (amjs != null) {
+            adyf.aA(bundle, "ARG_ENDSCREEN_RENDERER", (MessageLite)amjs);
         }
         ay2.ag(bundle);
         this.ay = ay2;
         final ct j = this.E.i();
-        final wqr ai = this.aI;
+        final wsr ai = this.aI;
         if (ai != null) {
             j.n((br)ai);
         }
-        j.r(2131431772, (br)this.ay, "POST_STREAM_FRAGMENT");
+        j.r(2131431775, (br)this.ay, "POST_STREAM_FRAGMENT");
         j.i = 4099;
         j.t((String)null);
         j.a();
         this.aI = null;
         this.D.z = "POST_STREAM_FRAGMENT";
-        this.bU();
+        this.bX();
         this.Z.e(true);
-        if (this.bG()) {
-            this.bi(this.ai);
+        if (this.bJ()) {
+            this.bj(this.ai);
         }
     }
     
-    private final void ci(final alrx bb) {
+    private final void cl(final alub bb) {
         if (bb != null) {
             this.bb = bb;
-            final wro ag = new wro();
-            anss anss;
-            if ((anss = bb.c) == null) {
-                anss = anss.a;
+            final wto ag = new wto();
+            anuv anuv;
+            if ((anuv = bb.c) == null) {
+                anuv = anuv.a;
             }
-            final aiva aiva = (aiva)((agzd)anss).rr((agyr)ConfirmDialogRendererOuterClass.confirmDialogRenderer);
+            final aixf aixf = (aixf)anuv.rx((ahaq)ConfirmDialogRendererOuterClass.confirmDialogRenderer);
             final Bundle bundle = new Bundle();
-            bundle.putByteArray("ARG_RENDERER", ((agxl)aiva).toByteArray());
+            bundle.putByteArray("ARG_RENDERER", ((agzk)aixf).toByteArray());
             ag.ag(bundle);
-            this.cm((br)(this.aG = ag), "SAFEGUARD_FRAGMENT", true);
+            this.cp((br)(this.aG = ag), "SAFEGUARD_FRAGMENT", true);
         }
     }
     
-    private final void cj(final boolean b) {
+    private final void cm(final boolean b) {
         this.J = null;
         this.M = null;
-        final wrr ac = this.aC;
+        final wtr ac = this.aC;
         if (ac == null) {
             final int bd = this.bd;
             final Bundle bundle = new Bundle();
@@ -536,21 +533,21 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
                 throw null;
             }
             bundle.putInt("ARG_FILTER_TYPE", bd - 1);
-            final wrr ac2 = new wrr();
+            final wtr ac2 = new wtr();
             ac2.ag(bundle);
             this.aC = ac2;
         }
         else {
             ac.r();
         }
-        this.cm((br)this.aC, "SCHEDULED_EVENTS_FRAGMENT_NAME", b);
+        this.cp((br)this.aC, "SCHEDULED_EVENTS_FRAGMENT_NAME", b);
     }
     
-    private final void ck() {
+    private final void cn() {
         final Point point = new Point();
         this.getWindowManager().getDefaultDisplay().getRealSize(point);
         final int y = point.y;
-        final int n = ((fa)this).getResources().getDimensionPixelSize(2131167132) + ((fa)this).getResources().getDimensionPixelSize(2131167026) + ((fa)this).getResources().getDimensionPixelSize(2131166186);
+        final int n = ((fa)this).getResources().getDimensionPixelSize(2131167131) + ((fa)this).getResources().getDimensionPixelSize(2131167025) + ((fa)this).getResources().getDimensionPixelSize(2131166186);
         final int dimensionPixelSize = ((fa)this).getResources().getDimensionPixelSize(2131166185);
         final int n2 = y / 2 - n - dimensionPixelSize;
         final double w = this.D.w;
@@ -560,12 +557,12 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         layoutParams.setMargins(0, n, 0, dimensionPixelSize);
         layoutParams.addRule(14, -1);
         this.aJ.setLayoutParams((ViewGroup$LayoutParams)layoutParams);
-        this.bx(false);
+        this.bA(false);
     }
     
-    private final void cl(final amyo amyo) {
-        final boolean bq = tmy.bq((Context)this);
-        final rlw b = riy.b(amyo, bq);
+    private final void co(final anas anas) {
+        final boolean bq = tpe.bq((Context)this);
+        final rob b = rlc.b(anas, bq);
         this.aD = b;
         if (bq) {
             final ct i = this.E.i();
@@ -575,24 +572,24 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             this.D.z = "LIVE_ENABLEMENT_FRAGMENT_NAME";
         }
         else {
-            this.bA((br)b, "LIVE_ENABLEMENT_FRAGMENT_NAME");
+            this.bD((br)b, "LIVE_ENABLEMENT_FRAGMENT_NAME");
         }
-        if (amyo.g.size() > 0) {
+        if (anas.g.size() > 0) {
             this.E.ab();
-            aiva aiva;
-            if ((aiva = amyo.g.get(0).b) == null) {
-                aiva = aiva.a;
+            aixf aixf;
+            if ((aixf = ((anat)anas.g.get(0)).b) == null) {
+                aixf = aixf.a;
             }
-            this.bv(aiva);
+            this.by(aixf);
         }
     }
     
-    private final void cm(final br br, final String z, final boolean b) {
+    private final void cp(final br br, final String z, final boolean b) {
         final br f = this.E.f(this.D.z);
         br.getClass();
-        tsx.n(z);
+        tvb.n(z);
         final ct i = this.E.i();
-        if (f != null && f.ar() && !f.equals((Object)br)) {
+        if (f != null && f.ar() && !f.equals(br)) {
             if (b) {
                 i.n(f);
             }
@@ -601,7 +598,7 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             }
         }
         if (!br.ar()) {
-            i.r(2131431772, br, z);
+            i.r(2131431775, br, z);
         }
         else if (br.as()) {
             i.o(br);
@@ -611,26 +608,26 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         this.D.z = z;
     }
     
-    private final void cn(final Configuration configuration, final View view) {
+    private final void cq(final Configuration configuration, final View view) {
         if (this.U) {
-            this.ck();
+            this.cn();
             final int n = configuration.uiMode & 0x30;
             if (n != 16) {
                 if (n == 32) {
-                    view.setBackgroundColor(agx.a((Context)this, 2131102345));
+                    view.setBackgroundColor(agy.a((Context)this, 2131102373));
                 }
             }
             else {
-                view.setBackgroundColor(agx.a((Context)this, 2131102346));
+                view.setBackgroundColor(agy.a((Context)this, 2131102374));
             }
         }
     }
     
-    private static boolean co(final Intent intent) {
+    private static boolean cr(final Intent intent) {
         return intent.hasExtra("statusCode") && intent.hasExtra("didStream");
     }
     
-    private static final boolean cp(final StreamMetadata streamMetadata) {
+    private static final boolean cs(final StreamMetadata streamMetadata) {
         if (streamMetadata != null) {
             final Date j = streamMetadata.j;
             if (j != null && j.getTime() > 0L) {
@@ -640,46 +637,46 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         return false;
     }
     
-    private final void cq(final String s, final String s2, int n) {
+    private final void ct(final String s, String i, int n) {
         if (!this.aZ) {
             return;
         }
-        final rjs a = rjs.a;
-        adkx adkx;
+        final rlv a = rlv.a;
+        admy admy;
         if (--n != 1) {
             if (n != 2) {
-                adkx = adkx.a;
+                admy = admy.a;
             }
             else {
-                adkx = adkx.c;
+                admy = admy.c;
             }
         }
         else {
-            adkx = adkx.b;
+            admy = admy.b;
         }
-        final agza builder = ((agzi)adky.a).createBuilder();
-        final String i = tsx.i(s2);
+        final ahaz builder = ((ahbh)admz.a).createBuilder();
+        i = tvb.i(i);
         builder.copyOnWrite();
-        final adky adky = (adky)builder.instance;
-        adky.b |= 0x1;
-        adky.c = i;
+        final admz admz = (admz)builder.instance;
+        admz.b |= 0x1;
+        admz.c = i;
         builder.copyOnWrite();
-        final adky adky2 = (adky)builder.instance;
-        adky2.e = adkx.d;
-        adky2.b |= 0x4;
-        final adky adky3 = (adky)builder.build();
-        final adno ak = this.ak;
-        final zkh c = this.m.c();
-        final String b = ((adil)ak.b).b();
-        afva.w(afva.r((afrx)new adib(ak, s, c, b, adky3, (byte[])null), ak.c), (afsz)new pjg(ak, b, c, 4, (byte[])null), (Executor)afsl.a);
+        final admz admz2 = (admz)builder.instance;
+        admz2.e = admy.d;
+        admz2.b |= 0x4;
+        final admz admz3 = (admz)builder.build();
+        final adpp al = this.al;
+        final zme c = this.m.c();
+        final String b = ((adkm)al.b).b();
+        afwm.w(afwm.r((afty)new adkc(al, s, c, b, admz3, (byte[])null), al.c), (afva)new pkq(al, b, c, 4, (byte[])null), (Executor)afum.a);
     }
     
-    public final asgn A(final altg altg) {
-        return asgn.j((asgp)new hte(this, altg, 3));
+    public final ashc A(final alvk alvk) {
+        return ashc.j(new hua(this, alvk, 3));
     }
     
     final String B() {
-        final wsv z = this.Z;
+        final wuv z = this.Z;
         if (z == null) {
             return null;
         }
@@ -694,15 +691,15 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             else {
                 s = this.aM;
             }
-            string2 = this.getString(2132018204, new Object[] { s });
+            string2 = this.getString(2132018205, new Object[] { s });
         }
         else {
             string2 = "";
         }
         if (this.Z.b() > 2) {
-            string = this.getString(2132018205, new Object[] { this.Z.m.a });
+            string = this.getString(2132018206, new Object[] { this.Z.m.a });
         }
-        return this.getString(2132018323, new Object[] { string2, string });
+        return this.getString(2132018324, new Object[] { string2, string });
     }
     
     public final ArrayList C() {
@@ -714,8 +711,8 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
     
     public final void D(final View view) {
         this.Z.c();
-        this.bS(view);
-        final wor k = this.K;
+        this.bV(view);
+        final wqr k = this.K;
         k.af = this.B();
         if (k.d != null && !TextUtils.isEmpty(k.af)) {
             k.d.setContentDescription(k.af);
@@ -723,19 +720,19 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
     }
     
     public final void E(final boolean b) {
-        if (this.as.be()) {
-            this.i.execute((Runnable)new wnt(this, 6));
-            this.ca("");
-            this.bk(-1L);
+        if (this.am.y()) {
+            this.i.execute((Runnable)new wpv(this, 7));
+            this.cd("");
+            this.bl(-1L);
             if (b) {
-                final StreamConfig a = StreamConfig.a(this.ar.aS());
+                final StreamConfig a = StreamConfig.a(this.as.bK());
                 if (a != null && !TextUtils.isEmpty((CharSequence)a.c)) {
                     this.r.f(a.c, LiveCreationActivity.f);
                 }
             }
             return;
         }
-        this.i.execute((Runnable)new wof(b, (Context)this, this.r, this.s, this.z));
+        this.i.execute((Runnable)new wqh(b, (Context)this, this.r, this.s, this.z));
     }
     
     public final void F() {
@@ -753,7 +750,7 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         this.Z.e(true);
         this.P.a(null);
         if (b) {
-            this.bz();
+            this.bC();
         }
     }
     
@@ -764,60 +761,60 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
                 return;
             }
         }
-        if (!zgv.s((br)this.N)) {
-            if (!this.as.bb() || uqs.d((Context)this, (List)Arrays.asList(LiveCreationActivity.d))) {
-                if (!this.as.bb()) {
+        if (!zis.s((br)this.N)) {
+            if (!this.am.v() || usn.d((Context)this, (List)Arrays.asList(LiveCreationActivity.d))) {
+                if (!this.am.v()) {
                     final PermissionDescriptor[] d = LiveCreationActivity.d;
-                    final boolean f = acsm.f((Context)this, d);
-                    final boolean f2 = acsm.f((Context)this, (PermissionDescriptor[])this.ae.toArray(new PermissionDescriptor[0]));
+                    final boolean f = acuq.f((Context)this, d);
+                    final boolean f2 = acuq.f((Context)this, (PermissionDescriptor[])this.ae.toArray(new PermissionDescriptor[0]));
                     if (f || (f2 && TextUtils.isEmpty((CharSequence)this.R))) {
                         if (!this.ad) {
                             if (this.N == null) {
-                                final acss aj = this.aj;
+                                final acuw aj = this.aj;
                                 aj.e(d);
-                                aj.f = wya.b(29222);
-                                aj.g = wya.c(29215);
-                                aj.h = wya.c(29221);
-                                aj.i = wya.c(29220);
-                                aj.b(2132018289);
-                                aj.c(2132018291);
+                                aj.f = xaa.b(29222);
+                                aj.g = xaa.c(29215);
+                                aj.h = xaa.c(29221);
+                                aj.i = xaa.c(29220);
+                                aj.b(2132018290);
+                                aj.c(2132018292);
                                 if (TextUtils.isEmpty((CharSequence)this.R)) {
                                     this.aj.d((PermissionDescriptor[])this.ae.toArray(new PermissionDescriptor[0]));
                                 }
-                                this.N = (acsu)this.aj.a();
+                                this.N = (acuy)this.aj.a();
                             }
-                            this.N.aK((acst)this);
-                            this.bA((br)this.N, "PERMISSION_REQUEST_FRAGMENT");
+                            this.N.aK((acux)this);
+                            this.bD((br)this.N, "PERMISSION_REQUEST_FRAGMENT");
                             this.ad = true;
                         }
                         return;
                     }
                 }
-                final zki m = this.m;
+                final zmf m = this.m;
                 m.getClass();
                 m.c().getClass();
                 final String d2 = this.m.c().d();
-                tsx.n(d2);
+                tvb.n(d2);
                 String s;
-                if (this.as.be()) {
-                    s = this.ar.aS();
+                if (this.am.y()) {
+                    s = this.as.bK();
                 }
                 else {
                     s = this.z.getString("SHARED_PREF_STREAM_CONFIG_KEY", (String)null);
                 }
                 final StreamConfig a = StreamConfig.a(s);
-                Label_0475: {
+                Label_0479: {
                     if (a == null || d2.equals(a.b)) {
                         long n;
-                        if (this.as.be()) {
-                            n = this.ar.aR();
+                        if (this.am.y()) {
+                            n = this.as.bJ();
                         }
                         else {
                             n = this.z.getLong("SHARED_PREF_LS_TIMESTAMP_KEY", -1L);
                         }
                         if (n != -1L) {
                             if (this.s.c() - n > LiveCreationActivity.c && !this.U) {
-                                break Label_0475;
+                                break Label_0479;
                             }
                         }
                         if (a != null && d2.equals(a.b) && a.d != null) {
@@ -825,140 +822,143 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
                             if (au2 == 0 || (this.ac && au2 == 1)) {
                                 if (!this.ac) {
                                     final Intent intent = this.getIntent();
-                                    if (co(intent)) {
+                                    if (cr(intent)) {
                                         this.D = a;
                                         this.aZ = true;
                                         final int intExtra = intent.getIntExtra("statusCode", 0);
                                         final byte[] byteArrayExtra = intent.getByteArrayExtra("endScreenRenderer");
-                                        amho amho = null;
-                                        Label_0632: {
-                                            Label_0591: {
+                                        amjs amjs = null;
+                                        Label_0640: {
+                                            Label_0598: {
                                                 if (byteArrayExtra != null) {
                                                     try {
-                                                        amho = (amho)agzi.parseFrom((agzi)amho.a, byteArrayExtra, ExtensionRegistryLite.getGeneratedRegistry());
+                                                        amjs = (amjs)ahbh.parseFrom((ahbh)amjs.a, byteArrayExtra, ExtensionRegistryLite.getGeneratedRegistry());
                                                     }
-                                                    catch (final ahab ahab) {
-                                                        trn.d("Could not deserialize MobileStreamEndscreenRenderer from intent", (Throwable)ahab);
-                                                        break Label_0591;
+                                                    catch (final ahca ahca) {
+                                                        ttr.d("Could not deserialize MobileStreamEndscreenRenderer from intent", (Throwable)ahca);
+                                                        break Label_0598;
                                                     }
-                                                    break Label_0632;
+                                                    break Label_0640;
                                                 }
                                             }
-                                            amho = null;
+                                            amjs = null;
                                         }
                                         final String stringExtra = intent.getStringExtra("errorMessage");
                                         final byte[] byteArrayExtra2 = intent.getByteArrayExtra("errorMessageFormatted");
-                                        ajsq ajsq = null;
-                                        Label_0685: {
-                                            Label_0655: {
+                                        ajut ajut = null;
+                                        Label_0700: {
+                                            Label_0665: {
                                                 if (byteArrayExtra2 != null) {
                                                     try {
-                                                        ajsq = (ajsq)agzi.parseFrom((agzi)ajsq.a, byteArrayExtra2);
+                                                        ajut = (ajut)ahbh.parseFrom((ahbh)ajut.a, byteArrayExtra2);
                                                     }
-                                                    catch (final ahab ahab2) {
-                                                        trn.d("Could not deserialize error message from intent", (Throwable)ahab2);
-                                                        break Label_0655;
+                                                    catch (final ahca ahca2) {
+                                                        ttr.d("Could not deserialize error message from intent", (Throwable)ahca2);
+                                                        break Label_0665;
                                                     }
-                                                    break Label_0685;
+                                                    break Label_0700;
                                                 }
                                             }
-                                            ajsq = null;
+                                            ajut = null;
                                         }
-                                        this.ap(intExtra, amho, null, stringExtra, ajsq, intent.getBooleanExtra("didStream", false));
+                                        this.aq(intExtra, amjs, null, stringExtra, ajut, intent.getBooleanExtra("didStream", false));
                                         return;
                                     }
                                 }
-                                this.ac = true;
-                                ((AlertDialog$Builder)this.ap.af((Context)this)).setTitle(2132018216).setMessage(2132018214).setPositiveButton(2132018215, (DialogInterface$OnClickListener)new swa(this, a, 5)).setNegativeButton(2132018213, (DialogInterface$OnClickListener)new jik(this, 20)).setOnKeyListener((DialogInterface$OnKeyListener)new gqk(this, 8)).setCancelable(false).show();
+                                if (((vai)this.am.a).l(45383553L).aM()) {
+                                    this.bx(a, 5);
+                                    return;
+                                }
+                                this.bw(a);
                                 return;
                             }
                         }
                         final String z = this.D.z;
                         if (TextUtils.isEmpty((CharSequence)z) || LiveCreationActivity.b.contains((Object)z)) {
-                            this.bt();
+                            this.bu();
                             return;
                         }
                         if ("CHOOSE_THUMBNAIL_FRAGMENT".equals(z)) {
-                            this.bo();
+                            this.bp();
                             return;
                         }
                         if ("COOL_OFF_FRAGMENT_NAME".equals(z)) {
-                            this.ce(this.ba);
+                            this.ch(this.ba);
                             return;
                         }
                         if ("EDIT_THUMBNAIL_FRAGMENT_NAME".equals(z)) {
-                            this.cf(this.D.c);
+                            this.ci(this.D.c);
                             return;
                         }
                         if (!"LIVE_ENABLEMENT_FRAGMENT_NAME".equals(z)) {
                             if (!"LIVE_STREAM_FRAGMENT".equals(z) && !"POST_STREAM_FRAGMENT".equals(z)) {
                                 if ("SAFEGUARD_FRAGMENT".equals(z)) {
-                                    this.ci(this.bb);
+                                    this.cl(this.bb);
                                     return;
                                 }
                                 if ("CREATOR_EDUCATION_FRAGMENT".equals(z)) {
-                                    final alrx bc = this.bc;
+                                    final alub bc = this.bc;
                                     bc.getClass();
-                                    this.cc(bc);
+                                    this.cf(bc);
                                     return;
                                 }
                                 if (!"INVITE_SCREEN_FRAGMENT".equals(z) && !"SCHEDULED_COSTREAM_FRAGMENT".equals(z)) {
-                                    trn.b("Unhandled fragment to resume to - ".concat(String.valueOf(z)));
+                                    ttr.b("Unhandled fragment to resume to - ".concat(String.valueOf(z)));
                                     return;
                                 }
-                                this.cd(this.D.j, null);
+                                this.cg(this.D.j, null);
                             }
                         }
                         return;
                     }
                 }
                 this.E(this.U ^ true);
-                this.bt();
+                this.bu();
                 return;
             }
             if (!this.ad) {
-                this.runOnUiThread((Runnable)new wnt(this, 4));
+                this.runOnUiThread((Runnable)new wpv(this, 5));
             }
         }
     }
     
-    public final void I(final upi upi, final String s) {
-        final wsv z = this.Z;
-        final xpb k = this.y.k();
+    public final void I(final ure ure, final String s) {
+        final wuv z = this.Z;
+        final xra k = this.y.k();
         final boolean r = this.D.r;
-        final wfp l = z.l;
+        final whq l = z.l;
         if (l != null) {
-            l.l((Context)z.c, upi, k, r, s);
+            l.l((Context)z.c, ure, k, r, s);
             return;
         }
-        ((Handler)z.q.b).post((Runnable)new ndg(z, upi, k, r, s, 4, (byte[])null, (byte[])null, (byte[])null, (byte[])null));
+        ((Handler)z.q.b).post((Runnable)new nel(z, ure, k, r, s, 4, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null));
     }
     
     public final void J(final boolean b) {
         if (b) {
-            this.bz();
+            this.bC();
             return;
         }
-        this.bx(true);
+        this.bA(true);
     }
     
     public final void K() {
-        final wov j = this.J;
+        final wqv j = this.J;
         if (j != null) {
-            this.bA((br)j, "CONFIRM_THUMBNAIL_FRAGMENT");
+            this.bD((br)j, "CONFIRM_THUMBNAIL_FRAGMENT");
             return;
         }
-        final wqe l = this.L;
+        final wse l = this.L;
         if (l != null) {
-            this.bA((br)l, "INVITE_SCREEN_FRAGMENT");
+            this.bD((br)l, "INVITE_SCREEN_FRAGMENT");
             return;
         }
-        final wqe m = this.M;
+        final wse m = this.M;
         if (m != null) {
-            this.bA((br)m, "SCHEDULED_COSTREAM_FRAGMENT");
+            this.bD((br)m, "SCHEDULED_COSTREAM_FRAGMENT");
             return;
         }
-        this.bo();
+        this.bp();
     }
     
     public final void L() {
@@ -968,30 +968,30 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             i.d();
             this.K = null;
         }
-        final wqe l = this.L;
+        final wse l = this.L;
         if (l != null) {
-            this.cm((br)l, "INVITE_SCREEN_FRAGMENT", true);
+            this.cp((br)l, "INVITE_SCREEN_FRAGMENT", true);
             return;
         }
-        final wqe m = this.M;
+        final wse m = this.M;
         if (m != null) {
-            this.cm((br)m, "SCHEDULED_COSTREAM_FRAGMENT", true);
+            this.cp((br)m, "SCHEDULED_COSTREAM_FRAGMENT", true);
             return;
         }
         if (this.aO) {
-            this.bq();
+            this.br();
             return;
         }
-        this.bu();
+        this.bv();
     }
     
     public final void M() {
     }
     
     public final void N() {
-        final amhp j = this.D.j;
+        final amjt j = this.D.j;
         if (j != null) {
-            this.cd(j, null);
+            this.cg(j, null);
         }
     }
     
@@ -999,134 +999,156 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         this.finish();
     }
     
-    public final void P(final alrx alrx) {
+    public final void P(final alub alub) {
         if (!this.aS) {
-            this.cc(alrx);
+            this.cf(alub);
         }
     }
     
-    public final void Q(final alrx alrx) {
-        this.ce(alrx);
+    public final void Q(final alub alub) {
+        this.ch(alub);
     }
     
     public final void R() {
         this.aT = true;
     }
     
-    public final void S(final Bitmap bitmap) {
-        final wov j = this.J;
+    public final void S(final View view) {
+        final int bt = this.bT();
+        final int bs = this.bS();
+        FrameLayout$LayoutParams layoutParams;
+        if (((fa)this).getResources().getConfiguration().orientation == 2) {
+            final int n = bt / 2;
+            final double w = this.D.w;
+            final double n2 = n;
+            Double.isNaN(n2);
+            layoutParams = new FrameLayout$LayoutParams(n, (int)(n2 / w));
+            layoutParams.gravity = 17;
+        }
+        else {
+            final int n3 = bs / 2;
+            final double w2 = this.D.w;
+            final double n4 = n3;
+            Double.isNaN(n4);
+            layoutParams = new FrameLayout$LayoutParams((int)(n4 * w2), n3);
+            layoutParams.gravity = 17;
+        }
+        view.setLayoutParams((ViewGroup$LayoutParams)layoutParams);
+    }
+    
+    public final void T(final Bitmap bitmap) {
+        final wqv j = this.J;
         if (j != null) {
             j.aO(bitmap);
         }
         else {
-            final wov i = this.I;
+            final wqv i = this.I;
             if (i != null) {
                 i.aO(bitmap);
             }
             else {
-                final wqe l = this.L;
+                final wse l = this.L;
                 if (l != null) {
                     l.aL(bitmap);
                 }
                 else {
-                    final wqe m = this.M;
+                    final wse m = this.M;
                     if (m != null) {
                         m.aL(bitmap);
                     }
                 }
             }
         }
-        final wov k = this.J;
+        final wqv k = this.J;
         if (k != null) {
             k.aL();
-            this.cm((br)this.J, "CONFIRM_THUMBNAIL_FRAGMENT", true);
+            this.cp((br)this.J, "CONFIRM_THUMBNAIL_FRAGMENT", true);
             return;
         }
-        final wov i2 = this.I;
+        final wqv i2 = this.I;
         if (i2 != null) {
             i2.aL();
-            this.cm((br)this.I, "CHOOSE_THUMBNAIL_FRAGMENT", true);
+            this.cp((br)this.I, "CHOOSE_THUMBNAIL_FRAGMENT", true);
             return;
         }
-        final wqe l2 = this.L;
+        final wse l2 = this.L;
         if (l2 != null) {
-            this.cm((br)l2, "INVITE_SCREEN_FRAGMENT", true);
+            this.cp((br)l2, "INVITE_SCREEN_FRAGMENT", true);
             return;
         }
-        final wqe m2 = this.M;
+        final wse m2 = this.M;
         if (m2 != null) {
-            this.cm((br)m2, "SCHEDULED_COSTREAM_FRAGMENT", true);
+            this.cp((br)m2, "SCHEDULED_COSTREAM_FRAGMENT", true);
             return;
         }
         this.finish();
     }
     
-    public final void T(final akne akne) {
+    public final void U(final akph akph) {
         if (this.J != null) {
-            this.bA((br)(this.aB = wrm.o(akne, this.aW)), "EDIT_SETTINGS_PRE_STREAM_FRAGMENT");
+            this.bD((br)(this.aB = wtm.o(akph, this.aW)), "EDIT_SETTINGS_PRE_STREAM_FRAGMENT");
             return;
         }
         if (this.aO) {
-            this.bq();
+            this.br();
             return;
         }
-        this.bu();
+        this.bv();
     }
     
-    public final void U(final String s) {
-        this.cf(s);
+    public final void V(final String s) {
+        this.ci(s);
     }
     
-    public final void V() {
+    public final void W() {
         this.finish();
     }
     
-    public final void W(final amgq i) {
-        final wov j = this.J;
+    public final void X(final amiu i) {
+        final wqv j = this.J;
         j.getClass();
         this.ab = (i.q != j.aX());
-        this.cd(null, this.D.i = i);
+        this.cg(null, this.D.i = i);
     }
     
-    public final void X(final amhp amhp) {
+    public final void Y(final amjt amjt) {
         this.ab = true;
-        this.cd(amhp, null);
+        this.cg(amjt, null);
     }
     
-    public final void Y() {
+    public final void Z() {
         this.G = null;
         this.H = null;
         this.aR = true;
         this.aS = true;
         if (this.aO) {
-            this.bq();
+            this.br();
             return;
         }
-        this.bu();
+        this.bv();
     }
     
-    public final void Z(final amgq i) {
-        this.D.i = i;
-        wia.b().h = i.q;
-    }
-    
-    public final void a(final dbi dbi) {
+    public final void a(final dbj dbj) {
         if (!this.U) {
             final StreamConfig d = this.D;
-            this.cq(d.c, d.d.a, 2);
+            this.ct(d.c, d.d.a, 2);
         }
     }
     
-    public final void aA(final double w) {
-        this.D.w = w;
-        this.ck();
-        this.cb();
+    public final void aA() {
+        this.finish();
     }
     
-    public final void aB(final View view) {
+    public final void aB(final double w) {
+        this.D.w = w;
+        this.cn();
+        this.ce();
+    }
+    
+    public final void aC(final View view) {
         this.Z.c();
-        this.bS(view);
-        final wra f = this.F;
+        this.bV(view);
+        final wta f = this.F;
         if (f != null) {
             f.am = this.B();
             if (f.al != null && !TextUtils.isEmpty(f.am)) {
@@ -1135,20 +1157,20 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         }
     }
     
-    public final void aC() {
-        final wrm ab = this.aB;
+    public final void aD() {
+        final wtm ab = this.aB;
         if (ab != null && ab.aw()) {
-            final wov j = this.J;
+            final wqv j = this.J;
             if (j != null) {
                 this.J(j.aX());
-                this.bA((br)this.J, "CONFIRM_THUMBNAIL_FRAGMENT");
+                this.bD((br)this.J, "CONFIRM_THUMBNAIL_FRAGMENT");
                 if (this.J.au()) {
                     this.J.aa();
                 }
             }
             else if (this.M != null) {
                 this.J(false);
-                this.bA((br)this.M, "SCHEDULED_COSTREAM_FRAGMENT");
+                this.bD((br)this.M, "SCHEDULED_COSTREAM_FRAGMENT");
                 if (this.M.au()) {
                     this.M.aa();
                 }
@@ -1159,17 +1181,17 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             this.finish();
             return;
         }
-        if (cp(this.D.d)) {
+        if (cs(this.D.d)) {
             this.D.a = true;
             this.E(false);
             this.finish();
             return;
         }
-        final woc onCancelListener = new woc(this);
-        ((AlertDialog$Builder)this.ap.af((Context)this)).setMessage(2132018209).setPositiveButton(17039370, (DialogInterface$OnClickListener)onCancelListener).setNegativeButton(17039360, (DialogInterface$OnClickListener)onCancelListener).setOnCancelListener((DialogInterface$OnCancelListener)onCancelListener).show();
+        final wqe onCancelListener = new wqe(this);
+        ((AlertDialog$Builder)this.ar.al((Context)this)).setMessage(2132018210).setPositiveButton(17039370, (DialogInterface$OnClickListener)onCancelListener).setNegativeButton(17039360, (DialogInterface$OnClickListener)onCancelListener).setOnCancelListener((DialogInterface$OnCancelListener)onCancelListener).show();
     }
     
-    public final void aD(final StreamMetadata d) {
+    public final void aE(final StreamMetadata d) {
         final StreamConfig d2 = this.D;
         final StreamMetadata d3 = d2.d;
         if (d3 == null) {
@@ -1208,11 +1230,11 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             if (f != null) {
                 d3.f = f;
             }
-            final akjp g = d.g;
+            final akls g = d.g;
             if (g != null) {
                 d3.g = g;
             }
-            final akjq h = d.h;
+            final aklt h = d.h;
             if (h != null) {
                 d3.h = h;
             }
@@ -1228,20 +1250,20 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             if (j != null) {
                 d3.j = j;
             }
-            final ajub k = d.k;
+            final ajwe k = d.k;
             if (k != null) {
                 d3.k = k;
             }
         }
         this.k.e();
-        final wqe l2 = this.L;
+        final wse l2 = this.L;
         final boolean b2 = true;
-        Label_0330: {
+        Label_0372: {
             if (l2 != null) {
-                final wrm ab = this.aB;
+                final wtm ab = this.aB;
                 if (ab != null && !ab.am) {
                     this.ab = true;
-                    break Label_0330;
+                    break Label_0372;
                 }
             }
             if (this.I != null) {
@@ -1250,85 +1272,85 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             }
         }
         if (this.L != null) {
-            final wrm ab2 = this.aB;
+            final wtm ab2 = this.aB;
             if (ab2 == null || ab2.am) {
                 if (this.G != null) {
-                    this.bp(this.D.j, null);
+                    this.bq(this.D.j, null);
                 }
                 return;
             }
         }
-        this.bo();
+        this.bp();
     }
     
-    public final void aE() {
-        this.ao.t();
+    public final void aF() {
+        this.ap.l();
     }
     
-    public final void aF(final amyo amyo) {
-        this.cl(amyo);
+    public final void aG(final anas anas) {
+        this.co(anas);
     }
     
-    public final void aG(final alrx alrx) {
+    public final void aH(final alub alub) {
         if (!this.aR) {
-            this.ci(alrx);
+            this.cl(alub);
         }
     }
     
-    public final void aH(final View view) {
+    public final void aI(final View view) {
         this.Z.c();
-        this.bS(view);
+        this.bV(view);
         this.G.aO((CharSequence)this.B());
     }
     
-    public final void aI(final aiva aiva) {
-        this.bv(aiva);
+    public final void aJ(final aixf aixf) {
+        this.by(aixf);
     }
     
-    public final void aJ(final akrj akrj) {
+    public final void aK(final aktm aktm) {
         final int n = 0;
-        int ct = 0;
+        int cu = 0;
         Label_0260: {
-            if (akrj == null) {
-                ct = n;
+            if (aktm == null) {
+                cu = n;
             }
             else {
-                final Iterator<Object> iterator = akrj.f.iterator();
+                final Iterator<Object> iterator = ((List<Object>)aktm.f).iterator();
                 while (true) {
-                    ct = n;
+                    cu = n;
                     if (!iterator.hasNext()) {
                         break;
                     }
-                    aopb aopb;
-                    if ((aopb = iterator.next().b) == null) {
-                        aopb = aopb.a;
+                    aore aore;
+                    if ((aore = iterator.next().b) == null) {
+                        aore = aore.a;
                     }
-                    aopc aopc;
-                    if ((aopc = aopb.b) == null) {
-                        aopc = aopc.a;
+                    aorf aorf;
+                    if ((aorf = aore.b) == null) {
+                        aorf = aorf.a;
                     }
-                    anws anws;
-                    if ((anws = aopc.c) == null) {
-                        anws = anws.a;
+                    anyv anyv;
+                    if ((anyv = aorf.c) == null) {
+                        anyv = anyv.a;
                     }
-                    if (anws.d.size() == 0) {
+                    if (anyv.d.size() == 0) {
                         continue;
                     }
-                    final Iterator<Object> iterator2 = anws.d.iterator();
+                    final Iterator<Object> iterator2 = ((List<Object>)anyv.d).iterator();
                     while (iterator2.hasNext()) {
-                        amfn amfn;
-                        if ((amfn = iterator2.next().H) == null) {
-                            amfn = amfn.a;
+                        amhr amhr;
+                        if ((amhr = iterator2.next().H) == null) {
+                            amhr = amhr.a;
                         }
-                        if (amfn.b.size() != 0) {
-                            for (final amfo amfo : amfn.b) {
-                                if ((amfo.b & 0x100) != 0x0) {
-                                    amap amap;
-                                    if ((amap = amfo.c) == null) {
-                                        amap = amap.a;
+                        if (amhr.b.size() != 0) {
+                            for (final amhs amhs : amhr.b) {
+                                if ((amhs.b & 0x100) != 0x0) {
+                                    amct amct;
+                                    if ((amct = amhs.c) == null) {
+                                        amct = amct.a;
                                     }
-                                    if (amap.b != 1 || (ct = aqql.ct((int)amap.c)) == 0) {
-                                        ct = 1;
+                                    if (amct.b != 1 || (cu = aqsx.cu((int)amct.c)) == 0) {
+                                        cu = 1;
                                         break Label_0260;
                                     }
                                     break Label_0260;
@@ -1340,51 +1362,51 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             }
         }
         final StreamConfig d = this.D;
-        if (ct == 0) {
-            this.cq(d.c, d.d.a, 2);
+        if (cu == 0) {
+            this.ct(d.c, d.d.a, 2);
             return;
         }
-        this.cq(d.c, d.d.a, ct);
+        this.ct(d.c, d.d.a, cu);
     }
     
-    public final void aK(final amgq amgq) {
-        this.cd(null, amgq);
-        this.J(amgq.q);
-    }
-    
-    public final void aL() {
-        this.finish();
+    public final void aL(final amiu amiu) {
+        this.cg(null, amiu);
+        this.J(amiu.q);
     }
     
     public final void aM() {
-        this.ad = false;
-        this.h.post((Runnable)new wnt(this, 8));
+        this.finish();
     }
     
-    public final void aN(final amhp j) {
+    public final void aN() {
+        this.ad = false;
+        this.h.post((Runnable)new wpv(this, 9));
+    }
+    
+    public final void aO(final amjt j) {
         this.k.e();
         this.D.j = j;
-        this.bY();
-        this.bA((br)(this.M = wqe.n((String)null, j)), "SCHEDULED_COSTREAM_FRAGMENT");
+        this.cb();
+        this.bD((br)(this.M = wse.n((String)null, j)), "SCHEDULED_COSTREAM_FRAGMENT");
     }
     
-    public final void aO() {
-        this.bt();
+    public final void aP() {
+        this.bu();
     }
     
-    public final void aP(final boolean b) {
-        final wfp l = this.Z.l;
+    public final void aQ(final boolean b) {
+        final whq l = this.Z.l;
         if (l != null) {
             l.i(b);
         }
     }
     
-    public final void aQ() {
+    public final void aS() {
         this.k.e();
-        final wqe l = this.L;
+        final wse l = this.L;
         Label_0052: {
             if (l != null) {
-                final wql aa = this.aA;
+                final wsl aa = this.aA;
                 if (aa != null && !aa.al) {
                     this.ab = true;
                     break Label_0052;
@@ -1395,44 +1417,44 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             }
         }
         if (l != null) {
-            final wql aa2 = this.aA;
+            final wsl aa2 = this.aA;
             if (aa2 == null || aa2.al) {
                 if (this.H != null) {
-                    this.bp(this.D.j, null);
+                    this.bq(this.D.j, null);
                 }
                 return;
             }
         }
-        this.bo();
+        this.bp();
     }
     
-    public final void aS(final amgq i) {
-        final wov j = this.J;
+    public final void aT(final amiu i) {
+        final wqv j = this.J;
         j.getClass();
         this.ab = (i.q != j.aX());
-        this.cd(null, this.D.i = i);
+        this.cg(null, this.D.i = i);
     }
     
-    public final void aT(final amhp amhp) {
+    public final void aU(final amjt amjt) {
         this.ab = true;
-        this.cd(amhp, null);
+        this.cg(amjt, null);
     }
     
-    public final void aU(final amgq i) {
+    public final void aV(final amiu i) {
         this.D.i = i;
-        wia.b().h = i.q;
+        wka.b().h = i.q;
     }
     
-    public final void aV(final amhp j) {
+    public final void aW(final amjt j) {
         this.D.j = j;
-        wia.b().h = false;
+        wka.b().h = false;
     }
     
-    public final void aW(final String s, final aioe l) {
+    public final void aX(final String s, final aiqj l) {
         if (this.isDestroyed()) {
             return;
         }
-        wia.b().e = s;
+        wka.b().e = s;
         this.ab = true;
         final StreamConfig d = this.D;
         d.c = s;
@@ -1440,90 +1462,71 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         this.af.post(this.ah);
     }
     
-    public final void aX(final apjz b) {
+    public final void aY(final apmd b) {
         this.D.B = b;
     }
     
-    public final void aY() {
-        this.D.s = true;
-        this.cb();
-    }
-    
     public final void aZ() {
-        final wov j = this.J;
-        if (j != null && j.aw()) {
-            this.J.aN();
-            return;
-        }
-        this.G = null;
-        this.H = null;
-        this.I = null;
-        this.K = null;
-        this.L = null;
-        this.D.a = true;
-        this.E(false);
-        final String z = this.D.z;
-        this.D = new StreamConfig();
-        wia.b().h();
-        this.D.z = z;
-        if (this.aO) {
-            this.bq();
-            return;
-        }
-        this.bu();
+        this.D.s = true;
+        this.ce();
     }
     
-    public final void aa() {
-        if (this.M != null) {
-            this.cj(true);
-            return;
-        }
-        if (this.aO) {
-            this.bq();
-            return;
-        }
-        this.bu();
+    public final void aa(final amiu i) {
+        this.D.i = i;
+        wka.b().h = i.q;
     }
     
     public final void ab() {
-        if (!zgv.s((br)this.L)) {
+        if (this.M != null) {
+            this.cm(true);
             return;
         }
-        Toast.makeText((Context)this, 2132018239, 0).show();
+        if (this.aO) {
+            this.br();
+            return;
+        }
+        this.bv();
     }
     
-    public final void ac(final akne akne) {
-        if (!this.aO) {
-            this.bA((br)(this.aB = wrm.o(akne, this.aW)), "EDIT_SETTINGS_PRE_STREAM_FRAGMENT");
+    public final void ac() {
+        if (!zis.s((br)this.L)) {
             return;
         }
-        akne.getClass();
-        final wql aa = new wql();
+        Toast.makeText((Context)this, 2132018240, 0).show();
+    }
+    
+    public final void ad(final akph akph) {
+        if (!this.aO) {
+            this.bD((br)(this.aB = wtm.o(akph, this.aW)), "EDIT_SETTINGS_PRE_STREAM_FRAGMENT");
+            return;
+        }
+        akph.getClass();
+        final wsl aa = new wsl();
         final Bundle bundle = new Bundle();
-        bundle.putParcelable("ARG_GET_BROADCAST_RESPONSE", (Parcelable)new ParcelableMessageLite((MessageLite)akne));
+        bundle.putParcelable("ARG_GET_BROADCAST_RESPONSE", (Parcelable)new ParcelableMessageLite((MessageLite)akph));
         aa.ag(bundle);
-        this.bA((br)(this.aA = aa), "EDIT_SETTINGS_LIVE_SHARED_MDE_FRAGMENT");
+        this.bD((br)(this.aA = aa), "EDIT_SETTINGS_LIVE_SHARED_MDE_FRAGMENT");
         this.H = null;
     }
     
-    public final void ad(final String c) {
-        this.cf(this.D.c = c);
+    public final void ae(final String c) {
+        this.ci(this.D.c = c);
     }
     
-    public final void ae(final amhp j) {
+    public final void af(final amjt j) {
         this.D.j = j;
-        wia.b().h = false;
+        wka.b().h = false;
     }
     
-    public final void af(final String c) {
+    public final void ag(final String c) {
         this.D.c = c;
         if (this.K == null) {
-            this.K = wor.a(c, this.aW);
+            this.K = wqr.a(c, this.aW);
         }
-        this.bA((br)this.K, "CAPTURE_THUMBNAIL_FRAGMENT");
+        this.bD((br)this.K, "CAPTURE_THUMBNAIL_FRAGMENT");
     }
     
-    public final void ag(final int a, final String x, final String y, final amhy k) {
+    public final void ah(final int a, final String x, final String y, final amkc k) {
         final StreamConfig d = this.D;
         d.A = a;
         d.x = x;
@@ -1531,37 +1534,37 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         d.k = k;
     }
     
-    public final void ah() {
-        this.ao.t();
+    public final void ai() {
+        this.ap.l();
     }
     
-    public final void ai() {
-        final wql aa = this.aA;
+    public final void aj() {
+        final wsl aa = this.aA;
         if (aa != null && aa.aw()) {
-            final woi aa2 = this.aa;
+            final wqj aa2 = this.aa;
             if (aa2.a > 0) {
-                ((adcq)aa2).b();
+                ((ades)aa2).b();
                 return;
             }
-            final wov j = this.J;
+            final wqv j = this.J;
             if (j != null) {
                 this.J(j.aX());
-                this.bA((br)this.J, "CONFIRM_THUMBNAIL_FRAGMENT");
+                this.bD((br)this.J, "CONFIRM_THUMBNAIL_FRAGMENT");
                 if (this.J.au()) {
                     this.J.aa();
                 }
             }
             else if (this.M != null) {
                 this.J(false);
-                this.bA((br)this.M, "SCHEDULED_COSTREAM_FRAGMENT");
+                this.bD((br)this.M, "SCHEDULED_COSTREAM_FRAGMENT");
                 if (this.M.au()) {
                     this.M.aa();
                 }
             }
             else {
-                final wqe l = this.L;
+                final wse l = this.L;
                 if (l != null) {
-                    this.bA((br)l, "INVITE_SCREEN_FRAGMENT");
+                    this.bD((br)l, "INVITE_SCREEN_FRAGMENT");
                     if (this.L.au()) {
                         this.L.aa();
                     }
@@ -1569,141 +1572,141 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             }
         }
         else {
-            final woi aa3 = this.aa;
+            final wqj aa3 = this.aa;
             if (aa3.a > 0) {
-                ((adcq)aa3).b();
+                ((ades)aa3).b();
                 return;
             }
             this.finish();
         }
     }
     
-    public final void aj(final View view) {
+    public final void ak(final View view) {
         this.Z.c();
-        this.bS(view);
+        this.bV(view);
         final String b = this.B();
-        final wql h = this.H;
+        final wsl h = this.H;
         if (h != null && b != null) {
             h.aK((CharSequence)b);
         }
     }
     
-    public final void ak(final alrx alrx) {
+    public final void al(final alub alub) {
         if (!this.aS) {
-            this.cc(alrx);
+            this.cf(alub);
         }
     }
     
-    public final void al(final alrx alrx) {
-        this.ce(alrx);
+    public final void am(final alub alub) {
+        this.ch(alub);
     }
     
-    public final void am(final alrx alrx) {
+    public final void an(final alub alub) {
         if (!this.aR) {
-            this.ci(alrx);
+            this.cl(alub);
         }
     }
     
-    public final void an(final amyo amyo) {
-        this.cl(amyo);
+    public final void ao(final anas anas) {
+        this.co(anas);
     }
     
-    public final void ao(final aiva aiva) {
-        this.bv(aiva);
+    public final void ap(final aixf aixf) {
+        this.by(aixf);
     }
     
-    public final void ap(int ct, final amho amho, final ajkj ajkj, final String s, final ajsq ajsq, final boolean b) {
+    public final void aq(int cu, final amjs amjs, final ajmo ajmo, final String s, final ajut ajut, final boolean b) {
         this.setRequestedOrientation(-1);
         final ViewGroup$LayoutParams layoutParams = this.aJ.getLayoutParams();
         if (layoutParams.height != -1 && layoutParams.width != -1) {
-            tmy.aF((View)this.aJ, tmy.aE(-1, -1), (Class)ViewGroup$LayoutParams.class);
+            tpe.aF((View)this.aJ, tpe.aE(-1, -1), (Class)ViewGroup$LayoutParams.class);
         }
-        this.bF("off");
-        if (ct != 0 && ct != 26 && ct != 31) {
-            if (ct != 33) {
-                if (ct != 21) {
-                    if (ct != 22) {
+        this.bI("off");
+        if (cu != 0 && cu != 26 && cu != 31) {
+            if (cu != 33) {
+                if (cu != 21) {
+                    if (cu != 22) {
                         String string = s;
                         if (TextUtils.isEmpty((CharSequence)s)) {
-                            string = this.getString(2132018276);
+                            string = this.getString(2132018277);
                         }
                         if (b) {
-                            this.ch(null, string, ajsq);
+                            this.ck(null, string, ajut);
                         }
                         else {
-                            this.cg(wpc.d, string);
+                            this.cj(wrc.d, string);
                         }
                     }
                     else {
-                        final wrm g = this.G;
+                        final wtm g = this.G;
                         if (g != null) {
-                            this.bA((br)g, "PRE_STREAM_FRAGMENT");
+                            this.bD((br)g, "PRE_STREAM_FRAGMENT");
                         }
                         else {
-                            final wql h = this.H;
+                            final wsl h = this.H;
                             if (h != null) {
-                                this.bA((br)h, "LIVE_SHARED_MDE_FRAGMENT");
+                                this.bD((br)h, "LIVE_SHARED_MDE_FRAGMENT");
                             }
                         }
-                        ((AlertDialog$Builder)this.ap.af((Context)this)).setTitle(2132018276).setMessage(2132018274).setPositiveButton(2132018275, (DialogInterface$OnClickListener)new jik(this, 18)).setNegativeButton(2132018277, (DialogInterface$OnClickListener)new jik(this, 19)).setCancelable(false).show();
+                        ((AlertDialog$Builder)this.ar.al((Context)this)).setTitle(2132018277).setMessage(2132018275).setPositiveButton(2132018276, (DialogInterface$OnClickListener)new jjm(this, 19)).setNegativeButton(2132018278, (DialogInterface$OnClickListener)new jjm(this, 20)).setCancelable(false).show();
                     }
                 }
                 else {
-                    this.cg(wpc.d, this.getString(2132018245));
+                    this.cj(wrc.d, this.getString(2132018246));
                 }
             }
             else {
                 this.k.f();
-                this.ch(amho, s, ajsq);
+                this.ck(amjs, s, ajut);
             }
         }
         else if (b) {
             this.k.f();
-            if (ct == 26 && amho == null && ajkj == null && s == null && ajsq == null) {
+            if (cu == 26 && amjs == null && ajmo == null && s == null && ajut == null) {
                 this.finish();
                 return;
             }
             if (this.U) {
-                if (ajkj != null) {
-                    this.bA((br)(this.az = wrb.r(ajkj)), "POST_COSTREAM_FRAGMENT");
+                if (ajmo != null) {
+                    this.bD((br)(this.az = wtb.r(ajmo)), "POST_COSTREAM_FRAGMENT");
                 }
                 else {
                     this.finish();
                 }
             }
             else {
-                final akak f = ((arud)this.as.a).f();
-                apgj apgj;
+                final akcn f = ((arwh)this.am.b).f();
+                apin apin;
                 if (f != null) {
-                    if ((apgj = f.h) == null) {
-                        apgj = apgj.a;
+                    if ((apin = f.h) == null) {
+                        apin = apin.a;
                     }
                 }
                 else {
-                    apgj = apgj.a;
+                    apin = apin.a;
                 }
-                if (apgj.c) {
-                    if (amho == null) {
-                        final agza builder = ((agzi)akri.a).createBuilder();
+                if (apin.c) {
+                    if (amjs == null) {
+                        final ahaz builder = ((ahbh)aktl.a).createBuilder();
                         final String c = this.D.c;
                         builder.copyOnWrite();
-                        final akri akri = (akri)builder.instance;
+                        final aktl aktl = (aktl)builder.instance;
                         c.getClass();
-                        akri.b |= 0x2;
-                        akri.d = c;
-                        tcp.n((aum)this, this.am.e(builder, this.v, null), (trb)new wnw(this, 3), (trb)new wnw(this, 4));
+                        aktl.b |= 0x2;
+                        aktl.d = c;
+                        teu.n((aun)this, this.ao.e(builder, this.v, null), (ttg)new vll(this, 4), (ttg)new vll(this, 5));
                     }
                     else {
                         final StreamConfig d = this.D;
                         final String c2 = d.c;
                         final String a = d.d.a;
-                        if ((ct = aqql.ct(amho.f)) == 0) {
-                            ct = 1;
+                        if ((cu = aqsx.cu(amjs.f)) == 0) {
+                            cu = 1;
                         }
-                        this.cq(c2, a, ct);
+                        this.ct(c2, a, cu);
                     }
                 }
-                this.ch(amho, s, ajsq);
+                this.ck(amjs, s, ajut);
             }
         }
         else {
@@ -1717,64 +1720,64 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         this.E(false);
     }
     
-    public final void aq() {
+    public final void ar() {
         this.Z.e(true);
-        this.bU();
+        this.bX();
     }
     
-    public final void ar(final boolean q) {
+    public final void as(final boolean q) {
         this.D.q = q;
     }
     
-    public final void as() {
+    public final void at() {
         this.Z.e(false);
     }
     
-    public final void at(final boolean b) {
+    public final void au(final boolean b) {
         this.Z.e(b);
         if (b) {
-            this.bU();
+            this.bX();
             return;
         }
-        this.bV();
+        this.bY();
     }
     
-    public final void au() {
+    public final void av() {
         this.Z.e(false);
-        this.bV();
-        final tnu av = this.av;
+        this.bY();
+        final tpz av = this.av;
         if (av != null) {
             av.enable();
         }
-        if (zgv.t((Activity)this)) {
+        if (zis.t((Activity)this)) {
             this.Z.f(this.getWindowManager().getDefaultDisplay().getRotation());
         }
     }
     
-    public final void av(final long n) {
+    public final void aw(final long n) {
         final StreamConfig d = this.D;
         d.n = n;
         if (d.r) {
-            final int n2 = this.bO() + 1;
-            if (n2 <= this.as.aX()) {
-                if (this.as.be()) {
-                    tcp.n((aum)this, ((aagm)this.ar.a).c((aexg)new fqk(n2, 10), (Executor)afsl.a), (trb)vuq.d, (trb)vuq.e);
+            final int n2 = this.bR() + 1;
+            if (n2 <= this.am.r()) {
+                if (this.am.y()) {
+                    teu.n((aun)this, ((qqr)this.as.a).b((aezf)new fqt(n2, 10), (Executor)afum.a), (ttg)won.i, (ttg)won.j);
                 }
                 else {
-                    this.i.execute((Runnable)new wgp(this, n2, 6));
+                    this.i.execute((Runnable)new wip(this, n2, 6));
                 }
             }
         }
-        this.cb();
+        this.ce();
     }
     
-    public final void aw(final View view) {
+    public final void ax(final View view) {
         this.Z.c();
-        this.bS(view);
+        this.bV(view);
     }
     
-    public final void ax(wex h) {
-        final wsv z = this.Z;
+    public final void ay(wgx h) {
+        final wuv z = this.Z;
         if (z.h == null) {
             h.getClass();
             z.h = h;
@@ -1788,29 +1791,25 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
                 }
             }
             h.a = a;
-            z.q.y((wfd)h);
+            z.q.K((whe)h);
             return;
         }
-        trn.m("CameraStreamViewManager", "Pipeline render target already set.");
+        ttr.m("CameraStreamViewManager", "Pipeline render target already set.");
     }
     
-    public final void ay(aioe a) {
-        aioe f = null;
+    public final void az(aiqj a) {
+        aiqj f = null;
         Label_0034: {
             if (a != null) {
                 f = a;
-                if (!((agzd)a).rs((agyr)VideoManagerEndpointOuterClass$VideoManagerEndpoint.videoManagerEndpoint)) {
+                if (!((ahbc)a).ry((ahaq)VideoManagerEndpointOuterClass$VideoManagerEndpoint.videoManagerEndpoint)) {
                     break Label_0034;
                 }
             }
-            a = vba.a("FEmy_videos");
+            a = vdb.a("FEmy_videos");
             f = this.o.f(a);
         }
-        vaw.a((vax)this.l, f);
-        this.finish();
-    }
-    
-    public final void az() {
+        vcx.a((vcy)this.l, f);
         this.finish();
     }
     
@@ -1818,47 +1817,241 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         this.finish();
     }
     
-    public final void bA(final br br, final String s) {
-        this.cm(br, s, false);
+    public final void bA(final boolean b) {
+        if (!this.aV) {
+            Label_0053: {
+                if (this.aU != 0) {
+                    final Parcel ax = this.ax;
+                    if (ax != null) {
+                        this.Z.d((CameraStreamViewManager$CameraModelData)CameraStreamViewManager$CameraModelData.CREATOR.createFromParcel(ax));
+                        break Label_0053;
+                    }
+                }
+                this.Z.d((CameraStreamViewManager$CameraModelData)null);
+            }
+            final wuv z = this.Z;
+            tbi.f();
+            z.d.b(b);
+            z.k = new whh();
+            z.q.K((whe)z.d);
+            z.q.K((whe)z.k);
+            if (z.a) {
+                z.e.e = (wgj)new wur(z);
+            }
+            else {
+                final whj f = z.f;
+                if (f != null) {
+                    f.e();
+                }
+                final Activity c = z.c;
+                z.f = new whj();
+                final whj f2 = z.f;
+                z.g = new wgq(f2);
+                z.q.U(f2);
+                final wgx wgx = new wgx((whe)z.g);
+                z.q.K((whe)wgx);
+                z.i = new wgo(wkb.S((Context)z.c, 2131951635), (byte[])null, (byte[])null, (byte[])null);
+                z.j = new wgf((whi)new wus(z, 0));
+                z.e.e = (wgj)new wut(z, wgx);
+            }
+            this.an.S();
+            this.aJ.setVisibility(0);
+            final Parcel ax2 = this.ax;
+            if (ax2 != null) {
+                ax2.recycle();
+                this.ax = null;
+            }
+            this.aV = true;
+        }
     }
     
     public final void bB() {
-        final wov j = this.J;
-        if (j != null && j.aw()) {
-            this.J = null;
-            this.cj(true);
+        if (TextUtils.isEmpty((CharSequence)this.D.c)) {
+            ttr.b("Trying to go live without the necessary state");
+            this.cj(wrc.d, this.getString(2132018252));
             return;
         }
-        if (this.aO) {
-            this.bq();
-            return;
+        if (TextUtils.isEmpty((CharSequence)this.D.x) || TextUtils.isEmpty((CharSequence)this.D.y) || this.U) {
+            final boolean hasSystemFeature = this.getPackageManager().hasSystemFeature("android.hardware.microphone");
+            String packageName;
+            if (Binder.getCallingPid() == Process.myPid()) {
+                packageName = ((Context)this).getPackageName();
+            }
+            else {
+                packageName = null;
+            }
+            final int b = te.b((Context)this, "android.permission.RECORD_AUDIO", Binder.getCallingPid(), Binder.getCallingUid(), packageName);
+            final StreamConfig d = this.D;
+            boolean p = false;
+            if (hasSystemFeature) {
+                p = p;
+                if (b == 0) {
+                    p = true;
+                }
+            }
+            d.p = p;
         }
-        this.bu();
+        final StreamMetadata d2 = this.D.d;
+        if (d2 != null) {
+            final Boolean f = d2.f;
+            if (f != null && f) {
+                if (this.aP) {
+                    return;
+                }
+                this.aP = true;
+                if (zis.v((Context)this)) {
+                    this.cc();
+                    return;
+                }
+                ((qt)this).startActivityForResult(new Intent("android.settings.action.MANAGE_OVERLAY_PERMISSION", Uri.parse("package:".concat(String.valueOf(this.getPackageName())))), 1001);
+                return;
+            }
+        }
+        final wsr ai = this.aI;
+        if (ai == null) {
+            final StreamConfig d3 = this.D;
+            d3.e = true;
+            final String c = d3.c;
+            final boolean p2 = d3.p;
+            final boolean q = d3.q;
+            final int aw = this.aW;
+            final boolean r = d3.r;
+            final boolean s = d3.s;
+            final boolean u = this.U;
+            final String x = d3.x;
+            final String y = d3.y;
+            final amkc k = d3.k;
+            final long n = d3.n;
+            final long o = d3.o;
+            tvb.n(c);
+            final wsr ai2 = new wsr();
+            final Bundle bundle = new Bundle();
+            bundle.putString("ARG_VIDEO_ID", c);
+            bundle.putBoolean("ARG_IS_MIC_SUPPORTED", p2);
+            bundle.putBoolean("ARG_IS_MIC_ENABLED", q);
+            bundle.putInt("ARG_CAMERA_COUNT", aw);
+            bundle.putBoolean("ARG_LIVE_STREAM_IS_PORTRAIT", r);
+            bundle.putBoolean("ARG_DID_START_BROADCAST", s);
+            bundle.putBoolean("ARG_IS_COSTREAM", u);
+            bundle.putString("ARG_STREAM_URL", x);
+            bundle.putString("ARG_STREAM_KEY", y);
+            if (k != null) {
+                adyf.aA(bundle, "ARG_STREAM_RENDERER", (MessageLite)k);
+            }
+            bundle.putLong("ARG_TIMER_START_STREAM", n);
+            bundle.putLong("ARG_TIMER_DURATION_STREAM", o);
+            ai2.ag(bundle);
+            this.aI = ai2;
+        }
+        else if (this.U && this.aT && !this.D.s) {
+            ai.aE.s();
+        }
+        final tpz av = this.av;
+        if (av != null) {
+            av.disable();
+        }
+        (this.av = new tpz((Context)this, this.getWindowManager(), (tpy)this)).enable();
+        int requestedOrientation;
+        if (!this.D.r) {
+            requestedOrientation = 6;
+        }
+        else {
+            requestedOrientation = 7;
+        }
+        this.setRequestedOrientation(requestedOrientation);
+        final ViewGroup$LayoutParams layoutParams = this.aJ.getLayoutParams();
+        if (layoutParams.height == -1 && layoutParams.width == -1) {
+            tpe.aF((View)this.aJ, tpe.aE(this.bT(), this.bS()), (Class)ViewGroup$LayoutParams.class);
+        }
+        final StreamConfig d4 = this.D;
+        final int t = d4.t;
+        if (t != -1) {
+            this.Z.f(t);
+        }
+        else {
+            d4.t = this.getWindowManager().getDefaultDisplay().getRotation();
+        }
+        this.bZ();
+        final wsr ai3 = this.aI;
+        if (ai3 != null) {
+            this.cp((br)ai3, "LIVE_STREAM_FRAGMENT", true);
+        }
+        this.I = null;
+        wka.b().e = this.D.c;
+        final wka b2 = wka.b();
+        int j;
+        if (!this.D.e) {
+            j = 2;
+        }
+        else {
+            j = 3;
+        }
+        b2.j = j;
     }
     
     public final void bC() {
+        if (this.aV) {
+            this.an.T();
+            final wuv z = this.Z;
+            tbi.f();
+            z.e.f();
+            if (!z.a) {
+                final whj f = z.f;
+                if (f != null) {
+                    f.e();
+                }
+                z.q.N((Runnable)new wup(z.i, 2));
+            }
+            final whq l = z.l;
+            if (l != null) {
+                l.e();
+            }
+            this.aJ.setVisibility(4);
+            this.aV = false;
+        }
+    }
+    
+    public final void bD(final br br, final String s) {
+        this.cp(br, s, false);
+    }
+    
+    public final void bE() {
+        final wqv j = this.J;
+        if (j != null && j.aw()) {
+            this.J = null;
+            this.cm(true);
+            return;
+        }
+        if (this.aO) {
+            this.br();
+            return;
+        }
+        this.bv();
+    }
+    
+    public final void bF() {
         this.P.a(null);
-        final wom k = this.k;
+        final wqm k = this.k;
         k.b = true;
         k.g();
     }
     
-    public final void bD(final View view) {
+    public final void bG(final View view) {
         this.Z.c();
-        this.bS(view);
-        final wov i = this.I;
+        this.bV(view);
+        final wqv i = this.I;
         if (i != null && i.aw()) {
             this.I.aQ(this.B());
             return;
         }
-        final wov j = this.J;
+        final wqv j = this.J;
         if (j != null && j.aw()) {
             this.J.aQ(this.B());
         }
     }
     
-    public final void bE() {
-        if (this.Y && !zgv.t((Activity)this)) {
+    public final void bH() {
+        if (this.Y && !zis.t((Activity)this)) {
             return;
         }
         this.Z.f(this.getWindowManager().getDefaultDisplay().getRotation());
@@ -1873,24 +2066,24 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         }
     }
     
-    public final boolean bF(final String s) {
-        final wsv z = this.Z;
-        szc.f();
+    public final boolean bI(final String s) {
+        final wuv z = this.Z;
+        tbi.f();
         return z.e.l(s);
     }
     
-    public final boolean bG() {
+    public final boolean bJ() {
         return this.k.d && this.aZ;
     }
     
-    public final boolean bH(int n, int integer, int n2, final woo woo) {
+    public final boolean bK(int n, int integer, int n2, final wqo wqo) {
         if (!this.Z.e.b) {
-            ((MediaActionSound)((arhr)((ujf)this.x.a()).c).a()).play(0);
+            ((MediaActionSound)((arkg)((ulb)this.x.a()).c).a()).play(0);
         }
-        final wsv z = this.Z;
-        woo.getClass();
-        final wnx wnx = new wnx(woo);
-        szc.f();
+        final wuv z = this.Z;
+        wqo.getClass();
+        final wpy wpy = new wpy(wqo);
+        tbi.f();
         final View decorView = z.c.getWindow().getDecorView();
         final Rect rect = new Rect();
         decorView.getWindowVisibleDisplayFrame(rect);
@@ -1901,38 +2094,38 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         final int n4 = (int)(integer * (long)d / rect.height());
         final Activity c = z.c;
         c.getClass();
-        agot.u(n2 > 0);
-        agot.u(d > 0);
-        agot.u(rect.height() > 0);
+        adkp.H(n2 > 0);
+        adkp.H(d > 0);
+        adkp.H(rect.height() > 0);
         final int integer2 = ((Context)c).getResources().getInteger(2131492965);
         integer = ((Context)c).getResources().getInteger(2131492964);
         n2 = Math.round(n2 * (float)d / rect.height()) / integer;
         final Point point = new Point(integer2 * n2, integer * n2);
         if (point.x >= 4 && point.y >= 4 && point.x + n <= n3 && point.y + n4 <= d) {
-            z.k.f(n3, d, (wed)new wsu(z, b, n, n4, point, (wed)wnx));
+            z.k.f(n3, d, (wgd)new wuu(z, b, n, n4, point, (wgd)wpy));
             return true;
         }
         return false;
     }
     
-    public final boolean bI() {
-        final wsv z = this.Z;
-        szc.f();
+    public final boolean bL() {
+        final wuv z = this.Z;
+        tbi.f();
         return z.e.k("torch");
     }
     
-    public final void bJ(final float n) {
-        final wsv z = this.Z;
-        szc.f();
+    public final void bM(final float n) {
+        final wuv z = this.Z;
+        tbi.f();
         z.e.m(n);
     }
     
-    public final void bK(final int bd) {
+    public final void bN(final int bd) {
         this.bd = bd;
-        this.cj(false);
+        this.cm(false);
     }
     
-    public final agza bL(final StreamMetadata streamMetadata) {
+    public final ahaz bO(final StreamMetadata streamMetadata) {
         final StreamConfig d = this.D;
         if (d.c == null) {
             return null;
@@ -1947,10 +2140,10 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         Boolean e = streamMetadata.e;
         int l = streamMetadata.l;
         final Boolean f = streamMetadata.f;
-        final akjp g = streamMetadata.g;
+        akls g = streamMetadata.g;
         Date j = streamMetadata.j;
-        final ajub k = streamMetadata.k;
-        final wjl a2 = wjl.a;
+        final ajwe k = streamMetadata.k;
+        final wll a2 = wll.a;
         final boolean equals = Objects.equals((Object)a, (Object)d2.a);
         final int n2 = 1;
         if (equals) {
@@ -1968,38 +2161,39 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         else {
             n4 = 1;
         }
-        int n5 = (n4 ^ 0x1) | (((equals2 ^ true) | (equals ^ true)) ? 1 : 0);
         if (n == n3) {
             n = 0;
         }
-        wjl wjl2;
-        if (!Objects.equals((Object)i, (Object)d2.i)) {
-            wjl wjl;
+        final boolean equals3 = Objects.equals((Object)i, (Object)d2.i);
+        int n5 = (n4 ^ 0x1) | (((equals2 ^ true) | (equals ^ true)) ? 1 : 0);
+        wll wll2;
+        if (!equals3) {
+            wll wll;
             if (i == null) {
-                wjl = wjl.b;
+                wll = wll.b;
             }
             else {
-                wjl = wjl.a((Object)i);
+                wll = wll.a((Object)i);
             }
             n5 = 1;
-            wjl2 = wjl;
+            wll2 = wll;
         }
         else {
-            wjl2 = a2;
+            wll2 = a2;
         }
-        final boolean equals3 = Objects.equals((Object)c, (Object)d2.c);
+        final boolean equals4 = Objects.equals((Object)c, (Object)d2.c);
         Boolean b2;
-        if (!equals3) {
+        if (!equals4) {
             b2 = c;
         }
         else {
             b2 = null;
         }
-        final boolean equals4 = Objects.equals((Object)d3, (Object)d2.d);
-        if (equals4) {
+        final boolean equals5 = Objects.equals((Object)d3, (Object)d2.d);
+        if (equals5) {
             d3 = null;
         }
-        if (equals4) {
+        if (equals5) {
             c = b2;
         }
         final int m = d2.l;
@@ -2013,76 +2207,76 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         if (l == m) {
             l = 0;
         }
-        final boolean equals5 = Objects.equals((Object)e, (Object)d2.e);
-        if (equals5) {
+        final boolean equals6 = Objects.equals((Object)e, (Object)d2.e);
+        if (equals6) {
             e = null;
         }
-        final boolean equals6 = Objects.equals((Object)f, (Object)d2.f);
-        final boolean b3 = equals6 ^ true;
-        int n7 = ((equals4 ^ true) ? 1 : 0) | (((equals3 ^ true) ? 1 : 0) | n5) | (n6 ^ 0x1) | ((equals5 ^ true) ? 1 : 0) | (b3 ? 1 : 0);
-        Boolean b4;
-        if (!equals6) {
-            b4 = f;
+        final boolean equals7 = Objects.equals((Object)f, (Object)d2.f);
+        Boolean b3;
+        if (!equals7) {
+            b3 = f;
         }
         else {
-            b4 = null;
+            b3 = null;
         }
-        wjl wjl3;
-        if (!b3 && Objects.equals((Object)k, (Object)d2.k)) {
-            wjl3 = a2;
-        }
-        else {
+        int n7 = 0;
+        wll wll3 = null;
+        Label_0484: {
+            if (!(equals7 ^ true)) {
+                n7 = (((equals5 ^ true) ? 1 : 0) | (((equals4 ^ true) ? 1 : 0) | n5) | (n6 ^ 0x1) | ((equals6 ^ true) ? 1 : 0));
+                if (Objects.equals((Object)k, (Object)d2.k)) {
+                    wll3 = a2;
+                    break Label_0484;
+                }
+            }
             if (f && k != null && (k.b & 0x4) != 0x0) {
-                wjl3 = wjl.a((Object)k.e);
+                wll3 = wll.a((Object)k.e);
             }
             else {
-                wjl3 = wjl.b;
+                wll3 = wll.b;
             }
             n7 = 1;
         }
-        akjp akjp;
-        akjq akjq2;
+        aklt aklt;
         if (g != null && !Objects.equals((Object)g, (Object)d2.g)) {
-            final akjp g2 = d2.g;
-            final agza builder = ((agzi)akjq.a).createBuilder();
+            final akls g2 = d2.g;
+            final ahaz builder = aklt.a.createBuilder();
             if (g2 == null || g.c != g2.c) {
                 builder.copyOnWrite();
-                akjq.a((akjq)builder.instance);
+                aklt.a((aklt)builder.instance);
             }
             if ((g.b & 0x10) != 0x0 && (g2 == null || !TextUtils.equals((CharSequence)g.f, (CharSequence)g2.f))) {
                 builder.copyOnWrite();
-                akjq.d((akjq)builder.instance);
+                aklt.d((aklt)builder.instance);
             }
             else if ((g.b & 0x8) != 0x0 && (g2 == null || g.e != g2.e)) {
                 builder.copyOnWrite();
-                akjq.c((akjq)builder.instance);
+                aklt.c((aklt)builder.instance);
             }
             if ((g.b & 0x20) != 0x0 && (g2 == null || g.g != g2.g)) {
                 builder.copyOnWrite();
-                akjq.e((akjq)builder.instance);
+                aklt.e((aklt)builder.instance);
             }
             if ((g.b & 0x40) != 0x0 && (g2 == null || !TextUtils.equals((CharSequence)g.h, (CharSequence)g2.h))) {
                 builder.copyOnWrite();
-                akjq.f((akjq)builder.instance);
+                aklt.f((aklt)builder.instance);
             }
             if (g2 == null || g.d != g2.d) {
                 builder.copyOnWrite();
-                akjq.b((akjq)builder.instance);
+                aklt.b((aklt)builder.instance);
             }
-            final akjq akjq = (akjq)builder.build();
-            akjp = g;
+            aklt = (aklt)builder.build();
             n7 = 1;
-            akjq2 = akjq;
         }
         else {
-            akjp = null;
-            akjq2 = null;
+            g = null;
+            aklt = null;
         }
-        final boolean b5 = j == null;
+        final boolean b4 = j == null;
         final Date j2 = d2.j;
-        Label_0949: {
-            Label_0945: {
-                if (!(b5 ^ j2 == null)) {
+        Label_0947: {
+            Label_0944: {
+                if (!(b4 ^ j2 == null)) {
                     if (j != null) {
                         final Calendar instance = Calendar.getInstance();
                         instance.setTime(j);
@@ -2092,115 +2286,139 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
                             throw new IllegalArgumentException("The date must not be null");
                         }
                         if (instance.get(0) != instance2.get(0) || instance.get(1) != instance2.get(1) || instance.get(6) != instance2.get(6)) {
-                            break Label_0945;
+                            break Label_0944;
                         }
                     }
                     j = null;
-                    break Label_0949;
+                    break Label_0947;
                 }
             }
             n7 = n2;
         }
         if (n7 != 0) {
-            return this.r.n(this.D.c, a, b, c, d3, e, b4, akjp, akjq2, n, l, wjl2, j, wjl3, (byte[])null);
+            return this.r.o(this.D.c, a, b, c, d3, e, b3, g, aklt, n, l, wll2, j, wll3, (byte[])null);
         }
         return null;
     }
     
-    public final void bM() {
+    public final void bP() {
         this.bd = 3;
-        this.cj(false);
+        this.cm(false);
     }
     
-    public final void bN(final float n, final float n2, final xpb xpb) {
-        final wsv z = this.Z;
-        szc.f();
-        z.e.n(n, n2, z.m.c, xpb);
+    public final void bQ(final float n, final float n2, final afhd afhd) {
+        final wuv z = this.Z;
+        tbi.f();
+        z.e.n(n, n2, z.m.c, afhd);
     }
     
-    public final void ba(final amhy k, final String x, final String y) {
+    public final void ba() {
+        final wqv j = this.J;
+        if (j != null && j.aw()) {
+            this.J.aN();
+            return;
+        }
+        this.G = null;
+        this.H = null;
+        this.I = null;
+        this.K = null;
+        this.L = null;
+        this.D.a = true;
+        this.E(false);
+        final String z = this.D.z;
+        this.D = new StreamConfig();
+        wka.b().h();
+        this.D.z = z;
+        if (this.aO) {
+            this.br();
+            return;
+        }
+        this.bv();
+    }
+    
+    public final void bb(final amkc k, final String x, final String y) {
         final StreamConfig d = this.D;
         d.c = k.i;
         d.y = y;
         d.x = x;
         d.k = k;
-        this.bT();
-        this.by();
+        this.bW();
+        this.bB();
     }
     
-    public final void bb() {
-        this.bT();
+    public final void bc() {
+        this.bW();
     }
     
-    public final void bc(final int g) {
-        final wov i = this.I;
+    public final void bd(final int g) {
+        final wqv i = this.I;
         if (i != null && i.aw()) {
             this.D.g = g;
-            this.cb();
+            this.ce();
         }
-    }
-    
-    public final void bd() {
-        this.bz();
     }
     
     public final void be() {
-        this.bz();
+        this.bC();
     }
     
-    public final void bf(final String s, final aioe l) {
+    public final void bf() {
+        this.bC();
+    }
+    
+    public final void bg(final String s, final aiqj l) {
         if (this.isDestroyed()) {
             return;
         }
-        wia.b().e = s;
+        wka.b().e = s;
         this.ab = true;
         final StreamConfig d = this.D;
         d.c = s;
         d.l = l;
-        this.cb();
+        this.ce();
         this.af.post(this.ah);
     }
     
-    public final void bg(final apjz b) {
+    public final void bh(final apmd b) {
         this.D.B = b;
     }
     
-    public final void bi(final Choreographer$FrameCallback choreographer$FrameCallback) {
+    public final void bj(final Choreographer$FrameCallback choreographer$FrameCallback) {
         this.t.postFrameCallback(choreographer$FrameCallback);
     }
     
-    public final void bj(final int n) {
-        if (zgv.v((Context)this)) {
-            this.bZ();
+    public final void bk(final int n) {
+        if (zis.v((Context)this)) {
+            this.cc();
             return;
         }
         if (n > 0) {
-            new Handler().postDelayed((Runnable)new wgp(this, n, 7), 200L);
+            new Handler().postDelayed((Runnable)new wip(this, n, 7), 200L);
             return;
         }
-        tmy.x((Context)this, 2132018244, 1);
+        tpe.x((Context)this, 2132018245, 1);
         this.finish();
     }
     
-    public final void bk(final long n) {
-        tcp.n((aum)this, ((aagm)this.ar.a).c((aexg)new fmp(n, 10), (Executor)afsl.a), (trb)vuq.f, (trb)vuq.g);
+    public final void bl(final long n) {
+        teu.n((aun)this, ((qqr)this.as.a).b((aezf)new fmv(n, 10), (Executor)afum.a), (ttg)won.c, (ttg)won.d);
     }
     
-    public final void bl(final req req) {
-        req.i((reu)this);
+    public final void bm(final rgs rgs) {
+        rgs.i((rgw)this);
     }
     
-    public final void bm() {
-        tcp.o((aum)this, ((aagm)this.ar.a).c((aexg)vdg.t, (Executor)afsl.a), (trb)vuq.h, (trb)vuq.i);
+    public final void bn() {
+        teu.o((aun)this, ((qqr)this.as.a).b((aezf)wpw.b, (Executor)afum.a), (ttg)won.e, (ttg)won.f);
     }
     
-    public final void bn(final wia wia, final StreamConfig streamConfig) {
-        wia.h();
+    public final void bo(final wka wka, final StreamConfig streamConfig) {
+        wka.h();
         if (streamConfig != null) {
             if (!streamConfig.a) {
-                wia.e = streamConfig.c;
-                wia.f = this.as.bf();
-                wia.g = cp(streamConfig.d);
+                wka.e = streamConfig.c;
+                wka.f = this.am.z();
+                wka.g = cs(streamConfig.d);
                 if (TextUtils.isEmpty((CharSequence)streamConfig.x) && TextUtils.isEmpty((CharSequence)streamConfig.y)) {
                     return;
                 }
@@ -2211,43 +2429,43 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
                 else {
                     k = 4;
                 }
-                wia.k = k;
+                wka.k = k;
             }
         }
     }
     
-    public final void bo() {
-        this.bY();
+    public final void bp() {
+        this.cb();
         final StreamConfig d = this.D;
         if (d.j != null) {
-            this.bA((br)(this.K = wor.a(d.c, this.aW)), "CAPTURE_THUMBNAIL_FRAGMENT");
+            this.bD((br)(this.K = wqr.a(d.c, this.aW)), "CAPTURE_THUMBNAIL_FRAGMENT");
         }
         else if (d.i != null) {
             final boolean b = true;
             boolean b2 = false;
-            Label_0083: {
+            Label_0096: {
                 if (d != null) {
                     final StreamMetadata d2 = d.d;
                     if (d2 != null && !TextUtils.isEmpty((CharSequence)d2.a)) {
                         b2 = true;
-                        break Label_0083;
+                        break Label_0096;
                     }
                 }
                 b2 = false;
             }
             final StreamConfig d3 = this.D;
             boolean b3 = false;
-            Label_0138: {
+            Label_0158: {
                 if (d3 != null) {
-                    final amgq i = d3.i;
+                    final amiu i = d3.i;
                     if (i != null) {
-                        ajsq ajsq;
-                        if ((ajsq = i.m) == null) {
-                            ajsq = ajsq.a;
+                        ajut ajut;
+                        if ((ajut = i.m) == null) {
+                            ajut = ajut.a;
                         }
-                        if (!TextUtils.isEmpty((CharSequence)abyh.b(ajsq))) {
+                        if (!TextUtils.isEmpty((CharSequence)acak.b(ajut))) {
                             b3 = true;
-                            break Label_0138;
+                            break Label_0158;
                         }
                     }
                 }
@@ -2257,53 +2475,53 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             if (!b2) {
                 b4 = (b3 && b);
             }
-            agot.u(b4);
+            adkp.H(b4);
             final StreamConfig d4 = this.D;
-            this.bA((br)(this.I = wov.r(d4.i, d4.c, this.aW, this.ab, this.bO())), "CHOOSE_THUMBNAIL_FRAGMENT");
+            this.bD((br)(this.I = wqv.r(d4.i, d4.c, this.aW, this.ab, this.bR())), "CHOOSE_THUMBNAIL_FRAGMENT");
             this.I.aQ(this.B());
         }
         this.ab = false;
         final StreamConfig d5 = this.D;
         if (d5 != null) {
-            final amgq j = d5.i;
+            final amiu j = d5.i;
             if (j != null && (j.b & 0x80000) != 0x0) {
                 this.J(j.q);
             }
         }
     }
     
-    public final void bp(final amhp j, final aioe aioe) {
+    public final void bq(final amjt j, final aiqj aiqj) {
         boolean b = true;
         if (j == null) {
-            b = (aioe != null && b);
+            b = (aiqj != null && b);
         }
-        agot.D(b);
+        adkp.Q(b);
         if (j != null) {
             final StreamConfig d = this.D;
             d.j = j;
-            this.L = wqe.n(d.c, j);
+            this.L = wse.n(d.c, j);
         }
-        else if (aioe != null) {
+        else if (aiqj != null) {
             final String c = this.D.c;
-            final wqe l = new wqe();
+            final wse l = new wse();
             final Bundle bundle = new Bundle();
-            aeda.av(bundle, "ARG_BROADCAST_CREATED_ENDPOINT", (MessageLite)aioe);
+            adyf.aA(bundle, "ARG_BROADCAST_CREATED_ENDPOINT", (MessageLite)aiqj);
             if (c != null) {
                 bundle.putString("ARG_VIDEO_ID", c);
             }
             l.ag(bundle);
             this.L = l;
         }
-        this.bA((br)this.L, "INVITE_SCREEN_FRAGMENT");
+        this.bD((br)this.L, "INVITE_SCREEN_FRAGMENT");
     }
     
-    public final void bq() {
-        this.bx(false);
+    public final void br() {
+        this.bA(false);
         final String d = this.m.c().d();
         this.D.b = d;
         if (this.H == null) {
             final String an = this.aN;
-            final wql h = new wql();
+            final wsl h = new wsl();
             final Bundle bundle = new Bundle();
             if (an != null) {
                 bundle.putString("ARG_SERIALIZED_GET_BROADCAST_SETUP_PARAMS", an);
@@ -2314,8 +2532,8 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         }
         if (!Objects.equals((Object)this.aY, (Object)d)) {
             this.aY = d;
-            final wql h2 = this.H;
-            if (h2 != null && zgv.s((br)h2)) {
+            final wsl h2 = this.H;
+            if (h2 != null && zis.s((br)h2)) {
                 h2.aM();
                 h2.q(5);
             }
@@ -2325,25 +2543,25 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             this.H.aN();
             this.J(false);
         }
-        this.bA((br)this.H, "LIVE_SHARED_MDE_FRAGMENT");
+        this.bD((br)this.H, "LIVE_SHARED_MDE_FRAGMENT");
         this.H.aK((CharSequence)this.B());
     }
     
-    public final void br() {
-        ((fa)this).findViewById(2131431791).setVisibility(0);
-        ((fa)this).findViewById(2131432378).setVisibility(0);
-        ((fa)this).findViewById(2131431772).setVisibility(0);
+    public final void bs() {
+        ((fa)this).findViewById(2131431794).setVisibility(0);
+        ((fa)this).findViewById(2131432381).setVisibility(0);
+        ((fa)this).findViewById(2131431775).setVisibility(0);
         ((fa)this).findViewById(2131429499).setVisibility(0);
     }
     
-    public final void bs() {
+    public final void bt() {
         this.D.b = this.m.c().d();
         this.P.setVisibility(8);
-        final wra f = this.F;
+        final wta f = this.F;
         if (f == null) {
             final String r = this.R;
             final String c = this.D.c;
-            final wra f2 = new wra();
+            final wta f2 = new wta();
             final Bundle bundle = new Bundle();
             bundle.putString("ARG_SERIALIZED_PARAMS", r);
             if (c != null) {
@@ -2355,26 +2573,26 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         else if (!f.ap.isEmpty()) {
             f.an.removeAllViews();
             f.as = true;
-            f.ao = (vdo)f.ag.a(f.ah.c());
+            f.ao = (vfp)f.ag.a(f.ah.c());
             f.p(f.ap, 5);
         }
-        this.ck();
-        this.bA((br)this.F, "PARTICIPANT_PRE_JOIN_FRAGMENT");
-    }
-    
-    public final void bt() {
-        if (!TextUtils.isEmpty((CharSequence)this.R)) {
-            this.bs();
-            return;
-        }
-        if (this.aO) {
-            this.bq();
-            return;
-        }
-        this.bu();
+        this.cn();
+        this.bD((br)this.F, "PARTICIPANT_PRE_JOIN_FRAGMENT");
     }
     
     public final void bu() {
+        if (!TextUtils.isEmpty((CharSequence)this.R)) {
+            this.bt();
+            return;
+        }
+        if (this.aO) {
+            this.br();
+            return;
+        }
+        this.bv();
+    }
+    
+    public final void bv() {
         final String d = this.m.c().d();
         final StreamConfig d2 = this.D;
         d2.b = d;
@@ -2390,7 +2608,7 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
                     final String stringExtra = this.getIntent().getStringExtra("android.intent.extra.SUBJECT");
                     final String stringExtra2 = this.getIntent().getStringExtra("GAME_TITLE");
                     if (stringExtra2 != null) {
-                        string = this.getString(2132018268, new Object[] { stringExtra2 });
+                        string = this.getString(2132018269, new Object[] { stringExtra2 });
                     }
                     final String stringExtra3 = this.getIntent().getStringExtra("GAME_PACKAGE_NAME");
                     this.aQ = "SCREEN".equals(this.getIntent().getStringExtra("CAPTURE_MODE"));
@@ -2405,12 +2623,13 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
                     }
                 }
                 else {
-                    s2 = (s3 = null);
+                    s2 = null;
+                    s3 = null;
                 }
                 final int aw = this.aW;
                 final String an = this.aN;
                 final boolean aq = this.aQ;
-                final wrm g = new wrm();
+                final wtm g = new wtm();
                 final Bundle bundle = new Bundle();
                 bundle.putInt("ARG_CAMERA_COUNT", aw);
                 if (s != null) {
@@ -2442,12 +2661,12 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
                 final Boolean d5 = d4.d;
                 final Boolean e = d4.e;
                 final Boolean f = d4.f;
-                final akjp g2 = d4.g;
+                final akls g2 = d4.g;
                 final int aw2 = this.aW;
-                final aioe j = d3.l;
+                final aiqj j = d3.l;
                 final Date k = d4.j;
-                final ajub m = d4.k;
-                final wrm g3 = new wrm();
+                final ajwe m = d4.k;
+                final wtm g3 = new wtm();
                 final Bundle bundle2 = new Bundle();
                 if (a != null) {
                     bundle2.putString("ARG_TITLE", a);
@@ -2496,336 +2715,154 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         }
         if (!Objects.equals((Object)this.aX, (Object)d)) {
             this.aX = d;
-            this.bX();
+            this.ca();
         }
         else if (this.G.au()) {
             this.G.r();
             this.J(this.G.aU());
         }
-        this.bA((br)this.G, "PRE_STREAM_FRAGMENT");
+        this.bD((br)this.G, "PRE_STREAM_FRAGMENT");
         this.G.aO((CharSequence)this.B());
     }
     
-    final void bv(aiva aiva) {
-        final rlv aw = new rlv((Context)this, aiva, this.ap, (vax)this.l, new xpb(this), (Object)this, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null);
+    public final void bw(final StreamConfig streamConfig) {
+        this.ac = true;
+        ((AlertDialog$Builder)this.ar.al((Context)this)).setTitle(2132018217).setMessage(2132018215).setPositiveButton(2132018216, (DialogInterface$OnClickListener)new syf(this, streamConfig, 3)).setNegativeButton(2132018214, (DialogInterface$OnClickListener)new jjm(this, 18)).setOnKeyListener((DialogInterface$OnKeyListener)new gqq(this, 8)).setCancelable(false).show();
+    }
+    
+    public final void bx(final StreamConfig streamConfig, final int n) {
+        final String c = streamConfig.c;
+        c.getClass();
+        this.r.i(c, new wqa(this, streamConfig, n));
+    }
+    
+    final void by(aixf aixf) {
+        final roa aw = new roa((Context)this, aixf, this.ar, (vcy)this.l, new afhd(this), (Object)this, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null);
         this.aw = aw;
-        final abyy af = aw.j.af(aw.a);
-        aiva = aw.b;
-        ajsq ajsq;
-        if ((aiva.b & 0x1) != 0x0) {
-            if ((ajsq = aiva.c) == null) {
-                ajsq = ajsq.a;
+        final acba al = aw.j.al(aw.a);
+        aixf = aw.b;
+        ajut ajut;
+        if ((aixf.b & 0x1) != 0x0) {
+            if ((ajut = aixf.c) == null) {
+                ajut = ajut.a;
             }
         }
         else {
-            ajsq = null;
+            ajut = null;
         }
-        ((AlertDialog$Builder)af).setTitle((CharSequence)abyh.b(ajsq));
-        aibc aibc;
-        if ((aibc = aw.b.i) == null) {
-            aibc = aibc.a;
+        ((AlertDialog$Builder)al).setTitle((CharSequence)acak.b(ajut));
+        aida aida;
+        if ((aida = aw.b.i) == null) {
+            aida = aida.a;
         }
         Spanned spanned;
-        if ((aibc.b & 0x1) != 0x0) {
-            aibc aibc2;
-            if ((aibc2 = aw.b.i) == null) {
-                aibc2 = aibc.a;
+        if ((aida.b & 0x1) != 0x0) {
+            aida aida2;
+            if ((aida2 = aw.b.i) == null) {
+                aida2 = aida.a;
             }
-            aibb aibb;
-            if ((aibb = aibc2.c) == null) {
-                aibb = aibb.a;
+            aicz aicz;
+            if ((aicz = aida2.c) == null) {
+                aicz = aicz.a;
             }
-            ajsq ajsq2;
-            if ((ajsq2 = aibb.i) == null) {
-                ajsq2 = ajsq.a;
+            ajut ajut2;
+            if ((ajut2 = aicz.i) == null) {
+                ajut2 = ajut.a;
             }
-            spanned = abyh.b(ajsq2);
+            spanned = acak.b(ajut2);
         }
         else {
-            aiva = aw.b;
-            ajsq ajsq3;
-            if ((aiva.b & 0x2000000) != 0x0) {
-                if ((ajsq3 = aiva.r) == null) {
-                    ajsq3 = ajsq.a;
+            aixf = aw.b;
+            ajut ajut3;
+            if ((aixf.b & 0x2000000) != 0x0) {
+                if ((ajut3 = aixf.r) == null) {
+                    ajut3 = ajut.a;
                 }
             }
             else {
-                ajsq3 = null;
+                ajut3 = null;
             }
-            spanned = abyh.b(ajsq3);
+            spanned = acak.b(ajut3);
         }
-        final aiva b = aw.b;
-        final aibc h = b.h;
-        aibc a;
+        final aixf b = aw.b;
+        final aida h = b.h;
+        aida a;
         if (h == null) {
-            a = aibc.a;
+            a = aida.a;
         }
         else {
             a = h;
         }
         Spanned spanned2;
         if ((a.b & 0x1) != 0x0) {
-            aibc a2;
+            aida a2;
             if ((a2 = h) == null) {
-                a2 = aibc.a;
+                a2 = aida.a;
             }
-            aibb aibb2;
-            if ((aibb2 = a2.c) == null) {
-                aibb2 = aibb.a;
+            aicz aicz2;
+            if ((aicz2 = a2.c) == null) {
+                aicz2 = aicz.a;
             }
-            ajsq ajsq4;
-            if ((ajsq4 = aibb2.i) == null) {
-                ajsq4 = ajsq.a;
+            ajut ajut4;
+            if ((ajut4 = aicz2.i) == null) {
+                ajut4 = ajut.a;
             }
-            spanned2 = abyh.b(ajsq4);
+            spanned2 = acak.b(ajut4);
         }
         else {
-            ajsq ajsq5;
+            ajut ajut5;
             if ((b.b & 0x1000000) != 0x0) {
-                if ((ajsq5 = b.q) == null) {
-                    ajsq5 = ajsq.a;
+                if ((ajut5 = b.q) == null) {
+                    ajut5 = ajut.a;
                 }
             }
             else {
-                ajsq5 = null;
+                ajut5 = null;
             }
-            spanned2 = abyh.b(ajsq5);
+            spanned2 = acak.b(ajut5);
         }
-        ((AlertDialog$Builder)af).setPositiveButton((CharSequence)spanned2, (DialogInterface$OnClickListener)null);
-        ((AlertDialog$Builder)af).setNegativeButton((CharSequence)spanned, (DialogInterface$OnClickListener)null);
-        final View inflate = ((LayoutInflater)aw.a.getSystemService("layout_inflater")).inflate(2131625692, (ViewGroup)null);
+        ((AlertDialog$Builder)al).setPositiveButton((CharSequence)spanned2, (DialogInterface$OnClickListener)null);
+        ((AlertDialog$Builder)al).setNegativeButton((CharSequence)spanned, (DialogInterface$OnClickListener)null);
+        final View inflate = ((LayoutInflater)aw.a.getSystemService("layout_inflater")).inflate(2131625696, (ViewGroup)null);
         aw.f = (YouTubeTextView)inflate.findViewById(2131429843);
-        aw.e = (ContentLoadingProgressBar)inflate.findViewById(2131430651);
-        aw.f.setText(aaiy.u(aw.b, aw.c));
-        ((AlertDialog$Builder)af).setView(inflate);
+        aw.e = (ContentLoadingProgressBar)inflate.findViewById(2131430654);
+        aw.f.setText(aakt.t(aw.b, aw.c));
+        ((AlertDialog$Builder)al).setView(inflate);
         aw.f.setMovementMethod(LinkMovementMethod.getInstance());
-        (aw.d = ((AlertDialog$Builder)af).create()).setOnShowListener((DialogInterface$OnShowListener)new eyh(aw, 18));
+        (aw.d = ((AlertDialog$Builder)al).create()).setOnShowListener((DialogInterface$OnShowListener)new eyk(aw, 18));
         final AlertDialog d = aw.d;
-        int width = 0;
+        int dimensionPixelSize = 0;
         d.setCancelable(false);
         aw.d.setCanceledOnTouchOutside(false);
         aw.d.show();
-        int dimensionPixelSize;
-        if (tmy.bq(aw.a)) {
-            dimensionPixelSize = ((rq)aw.a).a().getDimensionPixelSize(2131165445);
-            width = ((rq)aw.a).a().getDimensionPixelSize(2131165446);
+        int dimensionPixelSize2;
+        if (tpe.bq(aw.a)) {
+            dimensionPixelSize2 = ((rq)aw.a).a().getDimensionPixelSize(2131165445);
+            dimensionPixelSize = ((rq)aw.a).a().getDimensionPixelSize(2131165446);
         }
         else {
-            dimensionPixelSize = (int)(Math.min(tmy.bd(aw.a), tmy.bb(aw.a)) * ((rq)aw.a).a().getFraction(2131361798, 1, 1));
+            dimensionPixelSize2 = (int)(Math.min(tpe.bd(aw.a), tpe.bb(aw.a)) * ((rq)aw.a).a().getFraction(2131361798, 1, 1));
         }
         final WindowManager$LayoutParams attributes = aw.d.getWindow().getAttributes();
-        attributes.height = dimensionPixelSize;
-        if (width == 0) {
+        attributes.height = dimensionPixelSize2;
+        int width = dimensionPixelSize;
+        if (dimensionPixelSize == 0) {
             width = attributes.width;
         }
         attributes.width = width;
         aw.d.getWindow().setAttributes(attributes);
-        this.o.l((wxz)new wws(wya.c(31777)));
-        this.o.l((wxz)new wws(wya.c(31778)));
+        this.o.l((wzz)new wyt(xaa.c(31777)));
+        this.o.l((wzz)new wyt(xaa.c(31778)));
     }
     
-    public final void bw(final View view) {
-        this.bx(true);
+    public final void bz(final View view) {
+        this.bA(true);
         this.Z.e(false);
         this.P.a(view);
     }
     
-    public final void bx(final boolean b) {
-        if (!this.aV) {
-            Label_0053: {
-                if (this.aU != 0) {
-                    final Parcel ax = this.ax;
-                    if (ax != null) {
-                        this.Z.d((CameraStreamViewManager$CameraModelData)CameraStreamViewManager$CameraModelData.CREATOR.createFromParcel(ax));
-                        break Label_0053;
-                    }
-                }
-                this.Z.d((CameraStreamViewManager$CameraModelData)null);
-            }
-            final wsv z = this.Z;
-            szc.f();
-            z.d.b(b);
-            z.k = new wfg();
-            z.q.y((wfd)z.d);
-            z.q.y((wfd)z.k);
-            if (z.a) {
-                z.e.e = (wej)new wsq(z);
-            }
-            else {
-                final wfi f = z.f;
-                if (f != null) {
-                    f.e();
-                }
-                final Activity c = z.c;
-                z.f = new wfi();
-                final wfi f2 = z.f;
-                z.g = new weq(f2);
-                z.q.I(f2);
-                final wex wex = new wex((wfd)z.g);
-                z.q.y((wfd)wex);
-                z.i = new weo(whx.U((Context)z.c, 2131951635), (byte[])null, (byte[])null, (byte[])null);
-                z.j = new wef((wfh)new wss(z, 0));
-                z.e.e = (wej)new wst(z, wex);
-            }
-            this.an.G();
-            this.aJ.setVisibility(0);
-            final Parcel ax2 = this.ax;
-            if (ax2 != null) {
-                ax2.recycle();
-                this.ax = null;
-            }
-            this.aV = true;
-        }
-    }
-    
-    public final void by() {
-        if (TextUtils.isEmpty((CharSequence)this.D.c)) {
-            trn.b("Trying to go live without the necessary state");
-            this.cg(wpc.d, this.getString(2132018251));
-            return;
-        }
-        if (TextUtils.isEmpty((CharSequence)this.D.x) || TextUtils.isEmpty((CharSequence)this.D.y) || this.U) {
-            final boolean hasSystemFeature = this.getPackageManager().hasSystemFeature("android.hardware.microphone");
-            String packageName;
-            if (Binder.getCallingPid() == Process.myPid()) {
-                packageName = ((Context)this).getPackageName();
-            }
-            else {
-                packageName = null;
-            }
-            final int b = te.b((Context)this, "android.permission.RECORD_AUDIO", Binder.getCallingPid(), Binder.getCallingUid(), packageName);
-            final StreamConfig d = this.D;
-            boolean p = false;
-            if (hasSystemFeature) {
-                p = p;
-                if (b == 0) {
-                    p = true;
-                }
-            }
-            d.p = p;
-        }
-        final StreamMetadata d2 = this.D.d;
-        if (d2 != null) {
-            final Boolean f = d2.f;
-            if (f != null && f) {
-                if (this.aP) {
-                    return;
-                }
-                this.aP = true;
-                if (zgv.v((Context)this)) {
-                    this.bZ();
-                    return;
-                }
-                ((qt)this).startActivityForResult(new Intent("android.settings.action.MANAGE_OVERLAY_PERMISSION", Uri.parse("package:".concat(String.valueOf(this.getPackageName())))), 1001);
-                return;
-            }
-        }
-        final wqr ai = this.aI;
-        if (ai == null) {
-            final StreamConfig d3 = this.D;
-            d3.e = true;
-            final String c = d3.c;
-            final boolean p2 = d3.p;
-            final boolean q = d3.q;
-            final int aw = this.aW;
-            final boolean r = d3.r;
-            final boolean s = d3.s;
-            final boolean u = this.U;
-            final String x = d3.x;
-            final String y = d3.y;
-            final amhy k = d3.k;
-            final long n = d3.n;
-            final long o = d3.o;
-            tsx.n(c);
-            final wqr ai2 = new wqr();
-            final Bundle bundle = new Bundle();
-            bundle.putString("ARG_VIDEO_ID", c);
-            bundle.putBoolean("ARG_IS_MIC_SUPPORTED", p2);
-            bundle.putBoolean("ARG_IS_MIC_ENABLED", q);
-            bundle.putInt("ARG_CAMERA_COUNT", aw);
-            bundle.putBoolean("ARG_LIVE_STREAM_IS_PORTRAIT", r);
-            bundle.putBoolean("ARG_DID_START_BROADCAST", s);
-            bundle.putBoolean("ARG_IS_COSTREAM", u);
-            bundle.putString("ARG_STREAM_URL", x);
-            bundle.putString("ARG_STREAM_KEY", y);
-            if (k != null) {
-                aeda.av(bundle, "ARG_STREAM_RENDERER", (MessageLite)k);
-            }
-            bundle.putLong("ARG_TIMER_START_STREAM", n);
-            bundle.putLong("ARG_TIMER_DURATION_STREAM", o);
-            ai2.ag(bundle);
-            this.aI = ai2;
-        }
-        else if (this.U && this.aT && !this.D.s) {
-            ai.aE.s();
-        }
-        final tnu av = this.av;
-        if (av != null) {
-            av.disable();
-        }
-        (this.av = new tnu((Context)this, this.getWindowManager(), (tnt)this)).enable();
-        int requestedOrientation;
-        if (!this.D.r) {
-            requestedOrientation = 6;
-        }
-        else {
-            requestedOrientation = 7;
-        }
-        this.setRequestedOrientation(requestedOrientation);
-        final ViewGroup$LayoutParams layoutParams = this.aJ.getLayoutParams();
-        if (layoutParams.height == -1 && layoutParams.width == -1) {
-            tmy.aF((View)this.aJ, tmy.aE(this.bQ(), this.bP()), (Class)ViewGroup$LayoutParams.class);
-        }
-        final StreamConfig d4 = this.D;
-        final int t = d4.t;
-        if (t != -1) {
-            this.Z.f(t);
-        }
-        else {
-            d4.t = this.getWindowManager().getDefaultDisplay().getRotation();
-        }
-        this.bW();
-        final wqr ai3 = this.aI;
-        if (ai3 != null) {
-            this.cm((br)ai3, "LIVE_STREAM_FRAGMENT", true);
-        }
-        this.I = null;
-        wia.b().e = this.D.c;
-        final wia b2 = wia.b();
-        int j;
-        if (!this.D.e) {
-            j = 2;
-        }
-        else {
-            j = 3;
-        }
-        b2.j = j;
-    }
-    
-    public final void bz() {
-        if (this.aV) {
-            this.an.H();
-            final wsv z = this.Z;
-            szc.f();
-            z.e.f();
-            if (!z.a) {
-                final wfi f = z.f;
-                if (f != null) {
-                    f.e();
-                }
-                z.q.B((Runnable)new wsr(z.i, 0));
-            }
-            final wfp l = z.l;
-            if (l != null) {
-                l.e();
-            }
-            this.aJ.setVisibility(4);
-            this.aV = false;
-        }
-    }
-    
     public final void c() {
-        this.bX();
+        this.ca();
     }
     
     protected void e(final ViewStub viewStub) {
@@ -2833,11 +2870,11 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
     
     public final void f(final boolean b) {
         this.aw.getClass();
-        final String string = ((fa)this).getResources().getString(2132018238);
+        final String string = ((fa)this).getResources().getString(2132018239);
         Toast.makeText((Context)this, (CharSequence)string, 0).show();
-        trn.b(String.valueOf(string).concat(", accept live streaming terms of service request failed."));
+        ttr.b(String.valueOf(string).concat(", accept live streaming terms of service request failed."));
         if (b) {
-            final rlv aw = this.aw;
+            final roa aw = this.aw;
             aw.d.getClass();
             aw.g.setEnabled(true);
             aw.h.setEnabled(true);
@@ -2848,7 +2885,7 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
     }
     
     public final void g() {
-        final rlv aw = this.aw;
+        final roa aw = this.aw;
         aw.getClass();
         aw.a();
     }
@@ -2858,54 +2895,64 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
     }
     
     public final void i() {
-        Toast.makeText((Context)this, (CharSequence)((fa)this).getResources().getString(2132018238), 0).show();
+        Toast.makeText((Context)this, (CharSequence)((fa)this).getResources().getString(2132018239), 0).show();
         this.finish();
     }
     
-    public final void j(final amhy k, final String s, final String s2) {
+    public final void j(final amkc k, final String s, final String s2) {
         this.D.k = k;
         this.U = true;
-        this.ba(k, s, s2);
+        this.bb(k, s, s2);
     }
     
-    public final whb k() {
-        final wqr ai = this.aI;
+    public final wjb k() {
+        final wsr ai = this.aI;
         if (ai != null && ai.aw()) {
-            return (whb)this.aI;
+            return (wjb)this.aI;
         }
         return null;
     }
     
     public final void l() {
         if (this.aO) {
-            this.bq();
+            this.br();
             return;
         }
-        this.bu();
+        this.bv();
     }
     
-    public final void m(final aioe m) {
+    public final void m(final aiqj m) {
         this.D.m = m;
     }
     
+    public final void mU() {
+    }
+    
     public final void mV() {
-        this.bX();
+        this.ca();
     }
     
     public final void mW(final boolean b, final int n) {
         this.mx(b, n);
     }
     
-    public final void mZ(final akzl akzl) {
-        if ((akzl.b & 0x4) != 0x0) {
-            anss anss;
-            if ((anss = akzl.e) == null) {
-                anss = anss.a;
+    public final /* bridge */ void mX(final Object o) {
+        this.aK((aktm)o);
+    }
+    
+    public final void mY() {
+    }
+    
+    public final void mZ(final albo albo) {
+        if ((albo.b & 0x4) != 0x0) {
+            anuv anuv;
+            if ((anuv = albo.e) == null) {
+                anuv = anuv.a;
             }
-            this.bA((br)(this.az = wrb.r((ajkj)((agzd)anss).rr((agyr)ElementRendererOuterClass.elementRenderer))), "POST_COSTREAM_FRAGMENT");
+            this.bD((br)(this.az = wtb.r((ajmo)anuv.rx((ahaq)ElementRendererOuterClass.elementRenderer))), "POST_COSTREAM_FRAGMENT");
             return;
         }
-        final wqr ai = this.aI;
+        final wsr ai = this.aI;
         if (ai != null && ai.aw()) {
             this.aI.aW(false);
             this.aI.aU();
@@ -2913,21 +2960,17 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
     }
     
     public final void mx(final boolean b, final int n) {
-        final wqr ai = this.aI;
+        final wsr ai = this.aI;
         if (ai != null && ai.au()) {
             ai.aQ(b, n);
-            if (!zgv.t((Activity)this)) {
+            if (!zis.t((Activity)this)) {
                 this.Z.f(this.getWindowManager().getDefaultDisplay().getRotation());
             }
         }
     }
     
-    public final wwv n() {
-        return this.o;
-    }
-    
     public final void na(final int n) {
-        final wqr ai = this.aI;
+        final wsr ai = this.aI;
         if (ai != null && ai.aw()) {
             this.aI.aW(false);
             this.aI.aU();
@@ -2935,12 +2978,12 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
     }
     
     public final void o() {
-        final wqe l = this.L;
+        final wse l = this.L;
         if (l != null && l.aw()) {
             this.L.q();
             return;
         }
-        final wqe m = this.M;
+        final wse m = this.M;
         if (m != null && m.aw()) {
             this.M.q();
             return;
@@ -2951,7 +2994,7 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
     protected final void onActivityResult(final int n, final int n2, final Intent intent) {
         super.onActivityResult(n, n2, intent);
         if (n == 1001) {
-            this.bj(10);
+            this.bk(10);
             return;
         }
         if (n != 1000) {
@@ -2964,22 +3007,22 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         final StreamConfig d = this.D;
         d.e = true;
         d.z = "LIVE_STREAM_FRAGMENT";
-        this.cb();
-        final zki m = this.m;
+        this.ce();
+        final zmf m = this.m;
         final StreamConfig d2 = this.D;
         final String c = d2.c;
         final boolean r = d2.r;
         final boolean s = d2.s;
         final String x = d2.x;
         final String y = d2.y;
-        final amhy k = d2.k;
+        final amkc k = d2.k;
         final long n3 = d2.n;
         final long o = d2.o;
         final boolean b = d2.p && d2.q;
-        final boolean c2 = this.as.aY().c;
-        final boolean b2 = this.as.aY().b;
-        final alsq ay = this.as.aY();
-        ((Context)this).startService(ScreencastHostService.n((Context)this, m, c, r, x, y, k, n3, o, b, c2, b2, ay != null && ay.m, this.as.aY().l, this.D.e, this.as.aY().f, intent));
+        final boolean c2 = this.am.s().c;
+        final boolean b2 = this.am.s().b;
+        final alut s2 = this.am.s();
+        ((Context)this).startService(ScreencastHostService.n((Context)this, m, c, r, x, y, k, n3, o, b, c2, b2, s2 != null && s2.m, this.am.s().l, this.D.e, this.am.s().f, intent));
         if (this.aQ) {
             this.setResult(-1);
             this.finish();
@@ -2993,105 +3036,105 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
     }
     
     public final void onBackPressed() {
-        final wrm wrm = (wrm)this.E.f("PRE_STREAM_FRAGMENT");
-        final wql wql = (wql)this.E.f("LIVE_SHARED_MDE_FRAGMENT");
-        final wra wra = (wra)this.E.f("PARTICIPANT_PRE_JOIN_FRAGMENT");
-        final wov wov = (wov)this.E.f("CHOOSE_THUMBNAIL_FRAGMENT");
-        final wre wre = (wre)this.E.f("POST_STREAM_FRAGMENT");
-        final wrb wrb = (wrb)this.E.f("POST_COSTREAM_FRAGMENT");
-        final wpe wpe = (wpe)this.E.f("ERROR_STATE_FRAGMENT");
-        final wqr wqr = (wqr)this.E.f("LIVE_STREAM_FRAGMENT");
-        final rlw rlw = (rlw)this.E.f("LIVE_ENABLEMENT_FRAGMENT_NAME");
-        final acsu acsu = (acsu)this.E.f("PERMISSION_REQUEST_FRAGMENT");
-        final wow wow = (wow)this.E.f("COOL_OFF_FRAGMENT_NAME");
-        final wro wro = (wro)this.E.f("SAFEGUARD_FRAGMENT");
-        final wro wro2 = (wro)this.E.f("CREATOR_EDUCATION_FRAGMENT");
-        if ((wre != null && wre.aw()) || (wpe != null && wpe.aw())) {
+        final wtm wtm = (wtm)this.E.f("PRE_STREAM_FRAGMENT");
+        final wsl wsl = (wsl)this.E.f("LIVE_SHARED_MDE_FRAGMENT");
+        final wta wta = (wta)this.E.f("PARTICIPANT_PRE_JOIN_FRAGMENT");
+        final wqv wqv = (wqv)this.E.f("CHOOSE_THUMBNAIL_FRAGMENT");
+        final wte wte = (wte)this.E.f("POST_STREAM_FRAGMENT");
+        final wtb wtb = (wtb)this.E.f("POST_COSTREAM_FRAGMENT");
+        final wre wre = (wre)this.E.f("ERROR_STATE_FRAGMENT");
+        final wsr wsr = (wsr)this.E.f("LIVE_STREAM_FRAGMENT");
+        final rob rob = (rob)this.E.f("LIVE_ENABLEMENT_FRAGMENT_NAME");
+        final acuy acuy = (acuy)this.E.f("PERMISSION_REQUEST_FRAGMENT");
+        final wqw wqw = (wqw)this.E.f("COOL_OFF_FRAGMENT_NAME");
+        final wto wto = (wto)this.E.f("SAFEGUARD_FRAGMENT");
+        final wto wto2 = (wto)this.E.f("CREATOR_EDUCATION_FRAGMENT");
+        if ((wte != null && wte.aw()) || (wre != null && wre.aw())) {
             this.finish();
             return;
         }
-        if ((wrb != null && wrb.aw()) || (wpe != null && wpe.aw())) {
+        if ((wtb != null && wtb.aw()) || (wre != null && wre.aw())) {
             this.finish();
             return;
         }
-        if (wrm != null && wrm.aw()) {
+        if (wtm != null && wtm.aw()) {
             if (((fa)this).findViewById(2131429690).isShown()) {
                 this.V.b();
             }
-            wrm.aK();
+            wtm.aK();
             return;
         }
-        if (wql != null && wql.aw()) {
-            wql.s();
+        if (wsl != null && wsl.aw()) {
+            wsl.s();
             return;
         }
-        if (wra != null && wra.aw()) {
-            wra.q();
+        if (wta != null && wta.aw()) {
+            wta.q();
             return;
         }
-        final wrm ab = this.aB;
+        final wtm ab = this.aB;
         if (ab != null && ab.aw()) {
             this.aB.aK();
             return;
         }
-        final wql aa = this.aA;
+        final wsl aa = this.aA;
         if (aa != null && aa.aw()) {
             this.aA.s();
             return;
         }
-        final wpb q = this.Q;
+        final wrb q = this.Q;
         if (q != null && q.aw()) {
             this.Q.d();
             return;
         }
-        if (wov != null && wov.aw()) {
-            wov.aN();
+        if (wqv != null && wqv.aw()) {
+            wqv.aN();
             return;
         }
-        final wov j = this.J;
+        final wqv j = this.J;
         if (j != null && j.aw()) {
             this.J.aN();
             return;
         }
-        final wqe m = this.M;
+        final wse m = this.M;
         if (m != null && m.aw()) {
             this.M.q();
             return;
         }
-        final wrr ac = this.aC;
+        final wtr ac = this.aC;
         if (ac != null && ac.aw()) {
             this.aC.q();
             return;
         }
-        if (rlw != null && ((br)rlw).aw()) {
-            rlw.aM();
+        if (rob != null && ((br)rob).aw()) {
+            rob.aM();
             return;
         }
-        if (wqr != null && wqr.aw()) {
-            if (wqr.aL) {
-                wqr.aN();
+        if (wsr != null && wsr.aw()) {
+            if (wsr.aL) {
+                wsr.aN();
             }
             return;
         }
-        if (acsu != null && ((br)acsu).aw()) {
-            acsu.r();
+        if (acuy != null && ((br)acuy).aw()) {
+            acuy.r();
             return;
         }
-        if (wow != null && wow.aw()) {
-            final vax a = wow.a;
-            aioe aioe;
-            if ((aioe = wow.c.p) == null) {
-                aioe = aioe.a;
+        if (wqw != null && wqw.aw()) {
+            final vcy a = wqw.a;
+            aiqj aiqj;
+            if ((aiqj = wqw.c.p) == null) {
+                aiqj = aiqj.a;
             }
-            a.a(aioe);
+            a.a(aiqj);
             return;
         }
-        if (wro != null && wro.aw()) {
-            wro.n();
+        if (wto != null && wto.aw()) {
+            wto.n();
             return;
         }
-        if (wro2 != null && wro2.aw()) {
-            wro2.n();
+        if (wto2 != null && wto2.aw()) {
+            wto2.n();
             return;
         }
         if (this.ad) {
@@ -3103,64 +3146,67 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
     
     public final void onConfigurationChanged(final Configuration configuration) {
         super.onConfigurationChanged(configuration);
-        this.bE();
+        this.bH();
         this.p.l();
-        final rlw ad = this.aD;
+        final rob ad = this.aD;
         if (ad != null && ((br)ad).aw()) {
             this.aD.aN(configuration);
         }
-        final acsu n = this.N;
+        final acuy n = this.N;
         if (n != null && ((br)n).aw()) {
             ((br)this.N).onConfigurationChanged(configuration);
         }
-        this.cn(configuration, ((fa)this).findViewById(2131430261));
+        this.cq(configuration, ((fa)this).findViewById(2131430262));
     }
     
     protected void onCreate(final Bundle bundle) {
         super.onCreate(bundle);
-        Bundle bundle2;
-        Object o;
-        if (bundle != null) {
-            bundle2 = bundle.getBundle("BUNDLE_INTERACTION_BUNDLE");
-            o = null;
-        }
-        else {
-            Object o2 = null;
-            Label_0075: {
-                if (!xkm.aE(this.getIntent())) {
-                    final Intent intent = this.getIntent();
-                    if (intent != null) {
-                        final ParcelableMessageLite parcelableMessageLite = (ParcelableMessageLite)intent.getParcelableExtra("navigation_endpoint");
-                        if (parcelableMessageLite != null) {
-                            o2 = parcelableMessageLite.a((MessageLite)aioe.a);
-                            break Label_0075;
+        final Bundle bundle2 = null;
+        Bundle bundle3 = null;
+        Object o = null;
+        Label_0163: {
+            if (bundle != null) {
+                bundle3 = bundle.getBundle("BUNDLE_INTERACTION_BUNDLE");
+                o = null;
+            }
+            else {
+                Object o2 = null;
+                Label_0088: {
+                    if (!xmm.aq(this.getIntent())) {
+                        final Intent intent = this.getIntent();
+                        if (intent != null) {
+                            final ParcelableMessageLite parcelableMessageLite = (ParcelableMessageLite)intent.getParcelableExtra("navigation_endpoint");
+                            if (parcelableMessageLite != null) {
+                                o2 = parcelableMessageLite.a((MessageLite)aiqj.a);
+                                break Label_0088;
+                            }
                         }
                     }
+                    o2 = null;
                 }
-                o2 = null;
-            }
-            o = o2;
-            Label_0124: {
+                bundle3 = bundle2;
+                o = o2;
                 if (o2 == null) {
                     final Intent intent2 = this.getIntent();
                     if (intent2 != null) {
                         final byte[] byteArrayExtra = intent2.getByteArrayExtra("navigation_endpoint");
                         if (byteArrayExtra != null) {
                             try {
-                                o = agzi.parseFrom((agzi)aioe.a, byteArrayExtra, ExtensionRegistryLite.getGeneratedRegistry());
-                                break Label_0124;
+                                o = ahbh.parseFrom((ahbh)aiqj.a, byteArrayExtra, ExtensionRegistryLite.getGeneratedRegistry());
+                                bundle3 = bundle2;
+                                break Label_0163;
                             }
-                            catch (final ahab ahab) {}
+                            catch (final ahca ahca) {}
                         }
                     }
                     o = null;
+                    bundle3 = bundle2;
                 }
             }
-            bundle2 = null;
         }
-        ((wyc)this.o).M(bundle2, (aioe)o);
-        if (o != null && ((agzd)o).rs((agyr)LiveCreationEndpointOuterClass$LiveCreationEndpoint.liveCreationEndpoint)) {
-            final LiveCreationEndpointOuterClass$LiveCreationEndpoint liveCreationEndpointOuterClass$LiveCreationEndpoint = (LiveCreationEndpointOuterClass$LiveCreationEndpoint)((agzd)o).rr((agyr)LiveCreationEndpointOuterClass$LiveCreationEndpoint.liveCreationEndpoint);
+        ((xac)this.o).M(bundle3, (aiqj)o);
+        if (o != null && ((ahbc)o).ry((ahaq)LiveCreationEndpointOuterClass$LiveCreationEndpoint.liveCreationEndpoint)) {
+            final LiveCreationEndpointOuterClass$LiveCreationEndpoint liveCreationEndpointOuterClass$LiveCreationEndpoint = (LiveCreationEndpointOuterClass$LiveCreationEndpoint)((ahbc)o).rx((ahaq)LiveCreationEndpointOuterClass$LiveCreationEndpoint.liveCreationEndpoint);
             final int b = liveCreationEndpointOuterClass$LiveCreationEndpoint.b;
             if ((b & 0x4) != 0x0) {
                 this.R = liveCreationEndpointOuterClass$LiveCreationEndpoint.c;
@@ -3179,11 +3225,11 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         if (this.D == null) {
             this.D = new StreamConfig();
         }
-        final wia b2 = wia.b();
-        if (this.as.aY().j) {
+        final wka b2 = wka.b();
+        if (this.am.s().j) {
             final ScheduledExecutorService v = this.v;
-            final wvu w = this.w;
-            final oas s = this.s;
+            final wxx w = this.w;
+            final oby s = this.s;
             if (!b2.c) {
                 b2.c = true;
                 v.getClass();
@@ -3194,40 +3240,40 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
                 b2.d = s;
                 synchronized (b2.i) {
                     for (final Map.Entry<Class, V> entry : b2.i.entrySet()) {
-                        b2.m((Class)entry.getKey(), (whz)entry.getValue());
+                        b2.m((Class)entry.getKey(), (wjz)entry.getValue());
                     }
                 }
             }
         }
-        this.bn(b2, this.D);
-        b2.k((Class)alrc.class, 0L);
-        b2.k((Class)alrg.class, 0L);
-        b2.k((Class)alre.class, 0L);
-        b2.k((Class)alqu.class, 0L);
-        b2.k((Class)alqx.class, 0L);
-        b2.k((Class)alrm.class, 10000L);
+        this.bo(b2, this.D);
+        b2.k((Class)altf.class, 0L);
+        b2.k((Class)altj.class, 0L);
+        b2.k((Class)alth.class, 0L);
+        b2.k((Class)alsx.class, 0L);
+        b2.k((Class)alta.class, 0L);
+        b2.k((Class)altp.class, 10000L);
         this.Y = false;
         ((qt)this).setContentView(this.g);
         this.E = ((bu)this).getSupportFragmentManager();
-        final SurfaceView surfaceView = (SurfaceView)((fa)this).findViewById(2131431791);
-        final qpt at = this.at;
+        final SurfaceView surfaceView = (SurfaceView)((fa)this).findViewById(2131431794);
+        final pvh at = this.at;
         double n;
-        if (!this.as.aY().i) {
+        if (!this.am.s().i) {
             n = 1.3333333333333333;
         }
         else {
             n = 1.7777777777777777;
         }
-        this.Z = new wsv((adcr)((epq)at.a).b.eS.a(), (Activity)((epq)at.a).b.d.a(), (xgc)((epq)at.a).b.eR.a(), (qpt)((epq)at.a).b.eW.a(), surfaceView, new wen(n, this.as.aY().N), (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null);
+        this.Z = new wuv((xib)((eps)at.a).b.eT.a(), (Activity)((eps)at.a).b.d.a(), (xib)((eps)at.a).b.eS.a(), (pvh)((eps)at.a).b.eX.a(), surfaceView, new wgn(n, this.am.s().N), (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null);
         this.m.getClass();
         this.q.getClass();
         this.e((ViewStub)((fa)this).findViewById(2131427886));
-        this.P = (ViewportOverlay)((fa)this).findViewById(2131432378);
-        this.aJ = (SurfaceView)((fa)this).findViewById(2131431791);
-        (this.S = (ViewAnimatorHelper)((fa)this).findViewById(2131432360)).setVisibility(8);
-        this.cn(((fa)this).getResources().getConfiguration(), ((fa)this).findViewById(2131430261));
-        this.aL = this.getString(2132018257);
-        this.aM = this.getString(2132018202);
+        this.P = (ViewportOverlay)((fa)this).findViewById(2131432381);
+        this.aJ = (SurfaceView)((fa)this).findViewById(2131431794);
+        (this.S = (ViewAnimatorHelper)((fa)this).findViewById(2131432363)).setVisibility(8);
+        this.cq(((fa)this).getResources().getConfiguration(), ((fa)this).findViewById(2131430262));
+        this.aL = this.getString(2132018258);
+        this.aM = this.getString(2132018203);
         if (bundle != null) {
             this.aU = 1;
             this.k.b(bundle);
@@ -3240,72 +3286,72 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         final ct i = this.E.i();
         if (bundle != null) {
             final String z = this.D.z;
-            final wrm g = (wrm)this.E.g(bundle, "prestream_fragment");
+            final wtm g = (wtm)this.E.g(bundle, "prestream_fragment");
             this.G = g;
             if (g != null && !TextUtils.equals((CharSequence)z, (CharSequence)"PRE_STREAM_FRAGMENT")) {
                 i.m((br)this.G);
             }
-            this.H = (wql)this.E.g(bundle, "live_shared_mde_fragment");
+            this.H = (wsl)this.E.g(bundle, "live_shared_mde_fragment");
             if (!TextUtils.equals((CharSequence)z, (CharSequence)"LIVE_SHARED_MDE_FRAGMENT")) {
-                final wql h = this.H;
+                final wsl h = this.H;
                 if (h != null) {
                     i.m((br)h);
                 }
             }
-            if ((this.F = (wra)this.E.g(bundle, "participant_pre_join_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"PARTICIPANT_PRE_JOIN_FRAGMENT")) {
+            if ((this.F = (wta)this.E.g(bundle, "participant_pre_join_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"PARTICIPANT_PRE_JOIN_FRAGMENT")) {
                 i.m((br)this.F);
             }
-            if ((this.aB = (wrm)this.E.g(bundle, "edit_settings_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"EDIT_SETTINGS_PRE_STREAM_FRAGMENT")) {
+            if ((this.aB = (wtm)this.E.g(bundle, "edit_settings_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"EDIT_SETTINGS_PRE_STREAM_FRAGMENT")) {
                 i.m((br)this.aB);
             }
-            if ((this.aA = (wql)this.E.g(bundle, "edit_settings_sharedmde_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"EDIT_SETTINGS_LIVE_SHARED_MDE_FRAGMENT")) {
+            if ((this.aA = (wsl)this.E.g(bundle, "edit_settings_sharedmde_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"EDIT_SETTINGS_LIVE_SHARED_MDE_FRAGMENT")) {
                 i.m((br)this.aA);
             }
-            if ((this.aD = (rlw)this.E.g(bundle, "live_enablement_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"LIVE_ENABLEMENT_FRAGMENT_NAME")) {
+            if ((this.aD = (rob)this.E.g(bundle, "live_enablement_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"LIVE_ENABLEMENT_FRAGMENT_NAME")) {
                 i.m((br)this.aD);
             }
-            if ((this.I = (wov)this.E.g(bundle, "choose_thumbnail_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"CHOOSE_THUMBNAIL_FRAGMENT")) {
+            if ((this.I = (wqv)this.E.g(bundle, "choose_thumbnail_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"CHOOSE_THUMBNAIL_FRAGMENT")) {
                 i.m((br)this.I);
             }
-            if ((this.aE = (wow)this.E.g(bundle, "cool_off_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"COOL_OFF_FRAGMENT_NAME")) {
+            if ((this.aE = (wqw)this.E.g(bundle, "cool_off_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"COOL_OFF_FRAGMENT_NAME")) {
                 i.m((br)this.aE);
             }
-            if ((this.Q = (wpb)this.E.g(bundle, "edit_thumbnail_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"EDIT_THUMBNAIL_FRAGMENT_NAME")) {
+            if ((this.Q = (wrb)this.E.g(bundle, "edit_thumbnail_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"EDIT_THUMBNAIL_FRAGMENT_NAME")) {
                 i.m((br)this.Q);
             }
-            if ((this.J = (wov)this.E.g(bundle, "confirm_thumbnail_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"CONFIRM_THUMBNAIL_FRAGMENT")) {
+            if ((this.J = (wqv)this.E.g(bundle, "confirm_thumbnail_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"CONFIRM_THUMBNAIL_FRAGMENT")) {
                 i.m((br)this.J);
             }
-            if ((this.M = (wqe)this.E.g(bundle, "scheduled_costream_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"SCHEDULED_COSTREAM_FRAGMENT")) {
+            if ((this.M = (wse)this.E.g(bundle, "scheduled_costream_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"SCHEDULED_COSTREAM_FRAGMENT")) {
                 i.m((br)this.M);
             }
-            if ((this.K = (wor)this.E.g(bundle, "capture_thumbnail_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"CAPTURE_THUMBNAIL_FRAGMENT")) {
+            if ((this.K = (wqr)this.E.g(bundle, "capture_thumbnail_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"CAPTURE_THUMBNAIL_FRAGMENT")) {
                 i.m((br)this.K);
             }
-            if ((this.L = (wqe)this.E.g(bundle, "invite_screen_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"INVITE_SCREEN_FRAGMENT")) {
+            if ((this.L = (wse)this.E.g(bundle, "invite_screen_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"INVITE_SCREEN_FRAGMENT")) {
                 i.m((br)this.L);
             }
-            if ((this.aI = (wqr)this.E.g(bundle, "livestream_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"LIVE_STREAM_FRAGMENT")) {
+            if ((this.aI = (wsr)this.E.g(bundle, "livestream_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"LIVE_STREAM_FRAGMENT")) {
                 i.m((br)this.aI);
             }
-            if ((this.ay = (wre)this.E.g(bundle, "poststream_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"POST_STREAM_FRAGMENT")) {
+            if ((this.ay = (wte)this.E.g(bundle, "poststream_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"POST_STREAM_FRAGMENT")) {
                 i.m((br)this.ay);
             }
-            if ((this.az = (wrb)this.E.g(bundle, "post_costream_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"POST_COSTREAM_FRAGMENT")) {
+            if ((this.az = (wtb)this.E.g(bundle, "post_costream_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"POST_COSTREAM_FRAGMENT")) {
                 i.m((br)this.az);
             }
-            if ((this.aF = (wpe)this.E.g(bundle, "errorstate_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"ERROR_STATE_FRAGMENT")) {
+            if ((this.aF = (wre)this.E.g(bundle, "errorstate_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"ERROR_STATE_FRAGMENT")) {
                 i.m((br)this.aF);
             }
-            if ((this.N = (acsu)this.E.g(bundle, "permission_request_fragment")) != null && (!TextUtils.equals((CharSequence)z, (CharSequence)"PERMISSION_REQUEST_FRAGMENT") || !acsm.f((Context)this, LiveCreationActivity.d))) {
+            if ((this.N = (acuy)this.E.g(bundle, "permission_request_fragment")) != null && (!TextUtils.equals((CharSequence)z, (CharSequence)"PERMISSION_REQUEST_FRAGMENT") || !acuq.f((Context)this, LiveCreationActivity.d))) {
                 i.m((br)this.N);
             }
-            final wro ag = (wro)this.E.g(bundle, "safeguard_fragment");
+            final wto ag = (wto)this.E.g(bundle, "safeguard_fragment");
             this.aG = ag;
             if (ag != null && !TextUtils.equals((CharSequence)z, (CharSequence)"SAFEGUARD_FRAGMENT")) {
                 i.m((br)this.aG);
             }
-            if ((this.aH = (wro)this.E.g(bundle, "creator_education_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"CREATOR_EDUCATION_FRAGMENT")) {
+            if ((this.aH = (wto)this.E.g(bundle, "creator_education_fragment")) != null && !TextUtils.equals((CharSequence)z, (CharSequence)"CREATOR_EDUCATION_FRAGMENT")) {
                 i.m((br)this.aH);
             }
             this.k.c();
@@ -3318,21 +3364,8 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             this.ax = obtain;
         }
         if (this.aO) {
-            zgv.r((Activity)this);
-            final woj c = this.C;
-            final AccessibilityLayerLayout accessibilityLayerLayout = (AccessibilityLayerLayout)c.a.findViewById(c.d);
-            accessibilityLayerLayout.b(c.a.findViewById(2131429500));
-            final View viewById = accessibilityLayerLayout.findViewById(2131427617);
-            final RelativeLayout relativeLayout = (RelativeLayout)viewById.findViewById(2131427616);
-            relativeLayout.getClass();
-            c.b.i(relativeLayout, (RelativeLayout)null);
-            relativeLayout.setOnTouchListener((View$OnTouchListener)gmg.g);
-            final EngagementPanelSizeBehavior b3 = c.b.g().b;
-            b3.w(c.b.g(), (View)relativeLayout);
-            tmy.aF((View)relativeLayout, tmy.ar((aeh)b3), (Class)aej.class);
-            c.c.c(c.b.g().o.al((asix)new uyj(relativeLayout, 20)));
-            (c.e = c.b.D()).g((tpf)c);
-            c.c.c(((asgt)c.b.E().a).al((asix)new kej(c, accessibilityLayerLayout, viewById, 15)));
+            zis.r((Activity)this);
+            this.C.a();
         }
     }
     
@@ -3341,22 +3374,22 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
             this.T = (AudioManager)this.getSystemService("audio");
         }
         this.T.abandonAudioFocus((AudioManager$OnAudioFocusChangeListener)this);
-        final wsv z = this.Z;
+        final wuv z = this.Z;
         if (z != null) {
-            szc.f();
+            tbi.f();
             synchronized (z.p) {
                 z.o = true;
-                final wfp l = z.l;
+                final whq l = z.l;
                 if (l != null) {
                     l.f();
                 }
                 monitorexit(z.p);
-                z.q.C();
+                z.q.O();
             }
         }
-        final xgc an = this.an;
+        final xib an = this.an;
         if (an != null) {
-            an.C();
+            an.O();
             ((Handler)an.b).getLooper().quitSafely();
             this.an = null;
         }
@@ -3365,25 +3398,25 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
     
     protected final void onPause() {
         super.onPause();
-        final tnu av = this.av;
+        final tpz av = this.av;
         if (av != null) {
             av.disable();
         }
         this.Y = true;
         if (this.isFinishing()) {
-            this.bz();
+            this.bC();
         }
     }
     
     public final void onRequestPermissionsResult(final int n, final String[] array, final int[] array2) {
-        final uqs x = this.X;
+        final usn x = this.X;
         if (x != null) {
             x.b(n, array, array2);
         }
         else {
-            trn.b("No active FragmentPermissionRequester to handle PermissionsResult");
+            ttr.b("No active FragmentPermissionRequester to handle PermissionsResult");
         }
-        final acsq ak = this.aK;
+        final acuu ak = this.aK;
         if (ak != null && ak.b(n, array, array2)) {
             return;
         }
@@ -3398,48 +3431,48 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
     protected final void onResume() {
         super.onResume();
         this.Y = false;
-        this.bE();
-        final tnu av = this.av;
+        this.bH();
+        final tpz av = this.av;
         if (av != null) {
             av.enable();
         }
         this.k.f = false;
-        if (zgv.s((br)this.G)) {
+        if (zis.s((br)this.G)) {
             this.J(this.G.aU());
             return;
         }
-        if (zgv.s((br)this.H)) {
-            this.bx(false);
+        if (zis.s((br)this.H)) {
+            this.bA(false);
             return;
         }
-        if (zgv.s((br)this.aB)) {
+        if (zis.s((br)this.aB)) {
             this.J(this.aB.aU());
             return;
         }
-        if (zgv.s((br)this.aA)) {
+        if (zis.s((br)this.aA)) {
             this.J(false);
             return;
         }
-        if (zgv.s((br)this.I)) {
+        if (zis.s((br)this.I)) {
             this.J(this.I.aX());
             return;
         }
-        if (zgv.s((br)this.J)) {
+        if (zis.s((br)this.J)) {
             this.J(this.J.aX());
             return;
         }
-        if (zgv.s((br)this.K)) {
-            this.bx(false);
+        if (zis.s((br)this.K)) {
+            this.bA(false);
             return;
         }
-        if (zgv.s((br)this.aI)) {
-            this.bx(true);
+        if (zis.s((br)this.aI)) {
+            this.bA(true);
             return;
         }
-        if (!zgv.s((br)this.L) && !zgv.s((br)this.M)) {
+        if (!zis.s((br)this.L) && !zis.s((br)this.M)) {
             return;
         }
-        this.bx(true);
+        this.bA(true);
     }
     
     protected final void onResumeFragments() {
@@ -3450,27 +3483,27 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
     protected final void onSaveInstanceState(final Bundle bundle) {
         super.onSaveInstanceState(bundle);
         this.Y = true;
-        final wow ae = this.aE;
+        final wqw ae = this.aE;
         if (ae != null) {
             this.E.J(bundle, "cool_off_fragment", (br)ae);
         }
         else {
-            final wro ag = this.aG;
+            final wto ag = this.aG;
             if (ag != null && ag.aw()) {
                 this.E.J(bundle, "safeguard_fragment", (br)this.aG);
             }
             else {
-                final wro ah = this.aH;
+                final wto ah = this.aH;
                 if (ah != null && ah.aw()) {
                     this.E.J(bundle, "creator_education_fragment", (br)this.aH);
                 }
                 else {
-                    final wrm g = this.G;
+                    final wtm g = this.G;
                     if (g != null) {
                         this.E.J(bundle, "prestream_fragment", (br)g);
                     }
                     else {
-                        final wql h = this.H;
+                        final wsl h = this.H;
                         if (h != null) {
                             this.E.J(bundle, "live_shared_mde_fragment", (br)h);
                         }
@@ -3478,68 +3511,68 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
                 }
             }
         }
-        final wra f = this.F;
+        final wta f = this.F;
         if (f != null && f.ar()) {
             this.E.J(bundle, "participant_pre_join_fragment", (br)f);
         }
-        final wrm ab = this.aB;
+        final wtm ab = this.aB;
         if (ab != null) {
             this.E.J(bundle, "edit_settings_fragment", (br)ab);
         }
-        final wql aa = this.aA;
+        final wsl aa = this.aA;
         if (aa != null) {
             this.E.J(bundle, "edit_settings_sharedmde_fragment", (br)aa);
         }
-        final rlw ad = this.aD;
+        final rob ad = this.aD;
         if (ad != null && ((br)ad).ar()) {
             this.E.J(bundle, "live_enablement_fragment", (br)ad);
         }
-        final wov i = this.I;
+        final wqv i = this.I;
         if (i != null) {
             this.E.J(bundle, "choose_thumbnail_fragment", (br)i);
         }
-        final wov j = this.J;
+        final wqv j = this.J;
         if (j != null && j.ar()) {
             this.E.J(bundle, "confirm_thumbnail_fragment", (br)j);
         }
-        final wqe m = this.M;
+        final wse m = this.M;
         if (m != null && m.ar()) {
             this.E.J(bundle, "scheduled_costream_fragment", (br)m);
         }
-        final wor k = this.K;
+        final wqr k = this.K;
         if (k != null && k.ar()) {
             this.E.J(bundle, "capture_thumbnail_fragment", (br)k);
         }
-        final wqe l = this.L;
+        final wse l = this.L;
         if (l != null && l.ar()) {
             this.E.J(bundle, "invite_screen_fragment", (br)l);
         }
-        final wpb q = this.Q;
+        final wrb q = this.Q;
         if (q != null && q.ar()) {
             this.E.J(bundle, "edit_thumbnail_fragment", (br)q);
         }
-        final wqr ai = this.aI;
+        final wsr ai = this.aI;
         if (ai != null) {
             this.E.J(bundle, "livestream_fragment", (br)ai);
         }
-        final wre ay = this.ay;
+        final wte ay = this.ay;
         if (ay != null) {
             this.E.J(bundle, "poststream_fragment", (br)ay);
         }
-        final wrb az = this.az;
+        final wtb az = this.az;
         if (az != null) {
             this.E.J(bundle, "post_costream_fragment", (br)az);
         }
-        final wpe af = this.aF;
+        final wre af = this.aF;
         if (af != null) {
             this.E.J(bundle, "errorstate_fragment", (br)af);
         }
-        final acsu n = this.N;
+        final acuy n = this.N;
         if (n != null) {
             this.E.J(bundle, "permission_request_fragment", (br)n);
         }
         bundle.putParcelable("BUNDLE_STREAM_CONFIG", (Parcelable)this.D);
-        final wom k2 = this.k;
+        final wqm k2 = this.k;
         bundle.putInt("stream_control_state", k2.e);
         bundle.putBoolean("enablement_complete", k2.a);
         bundle.putBoolean("thumbnail_chosen", k2.b);
@@ -3547,56 +3580,56 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         k2.f = true;
         bundle.putBoolean("is_resume_dialog_displayed", this.ac);
         bundle.putParcelable("camera_model_bundle", (Parcelable)this.Z.m);
-        bundle.putBundle("BUNDLE_INTERACTION_BUNDLE", ((wyc)this.o).L());
+        bundle.putBundle("BUNDLE_INTERACTION_BUNDLE", ((xac)this.o).L());
     }
     
     protected final void onStart() {
         super.onStart();
         this.Y = false;
         this.j.g((Object)this.ag);
-        this.j.f((Object)new whx());
+        this.j.f((Object)new wkb());
         if (this.T == null) {
             this.T = (AudioManager)this.getSystemService("audio");
         }
         this.T.requestAudioFocus((AudioManager$OnAudioFocusChangeListener)this, 3, 2);
         if (!this.m.t() && !this.U) {
-            this.n.b((Activity)this, (byte[])null, (zku)null);
+            this.n.b((Activity)this, (byte[])null, (zmr)null);
         }
         else {
             this.H();
         }
-        if (co(this.getIntent())) {
+        if (cr(this.getIntent())) {
             this.aJ.setVisibility(4);
         }
-        final wom k = this.k;
+        final wqm k = this.k;
         k.c = k.e;
         k.a();
-        final wob au = new wob(this, 0);
+        final wqd au = new wqd(this, 0);
         this.au = (DisplayManager$DisplayListener)au;
         this.u.registerDisplayListener((DisplayManager$DisplayListener)au, this.h);
         this.aZ = true;
-        if (this.bG()) {
-            this.bi(this.ai);
+        if (this.bJ()) {
+            this.bj(this.ai);
         }
     }
     
     protected final void onStop() {
         super.onStop();
-        if (this.bR() != null) {
+        if (this.bU() != null) {
             final StreamConfig d = this.D;
-            final wiy wiy = (wiy)this.bR();
+            final wky wky = (wky)this.bU();
             long l;
-            if (wiy.V) {
-                l = wiy.h.d() - wiy.K;
+            if (wky.V) {
+                l = wky.h.d() - wky.K;
             }
             else {
-                l = wiy.L;
+                l = wky.L;
             }
             d.o = l;
-            this.cb();
+            this.ce();
         }
         this.u.unregisterDisplayListener(this.au);
-        this.j.f((Object)new whx());
+        this.j.f((Object)new wkb());
         this.j.m((Object)this.ag);
         this.p.a();
         final CameraStreamViewManager$CameraModelData m = this.Z.m;
@@ -3604,134 +3637,134 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         m.writeToParcel(obtain, 0);
         obtain.setDataPosition(0);
         this.ax = obtain;
-        this.bz();
+        this.bC();
         this.aU = 2;
         this.aZ = false;
     }
     
     public final void onWindowFocusChanged(final boolean b) {
         super.onWindowFocusChanged(b);
-        if (zgv.s((br)this.aI)) {
-            final wqr ai = this.aI;
+        if (zis.s((br)this.aI)) {
+            final wsr ai = this.aI;
             if (b) {
                 ai.aV(true);
             }
         }
     }
     
-    public final void p(final akjm akjm) {
-        akjj akjj;
-        if ((akjj = akjm.f) == null) {
-            akjj = akjj.a;
+    public final void p(final aklp aklp) {
+        aklm aklm;
+        if ((aklm = aklp.f) == null) {
+            aklm = aklm.a;
         }
-        akjr akjr;
-        if ((akjr = akjj.g) == null) {
-            akjr = akjr.a;
+        aklu aklu;
+        if ((aklu = aklm.g) == null) {
+            aklu = aklu.a;
         }
-        final int b = akjr.b;
-        final wjx r = this.r;
-        akjt akjt;
-        if ((akjt = akjm.h) == null) {
-            akjt = akjt.a;
+        final int b = aklu.b;
+        final wlx r = this.r;
+        aklw aklw;
+        if ((aklw = aklp.h) == null) {
+            aklw = aklw.a;
         }
-        final String c = akjt.c;
-        akjt akjt2;
-        if ((akjt2 = akjm.h) == null) {
-            akjt2 = akjt.a;
+        final String c = aklw.c;
+        aklw aklw2;
+        if ((aklw2 = aklp.h) == null) {
+            aklw2 = aklw.a;
         }
-        final String d = akjt2.d;
-        alqi alqi;
-        if ((alqi = akjm.j) == null) {
-            alqi = alqi.a;
+        final String d = aklw2.d;
+        alsl alsl;
+        if ((alsl = aklp.j) == null) {
+            alsl = alsl.a;
         }
         boolean b2 = false;
-        Label_0142: {
-            if ((alqi.b & 0x1) != 0x0) {
-                alqi alqi2;
-                if ((alqi2 = akjm.j) == null) {
-                    alqi2 = alqi.a;
+        Label_0178: {
+            if ((alsl.b & 0x1) != 0x0) {
+                alsl alsl2;
+                if ((alsl2 = aklp.j) == null) {
+                    alsl2 = alsl.a;
                 }
-                if (!alqi2.c) {
+                if (!alsl2.c) {
                     b2 = false;
-                    break Label_0142;
+                    break Label_0178;
                 }
             }
             b2 = true;
         }
-        alqi alqi3;
-        if ((alqi3 = akjm.j) == null) {
-            alqi3 = alqi.a;
+        alsl alsl3;
+        if ((alsl3 = aklp.j) == null) {
+            alsl3 = alsl.a;
         }
-        final boolean d2 = alqi3.d;
-        akjt akjt3;
-        if ((akjt3 = akjm.h) == null) {
-            akjt3 = akjt.a;
+        final boolean d2 = alsl3.d;
+        aklw aklw3;
+        if ((aklw3 = aklp.h) == null) {
+            aklw3 = aklw.a;
         }
-        final boolean h = akjt3.h;
-        akjt akjt4;
-        if ((akjt4 = akjm.h) == null) {
-            akjt4 = akjt.a;
+        final boolean h = aklw3.h;
+        aklw aklw4;
+        if ((aklw4 = aklp.h) == null) {
+            aklw4 = aklw.a;
         }
-        final boolean k = akjt4.k;
-        akjt akjt5;
-        if ((akjt5 = akjm.h) == null) {
-            akjt5 = akjt.a;
+        final boolean k = aklw4.k;
+        aklw aklw5;
+        if ((aklw5 = aklp.h) == null) {
+            aklw5 = aklw.a;
         }
-        akjp akjp;
-        if ((akjp = akjt5.g) == null) {
-            akjp = akjp.a;
+        akls akls;
+        if ((akls = aklw5.g) == null) {
+            akls = akls.a;
         }
-        final akjt h2 = akjm.h;
-        akjt a;
+        final aklw h2 = aklp.h;
+        aklw a;
         if (h2 == null) {
-            a = akjt.a;
+            a = aklw.a;
         }
         else {
             a = h2;
         }
-        int ct;
-        if ((ct = aqql.ct(a.f)) == 0) {
-            ct = 1;
+        int cu;
+        if ((cu = aqsx.cu(a.f)) == 0) {
+            cu = 1;
         }
-        akjt a2;
+        aklw a2;
         if (h2 == null) {
-            a2 = akjt.a;
+            a2 = aklw.a;
         }
         else {
             a2 = h2;
         }
-        int e;
-        if ((e = alhb.e(a2.l)) == 0) {
-            e = 1;
+        int ay;
+        if ((ay = adyf.aY(a2.l)) == 0) {
+            ay = 1;
         }
-        akjj akjj2;
-        if ((akjj2 = akjm.f) == null) {
-            akjj2 = akjj.a;
+        aklm aklm2;
+        if ((aklm2 = aklp.f) == null) {
+            aklm2 = aklm.a;
         }
-        int ao;
-        if ((ao = aesy.aO(akjj2.h)) == 0) {
-            ao = 1;
+        int ak;
+        if ((ak = aefb.ak(aklm2.h)) == 0) {
+            ak = 1;
         }
-        akjt a3;
+        aklw a3;
         if (h2 == null) {
-            a3 = akjt.a;
+            a3 = aklw.a;
         }
         else {
             a3 = h2;
         }
         Place place;
         if ((a3.b & 0x100) != 0x0) {
-            akjt a4;
+            aklw a4;
             if (h2 == null) {
-                a4 = akjt.a;
+                a4 = aklw.a;
             }
             else {
                 a4 = h2;
             }
             final String i = a4.i;
-            akjt a5 = h2;
+            aklw a5 = h2;
             if (h2 == null) {
-                a5 = akjt.a;
+                a5 = aklw.a;
             }
             place = new Place(i, a5.j);
         }
@@ -3740,30 +3773,34 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         }
         Integer value;
         if ((b & 0x1) != 0x0) {
-            akjj akjj3;
-            if ((akjj3 = akjm.f) == null) {
-                akjj3 = akjj.a;
+            aklm aklm3;
+            if ((aklm3 = aklp.f) == null) {
+                aklm3 = aklm.a;
             }
-            akjr akjr2;
-            if ((akjr2 = akjj3.g) == null) {
-                akjr2 = akjr.a;
+            aklu aklu2;
+            if ((aklu2 = aklm3.g) == null) {
+                aklu2 = aklu.a;
             }
-            value = (int)akjr2.c;
+            value = (int)aklu2.c;
         }
         else {
             value = null;
         }
-        r.j(c, d, Boolean.valueOf(b2), Boolean.valueOf(d2), Boolean.valueOf(h), Boolean.valueOf(k), akjp, ct, e, ao, place, (Date)null, value, (String)null, (wjn)this.H);
+        r.k(c, d, Boolean.valueOf(b2), Boolean.valueOf(d2), Boolean.valueOf(h), Boolean.valueOf(k), akls, cu, ay, ak, place, (Date)null, value, (String)null, (wln)this.H);
     }
     
-    public final void q(final aksf aksf) {
-        this.r.m(((agzi)aksf.a).createBuilder((agzi)aksf), (wjw)this.aA);
+    public final wyw pF() {
+        return this.o;
     }
     
-    public final whl r() {
-        final wqr ai = this.aI;
+    public final void q(final akui akui) {
+        this.r.n(((ahbh)akui.a).createBuilder((ahbh)akui), (wlw)this.aA);
+    }
+    
+    public final wjm r() {
+        final wsr ai = this.aI;
         if (ai != null && ai.aw()) {
-            return (whl)this.aI;
+            return (wjm)this.aI;
         }
         return null;
     }
@@ -3772,20 +3809,20 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         this.k.e();
         this.k.c();
         final StreamConfig d = this.D;
-        final amgq i = d.i;
+        final amiu i = d.i;
         if (i != null) {
             this.t(c, i, null);
             return;
         }
         d.c = c;
         d.r = true;
-        final wom k = this.k;
+        final wqm k = this.k;
         k.a = true;
         k.b = true;
         k.g();
     }
     
-    public final void t(final String c, final amgq i, final Boolean b) {
+    public final void t(final String c, final amiu i, final Boolean b) {
         this.k.c();
         final StreamConfig d = this.D;
         i.getClass();
@@ -3799,83 +3836,83 @@ public class LiveCreationActivity extends wnv implements AudioManager$OnAudioFoc
         }
         if ((i.b & 0x4000) != 0x0) {
             final StreamMetadata d3 = d2.d;
-            ajsq ajsq;
-            if ((ajsq = i.m) == null) {
-                ajsq = ajsq.a;
+            ajut ajut;
+            if ((ajut = i.m) == null) {
+                ajut = ajut.a;
             }
-            d3.a = abyh.b(ajsq).toString();
+            d3.a = acak.b(ajut).toString();
         }
         this.D.d.f = i.q;
         if (b != null) {
             this.D.r = b;
         }
-        this.bC();
+        this.bF();
     }
     
     public final void u(final String s) {
-        final wov j = this.J;
+        final wqv j = this.J;
         if (j != null && j.aw()) {
             this.J.u(s);
             return;
         }
-        final wov i = this.I;
+        final wqv i = this.I;
         if (i != null && i.aw()) {
             this.I.u(s);
             return;
         }
-        final wqe l = this.L;
+        final wse l = this.L;
         if (l != null && l.aw()) {
             this.L.u(s);
             return;
         }
-        final wqe m = this.M;
+        final wse m = this.M;
         if (m != null && m.aw()) {
             this.M.u(s);
         }
     }
     
     public final void v(final String s) {
-        final wov j = this.J;
+        final wqv j = this.J;
         if (j != null && j.aw()) {
             this.J.v(s);
             return;
         }
-        final wov i = this.I;
+        final wqv i = this.I;
         if (i != null && i.aw()) {
             this.I.v(s);
             return;
         }
-        final wqe l = this.L;
+        final wse l = this.L;
         if (l != null && l.aw()) {
             this.L.v(s);
             return;
         }
-        final wqe m = this.M;
+        final wse m = this.M;
         if (m != null && m.aw()) {
             this.M.v(s);
         }
     }
     
     public final void w() {
-        Toast.makeText((Context)this, (CharSequence)((fa)this).getResources().getString(2132018238), 0).show();
+        Toast.makeText((Context)this, (CharSequence)((fa)this).getResources().getString(2132018239), 0).show();
     }
     
     public final void x(final String s) {
-        final wqe l = this.L;
+        final wse l = this.L;
         if (l != null && l.aw()) {
             this.L.aK(s);
         }
         else {
-            final wqe m = this.M;
+            final wse m = this.M;
             if (m != null && m.aw()) {
                 this.M.aK(s);
             }
         }
-        Toast.makeText((Context)this, (CharSequence)((fa)this).getResources().getString(2132018304), 0).show();
+        Toast.makeText((Context)this, (CharSequence)((fa)this).getResources().getString(2132018305), 0).show();
     }
     
     public final void y() {
-        this.cm((br)this.G, "PRE_STREAM_FRAGMENT", true);
+        this.cp((br)this.G, "PRE_STREAM_FRAGMENT", true);
         this.k.e();
         this.G.aM();
     }

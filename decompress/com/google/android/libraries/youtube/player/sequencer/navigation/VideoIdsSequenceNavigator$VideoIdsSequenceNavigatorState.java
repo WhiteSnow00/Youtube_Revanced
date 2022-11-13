@@ -17,7 +17,7 @@ public final class VideoIdsSequenceNavigator$VideoIdsSequenceNavigatorState impl
     public final int b;
     
     static {
-        CREATOR = (Parcelable$Creator)new abcf(7);
+        CREATOR = (Parcelable$Creator)new abdz(7);
     }
     
     public VideoIdsSequenceNavigator$VideoIdsSequenceNavigatorState(final Parcel parcel) {

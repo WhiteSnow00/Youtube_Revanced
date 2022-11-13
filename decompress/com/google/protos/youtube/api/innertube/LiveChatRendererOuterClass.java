@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class LiveChatRendererOuterClass
 {
-    public static final agzg liveChatRenderer;
+    public static final ahbf liveChatRenderer;
     
     static {
-        liveChatRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)alpx.a, (MessageLite)alpx.a, (agzn)null, 117294427, ahcm.k, (Class)alpx.class);
+        liveChatRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)alsa.a, (MessageLite)alsa.a, (ahbm)null, 117294427, ahek.k, (Class)alsa.class);
     }
     
     private LiveChatRendererOuterClass() {

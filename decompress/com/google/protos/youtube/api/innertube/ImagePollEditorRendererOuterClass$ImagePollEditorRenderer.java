@@ -6,46 +6,46 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ImagePollEditorRendererOuterClass$ImagePollEditorRenderer extends agzi implements ahax
+public final class ImagePollEditorRendererOuterClass$ImagePollEditorRenderer extends ahbh implements ahcw
 {
     public static final ImagePollEditorRendererOuterClass$ImagePollEditorRenderer a;
-    private static volatile ahbe d;
-    public static final agzg imagePollEditorRenderer;
-    public akbs b;
-    public ajsq c;
+    private static volatile ahdd d;
+    public static final ahbf imagePollEditorRenderer;
+    public akdv b;
+    public ajut c;
     private int e;
-    private ajsq f;
-    private ajsq g;
-    private ajsq h;
-    private ajsq i;
-    private ajsq j;
-    private ahwy k;
+    private ajut f;
+    private ajut g;
+    private ajut h;
+    private ajut i;
+    private ajut j;
+    private ahyw k;
     private byte l;
     
     static {
         final ImagePollEditorRendererOuterClass$ImagePollEditorRenderer a2 = new ImagePollEditorRendererOuterClass$ImagePollEditorRenderer();
-        agzi.registerDefaultInstance((Class)ImagePollEditorRendererOuterClass$ImagePollEditorRenderer.class, (agzi)(a = a2));
-        imagePollEditorRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)a2, (MessageLite)a2, (agzn)null, 411621223, ahcm.k, (Class)ImagePollEditorRendererOuterClass$ImagePollEditorRenderer.class);
+        ahbh.registerDefaultInstance((Class)ImagePollEditorRendererOuterClass$ImagePollEditorRenderer.class, (ahbh)(a = a2));
+        imagePollEditorRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)a2, (MessageLite)a2, (ahbm)null, 411621223, ahek.k, (Class)ImagePollEditorRendererOuterClass$ImagePollEditorRenderer.class);
     }
     
     private ImagePollEditorRendererOuterClass$ImagePollEditorRenderer() {
         this.l = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte l = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = ImagePollEditorRendererOuterClass$ImagePollEditorRenderer.d) == null) {
                     synchronized (ImagePollEditorRendererOuterClass$ImagePollEditorRenderer.class) {
                         if (ImagePollEditorRendererOuterClass$ImagePollEditorRenderer.d == null) {
-                            ImagePollEditorRendererOuterClass$ImagePollEditorRenderer.d = (ahbe)new agzb((agzi)ImagePollEditorRendererOuterClass$ImagePollEditorRenderer.a);
+                            ImagePollEditorRendererOuterClass$ImagePollEditorRenderer.d = (ahdd)new ahba((ahbh)ImagePollEditorRendererOuterClass$ImagePollEditorRenderer.a);
                         }
                     }
                 }
@@ -55,7 +55,7 @@ public final class ImagePollEditorRendererOuterClass$ImagePollEditorRenderer ext
                 return ImagePollEditorRendererOuterClass$ImagePollEditorRenderer.a;
             }
             case 4: {
-                return new agza((agzi)ImagePollEditorRendererOuterClass$ImagePollEditorRenderer.a);
+                return new ahaz((ahbh)ImagePollEditorRendererOuterClass$ImagePollEditorRenderer.a);
             }
             case 3: {
                 return new ImagePollEditorRendererOuterClass$ImagePollEditorRenderer();
@@ -65,9 +65,9 @@ public final class ImagePollEditorRendererOuterClass$ImagePollEditorRenderer ext
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    l = 0;
                 }
-                this.l = (byte)(b ? 1 : 0);
+                this.l = l;
                 return null;
             }
             case 0: {

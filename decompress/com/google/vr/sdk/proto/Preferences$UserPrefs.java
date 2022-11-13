@@ -6,43 +6,46 @@ package com.google.vr.sdk.proto;
 
 import com.google.protobuf.MessageLite;
 
-public final class Preferences$UserPrefs extends agzi implements ahax
+public final class Preferences$UserPrefs extends ahbh implements ahcw
 {
     public static final int CONTROLLER_HANDEDNESS_FIELD_NUMBER = 1;
     private static final Preferences$UserPrefs DEFAULT_INSTANCE;
     public static final int DEVELOPER_PREFS_FIELD_NUMBER = 2;
-    private static volatile ahbe PARSER;
+    private static volatile ahdd PARSER;
     public static final int RUNTIME_FEATURES_FIELD_NUMBER = 3;
     private int bitField0_;
     private int controllerHandedness_;
     private Preferences$DeveloperPrefs developerPrefs_;
-    private agzy runtimeFeatures_;
+    private ahbx runtimeFeatures_;
     
     static {
-        agzi.registerDefaultInstance(Preferences$UserPrefs.class, DEFAULT_INSTANCE = new Preferences$UserPrefs());
+        ahbh.registerDefaultInstance((Class)Preferences$UserPrefs.class, (ahbh)(DEFAULT_INSTANCE = new Preferences$UserPrefs()));
     }
     
     private Preferences$UserPrefs() {
-        this.runtimeFeatures_ = agzi.emptyProtobufList();
+        this.runtimeFeatures_ = emptyProtobufList();
+    }
+    
+    static Preferences$UserPrefs access$000() {
+        return Preferences$UserPrefs.DEFAULT_INSTANCE;
     }
     
     public static Preferences$UserPrefs$Builder newBuilder() {
         return (Preferences$UserPrefs$Builder)Preferences$UserPrefs.DEFAULT_INSTANCE.createBuilder();
     }
     
-    @Override
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe parser;
+                final ahdd parser;
                 if ((parser = Preferences$UserPrefs.PARSER) == null) {
                     synchronized (Preferences$UserPrefs.class) {
                         if (Preferences$UserPrefs.PARSER == null) {
-                            Preferences$UserPrefs.PARSER = (ahbe)new agzb((agzi)Preferences$UserPrefs.DEFAULT_INSTANCE);
+                            Preferences$UserPrefs.PARSER = (ahdd)new ahba((ahbh)Preferences$UserPrefs.DEFAULT_INSTANCE);
                         }
                     }
                 }
@@ -58,7 +61,7 @@ public final class Preferences$UserPrefs extends agzi implements ahax
                 return new Preferences$UserPrefs();
             }
             case 2: {
-                return agzi.newMessageInfo((MessageLite)Preferences$UserPrefs.DEFAULT_INSTANCE, "\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0001\u0000\u0001\u100c\u0000\u0002\u1009\u0001\u0003\u001b", new Object[] { "bitField0_", "controllerHandedness_", Preferences$UserPrefs$Handedness.internalGetVerifier(), "developerPrefs_", "runtimeFeatures_", Preferences$RuntimeFeature.class });
+                return newMessageInfo((MessageLite)Preferences$UserPrefs.DEFAULT_INSTANCE, "\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0001\u0000\u0001\u100c\u0000\u0002\u1009\u0001\u0003\u001b", new Object[] { "bitField0_", "controllerHandedness_", Preferences$UserPrefs$Handedness.internalGetVerifier(), "developerPrefs_", "runtimeFeatures_", Preferences$RuntimeFeature.class });
             }
             case 1: {
                 return null;

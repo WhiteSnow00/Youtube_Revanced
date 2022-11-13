@@ -16,7 +16,7 @@ final class k implements tsd
     }
     
     public final void b(final MotionEvent motionEvent) {
-        if (!this.a.mn()) {
+        if (!((abbk)this.a).mn()) {
             return;
         }
         if (this.a.U(motionEvent)) {

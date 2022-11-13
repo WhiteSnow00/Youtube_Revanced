@@ -76,10 +76,12 @@ public final class b extends abbk
         this.m(textView2);
     }
     
+    @Override
     public final ViewGroup$LayoutParams a() {
         return new ViewGroup$LayoutParams(-1, -1);
     }
     
+    @Override
     public final /* bridge */ View c(final Context context) {
         final LayoutInflater from = LayoutInflater.from(context);
         final a a = new a(this, context);
@@ -88,6 +90,7 @@ public final class b extends abbk
         return (View)a;
     }
     
+    @Override
     public final /* bridge */ void e(final Context context, final View view) {
         final FrameLayout frameLayout = (FrameLayout)view;
         if (this.ab(1)) {
@@ -95,6 +98,7 @@ public final class b extends abbk
         }
     }
     
+    @Override
     public final boolean oV() {
         return this.d;
     }

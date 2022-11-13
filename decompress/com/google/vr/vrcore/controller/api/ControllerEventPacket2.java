@@ -25,7 +25,7 @@ public final class ControllerEventPacket2 extends ControllerEventPacket
     static {
         ControllerEventPacket2.a = new ArrayDeque();
         ControllerEventPacket2.b = new Object();
-        CREATOR = (Parcelable$Creator)new arao(6);
+        CREATOR = (Parcelable$Creator)new ardl(5);
     }
     
     public ControllerEventPacket2() {
@@ -43,6 +43,7 @@ public final class ControllerEventPacket2 extends ControllerEventPacket
         return TimeUnit.MILLISECONDS.convert(System.nanoTime(), TimeUnit.NANOSECONDS);
     }
     
+    @Override
     public final void b() {
         super.b();
         this.c = 0;
@@ -51,13 +52,14 @@ public final class ControllerEventPacket2 extends ControllerEventPacket
         this.g = 0L;
     }
     
+    @Override
     public final void c(final Parcel parcel) {
         final int dataPosition = parcel.dataPosition() + parcel.readInt();
         super.c(parcel);
         final int dataPosition2 = parcel.dataPosition();
         final int n = 0;
         if (dataPosition2 < dataPosition) {
-            h(this.c = parcel.readInt());
+            ControllerEventPacket.h(this.c = parcel.readInt());
             for (int i = 0; i < this.c; ++i) {
                 this.d[i].b(parcel);
             }
@@ -73,7 +75,7 @@ public final class ControllerEventPacket2 extends ControllerEventPacket
             this.g = parcel.readLong();
         }
         if (parcel.dataPosition() < dataPosition) {
-            h(this.h = parcel.readInt());
+            ControllerEventPacket.h(this.h = parcel.readInt());
             for (int j = n; j < this.h; ++j) {
                 this.i[j].b(parcel);
             }
@@ -81,6 +83,7 @@ public final class ControllerEventPacket2 extends ControllerEventPacket
         parcel.setDataPosition(dataPosition);
     }
     
+    @Override
     public final void d() {
         this.b();
         synchronized (ControllerEventPacket2.b) {
@@ -90,41 +93,44 @@ public final class ControllerEventPacket2 extends ControllerEventPacket
         }
     }
     
+    @Override
     public final int describeContents() {
         return 0;
     }
     
+    @Override
     public final void e(final int e) {
         super.e(e);
-        g(e, this.c, (ControllerEvent[])this.d);
-        g(this.f.e = e, this.h, (ControllerEvent[])this.i);
+        ControllerEventPacket.g(e, this.c, this.d);
+        ControllerEventPacket.g(this.f.e = e, this.h, this.i);
     }
     
+    @Override
     public final void writeToParcel(final Parcel parcel, final int n) {
         final int dataPosition = parcel.dataPosition();
-        int n2 = 24;
-        final int n3 = 0;
+        final int n2 = 0;
+        int n3 = 24;
         for (int i = 0; i < super.l; ++i) {
             super.m[i].a();
-            n2 += 24;
+            n3 += 24;
         }
         for (int j = 0; j < super.n; ++j) {
             super.o[j].a();
-            n2 += 20;
+            n3 += 20;
         }
         for (int k = 0; k < super.p; ++k) {
             super.q[k].a();
-            n2 += 24;
+            n3 += 24;
         }
         for (int l = 0; l < super.r; ++l) {
             super.s[l].a();
-            n2 += 28;
+            n3 += 28;
         }
         for (int n4 = 0; n4 < super.t; ++n4) {
             super.u[n4].a();
-            n2 += 28;
+            n3 += 28;
         }
-        int n5 = n2 + 8;
+        int n5 = n3 + 8;
         for (int n6 = 0; n6 < this.c; ++n6) {
             this.d[n6].a();
             n5 += 24;
@@ -152,7 +158,7 @@ public final class ControllerEventPacket2 extends ControllerEventPacket
         }
         parcel.writeLong(this.g);
         parcel.writeInt(this.h);
-        for (int n10 = n3; n10 < this.h; ++n10) {
+        for (int n10 = n2; n10 < this.h; ++n10) {
             this.i[n10].writeToParcel(parcel, n);
         }
         if (parcel.dataPosition() - dataPosition == n7) {

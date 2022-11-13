@@ -17,7 +17,7 @@ public class UnifiedTemplateResolver
     public final int c;
     
     static {
-        ogh.a();
+        ohn.a();
         a = new byte[0];
         d = new AtomicBoolean(false);
     }

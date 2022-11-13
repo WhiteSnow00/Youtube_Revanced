@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AdThumbnailDetailsButtonRendererOuterClass
 {
-    public static final agzg adThumbnailDetailsButtonRenderer;
+    public static final ahbf adThumbnailDetailsButtonRenderer;
     
     static {
-        adThumbnailDetailsButtonRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ahlq.a, (MessageLite)ahlq.a, (agzn)null, 195022506, ahcm.k, (Class)ahlq.class);
+        adThumbnailDetailsButtonRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ahno.a, (MessageLite)ahno.a, (ahbm)null, 195022506, ahek.k, (Class)ahno.class);
     }
     
     private AdThumbnailDetailsButtonRendererOuterClass() {

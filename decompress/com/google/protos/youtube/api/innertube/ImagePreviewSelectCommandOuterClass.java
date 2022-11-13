@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ImagePreviewSelectCommandOuterClass
 {
-    public static final agzg imagePreviewSelectCommand;
+    public static final ahbf imagePreviewSelectCommand;
     
     static {
-        imagePreviewSelectCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)akbu.a, (MessageLite)akbu.a, (agzn)null, 248050398, ahcm.k, (Class)akbu.class);
+        imagePreviewSelectCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)akdx.a, (MessageLite)akdx.a, (ahbm)null, 248050398, ahek.k, (Class)akdx.class);
     }
     
     private ImagePreviewSelectCommandOuterClass() {

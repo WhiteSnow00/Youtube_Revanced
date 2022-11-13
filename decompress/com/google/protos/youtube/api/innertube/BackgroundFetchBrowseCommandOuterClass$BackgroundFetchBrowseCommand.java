@@ -6,37 +6,37 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand extends agzi implements ahax
+public final class BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand extends ahbh implements ahcw
 {
     public static final BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand a;
-    public static final agzg backgroundFetchBrowseCommand;
-    private static volatile ahbe d;
+    public static final ahbf backgroundFetchBrowseCommand;
+    private static volatile ahdd d;
     public String b;
-    public anuh c;
+    public anwk c;
     private int e;
     
     static {
         final BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand a2 = new BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand();
-        agzi.registerDefaultInstance((Class)BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand.class, (agzi)(a = a2));
-        backgroundFetchBrowseCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 182223933, ahcm.k, (Class)BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand.class);
+        ahbh.registerDefaultInstance((Class)BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand.class, (ahbh)(a = a2));
+        backgroundFetchBrowseCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 182223933, ahek.k, (Class)BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand.class);
     }
     
     private BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand() {
         this.b = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand.d) == null) {
                     synchronized (BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand.class) {
                         if (BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand.d == null) {
-                            BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand.d = (ahbe)new agzb((agzi)BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand.a);
+                            BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand.d = (ahdd)new ahba((ahbh)BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand.a);
                         }
                     }
                 }
@@ -46,7 +46,7 @@ public final class BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseC
                 return BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand.a;
             }
             case 4: {
-                return new agza((agzi)BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand.a);
+                return new ahaz((ahbh)BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand.a);
             }
             case 3: {
                 return new BackgroundFetchBrowseCommandOuterClass$BackgroundFetchBrowseCommand();

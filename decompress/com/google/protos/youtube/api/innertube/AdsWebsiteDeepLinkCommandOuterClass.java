@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AdsWebsiteDeepLinkCommandOuterClass
 {
-    public static final agzg adsWebsiteDeepLinkCommand;
+    public static final ahbf adsWebsiteDeepLinkCommand;
     
     static {
-        adsWebsiteDeepLinkCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ahpb.a, (MessageLite)ahpb.a, (agzn)null, 317727750, ahcm.k, (Class)ahpb.class);
+        adsWebsiteDeepLinkCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)ahqz.a, (MessageLite)ahqz.a, (ahbm)null, 317727750, ahek.k, (Class)ahqz.class);
     }
     
     private AdsWebsiteDeepLinkCommandOuterClass() {

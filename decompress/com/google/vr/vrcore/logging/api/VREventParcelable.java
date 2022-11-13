@@ -12,37 +12,37 @@ import android.os.Parcelable;
 public class VREventParcelable implements Parcelable
 {
     public static final Parcelable$Creator CREATOR;
-    final afoi a;
-    private final afoj b;
+    final afqj a;
+    private final afqk b;
     
     static {
-        CREATOR = (Parcelable$Creator)new arao(14);
+        CREATOR = (Parcelable$Creator)new ardl(13);
     }
     
-    public VREventParcelable(final afoj b, final afoi a) {
+    public VREventParcelable(final afqk b, final afqj a) {
         b.getClass();
         this.b = b;
         this.a = a;
     }
     
     public VREventParcelable(final Parcel parcel) {
-        afoj b;
-        if ((b = afoj.a(parcel.readInt())) == null) {
-            b = afoj.a;
+        afqk b;
+        if ((b = afqk.a(parcel.readInt())) == null) {
+            b = afqk.a;
         }
         this.b = b;
-        final afoi afoi = null;
-        afoi a;
+        final afqj afqj = null;
+        afqj a;
         try {
             final byte[] byteArray = parcel.createByteArray();
-            a = afoi;
+            a = afqj;
             if (byteArray != null) {
-                a = (afoi)afot.c(byteArray).toBuilder();
+                a = (afqj)afqu.c(byteArray).toBuilder();
             }
         }
         catch (final IOException ex) {
             ex.toString();
-            a = afoi;
+            a = afqj;
         }
         this.a = a;
     }
@@ -53,13 +53,13 @@ public class VREventParcelable implements Parcelable
     
     public final void writeToParcel(final Parcel parcel, final int n) {
         parcel.writeInt(this.b.eD);
-        final afoi a = this.a;
+        final afqj a = this.a;
         byte[] byteArray;
         if (a == null) {
             byteArray = null;
         }
         else {
-            byteArray = ((agza)a).build().toByteArray();
+            byteArray = ((agzk)((ahaz)a).build()).toByteArray();
         }
         parcel.writeByteArray(byteArray);
     }

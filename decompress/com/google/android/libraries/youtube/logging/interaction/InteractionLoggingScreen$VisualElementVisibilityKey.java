@@ -14,19 +14,19 @@ public abstract class InteractionLoggingScreen$VisualElementVisibilityKey implem
     public static final Parcelable$Creator CREATOR;
     
     static {
-        CREATOR = (Parcelable$Creator)new vho(13);
+        CREATOR = (Parcelable$Creator)new vjo(13);
     }
     
-    public static wxo c() {
-        return new wxo();
+    public static wzo c() {
+        return new wzo();
     }
     
-    public abstract apni a();
+    public abstract appm a();
     
-    public abstract aqqg b();
+    public abstract aqss b();
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        uji.ag((MessageLite)this.a(), parcel);
-        uji.ag((MessageLite)this.b(), parcel);
+        vdh.bp((MessageLite)this.a(), parcel);
+        vdh.bp((MessageLite)this.b(), parcel);
     }
 }

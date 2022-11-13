@@ -6,13 +6,13 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand extends agzi implements ahax
+public final class ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand extends ahbh implements ahcw
 {
     public static final ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand a;
-    private static volatile ahbe f;
-    public static final agzg showSfvElementsBottomSheetCommand;
-    public anss b;
-    public ajsq c;
+    private static volatile ahdd f;
+    public static final ahbf showSfvElementsBottomSheetCommand;
+    public anuv b;
+    public ajut c;
     public float d;
     public float e;
     private int g;
@@ -20,8 +20,8 @@ public final class ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetC
     
     static {
         final ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand a2 = new ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand();
-        agzi.registerDefaultInstance((Class)ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand.class, (agzi)(a = a2));
-        showSfvElementsBottomSheetCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 324622913, ahcm.k, (Class)ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand.class);
+        ahbh.registerDefaultInstance((Class)ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand.class, (ahbh)(a = a2));
+        showSfvElementsBottomSheetCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 324622913, ahek.k, (Class)ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand.class);
     }
     
     private ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand() {
@@ -30,20 +30,20 @@ public final class ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetC
         this.e = 1.0f;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte h = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe f;
+                final ahdd f;
                 if ((f = ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand.f) == null) {
                     synchronized (ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand.class) {
                         if (ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand.f == null) {
-                            ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand.f = (ahbe)new agzb((agzi)ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand.a);
+                            ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand.f = (ahdd)new ahba((ahbh)ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand.a);
                         }
                     }
                 }
@@ -53,7 +53,7 @@ public final class ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetC
                 return ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand.a;
             }
             case 4: {
-                return new agza((agzi)ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand.a);
+                return new ahaz((ahbh)ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand.a);
             }
             case 3: {
                 return new ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetCommand();
@@ -63,9 +63,9 @@ public final class ShowSfvElementsBottomSheetCommand$ShowSFVElementsBottomSheetC
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    h = 0;
                 }
-                this.h = (byte)(b ? 1 : 0);
+                this.h = h;
                 return null;
             }
             case 0: {

@@ -51,13 +51,15 @@ public final class a extends abbk
         this.c = new asiq();
         this.n = true;
         this.d = d;
-        this.r = com.google.android.apps.youtube.embeddedplayer.service.jar.b.a.c(new k(this, 16), (asjr)lmw.j);
+        this.r = com.google.android.apps.youtube.embeddedplayer.service.jar.b.a.c((asjm)new k(this, 16), (asjr)lmw.j);
     }
     
+    @Override
     public final ViewGroup$LayoutParams a() {
         return new ViewGroup$LayoutParams(-1, -1);
     }
     
+    @Override
     public final /* bridge */ View c(final Context context) {
         final FrameLayout frameLayout = new FrameLayout(context);
         final LayoutInflater from = LayoutInflater.from(context);
@@ -90,6 +92,7 @@ public final class a extends abbk
         return (View)frameLayout;
     }
     
+    @Override
     public final /* bridge */ void e(final Context context, final View view) {
         final FrameLayout frameLayout = (FrameLayout)view;
         if (!this.mn()) {
@@ -133,10 +136,12 @@ public final class a extends abbk
         return mj;
     }
     
+    @Override
     public final boolean mn() {
         return this.q && super.mn();
     }
     
+    @Override
     public final boolean oV() {
         final int m = this.m;
         return m == 2 || m == 4;

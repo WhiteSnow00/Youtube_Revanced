@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand extends agzi implements ahax
+public final class KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand extends ahbh implements ahcw
 {
     public static final KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand a;
-    private static volatile ahbe b;
-    public static final agzg kickOtherParticipantCommand;
+    private static volatile ahdd b;
+    public static final ahbf kickOtherParticipantCommand;
     
     static {
         final KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand a2 = new KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand();
-        agzi.registerDefaultInstance((Class)KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand.class, (agzi)(a = a2));
-        kickOtherParticipantCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 439221000, ahcm.k, (Class)KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand.class);
+        ahbh.registerDefaultInstance((Class)KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand.class, (ahbh)(a = a2));
+        kickOtherParticipantCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 439221000, ahek.k, (Class)KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand.class);
     }
     
     private KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand.b) == null) {
                     synchronized (KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand.class) {
                         if (KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand.b == null) {
-                            KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand.b = (ahbe)new agzb((agzi)KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand.a);
+                            KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand.b = (ahdd)new ahba((ahbh)KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class KickOtherParticipantCommandOuterClass$KickOtherParticipantCom
                 return KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand.a;
             }
             case 4: {
-                return new agza((agzi)KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand.a);
+                return new ahaz((ahbh)KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand.a);
             }
             case 3: {
                 return new KickOtherParticipantCommandOuterClass$KickOtherParticipantCommand();

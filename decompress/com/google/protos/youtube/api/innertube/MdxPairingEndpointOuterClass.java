@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class MdxPairingEndpointOuterClass
 {
-    public static final agzg mdxPairingEndpoint;
+    public static final ahbf mdxPairingEndpoint;
     
     static {
-        mdxPairingEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)amdh.a, (MessageLite)amdh.a, (agzn)null, 70874968, ahcm.k, (Class)amdh.class);
+        mdxPairingEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)amfl.a, (MessageLite)amfl.a, (ahbm)null, 70874968, ahek.k, (Class)amfl.class);
     }
     
     private MdxPairingEndpointOuterClass() {

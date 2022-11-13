@@ -6,23 +6,23 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LikeEndpointOuterClass$LikeEndpoint extends agzi implements ahax
+public final class LikeEndpointOuterClass$LikeEndpoint extends ahbh implements ahcw
 {
     public static final LikeEndpointOuterClass$LikeEndpoint a;
-    private static volatile ahbe h;
-    public static final agzg likeEndpoint;
+    private static volatile ahdd h;
+    public static final ahbf likeEndpoint;
     public int b;
     public int c;
     public Object d;
     public int e;
-    public alme f;
-    public agzy g;
+    public aloh f;
+    public ahbx g;
     private byte i;
     
     static {
         final LikeEndpointOuterClass$LikeEndpoint a2 = new LikeEndpointOuterClass$LikeEndpoint();
-        agzi.registerDefaultInstance((Class)LikeEndpointOuterClass$LikeEndpoint.class, (agzi)(a = a2));
-        likeEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 63158558, ahcm.k, (Class)LikeEndpointOuterClass$LikeEndpoint.class);
+        ahbh.registerDefaultInstance((Class)LikeEndpointOuterClass$LikeEndpoint.class, (ahbh)(a = a2));
+        likeEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 63158558, ahek.k, (Class)LikeEndpointOuterClass$LikeEndpoint.class);
     }
     
     private LikeEndpointOuterClass$LikeEndpoint() {
@@ -31,20 +31,20 @@ public final class LikeEndpointOuterClass$LikeEndpoint extends agzi implements a
         this.g = emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte i = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe h;
+                final ahdd h;
                 if ((h = LikeEndpointOuterClass$LikeEndpoint.h) == null) {
                     synchronized (LikeEndpointOuterClass$LikeEndpoint.class) {
                         if (LikeEndpointOuterClass$LikeEndpoint.h == null) {
-                            LikeEndpointOuterClass$LikeEndpoint.h = (ahbe)new agzb((agzi)LikeEndpointOuterClass$LikeEndpoint.a);
+                            LikeEndpointOuterClass$LikeEndpoint.h = (ahdd)new ahba((ahbh)LikeEndpointOuterClass$LikeEndpoint.a);
                         }
                     }
                 }
@@ -54,19 +54,19 @@ public final class LikeEndpointOuterClass$LikeEndpoint extends agzi implements a
                 return LikeEndpointOuterClass$LikeEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)LikeEndpointOuterClass$LikeEndpoint.a);
+                return new ahaz((ahbh)LikeEndpointOuterClass$LikeEndpoint.a);
             }
             case 3: {
                 return new LikeEndpointOuterClass$LikeEndpoint();
             }
             case 2: {
-                return newMessageInfo((MessageLite)LikeEndpointOuterClass$LikeEndpoint.a, "\u0001\u0006\u0001\u0001\u0001\b\u0006\u0000\u0001\u0001\u0001\u100c\u0000\u0002\u1009\u0001\u0003\u041b\u0006\u103b\u0000\u0007\u103b\u0000\b\u103b\u0000", new Object[] { "d", "c", "b", "e", almd.a(), "f", "g", aioe.class });
+                return newMessageInfo((MessageLite)LikeEndpointOuterClass$LikeEndpoint.a, "\u0001\u0006\u0001\u0001\u0001\b\u0006\u0000\u0001\u0001\u0001\u100c\u0000\u0002\u1009\u0001\u0003\u041b\u0006\u103b\u0000\u0007\u103b\u0000\b\u103b\u0000", new Object[] { "d", "c", "b", "e", alog.a(), "f", "g", aiqj.class });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    i = 0;
                 }
-                this.i = (byte)(b ? 1 : 0);
+                this.i = i;
                 return null;
             }
             case 0: {

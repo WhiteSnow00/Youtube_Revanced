@@ -6,39 +6,42 @@ package com.google.vr.sdk.proto;
 
 import com.google.protobuf.MessageLite;
 
-public final class Preferences$PlayAreaSettings extends agzi implements ahax
+public final class Preferences$PlayAreaSettings extends ahbh implements ahcw
 {
     public static final int ANCHOR_IDS_FIELD_NUMBER = 1;
     private static final Preferences$PlayAreaSettings DEFAULT_INSTANCE;
-    private static volatile ahbe PARSER;
+    private static volatile ahdd PARSER;
     public static final int PLAY_AREA_TYPE_FIELD_NUMBER = 2;
     public static final int RADIAL_PLAY_AREA_FIELD_NUMBER = 3;
-    private agzy anchorIds_;
+    private ahbx anchorIds_;
     private int bitField0_;
     private int playAreaType_;
     private Preferences$RadialPlayAreaSettings radialPlayArea_;
     
     static {
-        agzi.registerDefaultInstance(Preferences$PlayAreaSettings.class, DEFAULT_INSTANCE = new Preferences$PlayAreaSettings());
+        ahbh.registerDefaultInstance((Class)Preferences$PlayAreaSettings.class, (ahbh)(DEFAULT_INSTANCE = new Preferences$PlayAreaSettings()));
     }
     
     private Preferences$PlayAreaSettings() {
-        this.anchorIds_ = agzi.emptyProtobufList();
+        this.anchorIds_ = ahbh.emptyProtobufList();
     }
     
-    @Override
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    static Preferences$PlayAreaSettings access$9800() {
+        return Preferences$PlayAreaSettings.DEFAULT_INSTANCE;
+    }
+    
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe parser;
+                final ahdd parser;
                 if ((parser = Preferences$PlayAreaSettings.PARSER) == null) {
                     synchronized (Preferences$PlayAreaSettings.class) {
                         if (Preferences$PlayAreaSettings.PARSER == null) {
-                            Preferences$PlayAreaSettings.PARSER = (ahbe)new agzb((agzi)Preferences$PlayAreaSettings.DEFAULT_INSTANCE);
+                            Preferences$PlayAreaSettings.PARSER = (ahdd)new ahba((ahbh)Preferences$PlayAreaSettings.DEFAULT_INSTANCE);
                         }
                     }
                 }
@@ -54,7 +57,7 @@ public final class Preferences$PlayAreaSettings extends agzi implements ahax
                 return new Preferences$PlayAreaSettings();
             }
             case 2: {
-                return agzi.newMessageInfo((MessageLite)Preferences$PlayAreaSettings.DEFAULT_INSTANCE, "\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0001\u0000\u0001\u001a\u0002\u100c\u0000\u0003\u1009\u0001", new Object[] { "bitField0_", "anchorIds_", "playAreaType_", Preferences$PlayAreaType.internalGetVerifier(), "radialPlayArea_" });
+                return newMessageInfo((MessageLite)Preferences$PlayAreaSettings.DEFAULT_INSTANCE, "\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0001\u0000\u0001\u001a\u0002\u100c\u0000\u0003\u1009\u0001", new Object[] { "bitField0_", "anchorIds_", "playAreaType_", Preferences$PlayAreaType.internalGetVerifier(), "radialPlayArea_" });
             }
             case 1: {
                 return null;

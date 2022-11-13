@@ -6,38 +6,38 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint extends agzi implements ahax
+public final class AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint extends ahbh implements ahcw
 {
     public static final AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint a;
-    public static final agzg addToPlaylistEndpoint;
-    private static volatile ahbe c;
+    public static final ahbf addToPlaylistEndpoint;
+    private static volatile ahdd c;
     public String b;
     private int d;
     
     static {
         final AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint a2 = new AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint();
-        agzi.registerDefaultInstance((Class)AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint.class, (agzi)(a = a2));
-        addToPlaylistEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 69487224, ahcm.k, (Class)AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint.class);
+        ahbh.registerDefaultInstance((Class)AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint.class, (ahbh)(a = a2));
+        addToPlaylistEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 69487224, ahek.k, (Class)AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint.class);
     }
     
     private AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint() {
         this.b = "";
-        agzi.emptyProtobufList();
-        final agyc b = agyc.b;
+        ahbh.emptyProtobufList();
+        final ahab b = ahab.b;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint.c) == null) {
                     synchronized (AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint.class) {
                         if (AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint.c == null) {
-                            AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint.c = (ahbe)new agzb((agzi)AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint.a);
+                            AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint.c = (ahdd)new ahba((ahbh)AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint.a);
                         }
                     }
                 }
@@ -47,7 +47,7 @@ public final class AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint extends
                 return AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint.a);
+                return new ahaz((ahbh)AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint.a);
             }
             case 3: {
                 return new AddToPlaylistEndpointOuterClass$AddToPlaylistEndpoint();

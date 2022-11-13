@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AutoplaySwitchButtonRendererOuterClass
 {
-    public static final agzg autoplaySwitchButtonRenderer;
+    public static final ahbf autoplaySwitchButtonRenderer;
     
     static {
-        autoplaySwitchButtonRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ahvr.a, (MessageLite)ahvr.a, (agzn)null, 301667256, ahcm.k, (Class)ahvr.class);
+        autoplaySwitchButtonRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ahxp.a, (MessageLite)ahxp.a, (ahbm)null, 301667256, ahek.k, (Class)ahxp.class);
     }
     
     private AutoplaySwitchButtonRendererOuterClass() {

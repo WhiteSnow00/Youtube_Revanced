@@ -20,7 +20,7 @@ public class DeviceInfo
     private DeviceInfo(final long a, final Context b) {
         this.a = a;
         this.b = b;
-        this.c = (BroadcastReceiver)new agrd(this);
+        this.c = new agtc(this);
     }
     
     private static DeviceInfo createAudioDeviceInfo(final long n, final Context context) {

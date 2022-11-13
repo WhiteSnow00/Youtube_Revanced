@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class InnertubeGetReelItemWatchService
 {
-    public static final agzg reelWatchStatusRenderer;
+    public static final ahbf reelWatchStatusRenderer;
     
     static {
-        reelWatchStatusRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)akol.a, (MessageLite)akol.a, (agzn)null, 447071275, ahcm.k, (Class)akol.class);
+        reelWatchStatusRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)akqo.a, (MessageLite)akqo.a, (ahbm)null, 447071275, ahek.k, (Class)akqo.class);
     }
     
     private InnertubeGetReelItemWatchService() {

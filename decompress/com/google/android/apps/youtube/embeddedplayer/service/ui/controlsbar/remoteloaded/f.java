@@ -295,7 +295,7 @@ public final class f extends View
             else if (this.p) {
                 this.e();
                 final pvh w = this.w;
-                ((a)w.a).a.r((int)this.q);
+                ((a)w.a).a.r((long)(int)this.q);
                 ((a)w.a).B();
                 return true;
             }

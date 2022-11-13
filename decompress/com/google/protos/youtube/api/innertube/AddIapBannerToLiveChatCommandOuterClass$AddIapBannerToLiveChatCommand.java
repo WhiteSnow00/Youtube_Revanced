@@ -6,26 +6,26 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand extends agzi implements ahax
+public final class AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand extends ahbh implements ahcw
 {
     public static final AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand a;
-    public static final agzg addIapBannerToLiveChatCommand;
-    private static volatile ahbe k;
+    public static final ahbf addIapBannerToLiveChatCommand;
+    private static volatile ahdd k;
     public int b;
-    public agzy c;
-    public anss d;
-    public aioe e;
+    public ahbx c;
+    public anuv d;
+    public aiqj e;
     public String f;
     public String g;
     public boolean h;
-    public aioe i;
-    public agyo j;
+    public aiqj i;
+    public ahan j;
     private byte l;
     
     static {
         final AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand a2 = new AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand();
-        agzi.registerDefaultInstance((Class)AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.class, (agzi)(a = a2));
-        addIapBannerToLiveChatCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 413219504, ahcm.k, (Class)AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.class);
+        ahbh.registerDefaultInstance((Class)AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.class, (ahbh)(a = a2));
+        addIapBannerToLiveChatCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 413219504, ahek.k, (Class)AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.class);
     }
     
     private AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand() {
@@ -35,20 +35,20 @@ public final class AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveCha
         this.g = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte l = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe k;
+                final ahdd k;
                 if ((k = AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.k) == null) {
                     synchronized (AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.class) {
                         if (AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.k == null) {
-                            AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.k = (ahbe)new agzb((agzi)AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.a);
+                            AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.k = (ahdd)new ahba((ahbh)AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.a);
                         }
                     }
                 }
@@ -58,19 +58,19 @@ public final class AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveCha
                 return AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.a;
             }
             case 4: {
-                return new agza((agzi)AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.a);
+                return new ahaz((ahbh)AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.a);
             }
             case 3: {
                 return new AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand();
             }
             case 2: {
-                return newMessageInfo((MessageLite)AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.a, "\u0001\b\u0000\u0001\u0001\u000b\b\u0000\u0001\u0003\u0001\u1409\u0000\u0004\u001b\u0005\u1409\u0001\u0006\u1008\u0002\u0007\u1008\u0003\b\u1007\u0004\n\u1409\u0005\u000b\u1009\u0006", new Object[] { "b", "d", "c", ahms.class, "e", "f", "g", "h", "i", "j" });
+                return newMessageInfo((MessageLite)AddIapBannerToLiveChatCommandOuterClass$AddIapBannerToLiveChatCommand.a, "\u0001\b\u0000\u0001\u0001\u000b\b\u0000\u0001\u0003\u0001\u1409\u0000\u0004\u001b\u0005\u1409\u0001\u0006\u1008\u0002\u0007\u1008\u0003\b\u1007\u0004\n\u1409\u0005\u000b\u1009\u0006", new Object[] { "b", "d", "c", ahoq.class, "e", "f", "g", "h", "i", "j" });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    l = 0;
                 }
-                this.l = (byte)(b ? 1 : 0);
+                this.l = l;
                 return null;
             }
             case 0: {

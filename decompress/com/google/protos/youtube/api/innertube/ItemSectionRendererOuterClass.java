@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ItemSectionRendererOuterClass
 {
-    public static final agzg itemSectionRenderer;
+    public static final ahbf itemSectionRenderer;
     
     static {
-        itemSectionRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)alib.a, (MessageLite)alib.a, (agzn)null, 50195462, ahcm.k, (Class)alib.class);
+        itemSectionRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)alke.a, (MessageLite)alke.a, (ahbm)null, 50195462, ahek.k, (Class)alke.class);
     }
     
     private ItemSectionRendererOuterClass() {

@@ -221,12 +221,12 @@ public final class b implements Runnable
                 b4.b.l((abdh)b4.k);
                 b4.c.rk((abef)b4.k);
                 b4.d.re((abcx)b4.k);
-                b4.e.C(b4.k);
+                b4.e.C((d)b4.k);
                 b4.f.w((com.google.android.apps.youtube.embeddedplayer.service.ui.subscribebutton.shared.c)b4.k);
                 b4.g.rj((com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.remoteloaded.c)b4.k);
                 b4.h.E((com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.remoteloaded.c)b4.k);
-                b4.i.t(b4.k);
-                b4.j.rf(b4.k);
+                b4.i.t((com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.d)b4.k);
+                b4.j.rf((g)b4.k);
                 return;
             }
             case 9: {

@@ -4,12 +4,15 @@
 
 package com.google.vr.sdk.proto;
 
-class CardboardDevice$VignetteParams$VignetteParamsCondition$1 implements agzn
+class CardboardDevice$VignetteParams$VignetteParamsCondition$1 implements ahbm
 {
     public CardboardDevice$VignetteParams$VignetteParamsCondition$1() {
     }
     
-    @Override
+    public /* bridge */ ahbl findValueByNumber(final int n) {
+        return (ahbl)this.findValueByNumber(n);
+    }
+    
     public CardboardDevice$VignetteParams$VignetteParamsCondition findValueByNumber(final int n) {
         return CardboardDevice$VignetteParams$VignetteParamsCondition.forNumber(n);
     }

@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 
 Name: AndroidManifest.xml
-SHA1-Digest: Y985ZOnjpDu3i/+OLpb8P0ydYQk=
+SHA1-Digest: Gi3Ai6n045eE6pQ9zwTLkvM08sQ=
 
 Name: META-INF/services/com.google.protobuf.GeneratedExtensionRegistry
  Loader
@@ -400,28 +400,28 @@ Name: assets/youtube_sans_semibold.xml
 SHA1-Digest: PA/UsHicSHfRX824iRA+NMEAWEo=
 
 Name: classes.dex
-SHA1-Digest: ch+FKk7umZ7ug5schvBDAPDVSRk=
+SHA1-Digest: fInJQBCENalfLLoLkI/QbPoJCL8=
 
 Name: classes2.dex
-SHA1-Digest: gP3RItwCZe5L6wvlSp2u5z0f5nM=
+SHA1-Digest: s1aeOGZ2NzPz0cJTUq8xnRT59NQ=
 
 Name: classes3.dex
-SHA1-Digest: PkL70kifOIZu0XdSSk3e3/rWBEA=
+SHA1-Digest: sg/FdevVsx50TotLsfXjMw3I4pE=
 
 Name: classes4.dex
-SHA1-Digest: oH0EvitOj9A6pivReJ2AcwhPVP8=
+SHA1-Digest: jsdat9qslYDAGHm2NTdR8thIlNw=
 
 Name: classes5.dex
-SHA1-Digest: qfMuuq2XQ1qwGUGmN3+A1Mb9c3k=
+SHA1-Digest: 4WmlYIhdM5k1q2QnR8ieo+KwGjU=
 
 Name: classes6.dex
-SHA1-Digest: a+tGcyo1mGQ4dDxnf9Tox8Uc68c=
+SHA1-Digest: Fau3g7g+N61GMtVjeFW97Cx6JAU=
 
 Name: classes7.dex
-SHA1-Digest: thXZtn3KNpgtReoRFE3uNGxzu5M=
+SHA1-Digest: SJTdX4mLWidsLJwhnRBhX2ua5/c=
 
 Name: classes8.dex
-SHA1-Digest: 3TNKUIOZzXYylCG36N3mOKxqnyo=
+SHA1-Digest: dVHDMbOwnhaghK2+mEBI+G2gVUY=
 
 Name: com/google/android/libraries/phonenumbers/data/PhoneNumberMetada
  taProto_800
@@ -11695,7 +11695,7 @@ Name: res/drawable/player_button_background.xml
 SHA1-Digest: 7dXmBBuJ/4ag08RPDR9C3FHpB3U=
 
 Name: res/drawable/player_button_circle_background.xml
-SHA1-Digest: 6bVrkqqVLiIkVy/rRYtK19PfCBc=
+SHA1-Digest: UsP6nmSoBU5CopPfLXPZDbaz0LQ=
 
 Name: res/drawable/player_fast_forward.xml
 SHA1-Digest: YWJUTh1SW0MwyJcQFzQ8VsCjwSY=
@@ -18578,7 +18578,7 @@ Name: res/xml/picker_file_provider_path.xml
 SHA1-Digest: eub41OKJXZUEfKJ7J+EHg8eNFNc=
 
 Name: res/xml/revanced_prefs.xml
-SHA1-Digest: uufWD63Ba1Yt2M0pDT64gatdf4E=
+SHA1-Digest: IyKt4VTGyfuoS7n6dwYAoiEqHgY=
 
 Name: res/xml/searchable.xml
 SHA1-Digest: 0RLCVDi6OvsrHZqNWtSG1RRBe4I=
@@ -18599,7 +18599,7 @@ Name: res/xml/videoquality_prefs.xml
 SHA1-Digest: AgJxTgE+V0yDJj2UEfz/IejbEI4=
 
 Name: resources.arsc
-SHA1-Digest: Ci8ccEynU4jQ6MaqfkTrXU7iJFA=
+SHA1-Digest: 2082bkcIKFh0R2JXb5xSHc2EOvM=
 
 Name: stamp-cert-sha256
 SHA1-Digest: 5vTkm69vqAbusD/fho7oWwc7j+I=

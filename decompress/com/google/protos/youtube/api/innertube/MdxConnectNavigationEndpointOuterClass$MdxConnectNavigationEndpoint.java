@@ -6,41 +6,41 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint extends agzi implements ahax
+public final class MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint extends ahbh implements ahcw
 {
     public static final MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint a;
-    private static volatile ahbe e;
-    public static final agzg mdxConnectNavigationEndpoint;
+    private static volatile ahdd e;
+    public static final ahbf mdxConnectNavigationEndpoint;
     public int b;
-    public amdi c;
-    public amcf d;
-    private aioe f;
+    public amfm c;
+    public amej d;
+    private aiqj f;
     private byte g;
     
     static {
         final MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint a2 = new MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint();
-        agzi.registerDefaultInstance((Class)MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint.class, (agzi)(a = a2));
-        mdxConnectNavigationEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 119886855, ahcm.k, (Class)MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint.class);
+        ahbh.registerDefaultInstance((Class)MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint.class, (ahbh)(a = a2));
+        mdxConnectNavigationEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 119886855, ahek.k, (Class)MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint.class);
     }
     
     private MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint() {
         this.g = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte g = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint.e) == null) {
                     synchronized (MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint.class) {
                         if (MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint.e == null) {
-                            MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint.e = (ahbe)new agzb((agzi)MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint.a);
+                            MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint.e = (ahdd)new ahba((ahbh)MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint.a);
                         }
                     }
                 }
@@ -50,7 +50,7 @@ public final class MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEn
                 return MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint.a);
+                return new ahaz((ahbh)MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint.a);
             }
             case 3: {
                 return new MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEndpoint();
@@ -60,9 +60,9 @@ public final class MdxConnectNavigationEndpointOuterClass$MdxConnectNavigationEn
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    g = 0;
                 }
-                this.g = (byte)(b ? 1 : 0);
+                this.g = g;
                 return null;
             }
             case 0: {

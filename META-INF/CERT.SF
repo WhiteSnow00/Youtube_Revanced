@@ -1,10 +1,10 @@
 Signature-Version: 1.0
 Created-By: Apktool M
-SHA1-Digest-Manifest: lFcBTdadfYyKQWpZj7QbjEcKVdw=
+SHA1-Digest-Manifest: 8Kovj9yASRKo1TzyEdb7wRnF/Co=
 X-Android-APK-Signed: 2
 
 Name: AndroidManifest.xml
-SHA1-Digest: bcF5PmF201H9VIBal5wDtxU9aYg=
+SHA1-Digest: CtLNfPLWBec9gaP2n+BoRJ6QJXk=
 
 Name: META-INF/services/com.google.protobuf.GeneratedExtensionRegistry
  Loader
@@ -403,28 +403,28 @@ Name: assets/youtube_sans_semibold.xml
 SHA1-Digest: s26Ry5nH3d6TQFq9l8LgB1yugIc=
 
 Name: classes.dex
-SHA1-Digest: JtoF82BDx207B2kiAEBRAyQq/xQ=
+SHA1-Digest: EwNwQxGsdXt5i7FF8UFfwXM/pdE=
 
 Name: classes2.dex
-SHA1-Digest: hb3T0B7lun8foucjDxN9EthcmfQ=
+SHA1-Digest: RKiqkuIlpoweTq2pMGiVxI1O+14=
 
 Name: classes3.dex
-SHA1-Digest: w2PBN3VX2q+jg2nV4dAGbXdI/8k=
+SHA1-Digest: K34LTHBdn3ttI+k80wZ/D7P7NNs=
 
 Name: classes4.dex
-SHA1-Digest: z3TAYkv8HJ0QYunIbwtD8qqJYrk=
+SHA1-Digest: isYRVby2ArbBOgpBrqBSL1/O3iM=
 
 Name: classes5.dex
-SHA1-Digest: wdFGF6LNAFLT5TLvGy/GaYfRIcg=
+SHA1-Digest: XGJmIn614ZywFkWI0ais2WkC8Ok=
 
 Name: classes6.dex
-SHA1-Digest: w9OFdSIAA3G47IPgAV2lN4LOZcw=
+SHA1-Digest: ph5DJuLca1Sd3oKGGpjOR0kUY2w=
 
 Name: classes7.dex
-SHA1-Digest: FLNiZ9xh0uqVfwEmkTW84xzmXPc=
+SHA1-Digest: Vf+BwvAzweBnvUGdtaNyzLcw+NA=
 
 Name: classes8.dex
-SHA1-Digest: rRFtNjZK//kOdYG0UPG0Y+79piE=
+SHA1-Digest: r0WK3I8NzD5SlBPSAXz+/IIsLtk=
 
 Name: com/google/android/libraries/phonenumbers/data/PhoneNumberMetada
  taProto_800
@@ -11698,7 +11698,7 @@ Name: res/drawable/player_button_background.xml
 SHA1-Digest: G1MQ8Parn2rVcrqvMavY7QgXU2M=
 
 Name: res/drawable/player_button_circle_background.xml
-SHA1-Digest: w4ca8S76JTadrR1GUzHsDGb7Fac=
+SHA1-Digest: +IoAYurACaJAEE/7yVqs8VNMeos=
 
 Name: res/drawable/player_fast_forward.xml
 SHA1-Digest: eZr5/bcBrkoKpDz7bOwxc71y91M=
@@ -18581,7 +18581,7 @@ Name: res/xml/picker_file_provider_path.xml
 SHA1-Digest: Gl0GtFe7C2VWF5zciVx56COQZAQ=
 
 Name: res/xml/revanced_prefs.xml
-SHA1-Digest: 2FTEfBirYgyT5SA+1EZjeBMLAiU=
+SHA1-Digest: 9yMdLPGudd5XjBsqbjPPEhEi5jA=
 
 Name: res/xml/searchable.xml
 SHA1-Digest: 5JPQoZqYrpzysLhV+aSTy+xYC7M=
@@ -18602,7 +18602,7 @@ Name: res/xml/videoquality_prefs.xml
 SHA1-Digest: Ol0dpOgHgBHg4RbYy4ORIowzDCg=
 
 Name: resources.arsc
-SHA1-Digest: 74V1gSbGEgRnmJdv1bTzv/858Wo=
+SHA1-Digest: Sr2wb1ptqYpbmjKgnmWabgHPtSE=
 
 Name: stamp-cert-sha256
 SHA1-Digest: Bs40BvDZ1xrbgQrPTD2x5w/NfHQ=

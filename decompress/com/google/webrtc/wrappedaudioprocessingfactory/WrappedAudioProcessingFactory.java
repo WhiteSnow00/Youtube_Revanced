@@ -12,7 +12,7 @@ public final class WrappedAudioProcessingFactory
     public long b;
     
     static {
-        afji.o("WrappedAudioProcessingFactory");
+        afli.o("WrappedAudioProcessingFactory");
     }
     
     public WrappedAudioProcessingFactory(final DefaultAudioProcessingFactory a) {

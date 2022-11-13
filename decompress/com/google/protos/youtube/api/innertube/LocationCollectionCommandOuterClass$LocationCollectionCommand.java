@@ -6,41 +6,41 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LocationCollectionCommandOuterClass$LocationCollectionCommand extends agzi implements ahax
+public final class LocationCollectionCommandOuterClass$LocationCollectionCommand extends ahbh implements ahcw
 {
     public static final LocationCollectionCommandOuterClass$LocationCollectionCommand a;
-    private static volatile ahbe e;
-    public static final agzg locationCollectionCommand;
+    private static volatile ahdd e;
+    public static final ahbf locationCollectionCommand;
     public int b;
-    public aioe c;
-    public aioe d;
-    private aioe f;
+    public aiqj c;
+    public aiqj d;
+    private aiqj f;
     private byte g;
     
     static {
         final LocationCollectionCommandOuterClass$LocationCollectionCommand a2 = new LocationCollectionCommandOuterClass$LocationCollectionCommand();
-        agzi.registerDefaultInstance((Class)LocationCollectionCommandOuterClass$LocationCollectionCommand.class, (agzi)(a = a2));
-        locationCollectionCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 395519548, ahcm.k, (Class)LocationCollectionCommandOuterClass$LocationCollectionCommand.class);
+        ahbh.registerDefaultInstance((Class)LocationCollectionCommandOuterClass$LocationCollectionCommand.class, (ahbh)(a = a2));
+        locationCollectionCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 395519548, ahek.k, (Class)LocationCollectionCommandOuterClass$LocationCollectionCommand.class);
     }
     
     private LocationCollectionCommandOuterClass$LocationCollectionCommand() {
         this.g = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte g = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = LocationCollectionCommandOuterClass$LocationCollectionCommand.e) == null) {
                     synchronized (LocationCollectionCommandOuterClass$LocationCollectionCommand.class) {
                         if (LocationCollectionCommandOuterClass$LocationCollectionCommand.e == null) {
-                            LocationCollectionCommandOuterClass$LocationCollectionCommand.e = (ahbe)new agzb((agzi)LocationCollectionCommandOuterClass$LocationCollectionCommand.a);
+                            LocationCollectionCommandOuterClass$LocationCollectionCommand.e = (ahdd)new ahba((ahbh)LocationCollectionCommandOuterClass$LocationCollectionCommand.a);
                         }
                     }
                 }
@@ -50,7 +50,7 @@ public final class LocationCollectionCommandOuterClass$LocationCollectionCommand
                 return LocationCollectionCommandOuterClass$LocationCollectionCommand.a;
             }
             case 4: {
-                return new agza((agzi)LocationCollectionCommandOuterClass$LocationCollectionCommand.a);
+                return new ahaz((ahbh)LocationCollectionCommandOuterClass$LocationCollectionCommand.a);
             }
             case 3: {
                 return new LocationCollectionCommandOuterClass$LocationCollectionCommand();
@@ -60,9 +60,9 @@ public final class LocationCollectionCommandOuterClass$LocationCollectionCommand
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    g = 0;
                 }
-                this.g = (byte)(b ? 1 : 0);
+                this.g = g;
                 return null;
             }
             case 0: {

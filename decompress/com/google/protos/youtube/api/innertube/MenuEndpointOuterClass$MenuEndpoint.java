@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class MenuEndpointOuterClass$MenuEndpoint extends agzi implements ahax
+public final class MenuEndpointOuterClass$MenuEndpoint extends ahbh implements ahcw
 {
     public static final MenuEndpointOuterClass$MenuEndpoint a;
-    private static volatile ahbe d;
-    public static final agzg menuEndpoint;
+    private static volatile ahdd d;
+    public static final ahbf menuEndpoint;
     public int b;
-    public amer c;
+    public amgv c;
     private byte e;
     
     static {
         final MenuEndpointOuterClass$MenuEndpoint a2 = new MenuEndpointOuterClass$MenuEndpoint();
-        agzi.registerDefaultInstance((Class)MenuEndpointOuterClass$MenuEndpoint.class, (agzi)(a = a2));
-        menuEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 98150882, ahcm.k, (Class)MenuEndpointOuterClass$MenuEndpoint.class);
+        ahbh.registerDefaultInstance((Class)MenuEndpointOuterClass$MenuEndpoint.class, (ahbh)(a = a2));
+        menuEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 98150882, ahek.k, (Class)MenuEndpointOuterClass$MenuEndpoint.class);
     }
     
     private MenuEndpointOuterClass$MenuEndpoint() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = MenuEndpointOuterClass$MenuEndpoint.d) == null) {
                     synchronized (MenuEndpointOuterClass$MenuEndpoint.class) {
                         if (MenuEndpointOuterClass$MenuEndpoint.d == null) {
-                            MenuEndpointOuterClass$MenuEndpoint.d = (ahbe)new agzb((agzi)MenuEndpointOuterClass$MenuEndpoint.a);
+                            MenuEndpointOuterClass$MenuEndpoint.d = (ahdd)new ahba((ahbh)MenuEndpointOuterClass$MenuEndpoint.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class MenuEndpointOuterClass$MenuEndpoint extends agzi implements a
                 return MenuEndpointOuterClass$MenuEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)MenuEndpointOuterClass$MenuEndpoint.a);
+                return new ahaz((ahbh)MenuEndpointOuterClass$MenuEndpoint.a);
             }
             case 3: {
                 return new MenuEndpointOuterClass$MenuEndpoint();
@@ -58,9 +58,9 @@ public final class MenuEndpointOuterClass$MenuEndpoint extends agzi implements a
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

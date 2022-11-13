@@ -156,7 +156,7 @@ public final class c implements tgg
                 }
             }
         }
-        m.y((BusSupported$Data)new RelatedVideosScreen((CharSequence)b, list));
+        m.y((BusSupported$Data)new RelatedVideosScreen((CharSequence)b, (List)list));
     }
     
     public final void d() {
@@ -207,7 +207,7 @@ public final class c implements tgg
                     }
                     final aanw b = (aanw)o;
                     final aanw b2 = this.b;
-                    if (b2 == null || !b2.equals(b)) {
+                    if (b2 == null || !b2.equals((Object)b)) {
                         this.b = b;
                         this.a();
                         this.f();
@@ -274,7 +274,7 @@ public final class c implements tgg
                     }
                     c = null;
                 }
-                if (!adkp.ae(c, this.c)) {
+                if (!adkp.ae((Object)c, (Object)this.c)) {
                     this.c = c;
                     this.h.a();
                     this.a();

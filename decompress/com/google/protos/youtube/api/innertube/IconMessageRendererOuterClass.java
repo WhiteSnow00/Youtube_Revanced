@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class IconMessageRendererOuterClass
 {
-    public static final agzg iconMessageRenderer;
+    public static final ahbf iconMessageRenderer;
     
     static {
-        iconMessageRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)akbc.a, (MessageLite)akbc.a, (agzn)null, 228344821, ahcm.k, (Class)akbc.class);
+        iconMessageRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)akdf.a, (MessageLite)akdf.a, (ahbm)null, 228344821, ahek.k, (Class)akdf.class);
     }
     
     private IconMessageRendererOuterClass() {

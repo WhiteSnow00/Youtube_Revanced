@@ -6,19 +6,19 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint extends agzi implements ahax
+public final class AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint extends ahbh implements ahcw
 {
     public static final AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint a;
-    public static final agzg addUpcomingEventReminderEndpoint;
-    private static volatile ahbe c;
+    public static final ahbf addUpcomingEventReminderEndpoint;
+    private static volatile ahdd c;
     public String b;
     private int d;
     private byte e;
     
     static {
         final AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint a2 = new AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint();
-        agzi.registerDefaultInstance((Class)AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint.class, (agzi)(a = a2));
-        addUpcomingEventReminderEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 123790168, ahcm.k, (Class)AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint.class);
+        ahbh.registerDefaultInstance((Class)AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint.class, (ahbh)(a = a2));
+        addUpcomingEventReminderEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 123790168, ahek.k, (Class)AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint.class);
     }
     
     private AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint() {
@@ -27,20 +27,20 @@ public final class AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventRe
         emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint.c) == null) {
                     synchronized (AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint.class) {
                         if (AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint.c == null) {
-                            AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint.c = (ahbe)new agzb((agzi)AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint.a);
+                            AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint.c = (ahdd)new ahba((ahbh)AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint.a);
                         }
                     }
                 }
@@ -50,7 +50,7 @@ public final class AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventRe
                 return AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint.a);
+                return new ahaz((ahbh)AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint.a);
             }
             case 3: {
                 return new AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventReminderEndpoint();
@@ -60,9 +60,9 @@ public final class AddUpcomingEventReminderEndpointOuterClass$AddUpcomingEventRe
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

@@ -10,22 +10,25 @@ import android.content.Context;
 
 class GvrLayoutImpl$AsyncReprojectionSurfaceView extends GvrSurfaceView
 {
-    private araa scanlineRacingRenderer;
+    private arco scanlineRacingRenderer;
+    
+    static /* bridge */ arco -$$Nest$fgetscanlineRacingRenderer(final GvrLayoutImpl$AsyncReprojectionSurfaceView gvrLayoutImpl$AsyncReprojectionSurfaceView) {
+        return gvrLayoutImpl$AsyncReprojectionSurfaceView.scanlineRacingRenderer;
+    }
     
     public GvrLayoutImpl$AsyncReprojectionSurfaceView(final Context context) {
         super(context);
     }
     
-    public void setRenderer(final araa scanlineRacingRenderer) {
+    public void setRenderer(final arco scanlineRacingRenderer) {
         super.setRenderer((GLSurfaceView$Renderer)(this.scanlineRacingRenderer = scanlineRacingRenderer));
     }
     
-    @Override
     public void surfaceDestroyed(final SurfaceHolder surfaceHolder) {
         if (!this.isDetachedFromWindow() && this.scanlineRacingRenderer != null) {
-            this.onSurfaceDestroyed(new GvrLayoutImpl$AsyncReprojectionSurfaceView$1(this));
+            this.onSurfaceDestroyed((Runnable)new GvrLayoutImpl$AsyncReprojectionSurfaceView$1(this));
             return;
         }
-        this.onSurfaceDestroyed(null);
+        this.onSurfaceDestroyed((Runnable)null);
     }
 }

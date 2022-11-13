@@ -6,13 +6,13 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint extends agzi implements ahax
+public final class AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint extends ahbh implements ahcw
 {
     public static final AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint a;
-    public static final agzg androidShareIntentEndpoint;
-    private static volatile ahbe g;
+    public static final ahbf androidShareIntentEndpoint;
+    private static volatile ahdd g;
     public int b;
-    public agzy c;
+    public ahbx c;
     public String d;
     public String e;
     public String f;
@@ -20,8 +20,8 @@ public final class AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoi
     
     static {
         final AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint a2 = new AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint();
-        agzi.registerDefaultInstance((Class)AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.class, (agzi)(a = a2));
-        androidShareIntentEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 106983893, ahcm.k, (Class)AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.class);
+        ahbh.registerDefaultInstance((Class)AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.class, (ahbh)(a = a2));
+        androidShareIntentEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 106983893, ahek.k, (Class)AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.class);
     }
     
     private AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint() {
@@ -32,20 +32,20 @@ public final class AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoi
         this.f = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte h = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe g;
+                final ahdd g;
                 if ((g = AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.g) == null) {
                     synchronized (AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.class) {
                         if (AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.g == null) {
-                            AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.g = (ahbe)new agzb((agzi)AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.a);
+                            AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.g = (ahdd)new ahba((ahbh)AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.a);
                         }
                     }
                 }
@@ -55,19 +55,19 @@ public final class AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoi
                 return AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.a);
+                return new ahaz((ahbh)AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.a);
             }
             case 3: {
                 return new AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint();
             }
             case 2: {
-                return newMessageInfo((MessageLite)AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.a, "\u0001\u0004\u0000\u0001\u0001\u0006\u0004\u0000\u0001\u0001\u0001\u041b\u0002\u1008\u0000\u0004\u1008\u0001\u0006\u1008\u0002", new Object[] { "b", "c", aliq.class, "d", "e", "f" });
+                return newMessageInfo((MessageLite)AndroidShareIntentEndpointOuterClass$AndroidShareIntentEndpoint.a, "\u0001\u0004\u0000\u0001\u0001\u0006\u0004\u0000\u0001\u0001\u0001\u041b\u0002\u1008\u0000\u0004\u1008\u0001\u0006\u1008\u0002", new Object[] { "b", "c", alkt.class, "d", "e", "f" });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    h = 0;
                 }
-                this.h = (byte)(b ? 1 : 0);
+                this.h = h;
                 return null;
             }
             case 0: {

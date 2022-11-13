@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint extends agzi implements ahax
+public final class ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint extends ahbh implements ahcw
 {
     public static final ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg managePurchaseEndpoint;
-    public alys b;
+    private static volatile ahdd c;
+    public static final ahbf managePurchaseEndpoint;
+    public amaw b;
     private int d;
     private byte e;
     
     static {
         final ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint a2 = new ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint();
-        agzi.registerDefaultInstance((Class)ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint.class, (agzi)(a = a2));
-        managePurchaseEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 95591119, ahcm.k, (Class)ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint.class);
+        ahbh.registerDefaultInstance((Class)ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint.class, (ahbh)(a = a2));
+        managePurchaseEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 95591119, ahek.k, (Class)ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint.class);
     }
     
     private ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint.c) == null) {
                     synchronized (ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint.class) {
                         if (ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint.c == null) {
-                            ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint.c = (ahbe)new agzb((agzi)ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint.a);
+                            ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint.c = (ahdd)new ahba((ahbh)ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint exten
                 return ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint.a);
+                return new ahaz((ahbh)ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint.a);
             }
             case 3: {
                 return new ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint();
@@ -58,9 +58,9 @@ public final class ManagePurchaseEndpointOuterClass$ManagePurchaseEndpoint exten
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

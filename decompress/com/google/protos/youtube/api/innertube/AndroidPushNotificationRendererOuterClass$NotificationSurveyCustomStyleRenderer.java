@@ -6,20 +6,20 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer extends agzi implements ahax
+public final class AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer extends ahbh implements ahcw
 {
     public static final AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer a;
-    private static volatile ahbe d;
-    public static final agzg notificationSurveyCustomStyleRenderer;
+    private static volatile ahdd d;
+    public static final ahbf notificationSurveyCustomStyleRenderer;
     public int b;
-    public agzy c;
+    public ahbx c;
     private int e;
     private byte f;
     
     static {
         final AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer a2 = new AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer();
-        agzi.registerDefaultInstance((Class)AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.class, (agzi)(a = a2));
-        notificationSurveyCustomStyleRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)a2, (MessageLite)a2, (agzn)null, 195330824, ahcm.k, (Class)AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.class);
+        ahbh.registerDefaultInstance((Class)AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.class, (ahbh)(a = a2));
+        notificationSurveyCustomStyleRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)a2, (MessageLite)a2, (ahbm)null, 195330824, ahek.k, (Class)AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.class);
     }
     
     private AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer() {
@@ -27,20 +27,20 @@ public final class AndroidPushNotificationRendererOuterClass$NotificationSurveyC
         this.c = emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.d) == null) {
                     synchronized (AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.class) {
                         if (AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.d == null) {
-                            AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.d = (ahbe)new agzb((agzi)AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.a);
+                            AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.d = (ahdd)new ahba((ahbh)AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.a);
                         }
                     }
                 }
@@ -50,19 +50,19 @@ public final class AndroidPushNotificationRendererOuterClass$NotificationSurveyC
                 return AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.a;
             }
             case 4: {
-                return new agza((agzi)AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.a);
+                return new ahaz((ahbh)AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.a);
             }
             case 3: {
                 return new AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer();
             }
             case 2: {
-                return newMessageInfo((MessageLite)AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.a, "\u0001\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0001\u0001\u0001\u100c\u0000\u0002\u041b", new Object[] { "e", "b", ampm.a(), "c", anss.class });
+                return newMessageInfo((MessageLite)AndroidPushNotificationRendererOuterClass$NotificationSurveyCustomStyleRenderer.a, "\u0001\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0001\u0001\u0001\u100c\u0000\u0002\u041b", new Object[] { "e", "b", amrq.a(), "c", anuv.class });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

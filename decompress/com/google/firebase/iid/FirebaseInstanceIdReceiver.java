@@ -12,12 +12,11 @@ import java.util.concurrent.Executor;
 import com.google.android.gms.cloudmessaging.CloudMessage;
 import android.content.Context;
 
-public final class FirebaseInstanceIdReceiver extends mod
+public final class FirebaseInstanceIdReceiver extends mpi
 {
-    @Override
     protected final int b(final Context ex, final CloudMessage cloudMessage) {
         try {
-            return (int)nmr.d(agkg.b(cloudMessage.a, (Context)ex, (Executor)rr.j));
+            return (int)nnv.d(agmh.b(cloudMessage.a, (Context)ex, (Executor)rr.j));
         }
         catch (final InterruptedException ex) {}
         catch (final ExecutionException ex2) {}
@@ -25,11 +24,10 @@ public final class FirebaseInstanceIdReceiver extends mod
         return 500;
     }
     
-    @Override
     protected final void c(final Bundle bundle) {
         final Intent putExtras = new Intent("com.google.firebase.messaging.NOTIFICATION_DISMISS").putExtras(bundle);
-        if (agnj.t(putExtras)) {
-            agnj.r("_nd", putExtras.getExtras());
+        if (agpc.t(putExtras)) {
+            agpc.r("_nd", putExtras.getExtras());
         }
     }
 }

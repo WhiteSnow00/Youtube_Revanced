@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class InlineUnmuteEndpointOuterClass
 {
-    public static final agzg inlineUnmuteEndpoint;
+    public static final ahbf inlineUnmuteEndpoint;
     
     static {
-        inlineUnmuteEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)akej.a, (MessageLite)akej.a, (agzn)null, 160595833, ahcm.k, (Class)akej.class);
+        inlineUnmuteEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)akgm.a, (MessageLite)akgm.a, (ahbm)null, 160595833, ahek.k, (Class)akgm.class);
     }
     
     private InlineUnmuteEndpointOuterClass() {

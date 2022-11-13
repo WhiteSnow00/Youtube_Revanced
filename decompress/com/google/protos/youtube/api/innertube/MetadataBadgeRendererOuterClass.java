@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class MetadataBadgeRendererOuterClass
 {
-    public static final agzg metadataBadgeRenderer;
+    public static final ahbf metadataBadgeRenderer;
     
     static {
-        metadataBadgeRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amfl.a, (MessageLite)amfl.a, (agzn)null, 128361622, ahcm.k, (Class)amfl.class);
+        metadataBadgeRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)amhp.a, (MessageLite)amhp.a, (ahbm)null, 128361622, ahek.k, (Class)amhp.class);
     }
     
     private MetadataBadgeRendererOuterClass() {

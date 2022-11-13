@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class InAppUpdateCommandOuterClass
 {
-    public static final agzg inAppUpdateCommand;
+    public static final ahbf inAppUpdateCommand;
     
     static {
-        inAppUpdateCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)akcd.a, (MessageLite)akcd.a, (agzn)null, 322705903, ahcm.k, (Class)akcd.class);
+        inAppUpdateCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)akeg.a, (MessageLite)akeg.a, (ahbm)null, 322705903, ahek.k, (Class)akeg.class);
     }
     
     private InAppUpdateCommandOuterClass() {

@@ -17,16 +17,16 @@ public final class RemoteMessage extends AbstractSafeParcelable
     public Map b;
     
     static {
-        CREATOR = (Parcelable$Creator)new abyl(20);
+        CREATOR = (Parcelable$Creator)new acao(19);
     }
     
     public RemoteMessage(final Bundle a) {
         this.a = a;
     }
     
-    public final void writeToParcel(final Parcel parcel, int i) {
-        i = kgk.I(parcel);
-        kgk.R(parcel, 2, this.a);
-        kgk.J(parcel, i);
+    public final void writeToParcel(final Parcel parcel, int m) {
+        m = khl.M(parcel);
+        khl.V(parcel, 2, this.a);
+        khl.N(parcel, m);
     }
 }

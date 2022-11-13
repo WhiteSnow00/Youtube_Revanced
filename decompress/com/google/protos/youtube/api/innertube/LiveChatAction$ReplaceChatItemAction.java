@@ -6,20 +6,20 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatAction$ReplaceChatItemAction extends agzi implements ahax
+public final class LiveChatAction$ReplaceChatItemAction extends ahbh implements ahcw
 {
     public static final LiveChatAction$ReplaceChatItemAction a;
-    private static volatile ahbe d;
-    public static final agzg replaceChatItemAction;
+    private static volatile ahdd d;
+    public static final ahbf replaceChatItemAction;
     public String b;
-    public aloe c;
+    public alqh c;
     private int e;
     private byte f;
     
     static {
         final LiveChatAction$ReplaceChatItemAction a2 = new LiveChatAction$ReplaceChatItemAction();
-        agzi.registerDefaultInstance((Class)LiveChatAction$ReplaceChatItemAction.class, (agzi)(a = a2));
-        replaceChatItemAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 149968475, ahcm.k, (Class)LiveChatAction$ReplaceChatItemAction.class);
+        ahbh.registerDefaultInstance((Class)LiveChatAction$ReplaceChatItemAction.class, (ahbh)(a = a2));
+        replaceChatItemAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 149968475, ahek.k, (Class)LiveChatAction$ReplaceChatItemAction.class);
     }
     
     private LiveChatAction$ReplaceChatItemAction() {
@@ -27,20 +27,20 @@ public final class LiveChatAction$ReplaceChatItemAction extends agzi implements 
         this.b = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = LiveChatAction$ReplaceChatItemAction.d) == null) {
                     synchronized (LiveChatAction$ReplaceChatItemAction.class) {
                         if (LiveChatAction$ReplaceChatItemAction.d == null) {
-                            LiveChatAction$ReplaceChatItemAction.d = (ahbe)new agzb((agzi)LiveChatAction$ReplaceChatItemAction.a);
+                            LiveChatAction$ReplaceChatItemAction.d = (ahdd)new ahba((ahbh)LiveChatAction$ReplaceChatItemAction.a);
                         }
                     }
                 }
@@ -50,7 +50,7 @@ public final class LiveChatAction$ReplaceChatItemAction extends agzi implements 
                 return LiveChatAction$ReplaceChatItemAction.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatAction$ReplaceChatItemAction.a);
+                return new ahaz((ahbh)LiveChatAction$ReplaceChatItemAction.a);
             }
             case 3: {
                 return new LiveChatAction$ReplaceChatItemAction();
@@ -60,9 +60,9 @@ public final class LiveChatAction$ReplaceChatItemAction extends agzi implements 
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

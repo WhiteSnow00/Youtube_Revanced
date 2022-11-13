@@ -318,7 +318,7 @@
     <string name="app_theme_appearance_entry_system">ডিভাইসের থিম ব্যবহার করুন</string>
     <string name="app_theme_appearance_summary">উজ্জ্বল অথবা গাঢ় থিম বেছে নিন</string>
     <string name="app_theme_appearance_title">কেমন দেখা যাবে</string>
-    <string name="application_name">YouTube</string>
+    <string name="application_name">YT RVX</string>
     <string name="apply">প্রয়োগ করুন</string>
     <string name="approve_playlist_sync">নতুন ভিডিওগুলি সিঙ্ক করুন</string>
     <string name="audio_playback_failed_snackbar_action_button">আবার চেষ্টা করুন</string>
@@ -789,9 +789,9 @@
     <string name="revanced_custom_playback_speed">কাস্টম প্লেব্যাক গতি</string>
     <string name="revanced_custom_playback_speed_off">কাস্টম প্লেব্যাক গতি বন্ধ করা হয়েছে</string>
     <string name="revanced_custom_playback_speed_on">কাস্টম প্লেব্যাক গতি চালু করা হয়েছে</string>
-    <string name="revanced_cutout_glitch_summary_off">Cutout Glitch is shown</string>
-    <string name="revanced_cutout_glitch_summary_on">Cutout Glitch is hidden</string>
-    <string name="revanced_cutout_glitch_title">Cutout Glitch</string>
+    <string name="revanced_cutout_glitch_summary_off">কাটআউট গ্লিচ প্রদর্শিত</string>
+    <string name="revanced_cutout_glitch_summary_on">কাটআউট গ্লিচ লুকানো আছে</string>
+    <string name="revanced_cutout_glitch_title">কাটআউট গ্লিচ</string>
     <string name="revanced_disable_auto_captions_summary_off">ক্যাপশন প্রয়োগ করা হলে ভিডিও চলার সময় ক্যাপশন সক্রিয় করা হয়</string>
     <string name="revanced_disable_auto_captions_summary_on">ক্যাপশন প্রয়োগ করা হলে ভিডিও চলার সময় ক্যাপশন সক্রিয় করা হয় না</string>
     <string name="revanced_disable_auto_captions_title">সংক্রিয় ক্যাপশন বন্ধ করুন</string>
@@ -831,7 +831,7 @@
     <string name="floaty_bar_queue_status">টিভির ভিডিও সারি • %1$s/%2$s</string>
     <string name="floaty_bar_tutorial_description">খারিজ করতে নিচে সোয়াইপ করুন</string>
     <string name="force_muted_video">কপিরাইট দাবি থাকার কারণে অডিওটি অনুপলব্ধ</string>
-    <string name="revanced_endscreen_cards_summary_off">End screen cards are hidden</string>
+    <string name="revanced_endscreen_cards_summary_off">শেষ স্ক্রীন কার্ড লুকানো আছে</string>
     <string name="forgot_password">পাসওয়ার্ড মনে নেই?</string>
     <string name="forward_button">ফরওয়ার্ড করুন</string>
     <string name="frequency_compound_time_unit">প্রতি %1$s %2$s</string>
@@ -875,9 +875,13 @@
     <string name="generic_error_user_canceled">যাচাইকরণ প্রক্রিয়াটি ব্যবহারকারী বাতিল করেছেন।</string>
     <string name="geo_location_search_hint">জায়গা খুঁজুন</string>
     <string name="get_add_to_playlist_failed">আপনার প্লেলিস্টগুলি লোড করা যায়নি</string>
-    <string name="revanced_endscreen_cards_summary_on">End screen cards are shown</string>
-    <string name="revanced_endscreen_cards_title">End screen cards</string>
+    <string name="revanced_endscreen_cards_summary_on">শেষ স্ক্রীন কার্ড প্রদর্শিত</string>
+    <string name="revanced_endscreen_cards_title">শেষ স্ক্রীন কার্ড</string>
+    <string name="revanced_endscreen_overlay_summary_off">শেষ স্ক্রীন ওভারলে দৃশ্যমান</string>
+    <string name="revanced_endscreen_overlay_summary_on">শেষ স্ক্রীন ওভারলে লুকানো আছে</string>
+    <string name="revanced_endscreen_overlay_title">শেষ স্ক্রীণ ওভারলে</string>
     <string name="google_play_protect_title">Google Play Protect</string>
+    <string name="revanced_expansion_card_summary_off">সম্প্রসারণ কার্ড প্রদর্শিত</string>
     <string name="habanero_entry_point_cta_button">প্লেলিস্ট ডাউনলোড করুন</string>
     <string name="habanero_entry_point_offline_message">চালিয়ে যেতে ইন্টারনেটে কানেক্ট করুন</string>
     <string name="habanero_entry_point_subtitle">প্রতি সপ্তাহে ডাউনলোড এবং আপডেট করা হয়</string>
@@ -895,9 +899,11 @@
     <string name="hats_free_text_system_section_contents">• ডিভাইস\10• বিল্ড আইডি\10• বিল্ডের ধরন\10• বিল্ড ফিঙ্গারপ্রিন্ট\10• মডেল\10• প্রোডাক্ট\10• SDK ভার্সন\10• রিলিজ\10• ইনক্রিমেন্টাল ভার্সন\10• কোডনেম\10• বোর্ড\10• ব্র্যান্ড\10\10</string>
     <string name="hats_free_text_system_section_header">সিস্টেম\10</string>
     <string name="here_are_some_results_about">এখানে %1$s-এর কয়েকটি সার্চ ফলাফল দেখানো হচ্ছে</string>
+    <string name="revanced_expansion_card_summary_on">সম্প্রসারণ কার্ড লুকানো আছে</string>
     <string name="history_search_cancel_button_text">বাতিল করুন</string>
     <string name="home">হোম</string>
     <string name="hours_ago">{count,plural, =1{১ ঘণ্টা আগে}one{# ঘণ্টা আগে}other{# ঘণ্টা আগে}}</string>
+    <string name="revanced_expansion_card_title">সম্প্রসারণ কার্ড</string>
     <string name="revanced_experimental_flag">পরীক্ষামূলক ফ্ল্যাগ</string>
     <string name="image_gallery_file_size_too_large_error">আপনার ছবির আকার আমাদের সীমা আমাদের সীমা ছাড়িয়ে গেছে। %1$dMBর চেয়ে ছোট একটি ছবি বাছুন।</string>
     <string name="image_gallery_permission_allow_access_description">কোনো নতুন ছবির পোস্ট তৈরি করতে ফটোগুলি অ্যাক্সেসের অনুমতি দিন</string>
@@ -1422,6 +1428,12 @@
     <string name="revanced_shorts_button_summary_off">শর্টস বাটন লুকানো আছে</string>
     <string name="revanced_shorts_button_summary_on">শর্টস বাটন প্রদর্শিত</string>
     <string name="revanced_shorts_button_title">শর্টস বাটন</string>
+    <string name="revanced_shorts_player_comments_button_summary_off">শর্টস প্লেয়ার কমেন্ট বাটন লুকানো আছে</string>
+    <string name="revanced_shorts_player_comments_button_summary_on">শর্টস প্লেয়ার কমেন্ট বাটন প্রদর্শিত</string>
+    <string name="revanced_shorts_player_comments_button_title">শর্টস প্লেয়ার কমেন্ট বাটন</string>
+    <string name="revanced_shorts_player_remix_button_summary_off">শর্টস প্লেয়ার রিমিক্স বাটন লুকানো আছে</string>
+    <string name="revanced_shorts_player_remix_button_summary_on">শর্টস প্লেয়ার রিমিক্স বাটন প্রদর্শিত</string>
+    <string name="revanced_shorts_player_remix_button_title">শর্টস প্লেয়ার রিমিক্স বাটন</string>
     <string name="revanced_shorts_player_subscriptions_summary_off">শর্টস সাবস্ক্রিপশন ব্যানার লুকানো আছে</string>
     <string name="revanced_shorts_player_subscriptions_summary_on">শর্টস সাবস্ক্রিপশন ব্যানার প্রদর্শিত</string>
     <string name="music_scrubber_controller_close_button_text">হয়ে গেছে</string>
@@ -1444,6 +1456,7 @@
     <string name="revanced_shorts_player_thanks_summary_off">শর্টস ধন্যবাদ ব্যানার লুকানো আছে</string>
     <string name="revanced_shorts_player_thanks_summary_on">শর্টস ধন্যবাদ ব্যানার প্রদর্শিত</string>
     <string name="revanced_shorts_player_thanks_title">শর্টস ধন্যবাদ ব্যানার</string>
+    <string name="revanced_shorts_player_title">শর্টস প্লেয়ার</string>
     <string name="revanced_shorts_shelf">শর্টস শেলফ</string>
     <string name="no_results_found">কোনও ফলাফল পাওয়া যায়নি</string>
     <string name="no_saved_videos_found">কোনও ডাউনলোড পাওয়া যায়নি</string>
@@ -1658,10 +1671,13 @@
     <string name="revanced_view_products_summary_off">পণ্য দেখার ব্যানার প্রদর্শিত</string>
     <string name="revanced_view_products_summary_on">পণ্য দেখার ব্যানার লুকানো আছে</string>
     <string name="revanced_view_products_title">পণ্য দেখার ব্যানার</string>
+    <string name="revanced_web_search_panels_summary_off">ওয়েব অনুসন্ধান প্যানেল প্রদর্শিত</string>
+    <string name="revanced_web_search_panels_summary_on">ওয়েব অনুসন্ধান প্যানেল লুকানো আছে</string>
+    <string name="revanced_web_search_panels_title">ওয়েব অনুসন্ধান প্যানেল</string>
     <string name="op3_preview_profile_picture">প্রোফাইল ছবি</string>
     <string name="revanced_whitelisting_add_failed">%s চ্যানেল %s হোয়াইটলিস্টে অ্যাড করতে ব্যর্থ হয়েছে</string>
     <string name="revanced_whitelisting_added">এই চ্যানেল %s টি হোয়াইটলিস্ট %s অ্যাড করা হয়েছে</string>
-    <string name="revanced_whitelisting_ads">ADS</string>
+    <string name="revanced_whitelisting_ads">বিজ্ঞাপন</string>
     <string name="revanced_whitelisting_fetch_failed">চ্যানেলের বিবরণ পুনরুদ্ধার করতে ব্যর্থ হয়েছে, %d কোড পেয়েছে</string>
     <string name="revanced_whitelisting_remove_failed">%s হোয়াইটলিস্ট থেকে চ্যানেল %s সরাতে ব্যর্থ হয়েছে৷</string>
     <string name="revanced_whitelisting_removed">চ্যানেল %s কে %s হোয়াইটলিস্ট থেকে সরানো হয়েছে</string>

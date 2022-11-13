@@ -17,7 +17,7 @@ public final class ProtoParsers$InternalDontUse implements ProtoParsers$Parcelab
     private volatile MessageLite b;
     
     static {
-        CREATOR = (Parcelable$Creator)new arao(1);
+        CREATOR = (Parcelable$Creator)new acao(20);
     }
     
     public ProtoParsers$InternalDontUse(final byte[] a, final MessageLite b) {
@@ -25,7 +25,7 @@ public final class ProtoParsers$InternalDontUse implements ProtoParsers$Parcelab
         if (a == null) {
             b2 = (b != null && b2);
         }
-        agot.v(b2, (Object)"Must have a message or bytes");
+        adkp.I(b2, (Object)"Must have a message or bytes");
         this.a = a;
         this.b = b;
     }
@@ -36,8 +36,8 @@ public final class ProtoParsers$InternalDontUse implements ProtoParsers$Parcelab
             b = this.b(b, extensionRegistryLite);
             return b;
         }
-        catch (final ahab ahab) {
-            throw new IllegalStateException(ahab);
+        catch (final ahca ahca) {
+            throw new IllegalStateException((Throwable)ahca);
         }
     }
     
@@ -56,7 +56,7 @@ public final class ProtoParsers$InternalDontUse implements ProtoParsers$Parcelab
         if (this.a == null) {
             final byte[] a = new byte[this.b.getSerializedSize()];
             try {
-                this.b.writeTo(agym.ak(a));
+                this.b.writeTo(ahal.ak(a));
                 this.a = a;
             }
             catch (final IOException ex) {

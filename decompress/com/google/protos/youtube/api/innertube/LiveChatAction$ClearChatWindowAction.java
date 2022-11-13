@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatAction$ClearChatWindowAction extends agzi implements ahax
+public final class LiveChatAction$ClearChatWindowAction extends ahbh implements ahcw
 {
     public static final LiveChatAction$ClearChatWindowAction a;
-    private static volatile ahbe b;
-    public static final agzg clearChatWindowAction;
+    private static volatile ahdd b;
+    public static final ahbf clearChatWindowAction;
     
     static {
         final LiveChatAction$ClearChatWindowAction a2 = new LiveChatAction$ClearChatWindowAction();
-        agzi.registerDefaultInstance((Class)LiveChatAction$ClearChatWindowAction.class, (agzi)(a = a2));
-        clearChatWindowAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 430167970, ahcm.k, (Class)LiveChatAction$ClearChatWindowAction.class);
+        ahbh.registerDefaultInstance((Class)LiveChatAction$ClearChatWindowAction.class, (ahbh)(a = a2));
+        clearChatWindowAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 430167970, ahek.k, (Class)LiveChatAction$ClearChatWindowAction.class);
     }
     
     private LiveChatAction$ClearChatWindowAction() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = LiveChatAction$ClearChatWindowAction.b) == null) {
                     synchronized (LiveChatAction$ClearChatWindowAction.class) {
                         if (LiveChatAction$ClearChatWindowAction.b == null) {
-                            LiveChatAction$ClearChatWindowAction.b = (ahbe)new agzb((agzi)LiveChatAction$ClearChatWindowAction.a);
+                            LiveChatAction$ClearChatWindowAction.b = (ahdd)new ahba((ahbh)LiveChatAction$ClearChatWindowAction.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class LiveChatAction$ClearChatWindowAction extends agzi implements 
                 return LiveChatAction$ClearChatWindowAction.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatAction$ClearChatWindowAction.a);
+                return new ahaz((ahbh)LiveChatAction$ClearChatWindowAction.a);
             }
             case 3: {
                 return new LiveChatAction$ClearChatWindowAction();

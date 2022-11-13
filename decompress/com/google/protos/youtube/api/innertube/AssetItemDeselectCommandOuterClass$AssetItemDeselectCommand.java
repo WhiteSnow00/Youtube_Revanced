@@ -6,35 +6,35 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand extends agzi implements ahax
+public final class AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand extends ahbh implements ahcw
 {
     public static final AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand a;
-    public static final agzg assetItemDeselectCommand;
-    private static volatile ahbe c;
-    public agzy b;
+    public static final ahbf assetItemDeselectCommand;
+    private static volatile ahdd c;
+    public ahbx b;
     
     static {
         final AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand a2 = new AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand();
-        agzi.registerDefaultInstance((Class)AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand.class, (agzi)(a = a2));
-        assetItemDeselectCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 444949225, ahcm.k, (Class)AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand.class);
+        ahbh.registerDefaultInstance((Class)AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand.class, (ahbh)(a = a2));
+        assetItemDeselectCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 444949225, ahek.k, (Class)AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand.class);
     }
     
     private AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand() {
-        this.b = agzi.emptyProtobufList();
+        this.b = ahbh.emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand.c) == null) {
                     synchronized (AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand.class) {
                         if (AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand.c == null) {
-                            AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand.c = (ahbe)new agzb((agzi)AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand.a);
+                            AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand.c = (ahdd)new ahba((ahbh)AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand.a);
                         }
                     }
                 }
@@ -44,7 +44,7 @@ public final class AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand e
                 return AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand.a;
             }
             case 4: {
-                return new agza((agzi)AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand.a);
+                return new ahaz((ahbh)AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand.a);
             }
             case 3: {
                 return new AssetItemDeselectCommandOuterClass$AssetItemDeselectCommand();

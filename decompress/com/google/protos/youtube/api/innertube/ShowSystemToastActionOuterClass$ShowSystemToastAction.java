@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowSystemToastActionOuterClass$ShowSystemToastAction extends agzi implements ahax
+public final class ShowSystemToastActionOuterClass$ShowSystemToastAction extends ahbh implements ahcw
 {
     public static final ShowSystemToastActionOuterClass$ShowSystemToastAction a;
-    private static volatile ahbe d;
-    public static final agzg showSystemToastAction;
+    private static volatile ahdd d;
+    public static final ahbf showSystemToastAction;
     public int b;
-    public ajsq c;
+    public ajut c;
     private byte e;
     
     static {
         final ShowSystemToastActionOuterClass$ShowSystemToastAction a2 = new ShowSystemToastActionOuterClass$ShowSystemToastAction();
-        agzi.registerDefaultInstance((Class)ShowSystemToastActionOuterClass$ShowSystemToastAction.class, (agzi)(a = a2));
-        showSystemToastAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 173351111, ahcm.k, (Class)ShowSystemToastActionOuterClass$ShowSystemToastAction.class);
+        ahbh.registerDefaultInstance((Class)ShowSystemToastActionOuterClass$ShowSystemToastAction.class, (ahbh)(a = a2));
+        showSystemToastAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 173351111, ahek.k, (Class)ShowSystemToastActionOuterClass$ShowSystemToastAction.class);
     }
     
     private ShowSystemToastActionOuterClass$ShowSystemToastAction() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = ShowSystemToastActionOuterClass$ShowSystemToastAction.d) == null) {
                     synchronized (ShowSystemToastActionOuterClass$ShowSystemToastAction.class) {
                         if (ShowSystemToastActionOuterClass$ShowSystemToastAction.d == null) {
-                            ShowSystemToastActionOuterClass$ShowSystemToastAction.d = (ahbe)new agzb((agzi)ShowSystemToastActionOuterClass$ShowSystemToastAction.a);
+                            ShowSystemToastActionOuterClass$ShowSystemToastAction.d = (ahdd)new ahba((ahbh)ShowSystemToastActionOuterClass$ShowSystemToastAction.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class ShowSystemToastActionOuterClass$ShowSystemToastAction extends
                 return ShowSystemToastActionOuterClass$ShowSystemToastAction.a;
             }
             case 4: {
-                return new agza((agzi)ShowSystemToastActionOuterClass$ShowSystemToastAction.a);
+                return new ahaz((ahbh)ShowSystemToastActionOuterClass$ShowSystemToastAction.a);
             }
             case 3: {
                 return new ShowSystemToastActionOuterClass$ShowSystemToastAction();
@@ -58,9 +58,9 @@ public final class ShowSystemToastActionOuterClass$ShowSystemToastAction extends
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

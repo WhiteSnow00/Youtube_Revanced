@@ -21,7 +21,7 @@ public final class a implements Runnable
     
     public a(final h d, final int a, final int b, final int c, final int e) {
         this.e = e;
-        this.d = d;
+        this.d = (eoa)d;
         this.a = a;
         this.b = b;
         this.c = c;
@@ -29,7 +29,7 @@ public final class a implements Runnable
     
     public a(final b d, final int a, final int b, final int c, final int e) {
         this.e = e;
-        this.d = d;
+        this.d = (eoa)d;
         this.a = a;
         this.b = b;
         this.c = c;

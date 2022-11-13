@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ShowShareWithKidsPanelCommandOuterClass
 {
-    public static final agzg showShareWithKidsPanelCommand;
+    public static final ahbf showShareWithKidsPanelCommand;
     
     static {
-        showShareWithKidsPanelCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)aoes.a, (MessageLite)aoes.a, (agzn)null, 337074424, ahcm.k, (Class)aoes.class);
+        showShareWithKidsPanelCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)aogv.a, (MessageLite)aogv.a, (ahbm)null, 337074424, ahek.k, (Class)aogv.class);
     }
     
     private ShowShareWithKidsPanelCommandOuterClass() {

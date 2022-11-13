@@ -6,37 +6,37 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LoadMarkersCommandOuterClass$LoadMarkersCommand extends agzi implements ahax
+public final class LoadMarkersCommandOuterClass$LoadMarkersCommand extends ahbh implements ahcw
 {
     public static final LoadMarkersCommandOuterClass$LoadMarkersCommand a;
-    private static volatile ahbe d;
-    public static final agzg loadMarkersCommand;
-    public agzy b;
-    public agzy c;
+    private static volatile ahdd d;
+    public static final ahbf loadMarkersCommand;
+    public ahbx b;
+    public ahbx c;
     
     static {
         final LoadMarkersCommandOuterClass$LoadMarkersCommand a2 = new LoadMarkersCommandOuterClass$LoadMarkersCommand();
-        agzi.registerDefaultInstance((Class)LoadMarkersCommandOuterClass$LoadMarkersCommand.class, (agzi)(a = a2));
-        loadMarkersCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 407683780, ahcm.k, (Class)LoadMarkersCommandOuterClass$LoadMarkersCommand.class);
+        ahbh.registerDefaultInstance((Class)LoadMarkersCommandOuterClass$LoadMarkersCommand.class, (ahbh)(a = a2));
+        loadMarkersCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 407683780, ahek.k, (Class)LoadMarkersCommandOuterClass$LoadMarkersCommand.class);
     }
     
     private LoadMarkersCommandOuterClass$LoadMarkersCommand() {
-        this.b = agzi.emptyProtobufList();
-        this.c = agzi.emptyProtobufList();
+        this.b = ahbh.emptyProtobufList();
+        this.c = ahbh.emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = LoadMarkersCommandOuterClass$LoadMarkersCommand.d) == null) {
                     synchronized (LoadMarkersCommandOuterClass$LoadMarkersCommand.class) {
                         if (LoadMarkersCommandOuterClass$LoadMarkersCommand.d == null) {
-                            LoadMarkersCommandOuterClass$LoadMarkersCommand.d = (ahbe)new agzb((agzi)LoadMarkersCommandOuterClass$LoadMarkersCommand.a);
+                            LoadMarkersCommandOuterClass$LoadMarkersCommand.d = (ahdd)new ahba((ahbh)LoadMarkersCommandOuterClass$LoadMarkersCommand.a);
                         }
                     }
                 }
@@ -46,7 +46,7 @@ public final class LoadMarkersCommandOuterClass$LoadMarkersCommand extends agzi 
                 return LoadMarkersCommandOuterClass$LoadMarkersCommand.a;
             }
             case 4: {
-                return new agza((agzi)LoadMarkersCommandOuterClass$LoadMarkersCommand.a);
+                return new ahaz((ahbh)LoadMarkersCommandOuterClass$LoadMarkersCommand.a);
             }
             case 3: {
                 return new LoadMarkersCommandOuterClass$LoadMarkersCommand();

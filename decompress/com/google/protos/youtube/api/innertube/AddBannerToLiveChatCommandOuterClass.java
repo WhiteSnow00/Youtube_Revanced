@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AddBannerToLiveChatCommandOuterClass
 {
-    public static final agzg addBannerToLiveChatCommand;
+    public static final ahbf addBannerToLiveChatCommand;
     
     static {
-        addBannerToLiveChatCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ahmi.a, (MessageLite)ahmi.a, (agzn)null, 249902542, ahcm.k, (Class)ahmi.class);
+        addBannerToLiveChatCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)ahog.a, (MessageLite)ahog.a, (ahbm)null, 249902542, ahek.k, (Class)ahog.class);
     }
     
     private AddBannerToLiveChatCommandOuterClass() {

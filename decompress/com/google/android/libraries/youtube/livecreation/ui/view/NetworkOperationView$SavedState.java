@@ -15,7 +15,7 @@ public final class NetworkOperationView$SavedState extends View$BaseSavedState
     int a;
     
     static {
-        CREATOR = (Parcelable$Creator)new vho(8);
+        CREATOR = (Parcelable$Creator)new vjo(8);
     }
     
     public NetworkOperationView$SavedState(final Parcel parcel) {

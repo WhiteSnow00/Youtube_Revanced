@@ -4,8 +4,10 @@
 
 package com.google.vr.sdk.proto;
 
-public enum Preferences$ControllerConfigurationType implements agzm
+public enum Preferences$ControllerConfigurationType implements ahbl
 {
+    private static final Preferences$ControllerConfigurationType[] $VALUES;
+    
     GVR_CONTROLLER_CONFIGURATION_3DOF_1("GVR_CONTROLLER_CONFIGURATION_3DOF_1", 2, 2);
     
     public static final int GVR_CONTROLLER_CONFIGURATION_3DOF_1_VALUE = 2;
@@ -23,11 +25,16 @@ public enum Preferences$ControllerConfigurationType implements agzm
     GVR_CONTROLLER_CONFIGURATION_UNSUPPORTED("GVR_CONTROLLER_CONFIGURATION_UNSUPPORTED", 1, 1);
     
     public static final int GVR_CONTROLLER_CONFIGURATION_UNSUPPORTED_VALUE = 1;
-    private static final agzn internalValueMap;
+    private static final ahbm internalValueMap;
     private final int value;
     
+    private static Preferences$ControllerConfigurationType[] $values() {
+        return new Preferences$ControllerConfigurationType[] { Preferences$ControllerConfigurationType.GVR_CONTROLLER_CONFIGURATION_UNKNOWN, Preferences$ControllerConfigurationType.GVR_CONTROLLER_CONFIGURATION_UNSUPPORTED, Preferences$ControllerConfigurationType.GVR_CONTROLLER_CONFIGURATION_3DOF_1, Preferences$ControllerConfigurationType.GVR_CONTROLLER_CONFIGURATION_6DOF_2, Preferences$ControllerConfigurationType.GVR_CONTROLLER_CONFIGURATION_6DOF_2_RESERVED };
+    }
+    
     static {
-        internalValueMap = (agzn)new Preferences$ControllerConfigurationType$1();
+        $VALUES = $values();
+        internalValueMap = (ahbm)new Preferences$ControllerConfigurationType$1();
     }
     
     private Preferences$ControllerConfigurationType(final String s, final int n, final int value) {
@@ -53,7 +60,7 @@ public enum Preferences$ControllerConfigurationType implements agzm
         return Preferences$ControllerConfigurationType.GVR_CONTROLLER_CONFIGURATION_6DOF_2_RESERVED;
     }
     
-    public static agzo internalGetVerifier() {
+    public static ahbn internalGetVerifier() {
         return Preferences$ControllerConfigurationType$ControllerConfigurationTypeVerifier.INSTANCE;
     }
     

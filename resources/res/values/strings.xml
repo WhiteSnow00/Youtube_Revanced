@@ -354,7 +354,7 @@
     <string name="app_theme_appearance_system">APPEARANCE_SYSTEM</string>
     <string name="app_theme_appearance_title">Appearance</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
-    <string name="application_name">YouTube</string>
+    <string name="application_name">YT RVX</string>
     <string name="apply">Apply</string>
     <string name="approve_playlist_sync">Sync new videos</string>
     <string name="audio_playback_failed_snackbar_action_button">Try Again</string>

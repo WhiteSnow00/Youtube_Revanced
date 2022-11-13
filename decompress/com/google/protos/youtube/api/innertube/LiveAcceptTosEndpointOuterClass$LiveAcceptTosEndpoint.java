@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint extends agzi implements ahax
+public final class LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint extends ahbh implements ahcw
 {
     public static final LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint a;
-    private static volatile ahbe b;
-    public static final agzg liveAcceptTosEndpoint;
+    private static volatile ahdd b;
+    public static final ahbf liveAcceptTosEndpoint;
     
     static {
         final LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint a2 = new LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint();
-        agzi.registerDefaultInstance((Class)LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint.class, (agzi)(a = a2));
-        liveAcceptTosEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 129686418, ahcm.k, (Class)LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint.class);
+        ahbh.registerDefaultInstance((Class)LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint.class, (ahbh)(a = a2));
+        liveAcceptTosEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 129686418, ahek.k, (Class)LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint.class);
     }
     
     private LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint.b) == null) {
                     synchronized (LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint.class) {
                         if (LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint.b == null) {
-                            LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint.b = (ahbe)new agzb((agzi)LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint.a);
+                            LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint.b = (ahdd)new ahba((ahbh)LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint extends
                 return LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint.a);
+                return new ahaz((ahbh)LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint.a);
             }
             case 3: {
                 return new LiveAcceptTosEndpointOuterClass$LiveAcceptTosEndpoint();

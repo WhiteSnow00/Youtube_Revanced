@@ -14,7 +14,7 @@ public final class ControllerBatteryEvent extends ControllerEvent
     public boolean b;
     
     static {
-        CREATOR = (Parcelable$Creator)new arao(3);
+        CREATOR = (Parcelable$Creator)new ardl(2);
     }
     
     public ControllerBatteryEvent() {
@@ -28,6 +28,7 @@ public final class ControllerBatteryEvent extends ControllerEvent
         return 20;
     }
     
+    @Override
     public void b(final Parcel parcel) {
         super.b(parcel);
         this.a = parcel.readInt();
@@ -38,6 +39,7 @@ public final class ControllerBatteryEvent extends ControllerEvent
         return 0;
     }
     
+    @Override
     public void writeToParcel(final Parcel parcel, final int n) {
         super.writeToParcel(parcel, n);
         parcel.writeInt(this.a);

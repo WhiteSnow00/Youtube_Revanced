@@ -25,6 +25,6 @@ final class n implements tmx
     }
     
     public final ashi d() {
-        return ashi.K((Object)aqre.a);
+        return ashi.K(aqre.a);
     }
 }

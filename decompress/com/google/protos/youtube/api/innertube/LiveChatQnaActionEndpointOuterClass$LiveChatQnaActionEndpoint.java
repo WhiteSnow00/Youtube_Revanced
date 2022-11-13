@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint extends agzi implements ahax
+public final class LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint extends ahbh implements ahcw
 {
     public static final LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg liveChatQnaActionEndpoint;
-    public agyc b;
+    private static volatile ahdd c;
+    public static final ahbf liveChatQnaActionEndpoint;
+    public ahab b;
     private int d;
     
     static {
         final LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint a2 = new LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint();
-        agzi.registerDefaultInstance((Class)LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint.class, (agzi)(a = a2));
-        liveChatQnaActionEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 399887779, ahcm.k, (Class)LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint.class);
+        ahbh.registerDefaultInstance((Class)LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint.class, (ahbh)(a = a2));
+        liveChatQnaActionEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 399887779, ahek.k, (Class)LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint.class);
     }
     
     private LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint() {
-        this.b = agyc.b;
+        this.b = ahab.b;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint.c) == null) {
                     synchronized (LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint.class) {
                         if (LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint.c == null) {
-                            LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint.c = (ahbe)new agzb((agzi)LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint.a);
+                            LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint.c = (ahdd)new ahba((ahbh)LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint
                 return LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint.a);
+                return new ahaz((ahbh)LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint.a);
             }
             case 3: {
                 return new LiveChatQnaActionEndpointOuterClass$LiveChatQnaActionEndpoint();

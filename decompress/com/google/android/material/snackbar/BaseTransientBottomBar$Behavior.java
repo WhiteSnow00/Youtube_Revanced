@@ -11,27 +11,27 @@ import com.google.android.material.behavior.SwipeDismissBehavior;
 
 public class BaseTransientBottomBar$Behavior extends SwipeDismissBehavior
 {
-    public final acnx l;
+    public final acqb l;
     
     public BaseTransientBottomBar$Behavior() {
-        this.l = new acnx((SwipeDismissBehavior)this);
+        this.l = new acqb((SwipeDismissBehavior)this);
     }
     
-    public boolean qF(final CoordinatorLayout coordinatorLayout, final View view, final MotionEvent motionEvent) {
-        final acnx l = this.l;
+    public boolean qK(final CoordinatorLayout coordinatorLayout, final View view, final MotionEvent motionEvent) {
+        final acqb l = this.l;
         final int actionMasked = motionEvent.getActionMasked();
         if (actionMasked != 0) {
             if (actionMasked == 1 || actionMasked == 3) {
-                adxj.a().f((aepj)l.a);
+                adzl.a().f((afhd)l.a);
             }
         }
         else if (coordinatorLayout.l(view, (int)motionEvent.getX(), (int)motionEvent.getY())) {
-            adxj.a().e((aepj)l.a);
+            adzl.a().e((afhd)l.a);
         }
-        return super.qF(coordinatorLayout, view, motionEvent);
+        return super.qK(coordinatorLayout, view, motionEvent);
     }
     
     public boolean w(final View view) {
-        return view instanceof adxc;
+        return view instanceof adze;
     }
 }

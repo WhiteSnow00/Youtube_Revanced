@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class InputSelectRendererOuterClass
 {
-    public static final agzg inputSelectRenderer;
+    public static final ahbf inputSelectRenderer;
     
     static {
-        inputSelectRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)aldp.a, (MessageLite)aldp.a, (agzn)null, 123905687, ahcm.k, (Class)aldp.class);
+        inputSelectRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)alfs.a, (MessageLite)alfs.a, (ahbm)null, 123905687, ahek.k, (Class)alfs.class);
     }
     
     private InputSelectRendererOuterClass() {

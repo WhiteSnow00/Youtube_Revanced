@@ -6,27 +6,27 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AutoconnectEndpointOuterClass$AutoconnectEndpoint extends agzi implements ahax
+public final class AutoconnectEndpointOuterClass$AutoconnectEndpoint extends ahbh implements ahcw
 {
     public static final AutoconnectEndpointOuterClass$AutoconnectEndpoint a;
-    public static final agzg autoconnectEndpoint;
-    private static volatile ahbe l;
+    public static final ahbf autoconnectEndpoint;
+    private static volatile ahdd l;
     public int b;
-    public ajym c;
+    public akap c;
     public boolean d;
     public String e;
     public String f;
     public String g;
     public String h;
     public String i;
-    public aioe j;
+    public aiqj j;
     public boolean k;
     private byte m;
     
     static {
         final AutoconnectEndpointOuterClass$AutoconnectEndpoint a2 = new AutoconnectEndpointOuterClass$AutoconnectEndpoint();
-        agzi.registerDefaultInstance((Class)AutoconnectEndpointOuterClass$AutoconnectEndpoint.class, (agzi)(a = a2));
-        autoconnectEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 354181190, ahcm.k, (Class)AutoconnectEndpointOuterClass$AutoconnectEndpoint.class);
+        ahbh.registerDefaultInstance((Class)AutoconnectEndpointOuterClass$AutoconnectEndpoint.class, (ahbh)(a = a2));
+        autoconnectEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 354181190, ahek.k, (Class)AutoconnectEndpointOuterClass$AutoconnectEndpoint.class);
     }
     
     private AutoconnectEndpointOuterClass$AutoconnectEndpoint() {
@@ -38,20 +38,20 @@ public final class AutoconnectEndpointOuterClass$AutoconnectEndpoint extends agz
         this.i = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte m = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe l;
+                final ahdd l;
                 if ((l = AutoconnectEndpointOuterClass$AutoconnectEndpoint.l) == null) {
                     synchronized (AutoconnectEndpointOuterClass$AutoconnectEndpoint.class) {
                         if (AutoconnectEndpointOuterClass$AutoconnectEndpoint.l == null) {
-                            AutoconnectEndpointOuterClass$AutoconnectEndpoint.l = (ahbe)new agzb((agzi)AutoconnectEndpointOuterClass$AutoconnectEndpoint.a);
+                            AutoconnectEndpointOuterClass$AutoconnectEndpoint.l = (ahdd)new ahba((ahbh)AutoconnectEndpointOuterClass$AutoconnectEndpoint.a);
                         }
                     }
                 }
@@ -61,7 +61,7 @@ public final class AutoconnectEndpointOuterClass$AutoconnectEndpoint extends agz
                 return AutoconnectEndpointOuterClass$AutoconnectEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)AutoconnectEndpointOuterClass$AutoconnectEndpoint.a);
+                return new ahaz((ahbh)AutoconnectEndpointOuterClass$AutoconnectEndpoint.a);
             }
             case 3: {
                 return new AutoconnectEndpointOuterClass$AutoconnectEndpoint();
@@ -71,9 +71,9 @@ public final class AutoconnectEndpointOuterClass$AutoconnectEndpoint extends agz
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    m = 0;
                 }
-                this.m = (byte)(b ? 1 : 0);
+                this.m = m;
                 return null;
             }
             case 0: {

@@ -17,14 +17,14 @@ public class ExpandableSwitchItem extends SwitchItem implements CompoundButton$O
     
     public ExpandableSwitchItem() {
         this.a = false;
-        new aeds(this);
+        new aeft(this);
     }
     
     public ExpandableSwitchItem(final Context context, final AttributeSet set) {
         super(context, set);
         this.a = false;
-        new aeds(this);
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, aedq.e);
+        new aeft(this);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, aefr.e);
         obtainStyledAttributes.getText(0);
         obtainStyledAttributes.getText(1);
         obtainStyledAttributes.getInt(7, 48);
@@ -32,7 +32,7 @@ public class ExpandableSwitchItem extends SwitchItem implements CompoundButton$O
     }
     
     protected final int b() {
-        return 2131625562;
+        return 2131625567;
     }
     
     public final void c(final boolean a) {

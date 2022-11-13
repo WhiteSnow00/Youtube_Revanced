@@ -6,35 +6,35 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand extends agzi implements ahax
+public final class LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand extends ahbh implements ahcw
 {
     public static final LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand a;
-    private static volatile ahbe d;
-    public static final agzg logAccountLinkingEventCommand;
+    private static volatile ahdd d;
+    public static final ahbf logAccountLinkingEventCommand;
     public int b;
-    public ajug c;
+    public ajwj c;
     
     static {
         final LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand a2 = new LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand();
-        agzi.registerDefaultInstance((Class)LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand.class, (agzi)(a = a2));
-        logAccountLinkingEventCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 316544609, ahcm.k, (Class)LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand.class);
+        ahbh.registerDefaultInstance((Class)LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand.class, (ahbh)(a = a2));
+        logAccountLinkingEventCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 316544609, ahek.k, (Class)LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand.class);
     }
     
     private LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand.d) == null) {
                     synchronized (LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand.class) {
                         if (LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand.d == null) {
-                            LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand.d = (ahbe)new agzb((agzi)LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand.a);
+                            LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand.d = (ahdd)new ahba((ahbh)LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand.a);
                         }
                     }
                 }
@@ -44,7 +44,7 @@ public final class LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEven
                 return LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand.a;
             }
             case 4: {
-                return new agza((agzi)LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand.a);
+                return new ahaz((ahbh)LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand.a);
             }
             case 3: {
                 return new LogAccountLinkingEventCommandOuterClass$LogAccountLinkingEventCommand();

@@ -4,8 +4,10 @@
 
 package com.google.vr.sdk.proto;
 
-public enum Preferences$UserPrefs$Handedness implements agzm
+public enum Preferences$UserPrefs$Handedness implements ahbl
 {
+    private static final Preferences$UserPrefs$Handedness[] $VALUES;
+    
     LEFT_HANDED("LEFT_HANDED", 1, 1);
     
     public static final int LEFT_HANDED_VALUE = 1;
@@ -13,11 +15,16 @@ public enum Preferences$UserPrefs$Handedness implements agzm
     RIGHT_HANDED("RIGHT_HANDED", 0, 0);
     
     public static final int RIGHT_HANDED_VALUE = 0;
-    private static final agzn internalValueMap;
+    private static final ahbm internalValueMap;
     private final int value;
     
+    private static Preferences$UserPrefs$Handedness[] $values() {
+        return new Preferences$UserPrefs$Handedness[] { Preferences$UserPrefs$Handedness.RIGHT_HANDED, Preferences$UserPrefs$Handedness.LEFT_HANDED };
+    }
+    
     static {
-        internalValueMap = (agzn)new Preferences$UserPrefs$Handedness$1();
+        $VALUES = $values();
+        internalValueMap = (ahbm)new Preferences$UserPrefs$Handedness$1();
     }
     
     private Preferences$UserPrefs$Handedness(final String s, final int n, final int value) {
@@ -34,7 +41,7 @@ public enum Preferences$UserPrefs$Handedness implements agzm
         return Preferences$UserPrefs$Handedness.LEFT_HANDED;
     }
     
-    public static agzo internalGetVerifier() {
+    public static ahbn internalGetVerifier() {
         return Preferences$UserPrefs$Handedness$HandednessVerifier.INSTANCE;
     }
     

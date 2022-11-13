@@ -73,8 +73,8 @@ public final class a implements AdapterView$OnItemClickListener
                             s = "";
                         }
                     }
-                    b2.e = " ".concat(String.valueOf(s));
-                    b2.c = true;
+                    ((com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.model.a)b2).e = " ".concat(String.valueOf(s));
+                    ((com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.model.a)b2).c = true;
                     b2.b();
                 }
                 list.add(b2);

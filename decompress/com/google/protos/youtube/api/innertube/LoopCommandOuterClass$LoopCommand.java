@@ -6,11 +6,11 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LoopCommandOuterClass$LoopCommand extends agzi implements ahax
+public final class LoopCommandOuterClass$LoopCommand extends ahbh implements ahcw
 {
     public static final LoopCommandOuterClass$LoopCommand a;
-    private static volatile ahbe h;
-    public static final agzg loopCommand;
+    private static volatile ahdd h;
+    public static final ahbf loopCommand;
     public int b;
     public boolean c;
     public long d;
@@ -20,26 +20,26 @@ public final class LoopCommandOuterClass$LoopCommand extends agzi implements aha
     
     static {
         final LoopCommandOuterClass$LoopCommand a2 = new LoopCommandOuterClass$LoopCommand();
-        agzi.registerDefaultInstance((Class)LoopCommandOuterClass$LoopCommand.class, (agzi)(a = a2));
-        loopCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 250570650, ahcm.k, (Class)LoopCommandOuterClass$LoopCommand.class);
+        ahbh.registerDefaultInstance((Class)LoopCommandOuterClass$LoopCommand.class, (ahbh)(a = a2));
+        loopCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 250570650, ahek.k, (Class)LoopCommandOuterClass$LoopCommand.class);
     }
     
     private LoopCommandOuterClass$LoopCommand() {
         this.f = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe h;
+                final ahdd h;
                 if ((h = LoopCommandOuterClass$LoopCommand.h) == null) {
                     synchronized (LoopCommandOuterClass$LoopCommand.class) {
                         if (LoopCommandOuterClass$LoopCommand.h == null) {
-                            LoopCommandOuterClass$LoopCommand.h = (ahbe)new agzb((agzi)LoopCommandOuterClass$LoopCommand.a);
+                            LoopCommandOuterClass$LoopCommand.h = (ahdd)new ahba((ahbh)LoopCommandOuterClass$LoopCommand.a);
                         }
                     }
                 }
@@ -49,7 +49,7 @@ public final class LoopCommandOuterClass$LoopCommand extends agzi implements aha
                 return LoopCommandOuterClass$LoopCommand.a;
             }
             case 4: {
-                return new agza((agzi)LoopCommandOuterClass$LoopCommand.a);
+                return new ahaz((ahbh)LoopCommandOuterClass$LoopCommand.a);
             }
             case 3: {
                 return new LoopCommandOuterClass$LoopCommand();

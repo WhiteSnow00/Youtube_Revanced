@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class KeyMomentsPlayerScrimOverlayRendererOuterClass
 {
-    public static final agzg keyMomentsPlayerScrimOverlayRenderer;
+    public static final ahbf keyMomentsPlayerScrimOverlayRenderer;
     
     static {
-        keyMomentsPlayerScrimOverlayRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)alip.a, (MessageLite)alip.a, (agzn)null, 410591241, ahcm.k, (Class)alip.class);
+        keyMomentsPlayerScrimOverlayRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)alks.a, (MessageLite)alks.a, (ahbm)null, 410591241, ahek.k, (Class)alks.class);
     }
     
     private KeyMomentsPlayerScrimOverlayRendererOuterClass() {

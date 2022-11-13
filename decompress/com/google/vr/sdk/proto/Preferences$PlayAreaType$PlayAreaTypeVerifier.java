@@ -4,12 +4,12 @@
 
 package com.google.vr.sdk.proto;
 
-final class Preferences$PlayAreaType$PlayAreaTypeVerifier implements agzo
+final class Preferences$PlayAreaType$PlayAreaTypeVerifier implements ahbn
 {
-    static final agzo INSTANCE;
+    static final ahbn INSTANCE;
     
     static {
-        INSTANCE = (agzo)new Preferences$PlayAreaType$PlayAreaTypeVerifier();
+        INSTANCE = (ahbn)new Preferences$PlayAreaType$PlayAreaTypeVerifier();
     }
     
     private Preferences$PlayAreaType$PlayAreaTypeVerifier() {

@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class MetadataRowContainerRendererOuterClass
 {
-    public static final agzg richMetadataRenderer;
+    public static final ahbf richMetadataRenderer;
     
     static {
-        richMetadataRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amfx.a, (MessageLite)amfx.a, (agzn)null, 206077134, ahcm.k, (Class)amfx.class);
+        richMetadataRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)amib.a, (MessageLite)amib.a, (ahbm)null, 206077134, ahek.k, (Class)amib.class);
     }
     
     private MetadataRowContainerRendererOuterClass() {

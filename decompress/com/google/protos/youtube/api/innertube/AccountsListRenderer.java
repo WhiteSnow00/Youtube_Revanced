@@ -8,14 +8,14 @@ import com.google.protobuf.MessageLite;
 
 public final class AccountsListRenderer
 {
-    public static final agzg a;
-    public static final agzg accountItemRenderer;
-    public static final agzg googleAccountHeaderRenderer;
+    public static final ahbf a;
+    public static final ahbf accountItemRenderer;
+    public static final ahbf googleAccountHeaderRenderer;
     
     static {
-        accountItemRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ahhs.a, (MessageLite)ahhs.a, (agzn)null, 62381864, ahcm.k, (Class)ahhs.class);
-        a = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ahib.a, (MessageLite)ahib.a, (agzn)null, 77195710, ahcm.k, (Class)ahib.class);
-        googleAccountHeaderRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ahie.a, (MessageLite)ahie.a, (agzn)null, 343947961, ahcm.k, (Class)ahie.class);
+        accountItemRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ahjq.a, (MessageLite)ahjq.a, (ahbm)null, 62381864, ahek.k, (Class)ahjq.class);
+        a = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ahjz.a, (MessageLite)ahjz.a, (ahbm)null, 77195710, ahek.k, (Class)ahjz.class);
+        googleAccountHeaderRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ahkc.a, (MessageLite)ahkc.a, (ahbm)null, 343947961, ahek.k, (Class)ahkc.class);
     }
     
     private AccountsListRenderer() {

@@ -6,20 +6,20 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatAction$ReplayChatItemAction extends agzi implements ahax
+public final class LiveChatAction$ReplayChatItemAction extends ahbh implements ahcw
 {
     public static final LiveChatAction$ReplayChatItemAction a;
-    private static volatile ahbe d;
-    public static final agzg replayChatItemAction;
-    public agzy b;
+    private static volatile ahdd d;
+    public static final ahbf replayChatItemAction;
+    public ahbx b;
     public long c;
     private int e;
     private byte f;
     
     static {
         final LiveChatAction$ReplayChatItemAction a2 = new LiveChatAction$ReplayChatItemAction();
-        agzi.registerDefaultInstance((Class)LiveChatAction$ReplayChatItemAction.class, (agzi)(a = a2));
-        replayChatItemAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 145132565, ahcm.k, (Class)LiveChatAction$ReplayChatItemAction.class);
+        ahbh.registerDefaultInstance((Class)LiveChatAction$ReplayChatItemAction.class, (ahbh)(a = a2));
+        replayChatItemAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 145132565, ahek.k, (Class)LiveChatAction$ReplayChatItemAction.class);
     }
     
     private LiveChatAction$ReplayChatItemAction() {
@@ -27,20 +27,20 @@ public final class LiveChatAction$ReplayChatItemAction extends agzi implements a
         this.b = emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = LiveChatAction$ReplayChatItemAction.d) == null) {
                     synchronized (LiveChatAction$ReplayChatItemAction.class) {
                         if (LiveChatAction$ReplayChatItemAction.d == null) {
-                            LiveChatAction$ReplayChatItemAction.d = (ahbe)new agzb((agzi)LiveChatAction$ReplayChatItemAction.a);
+                            LiveChatAction$ReplayChatItemAction.d = (ahdd)new ahba((ahbh)LiveChatAction$ReplayChatItemAction.a);
                         }
                     }
                 }
@@ -50,19 +50,19 @@ public final class LiveChatAction$ReplayChatItemAction extends agzi implements a
                 return LiveChatAction$ReplayChatItemAction.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatAction$ReplayChatItemAction.a);
+                return new ahaz((ahbh)LiveChatAction$ReplayChatItemAction.a);
             }
             case 3: {
                 return new LiveChatAction$ReplayChatItemAction();
             }
             case 2: {
-                return newMessageInfo((MessageLite)LiveChatAction$ReplayChatItemAction.a, "\u0001\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0001\u0001\u0001\u041b\u0002\u1002\u0000", new Object[] { "e", "b", aioe.class, "c" });
+                return newMessageInfo((MessageLite)LiveChatAction$ReplayChatItemAction.a, "\u0001\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0001\u0001\u0001\u041b\u0002\u1002\u0000", new Object[] { "e", "b", aiqj.class, "c" });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

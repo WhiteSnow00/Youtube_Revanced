@@ -6,40 +6,40 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatAction$AddLiveChatTickerItemAction extends agzi implements ahax
+public final class LiveChatAction$AddLiveChatTickerItemAction extends ahbh implements ahcw
 {
     public static final LiveChatAction$AddLiveChatTickerItemAction a;
-    public static final agzg addLiveChatTickerItemAction;
-    private static volatile ahbe e;
+    public static final ahbf addLiveChatTickerItemAction;
+    private static volatile ahdd e;
     public int b;
-    public alqm c;
+    public alsp c;
     public long d;
     private byte f;
     
     static {
         final LiveChatAction$AddLiveChatTickerItemAction a2 = new LiveChatAction$AddLiveChatTickerItemAction();
-        agzi.registerDefaultInstance((Class)LiveChatAction$AddLiveChatTickerItemAction.class, (agzi)(a = a2));
-        addLiveChatTickerItemAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 132845915, ahcm.k, (Class)LiveChatAction$AddLiveChatTickerItemAction.class);
+        ahbh.registerDefaultInstance((Class)LiveChatAction$AddLiveChatTickerItemAction.class, (ahbh)(a = a2));
+        addLiveChatTickerItemAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 132845915, ahek.k, (Class)LiveChatAction$AddLiveChatTickerItemAction.class);
     }
     
     private LiveChatAction$AddLiveChatTickerItemAction() {
         this.f = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = LiveChatAction$AddLiveChatTickerItemAction.e) == null) {
                     synchronized (LiveChatAction$AddLiveChatTickerItemAction.class) {
                         if (LiveChatAction$AddLiveChatTickerItemAction.e == null) {
-                            LiveChatAction$AddLiveChatTickerItemAction.e = (ahbe)new agzb((agzi)LiveChatAction$AddLiveChatTickerItemAction.a);
+                            LiveChatAction$AddLiveChatTickerItemAction.e = (ahdd)new ahba((ahbh)LiveChatAction$AddLiveChatTickerItemAction.a);
                         }
                     }
                 }
@@ -49,7 +49,7 @@ public final class LiveChatAction$AddLiveChatTickerItemAction extends agzi imple
                 return LiveChatAction$AddLiveChatTickerItemAction.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatAction$AddLiveChatTickerItemAction.a);
+                return new ahaz((ahbh)LiveChatAction$AddLiveChatTickerItemAction.a);
             }
             case 3: {
                 return new LiveChatAction$AddLiveChatTickerItemAction();
@@ -59,9 +59,9 @@ public final class LiveChatAction$AddLiveChatTickerItemAction extends agzi imple
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

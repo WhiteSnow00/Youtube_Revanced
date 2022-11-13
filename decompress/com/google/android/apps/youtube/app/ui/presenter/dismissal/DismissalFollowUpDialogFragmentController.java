@@ -8,11 +8,11 @@ import com.google.android.apps.youtube.app.common.dialog.DialogFragmentControlle
 
 public class DismissalFollowUpDialogFragmentController extends DialogFragmentController
 {
-    public final zki a;
-    public final zjy b;
-    public amqj c;
+    public final zmf a;
+    public final zlv b;
+    public amsn c;
     
-    public DismissalFollowUpDialogFragmentController(final bu bu, final zjy b, final zki a) {
+    public DismissalFollowUpDialogFragmentController(final bu bu, final zlv b, final zmf a) {
         super(bu, "DismissalFollowUpDialogFragmentController");
         this.a = a;
         this.b = b;

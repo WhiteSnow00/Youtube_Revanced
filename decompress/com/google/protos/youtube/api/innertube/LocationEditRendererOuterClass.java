@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class LocationEditRendererOuterClass
 {
-    public static final agzg locationEditRenderer;
+    public static final ahbf locationEditRenderer;
     
     static {
-        locationEditRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)altc.a, (MessageLite)altc.a, (agzn)null, 152345243, ahcm.k, (Class)altc.class);
+        locationEditRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)alvg.a, (MessageLite)alvg.a, (ahbm)null, 152345243, ahek.k, (Class)alvg.class);
     }
     
     private LocationEditRendererOuterClass() {

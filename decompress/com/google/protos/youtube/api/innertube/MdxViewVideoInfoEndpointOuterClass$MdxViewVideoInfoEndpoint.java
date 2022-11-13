@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint extends agzi implements ahax
+public final class MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint extends ahbh implements ahcw
 {
     public static final MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint a;
-    private static volatile ahbe b;
-    public static final agzg mdxViewVideoInfoEndpoint;
+    private static volatile ahdd b;
+    public static final ahbf mdxViewVideoInfoEndpoint;
     
     static {
         final MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint a2 = new MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint();
-        agzi.registerDefaultInstance((Class)MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint.class, (agzi)(a = a2));
-        mdxViewVideoInfoEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 105496274, ahcm.k, (Class)MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint.class);
+        ahbh.registerDefaultInstance((Class)MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint.class, (ahbh)(a = a2));
+        mdxViewVideoInfoEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 105496274, ahek.k, (Class)MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint.class);
     }
     
     private MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint.b) == null) {
                     synchronized (MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint.class) {
                         if (MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint.b == null) {
-                            MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint.b = (ahbe)new agzb((agzi)MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint.a);
+                            MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint.b = (ahdd)new ahba((ahbh)MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint e
                 return MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint.a);
+                return new ahaz((ahbh)MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint.a);
             }
             case 3: {
                 return new MdxViewVideoInfoEndpointOuterClass$MdxViewVideoInfoEndpoint();

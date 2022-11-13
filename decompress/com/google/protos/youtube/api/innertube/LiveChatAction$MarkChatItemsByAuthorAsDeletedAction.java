@@ -6,22 +6,22 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatAction$MarkChatItemsByAuthorAsDeletedAction extends agzi implements ahax
+public final class LiveChatAction$MarkChatItemsByAuthorAsDeletedAction extends ahbh implements ahcw
 {
     public static final LiveChatAction$MarkChatItemsByAuthorAsDeletedAction a;
-    private static volatile ahbe g;
-    public static final agzg markChatItemsByAuthorAsDeletedAction;
+    private static volatile ahdd g;
+    public static final ahbf markChatItemsByAuthorAsDeletedAction;
     public int b;
-    public ajsq c;
-    public ajsq d;
-    public ajsq e;
+    public ajut c;
+    public ajut d;
+    public ajut e;
     public String f;
     private byte h;
     
     static {
         final LiveChatAction$MarkChatItemsByAuthorAsDeletedAction a2 = new LiveChatAction$MarkChatItemsByAuthorAsDeletedAction();
-        agzi.registerDefaultInstance((Class)LiveChatAction$MarkChatItemsByAuthorAsDeletedAction.class, (agzi)(a = a2));
-        markChatItemsByAuthorAsDeletedAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 133968669, ahcm.k, (Class)LiveChatAction$MarkChatItemsByAuthorAsDeletedAction.class);
+        ahbh.registerDefaultInstance((Class)LiveChatAction$MarkChatItemsByAuthorAsDeletedAction.class, (ahbh)(a = a2));
+        markChatItemsByAuthorAsDeletedAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 133968669, ahek.k, (Class)LiveChatAction$MarkChatItemsByAuthorAsDeletedAction.class);
     }
     
     private LiveChatAction$MarkChatItemsByAuthorAsDeletedAction() {
@@ -29,20 +29,20 @@ public final class LiveChatAction$MarkChatItemsByAuthorAsDeletedAction extends a
         this.f = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte h = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe g;
+                final ahdd g;
                 if ((g = LiveChatAction$MarkChatItemsByAuthorAsDeletedAction.g) == null) {
                     synchronized (LiveChatAction$MarkChatItemsByAuthorAsDeletedAction.class) {
                         if (LiveChatAction$MarkChatItemsByAuthorAsDeletedAction.g == null) {
-                            LiveChatAction$MarkChatItemsByAuthorAsDeletedAction.g = (ahbe)new agzb((agzi)LiveChatAction$MarkChatItemsByAuthorAsDeletedAction.a);
+                            LiveChatAction$MarkChatItemsByAuthorAsDeletedAction.g = (ahdd)new ahba((ahbh)LiveChatAction$MarkChatItemsByAuthorAsDeletedAction.a);
                         }
                     }
                 }
@@ -52,7 +52,7 @@ public final class LiveChatAction$MarkChatItemsByAuthorAsDeletedAction extends a
                 return LiveChatAction$MarkChatItemsByAuthorAsDeletedAction.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatAction$MarkChatItemsByAuthorAsDeletedAction.a);
+                return new ahaz((ahbh)LiveChatAction$MarkChatItemsByAuthorAsDeletedAction.a);
             }
             case 3: {
                 return new LiveChatAction$MarkChatItemsByAuthorAsDeletedAction();
@@ -62,9 +62,9 @@ public final class LiveChatAction$MarkChatItemsByAuthorAsDeletedAction extends a
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    h = 0;
                 }
-                this.h = (byte)(b ? 1 : 0);
+                this.h = h;
                 return null;
             }
             case 0: {

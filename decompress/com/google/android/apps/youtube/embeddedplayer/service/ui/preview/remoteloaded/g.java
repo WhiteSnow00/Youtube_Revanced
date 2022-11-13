@@ -39,10 +39,12 @@ public final class g extends abbk
         this.j = (View$OnLayoutChangeListener)new jcy(this, 13);
     }
     
+    @Override
     public final ViewGroup$LayoutParams a() {
         return new ViewGroup$LayoutParams(-1, -1);
     }
     
+    @Override
     public final /* bridge */ View c(final Context context) {
         this.h = new FrameLayout(context);
         final LayoutInflater from = LayoutInflater.from(context);
@@ -75,6 +77,7 @@ public final class g extends abbk
         return (View)frameLayout;
     }
     
+    @Override
     public final void e(final Context context, final View view) {
         final FrameLayout frameLayout = (FrameLayout)view;
         if (this.mn()) {
@@ -110,6 +113,7 @@ public final class g extends abbk
         return mj;
     }
     
+    @Override
     public final void mk() {
         super.X();
         if (this.mn()) {
@@ -121,6 +125,7 @@ public final class g extends abbk
         }
     }
     
+    @Override
     public final boolean mn() {
         return this.i && super.mn();
     }
@@ -130,6 +135,7 @@ public final class g extends abbk
         this.Z(1);
     }
     
+    @Override
     public final boolean oV() {
         return this.e != null;
     }

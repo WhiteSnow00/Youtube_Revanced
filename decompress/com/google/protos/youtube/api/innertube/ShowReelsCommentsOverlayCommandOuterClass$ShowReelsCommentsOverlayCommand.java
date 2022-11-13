@@ -6,19 +6,19 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand extends agzi implements ahax
+public final class ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand extends ahbh implements ahcw
 {
     public static final ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand a;
-    private static volatile ahbe d;
-    public static final agzg showReelsCommentsOverlayCommand;
+    private static volatile ahdd d;
+    public static final ahbf showReelsCommentsOverlayCommand;
     public int b;
     public Object c;
     private byte e;
     
     static {
         final ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand a2 = new ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand();
-        agzi.registerDefaultInstance((Class)ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.class, (agzi)(a = a2));
-        showReelsCommentsOverlayCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 206635851, ahcm.k, (Class)ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.class);
+        ahbh.registerDefaultInstance((Class)ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.class, (ahbh)(a = a2));
+        showReelsCommentsOverlayCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 206635851, ahek.k, (Class)ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.class);
     }
     
     private ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand() {
@@ -26,20 +26,20 @@ public final class ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOv
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.d) == null) {
                     synchronized (ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.class) {
                         if (ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.d == null) {
-                            ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.d = (ahbe)new agzb((agzi)ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.a);
+                            ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.d = (ahdd)new ahba((ahbh)ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.a);
                         }
                     }
                 }
@@ -49,19 +49,19 @@ public final class ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOv
                 return ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.a;
             }
             case 4: {
-                return new agza((agzi)ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.a);
+                return new ahaz((ahbh)ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.a);
             }
             case 3: {
                 return new ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand();
             }
             case 2: {
-                return newMessageInfo((MessageLite)ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.a, "\u0001\u0002\u0001\u0000\u0001\u0002\u0002\u0000\u0000\u0002\u0001\u143c\u0000\u0002\u143c\u0000", new Object[] { "c", "b", anss.class, anss.class });
+                return newMessageInfo((MessageLite)ShowReelsCommentsOverlayCommandOuterClass$ShowReelsCommentsOverlayCommand.a, "\u0001\u0002\u0001\u0000\u0001\u0002\u0002\u0000\u0000\u0002\u0001\u143c\u0000\u0002\u143c\u0000", new Object[] { "c", "b", anuv.class, anuv.class });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

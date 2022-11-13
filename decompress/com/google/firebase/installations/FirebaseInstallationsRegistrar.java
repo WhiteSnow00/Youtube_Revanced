@@ -7,13 +7,17 @@ package com.google.firebase.installations;
 import java.util.Arrays;
 import java.util.List;
 
-public class FirebaseInstallationsRegistrar implements aghd
+public class FirebaseInstallationsRegistrar implements agje
 {
+    public static aglk lambda$getComponents$0(final agjc agjc) {
+        return (aglk)new aglj((agia)agjc.a((Class)agia.class), agjc.c((Class)agkt.class));
+    }
+    
     public List getComponents() {
-        final aggz a = agha.a((Class)agjj.class);
-        a.b(aghi.c((Class)agfz.class));
-        a.b(aghi.b((Class)agis.class));
-        a.c((aghc)aghv.f);
-        return Arrays.asList(a.a(), agha.d((Object)new agir(), (Class)agiq.class), agnj.l("fire-installations", "17.0.2_1p"));
+        final agja a = agjb.a((Class)aglk.class);
+        a.b(agjk.c((Class)agia.class));
+        a.b(agjk.b((Class)agkt.class));
+        a.c((agjd)agjw.f);
+        return Arrays.asList(a.a(), agjb.d((Object)new agks(), (Class)agkr.class), agpc.l("fire-installations", "17.0.2_1p"));
     }
 }

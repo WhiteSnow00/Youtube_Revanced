@@ -4,8 +4,10 @@
 
 package com.google.vr.sdk.proto;
 
-public enum Preferences$PlayAreaType implements agzm
+public enum Preferences$PlayAreaType implements ahbl
 {
+    private static final Preferences$PlayAreaType[] $VALUES;
+    
     GVR_PLAY_AREA_TYPE_NOT_SET("GVR_PLAY_AREA_TYPE_NOT_SET", 0, 0);
     
     public static final int GVR_PLAY_AREA_TYPE_NOT_SET_VALUE = 0;
@@ -13,11 +15,16 @@ public enum Preferences$PlayAreaType implements agzm
     GVR_PLAY_AREA_TYPE_RADIAL("GVR_PLAY_AREA_TYPE_RADIAL", 1, 1);
     
     public static final int GVR_PLAY_AREA_TYPE_RADIAL_VALUE = 1;
-    private static final agzn internalValueMap;
+    private static final ahbm internalValueMap;
     private final int value;
     
+    private static Preferences$PlayAreaType[] $values() {
+        return new Preferences$PlayAreaType[] { Preferences$PlayAreaType.GVR_PLAY_AREA_TYPE_NOT_SET, Preferences$PlayAreaType.GVR_PLAY_AREA_TYPE_RADIAL };
+    }
+    
     static {
-        internalValueMap = (agzn)new Preferences$PlayAreaType$1();
+        $VALUES = $values();
+        internalValueMap = (ahbm)new Preferences$PlayAreaType$1();
     }
     
     private Preferences$PlayAreaType(final String s, final int n, final int value) {
@@ -34,7 +41,7 @@ public enum Preferences$PlayAreaType implements agzm
         return Preferences$PlayAreaType.GVR_PLAY_AREA_TYPE_RADIAL;
     }
     
-    public static agzo internalGetVerifier() {
+    public static ahbn internalGetVerifier() {
         return Preferences$PlayAreaType$PlayAreaTypeVerifier.INSTANCE;
     }
     

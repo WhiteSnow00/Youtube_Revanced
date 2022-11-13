@@ -4,9 +4,13 @@
 
 package com.google.vr.sdk.proto;
 
-public final class CardboardDevice$FreeformDistortion$Builder extends agza implements ahax
+public final class CardboardDevice$FreeformDistortion$Builder extends ahaz implements ahcw
 {
     private CardboardDevice$FreeformDistortion$Builder() {
-        super((agzi)CardboardDevice$FreeformDistortion.DEFAULT_INSTANCE);
+        super((ahbh)CardboardDevice$FreeformDistortion.access$11000());
+    }
+    
+    public CardboardDevice$FreeformDistortion$Builder(final CardboardDevice$1 cardboardDevice$1) {
+        this();
     }
 }

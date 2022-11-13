@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand extends agzi implements ahax
+public final class LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand extends ahbh implements ahcw
 {
     public static final LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand a;
-    private static volatile ahbe c;
-    public static final agzg lensWatchNextRequestContinuationCommand;
+    private static volatile ahdd c;
+    public static final ahbf lensWatchNextRequestContinuationCommand;
     public String b;
     private int d;
     
     static {
         final LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand a2 = new LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand();
-        agzi.registerDefaultInstance((Class)LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand.class, (agzi)(a = a2));
-        lensWatchNextRequestContinuationCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 274848447, ahcm.k, (Class)LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand.class);
+        ahbh.registerDefaultInstance((Class)LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand.class, (ahbh)(a = a2));
+        lensWatchNextRequestContinuationCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 274848447, ahek.k, (Class)LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand.class);
     }
     
     private LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand() {
         this.b = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand.c) == null) {
                     synchronized (LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand.class) {
                         if (LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand.c == null) {
-                            LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand.c = (ahbe)new agzb((agzi)LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand.a);
+                            LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand.c = (ahdd)new ahba((ahbh)LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class LensWatchNextRequestContinuationCommandOuterClass$LensWatchNe
                 return LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand.a;
             }
             case 4: {
-                return new agza((agzi)LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand.a);
+                return new ahaz((ahbh)LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand.a);
             }
             case 3: {
                 return new LensWatchNextRequestContinuationCommandOuterClass$LensWatchNextRequestContinuationCommand();

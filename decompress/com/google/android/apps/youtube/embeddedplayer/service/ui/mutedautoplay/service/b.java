@@ -32,7 +32,7 @@ public final class b implements tgg
         this.j = j;
         this.a = a;
         this.b = b;
-        ((asht)e).aH((asjm)new k(elx, 17, null, null, null));
+        ((asht)e).aH((asjm)new k(elx, 17, (byte[])null, (byte[])null, (byte[])null));
     }
     
     public final void a(final int n) {
@@ -164,12 +164,12 @@ public final class b implements tgg
                                 if ((anuv = anej.g) == null) {
                                     anuv = anuv.a;
                                 }
-                                if (((ahbc)anuv).ry((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.playerMutedAutoplayOverlayRenderer)) {
+                                if (anuv.ry((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.playerMutedAutoplayOverlayRenderer)) {
                                     anuv anuv2;
                                     if ((anuv2 = anej.g) == null) {
                                         anuv2 = anuv.a;
                                     }
-                                    f = (anfu)((ahbc)anuv2).rx((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.playerMutedAutoplayOverlayRenderer);
+                                    f = (anfu)anuv2.rx((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.playerMutedAutoplayOverlayRenderer);
                                     break Label_0287;
                                 }
                             }
@@ -184,12 +184,12 @@ public final class b implements tgg
                             if ((anuv3 = f.e) == null) {
                                 anuv3 = anuv.a;
                             }
-                            if (((ahbc)anuv3).ry((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.b)) {
+                            if (anuv3.ry((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.b)) {
                                 anuv anuv4;
                                 if ((anuv4 = f.e) == null) {
                                     anuv4 = anuv.a;
                                 }
-                                g = (anft)((ahbc)anuv4).rx((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.b);
+                                g = (anft)anuv4.rx((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.b);
                                 break Label_0358;
                             }
                         }
@@ -204,12 +204,12 @@ public final class b implements tgg
                             if ((anuv5 = f2.d) == null) {
                                 anuv5 = anuv.a;
                             }
-                            if (((ahbc)anuv5).ry((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.a)) {
+                            if (anuv5.ry((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.a)) {
                                 anuv anuv6;
                                 if ((anuv6 = f2.d) == null) {
                                     anuv6 = anuv.a;
                                 }
-                                h = (anfv)((ahbc)anuv6).rx((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.a);
+                                h = (anfv)anuv6.rx((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.a);
                                 break Label_0435;
                             }
                         }

@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint extends agzi implements ahax
+public final class ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint extends ahbh implements ahcw
 {
     public static final ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg manageLiveChatUserEndpoint;
-    public agyc b;
+    private static volatile ahdd c;
+    public static final ahbf manageLiveChatUserEndpoint;
+    public ahab b;
     private int d;
     
     static {
         final ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint a2 = new ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint();
-        agzi.registerDefaultInstance((Class)ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint.class, (agzi)(a = a2));
-        manageLiveChatUserEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 133716455, ahcm.k, (Class)ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint.class);
+        ahbh.registerDefaultInstance((Class)ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint.class, (ahbh)(a = a2));
+        manageLiveChatUserEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 133716455, ahek.k, (Class)ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint.class);
     }
     
     private ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint() {
-        this.b = agyc.b;
+        this.b = ahab.b;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint.c) == null) {
                     synchronized (ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint.class) {
                         if (ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint.c == null) {
-                            ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint.c = (ahbe)new agzb((agzi)ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint.a);
+                            ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint.c = (ahdd)new ahba((ahbh)ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoi
                 return ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint.a);
+                return new ahaz((ahbh)ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint.a);
             }
             case 3: {
                 return new ManageLiveChatUserEndpointOuterClass$ManageLiveChatUserEndpoint();

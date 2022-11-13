@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AppIsInstalledCommandOuterClass
 {
-    public static final agzg appIsInstalledCommand;
+    public static final ahbf appIsInstalledCommand;
     
     static {
-        appIsInstalledCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ahsv.a, (MessageLite)ahsv.a, (agzn)null, 217224308, ahcm.k, (Class)ahsv.class);
+        appIsInstalledCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)ahut.a, (MessageLite)ahut.a, (ahbm)null, 217224308, ahek.k, (Class)ahut.class);
     }
     
     private AppIsInstalledCommandOuterClass() {

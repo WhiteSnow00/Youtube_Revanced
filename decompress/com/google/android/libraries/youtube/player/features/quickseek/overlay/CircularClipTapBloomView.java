@@ -37,24 +37,26 @@ public class CircularClipTapBloomView extends TapBloomView
     
     public final void a(final boolean b) {
         this.invalidate();
-        float n;
-        if (!b) {
-            n = 1.0f;
-        }
-        else {
-            n = 1.75f;
-        }
         final int h = this.h;
-        final float n2 = (float)h;
-        this.d = n * 1.2f * n2;
-        final int g = this.g;
-        final int n3 = (int)(n2 * 1.2f - g * 0.5f);
-        int e;
-        if (this.a == 1) {
-            e = g + n3;
+        final float n = (float)h;
+        float n2;
+        if (!b) {
+            n2 = 1.0f;
         }
         else {
-            e = -n3;
+            n2 = 1.75f;
+        }
+        this.d = n2 * 1.2f * n;
+        final int g = this.g;
+        final float n3 = (float)g;
+        final int a = this.a;
+        final int n4 = (int)(n * 1.2f - n3 * 0.5f);
+        int e;
+        if (a == 1) {
+            e = g + n4;
+        }
+        else {
+            e = -n4;
         }
         this.e = e;
         this.f = h / 2;
@@ -66,7 +68,7 @@ public class CircularClipTapBloomView extends TapBloomView
             i.reset();
         }
         if (this.j == null) {
-            (this.j = new Paint()).setColor(agx.a(this.getContext(), 2131101973));
+            (this.j = new Paint()).setColor(agy.a(this.getContext(), 2131101999));
         }
         this.i.setFillType(Path$FillType.WINDING);
         this.i.addCircle((float)this.e, (float)this.f, this.d, Path$Direction.CW);

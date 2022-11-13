@@ -17,34 +17,42 @@ import com.google.android.libraries.youtube.creation.common.util.PresetTracker;
 
 public class ShortsPresetTracker extends PresetTracker
 {
-    public tzf a;
+    public ubh a;
     
-    public ShortsPresetTracker(final aum aum, final unz unz, final aagm aagm, final byte[] array) {
-        super(aum, unz, aagm, (byte[])null);
+    public ShortsPresetTracker(final aun aun, final upw upw, final qqr qqr) {
+        super(aun, upw, qqr);
+    }
+    
+    public static void h() {
+        ttr.b("Error saving most recent preset effect ID for Short");
+    }
+    
+    public static void l() {
+        ttr.b("Error saving most recent preset effect ID for Short");
     }
     
     protected final void g() {
         final String f = this.f;
         if (f != null) {
-            tcp.m(this.i.c((aexg)new ujo(f, 1), (Executor)afsl.a), (tcn)rji.q);
+            teu.m(this.i.b((aezf)new uig(f, 2), (Executor)afum.a), (tes)rll.q);
         }
     }
     
-    public final void i(final ugb ugb, final van van) {
+    public final void i(final uie uie, final vbs vbs) {
         float r;
-        if ((r = ugb.r) == 0.0f) {
+        if ((r = uie.r) == 0.0f) {
             r = 1.0f;
         }
-        final String l = ugb.l;
-        final List b = van.b();
+        final String l = uie.l;
+        final List b = vbs.b();
         final FilterMapTable$FilterDescriptor filterMapTable$FilterDescriptor = null;
         FilterMapTable$FilterDescriptor filterMapTable$FilterDescriptor2 = null;
-        Label_0092: {
+        Label_0093: {
             if (b != null) {
                 if (l != null) {
                     for (final FilterMapTable$FilterDescriptor filterMapTable$FilterDescriptor2 : b) {
                         if (FilterMapTable$FilterDescriptor.j(filterMapTable$FilterDescriptor2.d, l)) {
-                            break Label_0092;
+                            break Label_0093;
                         }
                     }
                 }
@@ -52,7 +60,7 @@ public class ShortsPresetTracker extends PresetTracker
             filterMapTable$FilterDescriptor2 = null;
         }
         FilterMapTable$FilterDescriptor filterMapTable$FilterDescriptor3 = filterMapTable$FilterDescriptor2;
-        Label_0317: {
+        Label_0318: {
             if (filterMapTable$FilterDescriptor2 == null) {
                 filterMapTable$FilterDescriptor3 = filterMapTable$FilterDescriptor;
                 if (b != null) {
@@ -60,24 +68,24 @@ public class ShortsPresetTracker extends PresetTracker
                         filterMapTable$FilterDescriptor3 = filterMapTable$FilterDescriptor;
                     }
                     else {
-                        final aety a = afno.a(Pattern.compile("_[0-9]*$"));
+                        final afpo a = afpp.a(Pattern.compile("_[0-9]*$"));
                         final String string = l.toString();
-                        final Matcher matcher = ((afnm)a).b.matcher(string);
-                        afnn afnn;
+                        final Matcher matcher = ((afpm)a).a.matcher(string);
+                        afpn afpn;
                         if (matcher.find(0)) {
                             final int start = matcher.start(0);
                             final int n = matcher.end(0) - start;
-                            afnn = new afnn(string, start, n, Math.max(1, n) + start);
+                            afpn = new afpn(string, start, n, Math.max(1, n) + start);
                         }
                         else {
-                            afnn = null;
+                            afpn = null;
                         }
                         Object o;
-                        if (afnn == null) {
+                        if (afpn == null) {
                             o = null;
                         }
                         else {
-                            o = new afnn(string, 0, afnn.a, afnn.b);
+                            o = new afpn(string, 0, afpn.a, afpn.b);
                         }
                         final String s = (String)Optional.ofNullable((Object)Objects.toString(o, (String)null)).orElse((Object)null);
                         final Iterator iterator2 = b.iterator();
@@ -85,13 +93,13 @@ public class ShortsPresetTracker extends PresetTracker
                         do {
                             filterMapTable$FilterDescriptor3 = filterMapTable$FilterDescriptor;
                             if (!iterator2.hasNext()) {
-                                break Label_0317;
+                                break Label_0318;
                             }
                             filterMapTable$FilterDescriptor4 = (filterMapTable$FilterDescriptor3 = (FilterMapTable$FilterDescriptor)iterator2.next());
                             if (!FilterMapTable$FilterDescriptor.j(filterMapTable$FilterDescriptor4.a, l)) {
                                 continue;
                             }
-                            break Label_0317;
+                            break Label_0318;
                         } while (s == null || !FilterMapTable$FilterDescriptor.j(filterMapTable$FilterDescriptor4.a, s));
                         filterMapTable$FilterDescriptor3 = filterMapTable$FilterDescriptor4;
                     }
@@ -103,42 +111,42 @@ public class ShortsPresetTracker extends PresetTracker
             a2 = filterMapTable$FilterDescriptor3.a;
         }
         else {
-            a2 = (String)van.d;
+            a2 = (String)vbs.d;
         }
         this.h = a2;
-        final tzf a3 = this.a;
+        final ubh a3 = this.a;
         if (a3 != null) {
             final String h = this.h;
-            final hav hav = (hav)a3;
-            hav.m = h;
-            hav.n = r;
+            final hbk hbk = (hbk)a3;
+            hbk.m = h;
+            hbk.n = r;
         }
     }
     
-    public final void my(final aum aum) {
+    public final void my(final aun aun) {
         if (this.g) {
             this.g();
         }
-        final tzf a = this.a;
+        final ubh a = this.a;
         if (a != null) {
             final String e = this.e;
             if (e != null) {
-                final aagm i = this.i;
-                final hav hav = (hav)a;
-                final FilterMapTable$FilterDescriptor k = hav.k;
+                final qqr i = this.i;
+                final hbk hbk = (hbk)a;
+                final FilterMapTable$FilterDescriptor k = hbk.k;
                 float a2;
                 final float n = a2 = 1.0f;
                 if (k != null) {
                     a2 = n;
                     if (k.a.equals(e)) {
-                        final Control b = hav.k.b("preset_intensity");
+                        final Control b = hbk.k.b("preset_intensity");
                         a2 = n;
                         if (b != null) {
                             a2 = b.b.a();
                         }
                     }
                 }
-                tcp.m(i.c((aexg)new ugc(a2), (Executor)afsl.a), (tcn)rji.r);
+                teu.m(i.b((aezf)new uif(a2), (Executor)afum.a), (tes)rll.r);
             }
         }
     }

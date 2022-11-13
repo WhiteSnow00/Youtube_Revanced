@@ -45,8 +45,8 @@ public final class AutoValue_SubtitleTrack extends SubtitleTrack
         return this.e;
     }
     
-    public final abrg c() {
-        return new abrg((SubtitleTrack)this);
+    public final abth c() {
+        return new abth(this);
     }
     
     public final CharSequence d() {

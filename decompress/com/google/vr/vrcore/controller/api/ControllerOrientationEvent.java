@@ -16,7 +16,7 @@ public final class ControllerOrientationEvent extends ControllerEvent
     public float f;
     
     static {
-        CREATOR = (Parcelable$Creator)new arao(9);
+        CREATOR = (Parcelable$Creator)new ardl(8);
     }
     
     public ControllerOrientationEvent() {
@@ -30,6 +30,7 @@ public final class ControllerOrientationEvent extends ControllerEvent
         return 28;
     }
     
+    @Override
     public void b(final Parcel parcel) {
         super.b(parcel);
         this.a = parcel.readFloat();
@@ -42,6 +43,7 @@ public final class ControllerOrientationEvent extends ControllerEvent
         return 0;
     }
     
+    @Override
     public void writeToParcel(final Parcel parcel, final int n) {
         super.writeToParcel(parcel, n);
         parcel.writeFloat(this.a);

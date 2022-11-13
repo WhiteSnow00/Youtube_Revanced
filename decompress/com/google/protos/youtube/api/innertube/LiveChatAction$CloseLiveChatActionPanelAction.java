@@ -6,11 +6,11 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatAction$CloseLiveChatActionPanelAction extends agzi implements ahax
+public final class LiveChatAction$CloseLiveChatActionPanelAction extends ahbh implements ahcw
 {
     public static final LiveChatAction$CloseLiveChatActionPanelAction a;
-    public static final agzg closeLiveChatActionPanelAction;
-    private static volatile ahbe f;
+    public static final ahbf closeLiveChatActionPanelAction;
+    private static volatile ahdd f;
     public int b;
     public String c;
     public int d;
@@ -18,26 +18,26 @@ public final class LiveChatAction$CloseLiveChatActionPanelAction extends agzi im
     
     static {
         final LiveChatAction$CloseLiveChatActionPanelAction a2 = new LiveChatAction$CloseLiveChatActionPanelAction();
-        agzi.registerDefaultInstance((Class)LiveChatAction$CloseLiveChatActionPanelAction.class, (agzi)(a = a2));
-        closeLiveChatActionPanelAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 240912718, ahcm.k, (Class)LiveChatAction$CloseLiveChatActionPanelAction.class);
+        ahbh.registerDefaultInstance((Class)LiveChatAction$CloseLiveChatActionPanelAction.class, (ahbh)(a = a2));
+        closeLiveChatActionPanelAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 240912718, ahek.k, (Class)LiveChatAction$CloseLiveChatActionPanelAction.class);
     }
     
     private LiveChatAction$CloseLiveChatActionPanelAction() {
         this.c = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe f;
+                final ahdd f;
                 if ((f = LiveChatAction$CloseLiveChatActionPanelAction.f) == null) {
                     synchronized (LiveChatAction$CloseLiveChatActionPanelAction.class) {
                         if (LiveChatAction$CloseLiveChatActionPanelAction.f == null) {
-                            LiveChatAction$CloseLiveChatActionPanelAction.f = (ahbe)new agzb((agzi)LiveChatAction$CloseLiveChatActionPanelAction.a);
+                            LiveChatAction$CloseLiveChatActionPanelAction.f = (ahdd)new ahba((ahbh)LiveChatAction$CloseLiveChatActionPanelAction.a);
                         }
                     }
                 }
@@ -47,7 +47,7 @@ public final class LiveChatAction$CloseLiveChatActionPanelAction extends agzi im
                 return LiveChatAction$CloseLiveChatActionPanelAction.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatAction$CloseLiveChatActionPanelAction.a);
+                return new ahaz((ahbh)LiveChatAction$CloseLiveChatActionPanelAction.a);
             }
             case 3: {
                 return new LiveChatAction$CloseLiveChatActionPanelAction();

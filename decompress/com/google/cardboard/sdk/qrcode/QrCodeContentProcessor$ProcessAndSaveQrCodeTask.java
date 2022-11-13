@@ -12,7 +12,7 @@ import android.content.Context;
 public class QrCodeContentProcessor$ProcessAndSaveQrCodeTask extends AsyncTask
 {
     private final Context context;
-    final /* synthetic */ QrCodeContentProcessor this$0;
+    final QrCodeContentProcessor this$0;
     
     public QrCodeContentProcessor$ProcessAndSaveQrCodeTask(final QrCodeContentProcessor this$0, final Context context) {
         this.this$0 = this$0;
@@ -21,6 +21,10 @@ public class QrCodeContentProcessor$ProcessAndSaveQrCodeTask extends AsyncTask
     
     protected CardboardParamsUtils$UriToParamsStatus doInBackground(final Barcode barcode) {
         return QrCodeContentProcessor.-$$Nest$smgetParamsFromQrCode(barcode, new UrlFactory());
+    }
+    
+    protected /* bridge */ Object doInBackground(final Object o) {
+        return this.doInBackground((Barcode)o);
     }
     
     protected void onPostExecute(final CardboardParamsUtils$UriToParamsStatus cardboardParamsUtils$UriToParamsStatus) {
@@ -44,5 +48,9 @@ public class QrCodeContentProcessor$ProcessAndSaveQrCodeTask extends AsyncTask
             }
         }
         QrCodeContentProcessor.-$$Nest$fgetlistener(this.this$0).onQrCodeSaved(writeDeviceParams);
+    }
+    
+    protected /* bridge */ void onPostExecute(final Object o) {
+        this.onPostExecute((CardboardParamsUtils$UriToParamsStatus)o);
     }
 }

@@ -52,12 +52,12 @@ public class NetworkOperationView extends FrameLayout
     }
     
     private final void f(final Context context) {
-        inflate(context, 2131624633, (ViewGroup)this);
+        inflate(context, 2131624634, (ViewGroup)this);
         this.d = (Button)this.findViewById(2131427462);
         this.e = (Button)this.findViewById(2131427461);
         this.a = (TextView)this.findViewById(2131428917);
-        this.f = (ProgressBar)this.findViewById(2131431624);
-        this.b = (TextView)this.findViewById(2131430661);
+        this.f = (ProgressBar)this.findViewById(2131431627);
+        this.b = (TextView)this.findViewById(2131430664);
         this.g = (WaitingIndicatorView)this.findViewById(2131430042);
         this.a(0);
     }

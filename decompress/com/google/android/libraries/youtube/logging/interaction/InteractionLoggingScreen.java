@@ -23,8 +23,8 @@ public class InteractionLoggingScreen implements Parcelable
     public final String a;
     public final String b;
     public final String c;
-    public final aild d;
-    public final apni e;
+    public final ainb d;
+    public final appm e;
     public final int f;
     public final Map g;
     public final Map h;
@@ -34,10 +34,10 @@ public class InteractionLoggingScreen implements Parcelable
     private final Set l;
     private int m;
     private int n;
-    private aldv o;
+    private alfy o;
     
     static {
-        CREATOR = (Parcelable$Creator)new vho(12);
+        CREATOR = (Parcelable$Creator)new vjo(12);
     }
     
     public InteractionLoggingScreen(final Parcel parcel) {
@@ -47,14 +47,14 @@ public class InteractionLoggingScreen implements Parcelable
         this.a = parcel.readString();
         this.b = parcel.readString();
         this.c = parcel.readString();
-        this.e = (apni)uji.af(parcel, (agzi)apni.a);
-        this.o = (aldv)uji.af(parcel, (agzi)aldv.a);
+        this.e = (appm)vdh.bo(parcel, (ahbh)appm.a);
+        this.o = (alfy)vdh.bo(parcel, (ahbh)alfy.a);
         this.f = parcel.readInt();
-        this.d = (aild)uji.af(parcel, (agzi)aild.a);
+        this.d = (ainb)vdh.bo(parcel, (ahbh)ainb.a);
         final int int1 = parcel.readInt();
         final HashMap g = new HashMap();
         for (int i = 0; i < int1; ++i) {
-            g.put(uji.af(parcel, (agzi)apni.a), parcel.readParcelable(GelVisibilityUpdate.class.getClassLoader()));
+            g.put(vdh.bo(parcel, (ahbh)appm.a), parcel.readParcelable(GelVisibilityUpdate.class.getClassLoader()));
         }
         this.g = g;
         final int int2 = parcel.readInt();
@@ -66,13 +66,13 @@ public class InteractionLoggingScreen implements Parcelable
         final int int3 = parcel.readInt();
         final HashMap k = new HashMap();
         for (int l = 0; l < int3; ++l) {
-            k.put(uji.af(parcel, (agzi)apni.a), uji.af(parcel, (agzi)apni.a));
+            k.put(vdh.bo(parcel, (ahbh)appm.a), vdh.bo(parcel, (ahbh)appm.a));
         }
         this.i = k;
         final int int4 = parcel.readInt();
         final HashMap m = new HashMap();
         for (int n2 = 0; n2 < int4; ++n2) {
-            m.put(parcel.readParcelable(DefaultInteractionLogger$VisualElementKey.class.getClassLoader()), uji.af(parcel, (agzi)apni.a));
+            m.put(parcel.readParcelable(DefaultInteractionLogger$VisualElementKey.class.getClassLoader()), vdh.bo(parcel, (ahbh)appm.a));
         }
         this.j = m;
         final int int5 = parcel.readInt();
@@ -90,11 +90,11 @@ public class InteractionLoggingScreen implements Parcelable
         this.n = parcel.readInt();
     }
     
-    public InteractionLoggingScreen(final avt avt, final int f, final apni e, final String b, final String c, final aild d, final boolean b2, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4) {
+    public InteractionLoggingScreen(final msr msr, final int f, final appm e, final String b, final String c, final ainb d, final boolean b2, final byte[] array) {
         this.m = 1;
         this.n = 0;
         e.getClass();
-        this.a = avt.X(16);
+        this.a = msr.y(16);
         this.g = new HashMap();
         this.h = new HashMap();
         this.l = new HashSet();
@@ -113,15 +113,15 @@ public class InteractionLoggingScreen implements Parcelable
         this.c = c;
         this.d = d;
         this.e = e;
-        this.o = aldv.a;
+        this.o = alfy.a;
     }
     
-    public static boolean g(final aioe aioe) {
-        return aioe != null && ((agzd)aioe).rs((agyr)amoa.b);
+    public static boolean g(final aiqj aiqj) {
+        return aiqj != null && ((ahbc)aiqj).ry((ahaq)amqf.b);
     }
     
-    private static final boolean k(final apni apni) {
-        return (apni != null && apni.c.d() > 0) || (apni != null && apni.d > 0);
+    private static final boolean k(final appm appm) {
+        return (appm != null && appm.c.d() > 0) || (appm != null && appm.d > 0);
     }
     
     public final int a() {
@@ -141,13 +141,13 @@ public class InteractionLoggingScreen implements Parcelable
         return 0;
     }
     
-    public final wyb c() {
-        return wya.b(this.f);
+    public final xab c() {
+        return xaa.b(this.f);
     }
     
-    public final void d(final apni apni, final apni apni2) {
-        if (k(apni)) {
-            this.i.put(apni, apni2);
+    public final void d(final appm appm, final appm appm2) {
+        if (k(appm)) {
+            this.i.put(appm, appm2);
         }
     }
     
@@ -159,9 +159,9 @@ public class InteractionLoggingScreen implements Parcelable
         if (k(gelVisibilityUpdate.d)) {
             if (gelVisibilityUpdate.e.isPresent()) {
                 final Map h = this.h;
-                final wxo c = InteractionLoggingScreen$VisualElementVisibilityKey.c();
+                final wzo c = InteractionLoggingScreen$VisualElementVisibilityKey.c();
                 c.d(gelVisibilityUpdate.d);
-                c.c((aqqg)gelVisibilityUpdate.e.get());
+                c.c((aqss)gelVisibilityUpdate.e.get());
                 c.b();
                 h.put(c.a(), gelVisibilityUpdate);
                 return;
@@ -177,17 +177,17 @@ public class InteractionLoggingScreen implements Parcelable
         this.k.add(s);
     }
     
-    public final boolean h(final apni apni) {
-        return k(apni) && this.i.containsKey(apni);
+    public final boolean h(final appm appm) {
+        return k(appm) && this.i.containsKey(appm);
     }
     
     public final boolean i(final GelVisibilityUpdate gelVisibilityUpdate) {
         if (k(gelVisibilityUpdate.d)) {
             if (gelVisibilityUpdate.e.isPresent()) {
                 final Map h = this.h;
-                final wxo c = InteractionLoggingScreen$VisualElementVisibilityKey.c();
+                final wzo c = InteractionLoggingScreen$VisualElementVisibilityKey.c();
                 c.d(gelVisibilityUpdate.d);
-                c.c((aqqg)gelVisibilityUpdate.e.get());
+                c.c((aqss)gelVisibilityUpdate.e.get());
                 c.b();
                 final GelVisibilityUpdate gelVisibilityUpdate2 = h.get(c.a());
                 if (gelVisibilityUpdate2 != null) {
@@ -207,28 +207,28 @@ public class InteractionLoggingScreen implements Parcelable
         return (n == 2 || n == 5) == gelVisibilityUpdate instanceof GelVisibilityUpdate$ShownVisibilityUpdate;
     }
     
-    public final boolean j(final apni apni, final apni apni2) {
-        return k(apni) && Map$_EL.putIfAbsent(this.i, (Object)apni, (Object)apni2) != null;
+    public final boolean j(final appm appm, final appm appm2) {
+        return k(appm) && Map$_EL.putIfAbsent(this.i, (Object)appm, (Object)appm2) != null;
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
         parcel.writeString(this.a);
         parcel.writeString(this.b);
         parcel.writeString(this.c);
-        uji.ag((MessageLite)this.e, parcel);
-        uji.ag((MessageLite)this.o, parcel);
+        vdh.bp((MessageLite)this.e, parcel);
+        vdh.bp((MessageLite)this.o, parcel);
         parcel.writeInt(this.f);
-        final aild d = this.d;
+        final ainb d = this.d;
         if (d != null) {
-            uji.ag((MessageLite)d, parcel);
+            vdh.bp((MessageLite)d, parcel);
         }
         else {
-            uji.ag((MessageLite)aild.a, parcel);
+            vdh.bp((MessageLite)ainb.a, parcel);
         }
         final Map g = this.g;
         parcel.writeInt(g.size());
         for (final Map.Entry<MessageLite, V> entry : g.entrySet()) {
-            uji.ag((MessageLite)entry.getKey(), parcel);
+            vdh.bp((MessageLite)entry.getKey(), parcel);
             parcel.writeParcelable((Parcelable)entry.getValue(), n);
         }
         final Map h = this.h;
@@ -240,14 +240,14 @@ public class InteractionLoggingScreen implements Parcelable
         final Map i = this.i;
         parcel.writeInt(i.size());
         for (final Map.Entry<MessageLite, V> entry3 : i.entrySet()) {
-            uji.ag((MessageLite)entry3.getKey(), parcel);
-            uji.ag((MessageLite)entry3.getValue(), parcel);
+            vdh.bp((MessageLite)entry3.getKey(), parcel);
+            vdh.bp((MessageLite)entry3.getValue(), parcel);
         }
         final Map j = this.j;
         parcel.writeInt(j.size());
         for (final Map.Entry<Parcelable, V> entry4 : j.entrySet()) {
             parcel.writeParcelable((Parcelable)entry4.getKey(), n);
-            uji.ag((MessageLite)entry4.getValue(), parcel);
+            vdh.bp((MessageLite)entry4.getValue(), parcel);
         }
         final Set k = this.k;
         parcel.writeInt(k.size());

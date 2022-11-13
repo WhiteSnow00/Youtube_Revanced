@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ShowSchedulingPanelCommandOuterClass
 {
-    public static final agzg showSchedulingPanelCommand;
+    public static final ahbf showSchedulingPanelCommand;
     
     static {
-        showSchedulingPanelCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)aoer.a, (MessageLite)aoer.a, (agzn)null, 278015085, ahcm.k, (Class)aoer.class);
+        showSchedulingPanelCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)aogu.a, (MessageLite)aogu.a, (ahbm)null, 278015085, ahek.k, (Class)aogu.class);
     }
     
     private ShowSchedulingPanelCommandOuterClass() {

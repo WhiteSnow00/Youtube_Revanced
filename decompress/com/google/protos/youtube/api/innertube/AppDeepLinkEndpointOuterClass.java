@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AppDeepLinkEndpointOuterClass
 {
-    public static final agzg appDeepLinkEndpoint;
+    public static final ahbf appDeepLinkEndpoint;
     
     static {
-        appDeepLinkEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ahsu.a, (MessageLite)ahsu.a, (agzn)null, 179103219, ahcm.k, (Class)ahsu.class);
+        appDeepLinkEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)ahus.a, (MessageLite)ahus.a, (ahbm)null, 179103219, ahek.k, (Class)ahus.class);
     }
     
     private AppDeepLinkEndpointOuterClass() {

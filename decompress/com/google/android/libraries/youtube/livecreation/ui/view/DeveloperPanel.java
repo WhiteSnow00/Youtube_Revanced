@@ -42,16 +42,16 @@ public class DeveloperPanel extends RelativeLayout
     }
     
     private final void b(final Context context) {
-        inflate(context, 2131624620, (ViewGroup)this);
+        inflate(context, 2131624621, (ViewGroup)this);
         this.setSaveEnabled(true);
-        ((ImageButton)this.findViewById(2131428702)).setOnClickListener((View$OnClickListener)new wmw(this, 18));
+        ((ImageButton)this.findViewById(2131428702)).setOnClickListener((View$OnClickListener)new woy(this, 19));
         final LinearLayout linearLayout = (LinearLayout)this.findViewById(2131428861);
         final LinearLayout linearLayout2 = (LinearLayout)this.findViewById(2131429087);
         final LinearLayout linearLayout3 = (LinearLayout)this.findViewById(2131427810);
-        (this.a = (SwitchCompat)this.findViewById(2131431712)).setOnCheckedChangeListener((CompoundButton$OnCheckedChangeListener)new wsw(1));
-        (this.e = (SwitchCompat)this.findViewById(2131428862)).setOnCheckedChangeListener((CompoundButton$OnCheckedChangeListener)new wsw(0));
-        (this.c = (SeekBar)this.findViewById(2131429088)).setOnSeekBarChangeListener((SeekBar$OnSeekBarChangeListener)new wsx(this, (TextView)this.findViewById(2131429089), 1));
-        (this.d = (SeekBar)this.findViewById(2131427811)).setOnSeekBarChangeListener((SeekBar$OnSeekBarChangeListener)new wsx(this, (TextView)this.findViewById(2131427812), 0));
+        (this.a = (SwitchCompat)this.findViewById(2131431715)).setOnCheckedChangeListener((CompoundButton$OnCheckedChangeListener)new wuw(1));
+        (this.e = (SwitchCompat)this.findViewById(2131428862)).setOnCheckedChangeListener((CompoundButton$OnCheckedChangeListener)new wuw(0));
+        (this.c = (SeekBar)this.findViewById(2131429088)).setOnSeekBarChangeListener((SeekBar$OnSeekBarChangeListener)new wux(this, (TextView)this.findViewById(2131429089), 1));
+        (this.d = (SeekBar)this.findViewById(2131427811)).setOnSeekBarChangeListener((SeekBar$OnSeekBarChangeListener)new wux(this, (TextView)this.findViewById(2131427812), 0));
         this.a();
     }
     
@@ -60,7 +60,7 @@ public class DeveloperPanel extends RelativeLayout
     }
     
     private static final int d() {
-        agot.u(true);
+        adkp.H(true);
         return 1;
     }
     
@@ -68,7 +68,7 @@ public class DeveloperPanel extends RelativeLayout
         this.a.setEnabled(false);
         if (this.a.isChecked()) {
             if (this.b == null) {
-                this.post(this.b = (Runnable)new wsr(this, 3));
+                this.post(this.b = (Runnable)new wup(this, 4));
             }
         }
         else {

@@ -14,7 +14,7 @@ public class ControllerRequest extends ParcelableProtoLite
     public static final Parcelable$Creator CREATOR;
     
     static {
-        CREATOR = (Parcelable$Creator)new arao(11);
+        CREATOR = (Parcelable$Creator)new ardl(10);
     }
     
     public ControllerRequest() {
@@ -24,6 +24,7 @@ public class ControllerRequest extends ParcelableProtoLite
         super(parcel);
     }
     
+    @Override
     public final boolean equals(final Object o) {
         return o == this || (o instanceof ControllerRequest && Arrays.equals(((ControllerRequest)o).a, super.a));
     }

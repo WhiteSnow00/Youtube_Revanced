@@ -111,13 +111,12 @@ public final class SafeWindowLayoutComponentProvider
     }
     
     private final boolean validate(final atmv atmv) {
-        boolean booleanValue = false;
+        final boolean b = false;
         try {
-            booleanValue = (boolean)atmv.invoke();
-            return booleanValue;
+            return (boolean)atmv.invoke();
         }
         catch (final ClassNotFoundException | NoSuchMethodException ex) {
-            return booleanValue;
+            return b;
         }
     }
     

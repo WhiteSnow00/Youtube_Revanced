@@ -6,21 +6,21 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AgeVerificationEndpointOuterClass$AgeVerificationEndpoint extends agzi implements ahax
+public final class AgeVerificationEndpointOuterClass$AgeVerificationEndpoint extends ahbh implements ahcw
 {
     public static final AgeVerificationEndpointOuterClass$AgeVerificationEndpoint a;
-    public static final agzg ageVerificationEndpoint;
-    private static volatile ahbe e;
+    public static final ahbf ageVerificationEndpoint;
+    private static volatile ahdd e;
     public String b;
-    public aioe c;
+    public aiqj c;
     public boolean d;
     private int f;
     private byte g;
     
     static {
         final AgeVerificationEndpointOuterClass$AgeVerificationEndpoint a2 = new AgeVerificationEndpointOuterClass$AgeVerificationEndpoint();
-        agzi.registerDefaultInstance((Class)AgeVerificationEndpointOuterClass$AgeVerificationEndpoint.class, (agzi)(a = a2));
-        ageVerificationEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 322638812, ahcm.k, (Class)AgeVerificationEndpointOuterClass$AgeVerificationEndpoint.class);
+        ahbh.registerDefaultInstance((Class)AgeVerificationEndpointOuterClass$AgeVerificationEndpoint.class, (ahbh)(a = a2));
+        ageVerificationEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 322638812, ahek.k, (Class)AgeVerificationEndpointOuterClass$AgeVerificationEndpoint.class);
     }
     
     private AgeVerificationEndpointOuterClass$AgeVerificationEndpoint() {
@@ -28,20 +28,20 @@ public final class AgeVerificationEndpointOuterClass$AgeVerificationEndpoint ext
         this.b = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte g = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = AgeVerificationEndpointOuterClass$AgeVerificationEndpoint.e) == null) {
                     synchronized (AgeVerificationEndpointOuterClass$AgeVerificationEndpoint.class) {
                         if (AgeVerificationEndpointOuterClass$AgeVerificationEndpoint.e == null) {
-                            AgeVerificationEndpointOuterClass$AgeVerificationEndpoint.e = (ahbe)new agzb((agzi)AgeVerificationEndpointOuterClass$AgeVerificationEndpoint.a);
+                            AgeVerificationEndpointOuterClass$AgeVerificationEndpoint.e = (ahdd)new ahba((ahbh)AgeVerificationEndpointOuterClass$AgeVerificationEndpoint.a);
                         }
                     }
                 }
@@ -51,7 +51,7 @@ public final class AgeVerificationEndpointOuterClass$AgeVerificationEndpoint ext
                 return AgeVerificationEndpointOuterClass$AgeVerificationEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)AgeVerificationEndpointOuterClass$AgeVerificationEndpoint.a);
+                return new ahaz((ahbh)AgeVerificationEndpointOuterClass$AgeVerificationEndpoint.a);
             }
             case 3: {
                 return new AgeVerificationEndpointOuterClass$AgeVerificationEndpoint();
@@ -61,9 +61,9 @@ public final class AgeVerificationEndpointOuterClass$AgeVerificationEndpoint ext
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    g = 0;
                 }
-                this.g = (byte)(b ? 1 : 0);
+                this.g = g;
                 return null;
             }
             case 0: {

@@ -18,7 +18,7 @@ import android.widget.LinearLayout;
 
 public class LiveCreationSettingView extends LinearLayout implements View$OnClickListener
 {
-    public xpb a;
+    public afhd a;
     private final TextView b;
     private final ImageView c;
     private final ImageView d;
@@ -26,8 +26,8 @@ public class LiveCreationSettingView extends LinearLayout implements View$OnClic
     
     public LiveCreationSettingView(final Context context, final AttributeSet set) {
         super(context, set);
-        inflate(context, 2131624649, (ViewGroup)this);
-        Object obtainStyledAttributes = context.getTheme().obtainStyledAttributes(set, wol.c, 0, 0);
+        inflate(context, 2131624650, (ViewGroup)this);
+        Object obtainStyledAttributes = context.getTheme().obtainStyledAttributes(set, wql.c, 0, 0);
         try {
             final Drawable drawable = ((TypedArray)obtainStyledAttributes).getDrawable(1);
             final CharSequence text = ((TypedArray)obtainStyledAttributes).getText(2);
@@ -35,19 +35,19 @@ public class LiveCreationSettingView extends LinearLayout implements View$OnClic
             final CharSequence text2 = ((TypedArray)obtainStyledAttributes).getText(3);
             final CharSequence text3 = ((TypedArray)obtainStyledAttributes).getText(0);
             ((TypedArray)obtainStyledAttributes).recycle();
-            final TextView b = (TextView)this.findViewById(2131431387);
-            this.b = b;
-            final ImageView c = (ImageView)this.findViewById(2131431386);
+            obtainStyledAttributes = this.findViewById(2131431390);
+            this.b = (TextView)obtainStyledAttributes;
+            final ImageView c = (ImageView)this.findViewById(2131431389);
             this.c = c;
-            obtainStyledAttributes = this.findViewById(2131428213);
-            this.d = (ImageView)obtainStyledAttributes;
-            b.setText(text);
-            b.setCompoundDrawablesRelativeWithIntrinsicBounds(drawable, (Drawable)null, (Drawable)null, (Drawable)null);
-            b.setOnClickListener((View$OnClickListener)this);
+            final ImageView d = (ImageView)this.findViewById(2131428213);
+            this.d = d;
+            ((TextView)obtainStyledAttributes).setText(text);
+            ((TextView)obtainStyledAttributes).setCompoundDrawablesRelativeWithIntrinsicBounds(drawable, (Drawable)null, (Drawable)null, (Drawable)null);
+            ((TextView)obtainStyledAttributes).setOnClickListener((View$OnClickListener)this);
             c.setOnClickListener((View$OnClickListener)this);
-            ((ImageView)obtainStyledAttributes).setOnClickListener((View$OnClickListener)this);
+            d.setOnClickListener((View$OnClickListener)this);
             c.setContentDescription(text2);
-            ((ImageView)obtainStyledAttributes).setContentDescription(text3);
+            d.setContentDescription(text3);
         }
         finally {
             ((TypedArray)obtainStyledAttributes).recycle();
@@ -61,24 +61,24 @@ public class LiveCreationSettingView extends LinearLayout implements View$OnClic
             e = this.e;
         }
         b2.setText(e);
-        tmy.v((View)this.c, b ^ true);
-        tmy.v((View)this.d, b);
+        tpe.v((View)this.c, b ^ true);
+        tpe.v((View)this.d, b);
     }
     
     public final void onClick(final View view) {
         if (view != this.b && view != this.c) {
             if (view == this.d) {
                 this.a(null);
-                final xpb a = this.a;
+                final afhd a = this.a;
                 if (a != null) {
-                    ((wrm)a.a).ax = null;
+                    ((wtm)a.a).ax = null;
                 }
             }
         }
         else {
-            final xpb a2 = this.a;
+            final afhd a2 = this.a;
             if (a2 != null) {
-                ((wrm)a2.a).c.b(2131429114);
+                ((wtm)a2.a).c.b(2131429114);
             }
         }
     }

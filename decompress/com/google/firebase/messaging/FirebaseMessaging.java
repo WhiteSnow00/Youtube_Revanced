@@ -24,45 +24,46 @@ import java.util.concurrent.ScheduledExecutorService;
 
 public class FirebaseMessaging
 {
-    static lql a;
+    static lrp a;
     static ScheduledExecutorService b;
+    public static final int i = 0;
     private static final long j;
-    private static agli p;
-    public final agfz c;
+    private static agnj q;
+    public final agia c;
     public final Context d;
-    public final agkm e;
+    public final agmn e;
     public final Executor f;
-    public final nly g;
-    public final agkp h;
-    private final agjf k;
-    private final agkl l;
+    public final nnc g;
+    public final agmq h;
+    private final aglg k;
+    private final agmm l;
     private final Executor m;
     private boolean n;
     private final Application$ActivityLifecycleCallbacks o;
-    private final ahbd q;
+    private final ahdc p;
     
     static {
         j = TimeUnit.HOURS.toSeconds(8L);
     }
     
-    public FirebaseMessaging(final agfz c, final agjf k, final agjg agjg, final agjg agjg2, final agjj agjj, final lql a, final agio agio) {
-        final agkp h = new agkp(c.a());
-        final agkm e = new agkm(c, h, new mol(c.a()), agjg, agjg2, agjj);
-        final ExecutorService singleThreadExecutor = Executors.newSingleThreadExecutor((ThreadFactory)new emi("Firebase-Messaging-Task", 2));
-        final ScheduledThreadPoolExecutor m = new ScheduledThreadPoolExecutor(1, (ThreadFactory)new emi("Firebase-Messaging-Init", 2));
-        final ThreadPoolExecutor f = new ThreadPoolExecutor(0, 1, 30L, TimeUnit.SECONDS, new LinkedBlockingQueue<Runnable>(), (ThreadFactory)new emi("Firebase-Messaging-File-Io", 2));
+    public FirebaseMessaging(final agia c, final aglg k, final aglh aglh, final aglh aglh2, final aglk aglk, final lrp a, final agkp agkp) {
+        final agmq h = new agmq(c.a());
+        final agmn e = new agmn(c, h, new mpq(c.a()), aglh, aglh2, aglk);
+        final ExecutorService singleThreadExecutor = Executors.newSingleThreadExecutor((ThreadFactory)new emj("Firebase-Messaging-Task", 2));
+        final ScheduledThreadPoolExecutor m = new ScheduledThreadPoolExecutor(1, (ThreadFactory)new emj("Firebase-Messaging-Init", 2));
+        final ThreadPoolExecutor f = new ThreadPoolExecutor(0, 1, 30L, TimeUnit.SECONDS, new LinkedBlockingQueue<Runnable>(), (ThreadFactory)new emj("Firebase-Messaging-File-Io", 2));
         this.n = false;
         FirebaseMessaging.a = a;
         this.c = c;
         this.k = k;
-        this.l = new agkl(this, agio);
+        this.l = new agmm(this, agkp);
         final Context a2 = c.a();
         this.d = a2;
-        final agkh o = new agkh(0);
+        final agmi o = new agmi(0);
         this.o = (Application$ActivityLifecycleCallbacks)o;
         this.h = h;
         this.e = e;
-        this.q = new ahbd(singleThreadExecutor);
+        this.p = new ahdc((Executor)singleThreadExecutor);
         this.m = m;
         this.f = f;
         final Context a3 = c.a();
@@ -77,23 +78,23 @@ public class FirebaseMessaging
             Log.w("FirebaseMessaging", sb.toString());
         }
         if (k != null) {
-            k.c(new xpb(this));
+            k.c(new xra(this));
         }
-        m.execute((Runnable)new aesf(this, 11));
-        (this.g = agkx.a(this, h, e, a2, (ScheduledExecutorService)new ScheduledThreadPoolExecutor(1, (ThreadFactory)new emi("Firebase-Messaging-Topics-Io", 2)))).o((Executor)m, (nlu)new jzl(this, 9));
-        m.execute((Runnable)new aesf(this, 12));
+        m.execute((Runnable)new aeue(this, 12));
+        (this.g = agmy.a(this, h, e, a2, new ScheduledThreadPoolExecutor(1, (ThreadFactory)new emj("Firebase-Messaging-Topics-Io", 2)))).o((Executor)m, (nmy)new kal(this, 9));
+        m.execute((Runnable)new aeue(this, 13));
     }
     
     public static FirebaseMessaging a() {
         synchronized (FirebaseMessaging.class) {
-            return getInstance(agfz.b());
+            return getInstance(agia.b());
         }
     }
     
-    static FirebaseMessaging getInstance(final agfz agfz) {
+    static FirebaseMessaging getInstance(final agia agia) {
         synchronized (FirebaseMessaging.class) {
-            final FirebaseMessaging firebaseMessaging = (FirebaseMessaging)agfz.f((Class)FirebaseMessaging.class);
-            kgk.aX((Object)firebaseMessaging, (Object)"Firebase Messaging component is not present");
+            final FirebaseMessaging firebaseMessaging = (FirebaseMessaging)agia.f((Class)FirebaseMessaging.class);
+            khl.bb(firebaseMessaging, "Firebase Messaging component is not present");
             return firebaseMessaging;
         }
     }
@@ -101,18 +102,18 @@ public class FirebaseMessaging
     public static final void k(final Runnable runnable, final long n) {
         synchronized (FirebaseMessaging.class) {
             if (FirebaseMessaging.b == null) {
-                FirebaseMessaging.b = new ScheduledThreadPoolExecutor(1, (ThreadFactory)new emi("TAG", 2));
+                FirebaseMessaging.b = new ScheduledThreadPoolExecutor(1, (ThreadFactory)new emj("TAG", 2));
             }
             FirebaseMessaging.b.schedule(runnable, n, TimeUnit.SECONDS);
         }
     }
     
-    public static agli l(final Context context) {
+    public static agnj l(final Context context) {
         synchronized (FirebaseMessaging.class) {
-            if (FirebaseMessaging.p == null) {
-                FirebaseMessaging.p = new agli(context);
+            if (FirebaseMessaging.q == null) {
+                FirebaseMessaging.q = new agnj(context);
             }
-            return FirebaseMessaging.p;
+            return FirebaseMessaging.q;
         }
     }
     
@@ -124,34 +125,34 @@ public class FirebaseMessaging
         }
     }
     
-    final agks b() {
-        return l(this.d).a(this.d(), agkp.e(this.c));
+    final agmt b() {
+        return l(this.d).A(this.d(), agmq.e(this.c));
     }
     
     public final String c() {
         Object k = this.k;
         if (k != null) {
             try {
-                k = nmr.d(((agjf)k).a());
+                k = nnv.d(((aglg)k).a());
                 return (String)k;
             }
             catch (final InterruptedException k) {}
             catch (final ExecutionException ex) {}
             throw new IOException((Throwable)k);
         }
-        final agks b = this.b();
+        final agmt b = this.b();
         if (!this.j(b)) {
             return b.b;
         }
-        final String e = agkp.e(this.c);
-        Object f = this.q.f(e, new arvv(this, e, b));
+        final String e = agmq.e(this.c);
+        Object c = this.p.c(e, new aqtv(this, e, b));
         try {
-            f = nmr.d((nly)f);
-            return (String)f;
+            c = nnv.d((nnc)c);
+            return (String)c;
         }
-        catch (final InterruptedException f) {}
+        catch (final InterruptedException c) {}
         catch (final ExecutionException ex2) {}
-        throw new IOException((Throwable)f);
+        throw new IOException((Throwable)c);
     }
     
     public final String d() {
@@ -169,7 +170,7 @@ public class FirebaseMessaging
         if ("[DEFAULT]".equals(this.c.g())) {
             final Intent intent = new Intent("com.google.firebase.messaging.NEW_TOKEN");
             intent.putExtra("token", s);
-            agkg.b(intent, this.d, (Executor)rr.j);
+            agmh.b(intent, this.d, (Executor)rr.j);
         }
     }
     
@@ -180,7 +181,7 @@ public class FirebaseMessaging
     }
     
     public final void g() {
-        final agjf k = this.k;
+        final aglg k = this.k;
         if (k != null) {
             k.b();
             return;
@@ -192,7 +193,7 @@ public class FirebaseMessaging
     
     public final void h(final long n) {
         synchronized (this) {
-            k((Runnable)new agku(this, Math.min(Math.max(30L, n + n), FirebaseMessaging.j), 0), n);
+            k(new agmv(this, Math.min(Math.max(30L, n + n), FirebaseMessaging.j), 0), n);
             this.n = true;
         }
     }
@@ -201,11 +202,11 @@ public class FirebaseMessaging
         return this.l.b();
     }
     
-    final boolean j(final agks agks) {
-        if (agks != null) {
+    final boolean j(final agmt agmt) {
+        if (agmt != null) {
             final String c = this.h.c();
-            if (System.currentTimeMillis() <= agks.d + agks.a) {
-                if (c.equals(agks.c)) {
+            if (System.currentTimeMillis() <= agmt.d + agmt.a) {
+                if (c.equals(agmt.c)) {
                     return false;
                 }
             }

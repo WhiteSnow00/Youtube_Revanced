@@ -6,15 +6,15 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer extends agzi implements ahax
+public final class AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer extends ahbh implements ahcw
 {
     public static final AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer a;
-    public static final agzg basicThumbnailCustomStyleRenderer;
-    private static volatile ahbe i;
+    public static final ahbf basicThumbnailCustomStyleRenderer;
+    private static volatile ahdd i;
     public int b;
     public int c;
     public Object d;
-    public aorm e;
+    public aotp e;
     public int f;
     public boolean g;
     public int h;
@@ -22,8 +22,8 @@ public final class AndroidPushNotificationRendererOuterClass$BasicThumbnailCusto
     
     static {
         final AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer a2 = new AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer();
-        agzi.registerDefaultInstance((Class)AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.class, (agzi)(a = a2));
-        basicThumbnailCustomStyleRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)a2, (MessageLite)a2, (agzn)null, 179869979, ahcm.k, (Class)AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.class);
+        ahbh.registerDefaultInstance((Class)AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.class, (ahbh)(a = a2));
+        basicThumbnailCustomStyleRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)a2, (MessageLite)a2, (ahbm)null, 179869979, ahek.k, (Class)AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.class);
     }
     
     private AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer() {
@@ -31,20 +31,20 @@ public final class AndroidPushNotificationRendererOuterClass$BasicThumbnailCusto
         this.j = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte j = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe i;
+                final ahdd i;
                 if ((i = AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.i) == null) {
                     synchronized (AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.class) {
                         if (AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.i == null) {
-                            AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.i = (ahbe)new agzb((agzi)AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.a);
+                            AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.i = (ahdd)new ahba((ahbh)AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.a);
                         }
                     }
                 }
@@ -54,19 +54,19 @@ public final class AndroidPushNotificationRendererOuterClass$BasicThumbnailCusto
                 return AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.a;
             }
             case 4: {
-                return new agza((agzi)AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.a);
+                return new ahaz((ahbh)AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.a);
             }
             case 3: {
                 return new AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer();
             }
             case 2: {
-                return newMessageInfo((MessageLite)AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.a, "\u0001\u0007\u0001\u0001\u0001\u0007\u0007\u0000\u0000\u0001\u0001\u1409\u0000\u0002\u100c\u0001\u0003\u103e\u0000\u0004\u100c\u0006\u0005\u1007\u0005\u0006\u103a\u0000\u0007\u103a\u0000", new Object[] { "d", "c", "b", "e", "f", ampl.a(), "h", amom.g, "g" });
+                return newMessageInfo((MessageLite)AndroidPushNotificationRendererOuterClass$BasicThumbnailCustomStyleRenderer.a, "\u0001\u0007\u0001\u0001\u0001\u0007\u0007\u0000\u0000\u0001\u0001\u1409\u0000\u0002\u100c\u0001\u0003\u103e\u0000\u0004\u100c\u0006\u0005\u1007\u0005\u0006\u103a\u0000\u0007\u103a\u0000", new Object[] { "d", "c", "b", "e", "f", amrp.a(), "h", ampw.h, "g" });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    j = 0;
                 }
-                this.j = (byte)(b ? 1 : 0);
+                this.j = j;
                 return null;
             }
             case 0: {

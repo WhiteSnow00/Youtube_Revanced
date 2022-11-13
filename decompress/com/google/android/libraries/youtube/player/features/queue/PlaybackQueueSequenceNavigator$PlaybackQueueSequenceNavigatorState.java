@@ -16,7 +16,7 @@ public final class PlaybackQueueSequenceNavigator$PlaybackQueueSequenceNavigator
     public final WatchNextResponseModel a;
     
     static {
-        CREATOR = (Parcelable$Creator)new abcf(2);
+        CREATOR = (Parcelable$Creator)new abdz(2);
     }
     
     public PlaybackQueueSequenceNavigator$PlaybackQueueSequenceNavigatorState(final Parcel parcel) {

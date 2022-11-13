@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class BackgroundPromoRendererOuterClass
 {
-    public static final agzg backgroundPromoRenderer;
+    public static final ahbf backgroundPromoRenderer;
     
     static {
-        backgroundPromoRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ahwm.a, (MessageLite)ahwm.a, (agzn)null, 94317419, ahcm.k, (Class)ahwm.class);
+        backgroundPromoRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ahyk.a, (MessageLite)ahyk.a, (ahbm)null, 94317419, ahek.k, (Class)ahyk.class);
     }
     
     private BackgroundPromoRendererOuterClass() {

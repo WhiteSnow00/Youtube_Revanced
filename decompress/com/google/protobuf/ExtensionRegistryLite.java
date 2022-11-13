@@ -41,15 +41,15 @@ public class ExtensionRegistryLite
             if (c2 != null) {
                 return c2;
             }
-            return ExtensionRegistryLite.c = agyz.b(ExtensionRegistryLite.class);
+            return ExtensionRegistryLite.c = ahay.b((Class)ExtensionRegistryLite.class);
         }
     }
     
-    public agzg b(final MessageLite messageLite, final int n) {
-        return this.d.get(new agys(messageLite, n));
+    public ahbf b(final MessageLite messageLite, final int n) {
+        return this.d.get(new ahar((Object)messageLite, n));
     }
     
-    public final void c(final agzg agzg) {
-        this.d.put(new agys(agzg.a, agzg.a()), agzg);
+    public final void c(final ahbf ahbf) {
+        this.d.put(new ahar((Object)ahbf.a, ahbf.a()), ahbf);
     }
 }

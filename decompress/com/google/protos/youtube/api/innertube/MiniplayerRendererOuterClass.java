@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class MiniplayerRendererOuterClass
 {
-    public static final agzg miniplayerRenderer;
+    public static final ahbf miniplayerRenderer;
     
     static {
-        miniplayerRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amgd.a, (MessageLite)amgd.a, (agzn)null, 207720144, ahcm.k, (Class)amgd.class);
+        miniplayerRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)amih.a, (MessageLite)amih.a, (ahbm)null, 207720144, ahek.k, (Class)amih.class);
     }
     
     private MiniplayerRendererOuterClass() {

@@ -6,42 +6,42 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AboutThisAdEndpointOuterClass$AboutThisAdEndpoint extends agzi implements ahax
+public final class AboutThisAdEndpointOuterClass$AboutThisAdEndpoint extends ahbh implements ahcw
 {
     public static final AboutThisAdEndpointOuterClass$AboutThisAdEndpoint a;
-    public static final agzg aboutThisAdEndpoint;
-    private static volatile ahbe d;
+    public static final ahbf aboutThisAdEndpoint;
+    private static volatile ahdd d;
     public int b;
-    public anss c;
+    public anuv c;
     private int e;
-    private ahfw f;
+    private ahhu f;
     private byte g;
     
     static {
         final AboutThisAdEndpointOuterClass$AboutThisAdEndpoint a2 = new AboutThisAdEndpointOuterClass$AboutThisAdEndpoint();
-        agzi.registerDefaultInstance((Class)AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.class, (agzi)(a = a2));
-        aboutThisAdEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 366527935, ahcm.k, (Class)AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.class);
+        ahbh.registerDefaultInstance((Class)AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.class, (ahbh)(a = a2));
+        aboutThisAdEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 366527935, ahek.k, (Class)AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.class);
     }
     
     private AboutThisAdEndpointOuterClass$AboutThisAdEndpoint() {
         this.g = 2;
-        final agyc b = agyc.b;
+        final ahab b = ahab.b;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte g = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.d) == null) {
                     synchronized (AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.class) {
                         if (AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.d == null) {
-                            AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.d = (ahbe)new agzb((agzi)AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.a);
+                            AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.d = (ahdd)new ahba((ahbh)AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.a);
                         }
                     }
                 }
@@ -51,19 +51,19 @@ public final class AboutThisAdEndpointOuterClass$AboutThisAdEndpoint extends agz
                 return AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.a);
+                return new ahaz((ahbh)AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.a);
             }
             case 3: {
                 return new AboutThisAdEndpointOuterClass$AboutThisAdEndpoint();
             }
             case 2: {
-                return newMessageInfo((MessageLite)AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.a, "\u0001\u0003\u0000\u0001\u0002\u0005\u0003\u0000\u0000\u0002\u0002\u1409\u0001\u0004\u100c\u0003\u0005\u1409\u0004", new Object[] { "e", "f", "b", ahec.n, "c" });
+                return newMessageInfo((MessageLite)AboutThisAdEndpointOuterClass$AboutThisAdEndpoint.a, "\u0001\u0003\u0000\u0001\u0002\u0005\u0003\u0000\u0000\u0002\u0002\u1409\u0001\u0004\u100c\u0003\u0005\u1409\u0004", new Object[] { "e", "f", "b", ahga.n, "c" });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    g = 0;
                 }
-                this.g = (byte)(b ? 1 : 0);
+                this.g = g;
                 return null;
             }
             case 0: {

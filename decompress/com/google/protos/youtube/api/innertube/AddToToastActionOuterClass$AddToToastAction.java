@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AddToToastActionOuterClass$AddToToastAction extends agzi implements ahax
+public final class AddToToastActionOuterClass$AddToToastAction extends ahbh implements ahcw
 {
     public static final AddToToastActionOuterClass$AddToToastAction a;
-    public static final agzg addToToastAction;
-    private static volatile ahbe d;
+    public static final ahbf addToToastAction;
+    private static volatile ahdd d;
     public int b;
-    public ahmy c;
+    public ahow c;
     private byte e;
     
     static {
         final AddToToastActionOuterClass$AddToToastAction a2 = new AddToToastActionOuterClass$AddToToastAction();
-        agzi.registerDefaultInstance((Class)AddToToastActionOuterClass$AddToToastAction.class, (agzi)(a = a2));
-        addToToastAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 76623563, ahcm.k, (Class)AddToToastActionOuterClass$AddToToastAction.class);
+        ahbh.registerDefaultInstance((Class)AddToToastActionOuterClass$AddToToastAction.class, (ahbh)(a = a2));
+        addToToastAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 76623563, ahek.k, (Class)AddToToastActionOuterClass$AddToToastAction.class);
     }
     
     private AddToToastActionOuterClass$AddToToastAction() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = AddToToastActionOuterClass$AddToToastAction.d) == null) {
                     synchronized (AddToToastActionOuterClass$AddToToastAction.class) {
                         if (AddToToastActionOuterClass$AddToToastAction.d == null) {
-                            AddToToastActionOuterClass$AddToToastAction.d = (ahbe)new agzb((agzi)AddToToastActionOuterClass$AddToToastAction.a);
+                            AddToToastActionOuterClass$AddToToastAction.d = (ahdd)new ahba((ahbh)AddToToastActionOuterClass$AddToToastAction.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class AddToToastActionOuterClass$AddToToastAction extends agzi impl
                 return AddToToastActionOuterClass$AddToToastAction.a;
             }
             case 4: {
-                return new agza((agzi)AddToToastActionOuterClass$AddToToastAction.a);
+                return new ahaz((ahbh)AddToToastActionOuterClass$AddToToastAction.a);
             }
             case 3: {
                 return new AddToToastActionOuterClass$AddToToastAction();
@@ -58,9 +58,9 @@ public final class AddToToastActionOuterClass$AddToToastAction extends agzi impl
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

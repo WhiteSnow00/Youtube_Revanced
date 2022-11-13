@@ -16,7 +16,7 @@ public final class ControllerTouchEvent extends ControllerEvent
     public float f;
     
     static {
-        CREATOR = (Parcelable$Creator)new arao(12);
+        CREATOR = (Parcelable$Creator)new ardl(11);
     }
     
     public ControllerTouchEvent() {
@@ -30,6 +30,7 @@ public final class ControllerTouchEvent extends ControllerEvent
         return 28;
     }
     
+    @Override
     public void b(final Parcel parcel) {
         super.b(parcel);
         this.a = parcel.readInt();
@@ -42,6 +43,7 @@ public final class ControllerTouchEvent extends ControllerEvent
         return 0;
     }
     
+    @Override
     public void writeToParcel(final Parcel parcel, final int n) {
         super.writeToParcel(parcel, n);
         parcel.writeInt(this.a);

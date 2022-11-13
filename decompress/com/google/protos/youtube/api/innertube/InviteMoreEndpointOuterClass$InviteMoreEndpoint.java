@@ -6,49 +6,49 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class InviteMoreEndpointOuterClass$InviteMoreEndpoint extends agzi implements ahax
+public final class InviteMoreEndpointOuterClass$InviteMoreEndpoint extends ahbh implements ahcw
 {
     public static final InviteMoreEndpointOuterClass$InviteMoreEndpoint a;
-    private static volatile ahbe b;
-    public static final agzg inviteMoreEndpoint;
+    private static volatile ahdd b;
+    public static final ahbf inviteMoreEndpoint;
     private int c;
-    private anss d;
+    private anuv d;
     private byte e;
     
     static {
         final InviteMoreEndpointOuterClass$InviteMoreEndpoint a2 = new InviteMoreEndpointOuterClass$InviteMoreEndpoint();
-        agzi.registerDefaultInstance((Class)InviteMoreEndpointOuterClass$InviteMoreEndpoint.class, (agzi)(a = a2));
-        inviteMoreEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 77296946, ahcm.k, (Class)InviteMoreEndpointOuterClass$InviteMoreEndpoint.class);
+        ahbh.registerDefaultInstance((Class)InviteMoreEndpointOuterClass$InviteMoreEndpoint.class, (ahbh)(a = a2));
+        inviteMoreEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 77296946, ahek.k, (Class)InviteMoreEndpointOuterClass$InviteMoreEndpoint.class);
     }
     
     private InviteMoreEndpointOuterClass$InviteMoreEndpoint() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b2;
-                if ((b2 = InviteMoreEndpointOuterClass$InviteMoreEndpoint.b) == null) {
+                final ahdd b;
+                if ((b = InviteMoreEndpointOuterClass$InviteMoreEndpoint.b) == null) {
                     synchronized (InviteMoreEndpointOuterClass$InviteMoreEndpoint.class) {
                         if (InviteMoreEndpointOuterClass$InviteMoreEndpoint.b == null) {
-                            InviteMoreEndpointOuterClass$InviteMoreEndpoint.b = (ahbe)new agzb((agzi)InviteMoreEndpointOuterClass$InviteMoreEndpoint.a);
+                            InviteMoreEndpointOuterClass$InviteMoreEndpoint.b = (ahdd)new ahba((ahbh)InviteMoreEndpointOuterClass$InviteMoreEndpoint.a);
                         }
                     }
                 }
-                return b2;
+                return b;
             }
             case 5: {
                 return InviteMoreEndpointOuterClass$InviteMoreEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)InviteMoreEndpointOuterClass$InviteMoreEndpoint.a);
+                return new ahaz((ahbh)InviteMoreEndpointOuterClass$InviteMoreEndpoint.a);
             }
             case 3: {
                 return new InviteMoreEndpointOuterClass$InviteMoreEndpoint();
@@ -58,9 +58,9 @@ public final class InviteMoreEndpointOuterClass$InviteMoreEndpoint extends agzi 
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

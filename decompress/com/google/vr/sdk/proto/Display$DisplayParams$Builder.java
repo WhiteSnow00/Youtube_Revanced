@@ -4,10 +4,14 @@
 
 package com.google.vr.sdk.proto;
 
-public final class Display$DisplayParams$Builder extends agza implements ahax
+public final class Display$DisplayParams$Builder extends ahaz implements ahcw
 {
     private Display$DisplayParams$Builder() {
-        super((agzi)Display$DisplayParams.access$000());
+        super((ahbh)Display$DisplayParams.access$000());
+    }
+    
+    public Display$DisplayParams$Builder(final Display$1 display$1) {
+        this();
     }
     
     public float getXPpi() {

@@ -6,47 +6,47 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AccountLinkCommandOuterClass$AccountLinkCommand extends agzi implements ahax
+public final class AccountLinkCommandOuterClass$AccountLinkCommand extends ahbh implements ahcw
 {
     public static final AccountLinkCommandOuterClass$AccountLinkCommand a;
-    public static final agzg accountLinkCommand;
-    private static volatile ahbe h;
+    public static final ahbf accountLinkCommand;
+    private static volatile ahdd h;
     public int b;
-    public aioe c;
-    public aioe d;
+    public aiqj c;
+    public aiqj d;
     public String e;
-    public agzy f;
+    public ahbx f;
     public String g;
-    private aioe i;
+    private aiqj i;
     private byte j;
     
     static {
         final AccountLinkCommandOuterClass$AccountLinkCommand a2 = new AccountLinkCommandOuterClass$AccountLinkCommand();
-        agzi.registerDefaultInstance((Class)AccountLinkCommandOuterClass$AccountLinkCommand.class, (agzi)(a = a2));
-        accountLinkCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 194259413, ahcm.k, (Class)AccountLinkCommandOuterClass$AccountLinkCommand.class);
+        ahbh.registerDefaultInstance((Class)AccountLinkCommandOuterClass$AccountLinkCommand.class, (ahbh)(a = a2));
+        accountLinkCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 194259413, ahek.k, (Class)AccountLinkCommandOuterClass$AccountLinkCommand.class);
     }
     
     private AccountLinkCommandOuterClass$AccountLinkCommand() {
         this.j = 2;
         this.e = "";
-        this.f = agzi.emptyProtobufList();
+        this.f = ahbh.emptyProtobufList();
         this.g = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte j = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe h;
+                final ahdd h;
                 if ((h = AccountLinkCommandOuterClass$AccountLinkCommand.h) == null) {
                     synchronized (AccountLinkCommandOuterClass$AccountLinkCommand.class) {
                         if (AccountLinkCommandOuterClass$AccountLinkCommand.h == null) {
-                            AccountLinkCommandOuterClass$AccountLinkCommand.h = (ahbe)new agzb((agzi)AccountLinkCommandOuterClass$AccountLinkCommand.a);
+                            AccountLinkCommandOuterClass$AccountLinkCommand.h = (ahdd)new ahba((ahbh)AccountLinkCommandOuterClass$AccountLinkCommand.a);
                         }
                     }
                 }
@@ -56,7 +56,7 @@ public final class AccountLinkCommandOuterClass$AccountLinkCommand extends agzi 
                 return AccountLinkCommandOuterClass$AccountLinkCommand.a;
             }
             case 4: {
-                return new agza((agzi)AccountLinkCommandOuterClass$AccountLinkCommand.a);
+                return new ahaz((ahbh)AccountLinkCommandOuterClass$AccountLinkCommand.a);
             }
             case 3: {
                 return new AccountLinkCommandOuterClass$AccountLinkCommand();
@@ -66,9 +66,9 @@ public final class AccountLinkCommandOuterClass$AccountLinkCommand extends agzi 
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    j = 0;
                 }
-                this.j = (byte)(b ? 1 : 0);
+                this.j = j;
                 return null;
             }
             case 0: {

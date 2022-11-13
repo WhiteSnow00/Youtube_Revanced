@@ -13,7 +13,7 @@ public final class ControllerTrackingStatusEvent extends ControllerEvent
     public int a;
     
     static {
-        CREATOR = (Parcelable$Creator)new arao(13);
+        CREATOR = (Parcelable$Creator)new ardl(12);
     }
     
     public ControllerTrackingStatusEvent() {
@@ -29,6 +29,7 @@ public final class ControllerTrackingStatusEvent extends ControllerEvent
         return 20;
     }
     
+    @Override
     public void b(final Parcel parcel) {
         final int dataPosition = parcel.dataPosition();
         final int int1 = parcel.readInt();
@@ -41,6 +42,7 @@ public final class ControllerTrackingStatusEvent extends ControllerEvent
         return 0;
     }
     
+    @Override
     public void writeToParcel(final Parcel parcel, final int n) {
         final int dataPosition = parcel.dataPosition();
         parcel.writeInt(20);

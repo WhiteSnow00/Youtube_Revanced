@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ApplicationHelpEndpointOuterClass
 {
-    public static final agzg applicationHelpEndpoint;
+    public static final ahbf applicationHelpEndpoint;
     
     static {
-        applicationHelpEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ahti.a, (MessageLite)ahti.a, (agzn)null, 79216710, ahcm.k, (Class)ahti.class);
+        applicationHelpEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)ahvg.a, (MessageLite)ahvg.a, (ahbm)null, 79216710, ahek.k, (Class)ahvg.class);
     }
     
     private ApplicationHelpEndpointOuterClass() {

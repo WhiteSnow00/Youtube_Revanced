@@ -4,12 +4,12 @@
 
 package com.google.vr.sdk.proto;
 
-final class Preferences$DeveloperPrefs$MotophoPatchMode$MotophoPatchModeVerifier implements agzo
+final class Preferences$DeveloperPrefs$MotophoPatchMode$MotophoPatchModeVerifier implements ahbn
 {
-    static final agzo INSTANCE;
+    static final ahbn INSTANCE;
     
     static {
-        INSTANCE = (agzo)new Preferences$DeveloperPrefs$MotophoPatchMode$MotophoPatchModeVerifier();
+        INSTANCE = (ahbn)new Preferences$DeveloperPrefs$MotophoPatchMode$MotophoPatchModeVerifier();
     }
     
     private Preferences$DeveloperPrefs$MotophoPatchMode$MotophoPatchModeVerifier() {

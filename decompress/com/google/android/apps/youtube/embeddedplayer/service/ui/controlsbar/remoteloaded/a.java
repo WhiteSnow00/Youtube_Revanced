@@ -70,7 +70,7 @@ public final class a extends ViewGroup implements View$OnClickListener
     }
     
     public final void onClick(final View view) {
-        adkp.R(this.i != null, "listener not set for ControlsOverlay");
+        adkp.R(this.i != null, (Object)"listener not set for ControlsOverlay");
         final ImageButton h = this.h;
         if (view == h) {
             this.b(h.isSelected() ^ true);

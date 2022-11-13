@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class MessageRendererOuterClass
 {
-    public static final agzg messageRenderer;
+    public static final ahbf messageRenderer;
     
     static {
-        messageRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amfe.a, (MessageLite)amfe.a, (agzn)null, 58508690, ahcm.k, (Class)amfe.class);
+        messageRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)amhi.a, (MessageLite)amhi.a, (ahbm)null, 58508690, ahek.k, (Class)amhi.class);
     }
     
     private MessageRendererOuterClass() {

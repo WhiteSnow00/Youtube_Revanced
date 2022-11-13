@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class SignInEndpointOuterClass
 {
-    public static final agzg signInEndpoint;
+    public static final ahbf signInEndpoint;
     
     static {
-        signInEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)aoez.a, (MessageLite)aoez.a, (agzn)null, 49706687, ahcm.k, (Class)aoez.class);
+        signInEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)aohc.a, (MessageLite)aohc.a, (ahbm)null, 49706687, ahek.k, (Class)aohc.class);
     }
     
     private SignInEndpointOuterClass() {

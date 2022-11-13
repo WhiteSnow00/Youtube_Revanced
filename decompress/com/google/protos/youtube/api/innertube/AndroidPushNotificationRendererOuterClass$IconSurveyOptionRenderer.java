@@ -6,42 +6,42 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer extends agzi implements ahax
+public final class AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer extends ahbh implements ahcw
 {
     public static final AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer a;
-    private static volatile ahbe g;
-    public static final agzg iconSurveyOptionRenderer;
+    private static volatile ahdd g;
+    public static final ahbf iconSurveyOptionRenderer;
     public int b;
-    public akbf c;
-    public aioe d;
-    public aioe e;
-    public alts f;
+    public akdi c;
+    public aiqj d;
+    public aiqj e;
+    public alvw f;
     private byte h;
     
     static {
         final AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer a2 = new AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer();
-        agzi.registerDefaultInstance((Class)AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer.class, (agzi)(a = a2));
-        iconSurveyOptionRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)a2, (MessageLite)a2, (agzn)null, 202680135, ahcm.k, (Class)AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer.class);
+        ahbh.registerDefaultInstance((Class)AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer.class, (ahbh)(a = a2));
+        iconSurveyOptionRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)a2, (MessageLite)a2, (ahbm)null, 202680135, ahek.k, (Class)AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer.class);
     }
     
     private AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer() {
         this.h = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte h = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe g;
+                final ahdd g;
                 if ((g = AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer.g) == null) {
                     synchronized (AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer.class) {
                         if (AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer.g == null) {
-                            AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer.g = (ahbe)new agzb((agzi)AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer.a);
+                            AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer.g = (ahdd)new ahba((ahbh)AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer.a);
                         }
                     }
                 }
@@ -51,7 +51,7 @@ public final class AndroidPushNotificationRendererOuterClass$IconSurveyOptionRen
                 return AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer.a;
             }
             case 4: {
-                return new agza((agzi)AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer.a);
+                return new ahaz((ahbh)AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer.a);
             }
             case 3: {
                 return new AndroidPushNotificationRendererOuterClass$IconSurveyOptionRenderer();
@@ -61,9 +61,9 @@ public final class AndroidPushNotificationRendererOuterClass$IconSurveyOptionRen
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    h = 0;
                 }
-                this.h = (byte)(b ? 1 : 0);
+                this.h = h;
                 return null;
             }
             case 0: {

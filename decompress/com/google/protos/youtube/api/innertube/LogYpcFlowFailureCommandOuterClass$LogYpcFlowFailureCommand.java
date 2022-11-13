@@ -6,11 +6,11 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand extends agzi implements ahax
+public final class LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand extends ahbh implements ahcw
 {
     public static final LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand a;
-    private static volatile ahbe f;
-    public static final agzg logYpcFlowFailureCommand;
+    private static volatile ahdd f;
+    public static final ahbf logYpcFlowFailureCommand;
     public int b;
     public Object c;
     public int d;
@@ -19,8 +19,8 @@ public final class LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand e
     
     static {
         final LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand a2 = new LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand();
-        agzi.registerDefaultInstance((Class)LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.class, (agzi)(a = a2));
-        logYpcFlowFailureCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 427587276, ahcm.k, (Class)LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.class);
+        ahbh.registerDefaultInstance((Class)LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.class, (ahbh)(a = a2));
+        logYpcFlowFailureCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 427587276, ahek.k, (Class)LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.class);
     }
     
     private LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand() {
@@ -28,18 +28,18 @@ public final class LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand e
         this.e = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe f;
+                final ahdd f;
                 if ((f = LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.f) == null) {
                     synchronized (LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.class) {
                         if (LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.f == null) {
-                            LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.f = (ahbe)new agzb((agzi)LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.a);
+                            LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.f = (ahdd)new ahba((ahbh)LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.a);
                         }
                     }
                 }
@@ -49,13 +49,13 @@ public final class LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand e
                 return LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.a;
             }
             case 4: {
-                return new agza((agzi)LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.a);
+                return new ahaz((ahbh)LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.a);
             }
             case 3: {
                 return new LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand();
             }
             case 2: {
-                return newMessageInfo((MessageLite)LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.a, "\u0001\u0003\u0001\u0001\u0001\u0003\u0003\u0000\u0000\u0000\u0001\u103d\u0000\u0002\u100c\u0001\u0003\u1008\u0002", new Object[] { "c", "b", "g", "d", apsc.i, "e" });
+                return newMessageInfo((MessageLite)LogYpcFlowFailureCommandOuterClass$LogYpcFlowFailureCommand.a, "\u0001\u0003\u0001\u0001\u0001\u0003\u0003\u0000\u0000\u0000\u0001\u103d\u0000\u0002\u100c\u0001\u0003\u1008\u0002", new Object[] { "c", "b", "g", "d", apuh.j, "e" });
             }
             case 1: {
                 return null;

@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ApplicationSettingsEndpointOuterClass
 {
-    public static final agzg applicationSettingsEndpoint;
+    public static final ahbf applicationSettingsEndpoint;
     
     static {
-        applicationSettingsEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ahtj.a, (MessageLite)ahtj.a, (agzn)null, 50078082, ahcm.k, (Class)ahtj.class);
+        applicationSettingsEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)ahvh.a, (MessageLite)ahvh.a, (ahbm)null, 50078082, ahek.k, (Class)ahvh.class);
     }
     
     private ApplicationSettingsEndpointOuterClass() {

@@ -29,7 +29,7 @@ public class ControllerEventPacket implements Parcelable
     static {
         ControllerEventPacket.j = new ArrayDeque();
         ControllerEventPacket.k = new Object();
-        CREATOR = (Parcelable$Creator)new arao(5);
+        CREATOR = (Parcelable$Creator)new ardl(4);
     }
     
     public ControllerEventPacket() {
@@ -76,23 +76,23 @@ public class ControllerEventPacket implements Parcelable
         h(this.l = parcel.readInt());
         final int n = 0;
         for (int i = 0; i < this.l; ++i) {
-            ((ControllerEvent)this.m[i]).b(parcel);
+            this.m[i].b(parcel);
         }
         h(this.n = parcel.readInt());
         for (int j = 0; j < this.n; ++j) {
-            ((ControllerEvent)this.o[j]).b(parcel);
+            this.o[j].b(parcel);
         }
         h(this.p = parcel.readInt());
         for (int k = 0; k < this.p; ++k) {
-            ((ControllerEvent)this.q[k]).b(parcel);
+            this.q[k].b(parcel);
         }
         h(this.r = parcel.readInt());
         for (int l = 0; l < this.r; ++l) {
-            ((ControllerEvent)this.s[l]).b(parcel);
+            this.s[l].b(parcel);
         }
         h(this.t = parcel.readInt());
         for (int n2 = n; n2 < this.t; ++n2) {
-            ((ControllerEvent)this.u[n2]).b(parcel);
+            this.u[n2].b(parcel);
         }
     }
     
@@ -110,11 +110,11 @@ public class ControllerEventPacket implements Parcelable
     }
     
     public void e(final int n) {
-        g(n, this.l, (ControllerEvent[])this.m);
-        g(n, this.n, (ControllerEvent[])this.o);
-        g(n, this.p, (ControllerEvent[])this.q);
-        g(n, this.r, (ControllerEvent[])this.s);
-        g(n, this.t, (ControllerEvent[])this.u);
+        g(n, this.l, this.m);
+        g(n, this.n, this.o);
+        g(n, this.p, this.q);
+        g(n, this.r, this.s);
+        g(n, this.t, this.u);
     }
     
     public final ControllerButtonEvent f(final int n) {
@@ -129,23 +129,23 @@ public class ControllerEventPacket implements Parcelable
         parcel.writeInt(this.l);
         final int n2 = 0;
         for (int i = 0; i < this.l; ++i) {
-            ((ControllerEvent)this.m[i]).writeToParcel(parcel, n);
+            this.m[i].writeToParcel(parcel, n);
         }
         parcel.writeInt(this.n);
         for (int j = 0; j < this.n; ++j) {
-            ((ControllerEvent)this.o[j]).writeToParcel(parcel, n);
+            this.o[j].writeToParcel(parcel, n);
         }
         parcel.writeInt(this.p);
         for (int k = 0; k < this.p; ++k) {
-            ((ControllerEvent)this.q[k]).writeToParcel(parcel, n);
+            this.q[k].writeToParcel(parcel, n);
         }
         parcel.writeInt(this.r);
         for (int l = 0; l < this.r; ++l) {
-            ((ControllerEvent)this.s[l]).writeToParcel(parcel, n);
+            this.s[l].writeToParcel(parcel, n);
         }
         parcel.writeInt(this.t);
         for (int n3 = n2; n3 < this.t; ++n3) {
-            ((ControllerEvent)this.u[n3]).writeToParcel(parcel, n);
+            this.u[n3].writeToParcel(parcel, n);
         }
     }
 }

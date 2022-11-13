@@ -8,12 +8,12 @@ import com.google.protobuf.MessageLite;
 
 public final class LiveChatItemRenderer
 {
-    public static final agzg liveChatPaidMessageFooterRenderer;
-    public static final agzg liveChatTextMessageRenderer;
+    public static final ahbf liveChatPaidMessageFooterRenderer;
+    public static final ahbf liveChatTextMessageRenderer;
     
     static {
-        liveChatTextMessageRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)alol.a, (MessageLite)alol.a, (agzn)null, 117300536, ahcm.k, (Class)alol.class);
-        liveChatPaidMessageFooterRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)aloj.a, (MessageLite)aloj.a, (agzn)null, 190696545, ahcm.k, (Class)aloj.class);
+        liveChatTextMessageRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)alqo.a, (MessageLite)alqo.a, (ahbm)null, 117300536, ahek.k, (Class)alqo.class);
+        liveChatPaidMessageFooterRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)alqm.a, (MessageLite)alqm.a, (ahbm)null, 190696545, ahek.k, (Class)alqm.class);
     }
     
     private LiveChatItemRenderer() {

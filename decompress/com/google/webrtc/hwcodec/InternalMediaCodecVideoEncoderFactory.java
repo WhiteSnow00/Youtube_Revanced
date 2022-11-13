@@ -4,7 +4,6 @@
 
 package com.google.webrtc.hwcodec;
 
-import java.util.Iterator;
 import java.util.Collection;
 import java.util.ArrayList;
 import org.webrtc.VideoEncoderFactory$_CC;
@@ -24,19 +23,19 @@ public class InternalMediaCodecVideoEncoderFactory implements VideoEncoderFactor
 {
     public static final List a;
     private final Map b;
-    private final aeyr c;
-    private final aeyr d;
-    private final afcs e;
-    private final afcw f;
-    private final aepj g;
+    private final afaq c;
+    private final afaq d;
+    private final afer e;
+    private final afev f;
+    private final afhd g;
     
     static {
         a = Arrays.asList("SAMSUNG-SGH-I337", "Nexus 7", "Nexus 4");
     }
     
-    public InternalMediaCodecVideoEncoderFactory(final aeyr d, final aepj g, final afcs e, final afcw f, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4) {
+    public InternalMediaCodecVideoEncoderFactory(final afaq d, final afhd g, final afer e, final afev f, final byte[] array, final byte[] array2, final byte[] array3) {
         this.b = new HashMap();
-        this.c = agnj.E((aeyr)ypg.q);
+        this.c = adyf.A((afaq)yrg.q);
         Logging.a("IMCVideoEncoderFactory", "InternalMediaCodecVideoEncoderFactory ctor");
         this.d = d;
         this.g = g;
@@ -44,109 +43,112 @@ public class InternalMediaCodecVideoEncoderFactory implements VideoEncoderFactor
         this.f = f;
     }
     
-    public static arbw a(final arbu arbu, final String d, final arbs arbs) {
-        final agza builder = ((agzi)arbw.a).createBuilder();
+    public static arek a(final arei arei, final String d, final areh areh) {
+        final ahaz builder = ((ahbh)arek.a).createBuilder();
         builder.copyOnWrite();
-        final arbw arbw = (arbw)builder.instance;
-        arbw.c = arbu.g;
-        arbw.b |= 0x1;
+        final arek arek = (arek)builder.instance;
+        arek.c = arei.g;
+        arek.b |= 0x1;
         builder.copyOnWrite();
-        final arbw arbw2 = (arbw)builder.instance;
-        arbw2.b |= 0x2;
-        arbw2.d = d;
+        final arek arek2 = (arek)builder.instance;
+        arek2.b |= 0x2;
+        arek2.d = d;
         builder.copyOnWrite();
-        final arbw arbw3 = (arbw)builder.instance;
-        arbw3.e = arbs.d;
-        arbw3.b |= 0x10;
+        final arek arek3 = (arek)builder.instance;
+        arek3.e = areh.d;
+        arek3.b |= 0x10;
         builder.copyOnWrite();
-        final arbw arbw4 = (arbw)builder.instance;
-        arbw4.b |= 0x20;
-        arbw4.f = 3600;
+        final arek arek4 = (arek)builder.instance;
+        arek4.b |= 0x20;
+        arek4.f = 3600;
         builder.copyOnWrite();
-        final arbw arbw5 = (arbw)builder.instance;
-        arbw5.b |= 0x40;
-        arbw5.g = 0;
+        final arek arek5 = (arek)builder.instance;
+        arek5.b |= 0x40;
+        arek5.g = 0;
         builder.copyOnWrite();
-        final arbw arbw6 = (arbw)builder.instance;
-        arbw6.b |= 0x80;
-        arbw6.h = 3000000000L;
-        return (arbw)builder.build();
+        final arek arek6 = (arek)builder.instance;
+        arek6.b |= 0x80;
+        arek6.h = 3000000000L;
+        return (arek)builder.build();
     }
     
-    private final arcs b(final arbu arbu) {
-        if (this.b.containsKey(arbu)) {
-            return this.b.get(arbu);
+    private final arfg b(final arei arei) {
+        if (this.b.containsKey(arei)) {
+            return this.b.get(arei);
         }
-        Logging.a("IMCVideoEncoderFactory", "Searching HW encoder for ".concat(arct.c(arbu)));
-        arcs arcs = null;
-        Label_0391: {
+        Logging.a("IMCVideoEncoderFactory", "Searching HW encoder for ".concat(arfh.c(arei)));
+        arfg arfg = null;
+        Label_0411: {
             try {
                 final MediaCodecInfo[] array = (MediaCodecInfo[])this.c.a();
                 if (array == null) {
                     Logging.b("IMCVideoEncoderFactory", "Empty codec info");
-                    arcs = arcs.a;
+                    arfg = arfg.a;
                 }
                 else {
-                    for (final MediaCodecInfo mediaCodecInfo : array) {
+                    for (int i = 0; i < array.length; ++i) {
+                        final MediaCodecInfo mediaCodecInfo = array[i];
                         if (mediaCodecInfo != null && mediaCodecInfo.isEncoder()) {
-                            final boolean e = arct.e(mediaCodecInfo, arbu);
-                            final arbw arbw = null;
-                            arbw arbw2 = null;
-                            Label_0235: {
+                            final boolean e = arfh.e(mediaCodecInfo, arei);
+                            final arek arek = null;
+                            arek arek2 = null;
+                            Label_0239: {
                                 if (!e) {
-                                    arbw2 = arbw;
+                                    arek2 = arek;
                                 }
                                 else {
-                                    final afcr a = this.e.a((Object)arbu);
+                                    final afeq a = this.e.a((Object)arei);
                                     if (a == null) {
-                                        arbw2 = arbw;
+                                        arek2 = arek;
                                     }
                                     else {
                                         final String name = mediaCodecInfo.getName();
                                         Logging.a("IMCVideoEncoderFactory", "Found candidate encoder ".concat(String.valueOf(name)));
                                         final int size = ((List)a).size();
                                         int n = 0;
+                                        boolean startsWith;
                                         do {
-                                            arbw2 = arbw;
+                                            arek2 = arek;
                                             if (n >= size) {
-                                                break Label_0235;
+                                                break Label_0239;
                                             }
-                                            arbw2 = (arbw)((List)a).get(n);
+                                            arek2 = (arek)((List)a).get(n);
+                                            startsWith = name.startsWith(arek2.d);
                                             ++n;
-                                        } while (!name.startsWith(arbw2.d));
+                                        } while (!startsWith);
                                         Logging.a("IMCVideoEncoderFactory", "Found target encoder ".concat(String.valueOf(name)));
                                     }
                                 }
                             }
-                            if (arbw2 != null) {
+                            if (arek2 != null) {
                                 final String name2 = mediaCodecInfo.getName();
-                                arbu arbu2;
-                                if ((arbu2 = arbu.b(arbw2.c)) == null) {
-                                    arbu2 = arbu.a;
+                                arei arei2;
+                                if ((arei2 = arei.b(arek2.c)) == null) {
+                                    arei2 = arei.a;
                                 }
                                 try {
-                                    final MediaCodecInfo$CodecCapabilities capabilitiesForType = mediaCodecInfo.getCapabilitiesForType(arct.c(arbu2));
-                                    arcs = new arcs(name2, arct.b(arct.d, capabilitiesForType.colorFormats), arct.b(arct.c, capabilitiesForType.colorFormats), arbw2, arbu2 == arbu.d && name2.startsWith("OMX.Exynos."));
+                                    final MediaCodecInfo$CodecCapabilities capabilitiesForType = mediaCodecInfo.getCapabilitiesForType(arfh.c(arei2));
+                                    arfg = new arfg(name2, arfh.b(arfh.d, capabilitiesForType.colorFormats), arfh.b(arfh.c, capabilitiesForType.colorFormats), arek2, arei2 == arei.d && name2.startsWith("OMX.Exynos."));
                                 }
                                 catch (final IllegalArgumentException ex) {
                                     Logging.e("IMCVideoEncoderFactory", "Cannot retrieve encoder capabilities.", (Throwable)ex);
-                                    arcs = arcs.a;
+                                    arfg = arfg.a;
                                 }
-                                break Label_0391;
+                                break Label_0411;
                             }
                         }
                     }
-                    arcs = arcs.a;
+                    arfg = arfg.a;
                 }
             }
             catch (final Exception ex2) {
                 Logging.c("IMCVideoEncoderFactory", "Cannot retrieve encoder codec info", (Throwable)ex2);
-                arcs = arcs.a;
+                arfg = arfg.a;
             }
         }
-        this.b.put(arbu, arcs);
-        Logging.a("IMCVideoEncoderFactory", "Search result: ".concat(arcs.toString()));
-        return arcs;
+        this.b.put(arei, arfg);
+        Logging.a("IMCVideoEncoderFactory", "Search result: ".concat(arfg.toString()));
+        return arfg;
     }
     
     private static native boolean nativeIsSameH264Profile(final Map p0, final Map p1);
@@ -154,17 +156,17 @@ public class InternalMediaCodecVideoEncoderFactory implements VideoEncoderFactor
     public final VideoEncoder createEncoder(VideoCodecInfo videoCodecInfo) {
         Logging.a("IMCVideoEncoderFactory", "createEncoder for: ".concat(String.valueOf(videoCodecInfo.a)));
         try {
-            final arbu r = aqqm.r(videoCodecInfo.a);
-            final arcs b = this.b(r);
+            final arei r = aqsy.r(videoCodecInfo.a);
+            final arfg b = this.b(r);
             if (!b.b) {
                 Logging.b("IMCVideoEncoderFactory", "Unsupported encoder: ".concat(String.valueOf(videoCodecInfo.a)));
                 return null;
             }
             boolean b2 = false;
-            Label_0194: {
-                if (r == arbu.d) {
-                    final boolean nativeIsSameH264Profile = nativeIsSameH264Profile(videoCodecInfo.b, arct.d(r, true));
-                    final boolean nativeIsSameH264Profile2 = nativeIsSameH264Profile(videoCodecInfo.b, arct.d(r, false));
+            Label_0197: {
+                if (r == arei.d) {
+                    final boolean nativeIsSameH264Profile = nativeIsSameH264Profile(videoCodecInfo.b, arfh.d(r, true));
+                    final boolean nativeIsSameH264Profile2 = nativeIsSameH264Profile(videoCodecInfo.b, arfh.d(r, false));
                     final boolean g = b.g;
                     videoCodecInfo = (VideoCodecInfo)new StringBuilder("h264HighProfileRequested: ");
                     ((StringBuilder)videoCodecInfo).append(nativeIsSameH264Profile);
@@ -176,7 +178,7 @@ public class InternalMediaCodecVideoEncoderFactory implements VideoEncoderFactor
                     if (nativeIsSameH264Profile) {
                         if (g) {
                             b2 = true;
-                            break Label_0194;
+                            break Label_0197;
                         }
                     }
                     else if (!nativeIsSameH264Profile2) {
@@ -190,26 +192,26 @@ public class InternalMediaCodecVideoEncoderFactory implements VideoEncoderFactor
             final String c = b.c;
             final Integer d = b.d;
             final Integer e = b.e;
-            final arbw f = b.f;
-            if ((videoCodecInfo = (VideoCodecInfo)arbs.b(f.e)) == null) {
-                videoCodecInfo = (VideoCodecInfo)arbs.a;
+            final arek f = b.f;
+            if ((videoCodecInfo = (VideoCodecInfo)areh.b(f.e)) == null) {
+                videoCodecInfo = (VideoCodecInfo)areh.a;
             }
-            final int ordinal = ((arbs)videoCodecInfo).ordinal();
+            final int ordinal = ((areh)videoCodecInfo).ordinal();
             if (ordinal != 0) {
                 if (ordinal != 1) {
                     if (ordinal != 2) {
                         throw new IllegalArgumentException("Unknown bitrate adjuster type.");
                     }
-                    videoCodecInfo = (VideoCodecInfo)new arce();
+                    videoCodecInfo = (VideoCodecInfo)new ares();
                 }
                 else {
-                    videoCodecInfo = (VideoCodecInfo)new arcf();
+                    videoCodecInfo = (VideoCodecInfo)new aret();
                 }
             }
             else {
-                videoCodecInfo = (VideoCodecInfo)new arcc();
+                videoCodecInfo = (VideoCodecInfo)new areq();
             }
-            return (VideoEncoder)new InternalMediaCodecVideoEncoder(c, r, d, e, b2, f, (arcc)videoCodecInfo, this.d, this.g, (afcr)this.f.getOrDefault((Object)r, (Object)afcr.q()), null, null, null, null);
+            return (VideoEncoder)new InternalMediaCodecVideoEncoder(c, r, d, e, b2, f, (areq)videoCodecInfo, this.d, this.g, (afeq)this.f.getOrDefault(r, afeq.q()), null, null, null);
         }
         catch (final IllegalArgumentException ex) {
             Logging.c("IMCVideoEncoderFactory", "Unknown codec type: ".concat(String.valueOf(videoCodecInfo.a)), (Throwable)ex);
@@ -217,22 +219,30 @@ public class InternalMediaCodecVideoEncoderFactory implements VideoEncoderFactor
         }
     }
     
+    public final VideoEncoderFactory$VideoEncoderSelector getEncoderSelector() {
+        return null;
+    }
+    
+    public final VideoCodecInfo[] getImplementations() {
+        return VideoEncoderFactory$_CC.$default$getImplementations((VideoEncoderFactory)this);
+    }
+    
     public final VideoCodecInfo[] getSupportedCodecs() {
         final ArrayList list = new ArrayList();
-        final afie k = arct.a.k();
-        while (((Iterator)k).hasNext()) {
-            final arbu arbu = (arbu)((Iterator)k).next();
-            final arcs b = this.b(arbu);
+        final afke k = arfh.a.k();
+        while (k.hasNext()) {
+            final arei arei = k.next();
+            final arfg b = this.b(arei);
             ArrayList list2;
             if (!b.b) {
                 list2 = new ArrayList();
             }
             else {
                 list2 = new ArrayList();
-                if (arbu == arbu.d && b.g) {
-                    list2.add(new VideoCodecInfo(arbu.name(), arct.d(arbu, true)));
+                if (arei == arei.d && b.g) {
+                    list2.add(new VideoCodecInfo(arei.name(), arfh.d(arei, true)));
                 }
-                list2.add(new VideoCodecInfo(arbu.name(), arct.d(arbu, false)));
+                list2.add(new VideoCodecInfo(arei.name(), arfh.d(arei, false)));
             }
             list.addAll(list2);
         }

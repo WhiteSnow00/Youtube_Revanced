@@ -114,6 +114,7 @@ public final class NativeCallbacks implements ControllerServiceBridge$Callbacks
         }
     }
     
+    @Override
     public final void onControllerEventPacket(final ControllerEventPacket controllerEventPacket) {
         synchronized (this) {
             if (this.b) {
@@ -123,6 +124,7 @@ public final class NativeCallbacks implements ControllerServiceBridge$Callbacks
         }
     }
     
+    @Override
     public final void onControllerEventPacket2(final ControllerEventPacket2 controllerEventPacket2) {
         monitorenter(this);
         try {
@@ -179,6 +181,7 @@ public final class NativeCallbacks implements ControllerServiceBridge$Callbacks
         }
     }
     
+    @Override
     public final void onControllerRecentered(final ControllerOrientationEvent controllerOrientationEvent) {
         synchronized (this) {
             if (!this.b) {
@@ -187,6 +190,7 @@ public final class NativeCallbacks implements ControllerServiceBridge$Callbacks
         }
     }
     
+    @Override
     public final void onControllerStateChanged(final int n, final int n2) {
         synchronized (this) {
             if (!this.b) {
@@ -195,6 +199,7 @@ public final class NativeCallbacks implements ControllerServiceBridge$Callbacks
         }
     }
     
+    @Override
     public final void onServiceConnected(final int n) {
         synchronized (this) {
             if (!this.b) {
@@ -203,6 +208,7 @@ public final class NativeCallbacks implements ControllerServiceBridge$Callbacks
         }
     }
     
+    @Override
     public final void onServiceDisconnected() {
         synchronized (this) {
             if (!this.b) {
@@ -211,6 +217,7 @@ public final class NativeCallbacks implements ControllerServiceBridge$Callbacks
         }
     }
     
+    @Override
     public final void onServiceFailed() {
         synchronized (this) {
             if (!this.b) {
@@ -219,6 +226,7 @@ public final class NativeCallbacks implements ControllerServiceBridge$Callbacks
         }
     }
     
+    @Override
     public final void onServiceInitFailed(final int n) {
         synchronized (this) {
             if (!this.b) {
@@ -227,6 +235,7 @@ public final class NativeCallbacks implements ControllerServiceBridge$Callbacks
         }
     }
     
+    @Override
     public final void onServiceUnavailable() {
         synchronized (this) {
             if (!this.b) {

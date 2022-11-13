@@ -19,7 +19,7 @@ public final class AutoplaySetSequenceNavigator$AutoplaySetSequenceNavigatorStat
     public final int d;
     
     static {
-        CREATOR = (Parcelable$Creator)new abcf(6);
+        CREATOR = (Parcelable$Creator)new abdz(6);
     }
     
     public AutoplaySetSequenceNavigator$AutoplaySetSequenceNavigatorState(final Parcel parcel) {

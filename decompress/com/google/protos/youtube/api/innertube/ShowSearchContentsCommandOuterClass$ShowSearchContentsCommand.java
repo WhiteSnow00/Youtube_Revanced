@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand extends agzi implements ahax
+public final class ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand extends ahbh implements ahcw
 {
     public static final ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand a;
-    private static volatile ahbe b;
-    public static final agzg showSearchContentsCommand;
+    private static volatile ahdd b;
+    public static final ahbf showSearchContentsCommand;
     
     static {
         final ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand a2 = new ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand();
-        agzi.registerDefaultInstance((Class)ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand.class, (agzi)(a = a2));
-        showSearchContentsCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 242013526, ahcm.k, (Class)ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand.class);
+        ahbh.registerDefaultInstance((Class)ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand.class, (ahbh)(a = a2));
+        showSearchContentsCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 242013526, ahek.k, (Class)ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand.class);
     }
     
     private ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand.b) == null) {
                     synchronized (ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand.class) {
                         if (ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand.b == null) {
-                            ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand.b = (ahbe)new agzb((agzi)ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand.a);
+                            ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand.b = (ahdd)new ahba((ahbh)ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand
                 return ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand.a;
             }
             case 4: {
-                return new agza((agzi)ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand.a);
+                return new ahaz((ahbh)ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand.a);
             }
             case 3: {
                 return new ShowSearchContentsCommandOuterClass$ShowSearchContentsCommand();

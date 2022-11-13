@@ -6,37 +6,40 @@ package com.google.vr.sdk.proto;
 
 import com.google.protobuf.MessageLite;
 
-public final class Preferences$RuntimeFeature extends agzi implements ahax
+public final class Preferences$RuntimeFeature extends ahbh implements ahcw
 {
     private static final Preferences$RuntimeFeature DEFAULT_INSTANCE;
     public static final int ENABLED_FIELD_NUMBER = 2;
     public static final int ID_FIELD_NUMBER = 1;
-    private static volatile ahbe PARSER;
+    private static volatile ahdd PARSER;
     private int bitField0_;
     private boolean enabled_;
     private int id_;
     
     static {
-        agzi.registerDefaultInstance(Preferences$RuntimeFeature.class, DEFAULT_INSTANCE = new Preferences$RuntimeFeature());
+        ahbh.registerDefaultInstance((Class)Preferences$RuntimeFeature.class, (ahbh)(DEFAULT_INSTANCE = new Preferences$RuntimeFeature()));
     }
     
     private Preferences$RuntimeFeature() {
         this.id_ = -1;
     }
     
-    @Override
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    static Preferences$RuntimeFeature access$11000() {
+        return Preferences$RuntimeFeature.DEFAULT_INSTANCE;
+    }
+    
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe parser;
+                final ahdd parser;
                 if ((parser = Preferences$RuntimeFeature.PARSER) == null) {
                     synchronized (Preferences$RuntimeFeature.class) {
                         if (Preferences$RuntimeFeature.PARSER == null) {
-                            Preferences$RuntimeFeature.PARSER = (ahbe)new agzb((agzi)Preferences$RuntimeFeature.DEFAULT_INSTANCE);
+                            Preferences$RuntimeFeature.PARSER = (ahdd)new ahba((ahbh)Preferences$RuntimeFeature.DEFAULT_INSTANCE);
                         }
                     }
                 }
@@ -52,7 +55,7 @@ public final class Preferences$RuntimeFeature extends agzi implements ahax
                 return new Preferences$RuntimeFeature();
             }
             case 2: {
-                return agzi.newMessageInfo((MessageLite)Preferences$RuntimeFeature.DEFAULT_INSTANCE, "\u0001\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0000\u0000\u0001\u1004\u0000\u0002\u1007\u0001", new Object[] { "bitField0_", "id_", "enabled_" });
+                return newMessageInfo((MessageLite)Preferences$RuntimeFeature.DEFAULT_INSTANCE, "\u0001\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0000\u0000\u0001\u1004\u0000\u0002\u1007\u0001", new Object[] { "bitField0_", "id_", "enabled_" });
             }
             case 1: {
                 return null;

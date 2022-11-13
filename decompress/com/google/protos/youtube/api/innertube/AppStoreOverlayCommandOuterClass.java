@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AppStoreOverlayCommandOuterClass
 {
-    public static final agzg appStoreOverlayCommand;
+    public static final ahbf appStoreOverlayCommand;
     
     static {
-        appStoreOverlayCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ahtg.a, (MessageLite)ahtg.a, (agzn)null, 343591339, ahcm.k, (Class)ahtg.class);
+        appStoreOverlayCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)ahve.a, (MessageLite)ahve.a, (ahbm)null, 343591339, ahek.k, (Class)ahve.class);
     }
     
     private AppStoreOverlayCommandOuterClass() {

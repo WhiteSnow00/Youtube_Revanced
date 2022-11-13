@@ -6,40 +6,40 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand extends agzi implements ahax
+public final class AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand extends ahbh implements ahcw
 {
     public static final AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand a;
-    public static final agzg adsClickWrapperCommand;
-    private static volatile ahbe e;
+    public static final ahbf adsClickWrapperCommand;
+    private static volatile ahdd e;
     public int b;
-    public aioe c;
-    public ahnb d;
+    public aiqj c;
+    public ahoz d;
     private byte f;
     
     static {
         final AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand a2 = new AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand();
-        agzi.registerDefaultInstance((Class)AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand.class, (agzi)(a = a2));
-        adsClickWrapperCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 310408312, ahcm.k, (Class)AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand.class);
+        ahbh.registerDefaultInstance((Class)AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand.class, (ahbh)(a = a2));
+        adsClickWrapperCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 310408312, ahek.k, (Class)AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand.class);
     }
     
     private AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand() {
         this.f = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand.e) == null) {
                     synchronized (AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand.class) {
                         if (AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand.e == null) {
-                            AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand.e = (ahbe)new agzb((agzi)AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand.a);
+                            AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand.e = (ahdd)new ahba((ahbh)AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand.a);
                         }
                     }
                 }
@@ -49,7 +49,7 @@ public final class AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand exten
                 return AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand.a;
             }
             case 4: {
-                return new agza((agzi)AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand.a);
+                return new ahaz((ahbh)AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand.a);
             }
             case 3: {
                 return new AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand();
@@ -59,9 +59,9 @@ public final class AdsClickWrapperCommandOuterClass$AdsClickWrapperCommand exten
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

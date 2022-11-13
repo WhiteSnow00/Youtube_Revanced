@@ -106,7 +106,7 @@ final class e extends nq
             d.E();
         }
         BitmapKey a = relatedVideoItem.a();
-        if (a == null || !a.equals(d.t)) {
+        if (a == null || !a.equals((Object)d.t)) {
             d.E();
         }
         final SelectableItemKey selectableItemKey = null;

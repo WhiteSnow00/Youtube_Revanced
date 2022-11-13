@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AuthorizedUrlEndpointOuterClass
 {
-    public static final agzg authorizedUrlEndpoint;
+    public static final ahbf authorizedUrlEndpoint;
     
     static {
-        authorizedUrlEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ahuy.a, (MessageLite)ahuy.a, (agzn)null, 104383677, ahcm.k, (Class)ahuy.class);
+        authorizedUrlEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)ahww.a, (MessageLite)ahww.a, (ahbm)null, 104383677, ahek.k, (Class)ahww.class);
     }
     
     private AuthorizedUrlEndpointOuterClass() {

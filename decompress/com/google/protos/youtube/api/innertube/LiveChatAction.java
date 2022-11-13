@@ -8,12 +8,12 @@ import com.google.protobuf.MessageLite;
 
 public final class LiveChatAction
 {
-    public static final agzg replaceLiveChatRendererAction;
-    public static final agzg showLiveChatSurveyCommand;
+    public static final ahbf replaceLiveChatRendererAction;
+    public static final ahbf showLiveChatSurveyCommand;
     
     static {
-        replaceLiveChatRendererAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)alne.a, (MessageLite)alne.a, (agzn)null, 167912809, ahcm.k, (Class)alne.class);
-        showLiveChatSurveyCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)alnf.a, (MessageLite)alnf.a, (agzn)null, 181233165, ahcm.k, (Class)alnf.class);
+        replaceLiveChatRendererAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)alph.a, (MessageLite)alph.a, (ahbm)null, 167912809, ahek.k, (Class)alph.class);
+        showLiveChatSurveyCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)alpi.a, (MessageLite)alpi.a, (ahbm)null, 181233165, ahek.k, (Class)alpi.class);
     }
     
     private LiveChatAction() {

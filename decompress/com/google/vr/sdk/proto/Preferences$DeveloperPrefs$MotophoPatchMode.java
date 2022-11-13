@@ -4,8 +4,10 @@
 
 package com.google.vr.sdk.proto;
 
-public enum Preferences$DeveloperPrefs$MotophoPatchMode implements agzm
+public enum Preferences$DeveloperPrefs$MotophoPatchMode implements ahbl
 {
+    private static final Preferences$DeveloperPrefs$MotophoPatchMode[] $VALUES;
+    
     IMPULSE("IMPULSE", 2, 2);
     
     public static final int IMPULSE_VALUE = 2;
@@ -17,11 +19,16 @@ public enum Preferences$DeveloperPrefs$MotophoPatchMode implements agzm
     VELOCITY("VELOCITY", 1, 1);
     
     public static final int VELOCITY_VALUE = 1;
-    private static final agzn internalValueMap;
+    private static final ahbm internalValueMap;
     private final int value;
     
+    private static Preferences$DeveloperPrefs$MotophoPatchMode[] $values() {
+        return new Preferences$DeveloperPrefs$MotophoPatchMode[] { Preferences$DeveloperPrefs$MotophoPatchMode.NONE, Preferences$DeveloperPrefs$MotophoPatchMode.VELOCITY, Preferences$DeveloperPrefs$MotophoPatchMode.IMPULSE };
+    }
+    
     static {
-        internalValueMap = (agzn)new Preferences$DeveloperPrefs$MotophoPatchMode$1();
+        $VALUES = $values();
+        internalValueMap = (ahbm)new Preferences$DeveloperPrefs$MotophoPatchMode$1();
     }
     
     private Preferences$DeveloperPrefs$MotophoPatchMode(final String s, final int n, final int value) {
@@ -41,7 +48,7 @@ public enum Preferences$DeveloperPrefs$MotophoPatchMode implements agzm
         return Preferences$DeveloperPrefs$MotophoPatchMode.IMPULSE;
     }
     
-    public static agzo internalGetVerifier() {
+    public static ahbn internalGetVerifier() {
         return Preferences$DeveloperPrefs$MotophoPatchMode$MotophoPatchModeVerifier.INSTANCE;
     }
     

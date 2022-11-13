@@ -15,7 +15,7 @@ import com.google.vr.ndk.base.GvrLayout;
 import com.google.vr.ndk.base.GvrApi;
 import android.content.Context;
 
-public class CardboardViewNativeImpl implements CardboardViewApi, aqzh
+public class CardboardViewNativeImpl implements CardboardViewApi, arbv
 {
     private static final String TAG = "CardboardViewNativeImpl";
     private volatile Runnable cardboardBackListener;
@@ -23,7 +23,7 @@ public class CardboardViewNativeImpl implements CardboardViewApi, aqzh
     private volatile Runnable cardboardTriggerListener;
     private final Context context;
     private volatile boolean distortionCorrectionEnabled;
-    private final aqzi glSurfaceView;
+    private final arbw glSurfaceView;
     private final GvrApi gvrApi;
     private final GvrLayout gvrLayout;
     private final HeadMountedDisplayManager hmdManager;
@@ -32,6 +32,66 @@ public class CardboardViewNativeImpl implements CardboardViewApi, aqzh
     private CountDownLatch shutdownLatch;
     private boolean stereoMode;
     private final GvrUiLayout uiLayout;
+    
+    static /* bridge */ GvrLayout -$$Nest$fgetgvrLayout(final CardboardViewNativeImpl cardboardViewNativeImpl) {
+        return cardboardViewNativeImpl.gvrLayout;
+    }
+    
+    static /* bridge */ long -$$Nest$fgetnativeCardboardView(final CardboardViewNativeImpl cardboardViewNativeImpl) {
+        return cardboardViewNativeImpl.nativeCardboardView;
+    }
+    
+    static /* bridge */ CardboardViewNativeImpl$RendererHelper -$$Nest$fgetrendererHelper(final CardboardViewNativeImpl cardboardViewNativeImpl) {
+        return cardboardViewNativeImpl.rendererHelper;
+    }
+    
+    static /* bridge */ CountDownLatch -$$Nest$fgetshutdownLatch(final CardboardViewNativeImpl cardboardViewNativeImpl) {
+        return cardboardViewNativeImpl.shutdownLatch;
+    }
+    
+    static /* bridge */ boolean -$$Nest$fgetstereoMode(final CardboardViewNativeImpl cardboardViewNativeImpl) {
+        return cardboardViewNativeImpl.stereoMode;
+    }
+    
+    static /* bridge */ void -$$Nest$mcheckNativeCardboardView(final CardboardViewNativeImpl cardboardViewNativeImpl) {
+        cardboardViewNativeImpl.checkNativeCardboardView();
+    }
+    
+    static /* bridge */ void -$$Nest$mnativeOnDrawFrame(final CardboardViewNativeImpl cardboardViewNativeImpl, final long n) {
+        cardboardViewNativeImpl.nativeOnDrawFrame(n);
+    }
+    
+    static /* bridge */ void -$$Nest$mnativeOnSurfaceChanged(final CardboardViewNativeImpl cardboardViewNativeImpl, final long n, final int n2, final int n3) {
+        cardboardViewNativeImpl.nativeOnSurfaceChanged(n, n2, n3);
+    }
+    
+    static /* bridge */ void -$$Nest$mnativeOnSurfaceCreated(final CardboardViewNativeImpl cardboardViewNativeImpl, final long n) {
+        cardboardViewNativeImpl.nativeOnSurfaceCreated(n);
+    }
+    
+    static /* bridge */ void -$$Nest$mnativeSetGvrViewerParams(final CardboardViewNativeImpl cardboardViewNativeImpl, final long n, final byte[] array) {
+        cardboardViewNativeImpl.nativeSetGvrViewerParams(n, array);
+    }
+    
+    static /* bridge */ void -$$Nest$mnativeSetScreenParams(final CardboardViewNativeImpl cardboardViewNativeImpl, final long n, final int n2, final int n3, final float n4, final float n5, final float n6) {
+        cardboardViewNativeImpl.nativeSetScreenParams(n, n2, n3, n4, n5, n6);
+    }
+    
+    static /* bridge */ void -$$Nest$mnativeSetStereoModeEnabled(final CardboardViewNativeImpl cardboardViewNativeImpl, final long n, final boolean b) {
+        cardboardViewNativeImpl.nativeSetStereoModeEnabled(n, b);
+    }
+    
+    static /* bridge */ void -$$Nest$mnativeSetStereoRenderer(final CardboardViewNativeImpl cardboardViewNativeImpl, final long n, final GvrView$StereoRenderer gvrView$StereoRenderer) {
+        cardboardViewNativeImpl.nativeSetStereoRenderer(n, gvrView$StereoRenderer);
+    }
+    
+    static /* bridge */ void -$$Nest$mqueueEvent(final CardboardViewNativeImpl cardboardViewNativeImpl, final Runnable runnable) {
+        cardboardViewNativeImpl.queueEvent(runnable);
+    }
+    
+    static /* bridge */ String -$$Nest$sfgetTAG() {
+        return CardboardViewNativeImpl.TAG;
+    }
     
     public CardboardViewNativeImpl(final Context context) {
         this.cardboardTriggerCount = 0;
@@ -52,10 +112,10 @@ public class CardboardViewNativeImpl implements CardboardViewApi, aqzh
         }
         System.loadLibrary(s);
         nativeSetApplicationState(this.getClass().getClassLoader(), context.getApplicationContext());
-        final aqzi aqzi = new aqzi(context, (aqzh)this);
-        this.glSurfaceView = aqzi;
+        final arbw arbw = new arbw(context, this);
+        this.glSurfaceView = arbw;
         final GvrLayout gvrLayout = new GvrLayout(context);
-        (this.gvrLayout = gvrLayout).setPresentationView((View)aqzi);
+        (this.gvrLayout = gvrLayout).setPresentationView((View)arbw);
         this.rendererHelper = new CardboardViewNativeImpl$RendererHelper(this);
         this.uiLayout = gvrLayout.getUiLayout();
         final GvrApi gvrApi = gvrLayout.getGvrApi();
@@ -119,28 +179,28 @@ public class CardboardViewNativeImpl implements CardboardViewApi, aqzh
     private void onCardboardTrigger() {
         final Runnable cardboardTriggerListener = this.cardboardTriggerListener;
         if (cardboardTriggerListener != null) {
-            arac.a(cardboardTriggerListener);
+            arcq.a(cardboardTriggerListener);
         }
     }
     
     private void queueEvent(final Runnable runnable) {
-        ((GvrSurfaceView)this.glSurfaceView).queueEvent(runnable);
+        this.glSurfaceView.queueEvent(runnable);
     }
     
     private void runOnCardboardBackListener() {
         final Runnable cardboardBackListener = this.cardboardBackListener;
         if (cardboardBackListener != null) {
-            arac.a(cardboardBackListener);
+            arcq.a(cardboardBackListener);
         }
     }
     
     private void setGvrViewerParams(final GvrViewerParams gvrViewerParams) {
         this.uiLayout.setViewerName(new GvrViewerParams(gvrViewerParams).getModel());
-        this.queueEvent(new CardboardViewNativeImpl$6(this, gvrViewerParams));
+        this.queueEvent((Runnable)new CardboardViewNativeImpl$6(this, gvrViewerParams));
     }
     
     private void setScreenParams(final ScreenParams screenParams) {
-        this.queueEvent(new CardboardViewNativeImpl$7(this, new ScreenParams(screenParams)));
+        this.queueEvent((Runnable)new CardboardViewNativeImpl$7(this, new ScreenParams(screenParams)));
     }
     
     @Override
@@ -156,17 +216,14 @@ public class CardboardViewNativeImpl implements CardboardViewApi, aqzh
         }
     }
     
-    @Override
     public GvrSurfaceView getGvrSurfaceView() {
-        return (GvrSurfaceView)this.glSurfaceView;
+        return this.glSurfaceView;
     }
     
-    @Override
     public GvrViewerParams getGvrViewerParams() {
         return this.hmdManager.getHeadMountedDisplay().getGvrViewerParams();
     }
     
-    @Override
     public View getRootView() {
         return (View)this.gvrLayout;
     }
@@ -175,20 +232,18 @@ public class CardboardViewNativeImpl implements CardboardViewApi, aqzh
         return this.hmdManager.getHeadMountedDisplay().getScreenParams();
     }
     
-    @Override
     public void onPause() {
         this.checkNativeCardboardView();
         this.gvrApi.pauseTracking();
         this.hmdManager.onPause();
-        ((GvrSurfaceView)this.glSurfaceView).onPause();
+        this.glSurfaceView.onPause();
         this.gvrLayout.onPause();
     }
     
-    @Override
     public void onResume() {
         this.checkNativeCardboardView();
         this.gvrLayout.onResume();
-        ((GvrSurfaceView)this.glSurfaceView).onResume();
+        this.glSurfaceView.onResume();
         this.hmdManager.onResume();
         this.setScreenParams(this.getScreenParams());
         this.setGvrViewerParams(this.getGvrViewerParams());
@@ -209,7 +264,6 @@ public class CardboardViewNativeImpl implements CardboardViewApi, aqzh
         }
     }
     
-    @Override
     public boolean onTouchEvent(final MotionEvent motionEvent) {
         if (motionEvent.getActionMasked() == 0 && this.cardboardTriggerListener != null) {
             this.onCardboardTrigger();
@@ -218,29 +272,24 @@ public class CardboardViewNativeImpl implements CardboardViewApi, aqzh
         return false;
     }
     
-    @Override
     public void setOnCardboardTriggerListener(final Runnable cardboardTriggerListener) {
         this.cardboardTriggerListener = cardboardTriggerListener;
     }
     
-    @Override
     public void setOnCloseButtonListener(final Runnable closeButtonListener) {
         this.uiLayout.setCloseButtonListener(closeButtonListener);
     }
     
-    @Override
     public void setRenderer(final GvrView$StereoRenderer renderer) {
         this.rendererHelper.setRenderer(renderer);
-        ((GvrSurfaceView)this.glSurfaceView).setRenderer((GLSurfaceView$Renderer)this.rendererHelper);
+        this.glSurfaceView.setRenderer((GLSurfaceView$Renderer)this.rendererHelper);
     }
     
-    @Override
     public void setStereoModeEnabled(final boolean b) {
         this.stereoMode = b;
         this.rendererHelper.setStereoModeEnabled(b);
     }
     
-    @Override
     public void shutdown() {
         if (this.nativeCardboardView != 0L) {
             this.hmdManager.close();

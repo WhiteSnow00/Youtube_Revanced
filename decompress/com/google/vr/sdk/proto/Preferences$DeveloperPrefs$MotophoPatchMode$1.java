@@ -4,9 +4,13 @@
 
 package com.google.vr.sdk.proto;
 
-class Preferences$DeveloperPrefs$MotophoPatchMode$1 implements agzn
+class Preferences$DeveloperPrefs$MotophoPatchMode$1 implements ahbm
 {
     public Preferences$DeveloperPrefs$MotophoPatchMode$1() {
+    }
+    
+    public /* bridge */ ahbl findValueByNumber(final int n) {
+        return (ahbl)this.findValueByNumber(n);
     }
     
     public Preferences$DeveloperPrefs$MotophoPatchMode findValueByNumber(final int n) {

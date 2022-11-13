@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatAction$UpdateLiveChatPollAction extends agzi implements ahax
+public final class LiveChatAction$UpdateLiveChatPollAction extends ahbh implements ahcw
 {
     public static final LiveChatAction$UpdateLiveChatPollAction a;
-    private static volatile ahbe d;
-    public static final agzg updateLiveChatPollAction;
+    private static volatile ahdd d;
+    public static final ahbf updateLiveChatPollAction;
     public int b;
-    public anss c;
+    public anuv c;
     private byte e;
     
     static {
         final LiveChatAction$UpdateLiveChatPollAction a2 = new LiveChatAction$UpdateLiveChatPollAction();
-        agzi.registerDefaultInstance((Class)LiveChatAction$UpdateLiveChatPollAction.class, (agzi)(a = a2));
-        updateLiveChatPollAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 239281785, ahcm.k, (Class)LiveChatAction$UpdateLiveChatPollAction.class);
+        ahbh.registerDefaultInstance((Class)LiveChatAction$UpdateLiveChatPollAction.class, (ahbh)(a = a2));
+        updateLiveChatPollAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 239281785, ahek.k, (Class)LiveChatAction$UpdateLiveChatPollAction.class);
     }
     
     private LiveChatAction$UpdateLiveChatPollAction() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = LiveChatAction$UpdateLiveChatPollAction.d) == null) {
                     synchronized (LiveChatAction$UpdateLiveChatPollAction.class) {
                         if (LiveChatAction$UpdateLiveChatPollAction.d == null) {
-                            LiveChatAction$UpdateLiveChatPollAction.d = (ahbe)new agzb((agzi)LiveChatAction$UpdateLiveChatPollAction.a);
+                            LiveChatAction$UpdateLiveChatPollAction.d = (ahdd)new ahba((ahbh)LiveChatAction$UpdateLiveChatPollAction.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class LiveChatAction$UpdateLiveChatPollAction extends agzi implemen
                 return LiveChatAction$UpdateLiveChatPollAction.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatAction$UpdateLiveChatPollAction.a);
+                return new ahaz((ahbh)LiveChatAction$UpdateLiveChatPollAction.a);
             }
             case 3: {
                 return new LiveChatAction$UpdateLiveChatPollAction();
@@ -58,9 +58,9 @@ public final class LiveChatAction$UpdateLiveChatPollAction extends agzi implemen
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AddBroadcastParticipantCommandOuterClass
 {
-    public static final agzg addBroadcastParticipantCommand;
+    public static final ahbf addBroadcastParticipantCommand;
     
     static {
-        addBroadcastParticipantCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ahmj.a, (MessageLite)ahmj.a, (agzn)null, 138833813, ahcm.k, (Class)ahmj.class);
+        addBroadcastParticipantCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)ahoh.a, (MessageLite)ahoh.a, (ahbm)null, 138833813, ahek.k, (Class)ahoh.class);
     }
     
     private AddBroadcastParticipantCommandOuterClass() {

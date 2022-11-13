@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AppBrowserPrewarmAndPreconnectCommandOuterClass
 {
-    public static final agzg appBrowserPrewarmAndPreconnectCommand;
+    public static final ahbf appBrowserPrewarmAndPreconnectCommand;
     
     static {
-        appBrowserPrewarmAndPreconnectCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ahsr.a, (MessageLite)ahsr.a, (agzn)null, 340593730, ahcm.k, (Class)ahsr.class);
+        appBrowserPrewarmAndPreconnectCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)ahup.a, (MessageLite)ahup.a, (ahbm)null, 340593730, ahek.k, (Class)ahup.class);
     }
     
     private AppBrowserPrewarmAndPreconnectCommandOuterClass() {

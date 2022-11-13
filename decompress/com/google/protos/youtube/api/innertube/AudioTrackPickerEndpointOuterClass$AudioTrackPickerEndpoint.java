@@ -6,35 +6,35 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint extends agzd implements agze
+public final class AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint extends ahbc implements ahbd
 {
     public static final AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint a;
-    public static final agzg audioTrackPickerEndpoint;
-    private static volatile ahbe b;
+    public static final ahbf audioTrackPickerEndpoint;
+    private static volatile ahdd b;
     private byte c;
     
     static {
         final AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint a2 = new AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint();
-        agzi.registerDefaultInstance((Class)AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint.class, (agzi)(a = a2));
-        audioTrackPickerEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 100498558, ahcm.k, (Class)AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint.class);
+        ahbh.registerDefaultInstance((Class)AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint.class, (ahbh)(a = a2));
+        audioTrackPickerEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 100498558, ahek.k, (Class)AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint.class);
     }
     
     private AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint() {
         this.c = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint.b) == null) {
                     synchronized (AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint.class) {
                         if (AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint.b == null) {
-                            AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint.b = (ahbe)new agzb((agzi)AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint.a);
+                            AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint.b = (ahdd)new ahba((ahbh)AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint.a);
                         }
                     }
                 }
@@ -44,7 +44,7 @@ public final class AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint e
                 return AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint.a;
             }
             case 4: {
-                return new agzc(AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint.a);
+                return new ahbb((ahbc)AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint.a);
             }
             case 3: {
                 return new AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint();
@@ -53,7 +53,14 @@ public final class AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint e
                 return newMessageInfo((MessageLite)AudioTrackPickerEndpointOuterClass$AudioTrackPickerEndpoint.a, "\u0001\u0000", (Object[])null);
             }
             case 1: {
-                this.c = (byte)((o != null) ? 1 : 0);
+                byte c;
+                if (o == null) {
+                    c = 0;
+                }
+                else {
+                    c = 1;
+                }
+                this.c = c;
                 return null;
             }
             case 0: {

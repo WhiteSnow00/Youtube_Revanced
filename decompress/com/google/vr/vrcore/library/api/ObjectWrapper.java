@@ -7,7 +7,7 @@ package com.google.vr.vrcore.library.api;
 import java.lang.reflect.Field;
 import android.os.IBinder;
 
-public final class ObjectWrapper extends arbk
+public final class ObjectWrapper extends ardy
 {
     private final Object wrappedObject;
     
@@ -15,18 +15,18 @@ public final class ObjectWrapper extends arbk
         this.wrappedObject = wrappedObject;
     }
     
-    public static arbl a(final Object o) {
-        return (arbl)new ObjectWrapper(o);
+    public static ardz a(final Object o) {
+        return (ardz)new ObjectWrapper(o);
     }
     
-    public static Object b(final arbl arbl, final Class clazz) {
-        if (arbl == null) {
+    public static Object b(final ardz ardz, final Class clazz) {
+        if (ardz == null) {
             return null;
         }
-        if (arbl instanceof ObjectWrapper) {
-            return ((ObjectWrapper)arbl).wrappedObject;
+        if (ardz instanceof ObjectWrapper) {
+            return ((ObjectWrapper)ardz).wrappedObject;
         }
-        final IBinder binder = arbl.asBinder();
+        final IBinder binder = ardz.asBinder();
         final Field[] declaredFields = binder.getClass().getDeclaredFields();
         final int length = declaredFields.length;
         int n = 0;

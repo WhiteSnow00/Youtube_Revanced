@@ -4,8 +4,10 @@
 
 package com.google.vr.sdk.proto;
 
-public enum CardboardDevice$VignetteParams$VignetteParamsCondition implements agzm
+public enum CardboardDevice$VignetteParams$VignetteParamsCondition implements ahbl
 {
+    private static final CardboardDevice$VignetteParams$VignetteParamsCondition[] $VALUES;
+    
     HORIZ_DIMEN_LESS_THAN_METER("HORIZ_DIMEN_LESS_THAN_METER", 1, 1);
     
     public static final int HORIZ_DIMEN_LESS_THAN_METER_VALUE = 1;
@@ -13,11 +15,16 @@ public enum CardboardDevice$VignetteParams$VignetteParamsCondition implements ag
     NO_VIGNETTE_CONDITION("NO_VIGNETTE_CONDITION", 0, 0);
     
     public static final int NO_VIGNETTE_CONDITION_VALUE = 0;
-    private static final agzn internalValueMap;
+    private static final ahbm internalValueMap;
     private final int value;
     
+    private static CardboardDevice$VignetteParams$VignetteParamsCondition[] $values() {
+        return new CardboardDevice$VignetteParams$VignetteParamsCondition[] { CardboardDevice$VignetteParams$VignetteParamsCondition.NO_VIGNETTE_CONDITION, CardboardDevice$VignetteParams$VignetteParamsCondition.HORIZ_DIMEN_LESS_THAN_METER };
+    }
+    
     static {
-        internalValueMap = new CardboardDevice$VignetteParams$VignetteParamsCondition$1();
+        $VALUES = $values();
+        internalValueMap = (ahbm)new CardboardDevice$VignetteParams$VignetteParamsCondition$1();
     }
     
     private CardboardDevice$VignetteParams$VignetteParamsCondition(final String s, final int n, final int value) {
@@ -34,11 +41,10 @@ public enum CardboardDevice$VignetteParams$VignetteParamsCondition implements ag
         return CardboardDevice$VignetteParams$VignetteParamsCondition.HORIZ_DIMEN_LESS_THAN_METER;
     }
     
-    public static agzo internalGetVerifier() {
+    public static ahbn internalGetVerifier() {
         return CardboardDevice$VignetteParams$VignetteParamsCondition$VignetteParamsConditionVerifier.INSTANCE;
     }
     
-    @Override
     public final int getNumber() {
         return this.value;
     }

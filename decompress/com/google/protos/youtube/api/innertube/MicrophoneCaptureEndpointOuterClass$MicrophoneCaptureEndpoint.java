@@ -6,35 +6,35 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint extends agzi implements ahax
+public final class MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint extends ahbh implements ahcw
 {
     public static final MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg microphoneCaptureEndpoint;
+    private static volatile ahdd c;
+    public static final ahbf microphoneCaptureEndpoint;
     public boolean b;
     private int d;
     
     static {
         final MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint a2 = new MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint();
-        agzi.registerDefaultInstance((Class)MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint.class, (agzi)(a = a2));
-        microphoneCaptureEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 142199843, ahcm.k, (Class)MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint.class);
+        ahbh.registerDefaultInstance((Class)MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint.class, (ahbh)(a = a2));
+        microphoneCaptureEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 142199843, ahek.k, (Class)MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint.class);
     }
     
     private MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint.c) == null) {
                     synchronized (MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint.class) {
                         if (MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint.c == null) {
-                            MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint.c = (ahbe)new agzb((agzi)MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint.a);
+                            MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint.c = (ahdd)new ahba((ahbh)MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint.a);
                         }
                     }
                 }
@@ -44,7 +44,7 @@ public final class MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint
                 return MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint.a);
+                return new ahaz((ahbh)MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint.a);
             }
             case 3: {
                 return new MicrophoneCaptureEndpointOuterClass$MicrophoneCaptureEndpoint();

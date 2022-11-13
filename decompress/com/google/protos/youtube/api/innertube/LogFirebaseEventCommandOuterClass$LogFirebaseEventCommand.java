@@ -6,20 +6,20 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand extends agzi implements ahax
+public final class LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand extends ahbh implements ahcw
 {
     public static final LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand a;
-    private static volatile ahbe d;
-    public static final agzg logFirebaseEventCommand;
+    private static volatile ahdd d;
+    public static final ahbf logFirebaseEventCommand;
     public String b;
-    public agzy c;
+    public ahbx c;
     private int e;
     private byte f;
     
     static {
         final LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand a2 = new LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand();
-        agzi.registerDefaultInstance((Class)LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.class, (agzi)(a = a2));
-        logFirebaseEventCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 245093374, ahcm.k, (Class)LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.class);
+        ahbh.registerDefaultInstance((Class)LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.class, (ahbh)(a = a2));
+        logFirebaseEventCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 245093374, ahek.k, (Class)LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.class);
     }
     
     private LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand() {
@@ -28,20 +28,20 @@ public final class LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand ext
         this.c = emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.d) == null) {
                     synchronized (LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.class) {
                         if (LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.d == null) {
-                            LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.d = (ahbe)new agzb((agzi)LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.a);
+                            LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.d = (ahdd)new ahba((ahbh)LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.a);
                         }
                     }
                 }
@@ -51,19 +51,19 @@ public final class LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand ext
                 return LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.a;
             }
             case 4: {
-                return new agza((agzi)LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.a);
+                return new ahaz((ahbh)LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.a);
             }
             case 3: {
                 return new LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand();
             }
             case 2: {
-                return newMessageInfo((MessageLite)LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.a, "\u0001\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0001\u0001\u0001\u1008\u0000\u0002\u041b", new Object[] { "e", "b", "c", aliq.class });
+                return newMessageInfo((MessageLite)LogFirebaseEventCommandOuterClass$LogFirebaseEventCommand.a, "\u0001\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0001\u0001\u0001\u1008\u0000\u0002\u041b", new Object[] { "e", "b", "c", alkt.class });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

@@ -15,7 +15,7 @@ public final class ControllerAccelEvent extends ControllerEvent
     public float c;
     
     static {
-        CREATOR = (Parcelable$Creator)new arao(2);
+        CREATOR = (Parcelable$Creator)new ardl(0);
     }
     
     public ControllerAccelEvent() {
@@ -29,6 +29,7 @@ public final class ControllerAccelEvent extends ControllerEvent
         return 24;
     }
     
+    @Override
     public void b(final Parcel parcel) {
         super.b(parcel);
         this.a = parcel.readFloat();
@@ -40,6 +41,7 @@ public final class ControllerAccelEvent extends ControllerEvent
         return 0;
     }
     
+    @Override
     public void writeToParcel(final Parcel parcel, final int n) {
         super.writeToParcel(parcel, n);
         parcel.writeFloat(this.a);

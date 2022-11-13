@@ -7,87 +7,91 @@ package com.google.cardboard.proto;
 import java.util.Collections;
 import java.util.List;
 
-public final class CardboardDevice$DeviceParams$Builder extends agza implements CardboardDevice$DeviceParamsOrBuilder
+public final class CardboardDevice$DeviceParams$Builder extends ahaz implements CardboardDevice$DeviceParamsOrBuilder
 {
     private CardboardDevice$DeviceParams$Builder() {
-        super((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE);
+        super((ahbh)CardboardDevice$DeviceParams.access$000());
+    }
+    
+    public CardboardDevice$DeviceParams$Builder(final CardboardDevice$1 cardboardDevice$1) {
+        this();
     }
     
     public CardboardDevice$DeviceParams$Builder addAllDistortionCoefficients(final Iterable iterable) {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).addAllDistortionCoefficients(iterable);
+        CardboardDevice$DeviceParams.access$2100((CardboardDevice$DeviceParams)this.instance, iterable);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder addAllLeftEyeFieldOfViewAngles(final Iterable iterable) {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).addAllLeftEyeFieldOfViewAngles(iterable);
+        CardboardDevice$DeviceParams.access$1300((CardboardDevice$DeviceParams)this.instance, iterable);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder addDistortionCoefficients(final float n) {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).addDistortionCoefficients(n);
+        CardboardDevice$DeviceParams.access$2000((CardboardDevice$DeviceParams)this.instance, n);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder addLeftEyeFieldOfViewAngles(final float n) {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).addLeftEyeFieldOfViewAngles(n);
+        CardboardDevice$DeviceParams.access$1200((CardboardDevice$DeviceParams)this.instance, n);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder clearDistortionCoefficients() {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).clearDistortionCoefficients();
+        CardboardDevice$DeviceParams.access$2200((CardboardDevice$DeviceParams)this.instance);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder clearInterLensDistance() {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).clearInterLensDistance();
+        CardboardDevice$DeviceParams.access$1000((CardboardDevice$DeviceParams)this.instance);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder clearLeftEyeFieldOfViewAngles() {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).clearLeftEyeFieldOfViewAngles();
+        CardboardDevice$DeviceParams.access$1400((CardboardDevice$DeviceParams)this.instance);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder clearModel() {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).clearModel();
+        CardboardDevice$DeviceParams.access$500((CardboardDevice$DeviceParams)this.instance);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder clearPrimaryButton() {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).clearPrimaryButton();
+        CardboardDevice$DeviceParams.access$2400((CardboardDevice$DeviceParams)this.instance);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder clearScreenToLensDistance() {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).clearScreenToLensDistance();
+        CardboardDevice$DeviceParams.access$800((CardboardDevice$DeviceParams)this.instance);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder clearTrayToLensDistance() {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).clearTrayToLensDistance();
+        CardboardDevice$DeviceParams.access$1800((CardboardDevice$DeviceParams)this.instance);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder clearVendor() {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).clearVendor();
+        CardboardDevice$DeviceParams.access$200((CardboardDevice$DeviceParams)this.instance);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder clearVerticalAlignment() {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).clearVerticalAlignment();
+        CardboardDevice$DeviceParams.access$1600((CardboardDevice$DeviceParams)this.instance);
         return this;
     }
     
@@ -123,7 +127,7 @@ public final class CardboardDevice$DeviceParams$Builder extends agza implements 
         return ((CardboardDevice$DeviceParams)this.instance).getModel();
     }
     
-    public agyc getModelBytes() {
+    public ahab getModelBytes() {
         return ((CardboardDevice$DeviceParams)this.instance).getModelBytes();
     }
     
@@ -143,7 +147,7 @@ public final class CardboardDevice$DeviceParams$Builder extends agza implements 
         return ((CardboardDevice$DeviceParams)this.instance).getVendor();
     }
     
-    public agyc getVendorBytes() {
+    public ahab getVendorBytes() {
         return ((CardboardDevice$DeviceParams)this.instance).getVendorBytes();
     }
     
@@ -181,67 +185,67 @@ public final class CardboardDevice$DeviceParams$Builder extends agza implements 
     
     public CardboardDevice$DeviceParams$Builder setDistortionCoefficients(final int n, final float n2) {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).setDistortionCoefficients(n, n2);
+        CardboardDevice$DeviceParams.access$1900((CardboardDevice$DeviceParams)this.instance, n, n2);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder setInterLensDistance(final float n) {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).setInterLensDistance(n);
+        CardboardDevice$DeviceParams.access$900((CardboardDevice$DeviceParams)this.instance, n);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder setLeftEyeFieldOfViewAngles(final int n, final float n2) {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).setLeftEyeFieldOfViewAngles(n, n2);
+        CardboardDevice$DeviceParams.access$1100((CardboardDevice$DeviceParams)this.instance, n, n2);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder setModel(final String s) {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).setModel(s);
+        CardboardDevice$DeviceParams.access$400((CardboardDevice$DeviceParams)this.instance, s);
         return this;
     }
     
-    public CardboardDevice$DeviceParams$Builder setModelBytes(final agyc agyc) {
+    public CardboardDevice$DeviceParams$Builder setModelBytes(final ahab ahab) {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).setModelBytes(agyc);
+        CardboardDevice$DeviceParams.access$600((CardboardDevice$DeviceParams)this.instance, ahab);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder setPrimaryButton(final CardboardDevice$DeviceParams$ButtonType cardboardDevice$DeviceParams$ButtonType) {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).setPrimaryButton(cardboardDevice$DeviceParams$ButtonType);
+        CardboardDevice$DeviceParams.access$2300((CardboardDevice$DeviceParams)this.instance, cardboardDevice$DeviceParams$ButtonType);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder setScreenToLensDistance(final float n) {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).setScreenToLensDistance(n);
+        CardboardDevice$DeviceParams.access$700((CardboardDevice$DeviceParams)this.instance, n);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder setTrayToLensDistance(final float n) {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).setTrayToLensDistance(n);
+        CardboardDevice$DeviceParams.access$1700((CardboardDevice$DeviceParams)this.instance, n);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder setVendor(final String s) {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).setVendor(s);
+        CardboardDevice$DeviceParams.access$100((CardboardDevice$DeviceParams)this.instance, s);
         return this;
     }
     
-    public CardboardDevice$DeviceParams$Builder setVendorBytes(final agyc agyc) {
+    public CardboardDevice$DeviceParams$Builder setVendorBytes(final ahab ahab) {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).setVendorBytes(agyc);
+        CardboardDevice$DeviceParams.access$300((CardboardDevice$DeviceParams)this.instance, ahab);
         return this;
     }
     
     public CardboardDevice$DeviceParams$Builder setVerticalAlignment(final CardboardDevice$DeviceParams$VerticalAlignmentType cardboardDevice$DeviceParams$VerticalAlignmentType) {
         this.copyOnWrite();
-        ((CardboardDevice$DeviceParams)this.instance).setVerticalAlignment(cardboardDevice$DeviceParams$VerticalAlignmentType);
+        CardboardDevice$DeviceParams.access$1500((CardboardDevice$DeviceParams)this.instance, cardboardDevice$DeviceParams$VerticalAlignmentType);
         return this;
     }
 }

@@ -10,14 +10,14 @@ import com.google.protobuf.ExtensionRegistryLite;
 import java.io.InputStream;
 import java.util.List;
 
-public final class CardboardDevice$DeviceParams extends agzi implements CardboardDevice$DeviceParamsOrBuilder
+public final class CardboardDevice$DeviceParams extends ahbh implements CardboardDevice$DeviceParamsOrBuilder
 {
     private static final CardboardDevice$DeviceParams DEFAULT_INSTANCE;
     public static final int DISTORTION_COEFFICIENTS_FIELD_NUMBER = 7;
     public static final int INTER_LENS_DISTANCE_FIELD_NUMBER = 4;
     public static final int LEFT_EYE_FIELD_OF_VIEW_ANGLES_FIELD_NUMBER = 5;
     public static final int MODEL_FIELD_NUMBER = 2;
-    private static volatile ahbe PARSER;
+    private static volatile ahdd PARSER;
     public static final int PRIMARY_BUTTON_FIELD_NUMBER = 12;
     public static final int SCREEN_TO_LENS_DISTANCE_FIELD_NUMBER = 3;
     public static final int TRAY_TO_LENS_DISTANCE_FIELD_NUMBER = 6;
@@ -25,10 +25,10 @@ public final class CardboardDevice$DeviceParams extends agzi implements Cardboar
     public static final int VERTICAL_ALIGNMENT_FIELD_NUMBER = 11;
     private int bitField0_;
     private int distortionCoefficientsMemoizedSerializedSize;
-    private agzp distortionCoefficients_;
+    private ahbo distortionCoefficients_;
     private float interLensDistance_;
     private int leftEyeFieldOfViewAnglesMemoizedSerializedSize;
-    private agzp leftEyeFieldOfViewAngles_;
+    private ahbo leftEyeFieldOfViewAngles_;
     private String model_;
     private int primaryButton_;
     private float screenToLensDistance_;
@@ -37,7 +37,7 @@ public final class CardboardDevice$DeviceParams extends agzi implements Cardboar
     private int verticalAlignment_;
     
     static {
-        agzi.registerDefaultInstance((Class)CardboardDevice$DeviceParams.class, (agzi)(DEFAULT_INSTANCE = new CardboardDevice$DeviceParams()));
+        ahbh.registerDefaultInstance((Class)CardboardDevice$DeviceParams.class, (ahbh)(DEFAULT_INSTANCE = new CardboardDevice$DeviceParams()));
     }
     
     private CardboardDevice$DeviceParams() {
@@ -50,14 +50,114 @@ public final class CardboardDevice$DeviceParams extends agzi implements Cardboar
         this.primaryButton_ = 1;
     }
     
+    static CardboardDevice$DeviceParams access$000() {
+        return CardboardDevice$DeviceParams.DEFAULT_INSTANCE;
+    }
+    
+    static void access$100(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final String vendor) {
+        cardboardDevice$DeviceParams.setVendor(vendor);
+    }
+    
+    static void access$1000(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams) {
+        cardboardDevice$DeviceParams.clearInterLensDistance();
+    }
+    
+    static void access$1100(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final int n, final float n2) {
+        cardboardDevice$DeviceParams.setLeftEyeFieldOfViewAngles(n, n2);
+    }
+    
+    static void access$1200(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final float n) {
+        cardboardDevice$DeviceParams.addLeftEyeFieldOfViewAngles(n);
+    }
+    
+    static void access$1300(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final Iterable iterable) {
+        cardboardDevice$DeviceParams.addAllLeftEyeFieldOfViewAngles(iterable);
+    }
+    
+    static void access$1400(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams) {
+        cardboardDevice$DeviceParams.clearLeftEyeFieldOfViewAngles();
+    }
+    
+    static void access$1500(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final CardboardDevice$DeviceParams$VerticalAlignmentType verticalAlignment) {
+        cardboardDevice$DeviceParams.setVerticalAlignment(verticalAlignment);
+    }
+    
+    static void access$1600(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams) {
+        cardboardDevice$DeviceParams.clearVerticalAlignment();
+    }
+    
+    static void access$1700(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final float trayToLensDistance) {
+        cardboardDevice$DeviceParams.setTrayToLensDistance(trayToLensDistance);
+    }
+    
+    static void access$1800(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams) {
+        cardboardDevice$DeviceParams.clearTrayToLensDistance();
+    }
+    
+    static void access$1900(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final int n, final float n2) {
+        cardboardDevice$DeviceParams.setDistortionCoefficients(n, n2);
+    }
+    
+    static void access$200(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams) {
+        cardboardDevice$DeviceParams.clearVendor();
+    }
+    
+    static void access$2000(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final float n) {
+        cardboardDevice$DeviceParams.addDistortionCoefficients(n);
+    }
+    
+    static void access$2100(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final Iterable iterable) {
+        cardboardDevice$DeviceParams.addAllDistortionCoefficients(iterable);
+    }
+    
+    static void access$2200(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams) {
+        cardboardDevice$DeviceParams.clearDistortionCoefficients();
+    }
+    
+    static void access$2300(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final CardboardDevice$DeviceParams$ButtonType primaryButton) {
+        cardboardDevice$DeviceParams.setPrimaryButton(primaryButton);
+    }
+    
+    static void access$2400(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams) {
+        cardboardDevice$DeviceParams.clearPrimaryButton();
+    }
+    
+    static void access$300(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final ahab vendorBytes) {
+        cardboardDevice$DeviceParams.setVendorBytes(vendorBytes);
+    }
+    
+    static void access$400(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final String model) {
+        cardboardDevice$DeviceParams.setModel(model);
+    }
+    
+    static void access$500(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams) {
+        cardboardDevice$DeviceParams.clearModel();
+    }
+    
+    static void access$600(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final ahab modelBytes) {
+        cardboardDevice$DeviceParams.setModelBytes(modelBytes);
+    }
+    
+    static void access$700(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final float screenToLensDistance) {
+        cardboardDevice$DeviceParams.setScreenToLensDistance(screenToLensDistance);
+    }
+    
+    static void access$800(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams) {
+        cardboardDevice$DeviceParams.clearScreenToLensDistance();
+    }
+    
+    static void access$900(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final float interLensDistance) {
+        cardboardDevice$DeviceParams.setInterLensDistance(interLensDistance);
+    }
+    
     private void addAllDistortionCoefficients(final Iterable iterable) {
         this.ensureDistortionCoefficientsIsMutable();
-        agxl.addAll(iterable, (List)this.distortionCoefficients_);
+        agzk.addAll(iterable, (List)this.distortionCoefficients_);
     }
     
     private void addAllLeftEyeFieldOfViewAngles(final Iterable iterable) {
         this.ensureLeftEyeFieldOfViewAnglesIsMutable();
-        agxl.addAll(iterable, (List)this.leftEyeFieldOfViewAngles_);
+        agzk.addAll(iterable, (List)this.leftEyeFieldOfViewAngles_);
     }
     
     private void addDistortionCoefficients(final float n) {
@@ -114,16 +214,16 @@ public final class CardboardDevice$DeviceParams extends agzi implements Cardboar
     }
     
     private void ensureDistortionCoefficientsIsMutable() {
-        final agzp distortionCoefficients_ = this.distortionCoefficients_;
+        final ahbo distortionCoefficients_ = this.distortionCoefficients_;
         if (!distortionCoefficients_.c()) {
-            this.distortionCoefficients_ = agzi.mutableCopy(distortionCoefficients_);
+            this.distortionCoefficients_ = ahbh.mutableCopy(distortionCoefficients_);
         }
     }
     
     private void ensureLeftEyeFieldOfViewAnglesIsMutable() {
-        final agzp leftEyeFieldOfViewAngles_ = this.leftEyeFieldOfViewAngles_;
+        final ahbo leftEyeFieldOfViewAngles_ = this.leftEyeFieldOfViewAngles_;
         if (!leftEyeFieldOfViewAngles_.c()) {
-            this.leftEyeFieldOfViewAngles_ = agzi.mutableCopy(leftEyeFieldOfViewAngles_);
+            this.leftEyeFieldOfViewAngles_ = ahbh.mutableCopy(leftEyeFieldOfViewAngles_);
         }
     }
     
@@ -136,58 +236,58 @@ public final class CardboardDevice$DeviceParams extends agzi implements Cardboar
     }
     
     public static CardboardDevice$DeviceParams$Builder newBuilder(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams) {
-        return (CardboardDevice$DeviceParams$Builder)CardboardDevice$DeviceParams.DEFAULT_INSTANCE.createBuilder((agzi)cardboardDevice$DeviceParams);
+        return (CardboardDevice$DeviceParams$Builder)CardboardDevice$DeviceParams.DEFAULT_INSTANCE.createBuilder((ahbh)cardboardDevice$DeviceParams);
     }
     
     public static CardboardDevice$DeviceParams parseDelimitedFrom(final InputStream inputStream) {
-        return (CardboardDevice$DeviceParams)parseDelimitedFrom((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, inputStream);
+        return (CardboardDevice$DeviceParams)parseDelimitedFrom((ahbh)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, inputStream);
     }
     
     public static CardboardDevice$DeviceParams parseDelimitedFrom(final InputStream inputStream, final ExtensionRegistryLite extensionRegistryLite) {
-        return (CardboardDevice$DeviceParams)parseDelimitedFrom((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, inputStream, extensionRegistryLite);
+        return (CardboardDevice$DeviceParams)parseDelimitedFrom((ahbh)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, inputStream, extensionRegistryLite);
     }
     
-    public static CardboardDevice$DeviceParams parseFrom(final agyc agyc) {
-        return (CardboardDevice$DeviceParams)agzi.parseFrom((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, agyc);
+    public static CardboardDevice$DeviceParams parseFrom(final ahab ahab) {
+        return (CardboardDevice$DeviceParams)ahbh.parseFrom((ahbh)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, ahab);
     }
     
-    public static CardboardDevice$DeviceParams parseFrom(final agyc agyc, final ExtensionRegistryLite extensionRegistryLite) {
-        return (CardboardDevice$DeviceParams)agzi.parseFrom((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, agyc, extensionRegistryLite);
+    public static CardboardDevice$DeviceParams parseFrom(final ahab ahab, final ExtensionRegistryLite extensionRegistryLite) {
+        return (CardboardDevice$DeviceParams)ahbh.parseFrom((ahbh)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, ahab, extensionRegistryLite);
     }
     
-    public static CardboardDevice$DeviceParams parseFrom(final agyh agyh) {
-        return (CardboardDevice$DeviceParams)agzi.parseFrom((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, agyh);
+    public static CardboardDevice$DeviceParams parseFrom(final ahag ahag) {
+        return (CardboardDevice$DeviceParams)ahbh.parseFrom((ahbh)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, ahag);
     }
     
-    public static CardboardDevice$DeviceParams parseFrom(final agyh agyh, final ExtensionRegistryLite extensionRegistryLite) {
-        return (CardboardDevice$DeviceParams)agzi.parseFrom((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, agyh, extensionRegistryLite);
+    public static CardboardDevice$DeviceParams parseFrom(final ahag ahag, final ExtensionRegistryLite extensionRegistryLite) {
+        return (CardboardDevice$DeviceParams)ahbh.parseFrom((ahbh)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, ahag, extensionRegistryLite);
     }
     
     public static CardboardDevice$DeviceParams parseFrom(final InputStream inputStream) {
-        return (CardboardDevice$DeviceParams)agzi.parseFrom((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, inputStream);
+        return (CardboardDevice$DeviceParams)ahbh.parseFrom((ahbh)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, inputStream);
     }
     
     public static CardboardDevice$DeviceParams parseFrom(final InputStream inputStream, final ExtensionRegistryLite extensionRegistryLite) {
-        return (CardboardDevice$DeviceParams)agzi.parseFrom((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, inputStream, extensionRegistryLite);
+        return (CardboardDevice$DeviceParams)ahbh.parseFrom((ahbh)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, inputStream, extensionRegistryLite);
     }
     
     public static CardboardDevice$DeviceParams parseFrom(final ByteBuffer byteBuffer) {
-        return (CardboardDevice$DeviceParams)agzi.parseFrom((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, byteBuffer);
+        return (CardboardDevice$DeviceParams)ahbh.parseFrom((ahbh)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, byteBuffer);
     }
     
     public static CardboardDevice$DeviceParams parseFrom(final ByteBuffer byteBuffer, final ExtensionRegistryLite extensionRegistryLite) {
-        return (CardboardDevice$DeviceParams)agzi.parseFrom((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, byteBuffer, extensionRegistryLite);
+        return (CardboardDevice$DeviceParams)ahbh.parseFrom((ahbh)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, byteBuffer, extensionRegistryLite);
     }
     
     public static CardboardDevice$DeviceParams parseFrom(final byte[] array) {
-        return (CardboardDevice$DeviceParams)agzi.parseFrom((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, array);
+        return (CardboardDevice$DeviceParams)ahbh.parseFrom((ahbh)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, array);
     }
     
     public static CardboardDevice$DeviceParams parseFrom(final byte[] array, final ExtensionRegistryLite extensionRegistryLite) {
-        return (CardboardDevice$DeviceParams)agzi.parseFrom((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, array, extensionRegistryLite);
+        return (CardboardDevice$DeviceParams)ahbh.parseFrom((ahbh)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, array, extensionRegistryLite);
     }
     
-    public static ahbe parser() {
+    public static ahdd parser() {
         return CardboardDevice$DeviceParams.DEFAULT_INSTANCE.getParserForType();
     }
     
@@ -212,8 +312,8 @@ public final class CardboardDevice$DeviceParams extends agzi implements Cardboar
         this.model_ = model_;
     }
     
-    private void setModelBytes(final agyc agyc) {
-        this.model_ = agyc.E();
+    private void setModelBytes(final ahab ahab) {
+        this.model_ = ahab.E();
         this.bitField0_ |= 0x2;
     }
     
@@ -238,8 +338,8 @@ public final class CardboardDevice$DeviceParams extends agzi implements Cardboar
         this.vendor_ = vendor_;
     }
     
-    private void setVendorBytes(final agyc agyc) {
-        this.vendor_ = agyc.E();
+    private void setVendorBytes(final ahab ahab) {
+        this.vendor_ = ahab.E();
         this.bitField0_ |= 0x1;
     }
     
@@ -248,18 +348,18 @@ public final class CardboardDevice$DeviceParams extends agzi implements Cardboar
         this.bitField0_ |= 0x10;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe parser;
+                final ahdd parser;
                 if ((parser = CardboardDevice$DeviceParams.PARSER) == null) {
                     synchronized (CardboardDevice$DeviceParams.class) {
                         if (CardboardDevice$DeviceParams.PARSER == null) {
-                            CardboardDevice$DeviceParams.PARSER = (ahbe)new agzb((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE);
+                            CardboardDevice$DeviceParams.PARSER = (ahdd)new ahba((ahbh)CardboardDevice$DeviceParams.DEFAULT_INSTANCE);
                         }
                     }
                 }
@@ -318,8 +418,8 @@ public final class CardboardDevice$DeviceParams extends agzi implements Cardboar
         return this.model_;
     }
     
-    public agyc getModelBytes() {
-        return agyc.A(this.model_);
+    public ahab getModelBytes() {
+        return ahab.A(this.model_);
     }
     
     public CardboardDevice$DeviceParams$ButtonType getPrimaryButton() {
@@ -342,8 +442,8 @@ public final class CardboardDevice$DeviceParams extends agzi implements Cardboar
         return this.vendor_;
     }
     
-    public agyc getVendorBytes() {
-        return agyc.A(this.vendor_);
+    public ahab getVendorBytes() {
+        return ahab.A(this.vendor_);
     }
     
     public CardboardDevice$DeviceParams$VerticalAlignmentType getVerticalAlignment() {

@@ -6,7 +6,7 @@ package com.google.vr.sdk.proto;
 
 import com.google.protobuf.MessageLite;
 
-public final class CardboardDevice$FreeformDistortion extends agzi implements ahax
+public final class CardboardDevice$FreeformDistortion extends ahbh implements ahcw
 {
     public static final int BLUE_VIRTUAL_EYE_TAN_ANGLE_FIELD_NUMBER = 9;
     private static final CardboardDevice$FreeformDistortion DEFAULT_INSTANCE;
@@ -15,23 +15,23 @@ public final class CardboardDevice$FreeformDistortion extends agzi implements ah
     public static final int EYE_TAN_ANGLE_MIN_X_FIELD_NUMBER = 3;
     public static final int EYE_TAN_ANGLE_MIN_Y_FIELD_NUMBER = 5;
     public static final int GREEN_VIRTUAL_EYE_TAN_ANGLE_FIELD_NUMBER = 8;
-    private static volatile ahbe PARSER;
+    private static volatile ahdd PARSER;
     public static final int RESOLUTION_X_FIELD_NUMBER = 1;
     public static final int RESOLUTION_Y_FIELD_NUMBER = 2;
     public static final int VIRTUAL_EYE_TAN_ANGLE_FIELD_NUMBER = 7;
     private int bitField0_;
-    private agzp blueVirtualEyeTanAngle_;
+    private ahbo blueVirtualEyeTanAngle_;
     private float eyeTanAngleMaxX_;
     private float eyeTanAngleMaxY_;
     private float eyeTanAngleMinX_;
     private float eyeTanAngleMinY_;
-    private agzp greenVirtualEyeTanAngle_;
+    private ahbo greenVirtualEyeTanAngle_;
     private int resolutionX_;
     private int resolutionY_;
-    private agzp virtualEyeTanAngle_;
+    private ahbo virtualEyeTanAngle_;
     
     static {
-        agzi.registerDefaultInstance((Class)CardboardDevice$FreeformDistortion.class, (agzi)(DEFAULT_INSTANCE = new CardboardDevice$FreeformDistortion()));
+        ahbh.registerDefaultInstance((Class)CardboardDevice$FreeformDistortion.class, (ahbh)(DEFAULT_INSTANCE = new CardboardDevice$FreeformDistortion()));
     }
     
     private CardboardDevice$FreeformDistortion() {
@@ -40,18 +40,22 @@ public final class CardboardDevice$FreeformDistortion extends agzi implements ah
         this.blueVirtualEyeTanAngle_ = emptyFloatList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    static CardboardDevice$FreeformDistortion access$11000() {
+        return CardboardDevice$FreeformDistortion.DEFAULT_INSTANCE;
+    }
+    
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe parser;
+                final ahdd parser;
                 if ((parser = CardboardDevice$FreeformDistortion.PARSER) == null) {
                     synchronized (CardboardDevice$FreeformDistortion.class) {
                         if (CardboardDevice$FreeformDistortion.PARSER == null) {
-                            CardboardDevice$FreeformDistortion.PARSER = (ahbe)new agzb((agzi)CardboardDevice$FreeformDistortion.DEFAULT_INSTANCE);
+                            CardboardDevice$FreeformDistortion.PARSER = (ahdd)new ahba((ahbh)CardboardDevice$FreeformDistortion.DEFAULT_INSTANCE);
                         }
                     }
                 }

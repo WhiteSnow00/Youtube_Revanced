@@ -6,12 +6,12 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand extends agzi implements ahax
+public final class ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand extends ahbh implements ahcw
 {
     public static final ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand a;
-    private static volatile ahbe f;
-    public static final agzg showTransientPlayerScrimOverlayCommand;
-    public anss b;
+    private static volatile ahdd f;
+    public static final ahbf showTransientPlayerScrimOverlayCommand;
+    public anuv b;
     public int c;
     public int d;
     public int e;
@@ -20,28 +20,28 @@ public final class ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransien
     
     static {
         final ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand a2 = new ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand();
-        agzi.registerDefaultInstance((Class)ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand.class, (agzi)(a = a2));
-        showTransientPlayerScrimOverlayCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 408748412, ahcm.k, (Class)ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand.class);
+        ahbh.registerDefaultInstance((Class)ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand.class, (ahbh)(a = a2));
+        showTransientPlayerScrimOverlayCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 408748412, ahek.k, (Class)ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand.class);
     }
     
     private ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand() {
         this.h = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte h = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe f;
+                final ahdd f;
                 if ((f = ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand.f) == null) {
                     synchronized (ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand.class) {
                         if (ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand.f == null) {
-                            ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand.f = (ahbe)new agzb((agzi)ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand.a);
+                            ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand.f = (ahdd)new ahba((ahbh)ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand.a);
                         }
                     }
                 }
@@ -51,7 +51,7 @@ public final class ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransien
                 return ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand.a;
             }
             case 4: {
-                return new agza((agzi)ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand.a);
+                return new ahaz((ahbh)ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand.a);
             }
             case 3: {
                 return new ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransientPlayerScrimOverlayCommand();
@@ -61,9 +61,9 @@ public final class ShowTransientPlayerScrimOverlayCommandOuterClass$ShowTransien
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    h = 0;
                 }
-                this.h = (byte)(b ? 1 : 0);
+                this.h = h;
                 return null;
             }
             case 0: {

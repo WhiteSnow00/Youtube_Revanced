@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AppStoreEndpointOuterClass
 {
-    public static final agzg appStoreEndpoint;
+    public static final ahbf appStoreEndpoint;
     
     static {
-        appStoreEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ahtf.a, (MessageLite)ahtf.a, (agzn)null, 62975126, ahcm.k, (Class)ahtf.class);
+        appStoreEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)ahvd.a, (MessageLite)ahvd.a, (ahbm)null, 62975126, ahek.k, (Class)ahvd.class);
     }
     
     private AppStoreEndpointOuterClass() {

@@ -19,38 +19,44 @@ class SdkDaydreamTouchListener extends AbstractDaydreamTouchListener implements 
     private final GvrApi gvrApi;
     private final GvrLayoutImpl gvrLayout;
     private final boolean isDaydreamImageAlignmentEnabled;
-    private final aral vrParamsProvider;
+    private final arda vrParamsProvider;
+    
+    static /* bridge */ arda -$$Nest$fgetvrParamsProvider(final SdkDaydreamTouchListener sdkDaydreamTouchListener) {
+        return sdkDaydreamTouchListener.vrParamsProvider;
+    }
+    
+    static /* bridge */ void -$$Nest$minit(final SdkDaydreamTouchListener sdkDaydreamTouchListener, final DisplayMetrics displayMetrics, final Display$DisplayParams display$DisplayParams, final arbt arbt) {
+        sdkDaydreamTouchListener.init(displayMetrics, display$DisplayParams, arbt);
+    }
     
     public SdkDaydreamTouchListener(final GvrLayoutImpl gvrLayout) {
         this.gvrLayout = gvrLayout;
         final GvrApi gvrApi = gvrLayout.getGvrApi();
         this.gvrApi = gvrApi;
-        afoo afoo;
-        if ((afoo = afoo.a(gvrApi.getSdkConfigurationParams().daydreamImageAlignment_)) == null) {
-            afoo = afoo.UNKNOWN_ALIGNMENT;
+        afqp afqp;
+        if ((afqp = afqp.a(gvrApi.getSdkConfigurationParams().daydreamImageAlignment_)) == null) {
+            afqp = afqp.UNKNOWN_ALIGNMENT;
         }
-        this.isDaydreamImageAlignmentEnabled = (afoo != afoo.DISABLED && !gvrApi.getSdkConfigurationParams().touchOverlayEnabled_);
+        this.isDaydreamImageAlignmentEnabled = (afqp != afqp.DISABLED && !gvrApi.getSdkConfigurationParams().touchOverlayEnabled_);
         final Context context = gvrLayout.getContext();
-        this.vrParamsProvider = aqql.o(context);
-        final SdkDaydreamTouchListener$FinishInitializationTask sdkDaydreamTouchListener$FinishInitializationTask = new SdkDaydreamTouchListener$FinishInitializationTask(this, null);
-        sdkDaydreamTouchListener$FinishInitializationTask.display = aqzg.r(context);
+        this.vrParamsProvider = aqsx.p(context);
+        final SdkDaydreamTouchListener$FinishInitializationTask sdkDaydreamTouchListener$FinishInitializationTask = new SdkDaydreamTouchListener$FinishInitializationTask(this, (SdkDaydreamTouchListener$FinishInitializationTask-IA)null);
+        sdkDaydreamTouchListener$FinishInitializationTask.display = arbu.r(context);
         sdkDaydreamTouchListener$FinishInitializationTask.execute((Object[])new Void[0]);
     }
     
-    private void init(final DisplayMetrics displayMetrics, final Display$DisplayParams display$DisplayParams, final aqzf aqzf) {
-        this.initWithDisplayParams(displayMetrics, display$DisplayParams, aqzf);
+    private void init(final DisplayMetrics displayMetrics, final Display$DisplayParams display$DisplayParams, final arbt arbt) {
+        this.initWithDisplayParams(displayMetrics, display$DisplayParams, arbt);
         this.refreshViewerProfile();
     }
     
-    @Override
     protected boolean isDaydreamImageAlignmentEnabled() {
         return this.isDaydreamImageAlignmentEnabled;
     }
     
-    @Override
-    protected void logEvent(final afoj afoj, final afoi afoi) {
+    protected void logEvent(final afqk afqk, final afqj afqj) {
         if (this.gvrLayout.getVrCoreSdkClient() != null && this.gvrLayout.getVrCoreSdkClient().getLoggingService() != null) {
-            final VREventParcelable vrEventParcelable = new VREventParcelable(afoj.Z, afoi);
+            final VREventParcelable vrEventParcelable = new VREventParcelable(afqk.Z, afqj);
             try {
                 this.gvrLayout.getVrCoreSdkClient().getLoggingService().a(vrEventParcelable);
                 return;
@@ -68,10 +74,9 @@ class SdkDaydreamTouchListener extends AbstractDaydreamTouchListener implements 
     }
     
     public void refreshViewerProfile() {
-        new SdkDaydreamTouchListener$RefreshViewerProfileTask(this, null).execute((Object[])new Void[0]);
+        new SdkDaydreamTouchListener$RefreshViewerProfileTask(this, (SdkDaydreamTouchListener$RefreshViewerProfileTask-IA)null).execute((Object[])new Void[0]);
     }
     
-    @Override
     protected void setLensOffset(final float n, final float n2, final float n3) {
         this.gvrApi.setLensOffset(n, n2, 0.0f);
     }

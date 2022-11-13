@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class LiveFullscreenConfirmRendererOuterClass
 {
-    public static final agzg liveFullscreenConfirmRenderer;
+    public static final ahbf liveFullscreenConfirmRenderer;
     
     static {
-        liveFullscreenConfirmRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)alrx.a, (MessageLite)alrx.a, (agzn)null, 342576286, ahcm.k, (Class)alrx.class);
+        liveFullscreenConfirmRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)alub.a, (MessageLite)alub.a, (ahbm)null, 342576286, ahek.k, (Class)alub.class);
     }
     
     private LiveFullscreenConfirmRendererOuterClass() {

@@ -6,35 +6,35 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint extends agzi implements ahax
+public final class MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint extends ahbh implements ahcw
 {
     public static final MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint a;
-    private static volatile ahbe d;
-    public static final agzg mdxPlaybackEndpoint;
+    private static volatile ahdd d;
+    public static final ahbf mdxPlaybackEndpoint;
     public int b;
-    public amdi c;
+    public amfm c;
     
     static {
         final MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint a2 = new MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint();
-        agzi.registerDefaultInstance((Class)MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint.class, (agzi)(a = a2));
-        mdxPlaybackEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 164988379, ahcm.k, (Class)MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint.class);
+        ahbh.registerDefaultInstance((Class)MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint.class, (ahbh)(a = a2));
+        mdxPlaybackEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 164988379, ahek.k, (Class)MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint.class);
     }
     
     private MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint.d) == null) {
                     synchronized (MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint.class) {
                         if (MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint.d == null) {
-                            MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint.d = (ahbe)new agzb((agzi)MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint.a);
+                            MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint.d = (ahdd)new ahba((ahbh)MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint.a);
                         }
                     }
                 }
@@ -44,7 +44,7 @@ public final class MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint extends agz
                 return MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint.a);
+                return new ahaz((ahbh)MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint.a);
             }
             case 3: {
                 return new MdxPlaybackEndpointOuterClass$MdxPlaybackEndpoint();

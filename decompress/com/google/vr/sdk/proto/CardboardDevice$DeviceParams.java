@@ -8,7 +8,7 @@ import com.google.protobuf.MessageLite;
 import com.google.protobuf.ExtensionRegistryLite;
 import java.util.List;
 
-public final class CardboardDevice$DeviceParams extends agzi implements ahax
+public final class CardboardDevice$DeviceParams extends ahbh implements ahcw
 {
     public static final int BLUE_DISTORTION_COEFFICIENTS_FIELD_NUMBER = 9;
     public static final int DAYDREAM_INTERNAL_FIELD_NUMBER = 196883;
@@ -21,7 +21,7 @@ public final class CardboardDevice$DeviceParams extends agzi implements ahax
     public static final int INTER_LENS_DISTANCE_FIELD_NUMBER = 4;
     public static final int LEFT_EYE_FIELD_OF_VIEW_ANGLES_FIELD_NUMBER = 5;
     public static final int MODEL_FIELD_NUMBER = 2;
-    private static volatile ahbe PARSER;
+    private static volatile ahdd PARSER;
     public static final int PRIMARY_BUTTON_FIELD_NUMBER = 12;
     public static final int SCREEN_TO_LENS_DISTANCE_FIELD_NUMBER = 3;
     public static final int TRAY_TO_LENS_DISTANCE_FIELD_NUMBER = 6;
@@ -29,18 +29,18 @@ public final class CardboardDevice$DeviceParams extends agzi implements ahax
     public static final int VERTICAL_ALIGNMENT_FIELD_NUMBER = 11;
     private int bitField0_;
     private int blueDistortionCoefficientsMemoizedSerializedSize;
-    private agzp blueDistortionCoefficients_;
+    private ahbo blueDistortionCoefficients_;
     private CardboardDevice$DaydreamInternalParams daydreamInternal_;
     private int distortionCoefficientsMemoizedSerializedSize;
-    private agzp distortionCoefficients_;
+    private ahbo distortionCoefficients_;
     private CardboardDevice$FreeformDistortion freeformDistortion_;
     private int greenDistortionCoefficientsMemoizedSerializedSize;
-    private agzp greenDistortionCoefficients_;
+    private ahbo greenDistortionCoefficients_;
     private boolean hasMagnet_;
     private float interLensDistance_;
     private CardboardDevice$CardboardInternalParams internal_;
     private int leftEyeFieldOfViewAnglesMemoizedSerializedSize;
-    private agzp leftEyeFieldOfViewAngles_;
+    private ahbo leftEyeFieldOfViewAngles_;
     private String model_;
     private int primaryButton_;
     private float screenToLensDistance_;
@@ -49,7 +49,7 @@ public final class CardboardDevice$DeviceParams extends agzi implements ahax
     private int verticalAlignment_;
     
     static {
-        agzi.registerDefaultInstance((Class)CardboardDevice$DeviceParams.class, (agzi)(DEFAULT_INSTANCE = new CardboardDevice$DeviceParams()));
+        ahbh.registerDefaultInstance((Class)CardboardDevice$DeviceParams.class, (ahbh)(DEFAULT_INSTANCE = new CardboardDevice$DeviceParams()));
     }
     
     private CardboardDevice$DeviceParams() {
@@ -66,14 +66,62 @@ public final class CardboardDevice$DeviceParams extends agzi implements ahax
         this.primaryButton_ = 1;
     }
     
+    static CardboardDevice$DeviceParams access$000() {
+        return CardboardDevice$DeviceParams.DEFAULT_INSTANCE;
+    }
+    
+    static void access$100(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final String vendor) {
+        cardboardDevice$DeviceParams.setVendor(vendor);
+    }
+    
+    static void access$1300(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final Iterable iterable) {
+        cardboardDevice$DeviceParams.addAllLeftEyeFieldOfViewAngles(iterable);
+    }
+    
+    static void access$1400(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams) {
+        cardboardDevice$DeviceParams.clearLeftEyeFieldOfViewAngles();
+    }
+    
+    static void access$1500(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final CardboardDevice$DeviceParams$VerticalAlignmentType verticalAlignment) {
+        cardboardDevice$DeviceParams.setVerticalAlignment(verticalAlignment);
+    }
+    
+    static void access$1700(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final float trayToLensDistance) {
+        cardboardDevice$DeviceParams.setTrayToLensDistance(trayToLensDistance);
+    }
+    
+    static void access$2100(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final Iterable iterable) {
+        cardboardDevice$DeviceParams.addAllDistortionCoefficients(iterable);
+    }
+    
+    static void access$2200(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams) {
+        cardboardDevice$DeviceParams.clearDistortionCoefficients();
+    }
+    
+    static void access$3100(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final boolean b) {
+        cardboardDevice$DeviceParams.setHasMagnet(true);
+    }
+    
+    static void access$400(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final String model) {
+        cardboardDevice$DeviceParams.setModel(model);
+    }
+    
+    static void access$700(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final float screenToLensDistance) {
+        cardboardDevice$DeviceParams.setScreenToLensDistance(screenToLensDistance);
+    }
+    
+    static void access$900(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams, final float interLensDistance) {
+        cardboardDevice$DeviceParams.setInterLensDistance(interLensDistance);
+    }
+    
     private void addAllDistortionCoefficients(final Iterable iterable) {
         this.ensureDistortionCoefficientsIsMutable();
-        agxl.addAll(iterable, (List)this.distortionCoefficients_);
+        agzk.addAll(iterable, (List)this.distortionCoefficients_);
     }
     
     private void addAllLeftEyeFieldOfViewAngles(final Iterable iterable) {
         this.ensureLeftEyeFieldOfViewAnglesIsMutable();
-        agxl.addAll(iterable, (List)this.leftEyeFieldOfViewAngles_);
+        agzk.addAll(iterable, (List)this.leftEyeFieldOfViewAngles_);
     }
     
     private void clearDistortionCoefficients() {
@@ -85,16 +133,16 @@ public final class CardboardDevice$DeviceParams extends agzi implements ahax
     }
     
     private void ensureDistortionCoefficientsIsMutable() {
-        final agzp distortionCoefficients_ = this.distortionCoefficients_;
+        final ahbo distortionCoefficients_ = this.distortionCoefficients_;
         if (!distortionCoefficients_.c()) {
-            this.distortionCoefficients_ = agzi.mutableCopy(distortionCoefficients_);
+            this.distortionCoefficients_ = ahbh.mutableCopy(distortionCoefficients_);
         }
     }
     
     private void ensureLeftEyeFieldOfViewAnglesIsMutable() {
-        final agzp leftEyeFieldOfViewAngles_ = this.leftEyeFieldOfViewAngles_;
+        final ahbo leftEyeFieldOfViewAngles_ = this.leftEyeFieldOfViewAngles_;
         if (!leftEyeFieldOfViewAngles_.c()) {
-            this.leftEyeFieldOfViewAngles_ = agzi.mutableCopy(leftEyeFieldOfViewAngles_);
+            this.leftEyeFieldOfViewAngles_ = ahbh.mutableCopy(leftEyeFieldOfViewAngles_);
         }
     }
     
@@ -103,7 +151,7 @@ public final class CardboardDevice$DeviceParams extends agzi implements ahax
     }
     
     public static CardboardDevice$DeviceParams parseFrom(final byte[] array, final ExtensionRegistryLite extensionRegistryLite) {
-        return (CardboardDevice$DeviceParams)agzi.parseFrom((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, array, extensionRegistryLite);
+        return (CardboardDevice$DeviceParams)ahbh.parseFrom((ahbh)CardboardDevice$DeviceParams.DEFAULT_INSTANCE, array, extensionRegistryLite);
     }
     
     private void setHasMagnet(final boolean b) {
@@ -143,18 +191,18 @@ public final class CardboardDevice$DeviceParams extends agzi implements ahax
         this.bitField0_ |= 0x10;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe parser;
+                final ahdd parser;
                 if ((parser = CardboardDevice$DeviceParams.PARSER) == null) {
                     synchronized (CardboardDevice$DeviceParams.class) {
                         if (CardboardDevice$DeviceParams.PARSER == null) {
-                            CardboardDevice$DeviceParams.PARSER = (ahbe)new agzb((agzi)CardboardDevice$DeviceParams.DEFAULT_INSTANCE);
+                            CardboardDevice$DeviceParams.PARSER = (ahdd)new ahba((ahbh)CardboardDevice$DeviceParams.DEFAULT_INSTANCE);
                         }
                     }
                 }
@@ -164,7 +212,7 @@ public final class CardboardDevice$DeviceParams extends agzi implements ahax
                 return CardboardDevice$DeviceParams.DEFAULT_INSTANCE;
             }
             case 4: {
-                return new CardboardDevice$DeviceParams$Builder(null);
+                return new CardboardDevice$DeviceParams$Builder((CardboardDevice$1)null);
             }
             case 3: {
                 return new CardboardDevice$DeviceParams();

@@ -7,7 +7,7 @@ package com.google.webrtc.hwcodec;
 import org.webrtc.VideoFrame;
 import android.view.Surface;
 
-class InternalNativeMediaCodecVideoDecoder extends aulw
+class InternalNativeMediaCodecVideoDecoder extends auml
 {
     private Surface createDecodeSurface(final long n) {
         throw null;

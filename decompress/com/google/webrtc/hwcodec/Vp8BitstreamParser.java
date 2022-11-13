@@ -6,5 +6,6 @@ package com.google.webrtc.hwcodec;
 
 public class Vp8BitstreamParser extends NativeBitstreamParser
 {
+    @Override
     protected native long nativeCreate();
 }

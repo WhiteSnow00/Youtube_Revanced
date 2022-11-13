@@ -28,7 +28,7 @@ import android.content.Intent;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-public class FirebaseMessagingService extends agkf
+public class FirebaseMessagingService extends agmg
 {
     private static final Queue a;
     
@@ -42,6 +42,7 @@ public class FirebaseMessagingService extends agkf
     public void b(final String s) {
     }
     
+    @Override
     public final void g(final Intent ex) {
         final String action = ((Intent)ex).getAction();
         if ("com.mgoogle.android.c2dm.intent.RECEIVE".equals(action) || "com.google.firebase.messaging.RECEIVE_DIRECT_BOOT".equals(action)) {
@@ -61,33 +62,33 @@ public class FirebaseMessagingService extends agkf
                 stringExtra2 = "gcm";
             }
             int n = 0;
-            Label_0238: {
+            Label_0257: {
                 switch (stringExtra2.hashCode()) {
                     case 814800675: {
                         if (stringExtra2.equals("send_event")) {
                             n = 2;
-                            break Label_0238;
+                            break Label_0257;
                         }
                         break;
                     }
                     case 814694033: {
                         if (stringExtra2.equals("send_error")) {
                             n = 3;
-                            break Label_0238;
+                            break Label_0257;
                         }
                         break;
                     }
                     case 102161: {
                         if (stringExtra2.equals("gcm")) {
                             n = 0;
-                            break Label_0238;
+                            break Label_0257;
                         }
                         break;
                     }
                     case -2062414158: {
                         if (stringExtra2.equals("deleted_messages")) {
                             n = 1;
-                            break Label_0238;
+                            break Label_0257;
                         }
                         break;
                     }
@@ -107,19 +108,19 @@ public class FirebaseMessagingService extends agkf
                     if (((Intent)ex).getStringExtra("google.message_id") == null) {
                         ((Intent)ex).getStringExtra("message_id");
                     }
-                    new agkq(((Intent)ex).getStringExtra("error"));
+                    new agmr(((Intent)ex).getStringExtra("error"));
                 }
             }
             else {
-                if (agnj.t((Intent)ex)) {
-                    agnj.r("_nr", ((Intent)ex).getExtras());
+                if (agpc.t((Intent)ex)) {
+                    agpc.r("_nr", ((Intent)ex).getExtras());
                 }
-                Label_1027: {
+                Label_1127: {
                     if (ex != null) {
-                        if (!agnj.s((Intent)ex)) {
+                        if (!agpc.s((Intent)ex)) {
                             try {
-                                agfz.b();
-                                final Context a2 = agfz.b().a();
+                                agia.b();
+                                final Context a2 = agia.b().a();
                                 final SharedPreferences sharedPreferences = a2.getSharedPreferences("com.google.firebase.messaging", 0);
                                 boolean b;
                                 if (sharedPreferences.contains("export_to_big_query")) {
@@ -128,17 +129,17 @@ public class FirebaseMessagingService extends agkf
                                 else {
                                     final PackageManager packageManager = a2.getPackageManager();
                                     if (packageManager == null) {
-                                        break Label_1027;
+                                        break Label_1127;
                                     }
                                     final ApplicationInfo applicationInfo = packageManager.getApplicationInfo(a2.getPackageName(), 128);
                                     if (applicationInfo == null || applicationInfo.metaData == null || !applicationInfo.metaData.containsKey("delivery_metrics_exported_to_big_query_enabled")) {
-                                        break Label_1027;
+                                        break Label_1127;
                                     }
                                     b = applicationInfo.metaData.getBoolean("delivery_metrics_exported_to_big_query_enabled", false);
                                 }
                                 if (b) {
-                                    final agle b2 = agle.b;
-                                    final lql a3 = FirebaseMessaging.a;
+                                    final agnf b2 = agnf.b;
+                                    final lrp a3 = FirebaseMessaging.a;
                                     if (a3 == null) {
                                         Log.e("FirebaseMessaging", "TransportFactory is null. Skip exporting message delivery metrics to Big Query");
                                     }
@@ -147,10 +148,10 @@ public class FirebaseMessagingService extends agkf
                                         if ((bundle = ((Intent)ex).getExtras()) == null) {
                                             bundle = Bundle.EMPTY;
                                         }
-                                        final agld f = aglh.f();
+                                        final agne f = agni.f();
                                         final Object value = bundle.get("google.ttl");
                                         int h = 0;
-                                        Label_0562: {
+                                        Label_0599: {
                                             if (value instanceof Integer) {
                                                 h = (int)value;
                                             }
@@ -158,7 +159,7 @@ public class FirebaseMessagingService extends agkf
                                                 if (value instanceof String) {
                                                     try {
                                                         h = Integer.parseInt((String)value);
-                                                        break Label_0562;
+                                                        break Label_0599;
                                                     }
                                                     catch (final NumberFormatException ex2) {
                                                         Log.w("FirebaseMessaging", "Invalid TTL: ".concat(String.valueOf(String.valueOf(value))));
@@ -170,11 +171,11 @@ public class FirebaseMessagingService extends agkf
                                         f.h = h;
                                         f.j = b2;
                                         String string = null;
-                                        Label_0628: {
+                                        Label_0667: {
                                             if (TextUtils.isEmpty((CharSequence)(string = bundle.getString("google.to")))) {
                                                 try {
-                                                    string = (String)nmr.d(agji.c(agfz.b()).a());
-                                                    break Label_0628;
+                                                    string = (String)nnv.d(aglj.c(agia.b()).a());
+                                                    break Label_0667;
                                                 }
                                                 catch (final InterruptedException ex) {}
                                                 catch (final ExecutionException ex3) {}
@@ -182,14 +183,14 @@ public class FirebaseMessagingService extends agkf
                                             }
                                         }
                                         f.c = string;
-                                        f.f = agfz.b().a().getPackageName();
-                                        f.e = aglg.b;
-                                        aglf d;
-                                        if (bundle != null && agli.m(bundle)) {
-                                            d = aglf.d;
+                                        f.f = agia.b().a().getPackageName();
+                                        f.e = agnh.b;
+                                        agng d;
+                                        if (bundle != null && agnj.M(bundle)) {
+                                            d = agng.d;
                                         }
                                         else {
-                                            d = aglf.b;
+                                            d = agng.b;
                                         }
                                         f.d = d;
                                         String b3;
@@ -199,7 +200,7 @@ public class FirebaseMessagingService extends agkf
                                         if (b3 != null) {
                                             f.b = b3;
                                         }
-                                        final String q = agnj.q(bundle);
+                                        final String q = agpc.q(bundle);
                                         if (q != null) {
                                             f.i = q;
                                         }
@@ -207,46 +208,46 @@ public class FirebaseMessagingService extends agkf
                                         if (string2 != null) {
                                             f.g = string2;
                                         }
-                                        final String p = agnj.p(bundle);
+                                        final String p = agpc.p(bundle);
                                         if (p != null) {
                                             f.k = p;
                                         }
-                                        final String o = agnj.o(bundle);
+                                        final String o = agpc.o(bundle);
                                         if (o != null) {
                                             f.l = o;
                                         }
                                         long a4 = 0L;
-                                        Label_0950: {
+                                        Label_1043: {
                                             if (bundle.containsKey("google.c.sender.id")) {
                                                 try {
                                                     a4 = Long.parseLong(bundle.getString("google.c.sender.id"));
-                                                    break Label_0950;
+                                                    break Label_1043;
                                                 }
                                                 catch (final NumberFormatException ex4) {
                                                     Log.w("FirebaseMessaging", "error parsing project number", (Throwable)ex4);
                                                 }
                                             }
-                                            final agfz b4 = agfz.b();
+                                            final agia b4 = agia.b();
                                             final String c = b4.e().c;
                                             if (c != null) {
                                                 try {
                                                     a4 = Long.parseLong(c);
-                                                    break Label_0950;
+                                                    break Label_1043;
                                                 }
                                                 catch (final NumberFormatException ex5) {
                                                     Log.w("FirebaseMessaging", "error parsing sender ID", (Throwable)ex5);
                                                 }
                                             }
                                             final String b5 = b4.e().b;
-                                            Label_0907: {
+                                            Label_0994: {
                                                 if (!b5.startsWith("1:")) {
                                                     try {
                                                         a4 = Long.parseLong(b5);
-                                                        break Label_0950;
+                                                        break Label_1043;
                                                     }
                                                     catch (final NumberFormatException ex6) {
                                                         Log.w("FirebaseMessaging", "error parsing app ID", (Throwable)ex6);
-                                                        break Label_0907;
+                                                        break Label_0994;
                                                     }
                                                 }
                                                 final String[] split = b5.split(":");
@@ -258,9 +259,9 @@ public class FirebaseMessagingService extends agkf
                                                         }
                                                         catch (final NumberFormatException ex7) {
                                                             Log.w("FirebaseMessaging", "error parsing app ID", (Throwable)ex7);
-                                                            break Label_0907;
+                                                            break Label_0994;
                                                         }
-                                                        break Label_0950;
+                                                        break Label_1043;
                                                     }
                                                 }
                                             }
@@ -269,9 +270,9 @@ public class FirebaseMessagingService extends agkf
                                         if (a4 > 0L) {
                                             f.a = a4;
                                         }
-                                        final aglh a5 = f.a();
+                                        final agni a5 = f.a();
                                         try {
-                                            a3.a("FCM_CLIENT_EVENT_LOGGING", lqg.a(), (lqj)agko.a).a(lqh.d((Object)new agli(a5)));
+                                            a3.a("FCM_CLIENT_EVENT_LOGGING", lrk.a(), (lrn)agmp.a).a(lrl.d((Object)new agnj(a5)));
                                         }
                                         catch (final RuntimeException ex8) {
                                             Log.w("FirebaseMessaging", "Failed to send big query analytics payload.", (Throwable)ex8);
@@ -288,12 +289,12 @@ public class FirebaseMessagingService extends agkf
                     o2 = new Bundle();
                 }
                 ((Bundle)o2).remove("androidx.content.wakelockid");
-                Label_1358: {
-                    if (agli.m((Bundle)o2)) {
-                        final agli agli = new agli((Bundle)o2);
-                        final ExecutorService singleThreadExecutor = Executors.newSingleThreadExecutor((ThreadFactory)new emi("Firebase-Messaging-Network-Io", 2));
+                Label_1477: {
+                    if (agnj.M((Bundle)o2)) {
+                        final agnj agnj = new agnj((Bundle)o2);
+                        final ExecutorService singleThreadExecutor = Executors.newSingleThreadExecutor((ThreadFactory)new emj("Firebase-Messaging-Network-Io", 2));
                         try {
-                            if (!agli.l("gcm.n.noui")) {
+                            if (!agnj.L("gcm.n.noui")) {
                                 if (!((KeyguardManager)((Context)this).getSystemService("keyguard")).inKeyguardRestrictedInputMode()) {
                                     final int myPid = Process.myPid();
                                     final List runningAppProcesses = ((ActivityManager)((Context)this).getSystemService("activity")).getRunningAppProcesses();
@@ -304,26 +305,27 @@ public class FirebaseMessagingService extends agkf
                                                     break;
                                                 }
                                                 singleThreadExecutor.shutdown();
-                                                if (agnj.t((Intent)ex)) {
-                                                    agnj.r("_nf", ((Intent)ex).getExtras());
+                                                if (agpc.t((Intent)ex)) {
+                                                    agpc.r("_nf", ((Intent)ex).getExtras());
                                                 }
-                                                break Label_1358;
+                                                break Label_1477;
                                             }
                                         }
                                     }
                                 }
-                                final agkn a6 = agkn.a(agli.i("gcm.n.image"));
+                                final agmo a6 = agmo.a(agnj.I("gcm.n.image"));
                                 if (a6 != null) {
-                                    o2 = new nmo();
-                                    a6.b = singleThreadExecutor.submit((Runnable)new aghl(a6, (nmo)o2, 2, (byte[])null));
-                                    a6.c = (nly)((nmo)o2).a;
+                                    final nns nns = new nns();
+                                    o2 = new agjf(a6, nns, 4, (byte[])null);
+                                    a6.b = singleThreadExecutor.submit((Runnable)o2);
+                                    a6.c = (nnc)nns.a;
                                 }
-                                o2 = agkd.b((Context)this, agli);
-                                agnj.v((afp)((aseo)o2).a, a6);
+                                o2 = agme.b((Context)this, agnj);
+                                agpc.v((afq)((arzp)o2).b, a6);
                                 final NotificationManager notificationManager = (NotificationManager)((Context)this).getSystemService("notification");
-                                final Object b6 = ((aseo)o2).b;
-                                o2 = ((afp)((aseo)o2).a).a();
-                                notificationManager.notify((String)b6, 0, (Notification)o2);
+                                final Object a7 = ((arzp)o2).a;
+                                o2 = ((afq)((arzp)o2).b).a();
+                                notificationManager.notify((String)a7, 0, (Notification)o2);
                             }
                             return;
                         }
@@ -343,7 +345,8 @@ public class FirebaseMessagingService extends agkf
         ((Intent)ex).getAction();
     }
     
+    @Override
     protected final Intent h() {
-        return agkr.a().c.poll();
+        return agms.a().c.poll();
     }
 }

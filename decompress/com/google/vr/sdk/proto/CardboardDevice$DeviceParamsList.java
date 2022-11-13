@@ -7,19 +7,23 @@ package com.google.vr.sdk.proto;
 import java.util.List;
 import com.google.protobuf.MessageLite;
 
-public final class CardboardDevice$DeviceParamsList extends agzi implements ahax
+public final class CardboardDevice$DeviceParamsList extends ahbh implements ahcw
 {
     private static final CardboardDevice$DeviceParamsList DEFAULT_INSTANCE;
     public static final int PARAMS_FIELD_NUMBER = 1;
-    private static volatile ahbe PARSER;
-    private agzy params_;
+    private static volatile ahdd PARSER;
+    private ahbx params_;
     
     static {
-        agzi.registerDefaultInstance((Class)CardboardDevice$DeviceParamsList.class, (agzi)(DEFAULT_INSTANCE = new CardboardDevice$DeviceParamsList()));
+        ahbh.registerDefaultInstance((Class)CardboardDevice$DeviceParamsList.class, (ahbh)(DEFAULT_INSTANCE = new CardboardDevice$DeviceParamsList()));
     }
     
     private CardboardDevice$DeviceParamsList() {
         this.params_ = emptyProtobufList();
+    }
+    
+    static CardboardDevice$DeviceParamsList access$10200() {
+        return CardboardDevice$DeviceParamsList.DEFAULT_INSTANCE;
     }
     
     public static CardboardDevice$DeviceParamsList getDefaultInstance() {
@@ -30,18 +34,18 @@ public final class CardboardDevice$DeviceParamsList extends agzi implements ahax
         return (CardboardDevice$DeviceParamsList$Builder)CardboardDevice$DeviceParamsList.DEFAULT_INSTANCE.createBuilder();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe parser;
+                final ahdd parser;
                 if ((parser = CardboardDevice$DeviceParamsList.PARSER) == null) {
                     synchronized (CardboardDevice$DeviceParamsList.class) {
                         if (CardboardDevice$DeviceParamsList.PARSER == null) {
-                            CardboardDevice$DeviceParamsList.PARSER = (ahbe)new agzb((agzi)CardboardDevice$DeviceParamsList.DEFAULT_INSTANCE);
+                            CardboardDevice$DeviceParamsList.PARSER = (ahdd)new ahba((ahbh)CardboardDevice$DeviceParamsList.DEFAULT_INSTANCE);
                         }
                     }
                 }
@@ -69,6 +73,6 @@ public final class CardboardDevice$DeviceParamsList extends agzi implements ahax
     }
     
     public List getParamsList() {
-        return this.params_;
+        return (List)this.params_;
     }
 }

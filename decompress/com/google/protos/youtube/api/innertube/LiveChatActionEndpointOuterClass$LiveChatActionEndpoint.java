@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatActionEndpointOuterClass$LiveChatActionEndpoint extends agzi implements ahax
+public final class LiveChatActionEndpointOuterClass$LiveChatActionEndpoint extends ahbh implements ahcw
 {
     public static final LiveChatActionEndpointOuterClass$LiveChatActionEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg liveChatActionEndpoint;
-    public agyc b;
+    private static volatile ahdd c;
+    public static final ahbf liveChatActionEndpoint;
+    public ahab b;
     private int d;
     
     static {
         final LiveChatActionEndpointOuterClass$LiveChatActionEndpoint a2 = new LiveChatActionEndpointOuterClass$LiveChatActionEndpoint();
-        agzi.registerDefaultInstance((Class)LiveChatActionEndpointOuterClass$LiveChatActionEndpoint.class, (agzi)(a = a2));
-        liveChatActionEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 256231008, ahcm.k, (Class)LiveChatActionEndpointOuterClass$LiveChatActionEndpoint.class);
+        ahbh.registerDefaultInstance((Class)LiveChatActionEndpointOuterClass$LiveChatActionEndpoint.class, (ahbh)(a = a2));
+        liveChatActionEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 256231008, ahek.k, (Class)LiveChatActionEndpointOuterClass$LiveChatActionEndpoint.class);
     }
     
     private LiveChatActionEndpointOuterClass$LiveChatActionEndpoint() {
-        this.b = agyc.b;
+        this.b = ahab.b;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = LiveChatActionEndpointOuterClass$LiveChatActionEndpoint.c) == null) {
                     synchronized (LiveChatActionEndpointOuterClass$LiveChatActionEndpoint.class) {
                         if (LiveChatActionEndpointOuterClass$LiveChatActionEndpoint.c == null) {
-                            LiveChatActionEndpointOuterClass$LiveChatActionEndpoint.c = (ahbe)new agzb((agzi)LiveChatActionEndpointOuterClass$LiveChatActionEndpoint.a);
+                            LiveChatActionEndpointOuterClass$LiveChatActionEndpoint.c = (ahdd)new ahba((ahbh)LiveChatActionEndpointOuterClass$LiveChatActionEndpoint.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class LiveChatActionEndpointOuterClass$LiveChatActionEndpoint exten
                 return LiveChatActionEndpointOuterClass$LiveChatActionEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatActionEndpointOuterClass$LiveChatActionEndpoint.a);
+                return new ahaz((ahbh)LiveChatActionEndpointOuterClass$LiveChatActionEndpoint.a);
             }
             case 3: {
                 return new LiveChatActionEndpointOuterClass$LiveChatActionEndpoint();

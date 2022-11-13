@@ -4,9 +4,13 @@
 
 package com.google.vr.sdk.proto;
 
-public final class Preferences$UserPrefs$Builder extends agza implements ahax
+public final class Preferences$UserPrefs$Builder extends ahaz implements ahcw
 {
     private Preferences$UserPrefs$Builder() {
-        super((agzi)Preferences$UserPrefs.DEFAULT_INSTANCE);
+        super((ahbh)Preferences$UserPrefs.access$000());
+    }
+    
+    public Preferences$UserPrefs$Builder(final Preferences$1 preferences$1) {
+        this();
     }
 }

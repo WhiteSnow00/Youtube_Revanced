@@ -17,7 +17,7 @@ public class CameraStreamViewManager$CameraModelData implements Parcelable
     public boolean d;
     
     static {
-        CREATOR = (Parcelable$Creator)new vho(7);
+        CREATOR = (Parcelable$Creator)new vjo(7);
     }
     
     public CameraStreamViewManager$CameraModelData() {

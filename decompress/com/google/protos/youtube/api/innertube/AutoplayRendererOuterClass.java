@@ -8,12 +8,12 @@ import com.google.protobuf.MessageLite;
 
 public final class AutoplayRendererOuterClass
 {
-    public static final agzg a;
-    public static final agzg autoplayEndpointRenderer;
+    public static final ahbf a;
+    public static final ahbf autoplayEndpointRenderer;
     
     static {
-        a = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ahvo.a, (MessageLite)ahvo.a, (agzn)null, 46659098, ahcm.k, (Class)ahvo.class);
-        autoplayEndpointRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ahvl.a, (MessageLite)ahvl.a, (agzn)null, 84996305, ahcm.k, (Class)ahvl.class);
+        a = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ahxm.a, (MessageLite)ahxm.a, (ahbm)null, 46659098, ahek.k, (Class)ahxm.class);
+        autoplayEndpointRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ahxj.a, (MessageLite)ahxj.a, (ahbm)null, 84996305, ahek.k, (Class)ahxj.class);
     }
     
     private AutoplayRendererOuterClass() {

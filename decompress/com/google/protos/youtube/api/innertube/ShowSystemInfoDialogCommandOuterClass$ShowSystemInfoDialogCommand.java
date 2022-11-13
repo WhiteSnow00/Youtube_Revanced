@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand extends agzi implements ahax
+public final class ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand extends ahbh implements ahcw
 {
     public static final ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand a;
-    private static volatile ahbe d;
-    public static final agzg showSystemInfoDialogCommand;
+    private static volatile ahdd d;
+    public static final ahbf showSystemInfoDialogCommand;
     public int b;
-    public ajsq c;
+    public ajut c;
     private byte e;
     
     static {
         final ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand a2 = new ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand();
-        agzi.registerDefaultInstance((Class)ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand.class, (agzi)(a = a2));
-        showSystemInfoDialogCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 240199717, ahcm.k, (Class)ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand.class);
+        ahbh.registerDefaultInstance((Class)ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand.class, (ahbh)(a = a2));
+        showSystemInfoDialogCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 240199717, ahek.k, (Class)ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand.class);
     }
     
     private ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand.d) == null) {
                     synchronized (ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand.class) {
                         if (ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand.d == null) {
-                            ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand.d = (ahbe)new agzb((agzi)ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand.a);
+                            ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand.d = (ahdd)new ahba((ahbh)ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCom
                 return ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand.a;
             }
             case 4: {
-                return new agza((agzi)ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand.a);
+                return new ahaz((ahbh)ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand.a);
             }
             case 3: {
                 return new ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCommand();
@@ -58,9 +58,9 @@ public final class ShowSystemInfoDialogCommandOuterClass$ShowSystemInfoDialogCom
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

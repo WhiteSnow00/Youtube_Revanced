@@ -25,15 +25,15 @@ public final class VrCoreUtils
         try {
             if (context.getPackageManager().getApplicationInfo("com.google.vr.vrcore", 0).enabled) {
                 final PackageInfo packageInfo = context.getPackageManager().getPackageInfo("com.google.vr.vrcore", 64);
-                if (!aram.a(packageInfo, new Signature[] { aram.a })) {
+                if (!ardb.a(packageInfo, new Signature[] { ardb.a })) {
                     boolean b;
-                    if (aqql.b != null) {
-                        b = aqql.b;
+                    if (aqsx.b != null) {
+                        b = aqsx.b;
                     }
                     else {
-                        b = aqql.m(context);
+                        b = aqsx.n(context);
                     }
-                    if (!b || !aram.a(packageInfo, new Signature[] { aram.b })) {
+                    if (!b || !ardb.a(packageInfo, new Signature[] { ardb.b })) {
                         return 9;
                     }
                 }
@@ -80,10 +80,10 @@ public final class VrCoreUtils
                 }
                 return int1;
             }
-            throw new aran(2);
+            throw new ardc(2);
         }
         catch (final PackageManager$NameNotFoundException ex) {
-            throw new aran(a(context));
+            throw new ardc(a(context));
         }
     }
 }

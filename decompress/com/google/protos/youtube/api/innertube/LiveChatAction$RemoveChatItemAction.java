@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatAction$RemoveChatItemAction extends agzi implements ahax
+public final class LiveChatAction$RemoveChatItemAction extends ahbh implements ahcw
 {
     public static final LiveChatAction$RemoveChatItemAction a;
-    private static volatile ahbe c;
-    public static final agzg removeChatItemAction;
+    private static volatile ahdd c;
+    public static final ahbf removeChatItemAction;
     public String b;
     private int d;
     
     static {
         final LiveChatAction$RemoveChatItemAction a2 = new LiveChatAction$RemoveChatItemAction();
-        agzi.registerDefaultInstance((Class)LiveChatAction$RemoveChatItemAction.class, (agzi)(a = a2));
-        removeChatItemAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 130295727, ahcm.k, (Class)LiveChatAction$RemoveChatItemAction.class);
+        ahbh.registerDefaultInstance((Class)LiveChatAction$RemoveChatItemAction.class, (ahbh)(a = a2));
+        removeChatItemAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 130295727, ahek.k, (Class)LiveChatAction$RemoveChatItemAction.class);
     }
     
     private LiveChatAction$RemoveChatItemAction() {
         this.b = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = LiveChatAction$RemoveChatItemAction.c) == null) {
                     synchronized (LiveChatAction$RemoveChatItemAction.class) {
                         if (LiveChatAction$RemoveChatItemAction.c == null) {
-                            LiveChatAction$RemoveChatItemAction.c = (ahbe)new agzb((agzi)LiveChatAction$RemoveChatItemAction.a);
+                            LiveChatAction$RemoveChatItemAction.c = (ahdd)new ahba((ahbh)LiveChatAction$RemoveChatItemAction.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class LiveChatAction$RemoveChatItemAction extends agzi implements a
                 return LiveChatAction$RemoveChatItemAction.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatAction$RemoveChatItemAction.a);
+                return new ahaz((ahbh)LiveChatAction$RemoveChatItemAction.a);
             }
             case 3: {
                 return new LiveChatAction$RemoveChatItemAction();

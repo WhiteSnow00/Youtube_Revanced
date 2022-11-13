@@ -42,10 +42,10 @@ public final class b implements abps, tgg
                     anuv = anuv.a;
                 }
                 anuv anuv2;
-                if ((anuv2 = ((ajnh)((ahbc)anuv).rx((ahaq)ajnj.c)).c) == null) {
+                if ((anuv2 = ((ajnh)anuv.rx((ahaq)ajnj.c)).c) == null) {
                     anuv2 = anuv.a;
                 }
-                final aome aome = (aome)((ahbc)anuv2).rx((ahaq)SubscribeButtonRendererOuterClass.subscribeButtonRenderer);
+                final aome aome = (aome)anuv2.rx((ahaq)SubscribeButtonRendererOuterClass.subscribeButtonRenderer);
                 final c a4 = this.a;
                 a4.g.b(aome, a4.f, a4.i, a4.h);
                 final c a5 = this.a;
@@ -173,7 +173,6 @@ public final class b implements abps, tgg
         this.a.a.rd(false);
     }
     
-    @Override
     public final asir[] lX(final abpu abpu) {
         return new asir[] { ((ashi)abpu.p().a).an((asjm)new e(this, 2), (asjm)n.g), abpu.P().an((asjm)new e(this, 3), (asjm)n.g) };
     }

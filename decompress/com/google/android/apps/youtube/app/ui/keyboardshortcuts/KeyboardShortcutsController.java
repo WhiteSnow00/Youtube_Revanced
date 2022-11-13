@@ -8,16 +8,16 @@ import com.google.android.apps.youtube.app.common.dialog.DialogFragmentControlle
 
 public class KeyboardShortcutsController extends DialogFragmentController
 {
-    public final kzd a;
-    public final arhr b;
-    public final arhr c;
-    public final arhr d;
-    public final arhr f;
-    public final arhr g;
-    public final arhr h;
-    public final arhr i;
+    public final lag a;
+    public final arkg b;
+    public final arkg c;
+    public final arkg d;
+    public final arkg f;
+    public final arkg g;
+    public final arkg h;
+    public final arkg i;
     
-    public KeyboardShortcutsController(final bu bu, final kzd a, final arhr b, final arhr c, final arhr d, final arhr f, final arhr g, final arhr h, final arhr i) {
+    public KeyboardShortcutsController(final bu bu, final lag a, final arkg b, final arkg c, final arkg d, final arkg f, final arkg g, final arkg h, final arkg i) {
         super(bu, "KeyboardShortcutsDialogFragment");
         this.a = a;
         this.b = b;

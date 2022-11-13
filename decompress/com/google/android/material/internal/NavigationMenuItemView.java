@@ -21,7 +21,7 @@ import android.content.res.ColorStateList;
 import android.widget.FrameLayout;
 import android.widget.CheckedTextView;
 
-public class NavigationMenuItemView extends adtm implements ja
+public class NavigationMenuItemView extends advo implements ja
 {
     private static final int[] k;
     public int c;
@@ -33,7 +33,7 @@ public class NavigationMenuItemView extends adtm implements ja
     public ColorStateList i;
     public boolean j;
     private Drawable l;
-    private final akv m;
+    private final akw m;
     
     static {
         k = new int[] { 16842912 };
@@ -49,14 +49,14 @@ public class NavigationMenuItemView extends adtm implements ja
     
     public NavigationMenuItemView(final Context context, final AttributeSet set, final int n) {
         super(context, set, n);
-        final adto m = new adto(this);
-        this.m = (akv)m;
-        this.setOrientation(0);
-        LayoutInflater.from(context).inflate(2131624345, (ViewGroup)this, true);
+        final advq m = new advq(this);
+        this.m = m;
+        ((mt)this).setOrientation(0);
+        LayoutInflater.from(context).inflate(2131624344, (ViewGroup)this, true);
         this.c = context.getResources().getDimensionPixelSize(2131166268);
         final CheckedTextView f = (CheckedTextView)this.findViewById(2131428638);
         (this.f = f).setDuplicateParentStateEnabled(true);
-        ana.N((View)f, (akv)m);
+        anb.N((View)f, m);
     }
     
     public final io a() {
@@ -72,7 +72,7 @@ public class NavigationMenuItemView extends adtm implements ja
                     l = constantState.newDrawable();
                 }
                 mutate = l.mutate();
-                aip.g(mutate, this.i);
+                aiq.g(mutate, this.i);
             }
             final int c = this.c;
             mutate.setBounds(0, 0, c, c);
@@ -80,7 +80,7 @@ public class NavigationMenuItemView extends adtm implements ja
         }
         else if (this.d) {
             if (this.l == null) {
-                l = ahu.f(this.getResources(), 2131232366, this.getContext().getTheme());
+                l = ahv.f(this.getResources(), 2131232366, this.getContext().getTheme());
                 if ((this.l = l) != null) {
                     final int c2 = this.c;
                     l.setBounds(0, 0, c2, c2);
@@ -88,7 +88,7 @@ public class NavigationMenuItemView extends adtm implements ja
             }
             l = this.l;
         }
-        aps.d((TextView)this.f, l, null, null, null);
+        apt.d((TextView)this.f, l, null, null, null);
     }
     
     public final boolean e() {
@@ -120,7 +120,7 @@ public class NavigationMenuItemView extends adtm implements ja
             else {
                 stateListDrawable = null;
             }
-            ana.Q((View)this, (Drawable)stateListDrawable);
+            anb.Q((View)this, (Drawable)stateListDrawable);
         }
         final boolean checkable = h.isCheckable();
         this.refreshDrawableState();

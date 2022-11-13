@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction extends agzi implements ahax
+public final class LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction extends ahbh implements ahcw
 {
     public static final LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction a;
-    private static volatile ahbe d;
-    public static final agzg removeChatItemByAuthorAction;
+    private static volatile ahdd d;
+    public static final ahbf removeChatItemByAuthorAction;
     public int b;
     public String c;
     
     static {
         final LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction a2 = new LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction();
-        agzi.registerDefaultInstance((Class)LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction.class, (agzi)(a = a2));
-        removeChatItemByAuthorAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 463152755, ahcm.k, (Class)LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction.class);
+        ahbh.registerDefaultInstance((Class)LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction.class, (ahbh)(a = a2));
+        removeChatItemByAuthorAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 463152755, ahek.k, (Class)LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction.class);
     }
     
     private LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction() {
         this.c = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction.d) == null) {
                     synchronized (LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction.class) {
                         if (LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction.d == null) {
-                            LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction.d = (ahbe)new agzb((agzi)LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction.a);
+                            LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction.d = (ahdd)new ahba((ahbh)LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAc
                 return LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction.a);
+                return new ahaz((ahbh)LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction.a);
             }
             case 3: {
                 return new LiveChatRemoveChatItemByAuthorAction$RemoveChatItemByAuthorAction();

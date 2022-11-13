@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class AdClickCommandRendererOuterClass
 {
-    public static final agzg adClickCommandRenderer;
+    public static final ahbf adClickCommandRenderer;
     
     static {
-        adClickCommandRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ahiz.a, (MessageLite)ahiz.a, (agzn)null, 168707113, ahcm.k, (Class)ahiz.class);
+        adClickCommandRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ahkx.a, (MessageLite)ahkx.a, (ahbm)null, 168707113, ahek.k, (Class)ahkx.class);
     }
     
     private AdClickCommandRendererOuterClass() {

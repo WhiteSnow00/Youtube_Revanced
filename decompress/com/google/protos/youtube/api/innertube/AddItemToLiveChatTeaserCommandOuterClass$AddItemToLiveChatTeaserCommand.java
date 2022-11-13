@@ -6,14 +6,14 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand extends agzi implements ahax
+public final class AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand extends ahbh implements ahcw
 {
     public static final AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand a;
-    public static final agzg addItemToChatTeaserCommand;
-    private static volatile ahbe g;
-    public anss b;
-    public agyo c;
-    public alpc d;
+    public static final ahbf addItemToChatTeaserCommand;
+    private static volatile ahdd g;
+    public anuv b;
+    public ahan c;
+    public alrf d;
     public long e;
     public String f;
     private int h;
@@ -21,8 +21,8 @@ public final class AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTea
     
     static {
         final AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand a2 = new AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand();
-        agzi.registerDefaultInstance((Class)AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand.class, (agzi)(a = a2));
-        addItemToChatTeaserCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 392792774, ahcm.k, (Class)AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand.class);
+        ahbh.registerDefaultInstance((Class)AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand.class, (ahbh)(a = a2));
+        addItemToChatTeaserCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 392792774, ahek.k, (Class)AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand.class);
     }
     
     private AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand() {
@@ -30,20 +30,20 @@ public final class AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTea
         this.f = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte i = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe g;
+                final ahdd g;
                 if ((g = AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand.g) == null) {
                     synchronized (AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand.class) {
                         if (AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand.g == null) {
-                            AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand.g = (ahbe)new agzb((agzi)AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand.a);
+                            AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand.g = (ahdd)new ahba((ahbh)AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand.a);
                         }
                     }
                 }
@@ -53,7 +53,7 @@ public final class AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTea
                 return AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand.a;
             }
             case 4: {
-                return new agza((agzi)AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand.a);
+                return new ahaz((ahbh)AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand.a);
             }
             case 3: {
                 return new AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTeaserCommand();
@@ -63,9 +63,9 @@ public final class AddItemToLiveChatTeaserCommandOuterClass$AddItemToLiveChatTea
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    i = 0;
                 }
-                this.i = (byte)(b ? 1 : 0);
+                this.i = i;
                 return null;
             }
             case 0: {

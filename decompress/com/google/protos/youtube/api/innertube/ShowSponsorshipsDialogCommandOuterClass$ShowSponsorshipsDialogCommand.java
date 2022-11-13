@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand extends agzi implements ahax
+public final class ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand extends ahbh implements ahcw
 {
     public static final ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand a;
-    private static volatile ahbe c;
-    public static final agzg showSponsorshipsDialogCommand;
-    public aioe b;
+    private static volatile ahdd c;
+    public static final ahbf showSponsorshipsDialogCommand;
+    public aiqj b;
     private int d;
     private byte e;
     
     static {
         final ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand a2 = new ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand();
-        agzi.registerDefaultInstance((Class)ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand.class, (agzi)(a = a2));
-        showSponsorshipsDialogCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 209133170, ahcm.k, (Class)ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand.class);
+        ahbh.registerDefaultInstance((Class)ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand.class, (ahbh)(a = a2));
+        showSponsorshipsDialogCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 209133170, ahek.k, (Class)ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand.class);
     }
     
     private ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand.c) == null) {
                     synchronized (ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand.class) {
                         if (ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand.c == null) {
-                            ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand.c = (ahbe)new agzb((agzi)ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand.a);
+                            ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand.c = (ahdd)new ahba((ahbh)ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialo
                 return ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand.a;
             }
             case 4: {
-                return new agza((agzi)ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand.a);
+                return new ahaz((ahbh)ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand.a);
             }
             case 3: {
                 return new ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialogCommand();
@@ -58,9 +58,9 @@ public final class ShowSponsorshipsDialogCommandOuterClass$ShowSponsorshipsDialo
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

@@ -42,39 +42,39 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
     public int H;
     public long I;
     public int J;
-    public final arcc K;
+    public final areq K;
     public final int L;
-    public final aukk M;
-    public aeby N;
+    public final aula M;
+    public aeea N;
     private final String O;
     private final Integer P;
     private final Integer Q;
     private final boolean R;
-    private final arbw S;
+    private final arek S;
     private final int T;
-    private final aeyr U;
-    private final afcr V;
-    private final auln W;
+    private final afaq U;
+    private final afeq V;
+    private final aumd W;
     private HandlerThread X;
     private Handler Y;
     private boolean Z;
     private Surface aa;
-    private arcv ab;
+    private arfk ab;
     private int ac;
-    private final aepj ad;
-    public final arbu b;
+    private final afhd ad;
+    public final arei b;
     public final int c;
     public final long d;
     public final long e;
-    public final ault f;
-    public final arcq g;
+    public final aumi f;
+    public final arfe g;
     public boolean h;
     public ByteBuffer[] i;
     public VideoEncoder$Callback j;
     public boolean k;
-    public aukc l;
-    public arcd m;
-    public arcv n;
+    public auks l;
+    public arer m;
+    public arfk n;
     public final Deque o;
     public int p;
     public int q;
@@ -92,17 +92,17 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
         a = TimeUnit.SECONDS.toMicros(1L);
     }
     
-    public InternalMediaCodecVideoEncoder(final String o, final arbu b, final Integer p14, final Integer q, final boolean r, final arbw s, final arcc k, final aeyr u, final aepj ad, final afcr v, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4) {
-        this.M = new aukk();
-        final auln w = new auln();
+    public InternalMediaCodecVideoEncoder(final String o, final arei b, final Integer p13, final Integer q, final boolean r, final arek s, final areq k, final afaq u, final afhd ad, final afeq v, final byte[] array, final byte[] array2, final byte[] array3) {
+        this.M = new aula();
+        final aumd w = new aumd();
         this.W = w;
-        this.g = new arcq();
+        this.g = new arfe();
         this.o = new ArrayDeque();
         this.x = null;
         this.C = VideoCodecStatus.d;
         this.O = o;
         this.b = b;
-        this.P = p14;
+        this.P = p13;
         this.Q = q;
         final int intValue = q;
         final int n = 2;
@@ -138,7 +138,7 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
         this.K = k;
         this.U = u;
         this.ad = ad;
-        this.f = new arcb();
+        this.f = new arep();
         this.V = v;
         w.b();
     }
@@ -150,13 +150,13 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
     private final VideoCodecStatus j(final int n, final double n2) {
         this.W.a();
         if (this.h) {
-            this.Y.post((Runnable)new arco(this, n, n2));
+            this.Y.post((Runnable)new arfc(this, n, n2));
         }
         return VideoCodecStatus.d;
     }
     
     protected final VideoCodecStatus b(final Callable callable, final String s) {
-        return aqql.h(this.Y, callable, s);
+        return aqsx.i(this.Y, callable, s);
     }
     
     public final VideoCodecStatus c() {
@@ -176,6 +176,10 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
         return videoCodecStatus;
     }
     
+    public final long createNativeVideoEncoder() {
+        return 0L;
+    }
+    
     public final VideoCodecStatus d(final VideoEncoder$BitrateAllocation videoEncoder$BitrateAllocation, final int n) {
         return this.j(videoEncoder$BitrateAllocation.a(), n);
     }
@@ -190,7 +194,7 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
         this.u = 0;
         this.v = 0L;
         this.w = 0L;
-        this.m = arct.a(this.b);
+        this.m = arfh.a(this.b);
         this.B = 0;
         this.C = VideoCodecStatus.d;
         final int b = this.K.b();
@@ -230,7 +234,7 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
         sb.append(". videoFadeInController: null");
         Logging.a("IMCVideoEncoder", sb.toString());
         try {
-            this.N = aqql.v(this.O);
+            this.N = aqsx.x(this.O);
             Integer n;
             if (r) {
                 n = this.P;
@@ -240,13 +244,13 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
             }
             final int intValue = n;
             try {
-                final MediaFormat videoFormat = MediaFormat.createVideoFormat(arct.c(this.b), p3, q);
+                final MediaFormat videoFormat = MediaFormat.createVideoFormat(arfh.c(this.b), p3, q);
                 videoFormat.setInteger("bitrate", this.y);
                 videoFormat.setInteger("bitrate-mode", 2);
                 videoFormat.setInteger("color-format", intValue);
                 videoFormat.setInteger("i-frame-interval", this.T);
                 videoFormat.setFloat("frame-rate", (float)a);
-                if (this.b == arbu.d && this.R) {
+                if (this.b == arei.d && this.R) {
                     Logging.a("IMCVideoEncoder", "Using H264 HP.");
                     videoFormat.setInteger("profile", 8);
                     videoFormat.setInteger("level", 256);
@@ -255,16 +259,16 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
                 final StringBuilder sb2 = new StringBuilder("Format: ");
                 sb2.append(value2);
                 Logging.a("IMCVideoEncoder", sb2.toString());
-                this.N.z(videoFormat, null, 1);
+                this.N.u(videoFormat, (Surface)null, 1);
                 if (r) {
-                    this.l = auju.d((aujw)((aeyu)this.U).a, aukc.d);
+                    this.l = aukk.d((aukm)((afat)this.U).a, auks.d);
                     final Surface inputSurface = ((MediaCodec)this.N.a).createInputSurface();
                     this.aa = inputSurface;
                     this.l.d(inputSurface);
                     this.l.f();
                 }
-                this.N.v();
-                this.i = this.N.y();
+                this.N.q();
+                this.i = this.N.t();
                 this.o.clear();
                 this.k = true;
                 this.F = 0;
@@ -291,7 +295,7 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
         if (!this.h) {
             return VideoCodecStatus.k;
         }
-        final VideoCodecStatus b = this.b((Callable)new arcp(this, videoFrame, videoEncoder$EncodeInfo), "encoder.encode");
+        final VideoCodecStatus b = this.b((Callable)new arfd(this, videoFrame, videoEncoder$EncodeInfo), "encoder.encode");
         final VideoCodecStatus a = VideoCodecStatus.a;
         return b;
     }
@@ -306,7 +310,7 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
         this.g.a();
         final CountDownLatch countDownLatch = new CountDownLatch(1);
         final Exception[] array = { null };
-        new Thread(new aecw(this, array, countDownLatch, 19), "IMCVideoEncoder.release").start();
+        new Thread((Runnable)new arfj(this, array, countDownLatch, 1), "IMCVideoEncoder.release").start();
         try {
             final boolean await = countDownLatch.await(5000L, TimeUnit.MILLISECONDS);
             final Exception ex = array[0];
@@ -316,11 +320,11 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
             }
             if (!await) {
                 Logging.b("IMCVideoEncoder", "MediaCodec release timed out.");
-                final aepj ad = this.ad;
+                final afhd ad = this.ad;
                 if (ad != null) {
-                    final wuc wuc = (wuc)ad.a;
-                    wuc.F.bi("onCriticalEncodeError");
-                    final wup c = wuc.C;
+                    final wwc wwc = (wwc)ad.a;
+                    wwc.F.bO("onCriticalEncodeError");
+                    final wwq c = wwc.C;
                     if (c != null) {
                         c.a();
                     }
@@ -332,7 +336,7 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
             this.k = false;
             this.M.c();
             this.f.a();
-            final aukc l = this.l;
+            final auks l = this.l;
             if (l != null) {
                 l.g();
                 this.l = null;
@@ -342,7 +346,7 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
                 aa.release();
                 this.aa = null;
             }
-            final arcd m = this.m;
+            final arer m = this.m;
             if (m != null) {
                 m.b();
                 this.m = null;
@@ -364,19 +368,23 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
         throw new AssertionError((Object)"Not called on the codec thread.");
     }
     
+    public final VideoEncoder$EncoderInfo getEncoderInfo() {
+        return VideoEncoder$_CC.$default$getEncoderInfo((VideoEncoder)this);
+    }
+    
     public final String getImplementationName() {
         return "IMC: ".concat(String.valueOf(this.O));
     }
     
     public VideoEncoder$ResolutionBitrateLimits[] getResolutionBitrateLimits() {
-        return (VideoEncoder$ResolutionBitrateLimits[])adwd.aQ((Iterable)this.V, (Class)VideoEncoder$ResolutionBitrateLimits.class);
+        return (VideoEncoder$ResolutionBitrateLimits[])agpc.ab((Iterable)this.V, VideoEncoder$ResolutionBitrateLimits.class);
     }
     
     public final VideoEncoder$ScalingSettings getScalingSettings() {
         if (!this.Z) {
             return VideoEncoder$ScalingSettings.a;
         }
-        final arbu a = arbu.a;
+        final arei a = arei.a;
         final int ordinal = this.b.ordinal();
         if (ordinal == 1) {
             return new VideoEncoder$ScalingSettings(27, 80);
@@ -399,8 +407,8 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
     }
     
     public final boolean i() {
-        final aeyr u = this.U;
-        return u != null && ((aeyu)u).a != null && this.P != null;
+        final afaq u = this.U;
+        return u != null && ((afat)u).a != null && this.P != null;
     }
     
     public final VideoCodecStatus initEncode(final VideoEncoder$Settings videoEncoder$Settings, final VideoEncoder$Callback videoEncoder$Callback) {
@@ -419,8 +427,8 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
         }
         (this.X = new HandlerThread("IMCVideoEncoder")).start();
         this.Y = new Handler(this.X.getLooper());
-        this.n = new arcv(this.Y, (Runnable)new arcn(this));
-        this.ab = new arcv(this.Y, (Runnable)new arax(this, 8));
+        this.n = new arfk(this.Y, (Runnable)new arfb(this));
+        this.ab = new arfk(this.Y, (Runnable)new arcu(this, 9));
         final int a = videoEncoder$Settings.a;
         final int b = videoEncoder$Settings.b;
         final int c = videoEncoder$Settings.c;
@@ -440,7 +448,7 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
         if (!this.i()) {
             Logging.b("IMCVideoEncoder", "No shared EglBase.Context. Encoders will not use texture mode.");
         }
-        final VideoCodecStatus b2 = this.b((Callable)new yxq(this, videoEncoder$Settings, videoEncoder$Callback, 12), "encoder.init");
+        final VideoCodecStatus b2 = this.b((Callable)new veu(this, videoEncoder$Settings, videoEncoder$Callback, 15), "encoder.init");
         if (b2 == VideoCodecStatus.d) {
             this.h = true;
         }
@@ -450,12 +458,16 @@ public class InternalMediaCodecVideoEncoder implements VideoEncoder
         return b2;
     }
     
+    public final boolean isHardwareEncoder() {
+        return true;
+    }
+    
     public final VideoCodecStatus release() {
         this.W.a();
         Logging.a("IMCVideoEncoder", "release");
         VideoCodecStatus videoCodecStatus = VideoCodecStatus.d;
         if (this.h) {
-            videoCodecStatus = this.b(new adbx(this, 20), "encoder.release");
+            videoCodecStatus = this.b((Callable)new aerg(this, 7), "encoder.release");
             this.X.quit();
             this.h = false;
         }

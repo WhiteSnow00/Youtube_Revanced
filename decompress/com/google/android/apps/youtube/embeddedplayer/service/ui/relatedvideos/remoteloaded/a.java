@@ -13,7 +13,6 @@ final class a extends hy
     public a() {
     }
     
-    @Override
     public final void b(final Rect rect, final View view, final RecyclerView recyclerView, final ok ok) {
         final int c = recyclerView.c(view);
         final int dimensionPixelSize = view.getResources().getDimensionPixelSize(2131169356);

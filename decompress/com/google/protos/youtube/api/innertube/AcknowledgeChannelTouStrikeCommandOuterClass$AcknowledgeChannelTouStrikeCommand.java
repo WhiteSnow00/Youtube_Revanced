@@ -6,35 +6,35 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand extends agzi implements ahax
+public final class AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand extends ahbh implements ahcw
 {
     public static final AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand a;
-    public static final agzg acknowledgeChannelTouStrikeCommand;
-    private static volatile ahbe c;
-    public aiie b;
+    public static final ahbf acknowledgeChannelTouStrikeCommand;
+    private static volatile ahdd c;
+    public aikc b;
     private int d;
     
     static {
         final AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand a2 = new AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand();
-        agzi.registerDefaultInstance((Class)AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand.class, (agzi)(a = a2));
-        acknowledgeChannelTouStrikeCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 230421059, ahcm.k, (Class)AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand.class);
+        ahbh.registerDefaultInstance((Class)AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand.class, (ahbh)(a = a2));
+        acknowledgeChannelTouStrikeCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 230421059, ahek.k, (Class)AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand.class);
     }
     
     private AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand.c) == null) {
                     synchronized (AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand.class) {
                         if (AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand.c == null) {
-                            AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand.c = (ahbe)new agzb((agzi)AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand.a);
+                            AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand.c = (ahdd)new ahba((ahbh)AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand.a);
                         }
                     }
                 }
@@ -44,7 +44,7 @@ public final class AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChann
                 return AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand.a;
             }
             case 4: {
-                return new agza((agzi)AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand.a);
+                return new ahaz((ahbh)AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand.a);
             }
             case 3: {
                 return new AcknowledgeChannelTouStrikeCommandOuterClass$AcknowledgeChannelTouStrikeCommand();

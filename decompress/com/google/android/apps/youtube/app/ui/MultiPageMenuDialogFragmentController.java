@@ -7,12 +7,12 @@ package com.google.android.apps.youtube.app.ui;
 import android.content.res.Configuration;
 import com.google.android.apps.youtube.app.common.dialog.DialogFragmentController;
 
-public class MultiPageMenuDialogFragmentController extends DialogFragmentController implements fxm
+public class MultiPageMenuDialogFragmentController extends DialogFragmentController implements fxu
 {
-    public final zjy a;
-    public final zki b;
+    public final zlv a;
+    public final zmf b;
     
-    public MultiPageMenuDialogFragmentController(final bu bu, final zjy a, final zki b) {
+    public MultiPageMenuDialogFragmentController(final bu bu, final zlv a, final zmf b) {
         super(bu, "MultiPageMenuDialogFragmentController");
         this.a = a;
         this.b = b;

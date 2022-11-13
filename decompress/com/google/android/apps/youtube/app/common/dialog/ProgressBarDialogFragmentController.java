@@ -14,13 +14,13 @@ public class ProgressBarDialogFragmentController extends DialogFragmentControlle
     
     public final void g() {
         if (this.i() == null) {
-            final fit fit = new fit();
+            final fiz fiz = new fiz();
             final Bundle bundle = new Bundle();
             bundle.putDouble("progressbar_height", 0.5);
             bundle.putDouble("progressbar_width", 0.5);
-            fit.ag(bundle);
-            agot.D(true);
-            this.pL((bi)fit);
+            fiz.ag(bundle);
+            adkp.Q(true);
+            this.pQ((bi)fiz);
         }
     }
 }

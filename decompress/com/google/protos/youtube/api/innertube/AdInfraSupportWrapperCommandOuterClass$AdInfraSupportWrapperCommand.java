@@ -6,40 +6,40 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand extends agzi implements ahax
+public final class AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand extends ahbh implements ahcw
 {
     public static final AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand a;
-    public static final agzg adInfraSupportWrapperCommand;
-    private static volatile ahbe e;
+    public static final ahbf adInfraSupportWrapperCommand;
+    private static volatile ahdd e;
     public int b;
-    public aioe c;
-    public ahjn d;
+    public aiqj c;
+    public ahll d;
     private byte f;
     
     static {
         final AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand a2 = new AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand();
-        agzi.registerDefaultInstance((Class)AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand.class, (agzi)(a = a2));
-        adInfraSupportWrapperCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 407180959, ahcm.k, (Class)AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand.class);
+        ahbh.registerDefaultInstance((Class)AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand.class, (ahbh)(a = a2));
+        adInfraSupportWrapperCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 407180959, ahek.k, (Class)AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand.class);
     }
     
     private AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand() {
         this.f = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand.e) == null) {
                     synchronized (AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand.class) {
                         if (AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand.e == null) {
-                            AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand.e = (ahbe)new agzb((agzi)AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand.a);
+                            AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand.e = (ahdd)new ahba((ahbh)AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand.a);
                         }
                     }
                 }
@@ -49,7 +49,7 @@ public final class AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperC
                 return AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand.a;
             }
             case 4: {
-                return new agza((agzi)AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand.a);
+                return new ahaz((ahbh)AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand.a);
             }
             case 3: {
                 return new AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperCommand();
@@ -59,9 +59,9 @@ public final class AdInfraSupportWrapperCommandOuterClass$AdInfraSupportWrapperC
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

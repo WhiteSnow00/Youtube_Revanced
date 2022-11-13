@@ -6,35 +6,39 @@ package com.google.vr.sdk.proto;
 
 import com.google.protobuf.MessageLite;
 
-public final class CardboardDevice$VignetteParams extends agzi implements ahax
+public final class CardboardDevice$VignetteParams extends ahbh implements ahcw
 {
     public static final int CONDITION_FIELD_NUMBER = 2;
     private static final CardboardDevice$VignetteParams DEFAULT_INSTANCE;
-    private static volatile ahbe PARSER;
+    private static volatile ahdd PARSER;
     public static final int VALUE_FIELD_NUMBER = 3;
     private int bitField0_;
     private int condition_;
     private float value_;
     
     static {
-        agzi.registerDefaultInstance((Class)CardboardDevice$VignetteParams.class, (agzi)(DEFAULT_INSTANCE = new CardboardDevice$VignetteParams()));
+        ahbh.registerDefaultInstance((Class)CardboardDevice$VignetteParams.class, (ahbh)(DEFAULT_INSTANCE = new CardboardDevice$VignetteParams()));
     }
     
     private CardboardDevice$VignetteParams() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    static CardboardDevice$VignetteParams access$9000() {
+        return CardboardDevice$VignetteParams.DEFAULT_INSTANCE;
+    }
+    
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe parser;
+                final ahdd parser;
                 if ((parser = CardboardDevice$VignetteParams.PARSER) == null) {
                     synchronized (CardboardDevice$VignetteParams.class) {
                         if (CardboardDevice$VignetteParams.PARSER == null) {
-                            CardboardDevice$VignetteParams.PARSER = (ahbe)new agzb((agzi)CardboardDevice$VignetteParams.DEFAULT_INSTANCE);
+                            CardboardDevice$VignetteParams.PARSER = (ahdd)new ahba((ahbh)CardboardDevice$VignetteParams.DEFAULT_INSTANCE);
                         }
                     }
                 }

@@ -17,10 +17,10 @@ public final class AutoValue_AppStatus extends AppStatus
     private final boolean f;
     private final Uri g;
     private final ScreenId h;
-    private final xha i;
+    private final xiz i;
     private final String j;
     
-    public AutoValue_AppStatus(final int a, final boolean e, final boolean f, final boolean b, final Uri g, final ScreenId h, final xha i, final String c, final Map d, final String j) {
+    public AutoValue_AppStatus(final int a, final boolean e, final boolean f, final boolean b, final Uri g, final ScreenId h, final xiz i, final String c, final Map d, final String j) {
         this.a = a;
         this.e = e;
         this.f = f;
@@ -33,22 +33,18 @@ public final class AutoValue_AppStatus extends AppStatus
         this.j = j;
     }
     
-    @Override
     public final int a() {
         return this.a;
     }
     
-    @Override
     public final Uri b() {
         return this.g;
     }
     
-    @Override
-    public final xha e() {
+    public final xiz e() {
         return this.i;
     }
     
-    @Override
     public final boolean equals(final Object o) {
         if (o == this) {
             return true;
@@ -71,16 +67,16 @@ public final class AutoValue_AppStatus extends AppStatus
                         return false;
                     }
                 }
-                else if (!((xhs)h).equals((Object)appStatus.f())) {
+                else if (!((xjr)h).equals((Object)appStatus.f())) {
                     return false;
                 }
-                final xha i = this.i;
+                final xiz i = this.i;
                 if (i == null) {
                     if (appStatus.e() != null) {
                         return false;
                     }
                 }
-                else if (!((xhs)i).equals((Object)appStatus.e())) {
+                else if (!((xjr)i).equals((Object)appStatus.e())) {
                     return false;
                 }
                 final String c = this.c;
@@ -109,22 +105,18 @@ public final class AutoValue_AppStatus extends AppStatus
         return false;
     }
     
-    @Override
     public final ScreenId f() {
         return this.h;
     }
     
-    @Override
     public final String g() {
         return this.c;
     }
     
-    @Override
     public final String h() {
         return this.j;
     }
     
-    @Override
     public final int hashCode() {
         final int a = this.a;
         final boolean e = this.e;
@@ -161,15 +153,15 @@ public final class AutoValue_AppStatus extends AppStatus
             hashCode3 = 0;
         }
         else {
-            hashCode3 = ((xhs)h).hashCode();
+            hashCode3 = ((xjr)h).hashCode();
         }
-        final xha i = this.i;
+        final xiz i = this.i;
         int hashCode4;
         if (i == null) {
             hashCode4 = 0;
         }
         else {
-            hashCode4 = ((xhs)i).hashCode();
+            hashCode4 = ((xjr)i).hashCode();
         }
         final String c = this.c;
         int hashCode5;
@@ -187,27 +179,22 @@ public final class AutoValue_AppStatus extends AppStatus
         return (((((((((a ^ 0xF4243) * 1000003 ^ n2) * 1000003 ^ n3) * 1000003 ^ n) * 1000003 ^ hashCode2) * 1000003 ^ hashCode3) * 1000003 ^ hashCode4) * 1000003 ^ hashCode5) * 1000003 ^ hashCode6) * 1000003 ^ hashCode;
     }
     
-    @Override
     public final Map i() {
         return this.d;
     }
     
-    @Override
     public final boolean j() {
         return this.b;
     }
     
-    @Override
     public final boolean k() {
         return this.f;
     }
     
-    @Override
     public final boolean l() {
         return this.e;
     }
     
-    @Override
     public final String toString() {
         final int a = this.a;
         final boolean e = this.e;

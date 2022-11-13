@@ -40,22 +40,22 @@ public class QrCodeCaptureActivity extends fa implements QrCodeTracker$Listener,
         final Context applicationContext = this.getApplicationContext();
         final BarcodeDetectorOptions barcodeDetectorOptions = new BarcodeDetectorOptions();
         barcodeDetectorOptions.a = 256;
-        final nmt nmt = new nmt(new nmw(applicationContext, barcodeDetectorOptions));
+        final nnx nnx = new nnx(new noa(applicationContext, barcodeDetectorOptions));
         final QrCodeTrackerFactory b = new QrCodeTrackerFactory((QrCodeTracker$Listener)this);
-        final oia b2 = new oia();
+        final ojg b2 = new ojg();
         b2.b = b;
-        synchronized (((nmp)nmt).a) {
-            final oia b3 = ((nmp)nmt).b;
+        synchronized (((nnt)nnx).a) {
+            final ojg b3 = ((nnt)nnx).b;
             if (b3 != null) {
                 b3.a();
             }
-            ((nmp)nmt).b = b2;
-            monitorexit(((nmp)nmt).a);
-            if (!((nmp)nmt).b()) {
+            ((nnt)nnx).b = b2;
+            monitorexit(((nnt)nnx).a);
+            if (!((nnt)nnx).b()) {
                 Toast.makeText((Context)this, R$string.missing_dependencies, 1).show();
                 Log.w(QrCodeCaptureActivity.TAG, "QR Code detector is not operational. Try connecting to WiFi and updating Google Play Services or checking that the device storage isn't low.");
             }
-            this.cameraSource = new CameraSource(this.getApplicationContext(), (nmp)nmt);
+            this.cameraSource = new CameraSource(this.getApplicationContext(), (nnt)nnx);
         }
     }
     
@@ -88,10 +88,10 @@ public class QrCodeCaptureActivity extends fa implements QrCodeTracker$Listener,
     }
     
     private void startCameraSource() {
-        final int h = ((mor)moq.a).h(this.getApplicationContext(), 23);
+        final int h = ((mpw)mpv.a).h(this.getApplicationContext(), 23);
         if (h != 0) {
             new ConnectionResult(h).toString();
-            moq.a.a((Activity)this, h, 9001, (DialogInterface$OnCancelListener)null).show();
+            mpv.a.a((Activity)this, h, 9001, (DialogInterface$OnCancelListener)null).show();
         }
         final CameraSource cameraSource = this.cameraSource;
         if (cameraSource != null) {

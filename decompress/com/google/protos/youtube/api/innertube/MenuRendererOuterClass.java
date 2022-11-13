@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class MenuRendererOuterClass
 {
-    public static final agzg menuRenderer;
+    public static final ahbf menuRenderer;
     
     static {
-        menuRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ameo.a, (MessageLite)ameo.a, (agzn)null, 66439850, ahcm.k, (Class)ameo.class);
+        menuRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)amgs.a, (MessageLite)amgs.a, (ahbm)null, 66439850, ahek.k, (Class)amgs.class);
     }
     
     private MenuRendererOuterClass() {

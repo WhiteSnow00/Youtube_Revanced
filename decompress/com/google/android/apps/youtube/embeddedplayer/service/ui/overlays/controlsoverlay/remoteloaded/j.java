@@ -16,7 +16,7 @@ final class j implements trz
     }
     
     public final boolean c(final MotionEvent motionEvent, final boolean b) {
-        if (this.a.mn()) {
+        if (((abbk)this.a).mn()) {
             final l a = this.a;
             if (a.M) {
                 if (!a.E.e) {

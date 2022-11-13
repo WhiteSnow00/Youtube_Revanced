@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint extends agzi implements ahax
+public final class LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint extends ahbh implements ahcw
 {
     public static final LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg liveChatPurchaseMessageEndpoint;
-    public agyc b;
+    private static volatile ahdd c;
+    public static final ahbf liveChatPurchaseMessageEndpoint;
+    public ahab b;
     private int d;
     
     static {
         final LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint a2 = new LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint();
-        agzi.registerDefaultInstance((Class)LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint.class, (agzi)(a = a2));
-        liveChatPurchaseMessageEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 133030216, ahcm.k, (Class)LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint.class);
+        ahbh.registerDefaultInstance((Class)LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint.class, (ahbh)(a = a2));
+        liveChatPurchaseMessageEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 133030216, ahek.k, (Class)LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint.class);
     }
     
     private LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint() {
-        this.b = agyc.b;
+        this.b = ahab.b;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint.c) == null) {
                     synchronized (LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint.class) {
                         if (LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint.c == null) {
-                            LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint.c = (ahbe)new agzb((agzi)LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint.a);
+                            LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint.c = (ahdd)new ahba((ahbh)LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMes
                 return LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint.a);
+                return new ahaz((ahbh)LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint.a);
             }
             case 3: {
                 return new LiveChatPurchaseMessageEndpointOuterClass$LiveChatPurchaseMessageEndpoint();

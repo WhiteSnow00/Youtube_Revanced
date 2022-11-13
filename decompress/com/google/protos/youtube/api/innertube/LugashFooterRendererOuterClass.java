@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class LugashFooterRendererOuterClass
 {
-    public static final agzg lugashFooterRenderer;
+    public static final ahbf lugashFooterRenderer;
     
     static {
-        lugashFooterRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)alus.a, (MessageLite)alus.a, (agzn)null, 88571644, ahcm.k, (Class)alus.class);
+        lugashFooterRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)alww.a, (MessageLite)alww.a, (ahbm)null, 88571644, ahek.k, (Class)alww.class);
     }
     
     private LugashFooterRendererOuterClass() {
