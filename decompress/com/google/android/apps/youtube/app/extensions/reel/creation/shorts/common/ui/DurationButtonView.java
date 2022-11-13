@@ -30,7 +30,7 @@ public final class DurationButtonView extends FrameLayout
         super(a, set);
         this.d = 1.0f;
         this.a = a;
-        LayoutInflater.from(a).inflate(2131624375, (ViewGroup)this);
+        LayoutInflater.from(a).inflate(2131624374, (ViewGroup)this);
         final YouTubeTextView b = (YouTubeTextView)this.findViewById(2131428771);
         b.getClass();
         this.b = b;
@@ -38,7 +38,7 @@ public final class DurationButtonView extends FrameLayout
         c.getClass();
         this.c = c;
         if (set != null) {
-            final TypedArray obtainStyledAttributes = a.getTheme().obtainStyledAttributes(set, gtz.a, 0, 0);
+            final TypedArray obtainStyledAttributes = a.getTheme().obtainStyledAttributes(set, gur.a, 0, 0);
             final String string = obtainStyledAttributes.getString(0);
             if (string != null) {
                 b.getClass();
@@ -63,18 +63,19 @@ public final class DurationButtonView extends FrameLayout
     public final void b(int max) {
         final int f = this.f;
         if (f <= 0) {
-            trn.b("maxDurationMs not set");
+            ttr.b("maxDurationMs not set");
             return;
         }
-        final int max2 = Math.max(0, Math.min(max, f));
-        final int min = Math.min(max2, this.e);
-        max = Math.max(max2, this.e);
-        final float n = (float)this.f;
-        this.a(min / n, max / n);
+        max = Math.max(0, Math.min(max, f));
+        final int min = Math.min(max, this.e);
+        final int max2 = Math.max(max, this.e);
+        final float n = (float)min;
+        final float n2 = (float)this.f;
+        this.a(n / n2, max2 / n2);
         final LottieAnimationView c = this.c;
         c.getClass();
-        c.m(max2 / (float)this.f);
-        this.e = max2;
+        c.m(max / (float)this.f);
+        this.e = max;
     }
     
     public final void c(final int visibility) {

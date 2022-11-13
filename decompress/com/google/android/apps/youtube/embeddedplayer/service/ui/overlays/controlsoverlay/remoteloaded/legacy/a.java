@@ -38,15 +38,15 @@ import android.widget.ImageView;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.controlsbar.remoteloaded.MinimalTimeBar;
-import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.remoteloaded.p;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.remoteloaded.q;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.h;
 import android.os.Handler$Callback;
 import android.view.animation.Animation$AnimationListener;
 import android.view.View$OnClickListener;
 
-public final class a extends absa implements View$OnClickListener, Animation$AnimationListener, Handler$Callback, aazx, absb, abbm, abcm, abbe, h
+public final class a extends abub implements View$OnClickListener, Animation$AnimationListener, Handler$Callback, abbs, abuc, abdi, abeg, abcy, h
 {
-    public final p a;
+    public final q a;
     public final com.google.android.apps.youtube.embeddedplayer.service.ui.controlsbar.remoteloaded.a b;
     public final MinimalTimeBar c;
     public final ProgressBar d;
@@ -67,23 +67,23 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
     private boolean s;
     private boolean t;
     private boolean u;
-    private final agkw v;
+    private final agmx v;
     
     public a(final Context context, final i i) {
         super(context);
-        this.a = new p(new sin(i), null);
-        final qpt qpt = new qpt(this);
-        final qpt qpt2 = new qpt(this);
+        this.a = new q(new skt(i), null);
+        final pvh pvh = new pvh(this);
+        final pvh pvh2 = new pvh(this);
         final com.google.android.apps.youtube.embeddedplayer.service.ui.controlsbar.remoteloaded.a b = new com.google.android.apps.youtube.embeddedplayer.service.ui.controlsbar.remoteloaded.a(context);
         final Context context2 = b.getContext();
         final float density = b.getResources().getDisplayMetrics().density;
         b.a = (int)(50.0f * density + 0.5f);
         b.b = (int)(45.0f * density + 0.5f);
         b.c = (int)(density * 7.0f + 0.5f);
-        b.addView((View)(b.d = com.google.android.apps.youtube.embeddedplayer.service.ui.controlsbar.remoteloaded.c.a(context2, qpt)));
+        b.addView((View)(b.d = com.google.android.apps.youtube.embeddedplayer.service.ui.controlsbar.remoteloaded.c.a(context2, pvh)));
         (b.e = new View(context2)).setBackgroundResource(2131230951);
         b.addView(b.e);
-        final f f = new f(context2, qpt2, (byte[])null, (byte[])null, (byte[])null, (byte[])null);
+        final f f = new f(context2, pvh2, null, null, null);
         final Context context3 = f.getContext();
         final DisplayMetrics displayMetrics = f.getResources().getDisplayMetrics();
         final float density2 = displayMetrics.density;
@@ -92,8 +92,8 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
         f.f = (int)(12.0f * density2 + 0.5f);
         f.d = (int)(density2 * 8.0f + 0.5f);
         f.a = new e(context3);
-        (f.b = new StateListDrawable()).addState(View.PRESSED_ENABLED_STATE_SET, agw.a(context3, 2131230956));
-        f.b.addState(View.ENABLED_STATE_SET, agw.a(context3, 2131230955));
+        (f.b = new StateListDrawable()).addState(View.PRESSED_ENABLED_STATE_SET, agx.a(context3, 2131230956));
+        f.b.addState(View.ENABLED_STATE_SET, agx.a(context3, 2131230955));
         f.b.setState(View.ENABLED_STATE_SET);
         f.g = new Rect();
         (f.k = new Paint()).setTextSize(TypedValue.applyDimension(2, 14.0f, displayMetrics));
@@ -114,8 +114,8 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
         b.j.setGravity(16);
         b.addView((View)b.j);
         final StateListDrawable imageDrawable = new StateListDrawable();
-        imageDrawable.addState(View.PRESSED_ENABLED_STATE_SET, agw.a(context2, 2131230947));
-        imageDrawable.addState(View.ENABLED_STATE_SET, agw.a(context2, 2131230946));
+        imageDrawable.addState(View.PRESSED_ENABLED_STATE_SET, agx.a(context2, 2131230947));
+        imageDrawable.addState(View.ENABLED_STATE_SET, agx.a(context2, 2131230946));
         (b.g = new ImageButton(context2)).setBackground((Drawable)null);
         b.g.setImageDrawable((Drawable)imageDrawable);
         final ImageButton g = b.g;
@@ -125,10 +125,10 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
         b.g.setContentDescription(context2.getText(2132017405));
         b.addView((View)b.g);
         final StateListDrawable imageDrawable2 = new StateListDrawable();
-        imageDrawable2.addState(View.PRESSED_ENABLED_SELECTED_STATE_SET, agw.a(context2, 2131230949));
-        imageDrawable2.addState(View.ENABLED_SELECTED_STATE_SET, agw.a(context2, 2131230948));
-        imageDrawable2.addState(View.PRESSED_ENABLED_STATE_SET, agw.a(context2, 2131230944));
-        imageDrawable2.addState(View.ENABLED_STATE_SET, agw.a(context2, 2131230943));
+        imageDrawable2.addState(View.PRESSED_ENABLED_SELECTED_STATE_SET, agx.a(context2, 2131230949));
+        imageDrawable2.addState(View.ENABLED_SELECTED_STATE_SET, agx.a(context2, 2131230948));
+        imageDrawable2.addState(View.PRESSED_ENABLED_STATE_SET, agx.a(context2, 2131230944));
+        imageDrawable2.addState(View.ENABLED_STATE_SET, agx.a(context2, 2131230943));
         (b.h = new ImageButton(context2)).setBackground((Drawable)null);
         b.h.setImageDrawable((Drawable)imageDrawable2);
         final ImageButton g2 = b.g;
@@ -157,13 +157,16 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
         (this.g = g3).setBackgroundResource(2131230940);
         g3.setContentDescription(context.getText(2132017358));
         (this.k = (Animation)new AlphaAnimation(1.0f, 0.0f)).setInterpolator((Interpolator)new LinearInterpolator());
-        this.v = new agkw(context);
+        this.v = new agmx(context);
     }
     
     private static void F(final View view, int n, int n2) {
-        n -= view.getMeasuredWidth() / 2;
-        n2 -= view.getMeasuredHeight() / 2;
-        view.layout(n, n2, view.getMeasuredWidth() + n, view.getMeasuredHeight() + n2);
+        final int n3 = view.getMeasuredWidth() / 2;
+        final int n4 = view.getMeasuredHeight() / 2;
+        n -= n3;
+        final int measuredWidth = view.getMeasuredWidth();
+        n2 -= n4;
+        view.layout(n, n2, measuredWidth + n, view.getMeasuredHeight() + n2);
     }
     
     private final void G(final View view) {
@@ -217,7 +220,7 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
     
     public final void B() {
         final ControlsState n = this.n;
-        if ((n.a == abac.b || n.b) && !this.t && !this.j.hasMessages(1)) {
+        if ((n.a == abbx.b || n.b) && !this.t && !this.j.hasMessages(1)) {
             this.j.sendEmptyMessageDelayed(1, 2500L);
         }
     }
@@ -229,8 +232,8 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
             this.E();
             return;
         }
-        final abac a = this.n.a;
-        if (a != abac.c && a != abac.f) {
+        final abbx a = this.n.a;
+        if (a != abbx.c && a != abbx.f) {
             this.E();
             return;
         }
@@ -243,12 +246,12 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
     }
     
     public final void E() {
-        final abac a = this.n.a;
-        if (a == abac.c) {
+        final abbx a = this.n.a;
+        if (a == abbx.c) {
             this.e.setBackgroundResource(2131230939);
             this.e.setContentDescription(this.getContext().getText(2132017326));
         }
-        else if (a == abac.b) {
+        else if (a == abbx.b) {
             this.e.setBackgroundResource(2131230938);
             this.e.setContentDescription(this.getContext().getText(2132017324));
         }
@@ -259,18 +262,18 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
         final boolean l = this.l;
         final boolean b = true;
         final boolean b2 = l && this.b.getTop() < this.e.getBottom();
-        Label_0533: {
+        Label_0548: {
             if (!this.t && !this.n.i()) {
                 final ControlsState n = this.n;
-                if (n.a != abac.a) {
+                if (n.a != abbx.a) {
                     I((View)this.h, n.i() && !b2);
                     I((View)this.i, this.n.i() && !b2);
                     I((View)this.d, this.n.b && !b2);
                     I((View)this.e, !this.n.i() && !this.n.b && this.m.t && !b2);
                     I((View)this.b, this.q ^ true);
-                    I((View)this.c, this.m.p && this.q);
+                    I(this.c, this.m.p && this.q);
                     this.setVisibility(0);
-                    break Label_0533;
+                    break Label_0548;
                 }
             }
             for (int i = 0; i < this.getChildCount(); ++i) {
@@ -278,13 +281,13 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
                 I(child, (child == this.d && this.n.b) || ((child == this.h || child == this.i) && this.n.i()) || (child == this.c && this.q));
             }
             boolean b3 = false;
-            Label_0528: {
+            Label_0543: {
                 if (!this.q || this.s) {
                     final ControlsState n2 = this.n;
                     if (!n2.b) {
                         if (!n2.i()) {
                             b3 = false;
-                            break Label_0528;
+                            break Label_0543;
                         }
                     }
                 }
@@ -343,22 +346,7 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
     public final void j(final SubtitleTrack subtitleTrack) {
     }
     
-    public final void k(final ControlsOverlayStyle m) {
-        this.m = m;
-        final com.google.android.apps.youtube.embeddedplayer.service.ui.controlsbar.remoteloaded.a b = this.b;
-        if (m == ControlsOverlayStyle.k) {
-            b.f.setVisibility(8);
-            b.j.setVisibility(0);
-        }
-        else {
-            b.f.a(m);
-            b.f.setVisibility(0);
-            b.j.setVisibility(8);
-        }
-        this.c.a(m);
-    }
-    
-    public final void l(final abbl b) {
+    public final void l(final abdh b) {
         this.a.b = b;
     }
     
@@ -400,7 +388,7 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
         this.E();
         this.setFocusable(true);
         this.requestFocus();
-        final p a = this.a;
+        final q a = this.a;
         if (a != null) {
             a.d();
         }
@@ -408,7 +396,7 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
     
     public final void oF() {
         this.v.e();
-        this.k(ControlsOverlayStyle.a);
+        this.oU(ControlsOverlayStyle.a);
     }
     
     public final void oG(final String text, final boolean b) {
@@ -438,6 +426,21 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
         this.b.b(b);
     }
     
+    public final void oU(final ControlsOverlayStyle m) {
+        this.m = m;
+        final com.google.android.apps.youtube.embeddedplayer.service.ui.controlsbar.remoteloaded.a b = this.b;
+        if (m == ControlsOverlayStyle.k) {
+            b.f.setVisibility(8);
+            b.j.setVisibility(0);
+        }
+        else {
+            b.f.a(m);
+            b.f.setVisibility(0);
+            b.j.setVisibility(8);
+        }
+        this.c.a(m);
+    }
+    
     public final void onAnimationEnd(final Animation animation) {
         this.u = false;
         this.oE();
@@ -450,7 +453,7 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
     }
     
     public final void onClick(final View view) {
-        final p a = this.a;
+        final q a = this.a;
         if (a != null) {
             if (view == this.f) {
                 this.oE();
@@ -463,16 +466,16 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
                 return;
             }
             if (view == this.e) {
-                final abac a2 = this.n.a;
-                if (a2 == abac.f) {
+                final abbx a2 = this.n.a;
+                if (a2 == abbx.f) {
                     a.n();
                     return;
                 }
-                if (a2 == abac.b) {
+                if (a2 == abbx.b) {
                     a.e();
                     return;
                 }
-                if (a2 == abac.c) {
+                if (a2 == abbx.c) {
                     a.f();
                 }
             }
@@ -480,7 +483,7 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
     }
     
     public final boolean onFilterTouchEventForSecurity(final MotionEvent motionEvent) {
-        final p a = this.a;
+        final q a = this.a;
         final int flags = motionEvent.getFlags();
         boolean b = true;
         if (0x1 != (flags & 0x1)) {
@@ -491,9 +494,9 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
     }
     
     public final boolean onKeyDown(final int n, final KeyEvent keyEvent) {
-        if (!keyEvent.isSystem() || aaiy.i(n)) {
+        if (!keyEvent.isSystem() || aakt.i(n)) {
             this.v();
-            if (this.n.a == abac.d) {
+            if (this.n.a == abbx.d) {
                 this.a.o();
                 return true;
             }
@@ -501,12 +504,10 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
         return super.onKeyDown(n, keyEvent);
     }
     
-    protected final void onLayout(final boolean b, int n, int n2, int n3, int paddingLeft) {
-        final int n4 = paddingLeft - n2;
-        paddingLeft = this.getPaddingLeft();
+    protected final void onLayout(final boolean b, int n, int n2, final int n3, int n4) {
+        final int paddingLeft = this.getPaddingLeft();
+        n4 -= n2;
         n2 = n4 - this.getPaddingBottom();
-        n = (n3 - n) / 2;
-        n3 = n4 / 2;
         Object o;
         if (this.q) {
             o = this.c;
@@ -514,12 +515,15 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
         else {
             o = this.b;
         }
+        n4 /= 2;
         ((View)o).layout(paddingLeft, n2 - ((View)o).getMeasuredHeight(), ((View)o).getMeasuredWidth() + paddingLeft, n2);
-        F((View)this.e, n, n3);
-        F((View)this.h, n, n3);
-        F((View)this.d, n, n3);
-        F((View)this.g, this.e.getLeft() - this.g.getMeasuredWidth() / 2, n3);
-        F((View)this.f, this.e.getRight() + this.f.getMeasuredWidth() / 2, n3);
+        final ImageButton e = this.e;
+        n = (n3 - n) / 2;
+        F((View)e, n, n4);
+        F((View)this.h, n, n4);
+        F((View)this.d, n, n4);
+        F((View)this.g, this.e.getLeft() - this.g.getMeasuredWidth() / 2, n4);
+        F((View)this.f, this.e.getRight() + this.f.getMeasuredWidth() / 2, n4);
         final TextView i = this.i;
         i.layout(paddingLeft, n2 - i.getMeasuredHeight(), this.i.getMeasuredWidth() + paddingLeft, n2);
     }
@@ -527,9 +531,11 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
     protected final void onMeasure(final int n, final int n2) {
         final int defaultSize = getDefaultSize(0, n);
         this.setMeasuredDimension(defaultSize, getDefaultSize(0, n2));
-        final int n3 = defaultSize * 10 / 100;
         final TextView i = this.i;
-        i.setPadding(n3, i.getPaddingTop(), n3, this.i.getPaddingBottom());
+        final int paddingTop = i.getPaddingTop();
+        final int paddingBottom = this.i.getPaddingBottom();
+        final int n3 = defaultSize * 10 / 100;
+        i.setPadding(n3, paddingTop, n3, paddingBottom);
         this.measureChild((View)this.d, n, n2);
         this.measureChild((View)this.e, n, n2);
         this.measureChild((View)this.h, n, n2);
@@ -556,7 +562,7 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
                 }
             }
             else {
-                if (this.n.a == abac.d) {
+                if (this.n.a == abbx.d) {
                     this.a.o();
                 }
                 else if (!this.t && !this.r) {
@@ -566,7 +572,7 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
             }
         }
         else {
-            Label_0214: {
+            Label_0217: {
                 if (!this.t) {
                     final float x = motionEvent.getX();
                     final float y = motionEvent.getY();
@@ -587,7 +593,7 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
                     }
                     if (((View)o).getLeft() > x || x > ((View)o).getRight() || top > y || y > ((View)o).getBottom()) {
                         if (!this.u) {
-                            break Label_0214;
+                            break Label_0217;
                         }
                     }
                 }
@@ -599,37 +605,26 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
         return true;
     }
     
-    public final void pj(final aazw a) {
-        final p a2 = this.a;
+    public final void pl(final abbr a) {
+        final q a2 = this.a;
         a2.a = a;
         final com.google.android.apps.youtube.embeddedplayer.service.ui.controlsbar.remoteloaded.a b = this.b;
-        b.i = (aazw)a2;
+        b.i = (abbr)a2;
         final c d = b.d;
         a2.getClass();
-        d.h = (aazw)a2;
+        d.h = (abbr)a2;
     }
     
-    public final void pk(final boolean enabled) {
+    public final void pm(final boolean enabled) {
         this.b.f.setEnabled(enabled);
     }
     
+    public final void pn(final long n, final long n2, final long n3, final long n4, final long n5) {
+        aale.e((abbs)this, n, n3, n4, n5);
+    }
+    
     public final void q(final List list) {
-        this.v.f(list, (abbl)this.a);
-    }
-    
-    public final void qW(final boolean selected) {
-        this.b.d.b.setSelected(selected);
-    }
-    
-    public final void qX(final boolean b) {
-    }
-    
-    public final void qY(final abbd d) {
-        this.a.d = d;
-    }
-    
-    public final void qZ(final g f) {
-        this.a.f = f;
+        this.v.f(list, (abdh)this.a);
     }
     
     public final void r(final boolean b) {
@@ -644,15 +639,30 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
         h.setVisibility(visibility);
     }
     
-    public final void rb(final boolean b) {
+    public final void rc(final boolean selected) {
+        this.b.d.b.setSelected(selected);
     }
     
-    public final void re(final abcl c) {
+    public final void rd(final boolean b) {
+    }
+    
+    public final void re(final abcx d) {
+        this.a.d = d;
+    }
+    
+    public final void rf(final g f) {
+        this.a.f = f;
+    }
+    
+    public final void rh(final boolean b) {
+    }
+    
+    public final void rk(final abef c) {
         this.a.c = c;
     }
     
-    public final void rf() {
-        tmy.y(this.getContext(), this.getContext().getText(2132018804), 0);
+    public final void rl() {
+        tpe.y(this.getContext(), this.getContext().getText(2132018805), 0);
     }
     
     public final void s(final CharSequence charSequence) {
@@ -672,11 +682,19 @@ public final class a extends absa implements View$OnClickListener, Animation$Ani
         this.E();
         this.setFocusable(false);
         if (t) {
-            final p a = this.a;
+            final q a = this.a;
             if (a != null) {
                 a.v();
             }
         }
         this.B();
+    }
+    
+    public final void x() {
+        aale.c((abbs)this);
+    }
+    
+    public final void y(final anew anew, final boolean b) {
+        aale.d((abbs)this, anew, b);
     }
 }

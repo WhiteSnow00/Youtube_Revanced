@@ -18,10 +18,10 @@ public final class ActivityCompatHelperApi30
     private ActivityCompatHelperApi30() {
     }
     
-    public final aoa currentWindowInsets(final Activity activity) {
+    public final aob currentWindowInsets(final Activity activity) {
         activity.getClass();
         final WindowInsets windowInsets = activity.getWindowManager().getCurrentWindowMetrics().getWindowInsets();
         windowInsets.getClass();
-        return aoa.o(windowInsets);
+        return aob.o(windowInsets);
     }
 }

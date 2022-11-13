@@ -17,7 +17,7 @@ public class PhotoEntity extends AbstractSafeParcelable implements Photo
     public final String b;
     
     static {
-        CREATOR = (Parcelable$Creator)new njx(12);
+        CREATOR = (Parcelable$Creator)new nlj(11);
     }
     
     public PhotoEntity(final PersonFieldMetadataEntity a, final String b) {
@@ -26,7 +26,7 @@ public class PhotoEntity extends AbstractSafeParcelable implements Photo
     }
     
     public final PersonFieldMetadata a() {
-        return this.a;
+        return (PersonFieldMetadata)this.a;
     }
     
     public final String b() {
@@ -41,17 +41,17 @@ public class PhotoEntity extends AbstractSafeParcelable implements Photo
             return true;
         }
         final Photo photo = (Photo)o;
-        return kgk.ba((Object)this.a(), (Object)photo.a()) && kgk.ba((Object)this.b(), (Object)photo.b());
+        return khl.be((Object)((Photo)this).a(), (Object)photo.a()) && khl.be((Object)((Photo)this).b(), (Object)photo.b());
     }
     
     public final int hashCode() {
-        return Arrays.hashCode(new Object[] { this.a(), this.b() });
+        return Arrays.hashCode(new Object[] { ((Photo)this).a(), ((Photo)this).b() });
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        final int i = kgk.I(parcel);
-        kgk.ab(parcel, 2, (Parcelable)this.a, n);
-        kgk.ac(parcel, 3, this.b);
-        kgk.J(parcel, i);
+        final int m = khl.M(parcel);
+        khl.af(parcel, 2, (Parcelable)this.a, n);
+        khl.ag(parcel, 3, this.b);
+        khl.N(parcel, m);
     }
 }

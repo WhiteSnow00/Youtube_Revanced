@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ReelVodLinkRendererOuterClass
 {
-    public static final agzg reelVodLinkRenderer;
+    public static final ahbf reelVodLinkRenderer;
     
     static {
-        reelVodLinkRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anrm.a, (MessageLite)anrm.a, (agzn)null, 156440873, ahcm.k, (Class)anrm.class);
+        reelVodLinkRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)antp.a, (MessageLite)antp.a, (ahbm)null, 156440873, ahek.k, (Class)antp.class);
     }
     
     private ReelVodLinkRendererOuterClass() {

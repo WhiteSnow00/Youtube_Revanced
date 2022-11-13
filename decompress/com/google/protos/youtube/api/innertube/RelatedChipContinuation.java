@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class RelatedChipContinuation
 {
-    public static final agzg relatedChipsContinuationRenderer;
+    public static final ahbf relatedChipsContinuationRenderer;
     
     static {
-        relatedChipsContinuationRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ansh.a, (MessageLite)ansh.a, (agzn)null, 196516197, ahcm.k, (Class)ansh.class);
+        relatedChipsContinuationRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anuk.a, (MessageLite)anuk.a, (ahbm)null, 196516197, ahek.k, (Class)anuk.class);
     }
     
     private RelatedChipContinuation() {

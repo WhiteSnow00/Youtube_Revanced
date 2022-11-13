@@ -21,12 +21,12 @@ import android.content.Context;
 import android.widget.Checkable;
 import androidx.cardview.widget.CardView;
 
-public class MaterialCardView extends CardView implements Checkable, adwv
+public class MaterialCardView extends CardView implements Checkable, adyx
 {
     private static final int[] h;
     private static final int[] i;
     public boolean g;
-    private final adsa j;
+    private final aduc j;
     private boolean k;
     
     static {
@@ -43,16 +43,17 @@ public class MaterialCardView extends CardView implements Checkable, adwv
     }
     
     public MaterialCardView(final Context context, final AttributeSet set, int n) {
-        super(adyy.a(context, set, n, 2132085179), set, n);
+        super(aeba.a(context, set, n, 2132085180), set, n);
         this.g = false;
         this.k = true;
-        final TypedArray a = aduf.a(this.getContext(), set, adsb.b, n, 2132085179, new int[0]);
-        final adsa j = new adsa(this, set, n);
-        (this.j = j).e(((aay)super.f.a).e);
-        n = super.c.left;
-        j.c.set(n, super.c.top, super.c.right, super.c.bottom);
+        final TypedArray a = adwh.a(this.getContext(), set, adud.b, n, 2132085180, new int[0]);
+        final aduc j = new aduc(this, set, n);
+        (this.j = j).e(((aaz)super.f.a).e);
+        final int left = super.c.left;
+        n = super.c.top;
+        j.c.set(left, n, super.c.right, super.c.bottom);
         j.h();
-        j.o = adwd.f(j.b.getContext(), a, 11);
+        j.o = adds.z(j.b.getContext(), a, 11);
         if (j.o == null) {
             j.o = ColorStateList.valueOf(-1);
         }
@@ -60,14 +61,14 @@ public class MaterialCardView extends CardView implements Checkable, adwv
         final boolean boolean1 = a.getBoolean(0, false);
         j.t = boolean1;
         j.b.setLongClickable(boolean1);
-        j.m = adwd.f(j.b.getContext(), a, 6);
-        final Drawable g = adwd.g(j.b.getContext(), a, 2);
-        if (g != null) {
-            aip.g(j.k = g.mutate(), j.m);
+        j.m = adds.z(j.b.getContext(), a, 6);
+        final Drawable a2 = adds.A(j.b.getContext(), a, 2);
+        if (a2 != null) {
+            aiq.g(j.k = a2.mutate(), j.m);
             j.f(j.b.g, false);
         }
         else {
-            j.k = adsa.a;
+            j.k = aduc.a;
         }
         final LayerDrawable q = j.q;
         if (q != null) {
@@ -76,24 +77,24 @@ public class MaterialCardView extends CardView implements Checkable, adwv
         j.g = a.getDimensionPixelSize(5, 0);
         j.f = a.getDimensionPixelSize(4, 0);
         j.h = a.getInteger(3, 8388661);
-        j.l = adwd.f(j.b.getContext(), a, 7);
+        j.l = adds.z(j.b.getContext(), a, 7);
         if (j.l == null) {
-            j.l = ColorStateList.valueOf(adwd.A((View)j.b, 2130969044));
+            j.l = ColorStateList.valueOf(adds.U((View)j.b, 2130969044));
         }
-        final ColorStateList f = adwd.f(j.b.getContext(), a, 1);
-        final adwf e = j.e;
+        final ColorStateList z = adds.z(j.b.getContext(), a, 1);
+        final adyh e = j.e;
         ColorStateList value;
-        if ((value = f) == null) {
+        if ((value = z) == null) {
             value = ColorStateList.valueOf(0);
         }
         e.o(value);
-        n = advx.b;
+        n = adxz.b;
         final Drawable p3 = j.p;
         if (p3 != null) {
             ((RippleDrawable)p3).setColor(j.l);
         }
         else {
-            final adwf r = j.r;
+            final adyh r = j.r;
         }
         j.i();
         j.e.t((float)j.i, j.o);
@@ -108,6 +109,10 @@ public class MaterialCardView extends CardView implements Checkable, adwv
         j.j = (Drawable)i;
         j.b.setForeground(j.d(j.j));
         a.recycle();
+    }
+    
+    public static float h(final MaterialCardView materialCardView) {
+        return materialCardView.b();
     }
     
     public final float b() {
@@ -125,7 +130,7 @@ public class MaterialCardView extends CardView implements Checkable, adwv
     
     public final void f(final float n) {
         super.f(n);
-        final adsa j = this.j;
+        final aduc j = this.j;
         j.g(j.n.f(n));
         j.j.invalidateSelf();
         if (j.n() || j.m()) {
@@ -150,13 +155,13 @@ public class MaterialCardView extends CardView implements Checkable, adwv
     }
     
     public final boolean j() {
-        final adsa j = this.j;
+        final aduc j = this.j;
         return j != null && j.t;
     }
     
     protected final void onAttachedToWindow() {
         super.onAttachedToWindow();
-        adwd.af((View)this, this.j.d);
+        adyf.g((View)this, this.j.d);
     }
     
     protected final int[] onCreateDrawableState(final int n) {
@@ -186,7 +191,7 @@ public class MaterialCardView extends CardView implements Checkable, adwv
     
     protected final void onMeasure(int f, int f2) {
         super.onMeasure(f, f2);
-        final adsa j = this.j;
+        final aduc j = this.j;
         final int measuredWidth = this.getMeasuredWidth();
         final int measuredHeight = this.getMeasuredHeight();
         if (j.q != null) {
@@ -227,7 +232,7 @@ public class MaterialCardView extends CardView implements Checkable, adwv
             else {
                 f4 = j.f;
             }
-            final int f5 = ana.f((View)j.b);
+            final int f5 = anb.f((View)j.b);
             int n2;
             if (f5 == 1) {
                 n2 = f;
@@ -235,10 +240,10 @@ public class MaterialCardView extends CardView implements Checkable, adwv
             else {
                 n2 = f2;
             }
-            if (f5 == 1) {
-                f = f2;
+            if (f5 != 1) {
+                f2 = f;
             }
-            j.q.setLayerInset(2, f, f4, n2, f3);
+            j.q.setLayerInset(2, f2, f4, n2, f3);
         }
     }
     
@@ -248,7 +253,7 @@ public class MaterialCardView extends CardView implements Checkable, adwv
     
     public final void setBackgroundDrawable(final Drawable backgroundDrawable) {
         if (this.k) {
-            final adsa j = this.j;
+            final aduc j = this.j;
             if (!j.s) {
                 j.s = true;
             }
@@ -264,7 +269,7 @@ public class MaterialCardView extends CardView implements Checkable, adwv
     
     public final void setClickable(final boolean clickable) {
         super.setClickable(clickable);
-        final adsa j = this.j;
+        final aduc j = this.j;
         if (j != null) {
             final Drawable i = j.j;
             Object k;
@@ -286,11 +291,11 @@ public class MaterialCardView extends CardView implements Checkable, adwv
         }
     }
     
-    public final void ti(final adwk adwk) {
+    public final void tn(final adym adym) {
         final RectF rectF = new RectF();
         rectF.set(this.j.d.getBounds());
-        this.setClipToOutline(adwk.g(rectF));
-        this.j.g(adwk);
+        this.setClipToOutline(adym.g(rectF));
+        this.j.g(adym);
     }
     
     public final void toggle() {
@@ -298,7 +303,7 @@ public class MaterialCardView extends CardView implements Checkable, adwv
             this.g ^= true;
             this.refreshDrawableState();
             if (Build$VERSION.SDK_INT > 26) {
-                final adsa j = this.j;
+                final aduc j = this.j;
                 final Drawable p = j.p;
                 if (p != null) {
                     final Rect bounds = p.getBounds();

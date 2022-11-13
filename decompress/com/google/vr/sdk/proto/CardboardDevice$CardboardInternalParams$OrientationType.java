@@ -4,8 +4,10 @@
 
 package com.google.vr.sdk.proto;
 
-public enum CardboardDevice$CardboardInternalParams$OrientationType implements agzm
+public enum CardboardDevice$CardboardInternalParams$OrientationType implements ahbl
 {
+    private static final CardboardDevice$CardboardInternalParams$OrientationType[] $VALUES;
+    
     CCW_0_DEGREES("CCW_0_DEGREES", 0, 0), 
     CCW_0_DEGREES_MIRRORED("CCW_0_DEGREES_MIRRORED", 4, 4);
     
@@ -29,11 +31,16 @@ public enum CardboardDevice$CardboardInternalParams$OrientationType implements a
     
     public static final int CCW_90_DEGREES_MIRRORED_VALUE = 5;
     public static final int CCW_90_DEGREES_VALUE = 1;
-    private static final agzn internalValueMap;
+    private static final ahbm internalValueMap;
     private final int value;
     
+    private static CardboardDevice$CardboardInternalParams$OrientationType[] $values() {
+        return new CardboardDevice$CardboardInternalParams$OrientationType[] { CardboardDevice$CardboardInternalParams$OrientationType.CCW_0_DEGREES, CardboardDevice$CardboardInternalParams$OrientationType.CCW_90_DEGREES, CardboardDevice$CardboardInternalParams$OrientationType.CCW_180_DEGREES, CardboardDevice$CardboardInternalParams$OrientationType.CCW_270_DEGREES, CardboardDevice$CardboardInternalParams$OrientationType.CCW_0_DEGREES_MIRRORED, CardboardDevice$CardboardInternalParams$OrientationType.CCW_90_DEGREES_MIRRORED, CardboardDevice$CardboardInternalParams$OrientationType.CCW_180_DEGREES_MIRRORED, CardboardDevice$CardboardInternalParams$OrientationType.CCW_270_DEGREES_MIRRORED };
+    }
+    
     static {
-        internalValueMap = new CardboardDevice$CardboardInternalParams$OrientationType$1();
+        $VALUES = $values();
+        internalValueMap = (ahbm)new CardboardDevice$CardboardInternalParams$OrientationType$1();
     }
     
     private CardboardDevice$CardboardInternalParams$OrientationType(final String s, final int n, final int value) {
@@ -72,11 +79,10 @@ public enum CardboardDevice$CardboardInternalParams$OrientationType implements a
         }
     }
     
-    public static agzo internalGetVerifier() {
+    public static ahbn internalGetVerifier() {
         return CardboardDevice$CardboardInternalParams$OrientationType$OrientationTypeVerifier.INSTANCE;
     }
     
-    @Override
     public final int getNumber() {
         return this.value;
     }

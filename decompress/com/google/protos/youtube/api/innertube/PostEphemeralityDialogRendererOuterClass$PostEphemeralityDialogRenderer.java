@@ -6,40 +6,40 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer extends agzi implements ahax
+public final class PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer extends ahbh implements ahcw
 {
     public static final PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer a;
-    private static volatile ahbe e;
-    public static final agzg postEphemeralityDialogRenderer;
+    private static volatile ahdd e;
+    public static final ahbf postEphemeralityDialogRenderer;
     public int b;
-    public ajsq c;
-    public anss d;
+    public ajut c;
+    public anuv d;
     private byte f;
     
     static {
         final PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer a2 = new PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer();
-        agzi.registerDefaultInstance((Class)PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer.class, (agzi)(a = a2));
-        postEphemeralityDialogRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)a2, (MessageLite)a2, (agzn)null, 427886063, ahcm.k, (Class)PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer.class);
+        ahbh.registerDefaultInstance((Class)PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer.class, (ahbh)(a = a2));
+        postEphemeralityDialogRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)a2, (MessageLite)a2, (ahbm)null, 427886063, ahek.k, (Class)PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer.class);
     }
     
     private PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer() {
         this.f = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer.e) == null) {
                     synchronized (PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer.class) {
                         if (PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer.e == null) {
-                            PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer.e = (ahbe)new agzb((agzi)PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer.a);
+                            PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer.e = (ahdd)new ahba((ahbh)PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer.a);
                         }
                     }
                 }
@@ -49,7 +49,7 @@ public final class PostEphemeralityDialogRendererOuterClass$PostEphemeralityDial
                 return PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer.a;
             }
             case 4: {
-                return new agza((agzi)PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer.a);
+                return new ahaz((ahbh)PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer.a);
             }
             case 3: {
                 return new PostEphemeralityDialogRendererOuterClass$PostEphemeralityDialogRenderer();
@@ -59,9 +59,9 @@ public final class PostEphemeralityDialogRendererOuterClass$PostEphemeralityDial
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

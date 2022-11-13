@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Zpět na album</string>
     <string name="accessibility_navigation_back_button">Zpět</string>
     <string name="accessibility_new_content_available">Nový obsah k dispozici</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Nová videa</string>
     <string name="accessibility_next">Další video</string>
     <string name="accessibility_offline_button_cancel">Přerušit stahování</string>
     <string name="accessibility_offline_button_cannot_save">Stažení se nezdařilo</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Sledování a kontrola dat</string>
     <string name="data_saving_persistent_title">Úspora dat</string>
     <string name="data_saving_select_quality_every_video_switch_title">Výběr kvality pro každé video</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Snížení kvality chytrého stahování</string>
     <string name="data_saving_snack_bar_action_button">Zobrazit</string>
     <string name="data_saving_snack_bar_text">Tato změna ovlivní vaše nastavení ukládání dat</string>
     <string name="data_saving_upload_wifi_only_switch_title">Nahrávat pouze přes Wi-Fi</string>

@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Rudi kwenye albamu</string>
     <string name="accessibility_navigation_back_button">Nyuma</string>
     <string name="accessibility_new_content_available">Maudhui mapya yanapatikana</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Video mpya</string>
     <string name="accessibility_next">Video inayofuata</string>
     <string name="accessibility_offline_button_cancel">Acha kupakua</string>
     <string name="accessibility_offline_button_cannot_save">Haiwezi kupakuliwa</string>
@@ -480,6 +480,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Kufuatilia na kudhibiti data</string>
     <string name="data_saving_persistent_title">Kuokoa data</string>
     <string name="data_saving_select_quality_every_video_switch_title">Chagua ubora wa kila video</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
     <string name="data_saving_snack_bar_action_button">Angalia</string>
     <string name="data_saving_snack_bar_text">Mabadiliko haya yataathiri mipangilio yako ya kuhifadhi data</string>
     <string name="data_saving_upload_wifi_only_switch_title">Pakia kwenye Wi-Fi pekee</string>

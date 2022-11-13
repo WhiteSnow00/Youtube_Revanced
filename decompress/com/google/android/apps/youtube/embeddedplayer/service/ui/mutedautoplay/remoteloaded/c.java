@@ -11,31 +11,31 @@ import com.google.android.apps.youtube.embeddedplayer.service.databus.remoteload
 
 public final class c implements b
 {
-    public final atir a;
-    private final /* synthetic */ int b;
+    public final atjm a;
+    private final int b;
     
     public c(final int b) {
         this.b = b;
-        this.a = atir.e();
+        this.a = atjm.e();
     }
     
     public c(final int b, final byte[] array) {
         this.b = b;
-        this.a = atir.e();
+        this.a = atjm.e();
     }
     
     public final void b(final BusSupported$Data busSupported$Data) {
         if (this.b != 0) {
-            if (busSupported$Data.d().equals((Object)com.google.android.apps.youtube.embeddedplayer.service.model.b.g)) {
+            if (busSupported$Data.d().equals(com.google.android.apps.youtube.embeddedplayer.service.model.b.g)) {
                 if (busSupported$Data instanceof PlayerViewModeData) {
-                    this.a.tr((Object)busSupported$Data);
+                    this.a.tu((Object)busSupported$Data);
                 }
             }
             return;
         }
-        if (busSupported$Data.d().equals((Object)com.google.android.apps.youtube.embeddedplayer.service.model.b.e)) {
+        if (busSupported$Data.d().equals(com.google.android.apps.youtube.embeddedplayer.service.model.b.e)) {
             if (busSupported$Data instanceof MutedAutoplayState) {
-                this.a.tr((Object)busSupported$Data);
+                this.a.tu((Object)busSupported$Data);
             }
         }
     }

@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class SfvAudioSearchBoxRendererOuterClass
 {
-    public static final agzg sfvAudioSearchBoxRenderer;
+    public static final ahbf sfvAudioSearchBoxRenderer;
     
     static {
-        sfvAudioSearchBoxRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anzj.a, (MessageLite)anzj.a, (agzn)null, 321879467, ahcm.k, (Class)anzj.class);
+        sfvAudioSearchBoxRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)aobm.a, (MessageLite)aobm.a, (ahbm)null, 321879467, ahek.k, (Class)aobm.class);
     }
     
     private SfvAudioSearchBoxRendererOuterClass() {

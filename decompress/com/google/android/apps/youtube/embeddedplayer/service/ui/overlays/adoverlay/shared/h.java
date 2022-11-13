@@ -8,39 +8,39 @@ import android.net.Uri;
 import android.graphics.Bitmap;
 import android.os.Handler;
 
-public final class h implements sgs
+public final class h implements six
 {
     public final g a;
-    private final aceo b;
+    private final acgs b;
     private final Handler c;
-    private szz d;
-    private sib e;
+    private tce d;
+    private skh e;
     
-    public h(final g a, final Handler c, final aceo b) {
+    public h(final g a, final Handler c, final acgs b) {
         a.getClass();
         this.a = a;
         c.getClass();
         this.c = c;
         this.b = b;
-        this.e = sib.a().a();
+        this.e = skh.a().a();
     }
     
-    public final void pm(final sji sji) {
-        this.a.u(sji);
+    public final void po(final sln sln) {
+        this.a.u(sln);
     }
     
-    public final void rP(final sib e) {
+    public final void rV(final skh e) {
         final boolean a = e.a;
         if (a != this.e.a) {
             this.a.y(a);
         }
-        final sif g = e.g;
+        final skl g = e.g;
         if (!g.a.equals((Object)this.e.g.a)) {
-            final shz a2 = g.a;
-            final aorm d = a2.d;
+            final skf a2 = g.a;
+            final aotp d = a2.d;
             this.a.p(a2.b);
             if (d == null) {
-                final szz d2 = this.d;
+                final tce d2 = this.d;
                 if (d2 != null) {
                     d2.d();
                     this.d = null;
@@ -48,40 +48,40 @@ public final class h implements sgs
                 this.a.q(null);
             }
             else {
-                final Uri d3 = actc.D(d);
-                if (d3 != null) {
-                    final szz c = szz.c((szx)new hwo(this, 4));
+                final Uri j = aald.J(d);
+                if (j != null) {
+                    final tce c = tce.c((tcc)new hxl(this, 4));
                     this.d = c;
-                    this.b.k(d3, (szx)taf.c(this.c, (szx)c));
+                    this.b.k(j, (tcc)tck.c(this.c, (tcc)c));
                 }
             }
         }
-        final sid e2 = e.e;
+        final skj e2 = e.e;
         final int a3 = e2.a;
-        final sid e3 = this.e.e;
+        final skj e3 = this.e.e;
         final int a4 = e3.a;
         final boolean equals = e2.c.equals((Object)e3.c);
         if (a3 != a4 || (equals ^ true)) {
             final g a5 = this.a;
             final int a6 = e2.a;
-            final sav c2 = e2.c;
+            final sda c2 = e2.c;
             a5.n(a6, c2.b, c2.c);
         }
         final boolean b = e2.b;
         if (b != this.e.e.b) {
             this.a.v(b);
         }
-        final sij f = e.f;
+        final skp f = e.f;
         if (!f.c.toString().contentEquals(this.e.f.c)) {
             if (!f.c.toString().contentEquals("<NONE>")) {
                 this.a.A(f.c);
             }
         }
-        final sim c3 = e.c;
-        final int d4 = c3.d;
-        if (d4 != this.e.c.d) {
-            if (d4 != 0) {
-                if (d4 != 1) {
+        final sks c3 = e.c;
+        final int d3 = c3.d;
+        if (d3 != this.e.c.d) {
+            if (d3 != 0) {
+                if (d3 != 1) {
                     this.a.x(false);
                     this.a.w(false);
                 }

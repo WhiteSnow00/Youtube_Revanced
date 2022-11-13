@@ -67,16 +67,16 @@ public class IntrinsicSizeFrameLayout extends FrameLayout
         if (this.isInEditMode()) {
             return;
         }
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, aedq.l, n, 0);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, aefr.l, n, 0);
         this.a = obtainStyledAttributes.getDimensionPixelSize(0, 0);
         this.b = obtainStyledAttributes.getDimensionPixelSize(1, 0);
         obtainStyledAttributes.recycle();
-        if (aeda.t()) {
-            if (aedd.f(context).l(aedb.aL)) {
-                this.a = (int)aedd.f(context).a(context, aedb.aL);
+        if (aefb.q()) {
+            if (aefe.f(context).l(aefc.aL)) {
+                this.a = (int)aefe.f(context).a(context, aefc.aL);
             }
-            if (aedd.f(context).l(aedb.aK)) {
-                this.b = (int)aedd.f(context).a(context, aedb.aK);
+            if (aefe.f(context).l(aefc.aK)) {
+                this.b = (int)aefe.f(context).a(context, aefc.aK);
             }
         }
     }
@@ -114,7 +114,7 @@ public class IntrinsicSizeFrameLayout extends FrameLayout
     }
     
     public final void setLayoutParams(final ViewGroup$LayoutParams layoutParams) {
-        if (aeda.t() && this.a == 0 && this.b == 0) {
+        if (aefb.q() && this.a == 0 && this.b == 0) {
             layoutParams.width = -1;
             layoutParams.height = -1;
         }

@@ -19,6 +19,7 @@ import com.google.android.apps.youtube.embeddedplayer.service.imageclient.shared
 
 public final class d extends on
 {
+    public static final int B = 0;
     public int A;
     private final e C;
     public BitmapKey t;
@@ -27,7 +28,7 @@ public final class d extends on
     public final TextView w;
     public final ImageView x;
     public final WeakReference y;
-    public final szx z;
+    public final tcc z;
     
     public d(final Context context, final View view, final e c, final WeakReference y) {
         super(view);
@@ -36,18 +37,18 @@ public final class d extends on
         this.v = new TextView(context);
         this.w = new TextView(context);
         this.x = new ImageView(context);
-        this.z = (szx)new c(0);
+        this.z = (tcc)new c(0);
     }
     
     public d(final View view, final e c, final WeakReference y) {
         super(view);
         this.C = c;
         this.y = y;
-        this.v = (TextView)view.findViewById(2131431133);
-        this.w = (TextView)view.findViewById(2131431132);
-        this.x = (ImageView)view.findViewById(2131431131);
+        this.v = (TextView)view.findViewById(2131431136);
+        this.w = (TextView)view.findViewById(2131431135);
+        this.x = (ImageView)view.findViewById(2131431134);
         this.A = 1;
-        this.z = (szx)new hwo(this, 6);
+        this.z = (tcc)new hxl(this, 6);
     }
     
     public final void E() {
@@ -57,7 +58,7 @@ public final class d extends on
                 break Label_0084;
             }
             final e c = this.C;
-            final szx z = this.z;
+            final tcc z = this.z;
             final Set set = c.a.get(t);
             if (set == null) {
                 break Label_0084;
@@ -96,7 +97,7 @@ public final class d extends on
                 return;
             }
             final e c = this.C;
-            final szx z = this.z;
+            final tcc z = this.z;
             final Set set = c.a.get(t);
             while (true) {
                 if (set != null) {

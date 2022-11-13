@@ -18,7 +18,7 @@ public final class ContactsConsentsStatus extends AbstractSafeParcelable
     public final ContactsConsentsConfig c;
     
     static {
-        CREATOR = (Parcelable$Creator)new njx(1);
+        CREATOR = (Parcelable$Creator)new njy(20);
     }
     
     public ContactsConsentsStatus(final ContactsConsentsCoarseStatus a, final ContactsConsentsDetailedStatus b, final ContactsConsentsConfig c) {
@@ -35,7 +35,7 @@ public final class ContactsConsentsStatus extends AbstractSafeParcelable
             return false;
         }
         final ContactsConsentsStatus contactsConsentsStatus = (ContactsConsentsStatus)o;
-        return aeda.v((Object)this.a, (Object)contactsConsentsStatus.a) && aeda.v((Object)this.b, (Object)contactsConsentsStatus.b) && aeda.v((Object)this.c, (Object)contactsConsentsStatus.c);
+        return adkp.ae(this.a, contactsConsentsStatus.a) && adkp.ae(this.b, contactsConsentsStatus.b) && adkp.ae(this.c, contactsConsentsStatus.c);
     }
     
     public final int hashCode() {
@@ -43,10 +43,10 @@ public final class ContactsConsentsStatus extends AbstractSafeParcelable
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        final int i = kgk.I(parcel);
-        kgk.ab(parcel, 1, (Parcelable)this.a, n);
-        kgk.ab(parcel, 2, (Parcelable)this.b, n);
-        kgk.ab(parcel, 3, (Parcelable)this.c, n);
-        kgk.J(parcel, i);
+        final int m = khl.M(parcel);
+        khl.af(parcel, 1, (Parcelable)this.a, n);
+        khl.af(parcel, 2, (Parcelable)this.b, n);
+        khl.af(parcel, 3, (Parcelable)this.c, n);
+        khl.N(parcel, m);
     }
 }

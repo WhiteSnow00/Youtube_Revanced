@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ReelCameraRendererOuterClass
 {
-    public static final agzg reelCameraRenderer;
+    public static final ahbf reelCameraRenderer;
     
     static {
-        reelCameraRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anpz.a, (MessageLite)anpz.a, (agzn)null, 153734791, ahcm.k, (Class)anpz.class);
+        reelCameraRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ansc.a, (MessageLite)ansc.a, (ahbm)null, 153734791, ahek.k, (Class)ansc.class);
     }
     
     private ReelCameraRendererOuterClass() {

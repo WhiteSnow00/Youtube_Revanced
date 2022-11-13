@@ -12,20 +12,20 @@ import com.google.common.util.concurrent.ListenableFuture;
 import android.content.Context;
 import androidx.work.WorkerParameters;
 
-public final class TikTokListenableWorker extends cmq
+public final class TikTokListenableWorker extends cmr
 {
-    private static final afik a;
-    private final aeru b;
-    private final atjj g;
+    private static final afkk a;
+    private final aetv b;
+    private final atke g;
     private final WorkerParameters h;
-    private aekw i;
+    private aemx i;
     private boolean j;
     
     static {
-        a = afik.m("com/google/apps/tiktok/contrib/work/TikTokListenableWorker");
+        a = afkk.m("com/google/apps/tiktok/contrib/work/TikTokListenableWorker");
     }
     
-    public TikTokListenableWorker(final Context context, final aeru b, final atjj g, final WorkerParameters h) {
+    public TikTokListenableWorker(final Context context, final aetv b, final atke g, final WorkerParameters h) {
         super(context, h);
         this.i = null;
         this.j = false;
@@ -34,17 +34,29 @@ public final class TikTokListenableWorker extends cmq
         this.h = h;
     }
     
+    public static void c(final ListenableFuture listenableFuture, final agoh agoh) {
+        try {
+            afwm.u((Future)listenableFuture);
+        }
+        catch (final CancellationException ex) {
+            ((afki)((afki)((afkg)TikTokListenableWorker.a).h()).j("com/google/apps/tiktok/contrib/work/TikTokListenableWorker", "lambda$logOnCancellationOrFailure$0", 170, "TikTokListenableWorker.java")).t("TikTokListenableWorker was cancelled while running client worker: %s", (Object)agoh);
+        }
+        catch (final ExecutionException ex2) {
+            ((afki)((afki)((afki)((afkg)TikTokListenableWorker.a).g()).i(ex2.getCause())).j("com/google/apps/tiktok/contrib/work/TikTokListenableWorker", "lambda$logOnCancellationOrFailure$0", 165, "TikTokListenableWorker.java")).t("TikTokListenableWorker encountered an exception while running client worker: %s", (Object)agoh);
+        }
+    }
+    
     public final ListenableFuture a() {
-        final String c = aelh.c(this.h);
-        final aers c2 = this.b.c("WorkManager:TikTokListenableWorker getForegroundInfoAsync()");
+        final String c = aenh.c(this.h);
+        final aett c2 = this.b.c("WorkManager:TikTokListenableWorker getForegroundInfoAsync()");
         try {
             final StringBuilder sb = new StringBuilder();
             sb.append(c);
             sb.append(" getForegroundInfoAsync()");
-            final aere o = aesw.o(sb.toString());
+            final aetf o = aeux.o(sb.toString());
             try {
-                agot.E(this.i == null, (Object)"A TikTokListenableWorker's worker was null during getForegroundInfoAsync(), which should always be called before `startWork()`. Please report any instance of this Exception at go/tiktok-bug.");
-                final aekw i = (aekw)this.g.a();
+                adkp.R(this.i == null, "A TikTokListenableWorker's worker was null during getForegroundInfoAsync(), which should always be called before `startWork()`. Please report any instance of this Exception at go/tiktok-bug.");
+                final aemx i = (aemx)this.g.a();
                 this.i = i;
                 final ListenableFuture b = i.b(this.h);
                 o.a(b);
@@ -59,7 +71,7 @@ public final class TikTokListenableWorker extends cmq
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    agnj.M(t, t2);
+                    adyf.H(t, t2);
                 }
             }
         }
@@ -70,30 +82,30 @@ public final class TikTokListenableWorker extends cmq
             finally {
                 final Throwable t3;
                 final Throwable t4;
-                agnj.M(t3, t4);
+                adyf.H(t3, t4);
             }
         }
     }
     
     public final ListenableFuture b() {
-        final String c = aelh.c(this.h);
-        final aers c2 = this.b.c("WorkManager:TikTokListenableWorker startWork");
+        final String c = aenh.c(this.h);
+        final aett c2 = this.b.c("WorkManager:TikTokListenableWorker startWork");
         try {
             final StringBuilder sb = new StringBuilder();
             sb.append(c);
             sb.append(" startWork()");
-            final aere o = aesw.o(sb.toString());
+            final aetf o = aeux.o(sb.toString());
             try {
-                final String c3 = aelh.c(this.h);
-                final aere o2 = aesw.o(String.valueOf(c3).concat(" startWork()"));
+                final String c3 = aenh.c(this.h);
+                final aetf o2 = aeux.o(String.valueOf(c3).concat(" startWork()"));
                 try {
-                    agot.E(this.j ^ true, (Object)"A TikTokListenableWorker started twice. Please report any instance of this Exception at go/tiktok-bug.");
+                    adkp.R(this.j ^ true, "A TikTokListenableWorker started twice. Please report any instance of this Exception at go/tiktok-bug.");
                     this.j = true;
                     if (this.i == null) {
-                        this.i = (aekw)this.g.a();
+                        this.i = (aemx)this.g.a();
                     }
                     final ListenableFuture a = this.i.a(this.h);
-                    a.addListener(aesm.h((Runnable)new adpd(a, new agmj((Object)c3), 12)), (Executor)afsl.a);
+                    a.addListener(aeun.h((Runnable)new adqz(a, new agoh((Object)c3), 14)), (Executor)afum.a);
                     o2.a(a);
                     o2.close();
                     o.a(a);
@@ -108,7 +120,7 @@ public final class TikTokListenableWorker extends cmq
                     finally {
                         final Throwable t;
                         final Throwable t2;
-                        agnj.M(t, t2);
+                        adyf.H(t, t2);
                     }
                 }
             }
@@ -119,7 +131,7 @@ public final class TikTokListenableWorker extends cmq
                 finally {
                     final Throwable t3;
                     final Throwable t4;
-                    agnj.M(t3, t4);
+                    adyf.H(t3, t4);
                 }
             }
         }
@@ -130,7 +142,7 @@ public final class TikTokListenableWorker extends cmq
             finally {
                 final Throwable t5;
                 final Throwable t6;
-                agnj.M(t5, t6);
+                adyf.H(t5, t6);
             }
         }
     }

@@ -6,19 +6,19 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class SharePlaylistEndpointOuterClass$SharePlaylistEndpoint extends agzi implements ahax
+public final class SharePlaylistEndpointOuterClass$SharePlaylistEndpoint extends ahbh implements ahcw
 {
     public static final SharePlaylistEndpointOuterClass$SharePlaylistEndpoint a;
-    private static volatile ahbe e;
-    public static final agzg sharePlaylistEndpoint;
+    private static volatile ahdd e;
+    public static final ahbf sharePlaylistEndpoint;
     public int b;
     public String c;
     public String d;
     
     static {
         final SharePlaylistEndpointOuterClass$SharePlaylistEndpoint a2 = new SharePlaylistEndpointOuterClass$SharePlaylistEndpoint();
-        agzi.registerDefaultInstance((Class)SharePlaylistEndpointOuterClass$SharePlaylistEndpoint.class, (agzi)(a = a2));
-        sharePlaylistEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 73844191, ahcm.k, (Class)SharePlaylistEndpointOuterClass$SharePlaylistEndpoint.class);
+        ahbh.registerDefaultInstance((Class)SharePlaylistEndpointOuterClass$SharePlaylistEndpoint.class, (ahbh)(a = a2));
+        sharePlaylistEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 73844191, ahek.k, (Class)SharePlaylistEndpointOuterClass$SharePlaylistEndpoint.class);
     }
     
     private SharePlaylistEndpointOuterClass$SharePlaylistEndpoint() {
@@ -26,18 +26,18 @@ public final class SharePlaylistEndpointOuterClass$SharePlaylistEndpoint extends
         this.d = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = SharePlaylistEndpointOuterClass$SharePlaylistEndpoint.e) == null) {
                     synchronized (SharePlaylistEndpointOuterClass$SharePlaylistEndpoint.class) {
                         if (SharePlaylistEndpointOuterClass$SharePlaylistEndpoint.e == null) {
-                            SharePlaylistEndpointOuterClass$SharePlaylistEndpoint.e = (ahbe)new agzb((agzi)SharePlaylistEndpointOuterClass$SharePlaylistEndpoint.a);
+                            SharePlaylistEndpointOuterClass$SharePlaylistEndpoint.e = (ahdd)new ahba((ahbh)SharePlaylistEndpointOuterClass$SharePlaylistEndpoint.a);
                         }
                     }
                 }
@@ -47,7 +47,7 @@ public final class SharePlaylistEndpointOuterClass$SharePlaylistEndpoint extends
                 return SharePlaylistEndpointOuterClass$SharePlaylistEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)SharePlaylistEndpointOuterClass$SharePlaylistEndpoint.a);
+                return new ahaz((ahbh)SharePlaylistEndpointOuterClass$SharePlaylistEndpoint.a);
             }
             case 3: {
                 return new SharePlaylistEndpointOuterClass$SharePlaylistEndpoint();

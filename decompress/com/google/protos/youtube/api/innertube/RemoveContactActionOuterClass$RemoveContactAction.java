@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class RemoveContactActionOuterClass$RemoveContactAction extends agzi implements ahax
+public final class RemoveContactActionOuterClass$RemoveContactAction extends ahbh implements ahcw
 {
     public static final RemoveContactActionOuterClass$RemoveContactAction a;
-    private static volatile ahbe b;
-    public static final agzg removeContactAction;
+    private static volatile ahdd b;
+    public static final ahbf removeContactAction;
     
     static {
         final RemoveContactActionOuterClass$RemoveContactAction a2 = new RemoveContactActionOuterClass$RemoveContactAction();
-        agzi.registerDefaultInstance((Class)RemoveContactActionOuterClass$RemoveContactAction.class, (agzi)(a = a2));
-        removeContactAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 102580987, ahcm.k, (Class)RemoveContactActionOuterClass$RemoveContactAction.class);
+        ahbh.registerDefaultInstance((Class)RemoveContactActionOuterClass$RemoveContactAction.class, (ahbh)(a = a2));
+        removeContactAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 102580987, ahek.k, (Class)RemoveContactActionOuterClass$RemoveContactAction.class);
     }
     
     private RemoveContactActionOuterClass$RemoveContactAction() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = RemoveContactActionOuterClass$RemoveContactAction.b) == null) {
                     synchronized (RemoveContactActionOuterClass$RemoveContactAction.class) {
                         if (RemoveContactActionOuterClass$RemoveContactAction.b == null) {
-                            RemoveContactActionOuterClass$RemoveContactAction.b = (ahbe)new agzb((agzi)RemoveContactActionOuterClass$RemoveContactAction.a);
+                            RemoveContactActionOuterClass$RemoveContactAction.b = (ahdd)new ahba((ahbh)RemoveContactActionOuterClass$RemoveContactAction.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class RemoveContactActionOuterClass$RemoveContactAction extends agz
                 return RemoveContactActionOuterClass$RemoveContactAction.a;
             }
             case 4: {
-                return new agza((agzi)RemoveContactActionOuterClass$RemoveContactAction.a);
+                return new ahaz((ahbh)RemoveContactActionOuterClass$RemoveContactAction.a);
             }
             case 3: {
                 return new RemoveContactActionOuterClass$RemoveContactAction();

@@ -20,8 +20,6 @@
     </style>
     <style name="Theme.GoogleMaterial.DayNight" parent="@style/Theme.GoogleMaterial.Dark">
     </style>
-    <style name="Theme.GoogleMaterial.DayNight.Bridge" parent="@style/Theme.GoogleMaterial.Dark.Bridge">
-    </style>
     <style name="Theme.GoogleMaterial.DayNight.NoActionBar" parent="@style/Theme.GoogleMaterial.Dark.NoActionBar">
     </style>
     <style name="Theme.GoogleMaterial3.DayNight" parent="@style/Theme.GoogleMaterial3.Dark">
@@ -29,5 +27,19 @@
     <style name="Theme.MaterialComponents.DayNight" parent="@style/Theme.MaterialComponents">
     </style>
     <style name="Theme.YouTube.Launcher" parent="@style/Base.V23.Theme.YouTube.Launcher.Dark">
+    </style>
+    <style name="WidgetSearchButtonSmall">
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+        <item name="android:textColor">@color/aag_widget_on_background_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/transparent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:drawableStart">@drawable/yt_fill_youtube_logo_white_24</item>
+        <item name="android:fontFamily">google-sans</item>
+        <item name="android:textDirection">locale</item>
     </style>
 </resources>

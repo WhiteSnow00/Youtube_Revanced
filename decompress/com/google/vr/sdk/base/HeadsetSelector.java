@@ -16,24 +16,28 @@ public class HeadsetSelector
 {
     private static final HeadsetSelector$HeadsetInfo DEFAULT_HEADSET_INFO;
     
+    static /* bridge */ String -$$Nest$smgetHeadsetParamsKey(final CardboardDevice$DeviceParams cardboardDevice$DeviceParams) {
+        return getHeadsetParamsKey(cardboardDevice$DeviceParams);
+    }
+    
     static {
         DEFAULT_HEADSET_INFO = new HeadsetSelector$HeadsetInfo(GvrViewerParams.cardboardV2ViewerParams().toProtobuf(), null);
     }
     
     public static HeadsetSelector$HeadsetInfo getCurrentHeadsetInfo(final Context context) {
-        final aral o = aqql.o(context);
+        final arda p = aqsx.p(context);
         final HeadsetSelector$HeadsetInfo default_HEADSET_INFO = HeadsetSelector.DEFAULT_HEADSET_INFO;
         try {
             try {
-                final CardboardDevice$DeviceParams b = o.b();
+                final CardboardDevice$DeviceParams b = p.b();
                 HeadsetSelector$HeadsetInfo headsetSelector$HeadsetInfo = default_HEADSET_INFO;
                 if (b != null) {
                     headsetSelector$HeadsetInfo = new HeadsetSelector$HeadsetInfo(b, null);
                 }
-                o.f();
+                p.f();
             }
             finally {
-                o.f();
+                p.f();
                 while (true) {}
                 return;
             }
@@ -66,20 +70,20 @@ public class HeadsetSelector
         return list;
     }
     
-    public static boolean selectHeadset(Context o, final HeadsetSelector$HeadsetInfo headsetSelector$HeadsetInfo) {
+    public static boolean selectHeadset(Context p2, final HeadsetSelector$HeadsetInfo headsetSelector$HeadsetInfo) {
         final boolean b = false;
         if (headsetSelector$HeadsetInfo == null) {
             return false;
         }
-        o = (Context)aqql.o(o);
+        p2 = (Context)aqsx.p(p2);
         try {
             try {
-                final CardboardDevice$DeviceParamsList c = ((aral)o).c();
+                final CardboardDevice$DeviceParamsList c = ((arda)p2).c();
                 if (c != null) {
                     for (final CardboardDevice$DeviceParams cardboardDevice$DeviceParams : c.getParamsList()) {
                         if (HeadsetSelector$HeadsetInfo.-$$Nest$mequalsDeviceParam(headsetSelector$HeadsetInfo, cardboardDevice$DeviceParams)) {
-                            final boolean g = ((aral)o).g(cardboardDevice$DeviceParams);
-                            ((aral)o).f();
+                            final boolean g = ((arda)p2).g(cardboardDevice$DeviceParams);
+                            ((arda)p2).f();
                             return g;
                         }
                     }
@@ -87,17 +91,17 @@ public class HeadsetSelector
                 final HeadsetSelector$HeadsetInfo default_HEADSET_INFO = HeadsetSelector.DEFAULT_HEADSET_INFO;
                 boolean b2 = b;
                 if (headsetSelector$HeadsetInfo.equals(default_HEADSET_INFO)) {
-                    final boolean g2 = ((aral)o).g(HeadsetSelector$HeadsetInfo.-$$Nest$fgetdeviceParam(default_HEADSET_INFO));
+                    final boolean g2 = ((arda)p2).g(HeadsetSelector$HeadsetInfo.-$$Nest$fgetdeviceParam(default_HEADSET_INFO));
                     b2 = b;
                     if (g2) {
                         b2 = true;
                     }
                 }
-                ((aral)o).f();
+                ((arda)p2).f();
                 return b2;
             }
             finally {
-                ((aral)o).f();
+                ((arda)p2).f();
                 while (true) {}
             }
         }

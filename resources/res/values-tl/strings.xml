@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Bumalik sa album</string>
     <string name="accessibility_navigation_back_button">Bumalik</string>
     <string name="accessibility_new_content_available">May available na bagong content</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Mga bagong video</string>
     <string name="accessibility_next">Susunod na video</string>
     <string name="accessibility_offline_button_cancel">Itigil ang pag-download</string>
     <string name="accessibility_offline_button_cannot_save">Hindi ma-download</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Pagsubaybay at kontrol sa data</string>
     <string name="data_saving_persistent_title">Pantipid ng data</string>
     <string name="data_saving_select_quality_every_video_switch_title">Piliin ang kalidad para sa bawat video</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Bawasan ang kalidad ng mga Smart download</string>
     <string name="data_saving_snack_bar_action_button">Tingnan</string>
     <string name="data_saving_snack_bar_text">Apektado ng pagbabagong ito ang iyong mga setting sa pagse-save ng data</string>
     <string name="data_saving_upload_wifi_only_switch_title">Mag-upload lang gamit ang Wi-Fi</string>

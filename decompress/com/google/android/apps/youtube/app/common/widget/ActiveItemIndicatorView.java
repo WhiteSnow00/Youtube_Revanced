@@ -92,7 +92,7 @@ public class ActiveItemIndicatorView extends View
         else {
             n = 2130970908;
         }
-        f.setColor(tmy.ct(context, n).orElse(0));
+        f.setColor(tpe.cx(context, n).orElse(0));
         final Paint g = this.g;
         final Context context2 = this.getContext();
         if (a == 2) {
@@ -101,7 +101,7 @@ public class ActiveItemIndicatorView extends View
         else {
             a = 2130970877;
         }
-        g.setColor(tmy.ct(context2, a).orElse(0));
+        g.setColor(tpe.cx(context2, a).orElse(0));
         this.invalidate();
     }
     

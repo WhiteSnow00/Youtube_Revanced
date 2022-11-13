@@ -15,17 +15,17 @@ public class BottomScrollView extends ScrollView
     
     public BottomScrollView(final Context context) {
         super(context);
-        this.a = (Runnable)new thr(18);
+        this.a = (Runnable)new tjv(18);
     }
     
     public BottomScrollView(final Context context, final AttributeSet set) {
         super(context, set);
-        this.a = (Runnable)new thr(18);
+        this.a = (Runnable)new tjv(18);
     }
     
     public BottomScrollView(final Context context, final AttributeSet set, final int n) {
         super(context, set, n);
-        this.a = (Runnable)new thr(18);
+        this.a = (Runnable)new tjv(18);
     }
     
     protected void onLayout(final boolean b, final int n, final int n2, final int n3, final int n4) {

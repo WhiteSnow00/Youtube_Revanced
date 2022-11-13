@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">এলবামলৈ উভতি যাওক</string>
     <string name="accessibility_navigation_back_button">উভতি যাওক</string>
     <string name="accessibility_new_content_available">নতুন সমল উপলব্ধ</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">নতুন ভিডিঅ’</string>
     <string name="accessibility_next">পৰৱৰ্তী ভিডিঅ’</string>
     <string name="accessibility_offline_button_cancel">ডাউনল’ড বন্ধ কৰক</string>
     <string name="accessibility_offline_button_cannot_save">ডাউনল’ড কৰিব নোৱাৰি</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">ডেটা নিৰীক্ষণ আৰু নিয়ন্ত্ৰণ</string>
     <string name="data_saving_persistent_title">ডেটা সঞ্চয়</string>
     <string name="data_saving_select_quality_every_video_switch_title">প্ৰতিটো ভিডিঅ’ৰ গুণগত মান বাছনি কৰক</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">স্মাৰ্ট ডাউনল’ডৰ গুণগত মান হ্ৰাস কৰক</string>
     <string name="data_saving_snack_bar_action_button">চাওক</string>
     <string name="data_saving_snack_bar_text">এই সালসলনিটোৱে আপোনাৰ ডেটা ছেভ কৰাৰ ছেটিঙত প্ৰভাৱ পেলায়</string>
     <string name="data_saving_upload_wifi_only_switch_title">কেৱল ৱাই-ফাইৰ জৰিয়তে আপল’ড কৰক</string>

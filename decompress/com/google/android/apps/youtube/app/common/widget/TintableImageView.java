@@ -14,7 +14,7 @@ import android.widget.ImageView;
 public class TintableImageView extends ImageView
 {
     public static final ColorStateList a;
-    private tnw b;
+    private tqb b;
     private ColorStateList c;
     private boolean d;
     
@@ -23,22 +23,22 @@ public class TintableImageView extends ImageView
     }
     
     public TintableImageView(final Context context) {
-        super(uji.S(context, (AttributeSet)null, 2132085284));
+        super(vdh.bb(context, (AttributeSet)null, 2132085285));
         this.b();
     }
     
     public TintableImageView(final Context context, final AttributeSet set) {
-        super(uji.S(context, set, 2132085284), set);
+        super(vdh.bb(context, set, 2132085285), set);
         this.b();
     }
     
     public TintableImageView(final Context context, final AttributeSet set, final int n) {
-        super(uji.S(context, set, 2132085284), set, n);
+        super(vdh.bb(context, set, 2132085285), set, n);
         this.b();
     }
     
     public TintableImageView(final Context context, final AttributeSet set, final int n, final int n2) {
-        super(uji.S(context, set, 2132085284), set, n, n2);
+        super(vdh.bb(context, set, 2132085285), set, n, n2);
         this.b();
     }
     
@@ -69,15 +69,15 @@ public class TintableImageView extends ImageView
             return;
         }
         if (this.b == null) {
-            this.b = new tnw(this.getContext());
+            this.b = new tqb(this.getContext());
         }
-        final tnw b = this.b;
+        final tqb b = this.b;
         final ColorStateList c = this.c;
         if (c == TintableImageView.a) {
             if (b.b == null) {
-                final int orElse = tmy.ct(b.a, 2130969045).orElse(0);
-                final int orElse2 = tmy.ct(b.a, 2130969043).orElse(0);
-                b.b = b.a(orElse2, orElse2, orElse2, orElse2, tmy.ct(b.a, 2130969046).orElse(orElse2), orElse);
+                final int orElse = tpe.cx(b.a, 2130969045).orElse(0);
+                final int orElse2 = tpe.cx(b.a, 2130969043).orElse(0);
+                b.b = b.a(orElse2, orElse2, orElse2, orElse2, tpe.cx(b.a, 2130969046).orElse(orElse2), orElse);
             }
             super.setImageDrawable(b.d(imageDrawable, b.b, PorterDuff$Mode.SRC_IN));
             return;

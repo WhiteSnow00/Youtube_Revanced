@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand extends agzi implements ahax
+public final class OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand extends ahbh implements ahcw
 {
     public static final OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand a;
-    private static volatile ahbe c;
-    public static final agzg openSuperStickerBuyFlowCommand;
-    public agyc b;
+    private static volatile ahdd c;
+    public static final ahbf openSuperStickerBuyFlowCommand;
+    public ahab b;
     private int d;
     
     static {
         final OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand a2 = new OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand();
-        agzi.registerDefaultInstance((Class)OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand.class, (agzi)(a = a2));
-        openSuperStickerBuyFlowCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 198340511, ahcm.k, (Class)OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand.class);
+        ahbh.registerDefaultInstance((Class)OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand.class, (ahbh)(a = a2));
+        openSuperStickerBuyFlowCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 198340511, ahek.k, (Class)OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand.class);
     }
     
     private OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand() {
-        this.b = agyc.b;
+        this.b = ahab.b;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand.c) == null) {
                     synchronized (OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand.class) {
                         if (OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand.c == null) {
-                            OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand.c = (ahbe)new agzb((agzi)OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand.a);
+                            OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand.c = (ahdd)new ahba((ahbh)OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyF
                 return OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand.a;
             }
             case 4: {
-                return new agza((agzi)OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand.a);
+                return new ahaz((ahbh)OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand.a);
             }
             case 3: {
                 return new OpenSuperStickerBuyFlowCommandOuterClass$OpenSuperStickerBuyFlowCommand();

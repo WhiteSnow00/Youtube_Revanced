@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Takaisin albumiin</string>
     <string name="accessibility_navigation_back_button">Takaisin</string>
     <string name="accessibility_new_content_available">Uutta sisältöä on saatavilla.</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Uudet videot</string>
     <string name="accessibility_next">Seuraava video</string>
     <string name="accessibility_offline_button_cancel">Pysäytä lataus</string>
     <string name="accessibility_offline_button_cannot_save">Lataaminen epäonnistui</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Datan valvonta ja hallinta</string>
     <string name="data_saving_persistent_title">Datansäästö</string>
     <string name="data_saving_select_quality_every_video_switch_title">Valitse laatuasetus kaikille videoille</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Vähennä älylatausten laatua</string>
     <string name="data_saving_snack_bar_action_button">Näytä</string>
     <string name="data_saving_snack_bar_text">Muutos vaikuttaa datan tallennusasetuksiin.</string>
     <string name="data_saving_upload_wifi_only_switch_title">Lataa vain Wi-Fi-yhteydellä</string>

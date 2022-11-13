@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">အယ်လ်ဘမ်သို့ ပြန်ရန်</string>
     <string name="accessibility_navigation_back_button">နောက်သို့</string>
     <string name="accessibility_new_content_available">အကြောင်းအရာသစ်ကို ရရှိနိုင်ပါသည်</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">ဗီဒီယိုအသစ်များ</string>
     <string name="accessibility_next">နောက်လာမည့် ဗီဒီယို</string>
     <string name="accessibility_offline_button_cancel">ဒေါင်းလုဒ်လုပ်ခြင်းကို ရပ်ရန်</string>
     <string name="accessibility_offline_button_cannot_save">ဒေါင်းလုဒ်လုပ်၍ မရနိုင်ပါ</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">ဒေတာ စောင့်ကြည့်ရေးနှင့် ထိန်းချုပ်ရေး</string>
     <string name="data_saving_persistent_title">ဒေတာ ချွေတာရေး</string>
     <string name="data_saving_select_quality_every_video_switch_title">ဗီဒီယိုတိုင်းအတွက် အရည်အသွေး ရွေးပါ</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">‘အဆင့်မြင့် ဒေါင်းလုဒ်များ’ ၏ အရည်အသွေးလျှော့ခြင်း</string>
     <string name="data_saving_snack_bar_action_button">ကြည့်ရန်</string>
     <string name="data_saving_snack_bar_text">ဤအပြောင်းအလဲသည် သင့်ဒေတာချွေတာရေး ဆက်တင်များအပေါ် သက်ရောက်သည်</string>
     <string name="data_saving_upload_wifi_only_switch_title">Wi-Fi ဖြင့်သာ အပ်လုဒ်လုပ်ပါ</string>
@@ -518,7 +519,7 @@
     <string name="discard_edits">တည်းဖြတ်ချက်များကို ဖယ်ပစ်လိုပါသလား။</string>
     <string name="discard_option">အဖြေကို ဖယ်ပစ်မလား။</string>
     <string name="discard_post">ပို့စ်ကို ဖယ်ပစ်လိုပါသလား။</string>
-    <string name="dismiss">ဖယ်ထုတ်ပစ်ရန်</string>
+    <string name="dismiss">ပယ်ရန်</string>
     <string name="dismissed_video_snackbar_message">ရပါပြီ။ သင့်အကြံပြုချက်များကို ကျွန်ုပ်တို့ ညှိလိုက်ပါမည်။</string>
     <string name="do_not_show_offline_playlist_warning">ဤအရာအား ထပ်မပြပါနှင့်</string>
     <string name="done">ပြီးပါပြီ</string>

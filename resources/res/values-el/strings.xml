@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Επιστροφή στο άλμπουμ</string>
     <string name="accessibility_navigation_back_button">Πίσω</string>
     <string name="accessibility_new_content_available">Διαθέσιμο νέο περιεχόμενο</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Νέα βίντεο</string>
     <string name="accessibility_next">Επόμενο βίντεο</string>
     <string name="accessibility_offline_button_cancel">Διακοπή λήψης</string>
     <string name="accessibility_offline_button_cannot_save">Δεν είναι δυνατή η λήψη</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Παρακολούθηση και έλεγχος δεδομένων</string>
     <string name="data_saving_persistent_title">Εξοικονόμηση δεδομένων</string>
     <string name="data_saving_select_quality_every_video_switch_title">Επιλογή ποιότητας για κάθε βίντεο</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Υποβάθμιση ποιότητας Έξυπνων λήψεων</string>
     <string name="data_saving_snack_bar_action_button">Προβολή</string>
     <string name="data_saving_snack_bar_text">Αυτή η αλλαγή επηρεάζει τις ρυθμίσεις αποθήκευσης δεδομένων</string>
     <string name="data_saving_upload_wifi_only_switch_title">Μεταφόρτωση μόνο μέσω Wi-Fi</string>

@@ -8,16 +8,16 @@ import android.view.View$OnClickListener;
 import android.content.Context;
 import j$.util.Optional;
 
-public class MdxConnectingSnackbarController implements xlt, tff
+public class MdxConnectingSnackbarController implements xnr, thj
 {
-    public final wwu a;
+    public final wyv a;
     Optional b;
     private final Context c;
-    private final actx d;
-    private final kzd e;
-    private final xlv f;
+    private final acwb d;
+    private final lag e;
+    private final xnt f;
     
-    public MdxConnectingSnackbarController(final Context c, final actx d, final kzd e, final xlv f, final wwu a) {
+    public MdxConnectingSnackbarController(final Context c, final acwb d, final lag e, final xnt f, final wyv a) {
         this.c = c;
         d.getClass();
         this.d = d;
@@ -29,47 +29,71 @@ public class MdxConnectingSnackbarController implements xlt, tff
     
     private final void j() {
         if (this.b.isPresent()) {
-            this.d.l((actz)this.b.get());
+            this.d.l((acwd)this.b.get());
             this.b = Optional.empty();
         }
     }
     
-    public final void mM(final aum aum) {
-        this.f.k((xlt)this);
+    public final thh g() {
+        return thh.a;
     }
     
-    public final void mq(final aum aum) {
-        this.f.i((xlt)this);
+    public final void lW(final aun aun) {
     }
     
-    public final void o(final xlo xlo) {
+    public final void mM(final aun aun) {
+        this.f.k((xnr)this);
+    }
+    
+    public final void mq(final aun aun) {
+        this.f.i((xnr)this);
+    }
+    
+    public final void my(final aun aun) {
+    }
+    
+    public final void o(final xnm xnm) {
         this.j();
         if (!this.e.e()) {
-            final actx d = this.d;
-            final gbo d2 = gbq.d();
+            final acwb d = this.d;
+            final gbv d2 = gbx.d();
             d2.c(-1);
-            d2.k((CharSequence)this.c.getString(2132018515, new Object[] { xlo.j().e() }));
-            d.n((actz)d2.a());
+            d2.k((CharSequence)this.c.getString(2132018516, new Object[] { xnm.j().e() }));
+            d.n((acwd)d2.a());
         }
     }
     
-    public final void p(final xlo xlo) {
+    public final void oS(final aun aun) {
+    }
+    
+    public final void oT() {
+        tfg.g((thj)this);
+    }
+    
+    public final void oW() {
+        tfg.f((thj)this);
+    }
+    
+    public final void oX(final aun aun) {
+    }
+    
+    public final void p(final xnm xnm) {
         this.j();
     }
     
-    public final void q(final xlo xlo) {
-        if (!this.e.e() && xlo.j() != null && !xlo.j().e().isEmpty()) {
-            final wws wws = new wws(wya.c(75407));
-            this.a.n().D((wxz)wws);
-            final gbo d = gbq.d();
+    public final void q(final xnm xnm) {
+        if (!this.e.e() && xnm.j() != null && !xnm.j().e().isEmpty()) {
+            final wyt wyt = new wyt(xaa.c(75407));
+            this.a.pF().D((wzz)wyt);
+            final gbv d = gbx.d();
             d.j();
             d.c(-2);
-            d.k((CharSequence)this.c.getString(2132018517, new Object[] { xlo.j().e() }));
-            d.m((CharSequence)this.c.getString(2132018516), (View$OnClickListener)new gbp(this, (wxz)wws, xlo, 10));
+            d.k((CharSequence)this.c.getString(2132018518, new Object[] { xnm.j().e() }));
+            ((acwc)d).m((CharSequence)this.c.getString(2132018517), (View$OnClickListener)new gbw(this, (wzz)wyt, xnm, 10));
             d.a = null;
             final Optional of = Optional.of((Object)d.a());
             this.b = of;
-            this.d.n((actz)of.get());
+            this.d.n((acwd)of.get());
         }
     }
 }

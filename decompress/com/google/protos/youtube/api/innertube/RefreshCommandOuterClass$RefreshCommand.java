@@ -6,35 +6,35 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class RefreshCommandOuterClass$RefreshCommand extends agzi implements ahax
+public final class RefreshCommandOuterClass$RefreshCommand extends ahbh implements ahcw
 {
     public static final RefreshCommandOuterClass$RefreshCommand a;
-    private static volatile ahbe d;
-    public static final agzg refreshCommand;
+    private static volatile ahdd d;
+    public static final ahbf refreshCommand;
     public int b;
     public int c;
     
     static {
         final RefreshCommandOuterClass$RefreshCommand a2 = new RefreshCommandOuterClass$RefreshCommand();
-        agzi.registerDefaultInstance((Class)RefreshCommandOuterClass$RefreshCommand.class, (agzi)(a = a2));
-        refreshCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 177327295, ahcm.k, (Class)RefreshCommandOuterClass$RefreshCommand.class);
+        ahbh.registerDefaultInstance((Class)RefreshCommandOuterClass$RefreshCommand.class, (ahbh)(a = a2));
+        refreshCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 177327295, ahek.k, (Class)RefreshCommandOuterClass$RefreshCommand.class);
     }
     
     private RefreshCommandOuterClass$RefreshCommand() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = RefreshCommandOuterClass$RefreshCommand.d) == null) {
                     synchronized (RefreshCommandOuterClass$RefreshCommand.class) {
                         if (RefreshCommandOuterClass$RefreshCommand.d == null) {
-                            RefreshCommandOuterClass$RefreshCommand.d = (ahbe)new agzb((agzi)RefreshCommandOuterClass$RefreshCommand.a);
+                            RefreshCommandOuterClass$RefreshCommand.d = (ahdd)new ahba((ahbh)RefreshCommandOuterClass$RefreshCommand.a);
                         }
                     }
                 }
@@ -44,13 +44,13 @@ public final class RefreshCommandOuterClass$RefreshCommand extends agzi implemen
                 return RefreshCommandOuterClass$RefreshCommand.a;
             }
             case 4: {
-                return new agza((agzi)RefreshCommandOuterClass$RefreshCommand.a);
+                return new ahaz((ahbh)RefreshCommandOuterClass$RefreshCommand.a);
             }
             case 3: {
                 return new RefreshCommandOuterClass$RefreshCommand();
             }
             case 2: {
-                return newMessageInfo((MessageLite)RefreshCommandOuterClass$RefreshCommand.a, "\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u100c\u0000", new Object[] { "b", "c", anqs.l });
+                return newMessageInfo((MessageLite)RefreshCommandOuterClass$RefreshCommand.a, "\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u100c\u0000", new Object[] { "b", "c", ansm.m });
             }
             case 1: {
                 return null;

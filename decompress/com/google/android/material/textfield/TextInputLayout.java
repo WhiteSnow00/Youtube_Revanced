@@ -47,31 +47,32 @@ import android.widget.LinearLayout;
 
 public class TextInputLayout extends LinearLayout
 {
+    public static final int r = 0;
     private static final int[][] s;
     private int A;
     private TextView B;
     private ColorStateList C;
     private int D;
-    private cig E;
-    private cig F;
+    private cih E;
+    private cih F;
     private ColorStateList G;
     private ColorStateList H;
     private boolean I;
     private CharSequence J;
-    private adwf K;
-    private adwf L;
+    private adyh K;
+    private adyh L;
     private StateListDrawable M;
     private boolean N;
-    private adwf O;
-    private adwf P;
-    private adwk Q;
+    private adyh O;
+    private adyh P;
+    private adym Q;
     private boolean R;
     private final int S;
     private int T;
     private int U;
     private int V;
     private int W;
-    public final adyt a;
+    public final aeav a;
     private int aa;
     private int ab;
     private final Rect ac;
@@ -96,9 +97,9 @@ public class TextInputLayout extends LinearLayout
     private boolean av;
     private ValueAnimator aw;
     private boolean ax;
-    public final adyk b;
+    public final aeam b;
     public EditText c;
-    public final adyo d;
+    public final aeaq d;
     public boolean e;
     public int f;
     public boolean g;
@@ -109,7 +110,7 @@ public class TextInputLayout extends LinearLayout
     public int l;
     public final LinkedHashSet m;
     public boolean n;
-    public final adtk o;
+    public final advm o;
     public boolean p;
     public boolean q;
     private final FrameLayout t;
@@ -132,19 +133,19 @@ public class TextInputLayout extends LinearLayout
         this(context, set, 2130970625);
     }
     
-    public TextInputLayout(final Context context, final AttributeSet set, int n) {
-        super(adyy.a(context, set, n, 2132084679), set, n);
+    public TextInputLayout(final Context context, final AttributeSet set, int l) {
+        super(aeba.a(context, set, l, 2132084680), set, l);
         this.v = -1;
         this.w = -1;
         this.x = -1;
         this.y = -1;
-        final adyo d = new adyo(this);
+        final aeaq d = new aeaq(this);
         this.d = d;
         this.ac = new Rect();
         this.ad = new Rect();
         this.ae = new RectF();
         this.m = new LinkedHashSet();
-        final adtk o = new adtk((View)this);
+        final advm o = new advm((View)this);
         this.o = o;
         final Context context2 = this.getContext();
         this.setOrientation(1);
@@ -152,11 +153,11 @@ public class TextInputLayout extends LinearLayout
         this.setAddStatesFromChildren(true);
         final FrameLayout t = new FrameLayout(context2);
         (this.t = t).setAddStatesFromChildren(true);
-        o.u(adqd.a);
-        o.s(adqd.a);
+        o.u(adsf.a);
+        o.s(adsf.a);
         o.m(8388659);
-        final cdn d2 = aduf.d(context2, set, adys.c, n, 2132084679, new int[] { 22, 20, 37, 42, 46 });
-        final adyt a = new adyt(this, d2, null, null);
+        final cdo d2 = adwh.d(context2, set, aeau.c, l, 2132084680, new int[] { 22, 20, 37, 42, 46 });
+        final aeav a = new aeav(this, d2, (byte[])null, (byte[])null);
         this.a = a;
         this.I = d2.p(45, true);
         this.t(d2.m(4));
@@ -174,17 +175,17 @@ public class TextInputLayout extends LinearLayout
         else if (d2.q(2)) {
             this.x(d2.e(2, -1));
         }
-        this.Q = adwk.c(context2, set, n, 2132084679).a();
-        this.S = context2.getResources().getDimensionPixelOffset(2131168207);
+        this.Q = adym.c(context2, set, l, 2132084680).a();
+        this.S = context2.getResources().getDimensionPixelOffset(2131168206);
         this.T = d2.d(9, 0);
-        this.V = d2.e(16, context2.getResources().getDimensionPixelSize(2131168208));
-        this.W = d2.e(17, context2.getResources().getDimensionPixelSize(2131168209));
+        this.V = d2.e(16, context2.getResources().getDimensionPixelSize(2131168207));
+        this.W = d2.e(17, context2.getResources().getDimensionPixelSize(2131168208));
         this.U = this.V;
         final float r = d2.r(13);
         final float r2 = d2.r(12);
         final float r3 = d2.r(10);
         final float r4 = d2.r(11);
-        final adwj e = this.Q.e();
+        final adyl e = this.Q.e();
         if (r >= 0.0f) {
             e.d(r);
         }
@@ -198,19 +199,19 @@ public class TextInputLayout extends LinearLayout
             e.b(r4);
         }
         this.Q = e.a();
-        final ColorStateList s = adwd.s(context2, d2, 7);
-        if (s != null) {
-            n = s.getDefaultColor();
-            this.aq = n;
-            this.ab = n;
-            if (s.isStateful()) {
-                this.ar = s.getColorForState(new int[] { -16842910 }, -1);
-                this.as = s.getColorForState(new int[] { 16842908, 16842910 }, -1);
-                this.at = s.getColorForState(new int[] { 16843623, 16842910 }, -1);
+        final ColorStateList n = adds.N(context2, d2, 7);
+        if (n != null) {
+            l = n.getDefaultColor();
+            this.aq = l;
+            this.ab = l;
+            if (n.isStateful()) {
+                this.ar = n.getColorForState(new int[] { -16842910 }, -1);
+                this.as = n.getColorForState(new int[] { 16842908, 16842910 }, -1);
+                this.at = n.getColorForState(new int[] { 16843623, 16842910 }, -1);
             }
             else {
                 this.as = this.aq;
-                final ColorStateList d3 = td.d(context2, 2131101518);
+                final ColorStateList d3 = td.d(context2, 2131101544);
                 this.ar = d3.getColorForState(new int[] { -16842910 }, -1);
                 this.at = d3.getColorForState(new int[] { 16843623 }, -1);
             }
@@ -227,27 +228,27 @@ public class TextInputLayout extends LinearLayout
             this.al = j;
             this.ak = j;
         }
-        final ColorStateList s2 = adwd.s(context2, d2, 14);
+        final ColorStateList n2 = adds.N(context2, d2, 14);
         this.ao = d2.s(14);
-        this.am = agx.a(context2, 2131101545);
-        this.au = agx.a(context2, 2131101546);
-        this.an = agx.a(context2, 2131101549);
-        if (s2 != null) {
-            if (s2.isStateful()) {
-                this.am = s2.getDefaultColor();
-                this.au = s2.getColorForState(new int[] { -16842910 }, -1);
-                this.an = s2.getColorForState(new int[] { 16843623, 16842910 }, -1);
-                this.ao = s2.getColorForState(new int[] { 16842908, 16842910 }, -1);
+        this.am = agy.a(context2, 2131101571);
+        this.au = agy.a(context2, 2131101572);
+        this.an = agy.a(context2, 2131101575);
+        if (n2 != null) {
+            if (n2.isStateful()) {
+                this.am = n2.getDefaultColor();
+                this.au = n2.getColorForState(new int[] { -16842910 }, -1);
+                this.an = n2.getColorForState(new int[] { 16843623, 16842910 }, -1);
+                this.ao = n2.getColorForState(new int[] { 16842908, 16842910 }, -1);
             }
-            else if (this.ao != s2.getDefaultColor()) {
-                this.ao = s2.getDefaultColor();
+            else if (this.ao != n2.getDefaultColor()) {
+                this.ao = n2.getDefaultColor();
             }
             this.I();
         }
         if (d2.q(15)) {
-            final ColorStateList s3 = adwd.s(context2, d2, 15);
-            if (this.ap != s3) {
-                this.ap = s3;
+            final ColorStateList n3 = adds.N(context2, d2, 15);
+            if (this.ap != n3) {
+                this.ap = n3;
                 this.I();
             }
         }
@@ -259,49 +260,49 @@ public class TextInputLayout extends LinearLayout
                 this.ad();
             }
         }
-        n = d2.i(37, 0);
+        final int i = d2.i(37, 0);
         final CharSequence m = d2.m(32);
         final boolean p3 = d2.p(33, false);
-        final int i = d2.i(42, 0);
+        final int k = d2.i(42, 0);
         final boolean p4 = d2.p(41, false);
-        final CharSequence k = d2.m(40);
-        final int l = d2.i(54, 0);
-        final CharSequence m2 = d2.m(53);
+        final CharSequence m2 = d2.m(40);
+        final int i2 = d2.i(54, 0);
+        final CharSequence m3 = d2.m(53);
         final boolean p5 = d2.p(18, false);
         this.j(d2.f(19, -1));
         this.A = d2.i(22, 0);
         this.z = d2.i(20, 0);
-        final int f = d2.f(8, 0);
-        if (f != this.l) {
-            this.l = f;
+        l = d2.f(8, 0);
+        if (l != this.l) {
+            this.l = l;
             if (this.c != null) {
                 this.W();
             }
         }
         d.f(m);
-        d.i(i);
-        d.g(n);
+        d.i(k);
+        d.g(i);
         if (this.B == null) {
-            (this.B = (TextView)new AppCompatTextView(this.getContext())).setId(2131431989);
-            ana.X((View)this.B, 2);
-            final cig r5 = this.R();
+            (this.B = (TextView)new AppCompatTextView(this.getContext())).setId(2131431992);
+            anb.X((View)this.B, 2);
+            final cih r5 = this.R();
             this.E = r5;
-            ((cim)r5).a = 67L;
+            ((cin)r5).a = 67L;
             this.F = this.R();
             this.A(this.D);
             this.B(this.C);
         }
-        if (TextUtils.isEmpty(m2)) {
+        if (TextUtils.isEmpty(m3)) {
             this.aa(false);
         }
         else {
             if (!this.j) {
                 this.aa(true);
             }
-            this.i = m2;
+            this.i = m3;
         }
         this.af();
-        this.A(l);
+        this.A(i2);
         if (d2.q(38)) {
             this.q(d2.j(38));
         }
@@ -328,12 +329,12 @@ public class TextInputLayout extends LinearLayout
         if (d2.q(55)) {
             this.B(d2.j(55));
         }
-        final adyk b = new adyk(this, d2, null, null);
+        final aeam b = new aeam(this, d2, (byte[])null, (byte[])null);
         this.b = b;
         final boolean p6 = d2.p(0, true);
         d2.o();
-        ana.X((View)this, 2);
-        ana.Y((View)this, 1);
+        anb.X((View)this, 2);
+        anb.Y((View)this, 1);
         t.addView((View)a);
         t.addView((View)b);
         this.addView((View)t);
@@ -341,7 +342,7 @@ public class TextInputLayout extends LinearLayout
         this.s(p4);
         this.p(p3);
         this.i(p5);
-        this.r(k);
+        this.r(m2);
     }
     
     private final int N() {
@@ -391,15 +392,23 @@ public class TextInputLayout extends LinearLayout
         return (Drawable)this.L;
     }
     
-    private final cig R() {
-        final cig cig = new cig();
-        ((cim)cig).b = adwd.j(this.getContext(), 2130969948, 87);
-        ((cim)cig).c = adwd.o(this.getContext(), 2130969958, adqd.a);
-        return cig;
+    private final cih R() {
+        final cih cih = new cih();
+        ((cin)cih).b = adds.D(this.getContext(), 2130969948, 87);
+        ((cin)cih).c = adds.I(this.getContext(), 2130969958, adsf.a);
+        return cih;
     }
     
-    private final adwf S(final boolean b) {
-        final float n = (float)this.getResources().getDimensionPixelOffset(2131168184);
+    private final adyh S(final boolean b) {
+        final float n = (float)this.getResources().getDimensionPixelOffset(2131168183);
+        final EditText c = this.c;
+        float b2;
+        if (c instanceof aeas) {
+            b2 = ((aeas)c).b;
+        }
+        else {
+            b2 = (float)this.getResources().getDimensionPixelOffset(2131167652);
+        }
         float n2;
         if (!b) {
             n2 = 0.0f;
@@ -407,24 +416,16 @@ public class TextInputLayout extends LinearLayout
         else {
             n2 = n;
         }
-        final EditText c = this.c;
-        float b2;
-        if (c instanceof adyq) {
-            b2 = ((adyq)c).b;
-        }
-        else {
-            b2 = (float)this.getResources().getDimensionPixelOffset(2131167653);
-        }
-        final int dimensionPixelOffset = this.getResources().getDimensionPixelOffset(2131168097);
-        final adwj a = adwk.a();
+        final int dimensionPixelOffset = this.getResources().getDimensionPixelOffset(2131168096);
+        final adyl a = adym.a();
         a.d(n2);
         a.e(n2);
         a.b(n);
         a.c(n);
-        final adwk a2 = a.a();
-        final adwf j = adwf.j(this.getContext(), b2);
-        j.ti(a2);
-        final adwe a3 = j.a;
+        final adym a2 = a.a();
+        final adyh j = adyh.j(this.getContext(), b2);
+        j.tn(a2);
+        final adyg a3 = j.a;
         if (a3.i == null) {
             a3.i = new Rect();
         }
@@ -434,25 +435,25 @@ public class TextInputLayout extends LinearLayout
     }
     
     private final void T() {
-        final adwf k = this.K;
+        final adyh k = this.K;
         if (k == null) {
             return;
         }
-        final adwk i = k.k();
-        final adwk q = this.Q;
+        final adym i = k.k();
+        final adym q = this.Q;
         if (i != q) {
-            this.K.ti(q);
+            this.K.tn(q);
         }
         if (this.l == 2 && this.ah()) {
             this.K.s((float)this.U, this.aa);
         }
         int ab = this.ab;
         if (this.l == 1) {
-            ab = ahy.e(this.ab, adwd.B(((View)this).getContext(), 2130969109, 0));
+            ab = ahz.e(this.ab, adds.V(((View)this).getContext(), 2130969109, 0));
         }
         this.ab = ab;
         this.K.o(ColorStateList.valueOf(ab));
-        final adwf o = this.O;
+        final adyh o = this.O;
         if (o != null) {
             if (this.P != null) {
                 if (this.ah()) {
@@ -474,7 +475,7 @@ public class TextInputLayout extends LinearLayout
     
     private final void U() {
         if (this.ai()) {
-            ((adyd)this.K).z(0.0f, 0.0f, 0.0f, 0.0f);
+            ((aeaf)this.K).z(0.0f, 0.0f, 0.0f, 0.0f);
         }
     }
     
@@ -482,7 +483,7 @@ public class TextInputLayout extends LinearLayout
         final TextView b = this.B;
         if (b != null && this.j) {
             b.setText((CharSequence)null);
-            ciq.b((ViewGroup)this.t, (cim)this.F);
+            cir.b((ViewGroup)this.t, (cin)this.F);
             this.B.setVisibility(4);
         }
     }
@@ -497,19 +498,19 @@ public class TextInputLayout extends LinearLayout
                     sb.append(" is illegal; only @BoxBackgroundMode constants are supported.");
                     throw new IllegalArgumentException(sb.toString());
                 }
-                if (this.I && !(this.K instanceof adyd)) {
-                    this.K = (adwf)new adyc(this.Q);
+                if (this.I && !(this.K instanceof aeaf)) {
+                    this.K = (adyh)new aeae(this.Q);
                 }
                 else {
-                    this.K = new adwf(this.Q);
+                    this.K = new adyh(this.Q);
                 }
                 this.O = null;
                 this.P = null;
             }
             else {
-                this.K = new adwf(this.Q);
-                this.O = new adwf();
-                this.P = new adwf();
+                this.K = new adyh(this.Q);
+                this.O = new adyh();
+                this.P = new adyh();
             }
         }
         else {
@@ -520,22 +521,22 @@ public class TextInputLayout extends LinearLayout
         this.F();
         this.I();
         if (this.l == 1) {
-            if (adwd.i(this.getContext())) {
-                this.T = this.getResources().getDimensionPixelSize(2131167839);
-            }
-            else if (adwd.h(this.getContext())) {
+            if (adds.C(this.getContext())) {
                 this.T = this.getResources().getDimensionPixelSize(2131167838);
+            }
+            else if (adds.B(this.getContext())) {
+                this.T = this.getResources().getDimensionPixelSize(2131167837);
             }
         }
         if (this.c != null) {
             if (this.l == 1) {
-                if (adwd.i(this.getContext())) {
+                if (adds.C(this.getContext())) {
                     final EditText c = this.c;
-                    ana.ab((View)c, ana.j((View)c), this.getResources().getDimensionPixelSize(2131167837), ana.i((View)this.c), this.getResources().getDimensionPixelSize(2131167836));
+                    anb.ab((View)c, anb.j((View)c), this.getResources().getDimensionPixelSize(2131167836), anb.i((View)this.c), this.getResources().getDimensionPixelSize(2131167835));
                 }
-                else if (adwd.h(this.getContext())) {
+                else if (adds.B(this.getContext())) {
                     final EditText c2 = this.c;
-                    ana.ab((View)c2, ana.j((View)c2), this.getResources().getDimensionPixelSize(2131167835), ana.i((View)this.c), this.getResources().getDimensionPixelSize(2131167834));
+                    anb.ab((View)c2, anb.j((View)c2), this.getResources().getDimensionPixelSize(2131167834), anb.i((View)this.c), this.getResources().getDimensionPixelSize(2131167833));
                 }
             }
         }
@@ -567,23 +568,23 @@ public class TextInputLayout extends LinearLayout
             return;
         }
         final RectF ae = this.ae;
-        final adtk o = this.o;
+        final advm o = this.o;
         final int width = this.c.getWidth();
         final int gravity = this.c.getGravity();
         final boolean v = o.v(o.k);
         o.l = v;
         float n4 = 0.0f;
-        Label_0191: {
+        Label_0199: {
             float n = 0.0f;
             float n2 = 0.0f;
-            Label_0184: {
+            Label_0195: {
                 if (gravity != 17 && (gravity & 0x7) != 0x1) {
                     int n3;
                     if ((gravity & 0x800005) != 0x800005 && (gravity & 0x5) != 0x5) {
                         if (v) {
                             n = (float)o.f.right;
                             n2 = o.p;
-                            break Label_0184;
+                            break Label_0195;
                         }
                         n3 = o.f.left;
                     }
@@ -591,59 +592,63 @@ public class TextInputLayout extends LinearLayout
                         if (!v) {
                             n = (float)o.f.right;
                             n2 = o.p;
-                            break Label_0184;
+                            break Label_0195;
                         }
                         n3 = o.f.left;
                     }
                     n4 = (float)n3;
-                    break Label_0191;
+                    break Label_0199;
                 }
-                n = width / 2.0f;
-                n2 = o.p / 2.0f;
+                final float n5 = (float)width;
+                final float p = o.p;
+                n = n5 / 2.0f;
+                n2 = p / 2.0f;
             }
             n4 = n - n2;
         }
         ae.left = Math.max(n4, (float)o.f.left);
         ae.top = (float)o.f.top;
-        float n8 = 0.0f;
-        Label_0356: {
-            float n5 = 0.0f;
+        float n9 = 0.0f;
+        Label_0371: {
             float n6 = 0.0f;
-            Label_0349: {
+            float n7 = 0.0f;
+            Label_0367: {
                 if (gravity != 17 && (gravity & 0x7) != 0x1) {
-                    int n7;
+                    int n8;
                     if ((gravity & 0x800005) != 0x800005 && (gravity & 0x5) != 0x5) {
                         if (!o.l) {
-                            n5 = ae.left;
-                            n6 = o.p;
-                            break Label_0349;
+                            n6 = ae.left;
+                            n7 = o.p;
+                            break Label_0367;
                         }
-                        n7 = o.f.right;
+                        n8 = o.f.right;
                     }
                     else {
                         if (o.l) {
-                            n5 = ae.left;
-                            n6 = o.p;
-                            break Label_0349;
+                            n6 = ae.left;
+                            n7 = o.p;
+                            break Label_0367;
                         }
-                        n7 = o.f.right;
+                        n8 = o.f.right;
                     }
-                    n8 = (float)n7;
-                    break Label_0356;
+                    n9 = (float)n8;
+                    break Label_0371;
                 }
-                n5 = width / 2.0f;
-                n6 = o.p / 2.0f;
+                final float n10 = (float)width;
+                final float p2 = o.p;
+                n6 = n10 / 2.0f;
+                n7 = p2 / 2.0f;
             }
-            n8 = n5 + n6;
+            n9 = n6 + n7;
         }
-        ae.right = Math.min(n8, (float)o.f.right);
+        ae.right = Math.min(n9, (float)o.f.right);
         ae.bottom = o.f.top + o.b();
         if (ae.width() > 0.0f) {
             if (ae.height() > 0.0f) {
                 ae.left -= this.S;
                 ae.right += this.S;
                 ae.offset((float)(-this.getPaddingLeft()), -this.getPaddingTop() - ae.height() / 2.0f + this.U);
-                ((adyd)this.K).z(ae.left, ae.top, ae.right, ae.bottom);
+                ((aeaf)this.K).z(ae.left, ae.top, ae.right, ae.bottom);
             }
         }
     }
@@ -763,7 +768,7 @@ public class TextInputLayout extends LinearLayout
                 this.o.i(ColorStateList.valueOf(n));
             }
             else if (this.K()) {
-                final adtk o = this.o;
+                final advm o = this.o;
                 final TextView h = this.d.h;
                 ColorStateList textColors;
                 if (h != null) {
@@ -802,7 +807,7 @@ public class TextInputLayout extends LinearLayout
                 else {
                     this.o.r(0.0f);
                 }
-                if (this.ai() && !((adyd)this.K).g.isEmpty()) {
+                if (this.ai() && !((aeaf)this.K).g.isEmpty()) {
                     this.U();
                 }
                 this.n = true;
@@ -864,14 +869,14 @@ public class TextInputLayout extends LinearLayout
     }
     
     private final boolean ai() {
-        return this.I && !TextUtils.isEmpty(this.J) && this.K instanceof adyd;
+        return this.I && !TextUtils.isEmpty(this.J) && this.K instanceof aeaf;
     }
     
     private final boolean aj() {
         return this.l == 1 && this.c.getMinLines() <= 1;
     }
     
-    static /* synthetic */ int b(final Editable editable) {
+    static int b(final Editable editable) {
         if (editable != null) {
             return editable.length();
         }
@@ -903,7 +908,7 @@ public class TextInputLayout extends LinearLayout
                 defaultColor = textView.getTextColors().getDefaultColor();
                 if (defaultColor == -65281) {
                     textView.setTextAppearance(2132083808);
-                    textView.setTextColor(agx.a(this.getContext(), 2131099866));
+                    textView.setTextColor(agy.a(this.getContext(), 2131099866));
                 }
             }
             catch (final Exception ex) {
@@ -939,7 +944,7 @@ public class TextInputLayout extends LinearLayout
             if (g != this.g) {
                 this.ac();
             }
-            this.h.setText((CharSequence)akb.a().b(this.getContext().getString(2132017701, new Object[] { value, this.f })));
+            this.h.setText((CharSequence)akc.a().b(this.getContext().getString(2132017701, new Object[] { value, this.f })));
         }
         if (this.c != null && g != this.g) {
             this.G(false);
@@ -981,27 +986,27 @@ public class TextInputLayout extends LinearLayout
             if (this.l != 0) {
                 final EditText c2 = this.c;
                 Object i;
-                if (c2 instanceof AutoCompleteTextView && !adwd.Y(c2)) {
-                    final int a = adwd.A((View)this.c, 2130969044);
+                if (c2 instanceof AutoCompleteTextView && !adyf.q(c2)) {
+                    final int u = adds.U((View)this.c, 2130969044);
                     final int l = this.l;
                     if (l == 2) {
                         final Context context = this.getContext();
-                        final adwf k = this.K;
+                        final adyh k = this.K;
                         final int[][] s = TextInputLayout.s;
-                        final int e = adwd.E(context, "TextInputLayout");
-                        final adwf adwf = new adwf(k.k());
-                        final int c3 = adwd.C(a, e, 0.1f);
-                        adwf.o(new ColorStateList(s, new int[] { c3, 0 }));
-                        adwf.setTint(e);
-                        final ColorStateList list = new ColorStateList(s, new int[] { c3, e });
-                        final adwf adwf2 = new adwf(k.k());
-                        adwf2.setTint(-1);
-                        i = new LayerDrawable(new Drawable[] { (Drawable)new RippleDrawable(list, (Drawable)adwf, (Drawable)adwf2), (Drawable)k });
+                        final int y = adds.Y(context, "TextInputLayout");
+                        final adyh adyh = new adyh(k.k());
+                        final int w = adds.W(u, y, 0.1f);
+                        adyh.o(new ColorStateList(s, new int[] { w, 0 }));
+                        adyh.setTint(y);
+                        final ColorStateList list = new ColorStateList(s, new int[] { w, y });
+                        final adyh adyh2 = new adyh(k.k());
+                        adyh2.setTint(-1);
+                        i = new LayerDrawable(new Drawable[] { (Drawable)new RippleDrawable(list, (Drawable)adyh, (Drawable)adyh2), (Drawable)k });
                     }
                     else if (l == 1) {
-                        final adwf j = this.K;
+                        final adyh j = this.K;
                         final int ab = this.ab;
-                        i = new RippleDrawable(new ColorStateList(TextInputLayout.s, new int[] { adwd.C(a, ab, 0.1f), ab }), (Drawable)j, (Drawable)j);
+                        i = new RippleDrawable(new ColorStateList(TextInputLayout.s, new int[] { adds.W(u, ab, 0.1f), ab }), (Drawable)j, (Drawable)j);
                     }
                     else {
                         i = null;
@@ -1010,7 +1015,7 @@ public class TextInputLayout extends LinearLayout
                 else {
                     i = this.K;
                 }
-                ana.Q((View)c2, (Drawable)i);
+                anb.Q((View)c2, (Drawable)i);
                 this.N = true;
             }
         }
@@ -1024,7 +1029,7 @@ public class TextInputLayout extends LinearLayout
         if (b(editable) == 0 && !this.n) {
             if (this.B != null && this.j && !TextUtils.isEmpty(this.i)) {
                 this.B.setText(this.i);
-                ciq.b((ViewGroup)this.t, (cim)this.E);
+                cir.b((ViewGroup)this.t, (cin)this.E);
                 this.B.setVisibility(0);
                 this.B.bringToFront();
                 this.announceForAccessibility(this.i);
@@ -1040,42 +1045,42 @@ public class TextInputLayout extends LinearLayout
                 final boolean focused = this.isFocused();
                 final int n = 0;
                 boolean b = false;
-                Label_0054: {
+                Label_0057: {
                     if (!focused) {
                         final EditText c = this.c;
                         if (c == null || !c.hasFocus()) {
                             b = false;
-                            break Label_0054;
+                            break Label_0057;
                         }
                     }
                     b = true;
                 }
                 boolean b2 = false;
-                Label_0089: {
+                Label_0095: {
                     if (!this.isHovered()) {
                         final EditText c2 = this.c;
                         if (c2 == null || !c2.isHovered()) {
                             b2 = false;
-                            break Label_0089;
+                            break Label_0095;
                         }
                     }
                     b2 = true;
                 }
                 int n2 = 0;
-                Label_0119: {
+                Label_0122: {
                     if (!this.K()) {
                         n2 = n;
                         if (this.h == null) {
-                            break Label_0119;
+                            break Label_0122;
                         }
                         n2 = n;
                         if (!this.g) {
-                            break Label_0119;
+                            break Label_0122;
                         }
                     }
                     n2 = 1;
                 }
-                Label_0251: {
+                Label_0257: {
                     if (!this.isEnabled()) {
                         this.aa = this.au;
                     }
@@ -1089,16 +1094,16 @@ public class TextInputLayout extends LinearLayout
                     }
                     else {
                         int aa = 0;
-                        Label_0222: {
+                        Label_0228: {
                             if (this.g) {
                                 final TextView h = this.h;
                                 if (h != null) {
                                     if (this.ap != null) {
                                         this.ag(b, b2);
-                                        break Label_0251;
+                                        break Label_0257;
                                     }
                                     aa = h.getCurrentTextColor();
-                                    break Label_0222;
+                                    break Label_0228;
                                 }
                             }
                             if (b) {
@@ -1116,14 +1121,14 @@ public class TextInputLayout extends LinearLayout
                 }
                 if (Build$VERSION.SDK_INT >= 29) {
                     final Context context = this.getContext();
-                    final TypedValue k = adwd.k(context, 2130969043);
+                    final TypedValue e = adds.E(context, 2130969043);
                     ColorStateList list = null;
-                    if (k != null) {
-                        if (k.resourceId != 0) {
-                            list = td.d(context, k.resourceId);
+                    if (e != null) {
+                        if (e.resourceId != 0) {
+                            list = td.d(context, e.resourceId);
                         }
-                        else if (k.data != 0) {
-                            list = ColorStateList.valueOf(k.data);
+                        else if (e.data != 0) {
+                            list = ColorStateList.valueOf(e.data);
                         }
                     }
                     final EditText c3 = this.c;
@@ -1133,22 +1138,22 @@ public class TextInputLayout extends LinearLayout
                             if (n2 != 0 && (list = this.ap) == null) {
                                 list = ColorStateList.valueOf(this.aa);
                             }
-                            aip.g(textCursorDrawable, list);
+                            aiq.g(textCursorDrawable, list);
                         }
                     }
                 }
-                final adyk b3 = this.b;
+                final aeam b3 = this.b;
                 b3.p();
-                adwd.U(b3.a, b3.b, b3.c);
+                adyf.m(b3.a, b3.b, b3.c);
                 b3.e();
                 if (b3.b().u()) {
                     if (b3.a.K() && b3.a() != null) {
                         final Drawable mutate = b3.a().mutate();
-                        aip.f(mutate, b3.a.a());
+                        aiq.f(mutate, b3.a.a());
                         b3.d.setImageDrawable(mutate);
                     }
                     else {
-                        adwd.T(b3.a, b3.d, b3.f, b3.g);
+                        adyf.l(b3.a, b3.d, b3.f, b3.g);
                     }
                 }
                 this.a.b();
@@ -1196,7 +1201,7 @@ public class TextInputLayout extends LinearLayout
     }
     
     public final boolean K() {
-        final adyo d = this.d;
+        final aeaq d = this.d;
         return d.e == 1 && d.h != null && !TextUtils.isEmpty(d.f);
     }
     
@@ -1207,37 +1212,37 @@ public class TextInputLayout extends LinearLayout
             final boolean b = true;
             final boolean b2 = true;
             boolean b3 = false;
-            Label_0212: {
-                Label_0209: {
+            Label_0220: {
+                Label_0218: {
                     if ((drawable != null || (this.f() != null && this.c().getVisibility() == 0)) && this.a.getMeasuredWidth() > 0) {
                         final int ag = this.a.getMeasuredWidth() - this.c.getPaddingLeft();
                         if (this.af == null || this.ag != ag) {
                             (this.af = (Drawable)new ColorDrawable()).setBounds(0, 0, this.ag = ag, 1);
                         }
-                        final Drawable[] h = aps.h((TextView)this.c);
+                        final Drawable[] h = apt.h((TextView)this.c);
                         final Drawable drawable2 = h[0];
                         final Drawable af = this.af;
                         if (drawable2 == af) {
-                            break Label_0209;
+                            break Label_0218;
                         }
-                        aps.d((TextView)this.c, af, h[1], h[2], h[3]);
+                        apt.d((TextView)this.c, af, h[1], h[2], h[3]);
                     }
                     else {
                         if (this.af == null) {
-                            break Label_0209;
+                            break Label_0218;
                         }
-                        final Drawable[] h2 = aps.h((TextView)this.c);
-                        aps.d((TextView)this.c, (Drawable)null, h2[1], h2[2], h2[3]);
+                        final Drawable[] h2 = apt.h((TextView)this.c);
+                        apt.d((TextView)this.c, (Drawable)null, h2[1], h2[2], h2[3]);
                         this.af = null;
                     }
                     b3 = true;
-                    break Label_0212;
+                    break Label_0220;
                 }
                 b3 = false;
             }
             if ((this.b.t() || (this.b.r() && this.b.s()) || this.b.h != null) && this.b.getMeasuredWidth() > 0) {
                 final int n = this.b.i.getMeasuredWidth() - this.c.getPaddingRight();
-                final adyk b4 = this.b;
+                final aeam b4 = this.b;
                 Object o;
                 if (b4.t()) {
                     o = b4.b;
@@ -1253,13 +1258,13 @@ public class TextInputLayout extends LinearLayout
                 }
                 int n2 = n;
                 if (o != null) {
-                    n2 = n + ((View)o).getMeasuredWidth() + alk.c((ViewGroup$MarginLayoutParams)((View)o).getLayoutParams());
+                    n2 = n + ((View)o).getMeasuredWidth() + all.c((ViewGroup$MarginLayoutParams)((View)o).getLayoutParams());
                 }
-                final Drawable[] h3 = aps.h((TextView)this.c);
+                final Drawable[] h3 = apt.h((TextView)this.c);
                 final Drawable ah = this.ah;
                 if (ah != null && this.ai != n2) {
                     ah.setBounds(0, 0, this.ai = n2, 1);
-                    aps.d((TextView)this.c, h3[0], h3[1], this.ah, h3[3]);
+                    apt.d((TextView)this.c, h3[0], h3[1], this.ah, h3[3]);
                     b3 = b;
                 }
                 else {
@@ -1270,15 +1275,15 @@ public class TextInputLayout extends LinearLayout
                     final Drawable ah2 = this.ah;
                     if (aj != ah2) {
                         this.aj = aj;
-                        aps.d((TextView)this.c, h3[0], h3[1], ah2, h3[3]);
+                        apt.d((TextView)this.c, h3[0], h3[1], ah2, h3[3]);
                         b3 = b;
                     }
                 }
             }
             else if (this.ah != null) {
-                final Drawable[] h4 = aps.h((TextView)this.c);
+                final Drawable[] h4 = apt.h((TextView)this.c);
                 if (h4[2] == this.ah) {
-                    aps.d((TextView)this.c, h4[0], h4[1], this.aj, h4[3]);
+                    apt.d((TextView)this.c, h4[0], h4[1], this.aj, h4[3]);
                     b3 = b2;
                 }
                 this.ah = null;
@@ -1330,12 +1335,12 @@ public class TextInputLayout extends LinearLayout
             }
             this.N = false;
             this.W();
-            final adyv adyv = new adyv(this);
+            final aeax aeax = new aeax(this);
             final EditText c2 = this.c;
             if (c2 != null) {
-                ana.N((View)c2, (akv)adyv);
+                anb.N((View)c2, (akw)aeax);
             }
-            final adtk o = this.o;
+            final advm o = this.o;
             final Typeface typeface = this.c.getTypeface();
             final boolean w = o.w(typeface);
             final boolean x = o.x(typeface);
@@ -1343,7 +1348,7 @@ public class TextInputLayout extends LinearLayout
                 o.g();
             }
             this.o.q(this.c.getTextSize());
-            final adtk o2 = this.o;
+            final advm o2 = this.o;
             final float letterSpacing = this.c.getLetterSpacing();
             if (o2.o != letterSpacing) {
                 o2.o = letterSpacing;
@@ -1352,7 +1357,7 @@ public class TextInputLayout extends LinearLayout
             n = this.c.getGravity();
             this.o.m((n & 0xFFFFFF8F) | 0x30);
             this.o.p(n);
-            this.c.addTextChangedListener((TextWatcher)new adyu(this));
+            this.c.addTextChangedListener((TextWatcher)new aeaw(this));
             if (this.ak == null) {
                 this.ak = this.c.getHintTextColors();
             }
@@ -1372,7 +1377,7 @@ public class TextInputLayout extends LinearLayout
             this.b.bringToFront();
             final Iterator iterator = this.m.iterator();
             while (iterator.hasNext()) {
-                ((aepj)iterator.next()).a(this);
+                ((afhd)iterator.next()).b(this);
             }
             this.b.q();
             if (!this.isEnabled()) {
@@ -1389,7 +1394,7 @@ public class TextInputLayout extends LinearLayout
     }
     
     public final CharSequence d() {
-        final adyo d = this.d;
+        final aeaq d = this.d;
         if (d.g) {
             return d.f;
         }
@@ -1445,7 +1450,7 @@ public class TextInputLayout extends LinearLayout
             this.o.d(canvas);
         }
         if (this.P != null) {
-            final adwf o = this.O;
+            final adyh o = this.O;
             if (o != null) {
                 o.draw(canvas);
                 if (this.c.isFocused()) {
@@ -1453,8 +1458,8 @@ public class TextInputLayout extends LinearLayout
                     final Rect bounds2 = this.O.getBounds();
                     final float a = this.o.a;
                     final int centerX = bounds2.centerX();
-                    bounds.left = adqd.c(centerX, bounds2.left, a);
-                    bounds.right = adqd.c(centerX, bounds2.right, a);
+                    bounds.left = adsf.c(centerX, bounds2.left, a);
+                    bounds.right = adsf.c(centerX, bounds2.right, a);
                     this.P.draw(canvas);
                 }
             }
@@ -1469,10 +1474,10 @@ public class TextInputLayout extends LinearLayout
         this.ax = true;
         super.drawableStateChanged();
         final int[] drawableState = this.getDrawableState();
-        final adtk o = this.o;
+        final advm o = this.o;
         final boolean b2 = o != null && o.y(drawableState);
         if (this.c != null) {
-            if (!ana.ao((View)this) || !this.isEnabled()) {
+            if (!anb.ao((View)this) || !this.isEnabled()) {
                 b = false;
             }
             this.G(b);
@@ -1501,9 +1506,9 @@ public class TextInputLayout extends LinearLayout
             return;
         }
         if (this.aw == null) {
-            (this.aw = new ValueAnimator()).setInterpolator(adwd.o(this.getContext(), 2130969956, adqd.b));
-            this.aw.setDuration((long)adwd.j(this.getContext(), 2130969946, 167));
-            this.aw.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new adrg(this, 7));
+            (this.aw = new ValueAnimator()).setInterpolator(adds.I(this.getContext(), 2130969956, adsf.b));
+            this.aw.setDuration((long)adds.D(this.getContext(), 2130969946, 167));
+            this.aw.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new adti(this, 7));
         }
         this.aw.setFloatValues(new float[] { this.o.a, n });
         this.aw.start();
@@ -1527,10 +1532,10 @@ public class TextInputLayout extends LinearLayout
     public final void i(final boolean e) {
         if (this.e != e) {
             if (e) {
-                (this.h = (TextView)new AppCompatTextView(this.getContext())).setId(2131431986);
+                (this.h = (TextView)new AppCompatTextView(this.getContext())).setId(2131431989);
                 this.h.setMaxLines(1);
                 this.d.a(this.h, 2);
-                alk.g((ViewGroup$MarginLayoutParams)this.h.getLayoutParams(), this.getResources().getDimensionPixelOffset(2131168210));
+                all.g((ViewGroup$MarginLayoutParams)this.h.getLayoutParams(), this.getResources().getDimensionPixelOffset(2131168209));
                 this.ac();
                 this.ab();
             }
@@ -1563,10 +1568,10 @@ public class TextInputLayout extends LinearLayout
     }
     
     public final void m(final ColorStateList f) {
-        final adyk b = this.b;
+        final aeam b = this.b;
         if (b.f != f) {
             b.f = f;
-            adwd.T(b.a, b.d, b.f, b.g);
+            adyf.l(b.a, b.d, b.f, b.g);
         }
     }
     
@@ -1582,7 +1587,7 @@ public class TextInputLayout extends LinearLayout
             this.p(true);
         }
         if (!TextUtils.isEmpty(charSequence)) {
-            final adyo d = this.d;
+            final aeaq d = this.d;
             d.c();
             d.f = charSequence;
             d.h.setText(charSequence);
@@ -1606,35 +1611,35 @@ public class TextInputLayout extends LinearLayout
         final EditText c = this.c;
         if (c != null) {
             final Rect ac = this.ac;
-            adtl.a((ViewGroup)this, (View)c, ac);
+            advn.a((ViewGroup)this, (View)c, ac);
             if (this.O != null) {
                 n = ac.bottom;
                 n2 = this.V;
                 this.O.setBounds(ac.left, n - n2, ac.right, ac.bottom);
             }
             if (this.P != null) {
-                n = ac.bottom;
-                n2 = this.W;
-                this.P.setBounds(ac.left, n - n2, ac.right, ac.bottom);
+                n2 = ac.bottom;
+                n = this.W;
+                this.P.setBounds(ac.left, n2 - n, ac.right, ac.bottom);
             }
             if (this.I) {
                 this.o.q(this.c.getTextSize());
                 n = this.c.getGravity();
                 this.o.m((n & 0xFFFFFF8F) | 0x30);
                 this.o.p(n);
-                final adtk o = this.o;
+                final advm o = this.o;
                 if (this.c == null) {
                     throw new IllegalStateException();
                 }
                 final Rect ad = this.ad;
-                final boolean r = adwd.r((View)this);
+                final boolean l = adds.L((View)this);
                 ad.bottom = ac.bottom;
                 n = this.l;
                 if (n != 1) {
                     if (n != 2) {
-                        ad.left = this.O(ac.left, r);
+                        ad.left = this.O(ac.left, l);
                         ad.top = this.getPaddingTop();
-                        ad.right = this.P(ac.right, r);
+                        ad.right = this.P(ac.right, l);
                     }
                     else {
                         ad.left = ac.left + this.c.getPaddingLeft();
@@ -1643,12 +1648,12 @@ public class TextInputLayout extends LinearLayout
                     }
                 }
                 else {
-                    ad.left = this.O(ac.left, r);
+                    ad.left = this.O(ac.left, l);
                     ad.top = ac.top + this.T;
-                    ad.right = this.P(ac.right, r);
+                    ad.right = this.P(ac.right, l);
                 }
                 o.j(ad.left, ad.top, ad.right, ad.bottom);
-                final adtk o2 = this.o;
+                final advm o2 = this.o;
                 if (this.c == null) {
                     throw new IllegalStateException();
                 }
@@ -1693,7 +1698,7 @@ public class TextInputLayout extends LinearLayout
         }
         final boolean l = this.L();
         if (gravity != 0 || l) {
-            this.c.post((Runnable)new admc(this, 19));
+            this.c.post((Runnable)new adme(this, 20));
         }
         if (this.B != null) {
             final EditText c2 = this.c;
@@ -1715,7 +1720,7 @@ public class TextInputLayout extends LinearLayout
         super.onRestoreInstanceState(textInputLayout$SavedState.d);
         this.o(textInputLayout$SavedState.a);
         if (textInputLayout$SavedState.b) {
-            this.post((Runnable)new admc(this, 18));
+            this.post((Runnable)new adme(this, 19));
         }
         this.requestLayout();
     }
@@ -1731,12 +1736,12 @@ public class TextInputLayout extends LinearLayout
             final float a2 = this.Q.c.a(this.ae);
             final float a3 = this.Q.e.a(this.ae);
             final float a4 = this.Q.d.a(this.ae);
-            final adwk q = this.Q;
-            final adwd j = q.j;
-            final adwd k = q.k;
-            final adwd m = q.m;
-            final adwd l = q.l;
-            final adwj a5 = adwk.a();
+            final adym q = this.Q;
+            final adyf j = q.j;
+            final adyf k = q.k;
+            final adyf m = q.m;
+            final adyf l = q.l;
+            final adyl a5 = adym.a();
             a5.i(k);
             a5.j(j);
             a5.g(l);
@@ -1745,9 +1750,9 @@ public class TextInputLayout extends LinearLayout
             a5.e(a);
             a5.b(a4);
             a5.c(a3);
-            final adwk a6 = a5.a();
+            final adym a6 = a5.a();
             this.R = r;
-            final adwf i = this.K;
+            final adyh i = this.K;
             if (i != null && i.k() != a6) {
                 this.Q = a6;
                 this.T();
@@ -1760,7 +1765,7 @@ public class TextInputLayout extends LinearLayout
         if (this.K()) {
             textInputLayout$SavedState.a = this.d();
         }
-        final adyk b = this.b;
+        final aeam b = this.b;
         final boolean r = b.r();
         boolean b2 = false;
         if (r) {
@@ -1774,19 +1779,19 @@ public class TextInputLayout extends LinearLayout
     }
     
     public final void p(final boolean g) {
-        final adyo d = this.d;
+        final aeaq d = this.d;
         if (d.g == g) {
             return;
         }
         d.c();
         if (g) {
-            (d.h = (TextView)new AppCompatTextView(d.a)).setId(2131431987);
+            (d.h = (TextView)new AppCompatTextView(d.a)).setId(2131431990);
             d.h.setTextAlignment(5);
             d.g(d.j);
             d.h(d.k);
             d.f(d.i);
             d.h.setVisibility(4);
-            ana.aw((View)d.h);
+            anb.aw((View)d.h);
             d.a(d.h, 0);
         }
         else {
@@ -1813,7 +1818,7 @@ public class TextInputLayout extends LinearLayout
         if (!this.J()) {
             this.s(true);
         }
-        final adyo d = this.d;
+        final aeaq d = this.d;
         d.c();
         d.l = charSequence;
         d.n.setText(charSequence);
@@ -1825,20 +1830,20 @@ public class TextInputLayout extends LinearLayout
     }
     
     public final void s(final boolean m) {
-        final adyo d = this.d;
+        final aeaq d = this.d;
         if (d.m == m) {
             return;
         }
         d.c();
         if (m) {
-            (d.n = (TextView)new AppCompatTextView(d.a)).setId(2131431988);
+            (d.n = (TextView)new AppCompatTextView(d.a)).setId(2131431991);
             d.n.setTextAlignment(5);
             d.n.setVisibility(4);
-            ana.aw((View)d.n);
+            anb.aw((View)d.n);
             d.i(d.o);
             d.j(d.p);
             d.a(d.n, 1);
-            d.n.setAccessibilityDelegate((View$AccessibilityDelegate)new adyn(d));
+            d.n.setAccessibilityDelegate((View$AccessibilityDelegate)new aeap(d));
         }
         else {
             d.c();
@@ -1846,7 +1851,7 @@ public class TextInputLayout extends LinearLayout
             if (d2 == 2) {
                 d.e = 0;
             }
-            d.k(d2, d.e, d.l(d.n, ""));
+            d.k(d2, d.e, d.l(d.n, (CharSequence)""));
             d.e(d.n, 1);
             d.n = null;
             d.b.E();

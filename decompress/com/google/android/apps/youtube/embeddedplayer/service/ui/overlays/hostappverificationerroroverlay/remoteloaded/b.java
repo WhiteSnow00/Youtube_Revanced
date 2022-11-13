@@ -10,7 +10,7 @@ import android.widget.FrameLayout;
 
 final class b extends FrameLayout
 {
-    final /* synthetic */ c a;
+    final c a;
     
     public b(final c a, final Context context) {
         this.a = a;

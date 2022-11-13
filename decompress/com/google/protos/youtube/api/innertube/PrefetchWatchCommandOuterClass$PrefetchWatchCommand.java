@@ -6,28 +6,28 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class PrefetchWatchCommandOuterClass$PrefetchWatchCommand extends agzi implements ahax
+public final class PrefetchWatchCommandOuterClass$PrefetchWatchCommand extends ahbh implements ahcw
 {
     public static final PrefetchWatchCommandOuterClass$PrefetchWatchCommand a;
-    private static volatile ahbe n;
-    public static final agzg prefetchWatchCommand;
+    private static volatile ahdd n;
+    public static final ahbf prefetchWatchCommand;
     public int b;
     public String c;
     public String d;
     public String e;
     public int f;
     public String g;
-    public amvn h;
-    public apqa i;
-    public agyc j;
-    public anbi k;
+    public amxr h;
+    public apse i;
+    public ahab j;
+    public andm k;
     public float l;
-    public anao m;
+    public ancs m;
     
     static {
         final PrefetchWatchCommandOuterClass$PrefetchWatchCommand a2 = new PrefetchWatchCommandOuterClass$PrefetchWatchCommand();
-        agzi.registerDefaultInstance((Class)PrefetchWatchCommandOuterClass$PrefetchWatchCommand.class, (agzi)(a = a2));
-        prefetchWatchCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 387205844, ahcm.k, (Class)PrefetchWatchCommandOuterClass$PrefetchWatchCommand.class);
+        ahbh.registerDefaultInstance((Class)PrefetchWatchCommandOuterClass$PrefetchWatchCommand.class, (ahbh)(a = a2));
+        prefetchWatchCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 387205844, ahek.k, (Class)PrefetchWatchCommandOuterClass$PrefetchWatchCommand.class);
     }
     
     private PrefetchWatchCommandOuterClass$PrefetchWatchCommand() {
@@ -35,21 +35,21 @@ public final class PrefetchWatchCommandOuterClass$PrefetchWatchCommand extends a
         this.d = "";
         this.e = "";
         this.g = "";
-        this.j = agyc.b;
+        this.j = ahab.b;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe n;
+                final ahdd n;
                 if ((n = PrefetchWatchCommandOuterClass$PrefetchWatchCommand.n) == null) {
                     synchronized (PrefetchWatchCommandOuterClass$PrefetchWatchCommand.class) {
                         if (PrefetchWatchCommandOuterClass$PrefetchWatchCommand.n == null) {
-                            PrefetchWatchCommandOuterClass$PrefetchWatchCommand.n = (ahbe)new agzb((agzi)PrefetchWatchCommandOuterClass$PrefetchWatchCommand.a);
+                            PrefetchWatchCommandOuterClass$PrefetchWatchCommand.n = (ahdd)new ahba((ahbh)PrefetchWatchCommandOuterClass$PrefetchWatchCommand.a);
                         }
                     }
                 }
@@ -59,13 +59,13 @@ public final class PrefetchWatchCommandOuterClass$PrefetchWatchCommand extends a
                 return PrefetchWatchCommandOuterClass$PrefetchWatchCommand.a;
             }
             case 4: {
-                return new agza((agzi)PrefetchWatchCommandOuterClass$PrefetchWatchCommand.a);
+                return new ahaz((ahbh)PrefetchWatchCommandOuterClass$PrefetchWatchCommand.a);
             }
             case 3: {
                 return new PrefetchWatchCommandOuterClass$PrefetchWatchCommand();
             }
             case 2: {
-                return newMessageInfo((MessageLite)PrefetchWatchCommandOuterClass$PrefetchWatchCommand.a, "\u0001\u000b\u0000\u0001\u0001\u000b\u000b\u0000\u0000\u0000\u0001\u1008\u0000\u0002\u1008\u0001\u0003\u1008\u0002\u0004\u100b\u0003\u0005\u1008\u0004\u0006\u1009\u0005\u0007\u1009\u0006\b\u1009\b\t\u1001\t\n\u1009\u000b\u000b\u100a\u0007", new Object[] { "b", "c", "d", "e", "f", "g", "h", "i", "k", "l", "m", "j" });
+                return newMessageInfo((MessageLite)PrefetchWatchCommandOuterClass$PrefetchWatchCommand.a, "\u0001\u000b\u0000\u0001\u0001\u000b\u000b\u0000\u0000\u0000\u0001\u1008\u0000\u0002\u1008\u0001\u0003\u1008\u0002\u0004\u100b\u0003\u0005\u1008\u0004\u0006\u1009\u0006\u0007\u1009\u0007\b\u1009\t\t\u1001\n\n\u1009\f\u000b\u100a\b", new Object[] { "b", "c", "d", "e", "f", "g", "h", "i", "k", "l", "m", "j" });
             }
             case 1: {
                 return null;

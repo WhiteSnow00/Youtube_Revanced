@@ -6,10 +6,10 @@ package com.google.vr.ndk.base;
 
 class VrCoreSdkClient$DaydreamListenerImpl$2 implements Runnable
 {
-    final /* synthetic */ int val$color;
-    final /* synthetic */ long val$durationMillis;
-    final /* synthetic */ FadeOverlayView val$fadeOverlayView;
-    final /* synthetic */ int val$fadeType;
+    final int val$color;
+    final long val$durationMillis;
+    final FadeOverlayView val$fadeOverlayView;
+    final int val$fadeType;
     
     public VrCoreSdkClient$DaydreamListenerImpl$2(final VrCoreSdkClient$DaydreamListenerImpl vrCoreSdkClient$DaydreamListenerImpl, final FadeOverlayView val$fadeOverlayView, final int val$fadeType, final long val$durationMillis, final int val$color) {
         this.val$fadeOverlayView = val$fadeOverlayView;

@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">ଆଲବମକୁ ଫେରନ୍ତୁ</string>
     <string name="accessibility_navigation_back_button">ପଛକୁ ଫେରନ୍ତୁ</string>
     <string name="accessibility_new_content_available">ନୂଆ ବିଷୟବସ୍ତୁ ଉପଲବ୍ଧ ଅଛି</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">ନୂଆ ଭିଡିଓଗୁଡ଼ିକ</string>
     <string name="accessibility_next">ପରବର୍ତ୍ତୀ ଭିଡିଓ</string>
     <string name="accessibility_offline_button_cancel">ଡାଉନ୍‌ଲୋଡ୍‌ କରିବା ବନ୍ଦ କରନ୍ତୁ</string>
     <string name="accessibility_offline_button_cannot_save">ଡାଉନ୍‌ଲୋଡ୍‌ କରିହେବ ନାହିଁ</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">ଡାଟା ମନିଟରିଂ ଓ ନିୟନ୍ତ୍ରଣ</string>
     <string name="data_saving_persistent_title">ଡାଟା ସେଭିଂ</string>
     <string name="data_saving_select_quality_every_video_switch_title">ସମସ୍ତ ଭିଡିଓ ପାଇଁ ଗୁଣବତ୍ତା ଚୟନ କରନ୍ତୁ</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
     <string name="data_saving_snack_bar_action_button">ଦେଖନ୍ତୁ</string>
     <string name="data_saving_snack_bar_text">ଏହି ପରିବର୍ତ୍ତନ ଆପଣଙ୍କର ଡାଟା ସେଭିଂ ସେଟିଂସକୁ ପ୍ରଭାବିତ କରେ</string>
     <string name="data_saving_upload_wifi_only_switch_title">କେବଳ ୱାଇ-ଫାଇ ମାଧ୍ୟମରେ ଅପଲୋଡ୍ କରନ୍ତୁ</string>
@@ -719,7 +720,7 @@
     <string name="image_gallery_zero_state_text_secondary">ଏକ ପୋଷ୍ଟରେ ଫଟୋଟିଏ ଯୋଗ କରିବାକୁ ଗୋଟିଏ ଫଟୋ ନିଅନ୍ତୁ</string>
     <string name="image_upload_error">ଛବି ଅପଲୋଡ୍ ହେବାରେ ବିଫଳ। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
     <string name="image_upload_something_went_wrong">ଓହୋଃ, କିଛି ତ୍ରୁଟି ହୋଇଛି!</string>
-    <string name="immersive_accessibility_player_overlay">Player, double tap to bring up player controls</string>
+    <string name="immersive_accessibility_player_overlay">ପ୍ଲେୟାର, ପ୍ଲେୟାର ନିୟନ୍ତ୍ରଣଗୁଡ଼ିକୁ ଆଣିବା ପାଇଁ ଦୁଇଥର ଟାପ କରନ୍ତୁ</string>
     <string name="in_app_update_downloaded_message">ଅପଡେଟ୍ ଡାଉନଲୋଡ୍ କରାଯାଇଛି</string>
     <string name="in_app_update_downloading_message">ଅପଡେଟ୍ ଡାଉନଲୋଡ୍ କରାଯାଉଛି…</string>
     <string name="in_app_update_restart_button">ରିଷ୍ଟାର୍ଟ କରନ୍ତୁ</string>
@@ -1439,7 +1440,7 @@
     <string name="pref_settings_video_quality_nonbeta">ଭିଡିଓର ଗୁଣବତ୍ତା ପସନ୍ଦଗୁଡ଼ିକ</string>
     <string name="pref_smart_downloads_description">ସ୍ମାର୍ଟ ଡାଉନଲୋଡଗୁଡ଼ିକ ପାଇଁ ଷ୍ଟୋରେଜ ବ୍ୟବହାରକୁ ଆଡଜଷ୍ଟ କରନ୍ତୁ</string>
     <string name="pref_smart_downloads_opted_in_title">ସ୍ମାର୍ଟ ଡାଉନଲୋଡ୍</string>
-    <string name="pref_smart_downloads_quality_title">Smart downloads quality</string>
+    <string name="pref_smart_downloads_quality_title">ସ୍ମାର୍ଟ ଡାଉନଲୋଡଗୁଡ଼ିକର ଗୁଣବତ୍ତା</string>
     <string name="pref_smart_downloads_summary">ସୁପାରିଶ କରାଯାଇଥିବା ଭିଡିଓଗୁଡ଼ିକୁ ସ୍ୱଚାଳିତ ଭାବେ ୱାଇ-ଫାଇ ମାଧ୍ୟମରେ ଡାଉନଲୋଡ କରେ</string>
     <string name="pref_subtitles_category">କ୍ୟାପ୍ସନ୍</string>
     <string name="pref_upload_policy_summary">ଅପଲୋଡ୍ ପାଇଁ ନେଟୱାର୍କ ପସନ୍ଦ ନିର୍ଦ୍ଦିଷ୍ଟ କରନ୍ତୁ</string>
@@ -1786,7 +1787,7 @@
     <string name="shorts_segment_import_failed_text">ସେଗମେଣ୍ଟ ଇମ୍ପୋର୍ଟ ବିଫଳ ହୋଇଛି</string>
     <string name="shorts_segment_import_timeout_text">ସେଗମେଣ୍ଟ ଇମ୍ପୋର୍ଟର ସମୟ ସମାପ୍ତି</string>
     <string name="shorts_selected_duration_title">%1$d ସେକେଣ୍ଡ</string>
-    <string name="shorts_sound_added_tooltip_time_x">Sound added to first %1$ds</string>
+    <string name="shorts_sound_added_tooltip_time_x">ପ୍ରଥମ %1$d ସେକେଣ୍ଡରେ ସାଉଣ୍ଡ ଯୋଗ କରାଯାଇଛି</string>
     <string name="shorts_speed_control_fast_label">ଦ୍ରୁତ</string>
     <string name="shorts_speed_control_fast_text">2X</string>
     <string name="shorts_speed_control_normal_label">ସାଧାରଣ</string>

@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ResetConferenceInviteUrlCommand
 {
-    public static final agzg resetConferenceInviteUrlCommand;
+    public static final ahbf resetConferenceInviteUrlCommand;
     
     static {
-        resetConferenceInviteUrlCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)antk.a, (MessageLite)antk.a, (agzn)null, 421169157, ahcm.k, (Class)antk.class);
+        resetConferenceInviteUrlCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)anvn.a, (MessageLite)anvn.a, (ahbm)null, 421169157, ahek.k, (Class)anvn.class);
     }
     
     private ResetConferenceInviteUrlCommand() {

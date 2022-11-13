@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand extends agzi implements ahax
+public final class ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand extends ahbh implements ahcw
 {
     public static final ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand a;
-    private static volatile ahbe b;
-    public static final agzg showFullscreenEngagementOverlayCommand;
+    private static volatile ahdd b;
+    public static final ahbf showFullscreenEngagementOverlayCommand;
     
     static {
         final ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand a2 = new ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand();
-        agzi.registerDefaultInstance((Class)ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand.class, (agzi)(a = a2));
-        showFullscreenEngagementOverlayCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 392585764, ahcm.k, (Class)ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand.class);
+        ahbh.registerDefaultInstance((Class)ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand.class, (ahbh)(a = a2));
+        showFullscreenEngagementOverlayCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 392585764, ahek.k, (Class)ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand.class);
     }
     
     private ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand.b) == null) {
                     synchronized (ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand.class) {
                         if (ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand.b == null) {
-                            ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand.b = (ahbe)new agzb((agzi)ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand.a);
+                            ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand.b = (ahdd)new ahba((ahbh)ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscre
                 return ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand.a;
             }
             case 4: {
-                return new agza((agzi)ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand.a);
+                return new ahaz((ahbh)ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand.a);
             }
             case 3: {
                 return new ShowFullscreenEngagementOverlayCommandOuterClass$ShowFullscreenEngagementOverlayCommand();

@@ -16,19 +16,19 @@ public abstract class ShareButtonData implements Parcelable
     
     static {
         b = c().k();
-        CREATOR = (Parcelable$Creator)new f(10);
+        CREATOR = (Parcelable$Creator)new f(9);
     }
     
-    public static aeaf c() {
-        final aeaf aeaf = new aeaf();
-        aeaf.l(0);
-        aeaf.m(agyc.b);
-        return aeaf;
+    public static aech c() {
+        final aech aech = new aech();
+        aech.l(0);
+        aech.m(ahab.b);
+        return aech;
     }
     
     public abstract int a();
     
-    public abstract agyc b();
+    public abstract ahab b();
     
     public final int describeContents() {
         return 0;

@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Назад кон албумот</string>
     <string name="accessibility_navigation_back_button">Назад</string>
     <string name="accessibility_new_content_available">Достапни се нови содржини</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Нови видеа</string>
     <string name="accessibility_next">Следно видео</string>
     <string name="accessibility_offline_button_cancel">Запри го преземањето</string>
     <string name="accessibility_offline_button_cannot_save">Не може да се преземе</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Следење и контрола на податоци</string>
     <string name="data_saving_persistent_title">Заштеда на сообраќај</string>
     <string name="data_saving_select_quality_every_video_switch_title">Изберете го квалитетот за секое видео</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
     <string name="data_saving_snack_bar_action_button">Прикажи</string>
     <string name="data_saving_snack_bar_text">Оваа промена влијае на вашите поставки за заштеда на интернет</string>
     <string name="data_saving_upload_wifi_only_switch_title">Прикачувај само преку Wi-Fi</string>
@@ -719,7 +720,7 @@
     <string name="image_gallery_zero_state_text_secondary">Снимете фотографија за да ја додадете во објавата</string>
     <string name="image_upload_error">Сликата не се прикачи. Обидете се повторно.</string>
     <string name="image_upload_something_went_wrong">Нешто не е како што треба.</string>
-    <string name="immersive_accessibility_player_overlay">Player, double tap to bring up player controls</string>
+    <string name="immersive_accessibility_player_overlay">Плеер, допрете двапати за да ги отворите контролите на плеерот</string>
     <string name="in_app_update_downloaded_message">Ажурирањето е преземено</string>
     <string name="in_app_update_downloading_message">Се презема ажурирање...</string>
     <string name="in_app_update_restart_button">РЕСТАРТИРАЈ</string>
@@ -1439,7 +1440,7 @@
     <string name="pref_settings_video_quality_nonbeta">Претпочитан квалитет на видеата</string>
     <string name="pref_smart_downloads_description">Приспособете го користењето на капацитетот за „Паметни преземања“</string>
     <string name="pref_smart_downloads_opted_in_title">Паметни преземања</string>
-    <string name="pref_smart_downloads_quality_title">Smart downloads quality</string>
+    <string name="pref_smart_downloads_quality_title">Квалитет на „Паметните преземања“</string>
     <string name="pref_smart_downloads_summary">Автоматски преземајте препорачани видеа преку Wi-Fi</string>
     <string name="pref_subtitles_category">Титлови</string>
     <string name="pref_upload_policy_summary">Наведете ги претпочитаните поставки за мрежата при поставувањето содржини</string>
@@ -1787,7 +1788,7 @@
     <string name="shorts_segment_import_failed_text">Увезувањето на сегментот не успеа</string>
     <string name="shorts_segment_import_timeout_text">Истече времето за увезување на сегментот</string>
     <string name="shorts_selected_duration_title">%1$d секунди</string>
-    <string name="shorts_sound_added_tooltip_time_x">Sound added to first %1$ds</string>
+    <string name="shorts_sound_added_tooltip_time_x">Звукот е додаден во првите %1$d сек.</string>
     <string name="shorts_speed_control_fast_label">Брзо</string>
     <string name="shorts_speed_control_fast_text">2X</string>
     <string name="shorts_speed_control_normal_label">Нормално</string>

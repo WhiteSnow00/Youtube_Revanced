@@ -13,12 +13,12 @@ import java.lang.reflect.Field;
 import android.os.IInterface;
 import com.google.android.apps.youtube.embeddedplayer.service.service.jar.IApiPlayerFactoryService$Stub$Proxy;
 import android.os.IBinder;
-import com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.shared.l;
 import java.util.List;
 import android.view.View;
 import com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.h;
 import com.google.android.apps.youtube.embeddedplayer.service.service.jar.DisconnectedApiPlayerService;
 import com.google.android.apps.youtube.embeddedplayer.service.jar.a;
+import com.google.android.apps.youtube.embeddedplayer.service.jar.l;
 import com.google.android.apps.youtube.embeddedplayer.service.service.jar.IApiPlayerFactoryService;
 import android.app.Activity;
 import android.content.Context;
@@ -29,7 +29,7 @@ import com.google.android.apps.youtube.embeddedplayer.service.interactionlogging
 import com.google.android.apps.youtube.embeddedplayer.service.uiregistrar.shared.c;
 import com.google.android.apps.youtube.embeddedplayer.service.service.jar.IApiPlayerService;
 
-public final class RemoteEmbeddedPlayer extends aefd
+public final class RemoteEmbeddedPlayer extends aehe
 {
     private IApiPlayerService S;
     private final int T;
@@ -56,51 +56,51 @@ public final class RemoteEmbeddedPlayer extends aefd
     public long g;
     
     static {
-        trn.k("YouTubeAndroidPlayerAPI");
+        ttr.k("YouTubeAndroidPlayerAPI");
     }
     
     private RemoteEmbeddedPlayer(final Context context, final Activity activity, final IApiPlayerFactoryService apiPlayerFactoryService, final boolean b) {
-        final Context k = lkn.k(context, (Context)activity);
-        final com.google.android.apps.youtube.embeddedplayer.service.jar.k i = new com.google.android.apps.youtube.embeddedplayer.service.jar.k(activity, 1);
-        super(k, (a)i, new absd(k));
+        final Context s = kzr.s(context, (Context)activity);
+        final l l = new l(activity, 1);
+        super(s, (a)l, new abue(s));
         this.S = (IApiPlayerService)new DisconnectedApiPlayerService();
         apiPlayerFactoryService.getClass();
-        Object j;
+        Object i;
         if (!b) {
-            j = com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.d.i(k, (com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.b)new com.google.android.youtube.api.jar.client.b(this));
-            this.X = new e((com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.d)j, k, this.h);
+            i = com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.d.i(s, (com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.b)new com.google.android.youtube.api.jar.client.b(this));
+            this.X = new e((com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.d)i, s, this.h);
             this.Y = null;
         }
         else {
-            j = new h(k, new g(this));
+            i = new h(s, new g(this));
             this.X = null;
-            this.Y = new k((h)j, k, this.h);
+            this.Y = new k((h)i, s, this.h);
         }
-        this.j.k((View)j);
-        final b w = new b((trb)new com.google.android.youtube.api.jar.client.a(this), this.j, this.h);
+        this.j.k((View)i);
+        final b w = new b((ttg)new com.google.android.youtube.api.jar.client.a(this, 0), this.j, this.h);
         this.W = w;
-        final com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.shared.b z = new com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.shared.b((com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.c)j, this.h);
+        final com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.shared.b z = new com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.shared.b((com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.c)i, this.h);
         this.Z = z;
-        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.shared.b aa = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.shared.b((com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.shared.g)this.x, this.h);
+        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.shared.b aa = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.shared.b(this.x, this.h);
         this.aa = aa;
-        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.surveyoverlay.shared.b ab = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.surveyoverlay.shared.b((shm)this.y, this.h);
+        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.surveyoverlay.shared.b ab = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.surveyoverlay.shared.b((sjs)this.y, this.h);
         this.ab = ab;
-        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.b ac = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.b((aazx)this.k, (abbm)this.l, (abcm)this.m, (abbe)this.n, this.p, this.q, this.r, this.s, this.t, this.o, this.h);
+        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.b ac = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.b((abbs)this.k, (abdi)this.l, (abeg)this.m, (abcy)this.n, this.p, this.q, this.r, this.s, this.t, this.o, this.h);
         this.ac = ac;
-        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.shared.b ad = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.shared.b((abal)this.z, this.h);
+        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.shared.b ad = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.shared.b((abcg)this.z, this.h);
         this.ad = ad;
-        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.subtitlesoverlay.shared.b ae = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.subtitlesoverlay.shared.b((abbh)this.A, this.h);
+        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.subtitlesoverlay.shared.b ae = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.subtitlesoverlay.shared.b((abdb)this.A, this.h);
         this.ae = ae;
-        final com.google.android.apps.youtube.embeddedplayer.service.ui.preview.shared.b af = new com.google.android.apps.youtube.embeddedplayer.service.ui.preview.shared.b((abbq)this.B, this.h);
+        final com.google.android.apps.youtube.embeddedplayer.service.ui.preview.shared.b af = new com.google.android.apps.youtube.embeddedplayer.service.ui.preview.shared.b((abdl)this.B, this.h);
         this.af = af;
-        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.shared.b ag = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.shared.b((abcp)this.w, this.h);
+        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.shared.b ag = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.shared.b((abek)this.w, this.h);
         this.ag = ag;
-        final com.google.android.apps.youtube.embeddedplayer.service.uiregistrar.shared.e e = com.google.android.apps.youtube.embeddedplayer.service.uiregistrar.shared.e.e((List)com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.remoteloaded.k.a, this.h, this.R);
+        final com.google.android.apps.youtube.embeddedplayer.service.uiregistrar.shared.e e = com.google.android.apps.youtube.embeddedplayer.service.uiregistrar.shared.e.e((List)com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.remoteloaded.l.a, this.h, this.R);
         this.ah = e;
-        this.S = apiPlayerFactoryService.a((com.google.android.apps.youtube.embeddedplayer.service.jar.client.g)new f(this), (com.google.android.apps.youtube.embeddedplayer.service.ui.player.shared.c)w, (com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.shared.f)this.X, (l)this.Y, (com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.shared.c)z, (com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.shared.c)aa, (com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.surveyoverlay.shared.c)ab, (com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.c)ac, (com.google.android.apps.youtube.embeddedplayer.service.uiregistrar.shared.f)e, (com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.shared.c)ad, (com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.subtitlesoverlay.shared.c)ae, (com.google.android.apps.youtube.embeddedplayer.service.ui.preview.shared.c)af, (com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.shared.c)ag, (com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.f)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.e((com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.c)this.C, this.h), (com.google.android.apps.youtube.embeddedplayer.service.databus.shared.c)this.M, (com.google.android.apps.youtube.embeddedplayer.service.imageclient.shared.f)this.N, b);
+        this.S = apiPlayerFactoryService.a((com.google.android.apps.youtube.embeddedplayer.service.jar.client.g)new f(this), (com.google.android.apps.youtube.embeddedplayer.service.ui.player.shared.c)w, this.X, this.Y, z, aa, (com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.surveyoverlay.shared.c)ab, (com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.c)ac, (com.google.android.apps.youtube.embeddedplayer.service.uiregistrar.shared.f)e, (com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.shared.c)ad, (com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.subtitlesoverlay.shared.c)ae, (com.google.android.apps.youtube.embeddedplayer.service.ui.preview.shared.c)af, (com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.shared.c)ag, (com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.f)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.e((com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.c)this.C, this.h), (com.google.android.apps.youtube.embeddedplayer.service.databus.shared.c)this.M, (com.google.android.apps.youtube.embeddedplayer.service.imageclient.shared.f)this.N, b);
         com.google.android.apps.youtube.embeddedplayer.service.errorlogging.remoteloaded.d.a().b(this.S.b());
         com.google.android.apps.youtube.embeddedplayer.service.errorlogging.remoteloaded.c.a().b(this.S.b());
-        zjp.a((zjm)com.google.android.apps.youtube.embeddedplayer.service.errorlogging.remoteloaded.c.a().b);
+        zlm.a((zlj)com.google.android.apps.youtube.embeddedplayer.service.errorlogging.remoteloaded.c.a().b);
         final d d = this.S.d();
         this.V = d;
         final com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.remoteloaded.c c = new com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.remoteloaded.c(d);
@@ -109,7 +109,7 @@ public final class RemoteEmbeddedPlayer extends aefd
         if (v != null) {
             v.m(this.N, this.U, (com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.remoteloaded.b)c);
         }
-        d.g(this.T = d.a(((a)i).a()));
+        d.g(this.T = d.a(((a)l).a()));
     }
     
     public RemoteEmbeddedPlayer(final IBinder binder, final IBinder binder2) {
@@ -124,42 +124,42 @@ public final class RemoteEmbeddedPlayer extends aefd
         }
         else {
             final IInterface queryLocalInterface = binder.queryLocalInterface("com.google.android.youtube.player.internal.dynamic.IObjectWrapper");
-            if (queryLocalInterface instanceof aefw) {
+            if (queryLocalInterface instanceof aehx) {
                 o = queryLocalInterface;
             }
             else {
-                o = new aefu(binder);
+                o = new aehv(binder);
             }
         }
-        final Context context = (Context)aefv.b((aefw)o);
+        final Context context = (Context)aehw.b((aehx)o);
         Object o2;
         if (binder2 == null) {
             o2 = null;
         }
         else {
             final IInterface queryLocalInterface2 = binder2.queryLocalInterface("com.google.android.youtube.player.internal.dynamic.IObjectWrapper");
-            if (queryLocalInterface2 instanceof aefw) {
+            if (queryLocalInterface2 instanceof aehx) {
                 o2 = queryLocalInterface2;
             }
             else {
-                o2 = new aefu(binder2);
+                o2 = new aehv(binder2);
             }
         }
-        final Activity activity = (Activity)aefv.b((aefw)o2);
-        Object o3;
+        final Activity activity = (Activity)aehw.b((aehx)o2);
+        IApiPlayerFactoryService apiPlayerFactoryService2;
         if (binder3 == null) {
-            o3 = apiPlayerFactoryService;
+            apiPlayerFactoryService2 = apiPlayerFactoryService;
         }
         else {
             final IInterface queryLocalInterface3 = binder3.queryLocalInterface("com.google.android.apps.youtube.embeddedplayer.service.service.jar.IApiPlayerFactoryService");
             if (queryLocalInterface3 instanceof IApiPlayerFactoryService) {
-                o3 = queryLocalInterface3;
+                apiPlayerFactoryService2 = (IApiPlayerFactoryService)queryLocalInterface3;
             }
             else {
-                o3 = new IApiPlayerFactoryService$Stub$Proxy(binder3);
+                apiPlayerFactoryService2 = new IApiPlayerFactoryService$Stub$Proxy(binder3);
             }
         }
-        this(context, activity, (IApiPlayerFactoryService)o3, b);
+        this(context, activity, apiPlayerFactoryService2, b);
     }
     
     public RemoteEmbeddedPlayer(final IBinder binder, final IBinder binder2, final boolean b) {
@@ -170,25 +170,25 @@ public final class RemoteEmbeddedPlayer extends aefd
         }
         else {
             final IInterface queryLocalInterface = binder.queryLocalInterface("com.google.android.youtube.player.internal.dynamic.IObjectWrapper");
-            if (queryLocalInterface instanceof aefw) {
+            if (queryLocalInterface instanceof aehx) {
                 o = queryLocalInterface;
             }
             else {
-                o = new aefu(binder);
+                o = new aehv(binder);
             }
         }
-        final Activity activity = (Activity)aefv.b((aefw)o);
-        Object o2;
+        final Activity activity = (Activity)aehw.b((aehx)o);
+        IApiPlayerFactoryService apiPlayerFactoryService2;
         if (binder2 == null) {
-            o2 = apiPlayerFactoryService;
+            apiPlayerFactoryService2 = apiPlayerFactoryService;
         }
         else {
             final IInterface queryLocalInterface2 = binder2.queryLocalInterface("com.google.android.apps.youtube.embeddedplayer.service.service.jar.IApiPlayerFactoryService");
             if (queryLocalInterface2 instanceof IApiPlayerFactoryService) {
-                o2 = queryLocalInterface2;
+                apiPlayerFactoryService2 = (IApiPlayerFactoryService)queryLocalInterface2;
             }
             else {
-                o2 = new IApiPlayerFactoryService$Stub$Proxy(binder2);
+                apiPlayerFactoryService2 = new IApiPlayerFactoryService$Stub$Proxy(binder2);
             }
         }
         final Class<? super Activity> superclass = activity.getClass().getSuperclass();
@@ -207,7 +207,7 @@ public final class RemoteEmbeddedPlayer extends aefd
                 try {
                     final Activity activity2 = (Activity)field.get(activity);
                     if (activity2 != null) {
-                        this((Context)activity, activity2, (IApiPlayerFactoryService)o2, b);
+                        this((Context)activity, activity2, apiPlayerFactoryService2, b);
                         return;
                     }
                 }
@@ -227,7 +227,7 @@ public final class RemoteEmbeddedPlayer extends aefd
                 v.f(this.T, simplePlaybackDescriptor, true);
             }
             catch (final RemoteException ex) {
-                jfi.ak(ex);
+                mft.v(ex);
             }
         }
     }
@@ -319,7 +319,7 @@ public final class RemoteEmbeddedPlayer extends aefd
         if (f < -2147483648L || f > 2147483647L) {
             final StringBuilder sb = new StringBuilder("32 bit time overflow: ");
             sb.append(f);
-            trn.l(sb.toString());
+            ttr.l(sb.toString());
         }
         return (int)this.f;
     }
@@ -329,7 +329,7 @@ public final class RemoteEmbeddedPlayer extends aefd
         if (g < -2147483648L || g > 2147483647L) {
             final StringBuilder sb = new StringBuilder("32 bit time overflow: ");
             sb.append(g);
-            trn.l(sb.toString());
+            ttr.l(sb.toString());
         }
         return (int)this.g;
     }
@@ -429,11 +429,11 @@ public final class RemoteEmbeddedPlayer extends aefd
         }
     }
     
-    public final void k(final wyb wyb) {
+    public final void k(final xab xab) {
         final d v = this.V;
         if (v != null) {
             try {
-                v.h(wyb.a);
+                v.h(xab.a);
             }
             catch (final RemoteException ex) {
                 throw new IllegalStateException((Throwable)ex);

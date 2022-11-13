@@ -6,23 +6,23 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand extends agzi implements ahax
+public final class ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand extends ahbh implements ahcw
 {
     public static final ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand a;
-    private static volatile ahbe f;
-    public static final agzg showBrowseElementsBottomSheetCommand;
-    public aioe b;
-    public ajsq c;
+    private static volatile ahdd f;
+    public static final ahbf showBrowseElementsBottomSheetCommand;
+    public aiqj b;
+    public ajut c;
     public float d;
     public float e;
     private int g;
-    private ajsq h;
+    private ajut h;
     private byte i;
     
     static {
         final ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand a2 = new ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand();
-        agzi.registerDefaultInstance((Class)ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand.class, (agzi)(a = a2));
-        showBrowseElementsBottomSheetCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 372633595, ahcm.k, (Class)ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand.class);
+        ahbh.registerDefaultInstance((Class)ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand.class, (ahbh)(a = a2));
+        showBrowseElementsBottomSheetCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 372633595, ahek.k, (Class)ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand.class);
     }
     
     private ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand() {
@@ -31,20 +31,20 @@ public final class ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElem
         this.e = 1.0f;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte i = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe f;
+                final ahdd f;
                 if ((f = ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand.f) == null) {
                     synchronized (ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand.class) {
                         if (ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand.f == null) {
-                            ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand.f = (ahbe)new agzb((agzi)ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand.a);
+                            ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand.f = (ahdd)new ahba((ahbh)ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand.a);
                         }
                     }
                 }
@@ -54,7 +54,7 @@ public final class ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElem
                 return ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand.a;
             }
             case 4: {
-                return new agza((agzi)ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand.a);
+                return new ahaz((ahbh)ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand.a);
             }
             case 3: {
                 return new ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElementsBottomSheetCommand();
@@ -64,9 +64,9 @@ public final class ShowBrowseElementsBottomSheetCommandOuterClass$ShowBrowseElem
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    i = 0;
                 }
-                this.i = (byte)(b ? 1 : 0);
+                this.i = i;
                 return null;
             }
             case 0: {

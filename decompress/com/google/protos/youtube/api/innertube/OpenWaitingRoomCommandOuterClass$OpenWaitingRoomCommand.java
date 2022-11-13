@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand extends agzi implements ahax
+public final class OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand extends ahbh implements ahcw
 {
     public static final OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand a;
-    private static volatile ahbe d;
-    public static final agzg openWaitingRoomCommand;
+    private static volatile ahdd d;
+    public static final ahbf openWaitingRoomCommand;
     public int b;
-    public aioe c;
+    public aiqj c;
     private byte e;
     
     static {
         final OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand a2 = new OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand();
-        agzi.registerDefaultInstance((Class)OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand.class, (agzi)(a = a2));
-        openWaitingRoomCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 439964451, ahcm.k, (Class)OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand.class);
+        ahbh.registerDefaultInstance((Class)OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand.class, (ahbh)(a = a2));
+        openWaitingRoomCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 439964451, ahek.k, (Class)OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand.class);
     }
     
     private OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand.d) == null) {
                     synchronized (OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand.class) {
                         if (OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand.d == null) {
-                            OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand.d = (ahbe)new agzb((agzi)OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand.a);
+                            OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand.d = (ahdd)new ahba((ahbh)OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand exten
                 return OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand.a;
             }
             case 4: {
-                return new agza((agzi)OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand.a);
+                return new ahaz((ahbh)OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand.a);
             }
             case 3: {
                 return new OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand();
@@ -58,9 +58,9 @@ public final class OpenWaitingRoomCommandOuterClass$OpenWaitingRoomCommand exten
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

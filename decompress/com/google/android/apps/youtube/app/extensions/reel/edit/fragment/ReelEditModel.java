@@ -15,22 +15,22 @@ public abstract class ReelEditModel implements Parcelable
     public static final Parcelable$Creator CREATOR;
     
     static {
-        CREATOR = (Parcelable$Creator)new fzf(13);
+        CREATOR = (Parcelable$Creator)new fzn(12);
     }
     
-    public static zvm g() {
-        final zvm zvm = new zvm();
-        zvm.l(0);
-        return zvm;
+    public static zxh g() {
+        final zxh zxh = new zxh();
+        zxh.l(0);
+        return zxh;
     }
     
     public abstract int a();
     
     public abstract ReelEditModel$DeletedItem b();
     
-    public abstract afcr c();
+    public abstract afeq c();
     
-    public abstract zvm d();
+    public abstract zxh d();
     
     public final int describeContents() {
         return 0;

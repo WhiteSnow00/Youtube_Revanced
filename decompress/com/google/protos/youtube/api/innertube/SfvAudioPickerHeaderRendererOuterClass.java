@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class SfvAudioPickerHeaderRendererOuterClass
 {
-    public static final agzg sfvAudioPickerHeaderRenderer;
+    public static final ahbf sfvAudioPickerHeaderRenderer;
     
     static {
-        sfvAudioPickerHeaderRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anzi.a, (MessageLite)anzi.a, (agzn)null, 313670307, ahcm.k, (Class)anzi.class);
+        sfvAudioPickerHeaderRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)aobl.a, (MessageLite)aobl.a, (ahbm)null, 313670307, ahek.k, (Class)aobl.class);
     }
     
     private SfvAudioPickerHeaderRendererOuterClass() {

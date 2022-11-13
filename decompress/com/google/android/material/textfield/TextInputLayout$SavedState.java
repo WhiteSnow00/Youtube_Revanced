@@ -17,7 +17,7 @@ public class TextInputLayout$SavedState extends AbsSavedState
     boolean b;
     
     static {
-        CREATOR = (Parcelable$Creator)new adrl(7);
+        CREATOR = (Parcelable$Creator)new adtn(7);
     }
     
     public TextInputLayout$SavedState(final Parcel parcel, final ClassLoader classLoader) {

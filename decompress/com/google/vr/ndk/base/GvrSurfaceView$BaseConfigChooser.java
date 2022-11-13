@@ -13,7 +13,7 @@ import android.opengl.GLSurfaceView$EGLConfigChooser;
 abstract class GvrSurfaceView$BaseConfigChooser implements GLSurfaceView$EGLConfigChooser
 {
     protected int[] mConfigSpec;
-    final /* synthetic */ GvrSurfaceView this$0;
+    final GvrSurfaceView this$0;
     
     public GvrSurfaceView$BaseConfigChooser(final GvrSurfaceView this$0, final int[] array) {
         this.this$0 = this$0;

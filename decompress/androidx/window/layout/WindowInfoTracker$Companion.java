@@ -10,19 +10,32 @@ import androidx.window.layout.adapter.WindowBackend;
 
 public final class WindowInfoTracker$Companion
 {
+    static final WindowInfoTracker$Companion $$INSTANCE;
     private static final boolean DEBUG = false;
     private static final String TAG;
+    public static final int a = 0;
     private static WindowInfoTrackerDecorator decorator;
-    private static final atjm extensionBackend$delegate;
+    private static final atkh extensionBackend$delegate;
     
     static {
         $$INSTANCE = new WindowInfoTracker$Companion();
-        TAG = atno.b(WindowInfoTracker.class).c();
-        extensionBackend$delegate = atqc.f((atma)WindowInfoTracker$Companion$extensionBackend$2.INSTANCE);
+        TAG = atoj.b((Class)WindowInfoTracker.class).c();
+        extensionBackend$delegate = aqsz.x((atmv)WindowInfoTracker$Companion$extensionBackend$2.INSTANCE);
         WindowInfoTracker$Companion.decorator = (WindowInfoTrackerDecorator)EmptyDecorator.INSTANCE;
     }
     
     private WindowInfoTracker$Companion() {
+    }
+    
+    public static final boolean access$getDEBUG$p() {
+        return WindowInfoTracker$Companion.DEBUG;
+    }
+    
+    public static final String access$getTAG$p() {
+        return WindowInfoTracker$Companion.TAG;
+    }
+    
+    public static void getExtensionBackend$window_release$annotations() {
     }
     
     public final WindowBackend getExtensionBackend$window_release() {

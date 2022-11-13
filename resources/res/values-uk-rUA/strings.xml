@@ -93,9 +93,6 @@
     <string name="litho_paid_content">Платний контент</string>
     <string name="litho_paid_content_off">Вилучення платного контенту вимкнено</string>
     <string name="litho_paid_content_on">Вилучення платного контенту увімкнено</string>
-    <string name="litho_shorts_shelf">Розділ коротких відео(YouTube Shorts)</string>
-    <string name="litho_shorts_shelf_off">Розділ коротких відео (YTShorts) увімкнено</string>
-    <string name="litho_shorts_shelf_on">Розділ коротких відео (YTShorts) вимкнено</string>
     <string name="microg_not_installed_notice">Будь ласка, встановіть MicroG</string>
     <string name="microg_not_installed_warning">MicroG не знайдено</string>
     <string name="microg_notification_settings">Налаштування сповіщень</string>
@@ -124,6 +121,9 @@
     <string name="reset">Скинути</string>
     <string name="revanced_ad_settings_summary">Додаткові налаштування реклами</string>
     <string name="revanced_ad_settings_title">Налаштування реклами</string>
+    <string name="revanced_album_card_in_search_summary_off">Вилучення карти альбомів у результатах пошуку увімкнемо</string>
+    <string name="revanced_album_card_in_search_summary_on">Вилучення карти альбомів у результатах пошуку вимкнено</string>
+    <string name="revanced_album_card_in_search_title">Картка альбома у результатах пошуку</string>
     <string name="revanced_auto_repeat_button_summary_off">Кнопку автовідтворення вимкнено в режимі \"Картинка в картинці\"</string>
     <string name="revanced_auto_repeat_button_summary_on">Кнопку автовідтворення увімкнено в режимі \"Картинка в картинці\"</string>
     <string name="revanced_auto_repeat_button_title">Кнопка автовідтворення</string>
@@ -142,6 +142,7 @@
     <string name="revanced_buffer_summary">Користувальницькі налаштування для відеобуфера</string>
     <string name="revanced_buffer_title">Налаштування відеобуфера</string>
     <string name="revanced_button_container_summary">Додаткові налаштування приховувань кнопок</string>
+    <string name="revanced_button_container_title">Приховування кнопок</string>
     <string name="revanced_captions_button_summary_off">Кнопку субтитрів (у інтерфейсі плеєра) вимкнено</string>
     <string name="revanced_captions_button_summary_on">Кнопку субтитрів (у інтерфейсі плеєра) увімкнено</string>
     <string name="revanced_captions_button_title">Кнопка субтитрів (у інтерфейсі плеєра)</string>
@@ -182,6 +183,9 @@
     <string name="revanced_extended_settings">Додаткові налаштування ReVanced Extended</string>
     <string name="revanced_extended_summary">Додаткові налаштування розширеного</string>
     <string name="revanced_extended_title">Розширені налаштування</string>
+    <string name="revanced_fix_playback_summary_off">Виправлення проблем з буфером відтворення відео вимкнено</string>
+    <string name="revanced_fix_playback_summary_on">Виправлення проблем з буфером відтворення відео увімкнено</string>
+    <string name="revanced_fix_playback_title">Виправлення проблем з буфером відтворення відео (Експериментально)</string>
     <string name="revanced_force_fullscreen_rotation_summary_off">Обертання на весь екран вимкнено</string>
     <string name="revanced_force_fullscreen_rotation_summary_on">Обертання на весь екран увімкнено</string>
     <string name="revanced_force_fullscreen_rotation_title">Обертання на весь екран (Експериментально)</string>
@@ -227,9 +231,6 @@
     <string name="revanced_hide_share_button_summary_off">Кнопка поділитися показана</string>
     <string name="revanced_hide_share_button_summary_on">Кнопка поділитися прихована</string>
     <string name="revanced_hide_share_button_title">Кнопка поділитися</string>
-    <string name="revanced_hide_shorts_comments_button_off">Вилучення кнопки коментарів у YouTube Shorts вимкнено</string>
-    <string name="revanced_hide_shorts_comments_button_on">Вилучення кнопки коментарів у YouTube Shorts увімкнено</string>
-    <string name="revanced_hide_shorts_comments_button_title">Кнопка коментарів у YouTube Shorts</string>
     <string name="revanced_hide_thanks_button_summary_off">Кнопка подяки показана</string>
     <string name="revanced_hide_thanks_button_summary_on">Кнопка подяки прихована</string>
     <string name="revanced_hide_thanks_button_title">Кнопка подяки</string>
@@ -265,6 +266,9 @@
     <string name="revanced_new_actionbar_summary_off">Використання широкої панелі пошуку вимкнено</string>
     <string name="revanced_new_actionbar_summary_on">Використання широкої панелі пошуку увімкнено</string>
     <string name="revanced_new_actionbar_title">Широка панель пошуку</string>
+    <string name="revanced_official_card_in_search_summary_off">Вилучення офіційних карток у результатах пошуку увімкнено</string>
+    <string name="revanced_official_card_in_search_summary_on">Вилучення офіційних карток у результатах пошуку вимкнено</string>
+    <string name="revanced_official_card_in_search_title">Офіційна картка у результатах пошуку</string>
     <string name="revanced_old_style_quality_settings_summary_off">Використання старого стилю параметрів якості вимкнено</string>
     <string name="revanced_old_style_quality_settings_summary_on">Використання старого стилю параметрів якості увімкнено</string>
     <string name="revanced_old_style_quality_settings_title">Стиль параметрів якості</string>
@@ -288,7 +292,7 @@
     <string name="revanced_preferred_video_speed_summary">Виберіть бажану швидкість відео</string>
     <string name="revanced_preferred_video_speed_title">Бажана швидкість відео</string>
     <string name="revanced_reboot_warning_fullscreen">Іноді це може не працювати належним чином.\10У деяких випадках може знадобитися перевстановлення ReVanced.</string>
-    <string name="revanced_reboot_warning_ryd">Інтеграція з новим інтерфейсом YouTube.\10Однак, оскільки це все ще експериментальна функція, кількість дислайків може відображатися не точно.</string>
+    <string name="revanced_reboot_warning_tablet">Обманює роздільну здатність, щоб змінити деякі інтерфейси на інтерфейс планшета.\10Якщо увімкнути цей параметр, будуть доступні такі функції:\10 - Shorts Player перетворено на Standard Player;\10 - Сортувати за датою додавання (найстаріший);\10 При увімкненні наступні функції недоступні:\10 - Режим навколишнього середовища\10 - Публікації спільноти;\10 Оскільки це все ще експериментальна функція, можуть бути інші невідомі проблеми.\10 Ви впевнені, що хочете продовжити?</string>
     <string name="revanced_rebuffer_summary">Тривалість відео, яку має бути буферизовано для відтворення після повторної буферизації (у мілісекундах). Повторну буферизацію визначає виснаження буферу, а не дії користувача.\10\10 За замовчуванням: 5000</string>
     <string name="revanced_rebuffer_title">Повторна буферизація</string>
     <string name="revanced_reel_summary_off">YouTube Shorts вимкнено</string>
@@ -296,8 +300,6 @@
     <string name="revanced_reel_title">YouTube Shorts (Експериментально)</string>
     <string name="revanced_ryd_attribution_summary">Ця інтеграція використовує RYD API з https://returnyoutubedislike.com \10Натисніть тут, щоб отримати більше інформації.</string>
     <string name="revanced_ryd_attribution_title">Інтеграція Return YouTube Dislike</string>
-    <string name="revanced_ryd_new_layout_summary">Показ кількості дислайків в новому інтерфейсі\10(Натисніть, щоб виправити показ кількості дислайків в новому інтерфейсі)</string>
-    <string name="revanced_ryd_new_layout_title">Виправити RYD (новий інтерфейс)</string>
     <string name="revanced_ryd_settings_summary">Використовується RYD API</string>
     <string name="revanced_ryd_settings_title">Налаштування Return YouTube Dislike</string>
     <string name="revanced_ryd_summary">Увімкніть, щоб знову бачити дизлайки</string>
@@ -315,9 +317,6 @@
     <string name="revanced_suggested_actions_summary_off">Запропоновані дії увімкнено</string>
     <string name="revanced_suggested_actions_summary_on">Запропоновані дії вимкнено</string>
     <string name="revanced_suggested_actions_title">Запропоновані дії</string>
-    <string name="revanced_suggestion_summary_off">Кінцеві екрани вимкнено</string>
-    <string name="revanced_suggestion_summary_on">Кінцеві екрани увімкнено</string>
-    <string name="revanced_suggestion_title">Кінцеві екрани</string>
     <string name="revanced_swipe_auto_brightness_summary_off">Автоматичну яскравість вимкнено</string>
     <string name="revanced_swipe_auto_brightness_summary_on">Автоматичну яскравість увімкнено</string>
     <string name="revanced_swipe_auto_brightness_title">Автоматична яскравість</string>

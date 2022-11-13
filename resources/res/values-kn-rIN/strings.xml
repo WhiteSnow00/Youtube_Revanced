@@ -87,9 +87,6 @@
     <string name="litho_paid_content">ಪಾವತಿಸಿದ ವಿಷಯ ತೆಗೆಯುವಿಕೆ</string>
     <string name="litho_paid_content_off">ಪಾವತಿಸಿದ ವಿಷಯವನ್ನು ತೆಗೆದುಹಾಕುವುದನ್ನು ಆಫ್ ಮಾಡಲಾಗಿದೆ</string>
     <string name="litho_paid_content_on">ಪಾವತಿಸಿದ ವಿಷಯವನ್ನು ತೆಗೆದುಹಾಕುವಿಕೆಯನ್ನು ಆನ್ ಮಾಡಲಾಗಿದೆ</string>
-    <string name="litho_shorts_shelf">ಶಾರ್ಟ್ಸ್ ಶೆಲ್ಫ್ ತೆಗೆಯುವಿಕೆ</string>
-    <string name="litho_shorts_shelf_off">ಶಾರ್ಟ್ಸ್ ಶೆಲ್ಫ್ ತೆಗೆಯುವಿಕೆಯನ್ನು ಆಫ್ ಮಾಡಲಾಗಿದೆ</string>
-    <string name="litho_shorts_shelf_on">ಶಾರ್ಟ್ಸ್ ಶೆಲ್ಫ್ ತೆಗೆಯುವಿಕೆ ಆನ್ ಆಗಿದೆ</string>
     <string name="microg_notification_settings">ಅಧಿಸೂಚನೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
     <string name="microg_notification_settings_summary">1. ಅಧಿಸೂಚನೆಗಳಿಗಾಗಿ Google ಸಾಧನ ನೋಂದಣಿ ಮತ್ತು ಮೇಘ ಸಂದೇಶ ಕಳುಹಿಸುವಿಕೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವ ಅಗತ್ಯವಿದೆ. 2. ಕ್ಲೌಡ್ ಮೆಸೇಜಿಂಗ್ ಅಡಿಯಲ್ಲಿ ನೋಂದಾಯಿಸಿದಂತೆ ರಿವಾನ್ಸ್ಡ್ ಅನ್ನು ತೋರಿಸಬೇಕಾಗಿದೆ. 3. ಕ್ಲೌಡ್ ಮೆಸೇಜಿಂಗ್‌ನಲ್ಲಿ ಪ್ರಸ್ತುತ ಸ್ಥಿತಿಯನ್ನು ಸಂಪರ್ಕಿಸಬೇಕು.</string>
     <string name="microg_settings">MicroG ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
@@ -186,9 +183,6 @@
     <string name="revanced_shorts_button_summary_off">ಶಾರ್ಟ್ಸ್ ಬಟನ್ ಮರೆಮಾಡಲಾಗಿದೆ</string>
     <string name="revanced_shorts_button_summary_on">ಶಾರ್ಟ್ಸ್ ಬಟನ್ ತೋರಿಸಲಾಗಿದೆ</string>
     <string name="revanced_shorts_button_title">ಶಾರ್ಟ್ಸ್ ಬಟನ್</string>
-    <string name="revanced_suggestion_summary_off">ಅಂತ್ಯ ಪರದೆಗಳನ್ನು ಮರೆಮಾಡಲಾಗಿದೆ</string>
-    <string name="revanced_suggestion_summary_on">ಅಂತಿಮ ಪರದೆಗಳನ್ನು ತೋರಿಸಲಾಗಿದೆ</string>
-    <string name="revanced_suggestion_title">ಅಂತ್ಯ ಪರದೆಗಳು</string>
     <string name="revanced_swipe_brightness_summary_off">ಪ್ರಖರತೆಗಾಗಿ ಸ್ವೈಪ್ ನಿಯಂತ್ರಣಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ</string>
     <string name="revanced_swipe_brightness_summary_on">ಪ್ರಕಾಶಕ್ಕಾಗಿ ಸ್ವೈಪ್ ನಿಯಂತ್ರಣಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ</string>
     <string name="revanced_swipe_brightness_title">ಹೊಳಪು ನಿಯಂತ್ರಣಗಳನ್ನು ಸ್ವೈಪ್ ಮಾಡಿ</string>

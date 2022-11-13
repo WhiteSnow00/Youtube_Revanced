@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ShortsCreationTitleRendererOuterClass
 {
-    public static final agzg shortsCreationTitleRenderer;
+    public static final ahbf shortsCreationTitleRenderer;
     
     static {
-        shortsCreationTitleRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)aocx.a, (MessageLite)aocx.a, (agzn)null, 379583708, ahcm.k, (Class)aocx.class);
+        shortsCreationTitleRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)aoez.a, (MessageLite)aoez.a, (ahbm)null, 379583708, ahek.k, (Class)aoez.class);
     }
     
     private ShortsCreationTitleRendererOuterClass() {

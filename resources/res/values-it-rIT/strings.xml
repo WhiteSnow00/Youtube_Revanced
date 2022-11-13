@@ -93,9 +93,6 @@
     <string name="litho_paid_content">Rimozione di contenuti a pagamento</string>
     <string name="litho_paid_content_off">La rimozione dei contenuti a pagamento è disattivata</string>
     <string name="litho_paid_content_on">La rimozione dei contenuti a pagamento è attivata</string>
-    <string name="litho_shorts_shelf">Rimozione Shelf Shorts</string>
-    <string name="litho_shorts_shelf_off">La rimozione dei Shelf Shorts è disattivata</string>
-    <string name="litho_shorts_shelf_on">La rimozione dei Shelf Shorts è attivata</string>
     <string name="microg_not_installed_notice">Installa MicroG</string>
     <string name="microg_not_installed_warning">MicroG non trovato</string>
     <string name="microg_notification_settings">Impostazioni notifiche</string>
@@ -226,9 +223,6 @@
     <string name="revanced_hide_share_button_summary_off">Il pulsante \"condividi\" è mostrato</string>
     <string name="revanced_hide_share_button_summary_on">Il pulsante \"condividi\" è nascosto</string>
     <string name="revanced_hide_share_button_title">Nascondere il pulsante \"condividi\"</string>
-    <string name="revanced_hide_shorts_comments_button_off">Il pulsante commenti degli Shorts è mostrato</string>
-    <string name="revanced_hide_shorts_comments_button_on">&gt;Il pulsante commenti degli Shorts è nascosto</string>
-    <string name="revanced_hide_shorts_comments_button_title">&gt;Nascondi il pulsante commenti degli Shorts</string>
     <string name="revanced_hide_thanks_button_summary_off">Il pulsante Grazie è mostrato</string>
     <string name="revanced_hide_thanks_button_summary_on">Il pulsante Grazie è nascosto</string>
     <string name="revanced_hide_thanks_button_title">Nascondi pulsante \"grazie\"</string>
@@ -287,7 +281,6 @@
     <string name="revanced_preferred_video_speed_summary">Seleziona velocità video preferita</string>
     <string name="revanced_preferred_video_speed_title">Velocità video preferita</string>
     <string name="revanced_reboot_warning_fullscreen">Trucco la versione di YouTube e prova ad aggiornarla sul lato server.\10A volte potrebbe non funzionare come previsto.\10In alcuni casi, potrebbe essere necessario reinstallare ReVanced.\10Sei sicuro di voler continuare?</string>
-    <string name="revanced_reboot_warning_ryd">Integra come il tasto dei \"mi piace\" il tasto dei \"non mi piace\" nel nuovo layout.\10È una funzione sperimentale, il contatore potrebbe non essere mostrato correttamente.\10Sei sicuro di voler continuare comunque?</string>
     <string name="revanced_rebuffer_summary">Durata dei media che devono essere bufferati per riprendere la riproduzione dopo un rebuffer (in millisecondi). Un rebuffer è causato da un esaurimento del buffer piuttosto che da un\'azione dell\'utente Predefinito: 5000</string>
     <string name="revanced_rebuffer_title">Rebuffer</string>
     <string name="revanced_reel_summary_off">Le storie sono nascoste</string>
@@ -295,8 +288,6 @@
     <string name="revanced_reel_title">Storie di YouTube</string>
     <string name="revanced_ryd_attribution_summary">Questa integrazione utilizza le API RYD da https://returnyoutubedislike.com. Tocca per saperne di più</string>
     <string name="revanced_ryd_attribution_title">Ritorno Integrazione Non mi piace YouTube</string>
-    <string name="revanced_ryd_new_layout_summary">Mostra il contatore dei \"non mi piace\" nel nuovo layout</string>
-    <string name="revanced_ryd_new_layout_title">Correggi RYD (nuovo layout)</string>
     <string name="revanced_ryd_settings_summary">Utilizza le API RYD</string>
     <string name="revanced_ryd_settings_title">Impostazioni Ritorno Dislike YouTube</string>
     <string name="revanced_ryd_summary">Attiva questa opzione per vedere di nuovo il conteggio dei NonMiPiace</string>
@@ -314,9 +305,6 @@
     <string name="revanced_suggested_actions_summary_off">Mostra le azioni suggerite</string>
     <string name="revanced_suggested_actions_summary_on">Azioni suggerite nascoste</string>
     <string name="revanced_suggested_actions_title">Azioni Suggerite</string>
-    <string name="revanced_suggestion_summary_off">Le schermate finali sono nascoste</string>
-    <string name="revanced_suggestion_summary_on">Le schermate finali sono visibili</string>
-    <string name="revanced_suggestion_title">Schermate finali</string>
     <string name="revanced_swipe_auto_brightness_summary_off">La luminosità automatica scorrendo è disabilitata</string>
     <string name="revanced_swipe_auto_brightness_summary_on">Luminosità automatica scorrendo è abilitata</string>
     <string name="revanced_swipe_auto_brightness_title">Controlla la luminosità scorrendo</string>

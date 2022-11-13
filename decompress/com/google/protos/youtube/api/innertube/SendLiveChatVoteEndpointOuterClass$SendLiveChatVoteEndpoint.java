@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint extends agzi implements ahax
+public final class SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint extends ahbh implements ahcw
 {
     public static final SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg sendLiveChatVoteEndpoint;
-    public agyc b;
+    private static volatile ahdd c;
+    public static final ahbf sendLiveChatVoteEndpoint;
+    public ahab b;
     private int d;
     
     static {
         final SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint a2 = new SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint();
-        agzi.registerDefaultInstance((Class)SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint.class, (agzi)(a = a2));
-        sendLiveChatVoteEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 239906307, ahcm.k, (Class)SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint.class);
+        ahbh.registerDefaultInstance((Class)SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint.class, (ahbh)(a = a2));
+        sendLiveChatVoteEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 239906307, ahek.k, (Class)SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint.class);
     }
     
     private SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint() {
-        this.b = agyc.b;
+        this.b = ahab.b;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint.c) == null) {
                     synchronized (SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint.class) {
                         if (SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint.c == null) {
-                            SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint.c = (ahbe)new agzb((agzi)SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint.a);
+                            SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint.c = (ahdd)new ahba((ahbh)SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint e
                 return SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint.a);
+                return new ahaz((ahbh)SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint.a);
             }
             case 3: {
                 return new SendLiveChatVoteEndpointOuterClass$SendLiveChatVoteEndpoint();

@@ -4,131 +4,130 @@
 
 package com.google.apps.tiktok.inject.baseclasses;
 
-public final class TracedFragmentLifecycle implements atz
+public final class TracedFragmentLifecycle implements aua
 {
-    private final aun a;
-    private final athj b;
+    private final auo a;
+    private final atib b;
     
-    public TracedFragmentLifecycle(final athj b, final aun a, final byte[] array) {
+    public TracedFragmentLifecycle(final atib b, final auo a, final byte[] array) {
         this.a = a;
         this.b = b;
     }
     
-    public final void lW(aum aum) {
+    public final void lW(aun aun) {
         final Object c = this.b.c;
         if (c != null) {
-            aum = (aum)((aeso)c).a();
+            aun = (aun)((aeup)c).a();
         }
         else {
-            aum = (aum)aesw.f();
+            aun = (aun)aeux.f();
         }
         try {
-            this.a.e(auf.ON_RESUME);
-            ((aers)aum).close();
+            this.a.e(aug.ON_RESUME);
+            ((aett)aun).close();
         }
         finally {
             try {
-                ((aers)aum).close();
+                ((aett)aun).close();
             }
             finally {
                 final Throwable t;
                 final Throwable t2;
-                aesy.b(t, t2);
+                agqs.ar(t, t2);
             }
         }
     }
     
-    public final void mM(aum aum) {
+    public final void mM(aun aun) {
         final Object c = this.b.c;
         if (c != null) {
-            aum = (aum)((aeso)c).a();
+            aun = (aun)((aeup)c).a();
         }
         else {
-            aum = (aum)aesw.f();
+            aun = (aun)aeux.f();
         }
         try {
-            this.a.e(auf.ON_DESTROY);
-            ((aers)aum).close();
+            this.a.e(aug.ON_DESTROY);
+            ((aett)aun).close();
         }
         finally {
             try {
-                ((aers)aum).close();
+                ((aett)aun).close();
             }
             finally {
                 final Throwable t;
                 final Throwable t2;
-                aesy.b(t, t2);
+                agqs.ar(t, t2);
             }
         }
     }
     
-    public final void mq(final aum aum) {
-        aesw.f();
+    public final void mq(final aun aun) {
+        aeux.f();
         try {
-            this.a.e(auf.ON_CREATE);
-            aesw.k();
+            this.a.e(aug.ON_CREATE);
+            aeux.k();
         }
         finally {
             try {
-                aesw.k();
+                aeux.k();
             }
             finally {
                 final Throwable t;
                 final Throwable t2;
-                aesy.b(t, t2);
+                agqs.ar(t, t2);
             }
         }
     }
     
-    public final void my(final aum aum) {
-        aesw.f();
+    public final void my(final aun aun) {
+        aeux.f();
         try {
-            this.a.e(auf.ON_PAUSE);
-            aesw.k();
+            this.a.e(aug.ON_PAUSE);
+            aeux.k();
         }
         finally {
             try {
-                aesw.k();
+                aeux.k();
             }
             finally {
                 final Throwable t;
                 final Throwable t2;
-                aesy.b(t, t2);
+                agqs.ar(t, t2);
             }
         }
     }
     
-    public final void oS(final aum aum) {
-        aesw.f();
+    public final void oS(final aun aun) {
+        aeux.f();
         try {
-            this.a.e(auf.ON_START);
-            aesw.k();
+            this.a.e(aug.ON_START);
+            aeux.k();
         }
         finally {
             try {
-                aesw.k();
+                aeux.k();
             }
             finally {
                 final Throwable t;
-                aesy.b((Throwable)aum, t);
+                agqs.ar((Throwable)aun, t);
             }
         }
     }
     
-    public final void oW(final aum aum) {
-        aesw.f();
+    public final void oX(final aun aun) {
+        aeux.f();
         try {
-            this.a.e(auf.ON_STOP);
-            aesw.k();
+            this.a.e(aug.ON_STOP);
+            aeux.k();
         }
         finally {
             try {
-                aesw.k();
+                aeux.k();
             }
             finally {
                 final Throwable t;
-                final Throwable t2;
-                aesy.b(t, t2);
+                agqs.ar((Throwable)aun, t);
             }
         }
     }

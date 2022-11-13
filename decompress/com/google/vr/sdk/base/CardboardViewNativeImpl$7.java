@@ -6,8 +6,8 @@ package com.google.vr.sdk.base;
 
 class CardboardViewNativeImpl$7 implements Runnable
 {
-    final /* synthetic */ CardboardViewNativeImpl this$0;
-    final /* synthetic */ ScreenParams val$screenParams;
+    final CardboardViewNativeImpl this$0;
+    final ScreenParams val$screenParams;
     
     public CardboardViewNativeImpl$7(final CardboardViewNativeImpl this$0, final ScreenParams val$screenParams) {
         this.this$0 = this$0;

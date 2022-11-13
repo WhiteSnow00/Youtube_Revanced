@@ -28,7 +28,7 @@ public class PersonEntity extends AbstractSafeParcelable implements Person
     private List k;
     
     static {
-        CREATOR = (Parcelable$Creator)new njx(9);
+        CREATOR = (Parcelable$Creator)new nlj(8);
     }
     
     public PersonEntity(final String a, final List b, final List c, final List d, final List e, final List f) {
@@ -108,7 +108,7 @@ public class PersonEntity extends AbstractSafeParcelable implements Person
             return true;
         }
         final Person person = (Person)o;
-        return kgk.ba((Object)this.a(), (Object)person.a()) && kgk.ba((Object)this.d(), (Object)person.d()) && kgk.ba((Object)this.f(), (Object)person.f()) && kgk.ba((Object)this.c(), (Object)person.c()) && kgk.ba((Object)this.e(), (Object)person.e()) && kgk.ba((Object)this.b(), (Object)person.b());
+        return khl.be((Object)((Person)this).a(), (Object)person.a()) && khl.be((Object)((Person)this).d(), (Object)person.d()) && khl.be((Object)((Person)this).f(), (Object)person.f()) && khl.be((Object)((Person)this).c(), (Object)person.c()) && khl.be((Object)((Person)this).e(), (Object)person.e()) && khl.be((Object)((Person)this).b(), (Object)person.b());
     }
     
     public final List f() {
@@ -126,17 +126,17 @@ public class PersonEntity extends AbstractSafeParcelable implements Person
     }
     
     public final int hashCode() {
-        return Arrays.hashCode(new Object[] { this.a(), this.d(), this.f(), this.c(), this.e(), this.b() });
+        return Arrays.hashCode(new Object[] { ((Person)this).a(), ((Person)this).d(), ((Person)this).f(), ((Person)this).c(), ((Person)this).e(), ((Person)this).b() });
     }
     
-    public final void writeToParcel(final Parcel parcel, int i) {
-        i = kgk.I(parcel);
-        kgk.ac(parcel, 2, this.a);
-        kgk.ag(parcel, 4, this.d());
-        kgk.ag(parcel, 5, this.f());
-        kgk.ag(parcel, 9, this.b());
-        kgk.ag(parcel, 11, this.c());
-        kgk.ag(parcel, 13, this.e());
-        kgk.J(parcel, i);
+    public final void writeToParcel(final Parcel parcel, int m) {
+        m = khl.M(parcel);
+        khl.ag(parcel, 2, this.a);
+        khl.ak(parcel, 4, this.d());
+        khl.ak(parcel, 5, this.f());
+        khl.ak(parcel, 9, this.b());
+        khl.ak(parcel, 11, this.c());
+        khl.ak(parcel, 13, this.e());
+        khl.N(parcel, m);
     }
 }

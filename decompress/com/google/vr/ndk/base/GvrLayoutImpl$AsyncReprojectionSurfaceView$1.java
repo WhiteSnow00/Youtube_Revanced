@@ -6,7 +6,7 @@ package com.google.vr.ndk.base;
 
 class GvrLayoutImpl$AsyncReprojectionSurfaceView$1 implements Runnable
 {
-    final /* synthetic */ GvrLayoutImpl$AsyncReprojectionSurfaceView this$0;
+    final GvrLayoutImpl$AsyncReprojectionSurfaceView this$0;
     
     public GvrLayoutImpl$AsyncReprojectionSurfaceView$1(final GvrLayoutImpl$AsyncReprojectionSurfaceView this$0) {
         this.this$0 = this$0;

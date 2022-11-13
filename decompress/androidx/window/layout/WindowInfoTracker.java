@@ -11,7 +11,7 @@ public interface WindowInfoTracker
 {
     public static final WindowInfoTracker$Companion Companion = WindowInfoTracker$Companion.$$INSTANCE;
     
-    attm windowLayoutInfo(final Activity p0);
+    atui windowLayoutInfo(final Activity p0);
     
-    attm windowLayoutInfo(final Context p0);
+    atui windowLayoutInfo(final Context p0);
 }

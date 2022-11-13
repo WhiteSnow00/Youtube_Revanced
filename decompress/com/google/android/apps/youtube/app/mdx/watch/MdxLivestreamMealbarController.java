@@ -8,28 +8,28 @@ import j$.util.Optional;
 import android.content.SharedPreferences;
 import android.app.Activity;
 
-public class MdxLivestreamMealbarController implements tfh
+public class MdxLivestreamMealbarController implements thl
 {
     public final Activity a;
-    public final actu b;
-    public final xlv c;
+    public final acvy b;
+    public final xnt c;
     public final cl d;
     public final SharedPreferences e;
-    public final amcc f;
-    public final ccj g;
-    public final xgq h;
-    public final oas i;
-    public final zki j;
-    public final xfz k;
-    public final wwu l;
-    public final fjp m;
-    private final abns n;
-    private final asib o;
-    private final ibc p;
+    public final ameg f;
+    public final cck g;
+    public final xip h;
+    public final oby i;
+    public final zmf j;
+    public final xhy k;
+    public final wyv l;
+    public final fjv m;
+    private final abpu n;
+    private final asiq o;
+    private final ibx p;
     
-    public MdxLivestreamMealbarController(final Activity a, final actu b, final xlv c, final cl d, final SharedPreferences e, final abns n, final ccj g, final xgq h, final atjj atjj, final oas i, final zki j, final xfz k, final wwu l, final fjp m) {
-        this.o = new asib();
-        this.p = new ibc(this, 0);
+    public MdxLivestreamMealbarController(final Activity a, final acvy b, final xnt c, final cl d, final SharedPreferences e, final abpu n, final cck g, final xip h, final atke atke, final oby i, final zmf j, final xhy k, final wyv l, final fjv m) {
+        this.o = new asiq();
+        this.p = new ibx(this, 0);
         a.getClass();
         this.a = a;
         this.b = b;
@@ -39,9 +39,9 @@ public class MdxLivestreamMealbarController implements tfh
         this.n = n;
         this.g = g;
         this.h = h;
-        amcc f;
-        if ((f = ((uyf)atjj.a()).b().l) == null) {
-            f = amcc.a;
+        ameg f;
+        if ((f = ((vaf)atke.a()).b().l) == null) {
+            f = ameg.a;
         }
         this.f = f;
         this.i = i;
@@ -52,8 +52,24 @@ public class MdxLivestreamMealbarController implements tfh
         Optional.empty();
     }
     
-    public final void oS(final aum aum) {
-        final amcc f = this.f;
+    public final thh g() {
+        return thh.b;
+    }
+    
+    public final void lW(final aun aun) {
+    }
+    
+    public final void mM(final aun aun) {
+    }
+    
+    public final void mq(final aun aun) {
+    }
+    
+    public final void my(final aun aun) {
+    }
+    
+    public final void oS(final aun aun) {
+        final ameg f = this.f;
         final int b = f.b;
         if ((0x100000 & b) != 0x0) {
             if (f.e) {
@@ -64,7 +80,15 @@ public class MdxLivestreamMealbarController implements tfh
         }
     }
     
-    public final void oW(final aum aum) {
+    public final void oT() {
+        tfg.c((thl)this);
+    }
+    
+    public final void oW() {
+        tfg.b((thl)this);
+    }
+    
+    public final void oX(final aun aun) {
         this.o.b();
     }
 }

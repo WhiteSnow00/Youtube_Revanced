@@ -11,7 +11,6 @@ import android.os.Parcelable;
 import java.util.concurrent.Executor;
 import com.google.android.apps.youtube.app.common.ui.bottomui.BottomUiContainer;
 import androidx.core.widget.NestedScrollView;
-import android.widget.TextView;
 import java.util.UUID;
 import com.google.protobuf.ExtensionRegistryLite;
 import android.support.v7.widget.Toolbar;
@@ -26,6 +25,8 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.text.Spanned;
 import java.util.Iterator;
+import android.widget.TextView;
+import com.google.protos.youtube.api.innertube.ButtonRendererOuterClass;
 import com.google.protos.youtube.api.innertube.SectionListRendererOuterClass;
 import android.text.TextUtils;
 import java.util.Arrays;
@@ -43,82 +44,83 @@ import android.widget.LinearLayout;
 import android.view.View;
 import com.google.android.libraries.youtube.rendering.ui.widget.loadingframe.LoadingFrameLayout;
 
-public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct, tec
+public class UploadActivity extends htz implements hum, rgw, wyv, htq, rnc, uev, tgg
 {
-    public hsv A;
-    public atjj B;
-    public adhw C;
-    public gko D;
+    public hts A;
+    public atke B;
+    public adjx C;
+    public gkx D;
     public boolean E;
     public boolean F;
     String G;
-    public alaz H;
-    public aksf I;
+    public aldc H;
+    public akui I;
     public LoadingFrameLayout J;
-    public zcp K;
+    public zei K;
     View L;
     public boolean M;
     boolean N;
-    private boolean aA;
+    public eg aA;
     private boolean aB;
     private boolean aC;
     private boolean aD;
     private boolean aE;
-    private alaz aF;
-    private boolean aG;
-    private LinearLayout aH;
-    private ViewGroup aI;
-    private acek aJ;
-    private YouTubeTextView aK;
+    private boolean aF;
+    private aldc aG;
+    private boolean aH;
+    private LinearLayout aI;
+    private ViewGroup aJ;
+    private acgo aK;
     private YouTubeTextView aL;
-    private ImageView aM;
-    private View aN;
-    private Intent aO;
-    private apet aP;
-    private FrameLayout aQ;
-    private YouTubeTextView aR;
-    public aexq al;
-    public glp am;
+    private YouTubeTextView aM;
+    private ImageView aN;
+    private View aO;
+    private Intent aP;
+    private apgx aQ;
+    private FrameLayout aR;
+    private YouTubeTextView aS;
+    public aezp al;
+    public glx am;
     public ImageView an;
-    public aexq ao;
+    public aezp ao;
     public String ap;
     public String aq;
     public String ar;
-    public uyi as;
-    public adio at;
-    public khz au;
-    public adcr av;
-    public aagm aw;
-    public abpj ax;
+    public qqr as;
+    public vai at;
+    public adkp au;
+    public kja av;
+    public adet aw;
+    public heo ax;
     public c ay;
-    public eg az;
-    public aftr h;
-    public vax i;
-    public ackz j;
-    public zki k;
-    public aceo l;
-    public vjl m;
-    public uoe n;
-    public zei o;
-    public zkw p;
-    public wyc q;
-    public req r;
-    public hts s;
-    public adjl t;
+    public abrj az;
+    public afvs h;
+    public vcy i;
+    public acnc j;
+    public zmf k;
+    public acgs l;
+    public vlq m;
+    public uqb n;
+    public zgb o;
+    public zmt p;
+    public xac q;
+    public rgs r;
+    public hun s;
+    public adlm t;
     public SharedPreferences u;
-    public acup v;
-    public adjo w;
-    public adcr x;
-    public fxo y;
-    public hsn z;
+    public acwt v;
+    public adlp w;
+    public adet x;
+    public fxw y;
+    public htk z;
     
     public UploadActivity() {
         this.M = false;
-        this.aG = false;
+        this.aH = false;
         this.N = false;
-        final aewp a = aewp.a;
-        this.al = (aexq)a;
-        this.ao = (aexq)a;
+        final aeyo a = aeyo.a;
+        this.al = (aezp)a;
+        this.ao = (aezp)a;
     }
     
     private final String K() {
@@ -131,12 +133,12 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
     
     private final void L() {
         this.I();
-        alsq alsq;
-        if ((alsq = this.ag.f().c) == null) {
-            alsq = alsq.a;
+        alut alut;
+        if ((alut = this.ag.f().c) == null) {
+            alut = alut.a;
         }
-        if (alsq.k && acsm.g((Context)this) && !this.ah.am()) {
-            tcp.n((aum)this, this.o.a(), (trb)new hks(this, 18), (trb)new hks(this, 19));
+        if (alut.k && acuq.g((Context)this) && !this.ah.ak()) {
+            teu.n((aun)this, this.o.a(), (ttg)new hlo(this, 18), (ttg)new hlo(this, 19));
             return;
         }
         this.H(null);
@@ -144,36 +146,36 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
     
     private final void M() {
         this.aq = "";
-        apgj apgj;
-        if ((apgj = this.ag.f().h) == null) {
-            apgj = apgj.a;
+        apin apin;
+        if ((apin = this.ag.f().h) == null) {
+            apin = apin.a;
         }
-        if (apgj.v) {
-            final apet ap = this.aP;
-            if (ap != null) {
-                if ((ap.b & 0x2) != 0x0) {
-                    final YouTubeTextView ar = this.aR;
-                    ajsq ajsq;
-                    if ((ajsq = ap.d) == null) {
-                        ajsq = ajsq.a;
+        if (apin.v) {
+            final apgx aq = this.aQ;
+            if (aq != null) {
+                if ((aq.b & 0x2) != 0x0) {
+                    final YouTubeTextView as = this.aS;
+                    ajut ajut;
+                    if ((ajut = aq.d) == null) {
+                        ajut = ajut.a;
                     }
-                    ar.setText((CharSequence)abyh.c(ajsq, (abyc)this.j));
-                    this.aR.e(true);
-                    this.aQ.setVisibility(0);
+                    as.setText((CharSequence)acak.c(ajut, (acaf)this.j));
+                    this.aS.e(true);
+                    this.aR.setVisibility(0);
                 }
-                final apet ap2 = this.aP;
-                if ((ap2.b & 0x1) != 0x0) {
-                    this.aq = ap2.c;
+                final apgx aq2 = this.aQ;
+                if ((aq2.b & 0x1) != 0x0) {
+                    this.aq = aq2.c;
                 }
                 return;
             }
         }
-        this.aQ.setVisibility(8);
+        this.aR.setVisibility(8);
     }
     
     public final void C() {
-        final hts s = this.s;
-        s.d.J(3, (wxz)new wws(wya.c(9702)), adio.g(s.B, s.T));
+        final hun s = this.s;
+        s.d.J(3, (wzz)new wyt(xaa.c(9702)), adkp.c(s.B, s.T));
         final ClientSideRenderingService d = s.X.d;
         if (d != null) {
             d.b();
@@ -181,92 +183,82 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
         super.C();
         final Intent intent = this.getIntent();
         if (intent != null && !"com.google.android.youtube.intent.action.INTERNAL_UPLOAD".equals(intent.getAction()) && !this.isTaskRoot()) {
-            final Intent j = this.ay.j();
-            j.setFlags(67108864);
-            ((fam)this).startActivity(j);
+            final Intent i = this.ay.i();
+            i.setFlags(67108864);
+            ((faq)this).startActivity(i);
         }
     }
     
-    public final void G(alaz alaz) {
-        szc.f();
-        if (!this.aD) {
+    public final void G(aldc aldc) {
+        tbi.f();
+        if (!this.aE) {
             return;
         }
-        if (this.aF == (this.H = alaz)) {
+        if (this.aG == (this.H = aldc)) {
             return;
         }
-        this.aF = alaz;
-        ((hth)this).aa.a();
-        this.aQ.setVisibility(8);
-        this.aH.setVisibility(8);
-        this.aN.setVisibility(8);
+        this.aG = aldc;
+        ((huc)this).aa.a();
+        this.aR.setVisibility(8);
+        this.aI.setVisibility(8);
+        this.aO.setVisibility(8);
         this.G = this.k.c().d();
-        alaz = this.H;
-        if ((alaz.b & 0x8000) != 0x0) {
-            ((wwm)this.q).C((wxz)new wws(alaz.p));
+        aldc = this.H;
+        if ((aldc.b & 0x8000) != 0x0) {
+            ((wyn)this.q).C((wzz)new wyt(aldc.q));
         }
-        alaz = this.H;
-        if ((alaz.b & 0x40) != 0x0) {
-            this.K.f(alaz.j);
+        aldc = this.H;
+        if ((aldc.b & 0x40) != 0x0) {
+            this.K.f(aldc.j);
         }
-        final Iterator<Object> iterator = this.H.d.iterator();
-        apjz apjz;
-        boolean j;
-        while (true) {
-            final boolean hasNext = iterator.hasNext();
-            apjz = null;
-            j = false;
-            if (!hasNext) {
-                break;
-            }
-            final alba alba = iterator.next();
-            final int b = alba.b;
+        for (final aldd aldd : this.H.d) {
+            final int b = aldd.b;
             if (b == 96626565) {
-                final apel apel = (apel)alba.c;
-                apel.getClass();
-                this.an.setBackgroundResource(2131102274);
-                aorm aorm;
-                if ((aorm = apel.d) == null) {
-                    aorm = aorm.a;
+                final apgp apgp = (apgp)aldd.c;
+                apgp.getClass();
+                this.an.setBackgroundResource(2131102302);
+                aotp aotp;
+                if ((aotp = apgp.d) == null) {
+                    aotp = aotp.a;
                 }
-                if (actc.M(aorm)) {
-                    final aceo l = this.l;
+                if (aald.S(aotp)) {
+                    final acgs l = this.l;
                     final ImageView an = this.an;
-                    aorm aorm2;
-                    if ((aorm2 = apel.d) == null) {
-                        aorm2 = aorm.a;
+                    aotp aotp2;
+                    if ((aotp2 = apgp.d) == null) {
+                        aotp2 = aotp.a;
                     }
-                    l.j(an, aorm2, this.aJ);
+                    l.j(an, aotp2, this.aK);
                 }
-                final YouTubeTextView ak = this.aK;
-                ajsq ajsq;
-                if ((ajsq = apel.b) == null) {
-                    ajsq = ajsq.a;
-                }
-                ak.setText((CharSequence)abyh.b(ajsq));
                 final YouTubeTextView al = this.aL;
-                ajsq ajsq2;
-                if ((ajsq2 = apel.c) == null) {
-                    ajsq2 = ajsq.a;
+                ajut ajut;
+                if ((ajut = apgp.b) == null) {
+                    ajut = ajut.a;
                 }
-                al.setText((CharSequence)abyh.b(ajsq2));
-                final boolean e = apel.e;
-                this.aI.setClickable(e);
+                al.setText((CharSequence)acak.b(ajut));
+                final YouTubeTextView am = this.aM;
+                ajut ajut2;
+                if ((ajut2 = apgp.c) == null) {
+                    ajut2 = ajut.a;
+                }
+                am.setText((CharSequence)acak.b(ajut2));
+                final boolean e = apgp.e;
+                this.aJ.setClickable(e);
                 if (e) {
-                    this.aM.setVisibility(0);
-                    this.aI.setOnClickListener((View$OnClickListener)new hqg(this, 13));
-                    final ViewGroup ai = this.aI;
-                    tmy.r((View)ai, ai.getBackground());
-                    ajsq ajsq3;
-                    if ((ajsq3 = apel.b) == null) {
-                        ajsq3 = ajsq.a;
+                    this.aN.setVisibility(0);
+                    this.aJ.setOnClickListener((View$OnClickListener)new hrb(this, 13));
+                    final ViewGroup aj = this.aJ;
+                    tpe.r((View)aj, aj.getBackground());
+                    ajut ajut3;
+                    if ((ajut3 = apgp.b) == null) {
+                        ajut3 = ajut.a;
                     }
-                    final Spanned b2 = abyh.b(ajsq3);
-                    ajsq ajsq4;
-                    if ((ajsq4 = apel.c) == null) {
-                        ajsq4 = ajsq.a;
+                    final Spanned b2 = acak.b(ajut3);
+                    ajut ajut4;
+                    if ((ajut4 = apgp.c) == null) {
+                        ajut4 = ajut.a;
                     }
-                    final Spanned b3 = abyh.b(ajsq4);
+                    final Spanned b3 = acak.b(ajut4);
                     CharSequence charSequence;
                     if ((charSequence = (CharSequence)b2) == null) {
                         charSequence = "";
@@ -275,96 +267,124 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
                     if ((charSequence2 = (CharSequence)b3) == null) {
                         charSequence2 = "";
                     }
-                    this.aI.setContentDescription((CharSequence)this.getString(2132017428, new Object[] { TextUtils.join((CharSequence)" ", (Iterable)Arrays.asList(charSequence, charSequence2)) }));
+                    this.aJ.setContentDescription((CharSequence)this.getString(2132017428, new Object[] { TextUtils.join((CharSequence)" ", (Iterable)Arrays.asList(charSequence, charSequence2)) }));
                 }
                 else {
-                    this.aM.setVisibility(8);
-                    this.aI.setOnClickListener((View$OnClickListener)null);
-                    this.aI.setBackgroundResource(0);
-                    this.aI.setContentDescription((CharSequence)null);
+                    this.aN.setVisibility(8);
+                    this.aJ.setOnClickListener((View$OnClickListener)null);
+                    this.aJ.setBackgroundResource(0);
+                    this.aJ.setContentDescription((CharSequence)null);
                 }
-                this.aH.setVisibility(0);
+                this.aI.setVisibility(0);
             }
             else {
                 if (b != 334359378) {
                     continue;
                 }
-                this.aP = (apet)alba.c;
+                this.aQ = (apgx)aldd.c;
             }
         }
-        anss anss;
-        if ((anss = this.H.e) == null) {
-            anss = anss.a;
+        anuv anuv;
+        if ((anuv = this.H.e) == null) {
+            anuv = anuv.a;
         }
-        if (((agzd)anss).rs((agyr)SectionListRendererOuterClass.sectionListRenderer)) {
-            anss anss2;
-            if ((anss2 = this.H.e) == null) {
-                anss2 = anss.a;
+        if (((ahbc)anuv).ry((ahaq)SectionListRendererOuterClass.sectionListRenderer)) {
+            anuv anuv2;
+            if ((anuv2 = this.H.e) == null) {
+                anuv2 = anuv.a;
             }
-            final veu veu = new veu((anws)((agzd)anss2).rr((agyr)SectionListRendererOuterClass.sectionListRenderer));
-            aksd aksd;
-            if ((aksd = this.H.l) == null) {
-                aksd = aksd.a;
+            final vgu vgu = new vgu((anyv)((ahbc)anuv2).rx((ahaq)SectionListRendererOuterClass.sectionListRenderer));
+            akug akug;
+            if ((akug = this.H.m) == null) {
+                akug = akug.a;
             }
-            ((hth)this).D(veu, aksd);
-            this.aN.setVisibility(0);
+            ((huc)this).D(vgu, akug);
+            this.aO.setVisibility(0);
         }
         this.M();
-        final hts s = this.s;
-        final alaz h = this.H;
-        apjz apjz2 = apjz;
-        if ((h.b & 0x4) != 0x0 && (apjz2 = h.f) == null) {
-            apjz2 = apjz.a;
-        }
-        if (s.o) {
-            if (!s.y.bK()) {
-                s.c.g(apjz2);
-                s.y.bE((ujm)s.c);
-                s.y.bD((ujn)s.c);
-                s.y.bL(s.c.k(), s.c.a);
+        final hun s = this.s;
+        aldc = this.H;
+        apmd apmd;
+        if ((aldc.b & 0x4) != 0x0) {
+            if ((apmd = aldc.f) == null) {
+                apmd = apmd.a;
             }
         }
-        final hts s2 = this.s;
+        else {
+            apmd = null;
+        }
+        if (s.o) {
+            if (!s.y.bI()) {
+                s.c.g(apmd);
+                s.y.bC((ulh)s.c);
+                s.y.bB((uli)s.c);
+                s.y.bJ(s.c.k(), s.c.a);
+            }
+        }
+        final hun s2 = this.s;
+        boolean j;
         if (this.H.g) {
-            this.at.d();
+            this.au.h();
             j = true;
         }
-        alaz = this.H;
-        final int h2 = alaz.h;
+        else {
+            j = false;
+        }
+        final aldc h = this.H;
+        final int h2 = h.h;
         s2.j = j;
         if (j) {
             s2.l = h2;
         }
-        Label_1005: {
-            if ((alaz.b & 0x100) != 0x0) {
-                alax alax;
-                if ((alax = alaz.k) == null) {
-                    alax = alax.a;
+        Label_1000: {
+            if ((h.b & 0x100) != 0x0) {
+                alda alda;
+                if ((alda = h.l) == null) {
+                    alda = alda.a;
                 }
-                if ((alax.b & 0x1) != 0x0) {
-                    final zcp k = this.K;
-                    alax alax2;
-                    if ((alax2 = this.H.k) == null) {
-                        alax2 = alax.a;
+                if ((alda.b & 0x1) != 0x0) {
+                    final zei k = this.K;
+                    alda alda2;
+                    if ((alda2 = this.H.l) == null) {
+                        alda2 = alda.a;
                     }
-                    int f;
-                    if ((f = alhb.f(alax2.c)) == 0) {
-                        f = 1;
+                    int az;
+                    if ((az = adyf.aZ(alda2.c)) == 0) {
+                        az = 1;
                     }
-                    k.j(f);
-                    break Label_1005;
+                    k.j(az);
+                    break Label_1000;
                 }
             }
             this.K.j(2);
         }
-        this.aG = (this.H.n ^ true);
+        this.aH = (this.H.o ^ true);
         this.v();
         this.J.a();
+        aldc = this.H;
+        if ((aldc.b & 0x80) != 0x0) {
+            aldb aldb;
+            if ((aldb = aldc.k) == null) {
+                aldb = aldb.a;
+            }
+            anuv anuv3;
+            if ((anuv3 = aldb.b) == null) {
+                anuv3 = anuv.a;
+            }
+            final aicz aicz = (aicz)((ahbc)anuv3).rx((ahaq)ButtonRendererOuterClass.buttonRenderer);
+            final heo ax = this.ax;
+            final TextView textView = (TextView)((fa)this).findViewById(2131431511);
+            ((acsx)((ziy)ax.c).ap(textView)).b(aicz, (wyw)null);
+            ((wyw)ax.a).l((wzz)new wyt(aicz.w));
+            textView.setOnClickListener((View$OnClickListener)new hqd(ax, aicz, 8, null, null, null, null));
+            textView.setVisibility(0);
+            textView.setEnabled(true);
+        }
     }
     
-    public final void H(final altf altf) {
+    public final void H(final alvj alvj) {
         this.K.a();
-        this.h.execute((Runnable)new htk(this, altf));
+        this.h.execute((Runnable)new huf(this, alvj));
     }
     
     final void I() {
@@ -373,74 +393,74 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
     }
     
     public final void J() {
-        final alaz h = this.H;
+        final aldc h = this.H;
         if (h != null) {
-            final agza builder = h.toBuilder();
-            int size = ((alaz)builder.instance).d.size();
+            final ahaz builder = ((ahbh)h).toBuilder();
+            int size = ((aldc)builder.instance).d.size();
             while (true) {
                 final int n = size - 1;
                 if (n < 0) {
                     break;
                 }
                 size = n;
-                if (((alba)((alaz)builder.instance).d.get(n)).b != 334359378) {
+                if (((aldd)((aldc)builder.instance).d.get(n)).b != 334359378) {
                     continue;
                 }
                 builder.copyOnWrite();
-                final alaz alaz = (alaz)builder.instance;
-                alaz.a();
-                alaz.d.remove(n);
+                final aldc aldc = (aldc)builder.instance;
+                aldc.a();
+                aldc.d.remove(n);
                 size = n;
             }
             builder.copyOnWrite();
-            final alaz alaz2 = (alaz)builder.instance;
-            alaz2.m = null;
-            final int b = alaz2.b & 0xFFFFFBFF;
-            alaz2.b = b;
-            Label_0294: {
+            final aldc aldc2 = (aldc)builder.instance;
+            aldc2.n = null;
+            final int b = aldc2.b & 0xFFFFFBFF;
+            aldc2.b = b;
+            Label_0299: {
                 if ((b & 0x1000) != 0x0) {
-                    alba alba;
-                    if ((alba = alaz2.o) == null) {
-                        alba = alba.a;
+                    aldd aldd;
+                    if ((aldd = aldc2.p) == null) {
+                        aldd = aldd.a;
                     }
-                    if (alba.b == 334359378) {
-                        alba alba2;
-                        if ((alba2 = ((alaz)builder.instance).o) == null) {
-                            alba2 = alba.a;
+                    if (aldd.b == 334359378) {
+                        aldd aldd2;
+                        if ((aldd2 = ((aldc)builder.instance).p) == null) {
+                            aldd2 = aldd.a;
                         }
-                        apet a;
-                        if (alba2.b == 334359378) {
-                            a = (apet)alba2.c;
+                        apgx a;
+                        if (aldd2.b == 334359378) {
+                            a = (apgx)aldd2.c;
                         }
                         else {
-                            a = apet.a;
+                            a = apgx.a;
                         }
-                        this.aP = a;
-                        alba alba3;
-                        if ((alba3 = ((alaz)builder.instance).o) == null) {
-                            alba3 = alba.a;
+                        this.aQ = a;
+                        aldd aldd3;
+                        if ((aldd3 = ((aldc)builder.instance).p) == null) {
+                            aldd3 = aldd.a;
                         }
                         builder.copyOnWrite();
-                        final alaz alaz3 = (alaz)builder.instance;
-                        alba3.getClass();
-                        alaz3.a();
-                        alaz3.d.add(alba3);
-                        break Label_0294;
+                        final aldc aldc3 = (aldc)builder.instance;
+                        aldd3.getClass();
+                        aldc3.a();
+                        aldc3.d.add((Object)aldd3);
+                        break Label_0299;
                     }
                 }
-                this.aP = null;
+                this.aQ = null;
             }
             this.M();
             builder.copyOnWrite();
-            final alaz alaz4 = (alaz)builder.instance;
-            alaz4.o = null;
-            alaz4.b &= 0xFFFFEFFF;
-            this.H = (alaz)builder.build();
+            final aldc aldc4 = (aldc)builder.instance;
+            aldc4.p = null;
+            aldc4.b &= 0xFFFFEFFF;
+            this.H = (aldc)builder.build();
         }
     }
     
     protected final Dialog a(final int n) {
-        final hts s = this.s;
+        final hun s = this.s;
         Object c;
         if (n != 1021) {
             c = null;
@@ -459,42 +479,42 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
     }
     
     public final void c() {
-        if (this.aE) {
+        if (this.aF) {
             final Intent intent = this.getIntent();
-            this.w.j(tsx.i(this.K()), apfp.aw, adhw.k(intent), intent.getBooleanExtra("com.google.android.libraries.youtube.upload.extra_upload_activity_is_shorts_eligible", false));
+            this.w.j(tvb.i(this.K()), apht.aw, adjx.k(intent), intent.getBooleanExtra("com.google.android.libraries.youtube.upload.extra_upload_activity_presumed_shorts_eligibility", false));
         }
     }
     
-    public final void f(final ajje ajje) {
-        this.al = aexq.k(ajje);
-        if ((ajje.c & 0x8) != 0x0) {
-            anss anss;
-            if ((anss = ajje.f) == null) {
-                anss = anss.a;
+    public final void f(final ajli ajli) {
+        this.al = aezp.k((Object)ajli);
+        if ((ajli.c & 0x8) != 0x0) {
+            anuv anuv;
+            if ((anuv = ajli.f) == null) {
+                anuv = anuv.a;
             }
-            final amak amak = (amak)((agzd)anss).rr((agyr)amal.a);
-            if (!this.N && (amak.b & 0x40000) != 0x0) {
-                final vax i = this.i;
-                aioe aioe;
-                if ((aioe = amak.s) == null) {
-                    aioe = aioe.a;
+            final amco amco = (amco)((ahbc)anuv).rx((ahaq)amcp.a);
+            if (!this.N && (amco.b & 0x40000) != 0x0) {
+                final vcy i = this.i;
+                aiqj aiqj;
+                if ((aiqj = amco.s) == null) {
+                    aiqj = aiqj.a;
                 }
-                i.a(aioe);
+                i.a(aiqj);
                 return;
             }
-            if (amak.o) {
-                this.az.ap(amak);
+            if (amco.o) {
+                this.aA.aa(amco);
                 return;
             }
-            final hts s = this.s;
-            ((fam)this).ol();
-            s.z(ajje);
+            final hun s = this.s;
+            ((faq)this).ol();
+            s.z(ajli);
             this.m().b(2131429315);
         }
     }
     
-    protected final void g(final gkm gkm) {
-        if (gkm == gkm.b) {
+    protected final void g(final gkv gkv) {
+        if (gkv == gkv.b) {
             ((fa)this).setTheme(2132084329);
         }
     }
@@ -504,46 +524,46 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
     }
     
     public final void i() {
-        tmy.o((Activity)this);
+        tpe.o((Activity)this);
         ((qt)this).onBackPressed();
     }
     
     public final void j() {
-        this.m().b(2131431407);
+        this.m().b(2131431410);
         final ep supportActionBar = ((fa)this).getSupportActionBar();
         if (supportActionBar != null) {
-            supportActionBar.o(2132020058);
+            supportActionBar.o(2132020059);
         }
-        ((fam)this).ol().c((Collection)afcr.q());
-        final zcp k = this.K;
-        if (k instanceof hsr) {
-            ((hsr)k).b(this, ((fam)this).ol());
+        ((faq)this).ol().c((Collection)afeq.q());
+        final zei k = this.K;
+        if (k instanceof hto) {
+            ((hto)k).b(this, ((faq)this).ol());
         }
-        this.getWindow().setNavigationBarColor(tmy.cn((Context)this, 2130968777));
+        this.getWindow().setNavigationBarColor(tpe.cr((Context)this, 2130968777));
     }
     
     public final int k() {
-        return 2131431407;
+        return 2131431410;
     }
     
     public final View l() {
-        return (View)this.z.b;
+        return (View)this.z.c;
     }
     
     public final ViewAnimatorHelper m() {
-        return (ViewAnimatorHelper)((fa)this).findViewById(2131432359);
+        return (ViewAnimatorHelper)((fa)this).findViewById(2131432362);
     }
     
     public final void mU() {
-        this.aE = true;
+        this.aF = true;
         final Intent intent = this.getIntent();
-        this.w.j(tsx.i(this.K()), apfp.au, adhw.k(intent), intent.getBooleanExtra("com.google.android.libraries.youtube.upload.extra_upload_activity_is_shorts_eligible", false));
+        this.w.j(tvb.i(this.K()), apht.au, adjx.k(intent), intent.getBooleanExtra("com.google.android.libraries.youtube.upload.extra_upload_activity_presumed_shorts_eligibility", false));
     }
     
     public final void mV() {
-        if (this.aE) {
+        if (this.aF) {
             final Intent intent = this.getIntent();
-            this.w.j(tsx.i(this.K()), apfp.av, adhw.k(intent), intent.getBooleanExtra("com.google.android.libraries.youtube.upload.extra_upload_activity_is_shorts_eligible", false));
+            this.w.j(tvb.i(this.K()), apht.av, adjx.k(intent), intent.getBooleanExtra("com.google.android.libraries.youtube.upload.extra_upload_activity_presumed_shorts_eligibility", false));
             this.J();
         }
     }
@@ -556,10 +576,10 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
                 sb.append(ordinal);
                 throw new IllegalStateException(sb.toString());
             }
-            final rjt rjt = (rjt)o;
-            final glp a = glp.a;
-            final rjs a2 = rjs.a;
-            ordinal = rjt.a().ordinal();
+            final rlw rlw = (rlw)o;
+            final glx a = glx.a;
+            final rlv a2 = rlv.a;
+            ordinal = rlw.a().ordinal();
             array = null;
             if (ordinal == 1 || ordinal == 2) {
                 if (this.k.t()) {
@@ -571,27 +591,23 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
             }
         }
         else {
-            array = new Class[] { rjt.class };
+            array = new Class[] { rlw.class };
         }
         return array;
     }
     
-    public final wwv n() {
-        return (wwv)this.q;
-    }
-    
-    public final aexq o() {
+    public final aezp o() {
         final String stringExtra = this.getIntent().getStringExtra("com.google.android.libraries.youtube.upload.extra_upload_activity_preset_pending_upload_video_thumbnail_path");
-        final Long e = adhw.e(this.getIntent());
+        final Long e = adjx.e(this.getIntent());
         final boolean empty = TextUtils.isEmpty((CharSequence)stringExtra);
         Object o = null;
         if (!empty && e != null) {
             try {
-                o = new htg(Uri.fromFile(new File(stringExtra)), tsx.j((long)(int)TimeUnit.MILLISECONDS.toSeconds(e)));
+                o = new hub(Uri.fromFile(new File(stringExtra)), tvb.j((long)(int)TimeUnit.MILLISECONDS.toSeconds(e)));
             }
             catch (final RuntimeException ex) {
-                trn.d("Invalid model for the requested Thumbnail configuration.", (Throwable)ex);
-                this.av.k("Error while parsing Thumbnail data.", ex);
+                ttr.d("Invalid model for the requested Thumbnail configuration.", (Throwable)ex);
+                this.aw.h("Error while parsing Thumbnail data.", (Throwable)ex);
             }
         }
         else {
@@ -599,21 +615,21 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
             sb.append(stringExtra);
             sb.append(", length: ");
             sb.append(e);
-            trn.b(sb.toString());
-            this.av.j("Invalid model for the requested Thumbnail configuration.");
+            ttr.b(sb.toString());
+            this.aw.g("Invalid model for the requested Thumbnail configuration.");
         }
-        return aexq.j(o);
+        return aezp.j(o);
     }
     
     public final void onBackPressed() {
-        final hts s = this.s;
-        s.i = (rlw)((bu)s.a).getSupportFragmentManager().f("verificationFragmentTag");
-        final rlw i = s.i;
+        final hun s = this.s;
+        s.i = (rob)((bu)s.a).getSupportFragmentManager().f("verificationFragmentTag");
+        final rob i = s.i;
         if (i != null && ((br)i).aw()) {
             s.i.aM();
             return;
         }
-        final hts s2 = this.s;
+        final hun s2 = this.s;
         final cl supportFragmentManager = ((bu)s2.a).getSupportFragmentManager();
         if (supportFragmentManager != null) {
             final br f = supportFragmentManager.f("edit_thumbnails_fragment");
@@ -632,15 +648,15 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
         if (this.s.t()) {
             this.A.i();
         }
-        final zcp k = this.K;
+        final zei k = this.K;
         k.j(k.i());
     }
     
     protected final void onCreate(final Bundle bundle) {
         super.onCreate(bundle);
-        if (this.as.aT()) {
+        if (this.at.aU()) {
             int theme;
-            if (this.D.a() == gkm.b) {
+            if (this.D.a() == gkv.b) {
                 theme = 2132084330;
             }
             else {
@@ -649,30 +665,30 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
             ((fa)this).setTheme(theme);
         }
         this.y.a();
-        ((dh)this).getLifecycle().b((aul)this.B.a());
-        ((qt)this).setContentView(2131625671);
+        ((dh)this).getLifecycle().b((aum)this.B.a());
+        ((qt)this).setContentView(2131625676);
         this.z.a((Activity)this);
-        ((fa)this).setSupportActionBar((Toolbar)this.z.b);
-        this.aO = this.getIntent();
+        ((fa)this).setSupportActionBar((Toolbar)this.z.c);
+        this.aP = this.getIntent();
         this.J = (LoadingFrameLayout)((fa)this).findViewById(2131429673);
         this.I();
-        this.L = ((fa)this).findViewById(2131432249);
-        this.am = glp.a(this.u.getString("upload_privacy", glp.a.name()));
-        this.aH = (LinearLayout)((fa)this).findViewById(2131427417);
-        this.aI = (ViewGroup)((fa)this).findViewById(2131427432);
+        this.L = ((fa)this).findViewById(2131432252);
+        this.am = glx.a(this.u.getString("upload_privacy", glx.a.name()));
+        this.aI = (LinearLayout)((fa)this).findViewById(2131427417);
+        this.aJ = (ViewGroup)((fa)this).findViewById(2131427432);
         this.an = (ImageView)((fa)this).findViewById(2131427435);
-        final acej a = acek.a();
-        a.c = (acem)new htm(this);
-        this.aJ = a.a();
-        this.aK = (YouTubeTextView)((fa)this).findViewById(2131427429);
-        this.aL = (YouTubeTextView)((fa)this).findViewById(2131427431);
-        this.aM = (ImageView)((fa)this).findViewById(2131427433);
-        this.aQ = (FrameLayout)((fa)this).findViewById(2131429987);
-        if (this.as.aT()) {
-            this.aQ.setBackgroundColor(tmy.cn((Context)this, 2130970829));
+        final acgn a = acgo.a();
+        a.c = (acgq)new huh(this);
+        this.aK = a.a();
+        this.aL = (YouTubeTextView)((fa)this).findViewById(2131427429);
+        this.aM = (YouTubeTextView)((fa)this).findViewById(2131427431);
+        this.aN = (ImageView)((fa)this).findViewById(2131427433);
+        this.aR = (FrameLayout)((fa)this).findViewById(2131429987);
+        if (this.at.aU()) {
+            this.aR.setBackgroundColor(tpe.cr((Context)this, 2130970829));
         }
-        this.aR = (YouTubeTextView)((fa)this).findViewById(2131429986);
-        this.aN = ((fa)this).findViewById(2131430798);
+        this.aS = (YouTubeTextView)((fa)this).findViewById(2131429986);
+        this.aO = ((fa)this).findViewById(2131430801);
         Bundle bundle3;
         if (bundle != null) {
             this.ar = bundle.getString("activity_instance_uuid_key");
@@ -683,12 +699,12 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
                     final byte[] byteArray = bundle.getByteArray("verification_triggered_metadata_update_request");
                     bundle3 = bundle2;
                     if (byteArray != null) {
-                        this.I = (aksf)agzi.parseFrom((agzi)aksf.a, byteArray, ExtensionRegistryLite.getGeneratedRegistry());
+                        this.I = (akui)ahbh.parseFrom((ahbh)akui.a, byteArray, ExtensionRegistryLite.getGeneratedRegistry());
                         bundle3 = bundle2;
                     }
                 }
-                catch (final ahab ahab) {
-                    this.av.k("Cannot restore metadata update after verification flow rotation.", ahab);
+                catch (final ahca ahca) {
+                    this.aw.h("Cannot restore metadata update after verification flow rotation.", (Throwable)ahca);
                     bundle3 = bundle2;
                 }
             }
@@ -699,18 +715,18 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
         if (TextUtils.isEmpty((CharSequence)this.ar)) {
             this.ar = UUID.randomUUID().toString();
         }
-        tcp.n((aum)this, this.aw.b(), (trb)new hks(this, 17), (trb)new fcy(this, bundle, 17));
-        aioe c = null;
-        Label_0552: {
+        teu.n((aun)this, this.as.a(), (ttg)new hlo(this, 17), (ttg)new fdc(this, bundle, 18));
+        aiqj c = null;
+        Label_0565: {
             if (bundle3 == null) {
-                final Intent ao = this.aO;
-                if (ao != null) {
-                    final Bundle extras = ao.getExtras();
+                final Intent ap = this.aP;
+                if (ap != null) {
+                    final Bundle extras = ap.getExtras();
                     if (extras != null) {
                         final byte[] byteArray2 = extras.getByteArray("navigation_endpoint");
                         if (byteArray2 != null) {
-                            c = vba.c(byteArray2);
-                            break Label_0552;
+                            c = vdb.c(byteArray2);
+                            break Label_0565;
                         }
                     }
                 }
@@ -718,11 +734,11 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
             c = null;
         }
         this.q.M(bundle3, c);
-        final Intent ao2 = this.aO;
-        if (ao2 != null) {
-            this.s.H = TimeUnit.SECONDS.toMicros(ao2.getIntExtra("video_time_limit_seconds", 0));
+        final Intent ap2 = this.aP;
+        if (ap2 != null) {
+            this.s.H = TimeUnit.SECONDS.toMicros(ap2.getIntExtra("video_time_limit_seconds", 0));
         }
-        final hts s = this.s;
+        final hun s = this.s;
         if (bundle != null) {
             s.h = bundle.getBoolean("helper_was_cellular_dialog_dismissed_by_user");
             s.k(bundle);
@@ -731,67 +747,67 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
             s.j = bundle.getBoolean("user_verification_eligible_key");
             s.A = (UploadFrontendIdMapHelper)bundle.getParcelable("fid_map_helper_key");
         }
-        final hts s2 = this.s;
+        final hun s2 = this.s;
         final View viewById = ((fa)this).findViewById(16908290);
         if (!s2.R) {
             s2.R = true;
-            s2.x = (TextView)viewById.findViewById(2131432239);
-            s2.t = (ViewAnimatorHelper)viewById.findViewById(2131432359);
-            s2.v = (ImageView)viewById.findViewById(2131432247);
-            s2.w = (ImageView)viewById.findViewById(2131432248);
-            s2.u = (NestedScrollView)viewById.findViewById(2131431271);
-            ((fa)s2.a).findViewById(2131432305).setVisibility(8);
+            s2.x = (TextView)viewById.findViewById(2131432242);
+            s2.t = (ViewAnimatorHelper)viewById.findViewById(2131432362);
+            s2.v = (ImageView)viewById.findViewById(2131432250);
+            s2.w = (ImageView)viewById.findViewById(2131432251);
+            s2.u = (NestedScrollView)viewById.findViewById(2131431274);
+            ((fa)s2.a).findViewById(2131432308).setVisibility(8);
             if (s2.o) {
                 final cl supportFragmentManager = ((bu)s2.a).getSupportFragmentManager();
-                s2.y = (uqz)supportFragmentManager.f("videoEditFragment");
+                s2.y = (usu)supportFragmentManager.f("videoEditFragment");
                 if (s2.y == null) {
-                    s2.y = new uqz();
-                    apgj apgj;
-                    if ((apgj = s2.aa.f().h) == null) {
-                        apgj = apgj.a;
+                    s2.y = new usu();
+                    apin apin;
+                    if ((apin = s2.Z.f().h) == null) {
+                        apin = apin.a;
                     }
                     boolean al;
-                    if (!apgj.s) {
-                        s2.Y.c();
+                    if (!apin.s) {
+                        s2.Y.g();
                         al = false;
                     }
                     else {
                         al = true;
                     }
-                    final uqz y = s2.y;
-                    ((uqx)y).aL = al;
-                    ((uqx)y).aK = false;
+                    final usu y = s2.y;
+                    ((uss)y).aL = al;
+                    ((uss)y).aK = false;
                     final boolean p = s2.p;
-                    y.bF(s2.H);
-                    final uqz y2 = s2.y;
-                    ((uqx)y2).aN = (p ? 1 : 0);
-                    ((uqx)y2).aO = s2.q;
-                    ((uqx)y2).aP = s2.b.q;
+                    y.bD(s2.H);
+                    final usu y2 = s2.y;
+                    ((uss)y2).aN = (p ? 1 : 0);
+                    ((uss)y2).aO = s2.q;
+                    ((uss)y2).aP = s2.b.q;
                     final ct i = supportFragmentManager.i();
-                    i.r(2131432305, (br)s2.y, "videoEditFragment");
+                    i.r(2131432308, (br)s2.y, "videoEditFragment");
                     i.a();
                     supportFragmentManager.ab();
-                    s2.e.a(tqt.e(s2.a.getApplicationContext()), "UPLOADS");
+                    s2.e.a(tsy.e(s2.a.getApplicationContext()), "UPLOADS");
                 }
-                s2.y.bC(s2.d);
+                s2.y.bA(s2.d);
             }
-            s2.t.c(2131431407, (trb)new htn(s2, 1));
-            s2.t.c(2131432289, (trb)new htn(s2, 0));
-            s2.t.c(2131428799, (trb)new htn(s2, 2));
+            s2.t.c(2131431410, (ttg)new hui(s2, 1));
+            s2.t.c(2131432292, (ttg)new hui(s2, 0));
+            s2.t.c(2131428799, (ttg)new hui(s2, 2));
             s2.f.f((BottomUiContainer)viewById.findViewById(2131427886));
             s2.X.c();
-            this.s.r = (htr)this;
-            final zcp k = this.K;
-            if (k instanceof hsr) {
-                ((hsr)k).b(this, ((fam)this).ol());
+            this.s.r = (hum)this;
+            final zei k = this.K;
+            if (k instanceof hto) {
+                ((hto)k).b(this, ((faq)this).ol());
             }
             final ep supportActionBar = ((fa)this).getSupportActionBar();
             supportActionBar.j(true);
-            supportActionBar.m(agw.a((Context)this, 2131233636));
+            supportActionBar.m(agx.a((Context)this, 2131233638));
             supportActionBar.A();
-            this.v.g(((fa)this).findViewById(16908290));
-            ((wwm)this.q).b(wya.b(9729), (aioe)null, this.s.c());
-            ((hth)this).aa.d((View)this.z.b, ((fa)this).findViewById(2131432359), ((fa)this).findViewById(2131428812));
+            this.v.h(((fa)this).findViewById(16908290));
+            ((wyn)this.q).b(xaa.b(9729), (aiqj)null, this.s.c());
+            ((huc)this).aa.d((View)this.z.c, ((fa)this).findViewById(2131432362), ((fa)this).findViewById(2131428812));
             final Object a2 = this.x.a;
             return;
         }
@@ -800,60 +816,60 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
     
     protected final void onDestroy() {
         super.onDestroy();
-        final hts s = this.s;
+        final hun s = this.s;
         if (s.a.isFinishing()) {
-            for (final admo admo : s.B) {
+            for (final adop adop : s.B) {
                 final UploadFrontendIdMapHelper a = s.A;
-                final String c = admo.c();
-                final adia c2 = s.C;
+                final String c = adop.c();
+                final adkb c2 = s.C;
                 if (a.e(c) && !a.d(c)) {
-                    c2.d(c, apfq.l);
+                    c2.d(c, aphu.l);
                     a.b.add(c);
                 }
             }
-            s.C.F((adif)s);
+            s.C.H((adkg)s);
         }
         if (this.isFinishing()) {
-            tcp.m(this.aw.c((aexg)htt.b, (Executor)this.h), (tcn)new htl(this.av, 0, (byte[])null));
+            teu.m(this.as.b((aezf)huo.b, (Executor)this.h), (tes)new hug(this.aw, 0, (byte[])null, (byte[])null, (byte[])null));
         }
-        this.au.b();
-        ((wwv)this.q).s();
+        this.av.b();
+        ((wyw)this.q).s();
     }
     
     protected final void onNewIntent(final Intent intent) {
         super.onNewIntent(intent);
-        if (((uyi)this.ah.c).f(45367973L) && adhw.h(this.aO, intent)) {
+        if (((vai)this.ah.c).f(45367973L) && adjx.h(this.aP, intent)) {
             return;
         }
         this.finish();
-        ((fam)this).startActivity(intent);
+        ((faq)this).startActivity(intent);
     }
     
     protected final void onPause() {
         super.onPause();
         this.y.b();
-        this.Q.f((Object)new tmy());
+        this.Q.f((Object)new vdh());
         this.Q.m((Object)this);
         this.r.a();
-        this.aD = false;
-        final hts s = this.s;
+        this.aE = false;
+        final hun s = this.s;
         s.S = false;
-        final uap x = s.X;
+        final ucs x = s.X;
         if (x.b && !x.e()) {
             final String h = x.h;
             if (h != null) {
-                x.m.C(h, apfp.aW);
+                x.m.E(h, apht.aX);
             }
         }
     }
     
     protected final void onPostResume() {
         super.onPostResume();
-        this.aD = true;
-        if (this.aB) {
-            this.aB = false;
+        this.aE = true;
+        if (this.aC) {
+            this.aC = false;
             if (!this.k.t()) {
-                this.p.b((Activity)this, (byte[])null, (zku)null);
+                this.p.b((Activity)this, (byte[])null, (zmr)null);
                 return;
             }
             this.u();
@@ -861,21 +877,21 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
     }
     
     public final void onRequestPermissionsResult(int n, final String[] array, final int[] array2) {
-        final hts s = this.s;
+        final hun s = this.s;
         if (n == 0) {
             if (s.V) {
                 s.V = false;
-                if (!acsm.j((Context)s.a)) {
-                    n = 2132020061;
+                if (!acuq.j((Context)s.a)) {
+                    n = 2132020062;
                 }
                 else {
-                    n = 2132020060;
+                    n = 2132020061;
                 }
-                final gbo d = gbq.d();
+                final gbv d = gbx.d();
                 d.c(0);
                 d.k((CharSequence)s.a.getString(n));
-                d.m((CharSequence)s.a.getString(2132020059), (View$OnClickListener)new hqg(s, 14));
-                s.g.n((actz)d.a());
+                ((acwc)d).m((CharSequence)s.a.getString(2132020060), (View$OnClickListener)new hrb(s, 14));
+                s.g.n((acwd)d.a());
             }
             return;
         }
@@ -886,9 +902,9 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
         super.onResume();
         this.y.e();
         this.Q.g((Object)this);
-        this.Q.f((Object)new tmy());
+        this.Q.f((Object)new tpe());
         this.s.S = true;
-        this.aB = true;
+        this.aC = true;
     }
     
     protected final void onResumeFragments() {
@@ -904,8 +920,8 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
         final String ar = this.ar;
         ar.getClass();
         bundle.putString("activity_instance_uuid_key", ar);
-        tcp.n((aum)this, this.aw.c((aexg)new gkq(this, 18), (Executor)afsl.a), (trb)new hks(this, 16), (trb)hen.t);
-        final hts s = this.s;
+        teu.n((aun)this, this.as.b((aezf)new ggp(this, 19), (Executor)afum.a), (ttg)new hlo(this, 16), (ttg)hid.s);
+        final hun s = this.s;
         bundle.putLong("max_known_video_length_key", s.k);
         bundle.putLong("required_length_for_verification_key", s.l);
         bundle.putBoolean("user_verification_eligible_key", s.j);
@@ -915,12 +931,12 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
             supportFragmentManager.J(bundle, "verification_fragment_key", (br)s.i);
         }
         if (s.t()) {
-            final zer m = s.m;
+            final zgm m = s.m;
             m.getClass();
             supportFragmentManager.J(bundle, "thumbnail_fragment_key", (br)m);
         }
         if (s.s()) {
-            final zfb n = s.n;
+            final zgu n = s.n;
             n.getClass();
             supportFragmentManager.J(bundle, "image_picker_fragment_key", (br)n);
         }
@@ -929,60 +945,64 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
         }
         bundle.putParcelable("fid_map_helper_key", (Parcelable)s.A);
         if (this.s.u()) {
-            final aksf i = this.I;
+            final akui i = this.I;
             if (i != null) {
-                bundle.putByteArray("verification_triggered_metadata_update_request", ((agxl)i).toByteArray());
+                bundle.putByteArray("verification_triggered_metadata_update_request", ((agzk)i).toByteArray());
             }
         }
     }
     
     protected final void onStart() {
         super.onStart();
-        this.aA = true;
+        this.aB = true;
     }
     
     protected final void onStop() {
         super.onStop();
-        this.aA = false;
-        if (this.aC) {
+        this.aB = false;
+        if (this.aD) {
             this.s.j();
-            this.aC = false;
+            this.aD = false;
         }
     }
     
+    public final wyw pF() {
+        return (wyw)this.q;
+    }
+    
     public final void q() {
-        tmy.o((Activity)this);
-        final alaz h = this.H;
+        tpe.o((Activity)this);
+        final aldc h = this.H;
         if (h != null && (h.b & 0x400) != 0x0) {
-            aioe aioe;
-            if ((aioe = h.m) == null) {
-                aioe = aioe.a;
+            aiqj aiqj;
+            if ((aiqj = h.n) == null) {
+                aiqj = aiqj.a;
             }
-            final ChannelCreationServiceEndpointOuterClass$ChannelCreationServiceEndpoint channelCreationServiceEndpointOuterClass$ChannelCreationServiceEndpoint = (ChannelCreationServiceEndpointOuterClass$ChannelCreationServiceEndpoint)((agzd)aioe).rr((agyr)ChannelCreationServiceEndpointOuterClass$ChannelCreationServiceEndpoint.channelCreationServiceEndpoint);
-            final hts s = this.s;
-            for (final admo admo : s.B) {
-                s.D.j(admo.c(), apfp.ar, admo.e(), admo.d());
+            final ChannelCreationServiceEndpointOuterClass$ChannelCreationServiceEndpoint channelCreationServiceEndpointOuterClass$ChannelCreationServiceEndpoint = (ChannelCreationServiceEndpointOuterClass$ChannelCreationServiceEndpoint)((ahbc)aiqj).rx((ahaq)ChannelCreationServiceEndpointOuterClass$ChannelCreationServiceEndpoint.channelCreationServiceEndpoint);
+            final hun s = this.s;
+            for (final adop adop : s.B) {
+                s.D.j(adop.c(), apht.ar, adop.e(), adop.d());
             }
             this.K.d(false);
             this.I();
-            final abpj ax = this.ax;
-            final hmi hmi = new hmi(this, 16);
-            final hmi hmi2 = new hmi(this, 17);
-            final vlx u = ((addp)ax.e).u();
+            final abrj az = this.az;
+            final hol hol = new hol(this, 14);
+            final hol hol2 = new hol(this, 15);
+            final vob u = ((adfq)az.e).u();
             u.a = channelCreationServiceEndpointOuterClass$ChannelCreationServiceEndpoint.c;
-            apxj d;
+            apzt d;
             if ((d = channelCreationServiceEndpointOuterClass$ChannelCreationServiceEndpoint.d) == null) {
-                d = apxj.a;
+                d = apzt.a;
             }
             u.d = d;
-            tcp.k(((addp)ax.e).v(u, (Executor)ax.h), (Executor)ax.h, (tcn)new etc(ax, (Runnable)hmi2, 9, null, null), (tco)new fct(ax, (Runnable)hmi, (Runnable)hmi2, 17, (byte[])null, (byte[])null));
+            teu.k(((adfq)az.e).v(u, (Executor)az.h), (Executor)az.h, (tes)new etf(az, hol2, 10, null, null), (tet)new fcy(az, (Runnable)hol, (Runnable)hol2, 17, (byte[])null, (byte[])null));
             return;
         }
         this.w();
     }
     
     public final void r() {
-        this.K.e(((hth)this).ad ^ true);
+        this.K.e(((huc)this).ad ^ true);
     }
     
     public final void s() {
@@ -991,87 +1011,87 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
     public final void t() {
         this.N = true;
         if (this.al.h()) {
-            final hts s = this.s;
-            final ajje ajje = (ajje)this.al.c();
-            ((fam)this).ol();
-            s.z(ajje);
+            final hun s = this.s;
+            final ajli ajli = (ajli)this.al.c();
+            ((faq)this).ol();
+            s.z(ajli);
             this.m().b(2131429315);
         }
     }
     
     public final void u() {
-        if (!this.aA || !this.k.t() || !this.E) {
+        if (!this.aB || !this.k.t() || !this.E) {
             if (!this.E) {
                 this.F = true;
             }
             return;
         }
         this.F = false;
-        if (!this.aC) {
-            final hts s = this.s;
+        if (!this.aD) {
+            final hun s = this.s;
             final Intent intent = this.getIntent();
             this.p.getClass();
             intent.getClass();
-            final alff g = adio.g(s.B, s.T);
-            s.d.l((wxz)new wws(wya.c(9701)));
-            s.d.w((wxz)new wws(wya.c(9701)), g);
-            s.d.l((wxz)new wws(wya.c(152818)));
-            s.d.w((wxz)new wws(wya.c(152818)), g);
-            s.d.l((wxz)new wws(wya.c(9702)));
-            s.d.w((wxz)new wws(wya.c(9702)), g);
-            s.g(13618, g);
-            s.g(13617, g);
-            s.g(13616, g);
-            s.g(13619, g);
-            s.g(13620, g);
-            s.g(13621, g);
-            final uap x = s.X;
+            final alhi c = adkp.c(s.B, s.T);
+            s.d.l((wzz)new wyt(xaa.c(9701)));
+            s.d.w((wzz)new wyt(xaa.c(9701)), c);
+            s.d.l((wzz)new wyt(xaa.c(152818)));
+            s.d.w((wzz)new wyt(xaa.c(152818)), c);
+            s.d.l((wzz)new wyt(xaa.c(9702)));
+            s.d.w((wzz)new wyt(xaa.c(9702)), c);
+            s.g(13618, c);
+            s.g(13617, c);
+            s.g(13616, c);
+            s.g(13619, c);
+            s.g(13620, c);
+            s.g(13621, c);
+            final ucs x = s.X;
             if (x.b) {
-                final int g2 = x.p.g();
+                final int g = x.p.g();
                 final int f = x.p.f();
-                final algl algl = g.g.get(0);
-                final agza builder = ((agzi)g).toBuilder();
-                final agza builder2 = ((agzi)algl).toBuilder();
-                algk algk;
-                if ((algk = algl.e) == null) {
-                    algk = algk.a;
+                final alip alip = (alip)c.g.get(0);
+                final ahaz builder = ((ahbh)c).toBuilder();
+                final ahaz builder2 = ((ahbh)alip).toBuilder();
+                alio alio;
+                if ((alio = alip.e) == null) {
+                    alio = alio.a;
                 }
-                final agza builder3 = ((agzi)algk).toBuilder();
+                final ahaz builder3 = ((ahbh)alio).toBuilder();
                 builder3.copyOnWrite();
-                final algk algk2 = (algk)builder3.instance;
-                algk2.b |= 0x4000;
-                algk2.m = g2;
+                final alio alio2 = (alio)builder3.instance;
+                alio2.b |= 0x4000;
+                alio2.m = g;
                 builder3.copyOnWrite();
-                final algk algk3 = (algk)builder3.instance;
-                algk3.b |= 0x8000;
-                algk3.n = f;
+                final alio alio3 = (alio)builder3.instance;
+                alio3.b |= 0x8000;
+                alio3.n = f;
                 builder2.copyOnWrite();
-                final algl algl2 = (algl)builder2.instance;
-                final algk e = (algk)builder3.build();
+                final alip alip2 = (alip)builder2.instance;
+                final alio e = (alio)builder3.build();
                 e.getClass();
-                algl2.e = e;
-                algl2.b |= 0x8;
+                alip2.e = e;
+                alip2.b |= 0x8;
                 builder.copyOnWrite();
-                alff.b((alff)builder.instance, (algl)builder2.build());
-                x.i = (alff)builder.build();
-                final wws wws = new wws(wya.c(152354));
-                x.j.D((wxz)wws);
-                final wwv j = x.j;
-                final alff i = x.i;
+                alhi.b((alhi)builder.instance, (alip)builder2.build());
+                x.i = (alhi)builder.build();
+                final wyt wyt = new wyt(xaa.c(152354));
+                x.j.D((wzz)wyt);
+                final wyw j = x.j;
+                final alhi i = x.i;
                 i.getClass();
-                j.w((wxz)wws, i);
+                j.w((wzz)wyt, i);
             }
-            s.U = adhw.c(intent);
-            final adhw e2 = s.E;
-            final wwv d = s.d;
+            s.U = adjx.c(intent);
+            final adjx e2 = s.E;
+            final wyw d = s.d;
             final String t = s.T;
-            final adof s2 = s.s;
+            final adqh s2 = s.s;
             final ArrayList q = new ArrayList();
             final String action = intent.getAction();
             if (action != null) {
                 if (!action.equals("com.google.android.youtube.intent.action.UPLOAD") && !action.equals("com.google.android.youtube.intent.action.INTERNAL_UPLOAD")) {
                     if (action.equals("android.intent.action.SEND_MULTIPLE") && intent.hasExtra("android.intent.extra.STREAM")) {
-                        d.J(3, (wxz)new wws(wya.c(13617)), alff.a);
+                        d.J(3, (wzz)new wyt(xaa.c(13617)), alhi.a);
                         final Bundle extras = intent.getExtras();
                         if (extras != null) {
                             final Object value = extras.get("android.intent.extra.STREAM");
@@ -1081,7 +1101,7 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
                                     for (int size = parcelableArrayListExtra.size(), k = 0; k < size; ++k) {
                                         final Parcelable parcelable = (Parcelable)parcelableArrayListExtra.get(k);
                                         if (parcelable instanceof Uri) {
-                                            q.add(adhv.a((Uri)parcelable).g());
+                                            q.add(adjw.a((Uri)parcelable).g());
                                         }
                                     }
                                 }
@@ -1089,33 +1109,33 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
                             else if (value instanceof String) {
                                 final String stringExtra = intent.getStringExtra("android.intent.extra.STREAM");
                                 if (stringExtra != null) {
-                                    final Iterator iterator = aeyk.b(',').f(stringExtra).iterator();
+                                    final Iterator iterator = afaj.b(',').f((CharSequence)stringExtra).iterator();
                                     while (iterator.hasNext()) {
-                                        q.add(adhv.a(Uri.parse((String)iterator.next())).g());
+                                        q.add(adjw.a(Uri.parse((String)iterator.next())).g());
                                     }
                                 }
                             }
                         }
                     }
                     else if (action.equals("android.intent.action.SEND")) {
-                        d.J(3, (wxz)new wws(wya.c(13616)), alff.a);
+                        d.J(3, (wzz)new wyt(xaa.c(13616)), alhi.a);
                         final Bundle extras2 = intent.getExtras();
                         if (extras2 != null) {
                             final Parcelable parcelable2 = extras2.getParcelable("android.intent.extra.STREAM");
                             if (parcelable2 instanceof Uri) {
-                                q.add(adhv.a((Uri)parcelable2).g());
+                                q.add(adjw.a((Uri)parcelable2).g());
                             }
                         }
                     }
                 }
                 else {
-                    d.J(3, (wxz)new wws(wya.c(13618)), adio.f(t, (String)null));
+                    d.J(3, (wzz)new wyt(xaa.c(13618)), adkp.b(t, null));
                     final Uri data = intent.getData();
                     if (data != null) {
-                        final arzw a = adhv.a(data);
-                        a.c = aexq.j(intent.getStringExtra("com.google.android.libraries.youtube.upload.extra_upload_activity_preset_pending_upload_video_thumbnail_path"));
+                        final asbe a = adjw.a(data);
+                        a.c = aezp.j((Object)intent.getStringExtra("com.google.android.libraries.youtube.upload.extra_upload_activity_preset_pending_upload_video_thumbnail_path"));
                         if (!TextUtils.isEmpty((CharSequence)t)) {
-                            a.b = aexq.k(t);
+                            a.b = aezp.k((Object)t);
                         }
                         q.add(a.g());
                     }
@@ -1124,15 +1144,15 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
             s.Q = q;
             final Iterator iterator2 = s.Q.iterator();
             while (iterator2.hasNext()) {
-                final adhv adhv = (adhv)iterator2.next();
-                if (adhv == null || Uri.EMPTY.equals((Object)adhv.a)) {
+                final adjw adjw = (adjw)iterator2.next();
+                if (adjw == null || Uri.EMPTY.equals((Object)adjw.a)) {
                     iterator2.remove();
                 }
             }
             if (s.Q.isEmpty()) {
-                trn.l("no media content uri(s)");
-                s.d.J(3, (wxz)new wws(wya.c(13619)), s.c());
-                tmy.x((Context)s.a, 2132017992, 1);
+                ttr.l("no media content uri(s)");
+                s.d.J(3, (wzz)new wyt(xaa.c(13619)), s.c());
+                tpe.x((Context)s.a, 2132017993, 1);
                 s.d();
             }
             else {
@@ -1142,7 +1162,7 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
                 s.J = true;
                 s.l();
             }
-            this.aC = true;
+            this.aD = true;
         }
         if (this.H == null) {
             this.L();
@@ -1152,11 +1172,11 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
             this.L();
             return;
         }
-        this.runOnUiThread((Runnable)new hmi(this, 18));
+        this.runOnUiThread((Runnable)new hol(this, 16));
     }
     
     public final void v() {
-        if (this.M && this.aG) {
+        if (this.M && this.aH) {
             this.L.setVisibility(0);
             return;
         }
@@ -1164,46 +1184,46 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
     }
     
     public final void w() {
-        final alaz h = this.H;
+        final aldc h = this.H;
         if (h != null && (h.b & 0x20) != 0x0) {
-            final vax i = this.i;
-            aioe aioe;
-            if ((aioe = h.i) == null) {
-                aioe = aioe.a;
+            final vcy i = this.i;
+            aiqj aiqj;
+            if ((aiqj = h.i) == null) {
+                aiqj = aiqj.a;
             }
-            i.a(aioe);
+            i.a(aiqj);
             return;
         }
         this.s.f();
     }
     
     protected final boolean x() {
-        if (!((hth)this).ac) {
-            final uqz y = this.s.y;
-            EditableVideo bu;
+        if (!((huc)this).ac) {
+            final usu y = this.s.y;
+            EditableVideo bs;
             if (y != null) {
-                bu = y.bu();
+                bs = y.bs();
             }
             else {
-                bu = null;
+                bs = null;
             }
-            if (bu == null || bu.K()) {
+            if (bs == null || bs.K()) {
                 return false;
             }
         }
         return true;
     }
     
-    public final void y(final agza agza) {
-        this.I = (aksf)agza.build();
+    public final void y(final ahaz ahaz) {
+        this.I = (akui)ahaz.build();
         this.s.f();
     }
     
     public final void z(final String[] array) {
-        if (this.aQ.getVisibility() == 0 || !TextUtils.isEmpty((CharSequence)this.aq)) {
-            tcp.n((aum)this, this.aw.c((aexg)new gkq(this, 19), (Executor)afsl.a), (trb)hen.u, (trb)ifc.b);
+        if (this.aR.getVisibility() == 0 || !TextUtils.isEmpty((CharSequence)this.aq)) {
+            teu.n((aun)this, this.as.b((aezf)new ggp(this, 20), (Executor)afum.a), (ttg)hid.t, (ttg)hid.u);
         }
-        tmy.p(this.getCurrentFocus());
+        tpe.p(this.getCurrentFocus());
         final Intent intent = this.getIntent();
         final Intent intent2 = new Intent();
         int n2;
@@ -1221,25 +1241,25 @@ public class UploadActivity extends htd implements htr, reu, wwu, hst, rky, uct,
         this.setResult(-1, intent2);
         this.finish();
         if (n2 != 0) {
-            final aioe aioe = (aioe)((agzi)vba.a("FEmy_videos")).toBuilder().build();
-            agza agza;
-            if (!((agzd)aioe).rs((agyr)amoa.b)) {
-                agza = ((agzi)amob.a).createBuilder();
+            final aiqj aiqj = (aiqj)((ahaz)((ahbh)vdb.a("FEmy_videos")).toBuilder()).build();
+            ahaz ahaz;
+            if (!((ahbc)aiqj).ry((ahaq)amqf.b)) {
+                ahaz = ((ahbh)amqg.a).createBuilder();
             }
             else {
-                agza = ((agzi)((agzd)aioe).rr((agyr)amoa.b)).toBuilder();
+                ahaz = ((ahbh)((ahbc)aiqj).rx((ahaq)amqf.b)).toBuilder();
             }
-            agza.copyOnWrite();
-            final amob amob = (amob)agza.instance;
-            amob.b |= 0x2;
-            amob.d = 9701;
-            final agzc agzc = (agzc)((agzi)aioe).toBuilder();
-            agzc.e((agyr)amoa.b, agza.build());
-            final agzc agzc2 = (agzc)((agzi)((wwm)this.q).f((aioe)agzc.build())).toBuilder();
-            final Intent j = this.ay.j();
-            j.setFlags(67108864);
-            j.putExtra("navigation_endpoint", ((agxl)agzc2.build()).toByteArray());
-            ((fam)this).startActivity(j);
+            ahaz.copyOnWrite();
+            final amqg amqg = (amqg)ahaz.instance;
+            amqg.b |= 0x2;
+            amqg.d = 9701;
+            final ahbb ahbb = (ahbb)((ahbh)aiqj).toBuilder();
+            ahbb.e((ahaq)amqf.b, (Object)ahaz.build());
+            final ahbb ahbb2 = (ahbb)((ahbh)((wyn)this.q).f((aiqj)((ahaz)ahbb).build())).toBuilder();
+            final Intent i = this.ay.i();
+            i.setFlags(67108864);
+            i.putExtra("navigation_endpoint", ((agzk)((ahaz)ahbb2).build()).toByteArray());
+            ((faq)this).startActivity(i);
         }
     }
 }

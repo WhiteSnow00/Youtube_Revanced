@@ -900,7 +900,6 @@
     <dimen name="engagement_panel_header_title_subtitle_gap">4dp</dimen>
     <dimen name="engagement_panel_header_vertical_margin">8dp</dimen>
     <dimen name="engagement_panel_lower_view_scrim_elevation">4dp</dimen>
-    <dimen name="engagement_panel_padding">24dp</dimen>
     <dimen name="engagement_panel_scroll_cancel_padding">32dp</dimen>
     <dimen name="engagement_toolbar_with_label_bottom_padding">16dp</dimen>
     <dimen name="enlarged_image_notification_icon_size">128dp</dimen>
@@ -3316,6 +3315,8 @@
     <dimen name="shorts_camera_gallery_waiting_icon_image_corner_radius">3dp</dimen>
     <dimen name="shorts_camera_gallery_waiting_icon_stroke_width">2dp</dimen>
     <dimen name="shorts_camera_next_button_layout_padding">8dp</dimen>
+    <dimen name="shorts_camera_recording_tooltip_anchor_width">2dp</dimen>
+    <dimen name="shorts_camera_recording_tooltip_gap">8dp</dimen>
     <dimen name="shorts_camera_recording_tooltip_height">24dp</dimen>
     <dimen name="shorts_camera_recording_tooltip_margin_top">4dp</dimen>
     <dimen name="shorts_camera_recording_tooltip_padding_horizontal">10dp</dimen>

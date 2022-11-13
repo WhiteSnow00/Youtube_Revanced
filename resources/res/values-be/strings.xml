@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Назад да альбома</string>
     <string name="accessibility_navigation_back_button">Назад</string>
     <string name="accessibility_new_content_available">Ёсць новае змесціва</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Новыя відэа</string>
     <string name="accessibility_next">Наступнае відэа</string>
     <string name="accessibility_offline_button_cancel">Спыніць спампоўку</string>
     <string name="accessibility_offline_button_cannot_save">Нельга спампаваць</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Маніторынг і кіраванне данымі</string>
     <string name="data_saving_persistent_title">Эканомія трафіка</string>
     <string name="data_saving_select_quality_every_video_switch_title">Выберыце якасць для кожнага відэа</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Паменшыць якасць разумных спамповак</string>
     <string name="data_saving_snack_bar_action_button">Прагледзець</string>
     <string name="data_saving_snack_bar_text">Гэта змяненне паўплывае на вашы налады захавання даных</string>
     <string name="data_saving_upload_wifi_only_switch_title">Запампоўваць толькі праз Wi-Fi</string>
@@ -719,7 +720,7 @@
     <string name="image_gallery_zero_state_text_secondary">Зрабіце фотаздымак, каб дадаць яго да публікацыі</string>
     <string name="image_upload_error">Не ўдалося запампаваць відарыс. Паўтарыце спробу.</string>
     <string name="image_upload_something_went_wrong">Нешта пайшло не так.</string>
-    <string name="immersive_accessibility_player_overlay">Player, double tap to bring up player controls</string>
+    <string name="immersive_accessibility_player_overlay">Прайгравальнік, націсніце двойчы, каб адкрыць элементы кіравання прайгравальнікам</string>
     <string name="in_app_update_downloaded_message">Абнаўленне спампавана</string>
     <string name="in_app_update_downloading_message">Спампоўваецца абнаўленне...</string>
     <string name="in_app_update_restart_button">ПЕРАЗАПУСЦІЦЬ</string>
@@ -1439,7 +1440,7 @@
     <string name="pref_settings_video_quality_nonbeta">Налады якасці відэа</string>
     <string name="pref_smart_downloads_description">Наладзіць выкарыстанне сховішча для Разумнага спампоўвання</string>
     <string name="pref_smart_downloads_opted_in_title">Разумнае спампоўванне</string>
-    <string name="pref_smart_downloads_quality_title">Smart downloads quality</string>
+    <string name="pref_smart_downloads_quality_title">Якасць разумных спамповак</string>
     <string name="pref_smart_downloads_summary">Аўтаматычнае спампоўванне рэкамендаваных відэа пры падключэнні да сеткі Wi-Fi</string>
     <string name="pref_subtitles_category">Субцітры</string>
     <string name="pref_upload_policy_summary">Вызначце параметры сеткі для запампавання</string>
@@ -1787,7 +1788,7 @@
     <string name="shorts_segment_import_failed_text">Не ўдалося імпартаваць фрагмент</string>
     <string name="shorts_segment_import_timeout_text">Імпарт фрагмента пратэрмінаваны</string>
     <string name="shorts_selected_duration_title">%1$d с</string>
-    <string name="shorts_sound_added_tooltip_time_x">Sound added to first %1$ds</string>
+    <string name="shorts_sound_added_tooltip_time_x">Гук дададзены да першых %1$d с</string>
     <string name="shorts_speed_control_fast_label">Хутка</string>
     <string name="shorts_speed_control_fast_text">2X</string>
     <string name="shorts_speed_control_normal_label">Звычайна</string>

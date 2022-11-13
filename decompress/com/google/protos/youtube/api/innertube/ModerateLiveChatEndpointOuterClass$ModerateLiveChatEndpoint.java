@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint extends agzi implements ahax
+public final class ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint extends ahbh implements ahcw
 {
     public static final ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg moderateLiveChatEndpoint;
-    public agyc b;
+    private static volatile ahdd c;
+    public static final ahbf moderateLiveChatEndpoint;
+    public ahab b;
     private int d;
     
     static {
         final ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint a2 = new ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint();
-        agzi.registerDefaultInstance((Class)ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint.class, (agzi)(a = a2));
-        moderateLiveChatEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 125606357, ahcm.k, (Class)ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint.class);
+        ahbh.registerDefaultInstance((Class)ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint.class, (ahbh)(a = a2));
+        moderateLiveChatEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 125606357, ahek.k, (Class)ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint.class);
     }
     
     private ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint() {
-        this.b = agyc.b;
+        this.b = ahab.b;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint.c) == null) {
                     synchronized (ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint.class) {
                         if (ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint.c == null) {
-                            ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint.c = (ahbe)new agzb((agzi)ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint.a);
+                            ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint.c = (ahdd)new ahba((ahbh)ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint e
                 return ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint.a);
+                return new ahaz((ahbh)ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint.a);
             }
             case 3: {
                 return new ModerateLiveChatEndpointOuterClass$ModerateLiveChatEndpoint();

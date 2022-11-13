@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">앨범으로 돌아가기</string>
     <string name="accessibility_navigation_back_button">뒤로</string>
     <string name="accessibility_new_content_available">새로운 콘텐츠 시청 가능</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">새 동영상</string>
     <string name="accessibility_next">다음 동영상</string>
     <string name="accessibility_offline_button_cancel">다운로드 중지</string>
     <string name="accessibility_offline_button_cannot_save">오프라인 저장할 수 없음</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">데이터 모니터링 및 제어</string>
     <string name="data_saving_persistent_title">데이터 절약</string>
     <string name="data_saving_select_quality_every_video_switch_title">동영상별로 화질 선택</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">스마트 오프라인 저장 화질 낮추기</string>
     <string name="data_saving_snack_bar_action_button">보기</string>
     <string name="data_saving_snack_bar_text">이 변경사항은 데이터 절약 설정에 영향을 미칩니다.</string>
     <string name="data_saving_upload_wifi_only_switch_title">Wi-Fi에서만 업로드</string>

@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Alboma qayıdın</string>
     <string name="accessibility_navigation_back_button">Geri</string>
     <string name="accessibility_new_content_available">Yeni məzmun əlçatımlıdır</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Yeni Videolar</string>
     <string name="accessibility_next">Növbəti video</string>
     <string name="accessibility_offline_button_cancel">Endirməni dayandırın</string>
     <string name="accessibility_offline_button_cannot_save">Endirmək olmur</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Data monitorinqi və kontrol</string>
     <string name="data_saving_persistent_title">Trafikə qənaət</string>
     <string name="data_saving_select_quality_every_video_switch_title">Hər videonun keyfiyyətini təyin edin</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Smart yükləmələrin keyfiyyətini azaldın</string>
     <string name="data_saving_snack_bar_action_button">Baxın</string>
     <string name="data_saving_snack_bar_text">Bu dəyişiklik data yadda saxlama ayarlarına təsir edir</string>
     <string name="data_saving_upload_wifi_only_switch_title">Yalnız Wi-Fi ilə yükləyin</string>
@@ -719,7 +720,7 @@
     <string name="image_gallery_zero_state_text_secondary">Posta əlavə etmək üçün foto seçin</string>
     <string name="image_upload_error">Şəkil yüklənmədi. Yenidən sınayın.</string>
     <string name="image_upload_something_went_wrong">Xəta oldu.</string>
-    <string name="immersive_accessibility_player_overlay">Player, double tap to bring up player controls</string>
+    <string name="immersive_accessibility_player_overlay">Oyunçu, oyunçu idarəetmələrini açmaq üçün iki dəfə toxunun</string>
     <string name="in_app_update_downloaded_message">Güncəllənmə endirildi</string>
     <string name="in_app_update_downloading_message">Güncəllənmə endirilir…</string>
     <string name="in_app_update_restart_button">YENİDƏN BAŞLADIN</string>
@@ -1439,7 +1440,7 @@
     <string name="pref_settings_video_quality_nonbeta">Video keyfiyyəti tərcihləri</string>
     <string name="pref_smart_downloads_description">Smart endirmələr üçün yaddaş istifadəsini tənzimləyin</string>
     <string name="pref_smart_downloads_opted_in_title">Smart endirmələr</string>
-    <string name="pref_smart_downloads_quality_title">Smart downloads quality</string>
+    <string name="pref_smart_downloads_quality_title">Smart endirmə keyfiyyəti</string>
     <string name="pref_smart_downloads_summary">Tövsiyə olunan videoları Wi-Fi vasitəsilə avtomatik endirin</string>
     <string name="pref_subtitles_category">Subtitrlər</string>
     <string name="pref_upload_policy_summary">Yükləmələr üçün şəbəkə tərcihlərini bildirin</string>
@@ -1787,7 +1788,7 @@
     <string name="shorts_segment_import_failed_text">Seqmenti idxal etmək alınmadı</string>
     <string name="shorts_segment_import_timeout_text">Seqment idxalı üçün ayrılan vaxt limiti keçildi</string>
     <string name="shorts_selected_duration_title">%1$d saniyə</string>
-    <string name="shorts_sound_added_tooltip_time_x">Sound added to first %1$ds</string>
+    <string name="shorts_sound_added_tooltip_time_x">İlk %1$d saniyəyə səs əlavə edildi</string>
     <string name="shorts_speed_control_fast_label">Sürətli</string>
     <string name="shorts_speed_control_fast_text">2X</string>
     <string name="shorts_speed_control_normal_label">Normal</string>

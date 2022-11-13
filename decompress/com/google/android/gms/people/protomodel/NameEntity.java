@@ -22,7 +22,7 @@ public class NameEntity extends AbstractSafeParcelable implements Name
     public final String g;
     
     static {
-        CREATOR = (Parcelable$Creator)new njx(8);
+        CREATOR = (Parcelable$Creator)new nlj(7);
     }
     
     public NameEntity(final PersonFieldMetadataEntity a, final String b, final String c, final String d, final String e, final String f, final String g) {
@@ -36,7 +36,7 @@ public class NameEntity extends AbstractSafeParcelable implements Name
     }
     
     public final PersonFieldMetadata a() {
-        return this.a;
+        return (PersonFieldMetadata)this.a;
     }
     
     public final String b() {
@@ -63,7 +63,7 @@ public class NameEntity extends AbstractSafeParcelable implements Name
             return true;
         }
         final Name name = (Name)o;
-        return kgk.ba((Object)this.a(), (Object)name.a()) && kgk.ba((Object)this.b(), (Object)name.b()) && kgk.ba((Object)this.g(), (Object)name.g()) && kgk.ba((Object)this.e(), (Object)name.e()) && kgk.ba((Object)this.c(), (Object)name.c()) && kgk.ba((Object)this.f(), (Object)name.f()) && kgk.ba((Object)this.d(), (Object)name.d());
+        return khl.be((Object)((Name)this).a(), (Object)name.a()) && khl.be((Object)((Name)this).b(), (Object)name.b()) && khl.be((Object)((Name)this).g(), (Object)name.g()) && khl.be((Object)((Name)this).e(), (Object)name.e()) && khl.be((Object)((Name)this).c(), (Object)name.c()) && khl.be((Object)((Name)this).f(), (Object)name.f()) && khl.be((Object)((Name)this).d(), (Object)name.d());
     }
     
     public final String f() {
@@ -75,18 +75,18 @@ public class NameEntity extends AbstractSafeParcelable implements Name
     }
     
     public final int hashCode() {
-        return Arrays.hashCode(new Object[] { this.a(), this.b(), this.g(), this.e(), this.c(), this.f(), this.d() });
+        return Arrays.hashCode(new Object[] { ((Name)this).a(), ((Name)this).b(), ((Name)this).g(), ((Name)this).e(), ((Name)this).c(), ((Name)this).f(), ((Name)this).d() });
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        final int i = kgk.I(parcel);
-        kgk.ab(parcel, 2, (Parcelable)this.a, n);
-        kgk.ac(parcel, 3, this.b);
-        kgk.ac(parcel, 4, this.g);
-        kgk.ac(parcel, 5, this.d);
-        kgk.ac(parcel, 6, this.e);
-        kgk.ac(parcel, 7, this.f);
-        kgk.ac(parcel, 17, this.c);
-        kgk.J(parcel, i);
+        final int m = khl.M(parcel);
+        khl.af(parcel, 2, (Parcelable)this.a, n);
+        khl.ag(parcel, 3, this.b);
+        khl.ag(parcel, 4, this.g);
+        khl.ag(parcel, 5, this.d);
+        khl.ag(parcel, 6, this.e);
+        khl.ag(parcel, 7, this.f);
+        khl.ag(parcel, 17, this.c);
+        khl.N(parcel, m);
     }
 }

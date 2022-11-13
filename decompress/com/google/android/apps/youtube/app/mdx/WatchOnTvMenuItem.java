@@ -10,17 +10,17 @@ import android.view.MenuItem;
 import android.app.Activity;
 import j$.util.Optional;
 
-public class WatchOnTvMenuItem implements fzi, tfh
+public class WatchOnTvMenuItem implements fzq, thl
 {
     public boolean a;
     public Optional b;
     private final Activity c;
-    private final gko d;
-    private final wzt e;
-    private asic f;
-    private final uyi g;
+    private final gkx d;
+    private final xbt e;
+    private asir f;
+    private final vai g;
     
-    public WatchOnTvMenuItem(final Activity c, final gko d, final wzt e, final uyi g) {
+    public WatchOnTvMenuItem(final Activity c, final gkx d, final xbt e, final vai g) {
         this.c = c;
         this.d = d;
         this.e = e;
@@ -29,8 +29,12 @@ public class WatchOnTvMenuItem implements fzi, tfh
         this.g = g;
     }
     
-    private final asic s() {
-        return this.e.o().aa(ashw.a()).aB((asix)new hzh(this, 5));
+    private final asir s() {
+        return this.e.o().af(asil.a()).aH((asjm)new iad(this, 4));
+    }
+    
+    public final thh g() {
+        return thh.b;
     }
     
     public final int j() {
@@ -41,8 +45,23 @@ public class WatchOnTvMenuItem implements fzi, tfh
         return 0;
     }
     
-    public final fyz l() {
+    public final fzh l() {
         return null;
+    }
+    
+    public final void lW(final aun aun) {
+    }
+    
+    public final void m() {
+    }
+    
+    public final void mM(final aun aun) {
+    }
+    
+    public final void mq(final aun aun) {
+    }
+    
+    public final void my(final aun aun) {
     }
     
     public final boolean n() {
@@ -58,35 +77,41 @@ public class WatchOnTvMenuItem implements fzi, tfh
         menuItem.setShowAsAction(0);
     }
     
-    public final void oS(final aum aum) {
-        if (this.f.tx()) {
+    public final void oS(final aun aun) {
+        if (this.f.tA()) {
             this.f = this.s();
         }
     }
     
-    public final void oW(final aum aum) {
-        asjg.b((AtomicReference)this.f);
+    public final void oT() {
+        tfg.c((thl)this);
+    }
+    
+    public final void oW() {
+        tfg.b((thl)this);
+    }
+    
+    public final void oX(final aun aun) {
+        asjv.b((AtomicReference)this.f);
     }
     
     public final boolean p() {
-        final boolean at = this.g.aT();
+        final boolean au = this.g.aU();
         boolean b = false;
-        final boolean b2 = at && this.g.aU();
+        final boolean b2 = au && this.g.aV();
         final Activity c = this.c;
-        if (this.d.a() == gkm.b) {
+        if (this.d.a() == gkv.b) {
             b = true;
         }
-        c.startActivity(xkm.al((Context)c, b, b2));
+        c.startActivity(xmm.X((Context)c, b, b2));
         return true;
     }
     
-    @Override
     public final int q() {
         return 103;
     }
     
-    @Override
     public final CharSequence r() {
-        return this.c.getString(2132018662);
+        return this.c.getString(2132018663);
     }
 }

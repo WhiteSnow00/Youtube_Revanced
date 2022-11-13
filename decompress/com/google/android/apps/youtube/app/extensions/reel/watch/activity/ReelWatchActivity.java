@@ -4,6 +4,7 @@
 
 package com.google.android.apps.youtube.app.extensions.reel.watch.activity;
 
+import java.util.Map;
 import android.view.MenuItem;
 import android.view.Menu;
 import java.util.concurrent.Callable;
@@ -17,24 +18,35 @@ import android.os.SystemClock;
 import android.app.Activity;
 import android.content.Context;
 
-public final class ReelWatchActivity extends hjw implements aemu, aenm
+public final class ReelWatchActivity extends hkr implements aeou, aepm
 {
-    private hkj b;
-    private final aepy c;
+    private hlf b;
+    private final aerz c;
     private boolean d;
     private Context e;
-    private aun f;
+    private auo f;
     private boolean g;
     
     public ReelWatchActivity() {
-        this.c = aepy.a((Activity)this);
+        this.c = aerz.a((Activity)this);
         SystemClock.elapsedRealtime();
-        ((qt)this).addOnContextAvailableListener((rc)new qn(this, 19));
+        ((qt)this).addOnContextAvailableListener((rc)new jmk(this, 1));
     }
     
-    private final hkj e() {
+    private final hlf e() {
         this.d();
         return this.b;
+    }
+    
+    public final /* bridge */ Object aN() {
+        final hlf b = this.b;
+        if (b == null) {
+            throw new IllegalStateException("peer() called before initialized.");
+        }
+        if (!this.g) {
+            return b;
+        }
+        throw new IllegalStateException("peer() called after destroyed.");
     }
     
     public final void applyOverrideConfiguration(final Configuration configuration) {
@@ -42,14 +54,18 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
         if ((context = this.getBaseContext()) == null) {
             context = this.e;
         }
-        aety.b(context);
+        aeuz.c(context);
         super.applyOverrideConfiguration(configuration);
     }
     
     protected final void attachBaseContext(final Context e) {
-        aety.a(this.e = e);
+        aeuz.b(this.e = e);
         super.attachBaseContext(e);
         this.e = null;
+    }
+    
+    public final arku b() {
+        return (arku)aeps.a((Activity)this);
     }
     
     public final void d() {
@@ -58,11 +74,11 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
         // 
         // Original Bytecode:
         // 
-        //     1: getfield        com/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity.b:Lhkj;
-        //     4: ifnonnull       645
+        //     1: getfield        com/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity.b:Lhlf;
+        //     4: ifnonnull       660
         //     7: aload_0        
         //     8: getfield        com/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity.d:Z
-        //    11: ifeq            634
+        //    11: ifeq            649
         //    14: aload_0        
         //    15: getfield        com/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity.g:Z
         //    18: ifeq            41
@@ -76,276 +92,277 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
         //    37: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
         //    40: athrow         
         //    41: ldc             "CreateComponent"
-        //    43: invokestatic    aesw.o:(Ljava/lang/String;)Laere;
-        //    46: astore_1       
+        //    43: invokestatic    aeux.o:(Ljava/lang/String;)Laetf;
+        //    46: astore_2       
         //    47: aload_0        
-        //    48: invokevirtual   hjw.aR:()Ljava/lang/Object;
+        //    48: invokevirtual   hkr.aR:()Ljava/lang/Object;
         //    51: pop            
-        //    52: aload_1        
-        //    53: invokevirtual   aere.close:()V
+        //    52: aload_2        
+        //    53: invokevirtual   aetf.close:()V
         //    56: ldc             "CreatePeer"
-        //    58: invokestatic    aesw.o:(Ljava/lang/String;)Laere;
-        //    61: astore_2       
+        //    58: invokestatic    aeux.o:(Ljava/lang/String;)Laetf;
+        //    61: astore_1       
         //    62: aload_0        
-        //    63: invokevirtual   hjw.aR:()Ljava/lang/Object;
-        //    66: astore_3       
-        //    67: aload_3        
-        //    68: checkcast       Lesm;
-        //    71: getfield        esm.d:Latjj;
-        //    74: invokeinterface atjj.a:()Ljava/lang/Object;
-        //    79: checkcast       Landroid/app/Activity;
-        //    82: astore          4
-        //    84: aload           4
-        //    86: instanceof      Lcom/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity;
-        //    89: ifeq            501
-        //    92: aload           4
-        //    94: checkcast       Lcom/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity;
-        //    97: astore          5
-        //    99: aload           5
-        //   101: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
-        //   104: pop            
-        //   105: aload_3        
-        //   106: checkcast       Lesm;
-        //   109: getfield        esm.fc:Latjj;
-        //   112: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   117: checkcast       Lhjp;
-        //   120: astore          4
-        //   122: aload_3        
-        //   123: checkcast       Lesm;
-        //   126: getfield        esm.b:Leqv;
-        //   129: getfield        eqv.jQ:Latjj;
-        //   132: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   137: checkcast       Lhmm;
-        //   140: astore          6
-        //   142: aload_3        
-        //   143: checkcast       Lesm;
-        //   146: getfield        esm.p:Latjj;
-        //   149: astore          7
-        //   151: aload_3        
-        //   152: checkcast       Lesm;
-        //   155: getfield        esm.b:Leqv;
-        //   158: getfield        eqv.jM:Latjj;
-        //   161: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   166: checkcast       Lhqv;
-        //   169: astore          8
-        //   171: aload_3        
-        //   172: checkcast       Lesm;
-        //   175: getfield        esm.b:Leqv;
-        //   178: getfield        eqv.w:Latjj;
-        //   181: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   186: checkcast       Luyf;
-        //   189: astore          9
-        //   191: aload_3        
-        //   192: checkcast       Lesm;
-        //   195: getfield        esm.b:Leqv;
-        //   198: getfield        eqv.v:Latjj;
-        //   201: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   206: checkcast       Larud;
-        //   209: astore          10
-        //   211: aload_3        
-        //   212: checkcast       Lesm;
-        //   215: getfield        esm.F:Latjj;
-        //   218: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   223: checkcast       Lfxo;
-        //   226: astore          11
-        //   228: aload_3        
-        //   229: checkcast       Lesm;
-        //   232: getfield        esm.M:Latjj;
-        //   235: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   240: checkcast       Lacnx;
-        //   243: astore          12
-        //   245: aload_3        
-        //   246: checkcast       Lesm;
-        //   249: getfield        esm.b:Leqv;
-        //   252: getfield        eqv.a:Leqx;
-        //   255: getfield        eqx.dP:Latjj;
-        //   258: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   263: checkcast       Lhlf;
-        //   266: astore_1       
-        //   267: aload_3        
-        //   268: checkcast       Lesm;
-        //   271: getfield        esm.m:Latjj;
-        //   274: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   279: checkcast       Lmrm;
-        //   282: astore          13
-        //   284: aload_3        
-        //   285: checkcast       Lesm;
-        //   288: getfield        esm.fn:Latjj;
-        //   291: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   296: checkcast       Ltlb;
-        //   299: astore          14
-        //   301: aload_3        
-        //   302: checkcast       Lesm;
-        //   305: getfield        esm.b:Leqv;
-        //   308: getfield        eqv.a:Leqx;
-        //   311: getfield        eqx.c:Latjj;
-        //   314: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   319: checkcast       Lphq;
-        //   322: astore          15
-        //   324: aload_3        
-        //   325: checkcast       Lesm;
-        //   328: getfield        esm.b:Leqv;
-        //   331: getfield        eqv.dj:Latjj;
-        //   334: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   339: checkcast       Ltox;
-        //   342: astore          16
-        //   344: aload_3        
-        //   345: checkcast       Lesm;
-        //   348: getfield        esm.dG:Latjj;
-        //   351: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   356: checkcast       Lhlh;
-        //   359: astore          17
-        //   361: aload_3        
-        //   362: checkcast       Lesm;
-        //   365: getfield        esm.dp:Latjj;
-        //   368: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   373: checkcast       Lhlk;
-        //   376: astore          18
-        //   378: aload_3        
-        //   379: checkcast       Lesm;
-        //   382: getfield        esm.fe:Latjj;
-        //   385: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   390: checkcast       Lcom/google/android/apps/youtube/app/watchwhile/startup/StartupSignalStream;
-        //   393: astore          19
-        //   395: aload_3        
-        //   396: checkcast       Lesm;
-        //   399: getfield        esm.av:Latjj;
-        //   402: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   407: checkcast       Lcom/google/android/apps/youtube/app/player/overlay/FullscreenEngagementPanelOverlay;
-        //   410: astore          20
-        //   412: aload_3        
-        //   413: checkcast       Lesm;
-        //   416: getfield        esm.b:Leqv;
-        //   419: getfield        eqv.jV:Latjj;
-        //   422: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   427: checkcast       Luyi;
-        //   430: astore_3       
-        //   431: new             Lhkj;
-        //   434: astore          21
-        //   436: aload           21
-        //   438: aload           5
-        //   440: aload           4
-        //   442: aload           6
-        //   444: aload           7
-        //   446: aload           8
-        //   448: aload           9
-        //   450: aload           10
-        //   452: aload           11
-        //   454: aload           12
-        //   456: aload_1        
-        //   457: aload           13
-        //   459: aload           14
-        //   461: aload           15
-        //   463: aload           16
-        //   465: aload           17
-        //   467: aload           18
-        //   469: aload           19
-        //   471: aload           20
-        //   473: aload_3        
-        //   474: aconst_null    
-        //   475: aconst_null    
-        //   476: aconst_null    
-        //   477: aconst_null    
-        //   478: aconst_null    
-        //   479: invokespecial   hkj.<init>:(Lcom/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity;Lhjp;Lhmm;Latjj;Lhqv;Luyf;Larud;Lfxo;Lacnx;Lhlf;Lmrm;Ltlb;Lphq;Ltox;Lhlh;Lhlk;Lcom/google/android/apps/youtube/app/watchwhile/startup/StartupSignalStream;Lcom/google/android/apps/youtube/app/player/overlay/FullscreenEngagementPanelOverlay;Luyi;[B[B[B[B[B)V
-        //   482: aload_0        
-        //   483: aload           21
-        //   485: putfield        com/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity.b:Lhkj;
-        //   488: aload_2        
-        //   489: invokevirtual   aere.close:()V
-        //   492: aload_0        
-        //   493: getfield        com/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity.b:Lhkj;
-        //   496: aload_0        
-        //   497: putfield        hkj.t:Lcom/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity;
-        //   500: return         
-        //   501: new             Ljava/lang/IllegalStateException;
-        //   504: astore          14
-        //   506: ldc             Lhkj;.class
-        //   508: invokevirtual   java/lang/Object.toString:()Ljava/lang/String;
-        //   511: astore_1       
-        //   512: aload           4
-        //   514: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
-        //   517: invokestatic    java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
-        //   520: astore          10
-        //   522: new             Ljava/lang/StringBuilder;
-        //   525: astore          4
-        //   527: aload           4
-        //   529: ldc_w           "Attempt to inject a Activity wrapper of type "
-        //   532: invokespecial   java/lang/StringBuilder.<init>:(Ljava/lang/String;)V
-        //   535: aload           4
-        //   537: aload_1        
-        //   538: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   541: pop            
-        //   542: aload           4
-        //   544: ldc_w           ", but the wrapper available is of type: "
-        //   547: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   550: pop            
-        //   551: aload           4
-        //   553: aload           10
-        //   555: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   558: pop            
-        //   559: aload           4
-        //   561: ldc_w           ". Does your peer's @Inject constructor reference the wrong wrapper class?"
-        //   564: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   567: pop            
-        //   568: aload           14
-        //   570: aload           4
-        //   572: invokevirtual   java/lang/StringBuilder.toString:()Ljava/lang/String;
-        //   575: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
-        //   578: aload           14
-        //   580: athrow         
-        //   581: astore_1       
-        //   582: goto            603
-        //   585: astore_1       
-        //   586: new             Ljava/lang/IllegalStateException;
-        //   589: astore          14
-        //   591: aload           14
-        //   593: ldc_w           "Missing entry point. If you're in a test with explicit entry points specified in your @TestRoot, check that you're not missing the one for this class."
-        //   596: aload_1        
-        //   597: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;Ljava/lang/Throwable;)V
-        //   600: aload           14
-        //   602: athrow         
-        //   603: aload_2        
-        //   604: invokevirtual   aere.close:()V
-        //   607: goto            616
-        //   610: astore_2       
-        //   611: aload_1        
-        //   612: aload_2        
-        //   613: invokestatic    iba.b:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-        //   616: aload_1        
+        //    63: invokevirtual   hkr.aR:()Ljava/lang/Object;
+        //    66: astore          20
+        //    68: aload           20
+        //    70: checkcast       Lesp;
+        //    73: getfield        esp.d:Latke;
+        //    76: invokeinterface atke.a:()Ljava/lang/Object;
+        //    81: checkcast       Landroid/app/Activity;
+        //    84: astore          4
+        //    86: aload           4
+        //    88: instanceof      Lcom/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity;
+        //    91: ifeq            522
+        //    94: aload           4
+        //    96: checkcast       Lcom/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity;
+        //    99: astore          19
+        //   101: aload           19
+        //   103: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
+        //   106: pop            
+        //   107: aload           20
+        //   109: checkcast       Lesp;
+        //   112: getfield        esp.fd:Latke;
+        //   115: invokeinterface atke.a:()Ljava/lang/Object;
+        //   120: checkcast       Lhko;
+        //   123: astore          7
+        //   125: aload           20
+        //   127: checkcast       Lesp;
+        //   130: getfield        esp.b:Leqy;
+        //   133: getfield        eqy.jU:Latke;
+        //   136: invokeinterface atke.a:()Ljava/lang/Object;
+        //   141: checkcast       Lhng;
+        //   144: astore          9
+        //   146: aload           20
+        //   148: checkcast       Lesp;
+        //   151: getfield        esp.p:Latke;
+        //   154: astore          5
+        //   156: aload           20
+        //   158: checkcast       Lesp;
+        //   161: getfield        esp.b:Leqy;
+        //   164: getfield        eqy.jQ:Latke;
+        //   167: invokeinterface atke.a:()Ljava/lang/Object;
+        //   172: checkcast       Lhrp;
+        //   175: astore          8
+        //   177: aload           20
+        //   179: checkcast       Lesp;
+        //   182: getfield        esp.b:Leqy;
+        //   185: getfield        eqy.w:Latke;
+        //   188: invokeinterface atke.a:()Ljava/lang/Object;
+        //   193: checkcast       Lvaf;
+        //   196: astore          4
+        //   198: aload           20
+        //   200: checkcast       Lesp;
+        //   203: getfield        esp.b:Leqy;
+        //   206: getfield        eqy.v:Latke;
+        //   209: invokeinterface atke.a:()Ljava/lang/Object;
+        //   214: checkcast       Larwh;
+        //   217: astore          13
+        //   219: aload           20
+        //   221: checkcast       Lesp;
+        //   224: getfield        esp.G:Latke;
+        //   227: invokeinterface atke.a:()Ljava/lang/Object;
+        //   232: checkcast       Lfxw;
+        //   235: astore          14
+        //   237: aload           20
+        //   239: checkcast       Lesp;
+        //   242: getfield        esp.N:Latke;
+        //   245: invokeinterface atke.a:()Ljava/lang/Object;
+        //   250: checkcast       Lelx;
+        //   253: astore          17
+        //   255: aload           20
+        //   257: checkcast       Lesp;
+        //   260: getfield        esp.b:Leqy;
+        //   263: getfield        eqy.a:Lera;
+        //   266: getfield        era.dP:Latke;
+        //   269: invokeinterface atke.a:()Ljava/lang/Object;
+        //   274: checkcast       Lhmb;
+        //   277: astore          15
+        //   279: aload           20
+        //   281: checkcast       Lesp;
+        //   284: getfield        esp.m:Latke;
+        //   287: invokeinterface atke.a:()Ljava/lang/Object;
+        //   292: checkcast       Lmsr;
+        //   295: astore_3       
+        //   296: aload           20
+        //   298: checkcast       Lesp;
+        //   301: getfield        esp.fp:Latke;
+        //   304: invokeinterface atke.a:()Ljava/lang/Object;
+        //   309: checkcast       Ltne;
+        //   312: astore          11
+        //   314: aload           20
+        //   316: checkcast       Lesp;
+        //   319: getfield        esp.b:Leqy;
+        //   322: getfield        eqy.a:Lera;
+        //   325: getfield        era.c:Latke;
+        //   328: invokeinterface atke.a:()Ljava/lang/Object;
+        //   333: checkcast       Lpja;
+        //   336: astore          10
+        //   338: aload           20
+        //   340: checkcast       Lesp;
+        //   343: getfield        esp.b:Leqy;
+        //   346: getfield        eqy.dj:Latke;
+        //   349: invokeinterface atke.a:()Ljava/lang/Object;
+        //   354: checkcast       Ltrc;
+        //   357: astore          12
+        //   359: aload           20
+        //   361: checkcast       Lesp;
+        //   364: getfield        esp.dI:Latke;
+        //   367: invokeinterface atke.a:()Ljava/lang/Object;
+        //   372: checkcast       Lhmd;
+        //   375: astore          16
+        //   377: aload           20
+        //   379: checkcast       Lesp;
+        //   382: getfield        esp.dq:Latke;
+        //   385: invokeinterface atke.a:()Ljava/lang/Object;
+        //   390: checkcast       Lhmg;
+        //   393: astore_2       
+        //   394: aload           20
+        //   396: checkcast       Lesp;
+        //   399: getfield        esp.ff:Latke;
+        //   402: invokeinterface atke.a:()Ljava/lang/Object;
+        //   407: checkcast       Lcom/google/android/apps/youtube/app/watchwhile/startup/StartupSignalStream;
+        //   410: astore          18
+        //   412: aload           20
+        //   414: checkcast       Lesp;
+        //   417: getfield        esp.ax:Latke;
+        //   420: invokeinterface atke.a:()Ljava/lang/Object;
+        //   425: checkcast       Lcom/google/android/apps/youtube/app/player/overlay/FullscreenEngagementPanelOverlay;
+        //   428: astore          6
+        //   430: aload           20
+        //   432: checkcast       Lesp;
+        //   435: getfield        esp.b:Leqy;
+        //   438: getfield        eqy.ka:Latke;
+        //   441: invokeinterface atke.a:()Ljava/lang/Object;
+        //   446: checkcast       Lvai;
+        //   449: astore          21
+        //   451: new             Lhlf;
+        //   454: astore          20
+        //   456: aload           20
+        //   458: aload           19
+        //   460: aload           7
+        //   462: aload           9
+        //   464: aload           5
+        //   466: aload           8
+        //   468: aload           4
+        //   470: aload           13
+        //   472: aload           14
+        //   474: aload           17
+        //   476: aload           15
+        //   478: aload_3        
+        //   479: aload           11
+        //   481: aload           10
+        //   483: aload           12
+        //   485: aload           16
+        //   487: aload_2        
+        //   488: aload           18
+        //   490: aload           6
+        //   492: aload           21
+        //   494: aconst_null    
+        //   495: aconst_null    
+        //   496: aconst_null    
+        //   497: aconst_null    
+        //   498: aconst_null    
+        //   499: aconst_null    
+        //   500: invokespecial   hlf.<init>:(Lcom/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity;Lhko;Lhng;Latke;Lhrp;Lvaf;Larwh;Lfxw;Lelx;Lhmb;Lmsr;Ltne;Lpja;Ltrc;Lhmd;Lhmg;Lcom/google/android/apps/youtube/app/watchwhile/startup/StartupSignalStream;Lcom/google/android/apps/youtube/app/player/overlay/FullscreenEngagementPanelOverlay;Lvai;[B[B[B[B[B[B)V
+        //   503: aload_0        
+        //   504: aload           20
+        //   506: putfield        com/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity.b:Lhlf;
+        //   509: aload_1        
+        //   510: invokevirtual   aetf.close:()V
+        //   513: aload_0        
+        //   514: getfield        com/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity.b:Lhlf;
+        //   517: aload_0        
+        //   518: putfield        hlf.t:Lcom/google/android/apps/youtube/app/extensions/reel/watch/activity/ReelWatchActivity;
+        //   521: return         
+        //   522: new             Ljava/lang/IllegalStateException;
+        //   525: astore_2       
+        //   526: ldc             Lhlf;.class
+        //   528: invokevirtual   java/lang/Object.toString:()Ljava/lang/String;
+        //   531: astore_3       
+        //   532: aload           4
+        //   534: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
+        //   537: invokestatic    java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+        //   540: astore          5
+        //   542: new             Ljava/lang/StringBuilder;
+        //   545: astore          4
+        //   547: aload           4
+        //   549: ldc_w           "Attempt to inject a Activity wrapper of type "
+        //   552: invokespecial   java/lang/StringBuilder.<init>:(Ljava/lang/String;)V
+        //   555: aload           4
+        //   557: aload_3        
+        //   558: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   561: pop            
+        //   562: aload           4
+        //   564: ldc_w           ", but the wrapper available is of type: "
+        //   567: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   570: pop            
+        //   571: aload           4
+        //   573: aload           5
+        //   575: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   578: pop            
+        //   579: aload           4
+        //   581: ldc_w           ". Does your peer's @Inject constructor reference the wrong wrapper class?"
+        //   584: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   587: pop            
+        //   588: aload_2        
+        //   589: aload           4
+        //   591: invokevirtual   java/lang/StringBuilder.toString:()Ljava/lang/String;
+        //   594: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
+        //   597: aload_2        
+        //   598: athrow         
+        //   599: astore_2       
+        //   600: goto            618
+        //   603: astore_3       
+        //   604: new             Ljava/lang/IllegalStateException;
+        //   607: astore_2       
+        //   608: aload_2        
+        //   609: ldc_w           "Missing entry point. If you're in a test with explicit entry points specified in your @TestRoot, check that you're not missing the one for this class."
+        //   612: aload_3        
+        //   613: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;Ljava/lang/Throwable;)V
+        //   616: aload_2        
         //   617: athrow         
-        //   618: astore_2       
-        //   619: aload_1        
-        //   620: invokevirtual   aere.close:()V
-        //   623: goto            632
-        //   626: astore_1       
-        //   627: aload_2        
-        //   628: aload_1        
-        //   629: invokestatic    iba.b:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-        //   632: aload_2        
-        //   633: athrow         
-        //   634: new             Ljava/lang/IllegalStateException;
-        //   637: dup            
-        //   638: ldc_w           "createPeer() called outside of onCreate"
-        //   641: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
-        //   644: athrow         
-        //   645: return         
+        //   618: aload_1        
+        //   619: invokevirtual   aetf.close:()V
+        //   622: goto            631
+        //   625: astore_1       
+        //   626: aload_2        
+        //   627: aload_1        
+        //   628: invokestatic    hnu.c:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   631: aload_2        
+        //   632: athrow         
+        //   633: astore_1       
+        //   634: aload_2        
+        //   635: invokevirtual   aetf.close:()V
+        //   638: goto            647
+        //   641: astore_2       
+        //   642: aload_1        
+        //   643: aload_2        
+        //   644: invokestatic    hnu.c:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   647: aload_1        
+        //   648: athrow         
+        //   649: new             Ljava/lang/IllegalStateException;
+        //   652: dup            
+        //   653: ldc_w           "createPeer() called outside of onCreate"
+        //   656: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
+        //   659: athrow         
+        //   660: return         
         //    Exceptions:
         //  Try           Handler
         //  Start  End    Start  End    Type                          
         //  -----  -----  -----  -----  ------------------------------
-        //  47     52     618    634    Any
-        //  62     67     585    603    Ljava/lang/ClassCastException;
-        //  62     67     581    618    Any
-        //  67     488    581    618    Any
-        //  501    581    581    618    Any
-        //  586    603    581    618    Any
-        //  603    607    610    616    Any
-        //  619    623    626    632    Any
+        //  47     52     633    649    Any
+        //  62     68     603    618    Ljava/lang/ClassCastException;
+        //  62     68     599    633    Any
+        //  68     509    599    633    Any
+        //  522    599    599    633    Any
+        //  604    618    599    633    Any
+        //  618    622    625    631    Any
+        //  634    638    641    647    Any
         // 
         // The error that occurred was:
         // 
-        // java.lang.IllegalStateException: Expression is linked from several locations: Label_0603:
+        // java.lang.IllegalStateException: Expression is linked from several locations: Label_0618:
         //     at com.strobel.decompiler.ast.Error.expressionLinkedFromMultipleLocations(Error.java:27)
         //     at com.strobel.decompiler.ast.AstOptimizer.mergeDisparateObjectInitializations(AstOptimizer.java:2604)
         //     at com.strobel.decompiler.ast.AstOptimizer.optimize(AstOptimizer.java:235)
@@ -369,18 +386,18 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
     }
     
     public final void finish() {
-        final aers b = this.c.b();
+        final aett b = this.c.b();
         try {
             super.finish();
-            final hkj e = this.e();
-            anqa anqa;
-            if ((anqa = e.n.b().A) == null) {
-                anqa = anqa.a;
+            final hlf e = this.e();
+            ansd ansd;
+            if ((ansd = e.n.b().A) == null) {
+                ansd = ansd.a;
             }
-            if (anqa.b) {
+            if (ansd.b) {
                 final ReelWatchActivity a = e.a;
                 int n;
-                if (!(boolean)hkj.a(a.getIntent()).map((Function)hkc.d).map((Function)hkc.e).orElse((Object)false)) {
+                if (!(boolean)hlf.a(a.getIntent()).map((Function)hkx.d).map((Function)hkx.e).orElse((Object)false)) {
                     n = 2130772087;
                 }
                 else {
@@ -397,20 +414,20 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                iba.b(t, t2);
+                hnu.c(t, t2);
             }
         }
     }
     
-    public final auh getLifecycle() {
+    public final aui getLifecycle() {
         if (this.f == null) {
-            this.f = new aenn((bu)this);
+            this.f = (auo)new aepn((bu)this);
         }
-        return (auh)this.f;
+        return this.f;
     }
     
     public final void invalidateOptionsMenu() {
-        final aers s = aesw.s();
+        final aett s = aeux.s();
         try {
             super.invalidateOptionsMenu();
             s.close();
@@ -422,17 +439,17 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                iba.b(t, t2);
+                hnu.c(t, t2);
             }
         }
     }
     
     protected final void onActivityResult(final int n, final int n2, final Intent intent) {
-        final aers q = this.c.q();
+        final aett q = this.c.q();
         try {
-            final hkj e = this.e();
-            if (!e.s.m(n, n2, intent)) {
-                e.t.onActivityResult(n, n2, intent);
+            final hlf e = this.e();
+            if (!e.s.G(n, n2, intent)) {
+                ((hlg)e).t.onActivityResult(n, n2, intent);
             }
             q.close();
         }
@@ -442,29 +459,29 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
             }
             finally {
                 final Throwable t;
-                iba.b((Throwable)intent, t);
+                hnu.c((Throwable)intent, t);
             }
         }
     }
     
     public final void onBackPressed() {
-        final aers c = this.c.c();
+        final aett c = this.c.c();
         try {
-            final hkj e = this.e();
-            anqa anqa;
-            if ((anqa = e.n.b().A) == null) {
-                anqa = anqa.a;
+            final hlf e = this.e();
+            ansd ansd;
+            if ((ansd = e.n.b().A) == null) {
+                ansd = ansd.a;
             }
-            if (anqa.b) {
-                final gug gug = (gug)e.c.a();
-                if (!(boolean)Optional.ofNullable((Object)gug.a()).filter((Predicate)new fqe(gui.class, 10)).map((Function)new fnm(gui.class, 20)).map((Function)gnq.r).orElse((Object)false)) {
-                    if (!gug.h()) {
+            if (ansd.b) {
+                final guw guw = (guw)e.c.a();
+                if (!(boolean)Optional.ofNullable((Object)guw.a()).filter((Predicate)new fqn((Class)guy.class, 10)).map((Function)new fnr((Class)guy.class, 20)).map((Function)gnx.r).orElse((Object)false)) {
+                    if (!guw.h()) {
                         e.a.finishAfterTransition();
                     }
                 }
             }
-            else if (!((gug)e.c.a()).g()) {
-                ((gug)e.c.a()).h();
+            else if (!((guw)e.c.a()).g()) {
+                ((guw)e.c.a()).h();
             }
             c.close();
         }
@@ -475,18 +492,18 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                iba.b(t, t2);
+                hnu.c(t, t2);
             }
         }
     }
     
     public final void onConfigurationChanged(final Configuration configuration) {
-        final aers r = this.c.r();
+        final aett r = this.c.r();
         try {
             super.onConfigurationChanged(configuration);
-            final hkj e = this.e();
+            final hlf e = this.e();
             e.e.c(configuration);
-            final tox h = e.h;
+            final trc h = e.h;
             if (h != null && e.m) {
                 h.b();
             }
@@ -498,56 +515,56 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
             }
             finally {
                 final Throwable t;
-                iba.b((Throwable)configuration, t);
+                hnu.c((Throwable)configuration, t);
             }
         }
     }
     
     protected final void onCreate(final Bundle bundle) {
-        final aers s = this.c.s();
+        final aett s = this.c.s();
         try {
             this.d = true;
-            ((aenn)((dh)this).getLifecycle()).h(this.c);
-            final hkj e = this.e();
+            ((aepn)((dh)this).getLifecycle()).h(this.c);
+            final hlf e = this.e();
             final long currentTimeMillis = System.currentTimeMillis();
-            fah.m((Context)e.a);
-            e.t.onCreate(bundle);
-            if (e.o.aT()) {
+            glb.c((Context)e.a);
+            ((hlg)e).t.onCreate(bundle);
+            if (e.o.aU()) {
                 ((fa)e.a).setTheme(2132083492);
             }
-            ((qt)e.a).setContentView(2131625276);
-            final hjy hjy = (hjy)((bu)e.a).getSupportFragmentManager().f("ProcessDeathDetectorFragmentTag");
-            if (bundle != null && hjy != null && hjy.a) {
+            ((qt)e.a).setContentView(2131625281);
+            final hkt hkt = (hkt)((bu)e.a).getSupportFragmentManager().f("ProcessDeathDetectorFragmentTag");
+            if (bundle != null && hkt != null && hkt.a) {
                 e.a.finish();
             }
             else {
                 final ct i = ((bu)e.a).getSupportFragmentManager().i();
-                final hjy hjy2 = new hjy();
-                hjy2.a = false;
-                ((br)hjy2).am(true);
-                i.s((br)hjy2, "ProcessDeathDetectorFragmentTag");
+                final hkt hkt2 = new hkt();
+                hkt2.a = false;
+                ((br)hkt2).am(true);
+                i.s((br)hkt2, "ProcessDeathDetectorFragmentTag");
                 i.a();
                 e.b.d("r_ac", currentTimeMillis);
-                aeo.b((Activity)e.a);
+                aep.b((Activity)e.a);
                 e.b();
                 e.e.a();
                 e.g.a();
-                anqa anqa;
-                if ((anqa = e.n.b().A) == null) {
-                    anqa = anqa.a;
+                ansd ansd;
+                if ((ansd = e.n.b().A) == null) {
+                    ansd = ansd.a;
                 }
-                if (anqa.b) {
-                    e.r.B((Callable)new guf(e, 11));
+                if (ansd.b) {
+                    e.r.R((Callable)new gqw(e, 13));
                 }
-                anqh anqh;
-                if ((anqh = e.p.f().u) == null) {
-                    anqh = anqh.a;
+                ansk ansk;
+                if ((ansk = e.p.f().u) == null) {
+                    ansk = ansk.a;
                 }
-                anqt anqt;
-                if ((anqt = anqh.d) == null) {
-                    anqt = anqt.a;
+                answ answ;
+                if ((answ = ansk.d) == null) {
+                    answ = answ.a;
                 }
-                e.m = anqt.J;
+                e.m = answ.J;
             }
             this.d = false;
             if (s != null) {
@@ -561,14 +578,14 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
                 }
                 finally {
                     final Throwable t;
-                    iba.b((Throwable)bundle, t);
+                    hnu.c((Throwable)bundle, t);
                 }
             }
         }
     }
     
     public final boolean onCreatePanelMenu(final int n, final Menu menu) {
-        final aers t = this.c.t();
+        final aett t = this.c.t();
         try {
             super.onCreatePanelMenu(n, menu);
             t.close();
@@ -580,18 +597,18 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
             }
             finally {
                 final Throwable t2;
-                iba.b((Throwable)menu, t2);
+                hnu.c((Throwable)menu, t2);
             }
         }
     }
     
     protected final void onDestroy() {
-        final aers d = this.c.d();
+        final aett d = this.c.d();
         try {
             super.onDestroy();
-            final hkj e = this.e();
+            final hlf e = this.e();
             e.g.b();
-            final hqv d2 = e.d;
+            final hrp d2 = e.d;
             Object o = d2.a;
             synchronized (o) {
                 d2.a.clear();
@@ -602,30 +619,30 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
                     monitorexit(o);
                     e.e.d();
                     e.f.e();
-                    if ((o = e.p.f().A) == null) {
-                        o = ajpg.a;
+                    o = e.p.f().A;
+                    if (o == null) {
+                        final ajrk a = ajrk.a;
                     }
-                    final agza builder = ajph.a.createBuilder();
-                    builder.copyOnWrite();
-                    ajph.a((ajph)builder.instance);
-                    final ajph ajph = (ajph)builder.build();
-                    final ahas b = ((ajpg)o).b;
+                    o = ((ahbh)ajrl.a).createBuilder();
+                    ((ahaz)o).copyOnWrite();
+                    ajrl.a((ajrl)((ahaz)o).instance);
+                    o = ((ahaz)o).build();
+                    final ahcr b = ((ajrk)o).b;
                     final Long value = 45366409L;
-                    o = ajph;
-                    if (b.containsKey(value)) {
-                        o = b.get(value);
+                    if (((Map)b).containsKey(value)) {
+                        final Object o2 = ((Map)b).get(value);
                     }
-                    if (((ajph)o).b == 1 && (boolean)((ajph)o).c) {
-                        o = e.i.g;
-                        if (o != null) {
-                            ((acms)o).rU();
+                    if (((ajrl)o).b == 1 && (boolean)((ajrl)o).c) {
+                        final acqv g = e.i.g;
+                        if (g != null) {
+                            ((acov)g).sa();
                         }
-                        o = e.j.f;
-                        if (o != null) {
-                            ((acms)o).rU();
+                        final acqv f = e.j.f;
+                        if (f != null) {
+                            ((acov)f).sa();
                         }
-                        e.k.mM((aum)e.a);
-                        e.l.mM((aum)e.a);
+                        e.k.mM((aun)e.a);
+                        e.l.mM((aun)e.a);
                     }
                     this.g = true;
                     d.close();
@@ -639,19 +656,19 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                iba.b(t, t2);
+                hnu.c(t, t2);
             }
         }
     }
     
-    protected final void onLocalesChanged(final ajo ajo) {
+    protected final void onLocalesChanged(final ajp ajp) {
     }
     
     protected final void onNewIntent(final Intent intent) {
-        final aers e = this.c.e(intent);
+        final aett e = this.c.e(intent);
         try {
             super.onNewIntent(intent);
-            final hkj e2 = this.e();
+            final hlf e2 = this.e();
             e2.a.setIntent(intent);
             e2.b();
             if (e != null) {
@@ -665,7 +682,7 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
                 }
                 finally {
                     final Throwable t;
-                    iba.b((Throwable)intent, t);
+                    hnu.c((Throwable)intent, t);
                 }
             }
         }
@@ -675,7 +692,7 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
     }
     
     public final boolean onOptionsItemSelected(final MenuItem menuItem) {
-        final aers u = this.c.u();
+        final aett u = this.c.u();
         try {
             final boolean onOptionsItemSelected = super.onOptionsItemSelected(menuItem);
             u.close();
@@ -687,19 +704,19 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
             }
             finally {
                 final Throwable t;
-                iba.b((Throwable)menuItem, t);
+                hnu.c((Throwable)menuItem, t);
             }
         }
     }
     
     protected final void onPause() {
-        final aers f = this.c.f();
+        final aett f = this.c.f();
         try {
-            final hkj e = this.e();
+            final hlf e = this.e();
             if (e.a.isFinishing()) {
                 e.a.setRequestedOrientation(-1);
             }
-            e.t.onPause();
+            ((hlg)e).t.onPause();
             e.e.b();
             if (f != null) {
                 f.close();
@@ -713,14 +730,14 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    iba.b(t, t2);
+                    hnu.c(t, t2);
                 }
             }
         }
     }
     
     public final void onPictureInPictureModeChanged(final boolean b, final Configuration configuration) {
-        final aers v = this.c.v();
+        final aett v = this.c.v();
         try {
             super.onPictureInPictureModeChanged(b, configuration);
             v.close();
@@ -731,13 +748,13 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
             }
             finally {
                 final Throwable t;
-                iba.b((Throwable)configuration, t);
+                hnu.c((Throwable)configuration, t);
             }
         }
     }
     
     protected final void onPostCreate(final Bundle bundle) {
-        final aers w = this.c.w();
+        final aett w = this.c.w();
         try {
             super.onPostCreate(bundle);
             if (w != null) {
@@ -751,14 +768,14 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
                 }
                 finally {
                     final Throwable t;
-                    iba.b((Throwable)bundle, t);
+                    hnu.c((Throwable)bundle, t);
                 }
             }
         }
     }
     
     protected final void onPostResume() {
-        final aers g = this.c.g();
+        final aett g = this.c.g();
         try {
             super.onPostResume();
             g.close();
@@ -770,13 +787,13 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                iba.b(t, t2);
+                hnu.c(t, t2);
             }
         }
     }
     
     public final boolean onPrepareOptionsMenu(final Menu menu) {
-        final aers s = aesw.s();
+        final aett s = aeux.s();
         try {
             final boolean onPrepareOptionsMenu = super.onPrepareOptionsMenu(menu);
             s.close();
@@ -788,13 +805,13 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
             }
             finally {
                 final Throwable t;
-                iba.b((Throwable)menu, t);
+                hnu.c((Throwable)menu, t);
             }
         }
     }
     
     public final void onRequestPermissionsResult(final int n, final String[] array, final int[] array2) {
-        final aers x = this.c.x();
+        final aett x = this.c.x();
         try {
             super.onRequestPermissionsResult(n, array, array2);
             x.close();
@@ -805,18 +822,18 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
             }
             finally {
                 final Throwable t;
-                iba.b((Throwable)(Object)array, t);
+                hnu.c((Throwable)(Object)array, t);
             }
         }
     }
     
     protected final void onResume() {
-        final aers h = this.c.h();
+        final aett h = this.c.h();
         try {
             super.onResume();
-            final hkj e = this.e();
+            final hlf e = this.e();
             e.e.e();
-            final tox h2 = e.h;
+            final trc h2 = e.h;
             if (h2 != null && e.m) {
                 h2.b();
             }
@@ -832,14 +849,14 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    iba.b(t, t2);
+                    hnu.c(t, t2);
                 }
             }
         }
     }
     
     protected final void onSaveInstanceState(final Bundle bundle) {
-        final aers y = this.c.y();
+        final aett y = this.c.y();
         try {
             super.onSaveInstanceState(bundle);
             if (y != null) {
@@ -853,18 +870,18 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
                 }
                 finally {
                     final Throwable t;
-                    iba.b((Throwable)bundle, t);
+                    hnu.c((Throwable)bundle, t);
                 }
             }
         }
     }
     
     protected final void onStart() {
-        final aers i = this.c.i();
+        final aett i = this.c.i();
         try {
             super.onStart();
-            final hkj e = this.e();
-            e.q.n(((fa)e.a).getResources().getConfiguration(), (Context)e.a);
+            final hlf e = this.e();
+            e.q.l(((fa)e.a).getResources().getConfiguration(), (Context)e.a);
             if (i != null) {
                 i.close();
             }
@@ -877,14 +894,14 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    iba.b(t, t2);
+                    hnu.c(t, t2);
                 }
             }
         }
     }
     
     protected final void onStop() {
-        final aers j = this.c.j();
+        final aett j = this.c.j();
         try {
             super.onStop();
             if (j != null) {
@@ -899,14 +916,14 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    iba.b(t, t2);
+                    hnu.c(t, t2);
                 }
             }
         }
     }
     
     public final boolean onSupportNavigateUp() {
-        final aers k = this.c.k();
+        final aett k = this.c.k();
         try {
             final boolean onSupportNavigateUp = super.onSupportNavigateUp();
             k.close();
@@ -919,17 +936,17 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                iba.b(t, t2);
+                hnu.c(t, t2);
             }
         }
     }
     
     public final void onUserInteraction() {
-        final aers l = this.c.l();
+        final aett l = this.c.l();
         try {
             super.onUserInteraction();
-            final hkj e = this.e();
-            final tox h = e.h;
+            final hlf e = this.e();
+            final trc h = e.h;
             if (h != null && e.m) {
                 h.b();
             }
@@ -942,21 +959,21 @@ public final class ReelWatchActivity extends hjw implements aemu, aenm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                iba.b(t, t2);
+                hnu.c(t, t2);
             }
         }
     }
     
     public final void startActivity(final Intent intent) {
-        if (agnj.K(intent, this.getApplicationContext())) {
-            aesm.j(intent);
+        if (aefb.P(intent, this.getApplicationContext())) {
+            aeun.j(intent);
         }
         super.startActivity(intent);
     }
     
     public final void startActivity(final Intent intent, final Bundle bundle) {
-        if (agnj.K(intent, this.getApplicationContext())) {
-            aesm.j(intent);
+        if (aefb.P(intent, this.getApplicationContext())) {
+            aeun.j(intent);
         }
         super.startActivity(intent, bundle);
     }

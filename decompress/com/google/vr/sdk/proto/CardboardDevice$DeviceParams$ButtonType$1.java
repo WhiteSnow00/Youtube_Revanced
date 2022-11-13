@@ -4,12 +4,15 @@
 
 package com.google.vr.sdk.proto;
 
-class CardboardDevice$DeviceParams$ButtonType$1 implements agzn
+class CardboardDevice$DeviceParams$ButtonType$1 implements ahbm
 {
     public CardboardDevice$DeviceParams$ButtonType$1() {
     }
     
-    @Override
+    public /* bridge */ ahbl findValueByNumber(final int n) {
+        return (ahbl)this.findValueByNumber(n);
+    }
+    
     public CardboardDevice$DeviceParams$ButtonType findValueByNumber(final int n) {
         return CardboardDevice$DeviceParams$ButtonType.forNumber(n);
     }

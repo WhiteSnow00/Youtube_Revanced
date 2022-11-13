@@ -11,6 +11,10 @@ public final class HardwareFoldingFeature$Companion
     private HardwareFoldingFeature$Companion() {
     }
     
+    public HardwareFoldingFeature$Companion(final atny atny) {
+        this();
+    }
+    
     public final void validateFeatureBounds$window_release(final Bounds bounds) {
         bounds.getClass();
         if (bounds.getWidth() == 0 && bounds.getHeight() == 0) {

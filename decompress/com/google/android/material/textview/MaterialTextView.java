@@ -22,29 +22,29 @@ public class MaterialTextView extends AppCompatTextView
     }
     
     public MaterialTextView(final Context context, final AttributeSet set, final int n) {
-        super(adyy.a(context, set, n, 0), set, n);
+        super(aeba.a(context, set, n, 0), set, n);
         this.c(set, n, 0);
     }
     
     @Deprecated
     public MaterialTextView(final Context context, final AttributeSet set, final int n, final int n2) {
-        super(adyy.a(context, set, n, n2), set, n);
+        super(aeba.a(context, set, n, n2), set, n);
         this.c(set, n, n2);
     }
     
     private static int a(final Context context, final TypedArray typedArray, final int... array) {
         int n;
-        int e;
-        for (n = 0, e = -1; n < 2 && e < 0; e = adwd.e(context, typedArray, array[n], -1), ++n) {}
-        return e;
+        int y;
+        for (n = 0, y = -1; n < 2 && y < 0; y = adds.y(context, typedArray, array[n], -1), ++n) {}
+        return y;
     }
     
     private final void b(final Resources$Theme resources$Theme, int a) {
-        final TypedArray obtainStyledAttributes = resources$Theme.obtainStyledAttributes(a, adyx.a);
+        final TypedArray obtainStyledAttributes = resources$Theme.obtainStyledAttributes(a, aeaz.a);
         a = a(this.getContext(), obtainStyledAttributes, 1, 2);
         obtainStyledAttributes.recycle();
         if (a >= 0) {
-            api.h((TextView)this, a);
+            apj.h((TextView)this, a);
         }
     }
     
@@ -52,11 +52,11 @@ public class MaterialTextView extends AppCompatTextView
         final Context context = this.getContext();
         if (d(context)) {
             final Resources$Theme theme = context.getTheme();
-            final TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(set, adyx.b, resourceId, n);
+            final TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(set, aeaz.b, resourceId, n);
             final int a = a(context, obtainStyledAttributes, 1, 2);
             obtainStyledAttributes.recycle();
             if (a == -1) {
-                final TypedArray obtainStyledAttributes2 = theme.obtainStyledAttributes(set, adyx.b, resourceId, n);
+                final TypedArray obtainStyledAttributes2 = theme.obtainStyledAttributes(set, aeaz.b, resourceId, n);
                 resourceId = obtainStyledAttributes2.getResourceId(0, -1);
                 obtainStyledAttributes2.recycle();
                 if (resourceId != -1) {
@@ -67,7 +67,7 @@ public class MaterialTextView extends AppCompatTextView
     }
     
     private static boolean d(final Context context) {
-        return adwd.m(context, 2130970588, true);
+        return adds.G(context, 2130970588, true);
     }
     
     public final void setTextAppearance(final Context context, final int n) {

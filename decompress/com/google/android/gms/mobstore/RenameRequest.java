@@ -17,7 +17,7 @@ public class RenameRequest extends AbstractSafeParcelable
     public final Uri b;
     
     static {
-        CREATOR = (Parcelable$Creator)new nit(17);
+        CREATOR = (Parcelable$Creator)new njy(16);
     }
     
     public RenameRequest(final Uri a, final Uri b) {
@@ -26,9 +26,9 @@ public class RenameRequest extends AbstractSafeParcelable
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        final int i = kgk.I(parcel);
-        kgk.ab(parcel, 1, (Parcelable)this.a, n);
-        kgk.ab(parcel, 2, (Parcelable)this.b, n);
-        kgk.J(parcel, i);
+        final int m = khl.M(parcel);
+        khl.af(parcel, 1, (Parcelable)this.a, n);
+        khl.af(parcel, 2, (Parcelable)this.b, n);
+        khl.N(parcel, m);
     }
 }

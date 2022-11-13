@@ -17,7 +17,7 @@ public class OpenFileDescriptorRequest extends AbstractSafeParcelable
     public final int b;
     
     static {
-        CREATOR = (Parcelable$Creator)new nit(15);
+        CREATOR = (Parcelable$Creator)new njy(14);
     }
     
     public OpenFileDescriptorRequest(final Uri a, final int b) {
@@ -26,9 +26,9 @@ public class OpenFileDescriptorRequest extends AbstractSafeParcelable
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        final int i = kgk.I(parcel);
-        kgk.ab(parcel, 1, (Parcelable)this.a, n);
-        kgk.O(parcel, 2, this.b);
-        kgk.J(parcel, i);
+        final int m = khl.M(parcel);
+        khl.af(parcel, 1, (Parcelable)this.a, n);
+        khl.S(parcel, 2, this.b);
+        khl.N(parcel, m);
     }
 }

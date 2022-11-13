@@ -6,11 +6,11 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand extends agzi implements ahax
+public final class SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand extends ahbh implements ahcw
 {
     public static final SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand a;
-    private static volatile ahbe f;
-    public static final agzg setAdsPlayerFullscreenStateCommand;
+    private static volatile ahdd f;
+    public static final ahbf setAdsPlayerFullscreenStateCommand;
     public String b;
     public boolean c;
     public boolean d;
@@ -19,26 +19,26 @@ public final class SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFull
     
     static {
         final SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand a2 = new SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand();
-        agzi.registerDefaultInstance((Class)SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand.class, (agzi)(a = a2));
-        setAdsPlayerFullscreenStateCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 362581600, ahcm.k, (Class)SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand.class);
+        ahbh.registerDefaultInstance((Class)SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand.class, (ahbh)(a = a2));
+        setAdsPlayerFullscreenStateCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 362581600, ahek.k, (Class)SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand.class);
     }
     
     private SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand() {
         this.b = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe f;
+                final ahdd f;
                 if ((f = SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand.f) == null) {
                     synchronized (SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand.class) {
                         if (SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand.f == null) {
-                            SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand.f = (ahbe)new agzb((agzi)SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand.a);
+                            SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand.f = (ahdd)new ahba((ahbh)SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFull
                 return SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand.a;
             }
             case 4: {
-                return new agza((agzi)SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand.a);
+                return new ahaz((ahbh)SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand.a);
             }
             case 3: {
                 return new SetAdsPlayerFullscreenStateCommandOuterClass$SetAdsPlayerFullscreenStateCommand();

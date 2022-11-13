@@ -6,28 +6,28 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand extends agzi implements ahax
+public final class ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand extends ahbh implements ahcw
 {
     public static final ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand a;
-    private static volatile ahbe l;
-    public static final agzg shortsCreationVideoIngestionCommand;
+    private static volatile ahdd l;
+    public static final ahbf shortsCreationVideoIngestionCommand;
     public int b;
     public int c;
     public int d;
     public String e;
-    public agzy f;
-    public aock g;
+    public ahbx f;
+    public aoem g;
     public long h;
-    public ajsj i;
-    public ajsj j;
+    public ajum i;
+    public ajum j;
     public String k;
-    private anss m;
+    private anuv m;
     private byte n;
     
     static {
         final ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand a2 = new ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand();
-        agzi.registerDefaultInstance((Class)ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand.class, (agzi)(a = a2));
-        shortsCreationVideoIngestionCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 410389781, ahcm.k, (Class)ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand.class);
+        ahbh.registerDefaultInstance((Class)ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand.class, (ahbh)(a = a2));
+        shortsCreationVideoIngestionCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 410389781, ahek.k, (Class)ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand.class);
     }
     
     private ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand() {
@@ -38,20 +38,20 @@ public final class ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationV
         this.k = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte n = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe l;
+                final ahdd l;
                 if ((l = ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand.l) == null) {
                     synchronized (ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand.class) {
                         if (ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand.l == null) {
-                            ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand.l = (ahbe)new agzb((agzi)ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand.a);
+                            ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand.l = (ahdd)new ahba((ahbh)ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand.a);
                         }
                     }
                 }
@@ -61,19 +61,19 @@ public final class ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationV
                 return ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand.a;
             }
             case 4: {
-                return new agza((char[][][])null, (byte[][][])null);
+                return new ahaz((int[][])null, (char[][])null);
             }
             case 3: {
                 return new ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand();
             }
             case 2: {
-                return newMessageInfo((MessageLite)ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand.a, "\u0001\n\u0000\u0001\u0001\f\n\u0000\u0001\u0003\u0001\u1004\u0000\u0002\u100c\u0001\u0004\u1008\u0003\u0005\u001b\u0006\u1009\u0004\b\u1002\u0005\t\u1409\u0006\n\u1409\u0007\u000b\u1008\b\f\u1409\t", new Object[] { "b", "c", "d", aocr.c, "e", "f", aocy.class, "g", "h", "i", "j", "k", "m" });
+                return newMessageInfo((MessageLite)ShortsCreationVideoIngestionCommandOuterClass$ShortsCreationVideoIngestionCommand.a, "\u0001\n\u0000\u0001\u0001\f\n\u0000\u0001\u0003\u0001\u1004\u0000\u0002\u100c\u0001\u0004\u1008\u0003\u0005\u001b\u0006\u1009\u0004\b\u1002\u0005\t\u1409\u0006\n\u1409\u0007\u000b\u1008\b\f\u1409\t", new Object[] { "b", "c", "d", aoet.d, "e", "f", aofa.class, "g", "h", "i", "j", "k", "m" });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    n = 0;
                 }
-                this.n = (byte)(b ? 1 : 0);
+                this.n = n;
                 return null;
             }
             case 0: {

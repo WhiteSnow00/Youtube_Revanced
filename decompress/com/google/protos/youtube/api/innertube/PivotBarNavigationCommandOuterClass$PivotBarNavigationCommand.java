@@ -6,37 +6,37 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand extends agzi implements ahax
+public final class PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand extends ahbh implements ahcw
 {
     public static final PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand a;
-    private static volatile ahbe d;
-    public static final agzg pivotBarNavigationCommand;
+    private static volatile ahdd d;
+    public static final ahbf pivotBarNavigationCommand;
     public String b;
     public boolean c;
     private int e;
     
     static {
         final PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand a2 = new PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand();
-        agzi.registerDefaultInstance((Class)PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand.class, (agzi)(a = a2));
-        pivotBarNavigationCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 404019588, ahcm.k, (Class)PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand.class);
+        ahbh.registerDefaultInstance((Class)PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand.class, (ahbh)(a = a2));
+        pivotBarNavigationCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 404019588, ahek.k, (Class)PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand.class);
     }
     
     private PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand() {
         this.b = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand.d) == null) {
                     synchronized (PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand.class) {
                         if (PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand.d == null) {
-                            PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand.d = (ahbe)new agzb((agzi)PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand.a);
+                            PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand.d = (ahdd)new ahba((ahbh)PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand.a);
                         }
                     }
                 }
@@ -46,7 +46,7 @@ public final class PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand
                 return PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand.a;
             }
             case 4: {
-                return new agza((agzi)PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand.a);
+                return new ahaz((ahbh)PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand.a);
             }
             case 3: {
                 return new PivotBarNavigationCommandOuterClass$PivotBarNavigationCommand();

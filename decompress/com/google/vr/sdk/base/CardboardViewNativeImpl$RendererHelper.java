@@ -20,7 +20,39 @@ class CardboardViewNativeImpl$RendererHelper implements GLSurfaceView$Renderer
     private boolean stereoMode;
     private GvrView$StereoRenderer stereoRenderer;
     private boolean surfaceCreated;
-    final /* synthetic */ CardboardViewNativeImpl this$0;
+    final CardboardViewNativeImpl this$0;
+    
+    static /* bridge */ GvrView$Renderer -$$Nest$fgetrenderer(final CardboardViewNativeImpl$RendererHelper cardboardViewNativeImpl$RendererHelper) {
+        return cardboardViewNativeImpl$RendererHelper.renderer;
+    }
+    
+    static /* bridge */ ScreenParams -$$Nest$fgetscreenParams(final CardboardViewNativeImpl$RendererHelper cardboardViewNativeImpl$RendererHelper) {
+        return cardboardViewNativeImpl$RendererHelper.screenParams;
+    }
+    
+    static /* bridge */ boolean -$$Nest$fgetstereoMode(final CardboardViewNativeImpl$RendererHelper cardboardViewNativeImpl$RendererHelper) {
+        return cardboardViewNativeImpl$RendererHelper.stereoMode;
+    }
+    
+    static /* bridge */ GvrView$StereoRenderer -$$Nest$fgetstereoRenderer(final CardboardViewNativeImpl$RendererHelper cardboardViewNativeImpl$RendererHelper) {
+        return cardboardViewNativeImpl$RendererHelper.stereoRenderer;
+    }
+    
+    static /* bridge */ boolean -$$Nest$fgetsurfaceCreated(final CardboardViewNativeImpl$RendererHelper cardboardViewNativeImpl$RendererHelper) {
+        return cardboardViewNativeImpl$RendererHelper.surfaceCreated;
+    }
+    
+    static /* bridge */ void -$$Nest$fputstereoMode(final CardboardViewNativeImpl$RendererHelper cardboardViewNativeImpl$RendererHelper, final boolean stereoMode) {
+        cardboardViewNativeImpl$RendererHelper.stereoMode = stereoMode;
+    }
+    
+    static /* bridge */ void -$$Nest$fputsurfaceCreated(final CardboardViewNativeImpl$RendererHelper cardboardViewNativeImpl$RendererHelper, final boolean b) {
+        cardboardViewNativeImpl$RendererHelper.surfaceCreated = false;
+    }
+    
+    static /* bridge */ void -$$Nest$mcallOnRendererShutdown(final CardboardViewNativeImpl$RendererHelper cardboardViewNativeImpl$RendererHelper) {
+        cardboardViewNativeImpl$RendererHelper.callOnRendererShutdown();
+    }
     
     public CardboardViewNativeImpl$RendererHelper(final CardboardViewNativeImpl this$0) {
         this.this$0 = this$0;

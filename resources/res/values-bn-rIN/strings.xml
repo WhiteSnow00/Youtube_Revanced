@@ -93,9 +93,6 @@
     <string name="litho_paid_content">পেইড কন্টনেট সরানো</string>
     <string name="litho_paid_content_off">পেইড কনটেন্ট সরানো বন্ধ হয়েছে</string>
     <string name="litho_paid_content_on">পেইড কনটেন্ট সরানো চালু হয়েছে</string>
-    <string name="litho_shorts_shelf">শর্ট শেলফ সরানো</string>
-    <string name="litho_shorts_shelf_off">শর্ট শেলফ সরানো বন্ধ হয়েছে</string>
-    <string name="litho_shorts_shelf_on">শর্ট শেলফ সরানো চালু হয়েছে</string>
     <string name="microg_not_installed_notice">অনুগ্রহ করে মাইক্রোজি ইনস্টল করুন</string>
     <string name="microg_not_installed_warning">মাইক্রোজি পাওয়া যায় না</string>
     <string name="microg_notification_settings">নোটিফিকেশন সেটিংস</string>
@@ -268,7 +265,6 @@
     <string name="revanced_preferred_video_speed_summary">আপনার ভিডিও স্পিড বাছুন</string>
     <string name="revanced_preferred_video_speed_title">ভিডিও স্পীড নির্বাচন করুন</string>
     <string name="revanced_reboot_warning_fullscreen">ইউটিউব সংস্করণটি ট্রিক করুন এবং সার্ভারের পাশে এটি আপডেট করার চেষ্টা করুন।\10এটি কখনও কখনও উদ্দেশ্য হিসাবে কাজ নাও হতে পারে।\10কিছু ক্ষেত্রে, রিভাসেন্ড পুনরায় ইনস্টল করার প্রয়োজন হতে পারে।\10আপনি কি নিশ্চিত আপনি চালিয়ে যেতে চান? </string>
-    <string name="revanced_reboot_warning_ryd">যাইহোক, যেহেতু এটি এখনও একটি পরীক্ষামূলক বৈশিষ্ট্য, তাই লাইক গণনা সঠিকভাবে প্রদর্শিত নাও হতে পারে।\10আপনি কি যদিও চালিয়ে যেতে চান?</string>
     <string name="revanced_rebuffer_summary">রিবাফারের পরে পুনরায় শুরু করার জন্য প্লেব্যাকের জন্য বাফার করা আবশ্যক মিডিয়ার সময়কাল (মিলিসেকেন্ডে)। একটি রিবাফার সংজ্ঞায়িত করা হয় ব্যবহারকারীর ক্রিয়াকলাপের পরিবর্তে বাফার হ্রাসের কারণে ডিফল্ট: ৫০০০</string>
     <string name="revanced_rebuffer_title">রি বাফার</string>
     <string name="revanced_reel_summary_off">ঘটনা গুলি গোপন হয়েছে</string>
@@ -276,8 +272,6 @@
     <string name="revanced_reel_title">ইউটিউব ঘটনা</string>
     <string name="revanced_ryd_attribution_summary">এখানে RYD এর এপিআই ব্যাবহার হয়েছে। বিস্তারিত জানতে এখানে ক্লিক করুন https://returnyoutubedislike.com</string>
     <string name="revanced_ryd_attribution_title">ইউটিউব এর ডিজলাইক ফিরানো</string>
-    <string name="revanced_ryd_new_layout_summary">নতুন লেআউটে অপছন্দের সংখ্যা দেখান</string>
-    <string name="revanced_ryd_new_layout_title">RYD ঠিক করুন (নতুন লেআউট)</string>
     <string name="revanced_ryd_settings_summary">RYD এর এপিআই ব্যাবহার করুন</string>
     <string name="revanced_ryd_settings_title">ইউটিউব এর ডিজলাইক ফিরানোর সেটিংস</string>
     <string name="revanced_ryd_summary">ডিসলাইক নাম্বার দেখতে সুইচটি চালু করুন</string>
@@ -295,9 +289,6 @@
     <string name="revanced_suggested_actions_summary_off">প্রস্তাবিত কর্ম দেখানো হয়েছে</string>
     <string name="revanced_suggested_actions_summary_on">প্রস্তাবিত কর্ম লুকানো</string>
     <string name="revanced_suggested_actions_title">প্রস্তাবিত কর্ম</string>
-    <string name="revanced_suggestion_summary_off">শেষ পাতা গোপন করা</string>
-    <string name="revanced_suggestion_summary_on">শেষ পাতা প্রদর্শন</string>
-    <string name="revanced_suggestion_title">শেষ পাতা</string>
     <string name="revanced_swipe_auto_brightness_summary_off">সোয়াইপ করে স্বতঃ-উজ্জ্বলতা অক্ষম করা হয়েছে</string>
     <string name="revanced_swipe_auto_brightness_summary_on">সোয়াইপ করে স্বয়ংক্রিয় উজ্জ্বলতা সক্ষম করা হয়েছে</string>
     <string name="revanced_swipe_auto_brightness_title">সোয়াইপ করে স্বয়ংক্রিয় উজ্জ্বলতা</string>

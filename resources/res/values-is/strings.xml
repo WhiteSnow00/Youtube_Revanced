@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Aftur í albúm</string>
     <string name="accessibility_navigation_back_button">Til baka</string>
     <string name="accessibility_new_content_available">Nýtt efni tiltækt</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Ný vídeó</string>
     <string name="accessibility_next">Næsta vídeó</string>
     <string name="accessibility_offline_button_cancel">Hætta að hlaða niður</string>
     <string name="accessibility_offline_button_cannot_save">Ekki hægt að sækja</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Gagnaeftirlit og -stjórnun</string>
     <string name="data_saving_persistent_title">Gagnasparnaður</string>
     <string name="data_saving_select_quality_every_video_switch_title">Veldu gæði fyrir öll vídeó</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Minnka gæði snjallniðurhals</string>
     <string name="data_saving_snack_bar_action_button">Skoða</string>
     <string name="data_saving_snack_bar_text">Þessi breyting hefur áhrif á gagnavistunarstillingar þinar</string>
     <string name="data_saving_upload_wifi_only_switch_title">Hlaða upp yfir Wi-Fi eingöngu</string>

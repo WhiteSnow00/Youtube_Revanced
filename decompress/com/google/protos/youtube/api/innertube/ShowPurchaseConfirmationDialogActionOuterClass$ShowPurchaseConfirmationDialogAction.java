@@ -6,49 +6,49 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction extends agzi implements ahax
+public final class ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction extends ahbh implements ahcw
 {
     public static final ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction a;
-    private static volatile ahbe b;
-    public static final agzg showPurchaseConfirmationDialogAction;
+    private static volatile ahdd b;
+    public static final ahbf showPurchaseConfirmationDialogAction;
     private int c;
-    private aoep d;
+    private aogs d;
     private byte e;
     
     static {
         final ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction a2 = new ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction();
-        agzi.registerDefaultInstance((Class)ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction.class, (agzi)(a = a2));
-        showPurchaseConfirmationDialogAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 116405387, ahcm.k, (Class)ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction.class);
+        ahbh.registerDefaultInstance((Class)ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction.class, (ahbh)(a = a2));
+        showPurchaseConfirmationDialogAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 116405387, ahek.k, (Class)ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction.class);
     }
     
     private ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b2;
-                if ((b2 = ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction.b) == null) {
+                final ahdd b;
+                if ((b = ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction.b) == null) {
                     synchronized (ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction.class) {
                         if (ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction.b == null) {
-                            ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction.b = (ahbe)new agzb((agzi)ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction.a);
+                            ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction.b = (ahdd)new ahba((ahbh)ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction.a);
                         }
                     }
                 }
-                return b2;
+                return b;
             }
             case 5: {
                 return ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction.a;
             }
             case 4: {
-                return new agza((agzi)ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction.a);
+                return new ahaz((ahbh)ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction.a);
             }
             case 3: {
                 return new ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseConfirmationDialogAction();
@@ -58,9 +58,9 @@ public final class ShowPurchaseConfirmationDialogActionOuterClass$ShowPurchaseCo
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

@@ -9,6 +9,10 @@ class GvrSurfaceView$GLThread$GLThreadManager
     private GvrSurfaceView$GLThread$GLThreadManager() {
     }
     
+    public GvrSurfaceView$GLThread$GLThreadManager(final GvrSurfaceView$GLThread$GLThreadManager-IA gvrSurfaceView$GLThread$GLThreadManager-IA) {
+        this();
+    }
+    
     public void releaseEglContextLocked(final GvrSurfaceView$GLThread gvrSurfaceView$GLThread) {
         this.notifyAll();
     }

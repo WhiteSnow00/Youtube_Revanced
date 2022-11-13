@@ -16,9 +16,9 @@ public class CountdownNumeralView extends TextSwitcher
     
     public CountdownNumeralView(final Context context, final AttributeSet set) {
         super(context, set);
-        final abyk d = abyk.d(0);
+        final acan d = acan.d(0);
         this.setInAnimation(this.getContext(), 2130772020);
-        this.setFactory((ViewSwitcher$ViewFactory)new gvk(context, d));
+        this.setFactory((ViewSwitcher$ViewFactory)new gvz(context, d));
         this.b = false;
     }
     

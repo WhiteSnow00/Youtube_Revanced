@@ -38,7 +38,7 @@ public class MaterialButtonToggleGroup extends LinearLayout
     private boolean g;
     private final int h;
     private Set i;
-    private final aepj j;
+    private final afhd j;
     
     public MaterialButtonToggleGroup(final Context context) {
         this(context, null);
@@ -49,14 +49,14 @@ public class MaterialButtonToggleGroup extends LinearLayout
     }
     
     public MaterialButtonToggleGroup(final Context context, final AttributeSet set, final int n) {
-        super(adyy.a(context, set, n, 2132085199), set, n);
+        super(aeba.a(context, set, n, 2132085200), set, n);
         this.b = new ArrayList();
-        this.j = new aepj(this);
+        this.j = new afhd(this);
         this.c = new LinkedHashSet();
-        this.d = (Comparator)new xjv(this, 2);
+        this.d = (Comparator)new xlv(this, 2);
         this.a = false;
         this.i = new HashSet();
-        final TypedArray a = aduf.a(this.getContext(), set, adry.b, n, 2132085199, new int[0]);
+        final TypedArray a = adwh.a(this.getContext(), set, adua.b, n, 2132085200, new int[0]);
         final boolean boolean1 = a.getBoolean(3, false);
         if (this.f != boolean1) {
             this.f = boolean1;
@@ -67,7 +67,7 @@ public class MaterialButtonToggleGroup extends LinearLayout
         this.setChildrenDrawingOrderEnabled(true);
         this.setEnabled(a.getBoolean(0, true));
         a.recycle();
-        ana.X((View)this, 1);
+        anb.X((View)this, 1);
     }
     
     private final int d() {
@@ -100,14 +100,14 @@ public class MaterialButtonToggleGroup extends LinearLayout
                 layoutParams2 = new LinearLayout$LayoutParams(layoutParams.width, layoutParams.height);
             }
             if (this.getOrientation() == 0) {
-                alk.f((ViewGroup$MarginLayoutParams)layoutParams2, 0);
-                alk.g((ViewGroup$MarginLayoutParams)layoutParams2, -min);
+                all.f((ViewGroup$MarginLayoutParams)layoutParams2, 0);
+                all.g((ViewGroup$MarginLayoutParams)layoutParams2, -min);
                 layoutParams2.topMargin = 0;
             }
             else {
                 layoutParams2.bottomMargin = 0;
                 layoutParams2.topMargin = -min;
-                alk.g((ViewGroup$MarginLayoutParams)layoutParams2, 0);
+                all.g((ViewGroup$MarginLayoutParams)layoutParams2, 0);
             }
             e.setLayoutParams((ViewGroup$LayoutParams)layoutParams2);
         }
@@ -119,8 +119,8 @@ public class MaterialButtonToggleGroup extends LinearLayout
                     linearLayout$LayoutParams.bottomMargin = 0;
                     return;
                 }
-                alk.f((ViewGroup$MarginLayoutParams)linearLayout$LayoutParams, 0);
-                alk.g((ViewGroup$MarginLayoutParams)linearLayout$LayoutParams, 0);
+                all.f((ViewGroup$MarginLayoutParams)linearLayout$LayoutParams, 0);
+                all.g((ViewGroup$MarginLayoutParams)linearLayout$LayoutParams, 0);
                 linearLayout$LayoutParams.leftMargin = 0;
                 linearLayout$LayoutParams.rightMargin = 0;
             }
@@ -144,7 +144,7 @@ public class MaterialButtonToggleGroup extends LinearLayout
                 set.contains(value);
                 final Iterator iterator = this.c.iterator();
                 while (iterator.hasNext()) {
-                    ((adrx)iterator.next()).a();
+                    ((adtz)iterator.next()).a();
                 }
             }
         }
@@ -179,15 +179,15 @@ public class MaterialButtonToggleGroup extends LinearLayout
         this.g(set);
     }
     
-    public final void addView(final View view, int a, final ViewGroup$LayoutParams viewGroup$LayoutParams) {
+    public final void addView(final View view, int u, final ViewGroup$LayoutParams viewGroup$LayoutParams) {
         if (!(view instanceof MaterialButton)) {
             Log.e("MButtonToggleGroup", "Child views must be of type MaterialButton.");
             return;
         }
-        super.addView(view, a, viewGroup$LayoutParams);
+        super.addView(view, u, viewGroup$LayoutParams);
         final MaterialButton materialButton = (MaterialButton)view;
         if (materialButton.getId() == -1) {
-            materialButton.setId(ana.c());
+            materialButton.setId(anb.c());
         }
         materialButton.setMaxLines(1);
         materialButton.setEllipsize(TextUtils$TruncateAt.END);
@@ -196,29 +196,29 @@ public class MaterialButtonToggleGroup extends LinearLayout
         }
         materialButton.c = this.j;
         if (materialButton.f()) {
-            final adru a2 = materialButton.a;
-            a2.n = true;
-            final adwf a3 = a2.a();
-            final adwf b = a2.b();
-            if (a3 != null) {
-                a3.t((float)a2.h, a2.k);
+            final adtw a = materialButton.a;
+            a.n = true;
+            final adyh a2 = a.a();
+            final adyh b = a.b();
+            if (a2 != null) {
+                a2.t((float)a.h, a.k);
                 if (b != null) {
-                    final float n = (float)a2.h;
-                    if (a2.n) {
-                        a = adwd.A((View)a2.a, 2130969109);
+                    final float n = (float)a.h;
+                    if (a.n) {
+                        u = adds.U((View)a.a, 2130969109);
                     }
                     else {
-                        a = 0;
+                        u = 0;
                     }
-                    b.s(n, a);
+                    b.s(n, u);
                 }
             }
         }
         this.a(materialButton.getId(), materialButton.b);
-        final adwk c = materialButton.c();
-        this.b.add(new adrw(c.b, c.e, c.c, c.d));
+        final adym c = materialButton.c();
+        this.b.add(new adty(c.b, c.e, c.c, c.d));
         materialButton.setEnabled(this.isEnabled());
-        ana.N((View)materialButton, (akv)new adrv(this));
+        anb.N((View)materialButton, (akw)new adtx(this));
     }
     
     final void b() {
@@ -242,54 +242,54 @@ public class MaterialButtonToggleGroup extends LinearLayout
         for (int i = 0; i < childCount; ++i) {
             final MaterialButton e = this.e(i);
             if (e.getVisibility() != 8) {
-                final adwj e2 = e.c().e();
-                adrw adrw2;
-                final adrw adrw = adrw2 = this.b.get(i);
+                final adyl e2 = e.c().e();
+                adty adty2;
+                final adty adty = adty2 = this.b.get(i);
                 if (d != n2) {
                     final int orientation = this.getOrientation();
                     if (i == d) {
                         if (orientation == 0) {
-                            if (adwd.r((View)this)) {
-                                adrw2 = adrw.b(adrw);
+                            if (adds.L((View)this)) {
+                                adty2 = adty.b(adty);
                             }
                             else {
-                                adrw2 = adrw.a(adrw);
+                                adty2 = adty.a(adty);
                             }
                         }
                         else {
-                            final adwb b = adrw.b;
-                            final adwb a = adrw.a;
-                            adrw2 = new adrw(b, a, adrw.c, a);
+                            final adyd b = adty.b;
+                            final adyd a = adty.a;
+                            adty2 = new adty(b, a, adty.c, a);
                         }
                     }
                     else if (i == n2) {
                         if (orientation == 0) {
-                            if (adwd.r((View)this)) {
-                                adrw2 = adrw.a(adrw);
+                            if (adds.L((View)this)) {
+                                adty2 = adty.a(adty);
                             }
                             else {
-                                adrw2 = adrw.b(adrw);
+                                adty2 = adty.b(adty);
                             }
                         }
                         else {
-                            final adwb a2 = adrw.a;
-                            adrw2 = new adrw(a2, adrw.e, a2, adrw.d);
+                            final adyd a2 = adty.a;
+                            adty2 = new adty(a2, adty.e, a2, adty.d);
                         }
                     }
                     else {
-                        adrw2 = null;
+                        adty2 = null;
                     }
                 }
-                if (adrw2 == null) {
+                if (adty2 == null) {
                     e2.f(0.0f);
                 }
                 else {
-                    e2.a = adrw2.b;
-                    e2.d = adrw2.e;
-                    e2.b = adrw2.c;
-                    e2.c = adrw2.d;
+                    e2.a = adty2.b;
+                    e2.d = adty2.e;
+                    e2.b = adty2.c;
+                    e2.c = adty2.d;
                 }
-                e.ti(e2.a());
+                e.tn(e2.a());
             }
         }
     }
@@ -326,7 +326,7 @@ public class MaterialButtonToggleGroup extends LinearLayout
     
     public final void onInitializeAccessibilityNodeInfo(final AccessibilityNodeInfo accessibilityNodeInfo) {
         super.onInitializeAccessibilityNodeInfo(accessibilityNodeInfo);
-        final aol c = aol.c(accessibilityNodeInfo);
+        final aom c = aom.c(accessibilityNodeInfo);
         int i = 0;
         int n = 0;
         while (i < this.getChildCount()) {

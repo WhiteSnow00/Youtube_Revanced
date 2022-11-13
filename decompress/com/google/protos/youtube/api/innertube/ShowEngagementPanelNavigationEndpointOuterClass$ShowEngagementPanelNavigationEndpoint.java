@@ -6,21 +6,21 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint extends agzi implements ahax
+public final class ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint extends ahbh implements ahcw
 {
     public static final ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint a;
-    private static volatile ahbe f;
-    public static final agzg showEngagementPanelNavigationEndpoint;
+    private static volatile ahdd f;
+    public static final ahbf showEngagementPanelNavigationEndpoint;
     public int b;
     public String c;
     public boolean d;
-    public akdf e;
+    public akfi e;
     private byte g;
     
     static {
         final ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint a2 = new ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint();
-        agzi.registerDefaultInstance((Class)ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint.class, (agzi)(a = a2));
-        showEngagementPanelNavigationEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 163501208, ahcm.k, (Class)ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint.class);
+        ahbh.registerDefaultInstance((Class)ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint.class, (ahbh)(a = a2));
+        showEngagementPanelNavigationEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 163501208, ahek.k, (Class)ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint.class);
     }
     
     private ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint() {
@@ -28,20 +28,20 @@ public final class ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagemen
         this.c = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte g = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe f;
+                final ahdd f;
                 if ((f = ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint.f) == null) {
                     synchronized (ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint.class) {
                         if (ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint.f == null) {
-                            ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint.f = (ahbe)new agzb((agzi)ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint.a);
+                            ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint.f = (ahdd)new ahba((ahbh)ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint.a);
                         }
                     }
                 }
@@ -51,7 +51,7 @@ public final class ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagemen
                 return ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint.a);
+                return new ahaz((ahbh)ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint.a);
             }
             case 3: {
                 return new ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagementPanelNavigationEndpoint();
@@ -61,9 +61,9 @@ public final class ShowEngagementPanelNavigationEndpointOuterClass$ShowEngagemen
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    g = 0;
                 }
-                this.g = (byte)(b ? 1 : 0);
+                this.g = g;
                 return null;
             }
             case 0: {

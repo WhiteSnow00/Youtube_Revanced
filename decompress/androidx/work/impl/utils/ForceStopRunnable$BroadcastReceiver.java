@@ -11,13 +11,13 @@ import android.content.BroadcastReceiver;
 public class ForceStopRunnable$BroadcastReceiver extends BroadcastReceiver
 {
     static {
-        cmr.b("ForceStopRunnable$Rcvr");
+        cms.b("ForceStopRunnable$Rcvr");
     }
     
     public final void onReceive(final Context context, final Intent intent) {
         if (intent != null && "ACTION_FORCE_STOP_RESCHEDULE".equals(intent.getAction())) {
-            cmr.a();
-            csg.a(context);
+            cms.a();
+            csh.a(context);
         }
     }
 }

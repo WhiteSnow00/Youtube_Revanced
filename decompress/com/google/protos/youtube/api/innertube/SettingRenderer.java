@@ -8,14 +8,14 @@ import com.google.protobuf.MessageLite;
 
 public final class SettingRenderer
 {
-    public static final agzg a;
-    public static final agzg settingDialogRenderer;
-    public static final agzg settingSingleOptionMenuRenderer;
+    public static final ahbf a;
+    public static final ahbf settingDialogRenderer;
+    public static final ahbf settingSingleOptionMenuRenderer;
     
     static {
-        a = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anxs.a, (MessageLite)anxs.a, (agzn)null, 61331416, ahcm.k, (Class)anxs.class);
-        settingDialogRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anxy.a, (MessageLite)anxy.a, (agzn)null, 190513794, ahcm.k, (Class)anxy.class);
-        settingSingleOptionMenuRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anyf.a, (MessageLite)anyf.a, (agzn)null, 61321220, ahcm.k, (Class)anyf.class);
+        a = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anzv.a, (MessageLite)anzv.a, (ahbm)null, 61331416, ahek.k, (Class)anzv.class);
+        settingDialogRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)aoab.a, (MessageLite)aoab.a, (ahbm)null, 190513794, ahek.k, (Class)aoab.class);
+        settingSingleOptionMenuRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)aoai.a, (MessageLite)aoai.a, (ahbm)null, 61321220, ahek.k, (Class)aoai.class);
     }
     
     private SettingRenderer() {

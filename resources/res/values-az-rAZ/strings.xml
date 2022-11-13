@@ -93,9 +93,6 @@
     <string name="litho_paid_content">Ödənişli məzmunun silinməsi</string>
     <string name="litho_paid_content_off">Ödənişli məzmunun silinməsi söndürülüb</string>
     <string name="litho_paid_content_on">Ödənişli məzmunun silinməsi aktivdir</string>
-    <string name="litho_shorts_shelf">Shorts rəflərinin çıxarılması</string>
-    <string name="litho_shorts_shelf_off">Shorts rəflərinin çıxarılması söndürülüb</string>
-    <string name="litho_shorts_shelf_on">Shorts rəflərinin çıxarılması aktivdir</string>
     <string name="microg_not_installed_notice">Zəhmət olmasa MicroG-ni quraşdırın</string>
     <string name="microg_not_installed_warning">MicroG tapılmadı</string>
     <string name="microg_notification_settings">MicroG Bildiriş parametrləri</string>
@@ -256,7 +253,6 @@
     <string name="revanced_preferred_video_speed_summary">İstədiyiniz video sürətini seçin</string>
     <string name="revanced_preferred_video_speed_title">Üstünlük verilən video sürəti</string>
     <string name="revanced_reboot_warning_fullscreen">YouTube versiyasını aldadın və onu server tərəfində yeniləməyə çalışın.\10 Bu bəzən nəzərdə tutulduğu kimi işləməyə bilər.\10 Bəzi hallarda, ReVanced-i yenidən quraşdırmaq lazım ola bilər.\10 Davam etmək istədiyinizə əminsiniz?</string>
-    <string name="revanced_reboot_warning_ryd">Bəyənməmə saylarını yeni tərtibatda göstərmək üçün bəyənmə düyməsi ilə inteqrasiya olunur.\10 Bununla belə, bu hələ eksperimental xüsusiyyət olduğundan, bəyənmələrin sayı dəqiq göstərilməyə bilər.\10 Davam etmək istədiyinizə əminsiniz?</string>
     <string name="revanced_rebuffer_summary">Rebuferdən sonra oxutmanın davam etməsi üçün buferə salınmalı olan medianın müddəti (millisaniyələrlə). Rebuferin istifadəçi hərəkətindən çox buferin tükənməsi nəticəsində yarandığı müəyyən edilir defolt: 5000</string>
     <string name="revanced_rebuffer_title">Geri qaytarmaq</string>
     <string name="revanced_reel_summary_off">Hekayələr gizlidir</string>
@@ -264,8 +260,6 @@
     <string name="revanced_reel_title">YouTube hekayələri</string>
     <string name="revanced_ryd_attribution_summary">Bu inteqrasiya https://returnyoutubedislike.com saytından RYD API-dən istifadə edir. Ətraflı öyrənmək üçün toxunun</string>
     <string name="revanced_ryd_attribution_title">YouTube Bəyənməmə İnteqrasiyasını qaytarın</string>
-    <string name="revanced_ryd_new_layout_summary">Yeni tərtibatda bəyənməmə sayını göstərin</string>
-    <string name="revanced_ryd_new_layout_title">RYD-ı düzəlt (yeni örtüy)</string>
     <string name="revanced_ryd_settings_summary">RYD API istifadə edir</string>
     <string name="revanced_ryd_settings_title">YouTube Bəyənməmə parametrlərini qaytarın</string>
     <string name="revanced_ryd_summary">Bəyənməmələrin saydığını yenidən görmək üçün bunu yandırın</string>
@@ -283,9 +277,6 @@
     <string name="revanced_suggested_actions_summary_off">Göstərilən Təklif Edilən Fəaliyyətlər</string>
     <string name="revanced_suggested_actions_summary_on">Təklif edilən Fəaliyyətlər gizlədilib</string>
     <string name="revanced_suggested_actions_title">Təklif olunan fəaliyyətlər</string>
-    <string name="revanced_suggestion_summary_off">Son ekranlar gizlidir</string>
-    <string name="revanced_suggestion_summary_on">Son ekranlar göstərilir</string>
-    <string name="revanced_suggestion_title">Son ekranlar</string>
     <string name="revanced_swipe_auto_brightness_summary_off">Sürüşmə ilə avtomatik parlaqlıq deaktiv edilib</string>
     <string name="revanced_swipe_auto_brightness_summary_on">Sürüşmə ilə avtomatik parlaqlıq aktivləşdirilib</string>
     <string name="revanced_swipe_auto_brightness_title">Sürüşmə ilə avtomatik parlaqlıq</string>

@@ -6,22 +6,22 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand extends agzi implements ahax
+public final class SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand extends ahbh implements ahcw
 {
     public static final SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand a;
-    private static volatile ahbe h;
-    public static final agzg sfvAudioSearchCommand;
+    private static volatile ahdd h;
+    public static final ahbf sfvAudioSearchCommand;
     public int b;
     public String c;
     public String d;
     public String e;
-    public akwm f;
+    public akyp f;
     public boolean g;
     
     static {
         final SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand a2 = new SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand();
-        agzi.registerDefaultInstance((Class)SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand.class, (agzi)(a = a2));
-        sfvAudioSearchCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 321865519, ahcm.k, (Class)SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand.class);
+        ahbh.registerDefaultInstance((Class)SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand.class, (ahbh)(a = a2));
+        sfvAudioSearchCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 321865519, ahek.k, (Class)SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand.class);
     }
     
     private SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand() {
@@ -31,18 +31,18 @@ public final class SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand extends
         this.g = true;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe h;
+                final ahdd h;
                 if ((h = SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand.h) == null) {
                     synchronized (SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand.class) {
                         if (SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand.h == null) {
-                            SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand.h = (ahbe)new agzb((agzi)SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand.a);
+                            SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand.h = (ahdd)new ahba((ahbh)SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand.a);
                         }
                     }
                 }
@@ -52,7 +52,7 @@ public final class SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand extends
                 return SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand.a;
             }
             case 4: {
-                return new agza((agzi)SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand.a);
+                return new ahaz((ahbh)SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand.a);
             }
             case 3: {
                 return new SfvAudioSearchCommandOuterClass$SfvAudioSearchCommand();

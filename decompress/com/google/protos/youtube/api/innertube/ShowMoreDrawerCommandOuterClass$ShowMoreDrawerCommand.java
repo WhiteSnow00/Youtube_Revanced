@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand extends agzi implements ahax
+public final class ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand extends ahbh implements ahcw
 {
     public static final ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand a;
-    private static volatile ahbe c;
-    public static final agzg showMoreDrawerCommand;
-    public amwi b;
+    private static volatile ahdd c;
+    public static final ahbf showMoreDrawerCommand;
+    public amym b;
     private int d;
     private byte e;
     
     static {
         final ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand a2 = new ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand();
-        agzi.registerDefaultInstance((Class)ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand.class, (agzi)(a = a2));
-        showMoreDrawerCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 441221881, ahcm.k, (Class)ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand.class);
+        ahbh.registerDefaultInstance((Class)ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand.class, (ahbh)(a = a2));
+        showMoreDrawerCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 441221881, ahek.k, (Class)ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand.class);
     }
     
     private ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand.c) == null) {
                     synchronized (ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand.class) {
                         if (ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand.c == null) {
-                            ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand.c = (ahbe)new agzb((agzi)ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand.a);
+                            ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand.c = (ahdd)new ahba((ahbh)ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand extends
                 return ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand.a;
             }
             case 4: {
-                return new agza((agzi)ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand.a);
+                return new ahaz((ahbh)ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand.a);
             }
             case 3: {
                 return new ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand();
@@ -58,9 +58,9 @@ public final class ShowMoreDrawerCommandOuterClass$ShowMoreDrawerCommand extends
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

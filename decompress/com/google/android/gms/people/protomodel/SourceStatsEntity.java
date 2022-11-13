@@ -17,7 +17,7 @@ public class SourceStatsEntity extends AbstractSafeParcelable implements SourceS
     public final Integer c;
     
     static {
-        CREATOR = (Parcelable$Creator)new njx(13);
+        CREATOR = (Parcelable$Creator)new nlj(12);
     }
     
     public SourceStatsEntity(final String a, final Integer b, final Integer c) {
@@ -46,18 +46,18 @@ public class SourceStatsEntity extends AbstractSafeParcelable implements SourceS
             return true;
         }
         final SourceStats sourceStats = (SourceStats)o;
-        return kgk.ba((Object)this.c(), (Object)sourceStats.c()) && kgk.ba((Object)this.a(), (Object)sourceStats.a()) && kgk.ba((Object)this.b(), (Object)sourceStats.b());
+        return khl.be((Object)((SourceStats)this).c(), (Object)sourceStats.c()) && khl.be((Object)((SourceStats)this).a(), (Object)sourceStats.a()) && khl.be((Object)((SourceStats)this).b(), (Object)sourceStats.b());
     }
     
     public final int hashCode() {
-        return Arrays.hashCode(new Object[] { this.c(), this.a(), this.b() });
+        return Arrays.hashCode(new Object[] { ((SourceStats)this).c(), ((SourceStats)this).a(), ((SourceStats)this).b() });
     }
     
-    public final void writeToParcel(final Parcel parcel, int i) {
-        i = kgk.I(parcel);
-        kgk.ac(parcel, 2, this.a);
-        kgk.X(parcel, 3, this.b);
-        kgk.X(parcel, 4, this.c);
-        kgk.J(parcel, i);
+    public final void writeToParcel(final Parcel parcel, int m) {
+        m = khl.M(parcel);
+        khl.ag(parcel, 2, this.a);
+        khl.ab(parcel, 3, this.b);
+        khl.ab(parcel, 4, this.c);
+        khl.N(parcel, m);
     }
 }

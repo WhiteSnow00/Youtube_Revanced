@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowMealbarActionOuterClass$ShowMealbarAction extends agzi implements ahax
+public final class ShowMealbarActionOuterClass$ShowMealbarAction extends ahbh implements ahcw
 {
     public static final ShowMealbarActionOuterClass$ShowMealbarAction a;
-    private static volatile ahbe c;
-    public static final agzg showMealbarAction;
-    public aoel b;
+    private static volatile ahdd c;
+    public static final ahbf showMealbarAction;
+    public aogo b;
     private int d;
     private byte e;
     
     static {
         final ShowMealbarActionOuterClass$ShowMealbarAction a2 = new ShowMealbarActionOuterClass$ShowMealbarAction();
-        agzi.registerDefaultInstance((Class)ShowMealbarActionOuterClass$ShowMealbarAction.class, (agzi)(a = a2));
-        showMealbarAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 109865460, ahcm.k, (Class)ShowMealbarActionOuterClass$ShowMealbarAction.class);
+        ahbh.registerDefaultInstance((Class)ShowMealbarActionOuterClass$ShowMealbarAction.class, (ahbh)(a = a2));
+        showMealbarAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 109865460, ahek.k, (Class)ShowMealbarActionOuterClass$ShowMealbarAction.class);
     }
     
     private ShowMealbarActionOuterClass$ShowMealbarAction() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = ShowMealbarActionOuterClass$ShowMealbarAction.c) == null) {
                     synchronized (ShowMealbarActionOuterClass$ShowMealbarAction.class) {
                         if (ShowMealbarActionOuterClass$ShowMealbarAction.c == null) {
-                            ShowMealbarActionOuterClass$ShowMealbarAction.c = (ahbe)new agzb((agzi)ShowMealbarActionOuterClass$ShowMealbarAction.a);
+                            ShowMealbarActionOuterClass$ShowMealbarAction.c = (ahdd)new ahba((ahbh)ShowMealbarActionOuterClass$ShowMealbarAction.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class ShowMealbarActionOuterClass$ShowMealbarAction extends agzi im
                 return ShowMealbarActionOuterClass$ShowMealbarAction.a;
             }
             case 4: {
-                return new agza((agzi)ShowMealbarActionOuterClass$ShowMealbarAction.a);
+                return new ahaz((ahbh)ShowMealbarActionOuterClass$ShowMealbarAction.a);
             }
             case 3: {
                 return new ShowMealbarActionOuterClass$ShowMealbarAction();
@@ -58,9 +58,9 @@ public final class ShowMealbarActionOuterClass$ShowMealbarAction extends agzi im
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

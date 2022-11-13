@@ -16,7 +16,7 @@ import android.util.AttributeSet;
 import android.content.Context;
 import android.graphics.Rect;
 
-public class ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior extends aeh
+public class ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior extends aei
 {
     private Rect a;
     private boolean b;
@@ -29,79 +29,113 @@ public class ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior e
     
     public ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior(final Context context, final AttributeSet set) {
         super(context, set);
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, adth.a);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, advj.a);
         this.b = obtainStyledAttributes.getBoolean(0, false);
         this.c = obtainStyledAttributes.getBoolean(1, true);
         obtainStyledAttributes.recycle();
     }
     
-    private final boolean A(final CoordinatorLayout coordinatorLayout, final AppBarLayout appBarLayout, final adss adss) {
-        if (!this.z((View)appBarLayout, adss)) {
+    private final boolean A(final CoordinatorLayout coordinatorLayout, final AppBarLayout appBarLayout, final aduu aduu) {
+        if (!this.z((View)appBarLayout, aduu)) {
             return false;
         }
         if (this.a == null) {
             this.a = new Rect();
         }
         final Rect a = this.a;
-        adtl.a((ViewGroup)coordinatorLayout, (View)appBarLayout, a);
+        advn.a((ViewGroup)coordinatorLayout, (View)appBarLayout, a);
         if (a.bottom <= appBarLayout.e()) {
-            this.x(adss);
+            this.x(aduu);
         }
         else {
-            this.w(adss);
+            this.w(aduu);
         }
         return true;
     }
     
-    private final boolean B(final View view, final adss adss) {
-        if (!this.z(view, adss)) {
+    private final boolean B(final View view, final aduu aduu) {
+        if (!this.z(view, aduu)) {
             return false;
         }
-        if (view.getTop() < adss.getHeight() / 2 + ((aej)adss.getLayoutParams()).topMargin) {
-            this.x(adss);
+        if (view.getTop() < aduu.getHeight() / 2 + ((aek)aduu.getLayoutParams()).topMargin) {
+            this.x(aduu);
         }
         else {
-            this.w(adss);
+            this.w(aduu);
         }
         return true;
     }
     
     private static boolean y(final View view) {
         final ViewGroup$LayoutParams layoutParams = view.getLayoutParams();
-        return layoutParams instanceof aej && ((aej)layoutParams).a instanceof BottomSheetBehavior;
+        return layoutParams instanceof aek && ((aek)layoutParams).a instanceof BottomSheetBehavior;
     }
     
-    private final boolean z(final View view, final adss adss) {
-        final aej aej = (aej)adss.getLayoutParams();
-        return (this.b || this.c) && aej.f == view.getId();
+    private final boolean z(final View view, final aduu aduu) {
+        final aek aek = (aek)aduu.getLayoutParams();
+        return (this.b || this.c) && aek.f == view.getId();
     }
     
-    public final void so(final aej aej) {
-        if (aej.h == 0) {
-            aej.h = 80;
+    public final /* bridge */ boolean h(final CoordinatorLayout coordinatorLayout, final View view, final int n) {
+        final aduu aduu = (aduu)view;
+        final List b = coordinatorLayout.b((View)aduu);
+        for (int size = b.size(), i = 0; i < size; ++i) {
+            final View view2 = b.get(i);
+            if (view2 instanceof AppBarLayout) {
+                if (this.A(coordinatorLayout, (AppBarLayout)view2, aduu)) {
+                    break;
+                }
+            }
+            else if (y(view2) && this.B(view2, aduu)) {
+                break;
+            }
+        }
+        coordinatorLayout.k((View)aduu, n);
+        return true;
+    }
+    
+    public final /* bridge */ boolean qJ(final CoordinatorLayout coordinatorLayout, final View view, final View view2) {
+        final aduu aduu = (aduu)view;
+        if (view2 instanceof AppBarLayout) {
+            this.A(coordinatorLayout, (AppBarLayout)view2, aduu);
+        }
+        else if (y(view2)) {
+            this.B(view2, aduu);
+        }
+        return false;
+    }
+    
+    public final /* bridge */ boolean s(final View view, final Rect rect) {
+        final aduu aduu = (aduu)view;
+        return false;
+    }
+    
+    public final void su(final aek aek) {
+        if (aek.h == 0) {
+            aek.h = 80;
         }
     }
     
-    protected final void w(final adss adss) {
+    protected final void w(final aduu aduu) {
         if (this.c) {
-            final int h = adss.h;
-            final adtg e = adss.e;
+            final int h = aduu.h;
+            final advi e = aduu.e;
         }
         else {
-            final int h2 = adss.h;
-            final adtg f = adss.f;
+            final int h2 = aduu.h;
+            final advi f = aduu.f;
         }
         throw null;
     }
     
-    protected final void x(final adss adss) {
+    protected final void x(final aduu aduu) {
         if (this.c) {
-            final int h = adss.h;
-            final adtg d = adss.d;
+            final int h = aduu.h;
+            final advi d = aduu.d;
         }
         else {
-            final int h2 = adss.h;
-            final adtg g = adss.g;
+            final int h2 = aduu.h;
+            final advi g = aduu.g;
         }
         throw null;
     }

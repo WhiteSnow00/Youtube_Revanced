@@ -6,26 +6,26 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand extends agzi implements ahax
+public final class PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand extends ahbh implements ahcw
 {
     public static final PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand a;
-    private static volatile ahbe k;
-    public static final agzg playBillingCrossSellCommand;
+    private static volatile ahdd k;
+    public static final ahbf playBillingCrossSellCommand;
     public int b;
     public String c;
     public String d;
-    public aioe e;
-    public aioe f;
+    public aiqj e;
+    public aiqj f;
     public String g;
     public String h;
     public String i;
-    public aioe j;
+    public aiqj j;
     private byte l;
     
     static {
         final PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand a2 = new PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand();
-        agzi.registerDefaultInstance((Class)PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand.class, (agzi)(a = a2));
-        playBillingCrossSellCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 432944950, ahcm.k, (Class)PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand.class);
+        ahbh.registerDefaultInstance((Class)PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand.class, (ahbh)(a = a2));
+        playBillingCrossSellCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 432944950, ahek.k, (Class)PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand.class);
     }
     
     private PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand() {
@@ -37,20 +37,20 @@ public final class PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCom
         this.i = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte l = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe k;
+                final ahdd k;
                 if ((k = PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand.k) == null) {
                     synchronized (PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand.class) {
                         if (PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand.k == null) {
-                            PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand.k = (ahbe)new agzb((agzi)PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand.a);
+                            PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand.k = (ahdd)new ahba((ahbh)PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand.a);
                         }
                     }
                 }
@@ -60,7 +60,7 @@ public final class PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCom
                 return PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand.a;
             }
             case 4: {
-                return new agza((agzi)PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand.a);
+                return new ahaz((ahbh)PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand.a);
             }
             case 3: {
                 return new PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCommand();
@@ -70,9 +70,9 @@ public final class PlayBillingCrossSellCommandOuterClass$PlayBillingCrossSellCom
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    l = 0;
                 }
-                this.l = (byte)(b ? 1 : 0);
+                this.l = l;
                 return null;
             }
             case 0: {

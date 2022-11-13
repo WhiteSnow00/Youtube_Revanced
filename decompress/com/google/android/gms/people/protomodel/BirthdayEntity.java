@@ -17,7 +17,7 @@ public class BirthdayEntity extends AbstractSafeParcelable implements Birthday
     public final Long b;
     
     static {
-        CREATOR = (Parcelable$Creator)new njx(4);
+        CREATOR = (Parcelable$Creator)new nlj(3);
     }
     
     public BirthdayEntity(final PersonFieldMetadataEntity a, final Long b) {
@@ -26,7 +26,7 @@ public class BirthdayEntity extends AbstractSafeParcelable implements Birthday
     }
     
     public final PersonFieldMetadata a() {
-        return this.a;
+        return (PersonFieldMetadata)this.a;
     }
     
     public final Long b() {
@@ -41,17 +41,17 @@ public class BirthdayEntity extends AbstractSafeParcelable implements Birthday
             return true;
         }
         final Birthday birthday = (Birthday)o;
-        return kgk.ba((Object)this.a(), (Object)birthday.a()) && kgk.ba((Object)this.b(), (Object)birthday.b());
+        return khl.be((Object)((Birthday)this).a(), (Object)birthday.a()) && khl.be((Object)((Birthday)this).b(), (Object)birthday.b());
     }
     
     public final int hashCode() {
-        return Arrays.hashCode(new Object[] { this.a(), this.b() });
+        return Arrays.hashCode(new Object[] { ((Birthday)this).a(), ((Birthday)this).b() });
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        final int i = kgk.I(parcel);
-        kgk.ab(parcel, 2, (Parcelable)this.a, n);
-        kgk.aa(parcel, 3, this.b);
-        kgk.J(parcel, i);
+        final int m = khl.M(parcel);
+        khl.af(parcel, 2, (Parcelable)this.a, n);
+        khl.ae(parcel, 3, this.b);
+        khl.N(parcel, m);
     }
 }

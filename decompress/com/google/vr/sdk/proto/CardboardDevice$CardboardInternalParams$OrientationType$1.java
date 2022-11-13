@@ -4,12 +4,15 @@
 
 package com.google.vr.sdk.proto;
 
-class CardboardDevice$CardboardInternalParams$OrientationType$1 implements agzn
+class CardboardDevice$CardboardInternalParams$OrientationType$1 implements ahbm
 {
     public CardboardDevice$CardboardInternalParams$OrientationType$1() {
     }
     
-    @Override
+    public /* bridge */ ahbl findValueByNumber(final int n) {
+        return (ahbl)this.findValueByNumber(n);
+    }
+    
     public CardboardDevice$CardboardInternalParams$OrientationType findValueByNumber(final int n) {
         return CardboardDevice$CardboardInternalParams$OrientationType.forNumber(n);
     }

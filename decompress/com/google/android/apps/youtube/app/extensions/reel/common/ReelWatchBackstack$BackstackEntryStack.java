@@ -17,7 +17,7 @@ public final class ReelWatchBackstack$BackstackEntryStack implements Parcelable
     public final List a;
     
     static {
-        CREATOR = (Parcelable$Creator)new fzf(11);
+        CREATOR = (Parcelable$Creator)new fzn(11);
     }
     
     public ReelWatchBackstack$BackstackEntryStack() {
@@ -41,7 +41,7 @@ public final class ReelWatchBackstack$BackstackEntryStack implements Parcelable
         if (this.a.isEmpty()) {
             return null;
         }
-        return (ReelWatchBackstack$BackstackEntry)adwd.aK(this.a);
+        return (ReelWatchBackstack$BackstackEntry)agpc.V((Iterable)this.a);
     }
     
     public final ReelWatchBackstack$BackstackEntry d() {

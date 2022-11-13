@@ -17,13 +17,13 @@ public class PlaylistEditorFragment$EditorState implements Parcelable
     public final int c;
     
     static {
-        CREATOR = (Parcelable$Creator)new fzf(19);
+        CREATOR = (Parcelable$Creator)new fzn(18);
     }
     
     public PlaylistEditorFragment$EditorState(final Parcel parcel) {
         this.a = (CharSequence)TextUtils.CHAR_SEQUENCE_CREATOR.createFromParcel(parcel);
         this.b = (CharSequence)TextUtils.CHAR_SEQUENCE_CREATOR.createFromParcel(parcel);
-        this.c = aqql.ct(parcel.readInt());
+        this.c = aqsx.cu(parcel.readInt());
     }
     
     public PlaylistEditorFragment$EditorState(final CharSequence a, final CharSequence b, final int c) {

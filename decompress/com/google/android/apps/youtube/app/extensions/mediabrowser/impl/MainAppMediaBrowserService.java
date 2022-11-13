@@ -8,24 +8,23 @@ import android.support.v4.media.session.MediaSessionCompat$Token;
 import android.os.Bundle;
 import java.util.Collections;
 
-public class MainAppMediaBrowserService extends gtu
+public class MainAppMediaBrowserService extends gud
 {
-    public gtv f;
-    public atjj g;
-    public atjj h;
+    public gue f;
+    public atke g;
+    public atke h;
     
-    public final void b(final awy awy) {
-        awy.b((Object)Collections.emptyList());
+    public final void b(final awz awz) {
+        awz.b((Object)Collections.emptyList());
     }
     
-    public final baa e(final String s) {
+    public final bab e(final String s) {
         if (s.equals("com.android.systemui")) {
             return null;
         }
-        return new baa((Bundle)null);
+        return new bab((Bundle)null);
     }
     
-    @Override
     public final void onCreate() {
         super.onCreate();
         final eg eg = (eg)this.f.e.a();
@@ -34,9 +33,9 @@ public class MainAppMediaBrowserService extends gtu
         if (b == null) {
             throw new IllegalArgumentException("Session token may not be null");
         }
-        if (super.d == null) {
-            super.d = b;
-            final aws e = super.e;
+        if (((axd)this).d == null) {
+            ((axd)this).d = b;
+            final awt e = ((axd)this).e;
             e.d.c.a((Runnable)new vs(e, b, 17));
             return;
         }
@@ -44,6 +43,6 @@ public class MainAppMediaBrowserService extends gtu
     }
     
     public final void onDestroy() {
-        ((abks)this.h.a()).b(((abns)this.g.a()).e().j);
+        ((abms)this.h.a()).b(((abpu)this.g.a()).e().i);
     }
 }

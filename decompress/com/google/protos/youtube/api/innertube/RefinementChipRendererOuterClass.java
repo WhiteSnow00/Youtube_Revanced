@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class RefinementChipRendererOuterClass
 {
-    public static final agzg refinementChipRenderer;
+    public static final ahbf refinementChipRenderer;
     
     static {
-        refinementChipRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anrt.a, (MessageLite)anrt.a, (agzn)null, 122472668, ahcm.k, (Class)anrt.class);
+        refinementChipRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)antw.a, (MessageLite)antw.a, (ahbm)null, 122472668, ahek.k, (Class)antw.class);
     }
     
     private RefinementChipRendererOuterClass() {

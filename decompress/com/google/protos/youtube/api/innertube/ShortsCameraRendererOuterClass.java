@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ShortsCameraRendererOuterClass
 {
-    public static final agzg shortsCameraRenderer;
+    public static final ahbf shortsCameraRenderer;
     
     static {
-        shortsCameraRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)aocl.a, (MessageLite)aocl.a, (agzn)null, 355938383, ahcm.k, (Class)aocl.class);
+        shortsCameraRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)aoen.a, (MessageLite)aoen.a, (ahbm)null, 355938383, ahek.k, (Class)aoen.class);
     }
     
     private ShortsCameraRendererOuterClass() {

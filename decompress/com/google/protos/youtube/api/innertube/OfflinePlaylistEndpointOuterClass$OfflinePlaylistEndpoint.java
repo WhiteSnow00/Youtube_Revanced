@@ -6,23 +6,23 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint extends agzi implements ahax
+public final class OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint extends ahbh implements ahcw
 {
     public static final OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint a;
-    private static volatile ahbe g;
-    public static final agzg offlinePlaylistEndpoint;
+    private static volatile ahdd g;
+    public static final ahbf offlinePlaylistEndpoint;
     public int b;
     public String c;
     public int d;
-    public anss e;
-    public amqx f;
-    private aioe h;
+    public anuv e;
+    public amtb f;
+    private aiqj h;
     private byte i;
     
     static {
         final OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint a2 = new OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint();
-        agzi.registerDefaultInstance((Class)OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.class, (agzi)(a = a2));
-        offlinePlaylistEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 73082583, ahcm.k, (Class)OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.class);
+        ahbh.registerDefaultInstance((Class)OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.class, (ahbh)(a = a2));
+        offlinePlaylistEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 73082583, ahek.k, (Class)OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.class);
     }
     
     private OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint() {
@@ -31,20 +31,20 @@ public final class OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint ext
         emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte i = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe g;
+                final ahdd g;
                 if ((g = OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.g) == null) {
                     synchronized (OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.class) {
                         if (OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.g == null) {
-                            OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.g = (ahbe)new agzb((agzi)OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.a);
+                            OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.g = (ahdd)new ahba((ahbh)OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.a);
                         }
                     }
                 }
@@ -54,19 +54,19 @@ public final class OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint ext
                 return OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.a);
+                return new ahaz((ahbh)OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.a);
             }
             case 3: {
                 return new OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint();
             }
             case 2: {
-                return newMessageInfo((MessageLite)OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.a, "\u0001\u0005\u0000\u0001\u0001\u0007\u0005\u0000\u0000\u0002\u0001\u1008\u0000\u0002\u100c\u0001\u0004\u1409\u0003\u0006\u1009\u0004\u0007\u1409\u0005", new Object[] { "b", "c", "d", amsc.m, "e", "f", "h" });
+                return newMessageInfo((MessageLite)OfflinePlaylistEndpointOuterClass$OfflinePlaylistEndpoint.a, "\u0001\u0005\u0000\u0001\u0001\u0007\u0005\u0000\u0000\u0002\u0001\u1008\u0000\u0002\u100c\u0001\u0004\u1409\u0003\u0006\u1009\u0004\u0007\u1409\u0005", new Object[] { "b", "c", "d", amud.n, "e", "f", "h" });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    i = 0;
                 }
-                this.i = (byte)(b ? 1 : 0);
+                this.i = i;
                 return null;
             }
             case 0: {

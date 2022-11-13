@@ -6,19 +6,19 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShareVideoEndpointOuterClass$ShareVideoEndpoint extends agzi implements ahax
+public final class ShareVideoEndpointOuterClass$ShareVideoEndpoint extends ahbh implements ahcw
 {
     public static final ShareVideoEndpointOuterClass$ShareVideoEndpoint a;
-    private static volatile ahbe d;
-    public static final agzg shareVideoEndpoint;
+    private static volatile ahdd d;
+    public static final ahbf shareVideoEndpoint;
     public String b;
     public String c;
     private int e;
     
     static {
         final ShareVideoEndpointOuterClass$ShareVideoEndpoint a2 = new ShareVideoEndpointOuterClass$ShareVideoEndpoint();
-        agzi.registerDefaultInstance((Class)ShareVideoEndpointOuterClass$ShareVideoEndpoint.class, (agzi)(a = a2));
-        shareVideoEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 73844178, ahcm.k, (Class)ShareVideoEndpointOuterClass$ShareVideoEndpoint.class);
+        ahbh.registerDefaultInstance((Class)ShareVideoEndpointOuterClass$ShareVideoEndpoint.class, (ahbh)(a = a2));
+        shareVideoEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 73844178, ahek.k, (Class)ShareVideoEndpointOuterClass$ShareVideoEndpoint.class);
     }
     
     private ShareVideoEndpointOuterClass$ShareVideoEndpoint() {
@@ -26,18 +26,18 @@ public final class ShareVideoEndpointOuterClass$ShareVideoEndpoint extends agzi 
         this.c = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = ShareVideoEndpointOuterClass$ShareVideoEndpoint.d) == null) {
                     synchronized (ShareVideoEndpointOuterClass$ShareVideoEndpoint.class) {
                         if (ShareVideoEndpointOuterClass$ShareVideoEndpoint.d == null) {
-                            ShareVideoEndpointOuterClass$ShareVideoEndpoint.d = (ahbe)new agzb((agzi)ShareVideoEndpointOuterClass$ShareVideoEndpoint.a);
+                            ShareVideoEndpointOuterClass$ShareVideoEndpoint.d = (ahdd)new ahba((ahbh)ShareVideoEndpointOuterClass$ShareVideoEndpoint.a);
                         }
                     }
                 }
@@ -47,7 +47,7 @@ public final class ShareVideoEndpointOuterClass$ShareVideoEndpoint extends agzi 
                 return ShareVideoEndpointOuterClass$ShareVideoEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)ShareVideoEndpointOuterClass$ShareVideoEndpoint.a);
+                return new ahaz((ahbh)ShareVideoEndpointOuterClass$ShareVideoEndpoint.a);
             }
             case 3: {
                 return new ShareVideoEndpointOuterClass$ShareVideoEndpoint();

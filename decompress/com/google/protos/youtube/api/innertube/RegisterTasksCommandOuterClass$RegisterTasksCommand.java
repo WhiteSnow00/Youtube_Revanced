@@ -6,18 +6,18 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class RegisterTasksCommandOuterClass$RegisterTasksCommand extends agzi implements ahax
+public final class RegisterTasksCommandOuterClass$RegisterTasksCommand extends ahbh implements ahcw
 {
     public static final RegisterTasksCommandOuterClass$RegisterTasksCommand a;
-    private static volatile ahbe c;
-    public static final agzg registerTasksCommand;
-    public agzy b;
+    private static volatile ahdd c;
+    public static final ahbf registerTasksCommand;
+    public ahbx b;
     private byte d;
     
     static {
         final RegisterTasksCommandOuterClass$RegisterTasksCommand a2 = new RegisterTasksCommandOuterClass$RegisterTasksCommand();
-        agzi.registerDefaultInstance((Class)RegisterTasksCommandOuterClass$RegisterTasksCommand.class, (agzi)(a = a2));
-        registerTasksCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 377621461, ahcm.k, (Class)RegisterTasksCommandOuterClass$RegisterTasksCommand.class);
+        ahbh.registerDefaultInstance((Class)RegisterTasksCommandOuterClass$RegisterTasksCommand.class, (ahbh)(a = a2));
+        registerTasksCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 377621461, ahek.k, (Class)RegisterTasksCommandOuterClass$RegisterTasksCommand.class);
     }
     
     private RegisterTasksCommandOuterClass$RegisterTasksCommand() {
@@ -25,20 +25,20 @@ public final class RegisterTasksCommandOuterClass$RegisterTasksCommand extends a
         this.b = emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte d = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = RegisterTasksCommandOuterClass$RegisterTasksCommand.c) == null) {
                     synchronized (RegisterTasksCommandOuterClass$RegisterTasksCommand.class) {
                         if (RegisterTasksCommandOuterClass$RegisterTasksCommand.c == null) {
-                            RegisterTasksCommandOuterClass$RegisterTasksCommand.c = (ahbe)new agzb((agzi)RegisterTasksCommandOuterClass$RegisterTasksCommand.a);
+                            RegisterTasksCommandOuterClass$RegisterTasksCommand.c = (ahdd)new ahba((ahbh)RegisterTasksCommandOuterClass$RegisterTasksCommand.a);
                         }
                     }
                 }
@@ -48,19 +48,19 @@ public final class RegisterTasksCommandOuterClass$RegisterTasksCommand extends a
                 return RegisterTasksCommandOuterClass$RegisterTasksCommand.a;
             }
             case 4: {
-                return new agza((agzi)RegisterTasksCommandOuterClass$RegisterTasksCommand.a);
+                return new ahaz((ahbh)RegisterTasksCommandOuterClass$RegisterTasksCommand.a);
             }
             case 3: {
                 return new RegisterTasksCommandOuterClass$RegisterTasksCommand();
             }
             case 2: {
-                return newMessageInfo((MessageLite)RegisterTasksCommandOuterClass$RegisterTasksCommand.a, "\u0001\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u041b", new Object[] { "b", aopq.class });
+                return newMessageInfo((MessageLite)RegisterTasksCommandOuterClass$RegisterTasksCommand.a, "\u0001\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0001\u0001\u0001\u041b", new Object[] { "b", aort.class });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    d = 0;
                 }
-                this.d = (byte)(b ? 1 : 0);
+                this.d = d;
                 return null;
             }
             case 0: {

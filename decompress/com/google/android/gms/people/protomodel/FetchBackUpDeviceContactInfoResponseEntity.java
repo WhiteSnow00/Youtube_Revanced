@@ -19,7 +19,7 @@ public class FetchBackUpDeviceContactInfoResponseEntity extends AbstractSafeParc
     private List b;
     
     static {
-        CREATOR = (Parcelable$Creator)new njx(7);
+        CREATOR = (Parcelable$Creator)new nlj(6);
     }
     
     public FetchBackUpDeviceContactInfoResponseEntity(final List a) {
@@ -41,16 +41,16 @@ public class FetchBackUpDeviceContactInfoResponseEntity extends AbstractSafeParc
     }
     
     public final boolean equals(final Object o) {
-        return o instanceof FetchBackUpDeviceContactInfoResponse && (this == o || kgk.ba((Object)this.a(), (Object)((FetchBackUpDeviceContactInfoResponse)o).a()));
+        return o instanceof FetchBackUpDeviceContactInfoResponse && (this == o || khl.be((Object)((FetchBackUpDeviceContactInfoResponse)this).a(), (Object)((FetchBackUpDeviceContactInfoResponse)o).a()));
     }
     
     public final int hashCode() {
-        return Arrays.hashCode(new Object[] { this.a() });
+        return Arrays.hashCode(new Object[] { ((FetchBackUpDeviceContactInfoResponse)this).a() });
     }
     
-    public final void writeToParcel(final Parcel parcel, int i) {
-        i = kgk.I(parcel);
-        kgk.ag(parcel, 2, this.a());
-        kgk.J(parcel, i);
+    public final void writeToParcel(final Parcel parcel, int m) {
+        m = khl.M(parcel);
+        khl.ak(parcel, 2, this.a());
+        khl.N(parcel, m);
     }
 }

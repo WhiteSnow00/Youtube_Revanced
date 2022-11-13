@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class OfflineabilityRendererOuterClass
 {
-    public static final agzg offlineabilityRenderer;
+    public static final ahbf offlineabilityRenderer;
     
     static {
-        offlineabilityRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amva.a, (MessageLite)amva.a, (agzn)null, 60572968, ahcm.k, (Class)amva.class);
+        offlineabilityRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)amxe.a, (MessageLite)amxe.a, (ahbm)null, 60572968, ahek.k, (Class)amxe.class);
     }
     
     private OfflineabilityRendererOuterClass() {

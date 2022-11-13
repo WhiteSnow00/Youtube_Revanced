@@ -144,7 +144,7 @@ public class GvrViewerParams
                                             if (originalDeviceProto == null) {
                                                 return b2;
                                             }
-                                            if (!originalDeviceProto.equals((Object)originalDeviceProto2)) {
+                                            if (!((ahbh)originalDeviceProto).equals((Object)originalDeviceProto2)) {
                                                 return false;
                                             }
                                         }
@@ -165,14 +165,14 @@ public class GvrViewerParams
     }
     
     public byte[] toByteArray() {
-        return ((agxl)this.toProtobuf()).toByteArray();
+        return ((agzk)this.toProtobuf()).toByteArray();
     }
     
     public CardboardDevice$DeviceParams toProtobuf() {
         final CardboardDevice$DeviceParams originalDeviceProto = this.originalDeviceProto;
         CardboardDevice$DeviceParams$Builder builder;
         if (originalDeviceProto != null) {
-            builder = (CardboardDevice$DeviceParams$Builder)originalDeviceProto.toBuilder();
+            builder = (CardboardDevice$DeviceParams$Builder)((ahbh)originalDeviceProto).toBuilder();
         }
         else {
             builder = CardboardDevice$DeviceParams.newBuilder();

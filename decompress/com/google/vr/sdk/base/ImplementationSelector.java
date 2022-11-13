@@ -9,6 +9,6 @@ import android.content.Context;
 public class ImplementationSelector
 {
     public static CardboardViewApi createCardboardViewApi(final Context context) {
-        return new CardboardViewNativeImpl(context);
+        return (CardboardViewApi)new CardboardViewNativeImpl(context);
     }
 }

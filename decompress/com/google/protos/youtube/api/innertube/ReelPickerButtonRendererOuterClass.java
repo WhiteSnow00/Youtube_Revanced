@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ReelPickerButtonRendererOuterClass
 {
-    public static final agzg reelPickerButtonRenderer;
+    public static final ahbf reelPickerButtonRenderer;
     
     static {
-        reelPickerButtonRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anqn.a, (MessageLite)anqn.a, (agzn)null, 168885433, ahcm.k, (Class)anqn.class);
+        reelPickerButtonRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ansr.a, (MessageLite)ansr.a, (ahbm)null, 168885433, ahek.k, (Class)ansr.class);
     }
     
     private ReelPickerButtonRendererOuterClass() {

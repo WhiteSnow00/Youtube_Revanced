@@ -6,8 +6,8 @@ package com.google.vr.ndk.base;
 
 class GvrLayoutImpl$ScreenOnManager$1 implements Runnable
 {
-    final /* synthetic */ GvrLayoutImpl$ScreenOnManager this$0;
-    final /* synthetic */ boolean val$newIsEnabled;
+    final GvrLayoutImpl$ScreenOnManager this$0;
+    final boolean val$newIsEnabled;
     
     public GvrLayoutImpl$ScreenOnManager$1(final GvrLayoutImpl$ScreenOnManager this$0, final boolean val$newIsEnabled) {
         this.this$0 = this$0;

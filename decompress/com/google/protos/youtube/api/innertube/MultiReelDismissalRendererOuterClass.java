@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class MultiReelDismissalRendererOuterClass
 {
-    public static final agzg multiReelDismissalRenderer;
+    public static final ahbf multiReelDismissalRenderer;
     
     static {
-        multiReelDismissalRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amjm.a, (MessageLite)amjm.a, (agzn)null, 187054494, ahcm.k, (Class)amjm.class);
+        multiReelDismissalRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)amlq.a, (MessageLite)amlq.a, (ahbm)null, 187054494, ahek.k, (Class)amlq.class);
     }
     
     private MultiReelDismissalRendererOuterClass() {

@@ -8,7 +8,7 @@ import android.os.RemoteException;
 import android.os.Bundle;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.surveyoverlay.shared.f;
 
-public final class b implements shl
+public final class b implements sjr
 {
     public f a;
     
@@ -24,7 +24,7 @@ public final class b implements shl
                 a.a(bundle);
             }
             catch (final RemoteException ex) {
-                jfi.ak(ex);
+                mft.v(ex);
             }
         }
     }
@@ -36,7 +36,7 @@ public final class b implements shl
                 a.b(array);
             }
             catch (final RemoteException ex) {
-                jfi.ak(ex);
+                mft.v(ex);
             }
         }
     }
@@ -48,7 +48,7 @@ public final class b implements shl
                 a.g(n, n2);
             }
             catch (final RemoteException ex) {
-                jfi.ak(ex);
+                mft.v(ex);
             }
         }
     }

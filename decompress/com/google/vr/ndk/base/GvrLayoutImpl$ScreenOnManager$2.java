@@ -8,8 +8,8 @@ import android.os.SystemClock;
 
 class GvrLayoutImpl$ScreenOnManager$2 implements Runnable
 {
-    final /* synthetic */ GvrLayoutImpl$ScreenOnManager this$0;
-    final /* synthetic */ boolean val$newIsIdle;
+    final GvrLayoutImpl$ScreenOnManager this$0;
+    final boolean val$newIsIdle;
     
     public GvrLayoutImpl$ScreenOnManager$2(final GvrLayoutImpl$ScreenOnManager this$0, final boolean val$newIsIdle) {
         this.this$0 = this$0;

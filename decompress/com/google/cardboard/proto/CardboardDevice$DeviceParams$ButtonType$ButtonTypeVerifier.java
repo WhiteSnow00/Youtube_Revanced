@@ -4,12 +4,12 @@
 
 package com.google.cardboard.proto;
 
-final class CardboardDevice$DeviceParams$ButtonType$ButtonTypeVerifier implements agzo
+final class CardboardDevice$DeviceParams$ButtonType$ButtonTypeVerifier implements ahbn
 {
-    static final agzo INSTANCE;
+    static final ahbn INSTANCE;
     
     static {
-        INSTANCE = (agzo)new CardboardDevice$DeviceParams$ButtonType$ButtonTypeVerifier();
+        INSTANCE = (ahbn)new CardboardDevice$DeviceParams$ButtonType$ButtonTypeVerifier();
     }
     
     private CardboardDevice$DeviceParams$ButtonType$ButtonTypeVerifier() {

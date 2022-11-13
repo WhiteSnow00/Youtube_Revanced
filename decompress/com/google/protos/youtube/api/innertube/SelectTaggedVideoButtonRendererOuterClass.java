@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class SelectTaggedVideoButtonRendererOuterClass
 {
-    public static final agzg selectTaggedVideoButtonRenderer;
+    public static final ahbf selectTaggedVideoButtonRenderer;
     
     static {
-        selectTaggedVideoButtonRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anxb.a, (MessageLite)anxb.a, (agzn)null, 370928821, ahcm.k, (Class)anxb.class);
+        selectTaggedVideoButtonRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anze.a, (MessageLite)anze.a, (ahbm)null, 370928821, ahek.k, (Class)anze.class);
     }
     
     private SelectTaggedVideoButtonRendererOuterClass() {

@@ -6,19 +6,19 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class SetClientSettingEndpointOuterClass$SetClientSettingEndpoint extends agzi implements ahax
+public final class SetClientSettingEndpointOuterClass$SetClientSettingEndpoint extends ahbh implements ahcw
 {
     public static final SetClientSettingEndpointOuterClass$SetClientSettingEndpoint a;
-    private static volatile ahbe d;
-    public static final agzg setClientSettingEndpoint;
-    public agzy b;
-    public agzy c;
+    private static volatile ahdd d;
+    public static final ahbf setClientSettingEndpoint;
+    public ahbx b;
+    public ahbx c;
     private byte e;
     
     static {
         final SetClientSettingEndpointOuterClass$SetClientSettingEndpoint a2 = new SetClientSettingEndpointOuterClass$SetClientSettingEndpoint();
-        agzi.registerDefaultInstance((Class)SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.class, (agzi)(a = a2));
-        setClientSettingEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 81212182, ahcm.k, (Class)SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.class);
+        ahbh.registerDefaultInstance((Class)SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.class, (ahbh)(a = a2));
+        setClientSettingEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 81212182, ahek.k, (Class)SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.class);
     }
     
     private SetClientSettingEndpointOuterClass$SetClientSettingEndpoint() {
@@ -27,20 +27,20 @@ public final class SetClientSettingEndpointOuterClass$SetClientSettingEndpoint e
         this.c = emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.d) == null) {
                     synchronized (SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.class) {
                         if (SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.d == null) {
-                            SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.d = (ahbe)new agzb((agzi)SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.a);
+                            SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.d = (ahdd)new ahba((ahbh)SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.a);
                         }
                     }
                 }
@@ -50,19 +50,19 @@ public final class SetClientSettingEndpointOuterClass$SetClientSettingEndpoint e
                 return SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.a);
+                return new ahaz((ahbh)SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.a);
             }
             case 3: {
                 return new SetClientSettingEndpointOuterClass$SetClientSettingEndpoint();
             }
             case 2: {
-                return newMessageInfo((MessageLite)SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.a, "\u0001\u0002\u0000\u0000\u0001\u0002\u0002\u0000\u0002\u0001\u0001\u001b\u0002\u041b", new Object[] { "b", anxf.class, "c", aioe.class });
+                return newMessageInfo((MessageLite)SetClientSettingEndpointOuterClass$SetClientSettingEndpoint.a, "\u0001\u0002\u0000\u0000\u0001\u0002\u0002\u0000\u0002\u0001\u0001\u001b\u0002\u041b", new Object[] { "b", anzi.class, "c", aiqj.class });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

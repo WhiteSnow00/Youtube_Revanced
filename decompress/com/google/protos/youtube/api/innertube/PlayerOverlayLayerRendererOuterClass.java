@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class PlayerOverlayLayerRendererOuterClass
 {
-    public static final agzg playerOverlayLayerRenderer;
+    public static final ahbf playerOverlayLayerRenderer;
     
     static {
-        playerOverlayLayerRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ands.a, (MessageLite)ands.a, (agzn)null, 401855120, ahcm.k, (Class)ands.class);
+        playerOverlayLayerRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anfw.a, (MessageLite)anfw.a, (ahbm)null, 401855120, ahek.k, (Class)anfw.class);
     }
     
     private PlayerOverlayLayerRendererOuterClass() {

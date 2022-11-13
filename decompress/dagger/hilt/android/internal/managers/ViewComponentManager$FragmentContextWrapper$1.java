@@ -4,18 +4,18 @@
 
 package dagger.hilt.android.internal.managers;
 
-public class ViewComponentManager$FragmentContextWrapper$1 implements auk
+public class ViewComponentManager$FragmentContextWrapper$1 implements aul
 {
-    final /* synthetic */ ariq a;
+    final arlf a;
     
-    public ViewComponentManager$FragmentContextWrapper$1(final ariq a) {
+    public ViewComponentManager$FragmentContextWrapper$1(final arlf a) {
         this.a = a;
     }
     
     @Override
-    public final void a(final aum aum, final auf auf) {
-        if (auf == auf.ON_DESTROY) {
-            final ariq a = this.a;
+    public final void a(final aun aun, final aug aug) {
+        if (aug == aug.ON_DESTROY) {
+            final arlf a = this.a;
             a.a = null;
             a.b = null;
             a.c = null;

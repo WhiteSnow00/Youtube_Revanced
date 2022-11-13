@@ -6,21 +6,21 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShareEndpointOuterClass$ShareEndpoint extends agzi implements ahax
+public final class ShareEndpointOuterClass$ShareEndpoint extends ahbh implements ahcw
 {
     public static final ShareEndpointOuterClass$ShareEndpoint a;
-    private static volatile ahbe d;
-    public static final agzg shareEndpoint;
+    private static volatile ahdd d;
+    public static final ahbf shareEndpoint;
     public String b;
     public String c;
     private int e;
-    private aoag f;
+    private aoci f;
     private byte g;
     
     static {
         final ShareEndpointOuterClass$ShareEndpoint a2 = new ShareEndpointOuterClass$ShareEndpoint();
-        agzi.registerDefaultInstance((Class)ShareEndpointOuterClass$ShareEndpoint.class, (agzi)(a = a2));
-        shareEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 85383280, ahcm.k, (Class)ShareEndpointOuterClass$ShareEndpoint.class);
+        ahbh.registerDefaultInstance((Class)ShareEndpointOuterClass$ShareEndpoint.class, (ahbh)(a = a2));
+        shareEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 85383280, ahek.k, (Class)ShareEndpointOuterClass$ShareEndpoint.class);
     }
     
     private ShareEndpointOuterClass$ShareEndpoint() {
@@ -29,20 +29,20 @@ public final class ShareEndpointOuterClass$ShareEndpoint extends agzi implements
         this.c = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte g = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = ShareEndpointOuterClass$ShareEndpoint.d) == null) {
                     synchronized (ShareEndpointOuterClass$ShareEndpoint.class) {
                         if (ShareEndpointOuterClass$ShareEndpoint.d == null) {
-                            ShareEndpointOuterClass$ShareEndpoint.d = (ahbe)new agzb((agzi)ShareEndpointOuterClass$ShareEndpoint.a);
+                            ShareEndpointOuterClass$ShareEndpoint.d = (ahdd)new ahba((ahbh)ShareEndpointOuterClass$ShareEndpoint.a);
                         }
                     }
                 }
@@ -52,7 +52,7 @@ public final class ShareEndpointOuterClass$ShareEndpoint extends agzi implements
                 return ShareEndpointOuterClass$ShareEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)ShareEndpointOuterClass$ShareEndpoint.a);
+                return new ahaz((ahbh)ShareEndpointOuterClass$ShareEndpoint.a);
             }
             case 3: {
                 return new ShareEndpointOuterClass$ShareEndpoint();
@@ -62,9 +62,9 @@ public final class ShareEndpointOuterClass$ShareEndpoint extends agzi implements
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    g = 0;
                 }
-                this.g = (byte)(b ? 1 : 0);
+                this.g = g;
                 return null;
             }
             case 0: {

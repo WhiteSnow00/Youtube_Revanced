@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class OfflineVideosEndpointOuterClass
 {
-    public static final agzg offlineVideosEndpoint;
+    public static final ahbf offlineVideosEndpoint;
     
     static {
-        offlineVideosEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)amuj.a, (MessageLite)amuj.a, (agzn)null, 89537644, ahcm.k, (Class)amuj.class);
+        offlineVideosEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)amwn.a, (MessageLite)amwn.a, (ahbm)null, 89537644, ahek.k, (Class)amwn.class);
     }
     
     private OfflineVideosEndpointOuterClass() {

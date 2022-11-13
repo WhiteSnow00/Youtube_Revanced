@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Volver al álbum</string>
     <string name="accessibility_navigation_back_button">Atrás</string>
     <string name="accessibility_new_content_available">Nuevo contenido disponible</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Nuevos vídeos</string>
     <string name="accessibility_next">Siguiente vídeo</string>
     <string name="accessibility_offline_button_cancel">Detener la descarga</string>
     <string name="accessibility_offline_button_cannot_save">No se puede realizar la descarga</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Control y monitorización de datos</string>
     <string name="data_saving_persistent_title">Ahorro de datos</string>
     <string name="data_saving_select_quality_every_video_switch_title">Seleccionar la calidad de cada vídeo</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Reducir la calidad de las descargas inteligentes</string>
     <string name="data_saving_snack_bar_action_button">Ver</string>
     <string name="data_saving_snack_bar_text">Este cambio afecta a tu configuración de ahorro de datos.</string>
     <string name="data_saving_upload_wifi_only_switch_title">Subir solo por Wi‑Fi</string>

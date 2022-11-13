@@ -42,7 +42,7 @@ public class HeaderRecyclerView extends RecyclerView
         if (this.isInEditMode()) {
             return;
         }
-        final TypedArray obtainStyledAttributes = this.getContext().obtainStyledAttributes(set, aedq.h, n, 0);
+        final TypedArray obtainStyledAttributes = this.getContext().obtainStyledAttributes(set, aefr.h, n, 0);
         this.ab = obtainStyledAttributes.getResourceId(0, 0);
         obtainStyledAttributes.recycle();
     }
@@ -50,8 +50,8 @@ public class HeaderRecyclerView extends RecyclerView
     public final void ac(final nq nq) {
         Object o = nq;
         if (this.aa != null && (o = nq) != null) {
-            o = new aeeh(nq);
-            ((aeeh)o).a = this.aa;
+            o = new aegi(nq);
+            ((aegi)o).a = this.aa;
         }
         super.ac((nq)o);
     }
@@ -69,14 +69,14 @@ public class HeaderRecyclerView extends RecyclerView
         if (!ac || keyEvent.getAction() != 1) {
             if (keyEvent.getAction() == 0) {
                 final int keyCode = keyEvent.getKeyCode();
-                Label_0217: {
+                Label_0210: {
                     if (keyCode != 19) {
                         if (keyCode != 20) {
-                            break Label_0217;
+                            break Label_0210;
                         }
                         final View focus = this.findFocus();
                         if (focus == null) {
-                            break Label_0217;
+                            break Label_0210;
                         }
                         final int[] array = new int[2];
                         final int[] array2 = new int[2];
@@ -84,14 +84,14 @@ public class HeaderRecyclerView extends RecyclerView
                         this.getLocationInWindow(array2);
                         final int n = array[1] + focus.getMeasuredHeight() - (array2[1] + this.getMeasuredHeight());
                         if (n <= 0) {
-                            break Label_0217;
+                            break Label_0210;
                         }
                         this.ah(0, Math.min((int)(this.getMeasuredHeight() * 0.7f), n));
                     }
                     else {
                         final View focus2 = this.findFocus();
                         if (focus2 == null) {
-                            break Label_0217;
+                            break Label_0210;
                         }
                         final int[] array3 = new int[2];
                         final int[] array4 = new int[2];
@@ -99,7 +99,7 @@ public class HeaderRecyclerView extends RecyclerView
                         this.getLocationInWindow(array4);
                         final int n2 = array3[1] - array4[1];
                         if (n2 >= 0) {
-                            break Label_0217;
+                            break Label_0210;
                         }
                         this.ah(0, Math.max((int)(this.getMeasuredHeight() * -0.7f), n2));
                     }

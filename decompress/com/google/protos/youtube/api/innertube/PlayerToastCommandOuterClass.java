@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class PlayerToastCommandOuterClass
 {
-    public static final agzg playerToastCommand;
+    public static final ahbf playerToastCommand;
     
     static {
-        playerToastCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)anfn.a, (MessageLite)anfn.a, (agzn)null, 301715199, ahcm.k, (Class)anfn.class);
+        playerToastCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)anhr.a, (MessageLite)anhr.a, (ahbm)null, 301715199, ahek.k, (Class)anhr.class);
     }
     
     private PlayerToastCommandOuterClass() {

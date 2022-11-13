@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ScanCodeEndpointOuterClass$ScanCodeEndpoint extends agzi implements ahax
+public final class ScanCodeEndpointOuterClass$ScanCodeEndpoint extends ahbh implements ahcw
 {
     public static final ScanCodeEndpointOuterClass$ScanCodeEndpoint a;
-    private static volatile ahbe b;
-    public static final agzg scanCodeEndpoint;
+    private static volatile ahdd b;
+    public static final ahbf scanCodeEndpoint;
     
     static {
         final ScanCodeEndpointOuterClass$ScanCodeEndpoint a2 = new ScanCodeEndpointOuterClass$ScanCodeEndpoint();
-        agzi.registerDefaultInstance((Class)ScanCodeEndpointOuterClass$ScanCodeEndpoint.class, (agzi)(a = a2));
-        scanCodeEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 159170544, ahcm.k, (Class)ScanCodeEndpointOuterClass$ScanCodeEndpoint.class);
+        ahbh.registerDefaultInstance((Class)ScanCodeEndpointOuterClass$ScanCodeEndpoint.class, (ahbh)(a = a2));
+        scanCodeEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 159170544, ahek.k, (Class)ScanCodeEndpointOuterClass$ScanCodeEndpoint.class);
     }
     
     private ScanCodeEndpointOuterClass$ScanCodeEndpoint() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = ScanCodeEndpointOuterClass$ScanCodeEndpoint.b) == null) {
                     synchronized (ScanCodeEndpointOuterClass$ScanCodeEndpoint.class) {
                         if (ScanCodeEndpointOuterClass$ScanCodeEndpoint.b == null) {
-                            ScanCodeEndpointOuterClass$ScanCodeEndpoint.b = (ahbe)new agzb((agzi)ScanCodeEndpointOuterClass$ScanCodeEndpoint.a);
+                            ScanCodeEndpointOuterClass$ScanCodeEndpoint.b = (ahdd)new ahba((ahbh)ScanCodeEndpointOuterClass$ScanCodeEndpoint.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class ScanCodeEndpointOuterClass$ScanCodeEndpoint extends agzi impl
                 return ScanCodeEndpointOuterClass$ScanCodeEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)ScanCodeEndpointOuterClass$ScanCodeEndpoint.a);
+                return new ahaz((ahbh)ScanCodeEndpointOuterClass$ScanCodeEndpoint.a);
             }
             case 3: {
                 return new ScanCodeEndpointOuterClass$ScanCodeEndpoint();

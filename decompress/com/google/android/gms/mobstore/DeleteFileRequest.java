@@ -16,7 +16,7 @@ public class DeleteFileRequest extends AbstractSafeParcelable
     public final Uri a;
     
     static {
-        CREATOR = (Parcelable$Creator)new nit(14);
+        CREATOR = (Parcelable$Creator)new njy(13);
     }
     
     public DeleteFileRequest(final Uri a) {
@@ -24,8 +24,8 @@ public class DeleteFileRequest extends AbstractSafeParcelable
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        final int i = kgk.I(parcel);
-        kgk.ab(parcel, 1, (Parcelable)this.a, n);
-        kgk.J(parcel, i);
+        final int m = khl.M(parcel);
+        khl.af(parcel, 1, (Parcelable)this.a, n);
+        khl.N(parcel, m);
     }
 }

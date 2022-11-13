@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class RecognitionShelfRendererOuterClass
 {
-    public static final agzg recognitionShelfRenderer;
+    public static final ahbf recognitionShelfRenderer;
     
     static {
-        recognitionShelfRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anpo.a, (MessageLite)anpo.a, (agzn)null, 432471502, ahcm.k, (Class)anpo.class);
+        recognitionShelfRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anrr.a, (MessageLite)anrr.a, (ahbm)null, 432471502, ahek.k, (Class)anrr.class);
     }
     
     private RecognitionShelfRendererOuterClass() {

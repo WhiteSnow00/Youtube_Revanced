@@ -50,11 +50,11 @@ class GvrSurfaceView$EglHelper
                 if (GvrSurfaceView.-$$Nest$fgetmAppContextListener(gvrSurfaceView) != null) {
                     final EGLContext a = GvrSurfaceView.-$$Nest$fgetmAppContextListener(gvrSurfaceView).a;
                     if (a != null && a != EGL10.EGL_NO_CONTEXT) {
-                        final aqzl aqzl = (aqzl)GvrSurfaceView.-$$Nest$fgetmEGLContextFactory(gvrSurfaceView);
+                        final arbz arbz = (arbz)GvrSurfaceView.-$$Nest$fgetmEGLContextFactory(gvrSurfaceView);
                         final int b = GvrSurfaceView.-$$Nest$fgetmAppContextListener(gvrSurfaceView).b;
-                        aqzl.f = a;
-                        aqzl.d = ((b & 0x8) == 0x0);
-                        aqzl.e = GvrSurfaceView.-$$Nest$fgetmAppContextListener(gvrSurfaceView).c;
+                        arbz.f = a;
+                        arbz.d = ((b & 0x8) == 0x0);
+                        arbz.e = GvrSurfaceView.-$$Nest$fgetmAppContextListener(gvrSurfaceView).c;
                     }
                     else {
                         this.throwEglException("Unable to obtain application's OpenGL context.");

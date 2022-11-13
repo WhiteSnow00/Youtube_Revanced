@@ -8,14 +8,14 @@ import com.google.protobuf.MessageLite;
 
 public final class PerksSectionRendererOuterClass
 {
-    public static final agzg perkItemRenderer;
-    public static final agzg perksSectionRenderer;
-    public static final agzg sponsorsDescriptionRenderer;
+    public static final ahbf perkItemRenderer;
+    public static final ahbf perksSectionRenderer;
+    public static final ahbf sponsorsDescriptionRenderer;
     
     static {
-        perksSectionRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amxk.a, (MessageLite)amxk.a, (agzn)null, 162200266, ahcm.k, (Class)amxk.class);
-        perkItemRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amxj.a, (MessageLite)amxj.a, (agzn)null, 182778558, ahcm.k, (Class)amxj.class);
-        sponsorsDescriptionRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amxl.a, (MessageLite)amxl.a, (agzn)null, 182759827, ahcm.k, (Class)amxl.class);
+        perksSectionRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)amzo.a, (MessageLite)amzo.a, (ahbm)null, 162200266, ahek.k, (Class)amzo.class);
+        perkItemRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)amzn.a, (MessageLite)amzn.a, (ahbm)null, 182778558, ahek.k, (Class)amzn.class);
+        sponsorsDescriptionRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)amzp.a, (MessageLite)amzp.a, (ahbm)null, 182759827, ahek.k, (Class)amzp.class);
     }
     
     private PerksSectionRendererOuterClass() {

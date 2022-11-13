@@ -8,25 +8,29 @@ import com.google.android.libraries.youtube.innertube.model.player.PlayerRespons
 import java.util.HashSet;
 import java.util.Set;
 
-public class DefaultVideoStageMonitor implements tfh, ira
+public class DefaultVideoStageMonitor implements thl, irz
 {
     public final Set a;
-    public aaly b;
-    private final asib c;
-    private final hyq d;
+    public aans b;
+    private final asiq c;
+    private final hzm d;
     
-    public DefaultVideoStageMonitor(final hyq d, final byte[] array, final byte[] array2) {
+    public DefaultVideoStageMonitor(final hzm d, final byte[] array, final byte[] array2) {
         this.d = d;
-        this.c = new asib();
+        this.c = new asiq();
         this.a = new HashSet();
     }
     
-    public final aaly j() {
+    public final thh g() {
+        return thh.b;
+    }
+    
+    public final aans j() {
         return this.b;
     }
     
     public final String k() {
-        final aaly b = this.b;
+        final aans b = this.b;
         PlayerResponseModel playerResponseModel = null;
         Label_0054: {
             if (b != null) {
@@ -47,12 +51,32 @@ public class DefaultVideoStageMonitor implements tfh, ira
         return null;
     }
     
-    public final void oS(final aum aum) {
-        this.c.b();
-        this.c.c(((asgt)this.d.b).Y((asjc)iqc.d).am((asix)new ign(this, 17), (asix)hnn.r));
+    public final void lW(final aun aun) {
     }
     
-    public final void oW(final aum aum) {
+    public final void mM(final aun aun) {
+    }
+    
+    public final void mq(final aun aun) {
+    }
+    
+    public final void my(final aun aun) {
+    }
+    
+    public final void oS(final aun aun) {
+        this.c.b();
+        this.c.c(((ashi)this.d.b).Y((asjr)iqm.f).an((asjm)new ihl(this, 16), (asjm)hot.q));
+    }
+    
+    public final void oT() {
+        tfg.c((thl)this);
+    }
+    
+    public final void oW() {
+        tfg.b((thl)this);
+    }
+    
+    public final void oX(final aun aun) {
         this.c.b();
     }
 }

@@ -8,4 +8,8 @@ public final class FoldingFeature$State$Companion
 {
     private FoldingFeature$State$Companion() {
     }
+    
+    public FoldingFeature$State$Companion(final atny atny) {
+        this();
+    }
 }

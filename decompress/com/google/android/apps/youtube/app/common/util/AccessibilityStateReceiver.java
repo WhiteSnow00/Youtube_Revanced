@@ -13,7 +13,7 @@ import java.util.Set;
 import android.view.accessibility.AccessibilityManager$TouchExplorationStateChangeListener;
 import android.view.accessibility.AccessibilityManager$AccessibilityStateChangeListener;
 
-public class AccessibilityStateReceiver implements AccessibilityManager$AccessibilityStateChangeListener, AccessibilityManager$TouchExplorationStateChangeListener, tfh
+public class AccessibilityStateReceiver implements AccessibilityManager$AccessibilityStateChangeListener, AccessibilityManager$TouchExplorationStateChangeListener, thl
 {
     public final Set a;
     public final Set b;
@@ -29,29 +29,45 @@ public class AccessibilityStateReceiver implements AccessibilityManager$Accessib
         this.b = Collections.newSetFromMap(new WeakHashMap<Object, Boolean>());
     }
     
+    public final thh g() {
+        return thh.b;
+    }
+    
     public final void j() {
         if (this.d) {
-            tqt.h(this.c, (AccessibilityManager$AccessibilityStateChangeListener)this);
+            tsy.h(this.c, (AccessibilityManager$AccessibilityStateChangeListener)this);
             this.d = false;
         }
     }
     
     public final void k() {
         if (this.e) {
-            tqt.a(this.c).removeTouchExplorationStateChangeListener((AccessibilityManager$TouchExplorationStateChangeListener)this);
+            tsy.a(this.c).removeTouchExplorationStateChangeListener((AccessibilityManager$TouchExplorationStateChangeListener)this);
             this.e = false;
         }
     }
     
     public final void l() {
         if (!this.d) {
-            tqt.g(this.c, (AccessibilityManager$AccessibilityStateChangeListener)this);
+            tsy.g(this.c, (AccessibilityManager$AccessibilityStateChangeListener)this);
             this.d = true;
         }
     }
     
+    public final void lW(final aun aun) {
+    }
+    
     public final void m() {
         this.n(this.q());
+    }
+    
+    public final void mM(final aun aun) {
+    }
+    
+    public final void mq(final aun aun) {
+    }
+    
+    public final void my(final aun aun) {
     }
     
     public final void n(final boolean b) {
@@ -65,7 +81,7 @@ public class AccessibilityStateReceiver implements AccessibilityManager$Accessib
         this.p(this.r());
     }
     
-    public final void oS(final aum aum) {
+    public final void oS(final aun aun) {
         if (!this.a.isEmpty()) {
             this.l();
             if (this.f != this.q()) {
@@ -74,7 +90,7 @@ public class AccessibilityStateReceiver implements AccessibilityManager$Accessib
         }
         if (!this.b.isEmpty()) {
             if (!this.e) {
-                tqt.a(this.c).addTouchExplorationStateChangeListener((AccessibilityManager$TouchExplorationStateChangeListener)this);
+                tsy.a(this.c).addTouchExplorationStateChangeListener((AccessibilityManager$TouchExplorationStateChangeListener)this);
                 this.e = true;
             }
             if (this.g != this.q()) {
@@ -83,7 +99,15 @@ public class AccessibilityStateReceiver implements AccessibilityManager$Accessib
         }
     }
     
-    public final void oW(final aum aum) {
+    public final void oT() {
+        tfg.c((thl)this);
+    }
+    
+    public final void oW() {
+        tfg.b((thl)this);
+    }
+    
+    public final void oX(final aun aun) {
         this.j();
         this.f = this.q();
         this.k();
@@ -106,10 +130,10 @@ public class AccessibilityStateReceiver implements AccessibilityManager$Accessib
     }
     
     public final boolean q() {
-        return tqt.e(this.c);
+        return tsy.e(this.c);
     }
     
     public final boolean r() {
-        return tqt.f(this.c);
+        return tsy.f(this.c);
     }
 }

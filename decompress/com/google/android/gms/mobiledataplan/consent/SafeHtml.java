@@ -17,7 +17,7 @@ public final class SafeHtml extends AbstractSafeParcelable
     public String a;
     
     static {
-        CREATOR = (Parcelable$Creator)new nit(12);
+        CREATOR = (Parcelable$Creator)new njy(11);
     }
     
     private SafeHtml() {
@@ -28,7 +28,7 @@ public final class SafeHtml extends AbstractSafeParcelable
     }
     
     public final boolean equals(final Object o) {
-        return this == o || (o instanceof SafeHtml && kgk.ba((Object)this.a, (Object)((SafeHtml)o).a));
+        return this == o || (o instanceof SafeHtml && khl.be((Object)this.a, (Object)((SafeHtml)o).a));
     }
     
     public final int hashCode() {
@@ -37,13 +37,13 @@ public final class SafeHtml extends AbstractSafeParcelable
     
     public final String toString() {
         final ArrayList list = new ArrayList();
-        kgk.bc("Html", (Object)this.a, (List)list);
-        return kgk.bb((List)list, (Object)this);
+        khl.bg("Html", (Object)this.a, (List)list);
+        return khl.bf((List)list, (Object)this);
     }
     
-    public final void writeToParcel(final Parcel parcel, int i) {
-        i = kgk.I(parcel);
-        kgk.ac(parcel, 1, this.a);
-        kgk.J(parcel, i);
+    public final void writeToParcel(final Parcel parcel, int m) {
+        m = khl.M(parcel);
+        khl.ag(parcel, 1, this.a);
+        khl.N(parcel, m);
     }
 }

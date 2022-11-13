@@ -34,7 +34,7 @@ public class CheckableImageButton extends AppCompatImageButton implements Checka
         super(context, set, n);
         this.b = true;
         this.c = true;
-        ana.N((View)this, (akv)new adti(this));
+        anb.N((View)this, (akw)new advk(this));
     }
     
     public final void a(final boolean b) {

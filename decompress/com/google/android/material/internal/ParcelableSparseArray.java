@@ -14,7 +14,7 @@ public class ParcelableSparseArray extends SparseArray implements Parcelable
     public static final Parcelable$Creator CREATOR;
     
     static {
-        CREATOR = (Parcelable$Creator)new adrl(4);
+        CREATOR = (Parcelable$Creator)new adtn(4);
     }
     
     public ParcelableSparseArray() {

@@ -6,7 +6,7 @@ package com.google.vr.sdk.base;
 
 class CardboardViewNativeImpl$RendererHelper$1 implements Runnable
 {
-    final /* synthetic */ CardboardViewNativeImpl$RendererHelper this$1;
+    final CardboardViewNativeImpl$RendererHelper this$1;
     
     public CardboardViewNativeImpl$RendererHelper$1(final CardboardViewNativeImpl$RendererHelper this$1) {
         this.this$1 = this$1;

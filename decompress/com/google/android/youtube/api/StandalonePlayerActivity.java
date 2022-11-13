@@ -18,7 +18,7 @@ import com.google.android.libraries.youtube.player.model.WatchDescriptor;
 import android.content.Context;
 import android.os.Handler;
 
-public final class StandalonePlayerActivity extends aeeo implements lng
+public final class StandalonePlayerActivity extends aegp implements loj
 {
     private static StandalonePlayerActivity d;
     public Handler b;
@@ -28,16 +28,16 @@ public final class StandalonePlayerActivity extends aeeo implements lng
     private boolean g;
     private boolean h;
     private boolean i;
-    private lnb j;
-    private lot k;
-    private lou l;
+    private loe j;
+    private lpw k;
+    private lpy l;
     private String m;
     private String n;
     
-    public final void a(final lnb j) {
+    public final void a(final loe j) {
         this.j = j;
         if (!TextUtils.isEmpty((CharSequence)this.m)) {
-            j.g(this.m, (zku)new kva(this, 5));
+            j.g(this.m, (zmr)new kwd(this, 5));
             return;
         }
         this.e();
@@ -45,7 +45,7 @@ public final class StandalonePlayerActivity extends aeeo implements lng
     
     public final void b(final Exception ex) {
         final Intent intent = new Intent();
-        intent.putExtra("initialization_result", aeda.j(lnf.o(ex)));
+        intent.putExtra("initialization_result", afse.r(loi.o(ex)));
         this.setResult(1, intent);
         this.finish();
     }
@@ -54,34 +54,34 @@ public final class StandalonePlayerActivity extends aeeo implements lng
         if (this.isFinishing()) {
             return;
         }
-        ((lnf)this.j).i = this.n;
-        final lnb j = this.j;
-        final lot k = new lot((Activity)this, j, ((yzf)((lnf)j).D.a()).c((Context)this));
+        ((loi)this.j).i = this.n;
+        final loe j = this.j;
+        final lpw k = new lpw((Activity)this, j, ((zaz)((loi)j).D.a()).c((Context)this));
         this.k = k;
         boolean b = true;
-        k.ar(true);
-        if (((lqd)this.e.b.instance).d) {
-            this.k.aq((aefm)new aefl(this));
+        ((aehe)k).ar(true);
+        if (((lrh)this.e.b.instance).d) {
+            ((aehe)this.k).aq((aehn)new aehm(this));
         }
-        final View view = (View)aefv.b(this.k.L());
+        final View view = (View)aehw.b(((aehe)this.k).L());
         if (view == null) {
             this.b(new IllegalStateException("Could not get player view."));
             return;
         }
-        (this.l = new lou((Activity)this, view, this.k, this.f, this.g, this.h, this.i)).show();
-        this.k.M(8);
-        final lot i = this.k;
+        (this.l = new lpy((Activity)this, view, this.k, this.f, this.g, this.h, this.i)).show();
+        ((aehe)this.k).M(8);
+        final lpw i = this.k;
         if (this.g || this.i) {
             b = false;
         }
-        i.ao(b);
+        ((aehe)i).ao(b);
         final Intent intent = new Intent();
         intent.putExtra("initialization_result", "SUCCESS");
         this.setResult(-1, intent);
     }
     
-    public final void onCreate(final Bundle bundle) {
-        ReVancedUtils.context = (Context)this;
+    public final void onCreate(final Bundle context) {
+        ReVancedUtils.context = (Context)context;
         final StandalonePlayerActivity d = StandalonePlayerActivity.d;
         if (d != null) {
             d.finish();
@@ -93,23 +93,23 @@ public final class StandalonePlayerActivity extends aeeo implements lng
             this.e = e;
             PlaybackStartDescriptor f = e.a;
             if (!TextUtils.isEmpty((CharSequence)f.k())) {
-                f = jfi.af(f.k(), f.c());
+                f = mft.q(f.k(), f.c());
             }
             else if (!TextUtils.isEmpty((CharSequence)f.i())) {
-                f = jfi.ae(f.i(), f.a(), f.c());
+                f = mft.p(f.i(), f.a(), f.c());
             }
             else {
                 final List l = f.l();
                 if (l != null) {
                     if (l.size() == 1) {
-                        f = jfi.af((String)l.get(0), f.c());
+                        f = mft.q((String)l.get(0), f.c());
                     }
                     else {
-                        f = jfi.ag(l, f.a(), f.c());
+                        f = mft.r(l, f.a(), f.c());
                     }
                 }
                 else {
-                    afqg.s("Invalid PlaybackStartDescriptor. Returning the instance itself.");
+                    afse.p("Invalid PlaybackStartDescriptor. Returning the instance itself.");
                 }
             }
             this.f = f;
@@ -123,18 +123,18 @@ public final class StandalonePlayerActivity extends aeeo implements lng
             final boolean booleanExtra = intent.getBooleanExtra("autoplay", false);
             PlaybackStartDescriptor playbackStartDescriptor;
             if (stringArrayListExtra != null) {
-                playbackStartDescriptor = jfi.ag((List)stringArrayListExtra, intExtra, (long)intExtra2);
+                playbackStartDescriptor = mft.r((List)stringArrayListExtra, intExtra, (long)intExtra2);
             }
             else if (stringExtra2 != null) {
-                playbackStartDescriptor = jfi.ae(stringExtra2, intExtra, (long)intExtra2);
+                playbackStartDescriptor = mft.p(stringExtra2, intExtra, (long)intExtra2);
             }
             else if (stringExtra != null) {
-                playbackStartDescriptor = jfi.af(stringExtra, (long)intExtra2);
+                playbackStartDescriptor = mft.q(stringExtra, (long)intExtra2);
             }
             else {
                 playbackStartDescriptor = PlaybackStartDescriptor.d().a();
             }
-            final abhx e2 = playbackStartDescriptor.e();
+            final abjp e2 = playbackStartDescriptor.e();
             e2.c((e2.d = booleanExtra) ^ true);
             final WatchDescriptor e3 = new WatchDescriptor(e2.a());
             this.e = e3;
@@ -143,7 +143,7 @@ public final class StandalonePlayerActivity extends aeeo implements lng
         this.g = intent.getBooleanExtra("lightbox_mode", false);
         this.h = intent.getBooleanExtra("window_has_status_bar", false);
         this.i = this.isInMultiWindowMode();
-        super.onCreate(bundle);
+        super.onCreate(context);
         if (!this.g && !this.i) {
             this.setRequestedOrientation(6);
         }
@@ -193,16 +193,16 @@ public final class StandalonePlayerActivity extends aeeo implements lng
             this.b(new IllegalArgumentException("App version name cannot be null or empty"));
             return;
         }
-        lnf.p((lng)this, this.b, this.c, stringExtra3, stringExtra6, stringExtra4, stringExtra5, TextUtils.isEmpty((CharSequence)stringExtra8) ^ true, 3);
+        loi.p((loj)this, this.b, this.c, stringExtra3, stringExtra6, stringExtra4, stringExtra5, TextUtils.isEmpty((CharSequence)stringExtra8) ^ true, 3);
     }
     
     public final void onDestroy() {
-        final lot k = this.k;
+        final lpw k = this.k;
         if (k != null) {
-            k.ao(false);
-            this.k.an(this.isFinishing());
+            ((aehe)k).ao(false);
+            ((aehe)this.k).an(this.isFinishing());
         }
-        final lou l = this.l;
+        final lpy l = this.l;
         if (l != null && l.isShowing()) {
             this.l.dismiss();
         }
@@ -210,36 +210,36 @@ public final class StandalonePlayerActivity extends aeeo implements lng
     }
     
     public final boolean onKeyDown(final int n, final KeyEvent keyEvent) {
-        final lot k = this.k;
-        return (k != null && k.ay(n, keyEvent)) || super.onKeyUp(n, keyEvent);
+        final lpw k = this.k;
+        return (k != null && ((aehe)k).ay(n, keyEvent)) || super.onKeyUp(n, keyEvent);
     }
     
     public final boolean onKeyUp(final int n, final KeyEvent keyEvent) {
-        final lot k = this.k;
-        return (k != null && k.az(n, keyEvent)) || super.onKeyUp(n, keyEvent);
+        final lpw k = this.k;
+        return (k != null && ((aehe)k).az(n, keyEvent)) || super.onKeyUp(n, keyEvent);
     }
     
     public final void onPause() {
-        final lot k = this.k;
+        final lpw k = this.k;
         if (k != null) {
-            k.aj();
+            ((aehe)k).aj();
         }
         super.onPause();
     }
     
     public final void onResume() {
         super.onResume();
-        final lot k = this.k;
+        final lpw k = this.k;
         if (k != null) {
-            k.ak();
+            ((aehe)k).ak();
         }
     }
     
     public final void onStart() {
         super.onStart();
-        final lot k = this.k;
+        final lpw k = this.k;
         if (k != null) {
-            k.al();
+            ((aehe)k).al();
         }
     }
     
@@ -247,9 +247,9 @@ public final class StandalonePlayerActivity extends aeeo implements lng
         if (StandalonePlayerActivity.d == this) {
             StandalonePlayerActivity.d = null;
         }
-        final lot k = this.k;
+        final lpw k = this.k;
         if (k != null) {
-            k.am();
+            ((aehe)k).am();
         }
         super.onStop();
     }

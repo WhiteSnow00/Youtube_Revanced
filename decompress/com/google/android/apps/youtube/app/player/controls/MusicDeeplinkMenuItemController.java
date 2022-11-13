@@ -4,24 +4,25 @@
 
 package com.google.android.apps.youtube.app.player.controls;
 
+import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.Iterator;
 import com.google.android.libraries.youtube.innertube.model.WatchNextResponseModel;
 import android.content.Context;
 import android.app.Activity;
 
-public class MusicDeeplinkMenuItemController implements iru, tfh, tec
+public class MusicDeeplinkMenuItemController implements iss, thl, tgg
 {
-    public final vax a;
-    public amel b;
+    public final vcy a;
+    public amgp b;
     private final Activity c;
-    private final abns d;
-    private final acng e;
-    private asic f;
-    private irv g;
+    private final abpu d;
+    private final acpk e;
+    private asir f;
+    private ist g;
     private boolean h;
     
-    public MusicDeeplinkMenuItemController(final Activity c, final abns d, final vax a, final acng e) {
+    public MusicDeeplinkMenuItemController(final Activity c, final abpu d, final vcy a, final acpk e) {
         c.getClass();
         this.c = c;
         d.getClass();
@@ -32,109 +33,113 @@ public class MusicDeeplinkMenuItemController implements iru, tfh, tec
         this.e = e;
     }
     
-    private final void k(final akbe akbe, final boolean b) {
-        final int a = this.e.a(akbe);
+    private final void k(final akdh akdh, final boolean b) {
+        final int a = this.e.a(akdh);
         if (a == 0) {
             return;
         }
-        final irv g = this.g;
+        final ist g = this.g;
         if (g != null) {
             if (b) {
-                ((qjg)g).e = tmy.k((Context)this.c, a, 2130970924);
+                ((qkq)g).e = tpe.k((Context)this.c, a, 2130970924);
                 return;
             }
-            ((qjg)g).f = tmy.k((Context)this.c, a, 2130970924);
+            ((qkq)g).f = tpe.k((Context)this.c, a, 2130970924);
         }
     }
     
     private final void l() {
-        final amel b = this.b;
+        final amgp b = this.b;
         if (b != null) {
-            final CharSequence f = vwh.f(b);
-            final irv g = this.g;
-            if (g != null && f != null) {
-                ((qjg)g).c = f.toString();
+            final CharSequence h = vyg.h(b);
+            final ist g = this.g;
+            if (g != null && h != null) {
+                ((qkq)g).c = h.toString();
             }
-            final akbf d = vwh.d(b);
-            if (d != null) {
-                akbe akbe;
-                if ((akbe = akbe.b(d.c)) == null) {
-                    akbe = akbe.a;
+            final akdi f = vyg.f(b);
+            if (f != null) {
+                akdh akdh;
+                if ((akdh = akdh.b(f.c)) == null) {
+                    akdh = akdh.a;
                 }
-                this.k(akbe, true);
+                this.k(akdh, true);
             }
-            final akbf e = vwh.e(b);
-            if (e != null) {
-                akbe akbe2;
-                if ((akbe2 = akbe.b(e.c)) == null) {
-                    akbe2 = akbe.a;
+            final akdi g2 = vyg.g(b);
+            if (g2 != null) {
+                akdh akdh2;
+                if ((akdh2 = akdh.b(g2.c)) == null) {
+                    akdh2 = akdh.a;
                 }
-                this.k(akbe2, false);
+                this.k(akdh2, false);
             }
         }
-        final irv g2 = this.g;
-        if (g2 != null) {
-            g2.g(this.h);
+        final ist g3 = this.g;
+        if (g3 != null) {
+            g3.g(this.h);
         }
     }
     
     @Override
-    public final irv a() {
+    public final ist a() {
         if (this.g == null) {
-            this.g = new irv("", (irt)new irq(this, 5));
+            this.g = new ist("", new iso(this, 5));
             this.l();
         }
-        final irv g = this.g;
+        final ist g = this.g;
         g.getClass();
         return g;
     }
     
-    public final void j(final aalo aalo) {
-        final WatchNextResponseModel a = aalo.a();
+    public final thh g() {
+        return thh.b;
+    }
+    
+    public final void j(final aani aani) {
+        final WatchNextResponseModel a = aani.a();
         final boolean b = false;
         boolean h;
         if (a == null) {
             h = b;
         }
         else {
-            final aneh i = a.i;
+            final angl i = a.i;
             h = b;
             if (i != null) {
                 h = b;
                 if ((i.b & 0x1) != 0x0) {
-                    aneg aneg;
-                    if ((aneg = i.e) == null) {
-                        aneg = aneg.a;
+                    angk angk;
+                    if ((angk = i.e) == null) {
+                        angk = angk.a;
                     }
                     h = b;
-                    if ((aneg.b & 0x1) != 0x0) {
-                        aneg aneg2;
-                        if ((aneg2 = i.e) == null) {
-                            aneg2 = aneg.a;
+                    if ((angk.b & 0x1) != 0x0) {
+                        angk angk2;
+                        if ((angk2 = i.e) == null) {
+                            angk2 = angk.a;
                         }
-                        ameo ameo;
-                        if ((ameo = aneg2.c) == null) {
-                            ameo = ameo.a;
+                        amgs amgs;
+                        if ((amgs = angk2.c) == null) {
+                            amgs = amgs.a;
                         }
-                        final Iterator<Object> iterator = ameo.c.iterator();
+                        final Iterator<Object> iterator = ((List<Object>)amgs.c).iterator();
                         while (true) {
                             h = b;
                             if (!iterator.hasNext()) {
                                 break;
                             }
-                            final amel b2 = iterator.next();
+                            final amgp b2 = iterator.next();
                             if ((b2.b & 0x1) == 0x0) {
                                 continue;
                             }
-                            final akbf d = vwh.d(b2);
-                            if (d == null) {
+                            final akdi f = vyg.f(b2);
+                            if (f == null) {
                                 continue;
                             }
-                            akbe akbe;
-                            if ((akbe = akbe.b(d.c)) == null) {
-                                akbe = akbe.a;
+                            akdh akdh;
+                            if ((akdh = akdh.b(f.c)) == null) {
+                                akdh = akdh.a;
                             }
-                            if (akbe == akbe.pq) {
+                            if (akdh == akdh.pr) {
                                 this.b = b2;
                                 h = true;
                                 break;
@@ -150,6 +155,15 @@ public class MusicDeeplinkMenuItemController implements iru, tfh, tec
         }
     }
     
+    public final void lW(final aun aun) {
+    }
+    
+    public final void mM(final aun aun) {
+    }
+    
+    public final void mq(final aun aun) {
+    }
+    
     public final Class[] ms(final Class clazz, final Object o, final int n) {
         Class[] array;
         if (n != -1) {
@@ -158,13 +172,16 @@ public class MusicDeeplinkMenuItemController implements iru, tfh, tec
                 sb.append(n);
                 throw new IllegalStateException(sb.toString());
             }
-            this.j((aalo)o);
+            this.j((aani)o);
             array = null;
         }
         else {
-            array = new Class[] { aalo.class };
+            array = new Class[] { aani.class };
         }
         return array;
+    }
+    
+    public final void my(final aun aun) {
     }
     
     @Override
@@ -182,21 +199,29 @@ public class MusicDeeplinkMenuItemController implements iru, tfh, tec
         return "menu_item_listen_in_yt_music";
     }
     
-    public final void oS(final aum aum) {
-        asic f;
-        if (((uyi)this.d.cd().h).bx()) {
-            f = this.d.R().am((asix)new iqv(this, 17), (asix)irb.g);
+    public final void oS(final aun aun) {
+        asir f;
+        if (((vai)this.d.ci().g).bx()) {
+            f = this.d.Q().an((asjm)new irw(this, 16), (asjm)ise.f);
         }
         else {
-            f = this.d.Q().R().P(ashw.a()).am((asix)new iqv(this, 17), (asix)irb.g);
+            f = this.d.P().R().P(asil.a()).an((asjm)new irw(this, 16), (asjm)ise.f);
         }
         this.f = f;
     }
     
-    public final void oW(final aum aum) {
-        final asic f = this.f;
+    public final void oT() {
+        tfg.c((thl)this);
+    }
+    
+    public final void oW() {
+        tfg.b((thl)this);
+    }
+    
+    public final void oX(final aun aun) {
+        final asir f = this.f;
         if (f != null) {
-            athh.f((AtomicReference)f);
+            athz.f((AtomicReference)f);
             this.f = null;
         }
     }

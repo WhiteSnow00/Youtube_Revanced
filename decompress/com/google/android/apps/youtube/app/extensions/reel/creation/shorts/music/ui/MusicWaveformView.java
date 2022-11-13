@@ -13,13 +13,13 @@ import android.view.View;
 
 public class MusicWaveformView extends View
 {
-    public final hcw a;
+    public final hdo a;
     float b;
     float c;
     public float d;
     public float e;
     AttributeSet f;
-    public hci g;
+    public hda g;
     private boolean h;
     private float i;
     private float j;
@@ -37,11 +37,11 @@ public class MusicWaveformView extends View
     public MusicWaveformView(final Context context, final AttributeSet f, final int n) {
         super(context, f, n);
         this.f = f;
-        final hcw a = new hcw(context);
+        final hdo a = new hdo(context);
         (this.a = a).d();
         a.c(f, false);
         final float dimension = context.getResources().getDimension(2131165623);
-        final float dimension2 = context.getResources().getDimension(2131168252);
+        final float dimension2 = context.getResources().getDimension(2131168251);
         this.d(dimension, dimension2, Resources.getSystem().getDisplayMetrics().widthPixels - (dimension + dimension) - (dimension2 + dimension2));
     }
     
@@ -59,7 +59,7 @@ public class MusicWaveformView extends View
         this.f(n, n2);
     }
     
-    public final void b(final long p0, final long p1, final byte[] p2, final afcr p3) {
+    public final void b(final long p0, final long p1, final byte[] p2, final afeq p3) {
         // 
         // This method could not be decompiled.
         // 
@@ -79,42 +79,42 @@ public class MusicWaveformView extends View
         //    23: pop            
         //    24: aload           5
         //    26: invokevirtual   java/lang/StringBuilder.toString:()Ljava/lang/String;
-        //    29: invokestatic    trn.b:(Ljava/lang/String;)V
+        //    29: invokestatic    ttr.b:(Ljava/lang/String;)V
         //    32: return         
         //    33: new             Ljava/io/ByteArrayInputStream;
-        //    36: astore          7
-        //    38: aload           7
+        //    36: astore          8
+        //    38: aload           8
         //    40: aload           5
         //    42: invokespecial   java/io/ByteArrayInputStream.<init>:([B)V
-        //    45: aload           7
-        //    47: invokestatic    aeud.a:(Ljava/io/InputStream;)Laeud;
+        //    45: aload           8
+        //    47: invokestatic    aewd.a:(Ljava/io/InputStream;)Laewd;
         //    50: astore          5
         //    52: aload           5
-        //    54: getfield        aeud.a:I
-        //    57: istore          8
+        //    54: getfield        aewd.a:I
+        //    57: istore          7
         //    59: aload           5
-        //    61: getfield        aeud.d:Ljava/lang/Object;
+        //    61: getfield        aewd.d:Ljava/lang/Object;
         //    64: astore          5
         //    66: aload_0        
-        //    67: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/music/ui/MusicWaveformView.a:Lhcw;
+        //    67: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/music/ui/MusicWaveformView.a:Lhdo;
         //    70: lload_1        
         //    71: lload_3        
         //    72: aload_0        
         //    73: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/music/ui/MusicWaveformView.j:F
         //    76: aload           5
         //    78: checkcast       [B
-        //    81: iload           8
+        //    81: iload           7
         //    83: aload           6
-        //    85: invokevirtual   hcw.f:(JJF[BILafcr;)V
+        //    85: invokevirtual   hdo.f:(JJF[BILafeq;)V
         //    88: aload_0        
         //    89: lload_1        
         //    90: lload_3        
         //    91: invokespecial   com/google/android/apps/youtube/app/extensions/reel/creation/shorts/music/ui/MusicWaveformView.f:(JJ)V
-        //    94: aload           7
+        //    94: aload           8
         //    96: invokevirtual   java/io/InputStream.close:()V
         //    99: return         
         //   100: astore          5
-        //   102: aload           7
+        //   102: aload           8
         //   104: invokevirtual   java/io/InputStream.close:()V
         //   107: goto            143
         //   110: astore          6
@@ -141,7 +141,7 @@ public class MusicWaveformView extends View
         //   146: astore          5
         //   148: ldc             "Error reading the raw waveform bytes. "
         //   150: aload           5
-        //   152: invokestatic    trn.d:(Ljava/lang/String;Ljava/lang/Throwable;)V
+        //   152: invokestatic    ttr.d:(Ljava/lang/String;Ljava/lang/Throwable;)V
         //   155: aload_0        
         //   156: lload_1        
         //   157: lload_3        
@@ -218,7 +218,7 @@ public class MusicWaveformView extends View
                     final float k = this.k;
                     final float d = this.d;
                     final float x = motionEvent.getX();
-                    final hcw a = this.a;
+                    final hdo a = this.a;
                     final float d2 = d + (k - x) / a.d;
                     this.d = d2;
                     float n = d2;

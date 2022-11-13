@@ -19,61 +19,62 @@ public final class a implements g
     public SelectableItemKey c;
     public final SparseArray d;
     public long e;
-    public andq f;
+    public anfu f;
     private final e g;
-    private final vax h;
-    private final qpt i;
+    private final vcy h;
+    private final pvh i;
     
-    public a(final e g, final vax h, final qpt i, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4) {
+    public a(final e g, final vcy h, final pvh i, final byte[] array, final byte[] array2) {
         this.g = g;
         this.h = h;
         this.i = i;
         this.d = new SparseArray();
     }
     
+    @Override
     public final void a(final int n) {
         if (this.f == null) {
             return;
         }
         final Object value = this.d.get(n);
-        if (value != null && !(value instanceof andq) && !(value instanceof andp)) {
-            if (value instanceof andr) {
-                final andr andr = (andr)value;
-                final vax h = this.h;
-                aioe aioe;
-                if ((aioe = andr.b) == null) {
-                    aioe = aioe.a;
+        if (value != null && !(value instanceof anfu) && !(value instanceof anft)) {
+            if (value instanceof anfv) {
+                final anfv anfv = (anfv)value;
+                final vcy h = this.h;
+                aiqj aiqj;
+                if ((aiqj = anfv.b) == null) {
+                    aiqj = aiqj.a;
                 }
-                vaw.a(h, aioe);
+                vcx.a(h, aiqj);
             }
         }
         else {
             final HashMap hashMap = new HashMap();
             hashMap.put("com.google.android.apps.youtube.embeddedplayer.service.innertube.endpoint.starttime", TimeUnit.MILLISECONDS.toSeconds(this.e));
-            final vax h2 = this.h;
-            aioe aioe2;
-            if ((aioe2 = this.f.c) == null) {
-                aioe2 = aioe.a;
+            final vcy h2 = this.h;
+            aiqj aiqj2;
+            if ((aiqj2 = this.f.c) == null) {
+                aiqj2 = aiqj.a;
             }
-            h2.c(aioe2, (Map)hashMap);
+            h2.c(aiqj2, (Map)hashMap);
         }
         if (value != null) {
-            final boolean b = value instanceof andq;
+            final boolean b = value instanceof anfu;
             byte[] array = null;
             if (b) {
-                final andq andq = (andq)value;
-                if ((andq.b & 0x20) != 0x0) {
-                    array = andq.f.I();
+                final anfu anfu = (anfu)value;
+                if ((anfu.b & 0x20) != 0x0) {
+                    array = anfu.f.I();
                 }
             }
-            else if (value instanceof andp) {
-                final andp andp = (andp)value;
-                if ((andp.b & 0x4) != 0x0) {
-                    array = andp.d.I();
+            else if (value instanceof anft) {
+                final anft anft = (anft)value;
+                if ((anft.b & 0x4) != 0x0) {
+                    array = anft.d.I();
                 }
             }
-            else if (value instanceof andr) {
-                array = ((andr)value).d.I();
+            else if (value instanceof anfv) {
+                array = ((anfv)value).d.I();
             }
             if (array != null) {
                 this.g.j(array);

@@ -10,7 +10,7 @@ import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveov
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.shared.e;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.shared.c;
 
-public final class a implements abal
+public final class a implements abcg
 {
     public c a;
     private final e b;
@@ -51,6 +51,12 @@ public final class a implements abal
         }
     }
     
+    public final void l(final boolean b) {
+    }
+    
+    public final void m() {
+    }
+    
     public final void mk() {
         final c a = this.a;
         if (a == null) {
@@ -60,6 +66,9 @@ public final class a implements abal
             a.g();
         }
         catch (final RemoteException ex) {}
+    }
+    
+    public final void n() {
     }
     
     public final void o(final long n) {
@@ -76,8 +85,11 @@ public final class a implements abal
         catch (final RemoteException ex) {}
     }
     
-    public final void q(final abak a) {
+    public final void q(final abcf a) {
         this.b.a = a;
+    }
+    
+    public final void r(final boolean b) {
     }
     
     public final void t(final CharSequence charSequence, final CharSequence charSequence2, final boolean b, final CharSequence charSequence3, final int n, final CharSequence charSequence4, final int n2) {
@@ -91,6 +103,9 @@ public final class a implements abal
         catch (final RemoteException ex) {}
     }
     
+    public final void u(final boolean b) {
+    }
+    
     public final void v(final CharSequence charSequence, final CharSequence charSequence2, final CharSequence charSequence3) {
         final c a = this.a;
         if (a == null) {
@@ -100,5 +115,12 @@ public final class a implements abal
             a.k(charSequence, charSequence2, charSequence3);
         }
         catch (final RemoteException ex) {}
+    }
+    
+    public final void w(final boolean b) {
+    }
+    
+    public final boolean x() {
+        return false;
     }
 }

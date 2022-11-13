@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Nazaj v album</string>
     <string name="accessibility_navigation_back_button">Nazaj</string>
     <string name="accessibility_new_content_available">Nova vsebina, ki je na voljo</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Novi videoposnetki</string>
     <string name="accessibility_next">Naslednji videoposnetek</string>
     <string name="accessibility_offline_button_cancel">Ustavi prenašanje</string>
     <string name="accessibility_offline_button_cannot_save">Prenos ni mogoč</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Spremljanje in nadzor podatkov</string>
     <string name="data_saving_persistent_title">Varčevanje s podatki</string>
     <string name="data_saving_select_quality_every_video_switch_title">Izberite kakovost posameznih videoposnetkov</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Zmanjšanje kakovosti pametnih prenosov</string>
     <string name="data_saving_snack_bar_action_button">Ogled</string>
     <string name="data_saving_snack_bar_text">Ta sprememba vpliva na vaše nastavitve varčevanja s podatki</string>
     <string name="data_saving_upload_wifi_only_switch_title">Nalaganje samo prek povezave Wi-Fi</string>

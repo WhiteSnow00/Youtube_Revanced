@@ -15,7 +15,7 @@ public class CheckableImageButton$SavedState extends AbsSavedState
     boolean a;
     
     static {
-        CREATOR = (Parcelable$Creator)new adrl(3);
+        CREATOR = (Parcelable$Creator)new adtn(3);
     }
     
     public CheckableImageButton$SavedState(final Parcel parcel, final ClassLoader classLoader) {

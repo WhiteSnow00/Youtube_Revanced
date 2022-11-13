@@ -15,7 +15,7 @@ public final class PaymentForm extends AbstractSafeParcelable
     public int a;
     
     static {
-        CREATOR = (Parcelable$Creator)new nit(13);
+        CREATOR = (Parcelable$Creator)new njy(12);
     }
     
     private PaymentForm() {
@@ -26,16 +26,16 @@ public final class PaymentForm extends AbstractSafeParcelable
     }
     
     public final boolean equals(final Object o) {
-        return this == o || (o instanceof PaymentForm && kgk.ba((Object)this.a, (Object)((PaymentForm)o).a));
+        return this == o || (o instanceof PaymentForm && khl.be((Object)this.a, (Object)((PaymentForm)o).a));
     }
     
     public final int hashCode() {
         return Arrays.hashCode(new Object[] { this.a });
     }
     
-    public final void writeToParcel(final Parcel parcel, int i) {
-        i = kgk.I(parcel);
-        kgk.O(parcel, 1, this.a);
-        kgk.J(parcel, i);
+    public final void writeToParcel(final Parcel parcel, int m) {
+        m = khl.M(parcel);
+        khl.S(parcel, 1, this.a);
+        khl.N(parcel, m);
     }
 }

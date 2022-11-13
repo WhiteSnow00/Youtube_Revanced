@@ -10,19 +10,19 @@ import j$.util.Optional;
 import android.content.SharedPreferences;
 import android.app.Activity;
 
-public class MdxSmartRemoteMealbarController implements tfh, tec
+public class MdxSmartRemoteMealbarController implements thl, tgg
 {
     public final Activity a;
-    public final actu b;
-    public final xfw c;
+    public final acvy b;
+    public final xhv c;
     public final SharedPreferences d;
-    public final xlv e;
-    public final zki f;
-    public final zko g;
-    public final ttn h;
-    private final tdz i;
+    public final xnt e;
+    public final zmf f;
+    public final zml g;
+    public final tvr h;
+    private final tgd i;
     
-    public MdxSmartRemoteMealbarController(final Activity a, final actu b, final xfw c, final tdz i, final SharedPreferences d, final xlv e, final zki f, final zko g, final ttn h) {
+    public MdxSmartRemoteMealbarController(final Activity a, final acvy b, final xhv c, final tgd i, final SharedPreferences d, final xnt e, final zmf f, final zml g, final tvr h) {
         a.getClass();
         this.a = a;
         this.b = b;
@@ -36,6 +36,19 @@ public class MdxSmartRemoteMealbarController implements tfh, tec
         Optional.empty();
     }
     
+    public final thh g() {
+        return thh.b;
+    }
+    
+    public final void lW(final aun aun) {
+    }
+    
+    public final void mM(final aun aun) {
+    }
+    
+    public final void mq(final aun aun) {
+    }
+    
     public final Class[] ms(final Class clazz, final Object o, final int n) {
         Class[] array;
         if (n != -1) {
@@ -44,47 +57,58 @@ public class MdxSmartRemoteMealbarController implements tfh, tec
                 sb.append(n);
                 throw new IllegalStateException(sb.toString());
             }
-            final xod xod = (xod)o;
-            final xhh b = xod.b();
+            final xqb xqb = (xqb)o;
+            final xjg b = xqb.b();
             array = null;
             if (b != null) {
                 if (this.e.g() == null) {
-                    if (xod.a() != this.d.getLong("com.google.android.libraries.youtube.mdx.smartremote.LAST_SMART_REMOTE_REQUESTED_TIME", 0L)) {
-                        final ibb ibb = new ibb(1);
+                    if (xqb.a() != this.d.getLong("com.google.android.libraries.youtube.mdx.smartremote.LAST_SMART_REMOTE_REQUESTED_TIME", 0L)) {
+                        final ibw ibw = new ibw(1);
                         final Resources resources = this.a.getResources();
                         if (this.f.c().g()) {
-                            final actu b2 = this.b;
-                            final actv h = b2.j().h(resources.getText(2132018598));
-                            h.l = (actk)ibb;
-                            final actv d = h.a(resources.getText(2132018597), (View$OnClickListener)new hpi(this, b, 10)).c(resources.getText(2132018594), (View$OnClickListener)hzo.b).d(2131232765);
+                            final acvy b2 = this.b;
+                            final acvz h = b2.j().h(resources.getText(2132018599));
+                            h.l = (acvo)ibw;
+                            final acvz d = h.a(resources.getText(2132018598), (View$OnClickListener)new hqd(this, b, 11)).c(resources.getText(2132018595), (View$OnClickListener)ial.b).d(2131232765);
                             d.k(false);
                             b2.l(d.j());
                         }
                         else {
-                            final actu b3 = this.b;
-                            final actv h2 = b3.j().h(resources.getText(2132018599));
-                            h2.c = resources.getText(2132018596);
-                            h2.l = (actk)ibb;
-                            final actv d2 = h2.a(resources.getText(2132018595), (View$OnClickListener)new hpi(this, b, 11)).c(resources.getText(2132018594), (View$OnClickListener)hzo.c).d(2131232269);
+                            final acvy b3 = this.b;
+                            final acvz h2 = b3.j().h(resources.getText(2132018600));
+                            h2.c = resources.getText(2132018597);
+                            h2.l = (acvo)ibw;
+                            final acvz d2 = h2.a(resources.getText(2132018596), (View$OnClickListener)new hqd(this, b, 12)).c(resources.getText(2132018595), (View$OnClickListener)ial.c).d(2131232269);
                             d2.k(false);
                             b3.l(d2.j());
                         }
-                        this.d.edit().putLong("com.google.android.libraries.youtube.mdx.smartremote.LAST_SMART_REMOTE_REQUESTED_TIME", xod.a()).apply();
+                        this.d.edit().putLong("com.google.android.libraries.youtube.mdx.smartremote.LAST_SMART_REMOTE_REQUESTED_TIME", xqb.a()).apply();
                     }
                 }
             }
         }
         else {
-            array = new Class[] { xod.class };
+            array = new Class[] { xqb.class };
         }
         return array;
     }
     
-    public final void oS(final aum aum) {
+    public final void my(final aun aun) {
+    }
+    
+    public final void oS(final aun aun) {
         this.i.g((Object)this);
     }
     
-    public final void oW(final aum aum) {
+    public final void oT() {
+        tfg.c((thl)this);
+    }
+    
+    public final void oW() {
+        tfg.b((thl)this);
+    }
+    
+    public final void oX(final aun aun) {
         this.i.m((Object)this);
     }
 }

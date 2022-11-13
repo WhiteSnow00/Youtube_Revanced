@@ -93,9 +93,6 @@
     <string name="litho_paid_content">Odstranit placený obsah</string>
     <string name="litho_paid_content_off">Placený obsah je zobrazen</string>
     <string name="litho_paid_content_on">Placený obsah je skrytý</string>
-    <string name="litho_shorts_shelf">Odstranit šortky poličku</string>
-    <string name="litho_shorts_shelf_off">Zobrazí se zkratky</string>
-    <string name="litho_shorts_shelf_on">Zkratky jsou skryté</string>
     <string name="microg_not_installed_notice">Nainstalujte prosím MicroG</string>
     <string name="microg_not_installed_warning">MikroG nebyl nalezen</string>
     <string name="microg_notification_settings">Nastavení oznámení</string>
@@ -215,7 +212,6 @@
     <string name="revanced_preferred_video_speed_summary">Vyberte preferovanou rychlost videa</string>
     <string name="revanced_preferred_video_speed_title">Preferovaná rychlost videa</string>
     <string name="revanced_reboot_warning_fullscreen">Trick the YouTube version and try to update on the server side.\10To někdy nemusí fungovat podle plánu.\10V některých případech může být nutné ReVanced přeinstalovat.\10Opravdu chcete pokračovat?</string>
-    <string name="revanced_reboot_warning_ryd">Integruje se stejným tlačítkem pro zobrazení nelíbí počty v novém rozložení.\10Protože se však jedná o experimentální prvek, nemusí se podobný počet zobrazovat přesně.\10Jste si jisti, že chcete pokračovat?</string>
     <string name="revanced_rebuffer_summary">Maximální velikost vyrovnávací paměti pro přehrávání po opětovném načítání</string>
     <string name="revanced_rebuffer_title">Maximální vyrovnávací paměť pro přehrávání po obnově</string>
     <string name="revanced_reel_summary_off">Příběhy jsou skryté</string>
@@ -223,8 +219,6 @@
     <string name="revanced_reel_title">YouTube příběhy</string>
     <string name="revanced_ryd_attribution_summary">Tato integrace používá YouTube Dislike API z https://returnyoutubedislike.com. Klepnutím se dozvíte více</string>
     <string name="revanced_ryd_attribution_title">Vrátit YouTube nelíbí se opravu</string>
-    <string name="revanced_ryd_new_layout_summary">Zobrazit počet nelíbí v novém rozložení</string>
-    <string name="revanced_ryd_new_layout_title">Oprava RYD (nové rozložení)</string>
     <string name="revanced_ryd_settings_summary">Nastavení pro vrácení YouTube se nelíbí</string>
     <string name="revanced_ryd_settings_title">Vrátit YouTube nelíbí se</string>
     <string name="revanced_ryd_summary">Zapněte, abyste znovu viděli počet nelíbí se</string>

@@ -21,7 +21,7 @@ public abstract class AbstractItemHierarchy
     
     public AbstractItemHierarchy(final Context context, final AttributeSet set) {
         this.a = new ArrayList();
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, aedq.b);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, aefr.b);
         obtainStyledAttributes.getResourceId(0, -1);
         obtainStyledAttributes.recycle();
     }

@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ReelCreationTrayRendererOuterClass
 {
-    public static final agzg reelCreationTrayRenderer;
+    public static final ahbf reelCreationTrayRenderer;
     
     static {
-        reelCreationTrayRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anqc.a, (MessageLite)anqc.a, (agzn)null, 153501068, ahcm.k, (Class)anqc.class);
+        reelCreationTrayRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ansf.a, (MessageLite)ansf.a, (ahbm)null, 153501068, ahek.k, (Class)ansf.class);
     }
     
     private ReelCreationTrayRendererOuterClass() {

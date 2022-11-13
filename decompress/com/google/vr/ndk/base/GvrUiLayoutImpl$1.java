@@ -9,8 +9,8 @@ import android.content.Context;
 
 class GvrUiLayoutImpl$1 implements Runnable
 {
-    final /* synthetic */ Context val$context;
-    final /* synthetic */ Intent val$homeIntent;
+    final Context val$context;
+    final Intent val$homeIntent;
     
     public GvrUiLayoutImpl$1(final Context val$context, final Intent val$homeIntent) {
         this.val$context = val$context;

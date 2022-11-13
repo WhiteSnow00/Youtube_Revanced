@@ -55,10 +55,10 @@ public class NavigationBar extends LinearLayout implements View$OnClickListener
         if (this.isInEditMode()) {
             return;
         }
-        View.inflate(this.getContext(), 2131625574, (ViewGroup)this);
-        final Button button = (Button)this.findViewById(2131431870);
-        final Button button2 = (Button)this.findViewById(2131431868);
-        final Button button3 = (Button)this.findViewById(2131431869);
+        View.inflate(this.getContext(), 2131625579, (ViewGroup)this);
+        final Button button = (Button)this.findViewById(2131431873);
+        final Button button2 = (Button)this.findViewById(2131431871);
+        final Button button3 = (Button)this.findViewById(2131431872);
     }
     
     public final void onClick(final View view) {

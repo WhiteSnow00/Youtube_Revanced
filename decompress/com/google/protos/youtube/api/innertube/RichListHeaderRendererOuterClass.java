@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class RichListHeaderRendererOuterClass
 {
-    public static final agzg richListHeaderRenderer;
+    public static final ahbf richListHeaderRenderer;
     
     static {
-        richListHeaderRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anty.a, (MessageLite)anty.a, (agzn)null, 120280839, ahcm.k, (Class)anty.class);
+        richListHeaderRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anwb.a, (MessageLite)anwb.a, (ahbm)null, 120280839, ahek.k, (Class)anwb.class);
     }
     
     private RichListHeaderRendererOuterClass() {

@@ -6,16 +6,18 @@ package com.google.android.youtube.api.jar.client;
 
 class b implements com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.b
 {
-    final /* synthetic */ RemoteEmbeddedPlayer a;
+    final RemoteEmbeddedPlayer a;
     
     public b(final RemoteEmbeddedPlayer a) {
         this.a = a;
     }
     
+    @Override
     public final void a() {
         this.a.e = false;
     }
     
+    @Override
     public final void b() {
         final RemoteEmbeddedPlayer a = this.a;
         a.e = true;

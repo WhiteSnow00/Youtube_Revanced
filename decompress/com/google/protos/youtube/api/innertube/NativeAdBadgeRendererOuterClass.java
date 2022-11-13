@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class NativeAdBadgeRendererOuterClass
 {
-    public static final agzg nativeAdBadgeRenderer;
+    public static final ahbf nativeAdBadgeRenderer;
     
     static {
-        nativeAdBadgeRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amny.a, (MessageLite)amny.a, (agzn)null, 138592202, ahcm.k, (Class)amny.class);
+        nativeAdBadgeRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)amqd.a, (MessageLite)amqd.a, (ahbm)null, 138592202, ahek.k, (Class)amqd.class);
     }
     
     private NativeAdBadgeRendererOuterClass() {

@@ -18,13 +18,13 @@ import android.widget.LinearLayout;
 
 public class ButtonBarLayout extends LinearLayout
 {
-    private static final aeby d;
+    private static final aeea d;
     private boolean a;
     private int b;
     private int c;
     
     static {
-        d = new aeby("ButtonBarLayout");
+        d = new aeea("ButtonBarLayout");
     }
     
     public ButtonBarLayout(final Context context) {
@@ -53,14 +53,14 @@ public class ButtonBarLayout extends LinearLayout
             int n4;
             int n5;
             if (b) {
-                child.setTag(2131431826, (Object)layoutParams.weight);
+                child.setTag(2131431829, (Object)layoutParams.weight);
                 layoutParams.weight = 0.0f;
                 layoutParams.leftMargin = 0;
                 n4 = n2;
                 n5 = n3;
             }
             else {
-                final Float n6 = (Float)child.getTag(2131431826);
+                final Float n6 = (Float)child.getTag(2131431829);
                 if (n6 != null) {
                     layoutParams.weight = n6;
                 }
@@ -82,7 +82,7 @@ public class ButtonBarLayout extends LinearLayout
         this.setOrientation((int)(b ? 1 : 0));
         int n7 = childCount;
         if (n2 != 0) {
-            ButtonBarLayout.d.e("Reorder the FooterActionButtons in the container");
+            ButtonBarLayout.d.k("Reorder the FooterActionButtons in the container");
             final ArrayList list = new ArrayList();
             if (n3 <= 1) {
                 list.addAll(Collections.nCopies(3, (Object)null));
@@ -145,7 +145,7 @@ public class ButtonBarLayout extends LinearLayout
     
     protected final void onMeasure(final int n, final int n2) {
         final int size = View$MeasureSpec.getSize(n);
-        int i = 0;
+        final int n3 = 0;
         this.a(false);
         int measureSpec;
         boolean b;
@@ -160,29 +160,28 @@ public class ButtonBarLayout extends LinearLayout
         super.onMeasure(measureSpec, n2);
         final Context context = this.getContext();
         final int childCount = this.getChildCount();
-        int n3 = 0;
-        while (i < childCount) {
+        int n4 = 0;
+        int n5;
+        for (int i = n3; i < childCount; ++i, n4 = n5) {
             final View child = this.getChildAt(i);
-            int n4 = n3;
+            n5 = n4;
             if (child instanceof FooterActionButton) {
-                n4 = n3;
+                n5 = n4;
                 if (((FooterActionButton)child).b) {
-                    n4 = n3 + 1;
+                    n5 = n4 + 1;
                 }
             }
-            ++i;
-            n3 = n4;
         }
-        Label_0180: {
-            Label_0174: {
-                if (n3 == 2) {
-                    if (context.getResources().getConfiguration().smallestScreenWidthDp >= 600 && aedd.n(context)) {
-                        break Label_0174;
+        Label_0183: {
+            Label_0178: {
+                if (n4 == 2) {
+                    if (context.getResources().getConfiguration().smallestScreenWidthDp >= 600 && aefe.n(context)) {
+                        break Label_0178;
                     }
                 }
                 if (this.getMeasuredWidth() > size) {
                     this.a(true);
-                    break Label_0180;
+                    break Label_0183;
                 }
             }
             if (!b) {

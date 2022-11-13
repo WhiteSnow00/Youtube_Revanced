@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">ஆல்பத்துக்குச் செல்லும்</string>
     <string name="accessibility_navigation_back_button">முந்தையது</string>
     <string name="accessibility_new_content_available">புதிய உள்ளடக்கம் உள்ளது</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">புதிய வீடியோக்கள்</string>
     <string name="accessibility_next">அடுத்த வீடியோ</string>
     <string name="accessibility_offline_button_cancel">பதிவிறக்கத்தை நிறுத்து</string>
     <string name="accessibility_offline_button_cannot_save">பதிவிறக்க முடியவில்லை</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">தரவுக் கண்காணிப்பும் கட்டுப்பாடும்</string>
     <string name="data_saving_persistent_title">டேட்டா சேமிப்பு</string>
     <string name="data_saving_select_quality_every_video_switch_title">ஒவ்வொரு வீடியோவுக்குமான தரத்தை என்னிடம் கேள்</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">ஸ்மார்ட் பதிவிறக்கங்களின் தரத்தைக் குறை</string>
     <string name="data_saving_snack_bar_action_button">காட்டு</string>
     <string name="data_saving_snack_bar_text">இங்கே செய்யும் மாற்றங்கள் டேட்டா சேமிப்பு அமைப்புகளிலும் பிரதிபலிக்கும்</string>
     <string name="data_saving_upload_wifi_only_switch_title">வைஃபை மூலம் மட்டும் பதிவேற்று</string>

@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Назад към албума</string>
     <string name="accessibility_navigation_back_button">Назад</string>
     <string name="accessibility_new_content_available">Налично е ново съдържание</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Нови видеоклипове</string>
     <string name="accessibility_next">Следващ видеоклип</string>
     <string name="accessibility_offline_button_cancel">Спиране на изтеглянето</string>
     <string name="accessibility_offline_button_cannot_save">Изтеглянето не е възможно</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Наблюдение и управление на данните</string>
     <string name="data_saving_persistent_title">Запазване на данни</string>
     <string name="data_saving_select_quality_every_video_switch_title">Избиране на качеството за всеки видеоклип</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
     <string name="data_saving_snack_bar_action_button">Преглед</string>
     <string name="data_saving_snack_bar_text">Тази промяна засяга настройките ви за спестяване на данни</string>
     <string name="data_saving_upload_wifi_only_switch_title">Качване само чрез Wi-Fi</string>
@@ -735,7 +736,7 @@
     <string name="image_gallery_zero_state_text_secondary">Направете снимка, за да я добавите към публикация</string>
     <string name="image_upload_error">Снимката не бе качена. Моля, опитайте отново.</string>
     <string name="image_upload_something_went_wrong">Ами сега! Нещо се обърка.</string>
-    <string name="immersive_accessibility_player_overlay">Player, double tap to bring up player controls</string>
+    <string name="immersive_accessibility_player_overlay">Плейър, докоснете двукратно, за да видите контролите за плейъра</string>
     <string name="in_app_update_downloaded_message">Актуализацията е изтеглена</string>
     <string name="in_app_update_downloading_message">Актуализацията се изтегля…</string>
     <string name="in_app_update_restart_button">РЕСТАРТИРАНЕ</string>
@@ -1458,7 +1459,7 @@
     <string name="pref_settings_video_quality_nonbeta">Предпочитания за качество на видеоклиповете</string>
     <string name="pref_smart_downloads_description">Коригиране на използването на хранилището за интелигентните изтегляния</string>
     <string name="pref_smart_downloads_opted_in_title">Интелигентни изтегляния</string>
-    <string name="pref_smart_downloads_quality_title">Smart downloads quality</string>
+    <string name="pref_smart_downloads_quality_title">Качество на интелигентните изтегляния</string>
     <string name="pref_smart_downloads_summary">Автоматично изтегляне на препоръчани видеоклипове през Wi-Fi</string>
     <string name="pref_subtitles_category">Надписи</string>
     <string name="pref_upload_policy_summary">Посочете мрежови предпочитания за качванията</string>
@@ -1808,7 +1809,7 @@
     <string name="shorts_segment_import_failed_text">Импортирането на сегмента не бе успешно</string>
     <string name="shorts_segment_import_timeout_text">Времето за изчакване на импортирането на сегмента изтече</string>
     <string name="shorts_selected_duration_title">%1$d секунди</string>
-    <string name="shorts_sound_added_tooltip_time_x">Sound added to first %1$ds</string>
+    <string name="shorts_sound_added_tooltip_time_x">Звукът бе добавен към първите %1$d сек</string>
     <string name="shorts_speed_control_fast_label">Бърза</string>
     <string name="shorts_speed_control_fast_text">2X</string>
     <string name="shorts_speed_control_normal_label">Нормална</string>

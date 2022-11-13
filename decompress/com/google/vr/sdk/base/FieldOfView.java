@@ -82,9 +82,14 @@ public class FieldOfView
         this.top = top;
     }
     
-    public void toPerspectiveMatrix(final float n, final float n2, final float[] array, final int n3) {
+    public void toPerspectiveMatrix(float n, float n2, final float[] array, final int n3) {
         if (array.length >= 16) {
-            Matrix.frustumM(array, 0, (float)(-Math.tan(Math.toRadians(this.left))) * 0.1f, (float)Math.tan(Math.toRadians(this.right)) * 0.1f, (float)(-Math.tan(Math.toRadians(this.bottom))) * 0.1f, (float)Math.tan(Math.toRadians(this.top)) * 0.1f, 0.1f, 20000.0f);
+            final double n4 = -Math.tan(Math.toRadians(this.left));
+            n2 = (float)Math.tan(Math.toRadians(this.right));
+            final double n5 = -Math.tan(Math.toRadians(this.bottom));
+            final float n6 = (float)Math.tan(Math.toRadians(this.top));
+            n = (float)n5;
+            Matrix.frustumM(array, 0, (float)n4 * 0.1f, n2 * 0.1f, n * 0.1f, n6 * 0.1f, 0.1f, 20000.0f);
             return;
         }
         throw new IllegalArgumentException("Not enough space to write the result");

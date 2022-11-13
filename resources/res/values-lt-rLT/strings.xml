@@ -93,9 +93,6 @@
     <string name="litho_paid_content">Pašalinti mokamą turinį</string>
     <string name="litho_paid_content_off">Mokamas turinys yra rodomas</string>
     <string name="litho_paid_content_on">Mokamas turinys yra paslėptas</string>
-    <string name="litho_shorts_shelf">Pašalinti trumpų video lentyną</string>
-    <string name="litho_shorts_shelf_off">Trumpų video lentyna yra rodoma</string>
-    <string name="litho_shorts_shelf_on">Trumpų video lentyna yra paslėpta</string>
     <string name="microg_not_installed_notice">Prašome įdiegti MicroG</string>
     <string name="microg_not_installed_warning">MicroG yra nerastas</string>
     <string name="microg_notification_settings">Pranešimų nustatymai</string>
@@ -256,7 +253,6 @@
     <string name="revanced_preferred_video_speed_summary">Pasirink pageidaujamą video greitį</string>
     <string name="revanced_preferred_video_speed_title">Pageidaujamas vaizdo įrašo greitis</string>
     <string name="revanced_reboot_warning_fullscreen">Pergudraukite YouTube versiją ir pabandykite ją atnaujinti serverio pusėje.\10Kartais tai gali neveikti taip, kaip numatyta.\10Kai kuriais atvejais gali prireikti iš naujo įdiegti ReVanced.\10Vis dėlto ar tikrai norite tęsti?</string>
-    <string name="revanced_reboot_warning_ryd">Integruojamas su mygtuku Patinka, kad būtų rodomas nepatiktukų skaičius naujame išdėstyme.\10Tačiau, kadangi tai vis dar eksperimentinė funkcija, panašumų skaičius gali būti rodomas netiksliai.\10Vis dėlto ar tikrai norite tęsti?</string>
     <string name="revanced_rebuffer_summary">Didžiausias buferio dydis, skirtas atkurti po pakartotinio buferio</string>
     <string name="revanced_rebuffer_title">Maksimalus buferis atkūrimui po pakartotinio buferio</string>
     <string name="revanced_reel_summary_off">Istorijos yra paslėptos</string>
@@ -264,8 +260,6 @@
     <string name="revanced_reel_title">YouTube istorijos</string>
     <string name="revanced_ryd_attribution_summary">Šiai integracijai naudojama Return YouTube nepatiktukų API iš https://returnyoutubedislike.com. Paspauskite norėdami sužinoti daugiau</string>
     <string name="revanced_ryd_attribution_title">Return YouTube nepatiktukų pataisymas</string>
-    <string name="revanced_ryd_new_layout_summary">Rodyti nepatiktukų skaičių naujame išdėstyme</string>
-    <string name="revanced_ryd_new_layout_title">Pataisyti RYD (naujas išdėstymas)</string>
     <string name="revanced_ryd_settings_summary">Nustatymai skirti Grąžinti YouTube Nepatiktukus</string>
     <string name="revanced_ryd_settings_title">Grąžinti YouTube Nepatiktukus</string>
     <string name="revanced_ryd_summary">Įjunkite tai, kad vėl pamatytumėte nepatiktukų skaičių</string>
@@ -283,9 +277,6 @@
     <string name="revanced_suggested_actions_summary_off">Siūlomi veiksmai yra rodomi</string>
     <string name="revanced_suggested_actions_summary_on">Siūlomi veiksmai yra paslėpti</string>
     <string name="revanced_suggested_actions_title">Siūlomi veiksmai</string>
-    <string name="revanced_suggestion_summary_off">Pabaigos ekranai yra paslėpti</string>
-    <string name="revanced_suggestion_summary_on">Pabaigos ekranai yra rodomi</string>
-    <string name="revanced_suggestion_title">Pabaigos ekranai</string>
     <string name="revanced_swipe_auto_brightness_summary_off">Automatinis ryškumas perbraukiant yra išjungtas</string>
     <string name="revanced_swipe_auto_brightness_summary_on">Automatinis ryškumas perbraukiant yra įjungtas</string>
     <string name="revanced_swipe_auto_brightness_title">Automatinis ryškumas perbraukiant</string>

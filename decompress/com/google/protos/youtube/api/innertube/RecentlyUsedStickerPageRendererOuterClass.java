@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class RecentlyUsedStickerPageRendererOuterClass
 {
-    public static final agzg recentlyUsedStickerPageRenderer;
+    public static final ahbf recentlyUsedStickerPageRenderer;
     
     static {
-        recentlyUsedStickerPageRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anpn.a, (MessageLite)anpn.a, (agzn)null, 202406340, ahcm.k, (Class)anpn.class);
+        recentlyUsedStickerPageRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anrq.a, (MessageLite)anrq.a, (ahbm)null, 202406340, ahek.k, (Class)anrq.class);
     }
     
     private RecentlyUsedStickerPageRendererOuterClass() {

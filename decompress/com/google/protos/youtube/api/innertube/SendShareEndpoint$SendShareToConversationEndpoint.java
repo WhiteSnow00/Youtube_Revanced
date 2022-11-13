@@ -6,50 +6,50 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class SendShareEndpoint$SendShareToConversationEndpoint extends agzi implements ahax
+public final class SendShareEndpoint$SendShareToConversationEndpoint extends ahbh implements ahcw
 {
     public static final SendShareEndpoint$SendShareToConversationEndpoint a;
-    private static volatile ahbe b;
-    public static final agzg sendShareToConversationEndpoint;
+    private static volatile ahdd b;
+    public static final ahbf sendShareToConversationEndpoint;
     private int c;
-    private aiwu d;
-    private ajsq e;
+    private aiyz d;
+    private ajut e;
     private byte f;
     
     static {
         final SendShareEndpoint$SendShareToConversationEndpoint a2 = new SendShareEndpoint$SendShareToConversationEndpoint();
-        agzi.registerDefaultInstance((Class)SendShareEndpoint$SendShareToConversationEndpoint.class, (agzi)(a = a2));
-        sendShareToConversationEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 92589349, ahcm.k, (Class)SendShareEndpoint$SendShareToConversationEndpoint.class);
+        ahbh.registerDefaultInstance((Class)SendShareEndpoint$SendShareToConversationEndpoint.class, (ahbh)(a = a2));
+        sendShareToConversationEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 92589349, ahek.k, (Class)SendShareEndpoint$SendShareToConversationEndpoint.class);
     }
     
     private SendShareEndpoint$SendShareToConversationEndpoint() {
         this.f = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b2;
-                if ((b2 = SendShareEndpoint$SendShareToConversationEndpoint.b) == null) {
+                final ahdd b;
+                if ((b = SendShareEndpoint$SendShareToConversationEndpoint.b) == null) {
                     synchronized (SendShareEndpoint$SendShareToConversationEndpoint.class) {
                         if (SendShareEndpoint$SendShareToConversationEndpoint.b == null) {
-                            SendShareEndpoint$SendShareToConversationEndpoint.b = (ahbe)new agzb((agzi)SendShareEndpoint$SendShareToConversationEndpoint.a);
+                            SendShareEndpoint$SendShareToConversationEndpoint.b = (ahdd)new ahba((ahbh)SendShareEndpoint$SendShareToConversationEndpoint.a);
                         }
                     }
                 }
-                return b2;
+                return b;
             }
             case 5: {
                 return SendShareEndpoint$SendShareToConversationEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)SendShareEndpoint$SendShareToConversationEndpoint.a);
+                return new ahaz((ahbh)SendShareEndpoint$SendShareToConversationEndpoint.a);
             }
             case 3: {
                 return new SendShareEndpoint$SendShareToConversationEndpoint();
@@ -59,9 +59,9 @@ public final class SendShareEndpoint$SendShareToConversationEndpoint extends agz
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

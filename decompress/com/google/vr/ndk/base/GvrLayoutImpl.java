@@ -34,7 +34,7 @@ import android.widget.FrameLayout;
 class GvrLayoutImpl extends FrameLayout
 {
     private static GvrLayoutImpl$PresentationFactory sOptionalPresentationFactory;
-    private aqzg androidPCompat;
+    private arbu androidPCompat;
     private int asyncReprojectionFlags;
     private boolean attachedToWindow;
     private boolean autoFadeEnabled;
@@ -42,7 +42,7 @@ class GvrLayoutImpl extends FrameLayout
     private SdkDaydreamTouchListener daydreamTouchListener;
     private DaydreamUtilsWrapper daydreamUtils;
     private DisplaySynchronizer displaySynchronizer;
-    private aqzl eglFactory;
+    private arbz eglFactory;
     private EglReadyListener eglReadyListener;
     private ExtensionManager extensionManager;
     private FadeOverlayView fadeOverlayView;
@@ -52,7 +52,7 @@ class GvrLayoutImpl extends FrameLayout
     private GvrLayoutImpl$PresentationHelper presentationHelper;
     private FrameLayout presentationLayout;
     private View presentationView;
-    private araa scanlineRacingRenderer;
+    private arco scanlineRacingRenderer;
     private GvrLayoutImpl$AsyncReprojectionSurfaceView scanlineRacingView;
     private GvrLayoutImpl$ScreenOnManager screenOnManager;
     private final Runnable showRenderingViewsRunnable;
@@ -64,6 +64,42 @@ class GvrLayoutImpl extends FrameLayout
     private boolean useSyncService;
     private ExternalSurface videoSurface;
     private VrCoreSdkClient vrCoreSdkClient;
+    
+    static /* bridge */ arco -$$Nest$fgetscanlineRacingRenderer(final GvrLayoutImpl gvrLayoutImpl) {
+        return gvrLayoutImpl.scanlineRacingRenderer;
+    }
+    
+    static /* bridge */ Messenger -$$Nest$fgetsyncServiceReceiver(final GvrLayoutImpl gvrLayoutImpl) {
+        return gvrLayoutImpl.syncServiceReceiver;
+    }
+    
+    static /* bridge */ Messenger -$$Nest$fgetsyncServiceSender(final GvrLayoutImpl gvrLayoutImpl) {
+        return gvrLayoutImpl.syncServiceSender;
+    }
+    
+    static /* bridge */ GvrUiLayoutImpl -$$Nest$fgetuiLayout(final GvrLayoutImpl gvrLayoutImpl) {
+        return gvrLayoutImpl.uiLayout;
+    }
+    
+    static /* bridge */ VrCoreSdkClient -$$Nest$fgetvrCoreSdkClient(final GvrLayoutImpl gvrLayoutImpl) {
+        return gvrLayoutImpl.vrCoreSdkClient;
+    }
+    
+    static /* bridge */ void -$$Nest$fputsyncServiceSender(final GvrLayoutImpl gvrLayoutImpl, final Messenger syncServiceSender) {
+        gvrLayoutImpl.syncServiceSender = syncServiceSender;
+    }
+    
+    static /* bridge */ void -$$Nest$monCompositorLatch(final GvrLayoutImpl gvrLayoutImpl, final byte[] array) {
+        gvrLayoutImpl.onCompositorLatch(array);
+    }
+    
+    static /* bridge */ void -$$Nest$mupdateRenderingViewsVisibility(final GvrLayoutImpl gvrLayoutImpl, final int n) {
+        gvrLayoutImpl.updateRenderingViewsVisibility(0);
+    }
+    
+    static /* bridge */ GvrLayoutImpl$PresentationFactory -$$Nest$sfgetsOptionalPresentationFactory() {
+        return GvrLayoutImpl.sOptionalPresentationFactory;
+    }
     
     public GvrLayoutImpl(final Context context) {
         this(context, null);
@@ -77,7 +113,7 @@ class GvrLayoutImpl extends FrameLayout
         this.stereoModeEnabled = true;
         this.showRenderingViewsRunnable = new GvrLayoutImpl$1(this);
         this.useSyncService = true;
-        if (!(context instanceof arak) && aqzg.t(context) == null) {
+        if (!(context instanceof arcz) && arbu.t(context) == null) {
             throw new IllegalArgumentException("An Activity Context is required for VR functionality.");
         }
         this.init(null);
@@ -87,34 +123,34 @@ class GvrLayoutImpl extends FrameLayout
         if (this.scanlineRacingView != null) {
             return;
         }
-        final aqzl eglFactory = new aqzl();
+        final arbz eglFactory = new arbz();
         this.eglFactory = eglFactory;
         eglFactory.c = this.gvrApi.isOpenGLKHRDebugEnabled();
-        final aqzl eglFactory2 = this.eglFactory;
+        final arbz eglFactory2 = this.eglFactory;
         eglFactory2.a = true;
         eglFactory2.b = (0x1 == (this.asyncReprojectionFlags & 0x1));
         eglFactory2.e = 3;
-        (this.scanlineRacingView = new GvrLayoutImpl$AsyncReprojectionSurfaceView(this.getContext())).setEGLConfigChooser((GLSurfaceView$EGLConfigChooser)new aqzx());
+        ((GvrSurfaceView)(this.scanlineRacingView = new GvrLayoutImpl$AsyncReprojectionSurfaceView(this.getContext()))).setEGLConfigChooser((GLSurfaceView$EGLConfigChooser)new arcl());
         this.scanlineRacingView.setZOrderMediaOverlay(true);
-        this.scanlineRacingView.setEGLContextFactory((GLSurfaceView$EGLContextFactory)this.eglFactory);
-        this.scanlineRacingView.setEGLWindowSurfaceFactory((GLSurfaceView$EGLWindowSurfaceFactory)this.eglFactory);
+        ((GvrSurfaceView)this.scanlineRacingView).setEGLContextFactory((GLSurfaceView$EGLContextFactory)this.eglFactory);
+        ((GvrSurfaceView)this.scanlineRacingView).setEGLWindowSurfaceFactory((GLSurfaceView$EGLWindowSurfaceFactory)this.eglFactory);
         if (this.isContextSharingEnabled()) {
-            this.scanlineRacingView.setEglReadyListener(this.eglReadyListener);
+            ((GvrSurfaceView)this.scanlineRacingView).setEglReadyListener(this.eglReadyListener);
         }
         if (!this.stereoModeEnabled) {
             Log.w("GvrLayoutImpl", "Disabling stereo mode with async reprojection enabled may not work properly.");
             this.scanlineRacingView.setVisibility(8);
         }
         if (this.scanlineRacingRenderer == null) {
-            this.scanlineRacingRenderer = new araa(this.gvrApi);
+            this.scanlineRacingRenderer = new arco(this.gvrApi);
         }
-        final araa scanlineRacingRenderer = this.scanlineRacingRenderer;
+        final arco scanlineRacingRenderer = this.scanlineRacingRenderer;
         final GvrLayoutImpl$AsyncReprojectionSurfaceView scanlineRacingView = this.scanlineRacingView;
         if (scanlineRacingView != null) {
-            ((GvrLayoutImpl$AsyncReprojectionSurfaceView)(scanlineRacingRenderer.a = scanlineRacingView)).setRenderer(scanlineRacingRenderer);
-            this.scanlineRacingView.setSwapMode(1);
+            ((GvrLayoutImpl$AsyncReprojectionSurfaceView)(scanlineRacingRenderer.a = (GvrSurfaceView)scanlineRacingView)).setRenderer(scanlineRacingRenderer);
+            ((GvrSurfaceView)this.scanlineRacingView).setSwapMode(1);
             if (!this.isResumed) {
-                this.scanlineRacingView.onPause();
+                ((GvrSurfaceView)this.scanlineRacingView).onPause();
             }
             this.presentationLayout.addView((View)this.scanlineRacingView, 0);
             return;
@@ -124,10 +160,10 @@ class GvrLayoutImpl extends FrameLayout
     
     private void init(final ExtensionManager extensionManager) {
         final DisplaySynchronizer defaultDisplaySynchronizer = GvrApi.createDefaultDisplaySynchronizer(this.getContext());
-        this.initWithInjectedObjects(new GvrApi(this.getContext(), defaultDisplaySynchronizer), defaultDisplaySynchronizer, new EglReadyListener(), null, new DaydreamUtilsWrapper(), null, new GvrUiLayoutImpl(this.getContext(), new GvrLayoutImpl$2(this)), new aqzg());
+        this.initWithInjectedObjects(new GvrApi(this.getContext(), defaultDisplaySynchronizer), defaultDisplaySynchronizer, new EglReadyListener(), null, new DaydreamUtilsWrapper(), null, new GvrUiLayoutImpl(this.getContext(), new GvrLayoutImpl$2(this)), new arbu());
     }
     
-    private void initWithInjectedObjects(final GvrApi gvrApi, final DisplaySynchronizer displaySynchronizer, final EglReadyListener eglReadyListener, final FadeOverlayView fadeOverlayView, final DaydreamUtilsWrapper daydreamUtils, final ExtensionManager extensionManager, final GvrUiLayoutImpl uiLayout, final aqzg androidPCompat) {
+    private void initWithInjectedObjects(final GvrApi gvrApi, final DisplaySynchronizer displaySynchronizer, final EglReadyListener eglReadyListener, final FadeOverlayView fadeOverlayView, final DaydreamUtilsWrapper daydreamUtils, final ExtensionManager extensionManager, final GvrUiLayoutImpl uiLayout, final arbu androidPCompat) {
         this.gvrApi = gvrApi;
         if (this.isContextSharingEnabled()) {
             gvrApi.requestContextSharing(eglReadyListener);
@@ -152,8 +188,8 @@ class GvrLayoutImpl extends FrameLayout
         final boolean requiresDaydream = componentDaydreamCompatibility.requiresDaydream();
         if (daydreamPhone || requiresDaydream) {
             if (supportsDaydream) {
-                if (this.getContext() instanceof arak) {
-                    final arak arak = (arak)this.getContext();
+                if (this.getContext() instanceof arcz) {
+                    final arcz arcz = (arcz)this.getContext();
                     throw null;
                 }
                 this.addView((View)(this.fadeOverlayView = new FadeOverlayView(this.getContext(), this.autoFadeEnabled)), 2);
@@ -162,7 +198,7 @@ class GvrLayoutImpl extends FrameLayout
         }
         this.screenOnManager = new GvrLayoutImpl$ScreenOnManager((View)this);
         if (this.isDeviceDetectionEnabled()) {
-            gvrApi.setIdleListener(this.screenOnManager);
+            gvrApi.setIdleListener((GvrApi$IdleListener)this.screenOnManager);
         }
         this.extensionManager = null;
         this.androidPCompat = androidPCompat;
@@ -176,11 +212,11 @@ class GvrLayoutImpl extends FrameLayout
             return false;
         }
         if ((this.gvrApi.getSdkConfigurationParams().bitField0_ & 0x40) != 0x0) {
-            afol afol;
-            if ((afol = this.gvrApi.getSdkConfigurationParams().asyncReprojectionConfig_) == null) {
-                afol = afol.DEFAULT_INSTANCE;
+            afqm afqm;
+            if ((afqm = this.gvrApi.getSdkConfigurationParams().asyncReprojectionConfig_) == null) {
+                afqm = afqm.DEFAULT_INSTANCE;
             }
-            if ((afol.bitField0_ & 0x1) != 0x0 && (afol.flags_ & 0x10L) != 0x0L) {
+            if ((afqm.bitField0_ & 0x1) != 0x0 && (afqm.flags_ & 0x10L) != 0x0L) {
                 return true;
             }
         }
@@ -220,7 +256,7 @@ class GvrLayoutImpl extends FrameLayout
                     this.syncServiceReceiver = new Messenger((Handler)new GvrLayoutImpl$SyncServiceHandler(new WeakReference((T)this)));
                 }
                 this.syncServiceConnection = (ServiceConnection)new GvrLayoutImpl$5(this);
-                if (!this.getContext().bindService(new Intent().setComponent(arbo.a), this.syncServiceConnection, 1)) {
+                if (!this.getContext().bindService(new Intent().setComponent(arec.a), this.syncServiceConnection, 1)) {
                     Log.e("GvrLayoutImpl", "Failed to bind SyncService");
                     this.getContext().unbindService(this.syncServiceConnection);
                     this.syncServiceConnection = null;
@@ -246,7 +282,7 @@ class GvrLayoutImpl extends FrameLayout
         }
         final SdkDaydreamTouchListener daydreamTouchListener = this.daydreamTouchListener;
         if (daydreamTouchListener != null) {
-            daydreamTouchListener.setEnabled(enabled);
+            ((AbstractDaydreamTouchListener)daydreamTouchListener).setEnabled(enabled);
         }
         final ExtensionManager extensionManager = this.extensionManager;
         if (extensionManager != null) {
@@ -257,7 +293,7 @@ class GvrLayoutImpl extends FrameLayout
     }
     
     private GvrLayoutImpl$PresentationHelper tryCreatePresentationHelper() {
-        final String s = aqzg.s(this.getContext());
+        final String s = arbu.s(this.getContext());
         if (s == null) {
             Log.e("GvrLayoutImpl", "HDMI display name could not be found, disabling external presentation support");
             return null;
@@ -313,18 +349,18 @@ class GvrLayoutImpl extends FrameLayout
     }
     
     private void updateMarginsForDisplayCutout() {
-        final Activity t = aqzg.t(this.getContext());
+        final Activity t = arbu.t(this.getContext());
         if (t != null) {
             if (t.getWindow() != null) {
                 final Window window = t.getWindow();
-                if (!aqzg.e()) {
+                if (!arbu.e()) {
                     return;
                 }
                 try {
                     if (WindowManager$LayoutParams.class.getField("layoutInDisplayCutoutMode").get(window.getAttributes()) == WindowManager$LayoutParams.class.getField("LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES").get(null)) {
                         final FrameLayout$LayoutParams layoutParams = (FrameLayout$LayoutParams)this.getLayoutParams();
                         if (this.stereoModeEnabled) {
-                            final aqzf f = aqzg.f(aqzg.r(this.getContext()));
+                            final arbt f = arbu.f(arbu.r(this.getContext()));
                             if (f != null) {
                                 layoutParams.setMargins(f.b(), f.d(), f.c(), f.a());
                             }
@@ -377,7 +413,7 @@ class GvrLayoutImpl extends FrameLayout
     }
     
     protected VrCoreSdkClient createVrCoreSdkClient(final Context context, final GvrApi gvrApi, final DaydreamUtilsWrapper daydreamUtilsWrapper, final FadeOverlayView fadeOverlayView) {
-        return new VrCoreSdkClient(context, gvrApi, aqzg.u(context), daydreamUtilsWrapper, new GvrLayoutImpl$4(this), fadeOverlayView);
+        return new VrCoreSdkClient(context, gvrApi, arbu.u(context), daydreamUtilsWrapper, new GvrLayoutImpl$4(this), fadeOverlayView);
     }
     
     public boolean enableAsyncReprojection(final int asyncReprojectionFlags) {
@@ -405,7 +441,7 @@ class GvrLayoutImpl extends FrameLayout
             this.asyncReprojectionFlags = asyncReprojectionFlags;
             if (this.gvrApi.usingVrDisplayService()) {
                 final DisplaySynchronizer displaySynchronizer = this.displaySynchronizer;
-                final aqzv c = displaySynchronizer.c;
+                final arcj c = displaySynchronizer.c;
                 if (c != null) {
                     c.b();
                     displaySynchronizer.c = null;
@@ -454,6 +490,10 @@ class GvrLayoutImpl extends FrameLayout
         return false;
     }
     
+    public void lambda$setStereoModeEnabled$0$com-google-vr-ndk-base-GvrLayoutImpl(final boolean stereoModeEnabledImpl) {
+        this.setStereoModeEnabledImpl(stereoModeEnabledImpl);
+    }
+    
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
         this.attachedToWindow = true;
@@ -493,7 +533,7 @@ class GvrLayoutImpl extends FrameLayout
         this.gvrApi.pause();
         final GvrLayoutImpl$AsyncReprojectionSurfaceView scanlineRacingView = this.scanlineRacingView;
         if (scanlineRacingView != null) {
-            scanlineRacingView.onPause(new GvrLayoutImpl$3(this));
+            ((GvrSurfaceView)scanlineRacingView).onPause(new GvrLayoutImpl$3(this));
         }
         final GvrLayoutImpl$PresentationHelper presentationHelper = this.presentationHelper;
         if (presentationHelper != null) {
@@ -525,7 +565,7 @@ class GvrLayoutImpl extends FrameLayout
         }
         final DisplaySynchronizer displaySynchronizer = this.displaySynchronizer;
         displaySynchronizer.b();
-        final aqzv c = displaySynchronizer.c;
+        final arcj c = displaySynchronizer.c;
         if (c != null && !c.c) {
             c.c = true;
             c.b.sendEmptyMessage(1);
@@ -536,7 +576,7 @@ class GvrLayoutImpl extends FrameLayout
         }
         final GvrLayoutImpl$AsyncReprojectionSurfaceView scanlineRacingView = this.scanlineRacingView;
         if (scanlineRacingView != null) {
-            scanlineRacingView.onResume();
+            ((GvrSurfaceView)scanlineRacingView).onResume();
         }
         final VrCoreSdkClient vrCoreSdkClient = this.vrCoreSdkClient;
         if (vrCoreSdkClient != null) {
@@ -599,14 +639,14 @@ class GvrLayoutImpl extends FrameLayout
     }
     
     public void setStereoModeEnabled(final boolean b) {
-        arac.a((Runnable)new GvrLayoutImpl$$ExternalSyntheticLambda0(this, b));
+        arcq.a((Runnable)new GvrLayoutImpl$$ExternalSyntheticLambda0(this, b));
     }
     
     public void shutdown() {
         final DisplaySynchronizer displaySynchronizer = this.displaySynchronizer;
         if (displaySynchronizer.b != 0L) {
             displaySynchronizer.c();
-            final aqzv c = displaySynchronizer.c;
+            final arcj c = displaySynchronizer.c;
             if (c != null) {
                 c.b();
             }

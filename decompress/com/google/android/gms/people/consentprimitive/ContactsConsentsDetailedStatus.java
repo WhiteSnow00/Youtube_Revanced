@@ -19,7 +19,7 @@ public final class ContactsConsentsDetailedStatus extends AbstractSafeParcelable
     public final Bundle b;
     
     static {
-        CREATOR = (Parcelable$Creator)new nit(20);
+        CREATOR = (Parcelable$Creator)new njy(19);
     }
     
     public ContactsConsentsDetailedStatus(final int a, final Bundle b) {
@@ -27,12 +27,12 @@ public final class ContactsConsentsDetailedStatus extends AbstractSafeParcelable
         this.b = b;
     }
     
-    public final afcw a() {
-        final afct afct = new afct();
+    public final afev a() {
+        final afes afes = new afes();
         for (final String s : this.b.keySet()) {
-            afct.g((Object)new Account(s, "com.mgoogle"), (Object)this.b.getInt(s));
+            afes.g(new Account(s, "com.mgoogle"), this.b.getInt(s));
         }
-        return afct.c();
+        return afes.c();
     }
     
     public final boolean equals(final Object o) {
@@ -43,17 +43,17 @@ public final class ContactsConsentsDetailedStatus extends AbstractSafeParcelable
             return false;
         }
         final ContactsConsentsDetailedStatus contactsConsentsDetailedStatus = (ContactsConsentsDetailedStatus)o;
-        return this.a == contactsConsentsDetailedStatus.a && aeda.v((Object)this.a(), (Object)contactsConsentsDetailedStatus.a());
+        return this.a == contactsConsentsDetailedStatus.a && adkp.ae(this.a(), contactsConsentsDetailedStatus.a());
     }
     
     public final int hashCode() {
         return Arrays.hashCode(new Object[] { this.a, this.a() });
     }
     
-    public final void writeToParcel(final Parcel parcel, int i) {
-        i = kgk.I(parcel);
-        kgk.O(parcel, 1, this.a);
-        kgk.R(parcel, 2, this.b);
-        kgk.J(parcel, i);
+    public final void writeToParcel(final Parcel parcel, int m) {
+        m = khl.M(parcel);
+        khl.S(parcel, 1, this.a);
+        khl.V(parcel, 2, this.b);
+        khl.N(parcel, m);
     }
 }

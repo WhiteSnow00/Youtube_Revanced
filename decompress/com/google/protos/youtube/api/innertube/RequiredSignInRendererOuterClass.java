@@ -8,12 +8,12 @@ import com.google.protobuf.MessageLite;
 
 public final class RequiredSignInRendererOuterClass
 {
-    public static final agzg expressSignInRenderer;
-    public static final agzg requiredSignInRenderer;
+    public static final ahbf expressSignInRenderer;
+    public static final ahbf requiredSignInRenderer;
     
     static {
-        requiredSignInRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)antj.a, (MessageLite)antj.a, (agzn)null, 247323670, ahcm.k, (Class)antj.class);
-        expressSignInRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anti.a, (MessageLite)anti.a, (agzn)null, 246375195, ahcm.k, (Class)anti.class);
+        requiredSignInRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anvm.a, (MessageLite)anvm.a, (ahbm)null, 247323670, ahek.k, (Class)anvm.class);
+        expressSignInRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anvl.a, (MessageLite)anvl.a, (ahbm)null, 246375195, ahek.k, (Class)anvl.class);
     }
     
     private RequiredSignInRendererOuterClass() {

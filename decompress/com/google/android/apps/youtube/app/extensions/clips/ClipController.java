@@ -4,6 +4,7 @@
 
 package com.google.android.apps.youtube.app.extensions.clips;
 
+import android.support.v7.widget.RecyclerView;
 import java.util.function.Consumer;
 import com.google.protos.youtube.api.innertube.HideEngagementPanelEndpointOuterClass$HideEngagementPanelEndpoint;
 import java.util.List;
@@ -12,26 +13,26 @@ import com.google.protos.youtube.api.innertube.WatchEndpointOuterClass;
 import j$.util.Optional;
 import java.util.concurrent.Executor;
 
-public class ClipController implements ktj, tfh, grz, gsb, grv
+public class ClipController implements kul, thl, gsh, gsk, gsd
 {
     public static final Long a;
-    private final atjj A;
-    private final atjj B;
-    private final arhr C;
-    private final atjj D;
+    private final atke A;
+    private final atke B;
+    private final arkg C;
+    private final atke D;
     private final Executor E;
-    private final aujp F;
-    private final asib G;
+    private final aukf F;
+    private final asiq G;
     private String H;
     private boolean I;
     private long J;
-    public final tdz b;
-    public final atjj c;
-    public final atjj d;
-    public final atjj e;
-    public aioe f;
-    public gtb g;
-    public abul h;
+    public final tgd b;
+    public final atke c;
+    public final atke d;
+    public final atke e;
+    public aiqj f;
+    public gtk g;
+    public abwp h;
     public String i;
     public int j;
     public boolean k;
@@ -43,21 +44,21 @@ public class ClipController implements ktj, tfh, grz, gsb, grv
     public boolean q;
     public String r;
     public long s;
-    public ainb t;
+    public aipg t;
     public Optional u;
     public Optional v;
     public long w;
     public boolean x;
     public String y;
-    private final atjj z;
+    private final atke z;
     
     static {
         a = -18372402L;
     }
     
-    public ClipController(final atjj z, final atjj c, final atjj a, final atjj b, final atjj d, final arhr c2, final atjj e, final tdz b2, final atjj d2, final Executor e2, final aujp f) {
+    public ClipController(final atke z, final atke c, final atke a, final atke b, final atke d, final arkg c2, final atke e, final tgd b2, final atke d2, final Executor e2, final aukf f) {
         this.f = null;
-        this.h = (abul)new abuj();
+        this.h = (abwp)new abwn();
         this.H = "";
         this.l = false;
         this.m = false;
@@ -85,7 +86,7 @@ public class ClipController implements ktj, tfh, grz, gsb, grv
         this.D = d2;
         this.E = e2;
         this.F = f;
-        this.G = new asib();
+        this.G = new asiq();
     }
     
     private final void B(final boolean l) {
@@ -94,13 +95,13 @@ public class ClipController implements ktj, tfh, grz, gsb, grv
             this.v();
         }
         else {
-            ((aaxs)this.z.a()).a();
+            ((aazo)this.z.a()).a();
         }
-        final gtb g = this.g;
+        final gtk g = this.g;
         if (g != null && !l) {
-            final gtn d = g.D;
+            final gtw d = g.D;
             if (d != null) {
-                d.an();
+                ((RecyclerView)d).an();
             }
         }
     }
@@ -109,21 +110,20 @@ public class ClipController implements ktj, tfh, grz, gsb, grv
         return this.h.f() > 0L;
     }
     
-    @Override
-    public final void c(final fkg fkg) {
-        final PlaybackStartDescriptor a = fkg.a.a;
-        final aioe b = a.b;
+    public final void c(final fkn fkn) {
+        final PlaybackStartDescriptor a = fkn.a.a;
+        final aiqj b = a.b;
         if (b != null) {
-            if (((agzd)b).rs((agyr)WatchEndpointOuterClass.watchEndpoint)) {
-                final apqg apqg = (apqg)((agzd)a.b).rr((agyr)WatchEndpointOuterClass.watchEndpoint);
-                if ((apqg.b & 0x20000000) != 0x0) {
-                    appw appw;
-                    if ((appw = apqg.v) == null) {
-                        appw = appw.a;
+            if (((ahbc)b).ry((ahaq)WatchEndpointOuterClass.watchEndpoint)) {
+                final apsk apsk = (apsk)((ahbc)a.b).rx((ahaq)WatchEndpointOuterClass.watchEndpoint);
+                if ((apsk.b & 0x40000000) != 0x0) {
+                    apsa apsa;
+                    if ((apsa = apsk.v) == null) {
+                        apsa = apsa.a;
                     }
-                    ainb t;
-                    if ((t = appw.b) == null) {
-                        t = ainb.a;
+                    aipg t;
+                    if ((t = apsa.b) == null) {
+                        t = aipg.a;
                     }
                     this.t = t;
                     return;
@@ -133,9 +133,12 @@ public class ClipController implements ktj, tfh, grz, gsb, grv
         }
     }
     
-    @Override
-    public final void d(final fkg fkg) {
-        this.H = fkg.a.a.k();
+    public final void d(final fkn fkn) {
+        this.H = fkn.a.a.k();
+    }
+    
+    public final thh g() {
+        return thh.b;
     }
     
     public final long j(final long n) {
@@ -164,28 +167,31 @@ public class ClipController implements ktj, tfh, grz, gsb, grv
         this.u("-");
         this.f = null;
         this.t = null;
-        this.b.d((Object)new abch(abcg.e, (List)afcr.q()));
-        this.b.d((Object)new abch(abcg.d, (List)afcr.q()));
+        this.b.d((Object)new abeb(abea.e, (List)afeq.q()));
+        this.b.d((Object)new abeb(abea.d, (List)afeq.q()));
     }
     
-    public final void m(final ainb ainb, final String r) {
+    public final void lW(final aun aun) {
+    }
+    
+    public final void m(final aipg aipg, final String r) {
         if (this.j == 0) {
             if (!r.equals(this.r)) {
-                ((aaxs)this.z.a()).b(ainb.e, ainb.f);
-                if ((ainb.b & 0x10) != 0x0) {
-                    aioe f;
-                    if ((f = ainb.g) == null) {
-                        f = aioe.a;
+                ((aazo)this.z.a()).b(aipg.e, aipg.f);
+                if ((aipg.b & 0x10) != 0x0) {
+                    aiqj f;
+                    if ((f = aipg.g) == null) {
+                        f = aiqj.a;
                     }
                     this.f = f;
                 }
                 this.r = r;
-                this.s = ainb.e;
-                this.J = ainb.f;
+                this.s = aipg.e;
+                this.J = aipg.f;
                 this.I = false;
                 String d;
-                if ((ainb.b & 0x2) != 0x0) {
-                    d = ainb.d;
+                if ((aipg.b & 0x2) != 0x0) {
+                    d = aipg.d;
                 }
                 else {
                     d = "NO_CLIP_ID";
@@ -195,20 +201,30 @@ public class ClipController implements ktj, tfh, grz, gsb, grv
         }
     }
     
+    public final void mM(final aun aun) {
+    }
+    
+    public final void mq(final aun aun) {
+    }
+    
+    public final void my(final aun aun) {
+    }
+    
     public final void n(final String... array) {
-        for (final String d : array) {
-            final agza builder = HideEngagementPanelEndpointOuterClass$HideEngagementPanelEndpoint.a.createBuilder();
+        for (int i = 0; i < array.length; ++i) {
+            final String d = array[i];
+            final ahaz builder = ((ahbh)HideEngagementPanelEndpointOuterClass$HideEngagementPanelEndpoint.a).createBuilder();
             builder.copyOnWrite();
             final HideEngagementPanelEndpointOuterClass$HideEngagementPanelEndpoint hideEngagementPanelEndpointOuterClass$HideEngagementPanelEndpoint = (HideEngagementPanelEndpointOuterClass$HideEngagementPanelEndpoint)builder.instance;
             d.getClass();
             hideEngagementPanelEndpointOuterClass$HideEngagementPanelEndpoint.c = 1;
             hideEngagementPanelEndpointOuterClass$HideEngagementPanelEndpoint.d = d;
             final HideEngagementPanelEndpointOuterClass$HideEngagementPanelEndpoint hideEngagementPanelEndpointOuterClass$HideEngagementPanelEndpoint2 = (HideEngagementPanelEndpointOuterClass$HideEngagementPanelEndpoint)builder.build();
-            final vax vax = (vax)this.c.a();
-            if (vax != null) {
-                final agzc agzc = (agzc)((agzi)aioe.a).createBuilder();
-                agzc.e((agyr)HideEngagementPanelEndpointOuterClass$HideEngagementPanelEndpoint.hideEngagementPanelEndpoint, hideEngagementPanelEndpointOuterClass$HideEngagementPanelEndpoint2);
-                vax.a((aioe)agzc.build());
+            final vcy vcy = (vcy)this.c.a();
+            if (vcy != null) {
+                final ahbb ahbb = (ahbb)((ahbh)aiqj.a).createBuilder();
+                ahbb.e((ahaq)HideEngagementPanelEndpointOuterClass$HideEngagementPanelEndpoint.hideEngagementPanelEndpoint, (Object)hideEngagementPanelEndpointOuterClass$HideEngagementPanelEndpoint2);
+                vcy.a((aiqj)((ahaz)ahbb).build());
             }
         }
         this.l();
@@ -218,28 +234,36 @@ public class ClipController implements ktj, tfh, grz, gsb, grv
         this.I = true;
     }
     
-    public final void oS(final aum aum) {
-        final jdt jdt = (jdt)this.A.a();
-        this.G.c(jdt.I((aexg)gku.j, (aexg)gku.i).j(aajj.r(1)).am((asix)new grs(this, 1), (asix)gpa.i));
-        this.G.c(jdt.z().am((asix)new grs(this, 0), (asix)gpa.i));
-        this.G.c(jdt.B().am((asix)new grs(this, 2), (asix)gpa.i));
-        this.G.c(jdt.w().am((asix)new grs(this, 3), (asix)gpa.i));
-        this.G.c(((asgt)jdt.q().e).am((asix)new grs(this, 4), (asix)gpa.i));
-        this.G.c(((asgt)jdt.q().k).am((asix)new grs(this, 5), (asix)gpa.i));
-        this.G.c(((asgt)jdt.q().a).am((asix)new gly(this, 16), (asix)gpa.i));
-        ((ktk)this.B.a()).a(this);
-        ((abgp)this.C.a()).g();
-        this.G.c(((uyi)this.D.a()).l(45356829L).aC((asix)new gly(this, 17), (asix)gpa.i));
-        this.G.c(((uyi)this.D.a()).l(45357323L).aC((asix)new gly(this, 18), (asix)gpa.i));
-        this.G.c(((uyi)this.D.a()).l(45357621L).aC((asix)new gly(this, 19), (asix)gpa.i));
-        this.G.c(((uyi)this.D.a()).l(45358832L).aC((asix)new gly(this, 20), (asix)gpa.i));
+    public final void oS(final aun aun) {
+        final jet jet = (jet)this.A.a();
+        this.G.c(jet.H((aezf)glc.j, (aezf)glc.i).j(aale.q(1)).an((asjm)new gsa(this, 0), (asjm)gpg.i));
+        this.G.c(jet.y().an((asjm)new gsa(this, 2), (asjm)gpg.i));
+        this.G.c(jet.A().an((asjm)new gsa(this, 3), (asjm)gpg.i));
+        this.G.c(jet.v().an((asjm)new gsa(this, 4), (asjm)gpg.i));
+        this.G.c(((ashi)jet.p().e).an((asjm)new gsa(this, 5), (asjm)gpg.i));
+        this.G.c(((ashi)jet.p().k).an((asjm)new gsa(this, 6), (asjm)gpg.i));
+        this.G.c(((ashi)jet.p().a).an((asjm)new gmf(this, 17), (asjm)gpg.i));
+        ((kum)this.B.a()).a((kul)this);
+        ((abij)this.C.a()).g();
+        this.G.c(((vai)this.D.a()).l(45356829L).aI((asjm)new gmf(this, 18), (asjm)gpg.i));
+        this.G.c(((vai)this.D.a()).l(45357323L).aI((asjm)new gmf(this, 19), (asjm)gpg.i));
+        this.G.c(((vai)this.D.a()).l(45357621L).aI((asjm)new gmf(this, 20), (asjm)gpg.i));
+        this.G.c(((vai)this.D.a()).l(45358832L).aI((asjm)new gsa(this, 1), (asjm)gpg.i));
     }
     
-    public final void oW(final aum aum) {
+    public final void oT() {
+        tfg.c((thl)this);
+    }
+    
+    public final void oW() {
+        tfg.b((thl)this);
+    }
+    
+    public final void oX(final aun aun) {
         this.l();
         this.G.b();
-        ((ktk)this.B.a()).b(this);
-        ((abgp)this.C.a()).p.b();
+        ((kum)this.B.a()).b((kul)this);
+        ((abij)this.C.a()).p.b();
         this.u = Optional.empty();
         this.v = Optional.empty();
     }
@@ -247,7 +271,7 @@ public class ClipController implements ktj, tfh, grz, gsb, grv
     public final void p() {
         this.B(false);
         if (this.x && this.w != ClipController.a) {
-            this.E.execute(aesm.h((Runnable)new grt(this, 1)));
+            this.E.execute(aeun.h((Runnable)new ght(this, 20)));
         }
     }
     
@@ -264,17 +288,17 @@ public class ClipController implements ktj, tfh, grz, gsb, grv
     
     public final void r() {
         this.m = false;
-        ((aaxs)this.z.a()).a();
-        this.F.tr((Object)grx.a());
+        ((aazo)this.z.a()).a();
+        this.F.tu((Object)gsf.a());
     }
     
     public final void s() {
         this.m = true;
-        this.F.tr((Object)new grx(true, this.h.g(), this.s, this.J, this.h.a()));
+        this.F.tu((Object)new gsf(true, this.h.g(), this.s, this.J, this.h.a()));
     }
     
     public final void t(final Runnable runnable, final Runnable runnable2) {
-        final gtb g = this.g;
+        final gtk g = this.g;
         if (g != null && (g.A || g.B)) {
             runnable.run();
             return;
@@ -283,14 +307,14 @@ public class ClipController implements ktj, tfh, grz, gsb, grv
     }
     
     public final void u(final String s) {
-        this.u.ifPresent((Consumer)new gft(s, 15));
+        this.u.ifPresent((Consumer)new gga(s, 15));
     }
     
     public final void v() {
         if (this.l) {
-            final gtb g = this.g;
+            final gtk g = this.g;
             if (g != null) {
-                g.m((abul)gry.e(this.j(g.d), this.h.h(), this.h.f()));
+                g.m((abwp)gsg.e(this.j(g.d), this.h.h(), this.h.f()));
             }
         }
     }

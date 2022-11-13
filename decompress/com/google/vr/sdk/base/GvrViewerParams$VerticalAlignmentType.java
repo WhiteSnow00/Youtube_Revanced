@@ -9,11 +9,21 @@ import com.google.vr.sdk.proto.CardboardDevice$DeviceParams$VerticalAlignmentTyp
 
 public enum GvrViewerParams$VerticalAlignmentType
 {
+    private static final GvrViewerParams$VerticalAlignmentType[] $VALUES;
+    
     BOTTOM("BOTTOM", 0, CardboardDevice$DeviceParams$VerticalAlignmentType.BOTTOM), 
     CENTER("CENTER", 1, CardboardDevice$DeviceParams$VerticalAlignmentType.CENTER), 
     TOP("TOP", 2, CardboardDevice$DeviceParams$VerticalAlignmentType.TOP);
     
     private final CardboardDevice$DeviceParams$VerticalAlignmentType protoValue;
+    
+    private static GvrViewerParams$VerticalAlignmentType[] $values() {
+        return new GvrViewerParams$VerticalAlignmentType[] { GvrViewerParams$VerticalAlignmentType.BOTTOM, GvrViewerParams$VerticalAlignmentType.CENTER, GvrViewerParams$VerticalAlignmentType.TOP };
+    }
+    
+    static {
+        $VALUES = $values();
+    }
     
     private GvrViewerParams$VerticalAlignmentType(final String s, final int n, final CardboardDevice$DeviceParams$VerticalAlignmentType protoValue) {
         this.protoValue = protoValue;

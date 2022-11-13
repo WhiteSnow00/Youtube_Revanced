@@ -10,8 +10,8 @@ import javax.microedition.khronos.egl.EGL10;
 
 class CardboardViewNativeImpl$RendererHelper$2 implements Runnable
 {
-    final /* synthetic */ CardboardViewNativeImpl$RendererHelper this$1;
-    final /* synthetic */ boolean val$enabled;
+    final CardboardViewNativeImpl$RendererHelper this$1;
+    final boolean val$enabled;
     
     public CardboardViewNativeImpl$RendererHelper$2(final CardboardViewNativeImpl$RendererHelper this$1, final boolean val$enabled) {
         this.this$1 = this$1;

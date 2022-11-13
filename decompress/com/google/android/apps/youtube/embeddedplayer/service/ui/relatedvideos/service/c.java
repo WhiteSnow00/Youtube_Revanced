@@ -17,42 +17,42 @@ import com.google.android.apps.youtube.embeddedplayer.service.model.RelatedVideo
 import com.google.android.apps.youtube.embeddedplayer.service.model.MutedAutoplayState;
 import com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.service.e;
 
-public final class c implements tec
+public final class c implements tgg
 {
-    public abim a;
-    public aamc b;
-    public anen c;
-    public final atir d;
-    public final asib e;
+    public abke a;
+    public aanw b;
+    public angr c;
+    public final atjm d;
+    public final asiq e;
     public final com.google.android.apps.youtube.embeddedplayer.service.imageclient.service.c f;
     public final com.google.android.apps.youtube.embeddedplayer.service.uiregistrar.service.c g;
     public final a h;
     public final b i;
     public final e j;
-    public final lzi k;
+    public final com.google.android.apps.youtube.embeddedplayer.service.clientinfo.service.c k;
     private MutedAutoplayState l;
-    private final elw m;
+    private final elx m;
     
-    public c(final e j, final vax vax, final lzi k, final com.google.android.apps.youtube.embeddedplayer.service.imageclient.service.c f, final com.google.android.apps.youtube.embeddedplayer.service.uiregistrar.service.c g, final elw m, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4) {
-        this.d = atir.aR((Object)false);
-        this.e = new asib();
+    public c(final e j, final vcy vcy, final com.google.android.apps.youtube.embeddedplayer.service.clientinfo.service.c k, final com.google.android.apps.youtube.embeddedplayer.service.imageclient.service.c f, final com.google.android.apps.youtube.embeddedplayer.service.uiregistrar.service.c g, final elx m, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4, final byte[] array5) {
+        this.d = atjm.aW((Object)false);
+        this.e = new asiq();
         this.j = j;
         this.k = k;
         this.f = f;
         this.g = g;
         this.m = m;
         this.h = new a();
-        this.i = new b(j, vax);
+        this.i = new b(j, vcy);
     }
     
     private final boolean g() {
-        final anen c = this.c;
+        final angr c = this.c;
         return c != null && c.d.size() > 0;
     }
     
     private final boolean h() {
-        final abim a = this.a;
-        return a != null && a.a(new abim[] { abim.j });
+        final abke a = this.a;
+        return a != null && a.a(new abke[] { abke.j });
     }
     
     private final boolean i() {
@@ -61,7 +61,7 @@ public final class c implements tec
     }
     
     public final void a() {
-        this.m.w((BusSupported$Data)RelatedVideosScreen.a);
+        this.m.y((BusSupported$Data)RelatedVideosScreen.a);
     }
     
     public final void b(final MutedAutoplayState l) {
@@ -71,92 +71,92 @@ public final class c implements tec
     }
     
     public final void c() {
-        final elw m = this.m;
-        final anen c = this.c;
+        final elx m = this.m;
+        final angr c = this.c;
         Object b;
         if (c != null && (c.c & 0x1) != 0x0) {
-            ajsq ajsq;
-            if ((ajsq = c.f) == null) {
-                ajsq = ajsq.a;
+            ajut ajut;
+            if ((ajut = c.f) == null) {
+                ajut = ajut.a;
             }
-            b = abyh.b(ajsq);
+            b = acak.b(ajut);
         }
         else {
             b = "";
         }
         this.h.a();
         final ArrayList list = new ArrayList();
-        final anen c2 = this.c;
+        final angr c2 = this.c;
         if (c2 != null) {
-            for (final anep anep : c2.d) {
-                if ((anep.b & 0x1) != 0x0) {
-                    ajmo ajmo;
-                    if ((ajmo = anep.c) == null) {
-                        ajmo = ajmo.a;
+            for (final angt angt : c2.d) {
+                if ((angt.b & 0x1) != 0x0) {
+                    ajot ajot;
+                    if ((ajot = angt.c) == null) {
+                        ajot = ajot.a;
                     }
-                    Object t = null;
-                    final agyc agyc = null;
-                    if (ajmo != null) {
+                    Object k = null;
+                    final ahab ahab = null;
+                    if (ajot != null) {
                         final a h = this.h;
-                        aorm aorm;
-                        if ((aorm = ajmo.d) == null) {
-                            aorm = aorm.a;
+                        aotp aotp;
+                        if ((aotp = ajot.d) == null) {
+                            aotp = aotp.a;
                         }
                         final int a = com.google.android.apps.youtube.embeddedplayer.service.ui.relatedvideos.service.a.a;
                         com.google.android.apps.youtube.embeddedplayer.service.ui.relatedvideos.service.a.a = a + 1;
-                        h.c.append(a, (Object)actc.D(aorm));
+                        h.c.append(a, (Object)aald.J(aotp));
                         final BitmapKey bitmapKey = new BitmapKey(h.b, a);
                         final b i = this.i;
                         final int a2 = com.google.android.apps.youtube.embeddedplayer.service.ui.relatedvideos.service.b.a;
                         com.google.android.apps.youtube.embeddedplayer.service.ui.relatedvideos.service.b.a = a2 + 1;
-                        i.c.append(a2, (Object)ajmo);
+                        i.c.append(a2, (Object)ajot);
                         final SelectableItemKey selectableItemKey = new SelectableItemKey(i.b, a2);
                         final RelatedVideoItem a3 = RelatedVideoItem.a;
-                        final String c3 = ajmo.c;
-                        ajsq ajsq2;
-                        if ((ajmo.b & 0x8) != 0x0) {
-                            if ((ajsq2 = ajmo.f) == null) {
-                                ajsq2 = ajsq.a;
+                        final String c3 = ajot.c;
+                        ajut ajut2;
+                        if ((ajot.b & 0x8) != 0x0) {
+                            if ((ajut2 = ajot.f) == null) {
+                                ajut2 = ajut.a;
                             }
                         }
                         else {
-                            ajsq2 = null;
+                            ajut2 = null;
                         }
-                        final Spanned b2 = abyh.b(ajsq2);
-                        ajsq ajsq3;
-                        if ((ajmo.b & 0x20) != 0x0) {
-                            if ((ajsq3 = ajmo.h) == null) {
-                                ajsq3 = ajsq.a;
+                        final Spanned b2 = acak.b(ajut2);
+                        ajut ajut3;
+                        if ((ajot.b & 0x20) != 0x0) {
+                            if ((ajut3 = ajot.h) == null) {
+                                ajut3 = ajut.a;
                             }
                         }
                         else {
-                            ajsq3 = null;
+                            ajut3 = null;
                         }
-                        final Spanned b3 = abyh.b(ajsq3);
-                        ajsq ajsq4;
-                        if ((ajmo.b & 0x200) != 0x0) {
-                            if ((ajsq4 = ajmo.i) == null) {
-                                ajsq4 = ajsq.a;
+                        final Spanned b3 = acak.b(ajut3);
+                        ajut ajut4;
+                        if ((ajot.b & 0x200) != 0x0) {
+                            if ((ajut4 = ajot.i) == null) {
+                                ajut4 = ajut.a;
                             }
                         }
                         else {
-                            ajsq4 = null;
+                            ajut4 = null;
                         }
-                        final Spanned b4 = abyh.b(ajsq4);
-                        agyc k = agyc;
-                        if ((ajmo.b & 0x4000) != 0x0) {
-                            k = ajmo.k;
+                        final Spanned b4 = acak.b(ajut4);
+                        ahab j = ahab;
+                        if ((ajot.b & 0x4000) != 0x0) {
+                            j = ajot.k;
                         }
-                        t = jyg.t(c3, (CharSequence)b2, (CharSequence)b3, (CharSequence)b4, bitmapKey, selectableItemKey, k);
+                        k = kzr.k(c3, (CharSequence)b2, (CharSequence)b3, (CharSequence)b4, bitmapKey, selectableItemKey, j);
                     }
-                    if (t == null) {
+                    if (k == null) {
                         continue;
                     }
-                    list.add(t);
+                    list.add(k);
                 }
             }
         }
-        m.w((BusSupported$Data)new RelatedVideosScreen((CharSequence)b, (List)list));
+        m.y((BusSupported$Data)new RelatedVideosScreen((CharSequence)b, list));
     }
     
     public final void d() {
@@ -171,14 +171,14 @@ public final class c implements tec
         final boolean b = b2 = false;
         Label_0094: {
             if (g) {
-                final abim a = this.a;
+                final abke a = this.a;
                 b2 = b;
                 if (a != null) {
                     b2 = b;
-                    if (a.a(new abim[] { abim.i, abim.j })) {
+                    if (a.a(new abke[] { abke.i, abke.j })) {
                         b2 = b;
                         if (!this.i()) {
-                            final aamc b3 = this.b;
+                            final aanw b3 = this.b;
                             if (b3 == null || !b3.e()) {
                                 b2 = b;
                                 if (!this.h()) {
@@ -191,7 +191,7 @@ public final class c implements tec
                 }
             }
         }
-        this.d.tr((Object)b2);
+        this.d.tu((Object)b2);
     }
     
     public final Class[] ms(final Class clazz, final Object o, final int n) {
@@ -205,8 +205,8 @@ public final class c implements tec
                         sb.append(n);
                         throw new IllegalStateException(sb.toString());
                     }
-                    final aamc b = (aamc)o;
-                    final aamc b2 = this.b;
+                    final aanw b = (aanw)o;
+                    final aanw b2 = this.b;
                     if (b2 == null || !b2.equals(b)) {
                         this.b = b;
                         this.a();
@@ -217,10 +217,10 @@ public final class c implements tec
                     array2 = array;
                 }
                 else {
-                    final aaly aaly = (aaly)o;
-                    final abim a = this.a;
-                    if (a == null || !a.equals((Object)aaly.c())) {
-                        this.a = aaly.c();
+                    final aans aans = (aans)o;
+                    final abke a = this.a;
+                    if (a == null || !a.equals((Object)aans.c())) {
+                        this.a = aans.c();
                         this.a();
                         this.f();
                         this.d();
@@ -230,51 +230,51 @@ public final class c implements tec
                 }
             }
             else {
-                final WatchNextResponseModel a2 = ((aalo)o).a();
-                anen c = null;
+                final WatchNextResponseModel a2 = ((aani)o).a();
+                angr c = null;
                 Label_0310: {
                     if (a2 != null) {
-                        final alcj a3 = a2.a;
-                        albu albu;
-                        if ((albu = a3.g) == null) {
-                            albu = albu.a;
+                        final alem a3 = a2.a;
+                        aldx aldx;
+                        if ((aldx = a3.g) == null) {
+                            aldx = aldx.a;
                         }
-                        aneh a4;
-                        if (albu.b == 78882851) {
-                            a4 = (aneh)albu.c;
+                        angl a4;
+                        if (aldx.b == 78882851) {
+                            a4 = (angl)aldx.c;
                         }
                         else {
-                            a4 = aneh.a;
+                            a4 = angl.a;
                         }
-                        anee anee;
-                        if ((anee = a4.h) == null) {
-                            anee = anee.a;
+                        angi angi;
+                        if ((angi = a4.h) == null) {
+                            angi = angi.a;
                         }
-                        if ((anee.b & 0x1) != 0x0) {
-                            albu albu2;
-                            if ((albu2 = a3.g) == null) {
-                                albu2 = albu.a;
+                        if ((angi.b & 0x1) != 0x0) {
+                            aldx aldx2;
+                            if ((aldx2 = a3.g) == null) {
+                                aldx2 = aldx.a;
                             }
-                            aneh a5;
-                            if (albu2.b == 78882851) {
-                                a5 = (aneh)albu2.c;
+                            angl a5;
+                            if (aldx2.b == 78882851) {
+                                a5 = (angl)aldx2.c;
                             }
                             else {
-                                a5 = aneh.a;
+                                a5 = angl.a;
                             }
-                            anee anee2;
-                            if ((anee2 = a5.h) == null) {
-                                anee2 = anee.a;
+                            angi angi2;
+                            if ((angi2 = a5.h) == null) {
+                                angi2 = angi.a;
                             }
-                            if ((c = anee2.c) == null) {
-                                c = anen.a;
+                            if ((c = angi2.c) == null) {
+                                c = angr.a;
                             }
                             break Label_0310;
                         }
                     }
                     c = null;
                 }
-                if (!aeda.v((Object)c, (Object)this.c)) {
+                if (!adkp.ae(c, this.c)) {
                     this.c = c;
                     this.h.a();
                     this.a();
@@ -286,7 +286,7 @@ public final class c implements tec
             }
         }
         else {
-            array2 = new Class[] { aalo.class, aaly.class, aamc.class };
+            array2 = new Class[] { aani.class, aans.class, aanw.class };
         }
         return array2;
     }

@@ -1,0 +1,25 @@
+// 
+// Decompiled by Procyon v0.6.0
+// 
+
+package com.google.android.libraries.youtube.common.locale;
+
+import android.os.Bundle;
+import android.content.Intent;
+import android.content.Context;
+
+public final class LocaleChangedBroadcastReceiver extends thu
+{
+    public tcq a;
+    
+    public final void onReceive(final Context context, final Intent intent) {
+        this.a(context);
+        if ("android.intent.action.LOCALE_CHANGED".equals(intent.getAction())) {
+            if (!this.a.d("locale_update_runner", 1L, true, 0, false, (Bundle)null, (ypi)null, false)) {
+                ttr.b("Error scheduling locale update service");
+            }
+            return;
+        }
+        ttr.b("Received a malicious intent with unexpected action.");
+    }
+}

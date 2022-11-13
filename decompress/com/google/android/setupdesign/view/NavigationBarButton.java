@@ -30,7 +30,7 @@ public class NavigationBarButton extends Button
         for (int i = 0; i < compoundDrawablesRelative.length; ++i) {
             final Drawable drawable = compoundDrawablesRelative[i];
             if (drawable != null) {
-                compoundDrawablesRelative[i] = (Drawable)aeej.a(drawable);
+                compoundDrawablesRelative[i] = (Drawable)aegk.a(drawable);
             }
         }
         this.setCompoundDrawablesRelativeWithIntrinsicBounds(compoundDrawablesRelative[0], compoundDrawablesRelative[1], compoundDrawablesRelative[2], compoundDrawablesRelative[3]);
@@ -50,11 +50,11 @@ public class NavigationBarButton extends Button
             final Drawable drawable6 = compoundDrawablesRelative[2];
             while (i < 6) {
                 final Drawable drawable7 = (new Drawable[] { drawable, drawable2, drawable3, drawable4, drawable5, drawable6 })[i];
-                if (drawable7 instanceof aeej) {
-                    final aeej aeej = (aeej)drawable7;
-                    aeej.a = textColors;
-                    if (aeej.b()) {
-                        aeej.invalidateSelf();
+                if (drawable7 instanceof aegk) {
+                    final aegk aegk = (aegk)drawable7;
+                    aegk.a = textColors;
+                    if (aegk.b()) {
+                        aegk.invalidateSelf();
                     }
                 }
                 ++i;
@@ -66,16 +66,16 @@ public class NavigationBarButton extends Button
     public final void setCompoundDrawables(Drawable a, Drawable a2, Drawable a3, final Drawable drawable) {
         Object a4 = a;
         if (a != null) {
-            a4 = aeej.a((Drawable)a);
+            a4 = aegk.a((Drawable)a);
         }
         if ((a = a2) != null) {
-            a = aeej.a((Drawable)a2);
+            a = aegk.a((Drawable)a2);
         }
         if ((a2 = a3) != null) {
-            a2 = aeej.a((Drawable)a3);
+            a2 = aegk.a((Drawable)a3);
         }
         if ((a3 = drawable) != null) {
-            a3 = aeej.a(drawable);
+            a3 = aegk.a(drawable);
         }
         super.setCompoundDrawables((Drawable)a4, (Drawable)a, (Drawable)a2, (Drawable)a3);
         this.b();
@@ -84,16 +84,16 @@ public class NavigationBarButton extends Button
     public final void setCompoundDrawablesRelative(Drawable a, Drawable a2, Drawable a3, final Drawable drawable) {
         Object a4 = a;
         if (a != null) {
-            a4 = aeej.a((Drawable)a);
+            a4 = aegk.a((Drawable)a);
         }
         if ((a = a2) != null) {
-            a = aeej.a((Drawable)a2);
+            a = aegk.a((Drawable)a2);
         }
         if ((a2 = a3) != null) {
-            a2 = aeej.a((Drawable)a3);
+            a2 = aegk.a((Drawable)a3);
         }
         if ((a3 = drawable) != null) {
-            a3 = aeej.a(drawable);
+            a3 = aegk.a(drawable);
         }
         super.setCompoundDrawablesRelative((Drawable)a4, (Drawable)a, (Drawable)a2, (Drawable)a3);
         this.b();

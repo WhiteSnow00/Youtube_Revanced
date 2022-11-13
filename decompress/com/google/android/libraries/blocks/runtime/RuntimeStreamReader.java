@@ -7,11 +7,11 @@ package com.google.android.libraries.blocks.runtime;
 public final class RuntimeStreamReader implements AutoCloseable
 {
     public final long a;
-    public final oan b;
+    public final obt b;
     
-    public RuntimeStreamReader(final long a, final ahbe ahbe) {
+    public RuntimeStreamReader(final long a, final ahdd ahdd) {
         this.a = a;
-        this.b = new oan(ahbe);
+        this.b = new obt(ahdd);
     }
     
     private native void nativeDelete(final long p0);

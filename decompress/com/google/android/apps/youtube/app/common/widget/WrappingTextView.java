@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 public class WrappingTextView extends TextView
 {
-    private static final afcr b;
+    private static final afeq b;
     public List a;
     private StringBuilder c;
     private StringBuilder d;
@@ -24,7 +24,7 @@ public class WrappingTextView extends TextView
     private boolean f;
     
     static {
-        b = afcr.q();
+        b = afeq.q();
     }
     
     public WrappingTextView(final Context context) {
@@ -64,7 +64,7 @@ public class WrappingTextView extends TextView
             return;
         }
         List a = (List)b;
-        if (!(b instanceof afcr)) {
+        if (!(b instanceof afeq)) {
             a = new ArrayList((Collection)b);
         }
         this.a = a;
@@ -103,6 +103,8 @@ public class WrappingTextView extends TextView
             int n4 = 0;
             int n5 = 0;
             while (n3 < size2 && n4 <= n2) {
+                int n6 = n4;
+                int n7 = n5;
                 if (!TextUtils.isEmpty((CharSequence)this.a.get(n3))) {
                     final String string = this.a.get(n3).toString();
                     if (n5 != 0) {
@@ -115,27 +117,30 @@ public class WrappingTextView extends TextView
                     }
                     this.d.append((CharSequence)string);
                     final StringBuilder d = this.d;
-                    final float n6 = (float)(size - paddingLeft - paddingRight);
-                    if (this.getPaint().measureText(d.toString()) < n6) {
-                        n5 = 0;
+                    final float n8 = (float)(size - paddingLeft - paddingRight);
+                    if (this.getPaint().measureText(d.toString()) < n8) {
+                        n7 = 0;
+                        n6 = n4;
                     }
                     else {
                         if (n4 != n2 && !empty) {
                             this.c.append(this.d, 0, length);
                             this.c.append('\n');
                             this.d.setLength(0);
-                            this.d.append(this.b(string, n6));
-                            n5 = 0;
+                            this.d.append(this.b(string, n8));
+                            n7 = 0;
                         }
                         else {
-                            this.c.append(this.b(this.d, n6));
+                            this.c.append(this.b(this.d, n8));
                             this.d.setLength(0);
-                            n5 = 1;
+                            n7 = 1;
                         }
-                        ++n4;
+                        n6 = n4 + 1;
                     }
                 }
                 ++n3;
+                n4 = n6;
+                n5 = n7;
             }
             if (!TextUtils.isEmpty((CharSequence)this.d)) {
                 this.c.append((CharSequence)this.d);

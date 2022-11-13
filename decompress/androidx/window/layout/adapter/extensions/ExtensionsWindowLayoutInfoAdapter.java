@@ -108,6 +108,6 @@ public final class ExtensionsWindowLayoutInfoAdapter
                 list.add(translate$window_release);
             }
         }
-        return new androidx.window.layout.WindowLayoutInfo((List)list);
+        return new androidx.window.layout.WindowLayoutInfo(list);
     }
 }

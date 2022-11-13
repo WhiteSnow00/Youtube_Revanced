@@ -4,9 +4,13 @@
 
 package com.google.vr.sdk.proto;
 
-public final class CardboardDevice$CardboardInternalParams$Builder extends agza implements ahax
+public final class CardboardDevice$CardboardInternalParams$Builder extends ahaz implements ahcw
 {
     private CardboardDevice$CardboardInternalParams$Builder() {
-        super((agzi)CardboardDevice$CardboardInternalParams.DEFAULT_INSTANCE);
+        super((ahbh)CardboardDevice$CardboardInternalParams.access$4500());
+    }
+    
+    public CardboardDevice$CardboardInternalParams$Builder(final CardboardDevice$1 cardboardDevice$1) {
+        this();
     }
 }

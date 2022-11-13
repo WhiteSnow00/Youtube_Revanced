@@ -26,7 +26,7 @@ public final class ContactsConsentsConfig extends AbstractSafeParcelable
     public final boolean i;
     
     static {
-        CREATOR = (Parcelable$Creator)new nit(19);
+        CREATOR = (Parcelable$Creator)new njy(18);
     }
     
     public ContactsConsentsConfig(final boolean a, final boolean b, final boolean c, final Account d, final boolean e, final boolean f, final String g, final List h, final boolean i) {
@@ -49,7 +49,7 @@ public final class ContactsConsentsConfig extends AbstractSafeParcelable
             return false;
         }
         final ContactsConsentsConfig contactsConsentsConfig = (ContactsConsentsConfig)o;
-        return this.a == contactsConsentsConfig.a && this.b == contactsConsentsConfig.b && this.c == contactsConsentsConfig.c && this.e == contactsConsentsConfig.e && this.f == contactsConsentsConfig.f && this.i == contactsConsentsConfig.i && aeda.v((Object)this.d, (Object)contactsConsentsConfig.d) && aeda.v((Object)this.g, (Object)contactsConsentsConfig.g) && aeda.v((Object)this.h, (Object)contactsConsentsConfig.h);
+        return this.a == contactsConsentsConfig.a && this.b == contactsConsentsConfig.b && this.c == contactsConsentsConfig.c && this.e == contactsConsentsConfig.e && this.f == contactsConsentsConfig.f && this.i == contactsConsentsConfig.i && adkp.ae(this.d, contactsConsentsConfig.d) && adkp.ae(this.g, contactsConsentsConfig.g) && adkp.ae(this.h, contactsConsentsConfig.h);
     }
     
     public final int hashCode() {
@@ -57,16 +57,16 @@ public final class ContactsConsentsConfig extends AbstractSafeParcelable
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        final int i = kgk.I(parcel);
-        kgk.K(parcel, 1, this.a);
-        kgk.K(parcel, 2, this.b);
-        kgk.K(parcel, 3, this.c);
-        kgk.ab(parcel, 4, (Parcelable)this.d, n);
-        kgk.K(parcel, 5, this.e);
-        kgk.K(parcel, 6, this.f);
-        kgk.ac(parcel, 7, this.g);
-        kgk.ag(parcel, 8, this.h);
-        kgk.K(parcel, 9, this.i);
-        kgk.J(parcel, i);
+        final int m = khl.M(parcel);
+        khl.O(parcel, 1, this.a);
+        khl.O(parcel, 2, this.b);
+        khl.O(parcel, 3, this.c);
+        khl.af(parcel, 4, (Parcelable)this.d, n);
+        khl.O(parcel, 5, this.e);
+        khl.O(parcel, 6, this.f);
+        khl.ag(parcel, 7, this.g);
+        khl.ak(parcel, 8, this.h);
+        khl.O(parcel, 9, this.i);
+        khl.N(parcel, m);
     }
 }

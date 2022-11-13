@@ -26,7 +26,7 @@ public class BackedUpContactsPerDeviceEntity extends AbstractSafeParcelable impl
     private List h;
     
     static {
-        CREATOR = (Parcelable$Creator)new njx(3);
+        CREATOR = (Parcelable$Creator)new nlj(2);
     }
     
     public BackedUpContactsPerDeviceEntity(final String a, final Long b, final List g, final String c, final Long d, final Long e, final DeviceVersionEntity f) {
@@ -40,7 +40,7 @@ public class BackedUpContactsPerDeviceEntity extends AbstractSafeParcelable impl
     }
     
     public final DeviceVersion a() {
-        return this.f;
+        return (DeviceVersion)this.f;
     }
     
     public final Long b() {
@@ -67,7 +67,7 @@ public class BackedUpContactsPerDeviceEntity extends AbstractSafeParcelable impl
             return true;
         }
         final BackedUpContactsPerDevice backedUpContactsPerDevice = (BackedUpContactsPerDevice)o;
-        return kgk.ba((Object)this.f(), (Object)backedUpContactsPerDevice.f()) && kgk.ba((Object)this.b(), (Object)backedUpContactsPerDevice.b()) && kgk.ba((Object)this.g(), (Object)backedUpContactsPerDevice.g()) && kgk.ba((Object)this.e(), (Object)backedUpContactsPerDevice.e()) && kgk.ba((Object)this.d(), (Object)backedUpContactsPerDevice.d()) && kgk.ba((Object)this.c(), (Object)backedUpContactsPerDevice.c()) && kgk.ba((Object)this.a(), (Object)backedUpContactsPerDevice.a());
+        return khl.be((Object)((BackedUpContactsPerDevice)this).f(), (Object)backedUpContactsPerDevice.f()) && khl.be((Object)((BackedUpContactsPerDevice)this).b(), (Object)backedUpContactsPerDevice.b()) && khl.be((Object)((BackedUpContactsPerDevice)this).g(), (Object)backedUpContactsPerDevice.g()) && khl.be((Object)((BackedUpContactsPerDevice)this).e(), (Object)backedUpContactsPerDevice.e()) && khl.be((Object)((BackedUpContactsPerDevice)this).d(), (Object)backedUpContactsPerDevice.d()) && khl.be((Object)((BackedUpContactsPerDevice)this).c(), (Object)backedUpContactsPerDevice.c()) && khl.be((Object)((BackedUpContactsPerDevice)this).a(), (Object)backedUpContactsPerDevice.a());
     }
     
     public final String f() {
@@ -89,18 +89,18 @@ public class BackedUpContactsPerDeviceEntity extends AbstractSafeParcelable impl
     }
     
     public final int hashCode() {
-        return Arrays.hashCode(new Object[] { this.f(), this.b(), this.g(), this.e(), this.d(), this.c(), this.a() });
+        return Arrays.hashCode(new Object[] { ((BackedUpContactsPerDevice)this).f(), ((BackedUpContactsPerDevice)this).b(), ((BackedUpContactsPerDevice)this).g(), ((BackedUpContactsPerDevice)this).e(), ((BackedUpContactsPerDevice)this).d(), ((BackedUpContactsPerDevice)this).c(), ((BackedUpContactsPerDevice)this).a() });
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        final int i = kgk.I(parcel);
-        kgk.ac(parcel, 2, this.a);
-        kgk.ag(parcel, 3, this.g());
-        kgk.ac(parcel, 4, this.c);
-        kgk.aa(parcel, 5, this.d);
-        kgk.aa(parcel, 6, this.e);
-        kgk.aa(parcel, 7, this.b);
-        kgk.ab(parcel, 8, (Parcelable)this.f, n);
-        kgk.J(parcel, i);
+        final int m = khl.M(parcel);
+        khl.ag(parcel, 2, this.a);
+        khl.ak(parcel, 3, this.g());
+        khl.ag(parcel, 4, this.c);
+        khl.ae(parcel, 5, this.d);
+        khl.ae(parcel, 6, this.e);
+        khl.ae(parcel, 7, this.b);
+        khl.af(parcel, 8, (Parcelable)this.f, n);
+        khl.N(parcel, m);
     }
 }

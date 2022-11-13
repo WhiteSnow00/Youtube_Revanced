@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Tilbage til album</string>
     <string name="accessibility_navigation_back_button">Tilbage</string>
     <string name="accessibility_new_content_available">Nyt tilgængeligt indhold</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Nye videoer</string>
     <string name="accessibility_next">Næste video</string>
     <string name="accessibility_offline_button_cancel">Stop download</string>
     <string name="accessibility_offline_button_cannot_save">Download mislykkedes</string>
@@ -316,7 +316,7 @@
     <string name="camera_flash_button_label">Blitz</string>
     <string name="camera_flip_button_label">Vend</string>
     <string name="camera_green_screen_done">Udfør</string>
-    <string name="camera_green_screen_label">Grøn skærm</string>
+    <string name="camera_green_screen_label">Greenscreen</string>
     <string name="camera_green_screen_remix_edu">Hvis der ikke sker noget i forgrunden, kan engagementet i din video blive påvirket</string>
     <string name="camera_green_screen_remix_mic_edu">Brug hovedtelefoner for at undgå ekko</string>
     <string name="camera_green_screen_transform_edu">Knib fingrene sammen, og træk for at justere</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Dataovervågning og -styring</string>
     <string name="data_saving_persistent_title">Datalagring</string>
     <string name="data_saving_select_quality_every_video_switch_title">Vælg kvalitet for hver video</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Reducer kvaliteten af Smart-downloads</string>
     <string name="data_saving_snack_bar_action_button">Se</string>
     <string name="data_saving_snack_bar_text">Denne ændring påvirker dine datalagringsindstillinger</string>
     <string name="data_saving_upload_wifi_only_switch_title">Upload kun via Wi-Fi</string>
@@ -1001,7 +1002,7 @@
     <string name="mdx_pref_pair_with_tv_tv_code_summary">En anden forbindelsesmåde. Se, hvordan du får en kode fra dit tv, som du kan indtaste her.</string>
     <string name="mdx_pref_pair_with_tv_tv_code_title">Tilknyt med tv-kode</string>
     <string name="mdx_pref_pair_with_tv_unlink_button">FJERN TILKNYTNING</string>
-    <string name="mdx_pref_pair_with_tv_unlink_button_content_description">Knappen Fjern link</string>
+    <string name="mdx_pref_pair_with_tv_unlink_button_content_description">Knappen Fjern tilknytning</string>
     <string name="mdx_pref_pair_with_tv_watching_on_summary">Ser på dette tv</string>
     <string name="mdx_pref_use_tv_code_enter_tv_code_header">Angiv tv-kode</string>
     <string name="mdx_pref_use_tv_code_get_tv_code_steps">1. Åbn YouTube-appen på din tv-enhed.\102. Gå til Indstillinger.\103. Rul ned til Tilknyt med tv-kode. Der vises en blå tv-kode på dit tv.\104. Indtast koden ovenfor.</string>

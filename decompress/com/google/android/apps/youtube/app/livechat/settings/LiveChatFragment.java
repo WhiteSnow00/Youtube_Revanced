@@ -9,22 +9,22 @@ import android.os.Bundle;
 import android.view.View;
 import com.google.android.apps.youtube.app.settings.SettingsDataAccess;
 
-public class LiveChatFragment extends hzm
+public class LiveChatFragment extends iai
 {
-    public acxu c;
+    public aczw c;
     public SettingsDataAccess d;
-    private asic e;
+    private asir e;
     
     public final void aM() {
     }
     
     public final void ab(final View view, final Bundle bundle) {
         super.ab(view, bundle);
-        this.e = this.d.g((Runnable)new huw(this, 9));
+        this.e = this.d.g((Runnable)new hvt(this, 7));
     }
     
     public final void np() {
         super.np();
-        athh.f((AtomicReference)this.e);
+        athz.f((AtomicReference)this.e);
     }
 }

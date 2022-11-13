@@ -6,47 +6,47 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint extends agzi implements ahax
+public final class NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint extends ahbh implements ahcw
 {
     public static final NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint a;
-    private static volatile ahbe g;
-    public static final agzg notificationOptOutEndpoint;
+    private static volatile ahdd g;
+    public static final ahbf notificationOptOutEndpoint;
     public int b;
-    public agyc c;
-    public ajsq d;
-    public agyc e;
-    public agzy f;
-    private ajsq h;
+    public ahab c;
+    public ajut d;
+    public ahab e;
+    public ahbx f;
+    private ajut h;
     private byte i;
     
     static {
         final NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint a2 = new NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint();
-        agzi.registerDefaultInstance((Class)NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.class, (agzi)(a = a2));
-        notificationOptOutEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 65091333, ahcm.k, (Class)NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.class);
+        ahbh.registerDefaultInstance((Class)NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.class, (ahbh)(a = a2));
+        notificationOptOutEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 65091333, ahek.k, (Class)NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.class);
     }
     
     private NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint() {
         this.i = 2;
-        this.c = agyc.b;
+        this.c = ahab.b;
         emptyProtobufList();
-        this.e = agyc.b;
+        this.e = ahab.b;
         this.f = emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte i = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe g;
+                final ahdd g;
                 if ((g = NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.g) == null) {
                     synchronized (NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.class) {
                         if (NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.g == null) {
-                            NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.g = (ahbe)new agzb((agzi)NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.a);
+                            NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.g = (ahdd)new ahba((ahbh)NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.a);
                         }
                     }
                 }
@@ -56,19 +56,19 @@ public final class NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoi
                 return NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.a);
+                return new ahaz((ahbh)NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.a);
             }
             case 3: {
                 return new NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint();
             }
             case 2: {
-                return newMessageInfo((MessageLite)NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.a, "\u0001\u0005\u0000\u0001\u0003\t\u0005\u0000\u0001\u0003\u0003\u1409\u0002\u0004\u1409\u0003\u0005\u100a\u0000\b\u100a\u0004\t\u041b", new Object[] { "b", "h", "d", "c", "e", "f", aioe.class });
+                return newMessageInfo((MessageLite)NotificationOptOutEndpointOuterClass$NotificationOptOutEndpoint.a, "\u0001\u0005\u0000\u0001\u0003\t\u0005\u0000\u0001\u0003\u0003\u1409\u0002\u0004\u1409\u0003\u0005\u100a\u0000\b\u100a\u0004\t\u041b", new Object[] { "b", "h", "d", "c", "e", "f", aiqj.class });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    i = 0;
                 }
-                this.i = (byte)(b ? 1 : 0);
+                this.i = i;
                 return null;
             }
             case 0: {

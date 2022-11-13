@@ -16,7 +16,7 @@ public class PersonFieldMetadataEntity extends AbstractSafeParcelable implements
     public final Boolean b;
     
     static {
-        CREATOR = (Parcelable$Creator)new njx(10);
+        CREATOR = (Parcelable$Creator)new nlj(9);
     }
     
     public PersonFieldMetadataEntity(final Integer a, final Boolean b) {
@@ -40,17 +40,17 @@ public class PersonFieldMetadataEntity extends AbstractSafeParcelable implements
             return true;
         }
         final PersonFieldMetadata personFieldMetadata = (PersonFieldMetadata)o;
-        return kgk.ba((Object)this.b(), (Object)personFieldMetadata.b()) && kgk.ba((Object)this.a(), (Object)personFieldMetadata.a());
+        return khl.be((Object)((PersonFieldMetadata)this).b(), (Object)personFieldMetadata.b()) && khl.be((Object)((PersonFieldMetadata)this).a(), (Object)personFieldMetadata.a());
     }
     
     public final int hashCode() {
-        return Arrays.hashCode(new Object[] { this.b(), this.a() });
+        return Arrays.hashCode(new Object[] { ((PersonFieldMetadata)this).b(), ((PersonFieldMetadata)this).a() });
     }
     
-    public final void writeToParcel(final Parcel parcel, int i) {
-        i = kgk.I(parcel);
-        kgk.X(parcel, 3, this.a);
-        kgk.Q(parcel, 4, this.b);
-        kgk.J(parcel, i);
+    public final void writeToParcel(final Parcel parcel, int m) {
+        m = khl.M(parcel);
+        khl.ab(parcel, 3, this.a);
+        khl.U(parcel, 4, this.b);
+        khl.N(parcel, m);
     }
 }

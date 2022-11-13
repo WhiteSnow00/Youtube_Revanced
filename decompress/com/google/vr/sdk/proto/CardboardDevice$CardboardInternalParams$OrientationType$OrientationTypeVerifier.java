@@ -4,18 +4,17 @@
 
 package com.google.vr.sdk.proto;
 
-final class CardboardDevice$CardboardInternalParams$OrientationType$OrientationTypeVerifier implements agzo
+final class CardboardDevice$CardboardInternalParams$OrientationType$OrientationTypeVerifier implements ahbn
 {
-    static final agzo INSTANCE;
+    static final ahbn INSTANCE;
     
     static {
-        INSTANCE = new CardboardDevice$CardboardInternalParams$OrientationType$OrientationTypeVerifier();
+        INSTANCE = (ahbn)new CardboardDevice$CardboardInternalParams$OrientationType$OrientationTypeVerifier();
     }
     
     private CardboardDevice$CardboardInternalParams$OrientationType$OrientationTypeVerifier() {
     }
     
-    @Override
     public boolean isInRange(final int n) {
         return CardboardDevice$CardboardInternalParams$OrientationType.forNumber(n) != null;
     }

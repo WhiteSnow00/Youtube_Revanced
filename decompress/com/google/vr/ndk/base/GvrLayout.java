@@ -13,13 +13,13 @@ import android.widget.FrameLayout;
 public class GvrLayout extends FrameLayout
 {
     private GvrApi gvrApi;
-    private arbf impl;
+    private ardt impl;
     private GvrUiLayout uiLayout;
     private ExternalSurface videoSurface;
     
     public GvrLayout(final Context context) {
         super(context);
-        if (aqzg.t(context) != null) {
+        if (arbu.t(context) != null) {
             this.init();
             return;
         }

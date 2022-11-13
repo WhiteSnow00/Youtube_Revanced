@@ -6,22 +6,22 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer extends agzi implements ahax
+public final class MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer extends ahbh implements ahcw
 {
     public static final MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer a;
-    public static final agzg companionStateRenderer;
-    private static volatile ahbe f;
+    public static final ahbf companionStateRenderer;
+    private static volatile ahdd f;
     public int b;
     public String c;
-    public anss d;
+    public anuv d;
     public boolean e;
-    private aioe g;
+    private aiqj g;
     private byte h;
     
     static {
         final MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer a2 = new MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer();
-        agzi.registerDefaultInstance((Class)MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer.class, (agzi)(a = a2));
-        companionStateRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)a2, (MessageLite)a2, (agzn)null, 166494362, ahcm.k, (Class)MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer.class);
+        ahbh.registerDefaultInstance((Class)MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer.class, (ahbh)(a = a2));
+        companionStateRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)a2, (MessageLite)a2, (ahbm)null, 166494362, ahek.k, (Class)MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer.class);
     }
     
     private MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer() {
@@ -29,20 +29,20 @@ public final class MultiStateCompanionAdRendererOuterClass$CompanionStateRendere
         this.c = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte h = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe f;
+                final ahdd f;
                 if ((f = MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer.f) == null) {
                     synchronized (MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer.class) {
                         if (MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer.f == null) {
-                            MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer.f = (ahbe)new agzb((agzi)MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer.a);
+                            MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer.f = (ahdd)new ahba((ahbh)MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer.a);
                         }
                     }
                 }
@@ -52,7 +52,7 @@ public final class MultiStateCompanionAdRendererOuterClass$CompanionStateRendere
                 return MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer.a;
             }
             case 4: {
-                return new agza((agzi)MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer.a);
+                return new ahaz((ahbh)MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer.a);
             }
             case 3: {
                 return new MultiStateCompanionAdRendererOuterClass$CompanionStateRenderer();
@@ -62,9 +62,9 @@ public final class MultiStateCompanionAdRendererOuterClass$CompanionStateRendere
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    h = 0;
                 }
-                this.h = (byte)(b ? 1 : 0);
+                this.h = h;
                 return null;
             }
             case 0: {

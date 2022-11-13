@@ -15,19 +15,19 @@ public class DiagnosticsReceiver extends BroadcastReceiver
     private static final String a;
     
     static {
-        a = cmr.b("DiagnosticsRcvr");
+        a = cms.b("DiagnosticsRcvr");
     }
     
     public final void onReceive(final Context context, final Intent intent) {
         if (intent == null) {
             return;
         }
-        cmr.a();
+        cms.a();
         try {
-            ((cna)coe.j(context)).g(((cnb)new cms((Class)DiagnosticsWorker.class)).f());
+            ((cnb)cof.j(context)).g(((cnc)new cmt((Class)DiagnosticsWorker.class)).f());
         }
         catch (final IllegalStateException ex) {
-            cmr.a();
+            cms.a();
             Log.e(DiagnosticsReceiver.a, "WorkManager is not initialized", (Throwable)ex);
         }
     }

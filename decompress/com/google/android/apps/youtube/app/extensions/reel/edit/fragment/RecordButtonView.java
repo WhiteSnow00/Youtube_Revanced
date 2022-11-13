@@ -23,11 +23,11 @@ public class RecordButtonView extends FrameLayout
     
     public RecordButtonView(final Context context, final AttributeSet set) {
         super(context, set);
-        LayoutInflater.from(context).inflate(2131625188, (ViewGroup)this, true);
-        this.a = (ImageView)this.findViewById(2131430833);
-        this.d = (FrameLayout)this.findViewById(2131430836);
-        this.c = (ProgressBar)this.findViewById(2131430821);
-        this.b = (FrameLayout)this.findViewById(2131431025);
+        LayoutInflater.from(context).inflate(2131625193, (ViewGroup)this, true);
+        this.a = (ImageView)this.findViewById(2131430836);
+        this.d = (FrameLayout)this.findViewById(2131430839);
+        this.c = (ProgressBar)this.findViewById(2131430824);
+        this.b = (FrameLayout)this.findViewById(2131431028);
     }
     
     public final void setContentDescription(final CharSequence charSequence) {

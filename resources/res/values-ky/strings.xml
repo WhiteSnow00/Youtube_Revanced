@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Альбомго кайтуу</string>
     <string name="accessibility_navigation_back_button">Артка</string>
     <string name="accessibility_new_content_available">Жаңы мазмун чыкты</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Жаңы видеолор</string>
     <string name="accessibility_next">Кийинки видео</string>
     <string name="accessibility_offline_button_cancel">Жүктөп алууну токтотуу</string>
     <string name="accessibility_offline_button_cannot_save">Жүктөлүп алынбай жатат</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Маалыматты көзөмөлдөө</string>
     <string name="data_saving_persistent_title">Трафикти үнөмдөө</string>
     <string name="data_saving_select_quality_every_video_switch_title">Ар бир видеонун сапатын тандоо</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Акылдуу жүктөп алуунун сапатын төмөндөтүү</string>
     <string name="data_saving_snack_bar_action_button">Көрүү</string>
     <string name="data_saving_snack_bar_text">Бул өзгөртүү трафикти үнөмдөө жөндөөлөрүнө таасирин тийгизет</string>
     <string name="data_saving_upload_wifi_only_switch_title">Wi-Fi менен гана жүктөп берүү</string>

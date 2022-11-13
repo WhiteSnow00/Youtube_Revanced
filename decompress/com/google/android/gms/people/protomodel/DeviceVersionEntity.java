@@ -15,7 +15,7 @@ public class DeviceVersionEntity extends AbstractSafeParcelable implements Devic
     public final Integer a;
     
     static {
-        CREATOR = (Parcelable$Creator)new njx(5);
+        CREATOR = (Parcelable$Creator)new nlj(4);
     }
     
     public DeviceVersionEntity(final Integer a) {
@@ -27,16 +27,16 @@ public class DeviceVersionEntity extends AbstractSafeParcelable implements Devic
     }
     
     public final boolean equals(final Object o) {
-        return o instanceof DeviceVersion && (this == o || kgk.ba((Object)this.a(), (Object)((DeviceVersion)o).a()));
+        return o instanceof DeviceVersion && (this == o || khl.be((Object)((DeviceVersion)this).a(), (Object)((DeviceVersion)o).a()));
     }
     
     public final int hashCode() {
-        return Arrays.hashCode(new Object[] { this.a() });
+        return Arrays.hashCode(new Object[] { ((DeviceVersion)this).a() });
     }
     
-    public final void writeToParcel(final Parcel parcel, int i) {
-        i = kgk.I(parcel);
-        kgk.X(parcel, 2, this.a);
-        kgk.J(parcel, i);
+    public final void writeToParcel(final Parcel parcel, int m) {
+        m = khl.M(parcel);
+        khl.ab(parcel, 2, this.a);
+        khl.N(parcel, m);
     }
 }

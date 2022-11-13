@@ -22,15 +22,15 @@ import android.widget.SeekBar;
 import android.graphics.drawable.Drawable;
 import android.widget.SeekBar$OnSeekBarChangeListener;
 
-public class TimelineSeekBar extends gza implements SeekBar$OnSeekBarChangeListener
+public class TimelineSeekBar extends gzr implements SeekBar$OnSeekBarChangeListener
 {
     public Drawable a;
     public final int b;
     public final SeekBar c;
     public final Runnable d;
-    public tvt e;
-    public gzb f;
-    public mrm g;
+    public txz e;
+    public gzs f;
+    public msr g;
     private final Drawable h;
     private final int i;
     private final int j;
@@ -55,8 +55,8 @@ public class TimelineSeekBar extends gza implements SeekBar$OnSeekBarChangeListe
     
     public TimelineSeekBar(final Context context, final AttributeSet set, int color, final int n) {
         super(context, set, color);
-        this.d = (Runnable)new gwx(this, 7);
-        final TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(set, gyp.a, color, n);
+        this.d = (Runnable)new gxo(this, 6);
+        final TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(set, gzf.a, color, n);
         try {
             final Drawable drawable = obtainStyledAttributes.getDrawable(2);
             this.h = drawable;
@@ -69,13 +69,13 @@ public class TimelineSeekBar extends gza implements SeekBar$OnSeekBarChangeListe
             color = obtainStyledAttributes.getColor(0, context.getResources().getColor(17170443));
             this.i = color;
             this.j = obtainStyledAttributes.getDimensionPixelSize(1, 0);
-            this.b = this.getResources().getDimensionPixelSize(2131169497);
+            this.b = this.getResources().getDimensionPixelSize(2131169496);
             obtainStyledAttributes.recycle();
-            LayoutInflater.from(context).inflate(2131625636, (ViewGroup)this, true);
-            final SeekBar c = (SeekBar)this.findViewById(2131430460);
+            LayoutInflater.from(context).inflate(2131625641, (ViewGroup)this, true);
+            final SeekBar c = (SeekBar)this.findViewById(2131430461);
             (this.c = c).setProgressDrawable((Drawable)null);
             c.setOnSeekBarChangeListener((SeekBar$OnSeekBarChangeListener)this);
-            (this.l = new ShapeDrawable()).setIntrinsicWidth(this.getResources().getDimensionPixelSize(2131168510));
+            (this.l = new ShapeDrawable()).setIntrinsicWidth(this.getResources().getDimensionPixelSize(2131168509));
             this.l.setShape((Shape)new RectShape());
             this.l.getPaint().setColor(color);
             this.l.getPaint().setStyle(Paint$Style.FILL);
@@ -85,9 +85,9 @@ public class TimelineSeekBar extends gza implements SeekBar$OnSeekBarChangeListe
                 (this.n = new ShapeDrawable()).setShape((Shape)new RectShape());
                 this.n.getPaint().setAlpha(0);
             }
-            this.f.a().p(tmy.ch(this.g.u())).aB((asix)new gxt(this, 7));
-            this.e.M().p(tmy.ch(this.g.u())).aB((asix)new gxt(this, 8));
-            this.e.N().p(tmy.ch(this.g.u())).aB((asix)new gxt(this, 9));
+            this.f.a().q(tpe.cl(this.g.K())).aH((asjm)new gyi(this, 7));
+            this.e.M().q(tpe.cl(this.g.K())).aH((asjm)new gyi(this, 8));
+            this.e.N().q(tpe.cl(this.g.K())).aH((asjm)new gyi(this, 9));
         }
         finally {
             obtainStyledAttributes.recycle();
@@ -117,42 +117,42 @@ public class TimelineSeekBar extends gza implements SeekBar$OnSeekBarChangeListe
         return n < bounds.top - this.b || n > bounds.bottom + this.b || super.onInterceptTouchEvent(motionEvent);
     }
     
-    protected final void onLayout(final boolean b, int k, int n, int n2, int n3) {
-        super.onLayout(b, k, n, n2, n3);
+    protected final void onLayout(final boolean b, int intrinsicWidth, int n, int n2, int n3) {
+        super.onLayout(b, intrinsicWidth, n, n2, n3);
         if (this.getHeight() > 0 && this.o == null) {
-            n3 = this.a.getIntrinsicHeight();
+            final int intrinsicHeight = this.a.getIntrinsicHeight();
             n2 = this.a.getIntrinsicWidth();
-            final int intrinsicWidth = this.l.getIntrinsicWidth();
+            n3 = this.l.getIntrinsicWidth();
             n = this.g(1);
             final int n4 = n2 % 2;
-            k = n2;
+            intrinsicWidth = n2;
             if (n4 == 0) {
-                k = n2 + n;
+                intrinsicWidth = n2 + n;
             }
             this.m.setIntrinsicHeight(this.getHeight());
-            this.m.setIntrinsicWidth(k);
-            this.l.setIntrinsicHeight(this.getHeight() - n3 - this.j);
+            this.m.setIntrinsicWidth(intrinsicWidth);
+            this.l.setIntrinsicHeight(this.getHeight() - intrinsicHeight - this.j);
             final LayerDrawable o = new LayerDrawable(new Drawable[] { (Drawable)this.m, (Drawable)this.l, this.a });
             this.o = o;
             if (n4 != 0) {
                 n = 0;
             }
-            o.setLayerInset(2, n, this.getHeight() - n3, 0, 0);
-            this.o.setLayerInset(1, (k - intrinsicWidth) / 2, 0, (k + intrinsicWidth) / 2, n3 + this.j);
+            o.setLayerInset(2, n, this.getHeight() - intrinsicHeight, 0, 0);
+            this.o.setLayerInset(1, (intrinsicWidth - n3) / 2, 0, (intrinsicWidth + n3) / 2, intrinsicHeight + this.j);
             this.c.setThumb((Drawable)this.o);
         }
         if (this.h != null && this.getHeight() > 0 && this.p == null) {
-            n3 = this.a.getIntrinsicHeight();
+            n = this.a.getIntrinsicHeight();
             this.n.setIntrinsicHeight(this.getHeight());
             this.p = new LayerDrawable(new Drawable[] { (Drawable)this.n, this.h });
-            n = this.k;
-            n2 = this.getHeight();
-            k = this.k;
-            this.p.setLayerInset(1, 0, n2 - (k + n3) / 2, 0, (n3 - n) / 2);
+            n2 = this.k;
+            n3 = this.getHeight();
+            intrinsicWidth = (n + this.k) / 2;
+            this.p.setLayerInset(1, 0, n3 - intrinsicWidth, 0, (n - n2) / 2);
             this.c.setProgressDrawable((Drawable)this.p);
         }
         final View view = (View)this.c.getParent();
-        view.post((Runnable)new gvu(this, view, 5));
+        view.post((Runnable)new gwk(this, view, 5));
     }
     
     public final void onProgressChanged(final SeekBar seekBar, final int n, final boolean b) {
@@ -167,7 +167,7 @@ public class TimelineSeekBar extends gza implements SeekBar$OnSeekBarChangeListe
     }
     
     public final void onStopTrackingTouch(final SeekBar seekBar) {
-        final tvt e = this.e;
+        final txz e = this.e;
         e.ab(e.H());
         this.f();
     }

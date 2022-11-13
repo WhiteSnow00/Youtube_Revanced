@@ -42,7 +42,7 @@ public class TemplateLayout extends FrameLayout
     }
     
     private final void a(int resourceId, final int n, final AttributeSet set, final int n2) {
-        final TypedArray obtainStyledAttributes = this.getContext().obtainStyledAttributes(set, aecq.f, n2, 0);
+        final TypedArray obtainStyledAttributes = this.getContext().obtainStyledAttributes(set, aees.f, n2, 0);
         int resourceId2 = resourceId;
         if (resourceId == 0) {
             resourceId2 = obtainStyledAttributes.getResourceId(0, 0);
@@ -87,22 +87,22 @@ public class TemplateLayout extends FrameLayout
         if (n2 != 0) {
             LayoutInflater from = layoutInflater;
             if (n != 0) {
-                from = LayoutInflater.from((Context)new aecs(layoutInflater.getContext(), n));
+                from = LayoutInflater.from((Context)new aeeu(layoutInflater.getContext(), n));
             }
             return from.inflate(n2, (ViewGroup)this, false);
         }
         throw new IllegalArgumentException("android:layout not specified for TemplateLayout");
     }
     
-    public final aedi j(final Class clazz) {
+    public final aefj j(final Class clazz) {
         return this.b.get(clazz);
     }
     
     protected void k() {
     }
     
-    protected final void l(final Class clazz, final aedi aedi) {
-        this.b.put(clazz, aedi);
+    protected final void l(final Class clazz, final aefj aefj) {
+        this.b.put(clazz, aefj);
     }
     
     public void setXFraction(final float c) {
@@ -113,7 +113,7 @@ public class TemplateLayout extends FrameLayout
             return;
         }
         if (this.d == null) {
-            this.d = (ViewTreeObserver$OnPreDrawListener)new edi(this, 6);
+            this.d = (ViewTreeObserver$OnPreDrawListener)new edj(this, 6);
             this.getViewTreeObserver().addOnPreDrawListener(this.d);
         }
     }

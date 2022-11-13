@@ -4,8 +4,10 @@
 
 package com.google.vr.sdk.proto;
 
-public enum CardboardDevice$DeviceParams$ButtonType implements agzm
+public enum CardboardDevice$DeviceParams$ButtonType implements ahbl
 {
+    private static final CardboardDevice$DeviceParams$ButtonType[] $VALUES;
+    
     INDIRECT_TOUCH("INDIRECT_TOUCH", 3, 3);
     
     public static final int INDIRECT_TOUCH_VALUE = 3;
@@ -21,11 +23,16 @@ public enum CardboardDevice$DeviceParams$ButtonType implements agzm
     TOUCH("TOUCH", 2, 2);
     
     public static final int TOUCH_VALUE = 2;
-    private static final agzn internalValueMap;
+    private static final ahbm internalValueMap;
     private final int value;
     
+    private static CardboardDevice$DeviceParams$ButtonType[] $values() {
+        return new CardboardDevice$DeviceParams$ButtonType[] { CardboardDevice$DeviceParams$ButtonType.NONE, CardboardDevice$DeviceParams$ButtonType.MAGNET, CardboardDevice$DeviceParams$ButtonType.TOUCH, CardboardDevice$DeviceParams$ButtonType.INDIRECT_TOUCH };
+    }
+    
     static {
-        internalValueMap = new CardboardDevice$DeviceParams$ButtonType$1();
+        $VALUES = $values();
+        internalValueMap = (ahbm)new CardboardDevice$DeviceParams$ButtonType$1();
     }
     
     private CardboardDevice$DeviceParams$ButtonType(final String s, final int n, final int value) {
@@ -48,11 +55,10 @@ public enum CardboardDevice$DeviceParams$ButtonType implements agzm
         return CardboardDevice$DeviceParams$ButtonType.INDIRECT_TOUCH;
     }
     
-    public static agzo internalGetVerifier() {
+    public static ahbn internalGetVerifier() {
         return CardboardDevice$DeviceParams$ButtonType$ButtonTypeVerifier.INSTANCE;
     }
     
-    @Override
     public final int getNumber() {
         return this.value;
     }

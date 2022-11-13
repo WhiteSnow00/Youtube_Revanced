@@ -8,7 +8,7 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.content.Context;
 
-public final class CircularProgressIndicator extends adup
+public final class CircularProgressIndicator extends adwr
 {
     public CircularProgressIndicator(final Context context) {
         this(context, null);
@@ -19,12 +19,16 @@ public final class CircularProgressIndicator extends adup
     }
     
     public CircularProgressIndicator(Context context, final AttributeSet set, final int n) {
-        super(context, set, n, 2132085186);
+        super(context, set, n, 2132085187);
+        final Context context2 = this.getContext();
+        final adwz adwz = (adwz)this.a;
+        this.setIndeterminateDrawable((Drawable)new adxi(context2, (adws)adwz, (adxg)new adwt(adwz), (adxh)new adwy(adwz)));
         context = this.getContext();
-        final adux adux = (adux)this.a;
-        this.setIndeterminateDrawable((Drawable)new advg(context, (aduq)adux, (adve)new adur(adux), (advf)new aduw(adux)));
-        context = this.getContext();
-        final adux adux2 = (adux)this.a;
-        this.setProgressDrawable((Drawable)new aduz(context, (aduq)adux2, (adve)new adur(adux2)));
+        final adwz adwz2 = (adwz)this.a;
+        this.setProgressDrawable((Drawable)new adxb(context, (adws)adwz2, (adxg)new adwt(adwz2)));
+    }
+    
+    public final /* bridge */ adws a(final Context context, final AttributeSet set) {
+        return (adws)new adwz(context, set);
     }
 }

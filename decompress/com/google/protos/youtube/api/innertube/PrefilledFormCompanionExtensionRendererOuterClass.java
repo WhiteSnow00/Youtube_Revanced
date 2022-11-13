@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class PrefilledFormCompanionExtensionRendererOuterClass
 {
-    public static final agzg prefilledFormCompanionExtensionRenderer;
+    public static final ahbf prefilledFormCompanionExtensionRenderer;
     
     static {
-        prefilledFormCompanionExtensionRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ankq.a, (MessageLite)ankq.a, (agzn)null, 165633868, ahcm.k, (Class)ankq.class);
+        prefilledFormCompanionExtensionRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anmt.a, (MessageLite)anmt.a, (ahbm)null, 165633868, ahek.k, (Class)anmt.class);
     }
     
     private PrefilledFormCompanionExtensionRendererOuterClass() {

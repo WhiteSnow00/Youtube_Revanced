@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ReplaceBackstagePostActionOuterClass
 {
-    public static final agzg replaceBackstagePostAction;
+    public static final ahbf replaceBackstagePostAction;
     
     static {
-        replaceBackstagePostAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)antc.a, (MessageLite)antc.a, (agzn)null, 170883367, ahcm.k, (Class)antc.class);
+        replaceBackstagePostAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)anvf.a, (MessageLite)anvf.a, (ahbm)null, 170883367, ahek.k, (Class)anvf.class);
     }
     
     private ReplaceBackstagePostActionOuterClass() {

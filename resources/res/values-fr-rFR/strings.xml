@@ -93,9 +93,6 @@
     <string name="litho_paid_content">Suppression de contenu payant</string>
     <string name="litho_paid_content_off">Suppression de contenu payant désactivée</string>
     <string name="litho_paid_content_on">Suppression de contenu payant activée</string>
-    <string name="litho_shorts_shelf">Shorts Shelf removal</string>
-    <string name="litho_shorts_shelf_off">Shorts Shelf removal is turned off</string>
-    <string name="litho_shorts_shelf_on">Shorts Shelf removal is turned on</string>
     <string name="microg_not_installed_notice">S\'il-vous-plaît installer MicroG</string>
     <string name="microg_not_installed_warning">MicroG n\'est pas présent</string>
     <string name="microg_notification_settings">Paramètre de notifications</string>
@@ -256,7 +253,6 @@
     <string name="revanced_preferred_video_speed_summary">Select preferred video speed</string>
     <string name="revanced_preferred_video_speed_title">Preferred video speed</string>
     <string name="revanced_reboot_warning_fullscreen">Trompez la version YouTube et essayer de la mettre à jour côté serveur.\10Cela pourrait des fois ne pas marcher de la manière prévue.\10Dans certains cas, il serait nécessaire de réinstaller ReVanced.\10Êtes-vous sûr de vouloir continuer ?</string>
-    <string name="revanced_reboot_warning_ryd">Intégrer avec le bouton de likes pour afficher les dislikes dans la nouvelle interface.\10Cependant, puisque c\'est encore une fonctionnalité expérimentale, les likes peuvent ne pas s\'afficher correctement.\10Êtes-vous sûr de continuer ?</string>
     <string name="revanced_rebuffer_summary">The duration of media that must be buffered for playback to resume after a rebuffer (in milliseconds). A rebuffer is defined to be caused by buffer depletion rather than a user action Default: 5000</string>
     <string name="revanced_rebuffer_title">Rebuffer</string>
     <string name="revanced_reel_summary_off">Stories are hidden</string>
@@ -264,8 +260,6 @@
     <string name="revanced_reel_title">YouTube stories</string>
     <string name="revanced_ryd_attribution_summary">This integration uses the RYD API from https://returnyoutubedislike.com. Tap to learn more</string>
     <string name="revanced_ryd_attribution_title">Return YouTube Dislike Integration</string>
-    <string name="revanced_ryd_new_layout_summary">Afficher les dislikes sur la nouvelle interface</string>
-    <string name="revanced_ryd_new_layout_title">Réparer RYD (nouvelle interface)</string>
     <string name="revanced_ryd_settings_summary">Uses the RYD API</string>
     <string name="revanced_ryd_settings_title">Return YouTube Dislike settings</string>
     <string name="revanced_ryd_summary">Switch this on to see the dislike counts again</string>
@@ -283,9 +277,6 @@
     <string name="revanced_suggested_actions_summary_off">Actions suggérées affichées</string>
     <string name="revanced_suggested_actions_summary_on">Actions suggérées cachées</string>
     <string name="revanced_suggested_actions_title">Actions Suggérées</string>
-    <string name="revanced_suggestion_summary_off">End screens are hidden</string>
-    <string name="revanced_suggestion_summary_on">End screens are shown</string>
-    <string name="revanced_suggestion_title">End screens</string>
     <string name="revanced_swipe_auto_brightness_summary_off">Luminosité automatique par balayage est désactivée</string>
     <string name="revanced_swipe_auto_brightness_summary_on">Luminosité automatique par balayage est activé</string>
     <string name="revanced_swipe_auto_brightness_title">Luminosité automatique par balayage</string>

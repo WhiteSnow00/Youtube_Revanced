@@ -6,41 +6,41 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction extends agzi implements ahax
+public final class OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction extends ahbh implements ahcw
 {
     public static final OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction a;
-    private static volatile ahbe e;
-    public static final agzg openCreateReplyDialogAction;
-    public aiye b;
-    public aiok c;
-    public aiok d;
+    private static volatile ahdd e;
+    public static final ahbf openCreateReplyDialogAction;
+    public ajaj b;
+    public aiqp c;
+    public aiqp d;
     private int f;
     private byte g;
     
     static {
         final OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction a2 = new OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction();
-        agzi.registerDefaultInstance((Class)OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction.class, (agzi)(a = a2));
-        openCreateReplyDialogAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 145308295, ahcm.k, (Class)OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction.class);
+        ahbh.registerDefaultInstance((Class)OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction.class, (ahbh)(a = a2));
+        openCreateReplyDialogAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 145308295, ahek.k, (Class)OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction.class);
     }
     
     private OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction() {
         this.g = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte g = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction.e) == null) {
                     synchronized (OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction.class) {
                         if (OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction.e == null) {
-                            OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction.e = (ahbe)new agzb((agzi)OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction.a);
+                            OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction.e = (ahdd)new ahba((ahbh)OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction.a);
                         }
                     }
                 }
@@ -50,7 +50,7 @@ public final class OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAc
                 return OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction.a;
             }
             case 4: {
-                return new agza((agzi)OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction.a);
+                return new ahaz((ahbh)OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction.a);
             }
             case 3: {
                 return new OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAction();
@@ -60,9 +60,9 @@ public final class OpenCreateReplyDialogActionOuterClass$OpenCreateReplyDialogAc
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    g = 0;
                 }
-                this.g = (byte)(b ? 1 : 0);
+                this.g = g;
                 return null;
             }
             case 0: {

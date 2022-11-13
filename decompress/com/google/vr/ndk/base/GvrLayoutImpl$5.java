@@ -14,7 +14,7 @@ import android.content.ServiceConnection;
 
 class GvrLayoutImpl$5 implements ServiceConnection
 {
-    final /* synthetic */ GvrLayoutImpl this$0;
+    final GvrLayoutImpl this$0;
     
     public GvrLayoutImpl$5(final GvrLayoutImpl this$0) {
         this.this$0 = this$0;

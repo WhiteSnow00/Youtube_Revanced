@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class RefreshAppActionOuterClass$RefreshAppAction extends agzi implements ahax
+public final class RefreshAppActionOuterClass$RefreshAppAction extends ahbh implements ahcw
 {
     public static final RefreshAppActionOuterClass$RefreshAppAction a;
-    private static volatile ahbe b;
-    public static final agzg refreshAppAction;
+    private static volatile ahdd b;
+    public static final ahbf refreshAppAction;
     
     static {
         final RefreshAppActionOuterClass$RefreshAppAction a2 = new RefreshAppActionOuterClass$RefreshAppAction();
-        agzi.registerDefaultInstance((Class)RefreshAppActionOuterClass$RefreshAppAction.class, (agzi)(a = a2));
-        refreshAppAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 131467272, ahcm.k, (Class)RefreshAppActionOuterClass$RefreshAppAction.class);
+        ahbh.registerDefaultInstance((Class)RefreshAppActionOuterClass$RefreshAppAction.class, (ahbh)(a = a2));
+        refreshAppAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 131467272, ahek.k, (Class)RefreshAppActionOuterClass$RefreshAppAction.class);
     }
     
     private RefreshAppActionOuterClass$RefreshAppAction() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = RefreshAppActionOuterClass$RefreshAppAction.b) == null) {
                     synchronized (RefreshAppActionOuterClass$RefreshAppAction.class) {
                         if (RefreshAppActionOuterClass$RefreshAppAction.b == null) {
-                            RefreshAppActionOuterClass$RefreshAppAction.b = (ahbe)new agzb((agzi)RefreshAppActionOuterClass$RefreshAppAction.a);
+                            RefreshAppActionOuterClass$RefreshAppAction.b = (ahdd)new ahba((ahbh)RefreshAppActionOuterClass$RefreshAppAction.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class RefreshAppActionOuterClass$RefreshAppAction extends agzi impl
                 return RefreshAppActionOuterClass$RefreshAppAction.a;
             }
             case 4: {
-                return new agza((agzi)RefreshAppActionOuterClass$RefreshAppAction.a);
+                return new ahaz((ahbh)RefreshAppActionOuterClass$RefreshAppAction.a);
             }
             case 3: {
                 return new RefreshAppActionOuterClass$RefreshAppAction();

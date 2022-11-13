@@ -31,24 +31,26 @@ public class LowPassFilter
         this.addWeightedSample(vector3d, n, 1.0);
     }
     
-    public void addWeightedSample(Vector3d filteredData, final long n, double n2) {
+    public void addWeightedSample(Vector3d temp, final long n, double timeConstantSecs) {
         final int numSamples = this.numSamples + 1;
         this.numSamples = numSamples;
         if (numSamples == 1) {
-            this.filteredData.set(filteredData);
+            this.filteredData.set(temp);
             this.lastTimestampNs = n;
             return;
         }
-        final double n3 = (double)(n - this.lastTimestampNs);
-        Double.isNaN(n3);
-        n2 = n2 * n3 * LowPassFilter.NANOS_TO_SECONDS;
-        n2 /= this.timeConstantSecs + n2;
-        this.filteredData.scale(1.0 - n2);
-        this.temp.set(filteredData);
-        this.temp.scale(n2);
-        final Vector3d temp = this.temp;
-        filteredData = this.filteredData;
-        Vector3d.add(temp, filteredData, filteredData);
+        final double n2 = (double)(n - this.lastTimestampNs);
+        Double.isNaN(n2);
+        final double n3 = timeConstantSecs * n2 * LowPassFilter.NANOS_TO_SECONDS;
+        timeConstantSecs = this.timeConstantSecs;
+        final Vector3d filteredData = this.filteredData;
+        timeConstantSecs = n3 / (timeConstantSecs + n3);
+        filteredData.scale(1.0 - timeConstantSecs);
+        this.temp.set(temp);
+        this.temp.scale(timeConstantSecs);
+        temp = this.temp;
+        final Vector3d filteredData2 = this.filteredData;
+        Vector3d.add(temp, filteredData2, filteredData2);
         this.lastTimestampNs = n;
     }
     

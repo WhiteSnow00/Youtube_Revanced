@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ShowMessageInputPromptCommandOuterClass
 {
-    public static final agzg showMessageInputPromptCommand;
+    public static final ahbf showMessageInputPromptCommand;
     
     static {
-        showMessageInputPromptCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)aoem.a, (MessageLite)aoem.a, (agzn)null, 398472935, ahcm.k, (Class)aoem.class);
+        showMessageInputPromptCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)aogp.a, (MessageLite)aogp.a, (ahbm)null, 398472935, ahek.k, (Class)aogp.class);
     }
     
     private ShowMessageInputPromptCommandOuterClass() {

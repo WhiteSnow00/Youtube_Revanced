@@ -11,7 +11,7 @@ import android.os.Handler;
 
 class VrCoreSdkClient$DaydreamListenerImpl$1 extends Handler
 {
-    final /* synthetic */ VrCoreSdkClient$DaydreamListenerImpl this$0;
+    final VrCoreSdkClient$DaydreamListenerImpl this$0;
     
     public VrCoreSdkClient$DaydreamListenerImpl$1(final VrCoreSdkClient$DaydreamListenerImpl this$0) {
         this.this$0 = this$0;

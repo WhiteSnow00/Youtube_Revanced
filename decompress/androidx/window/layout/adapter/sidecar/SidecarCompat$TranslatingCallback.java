@@ -17,7 +17,7 @@ import androidx.window.sidecar.SidecarInterface$SidecarCallback;
 
 public final class SidecarCompat$TranslatingCallback implements SidecarInterface$SidecarCallback
 {
-    final /* synthetic */ SidecarCompat this$0;
+    final SidecarCompat this$0;
     
     public SidecarCompat$TranslatingCallback(final SidecarCompat this$0) {
         this.this$0 = this$0;

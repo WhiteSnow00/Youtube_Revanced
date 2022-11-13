@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ShortsEffectPickerEntryRendererOuterClass
 {
-    public static final agzg shortsEffectPickerEntryRenderer;
+    public static final ahbf shortsEffectPickerEntryRenderer;
     
     static {
-        shortsEffectPickerEntryRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)aodb.a, (MessageLite)aodb.a, (agzn)null, 425446332, ahcm.k, (Class)aodb.class);
+        shortsEffectPickerEntryRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)aofd.a, (MessageLite)aofd.a, (ahbm)null, 425446332, ahek.k, (Class)aofd.class);
     }
     
     private ShortsEffectPickerEntryRendererOuterClass() {

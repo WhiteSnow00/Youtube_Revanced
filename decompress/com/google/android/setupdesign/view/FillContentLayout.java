@@ -30,7 +30,7 @@ public class FillContentLayout extends FrameLayout
         if (this.isInEditMode()) {
             return;
         }
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, aedq.f, n, 0);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, aefr.f, n, 0);
         this.b = obtainStyledAttributes.getDimensionPixelSize(1, -1);
         this.a = obtainStyledAttributes.getDimensionPixelSize(0, -1);
         obtainStyledAttributes.recycle();

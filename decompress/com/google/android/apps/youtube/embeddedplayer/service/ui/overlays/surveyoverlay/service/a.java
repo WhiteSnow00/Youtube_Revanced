@@ -11,7 +11,7 @@ import android.os.Handler;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.surveyoverlay.shared.e;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.surveyoverlay.shared.c;
 
-public final class a implements shm
+public final class a implements sjs
 {
     public c a;
     private final e b;
@@ -26,7 +26,7 @@ public final class a implements shm
         catch (final RemoteException ex) {}
     }
     
-    public final shk e() {
+    public final sjq e() {
         return null;
     }
     
@@ -52,7 +52,7 @@ public final class a implements shm
         catch (final RemoteException ex) {}
     }
     
-    public final void k(final shl a) {
+    public final void j(final sjr a) {
         this.b.a = a;
     }
     
@@ -78,7 +78,7 @@ public final class a implements shm
         catch (final RemoteException ex) {}
     }
     
-    public final void o(final String s, final List list, final boolean b, final aomi aomi) {
+    public final void o(final String s, final List list, final boolean b, final aool aool) {
         final c a = this.a;
         if (a == null) {
             return;

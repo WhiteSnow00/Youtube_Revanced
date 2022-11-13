@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class FooterActionButton extends Button
 {
-    public aedg a;
+    public aefh a;
     public boolean b;
     
     public FooterActionButton(final Context context, final AttributeSet set) {

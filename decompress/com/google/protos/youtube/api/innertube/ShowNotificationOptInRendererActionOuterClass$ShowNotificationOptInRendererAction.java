@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction extends agzi implements ahax
+public final class ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction extends ahbh implements ahcw
 {
     public static final ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction a;
-    private static volatile ahbe b;
-    public static final agzg showNotificationOptInRendererAction;
+    private static volatile ahdd b;
+    public static final ahbf showNotificationOptInRendererAction;
     
     static {
         final ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction a2 = new ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction();
-        agzi.registerDefaultInstance((Class)ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction.class, (agzi)(a = a2));
-        showNotificationOptInRendererAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 135114359, ahcm.k, (Class)ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction.class);
+        ahbh.registerDefaultInstance((Class)ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction.class, (ahbh)(a = a2));
+        showNotificationOptInRendererAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 135114359, ahek.k, (Class)ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction.class);
     }
     
     private ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction.b) == null) {
                     synchronized (ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction.class) {
                         if (ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction.b == null) {
-                            ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction.b = (ahbe)new agzb((agzi)ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction.a);
+                            ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction.b = (ahdd)new ahba((ahbh)ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class ShowNotificationOptInRendererActionOuterClass$ShowNotificatio
                 return ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction.a;
             }
             case 4: {
-                return new agza((agzi)ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction.a);
+                return new ahaz((ahbh)ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction.a);
             }
             case 3: {
                 return new ShowNotificationOptInRendererActionOuterClass$ShowNotificationOptInRendererAction();

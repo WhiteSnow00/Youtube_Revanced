@@ -21,6 +21,14 @@ public final class HardwareFoldingFeature$Type
         this.description = description;
     }
     
+    public static final HardwareFoldingFeature$Type access$getFOLD$cp() {
+        return HardwareFoldingFeature$Type.FOLD;
+    }
+    
+    public static final HardwareFoldingFeature$Type access$getHINGE$cp() {
+        return HardwareFoldingFeature$Type.HINGE;
+    }
+    
     @Override
     public String toString() {
         return this.description;

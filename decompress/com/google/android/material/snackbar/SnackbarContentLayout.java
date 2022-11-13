@@ -5,6 +5,7 @@
 package com.google.android.material.snackbar;
 
 import android.text.Layout;
+import android.view.ViewPropertyAnimator;
 import android.view.View;
 import android.util.AttributeSet;
 import android.content.Context;
@@ -13,7 +14,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.LinearLayout;
 
-public class SnackbarContentLayout extends LinearLayout implements adxe
+public class SnackbarContentLayout extends LinearLayout implements adzg
 {
     public TextView a;
     public Button b;
@@ -26,7 +27,7 @@ public class SnackbarContentLayout extends LinearLayout implements adxe
     
     public SnackbarContentLayout(final Context context, final AttributeSet set) {
         super(context, set);
-        this.d = adwd.o(context, 2130969956, adqd.b);
+        this.d = adds.I(context, 2130969956, adsf.b);
     }
     
     private final boolean c(final int orientation, final int n, final int n2) {
@@ -42,8 +43,8 @@ public class SnackbarContentLayout extends LinearLayout implements adxe
             return b;
         }
         final TextView a = this.a;
-        if (ana.ar((View)a)) {
-            ana.ab((View)a, ana.j((View)a), n, ana.i((View)a), n2);
+        if (anb.ar((View)a)) {
+            anb.ab((View)a, anb.j((View)a), n, anb.i((View)a), n2);
         }
         else {
             ((View)a).setPadding(((View)a).getPaddingLeft(), n, ((View)a).getPaddingRight(), n2);
@@ -53,9 +54,11 @@ public class SnackbarContentLayout extends LinearLayout implements adxe
     
     public final void a(final int n, final int n2) {
         this.a.setAlpha(0.0f);
+        final ViewPropertyAnimator alpha = this.a.animate().alpha(1.0f);
         final long n3 = n2;
+        final ViewPropertyAnimator setInterpolator = alpha.setDuration(n3).setInterpolator(this.d);
         final long n4 = n;
-        this.a.animate().alpha(1.0f).setDuration(n3).setInterpolator(this.d).setStartDelay(n4).start();
+        setInterpolator.setStartDelay(n4).start();
         if (this.b.getVisibility() == 0) {
             this.b.setAlpha(0.0f);
             this.b.animate().alpha(1.0f).setDuration(n3).setInterpolator(this.d).setStartDelay(n4).start();
@@ -64,8 +67,9 @@ public class SnackbarContentLayout extends LinearLayout implements adxe
     
     public final void b(final int n) {
         this.a.setAlpha(1.0f);
+        final ViewPropertyAnimator alpha = this.a.animate().alpha(0.0f);
         final long n2 = n;
-        this.a.animate().alpha(0.0f).setDuration(n2).setInterpolator(this.d).setStartDelay(0L).start();
+        alpha.setDuration(n2).setInterpolator(this.d).setStartDelay(0L).start();
         if (this.b.getVisibility() == 0) {
             this.b.setAlpha(1.0f);
             this.b.animate().alpha(0.0f).setDuration(n2).setInterpolator(this.d).setStartDelay(0L).start();
@@ -74,8 +78,8 @@ public class SnackbarContentLayout extends LinearLayout implements adxe
     
     protected final void onFinishInflate() {
         super.onFinishInflate();
-        this.a = (TextView)this.findViewById(2131431598);
-        this.b = (Button)this.findViewById(2131431595);
+        this.a = (TextView)this.findViewById(2131431601);
+        this.b = (Button)this.findViewById(2131431598);
     }
     
     protected final void onMeasure(final int n, final int n2) {

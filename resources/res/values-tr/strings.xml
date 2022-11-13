@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Albüme dön</string>
     <string name="accessibility_navigation_back_button">Geri</string>
     <string name="accessibility_new_content_available">Yeni içerikler var</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Yeni videolar</string>
     <string name="accessibility_next">Sonraki video</string>
     <string name="accessibility_offline_button_cancel">İndirmeyi durdur</string>
     <string name="accessibility_offline_button_cannot_save">İndirilemiyor</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Verileri izleme ve denetleme</string>
     <string name="data_saving_persistent_title">Veri tasarrufu</string>
     <string name="data_saving_select_quality_every_video_switch_title">Her videonun kalitesini ayrı ayrı seçin</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Akıllı indirmelerin kalitesini düşürme</string>
     <string name="data_saving_snack_bar_action_button">Göster</string>
     <string name="data_saving_snack_bar_text">Bu işlem, veri kaydetme ayarlarınızı etkiler</string>
     <string name="data_saving_upload_wifi_only_switch_title">Yalnızca kablosuz ağdan yükle</string>

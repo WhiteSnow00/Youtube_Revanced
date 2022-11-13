@@ -9,27 +9,25 @@ import android.os.Bundle;
 import com.google.android.apps.youtube.app.common.ui.bottomui.BottomUiContainer;
 import android.view.ViewStub;
 
-public class MainLiveCreationActivity extends gtt
+public class MainLiveCreationActivity extends gub
 {
-    public gau a;
-    public acup b;
-    public tox c;
+    public gbc a;
+    public acwt b;
+    public trc c;
     
-    @Override
     protected final void e(final ViewStub viewStub) {
-        viewStub.setLayoutResource(2131624107);
+        viewStub.setLayoutResource(2131624106);
         this.a.f((BottomUiContainer)viewStub.inflate());
     }
     
-    @Override
     protected final void onCreate(final Bundle bundle) {
-        fah.m((Context)this);
+        glb.c((Context)this);
         super.onCreate(bundle);
-        this.b.g(this.findViewById(16908290));
+        this.b.h(this.findViewById(16908290));
     }
     
     public final void onUserInteraction() {
-        final tox c = this.c;
+        final trc c = this.c;
         if (c != null) {
             c.b();
         }

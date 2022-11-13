@@ -6,5 +6,5 @@ package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.contr
 
 public interface g
 {
-    void qU();
+    void ra();
 }

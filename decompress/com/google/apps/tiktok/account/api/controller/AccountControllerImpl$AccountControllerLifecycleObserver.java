@@ -10,55 +10,55 @@ import com.google.protobuf.ExtensionRegistryLite;
 import com.google.common.util.concurrent.ListenableFuture;
 import android.os.Bundle;
 
-public final class AccountControllerImpl$AccountControllerLifecycleObserver implements atz, aehd
+public final class AccountControllerImpl$AccountControllerLifecycleObserver implements aua, aeje
 {
-    public final /* synthetic */ aegq a;
+    public final aeir a;
     private boolean b;
     private boolean c;
     private Bundle d;
     
-    public AccountControllerImpl$AccountControllerLifecycleObserver(final aegq a) {
+    public AccountControllerImpl$AccountControllerLifecycleObserver(final aeir a) {
         this.a = a;
         this.c = false;
     }
     
     public final ListenableFuture g() {
-        final aegq a = this.a;
+        final aeir a = this.a;
         a.n = true;
         if (!a.m && !a.b.h() && !this.a.b.g()) {
             return this.a.g();
         }
-        return afva.m(null);
+        return afwm.m((Object)null);
     }
     
-    public final void lW(final aum aum) {
+    public final void lW(final aun aun) {
         this.a.n();
     }
     
-    public final void mM(final aum aum) {
-        this.a.f.b((aehd)this);
+    public final void mM(final aun aun) {
+        this.a.f.b((aeje)this);
     }
     
-    public final void mq(final aum aum) {
-        this.a.b.d((rd)new aegn(this), (rd)new aego(this));
-        final aegq a = this.a;
+    public final void mq(final aun aun) {
+        this.a.b.d((rd)new aeio(this), (rd)new aeip(this));
+        final aeir a = this.a;
         if (a.k == null) {
-            a.k = aehu.a().a();
+            a.k = aejv.a().a();
         }
         if (this.a.b.a().hasExtra("$tiktok$for_requirement_activity")) {
-            final afcr ak = this.a.q.ak();
+            final afeq ai = this.a.q.ai();
             String concat;
-            if (ak.isEmpty()) {
+            if (ai.isEmpty()) {
                 concat = "";
             }
             else {
-                concat = " Requirements: ".concat(String.valueOf(String.valueOf(ak)));
+                concat = " Requirements: ".concat(String.valueOf(String.valueOf(ai)));
             }
             final IllegalStateException ex = new IllegalStateException("Requirement activity's AccountController should be set up with an empty list of account requirements. Did you forget to set the AccountController with Config.forRequirementActivity?".concat(concat));
             if (!this.a.h) {
                 throw ex;
             }
-            c.i(((afig)aegq.a).g(), "The requirement activity bit is set while the requirements are not overridden with an empty list. If the activity is not a requirement Activity, then it's likely the app is started by another malicious app which sets the requirement activity bit in the Intent", "com/google/apps/tiktok/account/api/controller/AccountControllerImpl$AccountControllerLifecycleObserver", "onCreate", '\u03d6', "AccountControllerImpl.java", (Throwable)ex);
+            c.i(((afkg)aeir.a).g(), "The requirement activity bit is set while the requirements are not overridden with an empty list. If the activity is not a requirement Activity, then it's likely the app is started by another malicious app which sets the requirement activity bit in the Intent", "com/google/apps/tiktok/account/api/controller/AccountControllerImpl$AccountControllerLifecycleObserver", "onCreate", '\u03d6', "AccountControllerImpl.java", (Throwable)ex);
         }
         Bundle a2;
         if (this.a.p.getSavedStateRegistry().d) {
@@ -69,49 +69,52 @@ public final class AccountControllerImpl$AccountControllerLifecycleObserver impl
         }
         this.d = a2;
         boolean b = false;
-        Label_0235: {
+        Label_0234: {
             if (a2 != null) {
                 final boolean g = this.a.g;
                 b = false;
                 if (g) {
-                    break Label_0235;
+                    break Label_0234;
                 }
                 b = b;
                 if (!a2.getBoolean("tiktok_accounts_disabled")) {
-                    break Label_0235;
+                    break Label_0234;
                 }
             }
             b = true;
         }
         if (this.b = b) {
-            final aegq a3 = this.a;
-            final agza builder = aegr.a.createBuilder();
+            final aeir a3 = this.a;
+            final ahaz builder = ((ahbh)aeis.a).createBuilder();
             builder.copyOnWrite();
-            final aegr aegr = (aegr)builder.instance;
-            aegr.b |= 0x1;
-            aegr.c = -1;
-            a3.l = (aegr)builder.build();
-            final aegq a4 = this.a;
+            final aeis aeis = (aeis)builder.instance;
+            aeis.b |= 0x1;
+            aeis.c = -1;
+            a3.l = (aeis)builder.build();
+            final aeir a4 = this.a;
             a4.o = a4.e();
         }
         else {
-            this.a.l = (aegr)aeda.ar(this.d, "state_latest_operation", (MessageLite)aegr.a, ExtensionRegistryLite.a);
+            this.a.l = (aeis)adyf.aw(this.d, "state_latest_operation", (MessageLite)aeis.a, ExtensionRegistryLite.a);
             this.a.m = this.d.getBoolean("state_pending_op");
         }
-        final aegq a5 = this.a;
+        final aeir a5 = this.a;
         a5.d.g(a5.j);
-        this.a.f.a((aehd)this);
+        this.a.f.a((aeje)this);
     }
     
-    public final void oS(final aum aum) {
+    public final void my(final aun aun) {
+    }
+    
+    public final void oS(final aun aun) {
         if (this.c) {
             this.a.n();
             return;
         }
         this.c = true;
         if (this.b) {
-            agot.v(true ^ this.a.c.i(), (Object)"Should not have account before initial start.");
-            final aegq a = this.a;
+            adkp.I(true ^ this.a.c.i(), "Should not have account before initial start.");
+            final aeir a = this.a;
             final ListenableFuture o = a.o;
             o.getClass();
             a.m(a.k.c, o, 0);
@@ -121,8 +124,8 @@ public final class AccountControllerImpl$AccountControllerLifecycleObserver impl
             final ActivityAccountState c = this.a.c;
             AccountId.b(c.g());
             final ActivityAccountState c2 = this.a.c;
-            qcj.s();
-            final aehy d = c2.d;
+            qdt.h();
+            final aejz d = c2.d;
             c.h();
             if (c.i()) {
                 c.f.p(d);
@@ -135,5 +138,8 @@ public final class AccountControllerImpl$AccountControllerLifecycleObserver impl
             this.a.c.k();
         }
         this.d = null;
+    }
+    
+    public final void oX(final aun aun) {
     }
 }

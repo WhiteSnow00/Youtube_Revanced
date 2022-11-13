@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Atpakaļ uz albumu</string>
     <string name="accessibility_navigation_back_button">Atpakaļ</string>
     <string name="accessibility_new_content_available">Pieejams jauns saturs</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Jauni videoklipi</string>
     <string name="accessibility_next">Nākamais videoklips</string>
     <string name="accessibility_offline_button_cancel">Pārtraukt lejupielādi</string>
     <string name="accessibility_offline_button_cannot_save">Nevar lejupielādēt</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Datu pārraudzība un kontrole</string>
     <string name="data_saving_persistent_title">Datu saglabāšana</string>
     <string name="data_saving_select_quality_every_video_switch_title">Atlasiet kvalitāti katram videoklipam</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Samazināt viedo lejupielāžu kvalitāti</string>
     <string name="data_saving_snack_bar_action_button">Skatīt</string>
     <string name="data_saving_snack_bar_text">Šīs izmaiņas ietekmē datu saglabāšanas iestatījumus</string>
     <string name="data_saving_upload_wifi_only_switch_title">Augšupielāde tikai Wi-Fi tīklā</string>
@@ -735,7 +736,7 @@
     <string name="image_gallery_zero_state_text_secondary">Uzņemiet fotoattēlu, ko pievienot ziņojumam</string>
     <string name="image_upload_error">Neizdevās augšupielādēt attēlu. Mēģiniet vēlreiz.</string>
     <string name="image_upload_something_went_wrong">Hmm… Diemžēl radās problēma.</string>
-    <string name="immersive_accessibility_player_overlay">Player, double tap to bring up player controls</string>
+    <string name="immersive_accessibility_player_overlay">Atskaņotājs; veiciet dubultskārienu, lai tiktu parādītas atskaņotāja vadīklas</string>
     <string name="in_app_update_downloaded_message">Atjauninājums ir lejupielādēts</string>
     <string name="in_app_update_downloading_message">Notiek atjauninājuma lejupielāde…</string>
     <string name="in_app_update_restart_button">RESTARTĒT</string>
@@ -1458,7 +1459,7 @@
     <string name="pref_settings_video_quality_nonbeta">Videoklipu kvalitātes preferences</string>
     <string name="pref_smart_downloads_description">Pielāgojiet krātuves lietojumu viedajām lejupielādēm</string>
     <string name="pref_smart_downloads_opted_in_title">Viedās lejupielādes</string>
-    <string name="pref_smart_downloads_quality_title">Smart downloads quality</string>
+    <string name="pref_smart_downloads_quality_title">Viedo lejupielāžu kvalitāte</string>
     <string name="pref_smart_downloads_summary">Automātiski lejupielādēt ieteiktos videoklipus, izmantojot Wi-Fi tīklu</string>
     <string name="pref_subtitles_category">Subtitri</string>
     <string name="pref_upload_policy_summary">Norādiet tīkla preferences augšupielāžu veikšanai.</string>
@@ -1808,7 +1809,7 @@
     <string name="shorts_segment_import_failed_text">Neizdevās segmenta importēšana</string>
     <string name="shorts_segment_import_timeout_text">Radās noildze segmenta importēšanai</string>
     <string name="shorts_selected_duration_title">%1$d sekundes</string>
-    <string name="shorts_sound_added_tooltip_time_x">Sound added to first %1$ds</string>
+    <string name="shorts_sound_added_tooltip_time_x">Skaņa pievienota pirmajām %1$d s</string>
     <string name="shorts_speed_control_fast_label">Ātri</string>
     <string name="shorts_speed_control_fast_text">2X</string>
     <string name="shorts_speed_control_normal_label">Parasts ātrums</string>

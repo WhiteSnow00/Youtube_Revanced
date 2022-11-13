@@ -22,10 +22,10 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.support.v7.widget.AppCompatTextView;
 
-public class RichTextView extends AppCompatTextView implements aedu
+public class RichTextView extends AppCompatTextView implements aefv
 {
     public static Typeface a;
-    private aedr b;
+    private aefs b;
     
     public RichTextView(final Context context) {
         super(context);
@@ -41,7 +41,7 @@ public class RichTextView extends AppCompatTextView implements aedu
         if (this.isInEditMode()) {
             return;
         }
-        ana.N((View)this, (akv)(this.b = new aedr()));
+        anb.N((View)this, (akw)(this.b = new aefs()));
     }
     
     public final void a() {
@@ -60,10 +60,10 @@ public class RichTextView extends AppCompatTextView implements aedu
     public final boolean onTouchEvent(final MotionEvent motionEvent) {
         final boolean onTouchEvent = super.onTouchEvent(motionEvent);
         final MovementMethod movementMethod = this.getMovementMethod();
-        if (movementMethod instanceof aeek) {
-            final aeek aeek = (aeek)movementMethod;
-            if (aeek.b == motionEvent) {
-                return aeek.a;
+        if (movementMethod instanceof aegl) {
+            final aegl aegl = (aegl)movementMethod;
+            if (aegl.b == motionEvent) {
+                return aegl.a;
             }
         }
         return onTouchEvent;
@@ -84,11 +84,11 @@ public class RichTextView extends AppCompatTextView implements aedu
                         Log.w("RichTextView", "Cannot find resource: 0");
                         identifier = 0;
                     }
-                    aeda.q((Spannable)o, annotation, new TextAppearanceSpan(context, identifier));
+                    aefb.n((Spannable)o, (Object)annotation, new Object[] { new TextAppearanceSpan(context, identifier) });
                 }
                 else if ("link".equals(key)) {
                     annotation.getValue();
-                    final aedv aedv = new aedv();
+                    final aefw aefw = new aefw();
                     TypefaceSpan typefaceSpan;
                     if (RichTextView.a != null) {
                         typefaceSpan = new TypefaceSpan(RichTextView.a);
@@ -96,7 +96,7 @@ public class RichTextView extends AppCompatTextView implements aedu
                     else {
                         typefaceSpan = new TypefaceSpan("sans-serif-medium");
                     }
-                    aeda.q((Spannable)o, annotation, aedv, typefaceSpan);
+                    aefb.n((Spannable)o, (Object)annotation, new Object[] { aefw, typefaceSpan });
                 }
             }
         }
@@ -105,7 +105,7 @@ public class RichTextView extends AppCompatTextView implements aedu
             b2 = false;
         }
         if (b2) {
-            this.setMovementMethod((MovementMethod)new aeek());
+            this.setMovementMethod((MovementMethod)new aegl());
         }
         else {
             this.setMovementMethod((MovementMethod)null);

@@ -9,7 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.content.Context;
 
-public final class LinearProgressIndicator extends adup
+public final class LinearProgressIndicator extends adwr
 {
     public LinearProgressIndicator(final Context context) {
         this(context, null);
@@ -19,27 +19,31 @@ public final class LinearProgressIndicator extends adup
         this(context, set, 2130969740);
     }
     
-    public LinearProgressIndicator(final Context context, final AttributeSet set, final int n) {
-        super(context, set, n, 2132085198);
+    public LinearProgressIndicator(Context context, final AttributeSet set, final int n) {
+        super(context, set, n, 2132085199);
         final Context context2 = this.getContext();
-        final advp advp = (advp)this.a;
-        final advh advh = new advh(advp);
+        final adxr adxr = (adxr)this.a;
+        final adxj adxj = new adxj(adxr);
         Object o;
-        if (advp.g == 0) {
-            o = new advk(advp);
+        if (adxr.g == 0) {
+            o = new adxm(adxr);
         }
         else {
-            o = new advo(context2, advp);
+            o = new adxq(context2, adxr);
         }
-        this.setIndeterminateDrawable((Drawable)new advg(context2, (aduq)advp, (adve)advh, (advf)o));
-        final Context context3 = this.getContext();
-        final advp advp2 = (advp)this.a;
-        this.setProgressDrawable((Drawable)new aduz(context3, (aduq)advp2, (adve)new advh(advp2)));
+        this.setIndeterminateDrawable((Drawable)new adxi(context2, (adws)adxr, (adxg)adxj, (adxh)o));
+        context = this.getContext();
+        final adxr adxr2 = (adxr)this.a;
+        this.setProgressDrawable((Drawable)new adxb(context, (adws)adxr2, (adxg)new adxj(adxr2)));
+    }
+    
+    public final /* bridge */ adws a(final Context context, final AttributeSet set) {
+        return (adws)new adxr(context, set);
     }
     
     public final void g(final int n) {
-        final aduq a = this.a;
-        if (a != null && ((advp)a).g == 0 && this.isIndeterminate()) {
+        final adws a = this.a;
+        if (a != null && ((adxr)a).g == 0 && this.isIndeterminate()) {
             return;
         }
         super.g(n);
@@ -47,32 +51,36 @@ public final class LinearProgressIndicator extends adup
     
     protected final void onLayout(final boolean b, int h, final int n, final int n2, final int n3) {
         super.onLayout(b, h, n, n2, n3);
-        final advp advp = (advp)this.a;
-        h = advp.h;
+        final adxr adxr = (adxr)this.a;
+        h = adxr.h;
         boolean i;
         final boolean b2 = i = true;
         Label_0091: {
             if (h != 1) {
-                if (ana.f((View)this) == 1) {
+                if (anb.f((View)this) == 1) {
                     i = b2;
-                    if (((advp)this.a).h == 2) {
+                    if (((adxr)this.a).h == 2) {
                         break Label_0091;
                     }
                 }
-                i = (ana.f((View)this) == 0 && ((advp)this.a).h == 3 && b2);
+                i = (anb.f((View)this) == 0 && ((adxr)this.a).h == 3 && b2);
             }
         }
-        advp.i = i;
+        adxr.i = i;
     }
     
-    protected final void onSizeChanged(int n, int n2, final int n3, final int n4) {
-        n -= this.getPaddingLeft() + this.getPaddingRight();
-        n2 -= this.getPaddingTop() + this.getPaddingBottom();
-        final advg c = this.c();
+    protected final void onSizeChanged(int n, int n2, int paddingBottom, int paddingTop) {
+        final int paddingLeft = this.getPaddingLeft();
+        final int paddingRight = this.getPaddingRight();
+        paddingTop = this.getPaddingTop();
+        paddingBottom = this.getPaddingBottom();
+        final adxi c = this.c();
+        n -= paddingLeft + paddingRight;
+        n2 -= paddingTop + paddingBottom;
         if (c != null) {
             ((Drawable)c).setBounds(0, 0, n, n2);
         }
-        final aduz b = this.b();
+        final adxb b = this.b();
         if (b != null) {
             ((Drawable)b).setBounds(0, 0, n, n2);
         }

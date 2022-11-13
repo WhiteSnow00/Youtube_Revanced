@@ -6,20 +6,20 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint extends agzi implements ahax
+public final class SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint extends ahbh implements ahcw
 {
     public static final SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint a;
-    private static volatile ahbe d;
-    public static final agzg sharePrivateVideoEndpoint;
+    private static volatile ahdd d;
+    public static final ahbf sharePrivateVideoEndpoint;
     public String b;
-    public aioe c;
+    public aiqj c;
     private int e;
     private byte f;
     
     static {
         final SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint a2 = new SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint();
-        agzi.registerDefaultInstance((Class)SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint.class, (agzi)(a = a2));
-        sharePrivateVideoEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 117735229, ahcm.k, (Class)SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint.class);
+        ahbh.registerDefaultInstance((Class)SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint.class, (ahbh)(a = a2));
+        sharePrivateVideoEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 117735229, ahek.k, (Class)SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint.class);
     }
     
     private SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint() {
@@ -27,20 +27,20 @@ public final class SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint
         this.b = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint.d) == null) {
                     synchronized (SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint.class) {
                         if (SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint.d == null) {
-                            SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint.d = (ahbe)new agzb((agzi)SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint.a);
+                            SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint.d = (ahdd)new ahba((ahbh)SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint.a);
                         }
                     }
                 }
@@ -50,7 +50,7 @@ public final class SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint
                 return SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint.a);
+                return new ahaz((ahbh)SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint.a);
             }
             case 3: {
                 return new SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint();
@@ -60,9 +60,9 @@ public final class SharePrivateVideoEndpointOuterClass$SharePrivateVideoEndpoint
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

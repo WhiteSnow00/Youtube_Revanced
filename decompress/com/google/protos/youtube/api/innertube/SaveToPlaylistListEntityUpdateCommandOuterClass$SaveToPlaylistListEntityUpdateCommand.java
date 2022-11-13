@@ -6,11 +6,11 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand extends agzi implements ahax
+public final class SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand extends ahbh implements ahcw
 {
     public static final SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand a;
-    private static volatile ahbe e;
-    public static final agzg saveToPlaylistListEntityUpdateCommand;
+    private static volatile ahdd e;
+    public static final ahbf saveToPlaylistListEntityUpdateCommand;
     public String b;
     public String c;
     public int d;
@@ -18,8 +18,8 @@ public final class SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylis
     
     static {
         final SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand a2 = new SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand();
-        agzi.registerDefaultInstance((Class)SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.class, (agzi)(a = a2));
-        saveToPlaylistListEntityUpdateCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 455257696, ahcm.k, (Class)SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.class);
+        ahbh.registerDefaultInstance((Class)SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.class, (ahbh)(a = a2));
+        saveToPlaylistListEntityUpdateCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 455257696, ahek.k, (Class)SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.class);
     }
     
     private SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand() {
@@ -27,18 +27,18 @@ public final class SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylis
         this.c = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.e) == null) {
                     synchronized (SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.class) {
                         if (SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.e == null) {
-                            SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.e = (ahbe)new agzb((agzi)SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.a);
+                            SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.e = (ahdd)new ahba((ahbh)SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.a);
                         }
                     }
                 }
@@ -48,13 +48,13 @@ public final class SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylis
                 return SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.a;
             }
             case 4: {
-                return new agza((agzi)SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.a);
+                return new ahaz((ahbh)SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.a);
             }
             case 3: {
                 return new SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand();
             }
             case 2: {
-                return newMessageInfo((MessageLite)SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.a, "\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0000\u0000\u0001\u1008\u0000\u0002\u1008\u0001\u0003\u100c\u0002", new Object[] { "f", "b", "c", "d", angs.b });
+                return newMessageInfo((MessageLite)SaveToPlaylistListEntityUpdateCommandOuterClass$SaveToPlaylistListEntityUpdateCommand.a, "\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0000\u0000\u0001\u1008\u0000\u0002\u1008\u0001\u0003\u100c\u0002", new Object[] { "f", "b", "c", "d", anic.a });
             }
             case 1: {
                 return null;

@@ -4,18 +4,17 @@
 
 package com.google.vr.sdk.proto;
 
-final class CardboardDevice$DeviceParams$ButtonType$ButtonTypeVerifier implements agzo
+final class CardboardDevice$DeviceParams$ButtonType$ButtonTypeVerifier implements ahbn
 {
-    static final agzo INSTANCE;
+    static final ahbn INSTANCE;
     
     static {
-        INSTANCE = new CardboardDevice$DeviceParams$ButtonType$ButtonTypeVerifier();
+        INSTANCE = (ahbn)new CardboardDevice$DeviceParams$ButtonType$ButtonTypeVerifier();
     }
     
     private CardboardDevice$DeviceParams$ButtonType$ButtonTypeVerifier() {
     }
     
-    @Override
     public boolean isInRange(final int n) {
         return CardboardDevice$DeviceParams$ButtonType.forNumber(n) != null;
     }

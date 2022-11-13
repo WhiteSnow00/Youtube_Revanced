@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class PlayerOverlayVideoInteractionsOuterClass
 {
-    public static final agzg videoInteractionPopUpRenderer;
+    public static final ahbf videoInteractionPopUpRenderer;
     
     static {
-        videoInteractionPopUpRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)aneu.a, (MessageLite)aneu.a, (agzn)null, 232525688, ahcm.k, (Class)aneu.class);
+        videoInteractionPopUpRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)angy.a, (MessageLite)angy.a, (ahbm)null, 232525688, ahek.k, (Class)angy.class);
     }
     
     private PlayerOverlayVideoInteractionsOuterClass() {

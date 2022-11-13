@@ -44,11 +44,11 @@ public class MaterialToolbar extends Toolbar
     }
     
     public MaterialToolbar(Context context, final AttributeSet set, int n) {
-        super(adyy.a(context, set, n, 2132085267), set, n);
+        super(aeba.a(context, set, n, 2132085268), set, n);
         context = this.getContext();
-        final int[] e = adqx.e;
+        final int[] e = adsz.e;
         final int n2 = 0;
-        final TypedArray a = aduf.a(context, set, e, n, 2132085267, new int[0]);
+        final TypedArray a = adwh.a(context, set, e, n, 2132085268, new int[0]);
         if (a.hasValue(2)) {
             this.A = a.getColor(2, -1);
             final Drawable e2 = this.e();
@@ -70,59 +70,59 @@ public class MaterialToolbar extends Toolbar
         if (background != null && !(background instanceof ColorDrawable)) {
             return;
         }
-        final adwf adwf = new adwf();
+        final adyh adyh = new adyh();
         n = n2;
         if (background != null) {
             n = ((ColorDrawable)background).getColor();
         }
-        adwf.o(ColorStateList.valueOf(n));
-        adwf.m(context);
-        adwf.n(ana.a((View)this));
-        ana.Q((View)this, (Drawable)adwf);
+        adyh.o(ColorStateList.valueOf(n));
+        adyh.m(context);
+        adyh.n(anb.a((View)this));
+        anb.Q((View)this, (Drawable)adyh);
     }
     
     private final void K(final View view, final Pair pair) {
-        final int measuredWidth = this.getMeasuredWidth();
-        final int measuredWidth2 = view.getMeasuredWidth();
-        final int n = measuredWidth / 2 - measuredWidth2 / 2;
-        final int n2 = measuredWidth2 + n;
-        final int max = Math.max(Math.max((int)pair.first - n, 0), Math.max(n2 - (int)pair.second, 0));
-        int n3 = n;
+        final int n = this.getMeasuredWidth() / 2;
+        final int measuredWidth = view.getMeasuredWidth();
+        final int n2 = n - measuredWidth / 2;
+        final int n3 = measuredWidth + n2;
+        final int max = Math.max(Math.max((int)pair.first - n2, 0), Math.max(n3 - (int)pair.second, 0));
         int n4 = n2;
+        int n5 = n3;
         if (max > 0) {
-            n3 = n + max;
-            n4 = n2 - max;
-            view.measure(View$MeasureSpec.makeMeasureSpec(n4 - n3, 1073741824), view.getMeasuredHeightAndState());
+            n4 = n2 + max;
+            n5 = n3 - max;
+            view.measure(View$MeasureSpec.makeMeasureSpec(n5 - n4, 1073741824), view.getMeasuredHeightAndState());
         }
-        view.layout(n3, view.getTop(), n4, view.getBottom());
+        view.layout(n4, view.getTop(), n5, view.getBottom());
     }
     
     protected final void onAttachedToWindow() {
         super.onAttachedToWindow();
-        adwd.ae((View)this);
+        adyf.f((View)this);
     }
     
-    protected final void onLayout(final boolean b, int n, int paddingLeft, int i, int n2) {
-        super.onLayout(b, n, paddingLeft, i, n2);
+    protected final void onLayout(final boolean b, int n, int paddingLeft, int n2, int i) {
+        super.onLayout(b, n, paddingLeft, n2, i);
         final boolean b2 = this.B;
         final int n3 = 0;
         final ImageView imageView = null;
         if (b2 || this.C) {
-            final List a = adug.a((Toolbar)this, super.o);
+            final List a = adwi.a((Toolbar)this, super.o);
             Object o;
             if (a.isEmpty()) {
                 o = null;
             }
             else {
-                o = Collections.min((Collection<? extends TextView>)a, (Comparator<? super TextView>)adug.a);
+                o = Collections.min((Collection<? extends TextView>)a, (Comparator<? super TextView>)adwi.a);
             }
-            final List a2 = adug.a((Toolbar)this, super.p);
+            final List a2 = adwi.a((Toolbar)this, super.p);
             Object o2;
             if (a2.isEmpty()) {
                 o2 = null;
             }
             else {
-                o2 = Collections.max((Collection<? extends TextView>)a2, (Comparator<? super TextView>)adug.a);
+                o2 = Collections.max((Collection<? extends TextView>)a2, (Comparator<? super TextView>)adwi.a);
             }
             if (o != null || o2 != null) {
                 n = this.getMeasuredWidth();
@@ -217,7 +217,7 @@ public class MaterialToolbar extends Toolbar
             mutate = drawable;
             if (this.A != null) {
                 mutate = drawable.mutate();
-                aip.f(mutate, this.A);
+                aiq.f(mutate, (int)this.A);
             }
         }
         super.s(mutate);
@@ -225,6 +225,6 @@ public class MaterialToolbar extends Toolbar
     
     public final void setElevation(final float elevation) {
         super.setElevation(elevation);
-        adwd.ad((View)this, elevation);
+        adyf.e((View)this, elevation);
     }
 }

@@ -57,6 +57,7 @@ public class PlayCoreDialogWrapperActivity extends Activity
             if (extras == null) {
                 this.a();
                 this.finish();
+                return;
             }
             final PendingIntent pendingIntent = (PendingIntent)extras.get("confirmation_intent");
             try {

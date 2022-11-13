@@ -5,18 +5,18 @@
 package com.google.android.youtube.api.jar.client;
 
 import android.content.Intent;
-import com.google.android.apps.youtube.embeddedplayer.service.ui.player.remoteloaded.a;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.remoteloaded.a;
 
 public final class f extends com.google.android.apps.youtube.embeddedplayer.service.jar.client.f
 {
-    public final /* synthetic */ RemoteEmbeddedPlayer a;
+    public final RemoteEmbeddedPlayer a;
     
     public f(final RemoteEmbeddedPlayer a) {
         this.a = a;
     }
     
     public final String a(final String s) {
-        afqg.r("Embed config is not supported in RemoteEmbeddedPlayer.");
+        afse.o("Embed config is not supported in RemoteEmbeddedPlayer.");
         return "";
     }
     
@@ -25,16 +25,16 @@ public final class f extends com.google.android.apps.youtube.embeddedplayer.serv
     }
     
     public final void g(final boolean b, final long n) {
-        this.a.h.post((Runnable)new ynq(this, n, 9));
+        this.a.h.post((Runnable)new ypp(this, n, 9));
         this.a.W(b);
     }
     
     public final void h() {
-        this.a.h.post((Runnable)new d(this, 1));
+        this.a.h.post((Runnable)new d(this, 0));
     }
     
     public final void i() {
-        this.a.h.post((Runnable)new d(this, 3));
+        this.a.h.post((Runnable)new d(this, 4));
     }
     
     public final void j(final String s) {
@@ -217,7 +217,7 @@ public final class f extends com.google.android.apps.youtube.embeddedplayer.serv
     }
     
     public final void k(final boolean b) {
-        this.a.h.post((Runnable)new a(this, b, 16));
+        this.a.h.post((Runnable)new a(this, b, 18));
         this.a.X(b);
     }
     
@@ -227,7 +227,7 @@ public final class f extends com.google.android.apps.youtube.embeddedplayer.serv
     }
     
     public final void m() {
-        this.a.h.post((Runnable)new d(this, 2));
+        this.a.h.post((Runnable)new d(this, 3));
         this.a.Z();
     }
     
@@ -236,7 +236,7 @@ public final class f extends com.google.android.apps.youtube.embeddedplayer.serv
     }
     
     public final void o(final long n) {
-        this.a.h.post((Runnable)new ynq(this, n, 8));
+        this.a.h.post((Runnable)new ypp(this, n, 8));
         this.a.ab();
     }
     
@@ -246,7 +246,7 @@ public final class f extends com.google.android.apps.youtube.embeddedplayer.serv
     }
     
     public final void q() {
-        this.a.h.post((Runnable)new d(this, 4));
+        this.a.h.post((Runnable)new d(this, 5));
     }
     
     public final void r() {
@@ -262,12 +262,12 @@ public final class f extends com.google.android.apps.youtube.embeddedplayer.serv
     }
     
     public final void u(final long n) {
-        this.a.h.post((Runnable)new ynq(this, n, 10));
+        this.a.h.post((Runnable)new ypp(this, n, 10));
         this.a.af(n);
     }
     
     public final void v() {
-        this.a.h.post((Runnable)new d(this, 5));
+        this.a.h.post((Runnable)new d(this, 6));
         this.a.ag();
     }
     
@@ -276,7 +276,7 @@ public final class f extends com.google.android.apps.youtube.embeddedplayer.serv
     }
     
     public final void x() {
-        this.a.h.post((Runnable)new d(this, 0));
+        this.a.h.post((Runnable)new d(this, 2));
         this.a.ai();
     }
     

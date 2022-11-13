@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class RefreshConfigCommandOuterClass$RefreshConfigCommand extends agzi implements ahax
+public final class RefreshConfigCommandOuterClass$RefreshConfigCommand extends ahbh implements ahcw
 {
     public static final RefreshConfigCommandOuterClass$RefreshConfigCommand a;
-    private static volatile ahbe b;
-    public static final agzg refreshConfigCommand;
+    private static volatile ahdd b;
+    public static final ahbf refreshConfigCommand;
     
     static {
         final RefreshConfigCommandOuterClass$RefreshConfigCommand a2 = new RefreshConfigCommandOuterClass$RefreshConfigCommand();
-        agzi.registerDefaultInstance((Class)RefreshConfigCommandOuterClass$RefreshConfigCommand.class, (agzi)(a = a2));
-        refreshConfigCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 191373512, ahcm.k, (Class)RefreshConfigCommandOuterClass$RefreshConfigCommand.class);
+        ahbh.registerDefaultInstance((Class)RefreshConfigCommandOuterClass$RefreshConfigCommand.class, (ahbh)(a = a2));
+        refreshConfigCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 191373512, ahek.k, (Class)RefreshConfigCommandOuterClass$RefreshConfigCommand.class);
     }
     
     private RefreshConfigCommandOuterClass$RefreshConfigCommand() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = RefreshConfigCommandOuterClass$RefreshConfigCommand.b) == null) {
                     synchronized (RefreshConfigCommandOuterClass$RefreshConfigCommand.class) {
                         if (RefreshConfigCommandOuterClass$RefreshConfigCommand.b == null) {
-                            RefreshConfigCommandOuterClass$RefreshConfigCommand.b = (ahbe)new agzb((agzi)RefreshConfigCommandOuterClass$RefreshConfigCommand.a);
+                            RefreshConfigCommandOuterClass$RefreshConfigCommand.b = (ahdd)new ahba((ahbh)RefreshConfigCommandOuterClass$RefreshConfigCommand.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class RefreshConfigCommandOuterClass$RefreshConfigCommand extends a
                 return RefreshConfigCommandOuterClass$RefreshConfigCommand.a;
             }
             case 4: {
-                return new agza((agzi)RefreshConfigCommandOuterClass$RefreshConfigCommand.a);
+                return new ahaz((ahbh)RefreshConfigCommandOuterClass$RefreshConfigCommand.a);
             }
             case 3: {
                 return new RefreshConfigCommandOuterClass$RefreshConfigCommand();

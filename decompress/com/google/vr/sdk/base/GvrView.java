@@ -23,7 +23,7 @@ public class GvrView extends FrameLayout
         if (this.isInEditMode()) {
             return;
         }
-        if (aqzg.t(context) != null) {
+        if (arbu.t(context) != null) {
             final CardboardViewApi cardboardViewApi = ImplementationSelector.createCardboardViewApi(context);
             this.cardboardViewApi = cardboardViewApi;
             this.addView(cardboardViewApi.getRootView(), 0);

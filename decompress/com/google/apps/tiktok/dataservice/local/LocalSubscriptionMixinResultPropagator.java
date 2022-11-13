@@ -8,84 +8,92 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.Executor;
 
-public final class LocalSubscriptionMixinResultPropagator extends aemd implements atz
+public final class LocalSubscriptionMixinResultPropagator extends aeod implements aua
 {
-    private final aemd a;
-    private final aelv b;
+    private final aeod a;
+    private final aenv b;
     private final Executor c;
     private final Map d;
     
-    public LocalSubscriptionMixinResultPropagator(final aemd a, final adcr adcr, final aelv b, final Executor c, final auh auh, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4) {
+    public LocalSubscriptionMixinResultPropagator(final aeod a, final aeea aeea, final aenv b, final Executor c, final aui aui, final byte[] array, final byte[] array2) {
         this.a = a;
         this.b = b;
         this.c = c;
-        this.d = (Map)adcr.R(2131431182, (aeog)aemg.a, (aeof)aemh.a);
-        auh.b((aul)this);
+        this.d = (Map)aeea.d(2131431185, (aeqg)aeog.a, (aeqf)aeoh.a);
+        aui.b((aum)this);
     }
     
-    @Override
-    public final ahbz h(final aelx aelx, final aexq aexq) {
-        qcj.s();
-        final ahbz h = this.a.h(aelx, aexq);
+    public final aefb h(final aenx aenx, final aezp aezp) {
+        qdt.h();
+        final aefb h = this.a.h(aenx, aezp);
         final Map d = this.d;
         final Integer value = 2131427986;
-        aemr aemr;
-        if ((aemr = d.get(value)) == null) {
-            aemr = new aemr(this.b, this.c);
-            this.d.put(value, aemr);
-            final xpb xpb = (xpb)((aexw)aexq).a;
-            qcj.s();
-            agot.D(aemr.e ^ true);
-            final aemq c = aemr.c;
+        aeor aeor;
+        if ((aeor = d.get(value)) == null) {
+            aeor = new aeor(this.b, this.c);
+            this.d.put(value, aeor);
+            final xra xra = (xra)((aezv)aezp).a;
+            qdt.h();
+            adkp.Q(aeor.e ^ true);
+            final aeoq c = aeor.c;
             if (c != null) {
                 c.close();
-                final aelv a = aemr.a;
-                final aemq c2 = aemr.c;
-                final xpb f = c2.f;
-                a.b((Object)uhz.a, c2);
+                final aenv a = aeor.a;
+                final aeoq c2 = aeor.c;
+                final xra f = c2.f;
+                a.b(uka.a, c2);
             }
-            aemr.c = new aemq(aemr, xpb, aemr.b, (byte[])null, (byte[])null, (byte[])null, (byte[])null);
-            final aelv a2 = aemr.a;
-            final aemq c3 = aemr.c;
-            final xpb f2 = c3.f;
-            a2.a((Object)uhz.a, c3);
+            aeor.c = new aeoq(aeor, xra, aeor.b, null, null, null);
+            final aenv a2 = aeor.a;
+            final aeoq c3 = aeor.c;
+            final xra f2 = c3.f;
+            a2.a(uka.a, c3);
         }
-        qcj.s();
-        agot.D(aemr.e ^ true);
-        aemr.f = h;
-        final aemq c4 = aemr.c;
+        qdt.h();
+        adkp.Q(aeor.e ^ true);
+        aeor.f = h;
+        final aeoq c4 = aeor.c;
         if (c4 != null) {
             c4.a();
         }
-        return new ahbz((byte[])null);
+        return new aefb((byte[])null);
     }
     
-    public final void mM(final aum aum) {
-        qcj.s();
-        for (final aemr aemr : this.d.values()) {
-            qcj.s();
-            agot.D(aemr.e ^ true);
-            aemr.f = null;
+    public final void lW(final aun aun) {
+    }
+    
+    public final void mM(final aun aun) {
+        qdt.h();
+        for (final aeor aeor : this.d.values()) {
+            qdt.h();
+            adkp.Q(aeor.e ^ true);
+            aeor.f = null;
         }
     }
     
-    public final void oS(final aum aum) {
-        qcj.s();
-        for (final aemr aemr : this.d.values()) {
-            qcj.s();
-            aemr.d = true;
-            final aemq c = aemr.c;
+    public final void mq(final aun aun) {
+    }
+    
+    public final void my(final aun aun) {
+    }
+    
+    public final void oS(final aun aun) {
+        qdt.h();
+        for (final aeor aeor : this.d.values()) {
+            qdt.h();
+            aeor.d = true;
+            final aeoq c = aeor.c;
             if (c != null) {
                 c.a();
             }
         }
     }
     
-    public final void oW(final aum aum) {
-        qcj.s();
-        for (final aemr aemr : this.d.values()) {
-            qcj.s();
-            aemr.d = false;
+    public final void oX(final aun aun) {
+        qdt.h();
+        for (final aeor aeor : this.d.values()) {
+            qdt.h();
+            aeor.d = false;
         }
     }
 }

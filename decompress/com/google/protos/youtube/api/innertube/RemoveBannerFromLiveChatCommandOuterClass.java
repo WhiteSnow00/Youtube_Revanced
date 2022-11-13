@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class RemoveBannerFromLiveChatCommandOuterClass
 {
-    public static final agzg removeBannerForLiveChatCommand;
+    public static final ahbf removeBannerForLiveChatCommand;
     
     static {
-        removeBannerForLiveChatCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ansp.a, (MessageLite)ansp.a, (agzn)null, 251348489, ahcm.k, (Class)ansp.class);
+        removeBannerForLiveChatCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)anus.a, (MessageLite)anus.a, (ahbm)null, 251348489, ahek.k, (Class)anus.class);
     }
     
     private RemoveBannerFromLiveChatCommandOuterClass() {

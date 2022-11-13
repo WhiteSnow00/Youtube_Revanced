@@ -7,7 +7,7 @@ package com.google.vr.sdk.proto;
 import java.util.List;
 import com.google.protobuf.MessageLite;
 
-public final class CardboardDevice$DaydreamInternalParams extends agzi implements ahax
+public final class CardboardDevice$DaydreamInternalParams extends ahbh implements ahcw
 {
     public static final int ALIGNMENT_MARKERS_FIELD_NUMBER = 2;
     public static final int CLAMP_DISTORTION_TO_MAXIMUM_FIELD_OF_VIEW_FIELD_NUMBER = 8;
@@ -15,13 +15,13 @@ public final class CardboardDevice$DaydreamInternalParams extends agzi implement
     private static final CardboardDevice$DaydreamInternalParams DEFAULT_INSTANCE;
     public static final int DISABLE_VIGNETTE_FIELD_NUMBER = 9;
     public static final int DISTORTION_MESH_RESOLUTION_FIELD_NUMBER = 6;
-    private static volatile ahbe PARSER;
+    private static volatile ahdd PARSER;
     public static final int SENSOR_ORIENTATION_INDEPENDENT_OF_DISPLAY_FIELD_NUMBER = 4;
     public static final int SWAP_DISPLAYS_FIELD_NUMBER = 10;
     public static final int USE_ROTATIONAL_ALIGNMENT_CORRECTION_FIELD_NUMBER = 3;
     public static final int VERSION_FIELD_NUMBER = 1;
     public static final int VIGNETTE_PARAMS_FIELD_NUMBER = 5;
-    private agzy alignmentMarkers_;
+    private ahbx alignmentMarkers_;
     private int bitField0_;
     private boolean clampDistortionToMaximumFieldOfView_;
     private boolean clipFieldOfViewToDisplay_;
@@ -34,7 +34,7 @@ public final class CardboardDevice$DaydreamInternalParams extends agzi implement
     private CardboardDevice$VignetteParams vignetteParams_;
     
     static {
-        agzi.registerDefaultInstance((Class)CardboardDevice$DaydreamInternalParams.class, (agzi)(DEFAULT_INSTANCE = new CardboardDevice$DaydreamInternalParams()));
+        ahbh.registerDefaultInstance((Class)CardboardDevice$DaydreamInternalParams.class, (ahbh)(DEFAULT_INSTANCE = new CardboardDevice$DaydreamInternalParams()));
     }
     
     private CardboardDevice$DaydreamInternalParams() {
@@ -43,22 +43,26 @@ public final class CardboardDevice$DaydreamInternalParams extends agzi implement
         this.clipFieldOfViewToDisplay_ = true;
     }
     
+    static CardboardDevice$DaydreamInternalParams access$6300() {
+        return CardboardDevice$DaydreamInternalParams.DEFAULT_INSTANCE;
+    }
+    
     public static CardboardDevice$DaydreamInternalParams getDefaultInstance() {
         return CardboardDevice$DaydreamInternalParams.DEFAULT_INSTANCE;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe parser;
+                final ahdd parser;
                 if ((parser = CardboardDevice$DaydreamInternalParams.PARSER) == null) {
                     synchronized (CardboardDevice$DaydreamInternalParams.class) {
                         if (CardboardDevice$DaydreamInternalParams.PARSER == null) {
-                            CardboardDevice$DaydreamInternalParams.PARSER = (ahbe)new agzb((agzi)CardboardDevice$DaydreamInternalParams.DEFAULT_INSTANCE);
+                            CardboardDevice$DaydreamInternalParams.PARSER = (ahdd)new ahba((ahbh)CardboardDevice$DaydreamInternalParams.DEFAULT_INSTANCE);
                         }
                     }
                 }
@@ -90,7 +94,7 @@ public final class CardboardDevice$DaydreamInternalParams extends agzi implement
     }
     
     public List getAlignmentMarkersList() {
-        return this.alignmentMarkers_;
+        return (List)this.alignmentMarkers_;
     }
     
     public boolean getUseRotationalAlignmentCorrection() {

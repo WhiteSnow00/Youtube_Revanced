@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class PlayerThreedRendererOuterClass
 {
-    public static final agzg playerThreedRenderer;
+    public static final ahbf playerThreedRenderer;
     
     static {
-        playerThreedRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anfi.a, (MessageLite)anfi.a, (agzn)null, 58121298, ahcm.k, (Class)anfi.class);
+        playerThreedRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anhm.a, (MessageLite)anhm.a, (ahbm)null, 58121298, ahek.k, (Class)anhm.class);
     }
     
     private PlayerThreedRendererOuterClass() {

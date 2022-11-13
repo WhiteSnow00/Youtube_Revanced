@@ -42,8 +42,15 @@ public final class SidecarAdapter
         this.verificationMode = verificationMode;
     }
     
+    public SidecarAdapter(VerificationMode quiet, final int n, final atny atny) {
+        if ((n & 0x1) != 0x0) {
+            quiet = VerificationMode.QUIET;
+        }
+        this(quiet);
+    }
+    
     private final boolean isEqualSidecarDisplayFeature(final SidecarDisplayFeature sidecarDisplayFeature, final SidecarDisplayFeature sidecarDisplayFeature2) {
-        return atnh.c((Object)sidecarDisplayFeature, (Object)sidecarDisplayFeature2) || (sidecarDisplayFeature != null && sidecarDisplayFeature2 != null && sidecarDisplayFeature.getType() == sidecarDisplayFeature2.getType() && atnh.c((Object)sidecarDisplayFeature.getRect(), (Object)sidecarDisplayFeature2.getRect()));
+        return atoc.c((Object)sidecarDisplayFeature, (Object)sidecarDisplayFeature2) || (sidecarDisplayFeature != null && sidecarDisplayFeature2 != null && sidecarDisplayFeature.getType() == sidecarDisplayFeature2.getType() && atoc.c((Object)sidecarDisplayFeature.getRect(), (Object)sidecarDisplayFeature2.getRect()));
     }
     
     private final boolean isEqualSidecarDisplayFeatures(final List list, final List list2) {
@@ -68,7 +75,7 @@ public final class SidecarAdapter
     }
     
     public final boolean isEqualSidecarDeviceState(final SidecarDeviceState sidecarDeviceState, final SidecarDeviceState sidecarDeviceState2) {
-        if (atnh.c((Object)sidecarDeviceState, (Object)sidecarDeviceState2)) {
+        if (atoc.c((Object)sidecarDeviceState, (Object)sidecarDeviceState2)) {
             return true;
         }
         if (sidecarDeviceState == null) {
@@ -82,7 +89,7 @@ public final class SidecarAdapter
     }
     
     public final boolean isEqualSidecarWindowLayoutInfo(final SidecarWindowLayoutInfo sidecarWindowLayoutInfo, final SidecarWindowLayoutInfo sidecarWindowLayoutInfo2) {
-        if (atnh.c((Object)sidecarWindowLayoutInfo, (Object)sidecarWindowLayoutInfo2)) {
+        if (atoc.c((Object)sidecarWindowLayoutInfo, (Object)sidecarWindowLayoutInfo2)) {
             return true;
         }
         if (sidecarWindowLayoutInfo == null) {
@@ -98,7 +105,7 @@ public final class SidecarAdapter
     public final WindowLayoutInfo translate(final SidecarWindowLayoutInfo sidecarWindowLayoutInfo, final SidecarDeviceState sidecarDeviceState) {
         sidecarDeviceState.getClass();
         if (sidecarWindowLayoutInfo == null) {
-            return new WindowLayoutInfo((List)atkh.a);
+            return new WindowLayoutInfo((List)atlc.a);
         }
         final SidecarDeviceState sidecarDeviceState2 = new SidecarDeviceState();
         final SidecarAdapter$Companion companion = SidecarAdapter.Companion;
@@ -126,7 +133,7 @@ public final class SidecarAdapter
         final SpecificationComputer$Companion companion = SpecificationComputer.Companion;
         final String tag = SidecarAdapter.TAG;
         tag.getClass();
-        final SidecarDisplayFeature sidecarDisplayFeature2 = (SidecarDisplayFeature)SpecificationComputer$Companion.startSpecification$default(companion, sidecarDisplayFeature, tag, this.verificationMode, null, 4, null).require("Type must be either TYPE_FOLD or TYPE_HINGE", (atml)SidecarAdapter$translate$checkedFeature$1.INSTANCE).require("Feature bounds must not be 0", (atml)SidecarAdapter$translate$checkedFeature$2.INSTANCE).require("TYPE_FOLD must have 0 area", (atml)SidecarAdapter$translate$checkedFeature$3.INSTANCE).require("Feature be pinned to either left or top", (atml)SidecarAdapter$translate$checkedFeature$4.INSTANCE).compute();
+        final SidecarDisplayFeature sidecarDisplayFeature2 = (SidecarDisplayFeature)SpecificationComputer$Companion.startSpecification$default(companion, (Object)sidecarDisplayFeature, tag, this.verificationMode, (Logger)null, 4, (Object)null).require("Type must be either TYPE_FOLD or TYPE_HINGE", (atng)SidecarAdapter$translate$checkedFeature$1.INSTANCE).require("Feature bounds must not be 0", (atng)SidecarAdapter$translate$checkedFeature$2.INSTANCE).require("TYPE_FOLD must have 0 area", (atng)SidecarAdapter$translate$checkedFeature$3.INSTANCE).require("Feature be pinned to either left or top", (atng)SidecarAdapter$translate$checkedFeature$4.INSTANCE).compute();
         if (sidecarDisplayFeature2 == null) {
             return null;
         }

@@ -22,12 +22,44 @@ public final class SafeWindowLayoutComponentProvider
         this.consumerAdapter = consumerAdapter;
     }
     
+    public static final boolean access$doesReturn(final SafeWindowLayoutComponentProvider safeWindowLayoutComponentProvider, final Method method, final atow atow) {
+        return safeWindowLayoutComponentProvider.doesReturn(method, atow);
+    }
+    
+    public static final boolean access$doesReturn(final SafeWindowLayoutComponentProvider safeWindowLayoutComponentProvider, final Method method, final Class clazz) {
+        return safeWindowLayoutComponentProvider.doesReturn(method, clazz);
+    }
+    
+    public static final ConsumerAdapter access$getConsumerAdapter$p(final SafeWindowLayoutComponentProvider safeWindowLayoutComponentProvider) {
+        return safeWindowLayoutComponentProvider.consumerAdapter;
+    }
+    
+    public static final Class access$getFoldingFeatureClass(final SafeWindowLayoutComponentProvider safeWindowLayoutComponentProvider) {
+        return safeWindowLayoutComponentProvider.getFoldingFeatureClass();
+    }
+    
+    public static final Class access$getWindowExtensionsClass(final SafeWindowLayoutComponentProvider safeWindowLayoutComponentProvider) {
+        return safeWindowLayoutComponentProvider.getWindowExtensionsClass();
+    }
+    
+    public static final Class access$getWindowExtensionsProviderClass(final SafeWindowLayoutComponentProvider safeWindowLayoutComponentProvider) {
+        return safeWindowLayoutComponentProvider.getWindowExtensionsProviderClass();
+    }
+    
+    public static final Class access$getWindowLayoutComponentClass(final SafeWindowLayoutComponentProvider safeWindowLayoutComponentProvider) {
+        return safeWindowLayoutComponentProvider.getWindowLayoutComponentClass();
+    }
+    
+    public static final boolean access$isPublic(final SafeWindowLayoutComponentProvider safeWindowLayoutComponentProvider, final Method method) {
+        return safeWindowLayoutComponentProvider.isPublic(method);
+    }
+    
     private final boolean canUseWindowLayoutComponent() {
         return this.isWindowLayoutProviderValid() && this.isWindowExtensionsValid() && this.isWindowLayoutComponentValid() && this.isFoldingFeatureValid();
     }
     
-    private final boolean doesReturn(final Method method, final atob atob) {
-        return this.doesReturn(method, auaf.c(atob));
+    private final boolean doesReturn(final Method method, final atow atow) {
+        return this.doesReturn(method, auby.c(atow));
     }
     
     private final boolean doesReturn(final Method method, final Class clazz) {
@@ -59,7 +91,7 @@ public final class SafeWindowLayoutComponentProvider
     }
     
     private final boolean isFoldingFeatureValid() {
-        return this.validate(new SafeWindowLayoutComponentProvider$isFoldingFeatureValid$1(this));
+        return this.validate((atmv)new SafeWindowLayoutComponentProvider$isFoldingFeatureValid$1(this));
     }
     
     private final boolean isPublic(final Method method) {
@@ -67,24 +99,25 @@ public final class SafeWindowLayoutComponentProvider
     }
     
     private final boolean isWindowExtensionsValid() {
-        return this.validate(new SafeWindowLayoutComponentProvider$isWindowExtensionsValid$1(this));
+        return this.validate((atmv)new SafeWindowLayoutComponentProvider$isWindowExtensionsValid$1(this));
     }
     
     private final boolean isWindowLayoutComponentValid() {
-        return this.validate(new SafeWindowLayoutComponentProvider$isWindowLayoutComponentValid$1(this));
+        return this.validate((atmv)new SafeWindowLayoutComponentProvider$isWindowLayoutComponentValid$1(this));
     }
     
     private final boolean isWindowLayoutProviderValid() {
-        return this.validate(new SafeWindowLayoutComponentProvider$isWindowLayoutProviderValid$1(this));
+        return this.validate((atmv)new SafeWindowLayoutComponentProvider$isWindowLayoutProviderValid$1(this));
     }
     
-    private final boolean validate(final atma atma) {
-        final boolean b = false;
+    private final boolean validate(final atmv atmv) {
+        boolean booleanValue = false;
         try {
-            return (boolean)atma.invoke();
+            booleanValue = (boolean)atmv.invoke();
+            return booleanValue;
         }
         catch (final ClassNotFoundException | NoSuchMethodException ex) {
-            return b;
+            return booleanValue;
         }
     }
     

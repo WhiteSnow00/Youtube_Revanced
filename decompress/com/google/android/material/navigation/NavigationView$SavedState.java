@@ -16,7 +16,7 @@ public class NavigationView$SavedState extends AbsSavedState
     public Bundle a;
     
     static {
-        CREATOR = (Parcelable$Creator)new adrl(5);
+        CREATOR = (Parcelable$Creator)new adtn(5);
     }
     
     public NavigationView$SavedState(final Parcel parcel, final ClassLoader classLoader) {

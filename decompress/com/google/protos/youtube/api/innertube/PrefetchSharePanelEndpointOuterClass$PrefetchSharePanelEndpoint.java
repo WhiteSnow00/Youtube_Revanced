@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint extends agzi implements ahax
+public final class PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint extends ahbh implements ahcw
 {
     public static final PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg prefetchSharePanelEndpoint;
+    private static volatile ahdd c;
+    public static final ahbf prefetchSharePanelEndpoint;
     public String b;
     private int d;
     
     static {
         final PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint a2 = new PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint();
-        agzi.registerDefaultInstance((Class)PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint.class, (agzi)(a = a2));
-        prefetchSharePanelEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 116980193, ahcm.k, (Class)PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint.class);
+        ahbh.registerDefaultInstance((Class)PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint.class, (ahbh)(a = a2));
+        prefetchSharePanelEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 116980193, ahek.k, (Class)PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint.class);
     }
     
     private PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint() {
         this.b = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint.c) == null) {
                     synchronized (PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint.class) {
                         if (PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint.c == null) {
-                            PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint.c = (ahbe)new agzb((agzi)PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint.a);
+                            PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint.c = (ahdd)new ahba((ahbh)PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoi
                 return PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint.a);
+                return new ahaz((ahbh)PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint.a);
             }
             case 3: {
                 return new PrefetchSharePanelEndpointOuterClass$PrefetchSharePanelEndpoint();

@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class OpenAdsWebViewInBrowserCommandOuterClass
 {
-    public static final agzg openAdsWebViewInBrowserCommand;
+    public static final ahbf openAdsWebViewInBrowserCommand;
     
     static {
-        openAdsWebViewInBrowserCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)amvo.a, (MessageLite)amvo.a, (agzn)null, 204491626, ahcm.k, (Class)amvo.class);
+        openAdsWebViewInBrowserCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)amxs.a, (MessageLite)amxs.a, (ahbm)null, 204491626, ahek.k, (Class)amxs.class);
     }
     
     private OpenAdsWebViewInBrowserCommandOuterClass() {

@@ -34,29 +34,29 @@ import java.util.ArrayList;
 import androidx.viewpager.widget.ViewPager;
 import android.widget.HorizontalScrollView;
 
-@ckq
+@ckr
 public class TabLayout extends HorizontalScrollView
 {
-    private static final akq C;
+    private static final akr C;
     public ViewPager A;
-    public adwd B;
+    public adyf B;
     private final ArrayList D;
-    private adxt E;
+    private adzv E;
     private int F;
     private final int G;
     private final int H;
     private final int I;
     private int J;
     private final ArrayList K;
-    private adxp L;
+    private adzr L;
     private ValueAnimator M;
-    private cko N;
+    private ckp N;
     private DataSetObserver O;
-    private adxu P;
-    private adxo Q;
+    private adzw P;
+    private adzq Q;
     private boolean R;
-    private final akq S;
-    final adxs a;
+    private final akr S;
+    final adzu a;
     public int b;
     public int c;
     public int d;
@@ -84,7 +84,7 @@ public class TabLayout extends HorizontalScrollView
     public final TimeInterpolator z;
     
     static {
-        C = (akq)new aks(16);
+        C = (akr)new akt(16);
     }
     
     public TabLayout(final Context context) {
@@ -96,45 +96,45 @@ public class TabLayout extends HorizontalScrollView
     }
     
     public TabLayout(Context context, final AttributeSet set, int g) {
-        super(adyy.a(context, set, g, 2132084677), set, g);
+        super(aeba.a(context, set, g, 2132084678), set, g);
         this.D = new ArrayList();
         this.h = -1;
         this.F = 0;
         this.q = Integer.MAX_VALUE;
         this.x = -1;
         this.K = new ArrayList();
-        this.S = (akq)new akr(12);
+        this.S = (akr)new aks(12);
         final Context context2 = this.getContext();
         this.setHorizontalScrollBarEnabled(false);
-        final adxs a = new adxs(this, context2);
+        final adzu a = new adzu(this, context2);
         super.addView((View)(this.a = a), 0, (ViewGroup$LayoutParams)new FrameLayout$LayoutParams(-2, -1));
-        final TypedArray a2 = aduf.a(context2, set, adxm.a, g, 2132084677, new int[] { 24 });
+        final TypedArray a2 = adwh.a(context2, set, adzo.a, g, 2132084678, new int[] { 24 });
         if (this.getBackground() instanceof ColorDrawable) {
             final ColorDrawable colorDrawable = (ColorDrawable)this.getBackground();
-            final adwf adwf = new adwf();
-            adwf.o(ColorStateList.valueOf(colorDrawable.getColor()));
-            adwf.m(context2);
-            adwf.n(ana.a((View)this));
-            ana.Q((View)this, (Drawable)adwf);
+            final adyh adyh = new adyh();
+            adyh.o(ColorStateList.valueOf(colorDrawable.getColor()));
+            adyh.m(context2);
+            adyh.n(anb.a((View)this));
+            anb.Q((View)this, (Drawable)adyh);
         }
-        Object g2;
-        if ((g2 = adwd.g(context2, a2, 5)) == null) {
-            g2 = new GradientDrawable();
+        Object a3;
+        if ((a3 = adds.A(context2, a2, 5)) == null) {
+            a3 = new GradientDrawable();
         }
-        adwd.x(this.l = ((Drawable)g2).mutate(), this.F);
+        adds.R(this.l = ((Drawable)a3).mutate(), this.F);
         if ((g = this.x) == -1) {
             g = this.l.getIntrinsicHeight();
         }
         a.b(g);
         g = a2.getColor(8, 0);
         this.F = g;
-        adwd.x(this.l, g);
+        adds.R(this.l, g);
         this.n(false);
         a.b(a2.getDimensionPixelSize(11, -1));
         g = a2.getInt(10, 0);
         if (this.t != g) {
             this.t = g;
-            ana.H((View)a);
+            anb.H((View)a);
         }
         g = a2.getInt(7, 0);
         if (g != 0) {
@@ -146,19 +146,19 @@ public class TabLayout extends HorizontalScrollView
                     sb.append(" is not a valid TabIndicatorAnimationMode");
                     throw new IllegalArgumentException(sb.toString());
                 }
-                b = new adxl();
+                b = new adzn();
             }
             else {
-                b = new adxk();
+                b = new adzm();
             }
-            this.B = (adwd)b;
+            this.B = (adyf)b;
         }
         else {
-            this.B = new adwd();
+            this.B = new adyf();
         }
         this.w = a2.getBoolean(9, true);
         a.a();
-        ana.H((View)a);
+        anb.H((View)a);
         g = a2.getDimensionPixelSize(16, 0);
         this.e = g;
         this.d = g;
@@ -168,7 +168,7 @@ public class TabLayout extends HorizontalScrollView
         this.c = a2.getDimensionPixelSize(20, this.c);
         this.d = a2.getDimensionPixelSize(18, this.d);
         this.e = a2.getDimensionPixelSize(17, this.e);
-        if (aduf.c(context2)) {
+        if (adwh.c(context2)) {
             this.f = 2130970584;
         }
         else {
@@ -179,7 +179,7 @@ public class TabLayout extends HorizontalScrollView
         context = (Context)context2.obtainStyledAttributes(g, gl.x);
         try {
             this.n = (float)((TypedArray)context).getDimensionPixelSize(0, 0);
-            this.i = adwd.f(context2, (TypedArray)context, 3);
+            this.i = adds.z(context2, (TypedArray)context, 3);
             ((TypedArray)context).recycle();
             if (a2.hasValue(22)) {
                 this.h = a2.getResourceId(22, g);
@@ -189,11 +189,10 @@ public class TabLayout extends HorizontalScrollView
                 context = (Context)context2.obtainStyledAttributes(g, gl.x);
                 try {
                     ((TypedArray)context).getDimensionPixelSize(0, (int)this.n);
-                    final ColorStateList f = adwd.f(context2, (TypedArray)context, 3);
-                    if (f != null) {
-                        final int defaultColor = this.i.getDefaultColor();
-                        g = f.getDefaultColor();
-                        this.i = r(defaultColor, f.getColorForState(new int[] { 16842913 }, g));
+                    final ColorStateList z = adds.z(context2, (TypedArray)context, 3);
+                    if (z != null) {
+                        g = this.i.getDefaultColor();
+                        this.i = r(g, z.getColorForState(new int[] { 16842913 }, z.getDefaultColor()));
                     }
                 }
                 finally {
@@ -201,17 +200,17 @@ public class TabLayout extends HorizontalScrollView
                 }
             }
             if (a2.hasValue(25)) {
-                this.i = adwd.f(context2, a2, 25);
+                this.i = adds.z(context2, a2, 25);
             }
             if (a2.hasValue(23)) {
                 g = a2.getColor(23, 0);
                 this.i = r(this.i.getDefaultColor(), g);
             }
-            this.j = adwd.f(context2, a2, 3);
-            this.m = adwd.q(a2.getInt(4, -1), (PorterDuff$Mode)null);
-            this.k = adwd.f(context2, a2, 21);
+            this.j = adds.z(context2, a2, 3);
+            this.m = adds.K(a2.getInt(4, -1), (PorterDuff$Mode)null);
+            this.k = adds.z(context2, a2, 21);
             this.s = a2.getInt(6, 300);
-            this.z = adwd.o(context2, 2130969956, adqd.b);
+            this.z = adds.I(context2, 2130969956, adsf.b);
             this.G = a2.getDimensionPixelSize(14, -1);
             this.H = a2.getDimensionPixelSize(13, -1);
             this.p = a2.getResourceId(0, 0);
@@ -231,37 +230,42 @@ public class TabLayout extends HorizontalScrollView
         }
     }
     
-    private final int p(int width, final float n) {
+    private final int p(int n, final float n2) {
         final int u = this.u;
-        final int n2 = 0;
+        final int n3 = 0;
         if (u != 0 && u != 2) {
             return 0;
         }
-        final View child = this.a.getChildAt(width);
+        final View child = this.a.getChildAt(n);
         if (child == null) {
             return 0;
         }
         View child2;
-        if (++width < this.a.getChildCount()) {
-            child2 = this.a.getChildAt(width);
+        if (++n < this.a.getChildCount()) {
+            child2 = this.a.getChildAt(n);
         }
         else {
             child2 = null;
         }
-        final int width2 = child.getWidth();
-        width = n2;
+        final int width = child.getWidth();
+        n = n3;
         if (child2 != null) {
-            width = child2.getWidth();
+            n = child2.getWidth();
         }
-        final int n3 = child.getLeft() + width2 / 2 - this.getWidth() / 2;
-        width = (int)((width2 + width) * 0.5f * n);
-        if (ana.f((View)this) == 0) {
-            width += n3;
+        final int left = child.getLeft();
+        final int n4 = width / 2;
+        final int n5 = this.getWidth() / 2;
+        final float n6 = (float)(width + n);
+        n = anb.f((View)this);
+        final int n7 = left + n4 - n5;
+        final int n8 = (int)(n6 * 0.5f * n2);
+        if (n == 0) {
+            n = n7 + n8;
         }
         else {
-            width = n3 - width;
+            n = n7 - n8;
         }
-        return width;
+        return n;
     }
     
     private final int q() {
@@ -281,14 +285,14 @@ public class TabLayout extends HorizontalScrollView
     }
     
     private final void s(final View view) {
-        if (view instanceof adxn) {
-            final adxn adxn = (adxn)view;
-            final adxt d = this.d();
-            final CharSequence a = adxn.a;
-            final Drawable b = adxn.b;
-            final int c = adxn.c;
-            if (!TextUtils.isEmpty(adxn.getContentDescription())) {
-                d.c = adxn.getContentDescription();
+        if (view instanceof adzp) {
+            final adzp adzp = (adzp)view;
+            final adzv d = this.d();
+            final CharSequence a = adzp.a;
+            final Drawable b = adzp.b;
+            final int c = adzp.c;
+            if (!TextUtils.isEmpty(adzp.getContentDescription())) {
+                d.c = adzp.getContentDescription();
                 d.b();
             }
             this.f(d, this.D.isEmpty());
@@ -301,12 +305,12 @@ public class TabLayout extends HorizontalScrollView
         if (n == -1) {
             return;
         }
-        Label_0209: {
-            if (this.getWindowToken() != null && ana.ao((View)this)) {
-                final adxs a = this.a;
+        Label_0211: {
+            if (this.getWindowToken() != null && anb.ao((View)this)) {
+                final adzu a = this.a;
                 for (int childCount = a.getChildCount(), i = 0; i < childCount; ++i) {
                     if (a.getChildAt(i).getWidth() <= 0) {
-                        break Label_0209;
+                        break Label_0211;
                     }
                 }
                 final int scrollX = this.getScrollX();
@@ -315,12 +319,12 @@ public class TabLayout extends HorizontalScrollView
                     if (this.M == null) {
                         (this.M = new ValueAnimator()).setInterpolator(this.z);
                         this.M.setDuration((long)this.s);
-                        this.M.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new adrg(this, 6));
+                        this.M.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new adti(this, 6));
                     }
                     this.M.setIntValues(new int[] { scrollX, p });
                     this.M.start();
                 }
-                final adxs a2 = this.a;
+                final adzu a2 = this.a;
                 final int s = this.s;
                 final ValueAnimator a3 = a2.a;
                 if (a3 != null && a3.isRunning()) {
@@ -363,11 +367,11 @@ public class TabLayout extends HorizontalScrollView
     private final void x(final ViewPager a, final boolean r) {
         final ViewPager a2 = this.A;
         if (a2 != null) {
-            final adxu p2 = this.P;
+            final adzw p2 = this.P;
             if (p2 != null) {
-                a2.j((cku)p2);
+                a2.j((ckv)p2);
             }
-            final adxo q = this.Q;
+            final adzq q = this.Q;
             if (q != null) {
                 final List g = this.A.g;
                 if (g != null) {
@@ -375,7 +379,7 @@ public class TabLayout extends HorizontalScrollView
                 }
             }
         }
-        final adxp l = this.L;
+        final adzr l = this.L;
         if (l != null) {
             this.K.remove(l);
             this.L = null;
@@ -383,21 +387,21 @@ public class TabLayout extends HorizontalScrollView
         if (a != null) {
             this.A = a;
             if (this.P == null) {
-                this.P = new adxu(this);
+                this.P = new adzw(this);
             }
-            final adxu p3 = this.P;
+            final adzw p3 = this.P;
             p3.b = 0;
             p3.a = 0;
-            a.e((cku)p3);
-            this.e(this.L = (adxp)new adxw(a));
-            final cko b = a.b;
+            a.e((ckv)p3);
+            this.e(this.L = (adzr)new adzy(a));
+            final ckp b = a.b;
             if (b != null) {
                 this.k(b, true);
             }
             if (this.Q == null) {
-                this.Q = new adxo(this);
+                this.Q = new adzq(this);
             }
-            final adxo q2 = this.Q;
+            final adzq q2 = this.Q;
             q2.a = true;
             if (a.g == null) {
                 a.g = new ArrayList();
@@ -413,7 +417,7 @@ public class TabLayout extends HorizontalScrollView
     }
     
     public final int a() {
-        final adxt e = this.E;
+        final adzv e = this.E;
         if (e != null) {
             return e.d;
         }
@@ -440,72 +444,72 @@ public class TabLayout extends HorizontalScrollView
         return this.D.size();
     }
     
-    public final adxt c(final int n) {
+    public final adzv c(final int n) {
         if (n >= 0 && n < this.b()) {
             return this.D.get(n);
         }
         return null;
     }
     
-    public final adxt d() {
-        adxt adxt;
-        if ((adxt = (adxt)TabLayout.C.a()) == null) {
-            adxt = new adxt();
+    public final adzv d() {
+        adzv adzv;
+        if ((adzv = (adzv)TabLayout.C.a()) == null) {
+            adzv = new adzv();
         }
-        adxt.g = this;
-        final akq s = this.S;
-        adxv adxv;
+        adzv.g = this;
+        final akr s = this.S;
+        adzx adzx;
         if (s != null) {
-            adxv = (adxv)s.a();
+            adzx = (adzx)s.a();
         }
         else {
-            adxv = null;
+            adzx = null;
         }
-        adxv h = adxv;
-        if (adxv == null) {
-            h = new adxv(this, this.getContext());
+        adzx h = adzx;
+        if (adzx == null) {
+            h = new adzx(this, this.getContext());
         }
-        h.a(adxt);
+        h.a(adzv);
         h.setFocusable(true);
         h.setMinimumWidth(this.q());
-        if (TextUtils.isEmpty(adxt.c)) {
-            h.setContentDescription(adxt.b);
+        if (TextUtils.isEmpty(adzv.c)) {
+            h.setContentDescription(adzv.b);
         }
         else {
-            h.setContentDescription(adxt.c);
+            h.setContentDescription(adzv.c);
         }
-        adxt.h = h;
-        if (adxt.i != -1) {
-            adxt.h.setId(0);
+        adzv.h = h;
+        if (adzv.i != -1) {
+            adzv.h.setId(0);
         }
-        return adxt;
+        return adzv;
     }
     
     @Deprecated
-    public final void e(final adxp adxp) {
-        if (!this.K.contains(adxp)) {
-            this.K.add(adxp);
+    public final void e(final adzr adzr) {
+        if (!this.K.contains(adzr)) {
+            this.K.add(adzr);
         }
     }
     
-    public final void f(final adxt adxt, final boolean b) {
+    public final void f(final adzv adzv, final boolean b) {
         int size = this.D.size();
-        if (adxt.g == this) {
-            adxt.d = size;
-            this.D.add(size, adxt);
+        if (adzv.g == this) {
+            adzv.d = size;
+            this.D.add(size, adzv);
             while (++size < this.D.size()) {
-                ((adxt)this.D.get(size)).d = size;
+                ((adzv)this.D.get(size)).d = size;
             }
-            final adxv h = adxt.h;
+            final adzx h = adzv.h;
             h.setSelected(false);
             h.setActivated(false);
-            final adxs a = this.a;
-            final int d = adxt.d;
+            final adzu a = this.a;
+            final int d = adzv.d;
             final LinearLayout$LayoutParams linearLayout$LayoutParams = new LinearLayout$LayoutParams(-2, -1);
             this.v(linearLayout$LayoutParams);
             a.addView((View)h, d, (ViewGroup$LayoutParams)linearLayout$LayoutParams);
             if (b) {
-                adxt.a();
+                adzv.a();
             }
             return;
         }
@@ -521,7 +525,7 @@ public class TabLayout extends HorizontalScrollView
         else {
             max = Math.max(0, this.J - this.b);
         }
-        ana.ab((View)this.a, max, 0, 0, 0);
+        anb.ab((View)this.a, max, 0, 0, 0);
         final int u2 = this.u;
         Label_0151: {
             if (u2 != 0) {
@@ -552,41 +556,45 @@ public class TabLayout extends HorizontalScrollView
         this.n(true);
     }
     
+    public final ViewGroup$LayoutParams generateLayoutParams(final AttributeSet set) {
+        return (ViewGroup$LayoutParams)this.generateDefaultLayoutParams();
+    }
+    
     public final FrameLayout$LayoutParams generateLayoutParams(final AttributeSet set) {
         return this.generateDefaultLayoutParams();
     }
     
     public final void h() {
         for (int i = this.a.getChildCount() - 1; i >= 0; --i) {
-            final adxv adxv = (adxv)this.a.getChildAt(i);
+            final adzx adzx = (adzx)this.a.getChildAt(i);
             this.a.removeViewAt(i);
-            if (adxv != null) {
-                adxv.a((adxt)null);
-                adxv.setSelected(false);
-                this.S.b((Object)adxv);
+            if (adzx != null) {
+                adzx.a((adzv)null);
+                adzx.setSelected(false);
+                this.S.b((Object)adzx);
             }
             this.requestLayout();
         }
         final Iterator iterator = this.D.iterator();
         while (iterator.hasNext()) {
-            final adxt adxt = (adxt)iterator.next();
+            final adzv adzv = (adzv)iterator.next();
             iterator.remove();
-            adxt.g = null;
-            adxt.h = null;
-            adxt.a = null;
-            adxt.i = -1;
-            adxt.b = null;
-            adxt.c = null;
-            adxt.d = -1;
-            adxt.e = null;
-            TabLayout.C.b((Object)adxt);
+            adzv.g = null;
+            adzv.h = null;
+            adzv.a = null;
+            adzv.i = -1;
+            adzv.b = null;
+            adzv.c = null;
+            adzv.d = -1;
+            adzv.e = null;
+            TabLayout.C.b((Object)adzv);
         }
         this.E = null;
-        final cko n = this.N;
+        final ckp n = this.N;
         if (n != null) {
             final int j = n.j();
             for (int k = 0; k < j; ++k) {
-                final adxt d = this.d();
+                final adzv d = this.d();
                 final CharSequence l = this.N.l(k);
                 if (TextUtils.isEmpty(d.c) && !TextUtils.isEmpty(l)) {
                     d.h.setContentDescription(l);
@@ -605,16 +613,16 @@ public class TabLayout extends HorizontalScrollView
         }
     }
     
-    public final void i(final adxt adxt) {
-        this.j(adxt, true);
+    public final void i(final adzv adzv) {
+        this.j(adzv, true);
     }
     
-    public final void j(final adxt e, final boolean b) {
-        final adxt e2 = this.E;
+    public final void j(final adzv e, final boolean b) {
+        final adzv e2 = this.E;
         if (e2 == e) {
             if (e2 != null) {
                 for (int i = this.K.size() - 1; i >= 0; --i) {
-                    ((adxp)this.K.get(i)).a(e);
+                    ((adzr)this.K.get(i)).a(e);
                 }
                 this.t(e.d);
             }
@@ -641,18 +649,18 @@ public class TabLayout extends HorizontalScrollView
             this.E = e;
             if (e2 != null && e2.g != null) {
                 for (int j = this.K.size() - 1; j >= 0; --j) {
-                    ((adxp)this.K.get(j)).c();
+                    ((adzr)this.K.get(j)).c();
                 }
-                final adxv h = e2.h;
+                final adzx h = e2.h;
                 if (h != null) {
                     h.b();
                 }
             }
             if (e != null) {
                 for (int k = this.K.size() - 1; k >= 0; --k) {
-                    ((adxp)this.K.get(k)).b(e);
+                    ((adzr)this.K.get(k)).b(e);
                 }
-                final adxv h2 = e.h;
+                final adzx h2 = e.h;
                 if (h2 != null) {
                     h2.b();
                 }
@@ -660,8 +668,8 @@ public class TabLayout extends HorizontalScrollView
         }
     }
     
-    public final void k(final cko n, final boolean b) {
-        final cko n2 = this.N;
+    public final void k(final ckp n, final boolean b) {
+        final ckp n2 = this.N;
         if (n2 != null) {
             final DataSetObserver o = this.O;
             if (o != null) {
@@ -671,7 +679,7 @@ public class TabLayout extends HorizontalScrollView
         this.N = n;
         if (b && n != null) {
             if (this.O == null) {
-                this.O = (DataSetObserver)new adxq(this);
+                this.O = (DataSetObserver)new adzs(this);
             }
             n.b.registerObserver((Object)this.O);
         }
@@ -683,7 +691,7 @@ public class TabLayout extends HorizontalScrollView
         if (round >= 0) {
             if (round < this.a.getChildCount()) {
                 if (b2) {
-                    final adxs a = this.a;
+                    final adzu a = this.a;
                     final ValueAnimator a2 = a.a;
                     if (a2 != null && a2.isRunning()) {
                         a.a.cancel();
@@ -729,7 +737,7 @@ public class TabLayout extends HorizontalScrollView
     
     protected final void onAttachedToWindow() {
         super.onAttachedToWindow();
-        adwd.ae((View)this);
+        adyf.f((View)this);
         if (this.A == null) {
             final ViewParent parent = this.getParent();
             if (parent instanceof ViewPager) {
@@ -749,12 +757,12 @@ public class TabLayout extends HorizontalScrollView
     protected final void onDraw(final Canvas canvas) {
         for (int i = 0; i < this.a.getChildCount(); ++i) {
             final View child = this.a.getChildAt(i);
-            if (child instanceof adxv) {
-                final adxv adxv = (adxv)child;
-                final Drawable c = adxv.c;
+            if (child instanceof adzx) {
+                final adzx adzx = (adzx)child;
+                final Drawable c = adzx.c;
                 if (c != null) {
-                    c.setBounds(adxv.getLeft(), adxv.getTop(), adxv.getRight(), adxv.getBottom());
-                    adxv.c.draw(canvas);
+                    c.setBounds(adzx.getLeft(), adzx.getTop(), adzx.getRight(), adzx.getBottom());
+                    adzx.c.draw(canvas);
                 }
             }
         }
@@ -763,7 +771,7 @@ public class TabLayout extends HorizontalScrollView
     
     public final void onInitializeAccessibilityNodeInfo(final AccessibilityNodeInfo accessibilityNodeInfo) {
         super.onInitializeAccessibilityNodeInfo(accessibilityNodeInfo);
-        aol.c(accessibilityNodeInfo).s((Object)bx.K(1, this.b(), 1));
+        aom.c(accessibilityNodeInfo).s((Object)bx.K(1, this.b(), 1));
     }
     
     public final boolean onInterceptTouchEvent(final MotionEvent motionEvent) {
@@ -781,8 +789,8 @@ public class TabLayout extends HorizontalScrollView
             if (n3 >= size) {
                 break;
             }
-            final adxt adxt = this.D.get(n3);
-            if (adxt != null && adxt.a != null && !TextUtils.isEmpty(adxt.b)) {
+            final adzv adzv = this.D.get(n3);
+            if (adzv != null && adzv.a != null && !TextUtils.isEmpty(adzv.b)) {
                 n4 = n4;
                 if (!this.v) {
                     n4 = 72;
@@ -794,7 +802,7 @@ public class TabLayout extends HorizontalScrollView
                 ++n3;
             }
         }
-        final int round = Math.round(adwd.p(context, n4));
+        final int round = Math.round(adds.J(context, n4));
         final int mode = View$MeasureSpec.getMode(h);
         int measureSpec;
         if (mode != Integer.MIN_VALUE) {
@@ -819,7 +827,7 @@ public class TabLayout extends HorizontalScrollView
         if (View$MeasureSpec.getMode(n) != 0) {
             h = this.H;
             if (h <= 0) {
-                h = (int)(size2 - adwd.p(this.getContext(), 56));
+                h = (int)(size2 - adds.J(this.getContext(), 56));
             }
             this.q = h;
         }
@@ -827,8 +835,8 @@ public class TabLayout extends HorizontalScrollView
         if (this.getChildCount() == 1) {
             final View child = this.getChildAt(0);
             n = this.u;
-            Label_0316: {
-                Label_0314: {
+            Label_0305: {
+                Label_0303: {
                     if (n != 0) {
                         if (n != 1) {
                             if (n != 2) {
@@ -838,14 +846,14 @@ public class TabLayout extends HorizontalScrollView
                         else {
                             n = n2;
                             if (child.getMeasuredWidth() != this.getMeasuredWidth()) {
-                                break Label_0314;
+                                break Label_0303;
                             }
-                            break Label_0316;
+                            break Label_0305;
                         }
                     }
                     n = n2;
                     if (child.getMeasuredWidth() >= this.getMeasuredWidth()) {
-                        break Label_0316;
+                        break Label_0305;
                     }
                 }
                 n = 1;
@@ -863,7 +871,7 @@ public class TabLayout extends HorizontalScrollView
     
     public final void setElevation(final float elevation) {
         super.setElevation(elevation);
-        adwd.ad((View)this, elevation);
+        adyf.e((View)this, elevation);
     }
     
     public final boolean shouldDelayChildPressedState() {

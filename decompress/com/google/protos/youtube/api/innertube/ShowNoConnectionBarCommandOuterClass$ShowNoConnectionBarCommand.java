@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand extends agzi implements ahax
+public final class ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand extends ahbh implements ahcw
 {
     public static final ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand a;
-    private static volatile ahbe b;
-    public static final agzg showNoConnectionBarCommand;
+    private static volatile ahdd b;
+    public static final ahbf showNoConnectionBarCommand;
     
     static {
         final ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand a2 = new ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand();
-        agzi.registerDefaultInstance((Class)ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand.class, (agzi)(a = a2));
-        showNoConnectionBarCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 246536901, ahcm.k, (Class)ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand.class);
+        ahbh.registerDefaultInstance((Class)ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand.class, (ahbh)(a = a2));
+        showNoConnectionBarCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 246536901, ahek.k, (Class)ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand.class);
     }
     
     private ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand.b) == null) {
                     synchronized (ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand.class) {
                         if (ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand.b == null) {
-                            ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand.b = (ahbe)new agzb((agzi)ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand.a);
+                            ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand.b = (ahdd)new ahba((ahbh)ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarComma
                 return ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand.a;
             }
             case 4: {
-                return new agza((agzi)ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand.a);
+                return new ahaz((ahbh)ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand.a);
             }
             case 3: {
                 return new ShowNoConnectionBarCommandOuterClass$ShowNoConnectionBarCommand();

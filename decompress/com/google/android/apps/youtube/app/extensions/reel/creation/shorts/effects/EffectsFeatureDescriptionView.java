@@ -23,14 +23,14 @@ public final class EffectsFeatureDescriptionView extends LinearLayout
     final TextView c;
     public Animation d;
     public boolean e;
-    public qpt f;
+    public pvh f;
     
     public EffectsFeatureDescriptionView(final Context context, final AttributeSet set) {
         super(context, set);
-        View.inflate(context, 2131625380, (ViewGroup)this);
-        this.a = (TextView)this.findViewById(2131432092);
-        this.b = (TextView)this.findViewById(2131431819);
-        this.c = (TextView)this.findViewById(2131431818);
+        View.inflate(context, 2131625385, (ViewGroup)this);
+        this.a = (TextView)this.findViewById(2131432095);
+        this.b = (TextView)this.findViewById(2131431822);
+        this.c = (TextView)this.findViewById(2131431821);
     }
     
     private final void f(final String text, final String text2, final String text3) {
@@ -71,7 +71,7 @@ public final class EffectsFeatureDescriptionView extends LinearLayout
         this.b.setText((CharSequence)text2);
         this.c.setText((CharSequence)text3);
         if (this.f != null && (!text.isEmpty() || !text2.isEmpty() || !text3.isEmpty())) {
-            final gvj as = ((gwg)this.f.a).aS;
+            final gvy as = ((gww)this.f.a).aS;
             if (as != null) {
                 as.e();
             }
@@ -83,7 +83,7 @@ public final class EffectsFeatureDescriptionView extends LinearLayout
         ((Animation)alphaAnimation).setStartOffset(set.getDuration() + n);
         ((Animation)alphaAnimation).setDuration(300L);
         set.addAnimation((Animation)alphaAnimation);
-        set.setAnimationListener((Animation$AnimationListener)new cbh(this, 7));
+        set.setAnimationListener((Animation$AnimationListener)new cbi(this, 7));
     }
     
     public final AnimationSet a(final boolean b) {

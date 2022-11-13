@@ -11,8 +11,10 @@ import android.content.BroadcastReceiver;
 
 public class ConstraintProxyUpdateReceiver extends BroadcastReceiver
 {
+    public static final int a = 0;
+    
     static {
-        cmr.b("ConstrntProxyUpdtRecvr");
+        cms.b("ConstrntProxyUpdtRecvr");
     }
     
     public static Intent a(final Context context, final boolean b, final boolean b2, final boolean b3, final boolean b4) {
@@ -31,9 +33,9 @@ public class ConstraintProxyUpdateReceiver extends BroadcastReceiver
             action = null;
         }
         if (!"androidx.work.impl.background.systemalarm.UpdateProxies".equals(action)) {
-            cmr.a();
+            cms.a();
             return;
         }
-        csk.b(coe.j(context).k, (Runnable)new vo(intent, context, this.goAsync(), 8));
+        csl.b(cof.j(context).k, (Runnable)new vo(intent, context, this.goAsync(), 8));
     }
 }

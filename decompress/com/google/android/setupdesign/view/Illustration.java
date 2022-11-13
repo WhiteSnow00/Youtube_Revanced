@@ -57,7 +57,7 @@ public class Illustration extends FrameLayout
             return;
         }
         if (set != null) {
-            final TypedArray obtainStyledAttributes = this.getContext().obtainStyledAttributes(set, aedq.j, n, 0);
+            final TypedArray obtainStyledAttributes = this.getContext().obtainStyledAttributes(set, aefr.j, n, 0);
             this.g = obtainStyledAttributes.getFloat(0, 0.0f);
             obtainStyledAttributes.recycle();
         }
@@ -122,8 +122,10 @@ public class Illustration extends FrameLayout
     
     protected final void onMeasure(final int n, final int n2) {
         if (this.g != 0.0f) {
-            final float n3 = (float)(int)(View$MeasureSpec.getSize(n) / this.g);
-            this.setPadding(0, (int)(n3 - n3 % this.a), 0, 0);
+            final float n3 = View$MeasureSpec.getSize(n) / this.g;
+            final float a = this.a;
+            final float n4 = (float)(int)n3;
+            this.setPadding(0, (int)(n4 - n4 % a), 0, 0);
         }
         this.setOutlineProvider(ViewOutlineProvider.BOUNDS);
         super.onMeasure(n, n2);

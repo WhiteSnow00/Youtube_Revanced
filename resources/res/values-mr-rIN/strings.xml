@@ -90,9 +90,6 @@
     <string name="litho_paid_content">सशुल्क सामग्री काढा</string>
     <string name="litho_paid_content_off">सशुल्क सामग्री दर्शविली आहे</string>
     <string name="litho_paid_content_on">सशुल्क सामग्री लपविली आहे</string>
-    <string name="litho_shorts_shelf">शॉर्ट्स शेल्फ काढा</string>
-    <string name="litho_shorts_shelf_off">शॉर्ट्स शेल्फ दाखवले आहेत</string>
-    <string name="litho_shorts_shelf_on">लहान शेल्फ् लपलेले आहेत</string>
     <string name="microg_not_installed_notice">कृपया मायक्रोजी इन्स्टॉल करा</string>
     <string name="microg_not_installed_warning">मायक्रोजी सापडला नाही</string>
     <string name="microg_notification_settings">सूचना सेटिंग्ज</string>

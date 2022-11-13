@@ -6,12 +6,22 @@ package com.google.vr.ndk.base;
 
 public enum UserPrefs$RuntimeFeature
 {
+    private static final UserPrefs$RuntimeFeature[] $VALUES;
+    
     GVR_BETA_FEATURE_DAYDREAM_6DOF_CONTROLLER("GVR_BETA_FEATURE_DAYDREAM_6DOF_CONTROLLER", 0, 1000, "com.google.vr.beta.daydream_6dof_controller", "Use6DofController"), 
     GVR_BETA_FEATURE_SEE_THROUGH("GVR_BETA_FEATURE_SEE_THROUGH", 1, 1001, "com.google.vr.beta.cameraSeeThrough", "EnableSeeThrough");
     
     public final int id;
     public final String prefKey;
     public final String tag;
+    
+    private static UserPrefs$RuntimeFeature[] $values() {
+        return new UserPrefs$RuntimeFeature[] { UserPrefs$RuntimeFeature.GVR_BETA_FEATURE_DAYDREAM_6DOF_CONTROLLER, UserPrefs$RuntimeFeature.GVR_BETA_FEATURE_SEE_THROUGH };
+    }
+    
+    static {
+        $VALUES = $values();
+    }
     
     private UserPrefs$RuntimeFeature(final String s, final int n, final int id, final String tag, final String prefKey) {
         this.id = id;

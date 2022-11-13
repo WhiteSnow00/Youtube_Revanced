@@ -29,7 +29,7 @@ class GvrUiLayoutImpl$CloseButtonListenerWrapper implements Runnable
     public void run() {
         if (this.invokingCloseButton) {
             Log.w("GvrUiLayoutImpl", "GVR close behavior invoked recursively.");
-            final Activity t = aqzg.t(this.context);
+            final Activity t = arbu.t(this.context);
             if (t != null) {
                 t.finish();
             }

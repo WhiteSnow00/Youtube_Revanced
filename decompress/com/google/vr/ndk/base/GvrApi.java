@@ -31,7 +31,7 @@ public class GvrApi
     private long nativeGvrContext;
     private final boolean ownsNativeGvrContext;
     private ArrayList swapChainRefs;
-    private final aral vrParamsProvider;
+    private final arda vrParamsProvider;
     
     static {
         IS_ROBOLECTRIC_BUILD = "robolectric".equals(Build.FINGERPRINT);
@@ -49,7 +49,7 @@ public class GvrApi
             this.context = context;
             this.ownsNativeGvrContext = false;
             this.nativeGvrContext = nativeGvrContext;
-            this.vrParamsProvider = aqql.o(context);
+            this.vrParamsProvider = aqsx.p(context);
             this.displaySynchronizer = null;
             this.swapChainRefs = new ArrayList();
             setApplicationState(context);
@@ -62,7 +62,7 @@ public class GvrApi
         this.context = context;
         (this.displaySynchronizer = allowThreadDiskReads).a();
         final long b = allowThreadDiskReads.b;
-        (this.vrParamsProvider = aqql.o(context)).d();
+        (this.vrParamsProvider = aqsx.p(context)).d();
         this.swapChainRefs = new ArrayList();
         this.ownsNativeGvrContext = true;
         if (!GvrApi.IS_ROBOLECTRIC_BUILD) {
@@ -81,7 +81,7 @@ public class GvrApi
     }
     
     static DisplaySynchronizer createDefaultDisplaySynchronizer(final Context context) {
-        return new DisplaySynchronizer(context, aqzg.r(context));
+        return new DisplaySynchronizer(context, arbu.r(context));
     }
     
     static native byte[] nativeAnalyticsCreateSample(final long p0, final byte[] p1);
@@ -344,9 +344,9 @@ public class GvrApi
         final UserPrefs userPrefs = new UserPrefs(nativeGetUserPrefs(n));
         final Intent setFlags = new Intent("com.google.intent.action.vr.REQUEST_FEATURE").setComponent(Constants.FEATURE_REQUEST_ACTIVITY).setFlags(268435456);
         final ArrayList list = new ArrayList();
-        final int length = array.length;
         final int n2 = 0;
-        for (final UserPrefs$RuntimeFeature userPrefs$RuntimeFeature : array) {
+        for (int i = 0; i < array.length; ++i) {
+            final UserPrefs$RuntimeFeature userPrefs$RuntimeFeature = array[i];
             if (nativeIsFeatureSupported(n, userPrefs$RuntimeFeature.id) && !userPrefs.isFeatureEnabled(userPrefs$RuntimeFeature)) {
                 list.add(userPrefs$RuntimeFeature.tag);
             }
@@ -355,7 +355,7 @@ public class GvrApi
             setFlags.putExtra("required_features", (String[])list.toArray(new String[list.size()]));
         }
         final ArrayList<String> list2 = new ArrayList<String>();
-        for (int length2 = array2.length, j = n2; j < length2; ++j) {
+        for (int length = array2.length, j = n2; j < length; ++j) {
             final UserPrefs$RuntimeFeature userPrefs$RuntimeFeature2 = array2[j];
             if (nativeIsFeatureSupported(n, userPrefs$RuntimeFeature2.id) && !userPrefs.isFeatureEnabled(userPrefs$RuntimeFeature2)) {
                 list2.add(userPrefs$RuntimeFeature2.tag);
@@ -410,7 +410,7 @@ public class GvrApi
         return this.nativeGvrContext;
     }
     
-    public afor getSdkConfigurationParams() {
+    public afqs getSdkConfigurationParams() {
         return SdkConfigurationReader.getParams(this.context);
     }
     

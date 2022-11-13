@@ -62,7 +62,7 @@ public class ReelPlayerProgressPresenter extends View
         this.v = new Paint(1);
         this.w = new Paint(1);
         this.x = new RectF();
-        this.y = (Runnable)new hmi(this, 10);
+        this.y = new hol(this, 8);
     }
     
     public ReelPlayerProgressPresenter(final Context context, final AttributeSet set) {
@@ -81,7 +81,7 @@ public class ReelPlayerProgressPresenter extends View
         this.v = new Paint(1);
         this.w = new Paint(1);
         this.x = new RectF();
-        this.y = (Runnable)new hmi(this, 10);
+        this.y = new hol(this, 8);
     }
     
     private static float e(final DisplayMetrics displayMetrics, final float n) {
@@ -104,13 +104,13 @@ public class ReelPlayerProgressPresenter extends View
         }
     }
     
-    public final void b(final anrf anrf, final boolean b, int n, int i, int n2, float e) {
+    public final void b(final anti anti, final boolean b, int n, int i, int n2, float e) {
         this.t = true;
         final int d = this.d;
         final int e2 = this.e;
         final int k = this.k;
         int d2;
-        if (anrf == null) {
+        if (anti == null) {
             if (b) {
                 d2 = 1;
             }
@@ -119,20 +119,20 @@ public class ReelPlayerProgressPresenter extends View
             }
         }
         else {
-            d2 = anrf.d;
+            d2 = anti.d;
         }
         this.d = d2;
         int e3;
-        if (anrf == null) {
+        if (anti == null) {
             e3 = 0;
         }
         else {
-            e3 = anrf.c - 1;
+            e3 = anti.c - 1;
         }
         this.e = e3;
         this.a();
-        if (anrf != null) {
-            this.setContentDescription((CharSequence)this.getResources().getString(2132019352, new Object[] { anrf.c, anrf.d }));
+        if (anti != null) {
+            this.setContentDescription((CharSequence)this.getResources().getString(2132019353, new Object[] { anti.c, anti.d }));
         }
         this.b = 0L;
         this.a = 0L;
@@ -162,7 +162,7 @@ public class ReelPlayerProgressPresenter extends View
         int min = 100;
         int n5 = 0;
         int min2 = 0;
-        Label_0365: {
+        Label_0364: {
             if (d3 > 100) {
                 final int e4 = this.e;
                 if (e4 < d3) {
@@ -172,7 +172,7 @@ public class ReelPlayerProgressPresenter extends View
                     final int n6 = this.d - this.k;
                     min = Math.min(100, n6);
                     min2 = Math.min(0, n6 - min);
-                    break Label_0365;
+                    break Label_0364;
                 }
                 d3 -= 100;
                 this.k = d3;
@@ -224,12 +224,17 @@ public class ReelPlayerProgressPresenter extends View
             n10 = n11 - e5;
         }
         if (min > 0) {
-            final float n12 = (n10 - e + 1.0f - (min - 1) * e5) / min;
-            for (int n13 = n5, n14 = 0; n14 < min; ++n14, ++n13) {
-                this.n[n13] = e;
-                e += n12;
-                this.o[n13] = e;
-                e += e5;
+            final float n12 = (float)(min - 1);
+            int n13 = n5;
+            int n14 = 0;
+            float n15 = e;
+            while (n14 < min) {
+                this.n[n13] = n15;
+                final float n16 = n15 + (n10 - e + 1.0f - n12 * e5) / min;
+                this.o[n13] = n16;
+                n15 = n16 + e5;
+                ++n14;
+                ++n13;
             }
         }
         this.f = n5 + this.e - this.k;
@@ -251,15 +256,15 @@ public class ReelPlayerProgressPresenter extends View
             n = this.k - k;
         }
         if (n != 0) {
-            float n15;
+            float n17;
             for (i = this.n.length, i = 0; i < 101; ++i) {
                 n2 = i + n;
                 if (n2 >= 0 && n2 < 101) {
-                    n15 = this.p[n2];
-                    if (n15 != 0.0f || this.q[n2] != 0.0f) {
-                        e = this.n[i];
-                        if (e != 0.0f || this.o[i] != 0.0f) {
-                            this.r[i] = e - n15;
+                    e = this.p[n2];
+                    if (e != 0.0f || this.q[n2] != 0.0f) {
+                        n17 = this.n[i];
+                        if (n17 != 0.0f || this.o[i] != 0.0f) {
+                            this.r[i] = n17 - e;
                             this.s[i] = this.o[i] - this.q[n2];
                             continue;
                         }
@@ -303,7 +308,7 @@ public class ReelPlayerProgressPresenter extends View
                 }
             }
         }
-        Label_0201: {
+        Label_0195: {
             if (this.g > 0L) {
                 final long elapsedRealtime = SystemClock.elapsedRealtime();
                 final long g = this.g;
@@ -315,7 +320,7 @@ public class ReelPlayerProgressPresenter extends View
                     this.h = 1.0f - (elapsedRealtime - g) / (float)m;
                 }
                 if (this.h >= 0.0f) {
-                    break Label_0201;
+                    break Label_0195;
                 }
                 this.h = 0.0f;
                 this.g = 0L;

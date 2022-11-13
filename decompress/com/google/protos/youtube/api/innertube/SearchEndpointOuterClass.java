@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class SearchEndpointOuterClass
 {
-    public static final agzg searchEndpoint;
+    public static final ahbf searchEndpoint;
     
     static {
-        searchEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)anvb.a, (MessageLite)anvb.a, (agzn)null, 48687709, ahcm.k, (Class)anvb.class);
+        searchEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)anxf.a, (MessageLite)anxf.a, (ahbm)null, 48687709, ahek.k, (Class)anxf.class);
     }
     
     private SearchEndpointOuterClass() {

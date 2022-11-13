@@ -4,6 +4,7 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.relatedvideos.remoteloaded;
 
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import java.util.concurrent.atomic.AtomicBoolean;
 import android.support.v7.widget.GridLayoutManager;
@@ -26,7 +27,7 @@ final class b extends iw
         }
         int m;
         d d;
-        for (i = this.a.K(), m = this.a.M(), i = Math.max(0, i); i <= m; ++i) {
+        for (i = ((LinearLayoutManager)this.a).K(), m = ((LinearLayoutManager)this.a).M(), i = Math.max(0, i); i <= m; ++i) {
             d = (d)recyclerView.i(i, false);
             if (d != null) {
                 d.F();

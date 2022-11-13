@@ -19,6 +19,10 @@ public final class SidecarCompat$Companion
     private SidecarCompat$Companion() {
     }
     
+    public SidecarCompat$Companion(final atny atny) {
+        this();
+    }
+    
     public final IBinder getActivityWindowToken$window_release(final Activity activity) {
         if (activity != null) {
             final Window window = activity.getWindow();

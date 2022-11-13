@@ -17,7 +17,7 @@ public class EmailEntity extends AbstractSafeParcelable implements Email
     public final String b;
     
     static {
-        CREATOR = (Parcelable$Creator)new njx(6);
+        CREATOR = (Parcelable$Creator)new nlj(5);
     }
     
     public EmailEntity(final PersonFieldMetadataEntity a, final String b) {
@@ -26,7 +26,7 @@ public class EmailEntity extends AbstractSafeParcelable implements Email
     }
     
     public final PersonFieldMetadata a() {
-        return this.a;
+        return (PersonFieldMetadata)this.a;
     }
     
     public final String b() {
@@ -41,17 +41,17 @@ public class EmailEntity extends AbstractSafeParcelable implements Email
             return true;
         }
         final Email email = (Email)o;
-        return kgk.ba((Object)this.a(), (Object)email.a()) && kgk.ba((Object)this.b(), (Object)email.b());
+        return khl.be((Object)((Email)this).a(), (Object)email.a()) && khl.be((Object)((Email)this).b(), (Object)email.b());
     }
     
     public final int hashCode() {
-        return Arrays.hashCode(new Object[] { this.a(), this.b() });
+        return Arrays.hashCode(new Object[] { ((Email)this).a(), ((Email)this).b() });
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        final int i = kgk.I(parcel);
-        kgk.ab(parcel, 2, (Parcelable)this.a, n);
-        kgk.ac(parcel, 3, this.b);
-        kgk.J(parcel, i);
+        final int m = khl.M(parcel);
+        khl.af(parcel, 2, (Parcelable)this.a, n);
+        khl.ag(parcel, 3, this.b);
+        khl.N(parcel, m);
     }
 }

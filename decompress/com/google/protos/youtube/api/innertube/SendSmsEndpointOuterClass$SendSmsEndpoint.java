@@ -6,40 +6,40 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class SendSmsEndpointOuterClass$SendSmsEndpoint extends agzi implements ahax
+public final class SendSmsEndpointOuterClass$SendSmsEndpoint extends ahbh implements ahcw
 {
     public static final SendSmsEndpointOuterClass$SendSmsEndpoint a;
-    private static volatile ahbe e;
-    public static final agzg sendSmsEndpoint;
-    public agzy b;
+    private static volatile ahdd e;
+    public static final ahbf sendSmsEndpoint;
+    public ahbx b;
     public String c;
     public String d;
     private int f;
     
     static {
         final SendSmsEndpointOuterClass$SendSmsEndpoint a2 = new SendSmsEndpointOuterClass$SendSmsEndpoint();
-        agzi.registerDefaultInstance((Class)SendSmsEndpointOuterClass$SendSmsEndpoint.class, (agzi)(a = a2));
-        sendSmsEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 75581109, ahcm.k, (Class)SendSmsEndpointOuterClass$SendSmsEndpoint.class);
+        ahbh.registerDefaultInstance((Class)SendSmsEndpointOuterClass$SendSmsEndpoint.class, (ahbh)(a = a2));
+        sendSmsEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 75581109, ahek.k, (Class)SendSmsEndpointOuterClass$SendSmsEndpoint.class);
     }
     
     private SendSmsEndpointOuterClass$SendSmsEndpoint() {
-        this.b = agzi.emptyProtobufList();
+        this.b = ahbh.emptyProtobufList();
         this.c = "";
         this.d = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = SendSmsEndpointOuterClass$SendSmsEndpoint.e) == null) {
                     synchronized (SendSmsEndpointOuterClass$SendSmsEndpoint.class) {
                         if (SendSmsEndpointOuterClass$SendSmsEndpoint.e == null) {
-                            SendSmsEndpointOuterClass$SendSmsEndpoint.e = (ahbe)new agzb((agzi)SendSmsEndpointOuterClass$SendSmsEndpoint.a);
+                            SendSmsEndpointOuterClass$SendSmsEndpoint.e = (ahdd)new ahba((ahbh)SendSmsEndpointOuterClass$SendSmsEndpoint.a);
                         }
                     }
                 }
@@ -49,7 +49,7 @@ public final class SendSmsEndpointOuterClass$SendSmsEndpoint extends agzi implem
                 return SendSmsEndpointOuterClass$SendSmsEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)SendSmsEndpointOuterClass$SendSmsEndpoint.a);
+                return new ahaz((ahbh)SendSmsEndpointOuterClass$SendSmsEndpoint.a);
             }
             case 3: {
                 return new SendSmsEndpointOuterClass$SendSmsEndpoint();

@@ -9,7 +9,7 @@ import com.google.vr.cardboard.EglReadyListener;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
-class GvrSurfaceView$GLThread extends Thread implements aqzm
+class GvrSurfaceView$GLThread extends Thread implements arca
 {
     private GvrSurfaceView$EglHelper mEglHelper;
     private ArrayList mEventQueue;
@@ -35,6 +35,10 @@ class GvrSurfaceView$GLThread extends Thread implements aqzm
     private boolean mWantRenderNotification;
     private int mWidth;
     
+    static /* bridge */ void -$$Nest$fputmExited(final GvrSurfaceView$GLThread gvrSurfaceView$GLThread, final boolean b) {
+        gvrSurfaceView$GLThread.mExited = true;
+    }
+    
     public GvrSurfaceView$GLThread(final WeakReference mGvrSurfaceViewWeakRef) {
         this.mEventQueue = new ArrayList();
         this.mSizeChanged = true;
@@ -50,7 +54,7 @@ class GvrSurfaceView$GLThread extends Thread implements aqzm
         if (gvrSurfaceView != null && GvrSurfaceView.-$$Nest$fgetmAppContextListener(gvrSurfaceView) != null) {
             final EglReadyListener -$$Nest$fgetmAppContextListener = GvrSurfaceView.-$$Nest$fgetmAppContextListener(gvrSurfaceView);
             synchronized (-$$Nest$fgetmAppContextListener.f) {
-                -$$Nest$fgetmAppContextListener.e = (aqzm)this;
+                -$$Nest$fgetmAppContextListener.e = (arca)this;
             }
         }
     }
@@ -60,318 +64,323 @@ class GvrSurfaceView$GLThread extends Thread implements aqzm
         this.mHaveEglContext = false;
         this.mHaveEglSurface = false;
         this.mWantRenderNotification = false;
-        int swap = 0;
         int n = 0;
         int n2 = 0;
         int n3 = 0;
         int n4 = 0;
         int n5 = 0;
+        GL10 gl10 = null;
         int n6 = 0;
         int n7 = 0;
-        int n8 = 0;
+        int swap = 0;
+        int mRequestedSwapMode = 0;
+        boolean b = false;
         int mWidth = 0;
         int mHeight = 0;
-        int mRequestedSwapMode = 0;
-        Runnable runnable = null;
-        GL10 gl10 = null;
-        try {
-        Label_0981_Outer:
-            while (true) {
-                Object o = this.mGLThreadManager;
-                monitorenter(o);
-                int n9 = swap;
-                try {
-                    while (true) {
-                        if (this.mShouldExit) {
-                            monitorexit(o);
-                            synchronized (this.mGLThreadManager) {
+        while (true) {
+            Runnable runnable = null;
+            int n8 = n4;
+            try {
+            Label_1017_Outer:
+                while (true) {
+                    Object o = this.mGLThreadManager;
+                    monitorenter(o);
+                    int n9 = swap;
+                    n4 = n3;
+                    n3 = n2;
+                    try {
+                        while (true) {
+                            if (this.mShouldExit) {
+                                monitorexit(o);
+                                synchronized (this.mGLThreadManager) {
+                                    this.stopEglSurfaceLocked();
+                                    this.stopEglContextLocked();
+                                    return;
+                                }
+                            }
+                            final boolean empty = this.mEventQueue.isEmpty();
+                            n2 = n4;
+                            if (!empty) {
+                                runnable = this.mEventQueue.remove(0);
+                                n4 = n2;
+                                n2 = n3;
+                                n3 = n4;
+                                n4 = n8;
+                                swap = n9;
+                                break;
+                            }
+                            final boolean mPaused = this.mPaused;
+                            boolean mRequestPaused = this.mRequestPaused;
+                            if (mPaused != mRequestPaused) {
+                                this.mPaused = mRequestPaused;
+                                this.mGLThreadManager.notifyAll();
+                            }
+                            else {
+                                mRequestPaused = false;
+                            }
+                            if (this.mShouldReleaseEglContext) {
                                 this.stopEglSurfaceLocked();
                                 this.stopEglContextLocked();
-                                return;
+                                this.mShouldReleaseEglContext = false;
+                                n2 = 1;
                             }
-                        }
-                        if (!this.mEventQueue.isEmpty()) {
-                            runnable = this.mEventQueue.remove(0);
-                            swap = n9;
-                            break;
-                        }
-                        final boolean mPaused = this.mPaused;
-                        boolean mRequestPaused = this.mRequestPaused;
-                        if (mPaused != mRequestPaused) {
-                            this.mPaused = mRequestPaused;
-                            this.mGLThreadManager.notifyAll();
-                        }
-                        else {
-                            mRequestPaused = false;
-                        }
-                        if (this.mShouldReleaseEglContext) {
-                            this.stopEglSurfaceLocked();
-                            this.stopEglContextLocked();
-                            this.mShouldReleaseEglContext = false;
-                            n5 = 1;
-                        }
-                        if (n2 != 0) {
-                            this.stopEglSurfaceLocked();
-                            this.stopEglContextLocked();
-                        }
-                        Label_0277: {
-                            if (mRequestPaused) {
+                            if (n != 0) {
+                                this.stopEglSurfaceLocked();
+                                this.stopEglContextLocked();
+                            }
+                            Label_0306: {
+                                if (mRequestPaused) {
+                                    if (this.mHaveEglSurface) {
+                                        this.stopEglSurfaceLocked();
+                                    }
+                                    if (this.mHaveEglContext) {
+                                        final GvrSurfaceView gvrSurfaceView = (GvrSurfaceView)this.mGvrSurfaceViewWeakRef.get();
+                                        if (gvrSurfaceView != null) {
+                                            if (GvrSurfaceView.-$$Nest$fgetmPreserveEGLContextOnPause(gvrSurfaceView)) {
+                                                break Label_0306;
+                                            }
+                                        }
+                                        this.stopEglContextLocked();
+                                    }
+                                }
+                            }
+                            if (!this.mHasSurface && !this.mWaitingForSurface) {
                                 if (this.mHaveEglSurface) {
                                     this.stopEglSurfaceLocked();
                                 }
-                                if (this.mHaveEglContext) {
-                                    final GvrSurfaceView gvrSurfaceView = (GvrSurfaceView)this.mGvrSurfaceViewWeakRef.get();
-                                    if (gvrSurfaceView != null) {
-                                        if (GvrSurfaceView.-$$Nest$fgetmPreserveEGLContextOnPause(gvrSurfaceView)) {
-                                            break Label_0277;
-                                        }
-                                    }
-                                    this.stopEglContextLocked();
-                                }
+                                this.mWaitingForSurface = true;
+                                this.mSurfaceIsBad = false;
+                                this.mGLThreadManager.notifyAll();
                             }
-                        }
-                        if (!this.mHasSurface && !this.mWaitingForSurface) {
-                            if (this.mHaveEglSurface) {
-                                this.stopEglSurfaceLocked();
+                            if (this.mHasSurface && this.mWaitingForSurface) {
+                                this.mWaitingForSurface = false;
+                                this.mGLThreadManager.notifyAll();
                             }
-                            this.mWaitingForSurface = true;
-                            this.mSurfaceIsBad = false;
-                            this.mGLThreadManager.notifyAll();
-                        }
-                        if (this.mHasSurface && this.mWaitingForSurface) {
-                            this.mWaitingForSurface = false;
-                            this.mGLThreadManager.notifyAll();
-                        }
-                        if (n4 != 0) {
-                            this.mWantRenderNotification = false;
-                            this.mRenderComplete = true;
-                            this.mGLThreadManager.notifyAll();
-                        }
-                        int n11;
-                        int n12;
-                        if (this.readyToDraw()) {
-                            final boolean mHaveEglContext = this.mHaveEglContext;
-                            n4 = n5;
-                            n2 = mRequestedSwapMode;
-                            Label_0456: {
-                                if (!mHaveEglContext) {
-                                    Label_0397: {
-                                        if (n5 == 0) {
-                                            try {
-                                                this.mEglHelper.start();
-                                                if (this.mEglHelper.mEglContext == null) {
-                                                    break Label_0397;
-                                                }
-                                                this.mHaveEglContext = true;
-                                                this.mGLThreadManager.notifyAll();
-                                                n4 = 0;
-                                                n2 = 1;
-                                            }
-                                            catch (final RuntimeException ex) {
-                                                this.mGLThreadManager.releaseEglContextLocked(this);
-                                                throw ex;
-                                            }
-                                            break Label_0456;
-                                        }
-                                    }
-                                    n4 = 0;
-                                    n2 = mRequestedSwapMode;
-                                }
+                            if (n3 != 0) {
+                                this.mWantRenderNotification = false;
+                                this.mRenderComplete = true;
+                                this.mGLThreadManager.notifyAll();
                             }
                             int n10;
-                            if (this.mHaveEglContext && !this.mHaveEglSurface) {
-                                this.mHaveEglSurface = true;
-                                mRequestedSwapMode = 1;
-                                n10 = 1;
-                                n3 = 1;
+                            if (this.readyToDraw()) {
+                                Label_0477: {
+                                    Label_0474: {
+                                        if (!this.mHaveEglContext) {
+                                            Label_0417: {
+                                                if (n2 == 0) {
+                                                    try {
+                                                        this.mEglHelper.start();
+                                                        if (this.mEglHelper.mEglContext != null) {
+                                                            this.mHaveEglContext = true;
+                                                            this.mGLThreadManager.notifyAll();
+                                                            n2 = 0;
+                                                            n = 1;
+                                                            break Label_0477;
+                                                        }
+                                                        break Label_0417;
+                                                    }
+                                                    catch (final RuntimeException ex) {
+                                                        this.mGLThreadManager.releaseEglContextLocked(this);
+                                                        throw ex;
+                                                    }
+                                                    break Label_0474;
+                                                }
+                                            }
+                                            n2 = 0;
+                                            n = n6;
+                                            break Label_0477;
+                                        }
+                                    }
+                                    n = n6;
+                                }
+                                n4 = n7;
+                                swap = n9;
+                                n3 = mRequestedSwapMode;
+                                if (this.mHaveEglContext) {
+                                    n4 = n7;
+                                    swap = n9;
+                                    n3 = mRequestedSwapMode;
+                                    if (!this.mHaveEglSurface) {
+                                        this.mHaveEglSurface = true;
+                                        n4 = 1;
+                                        swap = 1;
+                                        n3 = 1;
+                                    }
+                                }
+                                mRequestedSwapMode = n2;
+                                n6 = n;
+                                n7 = n4;
+                                n9 = swap;
+                                n10 = n3;
+                                if (this.mHaveEglSurface) {
+                                    if (this.mSizeChanged) {
+                                        mWidth = this.mWidth;
+                                        mHeight = this.mHeight;
+                                        this.mWantRenderNotification = true;
+                                        this.mSizeChanged = false;
+                                        n4 = 1;
+                                        n3 = 1;
+                                    }
+                                    this.mRequestRender = false;
+                                    this.mGLThreadManager.notifyAll();
+                                    final int n11 = n8 | (this.mWantRenderNotification ? 1 : 0);
+                                    mRequestedSwapMode = this.mRequestedSwapMode;
+                                    b = (mRequestedSwapMode != n5);
+                                    n5 = mRequestedSwapMode;
+                                    n8 = 0;
+                                    final int n12 = 0;
+                                    mRequestedSwapMode = n3;
+                                    n7 = n4;
+                                    n6 = n;
+                                    n4 = n11;
+                                    n3 = n2;
+                                    n2 = n12;
+                                    n = n8;
+                                    break;
+                                }
                             }
                             else {
-                                mRequestedSwapMode = n9;
-                                n10 = n;
-                            }
-                            swap = mRequestedSwapMode;
-                            n = n10;
-                            n11 = n3;
-                            n5 = n4;
-                            n12 = n2;
-                            if (this.mHaveEglSurface) {
-                                if (this.mSizeChanged) {
-                                    mWidth = this.mWidth;
-                                    mHeight = this.mHeight;
-                                    this.mWantRenderNotification = true;
-                                    this.mSizeChanged = false;
-                                    swap = 1;
-                                    n3 = 1;
-                                }
-                                else {
-                                    swap = mRequestedSwapMode;
-                                }
-                                this.mRequestRender = false;
-                                this.mGLThreadManager.notifyAll();
-                                n6 |= (this.mWantRenderNotification ? 1 : 0);
-                                mRequestedSwapMode = this.mRequestedSwapMode;
-                                if (mRequestedSwapMode != n8) {
-                                    n = 1;
-                                }
-                                else {
-                                    n = 0;
-                                }
-                                n8 = mRequestedSwapMode;
-                                final int n13 = 0;
-                                final int n14 = 0;
+                                n10 = mRequestedSwapMode;
                                 mRequestedSwapMode = n2;
-                                n7 = n;
-                                n5 = n4;
-                                n4 = n14;
-                                n2 = n13;
-                                n = n10;
-                                break;
                             }
+                            this.mGLThreadManager.wait();
+                            n = 0;
+                            n3 = 0;
+                            n4 = mRequestedSwapMode;
+                            mRequestedSwapMode = n10;
                         }
-                        else {
-                            n12 = mRequestedSwapMode;
-                            n11 = n3;
-                            swap = n9;
+                        monitorexit(o);
+                        if (runnable != null) {
+                            runnable.run();
+                            break;
                         }
-                        this.mGLThreadManager.wait();
-                        n2 = 0;
-                        n4 = 0;
-                        n9 = swap;
-                        n3 = n11;
-                        mRequestedSwapMode = n12;
-                    }
-                    monitorexit(o);
-                    if (runnable != null) {
-                        runnable.run();
-                        runnable = null;
-                        continue Label_0981_Outer;
-                    }
-                    int n15 = n8;
-                    Label_0746: {
-                        if (swap != 0) {
-                            if (this.mEglHelper.createSurface()) {
+                        int n13 = n5;
+                        Label_0781: {
+                            if (n7 != 0) {
+                                if (this.mEglHelper.createSurface()) {
+                                    synchronized (this.mGLThreadManager) {
+                                        this.mFinishedCreatingEglSurface = true;
+                                        this.mGLThreadManager.notifyAll();
+                                        monitorexit(this.mGLThreadManager);
+                                        n13 = 0;
+                                        break Label_0781;
+                                    }
+                                }
                                 synchronized (this.mGLThreadManager) {
                                     this.mFinishedCreatingEglSurface = true;
-                                    this.mGLThreadManager.notifyAll();
-                                    monitorexit(this.mGLThreadManager);
-                                    n15 = 0;
-                                    break Label_0746;
-                                }
-                            }
-                            synchronized (this.mGLThreadManager) {
-                                this.mFinishedCreatingEglSurface = true;
-                                this.mSurfaceIsBad = true;
-                                this.mGLThreadManager.notifyAll();
-                                continue Label_0981_Outer;
-                            }
-                        }
-                    }
-                    if (n != 0) {
-                        gl10 = (GL10)this.mEglHelper.createGL();
-                    }
-                    if (mRequestedSwapMode != 0) {
-                        o = this.mGvrSurfaceViewWeakRef.get();
-                        if (o != null) {
-                            try {
-                                GvrSurfaceView.-$$Nest$fgetmRenderer((GvrSurfaceView)o).onSurfaceCreated(gl10, this.mEglHelper.mEglConfig);
-                            }
-                            finally {}
-                        }
-                    }
-                    if (n3 != 0) {
-                        o = this.mGvrSurfaceViewWeakRef.get();
-                        if (o != null) {
-                            try {
-                                GvrSurfaceView.-$$Nest$fgetmRenderer((GvrSurfaceView)o).onSurfaceChanged(gl10, mWidth, mHeight);
-                            }
-                            finally {}
-                        }
-                    }
-                    if (n7 != 0) {
-                        o = this.mEglHelper;
-                        if (n15 == 1) {
-                            mRequestedSwapMode = 12421;
-                        }
-                        else {
-                            mRequestedSwapMode = 12420;
-                        }
-                        ((GvrSurfaceView$EglHelper)o).setEglSurfaceAttrib(12422, mRequestedSwapMode);
-                        o = this.mEglHelper;
-                        if (n15 == 1) {
-                            mRequestedSwapMode = 1;
-                        }
-                        else {
-                            mRequestedSwapMode = 0;
-                        }
-                        ((GvrSurfaceView$EglHelper)o).setEglSurfaceAttrib(12620, mRequestedSwapMode);
-                    }
-                    o = this.mGvrSurfaceViewWeakRef.get();
-                    if (o != null) {
-                        try {
-                            GvrSurfaceView.-$$Nest$fgetmRenderer((GvrSurfaceView)o).onDrawFrame(gl10);
-                        }
-                        finally {}
-                    }
-                Label_1060:
-                    while (true) {
-                        Label_0988: {
-                            if (n7 != 0) {
-                                mRequestedSwapMode = n15;
-                                break Label_0988;
-                            }
-                            if (n15 == 0) {
-                                mRequestedSwapMode = 0;
-                                break Label_0988;
-                            }
-                            break Label_1060;
-                        }
-                        swap = this.mEglHelper.swap();
-                        if (swap != 12288) {
-                            if (swap != 12302) {
-                                GvrSurfaceView$EglHelper.logEglErrorAsWarning("GLThread", "eglSwapBuffers", swap);
-                                if (mRequestedSwapMode != 0) {
-                                    continue;
-                                }
-                                synchronized (this.mGLThreadManager) {
                                     this.mSurfaceIsBad = true;
                                     this.mGLThreadManager.notifyAll();
-                                    break Label_1060;
+                                    monitorexit(this.mGLThreadManager);
+                                    n8 = n4;
+                                    continue Label_1017_Outer;
                                 }
                             }
-                            n2 = 1;
                         }
-                        break;
-                    }
-                    swap = 0;
-                    n = 0;
-                    n3 = 0;
-                    mRequestedSwapMode = n6;
-                    if (n6 != 0) {
-                        n4 = 1;
+                        if (swap != 0) {
+                            gl10 = (GL10)this.mEglHelper.createGL();
+                        }
+                        if (n6 != 0) {
+                            o = this.mGvrSurfaceViewWeakRef.get();
+                            if (o != null) {
+                                try {
+                                    GvrSurfaceView.-$$Nest$fgetmRenderer((GvrSurfaceView)o).onSurfaceCreated(gl10, this.mEglHelper.mEglConfig);
+                                }
+                                finally {}
+                            }
+                        }
+                        if (mRequestedSwapMode != 0) {
+                            o = this.mGvrSurfaceViewWeakRef.get();
+                            if (o != null) {
+                                try {
+                                    GvrSurfaceView.-$$Nest$fgetmRenderer((GvrSurfaceView)o).onSurfaceChanged(gl10, mWidth, mHeight);
+                                }
+                                finally {}
+                            }
+                        }
+                        if (b) {
+                            o = this.mEglHelper;
+                            if (n13 == 1) {
+                                mRequestedSwapMode = 12421;
+                            }
+                            else {
+                                mRequestedSwapMode = 12420;
+                            }
+                            ((GvrSurfaceView$EglHelper)o).setEglSurfaceAttrib(12422, mRequestedSwapMode);
+                            o = this.mEglHelper;
+                            if (n13 == 1) {
+                                mRequestedSwapMode = 1;
+                            }
+                            else {
+                                mRequestedSwapMode = 0;
+                            }
+                            ((GvrSurfaceView$EglHelper)o).setEglSurfaceAttrib(12620, mRequestedSwapMode);
+                        }
+                        o = this.mGvrSurfaceViewWeakRef.get();
+                        if (o != null) {
+                            try {
+                                GvrSurfaceView.-$$Nest$fgetmRenderer((GvrSurfaceView)o).onDrawFrame(gl10);
+                            }
+                            finally {}
+                        }
+                    Label_1100:
+                        while (true) {
+                            Label_1024: {
+                                if (b) {
+                                    mRequestedSwapMode = n13;
+                                    break Label_1024;
+                                }
+                                if (n13 == 0) {
+                                    mRequestedSwapMode = 0;
+                                    break Label_1024;
+                                }
+                                break Label_1100;
+                            }
+                            swap = this.mEglHelper.swap();
+                            if (swap != 12288) {
+                                if (swap != 12302) {
+                                    GvrSurfaceView$EglHelper.logEglErrorAsWarning("GLThread", "eglSwapBuffers", swap);
+                                    if (mRequestedSwapMode != 0) {
+                                        continue;
+                                    }
+                                    synchronized (this.mGLThreadManager) {
+                                        this.mSurfaceIsBad = true;
+                                        this.mGLThreadManager.notifyAll();
+                                        break Label_1100;
+                                    }
+                                }
+                                n = 1;
+                            }
+                            break;
+                        }
+                        n8 = n4;
+                        if (n4 != 0) {
+                            n2 = 1;
+                            n8 = 0;
+                        }
+                        n6 = 0;
+                        n7 = 0;
+                        swap = 0;
                         mRequestedSwapMode = 0;
+                        n5 = n13;
+                        continue Label_1017_Outer;
                     }
-                    final int n16 = 0;
-                    n6 = mRequestedSwapMode;
-                    n8 = n15;
-                    mRequestedSwapMode = n16;
-                    continue Label_0981_Outer;
+                    finally {
+                        monitorexit(o);
+                    }
                 }
-                finally {
-                    monitorexit(o);
-                }
-            }
-        }
-        finally {
-            final GvrSurfaceView$GLThread$GLThreadManager mglThreadManager = this.mGLThreadManager;
-            monitorenter(mglThreadManager);
-            try {
-                this.stopEglSurfaceLocked();
-                this.stopEglContextLocked();
-                monitorexit(mglThreadManager);
             }
             finally {
-                monitorexit(mglThreadManager);
-                while (true) {}
+                final GvrSurfaceView$GLThread$GLThreadManager mglThreadManager = this.mGLThreadManager;
+                monitorenter(mglThreadManager);
+                try {
+                    this.stopEglSurfaceLocked();
+                    this.stopEglContextLocked();
+                    monitorexit(mglThreadManager);
+                }
+                finally {
+                    monitorexit(mglThreadManager);
+                    while (true) {}
+                }
             }
         }
     }

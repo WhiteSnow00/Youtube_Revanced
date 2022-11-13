@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class OfflineEndpointOuterClass
 {
-    public static final agzg offlineEndpoint;
+    public static final ahbf offlineEndpoint;
     
     static {
-        offlineEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)amrs.a, (MessageLite)amrs.a, (agzn)null, 51958981, ahcm.k, (Class)amrs.class);
+        offlineEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)amtw.a, (MessageLite)amtw.a, (ahbm)null, 51958981, ahek.k, (Class)amtw.class);
     }
     
     private OfflineEndpointOuterClass() {

@@ -14,7 +14,7 @@ public abstract class ReviewInfo implements Parcelable
     public static final Parcelable$Creator CREATOR;
     
     static {
-        CREATOR = (Parcelable$Creator)new abyl(5);
+        CREATOR = (Parcelable$Creator)new acao(5);
     }
     
     public static ReviewInfo c(final PendingIntent pendingIntent, final boolean b) {

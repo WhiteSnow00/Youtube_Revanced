@@ -23,7 +23,7 @@ public final class ContactsConsentsCoarseStatus extends AbstractSafeParcelable
     private final List g;
     
     static {
-        CREATOR = (Parcelable$Creator)new nit(18);
+        CREATOR = (Parcelable$Creator)new njy(17);
     }
     
     public ContactsConsentsCoarseStatus(final boolean a, final boolean b, final List e, final List f, final String c, final boolean d, final List g) {
@@ -44,46 +44,46 @@ public final class ContactsConsentsCoarseStatus extends AbstractSafeParcelable
             return false;
         }
         final ContactsConsentsCoarseStatus contactsConsentsCoarseStatus = (ContactsConsentsCoarseStatus)o;
-        return this.a == contactsConsentsCoarseStatus.a && this.b == contactsConsentsCoarseStatus.b && aeda.v((Object)this.f, (Object)contactsConsentsCoarseStatus.f) && aeda.v((Object)this.e, (Object)contactsConsentsCoarseStatus.e) && aeda.v((Object)this.c, (Object)contactsConsentsCoarseStatus.c) && this.d == contactsConsentsCoarseStatus.d && aeda.v((Object)this.g, (Object)contactsConsentsCoarseStatus.g);
+        return this.a == contactsConsentsCoarseStatus.a && this.b == contactsConsentsCoarseStatus.b && adkp.ae(this.f, contactsConsentsCoarseStatus.f) && adkp.ae(this.e, contactsConsentsCoarseStatus.e) && adkp.ae(this.c, contactsConsentsCoarseStatus.c) && this.d == contactsConsentsCoarseStatus.d && adkp.ae(this.g, contactsConsentsCoarseStatus.g);
     }
     
     public final int hashCode() {
         return Arrays.hashCode(new Object[] { this.a, this.b, this.e, this.f, this.c, this.d, this.g });
     }
     
-    public final void writeToParcel(final Parcel parcel, int i) {
-        i = kgk.I(parcel);
-        kgk.K(parcel, 1, this.a);
-        kgk.K(parcel, 2, this.b);
+    public final void writeToParcel(final Parcel parcel, int m) {
+        m = khl.M(parcel);
+        khl.O(parcel, 1, this.a);
+        khl.O(parcel, 2, this.b);
         final List e = this.e;
-        afcr afcr;
+        afeq afeq;
         if (e == null) {
-            afcr = afcr.q();
+            afeq = afeq.q();
         }
         else {
-            afcr = afcr.o((Collection)e);
+            afeq = afeq.o((Collection)e);
         }
-        kgk.ag(parcel, 3, (List)afcr);
+        khl.ak(parcel, 3, (List)afeq);
         final List f = this.f;
-        afcr afcr2;
+        afeq afeq2;
         if (f == null) {
-            afcr2 = afcr.q();
+            afeq2 = afeq.q();
         }
         else {
-            afcr2 = afcr.o((Collection)f);
+            afeq2 = afeq.o((Collection)f);
         }
-        kgk.ag(parcel, 4, (List)afcr2);
-        kgk.ac(parcel, 5, this.c);
-        kgk.K(parcel, 6, this.d);
+        khl.ak(parcel, 4, (List)afeq2);
+        khl.ag(parcel, 5, this.c);
+        khl.O(parcel, 6, this.d);
         final List g = this.g;
-        afcr afcr3;
+        afeq afeq3;
         if (g == null) {
-            afcr3 = afcr.q();
+            afeq3 = afeq.q();
         }
         else {
-            afcr3 = afcr.o((Collection)g);
+            afeq3 = afeq.o((Collection)g);
         }
-        kgk.ag(parcel, 7, (List)afcr3);
-        kgk.J(parcel, i);
+        khl.ak(parcel, 7, (List)afeq3);
+        khl.N(parcel, m);
     }
 }

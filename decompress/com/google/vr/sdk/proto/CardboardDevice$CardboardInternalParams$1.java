@@ -4,7 +4,7 @@
 
 package com.google.vr.sdk.proto;
 
-class CardboardDevice$CardboardInternalParams$1 implements agzr
+class CardboardDevice$CardboardInternalParams$1 implements ahbq
 {
     public CardboardDevice$CardboardInternalParams$1() {
     }
@@ -15,5 +15,9 @@ class CardboardDevice$CardboardInternalParams$1 implements agzr
             cardboardDevice$CardboardInternalParams$OrientationType = CardboardDevice$CardboardInternalParams$OrientationType.CCW_0_DEGREES;
         }
         return cardboardDevice$CardboardInternalParams$OrientationType;
+    }
+    
+    public /* bridge */ Object convert(final Object o) {
+        return this.convert((Integer)o);
     }
 }

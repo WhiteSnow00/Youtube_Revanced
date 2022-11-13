@@ -10,14 +10,14 @@ import android.os.ResultReceiver;
 
 public class ReviewManagerImpl$1 extends ResultReceiver
 {
-    final /* synthetic */ nmo a;
+    final nns a;
     
-    public ReviewManagerImpl$1(final Handler handler, final nmo a, final byte[] array) {
+    public ReviewManagerImpl$1(final Handler handler, final nns a, final byte[] array) {
         this.a = a;
         super(handler);
     }
     
     public final void onReceiveResult(final int n, final Bundle bundle) {
-        this.a.e((Object)null);
+        this.a.d((Object)null);
     }
 }

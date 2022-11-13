@@ -23,7 +23,15 @@ class LatchRecord$1 implements Parcelable$Creator
         return LatchRecord.instance;
     }
     
+    public /* bridge */ Object createFromParcel(final Parcel parcel) {
+        return this.createFromParcel(parcel);
+    }
+    
     public LatchRecord[] newArray(final int n) {
         return new LatchRecord[n];
+    }
+    
+    public /* bridge */ Object[] newArray(final int n) {
+        return this.newArray(n);
     }
 }

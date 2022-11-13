@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class NerdStatsEndpointOuterClass$NerdStatsEndpoint extends agzi implements ahax
+public final class NerdStatsEndpointOuterClass$NerdStatsEndpoint extends ahbh implements ahcw
 {
     public static final NerdStatsEndpointOuterClass$NerdStatsEndpoint a;
-    private static volatile ahbe b;
-    public static final agzg nerdStatsEndpoint;
+    private static volatile ahdd b;
+    public static final ahbf nerdStatsEndpoint;
     
     static {
         final NerdStatsEndpointOuterClass$NerdStatsEndpoint a2 = new NerdStatsEndpointOuterClass$NerdStatsEndpoint();
-        agzi.registerDefaultInstance((Class)NerdStatsEndpointOuterClass$NerdStatsEndpoint.class, (agzi)(a = a2));
-        nerdStatsEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 123140429, ahcm.k, (Class)NerdStatsEndpointOuterClass$NerdStatsEndpoint.class);
+        ahbh.registerDefaultInstance((Class)NerdStatsEndpointOuterClass$NerdStatsEndpoint.class, (ahbh)(a = a2));
+        nerdStatsEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 123140429, ahek.k, (Class)NerdStatsEndpointOuterClass$NerdStatsEndpoint.class);
     }
     
     private NerdStatsEndpointOuterClass$NerdStatsEndpoint() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = NerdStatsEndpointOuterClass$NerdStatsEndpoint.b) == null) {
                     synchronized (NerdStatsEndpointOuterClass$NerdStatsEndpoint.class) {
                         if (NerdStatsEndpointOuterClass$NerdStatsEndpoint.b == null) {
-                            NerdStatsEndpointOuterClass$NerdStatsEndpoint.b = (ahbe)new agzb((agzi)NerdStatsEndpointOuterClass$NerdStatsEndpoint.a);
+                            NerdStatsEndpointOuterClass$NerdStatsEndpoint.b = (ahdd)new ahba((ahbh)NerdStatsEndpointOuterClass$NerdStatsEndpoint.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class NerdStatsEndpointOuterClass$NerdStatsEndpoint extends agzi im
                 return NerdStatsEndpointOuterClass$NerdStatsEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)NerdStatsEndpointOuterClass$NerdStatsEndpoint.a);
+                return new ahaz((ahbh)NerdStatsEndpointOuterClass$NerdStatsEndpoint.a);
             }
             case 3: {
                 return new NerdStatsEndpointOuterClass$NerdStatsEndpoint();

@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">البم پر واپس جائیں</string>
     <string name="accessibility_navigation_back_button">پیچھے جائیں</string>
     <string name="accessibility_new_content_available">نیا مواد دستیاب ہے</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">نئی ویڈیوز</string>
     <string name="accessibility_next">اگلی ویڈیو</string>
     <string name="accessibility_offline_button_cancel">ڈاؤن لوڈ کرنا روکیں</string>
     <string name="accessibility_offline_button_cannot_save">ڈاؤن لوڈ نہیں ہو سکتا</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">ڈیٹا کی نگرانی اور کنٹرول</string>
     <string name="data_saving_persistent_title">ڈیٹا کی بچت</string>
     <string name="data_saving_select_quality_every_video_switch_title">ہر ویڈیو کے لیے معیار منتخب کریں</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">اسمارٹ ڈاؤن لوڈز کی کوالٹی کو کم کریں</string>
     <string name="data_saving_snack_bar_action_button">دیکھیں</string>
     <string name="data_saving_snack_bar_text">یہ تبدیلی آپ کے ڈیٹا کو محفوظ کرنے کی ترتیبات کو متاثر کرتی ہے</string>
     <string name="data_saving_upload_wifi_only_switch_title">‏صرف Wi-Fi پر اپ لوڈ کریں</string>

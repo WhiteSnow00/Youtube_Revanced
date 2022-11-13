@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ResetSearchBarCommandOuterClass$ResetSearchBarCommand extends agzi implements ahax
+public final class ResetSearchBarCommandOuterClass$ResetSearchBarCommand extends ahbh implements ahcw
 {
     public static final ResetSearchBarCommandOuterClass$ResetSearchBarCommand a;
-    private static volatile ahbe b;
-    public static final agzg resetSearchBarCommand;
+    private static volatile ahdd b;
+    public static final ahbf resetSearchBarCommand;
     
     static {
         final ResetSearchBarCommandOuterClass$ResetSearchBarCommand a2 = new ResetSearchBarCommandOuterClass$ResetSearchBarCommand();
-        agzi.registerDefaultInstance((Class)ResetSearchBarCommandOuterClass$ResetSearchBarCommand.class, (agzi)(a = a2));
-        resetSearchBarCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 245120411, ahcm.k, (Class)ResetSearchBarCommandOuterClass$ResetSearchBarCommand.class);
+        ahbh.registerDefaultInstance((Class)ResetSearchBarCommandOuterClass$ResetSearchBarCommand.class, (ahbh)(a = a2));
+        resetSearchBarCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 245120411, ahek.k, (Class)ResetSearchBarCommandOuterClass$ResetSearchBarCommand.class);
     }
     
     private ResetSearchBarCommandOuterClass$ResetSearchBarCommand() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = ResetSearchBarCommandOuterClass$ResetSearchBarCommand.b) == null) {
                     synchronized (ResetSearchBarCommandOuterClass$ResetSearchBarCommand.class) {
                         if (ResetSearchBarCommandOuterClass$ResetSearchBarCommand.b == null) {
-                            ResetSearchBarCommandOuterClass$ResetSearchBarCommand.b = (ahbe)new agzb((agzi)ResetSearchBarCommandOuterClass$ResetSearchBarCommand.a);
+                            ResetSearchBarCommandOuterClass$ResetSearchBarCommand.b = (ahdd)new ahba((ahbh)ResetSearchBarCommandOuterClass$ResetSearchBarCommand.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class ResetSearchBarCommandOuterClass$ResetSearchBarCommand extends
                 return ResetSearchBarCommandOuterClass$ResetSearchBarCommand.a;
             }
             case 4: {
-                return new agza((agzi)ResetSearchBarCommandOuterClass$ResetSearchBarCommand.a);
+                return new ahaz((ahbh)ResetSearchBarCommandOuterClass$ResetSearchBarCommand.a);
             }
             case 3: {
                 return new ResetSearchBarCommandOuterClass$ResetSearchBarCommand();

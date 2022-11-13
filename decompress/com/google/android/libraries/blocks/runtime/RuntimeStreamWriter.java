@@ -11,10 +11,10 @@ import java.util.function.Consumer;
 public final class RuntimeStreamWriter implements AutoCloseable
 {
     private final long a;
-    private final oao b;
+    private final obu b;
     
     public RuntimeStreamWriter(final long a) {
-        this.nativeSetWriter(this.a = a, (WriterProxy)(this.b = new oao()));
+        this.nativeSetWriter(this.a = a, (WriterProxy)(this.b = new obu()));
     }
     
     private native void nativeDelete(final long p0);
@@ -33,30 +33,30 @@ public final class RuntimeStreamWriter implements AutoCloseable
     
     public final void b(final Throwable t) {
         final long a = this.a;
-        phq phq;
+        pja pja;
         if (t instanceof StatusException) {
             final StatusException ex = (StatusException)t;
-            phq = new phq(ex.b, ex.getMessage());
+            pja = new pja(ex.b, ex.getMessage());
         }
         else {
-            phq = new phq(agsq.o, t.getMessage());
+            pja = new pja(agup.o, t.getMessage());
         }
-        final agza builder = ((agzi)agsr.a).createBuilder();
-        final int s = ((agsq)phq.b).s;
+        final ahaz builder = ((ahbh)aguq.a).createBuilder();
+        final int s = ((agup)pja.a).s;
         builder.copyOnWrite();
-        final agsr agsr = (agsr)builder.instance;
-        agsr.b |= 0x1;
-        agsr.c = s;
+        final aguq aguq = (aguq)builder.instance;
+        aguq.b |= 0x1;
+        aguq.c = s;
         builder.copyOnWrite();
-        agsr.a((agsr)builder.instance);
-        final Object a2 = phq.a;
-        if (a2 != null) {
+        aguq.a((aguq)builder.instance);
+        final Object b = pja.b;
+        if (b != null) {
             builder.copyOnWrite();
-            final agsr agsr2 = (agsr)builder.instance;
-            agsr2.b |= 0x4;
-            agsr2.d = (String)a2;
+            final aguq aguq2 = (aguq)builder.instance;
+            aguq2.b |= 0x4;
+            aguq2.d = (String)b;
         }
-        this.nativeWritesDoneWithError(a, ((agxl)builder.build()).toByteArray());
+        this.nativeWritesDoneWithError(a, ((agzk)builder.build()).toByteArray());
     }
     
     public final boolean c(final MessageLite messageLite) {

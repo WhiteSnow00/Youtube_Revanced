@@ -19,24 +19,28 @@ import android.os.SystemClock;
 import android.app.Activity;
 import android.content.Context;
 
-public final class ShortsCreationActivity extends gvc implements aemu, aenm
+public final class ShortsCreationActivity extends gvq implements aeou, aepm
 {
-    private gvf b;
-    private final aepy c;
+    private gvu b;
+    private final aerz c;
     private boolean d;
     private Context e;
-    private aun f;
+    private auo f;
     private boolean g;
     
     public ShortsCreationActivity() {
-        this.c = aepy.a((Activity)this);
+        this.c = aerz.a((Activity)this);
         SystemClock.elapsedRealtime();
-        ((qt)this).addOnContextAvailableListener((rc)new qn(this, 16));
+        ((qt)this).addOnContextAvailableListener((rc)new qn(this, 18));
     }
     
-    private final gvf j() {
+    private final gvu j() {
         this.e();
         return this.b;
+    }
+    
+    public final /* bridge */ Object aN() {
+        return this.d();
     }
     
     public final void applyOverrideConfiguration(final Configuration configuration) {
@@ -44,18 +48,22 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
         if ((context = this.getBaseContext()) == null) {
             context = this.e;
         }
-        aety.b(context);
+        aeuz.c(context);
         super.applyOverrideConfiguration(configuration);
     }
     
     protected final void attachBaseContext(final Context e) {
-        aety.a(this.e = e);
+        aeuz.b(this.e = e);
         super.attachBaseContext(e);
         this.e = null;
     }
     
-    public final gvf d() {
-        final gvf b = this.b;
+    public final arku b() {
+        return (arku)aeps.a((Activity)this);
+    }
+    
+    public final gvu d() {
+        final gvu b = this.b;
         if (b == null) {
             throw new IllegalStateException("peer() called before initialized.");
         }
@@ -71,11 +79,11 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
         // 
         // Original Bytecode:
         // 
-        //     1: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/activity/ShortsCreationActivity.b:Lgvf;
-        //     4: ifnonnull       419
+        //     1: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/activity/ShortsCreationActivity.b:Lgvu;
+        //     4: ifnonnull       432
         //     7: aload_0        
         //     8: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/activity/ShortsCreationActivity.d:Z
-        //    11: ifeq            409
+        //    11: ifeq            422
         //    14: aload_0        
         //    15: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/activity/ShortsCreationActivity.g:Z
         //    18: ifeq            41
@@ -89,186 +97,187 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
         //    37: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
         //    40: athrow         
         //    41: ldc             "CreateComponent"
-        //    43: invokestatic    aesw.o:(Ljava/lang/String;)Laere;
-        //    46: astore_1       
+        //    43: invokestatic    aeux.o:(Ljava/lang/String;)Laetf;
+        //    46: astore_2       
         //    47: aload_0        
-        //    48: invokevirtual   gvc.aR:()Ljava/lang/Object;
+        //    48: invokevirtual   gvq.aR:()Ljava/lang/Object;
         //    51: pop            
-        //    52: aload_1        
-        //    53: invokevirtual   aere.close:()V
+        //    52: aload_2        
+        //    53: invokevirtual   aetf.close:()V
         //    56: ldc             "CreatePeer"
-        //    58: invokestatic    aesw.o:(Ljava/lang/String;)Laere;
-        //    61: astore_2       
+        //    58: invokestatic    aeux.o:(Ljava/lang/String;)Laetf;
+        //    61: astore_1       
         //    62: aload_0        
-        //    63: invokevirtual   gvc.aR:()Ljava/lang/Object;
-        //    66: astore_3       
-        //    67: aload_3        
-        //    68: checkcast       Lesm;
-        //    71: invokevirtual   esm.D:()Lcom/google/android/apps/youtube/app/extensions/reel/creation/shorts/activity/ShortsCreationActivity;
-        //    74: astore          4
-        //    76: aload_3        
-        //    77: checkcast       Lesm;
-        //    80: getfield        esm.eZ:Latjj;
-        //    83: invokeinterface atjj.a:()Ljava/lang/Object;
-        //    88: checkcast       Lucs;
-        //    91: astore          5
-        //    93: aload_3        
-        //    94: checkcast       Lesm;
-        //    97: getfield        esm.b:Leqv;
-        //   100: getfield        eqv.e:Latjj;
-        //   103: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   108: checkcast       Loas;
-        //   111: astore_1       
-        //   112: aload_3        
-        //   113: checkcast       Lesm;
-        //   116: getfield        esm.b:Leqv;
-        //   119: getfield        eqv.a:Leqx;
-        //   122: getfield        eqx.aw:Latjj;
-        //   125: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   130: checkcast       Lphq;
-        //   133: astore          6
-        //   135: aload_3        
-        //   136: checkcast       Lesm;
-        //   139: getfield        esm.b:Leqv;
-        //   142: getfield        eqv.a:Leqx;
-        //   145: getfield        eqx.ax:Latjj;
-        //   148: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   153: checkcast       Lozv;
-        //   156: astore          6
-        //   158: aload_3        
-        //   159: checkcast       Lesm;
-        //   162: getfield        esm.b:Leqv;
-        //   165: getfield        eqv.a:Leqx;
-        //   168: getfield        eqx.aq:Latjj;
-        //   171: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   176: checkcast       Lauip;
-        //   179: astore          7
-        //   181: aload_3        
-        //   182: checkcast       Lesm;
-        //   185: getfield        esm.e:Latjj;
-        //   188: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   193: checkcast       Laegi;
-        //   196: astore          8
-        //   198: aload_3        
-        //   199: checkcast       Lesm;
-        //   202: invokevirtual   esm.zI:()Ltdg;
-        //   205: astore          9
-        //   207: aload_3        
-        //   208: checkcast       Lesm;
-        //   211: getfield        esm.b:Leqv;
-        //   214: getfield        eqv.dj:Latjj;
-        //   217: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   222: checkcast       Ltox;
-        //   225: astore          10
-        //   227: aload_3        
-        //   228: checkcast       Lesm;
-        //   231: getfield        esm.b:Leqv;
-        //   234: getfield        eqv.a:Leqx;
-        //   237: getfield        eqx.cn:Latjj;
-        //   240: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   245: checkcast       Lrxr;
-        //   248: astore          11
-        //   250: aload_3        
-        //   251: checkcast       Lesm;
-        //   254: getfield        esm.aQ:Latjj;
-        //   257: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   262: checkcast       Lgau;
-        //   265: astore          12
-        //   267: aload_3        
-        //   268: checkcast       Lesm;
-        //   271: getfield        esm.fb:Latjj;
-        //   274: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   279: checkcast       Landroid/view/ViewGroup;
-        //   282: astore          6
-        //   284: aload_3        
-        //   285: checkcast       Lesm;
-        //   288: getfield        esm.b:Leqv;
-        //   291: getfield        eqv.jV:Latjj;
-        //   294: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   299: checkcast       Luyi;
-        //   302: astore_3       
-        //   303: new             Lgvf;
-        //   306: astore          13
-        //   308: aload           13
-        //   310: aload           4
-        //   312: aload           5
-        //   314: aload_1        
-        //   315: aload           7
-        //   317: aload           8
-        //   319: aload           9
-        //   321: aload           10
-        //   323: aload           11
-        //   325: aload           12
-        //   327: aload           6
-        //   329: aload_3        
-        //   330: aconst_null    
-        //   331: aconst_null    
-        //   332: aconst_null    
-        //   333: aconst_null    
-        //   334: aconst_null    
-        //   335: aconst_null    
-        //   336: invokespecial   gvf.<init>:(Lcom/google/android/apps/youtube/app/extensions/reel/creation/shorts/activity/ShortsCreationActivity;Lucs;Loas;Lauip;Laegi;Ltdg;Ltox;Lrxr;Lgau;Landroid/view/ViewGroup;Luyi;[B[B[B[B[B[B)V
-        //   339: aload_0        
-        //   340: aload           13
-        //   342: putfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/activity/ShortsCreationActivity.b:Lgvf;
-        //   345: aload_2        
-        //   346: invokevirtual   aere.close:()V
-        //   349: aload_0        
-        //   350: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/activity/ShortsCreationActivity.b:Lgvf;
-        //   353: aload_0        
-        //   354: putfield        gvf.l:Lcom/google/android/apps/youtube/app/extensions/reel/creation/shorts/activity/ShortsCreationActivity;
-        //   357: return         
-        //   358: astore_1       
-        //   359: goto            378
-        //   362: astore          4
-        //   364: new             Ljava/lang/IllegalStateException;
-        //   367: astore_1       
-        //   368: aload_1        
-        //   369: ldc             "Missing entry point. If you're in a test with explicit entry points specified in your @TestRoot, check that you're not missing the one for this class."
-        //   371: aload           4
-        //   373: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;Ljava/lang/Throwable;)V
-        //   376: aload_1        
-        //   377: athrow         
-        //   378: aload_2        
-        //   379: invokevirtual   aere.close:()V
-        //   382: goto            391
-        //   385: astore_2       
-        //   386: aload_1        
-        //   387: aload_2        
-        //   388: invokestatic    hgd.s:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //    63: invokevirtual   gvq.aR:()Ljava/lang/Object;
+        //    66: astore          6
+        //    68: aload           6
+        //    70: checkcast       Lesp;
+        //    73: invokevirtual   esp.D:()Lcom/google/android/apps/youtube/app/extensions/reel/creation/shorts/activity/ShortsCreationActivity;
+        //    76: astore_2       
+        //    77: aload           6
+        //    79: checkcast       Lesp;
+        //    82: getfield        esp.fb:Latke;
+        //    85: invokeinterface atke.a:()Ljava/lang/Object;
+        //    90: checkcast       Lueu;
+        //    93: astore_3       
+        //    94: aload           6
+        //    96: checkcast       Lesp;
+        //    99: getfield        esp.b:Leqy;
+        //   102: getfield        eqy.e:Latke;
+        //   105: invokeinterface atke.a:()Ljava/lang/Object;
+        //   110: checkcast       Loby;
+        //   113: astore          4
+        //   115: aload           6
+        //   117: checkcast       Lesp;
+        //   120: getfield        esp.b:Leqy;
+        //   123: getfield        eqy.a:Lera;
+        //   126: getfield        era.ax:Latke;
+        //   129: invokeinterface atke.a:()Ljava/lang/Object;
+        //   134: checkcast       Lpja;
+        //   137: astore          5
+        //   139: aload           6
+        //   141: checkcast       Lesp;
+        //   144: getfield        esp.b:Leqy;
+        //   147: getfield        eqy.a:Lera;
+        //   150: getfield        era.ay:Latke;
+        //   153: invokeinterface atke.a:()Ljava/lang/Object;
+        //   158: checkcast       Lpbg;
+        //   161: astore          5
+        //   163: aload           6
+        //   165: checkcast       Lesp;
+        //   168: getfield        esp.b:Leqy;
+        //   171: getfield        eqy.a:Lera;
+        //   174: getfield        era.ar:Latke;
+        //   177: invokeinterface atke.a:()Ljava/lang/Object;
+        //   182: checkcast       Laujg;
+        //   185: astore          5
+        //   187: aload           6
+        //   189: checkcast       Lesp;
+        //   192: getfield        esp.e:Latke;
+        //   195: invokeinterface atke.a:()Ljava/lang/Object;
+        //   200: checkcast       Laeij;
+        //   203: astore          12
+        //   205: aload           6
+        //   207: checkcast       Lesp;
+        //   210: invokevirtual   esp.yB:()Lsqq;
+        //   213: astore          10
+        //   215: aload           6
+        //   217: checkcast       Lesp;
+        //   220: getfield        esp.b:Leqy;
+        //   223: getfield        eqy.dj:Latke;
+        //   226: invokeinterface atke.a:()Ljava/lang/Object;
+        //   231: checkcast       Ltrc;
+        //   234: astore          11
+        //   236: aload           6
+        //   238: checkcast       Lesp;
+        //   241: getfield        esp.b:Leqy;
+        //   244: getfield        eqy.a:Lera;
+        //   247: getfield        era.co:Latke;
+        //   250: invokeinterface atke.a:()Ljava/lang/Object;
+        //   255: checkcast       Lrzv;
+        //   258: astore          9
+        //   260: aload           6
+        //   262: checkcast       Lesp;
+        //   265: getfield        esp.aS:Latke;
+        //   268: invokeinterface atke.a:()Ljava/lang/Object;
+        //   273: checkcast       Lgbc;
+        //   276: astore          8
+        //   278: aload           6
+        //   280: checkcast       Lesp;
+        //   283: getfield        esp.fc:Latke;
+        //   286: invokeinterface atke.a:()Ljava/lang/Object;
+        //   291: checkcast       Landroid/view/ViewGroup;
+        //   294: astore          7
+        //   296: aload           6
+        //   298: checkcast       Lesp;
+        //   301: getfield        esp.b:Leqy;
+        //   304: getfield        eqy.ka:Latke;
+        //   307: invokeinterface atke.a:()Ljava/lang/Object;
+        //   312: checkcast       Lvai;
+        //   315: astore          13
+        //   317: new             Lgvu;
+        //   320: astore          6
+        //   322: aload           6
+        //   324: aload_2        
+        //   325: aload_3        
+        //   326: aload           4
+        //   328: aload           5
+        //   330: aload           12
+        //   332: aload           10
+        //   334: aload           11
+        //   336: aload           9
+        //   338: aload           8
+        //   340: aload           7
+        //   342: aload           13
+        //   344: aconst_null    
+        //   345: aconst_null    
+        //   346: aconst_null    
+        //   347: aconst_null    
+        //   348: aconst_null    
+        //   349: aconst_null    
+        //   350: aconst_null    
+        //   351: invokespecial   gvu.<init>:(Lcom/google/android/apps/youtube/app/extensions/reel/creation/shorts/activity/ShortsCreationActivity;Lueu;Loby;Laujg;Laeij;Lsqq;Ltrc;Lrzv;Lgbc;Landroid/view/ViewGroup;Lvai;[B[B[B[B[B[B[B)V
+        //   354: aload_0        
+        //   355: aload           6
+        //   357: putfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/activity/ShortsCreationActivity.b:Lgvu;
+        //   360: aload_1        
+        //   361: invokevirtual   aetf.close:()V
+        //   364: aload_0        
+        //   365: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/activity/ShortsCreationActivity.b:Lgvu;
+        //   368: aload_0        
+        //   369: putfield        gvu.l:Lcom/google/android/apps/youtube/app/extensions/reel/creation/shorts/activity/ShortsCreationActivity;
+        //   372: return         
+        //   373: astore_2       
+        //   374: goto            391
+        //   377: astore_3       
+        //   378: new             Ljava/lang/IllegalStateException;
+        //   381: astore_2       
+        //   382: aload_2        
+        //   383: ldc             "Missing entry point. If you're in a test with explicit entry points specified in your @TestRoot, check that you're not missing the one for this class."
+        //   385: aload_3        
+        //   386: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;Ljava/lang/Throwable;)V
+        //   389: aload_2        
+        //   390: athrow         
         //   391: aload_1        
-        //   392: athrow         
-        //   393: astore_2       
-        //   394: aload_1        
-        //   395: invokevirtual   aere.close:()V
-        //   398: goto            407
-        //   401: astore_1       
-        //   402: aload_2        
-        //   403: aload_1        
-        //   404: invokestatic    hgd.s:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   392: invokevirtual   aetf.close:()V
+        //   395: goto            404
+        //   398: astore_1       
+        //   399: aload_2        
+        //   400: aload_1        
+        //   401: invokestatic    hxw.f:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   404: aload_2        
+        //   405: athrow         
+        //   406: astore_1       
         //   407: aload_2        
-        //   408: athrow         
-        //   409: new             Ljava/lang/IllegalStateException;
-        //   412: dup            
-        //   413: ldc             "createPeer() called outside of onCreate"
-        //   415: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
-        //   418: athrow         
-        //   419: return         
+        //   408: invokevirtual   aetf.close:()V
+        //   411: goto            420
+        //   414: astore_2       
+        //   415: aload_1        
+        //   416: aload_2        
+        //   417: invokestatic    hxw.f:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   420: aload_1        
+        //   421: athrow         
+        //   422: new             Ljava/lang/IllegalStateException;
+        //   425: dup            
+        //   426: ldc             "createPeer() called outside of onCreate"
+        //   428: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
+        //   431: athrow         
+        //   432: return         
         //    Exceptions:
         //  Try           Handler
         //  Start  End    Start  End    Type                          
         //  -----  -----  -----  -----  ------------------------------
-        //  47     52     393    409    Any
-        //  62     67     362    378    Ljava/lang/ClassCastException;
-        //  62     67     358    393    Any
-        //  67     345    358    393    Any
-        //  364    378    358    393    Any
-        //  378    382    385    391    Any
-        //  394    398    401    407    Any
+        //  47     52     406    422    Any
+        //  62     68     377    391    Ljava/lang/ClassCastException;
+        //  62     68     373    406    Any
+        //  68     360    373    406    Any
+        //  378    391    373    406    Any
+        //  391    395    398    404    Any
+        //  407    411    414    420    Any
         // 
         // The error that occurred was:
         // 
-        // java.lang.IllegalStateException: Expression is linked from several locations: Label_0378:
+        // java.lang.IllegalStateException: Expression is linked from several locations: Label_0391:
         //     at com.strobel.decompiler.ast.Error.expressionLinkedFromMultipleLocations(Error.java:27)
         //     at com.strobel.decompiler.ast.AstOptimizer.mergeDisparateObjectInitializations(AstOptimizer.java:2604)
         //     at com.strobel.decompiler.ast.AstOptimizer.optimize(AstOptimizer.java:235)
@@ -296,7 +305,7 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
     }
     
     public final void finish() {
-        final aers b = this.c.b();
+        final aett b = this.c.b();
         try {
             super.finish();
             b.close();
@@ -308,7 +317,7 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                hgd.s(t, t2);
+                hxw.f(t, t2);
             }
         }
     }
@@ -317,11 +326,11 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
         return super.onKeyDown(n, keyEvent);
     }
     
-    public final auh getLifecycle() {
+    public final aui getLifecycle() {
         if (this.f == null) {
-            this.f = new aenn((bu)this);
+            this.f = (auo)new aepn((bu)this);
         }
-        return (auh)this.f;
+        return this.f;
     }
     
     public final boolean h(final int n, final KeyEvent keyEvent) {
@@ -333,7 +342,7 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
     }
     
     public final void invalidateOptionsMenu() {
-        final aers s = aesw.s();
+        final aett s = aeux.s();
         try {
             super.invalidateOptionsMenu();
             s.close();
@@ -345,15 +354,15 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                hgd.s(t, t2);
+                hxw.f(t, t2);
             }
         }
     }
     
     protected final void onActivityResult(final int n, final int n2, final Intent intent) {
-        final aers q = this.c.q();
+        final aett q = this.c.q();
         try {
-            final gvf j = this.j();
+            final gvu j = this.j();
             if (intent != null && intent.getBooleanExtra("close_gallery_on_successful_upload", false) && n2 == -1) {
                 j.b.setResult(-1, intent);
                 j.b.finish();
@@ -369,16 +378,16 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
             }
             finally {
                 final Throwable t;
-                hgd.s((Throwable)intent, t);
+                hxw.f((Throwable)intent, t);
             }
         }
     }
     
     public final void onBackPressed() {
-        final aers c = this.c.c();
+        final aett c = this.c.c();
         try {
-            final gvf j = this.j();
-            j.f().map((Function)gnq.t).filter((Predicate)fqf.r).ifPresent((Consumer)new gft(j, 16));
+            final gvu j = this.j();
+            j.f().map((Function)gnx.t).filter((Predicate)fqo.r).ifPresent((Consumer)new gga(j, 16));
             c.close();
         }
         finally {
@@ -388,13 +397,13 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                hgd.s(t, t2);
+                hxw.f(t, t2);
             }
         }
     }
     
     public final void onConfigurationChanged(final Configuration configuration) {
-        final aers r = this.c.r();
+        final aett r = this.c.r();
         try {
             super.onConfigurationChanged(configuration);
             r.close();
@@ -405,28 +414,28 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
             }
             finally {
                 final Throwable t;
-                hgd.s((Throwable)configuration, t);
+                hxw.f((Throwable)configuration, t);
             }
         }
     }
     
     protected final void onCreate(final Bundle bundle) {
-        final aers s = this.c.s();
+        final aett s = this.c.s();
         try {
             this.d = true;
-            ((aenn)((dh)this).getLifecycle()).h(this.c);
-            final gvf j = this.j();
-            j.f.c((aeho)j);
-            fah.m((Context)j.b);
+            ((aepn)((dh)this).getLifecycle()).h(this.c);
+            final gvu j = this.j();
+            j.f.c((aejp)j);
+            glb.c((Context)j.b);
             j.l.onCreate(bundle);
             j.e = 0L;
             if (bundle == null) {
                 j.e = j.d.c();
             }
-            if (j.j.aT()) {
+            if (j.j.aU()) {
                 ((fa)j.b).setTheme(2132083492);
             }
-            j.c.m(bundle, j.e());
+            j.c.o(bundle, j.e());
             ((qt)j.b).setContentView((View)j.i);
             if (bundle != null) {
                 final cl supportFragmentManager = ((bu)j.b).getSupportFragmentManager();
@@ -443,7 +452,7 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
                     i.d();
                 }
             }
-            final auip k = j.k;
+            final aujg k = j.k;
             j.h.f((BottomUiContainer)((fa)j.b).findViewById(2131427886));
             this.d = false;
             if (s != null) {
@@ -457,14 +466,14 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
                 }
                 finally {
                     final Throwable t;
-                    hgd.s((Throwable)bundle, t);
+                    hxw.f((Throwable)bundle, t);
                 }
             }
         }
     }
     
     public final boolean onCreatePanelMenu(final int n, final Menu menu) {
-        final aers t = this.c.t();
+        final aett t = this.c.t();
         try {
             super.onCreatePanelMenu(n, menu);
             t.close();
@@ -476,18 +485,18 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
             }
             finally {
                 final Throwable t2;
-                hgd.s((Throwable)menu, t2);
+                hxw.f((Throwable)menu, t2);
             }
         }
     }
     
     protected final void onDestroy() {
-        final aers d = this.c.d();
+        final aett d = this.c.d();
         try {
             super.onDestroy();
-            final gvf j = this.j();
+            final gvu j = this.j();
             if (j.b.isFinishing() && !j.a) {
-                j.c.b();
+                j.c.c();
             }
             this.g = true;
             d.close();
@@ -499,35 +508,35 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                hgd.s(t, t2);
+                hxw.f(t, t2);
             }
         }
     }
     
     public final boolean onKeyDown(final int n, final KeyEvent keyEvent) {
-        final gvf j = this.j();
-        return (boolean)j.f().map((Function)new gve(j, n, keyEvent, 2)).orElse((Object)true);
+        final gvu j = this.j();
+        return (boolean)j.f().map((Function)new gvt(j, n, keyEvent, 2)).orElse((Object)true);
     }
     
     public final boolean onKeyLongPress(final int n, final KeyEvent keyEvent) {
-        final gvf j = this.j();
-        return (boolean)j.f().map((Function)new gve(j, n, keyEvent, 0)).orElse((Object)true);
+        final gvu j = this.j();
+        return (boolean)j.f().map((Function)new gvt(j, n, keyEvent, 0)).orElse((Object)true);
     }
     
     public final boolean onKeyUp(final int n, final KeyEvent keyEvent) {
-        final gvf j = this.j();
-        return (boolean)j.f().map((Function)new gve(j, n, keyEvent, 1)).orElse((Object)true);
+        final gvu j = this.j();
+        return (boolean)j.f().map((Function)new gvt(j, n, keyEvent, 1)).orElse((Object)true);
     }
     
-    protected final void onLocalesChanged(final ajo ajo) {
+    protected final void onLocalesChanged(final ajp ajp) {
     }
     
     protected final void onNewIntent(final Intent intent) {
-        final aers e = this.c.e(intent);
+        final aett e = this.c.e(intent);
         try {
             super.onNewIntent(intent);
             this.j();
-            trn.l("ShortsCreationActivity: Ignoring onNewIntent()");
+            ttr.l("ShortsCreationActivity: Ignoring onNewIntent()");
             if (e != null) {
                 e.close();
             }
@@ -539,7 +548,7 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
                 }
                 finally {
                     final Throwable t;
-                    hgd.s((Throwable)intent, t);
+                    hxw.f((Throwable)intent, t);
                 }
             }
         }
@@ -549,7 +558,7 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
     }
     
     public final boolean onOptionsItemSelected(final MenuItem menuItem) {
-        final aers u = this.c.u();
+        final aett u = this.c.u();
         try {
             final boolean onOptionsItemSelected = super.onOptionsItemSelected(menuItem);
             u.close();
@@ -561,15 +570,15 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
             }
             finally {
                 final Throwable t;
-                hgd.s((Throwable)menuItem, t);
+                hxw.f((Throwable)menuItem, t);
             }
         }
     }
     
     protected final void onPause() {
-        final aers f = this.c.f();
+        final aett f = this.c.f();
         try {
-            final gvf j = this.j();
+            final gvu j = this.j();
             if (j.b.isFinishing()) {
                 j.b.setRequestedOrientation(-1);
             }
@@ -586,14 +595,14 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    hgd.s(t, t2);
+                    hxw.f(t, t2);
                 }
             }
         }
     }
     
     public final void onPictureInPictureModeChanged(final boolean b, final Configuration configuration) {
-        final aers v = this.c.v();
+        final aett v = this.c.v();
         try {
             super.onPictureInPictureModeChanged(b, configuration);
             v.close();
@@ -604,13 +613,13 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
             }
             finally {
                 final Throwable t;
-                hgd.s((Throwable)configuration, t);
+                hxw.f((Throwable)configuration, t);
             }
         }
     }
     
     protected final void onPostCreate(final Bundle bundle) {
-        final aers w = this.c.w();
+        final aett w = this.c.w();
         try {
             super.onPostCreate(bundle);
             if (w != null) {
@@ -624,14 +633,14 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
                 }
                 finally {
                     final Throwable t;
-                    hgd.s((Throwable)bundle, t);
+                    hxw.f((Throwable)bundle, t);
                 }
             }
         }
     }
     
     protected final void onPostResume() {
-        final aers g = this.c.g();
+        final aett g = this.c.g();
         try {
             super.onPostResume();
             g.close();
@@ -643,13 +652,13 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                hgd.s(t, t2);
+                hxw.f(t, t2);
             }
         }
     }
     
     public final boolean onPrepareOptionsMenu(final Menu menu) {
-        final aers s = aesw.s();
+        final aett s = aeux.s();
         try {
             final boolean onPrepareOptionsMenu = super.onPrepareOptionsMenu(menu);
             s.close();
@@ -661,13 +670,13 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
             }
             finally {
                 final Throwable t;
-                hgd.s((Throwable)menu, t);
+                hxw.f((Throwable)menu, t);
             }
         }
     }
     
     public final void onRequestPermissionsResult(final int n, final String[] array, final int[] array2) {
-        final aers x = this.c.x();
+        final aett x = this.c.x();
         try {
             super.onRequestPermissionsResult(n, array, array2);
             x.close();
@@ -678,13 +687,13 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
             }
             finally {
                 final Throwable t;
-                hgd.s((Throwable)(Object)array, t);
+                hxw.f((Throwable)(Object)array, t);
             }
         }
     }
     
     protected final void onResume() {
-        final aers h = this.c.h();
+        final aett h = this.c.h();
         try {
             super.onResume();
             if (h != null) {
@@ -699,17 +708,17 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    hgd.s(t, t2);
+                    hxw.f(t, t2);
                 }
             }
         }
     }
     
     protected final void onSaveInstanceState(final Bundle bundle) {
-        final aers y = this.c.y();
+        final aett y = this.c.y();
         try {
             super.onSaveInstanceState(bundle);
-            this.j().c.o(bundle);
+            this.j().c.q(bundle);
             if (y != null) {
                 y.close();
             }
@@ -721,14 +730,14 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
                 }
                 finally {
                     final Throwable t;
-                    hgd.s((Throwable)bundle, t);
+                    hxw.f((Throwable)bundle, t);
                 }
             }
         }
     }
     
     protected final void onStart() {
-        final aers i = this.c.i();
+        final aett i = this.c.i();
         try {
             super.onStart();
             if (i != null) {
@@ -743,14 +752,14 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    hgd.s(t, t2);
+                    hxw.f(t, t2);
                 }
             }
         }
     }
     
     protected final void onStop() {
-        final aers j = this.c.j();
+        final aett j = this.c.j();
         try {
             super.onStop();
             if (j != null) {
@@ -765,14 +774,14 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    hgd.s(t, t2);
+                    hxw.f(t, t2);
                 }
             }
         }
     }
     
     public final boolean onSupportNavigateUp() {
-        final aers k = this.c.k();
+        final aett k = this.c.k();
         try {
             final boolean onSupportNavigateUp = super.onSupportNavigateUp();
             k.close();
@@ -785,16 +794,16 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                hgd.s(t, t2);
+                hxw.f(t, t2);
             }
         }
     }
     
     public final void onUserInteraction() {
-        final aers l = this.c.l();
+        final aett l = this.c.l();
         try {
-            final gvf j = this.j();
-            final tox g = j.g;
+            final gvu j = this.j();
+            final trc g = j.g;
             if (g != null) {
                 g.b();
             }
@@ -808,21 +817,21 @@ public final class ShortsCreationActivity extends gvc implements aemu, aenm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                hgd.s(t, t2);
+                hxw.f(t, t2);
             }
         }
     }
     
     public final void startActivity(final Intent intent) {
-        if (agnj.K(intent, this.getApplicationContext())) {
-            aesm.j(intent);
+        if (aefb.P(intent, this.getApplicationContext())) {
+            aeun.j(intent);
         }
         super.startActivity(intent);
     }
     
     public final void startActivity(final Intent intent, final Bundle bundle) {
-        if (agnj.K(intent, this.getApplicationContext())) {
-            aesm.j(intent);
+        if (aefb.P(intent, this.getApplicationContext())) {
+            aeun.j(intent);
         }
         super.startActivity(intent, bundle);
     }

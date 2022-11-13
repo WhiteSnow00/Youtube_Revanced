@@ -6,20 +6,20 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class PhoneDialerEndpointOuterClass$PhoneDialerEndpoint extends agzi implements ahax
+public final class PhoneDialerEndpointOuterClass$PhoneDialerEndpoint extends ahbh implements ahcw
 {
     public static final PhoneDialerEndpointOuterClass$PhoneDialerEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg phoneDialerEndpoint;
+    private static volatile ahdd c;
+    public static final ahbf phoneDialerEndpoint;
     public String b;
     private int d;
-    private aioe e;
+    private aiqj e;
     private byte f;
     
     static {
         final PhoneDialerEndpointOuterClass$PhoneDialerEndpoint a2 = new PhoneDialerEndpointOuterClass$PhoneDialerEndpoint();
-        agzi.registerDefaultInstance((Class)PhoneDialerEndpointOuterClass$PhoneDialerEndpoint.class, (agzi)(a = a2));
-        phoneDialerEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 100946440, ahcm.k, (Class)PhoneDialerEndpointOuterClass$PhoneDialerEndpoint.class);
+        ahbh.registerDefaultInstance((Class)PhoneDialerEndpointOuterClass$PhoneDialerEndpoint.class, (ahbh)(a = a2));
+        phoneDialerEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 100946440, ahek.k, (Class)PhoneDialerEndpointOuterClass$PhoneDialerEndpoint.class);
     }
     
     private PhoneDialerEndpointOuterClass$PhoneDialerEndpoint() {
@@ -27,20 +27,20 @@ public final class PhoneDialerEndpointOuterClass$PhoneDialerEndpoint extends agz
         this.b = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = PhoneDialerEndpointOuterClass$PhoneDialerEndpoint.c) == null) {
                     synchronized (PhoneDialerEndpointOuterClass$PhoneDialerEndpoint.class) {
                         if (PhoneDialerEndpointOuterClass$PhoneDialerEndpoint.c == null) {
-                            PhoneDialerEndpointOuterClass$PhoneDialerEndpoint.c = (ahbe)new agzb((agzi)PhoneDialerEndpointOuterClass$PhoneDialerEndpoint.a);
+                            PhoneDialerEndpointOuterClass$PhoneDialerEndpoint.c = (ahdd)new ahba((ahbh)PhoneDialerEndpointOuterClass$PhoneDialerEndpoint.a);
                         }
                     }
                 }
@@ -50,7 +50,7 @@ public final class PhoneDialerEndpointOuterClass$PhoneDialerEndpoint extends agz
                 return PhoneDialerEndpointOuterClass$PhoneDialerEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)PhoneDialerEndpointOuterClass$PhoneDialerEndpoint.a);
+                return new ahaz((ahbh)PhoneDialerEndpointOuterClass$PhoneDialerEndpoint.a);
             }
             case 3: {
                 return new PhoneDialerEndpointOuterClass$PhoneDialerEndpoint();
@@ -60,9 +60,9 @@ public final class PhoneDialerEndpointOuterClass$PhoneDialerEndpoint extends agz
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

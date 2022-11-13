@@ -16,7 +16,7 @@ public class SyncStatus extends AbstractSafeParcelable
     public final long c;
     
     static {
-        CREATOR = (Parcelable$Creator)new njx(2);
+        CREATOR = (Parcelable$Creator)new nlj(0);
     }
     
     public SyncStatus(final int a, final String b, final long c) {
@@ -25,11 +25,11 @@ public class SyncStatus extends AbstractSafeParcelable
         this.c = c;
     }
     
-    public final void writeToParcel(final Parcel parcel, int i) {
-        i = kgk.I(parcel);
-        kgk.O(parcel, 2, this.a);
-        kgk.ac(parcel, 3, this.b);
-        kgk.P(parcel, 4, this.c);
-        kgk.J(parcel, i);
+    public final void writeToParcel(final Parcel parcel, int m) {
+        m = khl.M(parcel);
+        khl.S(parcel, 2, this.a);
+        khl.ag(parcel, 3, this.b);
+        khl.T(parcel, 4, this.c);
+        khl.N(parcel, m);
     }
 }

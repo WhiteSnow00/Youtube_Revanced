@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint extends agzi implements ahax
+public final class PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint extends ahbh implements ahcw
 {
     public static final PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg playlistEditorEndpoint;
+    private static volatile ahdd c;
+    public static final ahbf playlistEditorEndpoint;
     public String b;
     private int d;
     
     static {
         final PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint a2 = new PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint();
-        agzi.registerDefaultInstance((Class)PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint.class, (agzi)(a = a2));
-        playlistEditorEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 93440769, ahcm.k, (Class)PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint.class);
+        ahbh.registerDefaultInstance((Class)PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint.class, (ahbh)(a = a2));
+        playlistEditorEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 93440769, ahek.k, (Class)PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint.class);
     }
     
     private PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint() {
         this.b = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint.c) == null) {
                     synchronized (PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint.class) {
                         if (PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint.c == null) {
-                            PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint.c = (ahbe)new agzb((agzi)PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint.a);
+                            PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint.c = (ahdd)new ahba((ahbh)PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint exten
                 return PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint.a);
+                return new ahaz((ahbh)PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint.a);
             }
             case 3: {
                 return new PlaylistEditorEndpointOuterClass$PlaylistEditorEndpoint();

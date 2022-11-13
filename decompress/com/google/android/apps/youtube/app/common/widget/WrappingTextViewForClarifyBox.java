@@ -21,7 +21,7 @@ public class WrappingTextViewForClarifyBox extends TextView
     public List a;
     public int b;
     public int c;
-    public adrh d;
+    public adtj d;
     private SpannableString e;
     private CharSequence f;
     private int g;
@@ -82,8 +82,9 @@ public class WrappingTextViewForClarifyBox extends TextView
                 }
                 sb2.append(charSequence);
                 final boolean b2 = n5 == this.getMaxLines() - 1;
+                final float measureText = this.getPaint().measureText(sb2.toString());
                 final float n7 = (float)size;
-                boolean b3 = this.getPaint().measureText(sb2.toString()) <= n7;
+                boolean b3 = measureText <= n7;
                 if (b2) {
                     b3 = (this.getPaint().measureText(sb2.toString()) <= n3);
                 }
@@ -140,9 +141,9 @@ public class WrappingTextViewForClarifyBox extends TextView
             this.f = subSequence;
             (this.e = new SpannableString(subSequence)).setSpan((Object)new StyleSpan(1), 0, this.b, 18);
             this.setText((CharSequence)this.e);
-            final adrh d = this.d;
+            final adtj d = this.d;
             if (d != null) {
-                ((jia)d.b).d.g(this.g, d.a);
+                ((jjc)d.b).d.g(this.g, d.a);
             }
         }
         super.onMeasure(n, n2);

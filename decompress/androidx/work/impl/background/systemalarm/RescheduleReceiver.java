@@ -15,16 +15,16 @@ public class RescheduleReceiver extends BroadcastReceiver
     private static final String a;
     
     static {
-        a = cmr.b("RescheduleReceiver");
+        a = cms.b("RescheduleReceiver");
     }
     
     public final void onReceive(final Context context, final Intent intent) {
-        cmr.a();
+        cms.a();
         new StringBuilder("Received intent ").append(intent);
         try {
-            final coe j = coe.j(context);
+            final cof j = cof.j(context);
             final BroadcastReceiver$PendingResult goAsync = this.goAsync();
-            synchronized (coe.a) {
+            synchronized (cof.a) {
                 j.h = goAsync;
                 if (j.g) {
                     j.h.finish();
@@ -33,7 +33,7 @@ public class RescheduleReceiver extends BroadcastReceiver
             }
         }
         catch (final IllegalStateException ex) {
-            cmr.a();
+            cms.a();
             Log.e(RescheduleReceiver.a, "Cannot reschedule jobs. WorkManager needs to be initialized via a ContentProvider#onCreate() or an Application#onCreate().", (Throwable)ex);
         }
     }

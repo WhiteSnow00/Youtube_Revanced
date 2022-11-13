@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint extends agzi implements ahax
+public final class RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint extends ahbh implements ahcw
 {
     public static final RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint a;
-    private static volatile ahbe b;
-    public static final agzg requestVerificationCodeEndpoint;
+    private static volatile ahdd b;
+    public static final ahbf requestVerificationCodeEndpoint;
     
     static {
         final RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint a2 = new RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint();
-        agzi.registerDefaultInstance((Class)RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint.class, (agzi)(a = a2));
-        requestVerificationCodeEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 130003709, ahcm.k, (Class)RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint.class);
+        ahbh.registerDefaultInstance((Class)RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint.class, (ahbh)(a = a2));
+        requestVerificationCodeEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 130003709, ahek.k, (Class)RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint.class);
     }
     
     private RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint.b) == null) {
                     synchronized (RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint.class) {
                         if (RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint.b == null) {
-                            RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint.b = (ahbe)new agzb((agzi)RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint.a);
+                            RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint.b = (ahdd)new ahba((ahbh)RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class RequestVerificationCodeEndpointOuterClass$RequestVerification
                 return RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint.a);
+                return new ahaz((ahbh)RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint.a);
             }
             case 3: {
                 return new RequestVerificationCodeEndpointOuterClass$RequestVerificationCodeEndpoint();

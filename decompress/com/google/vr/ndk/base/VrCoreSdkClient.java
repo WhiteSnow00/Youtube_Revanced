@@ -4,6 +4,7 @@
 
 package com.google.vr.ndk.base;
 
+import com.google.vr.vrcore.base.api.ParcelableProtoLite;
 import android.app.ActivityManager;
 import android.app.Activity;
 import android.os.Parcelable;
@@ -25,7 +26,7 @@ class VrCoreSdkClient
     private final ComponentName componentName;
     private final Context context;
     private final VrCoreSdkClient$DaydreamListenerImpl daydreamListener;
-    private aras daydreamManager;
+    private ardg daydreamManager;
     private final DaydreamUtilsWrapper daydreamUtils;
     private final FadeOverlayView fadeOverlayView;
     private final GvrApi gvrApi;
@@ -33,13 +34,73 @@ class VrCoreSdkClient
     private boolean isBound;
     private boolean isEnabled;
     private boolean isResumed;
-    private arbq loggingService;
+    private aree loggingService;
     private Runnable onDonNotNeededListener;
     private PendingIntent optionalReentryIntent;
     private final ServiceConnection serviceConnection;
     private final boolean shouldBind;
     private int vrCoreClientApiVersion;
-    private araw vrCoreSdkService;
+    private ardk vrCoreSdkService;
+    
+    static /* bridge */ ComponentName -$$Nest$fgetcomponentName(final VrCoreSdkClient vrCoreSdkClient) {
+        return vrCoreSdkClient.componentName;
+    }
+    
+    static /* bridge */ VrCoreSdkClient$DaydreamListenerImpl -$$Nest$fgetdaydreamListener(final VrCoreSdkClient vrCoreSdkClient) {
+        return vrCoreSdkClient.daydreamListener;
+    }
+    
+    static /* bridge */ ardg -$$Nest$fgetdaydreamManager(final VrCoreSdkClient vrCoreSdkClient) {
+        return vrCoreSdkClient.daydreamManager;
+    }
+    
+    static /* bridge */ boolean -$$Nest$fgetisResumed(final VrCoreSdkClient vrCoreSdkClient) {
+        return vrCoreSdkClient.isResumed;
+    }
+    
+    static /* bridge */ Runnable -$$Nest$fgetonDonNotNeededListener(final VrCoreSdkClient vrCoreSdkClient) {
+        return vrCoreSdkClient.onDonNotNeededListener;
+    }
+    
+    static /* bridge */ ardk -$$Nest$fgetvrCoreSdkService(final VrCoreSdkClient vrCoreSdkClient) {
+        return vrCoreSdkClient.vrCoreSdkService;
+    }
+    
+    static /* bridge */ void -$$Nest$fputdaydreamManager(final VrCoreSdkClient vrCoreSdkClient, final ardg daydreamManager) {
+        vrCoreSdkClient.daydreamManager = daydreamManager;
+    }
+    
+    static /* bridge */ void -$$Nest$fputloggingService(final VrCoreSdkClient vrCoreSdkClient, final aree loggingService) {
+        vrCoreSdkClient.loggingService = loggingService;
+    }
+    
+    static /* bridge */ void -$$Nest$fputvrCoreSdkService(final VrCoreSdkClient vrCoreSdkClient, final ardk vrCoreSdkService) {
+        vrCoreSdkClient.vrCoreSdkService = vrCoreSdkService;
+    }
+    
+    static /* bridge */ void -$$Nest$mhandleBindFailed(final VrCoreSdkClient vrCoreSdkClient) {
+        vrCoreSdkClient.handleBindFailed();
+    }
+    
+    static /* bridge */ void -$$Nest$mhandleNoDaydreamManager(final VrCoreSdkClient vrCoreSdkClient) {
+        vrCoreSdkClient.handleNoDaydreamManager();
+    }
+    
+    static /* bridge */ void -$$Nest$mhandlePrepareVrFailed(final VrCoreSdkClient vrCoreSdkClient) {
+        vrCoreSdkClient.handlePrepareVrFailed();
+    }
+    
+    static /* bridge */ int -$$Nest$mprepareVr(final VrCoreSdkClient vrCoreSdkClient, final HeadTrackingState headTrackingState) {
+        return vrCoreSdkClient.prepareVr(headTrackingState);
+    }
+    
+    static /* bridge */ void -$$Nest$mresumeTracking(final VrCoreSdkClient vrCoreSdkClient, final HeadTrackingState headTrackingState) {
+        vrCoreSdkClient.resumeTracking(headTrackingState);
+    }
+    
+    static /* bridge */ void -$$Nest$smresumeTracking(final GvrApi gvrApi, final HeadTrackingState headTrackingState) {
+        resumeTracking(gvrApi, headTrackingState);
+    }
     
     public VrCoreSdkClient(final Context context, final GvrApi gvrApi, final ComponentName componentName, final DaydreamUtilsWrapper daydreamUtils, final Runnable closeVrRunnable, final FadeOverlayView fadeOverlayView) {
         this.isEnabled = true;
@@ -80,7 +141,7 @@ class VrCoreSdkClient
         if (!this.isBound) {
             return;
         }
-        final aras daydreamManager = this.daydreamManager;
+        final ardg daydreamManager = this.daydreamManager;
         if (daydreamManager != null) {
             try {
                 daydreamManager.q(this.componentName);
@@ -121,7 +182,7 @@ class VrCoreSdkClient
             Log.w("VrCoreSdkClient", String.format("VrCore service obsolete, GVR SDK requires API %d but found API %d.", 5, this.vrCoreClientApiVersion));
             return false;
         }
-        catch (final aran aran) {
+        catch (final ardc ardc) {
             return false;
         }
     }
@@ -136,8 +197,8 @@ class VrCoreSdkClient
             final Intent vrIntent = DaydreamApi.createVrIntent(this.componentName);
             vrIntent.addFlags(536870912);
             final Context context = this.context;
-            if (!(context instanceof arak)) {
-                final Activity t = aqzg.t(context);
+            if (!(context instanceof arcz)) {
+                final Activity t = arbu.t(context);
                 if (t != null && t.getIntent() != null) {
                     vrIntent.putExtras(t.getIntent());
                     vrIntent.fillIn(t.getIntent(), 2);
@@ -161,7 +222,7 @@ class VrCoreSdkClient
         byte[] array2;
         final byte[] array = array2 = null;
         if (headTrackingState != null) {
-            final byte[] a = headTrackingState.a;
+            final byte[] a = ((ParcelableProtoLite)headTrackingState).a;
             array2 = array;
             if (a != null) {
                 if (a.length == 0) {
@@ -190,7 +251,7 @@ class VrCoreSdkClient
                 helpCenterDialog.show();
                 return;
             }
-            this.helpCenterDialog = araj.b(this.context, this.closeVrRunnable);
+            this.helpCenterDialog = arcy.b(this.context, this.closeVrRunnable);
         }
     }
     
@@ -198,12 +259,12 @@ class VrCoreSdkClient
         return new HeadTrackingState();
     }
     
-    public arbq getLoggingService() {
+    public aree getLoggingService() {
         return this.loggingService;
     }
     
     public void onExitingFromVr() {
-        final aras daydreamManager = this.daydreamManager;
+        final ardg daydreamManager = this.daydreamManager;
         if (daydreamManager == null) {
             return;
         }

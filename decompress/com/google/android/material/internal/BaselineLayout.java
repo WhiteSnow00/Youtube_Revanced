@@ -61,35 +61,43 @@ public class BaselineLayout extends ViewGroup
     protected final void onMeasure(final int n, final int n2) {
         final int childCount = this.getChildCount();
         int i = 0;
-        int max = 0;
-        int max2 = 0;
-        int combineMeasuredStates = 0;
+        int n3 = 0;
+        int n4 = 0;
+        int n5 = 0;
         int a = -1;
-        int n3 = -1;
+        int n6 = -1;
         while (i < childCount) {
             final View child = this.getChildAt(i);
+            int max = n3;
+            int max2 = n4;
+            int combineMeasuredStates = n5;
+            int max3 = a;
+            int max4 = n6;
             if (child.getVisibility() != 8) {
                 this.measureChild(child, n, n2);
                 final int baseline = child.getBaseline();
-                int max3 = a;
-                int max4 = n3;
+                max3 = a;
+                max4 = n6;
                 if (baseline != -1) {
                     max3 = Math.max(a, baseline);
-                    max4 = Math.max(n3, child.getMeasuredHeight() - baseline);
+                    max4 = Math.max(n6, child.getMeasuredHeight() - baseline);
                 }
-                max2 = Math.max(max2, child.getMeasuredWidth());
-                max = Math.max(max, child.getMeasuredHeight());
-                combineMeasuredStates = View.combineMeasuredStates(combineMeasuredStates, child.getMeasuredState());
-                n3 = max4;
-                a = max3;
+                max2 = Math.max(n4, child.getMeasuredWidth());
+                max = Math.max(n3, child.getMeasuredHeight());
+                combineMeasuredStates = View.combineMeasuredStates(n5, child.getMeasuredState());
             }
             ++i;
+            n3 = max;
+            n4 = max2;
+            n5 = combineMeasuredStates;
+            a = max3;
+            n6 = max4;
         }
-        int max5 = max;
+        int max5 = n3;
         if (a != -1) {
-            max5 = Math.max(max, Math.max(n3, this.getPaddingBottom()) + a);
+            max5 = Math.max(n3, Math.max(n6, this.getPaddingBottom()) + a);
             this.a = a;
         }
-        this.setMeasuredDimension(View.resolveSizeAndState(Math.max(max2, this.getSuggestedMinimumWidth()), n, combineMeasuredStates), View.resolveSizeAndState(Math.max(max5, this.getSuggestedMinimumHeight()), n2, combineMeasuredStates << 16));
+        this.setMeasuredDimension(View.resolveSizeAndState(Math.max(n4, this.getSuggestedMinimumWidth()), n, n5), View.resolveSizeAndState(Math.max(max5, this.getSuggestedMinimumHeight()), n2, n5 << 16));
     }
 }

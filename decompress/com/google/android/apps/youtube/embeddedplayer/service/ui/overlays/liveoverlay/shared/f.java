@@ -8,5 +8,5 @@ import android.os.IInterface;
 
 public interface f extends IInterface
 {
-    void sW();
+    void tc();
 }

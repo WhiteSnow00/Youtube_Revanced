@@ -1,0 +1,71 @@
+import android.content.res.Configuration;
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.ComponentCallbacks2;
+import android.app.Application$ActivityLifecycleCallbacks;
+
+// 
+// Decompiled by Procyon v0.6.0
+// 
+
+public final class adip implements Application$ActivityLifecycleCallbacks, ComponentCallbacks2
+{
+    public Boolean a;
+    private volatile Activity b;
+    
+    private final void a(final Activity activity) {
+        this.b(qca.c(activity.getApplicationContext()));
+    }
+    
+    private final void b(final Boolean a) {
+        if (a.equals(this.a)) {
+            new StringBuilder("App foreground state unchanged: inForeground ? ").append(a);
+            final int a2 = adid.a;
+            return;
+        }
+        this.a = a;
+        new StringBuilder("App transition, foreground=").append(a);
+        final int a3 = adid.a;
+    }
+    
+    public final void onActivityCreated(final Activity activity, final Bundle bundle) {
+        this.b = null;
+        this.a(activity);
+    }
+    
+    public final void onActivityDestroyed(final Activity activity) {
+        this.b = null;
+    }
+    
+    public final void onActivityPaused(final Activity activity) {
+    }
+    
+    public final void onActivityResumed(final Activity activity) {
+        this.b = null;
+    }
+    
+    public final void onActivitySaveInstanceState(final Activity activity, final Bundle bundle) {
+    }
+    
+    public final void onActivityStarted(final Activity activity) {
+        this.b = null;
+        this.a(activity);
+    }
+    
+    public final void onActivityStopped(final Activity b) {
+        this.a(this.b = b);
+    }
+    
+    public final void onConfigurationChanged(final Configuration configuration) {
+    }
+    
+    public final void onLowMemory() {
+    }
+    
+    public final void onTrimMemory(final int n) {
+        if (n >= 20 && this.b != null) {
+            this.b(false);
+        }
+        this.b = null;
+    }
+}

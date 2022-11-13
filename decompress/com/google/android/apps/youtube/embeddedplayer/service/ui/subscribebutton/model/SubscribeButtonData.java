@@ -17,7 +17,7 @@ public abstract class SubscribeButtonData implements Parcelable
     
     static {
         a = e().d();
-        CREATOR = (Parcelable$Creator)new f(11);
+        CREATOR = (Parcelable$Creator)new f(10);
     }
     
     public static a e() {
@@ -25,13 +25,13 @@ public abstract class SubscribeButtonData implements Parcelable
         a.e(0);
         a.a = null;
         a.b = null;
-        a.f(agyc.b);
+        a.f(ahab.b);
         return a;
     }
     
     public abstract int a();
     
-    public abstract agyc b();
+    public abstract ahab b();
     
     public abstract String c();
     

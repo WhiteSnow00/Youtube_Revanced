@@ -9,12 +9,20 @@ import com.google.vr.vrcore.common.api.HeadTrackingState;
 import android.os.Handler;
 import java.lang.ref.WeakReference;
 
-final class VrCoreSdkClient$DaydreamListenerImpl extends arap
+final class VrCoreSdkClient$DaydreamListenerImpl extends ardd
 {
     private final WeakReference closeVrRunnableWeak;
     private final WeakReference fadeOverlayViewWeak;
     private final WeakReference gvrApiWeak;
     private final Handler safeguardHandler;
+    
+    static /* bridge */ void -$$Nest$mapplyColorfulFadeImpl(final VrCoreSdkClient$DaydreamListenerImpl vrCoreSdkClient$DaydreamListenerImpl, final int n, final long n2, final int n3) {
+        vrCoreSdkClient$DaydreamListenerImpl.applyColorfulFadeImpl(1, 350L, -16777216);
+    }
+    
+    static /* bridge */ void -$$Nest$mresumeHeadTrackingImpl(final VrCoreSdkClient$DaydreamListenerImpl vrCoreSdkClient$DaydreamListenerImpl, final HeadTrackingState headTrackingState) {
+        vrCoreSdkClient$DaydreamListenerImpl.resumeHeadTrackingImpl(null);
+    }
     
     public VrCoreSdkClient$DaydreamListenerImpl(final GvrApi gvrApi, final FadeOverlayView fadeOverlayView, final Runnable runnable) {
         this.safeguardHandler = new VrCoreSdkClient$DaydreamListenerImpl$1(this);
@@ -86,7 +94,7 @@ final class VrCoreSdkClient$DaydreamListenerImpl extends arap
             Log.w("VrCoreSdkClient", "Invalid invokeCloseAction() call: Runnable no longer valid");
             return;
         }
-        arac.a(runnable);
+        arcq.a(runnable);
     }
     
     public void recenterHeadTracking() {

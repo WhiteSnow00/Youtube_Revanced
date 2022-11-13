@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class RemoveRendererFromItemSectionActionOuterClass
 {
-    public static final agzg removeRendererFromItemSectionAction;
+    public static final ahbf removeRendererFromItemSectionAction;
     
     static {
-        removeRendererFromItemSectionAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ansq.a, (MessageLite)ansq.a, (agzn)null, 305286116, ahcm.k, (Class)ansq.class);
+        removeRendererFromItemSectionAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)anut.a, (MessageLite)anut.a, (ahbm)null, 305286116, ahek.k, (Class)anut.class);
     }
     
     private RemoveRendererFromItemSectionActionOuterClass() {

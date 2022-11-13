@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Tagasi albumisse</string>
     <string name="accessibility_navigation_back_button">Tagasi</string>
     <string name="accessibility_new_content_available">Saadaval on uus sisu</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Uued videod</string>
     <string name="accessibility_next">Järgmine video</string>
     <string name="accessibility_offline_button_cancel">Peata offlainimine</string>
     <string name="accessibility_offline_button_cannot_save">Ei saa offlainida</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Andmekasutuse jälgimine ja juhtimine</string>
     <string name="data_saving_persistent_title">Andmemahu säästmine</string>
     <string name="data_saving_select_quality_every_video_switch_title">Kvaliteedi valimine iga video jaoks eraldi</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Nutika offlainimise kvaliteedi vähendamine</string>
     <string name="data_saving_snack_bar_action_button">Kuva</string>
     <string name="data_saving_snack_bar_text">See muudatus mõjutab andmesäästu seadeid</string>
     <string name="data_saving_upload_wifi_only_switch_title">Laadi üles ainult WiFi kaudu</string>
@@ -719,7 +720,7 @@
     <string name="image_gallery_zero_state_text_secondary">Tehke foto, et see postitusele lisada</string>
     <string name="image_upload_error">Pildi üleslaadimine ebaõnnestus. Proovige uuesti.</string>
     <string name="image_upload_something_went_wrong">Vabandust, midagi läks valesti!</string>
-    <string name="immersive_accessibility_player_overlay">Player, double tap to bring up player controls</string>
+    <string name="immersive_accessibility_player_overlay">Pleier, topeltpuudutage pleieri nuppude kuvamiseks</string>
     <string name="in_app_update_downloaded_message">Värskendus laaditi alla</string>
     <string name="in_app_update_downloading_message">Värskenduse allalaadimine …</string>
     <string name="in_app_update_restart_button">TAASKÄIVITA</string>
@@ -1439,7 +1440,7 @@
     <string name="pref_settings_video_quality_nonbeta">Videokvaliteedi eelistused</string>
     <string name="pref_smart_downloads_description">Nutika offlainimise salvestusruumi seadistus</string>
     <string name="pref_smart_downloads_opted_in_title">Nutikas offlainimine</string>
-    <string name="pref_smart_downloads_quality_title">Smart downloads quality</string>
+    <string name="pref_smart_downloads_quality_title">Nutika offlainimise kvaliteet</string>
     <string name="pref_smart_downloads_summary">Offlaini soovitatud videoid WiFi-võrgus automaatselt</string>
     <string name="pref_subtitles_category">Subtiitrid</string>
     <string name="pref_upload_policy_summary">Üleslaadimisteks võrgueelistuste täpsustamine</string>
@@ -1788,7 +1789,7 @@
     <string name="shorts_segment_import_failed_text">Lõigu importimine ebaõnnestus</string>
     <string name="shorts_segment_import_timeout_text">Lõigu importimise ajalõpp</string>
     <string name="shorts_selected_duration_title">%1$d sekundit</string>
-    <string name="shorts_sound_added_tooltip_time_x">Sound added to first %1$ds</string>
+    <string name="shorts_sound_added_tooltip_time_x">Heli lisati esimesele %1$d s</string>
     <string name="shorts_speed_control_fast_label">Kiire</string>
     <string name="shorts_speed_control_fast_text">2x</string>
     <string name="shorts_speed_control_normal_label">Tavaline</string>

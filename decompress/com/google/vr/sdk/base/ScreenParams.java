@@ -17,13 +17,13 @@ public class ScreenParams
     private float yMetersPerPixel;
     
     public ScreenParams(final Display display) {
-        final DisplayMetrics p = aqzg.p(display);
-        this.xMetersPerPixel = aqzg.o(p.xdpi);
-        this.yMetersPerPixel = aqzg.o(p.ydpi);
+        final DisplayMetrics p = arbu.p(display);
+        this.xMetersPerPixel = arbu.o(p.xdpi);
+        this.yMetersPerPixel = arbu.o(p.ydpi);
         this.width = p.widthPixels;
         final int heightPixels = p.heightPixels;
         this.height = heightPixels;
-        this.borderSizeMeters = aqzg.n((Display$DisplayParams)null);
+        this.borderSizeMeters = arbu.n((Display$DisplayParams)null);
         final int width = this.width;
         if (heightPixels > width) {
             this.width = heightPixels;
@@ -48,12 +48,12 @@ public class ScreenParams
         }
         final ScreenParams screenParams = new ScreenParams(display);
         if (display$DisplayParams.hasXPpi()) {
-            screenParams.xMetersPerPixel = aqzg.o(display$DisplayParams.getXPpi());
+            screenParams.xMetersPerPixel = arbu.o(display$DisplayParams.getXPpi());
         }
         if (display$DisplayParams.hasYPpi()) {
-            screenParams.yMetersPerPixel = aqzg.o(display$DisplayParams.getYPpi());
+            screenParams.yMetersPerPixel = arbu.o(display$DisplayParams.getYPpi());
         }
-        screenParams.borderSizeMeters = aqzg.n(display$DisplayParams);
+        screenParams.borderSizeMeters = arbu.n(display$DisplayParams);
         return screenParams;
     }
     

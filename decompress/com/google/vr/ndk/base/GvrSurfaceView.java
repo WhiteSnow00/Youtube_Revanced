@@ -33,6 +33,42 @@ public class GvrSurfaceView extends SurfaceView implements SurfaceHolder$Callbac
     private GLSurfaceView$Renderer mRenderer;
     private final WeakReference mThisWeakRef;
     
+    static /* bridge */ EglReadyListener -$$Nest$fgetmAppContextListener(final GvrSurfaceView gvrSurfaceView) {
+        return gvrSurfaceView.mAppContextListener;
+    }
+    
+    static /* bridge */ int -$$Nest$fgetmDebugFlags(final GvrSurfaceView gvrSurfaceView) {
+        return gvrSurfaceView.mDebugFlags;
+    }
+    
+    static /* bridge */ GLSurfaceView$EGLConfigChooser -$$Nest$fgetmEGLConfigChooser(final GvrSurfaceView gvrSurfaceView) {
+        return gvrSurfaceView.mEGLConfigChooser;
+    }
+    
+    static /* bridge */ int -$$Nest$fgetmEGLContextClientVersion(final GvrSurfaceView gvrSurfaceView) {
+        return gvrSurfaceView.mEGLContextClientVersion;
+    }
+    
+    static /* bridge */ GLSurfaceView$EGLContextFactory -$$Nest$fgetmEGLContextFactory(final GvrSurfaceView gvrSurfaceView) {
+        return gvrSurfaceView.mEGLContextFactory;
+    }
+    
+    static /* bridge */ GLSurfaceView$EGLWindowSurfaceFactory -$$Nest$fgetmEGLWindowSurfaceFactory(final GvrSurfaceView gvrSurfaceView) {
+        return gvrSurfaceView.mEGLWindowSurfaceFactory;
+    }
+    
+    static /* bridge */ GvrSurfaceView$GLWrapper -$$Nest$fgetmGLWrapper(final GvrSurfaceView gvrSurfaceView) {
+        return gvrSurfaceView.mGLWrapper;
+    }
+    
+    static /* bridge */ boolean -$$Nest$fgetmPreserveEGLContextOnPause(final GvrSurfaceView gvrSurfaceView) {
+        return gvrSurfaceView.mPreserveEGLContextOnPause;
+    }
+    
+    static /* bridge */ GLSurfaceView$Renderer -$$Nest$fgetmRenderer(final GvrSurfaceView gvrSurfaceView) {
+        return gvrSurfaceView.mRenderer;
+    }
+    
     public GvrSurfaceView(final Context context) {
         super(context);
         this.mThisWeakRef = new WeakReference((T)this);
@@ -173,7 +209,7 @@ public class GvrSurfaceView extends SurfaceView implements SurfaceHolder$Callbac
     }
     
     public void setSwapMode(final int n) {
-        if (aqzg.m()) {
+        if (arbu.m()) {
             Log.e("GvrSurfaceView", "setSwapMode(SWAPMODE_SINGLE) requires Jellybean MR1 (EGL14 dependency) and is not supported on emulators.");
             return;
         }

@@ -8,22 +8,22 @@ import com.google.protobuf.MessageLite;
 
 public final class ReelPlayerOverlayRendererOuterClass
 {
-    public static final agzg forcedMuteMessageRenderer;
-    public static final agzg pivotButtonRenderer;
-    public static final agzg reelMoreButtonRenderer;
-    public static final agzg reelPlayerAgeGateRenderer;
-    public static final agzg reelPlayerContextualHeaderRenderer;
-    public static final agzg reelPlayerOverlayRenderer;
-    public static final agzg reelPlayerPersistentEducationRenderer;
+    public static final ahbf forcedMuteMessageRenderer;
+    public static final ahbf pivotButtonRenderer;
+    public static final ahbf reelMoreButtonRenderer;
+    public static final ahbf reelPlayerAgeGateRenderer;
+    public static final ahbf reelPlayerContextualHeaderRenderer;
+    public static final ahbf reelPlayerOverlayRenderer;
+    public static final ahbf reelPlayerPersistentEducationRenderer;
     
     static {
-        reelPlayerOverlayRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anrb.a, (MessageLite)anrb.a, (agzn)null, 139970731, ahcm.k, (Class)anrb.class);
-        reelPlayerPersistentEducationRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anre.a, (MessageLite)anre.a, (agzn)null, 303209365, ahcm.k, (Class)anre.class);
-        pivotButtonRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anqv.a, (MessageLite)anqv.a, (agzn)null, 309756362, ahcm.k, (Class)anqv.class);
-        forcedMuteMessageRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anqu.a, (MessageLite)anqu.a, (agzn)null, 346095969, ahcm.k, (Class)anqu.class);
-        reelPlayerAgeGateRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anqx.a, (MessageLite)anqx.a, (agzn)null, 370727981, ahcm.k, (Class)anqx.class);
-        reelMoreButtonRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anqw.a, (MessageLite)anqw.a, (agzn)null, 425913887, ahcm.k, (Class)anqw.class);
-        reelPlayerContextualHeaderRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anqy.a, (MessageLite)anqy.a, (agzn)null, 439944849, ahcm.k, (Class)anqy.class);
+        reelPlayerOverlayRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ante.a, (MessageLite)ante.a, (ahbm)null, 139970731, ahek.k, (Class)ante.class);
+        reelPlayerPersistentEducationRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anth.a, (MessageLite)anth.a, (ahbm)null, 303209365, ahek.k, (Class)anth.class);
+        pivotButtonRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ansy.a, (MessageLite)ansy.a, (ahbm)null, 309756362, ahek.k, (Class)ansy.class);
+        forcedMuteMessageRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ansx.a, (MessageLite)ansx.a, (ahbm)null, 346095969, ahek.k, (Class)ansx.class);
+        reelPlayerAgeGateRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anta.a, (MessageLite)anta.a, (ahbm)null, 370727981, ahek.k, (Class)anta.class);
+        reelMoreButtonRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ansz.a, (MessageLite)ansz.a, (ahbm)null, 425913887, ahek.k, (Class)ansz.class);
+        reelPlayerContextualHeaderRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)antb.a, (MessageLite)antb.a, (ahbm)null, 439944849, ahek.k, (Class)antb.class);
     }
     
     private ReelPlayerOverlayRendererOuterClass() {

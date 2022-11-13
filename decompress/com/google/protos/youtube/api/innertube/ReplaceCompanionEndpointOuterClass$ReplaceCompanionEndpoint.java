@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint extends agzi implements ahax
+public final class ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint extends ahbh implements ahcw
 {
     public static final ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg replaceCompanionEndpoint;
+    private static volatile ahdd c;
+    public static final ahbf replaceCompanionEndpoint;
     public String b;
     private int d;
     
     static {
         final ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint a2 = new ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint();
-        agzi.registerDefaultInstance((Class)ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint.class, (agzi)(a = a2));
-        replaceCompanionEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 167146950, ahcm.k, (Class)ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint.class);
+        ahbh.registerDefaultInstance((Class)ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint.class, (ahbh)(a = a2));
+        replaceCompanionEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 167146950, ahek.k, (Class)ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint.class);
     }
     
     private ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint() {
         this.b = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint.c) == null) {
                     synchronized (ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint.class) {
                         if (ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint.c == null) {
-                            ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint.c = (ahbe)new agzb((agzi)ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint.a);
+                            ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint.c = (ahdd)new ahba((ahbh)ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint e
                 return ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint.a);
+                return new ahaz((ahbh)ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint.a);
             }
             case 3: {
                 return new ReplaceCompanionEndpointOuterClass$ReplaceCompanionEndpoint();

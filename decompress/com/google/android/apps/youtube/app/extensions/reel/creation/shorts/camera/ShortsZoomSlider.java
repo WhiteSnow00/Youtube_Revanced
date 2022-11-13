@@ -19,15 +19,15 @@ public class ShortsZoomSlider extends AppCompatSeekBar implements SeekBar$OnSeek
     public float c;
     Handler d;
     final Runnable e;
-    public avt f;
-    public qpt g;
+    public pvh f;
+    public aeea g;
     
     public ShortsZoomSlider(final Context context) {
         super(context);
         this.a = false;
         this.b = false;
         this.c = -1.0f;
-        this.e = (Runnable)new gwx(this, 1);
+        this.e = (Runnable)new gsb(this, 20);
         this.i();
     }
     
@@ -36,7 +36,7 @@ public class ShortsZoomSlider extends AppCompatSeekBar implements SeekBar$OnSeek
         this.a = false;
         this.b = false;
         this.c = -1.0f;
-        this.e = (Runnable)new gwx(this, 1);
+        this.e = (Runnable)new gsb(this, 20);
         this.i();
     }
     
@@ -45,18 +45,18 @@ public class ShortsZoomSlider extends AppCompatSeekBar implements SeekBar$OnSeek
         this.a = false;
         this.b = false;
         this.c = -1.0f;
-        this.e = (Runnable)new gwx(this, 1);
+        this.e = (Runnable)new gsb(this, 20);
         this.i();
     }
     
-    public static wyb a() {
-        return wya.c(100840);
+    public static xab a() {
+        return xaa.c(100840);
     }
     
     private final void i() {
         this.d = new Handler();
-        this.setProgressDrawable(this.getContext().getDrawable(2131233965));
-        this.setThumb(this.getContext().getDrawable(2131233967));
+        this.setProgressDrawable(this.getContext().getDrawable(2131233967));
+        this.setThumb(this.getContext().getDrawable(2131233969));
         this.setMax(1000);
         this.setVisibility(4);
         this.setOnSeekBarChangeListener((SeekBar$OnSeekBarChangeListener)this);
@@ -73,12 +73,12 @@ public class ShortsZoomSlider extends AppCompatSeekBar implements SeekBar$OnSeek
                 if (c > 0.0f && this.getVisibility() != 0) {
                     this.setAlpha(0.0f);
                     this.setVisibility(0);
-                    final avt f = this.f;
-                    if (f != null) {
-                        f.S(a()).h();
+                    final aeea g = this.g;
+                    if (g != null) {
+                        g.cG(a()).h();
                     }
                 }
-                this.animate().alpha(c).setDuration(100L).withEndAction((Runnable)new gwx(this, 0)).start();
+                this.animate().alpha(c).setDuration(100L).withEndAction((Runnable)new gxo(this, 1)).start();
             }
         }
     }
@@ -96,8 +96,8 @@ public class ShortsZoomSlider extends AppCompatSeekBar implements SeekBar$OnSeek
         this.d.removeCallbacks(this.e);
         this.c = -1.0f;
         if (!this.b) {
-            if (this.f != null && this.getVisibility() == 0 && this.getAlpha() != 0.0f) {
-                this.f.S(a()).f();
+            if (this.g != null && this.getVisibility() == 0 && this.getAlpha() != 0.0f) {
+                this.g.cG(a()).f();
             }
             this.setVisibility(4);
         }
@@ -114,8 +114,8 @@ public class ShortsZoomSlider extends AppCompatSeekBar implements SeekBar$OnSeek
         this.b = b;
         this.d();
         if (b) {
-            if (this.f != null && avt.R((View)this, true)) {
-                this.f.S(a()).h();
+            if (this.g != null && aeea.cF((View)this, true)) {
+                this.g.cG(a()).h();
             }
             this.setVisibility(0);
         }
@@ -149,17 +149,17 @@ public class ShortsZoomSlider extends AppCompatSeekBar implements SeekBar$OnSeek
     
     public final void onProgressChanged(final SeekBar seekBar, final int n, final boolean b) {
         if (b) {
-            final qpt g = this.g;
-            if (g != null) {
-                final float n2 = n / 1000.0f;
-                final gwe bj = ((gwg)g.a).bJ;
-                if (bj != null) {
-                    bj.b(n2);
+            final pvh f = this.f;
+            if (f != null) {
+                final float n2 = (float)n;
+                final gwu bk = ((gww)f.a).bK;
+                if (bk != null) {
+                    bk.b(n2 / 1000.0f);
                 }
             }
-            final avt f = this.f;
-            if (f != null) {
-                f.S(a()).i();
+            final aeea g = this.g;
+            if (g != null) {
+                g.cG(a()).i();
             }
             if (!this.b && !this.a) {
                 this.e();

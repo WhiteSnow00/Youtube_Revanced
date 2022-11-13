@@ -10,11 +10,11 @@ import com.google.android.apps.youtube.embeddedplayer.service.ui.subscribebutton
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.videodetailsoverlay.service.a;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.h;
 
-public final class c extends abaa
+public final class c extends abbv
 {
     public final h a;
     public final b b;
-    public final vax c;
+    public final vcy c;
     public final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.videodetailsoverlay.shared.b d;
     public final a e;
     public final e f;
@@ -26,17 +26,17 @@ public final class c extends abaa
     public final com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.b l;
     public final com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.service.a m;
     public final com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.service.e n;
-    public aneh o;
-    public aibb p;
+    public angl o;
+    public aicz p;
     public boolean q;
     public boolean r;
     public String s;
     public String t;
-    public final lzi u;
+    public final com.google.android.apps.youtube.embeddedplayer.service.clientinfo.service.c u;
     
-    public c(final abno abno, final aazk aazk, final aazx aazx, final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.videodetailsoverlay.shared.b d, final a e, final e f, final com.google.android.apps.youtube.embeddedplayer.service.ui.subscribebutton.service.a g, final com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.shared.b h, final com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.service.a i, final com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.shared.b j, final com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.service.a k, final com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.b l, final com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.service.a m, final xun xun, final ScheduledExecutorService scheduledExecutorService, final Executor executor, final h a, final vax c, final lzi u, final com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.service.e n, final byte[] array, final byte[] array2) {
-        super(abno, aazk, aazx, xun, scheduledExecutorService, executor);
-        this.o = aneh.a;
+    public c(final abpq abpq, final abbf abbf, final abbs abbs, final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.videodetailsoverlay.shared.b d, final a e, final e f, final com.google.android.apps.youtube.embeddedplayer.service.ui.subscribebutton.service.a g, final com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.shared.b h, final com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.service.a i, final com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.shared.b j, final com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.service.a k, final com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.b l, final com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.service.a m, final xwk xwk, final ScheduledExecutorService scheduledExecutorService, final Executor executor, final h a, final vcy c, final com.google.android.apps.youtube.embeddedplayer.service.clientinfo.service.c u, final com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.service.e n, final byte[] array, final byte[] array2, final byte[] array3) {
+        super(abpq, abbf, abbs, xwk, scheduledExecutorService, executor);
+        this.o = angl.a;
         this.s = "";
         this.t = "";
         this.a = a;
@@ -54,6 +54,6 @@ public final class c extends abaa
         this.l = l;
         this.m = m;
         this.n = n;
-        u.b(2131427613, (Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.service.a(this, 10));
+        u.e(2131427613, (Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.service.a(this, 8));
     }
 }

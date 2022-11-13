@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Tillbaka till albumet</string>
     <string name="accessibility_navigation_back_button">Tillbaka</string>
     <string name="accessibility_new_content_available">Det finns nytt innehåll</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Nya videor</string>
     <string name="accessibility_next">Nästa video</string>
     <string name="accessibility_offline_button_cancel">Sluta ladda ned</string>
     <string name="accessibility_offline_button_cannot_save">Det går inte att ladda ned</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Dataövervakning och -kontroll</string>
     <string name="data_saving_persistent_title">Databesparing</string>
     <string name="data_saving_select_quality_every_video_switch_title">Välj kvalitet för varje video</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Minska kvaliteten för Smarta nedladdningar</string>
     <string name="data_saving_snack_bar_action_button">Visa</string>
     <string name="data_saving_snack_bar_text">Den här ändringen påverkar dina datasparinställningar</string>
     <string name="data_saving_upload_wifi_only_switch_title">Ladda bara upp via wifi</string>

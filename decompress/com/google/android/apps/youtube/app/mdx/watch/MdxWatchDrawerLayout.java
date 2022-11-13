@@ -23,10 +23,10 @@ import j$.util.Optional;
 import java.util.Set;
 import android.view.View$OnClickListener;
 
-public class MdxWatchDrawerLayout extends iav implements View$OnClickListener, ibq
+public class MdxWatchDrawerLayout extends ibr implements View$OnClickListener, icm
 {
     public final Set a;
-    public ibp b;
+    public icl b;
     public Optional c;
     public View d;
     public View e;
@@ -40,7 +40,7 @@ public class MdxWatchDrawerLayout extends iav implements View$OnClickListener, i
     public boolean m;
     private final float n;
     private final float o;
-    private final atje p;
+    private final atjz p;
     private View q;
     private View r;
     private View s;
@@ -62,11 +62,11 @@ public class MdxWatchDrawerLayout extends iav implements View$OnClickListener, i
     public MdxWatchDrawerLayout(final Context context, final AttributeSet set, final int n) {
         super(context, set, n);
         this.a = new CopyOnWriteArraySet();
-        this.p = ((atje)atir.e()).aX();
+        this.p = ((atjz)atjm.e()).bc();
         this.u = true;
         this.v = new Rect();
-        this.n = context.getResources().getDimension(2131167885);
-        this.o = context.getResources().getDimension(2131167886);
+        this.n = context.getResources().getDimension(2131167884);
+        this.o = context.getResources().getDimension(2131167885);
         this.w = Optional.empty();
         this.x = Optional.empty();
         this.y = Optional.empty();
@@ -78,12 +78,13 @@ public class MdxWatchDrawerLayout extends iav implements View$OnClickListener, i
             return;
         }
         final int i = this.i;
-        final int n2 = (int)(i + n * (this.h - i));
+        final float n2 = (float)i;
+        final float n3 = (float)(this.h - i);
         if (this.c.isPresent()) {
-            final aqh aqh = (aqh)this.c.get();
+            final aqi aqi = (aqi)this.c.get();
             final View d = this.d;
-            if (aqh.l(d, d.getLeft(), n2)) {
-                ana.H((View)this);
+            if (aqi.l(d, d.getLeft(), (int)(n2 + n * n3))) {
+                anb.H((View)this);
             }
         }
     }
@@ -92,12 +93,12 @@ public class MdxWatchDrawerLayout extends iav implements View$OnClickListener, i
         return view.getGlobalVisibleRect(this.v) && this.v.contains((int)motionEvent.getRawX(), (int)motionEvent.getRawY());
     }
     
-    public final iby a() {
-        return new iby(this.d());
+    public final icv a() {
+        return new icv(this.d());
     }
     
-    public final ashe b() {
-        return (ashe)this.p;
+    public final asht b() {
+        return (asht)this.p;
     }
     
     public final void c() {
@@ -105,8 +106,8 @@ public class MdxWatchDrawerLayout extends iav implements View$OnClickListener, i
     }
     
     public final void computeScroll() {
-        if (this.c.isPresent() && ((aqh)this.c.get()).n()) {
-            ana.H((View)this);
+        if (this.c.isPresent() && ((aqi)this.c.get()).n()) {
+            anb.H((View)this);
         }
     }
     
@@ -128,11 +129,12 @@ public class MdxWatchDrawerLayout extends iav implements View$OnClickListener, i
                 if (t != null) {
                     final int measuredHeight = e.getMeasuredHeight();
                     final int n = this.h - measuredHeight;
+                    final View e2 = this.e;
                     final int n2 = n + measuredHeight;
-                    this.w = Optional.of((Object)new ibt(this.e, n, n2, 0.0f, 1.0f));
+                    this.w = Optional.of((Object)new icp(e2, n, n2, 0.0f, 1.0f));
                     final int n3 = (int)(n - measuredHeight * 0.9f);
-                    this.x = Optional.of((Object)new ibt(s, n3, n3 + measuredHeight, 1.0f, 0.0f));
-                    this.y = Optional.of((Object)new ibu((View)t, n3, n2));
+                    this.x = Optional.of((Object)new icp(s, n3, n3 + measuredHeight, 1.0f, 0.0f));
+                    this.y = Optional.of((Object)new icq((View)t, n3, n2));
                 }
             }
         }
@@ -156,8 +158,8 @@ public class MdxWatchDrawerLayout extends iav implements View$OnClickListener, i
                 if (e != null) {
                     final View q = this.q;
                     if (q != null) {
-                        ((ibv)this.w.get()).b(this.g);
-                        ((ibv)this.x.get()).b(this.g);
+                        ((icp)this.w.get()).b(this.g);
+                        ((icp)this.x.get()).b(this.g);
                         if (!this.m) {
                             visibility = 0;
                         }
@@ -179,26 +181,26 @@ public class MdxWatchDrawerLayout extends iav implements View$OnClickListener, i
                                 visibility = 4;
                             }
                             f.setVisibility(visibility);
-                            ((ibv)this.y.get()).b(this.g);
+                            ((icq)this.y.get()).b(this.g);
                             if (this.m) {
-                                t.setContentDescription(this.getResources().getText(2132018579));
+                                t.setContentDescription(this.getResources().getText(2132018580));
                             }
                             else if (g == h) {
-                                t.setContentDescription(this.getResources().getText(2132018513));
+                                t.setContentDescription(this.getResources().getText(2132018514));
                             }
                         }
                     }
                 }
             }
-            if (!ana.an((View)this)) {
+            if (!anb.an((View)this)) {
                 this.requestLayout();
             }
-            this.p.tr((Object)this.a());
+            this.p.tu((Object)this.a());
             if (!this.a.isEmpty()) {
-                for (final qpt qpt : this.a) {
-                    final iby a = ((ibq)this).a();
-                    ((ibo)qpt.a).g(a.a);
-                    ((ibo)qpt.a).f(a.a());
+                for (final pvh pvh : this.a) {
+                    final icv a = ((icm)this).a();
+                    ((ick)pvh.a).g(a.a);
+                    ((ick)pvh.a).f(a.a());
                 }
             }
         }
@@ -257,17 +259,17 @@ public class MdxWatchDrawerLayout extends iav implements View$OnClickListener, i
     
     protected final void onFinishInflate() {
         super.onFinishInflate();
-        ana.N((View)this, (akv)new ibr(this));
-        final Optional of = Optional.of((Object)aqh.c((ViewGroup)this, 10.0f, (aqg)new ibs(this)));
+        anb.N((View)this, (akw)new icn(this));
+        final Optional of = Optional.of((Object)aqi.c((ViewGroup)this, 10.0f, (aqh)new ico(this)));
         this.c = of;
-        ((aqh)of.get()).g = this.getResources().getDisplayMetrics().density * 400.0f;
+        ((aqi)of.get()).g = this.getResources().getDisplayMetrics().density * 400.0f;
         final View viewById = this.findViewById(2131429753);
         viewById.getClass();
         this.d = viewById;
         final ViewStub viewStub = (ViewStub)this.findViewById(2131429758);
         viewStub.getClass();
         viewStub.setInflatedId(2131429760);
-        viewStub.setLayoutResource(2131624798);
+        viewStub.setLayoutResource(2131624799);
         final View inflate = viewStub.inflate();
         inflate.getClass();
         (this.e = inflate).setOnClickListener((View$OnClickListener)this);
@@ -286,13 +288,13 @@ public class MdxWatchDrawerLayout extends iav implements View$OnClickListener, i
         final ImageView t = (ImageView)this.findViewById(2131429882);
         t.getClass();
         this.t = t;
-        final Drawable a = agw.a(this.getContext(), 2131233693);
+        final Drawable a = agx.a(this.getContext(), 2131233695);
         if (a != null) {
             a.mutate();
-            a.setColorFilter(tmy.cn(this.getContext(), 2130970924), PorterDuff$Mode.SRC_ATOP);
+            a.setColorFilter(tpe.cr(this.getContext(), 2130970924), PorterDuff$Mode.SRC_ATOP);
             t.setImageDrawable(a);
         }
-        this.p.tr((Object)this.a());
+        this.p.tu((Object)this.a());
     }
     
     public final boolean onInterceptTouchEvent(final MotionEvent motionEvent) {
@@ -301,9 +303,9 @@ public class MdxWatchDrawerLayout extends iav implements View$OnClickListener, i
         }
         final int actionMasked = motionEvent.getActionMasked();
         if (actionMasked != 3 && actionMasked != 1) {
-            return (this.j(motionEvent) && ((aqh)this.c.get()).k(motionEvent)) || super.onInterceptTouchEvent(motionEvent);
+            return (this.j(motionEvent) && ((aqi)this.c.get()).k(motionEvent)) || super.onInterceptTouchEvent(motionEvent);
         }
-        ((aqh)this.c.get()).d();
+        ((aqi)this.c.get()).d();
         return false;
     }
     
@@ -318,7 +320,7 @@ public class MdxWatchDrawerLayout extends iav implements View$OnClickListener, i
         if (this.u) {
             this.h(this.h, true);
             this.u = false;
-            if (!this.m && tqt.e(this.getContext())) {
+            if (!this.m && tsy.e(this.getContext())) {
                 this.g(true);
             }
         }
@@ -366,7 +368,7 @@ public class MdxWatchDrawerLayout extends iav implements View$OnClickListener, i
         if (!this.k && !this.j(motionEvent)) {
             return super.onTouchEvent(motionEvent);
         }
-        ((aqh)this.c.get()).f(motionEvent);
+        ((aqi)this.c.get()).f(motionEvent);
         return true;
     }
 }

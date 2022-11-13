@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">આલ્બમ પર પાછા ફરો</string>
     <string name="accessibility_navigation_back_button">પાછળ</string>
     <string name="accessibility_new_content_available">નવું કન્ટેન્ટ ઉપલબ્ધ છે</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">નવા વીડિયો</string>
     <string name="accessibility_next">આગલી વિડિઓ</string>
     <string name="accessibility_offline_button_cancel">ડાઉનલોડ કરવાનું રોકો</string>
     <string name="accessibility_offline_button_cannot_save">ડાઉનલોડ કરી શકાતો નથી</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">ડેટા મૉનિટરિંગ અને નિયંત્રણ</string>
     <string name="data_saving_persistent_title">ડેટા સાચવવો</string>
     <string name="data_saving_select_quality_every_video_switch_title">દરેક વીડિયો માટે ક્વૉલિટી પસંદ કરો</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">સ્માર્ટ ડાઉનલોડની ક્વૉલિટી ઘટાડો</string>
     <string name="data_saving_snack_bar_action_button">જુઓ</string>
     <string name="data_saving_snack_bar_text">આ ફેરફારથી તમારા ડેટા સાચવવાના સેટિંગ પર અસર પડે છે</string>
     <string name="data_saving_upload_wifi_only_switch_title">ફક્ત વાઇ-ફાઇ પર અપલોડ કરો</string>
@@ -719,7 +720,7 @@
     <string name="image_gallery_zero_state_text_secondary">પોસ્ટમાં ઉમેરવા માટે એક ફોટો લો</string>
     <string name="image_upload_error">ફોટો અપલોડ કરી શક્યા નથી. કૃપા કરી ફરી પ્રયાસ કરો.</string>
     <string name="image_upload_something_went_wrong">અરેરે! કંઈંક ખોટું થયું!</string>
-    <string name="immersive_accessibility_player_overlay">Player, double tap to bring up player controls</string>
+    <string name="immersive_accessibility_player_overlay">પ્લેયર, પ્લેયરના નિયંત્રણો ખોલવા માટે બે વાર ટૅપ કરો</string>
     <string name="in_app_update_downloaded_message">અપડેટ ડાઉનલોડ કરી</string>
     <string name="in_app_update_downloading_message">અપડેટ ડાઉનલોડ કરી રહ્યાં છીએ...</string>
     <string name="in_app_update_restart_button">ફરી શરૂ કરો</string>
@@ -1439,7 +1440,7 @@
     <string name="pref_settings_video_quality_nonbeta">વીડિયોની ક્વૉલિટી માટે પસંદગીઓ</string>
     <string name="pref_smart_downloads_description">સ્માર્ટ ડાઉનલોડની સુવિધા માટે સ્ટોરેજના વપરાશમાં ફેરફાર કરો</string>
     <string name="pref_smart_downloads_opted_in_title">સ્માર્ટ ડાઉનલોડ</string>
-    <string name="pref_smart_downloads_quality_title">Smart downloads quality</string>
+    <string name="pref_smart_downloads_quality_title">સ્માર્ટ ડાઉનલોડના વીડિયોની ક્વૉલિટી</string>
     <string name="pref_smart_downloads_summary">સુઝાવ આપવામાં આવેલા વીડિયો વાઇ-ફાઇ પરથી ઑટોમૅટિક રીતે ડાઉનલોડ કરો</string>
     <string name="pref_subtitles_category">કૅપ્શન</string>
     <string name="pref_upload_policy_summary">અપલોડ માટે નેટવર્ક પસંદગીઓ નિર્દિષ્ટ કરો</string>
@@ -1788,7 +1789,7 @@
     <string name="shorts_segment_import_failed_text">સેગ્મેન્ટ આયાત કરવામાં નિષ્ફળ રહ્યાં</string>
     <string name="shorts_segment_import_timeout_text">સેગ્મેન્ટ આયાત કરવાનો સમય સમાપ્ત</string>
     <string name="shorts_selected_duration_title">%1$d સેકન્ડ</string>
-    <string name="shorts_sound_added_tooltip_time_x">Sound added to first %1$ds</string>
+    <string name="shorts_sound_added_tooltip_time_x">પહેલી %1$d સેકન્ડ માટે સાઉન્ડ ઉમેર્યો</string>
     <string name="shorts_speed_control_fast_label">ઝડપી</string>
     <string name="shorts_speed_control_fast_text">2X</string>
     <string name="shorts_speed_control_normal_label">સામાન્ય</string>

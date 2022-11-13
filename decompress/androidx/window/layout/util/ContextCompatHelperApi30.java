@@ -28,11 +28,11 @@ public final class ContextCompatHelperApi30
         return bounds;
     }
     
-    public final aoa currentWindowInsets(final Activity activity) {
+    public final aob currentWindowInsets(final Activity activity) {
         activity.getClass();
         final WindowInsets windowInsets = activity.getWindowManager().getCurrentWindowMetrics().getWindowInsets();
         windowInsets.getClass();
-        return aoa.o(windowInsets);
+        return aob.o(windowInsets);
     }
     
     public final Rect maximumWindowBounds(final Context context) {

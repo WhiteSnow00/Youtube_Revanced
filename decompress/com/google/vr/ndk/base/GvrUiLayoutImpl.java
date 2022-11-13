@@ -4,7 +4,7 @@
 
 package com.google.vr.ndk.base;
 
-import com.google.android.apps.youtube.embeddedplayer.service.ui.player.remoteloaded.a;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.remoteloaded.a;
 import com.google.vr.vrcore.library.api.ObjectWrapper;
 import android.view.ViewGroup;
 import android.app.Activity;
@@ -13,14 +13,22 @@ import android.view.View;
 import android.content.Context;
 import android.animation.ObjectAnimator;
 
-class GvrUiLayoutImpl extends arbh
+class GvrUiLayoutImpl extends ardv
 {
     private final Runnable beginDimmingUiLayerRunnable;
     private final GvrUiLayoutImpl$CloseButtonListenerWrapper closeButtonListener;
     private boolean daydreamModeEnabled;
     private final Runnable delayDimmingUiLayerAfterVisibleRunnable;
-    private final arai uiLayer;
+    private final arcx uiLayer;
     private ObjectAnimator uiLayerDimmingAnimation;
+    
+    public static void $r8$lambda$Aw0iq_5OskyqrS0baZu6EbIZOMA(final GvrUiLayoutImpl gvrUiLayoutImpl) {
+        gvrUiLayoutImpl.beginDimmingUiLayer();
+    }
+    
+    static /* bridge */ Runnable -$$Nest$smcreateDefaultCloseButtonListener(final Context context, final DaydreamUtilsWrapper daydreamUtilsWrapper) {
+        return createDefaultCloseButtonListener(context, daydreamUtilsWrapper);
+    }
     
     public GvrUiLayoutImpl(final Context context, final Runnable runnable) {
         this(context, runnable, new DaydreamUtilsWrapper());
@@ -32,15 +40,15 @@ class GvrUiLayoutImpl extends arbh
         this.daydreamModeEnabled = false;
         final GvrUiLayoutImpl$CloseButtonListenerWrapper gvrUiLayoutImpl$CloseButtonListenerWrapper = new GvrUiLayoutImpl$CloseButtonListenerWrapper(context, runnable, daydreamUtilsWrapper);
         this.closeButtonListener = gvrUiLayoutImpl$CloseButtonListenerWrapper;
-        final arai uiLayer = new arai(context);
+        final arcx uiLayer = new arcx(context);
         this.uiLayer = uiLayer;
         uiLayer.l = gvrUiLayoutImpl$CloseButtonListenerWrapper;
-        arac.a((Runnable)new aghl(uiLayer, (Runnable)gvrUiLayoutImpl$CloseButtonListenerWrapper, 15));
+        arcq.a((Runnable)new agjf(uiLayer, (Runnable)gvrUiLayoutImpl$CloseButtonListenerWrapper, 17));
     }
     
     private void beginDimmingUiLayer() {
         this.cancelDimmingUiLayer();
-        final araf h = this.uiLayer.h;
+        final arct h = this.uiLayer.h;
         if (h != null && h.getVisibility() == 0) {
             this.getRoot().postDelayed(this.delayDimmingUiLayerAfterVisibleRunnable, 100L);
             return;
@@ -54,7 +62,7 @@ class GvrUiLayoutImpl extends arbh
         final Intent intent = new Intent("android.intent.action.MAIN");
         intent.addCategory("android.intent.category.HOME");
         intent.setFlags(268435456);
-        final Activity t = aqzg.t(context);
+        final Activity t = arbu.t(context);
         if (t == null) {
             return new GvrUiLayoutImpl$1(context, intent);
         }
@@ -92,7 +100,7 @@ class GvrUiLayoutImpl extends arbh
         return (ViewGroup)this.uiLayer.b;
     }
     
-    public arbl getRootView() {
+    public ardz getRootView() {
         return ObjectWrapper.a((Object)this.uiLayer.b);
     }
     
@@ -104,10 +112,14 @@ class GvrUiLayoutImpl extends arbh
         return this.uiLayer.i;
     }
     
-    public void setCloseButtonListener(final arbl arbl) {
+    public void lambda$setDimmedUiTouchOverride$0$com-google-vr-ndk-base-GvrUiLayoutImpl() {
+        this.delayDimmingUiLayer(5000L);
+    }
+    
+    public void setCloseButtonListener(final ardz ardz) {
         Runnable clientCloseButtonListener;
-        if (arbl != null) {
-            clientCloseButtonListener = (Runnable)ObjectWrapper.b(arbl, (Class)Runnable.class);
+        if (ardz != null) {
+            clientCloseButtonListener = (Runnable)ObjectWrapper.b(ardz, (Class)Runnable.class);
         }
         else {
             clientCloseButtonListener = null;
@@ -129,22 +141,22 @@ class GvrUiLayoutImpl extends arbh
     }
     
     public void setEnabled(final boolean i) {
-        final arai uiLayer = this.uiLayer;
+        final arcx uiLayer = this.uiLayer;
         uiLayer.i = i;
-        arac.a((Runnable)new a(uiLayer, i, 18));
+        arcq.a((Runnable)new a(uiLayer, i, 20));
     }
     
     public void setSettingsButtonEnabled(final boolean j) {
-        final arai uiLayer = this.uiLayer;
+        final arcx uiLayer = this.uiLayer;
         uiLayer.j = j;
-        arac.a((Runnable)new a(uiLayer, j, 19));
+        arcq.a((Runnable)new asbg(uiLayer, j, 1));
     }
     
-    public void setSettingsButtonListener(final arbl arbl) {
-        final arai uiLayer = this.uiLayer;
+    public void setSettingsButtonListener(final ardz ardz) {
+        final arcx uiLayer = this.uiLayer;
         Runnable m;
-        if (arbl != null) {
-            m = (Runnable)ObjectWrapper.b(arbl, (Class)Runnable.class);
+        if (ardz != null) {
+            m = (Runnable)ObjectWrapper.b(ardz, (Class)Runnable.class);
         }
         else {
             m = null;
@@ -153,7 +165,7 @@ class GvrUiLayoutImpl extends arbh
     }
     
     public void setTransitionViewEnabled(final boolean b) {
-        final arai uiLayer = this.uiLayer;
+        final arcx uiLayer = this.uiLayer;
         boolean b2 = false;
         if (b) {
             b2 = b2;
@@ -164,22 +176,22 @@ class GvrUiLayoutImpl extends arbh
         uiLayer.e(b2);
     }
     
-    public void setTransitionViewListener(final arbl arbl) {
-        final arai uiLayer = this.uiLayer;
+    public void setTransitionViewListener(final ardz ardz) {
+        final arcx uiLayer = this.uiLayer;
         Runnable n;
-        if (arbl != null) {
-            n = (Runnable)ObjectWrapper.b(arbl, (Class)Runnable.class);
+        if (ardz != null) {
+            n = (Runnable)ObjectWrapper.b(ardz, (Class)Runnable.class);
         }
         else {
             n = null;
         }
         uiLayer.n = n;
-        arac.a((Runnable)new aghl(uiLayer, n, 13));
+        arcq.a((Runnable)new agjf(uiLayer, n, 15));
     }
     
     public void setViewerName(final String o) {
-        final arai uiLayer = this.uiLayer;
+        final arcx uiLayer = this.uiLayer;
         uiLayer.o = o;
-        arac.a((Runnable)new aghl(uiLayer, o, 14));
+        arcq.a((Runnable)new agjf(uiLayer, o, 16));
     }
 }

@@ -445,6 +445,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Data monitoring and control</string>
     <string name="data_saving_persistent_title">Data saving</string>
     <string name="data_saving_select_quality_every_video_switch_title">Select quality for every video</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Reduce smart downloads quality</string>
     <string name="data_saving_snack_bar_action_button">View</string>
     <string name="data_saving_snack_bar_text">This change affects your data saving settings</string>
     <string name="data_saving_upload_wifi_only_switch_title">Upload over Wi-Fi only</string>

@@ -14,6 +14,10 @@ public final class SidecarAdapter$Companion
     private SidecarAdapter$Companion() {
     }
     
+    public SidecarAdapter$Companion(final atny atny) {
+        this();
+    }
+    
     public final int getRawSidecarDevicePosture(final SidecarDeviceState sidecarDeviceState) {
         sidecarDeviceState.getClass();
         try {
@@ -45,7 +49,7 @@ public final class SidecarAdapter$Companion
         try {
             Object o;
             if ((o = sidecarWindowLayoutInfo.displayFeatures) == null) {
-                o = atkh.a;
+                o = atlc.a;
             }
             return (List)o;
         }
@@ -56,7 +60,7 @@ public final class SidecarAdapter$Companion
                 return (List)invoke;
             }
             catch (final NoSuchMethodException | IllegalAccessException | InvocationTargetException ex) {
-                return (List)atkh.a;
+                return (List)atlc.a;
             }
         }
     }

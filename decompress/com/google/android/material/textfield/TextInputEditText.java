@@ -30,9 +30,9 @@ public class TextInputEditText extends AppCompatEditText
     }
     
     public TextInputEditText(final Context context, final AttributeSet set, final int n) {
-        super(adyy.a(context, set, n, 0), set, n);
+        super(aeba.a(context, set, n, 0), set, n);
         this.a = new Rect();
-        final TypedArray a = aduf.a(context, set, adys.b, n, 2132084678, new int[0]);
+        final TypedArray a = adwh.a(context, set, aeau.b, n, 2132084679, new int[0]);
         this.b = a.getBoolean(0, false);
         a.recycle();
     }
@@ -82,7 +82,7 @@ public class TextInputEditText extends AppCompatEditText
     protected final void onAttachedToWindow() {
         super.onAttachedToWindow();
         final TextInputLayout b = this.b();
-        if (b != null && b.k && super.getHint() == null && adwd.t()) {
+        if (b != null && b.k && super.getHint() == null && adds.M()) {
             this.setHint((CharSequence)"");
         }
     }

@@ -346,13 +346,9 @@
     </style>
     <style name="Base.Theme.GoogleMaterial.Dark" parent="@style/Base.V24.Theme.GoogleMaterial.Dark">
     </style>
-    <style name="Base.Theme.GoogleMaterial.Dark.Bridge" parent="@style/Base.V14.Theme.GoogleMaterial.Dark.Bridge">
-    </style>
     <style name="Base.Theme.GoogleMaterial.Dark.Dialog" parent="@style/Base.V24.Theme.GoogleMaterial.Dark.Dialog">
     </style>
     <style name="Base.Theme.GoogleMaterial.Light" parent="@style/Base.V24.Theme.GoogleMaterial.Light">
-    </style>
-    <style name="Base.Theme.GoogleMaterial.Light.Bridge" parent="@style/Base.V14.Theme.GoogleMaterial.Light.Bridge">
     </style>
     <style name="Base.Theme.GoogleMaterial.Light.Dialog" parent="@style/Base.V24.Theme.GoogleMaterial.Light.Dialog">
     </style>
@@ -7782,8 +7778,6 @@
     </style>
     <style name="Theme.GoogleMaterial.Dark" parent="@style/Base.Theme.GoogleMaterial.Dark">
     </style>
-    <style name="Theme.GoogleMaterial.Dark.Bridge" parent="@style/Base.Theme.GoogleMaterial.Dark.Bridge">
-    </style>
     <style name="Theme.GoogleMaterial.Dark.Dialog" parent="@style/Base.Theme.GoogleMaterial.Dark.Dialog">
     </style>
     <style name="Theme.GoogleMaterial.Dark.NoActionBar" parent="@style/Theme.GoogleMaterial.Dark">
@@ -7792,13 +7786,9 @@
     </style>
     <style name="Theme.GoogleMaterial.DayNight" parent="@style/Theme.GoogleMaterial.Light">
     </style>
-    <style name="Theme.GoogleMaterial.DayNight.Bridge" parent="@style/Theme.GoogleMaterial.Light.Bridge">
-    </style>
     <style name="Theme.GoogleMaterial.DayNight.NoActionBar" parent="@style/Theme.GoogleMaterial.Light.NoActionBar">
     </style>
     <style name="Theme.GoogleMaterial.Light" parent="@style/Base.Theme.GoogleMaterial.Light">
-    </style>
-    <style name="Theme.GoogleMaterial.Light.Bridge" parent="@style/Base.Theme.GoogleMaterial.Light.Bridge">
     </style>
     <style name="Theme.GoogleMaterial.Light.Dialog" parent="@style/Base.Theme.GoogleMaterial.Light.Dialog">
     </style>
@@ -12385,10 +12375,9 @@
         <item name="android:singleLine">true</item>
         <item name="android:drawablePadding">10dp</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:drawableStart">@drawable/yt_fill_youtube_logo_icon_grey600_24</item>
+        <item name="android:drawableStart">@drawable/yt_fill_youtube_logo_black_24</item>
         <item name="android:fontFamily">google-sans</item>
         <item name="android:textDirection">locale</item>
-        <item name="?0x10104d6">@color/aag_widget_on_background_color</item>
     </style>
     <style name="YouTubePlayerButton" parent="@style/PlayerButton">
         <item name="android:background">?attr/ytPlayerOverlayButtonBackground</item>

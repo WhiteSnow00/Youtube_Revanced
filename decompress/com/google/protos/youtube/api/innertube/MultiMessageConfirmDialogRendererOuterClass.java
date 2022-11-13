@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class MultiMessageConfirmDialogRendererOuterClass
 {
-    public static final agzg multiMessageConfirmDialogRenderer;
+    public static final ahbf multiMessageConfirmDialogRenderer;
     
     static {
-        multiMessageConfirmDialogRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amiz.a, (MessageLite)amiz.a, (agzn)null, 218434313, ahcm.k, (Class)amiz.class);
+        multiMessageConfirmDialogRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)amld.a, (MessageLite)amld.a, (ahbm)null, 218434313, ahek.k, (Class)amld.class);
     }
     
     private MultiMessageConfirmDialogRendererOuterClass() {

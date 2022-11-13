@@ -12,34 +12,34 @@ import java.util.function.Predicate;
 import j$.util.Optional;
 import j$.time.Duration;
 
-public class OfflineModeChangedRefreshController implements tfh, fen
+public class OfflineModeChangedRefreshController implements thl, feu
 {
     private static final Duration c;
     public volatile int a;
-    public volatile abij b;
-    private final ggs d;
-    private final fjp e;
-    private final fnt f;
-    private final abno g;
-    private final abni h;
-    private final ljz i;
-    private final abns j;
-    private final asib k;
-    private final hyr l;
-    private final hyr m;
-    private final arud n;
-    private final sin o;
-    private final elw p;
-    private final fzo q;
+    public volatile abkb b;
+    private final ghb d;
+    private final fjv e;
+    private final fny f;
+    private final abpq g;
+    private final abpl h;
+    private final llb i;
+    private final abpu j;
+    private final asiq k;
+    private final hzn l;
+    private final hzn m;
+    private final arwh n;
+    private final skt o;
+    private final elx p;
+    private final fzw q;
     
     static {
         c = Duration.ofMillis(50L);
     }
     
-    public OfflineModeChangedRefreshController(final ggs d, final fjp e, final fnt f, final arud n, final abno g, final abni h, final elw p19, final ljz i, final abns j, final hyr m, final fzo q, final hyr l, final sin o, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4, final byte[] array5, final byte[] array6) {
-        this.k = new asib();
+    public OfflineModeChangedRefreshController(final ghb d, final fjv e, final fny f, final arwh n, final abpq g, final abpl h, final elx p19, final llb i, final abpu j, final hzn m, final fzw q, final hzn l, final skt o, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4, final byte[] array5, final byte[] array6) {
+        this.k = new asiq();
         this.a = 0;
-        this.b = abij.a;
+        this.b = abkb.a;
         this.d = d;
         this.e = e;
         this.f = f;
@@ -67,26 +67,26 @@ public class OfflineModeChangedRefreshController implements tfh, fen
         }
         this.d.s();
         br f;
-        final ggh ggh = (ggh)(f = this.d.f());
-        if (((Class)this.m.a).isInstance(ggh)) {
-            f = ggh.og().f("primary_fragment_tag");
+        final ggq ggq = (ggq)(f = this.d.f());
+        if (((Class)this.m.a).isInstance(ggq)) {
+            f = ggq.og().f("primary_fragment_tag");
         }
         br br = f;
         if (((Class)this.l.a).isInstance(f)) {
-            final br br2 = (br)Optional.ofNullable((Object)f).filter((Predicate)new fqe(hxg.class, 14)).map((Function)new hqf(hxg.class, 6)).map((Function)huy.l).orElse((Object)null);
+            final br br2 = (br)Optional.ofNullable((Object)f).filter((Predicate)new fqn((Class)hyd.class, 14)).map((Function)new hra((Class)hyd.class, 6)).map((Function)hvv.l).orElse((Object)null);
             br = f;
-            if (br2 instanceof ggh) {
+            if (br2 instanceof ggq) {
                 br = br2;
             }
         }
         if (((Class)this.q.b).isInstance(br)) {
             final Duration c = OfflineModeChangedRefreshController.c;
-            if (br instanceof hup) {
-                final hup hup = (hup)br;
-                if (hup.ar() && hup.mI() != null) {
+            if (br instanceof hvk) {
+                final hvk hvk = (hvk)br;
+                if (hvk.ar() && hvk.mI() != null) {
                     final View o = br.O;
-                    hup.getClass();
-                    o.postDelayed((Runnable)new hmi(hup, 20), c.toMillis());
+                    hvk.getClass();
+                    o.postDelayed((Runnable)new hol(hvk, 18), c.toMillis());
                 }
             }
         }
@@ -96,18 +96,18 @@ public class OfflineModeChangedRefreshController implements tfh, fen
             }
             if (this.e.j().i() && b2) {
                 final Object a = this.p.a;
-                if (a != null && ((lgq)a).i() == 2) {
+                if (a != null && ((lhq)a).i() == 2) {
                     this.h.o();
                     this.g.a();
                     return;
                 }
-                if (this.g.T()) {
-                    if (this.b != abij.c) {
-                        alvs alvs;
-                        if ((alvs = this.n.f().e) == null) {
-                            alvs = alvs.a;
+                if (this.g.S()) {
+                    if (this.b != abkb.c) {
+                        alxw alxw;
+                        if ((alxw = this.n.f().e) == null) {
+                            alxw = alxw.a;
                         }
-                        if (alvs.U) {
+                        if (alxw.U) {
                             return;
                         }
                     }
@@ -118,13 +118,13 @@ public class OfflineModeChangedRefreshController implements tfh, fen
             else {
                 final Object a2 = this.p.a;
                 if (a2 != null) {
-                    final lcq j = ((lgq)a2).j();
+                    final lds j = ((lhq)a2).j();
                     if (j != null) {
                         final WatchNextResponseModel d = j.d();
                         if (d != null) {
-                            final aioe c2 = d.c;
-                            if (c2 != null && ((agzd)c2).rs((agyr)OfflineWatchEndpointOuterClass.offlineWatchEndpoint)) {
-                                this.g.ag();
+                            final aiqj c2 = d.c;
+                            if (c2 != null && ((ahbc)c2).ry((ahaq)OfflineWatchEndpointOuterClass.offlineWatchEndpoint)) {
+                                this.g.af();
                             }
                         }
                     }
@@ -133,22 +133,46 @@ public class OfflineModeChangedRefreshController implements tfh, fen
         }
     }
     
-    public final void oS(final aum aum) {
-        this.k.c(((asgt)this.j.q().l).am((asix)new hzh(this, 13), (asix)hnn.j));
-        final asib k = this.k;
-        asic asic;
-        if (((uyi)this.j.cd().h).bx()) {
-            asic = this.j.R().am((asix)new hzh(this, 14), (asix)hnn.j);
-        }
-        else {
-            asic = this.j.Q().R().P(ashw.a()).am((asix)new hzh(this, 14), (asix)hnn.j);
-        }
-        k.c(asic);
-        this.o.j((fen)this);
+    public final thh g() {
+        return thh.b;
     }
     
-    public final void oW(final aum aum) {
+    public final void lW(final aun aun) {
+    }
+    
+    public final void mM(final aun aun) {
+    }
+    
+    public final void mq(final aun aun) {
+    }
+    
+    public final void my(final aun aun) {
+    }
+    
+    public final void oS(final aun aun) {
+        this.k.c(((ashi)this.j.p().l).an((asjm)new iad(this, 12), (asjm)hot.i));
+        final asiq k = this.k;
+        asir asir;
+        if (((vai)this.j.ci().g).bx()) {
+            asir = this.j.Q().an((asjm)new iad(this, 13), (asjm)hot.i);
+        }
+        else {
+            asir = this.j.P().R().P(asil.a()).an((asjm)new iad(this, 13), (asjm)hot.i);
+        }
+        k.c(asir);
+        this.o.j((feu)this);
+    }
+    
+    public final void oT() {
+        tfg.c((thl)this);
+    }
+    
+    public final void oW() {
+        tfg.b((thl)this);
+    }
+    
+    public final void oX(final aun aun) {
         this.k.b();
-        this.o.k((fen)this);
+        this.o.k((feu)this);
     }
 }

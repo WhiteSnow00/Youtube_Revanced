@@ -8,12 +8,12 @@ import com.google.protobuf.MessageLite;
 
 public final class PhonebookRenderer
 {
-    public static final agzg phonebookBottomSheetMenuItemTemplateRenderer;
-    public static final agzg phonebookBottomSheetMenuTemplateRenderer;
+    public static final ahbf phonebookBottomSheetMenuItemTemplateRenderer;
+    public static final ahbf phonebookBottomSheetMenuTemplateRenderer;
     
     static {
-        phonebookBottomSheetMenuTemplateRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amys.a, (MessageLite)amys.a, (agzn)null, 160152754, ahcm.k, (Class)amys.class);
-        phonebookBottomSheetMenuItemTemplateRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amyr.a, (MessageLite)amyr.a, (agzn)null, 160152806, ahcm.k, (Class)amyr.class);
+        phonebookBottomSheetMenuTemplateRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anaw.a, (MessageLite)anaw.a, (ahbm)null, 160152754, ahek.k, (Class)anaw.class);
+        phonebookBottomSheetMenuItemTemplateRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anav.a, (MessageLite)anav.a, (ahbm)null, 160152806, ahek.k, (Class)anav.class);
     }
     
     private PhonebookRenderer() {

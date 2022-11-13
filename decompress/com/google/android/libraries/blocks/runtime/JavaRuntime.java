@@ -17,12 +17,12 @@ public final class JavaRuntime
     
     private native void nativeRegisterContainerManifest(final byte[] p0);
     
-    public final void a(final int n, final int n2, final oam oam) {
-        this.nativeRegister(n, n2, (JavaRuntime$NativeInstanceProxyCreator)new oal(oam));
+    public final void a(final int n, final int n2, final obs obs) {
+        this.nativeRegister(n, n2, (JavaRuntime$NativeInstanceProxyCreator)new obr(obs));
     }
     
-    public final void b(final apxw apxw) {
-        this.nativeRegisterContainerManifest(((agxl)apxw).toByteArray());
+    public final void b(final aqag aqag) {
+        this.nativeRegisterContainerManifest(((agzk)aqag).toByteArray());
     }
     
     public native void nativeRegister(final int p0, final int p1, final JavaRuntime$NativeInstanceProxyCreator p2);

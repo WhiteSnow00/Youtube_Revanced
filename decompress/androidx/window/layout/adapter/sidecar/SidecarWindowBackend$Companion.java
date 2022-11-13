@@ -13,6 +13,10 @@ public final class SidecarWindowBackend$Companion
     private SidecarWindowBackend$Companion() {
     }
     
+    public SidecarWindowBackend$Companion(final atny atny) {
+        this();
+    }
+    
     public final SidecarWindowBackend getInstance(final Context context) {
         context.getClass();
         if (SidecarWindowBackend.access$getGlobalInstance$cp() == null) {

@@ -8,7 +8,7 @@ import android.app.PendingIntent;
 import android.view.View;
 import com.google.vr.vrcore.library.api.ObjectWrapper;
 
-class GvrLayoutImplWrapper extends arbe
+class GvrLayoutImplWrapper extends ards
 {
     private final GvrLayoutImpl impl;
     
@@ -20,20 +20,20 @@ class GvrLayoutImplWrapper extends arbe
         return this.impl.enableAsyncReprojection(n);
     }
     
-    public boolean enableCardboardTriggerEmulation(final arbl arbl) {
-        return this.impl.enableCardboardTriggerEmulation((Runnable)ObjectWrapper.b(arbl, (Class)Runnable.class));
+    public boolean enableCardboardTriggerEmulation(final ardz ardz) {
+        return this.impl.enableCardboardTriggerEmulation((Runnable)ObjectWrapper.b(ardz, (Class)Runnable.class));
     }
     
     public long getNativeGvrContext() {
         return this.impl.getGvrApi().getNativeGvrContext();
     }
     
-    public arbl getRootView() {
+    public ardz getRootView() {
         return ObjectWrapper.a((Object)this.impl);
     }
     
-    public arbi getUiLayout() {
-        return (arbi)this.impl.getUiLayoutImpl();
+    public ardw getUiLayout() {
+        return (ardw)this.impl.getUiLayoutImpl();
     }
     
     public void onBackPressed() {
@@ -48,16 +48,16 @@ class GvrLayoutImplWrapper extends arbe
         this.impl.onResume();
     }
     
-    public boolean setOnDonNotNeededListener(final arbl arbl) {
-        return this.impl.setOnDonNotNeededListener((Runnable)ObjectWrapper.b(arbl, (Class)Runnable.class));
+    public boolean setOnDonNotNeededListener(final ardz ardz) {
+        return this.impl.setOnDonNotNeededListener((Runnable)ObjectWrapper.b(ardz, (Class)Runnable.class));
     }
     
-    public void setPresentationView(final arbl arbl) {
-        this.impl.setPresentationView((View)ObjectWrapper.b(arbl, (Class)View.class));
+    public void setPresentationView(final ardz ardz) {
+        this.impl.setPresentationView((View)ObjectWrapper.b(ardz, (Class)View.class));
     }
     
-    public void setReentryIntent(final arbl arbl) {
-        this.impl.setReentryIntent((PendingIntent)ObjectWrapper.b(arbl, (Class)PendingIntent.class));
+    public void setReentryIntent(final ardz ardz) {
+        this.impl.setReentryIntent((PendingIntent)ObjectWrapper.b(ardz, (Class)PendingIntent.class));
     }
     
     public void setStereoModeEnabled(final boolean stereoModeEnabled) {

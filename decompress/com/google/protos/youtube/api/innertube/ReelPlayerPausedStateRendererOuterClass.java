@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ReelPlayerPausedStateRendererOuterClass
 {
-    public static final agzg reelPlayerPausedStateRenderer;
+    public static final ahbf reelPlayerPausedStateRenderer;
     
     static {
-        reelPlayerPausedStateRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anrh.a, (MessageLite)anrh.a, (agzn)null, 410636583, ahcm.k, (Class)anrh.class);
+        reelPlayerPausedStateRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)antk.a, (MessageLite)antk.a, (ahbm)null, 410636583, ahek.k, (Class)antk.class);
     }
     
     private ReelPlayerPausedStateRendererOuterClass() {

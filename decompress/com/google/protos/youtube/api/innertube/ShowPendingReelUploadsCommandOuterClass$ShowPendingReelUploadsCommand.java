@@ -6,40 +6,40 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand extends agzi implements ahax
+public final class ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand extends ahbh implements ahcw
 {
     public static final ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand a;
-    private static volatile ahbe e;
-    public static final agzg showPendingReelUploadsCommand;
+    private static volatile ahdd e;
+    public static final ahbf showPendingReelUploadsCommand;
     public int b;
-    public anss c;
-    public aioe d;
+    public anuv c;
+    public aiqj d;
     private byte f;
     
     static {
         final ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand a2 = new ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand();
-        agzi.registerDefaultInstance((Class)ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand.class, (agzi)(a = a2));
-        showPendingReelUploadsCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 291405045, ahcm.k, (Class)ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand.class);
+        ahbh.registerDefaultInstance((Class)ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand.class, (ahbh)(a = a2));
+        showPendingReelUploadsCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 291405045, ahek.k, (Class)ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand.class);
     }
     
     private ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand() {
         this.f = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand.e) == null) {
                     synchronized (ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand.class) {
                         if (ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand.e == null) {
-                            ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand.e = (ahbe)new agzb((agzi)ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand.a);
+                            ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand.e = (ahdd)new ahba((ahbh)ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand.a);
                         }
                     }
                 }
@@ -49,7 +49,7 @@ public final class ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUpload
                 return ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand.a;
             }
             case 4: {
-                return new agza((agzi)ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand.a);
+                return new ahaz((ahbh)ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand.a);
             }
             case 3: {
                 return new ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUploadsCommand();
@@ -59,9 +59,9 @@ public final class ShowPendingReelUploadsCommandOuterClass$ShowPendingReelUpload
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

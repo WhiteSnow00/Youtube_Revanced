@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class MultiItemCompanionAdRendererOuterClass
 {
-    public static final agzg multiItemCompanionAdRenderer;
+    public static final ahbf multiItemCompanionAdRenderer;
     
     static {
-        multiItemCompanionAdRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amix.a, (MessageLite)amix.a, (agzn)null, 156112846, ahcm.k, (Class)amix.class);
+        multiItemCompanionAdRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)amlb.a, (MessageLite)amlb.a, (ahbm)null, 156112846, ahek.k, (Class)amlb.class);
     }
     
     private MultiItemCompanionAdRendererOuterClass() {

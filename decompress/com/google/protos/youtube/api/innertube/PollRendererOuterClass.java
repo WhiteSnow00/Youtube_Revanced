@@ -8,12 +8,12 @@ import com.google.protobuf.MessageLite;
 
 public final class PollRendererOuterClass
 {
-    public static final agzg pollHeaderRenderer;
-    public static final agzg pollRenderer;
+    public static final ahbf pollHeaderRenderer;
+    public static final ahbf pollRenderer;
     
     static {
-        pollRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)aniz.a, (MessageLite)aniz.a, (agzn)null, 99391126, ahcm.k, (Class)aniz.class);
-        pollHeaderRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)aniy.a, (MessageLite)aniy.a, (agzn)null, 248233615, ahcm.k, (Class)aniy.class);
+        pollRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anlc.a, (MessageLite)anlc.a, (ahbm)null, 99391126, ahek.k, (Class)anlc.class);
+        pollHeaderRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anlb.a, (MessageLite)anlb.a, (ahbm)null, 248233615, ahek.k, (Class)anlb.class);
     }
     
     private PollRendererOuterClass() {

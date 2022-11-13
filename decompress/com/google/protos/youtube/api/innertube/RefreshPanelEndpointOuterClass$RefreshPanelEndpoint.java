@@ -6,36 +6,36 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class RefreshPanelEndpointOuterClass$RefreshPanelEndpoint extends agzi implements ahax
+public final class RefreshPanelEndpointOuterClass$RefreshPanelEndpoint extends ahbh implements ahcw
 {
     public static final RefreshPanelEndpointOuterClass$RefreshPanelEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg refreshPanelEndpoint;
+    private static volatile ahdd c;
+    public static final ahbf refreshPanelEndpoint;
     public String b;
     private int d;
     
     static {
         final RefreshPanelEndpointOuterClass$RefreshPanelEndpoint a2 = new RefreshPanelEndpointOuterClass$RefreshPanelEndpoint();
-        agzi.registerDefaultInstance((Class)RefreshPanelEndpointOuterClass$RefreshPanelEndpoint.class, (agzi)(a = a2));
-        refreshPanelEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 380210655, ahcm.k, (Class)RefreshPanelEndpointOuterClass$RefreshPanelEndpoint.class);
+        ahbh.registerDefaultInstance((Class)RefreshPanelEndpointOuterClass$RefreshPanelEndpoint.class, (ahbh)(a = a2));
+        refreshPanelEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 380210655, ahek.k, (Class)RefreshPanelEndpointOuterClass$RefreshPanelEndpoint.class);
     }
     
     private RefreshPanelEndpointOuterClass$RefreshPanelEndpoint() {
         this.b = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = RefreshPanelEndpointOuterClass$RefreshPanelEndpoint.c) == null) {
                     synchronized (RefreshPanelEndpointOuterClass$RefreshPanelEndpoint.class) {
                         if (RefreshPanelEndpointOuterClass$RefreshPanelEndpoint.c == null) {
-                            RefreshPanelEndpointOuterClass$RefreshPanelEndpoint.c = (ahbe)new agzb((agzi)RefreshPanelEndpointOuterClass$RefreshPanelEndpoint.a);
+                            RefreshPanelEndpointOuterClass$RefreshPanelEndpoint.c = (ahdd)new ahba((ahbh)RefreshPanelEndpointOuterClass$RefreshPanelEndpoint.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class RefreshPanelEndpointOuterClass$RefreshPanelEndpoint extends a
                 return RefreshPanelEndpointOuterClass$RefreshPanelEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)RefreshPanelEndpointOuterClass$RefreshPanelEndpoint.a);
+                return new ahaz((ahbh)RefreshPanelEndpointOuterClass$RefreshPanelEndpoint.a);
             }
             case 3: {
                 return new RefreshPanelEndpointOuterClass$RefreshPanelEndpoint();

@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class NavigateAndOpenDialogEndpointOuterClass
 {
-    public static final agzg navigateAndOpenDialogEndpoint;
+    public static final ahbf navigateAndOpenDialogEndpoint;
     
     static {
-        navigateAndOpenDialogEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)amnz.a, (MessageLite)amnz.a, (agzn)null, 115091725, ahcm.k, (Class)amnz.class);
+        navigateAndOpenDialogEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)amqe.a, (MessageLite)amqe.a, (ahbm)null, 115091725, ahek.k, (Class)amqe.class);
     }
     
     private NavigateAndOpenDialogEndpointOuterClass() {

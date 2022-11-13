@@ -12,7 +12,7 @@ import android.widget.FrameLayout;
 
 final class d extends FrameLayout
 {
-    final /* synthetic */ e a;
+    final e a;
     
     public d(final e a, final Context context) {
         this.a = a;
@@ -20,7 +20,7 @@ final class d extends FrameLayout
     }
     
     public final boolean onFilterTouchEventForSecurity(final MotionEvent motionEvent) {
-        final sin s = this.a.s;
+        final skt s = this.a.s;
         final int flags = motionEvent.getFlags();
         boolean a = true;
         if (0x1 != (flags & 0x1)) {

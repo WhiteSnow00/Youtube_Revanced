@@ -8,12 +8,12 @@ import com.google.protobuf.MessageLite;
 
 public final class RedCarpetVideoRendererOuterClass
 {
-    public static final agzg overlayBadgeRenderer;
-    public static final agzg thumbnailBadgeIconRenderer;
+    public static final ahbf overlayBadgeRenderer;
+    public static final ahbf thumbnailBadgeIconRenderer;
     
     static {
-        overlayBadgeRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anps.a, (MessageLite)anps.a, (agzn)null, 174787167, ahcm.k, (Class)anps.class);
-        thumbnailBadgeIconRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anpv.a, (MessageLite)anpv.a, (agzn)null, 175253698, ahcm.k, (Class)anpv.class);
+        overlayBadgeRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anrv.a, (MessageLite)anrv.a, (ahbm)null, 174787167, ahek.k, (Class)anrv.class);
+        thumbnailBadgeIconRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anry.a, (MessageLite)anry.a, (ahbm)null, 175253698, ahek.k, (Class)anry.class);
     }
     
     private RedCarpetVideoRendererOuterClass() {

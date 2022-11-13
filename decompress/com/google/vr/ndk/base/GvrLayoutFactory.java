@@ -13,37 +13,37 @@ import android.content.Context;
 
 public class GvrLayoutFactory
 {
-    public static arbf create(final Context context) {
-        arbf arbf;
-        if ((arbf = tryCreateFromVrCorePackage(context)) == null) {
+    public static ardt create(final Context context) {
+        ardt ardt;
+        if ((ardt = tryCreateFromVrCorePackage(context)) == null) {
             if (GvrApi.usingShimLibrary()) {
                 throw new IllegalStateException("Client shim failed to load GvrLayout from VrCore.");
             }
-            arbf = createFromCurrentPackage(context);
+            ardt = createFromCurrentPackage(context);
         }
-        return arbf;
+        return ardt;
     }
     
-    private static arbf createFromCurrentPackage(final Context context) {
-        return (arbf)new GvrLayoutImplWrapper(new GvrLayoutImpl(context));
+    private static ardt createFromCurrentPackage(final Context context) {
+        return (ardt)new GvrLayoutImplWrapper(new GvrLayoutImpl(context));
     }
     
-    private static arbf tryCreateFromVrCorePackage(final Context context) {
+    private static ardt tryCreateFromVrCorePackage(final Context context) {
         if ("com.google.vr.vrcore".equalsIgnoreCase(context.getPackageName())) {
             return createFromCurrentPackage(context);
         }
-        Label_0163: {
-            if (context instanceof arak) {
-                break Label_0163;
+        Label_0165: {
+            if (context instanceof arcz) {
+                break Label_0165;
             }
             if (!GvrApi.usingDynamicLibrary(context)) {
                 return null;
             }
-            final afor params = SdkConfigurationReader.getParams(context);
-            Label_0161: {
+            final afqs params = SdkConfigurationReader.getParams(context);
+            Label_0163: {
                 if ((params.bitField0_ & 0x400) == 0x0 || !params.allowDynamicJavaLibraryLoading_) {
                     if (!GvrApi.usingShimLibrary()) {
-                        break Label_0161;
+                        break Label_0163;
                     }
                 }
                 try {
@@ -51,16 +51,16 @@ public class GvrLayoutFactory
                         return null;
                     }
                     try {
-                        final Context k = aqql.k(context);
-                        final arbm l = aqql.l(context);
-                        final arbl a = ObjectWrapper.a((Object)k);
-                        final arbl a2 = ObjectWrapper.a((Object)context);
-                        final Parcel qq = ((eny)l).qQ();
-                        eoa.j(qq, (IInterface)a);
-                        eoa.j(qq, (IInterface)a2);
-                        final Parcel qr = ((eny)l).qR(5, qq);
-                        final arbf interface1 = arbe.asInterface(qr.readStrongBinder());
-                        qr.recycle();
+                        final Context l = aqsx.l(context);
+                        final area m = aqsx.m(context);
+                        final ardz a = ObjectWrapper.a((Object)l);
+                        final ardz a2 = ObjectWrapper.a((Object)context);
+                        final Parcel qw = ((enz)m).qW();
+                        eob.j(qw, (IInterface)a);
+                        eob.j(qw, (IInterface)a2);
+                        final Parcel qx = ((enz)m).qX(5, qw);
+                        final ardt interface1 = ards.asInterface(qx.readStrongBinder());
+                        qx.recycle();
                         if (interface1 == null) {
                             Log.w("GvrLayoutFactory", "GvrLayout creation from VrCore failed.");
                         }
@@ -72,7 +72,7 @@ public class GvrLayoutFactory
                     return null;
                     throw new IllegalArgumentException("VrContextWrapper only supported within VrCore.");
                 }
-                catch (final aran aran) {
+                catch (final ardc ardc) {
                     return null;
                 }
             }

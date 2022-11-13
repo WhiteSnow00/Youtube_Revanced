@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class RelatedChipCloudRendererOuterClass
 {
-    public static final agzg relatedChipCloudRenderer;
+    public static final ahbf relatedChipCloudRenderer;
     
     static {
-        relatedChipCloudRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)ansc.a, (MessageLite)ansc.a, (agzn)null, 188360221, ahcm.k, (Class)ansc.class);
+        relatedChipCloudRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anuf.a, (MessageLite)anuf.a, (ahbm)null, 188360221, ahek.k, (Class)anuf.class);
     }
     
     private RelatedChipCloudRendererOuterClass() {

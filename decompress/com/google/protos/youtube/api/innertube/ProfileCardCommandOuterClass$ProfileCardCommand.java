@@ -6,11 +6,11 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ProfileCardCommandOuterClass$ProfileCardCommand extends agzi implements ahax
+public final class ProfileCardCommandOuterClass$ProfileCardCommand extends ahbh implements ahcw
 {
     public static final ProfileCardCommandOuterClass$ProfileCardCommand a;
-    private static volatile ahbe f;
-    public static final agzg profileCardCommand;
+    private static volatile ahdd f;
+    public static final ahbf profileCardCommand;
     public String b;
     public String c;
     public boolean d;
@@ -19,8 +19,8 @@ public final class ProfileCardCommandOuterClass$ProfileCardCommand extends agzi 
     
     static {
         final ProfileCardCommandOuterClass$ProfileCardCommand a2 = new ProfileCardCommandOuterClass$ProfileCardCommand();
-        agzi.registerDefaultInstance((Class)ProfileCardCommandOuterClass$ProfileCardCommand.class, (agzi)(a = a2));
-        profileCardCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 214503604, ahcm.k, (Class)ProfileCardCommandOuterClass$ProfileCardCommand.class);
+        ahbh.registerDefaultInstance((Class)ProfileCardCommandOuterClass$ProfileCardCommand.class, (ahbh)(a = a2));
+        profileCardCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 214503604, ahek.k, (Class)ProfileCardCommandOuterClass$ProfileCardCommand.class);
     }
     
     private ProfileCardCommandOuterClass$ProfileCardCommand() {
@@ -29,18 +29,18 @@ public final class ProfileCardCommandOuterClass$ProfileCardCommand extends agzi 
         this.e = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe f;
+                final ahdd f;
                 if ((f = ProfileCardCommandOuterClass$ProfileCardCommand.f) == null) {
                     synchronized (ProfileCardCommandOuterClass$ProfileCardCommand.class) {
                         if (ProfileCardCommandOuterClass$ProfileCardCommand.f == null) {
-                            ProfileCardCommandOuterClass$ProfileCardCommand.f = (ahbe)new agzb((agzi)ProfileCardCommandOuterClass$ProfileCardCommand.a);
+                            ProfileCardCommandOuterClass$ProfileCardCommand.f = (ahdd)new ahba((ahbh)ProfileCardCommandOuterClass$ProfileCardCommand.a);
                         }
                     }
                 }
@@ -50,7 +50,7 @@ public final class ProfileCardCommandOuterClass$ProfileCardCommand extends agzi 
                 return ProfileCardCommandOuterClass$ProfileCardCommand.a;
             }
             case 4: {
-                return new agza((agzi)ProfileCardCommandOuterClass$ProfileCardCommand.a);
+                return new ahaz((ahbh)ProfileCardCommandOuterClass$ProfileCardCommand.a);
             }
             case 3: {
                 return new ProfileCardCommandOuterClass$ProfileCardCommand();

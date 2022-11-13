@@ -6,22 +6,22 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class SharingProviderDataCommandOuterClass$SharingProviderDataCommand extends agzi implements ahax
+public final class SharingProviderDataCommandOuterClass$SharingProviderDataCommand extends ahbh implements ahcw
 {
     public static final SharingProviderDataCommandOuterClass$SharingProviderDataCommand a;
-    private static volatile ahbe g;
-    public static final agzg sharingProviderDataCommand;
+    private static volatile ahdd g;
+    public static final ahbf sharingProviderDataCommand;
     public int b;
     public String c;
     public boolean d;
-    public aioe e;
-    public aioe f;
+    public aiqj e;
+    public aiqj f;
     private byte h;
     
     static {
         final SharingProviderDataCommandOuterClass$SharingProviderDataCommand a2 = new SharingProviderDataCommandOuterClass$SharingProviderDataCommand();
-        agzi.registerDefaultInstance((Class)SharingProviderDataCommandOuterClass$SharingProviderDataCommand.class, (agzi)(a = a2));
-        sharingProviderDataCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 377332428, ahcm.k, (Class)SharingProviderDataCommandOuterClass$SharingProviderDataCommand.class);
+        ahbh.registerDefaultInstance((Class)SharingProviderDataCommandOuterClass$SharingProviderDataCommand.class, (ahbh)(a = a2));
+        sharingProviderDataCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 377332428, ahek.k, (Class)SharingProviderDataCommandOuterClass$SharingProviderDataCommand.class);
     }
     
     private SharingProviderDataCommandOuterClass$SharingProviderDataCommand() {
@@ -29,20 +29,20 @@ public final class SharingProviderDataCommandOuterClass$SharingProviderDataComma
         this.c = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte h = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe g;
+                final ahdd g;
                 if ((g = SharingProviderDataCommandOuterClass$SharingProviderDataCommand.g) == null) {
                     synchronized (SharingProviderDataCommandOuterClass$SharingProviderDataCommand.class) {
                         if (SharingProviderDataCommandOuterClass$SharingProviderDataCommand.g == null) {
-                            SharingProviderDataCommandOuterClass$SharingProviderDataCommand.g = (ahbe)new agzb((agzi)SharingProviderDataCommandOuterClass$SharingProviderDataCommand.a);
+                            SharingProviderDataCommandOuterClass$SharingProviderDataCommand.g = (ahdd)new ahba((ahbh)SharingProviderDataCommandOuterClass$SharingProviderDataCommand.a);
                         }
                     }
                 }
@@ -52,7 +52,7 @@ public final class SharingProviderDataCommandOuterClass$SharingProviderDataComma
                 return SharingProviderDataCommandOuterClass$SharingProviderDataCommand.a;
             }
             case 4: {
-                return new agza((agzi)SharingProviderDataCommandOuterClass$SharingProviderDataCommand.a);
+                return new ahaz((ahbh)SharingProviderDataCommandOuterClass$SharingProviderDataCommand.a);
             }
             case 3: {
                 return new SharingProviderDataCommandOuterClass$SharingProviderDataCommand();
@@ -62,9 +62,9 @@ public final class SharingProviderDataCommandOuterClass$SharingProviderDataComma
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    h = 0;
                 }
-                this.h = (byte)(b ? 1 : 0);
+                this.h = h;
                 return null;
             }
             case 0: {

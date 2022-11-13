@@ -90,9 +90,6 @@
     <string name="litho_paid_content">Fizetett tartalom panel eltávolítása</string>
     <string name="litho_paid_content_off">„Fizetett promóciót tartalmaz” panel eltávolítása ki van kapcsolva</string>
     <string name="litho_paid_content_on">„Fizetett promóciót tartalmaz” panel eltávolítása be van kapcsolva</string>
-    <string name="litho_shorts_shelf">Rövid videók Polc eltávolítása</string>
-    <string name="litho_shorts_shelf_off">Rövid videók Polc eltávolítása ki van kapcsolva</string>
-    <string name="litho_shorts_shelf_on">Rövid videók Polc eltávolítása be van kapcsolva</string>
     <string name="microg_not_installed_notice">Kérem telepítse a MicroG-t</string>
     <string name="microg_not_installed_warning">MicoG nem található</string>
     <string name="microg_notification_settings">Értesítési beállítások</string>
@@ -207,9 +204,6 @@
     <string name="revanced_shorts_button_summary_off">Shorts gomb el van rejtve</string>
     <string name="revanced_shorts_button_summary_on">Shorts gomb látható</string>
     <string name="revanced_shorts_button_title">Shorts gomb</string>
-    <string name="revanced_suggestion_summary_off">Záróképernyők elrejtve</string>
-    <string name="revanced_suggestion_summary_on">Záróképernyők láthatóak</string>
-    <string name="revanced_suggestion_title">Záróképernyők</string>
     <string name="revanced_swipe_brightness_summary_off">Fényerő vezérlése csúsztatással ki van kapcsolva</string>
     <string name="revanced_swipe_brightness_summary_on">Fényerő vezérlése csúsztatással be van kapcsolva</string>
     <string name="revanced_swipe_brightness_title">Fényerő vezérlése csúsztatással</string>

@@ -10,11 +10,11 @@ import android.view.View;
 import android.util.AttributeSet;
 import android.content.Context;
 
-public class YouTubePlayerViewNotForReflection extends fnk implements fjo
+public class YouTubePlayerViewNotForReflection extends fnp implements fju
 {
     public boolean a;
-    private fkk b;
-    private foc c;
+    private fkr b;
+    private foh c;
     
     public YouTubePlayerViewNotForReflection(final Context context) {
         this(context, null);
@@ -22,9 +22,9 @@ public class YouTubePlayerViewNotForReflection extends fnk implements fjo
     
     public YouTubePlayerViewNotForReflection(final Context context, final AttributeSet set) {
         super(context, set);
-        this.b = fkk.a;
+        this.b = fkr.a;
         this.a = false;
-        ana.X((View)this, 2);
+        anb.X((View)this, 2);
     }
     
     private final boolean g() {
@@ -42,16 +42,16 @@ public class YouTubePlayerViewNotForReflection extends fnk implements fjo
         if (!this.a || this.b.k()) {
             b = false;
         }
-        final zbp d = this.d;
+        final zdi d = this.d;
         if (d == null) {
             return;
         }
         int visibility = 0;
-        Label_0087: {
+        Label_0084: {
             if (!b2) {
                 visibility = n;
                 if (!b) {
-                    break Label_0087;
+                    break Label_0084;
                 }
             }
             visibility = 8;
@@ -59,7 +59,7 @@ public class YouTubePlayerViewNotForReflection extends fnk implements fjo
         ((View)d).setVisibility(visibility);
     }
     
-    public final void lU(final foc c) {
+    public final void lU(final foh c) {
         if (this.c == c) {
             return;
         }
@@ -68,8 +68,8 @@ public class YouTubePlayerViewNotForReflection extends fnk implements fjo
     }
     
     protected final void mh(final View view, final Rect rect, final int n, final int n2, final int n3, final int n4) {
-        if (view == ((absd)this).m && this.g()) {
-            final foc c = this.c;
+        if (view == ((abue)this).m && this.g()) {
+            final foh c = this.c;
             c.getClass();
             c.c(view);
             return;
@@ -78,8 +78,8 @@ public class YouTubePlayerViewNotForReflection extends fnk implements fjo
     }
     
     protected final void mi(final View view, final Rect rect, final int n, final int n2) {
-        if (view == ((absd)this).m && this.g()) {
-            final foc c = this.c;
+        if (view == ((abue)this).m && this.g()) {
+            final foh c = this.c;
             c.getClass();
             c.d(view, n, n2);
             return;
@@ -87,12 +87,16 @@ public class YouTubePlayerViewNotForReflection extends fnk implements fjo
         super.mi(view, rect, n, n2);
     }
     
-    public final void oK(final fkk b) {
+    public final void n(final fkr b) {
         if (b == this.b) {
             return;
         }
         this.b = b;
         this.f();
+    }
+    
+    public final void oK(final fkr fkr, final fkr fkr2) {
+        fal.b((fju)this, fkr2);
     }
     
     protected final void onLayout(final boolean b, final int n, final int n2, final int n3, final int n4) {
@@ -101,7 +105,7 @@ public class YouTubePlayerViewNotForReflection extends fnk implements fjo
             this.setBackgroundColor(-16777216);
             return;
         }
-        final foc c = this.c;
+        final foh c = this.c;
         c.getClass();
         this.setBackgroundColor(c.b());
     }
@@ -112,7 +116,7 @@ public class YouTubePlayerViewNotForReflection extends fnk implements fjo
     
     public final void requestLayout() {
         super.requestLayout();
-        final View m = ((absd)this).m;
+        final View m = ((abue)this).m;
         if (m != null) {
             m.forceLayout();
         }

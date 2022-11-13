@@ -6,42 +6,42 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand extends agzi implements ahax
+public final class ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand extends ahbh implements ahcw
 {
     public static final ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand a;
-    private static volatile ahbe f;
-    public static final agzg showMiniplayerCommand;
+    private static volatile ahdd f;
+    public static final ahbf showMiniplayerCommand;
     public int b;
-    public aioe c;
+    public aiqj c;
     public boolean d;
     public boolean e;
-    private ajsq g;
+    private ajut g;
     private byte h;
     
     static {
         final ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand a2 = new ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand();
-        agzi.registerDefaultInstance((Class)ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand.class, (agzi)(a = a2));
-        showMiniplayerCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 339694216, ahcm.k, (Class)ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand.class);
+        ahbh.registerDefaultInstance((Class)ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand.class, (ahbh)(a = a2));
+        showMiniplayerCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 339694216, ahek.k, (Class)ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand.class);
     }
     
     private ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand() {
         this.h = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte h = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe f;
+                final ahdd f;
                 if ((f = ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand.f) == null) {
                     synchronized (ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand.class) {
                         if (ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand.f == null) {
-                            ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand.f = (ahbe)new agzb((agzi)ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand.a);
+                            ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand.f = (ahdd)new ahba((ahbh)ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand.a);
                         }
                     }
                 }
@@ -51,7 +51,7 @@ public final class ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand extends
                 return ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand.a;
             }
             case 4: {
-                return new agza((agzi)ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand.a);
+                return new ahaz((ahbh)ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand.a);
             }
             case 3: {
                 return new ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand();
@@ -61,9 +61,9 @@ public final class ShowMiniplayerCommandOuterClass$ShowMiniplayerCommand extends
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    h = 0;
                 }
-                this.h = (byte)(b ? 1 : 0);
+                this.h = h;
                 return null;
             }
             case 0: {

@@ -11,7 +11,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import androidx.window.layout.WindowLayoutInfo;
 import android.content.Context;
 
-final class ExtensionWindowLayoutInfoBackend$MulticastConsumer implements akn
+final class ExtensionWindowLayoutInfoBackend$MulticastConsumer implements ako
 {
     private final Context context;
     private WindowLayoutInfo lastKnownValue;
@@ -33,7 +33,7 @@ final class ExtensionWindowLayoutInfoBackend$MulticastConsumer implements akn
             this.lastKnownValue = ExtensionsWindowLayoutInfoAdapter.INSTANCE.translate$window_release(this.context, windowLayoutInfo);
             final Iterator iterator = this.registeredListeners.iterator();
             while (iterator.hasNext()) {
-                ((akn)iterator.next()).accept((Object)this.lastKnownValue);
+                ((ako)iterator.next()).accept((Object)this.lastKnownValue);
             }
             multicastConsumerLock.unlock();
         }
@@ -43,16 +43,20 @@ final class ExtensionWindowLayoutInfoBackend$MulticastConsumer implements akn
         }
     }
     
-    public final void addListener(final akn akn) {
-        akn.getClass();
+    public /* bridge */ void accept(final Object o) {
+        this.accept((androidx.window.extensions.layout.WindowLayoutInfo)o);
+    }
+    
+    public final void addListener(final ako ako) {
+        ako.getClass();
         final ReentrantLock multicastConsumerLock = this.multicastConsumerLock;
         multicastConsumerLock.lock();
         try {
             final WindowLayoutInfo lastKnownValue = this.lastKnownValue;
             if (lastKnownValue != null) {
-                akn.accept((Object)lastKnownValue);
+                ako.accept((Object)lastKnownValue);
             }
-            this.registeredListeners.add(akn);
+            this.registeredListeners.add(ako);
         }
         finally {
             multicastConsumerLock.unlock();
@@ -63,12 +67,12 @@ final class ExtensionWindowLayoutInfoBackend$MulticastConsumer implements akn
         return this.registeredListeners.isEmpty();
     }
     
-    public final void removeListener(final akn akn) {
-        akn.getClass();
+    public final void removeListener(final ako ako) {
+        ako.getClass();
         final ReentrantLock multicastConsumerLock = this.multicastConsumerLock;
         multicastConsumerLock.lock();
         try {
-            this.registeredListeners.remove(akn);
+            this.registeredListeners.remove(ako);
         }
         finally {
             multicastConsumerLock.unlock();

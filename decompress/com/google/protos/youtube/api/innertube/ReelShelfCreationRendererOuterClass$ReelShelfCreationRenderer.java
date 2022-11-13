@@ -6,46 +6,46 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer extends agzi implements ahax
+public final class ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer extends ahbh implements ahcw
 {
     public static final ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer a;
-    private static volatile ahbe i;
-    public static final agzg reelShelfCreationRenderer;
+    private static volatile ahdd i;
+    public static final ahbf reelShelfCreationRenderer;
     public int b;
-    public aioe c;
-    public akbf d;
-    public ajsq e;
-    public aorm f;
-    public ahgn g;
-    public agyc h;
-    private ahfw j;
+    public aiqj c;
+    public akdi d;
+    public ajut e;
+    public aotp f;
+    public ahil g;
+    public ahab h;
+    private ahhu j;
     private byte k;
     
     static {
         final ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer a2 = new ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer();
-        agzi.registerDefaultInstance((Class)ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer.class, (agzi)(a = a2));
-        reelShelfCreationRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)a2, (MessageLite)a2, (agzn)null, 231434348, ahcm.k, (Class)ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer.class);
+        ahbh.registerDefaultInstance((Class)ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer.class, (ahbh)(a = a2));
+        reelShelfCreationRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)a2, (MessageLite)a2, (ahbm)null, 231434348, ahek.k, (Class)ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer.class);
     }
     
     private ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer() {
         this.k = 2;
-        this.h = agyc.b;
+        this.h = ahab.b;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte k = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe i;
+                final ahdd i;
                 if ((i = ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer.i) == null) {
                     synchronized (ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer.class) {
                         if (ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer.i == null) {
-                            ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer.i = (ahbe)new agzb((agzi)ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer.a);
+                            ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer.i = (ahdd)new ahba((ahbh)ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer.a);
                         }
                     }
                 }
@@ -55,7 +55,7 @@ public final class ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer
                 return ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer.a;
             }
             case 4: {
-                return new agza((agzi)ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer.a);
+                return new ahaz((ahbh)ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer.a);
             }
             case 3: {
                 return new ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer();
@@ -65,9 +65,9 @@ public final class ReelShelfCreationRendererOuterClass$ReelShelfCreationRenderer
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    k = 0;
                 }
-                this.k = (byte)(b ? 1 : 0);
+                this.k = k;
                 return null;
             }
             case 0: {

@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ReloadLiveChatCommandOuterClass
 {
-    public static final agzg reloadLiveChatCommand;
+    public static final ahbf reloadLiveChatCommand;
     
     static {
-        reloadLiveChatCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ansj.a, (MessageLite)ansj.a, (agzn)null, 452396615, ahcm.k, (Class)ansj.class);
+        reloadLiveChatCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)anum.a, (MessageLite)anum.a, (ahbm)null, 452396615, ahek.k, (Class)anum.class);
     }
     
     private ReloadLiveChatCommandOuterClass() {

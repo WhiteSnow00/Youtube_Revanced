@@ -4,21 +4,20 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.shared;
 
-import com.google.android.apps.youtube.embeddedplayer.service.innertube.model.ProtoWrapper;
-import com.google.android.apps.youtube.embeddedplayer.service.databus.remoteloaded.a;
+import com.google.android.apps.youtube.embeddedplayer.service.jar.client.z;
 import android.os.IInterface;
 import android.os.IBinder;
 import android.graphics.Bitmap;
 import com.google.android.apps.youtube.embeddedplayer.service.innertube.model.FancyDismissibleDialogRendererWrapper;
 import android.os.Parcel;
 import com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.e;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.a;
 import android.os.Handler;
-import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.d;
 
-public final class b extends enz implements c
+public final class b extends eoa implements c
 {
     public g a;
-    public d b;
+    public com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.c b;
     private final Handler c;
     
     public b() {
@@ -34,7 +33,7 @@ public final class b extends enz implements c
     }
     
     public final void a(final int n, final int n2, final int n3) {
-        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.b(this, n, n2, n3, 0));
+        this.c.post((Runnable)new a(this, n, n2, n3, 0));
     }
     
     public final void b(final int n) {
@@ -42,7 +41,7 @@ public final class b extends enz implements c
     }
     
     public final void c() {
-        final d b = this.b;
+        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.c b = this.b;
         if (b != null) {
             b.a = null;
             this.b = null;
@@ -56,7 +55,7 @@ public final class b extends enz implements c
                 return false;
             }
             case 12: {
-                final FancyDismissibleDialogRendererWrapper fancyDismissibleDialogRendererWrapper = (FancyDismissibleDialogRendererWrapper)eoa.a(parcel, FancyDismissibleDialogRendererWrapper.CREATOR);
+                final FancyDismissibleDialogRendererWrapper fancyDismissibleDialogRendererWrapper = (FancyDismissibleDialogRendererWrapper)eob.a(parcel, FancyDismissibleDialogRendererWrapper.CREATOR);
                 this.enforceNoDataAvail(parcel);
                 this.o(fancyDismissibleDialogRendererWrapper);
                 break;
@@ -68,78 +67,78 @@ public final class b extends enz implements c
                 break;
             }
             case 10: {
-                final boolean k = eoa.k(parcel);
+                final boolean k = eob.k(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.l(k);
                 break;
             }
             case 9: {
-                final boolean i = eoa.k(parcel);
+                final boolean i = eob.k(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.m(i);
                 break;
             }
             case 8: {
-                final CharSequence b = eoa.b(parcel);
+                final CharSequence b = eob.b(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.p(b);
                 break;
             }
             case 7: {
-                final boolean j = eoa.k(parcel);
+                final boolean j = eob.k(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.j(j);
                 break;
             }
             case 6: {
-                final Bitmap bitmap = (Bitmap)eoa.a(parcel, Bitmap.CREATOR);
+                final Bitmap bitmap = (Bitmap)eob.a(parcel, Bitmap.CREATOR);
                 this.enforceNoDataAvail(parcel);
                 this.i(bitmap);
                 break;
             }
             case 5: {
-                n = parcel.readInt();
-                final int int2 = parcel.readInt();
                 int1 = parcel.readInt();
+                final int int2 = parcel.readInt();
+                n = parcel.readInt();
                 this.enforceNoDataAvail(parcel);
-                this.a(n, int2, int1);
+                this.a(int1, int2, n);
                 break;
             }
             case 4: {
-                final CharSequence b2 = eoa.b(parcel);
+                final CharSequence b2 = eob.b(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.h(b2);
                 break;
             }
             case 3: {
-                final boolean l = eoa.k(parcel);
+                final boolean l = eob.k(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.k(l);
                 break;
             }
             case 2: {
-                final boolean m = eoa.k(parcel);
+                final boolean m = eob.k(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.n(m);
                 break;
             }
             case 1: {
                 final IBinder strongBinder = parcel.readStrongBinder();
-                Object o;
+                f f;
                 if (strongBinder == null) {
-                    o = null;
+                    f = null;
                 }
                 else {
                     final IInterface queryLocalInterface = strongBinder.queryLocalInterface("com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.shared.IAdOverlayServiceListener");
                     if (queryLocalInterface instanceof f) {
-                        o = queryLocalInterface;
+                        f = (f)queryLocalInterface;
                     }
                     else {
-                        o = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.shared.d(strongBinder);
+                        f = new d(strongBinder);
                     }
                 }
                 this.enforceNoDataAvail(parcel);
-                this.g((f)o);
+                this.g(f);
                 break;
             }
         }
@@ -148,42 +147,42 @@ public final class b extends enz implements c
     }
     
     public final void g(final f f) {
-        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.c(this, f, 0));
+        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.b(this, f, 0));
     }
     
     public final void h(final CharSequence charSequence) {
-        this.c.post((Runnable)new a(this, charSequence, 20));
+        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.databus.remoteloaded.a(this, charSequence, 20));
     }
     
     public final void i(final Bitmap bitmap) {
-        this.c.post((Runnable)new a(this, bitmap, 18));
+        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.databus.remoteloaded.a(this, bitmap, 18));
     }
     
     public final void j(final boolean b) {
-        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.a(this, b, 5));
+        this.c.post((Runnable)new z(this, b, 7));
     }
     
     public final void k(final boolean b) {
-        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.a(this, b, 3));
+        this.c.post((Runnable)new z(this, b, 5));
     }
     
     public final void l(final boolean b) {
-        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.a(this, b, 0));
+        this.c.post((Runnable)new z(this, b, 3));
     }
     
     public final void m(final boolean b) {
-        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.a(this, b, 2));
+        this.c.post((Runnable)new z(this, b, 4));
     }
     
     public final void n(final boolean b) {
-        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.a(this, b, 4));
+        this.c.post((Runnable)new z(this, b, 6));
     }
     
     public final void o(final FancyDismissibleDialogRendererWrapper fancyDismissibleDialogRendererWrapper) {
-        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.c(this, (ajpr)((ProtoWrapper)fancyDismissibleDialogRendererWrapper).a, 1));
+        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.b(this, (ajrv)fancyDismissibleDialogRendererWrapper.a, 1));
     }
     
     public final void p(final CharSequence charSequence) {
-        this.c.post((Runnable)new a(this, charSequence, 19));
+        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.databus.remoteloaded.a(this, charSequence, 19));
     }
 }

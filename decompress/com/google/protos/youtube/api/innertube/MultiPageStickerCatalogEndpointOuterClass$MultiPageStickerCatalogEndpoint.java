@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint extends agzi implements ahax
+public final class MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint extends ahbh implements ahcw
 {
     public static final MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint a;
-    private static volatile ahbe b;
-    public static final agzg multiPageStickerCatalogEndpoint;
+    private static volatile ahdd b;
+    public static final ahbf multiPageStickerCatalogEndpoint;
     
     static {
         final MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint a2 = new MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint();
-        agzi.registerDefaultInstance((Class)MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint.class, (agzi)(a = a2));
-        multiPageStickerCatalogEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 167996903, ahcm.k, (Class)MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint.class);
+        ahbh.registerDefaultInstance((Class)MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint.class, (ahbh)(a = a2));
+        multiPageStickerCatalogEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 167996903, ahek.k, (Class)MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint.class);
     }
     
     private MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint.b) == null) {
                     synchronized (MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint.class) {
                         if (MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint.b == null) {
-                            MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint.b = (ahbe)new agzb((agzi)MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint.a);
+                            MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint.b = (ahdd)new ahba((ahbh)MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCat
                 return MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint.a);
+                return new ahaz((ahbh)MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint.a);
             }
             case 3: {
                 return new MultiPageStickerCatalogEndpointOuterClass$MultiPageStickerCatalogEndpoint();

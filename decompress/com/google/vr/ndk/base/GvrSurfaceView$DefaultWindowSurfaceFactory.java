@@ -16,6 +16,10 @@ class GvrSurfaceView$DefaultWindowSurfaceFactory implements GLSurfaceView$EGLWin
     private GvrSurfaceView$DefaultWindowSurfaceFactory() {
     }
     
+    public GvrSurfaceView$DefaultWindowSurfaceFactory(final GvrSurfaceView$DefaultWindowSurfaceFactory-IA gvrSurfaceView$DefaultWindowSurfaceFactory-IA) {
+        this();
+    }
+    
     public EGLSurface createWindowSurface(final EGL10 egl10, final EGLDisplay eglDisplay, final EGLConfig eglConfig, final Object o) {
         final EGLSurface eglSurface = null;
         EGLSurface eglCreateWindowSurface;

@@ -20,7 +20,7 @@ public class PanelsBackStack$PanelsBackStackEntry implements Parcelable
     public final String d;
     
     static {
-        CREATOR = (Parcelable$Creator)new hxf(0);
+        CREATOR = (Parcelable$Creator)new ics(1);
     }
     
     public PanelsBackStack$PanelsBackStackEntry(final Parcel parcel) {

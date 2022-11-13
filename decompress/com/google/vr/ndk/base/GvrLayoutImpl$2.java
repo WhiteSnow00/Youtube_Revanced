@@ -6,7 +6,7 @@ package com.google.vr.ndk.base;
 
 class GvrLayoutImpl$2 implements Runnable
 {
-    final /* synthetic */ GvrLayoutImpl this$0;
+    final GvrLayoutImpl this$0;
     
     public GvrLayoutImpl$2(final GvrLayoutImpl this$0) {
         this.this$0 = this$0;

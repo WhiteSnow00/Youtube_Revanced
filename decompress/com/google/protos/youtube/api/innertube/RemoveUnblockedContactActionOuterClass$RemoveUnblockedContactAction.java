@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction extends agzi implements ahax
+public final class RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction extends ahbh implements ahcw
 {
     public static final RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction a;
-    private static volatile ahbe b;
-    public static final agzg removeUnblockedContactAction;
+    private static volatile ahdd b;
+    public static final ahbf removeUnblockedContactAction;
     
     static {
         final RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction a2 = new RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction();
-        agzi.registerDefaultInstance((Class)RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction.class, (agzi)(a = a2));
-        removeUnblockedContactAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 125707981, ahcm.k, (Class)RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction.class);
+        ahbh.registerDefaultInstance((Class)RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction.class, (ahbh)(a = a2));
+        removeUnblockedContactAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 125707981, ahek.k, (Class)RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction.class);
     }
     
     private RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction.b) == null) {
                     synchronized (RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction.class) {
                         if (RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction.b == null) {
-                            RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction.b = (ahbe)new agzb((agzi)RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction.a);
+                            RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction.b = (ahdd)new ahba((ahbh)RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class RemoveUnblockedContactActionOuterClass$RemoveUnblockedContact
                 return RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction.a;
             }
             case 4: {
-                return new agza((agzi)RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction.a);
+                return new ahaz((ahbh)RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction.a);
             }
             case 3: {
                 return new RemoveUnblockedContactActionOuterClass$RemoveUnblockedContactAction();

@@ -28,13 +28,13 @@ public class ReelToReelList implements Parcelable
     public final List b;
     
     static {
-        CREATOR = (Parcelable$Creator)new fzf(9);
+        CREATOR = (Parcelable$Creator)new fzn(9);
     }
     
-    public ReelToReelList(final aioe aioe) {
-        agot.D(iba.y(aioe));
-        this.a = Collections.unmodifiableList((List<?>)adwd.an(aioe));
-        this.b = Collections.unmodifiableList((List<?>)adwd.an(Optional.empty()));
+    public ReelToReelList(final aiqj aiqj) {
+        adkp.Q(hko.o(aiqj));
+        this.a = Collections.unmodifiableList((List<?>)agpi.R((Object[])new aiqj[] { aiqj }));
+        this.b = Collections.unmodifiableList((List<?>)agpi.R((Object[])new Optional[] { Optional.empty() }));
     }
     
     public ReelToReelList(final List a) {
@@ -43,7 +43,7 @@ public class ReelToReelList implements Parcelable
         final ArrayList list = new ArrayList(a.size());
         final Iterator iterator = a.iterator();
         while (iterator.hasNext()) {
-            agot.D(iba.y((aioe)iterator.next()));
+            adkp.Q(hko.o((aiqj)iterator.next()));
             list.add(Optional.empty());
         }
         this.b = Collections.unmodifiableList((List<?>)list);
@@ -54,18 +54,18 @@ public class ReelToReelList implements Parcelable
         this.a = a;
         b.getClass();
         this.b = b;
-        agot.D(a.size() == b.size());
+        adkp.Q(a.size() == b.size());
         final Iterator iterator = a.iterator();
         while (iterator.hasNext()) {
-            agot.D(iba.y((aioe)iterator.next()));
+            adkp.Q(hko.o((aiqj)iterator.next()));
         }
     }
     
-    public static Map a(final aioe aioe, final ReelToReelList list, final Map map) {
-        if (aioe != null && ((agzd)aioe).rs((agyr)ReelWatchEndpointOuterClass$ReelWatchEndpoint.reelWatchEndpoint)) {
-            final int bz = aqql.bZ(((ReelWatchEndpointOuterClass$ReelWatchEndpoint)((agzd)aioe).rr((agyr)ReelWatchEndpointOuterClass$ReelWatchEndpoint.reelWatchEndpoint)).n);
-            if (bz != 0) {
-                if (bz == 3) {
+    public static Map a(final aiqj aiqj, final ReelToReelList list, final Map map) {
+        if (aiqj != null && ((ahbc)aiqj).ry((ahaq)ReelWatchEndpointOuterClass$ReelWatchEndpoint.reelWatchEndpoint)) {
+            final int ca = aqsx.ca(((ReelWatchEndpointOuterClass$ReelWatchEndpoint)((ahbc)aiqj).rx((ahaq)ReelWatchEndpointOuterClass$ReelWatchEndpoint.reelWatchEndpoint)).n);
+            if (ca != 0) {
+                if (ca == 3) {
                     return map;
                 }
             }
@@ -81,7 +81,7 @@ public class ReelToReelList implements Parcelable
             }
         }
         Bundle bundle;
-        if ((bundle = (Bundle)tmy.O(map2, (Object)"com.google.android.libraries.youtube.innertube.bundle", (Class)Bundle.class)) == null) {
+        if ((bundle = (Bundle)tpe.O(map2, (Object)"com.google.android.libraries.youtube.innertube.bundle", (Class)Bundle.class)) == null) {
             bundle = new Bundle();
             map2.put("com.google.android.libraries.youtube.innertube.bundle", bundle);
         }
@@ -97,31 +97,31 @@ public class ReelToReelList implements Parcelable
     public final String toString() {
         final StringBuilder sb = new StringBuilder("[ReelToReelList size=");
         sb.append(this.a.size());
-        for (final aioe aioe : this.a) {
-            if (((agzd)aioe).rs((agyr)ReelWatchEndpointOuterClass$ReelWatchEndpoint.reelWatchEndpoint)) {
-                final ReelWatchEndpointOuterClass$ReelWatchEndpoint reelWatchEndpointOuterClass$ReelWatchEndpoint = (ReelWatchEndpointOuterClass$ReelWatchEndpoint)((agzd)aioe).rr((agyr)ReelWatchEndpointOuterClass$ReelWatchEndpoint.reelWatchEndpoint);
+        for (final aiqj aiqj : this.a) {
+            if (((ahbc)aiqj).ry((ahaq)ReelWatchEndpointOuterClass$ReelWatchEndpoint.reelWatchEndpoint)) {
+                final ReelWatchEndpointOuterClass$ReelWatchEndpoint reelWatchEndpointOuterClass$ReelWatchEndpoint = (ReelWatchEndpointOuterClass$ReelWatchEndpoint)((ahbc)aiqj).rx((ahaq)ReelWatchEndpointOuterClass$ReelWatchEndpoint.reelWatchEndpoint);
                 sb.append(" video[");
                 sb.append(reelWatchEndpointOuterClass$ReelWatchEndpoint.f);
                 sb.append("]=");
                 sb.append(reelWatchEndpointOuterClass$ReelWatchEndpoint.e);
             }
             else {
-                if (!((agzd)aioe).rs((agyr)ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.reelNonVideoContentEndpoint)) {
+                if (!((ahbc)aiqj).ry((ahaq)ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.reelNonVideoContentEndpoint)) {
                     continue;
                 }
-                anss anss;
-                if ((anss = ((ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint)((agzd)aioe).rr((agyr)ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.reelNonVideoContentEndpoint)).b) == null) {
-                    anss = anss.a;
+                anuv anuv;
+                if ((anuv = ((ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint)((ahbc)aiqj).rx((ahaq)ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.reelNonVideoContentEndpoint)).b) == null) {
+                    anuv = anuv.a;
                 }
-                final anqm anqm = (anqm)((agzd)anss).rr((agyr)ReelNonVideoContentRendererOuterClass.reelNonVideoContentRenderer);
+                final ansq ansq = (ansq)((ahbc)anuv).rx((ahaq)ReelNonVideoContentRendererOuterClass.reelNonVideoContentRenderer);
                 sb.append(" non-video content [screen_ve_type=");
-                anuk anuk;
-                if ((anuk = anqm.b) == null) {
-                    anuk = anuk.a;
+                anwn anwn;
+                if ((anwn = ansq.b) == null) {
+                    anwn = anwn.a;
                 }
-                sb.append(anuk.c);
+                sb.append(anwn.c);
                 sb.append(", id=");
-                sb.append(anqm.e);
+                sb.append(ansq.e);
                 sb.append("]");
             }
         }
@@ -140,7 +140,7 @@ public class ReelToReelList implements Parcelable
         parcel.writeParcelableArray((Parcelable[])array, 0);
         for (final Optional optional : this.b) {
             if (optional.isPresent()) {
-                parcel.writeByteArray(((agyc)optional.get()).I());
+                parcel.writeByteArray(((ahab)optional.get()).I());
             }
             else {
                 parcel.writeByteArray(new byte[0]);

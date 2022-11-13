@@ -26,6 +26,6 @@ public class ReelRecyclerView extends RecyclerView
     }
     
     public final void a(final boolean b) {
-        iba.e(this.aa, b);
+        hnu.f(this.aa, b);
     }
 }

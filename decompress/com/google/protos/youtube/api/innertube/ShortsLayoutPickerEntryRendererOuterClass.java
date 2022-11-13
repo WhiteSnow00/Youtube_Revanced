@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ShortsLayoutPickerEntryRendererOuterClass
 {
-    public static final agzg shortsLayoutPickerEntryRenderer;
+    public static final ahbf shortsLayoutPickerEntryRenderer;
     
     static {
-        shortsLayoutPickerEntryRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)aodr.a, (MessageLite)aodr.a, (agzn)null, 465383528, ahcm.k, (Class)aodr.class);
+        shortsLayoutPickerEntryRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)aofu.a, (MessageLite)aofu.a, (ahbm)null, 465383528, ahek.k, (Class)aofu.class);
     }
     
     private ShortsLayoutPickerEntryRendererOuterClass() {

@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">ඇල්බමය වෙත ආපසු</string>
     <string name="accessibility_navigation_back_button">ආපසු</string>
     <string name="accessibility_new_content_available">නව අන්තර්ගතය තිබේ</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">අලුත් වීඩියෝ</string>
     <string name="accessibility_next">ඊළඟ වීඩියෝව</string>
     <string name="accessibility_offline_button_cancel">බාගැනීම නවත්වන්න</string>
     <string name="accessibility_offline_button_cannot_save">බාගත නොහැක</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">දත්ත අධීක්ෂණය සහ පාලනය</string>
     <string name="data_saving_persistent_title">දත්ත සුරැකුම</string>
     <string name="data_saving_select_quality_every_video_switch_title">සෑම වීඩියෝවක් සඳහාම ගුණත්වය තෝරන්න</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
     <string name="data_saving_snack_bar_action_button">බලන්න</string>
     <string name="data_saving_snack_bar_text">මෙම වෙනස ඔබේ දත්ත සුරැකීමේ සැකසීම්වලට බලපායි</string>
     <string name="data_saving_upload_wifi_only_switch_title">Wi-Fi ඔස්සේ පමණක් උඩුගත කරන්න</string>
@@ -719,7 +720,7 @@
     <string name="image_gallery_zero_state_text_secondary">පළ කිරීමකට එක් කිරීමට ඡායාරූපයක් ගන්න</string>
     <string name="image_upload_error">පින්තූරය උඩුගත කිරීම අසමත් විය. නැවත උත්සාහ කරන්න.</string>
     <string name="image_upload_something_went_wrong">අපොයි, කුමක් හෝ වැරදී ඇත!</string>
-    <string name="immersive_accessibility_player_overlay">Player, double tap to bring up player controls</string>
+    <string name="immersive_accessibility_player_overlay">වාදකය, වාදක පාලන ගෙන ඒමට දෙවරක් තට්ටු කරන්න</string>
     <string name="in_app_update_downloaded_message">යාවත්කාලීනය බාගැනිණි</string>
     <string name="in_app_update_downloading_message">යාවත්කාලීනය බාගනිමින්...</string>
     <string name="in_app_update_restart_button">යළි අරඹන්න</string>
@@ -1439,7 +1440,7 @@
     <string name="pref_settings_video_quality_nonbeta">වීඩියෝ ගුණත්ව මනාපයන්</string>
     <string name="pref_smart_downloads_description">ස්මාර්ට් බාගැනීම් සඳහා ආචයනය භාවිතය ගැළපුම් කරන්න</string>
     <string name="pref_smart_downloads_opted_in_title">ස්මාර්ට් බාගැනීම්</string>
-    <string name="pref_smart_downloads_quality_title">Smart downloads quality</string>
+    <string name="pref_smart_downloads_quality_title">ස්මාර්ට් බාගැනීම් ගුණත්වය</string>
     <string name="pref_smart_downloads_summary">නිර්දේශිත වීඩියෝ Wi-Fi ඔස්සේ ස්වයංක්‍රීයව බාගන්න</string>
     <string name="pref_subtitles_category">සිරස්තල</string>
     <string name="pref_upload_policy_summary">උඩුගත කිරීම් සඳහා වන ජාල අභිරුචි නියම කරන්න</string>
@@ -1787,7 +1788,7 @@
     <string name="shorts_segment_import_failed_text">කොටස ආයාත කිරීම අසමත් විය</string>
     <string name="shorts_segment_import_timeout_text">කොටස ආයාත කිරීම කාලය ඉක්මවා ඇත</string>
     <string name="shorts_selected_duration_title">තත්පර %1$d</string>
-    <string name="shorts_sound_added_tooltip_time_x">Sound added to first %1$ds</string>
+    <string name="shorts_sound_added_tooltip_time_x">පළමු ත%1$dට ශබ්දය එක් කර ඇත</string>
     <string name="shorts_speed_control_fast_label">වේගවත්</string>
     <string name="shorts_speed_control_fast_text">2X</string>
     <string name="shorts_speed_control_normal_label">සාමාන්‍ය</string>

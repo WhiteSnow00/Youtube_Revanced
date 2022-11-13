@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Praćenje i kontrola podataka</string>
     <string name="data_saving_persistent_title">Ušteda podataka</string>
     <string name="data_saving_select_quality_every_video_switch_title">Odaberite kvalitet svakog videozapisa</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Smanji kvalitet Pametnih preuzimanja</string>
     <string name="data_saving_snack_bar_action_button">Prikaži</string>
     <string name="data_saving_snack_bar_text">Ova promjena utiče na postavke uštede prijenosa podataka na mobilnoj mreži</string>
     <string name="data_saving_upload_wifi_only_switch_title">Otpremanje samo na WiFi mreži</string>
@@ -719,7 +720,7 @@
     <string name="image_gallery_zero_state_text_secondary">Snimite fotografiju za njeno dodavanje u objavu</string>
     <string name="image_upload_error">Otpremanje slike nije uspjelo. Pokušajte ponovo.</string>
     <string name="image_upload_something_went_wrong">Ups, nešto nije uredu!</string>
-    <string name="immersive_accessibility_player_overlay">Player, dodirnite dvaput da bi se prikazale kontrole playera</string>
+    <string name="immersive_accessibility_player_overlay">Plejer, dvaput dodirnite da prikažete kontrole plejera</string>
     <string name="in_app_update_downloaded_message">Ažuriranje je preuzeto</string>
     <string name="in_app_update_downloading_message">Preuzimanje ažuriranja...</string>
     <string name="in_app_update_restart_button">POKRENI PONOVO</string>
@@ -1439,7 +1440,7 @@
     <string name="pref_settings_video_quality_nonbeta">Postavke kvaliteta videozapisa</string>
     <string name="pref_smart_downloads_description">Podesite iskorištenost pohrane za pametna preuzimanja</string>
     <string name="pref_smart_downloads_opted_in_title">Pametna preuzimanja</string>
-    <string name="pref_smart_downloads_quality_title">Kvaliteta pametnih preuzimanja</string>
+    <string name="pref_smart_downloads_quality_title">Kvalitet Pametnih preuzimanja</string>
     <string name="pref_smart_downloads_summary">Automatski preuzmite preporučene videozapise putem WiFi-ja</string>
     <string name="pref_subtitles_category">Titlovi</string>
     <string name="pref_upload_policy_summary">Odredite željenu mrežu za prijenose</string>
@@ -1787,7 +1788,7 @@
     <string name="shorts_segment_import_failed_text">Uvoz segmenta nije uspio</string>
     <string name="shorts_segment_import_timeout_text">Vrijeme za uvoz segmenta je isteklo</string>
     <string name="shorts_selected_duration_title">%1$d s</string>
-    <string name="shorts_sound_added_tooltip_time_x">Zvuk je dodan u prvih %1$d s</string>
+    <string name="shorts_sound_added_tooltip_time_x">Zvuk je dodan u prvu/e/ih %1$ds</string>
     <string name="shorts_speed_control_fast_label">Brzo</string>
     <string name="shorts_speed_control_fast_text">2 x</string>
     <string name="shorts_speed_control_normal_label">Normalno</string>

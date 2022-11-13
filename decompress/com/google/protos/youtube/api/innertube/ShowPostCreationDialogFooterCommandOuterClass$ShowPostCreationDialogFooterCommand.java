@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand extends agzi implements ahax
+public final class ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand extends ahbh implements ahcw
 {
     public static final ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand a;
-    private static volatile ahbe d;
-    public static final agzg showPostCreationDialogFooterCommand;
+    private static volatile ahdd d;
+    public static final ahbf showPostCreationDialogFooterCommand;
     public int b;
-    public anss c;
+    public anuv c;
     private byte e;
     
     static {
         final ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand a2 = new ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand();
-        agzi.registerDefaultInstance((Class)ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand.class, (agzi)(a = a2));
-        showPostCreationDialogFooterCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 369262379, ahcm.k, (Class)ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand.class);
+        ahbh.registerDefaultInstance((Class)ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand.class, (ahbh)(a = a2));
+        showPostCreationDialogFooterCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 369262379, ahek.k, (Class)ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand.class);
     }
     
     private ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand.d) == null) {
                     synchronized (ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand.class) {
                         if (ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand.d == null) {
-                            ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand.d = (ahbe)new agzb((agzi)ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand.a);
+                            ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand.d = (ahdd)new ahba((ahbh)ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreatio
                 return ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand.a;
             }
             case 4: {
-                return new agza((agzi)ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand.a);
+                return new ahaz((ahbh)ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand.a);
             }
             case 3: {
                 return new ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreationDialogFooterCommand();
@@ -58,9 +58,9 @@ public final class ShowPostCreationDialogFooterCommandOuterClass$ShowPostCreatio
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

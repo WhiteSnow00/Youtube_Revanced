@@ -8,18 +8,18 @@ import android.view.View;
 import android.text.TextUtils;
 import j$.util.Optional;
 
-public class MdxOverlaysPresenter implements tfg, tec
+public class MdxOverlaysPresenter implements thk, tgg
 {
-    public final xlv a;
-    public final hzw b;
-    public final hzs c;
-    public final irl d;
-    final xqj e;
+    public final xnt a;
+    public final iat b;
+    public final iap c;
+    public final isj d;
+    final xsh e;
     Optional f;
     public boolean g;
-    private final xql h;
+    private final xsj h;
     
-    public MdxOverlaysPresenter(final xlv a, final hzw b, final hzs c, final irl d, final xql h) {
+    public MdxOverlaysPresenter(final xnt a, final iat b, final iap c, final isj d, final xsj h) {
         a.getClass();
         this.a = a;
         b.getClass();
@@ -30,67 +30,71 @@ public class MdxOverlaysPresenter implements tfg, tec
         this.d = d;
         this.f = Optional.empty();
         this.h = h;
-        this.e = (xqj)new hzt(this, d);
-        this.k(hzu.a);
+        this.e = (xsh)new iaq(this, d);
+        this.k(iar.a);
     }
     
-    public static final String m(final xlo xlo) {
-        return xlo.j().e();
+    public static final String m(final xnm xnm) {
+        return xnm.j().e();
     }
     
-    public final void j(final xlo xlo) {
-        if (xlo == null) {
-            this.k(hzu.a);
+    public final thh g() {
+        return thh.c;
+    }
+    
+    public final void j(final xnm xnm) {
+        if (xnm == null) {
+            this.k(iar.a);
             return;
         }
-        final int a = xlo.a();
+        final int a = xnm.a();
         if (a == 0) {
             String e;
-            if (xlo.j() != null) {
-                e = xlo.j().e();
+            if (xnm.j() != null) {
+                e = xnm.j().e();
             }
             else {
                 e = null;
             }
-            final hzw b = this.b;
-            final boolean ae = xlo.ae();
+            final iat b = this.b;
+            final boolean ae = xnm.ae();
             int b2;
             if (TextUtils.isEmpty((CharSequence)e)) {
                 if (!ae) {
                     b2 = 2132017781;
                 }
                 else {
-                    b2 = 2132019321;
+                    b2 = 2132019322;
                 }
             }
             else if (!ae) {
                 b2 = 2132017782;
             }
             else {
-                b2 = 2132019322;
+                b2 = 2132019323;
             }
             if (b2 != b.b || b.a != 2 || !TextUtils.equals((CharSequence)b.c, (CharSequence)e)) {
                 b.c = e;
                 b.b = b2;
                 b.a = 2;
-                ((aazp)b).Y();
+                ((abbk)b).Y();
             }
-            this.k(hzu.c);
+            this.k(iar.c);
             return;
         }
         if (a != 1) {
-            this.k(hzu.a);
+            this.k(iar.a);
             return;
         }
-        this.c.e(m(xlo));
-        this.k(hzu.b);
+        this.c.e(m(xnm));
+        this.k(iar.b);
     }
     
-    public final void k(final hzu hzu) {
-        if (this.f.isPresent() && this.f.get() == hzu) {
+    public final void k(final iar iar) {
+        if (this.f.isPresent() && this.f.get() == iar) {
             return;
         }
-        this.f = Optional.of((Object)hzu);
+        this.f = Optional.of((Object)iar);
         this.l();
     }
     
@@ -99,30 +103,36 @@ public class MdxOverlaysPresenter implements tfg, tec
         final boolean b = false;
         if (g) {
             this.d.mm();
-            tmy.v((View)this.c, false);
-            ((aazp)this.b).mk();
+            tpe.v((View)this.c, false);
+            ((abbk)this.b).mk();
             return;
         }
         this.d.mk();
-        final hzs c = this.c;
+        final iap c = this.c;
         boolean b2 = b;
         if (this.f.isPresent()) {
             b2 = b;
-            if (this.f.get() == hzu.b) {
+            if (this.f.get() == iar.b) {
                 b2 = true;
             }
         }
-        tmy.v((View)c, b2);
-        if (this.f.isPresent() && this.f.get() == hzu.c) {
-            ((aazp)this.b).mm();
+        tpe.v((View)c, b2);
+        if (this.f.isPresent() && this.f.get() == iar.c) {
+            ((abbk)this.b).mm();
             return;
         }
-        ((aazp)this.b).mk();
+        ((abbk)this.b).mk();
     }
     
-    public final void lW(final aum aum) {
+    public final void lW(final aun aun) {
         this.h.a(this.e);
         this.j(this.a.g());
+    }
+    
+    public final void mM(final aun aun) {
+    }
+    
+    public final void mq(final aun aun) {
     }
     
     public final Class[] ms(final Class clazz, final Object o, int ordinal) {
@@ -135,8 +145,8 @@ public class MdxOverlaysPresenter implements tfg, tec
                     sb.append(ordinal);
                     throw new IllegalStateException(sb.toString());
                 }
-                final aaly aaly = (aaly)o;
-                final xlo g = this.a.g();
+                final aans aans = (aans)o;
+                final xnm g = this.a.g();
                 array2 = array;
                 if (g != null) {
                     if (g.a() != 1) {
@@ -144,14 +154,14 @@ public class MdxOverlaysPresenter implements tfg, tec
                     }
                     else {
                         if (!g.Y()) {
-                            final abim a = abim.a;
-                            ordinal = aaly.c().ordinal();
+                            final abke a = abke.a;
+                            ordinal = aans.c().ordinal();
                             if (ordinal != 0) {
                                 if (ordinal != 5) {
                                     if (ordinal == 8) {
-                                        final hzs c = this.c;
-                                        c.a.setText((CharSequence)c.c(2132019155, m(g)));
-                                        this.k(hzu.b);
+                                        final iap c = this.c;
+                                        c.a.setText((CharSequence)c.c(2132019156, m(g)));
+                                        this.k(iar.b);
                                         return null;
                                     }
                                     if (ordinal != 9) {
@@ -161,15 +171,15 @@ public class MdxOverlaysPresenter implements tfg, tec
                                 }
                                 else {
                                     array2 = array;
-                                    if (aaly.k() == null) {
-                                        final hzw b = this.b;
+                                    if (aans.k() == null) {
+                                        final iat b = this.b;
                                         if (b.a != 1) {
                                             b.b = 2132017468;
                                             b.c = null;
                                             b.a = 1;
-                                            ((aazp)b).Y();
+                                            ((abbk)b).Y();
                                         }
-                                        this.k(hzu.c);
+                                        this.k(iar.c);
                                         array2 = array;
                                         return array2;
                                     }
@@ -180,26 +190,40 @@ public class MdxOverlaysPresenter implements tfg, tec
                                 this.d.h(false);
                             }
                             this.c.e(m(g));
-                            this.k(hzu.b);
+                            this.k(iar.b);
                             return null;
                         }
-                        this.k(hzu.a);
+                        this.k(iar.a);
                         array2 = array;
                     }
                 }
             }
             else {
-                this.j(((xlw)o).a());
+                this.j(((xnu)o).a());
                 array2 = array;
             }
         }
         else {
-            array2 = new Class[] { xlw.class, aaly.class };
+            array2 = new Class[] { xnu.class, aans.class };
         }
         return array2;
     }
     
-    public final void my(final aum aum) {
+    public final void my(final aun aun) {
         this.h.c(this.e);
+    }
+    
+    public final void oS(final aun aun) {
+    }
+    
+    public final void oT() {
+        tfg.e((thk)this);
+    }
+    
+    public final void oW() {
+        tfg.d((thk)this);
+    }
+    
+    public final void oX(final aun aun) {
     }
 }

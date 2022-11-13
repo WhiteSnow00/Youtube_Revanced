@@ -129,7 +129,7 @@ class GvrLayoutImpl$PresentationHelper implements DisplayManager$DisplayListener
             display = presentation3.getDisplay();
         }
         else {
-            display = aqzg.r(this.context);
+            display = arbu.r(this.context);
         }
         displaySynchronizer.d(display);
         if (presentation2 != null) {
@@ -178,7 +178,7 @@ class GvrLayoutImpl$PresentationHelper implements DisplayManager$DisplayListener
     }
     
     public void onResume() {
-        final String s = aqzg.s(this.context);
+        final String s = arbu.s(this.context);
         this.externalDisplayName = s;
         final Display display = null;
         if (s == null) {

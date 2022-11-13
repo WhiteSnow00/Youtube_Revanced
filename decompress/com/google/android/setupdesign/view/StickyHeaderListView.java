@@ -49,7 +49,7 @@ public class StickyHeaderListView extends ListView
         if (this.isInEditMode()) {
             return;
         }
-        final TypedArray obtainStyledAttributes = this.getContext().obtainStyledAttributes(set, aedq.o, resourceId, 0);
+        final TypedArray obtainStyledAttributes = this.getContext().obtainStyledAttributes(set, aefr.o, resourceId, 0);
         resourceId = obtainStyledAttributes.getResourceId(0, 0);
         if (resourceId != 0) {
             this.addHeaderView(LayoutInflater.from(this.getContext()).inflate(resourceId, (ViewGroup)this, false), (Object)null, false);

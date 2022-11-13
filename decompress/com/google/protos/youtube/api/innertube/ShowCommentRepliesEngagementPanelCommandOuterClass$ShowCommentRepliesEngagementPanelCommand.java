@@ -6,26 +6,26 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand extends agzi implements ahax
+public final class ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand extends ahbh implements ahcw
 {
     public static final ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand a;
-    private static volatile ahbe k;
-    public static final agzg showCommentRepliesEngagementPanelCommand;
+    private static volatile ahdd k;
+    public static final ahbf showCommentRepliesEngagementPanelCommand;
     public int b;
     public String c;
-    public ajsq d;
+    public ajut d;
     public String e;
     public boolean f;
-    public ajsq g;
+    public ajut g;
     public int h;
     public String i;
-    public aioe j;
+    public aiqj j;
     private byte l;
     
     static {
         final ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand a2 = new ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand();
-        agzi.registerDefaultInstance((Class)ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand.class, (agzi)(a = a2));
-        showCommentRepliesEngagementPanelCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 141942083, ahcm.k, (Class)ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand.class);
+        ahbh.registerDefaultInstance((Class)ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand.class, (ahbh)(a = a2));
+        showCommentRepliesEngagementPanelCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 141942083, ahek.k, (Class)ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand.class);
     }
     
     private ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand() {
@@ -35,20 +35,20 @@ public final class ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommen
         this.i = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte l = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe k;
+                final ahdd k;
                 if ((k = ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand.k) == null) {
                     synchronized (ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand.class) {
                         if (ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand.k == null) {
-                            ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand.k = (ahbe)new agzb((agzi)ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand.a);
+                            ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand.k = (ahdd)new ahba((ahbh)ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand.a);
                         }
                     }
                 }
@@ -58,7 +58,7 @@ public final class ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommen
                 return ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand.a;
             }
             case 4: {
-                return new agza((agzi)ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand.a);
+                return new ahaz((ahbh)ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand.a);
             }
             case 3: {
                 return new ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommentRepliesEngagementPanelCommand();
@@ -68,9 +68,9 @@ public final class ShowCommentRepliesEngagementPanelCommandOuterClass$ShowCommen
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    l = 0;
                 }
-                this.l = (byte)(b ? 1 : 0);
+                this.l = l;
                 return null;
             }
             case 0: {

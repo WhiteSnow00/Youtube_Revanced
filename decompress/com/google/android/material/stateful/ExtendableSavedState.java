@@ -13,10 +13,10 @@ import androidx.customview.view.AbsSavedState;
 public class ExtendableSavedState extends AbsSavedState
 {
     public static final Parcelable$Creator CREATOR;
-    public final abn a;
+    public final abo a;
     
     static {
-        CREATOR = (Parcelable$Creator)new adrl(6);
+        CREATOR = (Parcelable$Creator)new adtn(6);
     }
     
     public ExtendableSavedState(final Parcel parcel, final ClassLoader classLoader) {
@@ -26,15 +26,15 @@ public class ExtendableSavedState extends AbsSavedState
         parcel.readStringArray(array);
         final Bundle[] array2 = new Bundle[int1];
         parcel.readTypedArray((Object[])array2, Bundle.CREATOR);
-        this.a = new abn(int1);
+        this.a = new abo(int1);
         for (int i = 0; i < int1; ++i) {
-            this.a.put((Object)array[i], (Object)array2[i]);
+            this.a.put(array[i], array2[i]);
         }
     }
     
     public ExtendableSavedState(final Parcelable parcelable) {
         super(parcelable);
-        this.a = new abn();
+        this.a = new abo();
     }
     
     public final String toString() {

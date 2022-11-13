@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Վերադառնալ ալբոմ</string>
     <string name="accessibility_navigation_back_button">Հետ</string>
     <string name="accessibility_new_content_available">Առկա է նոր բովանդակություն</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Նոր տեսանյութեր</string>
     <string name="accessibility_next">Հաջորդ տեսանյութը</string>
     <string name="accessibility_offline_button_cancel">Դադարեցնել ներբեռնումը</string>
     <string name="accessibility_offline_button_cannot_save">Չհաջողվեց պահել</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Տվյալների վերահսկում և կառավարում</string>
     <string name="data_saving_persistent_title">Թրաֆիկի տնտեսում</string>
     <string name="data_saving_select_quality_every_video_switch_title">Ընտրել որակ յուրաքանչյուր տեսանյութի համար</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
     <string name="data_saving_snack_bar_action_button">Դիտել</string>
     <string name="data_saving_snack_bar_text">Փոփոխությունը կազդի թրաֆիկի տնտեսման կարգավորումների վրա։</string>
     <string name="data_saving_upload_wifi_only_switch_title">Վերբեռնել միայն Wi-Fi ցանցով</string>
@@ -719,7 +720,7 @@
     <string name="image_gallery_zero_state_text_secondary">Լուսանկարեք և ավելացրեք նկարները հրապարակումներում</string>
     <string name="image_upload_error">Չհաջողվեց վերբեռնել նկարը։ Նորից փորձեք։</string>
     <string name="image_upload_something_went_wrong">Սխալ առաջացավ։</string>
-    <string name="immersive_accessibility_player_overlay">Player, double tap to bring up player controls</string>
+    <string name="immersive_accessibility_player_overlay">Նվագարկիչ, կրկնակի հպեք՝ նվագարկիչի կառավարման տարրերը ցուցադրելու համար</string>
     <string name="in_app_update_downloaded_message">Թարմացումը ներբեռնվել է</string>
     <string name="in_app_update_downloading_message">Թարմացումը ներբեռնվում է…</string>
     <string name="in_app_update_restart_button">ՎԵՐԱԳՈՐԾԱՐԿԵԼ</string>
@@ -1439,7 +1440,7 @@
     <string name="pref_settings_video_quality_nonbeta">Տեսանյութերի որակի կարգավորում</string>
     <string name="pref_smart_downloads_description">Կարգավորել խելացի ներբեռնումների զբաղեցրած տարածքը</string>
     <string name="pref_smart_downloads_opted_in_title">Խելացի ներբեռնումներ</string>
-    <string name="pref_smart_downloads_quality_title">Smart downloads quality</string>
+    <string name="pref_smart_downloads_quality_title">Խելացի ներբեռնումների որակը</string>
     <string name="pref_smart_downloads_summary">Ավտոմատ կերպով ներբեռնեք առաջարկվող տեսանյութերը Wi-Fi-ով</string>
     <string name="pref_subtitles_category">Ենթագրեր</string>
     <string name="pref_upload_policy_summary">Նշել ցանց՝ վերբեռնումների համար</string>
@@ -1787,7 +1788,7 @@
     <string name="shorts_segment_import_failed_text">Չհաջողվեց ներմուծել հատվածը</string>
     <string name="shorts_segment_import_timeout_text">Հատվածի ներմուծման ժամանակը սպառվեց</string>
     <string name="shorts_selected_duration_title">%1$d վայրկյան</string>
-    <string name="shorts_sound_added_tooltip_time_x">Sound added to first %1$ds</string>
+    <string name="shorts_sound_added_tooltip_time_x">Ձայնը ավելացվեց առաջին %1$d վրկ</string>
     <string name="shorts_speed_control_fast_label">Արագ</string>
     <string name="shorts_speed_control_fast_text">2X</string>
     <string name="shorts_speed_control_normal_label">Սովորական</string>

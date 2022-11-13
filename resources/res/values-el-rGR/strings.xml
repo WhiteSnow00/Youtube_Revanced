@@ -87,9 +87,6 @@
     <string name="litho_paid_content">Paid content removal</string>
     <string name="litho_paid_content_off">Paid content removal is turned off</string>
     <string name="litho_paid_content_on">Paid content removal is turned on</string>
-    <string name="litho_shorts_shelf">Shorts Shelf removal</string>
-    <string name="litho_shorts_shelf_off">Shorts Shelf removal is turned off</string>
-    <string name="litho_shorts_shelf_on">Shorts Shelf removal is turned on</string>
     <string name="microg_notification_settings">Notification settings</string>
     <string name="microg_notification_settings_summary">1. Google device registration and Cloud Messaging need to be enabled for notifications.\102. ReVanced needs to be shown as registered under Cloud Messaging.\103. Current State in Cloud Messaging must be Connected.</string>
     <string name="microg_settings">MicroG settings</string>
@@ -186,9 +183,6 @@
     <string name="revanced_shorts_button_summary_off">Shorts Button is hidden</string>
     <string name="revanced_shorts_button_summary_on">Shorts Button is shown</string>
     <string name="revanced_shorts_button_title">Shorts Button</string>
-    <string name="revanced_suggestion_summary_off">End screens are hidden</string>
-    <string name="revanced_suggestion_summary_on">End screens are shown</string>
-    <string name="revanced_suggestion_title">End screens</string>
     <string name="revanced_swipe_brightness_summary_off">Swipe controls for brightness are disabled</string>
     <string name="revanced_swipe_brightness_summary_on">Swipe controls for brightness are enabled</string>
     <string name="revanced_swipe_brightness_title">Swipe controls for Brightness</string>

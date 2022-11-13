@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Späť do albumu</string>
     <string name="accessibility_navigation_back_button">Späť</string>
     <string name="accessibility_new_content_available">K dispozícii je nový obsah</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Nové videá</string>
     <string name="accessibility_next">Ďalšie video</string>
     <string name="accessibility_offline_button_cancel">Zastaviť sťahovanie</string>
     <string name="accessibility_offline_button_cannot_save">Stiahnutie nie je možné</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Sledovanie a kontrola dát</string>
     <string name="data_saving_persistent_title">Ukladanie údajov</string>
     <string name="data_saving_select_quality_every_video_switch_title">Vyberať kvalitu každého videa</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Znížiť kvalitu inteligentného sťahovania</string>
     <string name="data_saving_snack_bar_action_button">Zobraziť</string>
     <string name="data_saving_snack_bar_text">Táto zmena sa týka vašich nastavení ukladania údajov</string>
     <string name="data_saving_upload_wifi_only_switch_title">Nahrávať iba cez Wi‑Fi</string>
@@ -735,7 +736,7 @@
     <string name="image_gallery_zero_state_text_secondary">Urobte fotku a pridajte ju k príspevku</string>
     <string name="image_upload_error">Nepodarilo sa nahrať obrázok. Skúste to znova.</string>
     <string name="image_upload_something_went_wrong">Ojoj, vyskytol sa problém.</string>
-    <string name="immersive_accessibility_player_overlay">Player, double tap to bring up player controls</string>
+    <string name="immersive_accessibility_player_overlay">Prehrávač, dvojitým klepnutím zobrazíte ovládanie prehrávača</string>
     <string name="in_app_update_downloaded_message">Aktualizácia bola stiahnutá</string>
     <string name="in_app_update_downloading_message">Sťahuje sa aktualizácia…</string>
     <string name="in_app_update_restart_button">REŠTARTOVAŤ</string>
@@ -1458,7 +1459,7 @@
     <string name="pref_settings_video_quality_nonbeta">Nastavenia kvality videa</string>
     <string name="pref_smart_downloads_description">Upravte využívanie ukladacieho priestoru na inteligentné sťahovanie</string>
     <string name="pref_smart_downloads_opted_in_title">Inteligentné sťahovanie</string>
-    <string name="pref_smart_downloads_quality_title">Smart downloads quality</string>
+    <string name="pref_smart_downloads_quality_title">Kvalita inteligentného sťahovania</string>
     <string name="pref_smart_downloads_summary">Automaticky sťahovať odporúčané videá cez Wi‑Fi</string>
     <string name="pref_subtitles_category">Titulky</string>
     <string name="pref_upload_policy_summary">Zadajte predvoľby siete pre nahrávanie</string>
@@ -1808,7 +1809,7 @@
     <string name="shorts_segment_import_failed_text">Import segmentu bol neúspešný</string>
     <string name="shorts_segment_import_timeout_text">Časový limit importu segmentu vypršal</string>
     <string name="shorts_selected_duration_title">%1$d s</string>
-    <string name="shorts_sound_added_tooltip_time_x">Sound added to first %1$ds</string>
+    <string name="shorts_sound_added_tooltip_time_x">Zvuk bol pridaný k prvým %1$d s</string>
     <string name="shorts_speed_control_fast_label">Rýchlo</string>
     <string name="shorts_speed_control_fast_text">2X</string>
     <string name="shorts_speed_control_normal_label">Normálne</string>

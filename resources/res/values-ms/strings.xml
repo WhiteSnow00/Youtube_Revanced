@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Kembali kepada album</string>
     <string name="accessibility_navigation_back_button">Kembali</string>
     <string name="accessibility_new_content_available">Kandungan baharu tersedia</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Video baharu</string>
     <string name="accessibility_next">Video seterusnya</string>
     <string name="accessibility_offline_button_cancel">Berhenti memuat turun</string>
     <string name="accessibility_offline_button_cannot_save">Tidak dapat memuat turun</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Pemantauan &amp; kawalan data</string>
     <string name="data_saving_persistent_title">Penjimatan data</string>
     <string name="data_saving_select_quality_every_video_switch_title">Pilih kualiti untuk setiap video</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Kurangkan kualiti Muat turun pintar</string>
     <string name="data_saving_snack_bar_action_button">Lihat</string>
     <string name="data_saving_snack_bar_text">Perubahan ini mempengaruhi tetapan penjimatan data anda</string>
     <string name="data_saving_upload_wifi_only_switch_title">Muat naik melalui Wi-Fi sahaja</string>

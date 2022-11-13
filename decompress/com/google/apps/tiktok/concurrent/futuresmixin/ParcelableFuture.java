@@ -13,35 +13,35 @@ import android.os.Parcelable;
 public final class ParcelableFuture implements Parcelable
 {
     public static final Parcelable$Creator CREATOR;
-    private static final afik f;
+    private static final afkk f;
     public final int a;
     public boolean b;
-    aexq c;
+    aezp c;
     public Object d;
     public Object e;
     private Throwable g;
-    private aekk h;
+    private aeml h;
     
     static {
-        f = afik.m("com/google/apps/tiktok/concurrent/futuresmixin/ParcelableFuture");
-        CREATOR = (Parcelable$Creator)new abyl(11);
+        f = afkk.m("com/google/apps/tiktok/concurrent/futuresmixin/ParcelableFuture");
+        CREATOR = (Parcelable$Creator)new acao(11);
     }
     
     public ParcelableFuture(final int a, final Object d, final ListenableFuture listenableFuture) {
-        this.c = aewp.a;
+        this.c = (aezp)aeyo.a;
         this.a = a;
         this.d = d;
-        afva.w(listenableFuture, aesm.f((afsz)new aekj(this)), (Executor)afsl.a);
+        afwm.w(listenableFuture, aeun.f((afva)new aemk(this)), (Executor)afum.a);
     }
     
     public ParcelableFuture(final Parcel parcel) {
-        this.c = aewp.a;
+        this.c = (aezp)aeyo.a;
         final ClassLoader classLoader = this.getClass().getClassLoader();
         this.a = parcel.readInt();
         try {
             this.d = parcel.readValue(classLoader);
             final int int1 = parcel.readInt();
-            this.c = aexq.k((Object)int1);
+            this.c = aezp.k((Object)int1);
             if (int1 == 1) {
                 this.b = true;
                 this.e = parcel.readValue(classLoader);
@@ -49,7 +49,7 @@ public final class ParcelableFuture implements Parcelable
             }
         }
         catch (final RuntimeException g) {
-            ((afii)((afii)((afii)((afig)ParcelableFuture.f).g()).i((Throwable)g)).j("com/google/apps/tiktok/concurrent/futuresmixin/ParcelableFuture", "<init>", 95, "ParcelableFuture.java")).s("Failed to unparcel value for %d.", this.a);
+            ((afki)((afki)((afki)((afkg)ParcelableFuture.f).g()).i((Throwable)g)).j("com/google/apps/tiktok/concurrent/futuresmixin/ParcelableFuture", "<init>", 95, "ParcelableFuture.java")).s("Failed to unparcel value for %d.", this.a);
             this.b = true;
             this.g = g;
         }
@@ -62,23 +62,23 @@ public final class ParcelableFuture implements Parcelable
         }
         catch (final RuntimeException ex) {
             parcel.setDataPosition(dataPosition);
-            c.i(((afig)ParcelableFuture.f).g(), "Result lost due to non-parcelable type.", "com/google/apps/tiktok/concurrent/futuresmixin/ParcelableFuture", "tryToWriteValue", '\u00ee', "ParcelableFuture.java", (Throwable)ex);
+            c.i(((afkg)ParcelableFuture.f).g(), "Result lost due to non-parcelable type.", "com/google/apps/tiktok/concurrent/futuresmixin/ParcelableFuture", "tryToWriteValue", '\u00ee', "ParcelableFuture.java", (Throwable)ex);
             throw new IllegalArgumentException("Type not supported by Parcel and will be dropped: ".concat(String.valueOf(String.valueOf(o.getClass()))), ex);
         }
     }
     
     public final void a() {
-        final aekk h = this.h;
+        final aeml h = this.h;
         if (h != null) {
             final Throwable g = this.g;
             if (g != null) {
                 final FuturesMixinViewModel futuresMixinViewModel = (FuturesMixinViewModel)h;
-                futuresMixinViewModel.a.execute(aesm.h((Runnable)new aecw(futuresMixinViewModel, this, g, 5)));
+                futuresMixinViewModel.a.execute(aeun.h((Runnable)new adlo(futuresMixinViewModel, this, g, 7)));
                 return;
             }
             final Object e = this.e;
             final FuturesMixinViewModel futuresMixinViewModel2 = (FuturesMixinViewModel)h;
-            futuresMixinViewModel2.a.execute(aesm.h((Runnable)new aecw(futuresMixinViewModel2, this, e, 4)));
+            futuresMixinViewModel2.a.execute(aeun.h((Runnable)new adlo(futuresMixinViewModel2, this, e, 6)));
         }
     }
     
@@ -88,7 +88,7 @@ public final class ParcelableFuture implements Parcelable
         this.a();
     }
     
-    final void c(final aekk h) {
+    final void c(final aeml h) {
         this.h = h;
         if (h != null && this.b) {
             this.a();

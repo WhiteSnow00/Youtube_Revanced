@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class ReplaceItemSectionHeaderActionOuterClass
 {
-    public static final agzg replaceItemSectionHeaderAction;
+    public static final ahbf replaceItemSectionHeaderAction;
     
     static {
-        replaceItemSectionHeaderAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)ante.a, (MessageLite)ante.a, (agzn)null, 307501822, ahcm.k, (Class)ante.class);
+        replaceItemSectionHeaderAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)anvh.a, (MessageLite)anvh.a, (ahbm)null, 307501822, ahek.k, (Class)anvh.class);
     }
     
     private ReplaceItemSectionHeaderActionOuterClass() {

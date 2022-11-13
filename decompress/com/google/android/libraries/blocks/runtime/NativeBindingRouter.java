@@ -19,7 +19,7 @@ public final class NativeBindingRouter
     
     private native long nativeCreateContainerBinding(final int p0, final byte[] p1);
     
-    public final long a(final int n, final apxu apxu) {
-        return this.nativeCreateContainerBinding(n, ((agxl)apxu).toByteArray());
+    public final long a(final int n, final aqae aqae) {
+        return this.nativeCreateContainerBinding(n, ((agzk)aqae).toByteArray());
     }
 }

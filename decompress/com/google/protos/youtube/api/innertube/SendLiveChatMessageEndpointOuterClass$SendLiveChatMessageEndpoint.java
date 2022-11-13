@@ -6,44 +6,44 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint extends agzi implements ahax
+public final class SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint extends ahbh implements ahcw
 {
     public static final SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint a;
-    private static volatile ahbe e;
-    public static final agzg sendLiveChatMessageEndpoint;
-    public agyc b;
-    public agzy c;
+    private static volatile ahdd e;
+    public static final ahbf sendLiveChatMessageEndpoint;
+    public ahab b;
+    public ahbx c;
     public String d;
     private int f;
     private byte g;
     
     static {
         final SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint a2 = new SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint();
-        agzi.registerDefaultInstance((Class)SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.class, (agzi)(a = a2));
-        sendLiveChatMessageEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 120929770, ahcm.k, (Class)SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.class);
+        ahbh.registerDefaultInstance((Class)SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.class, (ahbh)(a = a2));
+        sendLiveChatMessageEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 120929770, ahek.k, (Class)SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.class);
     }
     
     private SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint() {
         this.g = 2;
-        this.b = agyc.b;
+        this.b = ahab.b;
         this.c = emptyProtobufList();
         this.d = "";
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte g = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.e) == null) {
                     synchronized (SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.class) {
                         if (SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.e == null) {
-                            SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.e = (ahbe)new agzb((agzi)SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.a);
+                            SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.e = (ahdd)new ahba((ahbh)SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.a);
                         }
                     }
                 }
@@ -53,19 +53,19 @@ public final class SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndp
                 return SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.a);
+                return new ahaz((ahbh)SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.a);
             }
             case 3: {
                 return new SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint();
             }
             case 2: {
-                return newMessageInfo((MessageLite)SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.a, "\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0001\u0001\u0001\u100a\u0000\u0002\u041b\u0003\u1008\u0001", new Object[] { "f", "b", "c", aioe.class, "d" });
+                return newMessageInfo((MessageLite)SendLiveChatMessageEndpointOuterClass$SendLiveChatMessageEndpoint.a, "\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0001\u0001\u0001\u100a\u0000\u0002\u041b\u0003\u1008\u0001", new Object[] { "f", "b", "c", aiqj.class, "d" });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    g = 0;
                 }
-                this.g = (byte)(b ? 1 : 0);
+                this.g = g;
                 return null;
             }
             case 0: {

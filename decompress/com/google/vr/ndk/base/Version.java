@@ -18,7 +18,7 @@ public final class Version
     public final int patchVersion;
     
     static {
-        CURRENT = parse("1.218.0");
+        CURRENT = parse("1.219.0");
         MIN = parse("1.81.0");
     }
     

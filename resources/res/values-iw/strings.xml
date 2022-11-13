@@ -3,7 +3,7 @@
     <string name="a11y_new_effect_available_indicator">אפקט חדש זמין</string>
     <string name="a11y_new_effect_indicator">אפקט חדש</string>
     <string name="a11y_object_selected_at">%1$s נבחר ב-%2$s</string>
-    <string name="aag_widget_loading">Loading…</string>
+    <string name="aag_widget_loading">בטעינה…</string>
     <string name="aag_widget_quick_actions_description">‏הדרך המהירה ביותר לחפש ולגלוש ב-YouTube</string>
     <string name="aag_widget_quick_actions_title">פעולות מהירות</string>
     <string name="aag_widget_search_description">‏הדרך המהירה ביותר לחפש ב-YouTube</string>
@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">חזרה לאלבום</string>
     <string name="accessibility_navigation_back_button">חזרה</string>
     <string name="accessibility_new_content_available">יש תוכן חדש זמין</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">סרטונים חדשים</string>
     <string name="accessibility_next">הסרטון הבא</string>
     <string name="accessibility_offline_button_cancel">הפסקת ההורדה</string>
     <string name="accessibility_offline_button_cannot_save">לא ניתן להוריד</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">פיקוח ומעקב אחר נתונים</string>
     <string name="data_saving_persistent_title">חיסכון בנתונים</string>
     <string name="data_saving_select_quality_every_video_switch_title">בחירת האיכות לכל סרטון</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">הורדת האיכות של ההורדות החכמות</string>
     <string name="data_saving_snack_bar_action_button">הצגה</string>
     <string name="data_saving_snack_bar_text">השינוי הזה משפיע על ההגדרות שלך לחיסכון בנתונים</string>
     <string name="data_saving_upload_wifi_only_switch_title">‏העלאה באמצעות Wi-Fi בלבד</string>

@@ -15,7 +15,7 @@ public class MaterialButton$SavedState extends AbsSavedState
     boolean a;
     
     static {
-        CREATOR = (Parcelable$Creator)new adrl(2);
+        CREATOR = (Parcelable$Creator)new adtn(2);
     }
     
     public MaterialButton$SavedState(final Parcel parcel, final ClassLoader classLoader) {

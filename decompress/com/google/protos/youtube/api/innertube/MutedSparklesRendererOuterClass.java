@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class MutedSparklesRendererOuterClass
 {
-    public static final agzg mutedSparklesRenderer;
+    public static final ahbf mutedSparklesRenderer;
     
     static {
-        mutedSparklesRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amns.a, (MessageLite)amns.a, (agzn)null, 157152260, ahcm.k, (Class)amns.class);
+        mutedSparklesRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)ampx.a, (MessageLite)ampx.a, (ahbm)null, 157152260, ahek.k, (Class)ampx.class);
     }
     
     private MutedSparklesRendererOuterClass() {

@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class SaveImageToDeviceEndpointOuterClass
 {
-    public static final agzg saveImageToDeviceEndpoint;
+    public static final ahbf saveImageToDeviceEndpoint;
     
     static {
-        saveImageToDeviceEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)anua.a, (MessageLite)anua.a, (agzn)null, 254834803, ahcm.k, (Class)anua.class);
+        saveImageToDeviceEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)anwd.a, (MessageLite)anwd.a, (ahbm)null, 254834803, ahek.k, (Class)anwd.class);
     }
     
     private SaveImageToDeviceEndpointOuterClass() {

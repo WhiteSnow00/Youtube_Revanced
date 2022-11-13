@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class PollGetBroadcastConferenceCommandOuterClass
 {
-    public static final agzg pollGetBroadcastConferenceCommand;
+    public static final ahbf pollGetBroadcastConferenceCommand;
     
     static {
-        pollGetBroadcastConferenceCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)aniv.a, (MessageLite)aniv.a, (agzn)null, 420369855, ahcm.k, (Class)aniv.class);
+        pollGetBroadcastConferenceCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)anky.a, (MessageLite)anky.a, (ahbm)null, 420369855, ahek.k, (Class)anky.class);
     }
     
     private PollGetBroadcastConferenceCommandOuterClass() {

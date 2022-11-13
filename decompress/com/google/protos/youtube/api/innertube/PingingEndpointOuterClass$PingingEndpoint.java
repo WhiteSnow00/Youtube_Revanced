@@ -6,35 +6,35 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class PingingEndpointOuterClass$PingingEndpoint extends agzi implements ahax
+public final class PingingEndpointOuterClass$PingingEndpoint extends ahbh implements ahcw
 {
     public static final PingingEndpointOuterClass$PingingEndpoint a;
-    private static volatile ahbe d;
-    public static final agzg pingingEndpoint;
+    private static volatile ahdd d;
+    public static final ahbf pingingEndpoint;
     public int b;
     public boolean c;
     
     static {
         final PingingEndpointOuterClass$PingingEndpoint a2 = new PingingEndpointOuterClass$PingingEndpoint();
-        agzi.registerDefaultInstance((Class)PingingEndpointOuterClass$PingingEndpoint.class, (agzi)(a = a2));
-        pingingEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 98444775, ahcm.k, (Class)PingingEndpointOuterClass$PingingEndpoint.class);
+        ahbh.registerDefaultInstance((Class)PingingEndpointOuterClass$PingingEndpoint.class, (ahbh)(a = a2));
+        pingingEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 98444775, ahek.k, (Class)PingingEndpointOuterClass$PingingEndpoint.class);
     }
     
     private PingingEndpointOuterClass$PingingEndpoint() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = PingingEndpointOuterClass$PingingEndpoint.d) == null) {
                     synchronized (PingingEndpointOuterClass$PingingEndpoint.class) {
                         if (PingingEndpointOuterClass$PingingEndpoint.d == null) {
-                            PingingEndpointOuterClass$PingingEndpoint.d = (ahbe)new agzb((agzi)PingingEndpointOuterClass$PingingEndpoint.a);
+                            PingingEndpointOuterClass$PingingEndpoint.d = (ahdd)new ahba((ahbh)PingingEndpointOuterClass$PingingEndpoint.a);
                         }
                     }
                 }
@@ -44,7 +44,7 @@ public final class PingingEndpointOuterClass$PingingEndpoint extends agzi implem
                 return PingingEndpointOuterClass$PingingEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)PingingEndpointOuterClass$PingingEndpoint.a);
+                return new ahaz((ahbh)PingingEndpointOuterClass$PingingEndpoint.a);
             }
             case 3: {
                 return new PingingEndpointOuterClass$PingingEndpoint();

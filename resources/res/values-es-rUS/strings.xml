@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Volver al álbum</string>
     <string name="accessibility_navigation_back_button">Atrás</string>
     <string name="accessibility_new_content_available">Nuevo contenido disponible</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Videos nuevos</string>
     <string name="accessibility_next">Siguiente video</string>
     <string name="accessibility_offline_button_cancel">Detener descarga</string>
     <string name="accessibility_offline_button_cannot_save">No se puede descargar</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Control y supervisión de datos</string>
     <string name="data_saving_persistent_title">Ahorro de datos</string>
     <string name="data_saving_select_quality_every_video_switch_title">Seleccionar la calidad de cada video</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
     <string name="data_saving_snack_bar_action_button">Ver</string>
     <string name="data_saving_snack_bar_text">Este cambio afecta tu configuración de ahorro de datos.</string>
     <string name="data_saving_upload_wifi_only_switch_title">Subir solo con Wi-Fi</string>
@@ -735,7 +736,7 @@
     <string name="image_gallery_zero_state_text_secondary">Toma una foto y agrégala a una publicación</string>
     <string name="image_upload_error">No se pudo subir la foto. Vuelve a intentarlo.</string>
     <string name="image_upload_something_went_wrong">Se produjo un error.</string>
-    <string name="immersive_accessibility_player_overlay">Player, double tap to bring up player controls</string>
+    <string name="immersive_accessibility_player_overlay">Reproductor, presiona dos veces para que aparezcan los controles del reproductor</string>
     <string name="in_app_update_downloaded_message">Se descargó la actualización.</string>
     <string name="in_app_update_downloading_message">Descargando actualización…</string>
     <string name="in_app_update_restart_button">REINICIAR</string>
@@ -1458,7 +1459,7 @@
     <string name="pref_settings_video_quality_nonbeta">Preferencias de calidad de video</string>
     <string name="pref_smart_downloads_description">Ajusta el uso del almacenamiento para las descargas inteligentes</string>
     <string name="pref_smart_downloads_opted_in_title">Descargas inteligentes</string>
-    <string name="pref_smart_downloads_quality_title">Smart downloads quality</string>
+    <string name="pref_smart_downloads_quality_title">Calidad de las descargas inteligentes</string>
     <string name="pref_smart_downloads_summary">Descarga automáticamente videos recomendados a través de Wi-Fi</string>
     <string name="pref_subtitles_category">Subtítulos</string>
     <string name="pref_upload_policy_summary">Especificar preferencias de red para subir videos</string>
@@ -1808,7 +1809,7 @@
     <string name="shorts_segment_import_failed_text">Se produjo un error en la importación de segmentos</string>
     <string name="shorts_segment_import_timeout_text">Se agotó el tiempo de espera para la importación de segmentos</string>
     <string name="shorts_selected_duration_title">%1$d segundos</string>
-    <string name="shorts_sound_added_tooltip_time_x">Sound added to first %1$ds</string>
+    <string name="shorts_sound_added_tooltip_time_x">El sonido se agregó a los primeros %1$d s</string>
     <string name="shorts_speed_control_fast_label">Rápida</string>
     <string name="shorts_speed_control_fast_text">2X</string>
     <string name="shorts_speed_control_normal_label">Normal</string>

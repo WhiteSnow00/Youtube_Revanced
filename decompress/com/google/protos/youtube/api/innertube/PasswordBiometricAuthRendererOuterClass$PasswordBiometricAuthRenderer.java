@@ -6,41 +6,41 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer extends agzi implements ahax
+public final class PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer extends ahbh implements ahcw
 {
     public static final PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer a;
-    private static volatile ahbe f;
-    public static final agzg passwordBiometricAuthRenderer;
+    private static volatile ahdd f;
+    public static final ahbf passwordBiometricAuthRenderer;
     public int b;
-    public anss c;
-    public ajsq d;
+    public anuv c;
+    public ajut d;
     public boolean e;
     private byte g;
     
     static {
         final PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer a2 = new PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer();
-        agzi.registerDefaultInstance((Class)PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer.class, (agzi)(a = a2));
-        passwordBiometricAuthRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)a2, (MessageLite)a2, (agzn)null, 310393920, ahcm.k, (Class)PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer.class);
+        ahbh.registerDefaultInstance((Class)PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer.class, (ahbh)(a = a2));
+        passwordBiometricAuthRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)a2, (MessageLite)a2, (ahbm)null, 310393920, ahek.k, (Class)PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer.class);
     }
     
     private PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer() {
         this.g = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte g = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe f;
+                final ahdd f;
                 if ((f = PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer.f) == null) {
                     synchronized (PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer.class) {
                         if (PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer.f == null) {
-                            PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer.f = (ahbe)new agzb((agzi)PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer.a);
+                            PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer.f = (ahdd)new ahba((ahbh)PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer.a);
                         }
                     }
                 }
@@ -50,7 +50,7 @@ public final class PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuth
                 return PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer.a;
             }
             case 4: {
-                return new agza((agzi)PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer.a);
+                return new ahaz((ahbh)PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer.a);
             }
             case 3: {
                 return new PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuthRenderer();
@@ -60,9 +60,9 @@ public final class PasswordBiometricAuthRendererOuterClass$PasswordBiometricAuth
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    g = 0;
                 }
-                this.g = (byte)(b ? 1 : 0);
+                this.g = g;
                 return null;
             }
             case 0: {

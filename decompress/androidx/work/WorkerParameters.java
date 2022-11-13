@@ -13,15 +13,15 @@ import java.util.UUID;
 public final class WorkerParameters
 {
     public UUID a;
-    public cmh b;
+    public cmi b;
     public Set c;
     public int d;
     public Executor e;
-    public cnd f;
-    public cmk g;
-    public aja h;
+    public cne f;
+    public cml g;
+    public ajb h;
     
-    public WorkerParameters(final UUID a, final cmh b, final Collection collection, final int d, final Executor e, final aja h, final cnd f, final cmk g, final byte[] array, final byte[] array2, final byte[] array3) {
+    public WorkerParameters(final UUID a, final cmi b, final Collection collection, final int d, final Executor e, final ajb h, final cne f, final cml g, final byte[] array, final byte[] array2, final byte[] array3) {
         this.a = a;
         this.b = b;
         this.c = new HashSet(collection);

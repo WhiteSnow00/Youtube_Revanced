@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Buyela ku-albhamu</string>
     <string name="accessibility_navigation_back_button">Emuva</string>
     <string name="accessibility_new_content_available">Okuqukethwe okusha okutholakalayo</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Amavidiyo amasha</string>
     <string name="accessibility_next">Ividiyo elandelayo</string>
     <string name="accessibility_offline_button_cancel">Misa ukulanda</string>
     <string name="accessibility_offline_button_cannot_save">Ayikwazi ukulanda</string>
@@ -480,6 +480,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Ukuqapha nokulawula idatha</string>
     <string name="data_saving_persistent_title">Ukulondoloza idatha</string>
     <string name="data_saving_select_quality_every_video_switch_title">Khetha ikhwalithi yawo wonke amavidiyo</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Yehlisa ikhwalithi Yokudawuniloda ngendlela esmathi</string>
     <string name="data_saving_snack_bar_action_button">Buka</string>
     <string name="data_saving_snack_bar_text">Lolu shintsho luthinta amasethingi okulondoloza idatha yakho</string>
     <string name="data_saving_upload_wifi_only_switch_title">Layisha nge-Wi-Fi kuphela</string>

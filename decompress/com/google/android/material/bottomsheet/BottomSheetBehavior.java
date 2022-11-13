@@ -35,9 +35,9 @@ import android.util.SparseIntArray;
 import java.util.ArrayList;
 import java.lang.ref.WeakReference;
 
-public class BottomSheetBehavior extends aeh
+public class BottomSheetBehavior extends aei
 {
-    public aqh A;
+    public aqi A;
     int B;
     public int C;
     public WeakReference D;
@@ -54,9 +54,9 @@ public class BottomSheetBehavior extends aeh
     private ColorStateList O;
     private boolean P;
     private boolean Q;
-    private adwk R;
+    private adym R;
     private boolean S;
-    private final adrm T;
+    private final adto T;
     private ValueAnimator U;
     private boolean V;
     private int W;
@@ -67,10 +67,10 @@ public class BottomSheetBehavior extends aeh
     private VelocityTracker aa;
     private int ab;
     private Map ac;
-    private final aqg ad;
+    private final aqh ad;
     public int b;
     public int c;
-    public adwf d;
+    public adyh d;
     public int e;
     public int f;
     public int g;
@@ -99,7 +99,7 @@ public class BottomSheetBehavior extends aeh
         this.a = true;
         this.e = -1;
         this.f = -1;
-        this.T = new adrm(this);
+        this.T = new adto(this);
         this.t = 0.5f;
         this.v = -1.0f;
         this.y = true;
@@ -107,7 +107,7 @@ public class BottomSheetBehavior extends aeh
         this.Y = 0.1f;
         this.F = new ArrayList();
         this.I = new SparseIntArray();
-        this.ad = (aqg)new adri(this);
+        this.ad = (aqh)new adtk(this);
     }
     
     public BottomSheetBehavior(final Context context, final AttributeSet set) {
@@ -116,7 +116,7 @@ public class BottomSheetBehavior extends aeh
         this.a = true;
         this.e = -1;
         this.f = -1;
-        this.T = new adrm(this);
+        this.T = new adto(this);
         this.t = 0.5f;
         this.v = -1.0f;
         this.y = true;
@@ -124,17 +124,17 @@ public class BottomSheetBehavior extends aeh
         this.Y = 0.1f;
         this.F = new ArrayList();
         this.I = new SparseIntArray();
-        this.ad = (aqg)new adri(this);
-        this.N = context.getResources().getDimensionPixelSize(2131168149);
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, adrs.a);
+        this.ad = (aqh)new adtk(this);
+        this.N = context.getResources().getDimensionPixelSize(2131168148);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, adtu.a);
         if (obtainStyledAttributes.hasValue(3)) {
-            this.O = adwd.f(context, obtainStyledAttributes, 3);
+            this.O = adds.z(context, obtainStyledAttributes, 3);
         }
         if (obtainStyledAttributes.hasValue(21)) {
-            this.R = adwk.c(context, set, 2130968832, 2132084671).a();
+            this.R = adym.c(context, set, 2130968832, 2132084672).a();
         }
         if (this.R != null) {
-            (this.d = new adwf(this.R)).m(context);
+            (this.d = new adyh(this.R)).m(context);
             final ColorStateList o = this.O;
             if (o != null) {
                 this.d.o(o);
@@ -146,7 +146,7 @@ public class BottomSheetBehavior extends aeh
             }
         }
         (this.U = ValueAnimator.ofFloat(new float[] { 0.0f, 1.0f })).setDuration(500L);
-        this.U.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new adrg(this, 0));
+        this.U.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new adti(this, 0));
         this.v = obtainStyledAttributes.getDimension(2, -1.0f);
         if (obtainStyledAttributes.hasValue(0)) {
             this.e = obtainStyledAttributes.getDimensionPixelSize(0, -1);
@@ -214,8 +214,8 @@ public class BottomSheetBehavior extends aeh
         return this.C;
     }
     
-    private final apa P(final int n) {
-        return (apa)new adrj(this, n);
+    private final apb P(final int n) {
+        return (apb)new adtl(this, n);
     }
     
     private final void Q() {
@@ -231,8 +231,8 @@ public class BottomSheetBehavior extends aeh
         this.s = (int)(this.C * (1.0f - this.t));
     }
     
-    private final void S(final View view, final aok aok, final int n) {
-        ana.av(view, aok, this.P(n));
+    private final void S(final View view, final aol aol, final int n) {
+        anb.av(view, aol, this.P(n));
     }
     
     private final void T() {
@@ -249,41 +249,41 @@ public class BottomSheetBehavior extends aeh
         if (d != null) {
             final View view = (View)d.get();
             if (view != null) {
-                ana.K(view, 524288);
-                ana.K(view, 262144);
-                ana.K(view, 1048576);
+                anb.K(view, 524288);
+                anb.K(view, 262144);
+                anb.K(view, 1048576);
                 final int value = this.I.get(0, -1);
                 if (value != -1) {
-                    ana.K(view, value);
+                    anb.K(view, value);
                     this.I.delete(0);
                 }
                 final boolean a = this.a;
                 int n = 6;
-                Label_0323: {
+                Label_0334: {
                     if (!a && this.z != 6) {
                         final SparseIntArray i = this.I;
                         final String string = view.getResources().getString(2132017566);
-                        final apa p = this.P(6);
-                        final List a2 = ana.A(view);
-                    Label_0294:
+                        final apb p = this.P(6);
+                        final List a2 = anb.A(view);
+                    Label_0303:
                         while (true) {
                             for (int j = 0; j < a2.size(); ++j) {
-                                if (TextUtils.equals((CharSequence)string, ((aok)a2.get(j)).b())) {
+                                if (TextUtils.equals((CharSequence)string, ((aol)a2.get(j)).b())) {
                                     final int a3 = a2.get(j).a();
                                     if (a3 != -1) {
-                                        ana.B(view, new aok((Object)null, a3, (CharSequence)string, p, (Class)null));
+                                        anb.B(view, new aol((Object)null, a3, (CharSequence)string, p, (Class)null));
                                     }
                                     i.put(0, a3);
-                                    break Label_0323;
+                                    break Label_0334;
                                 }
                             }
                             int a3 = -1;
                             int n2 = 0;
                             while (true) {
-                                final int[] a4 = ana.a;
+                                final int[] a4 = anb.a;
                                 final int length = a4.length;
                                 if (n2 >= 32 || a3 != -1) {
-                                    continue Label_0294;
+                                    continue Label_0303;
                                 }
                                 final int n3 = a4[n2];
                                 int k = 0;
@@ -303,7 +303,7 @@ public class BottomSheetBehavior extends aeh
                     }
                 }
                 if (this.w && this.z != 5) {
-                    this.S(view, aok.h, 5);
+                    this.S(view, aol.h, 5);
                 }
                 final int z = this.z;
                 if (z != 3) {
@@ -311,19 +311,19 @@ public class BottomSheetBehavior extends aeh
                         if (this.a) {
                             n = 3;
                         }
-                        this.S(view, aok.f, n);
+                        this.S(view, aol.f, n);
                         return;
                     }
                     if (z == 6) {
-                        this.S(view, aok.g, 4);
-                        this.S(view, aok.f, 3);
+                        this.S(view, aol.g, 4);
+                        this.S(view, aol.f, 3);
                     }
                 }
                 else {
                     if (this.a) {
                         n = 4;
                     }
-                    this.S(view, aok.g, n);
+                    this.S(view, aol.g, n);
                 }
             }
         }
@@ -356,7 +356,7 @@ public class BottomSheetBehavior extends aeh
                     if (u2 != null && u2.isRunning()) {
                         this.U.cancel();
                     }
-                    final adwf d = this.d;
+                    final adyh d = this.d;
                     float n4 = n2;
                     if (!this.S) {
                         n4 = 1.0f;
@@ -402,7 +402,7 @@ public class BottomSheetBehavior extends aeh
     }
     
     private final boolean X() {
-        final aqh a = this.A;
+        final aqi a = this.A;
         boolean b = false;
         if (a != null) {
             if (!this.y) {
@@ -418,28 +418,29 @@ public class BottomSheetBehavior extends aeh
         return b;
     }
     
-    private static final int Y(int mode, int n, int min, final int n2) {
-        n = ViewGroup.getChildMeasureSpec(mode, n, n2);
-        if (min == -1) {
-            return n;
+    private static final int Y(int n, int n2, final int n3, final int n4) {
+        n2 = ViewGroup.getChildMeasureSpec(n, n2, n4);
+        if (n3 == -1) {
+            return n2;
         }
-        mode = View$MeasureSpec.getMode(n);
-        n = View$MeasureSpec.getSize(n);
-        if (mode != 1073741824) {
-            if (n != 0) {
-                min = Math.min(n, min);
+        n = View$MeasureSpec.getMode(n2);
+        n2 = View$MeasureSpec.getSize(n2);
+        if (n != 1073741824) {
+            n = n3;
+            if (n2 != 0) {
+                n = Math.min(n2, n3);
             }
-            return View$MeasureSpec.makeMeasureSpec(min, Integer.MIN_VALUE);
+            return View$MeasureSpec.makeMeasureSpec(n, Integer.MIN_VALUE);
         }
-        return View$MeasureSpec.makeMeasureSpec(Math.min(n, min), 1073741824);
+        return View$MeasureSpec.makeMeasureSpec(Math.min(n2, n3), 1073741824);
     }
     
     public static BottomSheetBehavior y(final View view) {
         final ViewGroup$LayoutParams layoutParams = view.getLayoutParams();
-        if (!(layoutParams instanceof aej)) {
+        if (!(layoutParams instanceof aek)) {
             throw new IllegalArgumentException("The view is not a child of CoordinatorLayout");
         }
-        final aeh a = ((aej)layoutParams).a;
+        final aei a = ((aek)layoutParams).a;
         if (a instanceof BottomSheetBehavior) {
             return (BottomSheetBehavior)a;
         }
@@ -454,13 +455,15 @@ public class BottomSheetBehavior extends aeh
             float n2;
             if (i <= u && u != this.w()) {
                 final int u2 = this.u;
+                final int w = this.w();
                 n = (float)(u2 - i);
-                n2 = (float)(u2 - this.w());
+                n2 = (float)(u2 - w);
             }
             else {
                 final int u3 = this.u;
+                final int c = this.C;
                 n = (float)(u3 - i);
-                n2 = (float)(this.C - u3);
+                n2 = (float)(c - u3);
             }
             final float n3 = n / n2;
             for (i = 0; i < this.F.size(); ++i) {
@@ -469,8 +472,8 @@ public class BottomSheetBehavior extends aeh
         }
     }
     
-    public final void B(final adrk adrk) {
-        this.F.remove(adrk);
+    public final void B(final adtm adtm) {
+        this.F.remove(adtm);
     }
     
     public final void C(final int q) {
@@ -559,13 +562,13 @@ public class BottomSheetBehavior extends aeh
             return;
         }
         final View view = (View)this.D.get();
-        final wqx wqx = new wqx(this, view, n2, 8);
+        final wsx wsx = new wsx(this, view, n2, 8);
         final ViewParent parent = view.getParent();
-        if (parent != null && parent.isLayoutRequested() && ana.am(view)) {
-            view.post((Runnable)wqx);
+        if (parent != null && parent.isLayoutRequested() && anb.am(view)) {
+            view.post((Runnable)wsx);
             return;
         }
-        ((Runnable)wqx).run();
+        ((Runnable)wsx).run();
     }
     
     public final void I(int z) {
@@ -590,7 +593,7 @@ public class BottomSheetBehavior extends aeh
             return;
         }
         final int n3 = 0;
-        Label_0132: {
+        Label_0133: {
             if (n2 == 3) {
                 this.W(true);
                 z = n2;
@@ -598,7 +601,7 @@ public class BottomSheetBehavior extends aeh
             else {
                 if (n2 != 6 && n2 != 5) {
                     if ((z = n2) != 4) {
-                        break Label_0132;
+                        break Label_0133;
                     }
                     z = n;
                 }
@@ -610,14 +613,14 @@ public class BottomSheetBehavior extends aeh
         }
         this.V(z, true);
         for (int i = n3; i < this.F.size(); ++i) {
-            ((adrk)this.F.get(i)).b(view, z);
+            ((adtm)this.F.get(i)).b(view, z);
         }
         this.U();
     }
     
     public final void J(final View view, final int n, final boolean b) {
         final int o = this.O(n);
-        final aqh a = this.A;
+        final aqi a = this.A;
         Label_0077: {
             if (a != null) {
                 if (b) {
@@ -658,7 +661,7 @@ public class BottomSheetBehavior extends aeh
     }
     
     public final boolean h(final CoordinatorLayout coordinatorLayout, final View view, int i) {
-        if (ana.ai((View)coordinatorLayout) && !ana.ai(view)) {
+        if (anb.ai((View)coordinatorLayout) && !anb.ai(view)) {
             view.setFitsSystemWindows(true);
         }
         final WeakReference d = this.D;
@@ -689,38 +692,38 @@ public class BottomSheetBehavior extends aeh
                         }
                     }
                 }
-                ana.Z(view, (alv)new aduh(new adrh(this, b2), new aduj(ana.j(view), view.getPaddingTop(), ana.i(view), view.getPaddingBottom()), 0));
-                if (ana.am(view)) {
-                    ana.L(view);
+                anb.Z(view, (alw)new adwj(new adtj(this, b2), new adwl(anb.j(view), view.getPaddingTop(), anb.i(view), view.getPaddingBottom()), 0));
+                if (anb.am(view)) {
+                    anb.L(view);
                 }
                 else {
-                    view.addOnAttachStateChangeListener((View$OnAttachStateChangeListener)new adui());
+                    view.addOnAttachStateChangeListener((View$OnAttachStateChangeListener)new adwk());
                 }
             }
             this.D = new WeakReference((T)view);
-            final adwf d2 = this.d;
+            final adyh d2 = this.d;
             if (d2 != null) {
-                ana.Q(view, (Drawable)d2);
-                final adwf d3 = this.d;
+                anb.Q(view, (Drawable)d2);
+                final adyh d3 = this.d;
                 float n2;
                 if ((n2 = this.v) == -1.0f) {
-                    n2 = ana.a(view);
+                    n2 = anb.a(view);
                 }
                 d3.n(n2);
             }
             else {
                 final ColorStateList o = this.O;
                 if (o != null) {
-                    ana.R(view, o);
+                    anb.R(view, o);
                 }
             }
             this.U();
-            if (ana.d(view) == 0) {
-                ana.X(view, 1);
+            if (anb.d(view) == 0) {
+                anb.X(view, 1);
             }
         }
         if (this.A == null) {
-            this.A = aqh.b((ViewGroup)coordinatorLayout, this.ad);
+            this.A = aqi.b((ViewGroup)coordinatorLayout, this.ad);
         }
         final int top = view.getTop();
         coordinatorLayout.k(view, i);
@@ -746,19 +749,19 @@ public class BottomSheetBehavior extends aeh
         this.Q();
         i = this.z;
         if (i == 3) {
-            ana.F(view, this.w());
+            anb.F(view, this.w());
         }
         else if (i == 6) {
-            ana.F(view, this.s);
+            anb.F(view, this.s);
         }
         else if (this.w && i == 5) {
-            ana.F(view, this.C);
+            anb.F(view, this.C);
         }
         else if (i == 4) {
-            ana.F(view, this.u);
+            anb.F(view, this.u);
         }
         else if (i == 1 || i == 2) {
-            ana.F(view, top - view.getTop());
+            anb.F(view, top - view.getTop());
         }
         this.V(this.z, false);
         this.E = new WeakReference((T)this.x(view));
@@ -814,7 +817,7 @@ public class BottomSheetBehavior extends aeh
         this.aa.addMovement(motionEvent);
         if (this.X() && actionMasked == 2 && !this.V) {
             final float abs = Math.abs(this.ab - motionEvent.getY());
-            final aqh a = this.A;
+            final aqi a = this.A;
             if (abs > a.b) {
                 a.e(view, motionEvent.getPointerId(motionEvent.getActionIndex()));
             }
@@ -853,7 +856,7 @@ public class BottomSheetBehavior extends aeh
         this.z = 4;
     }
     
-    public void qC(final CoordinatorLayout coordinatorLayout, final View view, final View view2, int top) {
+    public void qH(final CoordinatorLayout coordinatorLayout, final View view, final View view2, int top) {
         final int top2 = view.getTop();
         final int w = this.w();
         top = 3;
@@ -926,12 +929,12 @@ public class BottomSheetBehavior extends aeh
         }
     }
     
-    public final void qD() {
+    public final void qI() {
         this.D = null;
         this.A = null;
     }
     
-    public boolean qF(final CoordinatorLayout coordinatorLayout, View view, final MotionEvent motionEvent) {
+    public boolean qK(final CoordinatorLayout coordinatorLayout, View view, final MotionEvent motionEvent) {
         if (view.isShown() && this.y) {
             int actionMasked;
             if ((actionMasked = motionEvent.getActionMasked()) == 0) {
@@ -972,7 +975,7 @@ public class BottomSheetBehavior extends aeh
                 this.V = (this.G == -1 && !coordinatorLayout.l(view, n, this.ab));
             }
             if (!this.V) {
-                final aqh a = this.A;
+                final aqi a = this.A;
                 if (a != null) {
                     if (a.k(motionEvent)) {
                         return true;
@@ -994,8 +997,8 @@ public class BottomSheetBehavior extends aeh
         return (Parcelable)new BottomSheetBehavior$SavedState((Parcelable)View$BaseSavedState.EMPTY_STATE, this);
     }
     
-    public void sm(final CoordinatorLayout coordinatorLayout, final View view, final View view2, int top, final int w, final int[] array, int n) {
-        if (n == 1) {
+    public void ss(final CoordinatorLayout coordinatorLayout, final View view, final View view2, int n, final int w, final int[] array, int u) {
+        if (u == 1) {
             return;
         }
         final WeakReference e = this.E;
@@ -1007,34 +1010,34 @@ public class BottomSheetBehavior extends aeh
             view3 = null;
         }
         if (view2 == view3) {
-            top = view.getTop();
+            final int top = view.getTop();
             n = top - w;
             if (w > 0) {
                 if (n < this.w()) {
-                    top -= this.w();
-                    ana.F(view, -(array[1] = top));
+                    n = top - this.w();
+                    anb.F(view, -(array[1] = n));
                     this.I(3);
                 }
                 else {
                     if (!this.y) {
                         return;
                     }
-                    ana.F(view, -(array[1] = w));
+                    anb.F(view, -(array[1] = w));
                     this.I(1);
                 }
             }
             else if (w < 0 && !view2.canScrollVertically(-1)) {
-                final int u = this.u;
+                u = this.u;
                 if (n > u && !this.K()) {
-                    top -= u;
-                    ana.F(view, -(array[1] = top));
+                    n = top - u;
+                    anb.F(view, -(array[1] = n));
                     this.I(4);
                 }
                 else {
                     if (!this.y) {
                         return;
                     }
-                    ana.F(view, -(array[1] = w));
+                    anb.F(view, -(array[1] = w));
                     this.I(1);
                 }
             }
@@ -1044,10 +1047,10 @@ public class BottomSheetBehavior extends aeh
         }
     }
     
-    public final void sn(final CoordinatorLayout coordinatorLayout, final View view, final View view2, final int n, final int n2, final int n3, final int n4, final int n5, final int[] array) {
+    public final void st(final CoordinatorLayout coordinatorLayout, final View view, final View view2, final int n, final int n2, final int n3, final int n4, final int n5, final int[] array) {
     }
     
-    public final void so(final aej aej) {
+    public final void su(final aek aek) {
         this.D = null;
         this.A = null;
     }
@@ -1075,7 +1078,7 @@ public class BottomSheetBehavior extends aeh
         if (view.getVisibility() != 0) {
             return null;
         }
-        if (ana.aq(view)) {
+        if (anb.aq(view)) {
             return view;
         }
         if (view instanceof ViewGroup) {
@@ -1090,9 +1093,9 @@ public class BottomSheetBehavior extends aeh
         return null;
     }
     
-    public final void z(final adrk adrk) {
-        if (!this.F.contains(adrk)) {
-            this.F.add(adrk);
+    public final void z(final adtm adtm) {
+        if (!this.F.contains(adtm)) {
+            this.F.add(adtm);
         }
     }
 }

@@ -11,11 +11,15 @@ import android.app.Activity;
 public final class SidecarWindowBackend$WindowLayoutChangeCallbackWrapper
 {
     private final Activity activity;
-    private final akn callback;
+    private final ako callback;
     private final Executor executor;
     private WindowLayoutInfo lastInfo;
     
-    public SidecarWindowBackend$WindowLayoutChangeCallbackWrapper(final Activity activity, final Executor executor, final akn callback) {
+    public static void $r8$lambda$1Fzggiz8q3lTHWyU2mIB89dvBzk(final SidecarWindowBackend$WindowLayoutChangeCallbackWrapper sidecarWindowBackend$WindowLayoutChangeCallbackWrapper, final WindowLayoutInfo windowLayoutInfo) {
+        accept$lambda$0(sidecarWindowBackend$WindowLayoutChangeCallbackWrapper, windowLayoutInfo);
+    }
+    
+    public SidecarWindowBackend$WindowLayoutChangeCallbackWrapper(final Activity activity, final Executor executor, final ako callback) {
         activity.getClass();
         executor.getClass();
         callback.getClass();
@@ -40,7 +44,7 @@ public final class SidecarWindowBackend$WindowLayoutChangeCallbackWrapper
         return this.activity;
     }
     
-    public final akn getCallback() {
+    public final ako getCallback() {
         return this.callback;
     }
     

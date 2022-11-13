@@ -9,112 +9,136 @@ import j$.util.Optional;
 import java.util.concurrent.atomic.AtomicReference;
 import java.lang.ref.WeakReference;
 
-public class AccountLinkingController implements tfh
+public class AccountLinkingController implements thl
 {
-    public final vbq a;
-    public asic b;
+    public final vdr a;
+    public asir b;
     public WeakReference c;
-    public final atir d;
-    private final jdt e;
-    private asic f;
-    private asic g;
+    public final atjm d;
+    private final jet e;
+    private asir f;
+    private asir g;
     
-    public AccountLinkingController(final vbq a, final jdt e) {
+    public AccountLinkingController(final vdr a, final jet e) {
         this.c = new WeakReference(null);
         this.a = a;
         this.e = e;
-        this.d = atir.e();
+        this.d = atjm.e();
+    }
+    
+    public final thh g() {
+        return thh.b;
     }
     
     public final void j() {
-        final adof adof = (adof)this.c.get();
-        if (adof != null) {
-            adof.a((ahhe)null);
+        final adqh adqh = (adqh)this.c.get();
+        if (adqh != null) {
+            adqh.a((ahjc)null);
         }
-        final asic b = this.b;
+        final asir b = this.b;
         if (b != null) {
-            asjg.b((AtomicReference)b);
+            asjv.b((AtomicReference)b);
             this.b = null;
         }
-        this.d.tr((Object)new sin(Optional.empty()));
+        this.d.tu((Object)new skt(Optional.empty()));
     }
     
     public final void k(final boolean c) {
-        final adof adof = (adof)this.c.get();
-        final abtt q = this.e.o().q();
+        final adqh adqh = (adqh)this.c.get();
+        final abvx q = this.e.n().q();
         Optional optional;
         if (q == null) {
-            trn.b("failed to get presence menu data: no current playback");
+            ttr.b("failed to get presence menu data: no current playback");
             optional = Optional.empty();
         }
         else {
             final PlayerResponseModel d = q.d();
             if (d == null) {
-                trn.b("failed to get presence menu data: no player response in current playback");
+                ttr.b("failed to get presence menu data: no player response in current playback");
                 optional = Optional.empty();
             }
             else {
-                final ahhb b = d.b();
+                final ahiz b = d.b();
                 if (b != null && (b.b & 0x8) != 0x0) {
-                    ahhc ahhc;
-                    if ((ahhc = b.e) == null) {
-                        ahhc = ahhc.a;
+                    ahja ahja;
+                    if ((ahja = b.e) == null) {
+                        ahja = ahja.a;
                     }
-                    optional = Optional.of((Object)ahhc);
+                    optional = Optional.of((Object)ahja);
                 }
                 else {
-                    trn.b("failed to get presence menu data: no AL config in player response");
+                    ttr.b("failed to get presence menu data: no AL config in player response");
                     optional = Optional.empty();
                 }
             }
         }
-        final sin sin = new sin(optional);
+        final skt skt = new skt(optional);
         boolean a;
         final boolean b2 = a = false;
         if (c) {
             a = b2;
-            if (adof != null) {
+            if (adqh != null) {
                 a = b2;
-                if (((Optional)sin.b).isPresent()) {
+                if (((Optional)skt.b).isPresent()) {
                     a = true;
                 }
             }
         }
-        sin.a = a;
-        this.d.tr((Object)sin);
-        if (adof == null) {
+        skt.a = a;
+        this.d.tu((Object)skt);
+        if (adqh == null) {
             return;
         }
-        if (((Optional)sin.b).isPresent()) {
-            final agza builder = ((agzi)ahhe.a).createBuilder();
-            final agza builder2 = ((agzi)ahhd.a).createBuilder();
+        if (((Optional)skt.b).isPresent()) {
+            final ahaz builder = ((ahbh)ahjc.a).createBuilder();
+            final ahaz builder2 = ((ahbh)ahjb.a).createBuilder();
             builder2.copyOnWrite();
-            final ahhd ahhd = (ahhd)builder2.instance;
-            ahhd.b |= 0x1;
-            ahhd.c = c;
+            final ahjb ahjb = (ahjb)builder2.instance;
+            ahjb.b |= 0x1;
+            ahjb.c = c;
             builder.copyOnWrite();
-            final ahhe ahhe = (ahhe)builder.instance;
-            final ahhd ahhd2 = (ahhd)builder2.build();
-            ahhd2.getClass();
-            final agzy b3 = ahhe.b;
+            final ahjc ahjc = (ahjc)builder.instance;
+            final ahjb ahjb2 = (ahjb)builder2.build();
+            ahjb2.getClass();
+            final ahbx b3 = ahjc.b;
             if (!b3.c()) {
-                ahhe.b = agzi.mutableCopy(b3);
+                ahjc.b = ahbh.mutableCopy(b3);
             }
-            ahhe.b.add(ahhd2);
-            adof.a((ahhe)builder.build());
+            ahjc.b.add((Object)ahjb2);
+            adqh.a((ahjc)builder.build());
             return;
         }
-        adof.a((ahhe)null);
+        adqh.a((ahjc)null);
     }
     
-    public final void oS(final aum aum) {
-        this.f = this.e.w().am((asix)new gly(this, 10), (asix)gpa.e);
-        this.g = this.e.H().am((asix)new gly(this, 11), (asix)gpa.e);
+    public final void lW(final aun aun) {
     }
     
-    public final void oW(final aum aum) {
-        athh.f((AtomicReference)this.f);
-        athh.f((AtomicReference)this.g);
+    public final void mM(final aun aun) {
+    }
+    
+    public final void mq(final aun aun) {
+    }
+    
+    public final void my(final aun aun) {
+    }
+    
+    public final void oS(final aun aun) {
+        this.f = this.e.v().an((asjm)new gmf(this, 11), (asjm)gpg.e);
+        this.g = this.e.G().an((asjm)new gmf(this, 12), (asjm)gpg.e);
+    }
+    
+    public final void oT() {
+        tfg.c((thl)this);
+    }
+    
+    public final void oW() {
+        tfg.b((thl)this);
+    }
+    
+    public final void oX(final aun aun) {
+        athz.f((AtomicReference)this.f);
+        athz.f((AtomicReference)this.g);
         this.j();
     }
 }

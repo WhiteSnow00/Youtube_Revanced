@@ -6,44 +6,44 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint extends agzi implements ahax
+public final class PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint extends ahbh implements ahcw
 {
     public static final PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint a;
-    private static volatile ahbe e;
-    public static final agzg performCommentActionEndpoint;
+    private static volatile ahdd e;
+    public static final ahbf performCommentActionEndpoint;
     public String b;
-    public agzy c;
-    public agzy d;
+    public ahbx c;
+    public ahbx d;
     private int f;
     private byte g;
     
     static {
         final PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint a2 = new PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint();
-        agzi.registerDefaultInstance((Class)PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.class, (agzi)(a = a2));
-        performCommentActionEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 65929205, ahcm.k, (Class)PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.class);
+        ahbh.registerDefaultInstance((Class)PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.class, (ahbh)(a = a2));
+        performCommentActionEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 65929205, ahek.k, (Class)PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.class);
     }
     
     private PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint() {
         this.g = 2;
         this.b = "";
-        this.c = agzi.emptyProtobufList();
+        this.c = ahbh.emptyProtobufList();
         this.d = emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte g = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe e;
+                final ahdd e;
                 if ((e = PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.e) == null) {
                     synchronized (PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.class) {
                         if (PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.e == null) {
-                            PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.e = (ahbe)new agzb((agzi)PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.a);
+                            PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.e = (ahdd)new ahba((ahbh)PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.a);
                         }
                     }
                 }
@@ -53,19 +53,19 @@ public final class PerformCommentActionEndpointOuterClass$PerformCommentActionEn
                 return PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.a);
+                return new ahaz((ahbh)PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.a);
             }
             case 3: {
                 return new PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint();
             }
             case 2: {
-                return newMessageInfo((MessageLite)PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.a, "\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0002\u0001\u0001\u1008\u0000\u0002\u041b\u0003\u001a", new Object[] { "f", "b", "d", aioe.class, "c" });
+                return newMessageInfo((MessageLite)PerformCommentActionEndpointOuterClass$PerformCommentActionEndpoint.a, "\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0002\u0001\u0001\u1008\u0000\u0002\u041b\u0003\u001a", new Object[] { "f", "b", "d", aiqj.class, "c" });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    g = 0;
                 }
-                this.g = (byte)(b ? 1 : 0);
+                this.g = g;
                 return null;
             }
             case 0: {

@@ -28,7 +28,7 @@ import android.graphics.PorterDuff$Mode;
 import android.content.res.ColorStateList;
 import android.graphics.Rect;
 
-public class FloatingActionButton extends aduk implements adsl, adwv, aeg
+public class FloatingActionButton extends adwm implements adun, adyx, aeh
 {
     public int a;
     public boolean b;
@@ -41,9 +41,9 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
     private int j;
     private int k;
     private final Rect l;
-    private adtd m;
-    private final adxi n;
-    private final arcq o;
+    private advf m;
+    private final adzk n;
+    private final arfe o;
     
     public FloatingActionButton(final Context context) {
         this(context, null);
@@ -54,14 +54,14 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
     }
     
     public FloatingActionButton(final Context context, final AttributeSet set, int a) {
-        super(adyy.a(context, set, a, 2132084673), set, a);
+        super(aeba.a(context, set, a, 2132084674), set, a);
         this.c = new Rect();
         this.l = new Rect();
         final Context context2 = this.getContext();
-        final TypedArray a2 = aduf.a(context2, set, adth.b, a, 2132084673, new int[0]);
-        this.e = adwd.f(context2, a2, 1);
-        this.f = adwd.q(a2.getInt(2, -1), (PorterDuff$Mode)null);
-        this.g = adwd.f(context2, a2, 12);
+        final TypedArray a2 = adwh.a(context2, set, advj.b, a, 2132084674, new int[0]);
+        this.e = adds.z(context2, a2, 1);
+        this.f = adds.K(a2.getInt(2, -1), (PorterDuff$Mode)null);
+        this.g = adds.z(context2, a2, 12);
         this.i = a2.getInt(7, -1);
         this.j = a2.getDimensionPixelSize(6, 0);
         this.h = a2.getDimensionPixelSize(3, 0);
@@ -69,82 +69,83 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
         final float dimension2 = a2.getDimension(9, 0.0f);
         final float dimension3 = a2.getDimension(11, 0.0f);
         this.b = a2.getBoolean(16, false);
-        final int dimensionPixelSize = this.getResources().getDimensionPixelSize(2131168115);
+        final int dimensionPixelSize = this.getResources().getDimensionPixelSize(2131168114);
         final int dimensionPixelSize2 = a2.getDimensionPixelSize(10, 0);
         this.k = dimensionPixelSize2;
-        final adtd i = this.i();
+        final advf i = this.i();
         if (i.z != dimensionPixelSize2) {
             i.z = dimensionPixelSize2;
             i.i();
         }
-        final adqg a3 = adqg.a(context2, a2, 15);
-        final adqg a4 = adqg.a(context2, a2, 8);
-        final adwk a5 = adwk.d(context2, set, a, 2132084673, adwk.a).a();
+        final adsi a3 = adsi.a(context2, a2, 15);
+        final adsi a4 = adsi.a(context2, a2, 8);
+        final adym a5 = adym.d(context2, set, a, 2132084674, adym.a).a();
         final boolean boolean1 = a2.getBoolean(5, false);
         this.setEnabled(a2.getBoolean(0, true));
         a2.recycle();
-        (this.o = new arcq((ImageView)this)).n(set, a);
-        this.n = new adxi((adsl)this);
+        (this.o = new arfe((ImageView)this)).n(set, a);
+        this.n = new adzk((adun)this);
         this.i().h(a5);
-        final adtd j = this.i();
+        final advf j = this.i();
         final ColorStateList e = this.e;
         final PorterDuff$Mode f = this.f;
         final ColorStateList g = this.g;
         final int h = this.h;
-        final adtf adtf = (adtf)j;
-        final adwk l = adtf.l;
-        aff.k((Object)l);
-        (adtf.m = new adte(l)).setTintList(e);
+        final advh advh = (advh)j;
+        final adym l = advh.l;
+        afg.k(l);
+        (advh.m = (adyh)new advg(l)).setTintList(e);
         if (f != null) {
-            adtf.m.setTintMode(f);
+            advh.m.setTintMode(f);
         }
-        adtf.m.m(adtf.B.getContext());
+        advh.m.m(advh.B.getContext());
         Object m2;
         if (h > 0) {
-            final Context context3 = adtf.B.getContext();
-            final adwk k = adtf.l;
-            aff.k((Object)k);
-            final adsn o = new adsn(k);
-            a = agx.a(context3, 2131099873);
-            final int a6 = agx.a(context3, 2131099872);
-            final int a7 = agx.a(context3, 2131099870);
-            final int a8 = agx.a(context3, 2131099871);
-            o.c = a;
-            o.d = a6;
+            final Context context3 = advh.B.getContext();
+            final adym k = advh.l;
+            afg.k(k);
+            final adup o = new adup(k);
+            final int a6 = agy.a(context3, 2131099873);
+            a = agy.a(context3, 2131099872);
+            final int a7 = agy.a(context3, 2131099870);
+            final int a8 = agy.a(context3, 2131099871);
+            o.c = a6;
+            o.d = a;
             o.e = a7;
             o.f = a8;
-            final float b = (float)h;
-            if (o.b != b) {
-                o.b = b;
-                o.a.setStrokeWidth(b * 1.3333f);
+            final float b = o.b;
+            final float b2 = (float)h;
+            if (b != b2) {
+                o.b = b2;
+                o.a.setStrokeWidth(b2 * 1.3333f);
                 o.g = true;
                 o.invalidateSelf();
             }
             o.b(e);
-            adtf.o = o;
-            final adsn o2 = adtf.o;
-            aff.k((Object)o2);
-            final adwf m = adtf.m;
-            aff.k((Object)m);
+            advh.o = o;
+            final adup o2 = advh.o;
+            afg.k(o2);
+            final adyh m = advh.m;
+            afg.k(m);
             m2 = new LayerDrawable(new Drawable[] { (Drawable)o2, (Drawable)m });
         }
         else {
-            adtf.o = null;
-            m2 = adtf.m;
+            advh.o = null;
+            m2 = advh.m;
         }
-        adtf.n = (Drawable)new RippleDrawable(advx.b(g), (Drawable)m2, (Drawable)null);
-        adtf.p = adtf.n;
+        advh.n = (Drawable)new RippleDrawable(adxz.b(g), (Drawable)m2, (Drawable)null);
+        advh.p = advh.n;
         this.i().u = dimensionPixelSize;
-        final adtd i2 = this.i();
+        final advf i2 = this.i();
         if (i2.r != dimension) {
             i2.f(i2.r = dimension, i2.s, i2.t);
         }
-        final adtd i3 = this.i();
+        final advf i3 = this.i();
         if (i3.s != dimension2) {
             i3.s = dimension2;
             i3.f(i3.r, dimension2, i3.t);
         }
-        final adtd i4 = this.i();
+        final advf i4 = this.i();
         if (i4.t != dimension3) {
             i4.t = dimension3;
             i4.f(i4.r, i4.s, dimension3);
@@ -153,6 +154,10 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
         this.i().x = a4;
         this.i().q = boolean1;
         this.setScaleType(ImageView$ScaleType.MATRIX);
+    }
+    
+    public static void c(final FloatingActionButton floatingActionButton, final Drawable backgroundDrawable) {
+        floatingActionButton.setBackgroundDrawable(backgroundDrawable);
     }
     
     private final int h(int n) {
@@ -176,15 +181,15 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
         return resources.getDimensionPixelSize(2131166262);
     }
     
-    private final adtd i() {
+    private final advf i() {
         if (this.m == null) {
-            this.m = (adtd)new adtf(this, new aepj(this), (byte[])null, (byte[])null, (byte[])null);
+            this.m = (advf)new advh(this, new afhd(this), (byte[])null, (byte[])null);
         }
         return this.m;
     }
     
-    public final aeh a() {
-        return (aeh)new FloatingActionButton$Behavior();
+    public final aei a() {
+        return (aei)new FloatingActionButton$Behavior();
     }
     
     public final int b() {
@@ -198,7 +203,7 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
     }
     
     final void e() {
-        final adtd i = this.i();
+        final advf i = this.i();
         Label_0035: {
             if (i.B.getVisibility() == 0) {
                 if (i.A != 1) {
@@ -215,15 +220,15 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
             v.cancel();
         }
         if (i.m()) {
-            final adqg x = i.x;
+            final adsi x = i.x;
             AnimatorSet set;
             if (x != null) {
                 set = i.b(x, 0.0f, 0.0f, 0.0f);
             }
             else {
-                set = i.c(0.0f, 0.4f, 0.4f, adtd.d, adtd.e);
+                set = i.c(0.0f, 0.4f, 0.4f, advf.d, advf.e);
             }
-            set.addListener((Animator$AnimatorListener)new adst(i));
+            set.addListener((Animator$AnimatorListener)new aduv(i));
             set.start();
             return;
         }
@@ -231,7 +236,7 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
     }
     
     final void f() {
-        final adtd i = this.i();
+        final advf i = this.i();
         Label_0035: {
             if (i.B.getVisibility() != 0) {
                 if (i.A != 2) {
@@ -247,7 +252,7 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
         if (v != null) {
             v.cancel();
         }
-        final adqg w = i.w;
+        final adsi w = i.w;
         if (i.m()) {
             if (i.B.getVisibility() != 0) {
                 final FloatingActionButton b = i.B;
@@ -261,15 +266,15 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
                 i.B.setScaleX(n);
                 i.g(n);
             }
-            final adqg w2 = i.w;
+            final adsi w2 = i.w;
             AnimatorSet set;
             if (w2 != null) {
                 set = i.b(w2, 1.0f, 1.0f, 1.0f);
             }
             else {
-                set = i.c(1.0f, 1.0f, 1.0f, adtd.b, adtd.c);
+                set = i.c(1.0f, 1.0f, 1.0f, advf.b, advf.c);
             }
-            set.addListener((Animator$AnimatorListener)new adsu(i));
+            set.addListener((Animator$AnimatorListener)new aduw(i));
             set.start();
             return;
         }
@@ -295,16 +300,16 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
     
     protected final void onAttachedToWindow() {
         super.onAttachedToWindow();
-        final adtd i = this.i();
-        final adwf m = i.m;
+        final advf i = this.i();
+        final adyh m = i.m;
         if (m != null) {
-            adwd.af((View)i.B, m);
+            adyf.g((View)i.B, m);
         }
     }
     
     protected final void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        final adtd i = this.i();
+        final advf i = this.i();
         i.B.getViewTreeObserver();
         final ViewTreeObserver$OnPreDrawListener c = i.C;
     }
@@ -324,9 +329,9 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
         }
         final ExtendableSavedState extendableSavedState = (ExtendableSavedState)parcelable;
         super.onRestoreInstanceState(extendableSavedState.d);
-        final adxi n = this.n;
-        final Bundle bundle = (Bundle)extendableSavedState.a.get((Object)"expandableWidgetHelper");
-        aff.k((Object)bundle);
+        final adzk n = this.n;
+        final Bundle bundle = (Bundle)extendableSavedState.a.get("expandableWidgetHelper");
+        afg.k(bundle);
         n.b = bundle.getBoolean("expanded", false);
         n.a = bundle.getInt("expandedComponentIdHint", 0);
         if (n.b) {
@@ -343,19 +348,19 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
             onSaveInstanceState = new Bundle();
         }
         final ExtendableSavedState extendableSavedState = new ExtendableSavedState((Parcelable)onSaveInstanceState);
-        final abn a = extendableSavedState.a;
-        final adxi n = this.n;
+        final abo a = extendableSavedState.a;
+        final adzk n = this.n;
         final Bundle bundle = new Bundle();
         bundle.putBoolean("expanded", n.b);
         bundle.putInt("expandedComponentIdHint", n.a);
-        a.put((Object)"expandableWidgetHelper", (Object)bundle);
+        a.put("expandableWidgetHelper", bundle);
         return (Parcelable)extendableSavedState;
     }
     
     public final boolean onTouchEvent(final MotionEvent motionEvent) {
         if (motionEvent.getAction() == 0) {
             final Rect l = this.l;
-            if (ana.ao((View)this)) {
+            if (anb.ao((View)this)) {
                 l.set(0, 0, this.getWidth(), this.getHeight());
                 l.left += this.c.left;
                 l.top += this.c.top;
@@ -381,12 +386,12 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
     public final void setBackgroundTintList(final ColorStateList list) {
         if (this.e != list) {
             this.e = list;
-            final adtd i = this.i();
-            final adwf m = i.m;
+            final advf i = this.i();
+            final adyh m = i.m;
             if (m != null) {
                 m.setTintList(list);
             }
-            final adsn o = i.o;
+            final adup o = i.o;
             if (o != null) {
                 o.b(list);
             }
@@ -396,7 +401,7 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
     public final void setBackgroundTintMode(final PorterDuff$Mode porterDuff$Mode) {
         if (this.f != porterDuff$Mode) {
             this.f = porterDuff$Mode;
-            final adwf m = this.i().m;
+            final adyh m = this.i().m;
             if (m != null) {
                 m.setTintMode(porterDuff$Mode);
             }
@@ -449,7 +454,7 @@ public class FloatingActionButton extends aduk implements adsl, adwv, aeg
         this.i();
     }
     
-    public final void ti(final adwk adwk) {
-        this.i().h(adwk);
+    public final void tn(final adym adym) {
+        this.i().h(adym);
     }
 }

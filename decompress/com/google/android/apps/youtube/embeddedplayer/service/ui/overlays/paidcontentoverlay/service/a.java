@@ -8,7 +8,7 @@ import android.view.View$OnClickListener;
 import android.os.RemoteException;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.shared.c;
 
-public final class a implements abcp
+public final class a implements abek
 {
     public c a;
     
@@ -16,7 +16,6 @@ public final class a implements abcp
         this.a = a;
     }
     
-    @Override
     public final void b(final boolean b) {
         final c a = this.a;
         if (a == null) {
@@ -28,7 +27,6 @@ public final class a implements abcp
         catch (final RemoteException ex) {}
     }
     
-    @Override
     public final void c(final long n) {
         final c a = this.a;
         if (a == null) {
@@ -40,7 +38,6 @@ public final class a implements abcp
         catch (final RemoteException ex) {}
     }
     
-    @Override
     public final void d(final boolean b) {
         final c a = this.a;
         if (a == null) {
@@ -52,7 +49,9 @@ public final class a implements abcp
         catch (final RemoteException ex) {}
     }
     
-    @Override
+    public final void e(final View$OnClickListener view$OnClickListener) {
+    }
+    
     public final void f(final CharSequence charSequence) {
         final c a = this.a;
         if (a == null) {
@@ -64,7 +63,6 @@ public final class a implements abcp
         catch (final RemoteException ex) {}
     }
     
-    @Override
     public final void g() {
         final c a = this.a;
         if (a == null) {
@@ -76,8 +74,10 @@ public final class a implements abcp
         catch (final RemoteException ex) {}
     }
     
-    @Override
-    public final void sZ(final boolean b) {
+    public final void h() {
+    }
+    
+    public final void tf(final boolean b) {
         final c a = this.a;
         if (a == null) {
             return;

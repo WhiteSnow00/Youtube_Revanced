@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class MobilePlaceResultRendererOuterClass
 {
-    public static final agzg mobilePlaceResultRenderer;
+    public static final ahbf mobilePlaceResultRenderer;
     
     static {
-        mobilePlaceResultRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amhl.a, (MessageLite)amhl.a, (agzn)null, 147100329, ahcm.k, (Class)amhl.class);
+        mobilePlaceResultRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)amjp.a, (MessageLite)amjp.a, (ahbm)null, 147100329, ahek.k, (Class)amjp.class);
     }
     
     private MobilePlaceResultRendererOuterClass() {

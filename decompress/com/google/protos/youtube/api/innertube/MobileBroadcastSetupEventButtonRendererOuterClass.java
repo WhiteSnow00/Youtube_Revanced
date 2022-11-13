@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class MobileBroadcastSetupEventButtonRendererOuterClass
 {
-    public static final agzg mobileBroadcastSetupEventButtonRenderer;
+    public static final ahbf mobileBroadcastSetupEventButtonRenderer;
     
     static {
-        mobileBroadcastSetupEventButtonRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)amgm.a, (MessageLite)amgm.a, (agzn)null, 146983445, ahcm.k, (Class)amgm.class);
+        mobileBroadcastSetupEventButtonRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)amiq.a, (MessageLite)amiq.a, (ahbm)null, 146983445, ahek.k, (Class)amiq.class);
     }
     
     private MobileBroadcastSetupEventButtonRendererOuterClass() {

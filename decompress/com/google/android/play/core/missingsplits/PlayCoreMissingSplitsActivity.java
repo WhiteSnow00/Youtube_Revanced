@@ -29,7 +29,7 @@ public class PlayCoreMissingSplitsActivity extends Activity implements DialogInt
             this.startActivity(setPackage);
         }
         catch (final ActivityNotFoundException ex) {
-            new aeby(this.getClass().getName(), (byte[])null).l((Throwable)ex, "Couldn't start missing splits activity for %s", s);
+            new adet(this.getClass().getName()).k((Throwable)ex, "Couldn't start missing splits activity for %s", new Object[] { s });
         }
     }
     
@@ -43,7 +43,7 @@ public class PlayCoreMissingSplitsActivity extends Activity implements DialogInt
     protected final void onCreate(final Bundle bundle) {
         super.onCreate(bundle);
         final AlertDialog$Builder setNeutralButton = new AlertDialog$Builder((Context)this).setTitle((CharSequence)"Installation failed").setCancelable(false).setNeutralButton((CharSequence)"Close", (DialogInterface$OnClickListener)this);
-        if (aecm.a((Context)this)) {
+        if (aeeo.a((Context)this)) {
             final String a = this.a();
             final StringBuilder sb = new StringBuilder("The app ");
             sb.append(a);

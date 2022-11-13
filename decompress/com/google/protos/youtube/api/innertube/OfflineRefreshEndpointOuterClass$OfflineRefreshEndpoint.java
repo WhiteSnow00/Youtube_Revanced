@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint extends agzi implements ahax
+public final class OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint extends ahbh implements ahcw
 {
     public static final OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint a;
-    private static volatile ahbe b;
-    public static final agzg offlineRefreshEndpoint;
+    private static volatile ahdd b;
+    public static final ahbf offlineRefreshEndpoint;
     
     static {
         final OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint a2 = new OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint();
-        agzi.registerDefaultInstance((Class)OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint.class, (agzi)(a = a2));
-        offlineRefreshEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 140507150, ahcm.k, (Class)OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint.class);
+        ahbh.registerDefaultInstance((Class)OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint.class, (ahbh)(a = a2));
+        offlineRefreshEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 140507150, ahek.k, (Class)OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint.class);
     }
     
     private OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint.b) == null) {
                     synchronized (OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint.class) {
                         if (OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint.b == null) {
-                            OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint.b = (ahbe)new agzb((agzi)OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint.a);
+                            OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint.b = (ahdd)new ahba((ahbh)OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint exten
                 return OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint.a);
+                return new ahaz((ahbh)OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint.a);
             }
             case 3: {
                 return new OfflineRefreshEndpointOuterClass$OfflineRefreshEndpoint();

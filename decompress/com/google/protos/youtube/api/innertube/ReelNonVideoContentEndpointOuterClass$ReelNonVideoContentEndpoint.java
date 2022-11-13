@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint extends agzi implements ahax
+public final class ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint extends ahbh implements ahcw
 {
     public static final ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg reelNonVideoContentEndpoint;
-    public anss b;
+    private static volatile ahdd c;
+    public static final ahbf reelNonVideoContentEndpoint;
+    public anuv b;
     private int d;
     private byte e;
     
     static {
         final ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint a2 = new ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint();
-        agzi.registerDefaultInstance((Class)ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.class, (agzi)(a = a2));
-        reelNonVideoContentEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 394709859, ahcm.k, (Class)ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.class);
+        ahbh.registerDefaultInstance((Class)ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.class, (ahbh)(a = a2));
+        reelNonVideoContentEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 394709859, ahek.k, (Class)ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.class);
     }
     
     private ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.c) == null) {
                     synchronized (ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.class) {
                         if (ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.c == null) {
-                            ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.c = (ahbe)new agzb((agzi)ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.a);
+                            ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.c = (ahdd)new ahba((ahbh)ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndp
                 return ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.a);
+                return new ahaz((ahbh)ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint.a);
             }
             case 3: {
                 return new ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndpoint();
@@ -58,9 +58,9 @@ public final class ReelNonVideoContentEndpointOuterClass$ReelNonVideoContentEndp
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

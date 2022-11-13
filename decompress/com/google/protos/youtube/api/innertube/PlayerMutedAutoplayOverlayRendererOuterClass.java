@@ -8,14 +8,14 @@ import com.google.protobuf.MessageLite;
 
 public final class PlayerMutedAutoplayOverlayRendererOuterClass
 {
-    public static final agzg a;
-    public static final agzg b;
-    public static final agzg playerMutedAutoplayOverlayRenderer;
+    public static final ahbf a;
+    public static final ahbf b;
+    public static final ahbf playerMutedAutoplayOverlayRenderer;
     
     static {
-        playerMutedAutoplayOverlayRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)andq.a, (MessageLite)andq.a, (agzn)null, 155431711, ahcm.k, (Class)andq.class);
-        a = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)andr.a, (MessageLite)andr.a, (agzn)null, 190730636, ahcm.k, (Class)andr.class);
-        b = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)andp.a, (MessageLite)andp.a, (agzn)null, 194612962, ahcm.k, (Class)andp.class);
+        playerMutedAutoplayOverlayRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anfu.a, (MessageLite)anfu.a, (ahbm)null, 155431711, ahek.k, (Class)anfu.class);
+        a = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anfv.a, (MessageLite)anfv.a, (ahbm)null, 190730636, ahek.k, (Class)anfv.class);
+        b = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anft.a, (MessageLite)anft.a, (ahbm)null, 194612962, ahek.k, (Class)anft.class);
     }
     
     private PlayerMutedAutoplayOverlayRendererOuterClass() {

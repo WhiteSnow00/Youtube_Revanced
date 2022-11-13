@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction extends agzi implements ahax
+public final class ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction extends ahbh implements ahcw
 {
     public static final ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction a;
-    private static volatile ahbe d;
-    public static final agzg replaceEnclosingAction;
+    private static volatile ahdd d;
+    public static final ahbf replaceEnclosingAction;
     public int b;
-    public antd c;
+    public anvg c;
     private byte e;
     
     static {
         final ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction a2 = new ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction();
-        agzi.registerDefaultInstance((Class)ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction.class, (agzi)(a = a2));
-        replaceEnclosingAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 77297283, ahcm.k, (Class)ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction.class);
+        ahbh.registerDefaultInstance((Class)ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction.class, (ahbh)(a = a2));
+        replaceEnclosingAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 77297283, ahek.k, (Class)ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction.class);
     }
     
     private ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction.d) == null) {
                     synchronized (ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction.class) {
                         if (ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction.d == null) {
-                            ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction.d = (ahbe)new agzb((agzi)ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction.a);
+                            ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction.d = (ahdd)new ahba((ahbh)ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction exten
                 return ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction.a;
             }
             case 4: {
-                return new agza((agzi)ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction.a);
+                return new ahaz((ahbh)ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction.a);
             }
             case 3: {
                 return new ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction();
@@ -58,9 +58,9 @@ public final class ReplaceEnclosingActionOuterClass$ReplaceEnclosingAction exten
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

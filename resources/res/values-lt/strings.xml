@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Grįžti į albumą</string>
     <string name="accessibility_navigation_back_button">Atgal</string>
     <string name="accessibility_new_content_available">Yra naujo turinio</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Nauji vaizdo įrašai</string>
     <string name="accessibility_next">Kitas vaizdo įrašas</string>
     <string name="accessibility_offline_button_cancel">Stabdyti atsisiuntimą</string>
     <string name="accessibility_offline_button_cannot_save">Neįmanoma atsisiųsti</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Duomenų stebėjimas ir kontrolė</string>
     <string name="data_saving_persistent_title">Duomenų saugojimas</string>
     <string name="data_saving_select_quality_every_video_switch_title">Pasirinkti kiekvieno vaizdo įrašo kokybę atskirai</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
     <string name="data_saving_snack_bar_action_button">Peržiūrėti</string>
     <string name="data_saving_snack_bar_text">Šis pakeitimas turi įtakos duomenų išsaugojimo nustatymams</string>
     <string name="data_saving_upload_wifi_only_switch_title">Įkelti tik per „Wi-Fi“</string>
@@ -735,7 +736,7 @@
     <string name="image_gallery_zero_state_text_secondary">Padarykite nuotrauką, kad galėtumėte pridėti ją prie įrašo</string>
     <string name="image_upload_error">Nepavyko įkelti nuotraukos. Bandykite dar kartą.</string>
     <string name="image_upload_something_went_wrong">Oi, kažkas atsitiko.</string>
-    <string name="immersive_accessibility_player_overlay">Player, double tap to bring up player controls</string>
+    <string name="immersive_accessibility_player_overlay">Leistuvė, dukart palietus bus pateikti leistuvės valdikliai</string>
     <string name="in_app_update_downloaded_message">Naujinys atsisiųstas</string>
     <string name="in_app_update_downloading_message">Atsisiunčiamas naujinys...</string>
     <string name="in_app_update_restart_button">PALEISTI IŠ NAUJO</string>
@@ -1458,7 +1459,7 @@
     <string name="pref_settings_video_quality_nonbeta">Vaizdo įrašų kokybė</string>
     <string name="pref_smart_downloads_description">Koreguokite, kiek saugyklos naudojama išmaniesiems atsisiuntimams</string>
     <string name="pref_smart_downloads_opted_in_title">Išmanieji atsisiuntimai</string>
-    <string name="pref_smart_downloads_quality_title">Smart downloads quality</string>
+    <string name="pref_smart_downloads_quality_title">Išmaniųjų atsisiuntimų kokybė</string>
     <string name="pref_smart_downloads_summary">Automatiškai atsisiųskite rekomenduojamus vaizdo įrašus prisijungę prie „Wi-Fi“ tinklo</string>
     <string name="pref_subtitles_category">Subtitrai</string>
     <string name="pref_upload_policy_summary">Nurodyti įkėlimų tinklo nuostatas.</string>
@@ -1808,7 +1809,7 @@
     <string name="shorts_segment_import_failed_text">Segmento importuoti nepavyko</string>
     <string name="shorts_segment_import_timeout_text">Baigėsi segmento importavimo skirtasis laikas</string>
     <string name="shorts_selected_duration_title">%1$d sek.</string>
-    <string name="shorts_sound_added_tooltip_time_x">Sound added to first %1$ds</string>
+    <string name="shorts_sound_added_tooltip_time_x">Garsas įtrauktas į pirm. %1$d sek.</string>
     <string name="shorts_speed_control_fast_label">Greitai</string>
     <string name="shorts_speed_control_fast_text">2 k.</string>
     <string name="shorts_speed_control_normal_label">Įprastai</string>

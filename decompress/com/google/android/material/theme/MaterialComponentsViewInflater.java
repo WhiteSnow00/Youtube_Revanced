@@ -15,7 +15,7 @@ import android.support.v7.app.AppCompatViewInflater;
 public class MaterialComponentsViewInflater extends AppCompatViewInflater
 {
     public final jz a(final Context context, final AttributeSet set) {
-        return new adyq(context, set);
+        return (jz)new aeas(context, set);
     }
     
     public final AppCompatButton b(final Context context, final AttributeSet set) {
@@ -23,11 +23,11 @@ public class MaterialComponentsViewInflater extends AppCompatViewInflater
     }
     
     public final kb c(final Context context, final AttributeSet set) {
-        return (kb)new adse(context, set);
+        return (kb)new adug(context, set);
     }
     
     public final kk d(final Context context, final AttributeSet set) {
-        return (kk)new advr(context, set);
+        return (kk)new adxt(context, set);
     }
     
     public final AppCompatTextView e(final Context context, final AttributeSet set) {

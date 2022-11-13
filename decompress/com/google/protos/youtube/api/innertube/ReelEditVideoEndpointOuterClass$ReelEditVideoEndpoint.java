@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint extends agzi implements ahax
+public final class ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint extends ahbh implements ahcw
 {
     public static final ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg reelEditVideoEndpoint;
-    public anss b;
+    private static volatile ahdd c;
+    public static final ahbf reelEditVideoEndpoint;
+    public anuv b;
     private int d;
     private byte e;
     
     static {
         final ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint a2 = new ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint();
-        agzi.registerDefaultInstance((Class)ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint.class, (agzi)(a = a2));
-        reelEditVideoEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 153734793, ahcm.k, (Class)ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint.class);
+        ahbh.registerDefaultInstance((Class)ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint.class, (ahbh)(a = a2));
+        reelEditVideoEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 153734793, ahek.k, (Class)ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint.class);
     }
     
     private ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint.c) == null) {
                     synchronized (ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint.class) {
                         if (ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint.c == null) {
-                            ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint.c = (ahbe)new agzb((agzi)ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint.a);
+                            ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint.c = (ahdd)new ahba((ahbh)ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint extends
                 return ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint.a);
+                return new ahaz((ahbh)ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint.a);
             }
             case 3: {
                 return new ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint();
@@ -58,9 +58,9 @@ public final class ReelEditVideoEndpointOuterClass$ReelEditVideoEndpoint extends
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

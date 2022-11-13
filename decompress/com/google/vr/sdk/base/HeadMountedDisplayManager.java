@@ -14,11 +14,11 @@ public class HeadMountedDisplayManager
 {
     private final Context context;
     private final HeadMountedDisplay hmd;
-    private final aral paramsProvider;
+    private final arda paramsProvider;
     
     public HeadMountedDisplayManager(final Context context) {
         this.context = context;
-        this.paramsProvider = aqql.o(context);
+        this.paramsProvider = aqsx.p(context);
         this.hmd = new HeadMountedDisplay(this.createScreenParams(), this.createGvrViewerParams());
     }
     

@@ -15,7 +15,7 @@ public abstract class ValidationResult implements Parcelable
     private static ValidationResult a;
     
     static {
-        CREATOR = (Parcelable$Creator)new abyl(10);
+        CREATOR = (Parcelable$Creator)new acao(10);
     }
     
     public static ValidationResult d() {

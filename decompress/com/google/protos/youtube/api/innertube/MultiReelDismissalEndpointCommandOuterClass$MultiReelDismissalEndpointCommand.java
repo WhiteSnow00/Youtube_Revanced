@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand extends agzi implements ahax
+public final class MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand extends ahbh implements ahcw
 {
     public static final MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand a;
-    private static volatile ahbe c;
-    public static final agzg multiReelDismissalEndpointCommand;
-    public anss b;
+    private static volatile ahdd c;
+    public static final ahbf multiReelDismissalEndpointCommand;
+    public anuv b;
     private int d;
     private byte e;
     
     static {
         final MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand a2 = new MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand();
-        agzi.registerDefaultInstance((Class)MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand.class, (agzi)(a = a2));
-        multiReelDismissalEndpointCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 187251317, ahcm.k, (Class)MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand.class);
+        ahbh.registerDefaultInstance((Class)MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand.class, (ahbh)(a = a2));
+        multiReelDismissalEndpointCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 187251317, ahek.k, (Class)MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand.class);
     }
     
     private MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand.c) == null) {
                     synchronized (MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand.class) {
                         if (MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand.c == null) {
-                            MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand.c = (ahbe)new agzb((agzi)MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand.a);
+                            MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand.c = (ahdd)new ahba((ahbh)MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissa
                 return MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand.a;
             }
             case 4: {
-                return new agza((agzi)MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand.a);
+                return new ahaz((ahbh)MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand.a);
             }
             case 3: {
                 return new MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissalEndpointCommand();
@@ -58,9 +58,9 @@ public final class MultiReelDismissalEndpointCommandOuterClass$MultiReelDismissa
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

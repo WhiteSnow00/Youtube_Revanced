@@ -19,11 +19,11 @@ public class FixedAspectRatioImageView extends ImageView
         this(context, null);
     }
     
-    public FixedAspectRatioImageView(final Context context, AttributeSet obtainStyledAttributes) {
-        super(context, obtainStyledAttributes);
+    public FixedAspectRatioImageView(Context obtainStyledAttributes, final AttributeSet set) {
+        super(obtainStyledAttributes, set);
         this.a = 0.0f;
-        if (obtainStyledAttributes != null) {
-            obtainStyledAttributes = (AttributeSet)context.obtainStyledAttributes(obtainStyledAttributes, gmm.a);
+        if (set != null) {
+            obtainStyledAttributes = (Context)obtainStyledAttributes.obtainStyledAttributes(set, gmt.a);
             try {
                 this.a = ((TypedArray)obtainStyledAttributes).getFraction(0, 1, 1, this.a);
             }

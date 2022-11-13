@@ -20,7 +20,7 @@ import android.graphics.drawable.Drawable;
 import com.google.android.libraries.youtube.common.ui.CircularImageView;
 import android.content.res.ColorStateList;
 
-public class OfflineArrowView extends ing
+public class OfflineArrowView extends ioh
 {
     public int a;
     public int b;
@@ -34,31 +34,31 @@ public class OfflineArrowView extends ing
     public OfflineArrowView(final Context context) {
         super(context);
         this.d = 1;
-        this.n(uji.S(context, (AttributeSet)null, 0), null);
+        this.n(vdh.bb(context, (AttributeSet)null, 0), null);
     }
     
     public OfflineArrowView(final Context context, final AttributeSet set) {
         super(context, set);
         this.d = 1;
-        this.n(uji.S(context, set, 0), set);
+        this.n(vdh.bb(context, set, 0), set);
     }
     
     public OfflineArrowView(final Context context, final AttributeSet set, final int n) {
         super(context, set, n);
         this.d = 1;
-        this.n(uji.S(context, set, 0), set);
+        this.n(vdh.bb(context, set, 0), set);
     }
     
     public OfflineArrowView(final Context context, final AttributeSet set, final int n, final int n2) {
         super(context, set, n, n2);
         this.d = 1;
-        this.n(uji.S(context, set, 0), set);
+        this.n(vdh.bb(context, set, 0), set);
     }
     
     private final void n(final Context context, final AttributeSet set) {
         final Resources resources = context.getResources();
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, inf.a);
-        this.k = obtainStyledAttributes.getResourceId(2, 2131233718);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, iog.a);
+        this.k = obtainStyledAttributes.getResourceId(2, 2131233720);
         this.r = obtainStyledAttributes.getResourceId(8, 2131231851);
         this.s = obtainStyledAttributes.getResourceId(0, 2131231842);
         this.l = obtainStyledAttributes.getResourceId(1, 2131233520);
@@ -68,34 +68,34 @@ public class OfflineArrowView extends ing
         this.c = obtainStyledAttributes.getColorStateList(6);
         this.o = obtainStyledAttributes.getColorStateList(3);
         obtainStyledAttributes.recycle();
-        this.j = agw.a(context, 2131232387);
-        this.q = agw.a(context, 2131232388);
+        this.j = agx.a(context, 2131232387);
+        this.q = agx.a(context, 2131232388);
         final ColorStateList c = this.c;
         int n;
         if (c != null) {
             n = c.getDefaultColor();
-            aip.g(this.j, this.c);
+            aiq.g(this.j, this.c);
         }
         else {
-            n = resources.getColor(2131101567);
+            n = resources.getColor(2131101593);
         }
         (this.f = new TintableImageView(context)).setScaleType(ImageView$ScaleType.CENTER);
         this.f();
         (this.e = new ProgressBar(context, (AttributeSet)null, 16842872)).setProgressDrawable(this.j);
         this.e.setRotation(-90.0f);
         final ProgressBar g = new ProgressBar(context);
-        (this.g = g).setIndeterminateDrawable((Drawable)new pct(-1.0f, resources.getDimensionPixelSize(2131168359), resources.getDimensionPixelSize(2131168357), new int[] { n }));
+        (this.g = g).setIndeterminateDrawable((Drawable)new pee(-1.0f, resources.getDimensionPixelSize(2131168358), resources.getDimensionPixelSize(2131168356), new int[] { n }));
         g.setVisibility(8);
-        final int dimensionPixelSize = resources.getDimensionPixelSize(2131168358);
+        final int dimensionPixelSize = resources.getDimensionPixelSize(2131168357);
         final FrameLayout$LayoutParams frameLayout$LayoutParams = new FrameLayout$LayoutParams(dimensionPixelSize, dimensionPixelSize, 17);
-        final CircularImageView p2 = new CircularImageView(context, (AttributeSet)null);
-        (this.p = p2).setBackgroundColor(context.getResources().getColor(2131102344));
-        final int dimensionPixelSize2 = resources.getDimensionPixelSize(2131168355);
+        final CircularImageView p2 = new CircularImageView(context, null);
+        (this.p = p2).setBackgroundColor(context.getResources().getColor(2131102372));
+        final int dimensionPixelSize2 = resources.getDimensionPixelSize(2131168354);
         final FrameLayout$LayoutParams frameLayout$LayoutParams2 = new FrameLayout$LayoutParams(dimensionPixelSize2, dimensionPixelSize2, 17);
         final LottieAnimationView i = new LottieAnimationView(context);
         (this.i = i).g(2131951681);
         i.n(-1);
-        final int dimensionPixelSize3 = resources.getDimensionPixelSize(2131168338);
+        final int dimensionPixelSize3 = resources.getDimensionPixelSize(2131168337);
         final FrameLayout$LayoutParams frameLayout$LayoutParams3 = new FrameLayout$LayoutParams(dimensionPixelSize3, dimensionPixelSize3, 17);
         this.addView((View)p2, (ViewGroup$LayoutParams)frameLayout$LayoutParams2);
         this.addView((View)g, (ViewGroup$LayoutParams)frameLayout$LayoutParams);
@@ -148,7 +148,7 @@ public class OfflineArrowView extends ing
             return;
         }
         if (n == this.l) {
-            f.a(ColorStateList.valueOf(tmy.cn(this.getContext(), 2130970924)));
+            f.a(ColorStateList.valueOf(tpe.cr(this.getContext(), 2130970924)));
             return;
         }
         f.a(null);
@@ -178,7 +178,7 @@ public class OfflineArrowView extends ing
     public final void g() {
         if (this.d == 2) {
             this.d(2131231840);
-            tmy.v((View)this.p, true);
+            tpe.v((View)this.p, true);
         }
     }
     
@@ -187,9 +187,9 @@ public class OfflineArrowView extends ing
             final TintableImageView f = this.f;
             final LottieAnimationView i = this.i;
             final CircularImageView p = this.p;
-            tmy.v((View)f, false);
-            tmy.v((View)i, true);
-            tmy.v((View)p, true);
+            tpe.v((View)f, false);
+            tpe.v((View)i, true);
+            tpe.v((View)p, true);
             if (i != null && !i.q()) {
                 i.e();
             }
@@ -199,7 +199,7 @@ public class OfflineArrowView extends ing
             final TintableImageView f2 = this.f;
             AnimationDrawable h;
             if ((h = this.h) == null) {
-                final Drawable a = agw.a(this.getContext(), this.s);
+                final Drawable a = agx.a(this.getContext(), this.s);
                 a.getClass();
                 h = (AnimationDrawable)a;
                 this.h = h;
@@ -219,7 +219,7 @@ public class OfflineArrowView extends ing
         final CircularImageView p = this.p;
         if (this.d == 2) {
             this.d(2131231852);
-            tmy.v((View)p, true);
+            tpe.v((View)p, true);
             return;
         }
         this.d(this.r);
@@ -237,8 +237,8 @@ public class OfflineArrowView extends ing
                 this.o();
                 e.setProgressDrawable(this.j);
             }
-            tmy.v((View)e, true);
-            tmy.v((View)g, false);
+            tpe.v((View)e, true);
+            tpe.v((View)g, false);
             e.setMax(100);
             e.setProgress(progress);
         }

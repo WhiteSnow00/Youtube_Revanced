@@ -8,4 +8,8 @@ public final class WindowInfoTrackerImpl$Companion
 {
     private WindowInfoTrackerImpl$Companion() {
     }
+    
+    public WindowInfoTrackerImpl$Companion(final atny atny) {
+        this();
+    }
 }

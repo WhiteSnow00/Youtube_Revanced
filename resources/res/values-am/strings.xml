@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">ወደ አልበም ተመለስ</string>
     <string name="accessibility_navigation_back_button">ተመለስ</string>
     <string name="accessibility_new_content_available">አዲስ ይዘት አለ</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">አዲስ ቪድዮዎች</string>
     <string name="accessibility_next">ቀጣይ ቪድዮ</string>
     <string name="accessibility_offline_button_cancel">ማውረድ አቁም</string>
     <string name="accessibility_offline_button_cannot_save">ማውረድ አልተቻለም</string>
@@ -480,6 +480,7 @@
     <string name="data_saving_monitoring_and_control_category_title">የውሂብ ክትትል እና ቁጥጥር</string>
     <string name="data_saving_persistent_title">የውሂብ ማስቀመጥ</string>
     <string name="data_saving_select_quality_every_video_switch_title">ለእያንዳንዱ ቪዲዮ ጥራት ይምረጡ</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">የዘመናዊ ማውረዶችን ጥራት ቀንስ</string>
     <string name="data_saving_snack_bar_action_button">ይመልከቱ</string>
     <string name="data_saving_snack_bar_text">ይህ ለውጥ በእርስዎ የውሂብ ማስቀመጥ ቅንብሮች ላይ ተጽዕኖ ያሳድራል</string>
     <string name="data_saving_upload_wifi_only_switch_title">በWi-Fi ላይ ብቻ ይስቀሉ</string>
@@ -724,7 +725,7 @@
     <string name="image_gallery_zero_state_text_secondary">ወደ ልጥፍ የሚታከል ፎቶ ያንሱ</string>
     <string name="image_upload_error">ምስሎችን መስቀል አልተሳካም። እባክዎ እንደገና ይሞክሩ።</string>
     <string name="image_upload_something_went_wrong">ውይ፣ የሆነ ስህተት ተከስቷል!</string>
-    <string name="immersive_accessibility_player_overlay">Player, double tap to bring up player controls</string>
+    <string name="immersive_accessibility_player_overlay">ተጫዋች፣ የተጫዋች መቆጣጠሪያዎችን ወደ ላይ ለማውጣት ሁለቴ መታ ያድርጉ</string>
     <string name="in_app_update_downloaded_message">ዝማኔ ወርዷል</string>
     <string name="in_app_update_downloading_message">ዝማኔን በማውረድ ላይ…</string>
     <string name="in_app_update_restart_button">እንደገና ያስጀምሩ</string>
@@ -1444,7 +1445,7 @@
     <string name="pref_settings_video_quality_nonbeta">የቪዲዮ ጥራት ምርጫዎች</string>
     <string name="pref_smart_downloads_description">ለዘመናዊ ማውረዶች የማከማቻ አጠቃቀም ያስተካክሉ</string>
     <string name="pref_smart_downloads_opted_in_title">ዘመናዊ ማውረዶች</string>
-    <string name="pref_smart_downloads_quality_title">Smart downloads quality</string>
+    <string name="pref_smart_downloads_quality_title">የዘመናዊ ማውረዶች ጥራት</string>
     <string name="pref_smart_downloads_summary">የሚመከሩ ቪዲዮዎችን በWi-Fi ላይ በራስሰር ያውርዱ</string>
     <string name="pref_subtitles_category">መግለጫ ፅሁፎች</string>
     <string name="pref_upload_policy_summary">ለመስቀል የተለየ አውታረ መረብ ምርጫ ይግለፁ</string>
@@ -1793,7 +1794,7 @@
     <string name="shorts_segment_import_failed_text">ክፍል ማምጣት አልተሳካም</string>
     <string name="shorts_segment_import_timeout_text">ክፍል ማምጣት ጊዜው አልፏል</string>
     <string name="shorts_selected_duration_title">%1$d ሰከንዶች</string>
-    <string name="shorts_sound_added_tooltip_time_x">Sound added to first %1$ds</string>
+    <string name="shorts_sound_added_tooltip_time_x">ለመጀመሪያ %1$d ሰ ድምፅ ታክሏል</string>
     <string name="shorts_speed_control_fast_label">ፈጣን</string>
     <string name="shorts_speed_control_fast_text">2X</string>
     <string name="shorts_speed_control_normal_label">መደበኛ</string>

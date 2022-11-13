@@ -11,60 +11,68 @@ import com.google.android.youtube.api.jar.client.d;
 import com.google.apps.tiktok.lifecycle.LifecycleMemoizingObserver;
 import java.util.concurrent.Executor;
 
-public final class LocalSubscriptionMixinImpl extends aemd implements atz
+public final class LocalSubscriptionMixinImpl extends aeod implements aua
 {
-    public final auh a;
-    public aemk b;
-    private final afad c;
+    public final aui a;
+    public aeok b;
+    private final afcc c;
     private boolean d;
     private final Executor e;
-    private final aekd f;
-    private final aekd g;
-    private final kji h;
-    private final adcr i;
+    private final aeme f;
+    private final aeme g;
+    private final kkj h;
+    private final aeea i;
     
-    public LocalSubscriptionMixinImpl(final auh a, final adcr i, final Executor e, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4) {
-        this.c = (afad)afcb.g();
+    public LocalSubscriptionMixinImpl(final aui a, final aeea i, final Executor e, final byte[] array, final byte[] array2) {
+        this.c = (afcc)afea.g();
         this.d = true;
         this.a = a;
         this.i = i;
         try {
-            this.h = (kji)((LifecycleMemoizingObserver)i.a).g(2131429034, (aeog)aemg.b, (aeof)aemh.c);
+            this.h = (kkj)((LifecycleMemoizingObserver)i.a).g(2131429034, (aeqg)aeog.b, (aeqf)aeoh.c);
             this.e = e;
-            (this.f = aekd.c(e, true)).a();
-            this.g = aekd.c(e, false);
-            a.b((aul)this);
+            (this.f = aeme.c(e, true)).a();
+            this.g = aeme.c(e, false);
+            a.b((aum)this);
         }
         catch (final IllegalStateException ex) {
             throw new IllegalStateException("Both an unqualified and a `@ViewLifecycle LocalSubscriptionMixin` have been injectedin this Fragment scope. Only one of the two LocalSubscriptionMixins may be used in a given Fragment - either the unqualified or `@ViewLifecycle`LocalSubscriptionMixin exclusively.", ex);
         }
     }
     
-    @Override
-    public final ahbz h(final aelx aelx, final aexq aexq) {
-        qcj.s();
-        final aemk b = this.b;
+    public final aefb h(final aenx aenx, final aezp aezp) {
+        qdt.h();
+        final aeok b = this.b;
         final boolean b2 = true;
-        agot.D(b == null);
-        agot.D(this.c.put((Object)aelx, (Object)this.i.R(2131427986, (aeog)new aelz(aexq), (aeof)aemh.b)) == null && b2);
-        return new aema(this, aelx);
+        adkp.Q(b == null);
+        adkp.Q(this.c.put(aenx, this.i.d(2131427986, (aeqg)new aenz(aezp), (aeqf)aeoh.b)) == null && b2);
+        return (aefb)new aeoa(this, aenx);
     }
     
-    public final void mM(final aum aum) {
-        qcj.s();
-        final aemk b = this.b;
+    public final void lW(final aun aun) {
+    }
+    
+    public final void mM(final aun aun) {
+        qdt.h();
+        final aeok b = this.b;
         if (b != null) {
-            qcj.s();
-            b.c.execute(aesm.h((Runnable)new d(b, 14)));
+            qdt.h();
+            b.c.execute(aeun.h((Runnable)new d(b, 15)));
         }
         this.h.a = false;
     }
     
-    public final void oS(final aum aum) {
-        qcj.s();
+    public final void mq(final aun aun) {
+    }
+    
+    public final void my(final aun aun) {
+    }
+    
+    public final void oS(final aun aun) {
+        qdt.h();
         if (this.d) {
-            agot.D(this.b == null);
-            final Set<Map.Entry<Object, Object>> entrySet = ((Map<Object, Object>)this.c).entrySet();
+            adkp.Q(this.b == null);
+            final Set<Map.Entry<Object, Object>> entrySet = this.c.entrySet();
             int size;
             if (entrySet instanceof Collection) {
                 size = entrySet.size();
@@ -72,31 +80,31 @@ public final class LocalSubscriptionMixinImpl extends aemd implements atz
             else {
                 size = 4;
             }
-            final afcd afcd = new afcd(size);
-            afcd.e((Iterable)entrySet);
-            this.b = new aemk(afcd.a(), this.e, (Executor)this.f, this.g);
+            final afec afec = new afec(size);
+            afec.e((Iterable)entrySet);
+            this.b = new aeok(afec.a(), this.e, this.f, this.g);
             if (this.h.a && this.d) {
-                final aemk b = this.b;
-                qcj.s();
-                b.c.execute(aesm.h((Runnable)new d(b, 10)));
+                final aeok b = this.b;
+                qdt.h();
+                b.c.execute(aeun.h((Runnable)new d(b, 11)));
             }
             else {
-                final aemk b2 = this.b;
-                qcj.s();
-                b2.c.execute(aesm.h((Runnable)new d(b2, 12)));
+                final aeok b2 = this.b;
+                qdt.h();
+                b2.c.execute(aeun.h((Runnable)new d(b2, 13)));
             }
             this.c.clear();
             this.d = false;
         }
-        final aemk b3 = this.b;
-        qcj.s();
+        final aeok b3 = this.b;
+        qdt.h();
         b3.d.a();
     }
     
-    public final void oW(final aum aum) {
-        qcj.s();
-        final aemk b = this.b;
-        qcj.s();
+    public final void oX(final aun aun) {
+        qdt.h();
+        final aeok b = this.b;
+        qdt.h();
         b.d.b();
     }
 }

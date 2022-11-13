@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">ალბომზე დაბრუნება</string>
     <string name="accessibility_navigation_back_button">უკან</string>
     <string name="accessibility_new_content_available">ხელმისაწვდომია ახალი კონტენტი</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">ახალი ვიდეოები</string>
     <string name="accessibility_next">შემდეგი ვიდეო</string>
     <string name="accessibility_offline_button_cancel">ჩამოტვირთვის შეჩერება</string>
     <string name="accessibility_offline_button_cannot_save">ჩამოტვირთვა ვერ ხერხდება</string>
@@ -479,6 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">მონაცემთა მონიტორინგი და კონტროლი</string>
     <string name="data_saving_persistent_title">მონაცემთა დაზოგვა</string>
     <string name="data_saving_select_quality_every_video_switch_title">აირჩიეთ ხარისხი თითოეული ვიდეოსთვის</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">გონიერი ჩამოტვირთვების ხარისხის შემცირება</string>
     <string name="data_saving_snack_bar_action_button">ნახვა</string>
     <string name="data_saving_snack_bar_text">ეს ცვლილება გავლენას მოახდენს მონაცემების დაზოგვის თქვენს პარამეტრებზე</string>
     <string name="data_saving_upload_wifi_only_switch_title">ატვირთვა მხოლოდ Wi-Fi-თ</string>

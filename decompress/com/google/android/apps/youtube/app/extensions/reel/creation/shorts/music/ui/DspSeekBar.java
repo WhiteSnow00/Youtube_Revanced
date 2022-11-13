@@ -16,7 +16,7 @@ import android.widget.SeekBar;
 
 public final class DspSeekBar extends SeekBar
 {
-    public hch a;
+    public hcz a;
     private final Context b;
     private Drawable c;
     private Drawable d;
@@ -48,14 +48,14 @@ public final class DspSeekBar extends SeekBar
     }
     
     private final float a(final long n) {
-        final hch a = this.a;
+        final hcz a = this.a;
         long longValue = 0L;
-        Label_0030: {
+        Label_0034: {
             if (a != null) {
                 final Long e = a.e;
                 if (e != null) {
                     longValue = e;
-                    break Label_0030;
+                    break Label_0034;
                 }
             }
             longValue = 0L;
@@ -76,13 +76,13 @@ public final class DspSeekBar extends SeekBar
     protected final void onDraw(final Canvas canvas) {
         monitorenter(this);
         try {
-            final hch a = this.a;
+            final hcz a = this.a;
             if (a == null) {
                 super.onDraw(canvas);
                 monitorexit(this);
                 return;
             }
-            final aexq b = a.b();
+            final aezp b = a.b();
             Drawable thumb;
             if (b.h()) {
                 thumb = this.f;
@@ -95,9 +95,11 @@ public final class DspSeekBar extends SeekBar
             final int save = canvas.save();
             canvas.translate((float)this.getPaddingLeft(), (float)this.getPaddingTop());
             final int n = this.getWidth() - this.getPaddingLeft() - this.getPaddingRight();
-            final int n2 = (int)this.a(this.getProgress() * n) - this.getThumb().getIntrinsicWidth() / 2;
-            final int n3 = (int)this.a(this.getProgress() * n) + this.getThumb().getIntrinsicWidth() / 2;
-            final aoch c = this.a.c;
+            final int n2 = (int)this.a(this.getProgress() * n);
+            final int n3 = this.getThumb().getIntrinsicWidth() / 2;
+            final int n4 = (int)this.a(this.getProgress() * n);
+            final int n5 = this.getThumb().getIntrinsicWidth() / 2;
+            final aoej c = this.a.c;
             Long value;
             if (c != null) {
                 value = c.c;
@@ -105,31 +107,33 @@ public final class DspSeekBar extends SeekBar
             else {
                 value = null;
             }
+            final int n6 = n4 + n5;
+            final int n7 = n2 - n3;
             if (value != null) {
-                final int n4 = (int)(this.a(value) * n);
-                if (n4 < n2 || n4 > n3) {
-                    final int n5 = this.getHeight() / 2;
+                final int n8 = (int)(this.a(value) * n);
+                if (n8 < n7 || n8 > n6) {
+                    final int n9 = this.getHeight() / 2;
                     final Drawable c2 = this.c;
-                    c2.setBounds(n4 - c2.getIntrinsicWidth() / 2, n5 - this.c.getIntrinsicHeight() / 2, n4 + this.c.getIntrinsicWidth() / 2, n5 + this.c.getIntrinsicHeight() / 2);
+                    c2.setBounds(n8 - c2.getIntrinsicWidth() / 2, n9 - this.c.getIntrinsicHeight() / 2, n8 + this.c.getIntrinsicWidth() / 2, n9 + this.c.getIntrinsicHeight() / 2);
                     this.c.draw(canvas);
                 }
             }
-            final hch a2 = this.a;
-            afcr q;
+            final hcz a2 = this.a;
+            afeq q;
             if (a2.b.isEmpty()) {
-                q = afcr.q();
+                q = afeq.q();
             }
             else {
-                q = (afcr)Collection$_EL.stream((Collection)a2.b).map((Function)gnq.u).collect(afaj.a);
+                q = (afeq)Collection$_EL.stream((Collection)a2.b).map((Function)gnx.u).collect(afci.a);
             }
             for (int size = ((List)q).size(), i = 0; i < size; ++i) {
-                final Long n6 = (Long)((List)q).get(i);
-                if (!b.h() || !n6.equals(b.c())) {
-                    final int n7 = (int)(this.a(n6) * n);
-                    if (n7 < n2 || n7 > n3) {
-                        final int n8 = this.getHeight() / 2;
+                final Long n10 = (Long)((List)q).get(i);
+                if (!b.h() || !n10.equals(b.c())) {
+                    final int n11 = (int)(this.a(n10) * n);
+                    if (n11 < n7 || n11 > n6) {
+                        final int n12 = this.getHeight() / 2;
                         final Drawable d = this.d;
-                        d.setBounds(n7 - d.getIntrinsicWidth() / 2, n8 - this.d.getIntrinsicHeight() / 2, n7 + this.d.getIntrinsicWidth() / 2, n8 + this.d.getIntrinsicHeight() / 2);
+                        d.setBounds(n11 - d.getIntrinsicWidth() / 2, n12 - this.d.getIntrinsicHeight() / 2, n11 + this.d.getIntrinsicWidth() / 2, n12 + this.d.getIntrinsicHeight() / 2);
                         this.d.draw(canvas);
                     }
                 }

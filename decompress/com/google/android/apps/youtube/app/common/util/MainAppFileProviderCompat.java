@@ -4,6 +4,6 @@
 
 package com.google.android.apps.youtube.app.common.util;
 
-public final class MainAppFileProviderCompat extends tel
+public final class MainAppFileProviderCompat extends tgp
 {
 }

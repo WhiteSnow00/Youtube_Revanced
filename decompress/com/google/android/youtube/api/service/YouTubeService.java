@@ -12,14 +12,14 @@ import android.os.RemoteException;
 import android.os.IBinder;
 import com.google.android.apps.youtube.embeddedplayer.service.clientinfo.service.c;
 
-public final class YouTubeService extends aeeq
+public final class YouTubeService extends aegr
 {
-    public atjj a;
+    public atke a;
     public c b;
     
-    public static void b(final aeey aeey, final int n) {
+    public static void b(final aegz aegz, final int n) {
         try {
-            aeey.a(aeda.j(n), (IBinder)null);
+            aegz.a(afse.r(n), (IBinder)null);
         }
         catch (final RemoteException ex) {}
     }
@@ -34,7 +34,7 @@ public final class YouTubeService extends aeeq
     public final void onDestroy() {
         final Iterator iterator = new HashSet((Collection)this.b.a).iterator();
         while (iterator.hasNext()) {
-            ((lol)iterator.next()).c();
+            ((lpo)iterator.next()).c();
         }
         super.onDestroy();
     }

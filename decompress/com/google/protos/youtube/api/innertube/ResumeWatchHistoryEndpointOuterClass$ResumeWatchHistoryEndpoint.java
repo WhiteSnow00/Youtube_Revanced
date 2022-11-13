@@ -6,17 +6,17 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint extends agzi implements ahax
+public final class ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint extends ahbh implements ahcw
 {
     public static final ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint a;
-    private static volatile ahbe b;
-    public static final agzg resumeWatchHistoryEndpoint;
+    private static volatile ahdd b;
+    public static final ahbf resumeWatchHistoryEndpoint;
     private byte c;
     
     static {
         final ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint a2 = new ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint();
-        agzi.registerDefaultInstance((Class)ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint.class, (agzi)(a = a2));
-        resumeWatchHistoryEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 63121560, ahcm.k, (Class)ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint.class);
+        ahbh.registerDefaultInstance((Class)ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint.class, (ahbh)(a = a2));
+        resumeWatchHistoryEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 63121560, ahek.k, (Class)ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint.class);
     }
     
     private ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint() {
@@ -24,18 +24,18 @@ public final class ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoi
         emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint.b) == null) {
                     synchronized (ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint.class) {
                         if (ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint.b == null) {
-                            ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint.b = (ahbe)new agzb((agzi)ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint.a);
+                            ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint.b = (ahdd)new ahba((ahbh)ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint.a);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ public final class ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoi
                 return ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint.a);
+                return new ahaz((ahbh)ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint.a);
             }
             case 3: {
                 return new ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint();
@@ -54,7 +54,14 @@ public final class ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoi
                 return newMessageInfo((MessageLite)ResumeWatchHistoryEndpointOuterClass$ResumeWatchHistoryEndpoint.a, "\u0001\u0000", (Object[])null);
             }
             case 1: {
-                this.c = (byte)((o != null) ? 1 : 0);
+                byte c;
+                if (o == null) {
+                    c = 0;
+                }
+                else {
+                    c = 1;
+                }
+                this.c = c;
                 return null;
             }
             case 0: {

@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class PostImagePickerRendererOuterClass
 {
-    public static final agzg postImagePickerRenderer;
+    public static final ahbf postImagePickerRenderer;
     
     static {
-        postImagePickerRenderer = agzi.newSingularGeneratedExtension((MessageLite)anss.a, (Object)anjy.a, (MessageLite)anjy.a, (agzn)null, 319255493, ahcm.k, (Class)anjy.class);
+        postImagePickerRenderer = ahbh.newSingularGeneratedExtension((MessageLite)anuv.a, (Object)anmb.a, (MessageLite)anmb.a, (ahbm)null, 319255493, ahek.k, (Class)anmb.class);
     }
     
     private PostImagePickerRendererOuterClass() {

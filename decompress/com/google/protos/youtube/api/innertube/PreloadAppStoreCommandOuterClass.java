@@ -8,10 +8,10 @@ import com.google.protobuf.MessageLite;
 
 public final class PreloadAppStoreCommandOuterClass
 {
-    public static final agzg preloadAppStoreCommand;
+    public static final ahbf preloadAppStoreCommand;
     
     static {
-        preloadAppStoreCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)anks.a, (MessageLite)anks.a, (agzn)null, 199835557, ahcm.k, (Class)anks.class);
+        preloadAppStoreCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)anmv.a, (MessageLite)anmv.a, (ahbm)null, 199835557, ahek.k, (Class)anmv.class);
     }
     
     private PreloadAppStoreCommandOuterClass() {

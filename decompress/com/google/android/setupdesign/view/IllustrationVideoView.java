@@ -43,9 +43,9 @@ public class IllustrationVideoView extends TextureView implements Animatable, Te
         this.h = 0;
         this.i = false;
         if (!this.isInEditMode()) {
-            final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, aedq.k);
+            final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, aefr.k);
             final int resourceId = obtainStyledAttributes.getResourceId(1, 0);
-            if (aeda.t()) {
+            if (aefb.q()) {
                 this.g = obtainStyledAttributes.getBoolean(0, true);
             }
             obtainStyledAttributes.recycle();
@@ -151,20 +151,20 @@ public class IllustrationVideoView extends TextureView implements Animatable, Te
         return false;
     }
     
-    protected final void onMeasure(int size, int n) {
-        final int size2 = View$MeasureSpec.getSize(size);
-        size = View$MeasureSpec.getSize(n);
+    protected final void onMeasure(int size, int size2) {
+        size = View$MeasureSpec.getSize(size);
+        size2 = View$MeasureSpec.getSize(size2);
+        final float n = (float)size2;
         final float n2 = (float)size;
         final float c = this.c;
-        final float n3 = size2 * c;
-        if (n2 < n3) {
-            n = (int)(n2 / c);
+        final float n3 = n2 * c;
+        if (n < n3) {
+            size = (int)(n / c);
         }
         else {
-            size = (int)n3;
-            n = size2;
+            size2 = (int)n3;
         }
-        super.onMeasure(View$MeasureSpec.makeMeasureSpec(n, 1073741824), View$MeasureSpec.makeMeasureSpec(size, 1073741824));
+        super.onMeasure(View$MeasureSpec.makeMeasureSpec(size, 1073741824), View$MeasureSpec.makeMeasureSpec(size2, 1073741824));
     }
     
     public final void onPrepared(final MediaPlayer mediaPlayer) {

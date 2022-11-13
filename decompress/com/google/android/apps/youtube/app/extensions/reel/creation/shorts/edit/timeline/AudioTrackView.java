@@ -14,15 +14,15 @@ import com.google.android.apps.youtube.app.extensions.reel.creation.shorts.music
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public final class AudioTrackView extends gyy implements hci
+public final class AudioTrackView extends gzp implements hda
 {
-    public tvt a;
+    public txz a;
     public final TextView b;
     public final ImageView c;
     MusicWaveformView d;
     public long e;
-    public avt f;
-    public auip g;
+    public aujg f;
+    public aeea g;
     private final int h;
     private final LinearLayout i;
     private final int j;
@@ -34,7 +34,7 @@ public final class AudioTrackView extends gyy implements hci
     private int p;
     private long q;
     private long r;
-    private aexq s;
+    private aezp s;
     
     public AudioTrackView(final Context context, final AttributeSet set) {
         this(context, set, 0);
@@ -43,12 +43,12 @@ public final class AudioTrackView extends gyy implements hci
     public AudioTrackView(final Context context, final AttributeSet set, final int n) {
         super(context, set, n);
         this.p = 0;
-        this.o = this.g.bq();
-        this.e = this.g.bq();
+        this.o = this.f.bp();
+        this.e = this.f.bp();
         final Resources resources = context.getResources();
         final LinearLayout i = new LinearLayout(context);
         this.addView((View)(this.i = i));
-        i.setBackgroundColor(resources.getColor(2131102265));
+        i.setBackgroundColor(resources.getColor(2131102293));
         i.setBackground(resources.getDrawable(2131230990));
         i.setClipToOutline(true);
         i.setOrientation(1);
@@ -62,8 +62,8 @@ public final class AudioTrackView extends gyy implements hci
         (this.d = new MusicWaveformView(context)).c(false);
         i.addView((View)this.d);
         this.d.setEnabled(false);
-        this.d.g = (hci)this;
-        this.h = agw.a(context, 2131231997).getIntrinsicWidth();
+        this.d.g = (hda)this;
+        this.h = agx.a(context, 2131231997).getIntrinsicWidth();
         this.j = (int)this.getResources().getDimension(2131165420);
         this.k = (int)this.getResources().getDimension(2131165424);
         this.l = (int)this.getResources().getDimension(2131165421);
@@ -89,20 +89,20 @@ public final class AudioTrackView extends gyy implements hci
     public final void d() {
     }
     
-    public final void e(final long q, final long r, final aexq s) {
+    public final void e(final long q, final long r, final aezp s) {
         this.r = r;
         this.s = s;
         final MusicWaveformView d = this.d;
         d.d(0.0f, 0.0f, (float)d.getWidth());
-        final int height = this.d.getHeight();
-        final float n = this.n;
+        final float n = (float)this.d.getHeight();
+        final float n2 = this.n;
         final MusicWaveformView d2 = this.d;
-        final int m = this.m;
-        final hcw a = d2.a;
-        a.g = (float)m;
-        a.f = (float)(int)(height - n);
+        final float g = (float)this.m;
+        final hdo a = d2.a;
+        a.g = g;
+        a.f = (float)(int)(n - n2);
         if (s != null && s.h()) {
-            d2.b(r, this.e, (byte[])s.c(), afcr.q());
+            d2.b(r, this.e, (byte[])s.c(), afeq.q());
         }
         else {
             d2.a(r, this.e);
@@ -121,24 +121,24 @@ public final class AudioTrackView extends gyy implements hci
         this.p = n - n2 - n2;
         this.i.layout(this.i(0L), this.getPaddingTop(), this.i(this.e), this.getHeight() - this.getPaddingBottom());
         final ImageView c = this.c;
+        n2 = this.j;
+        n = this.l + n2;
+        c.layout(n2, n2, n, n);
+        n3 = this.i.getHeight() / 2;
+        n2 = this.b.getLineHeight();
         n = this.j;
-        n2 = this.l + n;
-        c.layout(n, n, n2, n2);
-        n2 = this.i.getHeight();
-        n = this.b.getLineHeight();
-        n3 = this.j;
-        n = (n2 / 2 - n - n3) / 2 + n3;
+        n += (n3 - n2 - n) / 2;
         this.b.layout(this.c.getRight() + this.j, n, this.i.getWidth() - this.j, this.b.getLineHeight() + n);
-        n3 = this.i.getHeight();
+        n = this.i.getHeight() / 2;
         n2 = this.k;
-        n = this.i.getHeight() / 2 - this.k;
-        this.d.layout(0, this.i.getHeight() / 2 + this.k, this.i.getWidth(), n3 / 2 + n2 + (n + n));
+        n3 = this.i.getHeight() / 2 - this.k;
+        this.d.layout(0, this.i.getHeight() / 2 + this.k, this.i.getWidth(), n + n2 + (n3 + n3));
         this.e(this.q, this.r, this.s);
-        final avt f = this.f;
-        if (f != null) {
-            final tuw s = f.S(wya.c(127670));
-            s.k(true);
-            s.c();
+        final aeea g = this.g;
+        if (g != null) {
+            final twx cg = g.cG(xaa.c(127670));
+            cg.k(true);
+            cg.c();
         }
     }
 }

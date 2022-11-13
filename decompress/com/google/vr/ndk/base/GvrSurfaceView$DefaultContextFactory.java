@@ -13,10 +13,14 @@ import android.opengl.GLSurfaceView$EGLContextFactory;
 
 class GvrSurfaceView$DefaultContextFactory implements GLSurfaceView$EGLContextFactory
 {
-    final /* synthetic */ GvrSurfaceView this$0;
+    final GvrSurfaceView this$0;
     
     private GvrSurfaceView$DefaultContextFactory(final GvrSurfaceView this$0) {
         this.this$0 = this$0;
+    }
+    
+    public GvrSurfaceView$DefaultContextFactory(final GvrSurfaceView gvrSurfaceView, final GvrSurfaceView$DefaultContextFactory-IA gvrSurfaceView$DefaultContextFactory-IA) {
+        this(gvrSurfaceView);
     }
     
     public EGLContext createContext(final EGL10 egl10, final EGLDisplay eglDisplay, final EGLConfig eglConfig) {

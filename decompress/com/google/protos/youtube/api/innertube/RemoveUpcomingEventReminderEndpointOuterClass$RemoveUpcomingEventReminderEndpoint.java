@@ -6,19 +6,19 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint extends agzi implements ahax
+public final class RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint extends ahbh implements ahcw
 {
     public static final RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg removeUpcomingEventReminderEndpoint;
+    private static volatile ahdd c;
+    public static final ahbf removeUpcomingEventReminderEndpoint;
     public String b;
     private int d;
     private byte e;
     
     static {
         final RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint a2 = new RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint();
-        agzi.registerDefaultInstance((Class)RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint.class, (agzi)(a = a2));
-        removeUpcomingEventReminderEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 124510444, ahcm.k, (Class)RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint.class);
+        ahbh.registerDefaultInstance((Class)RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint.class, (ahbh)(a = a2));
+        removeUpcomingEventReminderEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 124510444, ahek.k, (Class)RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint.class);
     }
     
     private RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint() {
@@ -27,20 +27,20 @@ public final class RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingE
         emptyProtobufList();
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint.c) == null) {
                     synchronized (RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint.class) {
                         if (RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint.c == null) {
-                            RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint.c = (ahbe)new agzb((agzi)RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint.a);
+                            RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint.c = (ahdd)new ahba((ahbh)RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint.a);
                         }
                     }
                 }
@@ -50,7 +50,7 @@ public final class RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingE
                 return RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint.a);
+                return new ahaz((ahbh)RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint.a);
             }
             case 3: {
                 return new RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingEventReminderEndpoint();
@@ -60,9 +60,9 @@ public final class RemoveUpcomingEventReminderEndpointOuterClass$RemoveUpcomingE
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {

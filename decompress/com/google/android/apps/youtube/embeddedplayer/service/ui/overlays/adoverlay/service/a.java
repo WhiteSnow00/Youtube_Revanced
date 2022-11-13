@@ -23,11 +23,12 @@ public final class a implements g
         final e b = new e(handler);
         this.b = b;
         try {
-            a.g((f)b);
+            a.g(b);
         }
         catch (final RemoteException ex) {}
     }
     
+    @Override
     public final void A(final CharSequence charSequence) {
         final c a = this.a;
         if (a == null) {
@@ -39,6 +40,7 @@ public final class a implements g
         catch (final RemoteException ex) {}
     }
     
+    @Override
     public final void n(final int n, final int n2, final int n3) {
         final c a = this.a;
         if (a == null) {
@@ -50,6 +52,7 @@ public final class a implements g
         catch (final RemoteException ex) {}
     }
     
+    @Override
     public final void o(final int n) {
         final c a = this.a;
         if (a == null) {
@@ -61,6 +64,7 @@ public final class a implements g
         catch (final RemoteException ex) {}
     }
     
+    @Override
     public final void p(final CharSequence charSequence) {
         final c a = this.a;
         if (a == null) {
@@ -72,6 +76,7 @@ public final class a implements g
         catch (final RemoteException ex) {}
     }
     
+    @Override
     public final void q(final Bitmap bitmap) {
         final c a = this.a;
         if (a == null) {
@@ -83,6 +88,7 @@ public final class a implements g
         catch (final RemoteException ex) {}
     }
     
+    @Override
     public final void s(final boolean b) {
         final c a = this.a;
         if (a == null) {
@@ -94,10 +100,12 @@ public final class a implements g
         catch (final RemoteException ex) {}
     }
     
-    public final void u(final sji a) {
+    @Override
+    public final void u(final sln a) {
         this.b.a = a;
     }
     
+    @Override
     public final void v(final boolean b) {
         final c a = this.a;
         if (a == null) {
@@ -109,6 +117,7 @@ public final class a implements g
         catch (final RemoteException ex) {}
     }
     
+    @Override
     public final void w(final boolean b) {
         final c a = this.a;
         if (a == null) {
@@ -120,6 +129,7 @@ public final class a implements g
         catch (final RemoteException ex) {}
     }
     
+    @Override
     public final void x(final boolean b) {
         final c a = this.a;
         if (a == null) {
@@ -131,6 +141,7 @@ public final class a implements g
         catch (final RemoteException ex) {}
     }
     
+    @Override
     public final void y(final boolean b) {
         final c a = this.a;
         if (a == null) {
@@ -142,13 +153,14 @@ public final class a implements g
         catch (final RemoteException ex) {}
     }
     
-    public final void z(final ajpr ajpr) {
+    @Override
+    public final void z(final ajrv ajrv) {
         final c a = this.a;
         if (a == null) {
             return;
         }
         try {
-            a.o(new FancyDismissibleDialogRendererWrapper(ajpr));
+            a.o(new FancyDismissibleDialogRendererWrapper(ajrv));
         }
         catch (final RemoteException ex) {}
     }

@@ -6,43 +6,43 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint extends agzi implements ahax
+public final class SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint extends ahbh implements ahcw
 {
     public static final SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint a;
-    private static volatile ahbe c;
-    public static final agzg selectActiveIdentityEndpoint;
-    public agzy b;
+    private static volatile ahdd c;
+    public static final ahbf selectActiveIdentityEndpoint;
+    public ahbx b;
     private int d;
-    private aioe e;
-    private aioe f;
+    private aiqj e;
+    private aiqj f;
     private byte g;
     
     static {
         final SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint a2 = new SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint();
-        agzi.registerDefaultInstance((Class)SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.class, (agzi)(a = a2));
-        selectActiveIdentityEndpoint = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 77196420, ahcm.k, (Class)SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.class);
+        ahbh.registerDefaultInstance((Class)SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.class, (ahbh)(a = a2));
+        selectActiveIdentityEndpoint = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 77196420, ahek.k, (Class)SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.class);
     }
     
     private SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint() {
         this.g = 2;
         this.b = emptyProtobufList();
-        final agyc b = agyc.b;
+        final ahab b = ahab.b;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte g = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe c;
+                final ahdd c;
                 if ((c = SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.c) == null) {
                     synchronized (SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.class) {
                         if (SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.c == null) {
-                            SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.c = (ahbe)new agzb((agzi)SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.a);
+                            SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.c = (ahdd)new ahba((ahbh)SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.a);
                         }
                     }
                 }
@@ -52,19 +52,19 @@ public final class SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEn
                 return SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.a;
             }
             case 4: {
-                return new agza((agzi)SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.a);
+                return new ahaz((ahbh)SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.a);
             }
             case 3: {
                 return new SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint();
             }
             case 2: {
-                return newMessageInfo((MessageLite)SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.a, "\u0001\u0003\u0000\u0001\u0001\u0004\u0003\u0000\u0001\u0003\u0001\u041b\u0003\u1409\u0001\u0004\u1409\u0002", new Object[] { "d", "b", ahij.class, "e", "f" });
+                return newMessageInfo((MessageLite)SelectActiveIdentityEndpointOuterClass$SelectActiveIdentityEndpoint.a, "\u0001\u0003\u0000\u0001\u0001\u0004\u0003\u0000\u0001\u0003\u0001\u041b\u0003\u1409\u0001\u0004\u1409\u0002", new Object[] { "d", "b", ahkh.class, "e", "f" });
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    g = 0;
                 }
-                this.g = (byte)(b ? 1 : 0);
+                this.g = g;
                 return null;
             }
             case 0: {

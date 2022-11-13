@@ -6,40 +6,40 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowInterstitialActionOuterClass$ShowInterstitialAction extends agzi implements ahax
+public final class ShowInterstitialActionOuterClass$ShowInterstitialAction extends ahbh implements ahcw
 {
     public static final ShowInterstitialActionOuterClass$ShowInterstitialAction a;
-    private static volatile ahbe d;
-    public static final agzg showInterstitialAction;
-    public aoej b;
+    private static volatile ahdd d;
+    public static final ahbf showInterstitialAction;
+    public aogm b;
     public boolean c;
     private int e;
     private byte f;
     
     static {
         final ShowInterstitialActionOuterClass$ShowInterstitialAction a2 = new ShowInterstitialActionOuterClass$ShowInterstitialAction();
-        agzi.registerDefaultInstance((Class)ShowInterstitialActionOuterClass$ShowInterstitialAction.class, (agzi)(a = a2));
-        showInterstitialAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 152165632, ahcm.k, (Class)ShowInterstitialActionOuterClass$ShowInterstitialAction.class);
+        ahbh.registerDefaultInstance((Class)ShowInterstitialActionOuterClass$ShowInterstitialAction.class, (ahbh)(a = a2));
+        showInterstitialAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 152165632, ahek.k, (Class)ShowInterstitialActionOuterClass$ShowInterstitialAction.class);
     }
     
     private ShowInterstitialActionOuterClass$ShowInterstitialAction() {
         this.f = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte f = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = ShowInterstitialActionOuterClass$ShowInterstitialAction.d) == null) {
                     synchronized (ShowInterstitialActionOuterClass$ShowInterstitialAction.class) {
                         if (ShowInterstitialActionOuterClass$ShowInterstitialAction.d == null) {
-                            ShowInterstitialActionOuterClass$ShowInterstitialAction.d = (ahbe)new agzb((agzi)ShowInterstitialActionOuterClass$ShowInterstitialAction.a);
+                            ShowInterstitialActionOuterClass$ShowInterstitialAction.d = (ahdd)new ahba((ahbh)ShowInterstitialActionOuterClass$ShowInterstitialAction.a);
                         }
                     }
                 }
@@ -49,7 +49,7 @@ public final class ShowInterstitialActionOuterClass$ShowInterstitialAction exten
                 return ShowInterstitialActionOuterClass$ShowInterstitialAction.a;
             }
             case 4: {
-                return new agza((agzi)ShowInterstitialActionOuterClass$ShowInterstitialAction.a);
+                return new ahaz((ahbh)ShowInterstitialActionOuterClass$ShowInterstitialAction.a);
             }
             case 3: {
                 return new ShowInterstitialActionOuterClass$ShowInterstitialAction();
@@ -59,9 +59,9 @@ public final class ShowInterstitialActionOuterClass$ShowInterstitialAction exten
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    f = 0;
                 }
-                this.f = (byte)(b ? 1 : 0);
+                this.f = f;
                 return null;
             }
             case 0: {

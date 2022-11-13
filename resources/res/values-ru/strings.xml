@@ -107,7 +107,7 @@
     <string name="accessibility_navigate_up_button">Назад к альбому</string>
     <string name="accessibility_navigation_back_button">Назад</string>
     <string name="accessibility_new_content_available">Есть новый контент</string>
-    <string name="accessibility_new_videos">New videos</string>
+    <string name="accessibility_new_videos">Новые видео</string>
     <string name="accessibility_next">Следующее видео</string>
     <string name="accessibility_offline_button_cancel">Остановить сохранение</string>
     <string name="accessibility_offline_button_cannot_save">Не удается добавить видео в офлайн-режим</string>
@@ -481,6 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Контроль трафика</string>
     <string name="data_saving_persistent_title">Экономия трафика</string>
     <string name="data_saving_select_quality_every_video_switch_title">Выбирать качество для каждого видео</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
     <string name="data_saving_snack_bar_action_button">Открыть</string>
     <string name="data_saving_snack_bar_text">Это изменение затронет настройки экономии трафика.</string>
     <string name="data_saving_upload_wifi_only_switch_title">Загружать только через Wi-Fi</string>
@@ -735,7 +736,7 @@
     <string name="image_gallery_zero_state_text_secondary">Если вы хотите добавить изображение, сделайте снимок.</string>
     <string name="image_upload_error">Ошибка загрузки. Повторите попытку.</string>
     <string name="image_upload_something_went_wrong">Произошла ошибка.</string>
-    <string name="immersive_accessibility_player_overlay">Player, double tap to bring up player controls</string>
+    <string name="immersive_accessibility_player_overlay">Проигрыватель: нажмите дважды, чтобы появились элементы управления проигрывателем.</string>
     <string name="in_app_update_downloaded_message">Обновление скачано.</string>
     <string name="in_app_update_downloading_message">Скачивание обновления…</string>
     <string name="in_app_update_restart_button">ПЕРЕЗАПУСТИТЬ</string>
@@ -1458,7 +1459,7 @@
     <string name="pref_settings_video_quality_nonbeta">Качество видео</string>
     <string name="pref_smart_downloads_description">Использование хранилища при умном скачивании</string>
     <string name="pref_smart_downloads_opted_in_title">Умное скачивание</string>
-    <string name="pref_smart_downloads_quality_title">Smart downloads quality</string>
+    <string name="pref_smart_downloads_quality_title">Качество при умном скачивании</string>
     <string name="pref_smart_downloads_summary">Автоматически скачивать рекомендованные видео по Wi-Fi</string>
     <string name="pref_subtitles_category">Субтитры</string>
     <string name="pref_upload_policy_summary">Выбрать сеть для загрузки видео</string>
@@ -1808,7 +1809,7 @@
     <string name="shorts_segment_import_failed_text">Ошибка при импорте сегмента</string>
     <string name="shorts_segment_import_timeout_text">Время ожидания импорта сегмента истекло</string>
     <string name="shorts_selected_duration_title">%1$d секунд</string>
-    <string name="shorts_sound_added_tooltip_time_x">Sound added to first %1$ds</string>
+    <string name="shorts_sound_added_tooltip_time_x">Звук добавлен к первым %1$d сек.</string>
     <string name="shorts_speed_control_fast_label">Высокая</string>
     <string name="shorts_speed_control_fast_text">2</string>
     <string name="shorts_speed_control_normal_label">Стандартная</string>

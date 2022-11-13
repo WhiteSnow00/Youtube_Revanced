@@ -62,7 +62,7 @@
     <integer name="gm_sys_motion_duration_short2">150</integer>
     <integer name="google_btn_anim_delay_ms">100</integer>
     <integer name="google_btn_anim_duration_ms">100</integer>
-    <integer name="google_play_services_version">224400000</integer>
+    <integer name="google_play_services_version">224500000</integer>
     <integer name="grid_shelf_num_columns">2</integer>
     <integer name="hide_password_duration">320</integer>
     <integer name="horizontal_shelf_num_columns">1</integer>

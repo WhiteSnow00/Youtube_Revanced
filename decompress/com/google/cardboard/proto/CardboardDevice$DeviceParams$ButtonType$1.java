@@ -4,9 +4,13 @@
 
 package com.google.cardboard.proto;
 
-class CardboardDevice$DeviceParams$ButtonType$1 implements agzn
+class CardboardDevice$DeviceParams$ButtonType$1 implements ahbm
 {
     public CardboardDevice$DeviceParams$ButtonType$1() {
+    }
+    
+    public /* bridge */ ahbl findValueByNumber(final int n) {
+        return (ahbl)this.findValueByNumber(n);
     }
     
     public CardboardDevice$DeviceParams$ButtonType findValueByNumber(final int n) {

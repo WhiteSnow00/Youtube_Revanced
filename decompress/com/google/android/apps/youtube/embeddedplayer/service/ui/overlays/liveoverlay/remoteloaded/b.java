@@ -7,7 +7,7 @@ package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveo
 import android.os.RemoteException;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.shared.f;
 
-public final class b implements abak
+public final class b implements abcf
 {
     public f a;
     
@@ -20,22 +20,22 @@ public final class b implements abak
         final f a = this.a;
         if (a != null) {
             try {
-                a.sW();
+                a.tc();
             }
             catch (final RemoteException ex) {
-                jfi.ak(ex);
+                mft.v(ex);
             }
         }
     }
     
-    public final void sW() {
+    public final void tc() {
         final f a = this.a;
         if (a != null) {
             try {
-                a.sW();
+                a.tc();
             }
             catch (final RemoteException ex) {
-                jfi.ak(ex);
+                mft.v(ex);
             }
         }
     }

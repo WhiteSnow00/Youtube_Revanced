@@ -6,33 +6,33 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class NavigateBackCommandOuterClass$NavigateBackCommand extends agzi implements ahax
+public final class NavigateBackCommandOuterClass$NavigateBackCommand extends ahbh implements ahcw
 {
     public static final NavigateBackCommandOuterClass$NavigateBackCommand a;
-    private static volatile ahbe b;
-    public static final agzg navigateBackCommand;
+    private static volatile ahdd b;
+    public static final ahbf navigateBackCommand;
     
     static {
         final NavigateBackCommandOuterClass$NavigateBackCommand a2 = new NavigateBackCommandOuterClass$NavigateBackCommand();
-        agzi.registerDefaultInstance((Class)NavigateBackCommandOuterClass$NavigateBackCommand.class, (agzi)(a = a2));
-        navigateBackCommand = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 368868921, ahcm.k, (Class)NavigateBackCommandOuterClass$NavigateBackCommand.class);
+        ahbh.registerDefaultInstance((Class)NavigateBackCommandOuterClass$NavigateBackCommand.class, (ahbh)(a = a2));
+        navigateBackCommand = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 368868921, ahek.k, (Class)NavigateBackCommandOuterClass$NavigateBackCommand.class);
     }
     
     private NavigateBackCommandOuterClass$NavigateBackCommand() {
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        switch (agzh.ordinal()) {
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        switch (ahbg.ordinal()) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe b;
+                final ahdd b;
                 if ((b = NavigateBackCommandOuterClass$NavigateBackCommand.b) == null) {
                     synchronized (NavigateBackCommandOuterClass$NavigateBackCommand.class) {
                         if (NavigateBackCommandOuterClass$NavigateBackCommand.b == null) {
-                            NavigateBackCommandOuterClass$NavigateBackCommand.b = (ahbe)new agzb((agzi)NavigateBackCommandOuterClass$NavigateBackCommand.a);
+                            NavigateBackCommandOuterClass$NavigateBackCommand.b = (ahdd)new ahba((ahbh)NavigateBackCommandOuterClass$NavigateBackCommand.a);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ public final class NavigateBackCommandOuterClass$NavigateBackCommand extends agz
                 return NavigateBackCommandOuterClass$NavigateBackCommand.a;
             }
             case 4: {
-                return new agza((agzi)NavigateBackCommandOuterClass$NavigateBackCommand.a);
+                return new ahaz((ahbh)NavigateBackCommandOuterClass$NavigateBackCommand.a);
             }
             case 3: {
                 return new NavigateBackCommandOuterClass$NavigateBackCommand();

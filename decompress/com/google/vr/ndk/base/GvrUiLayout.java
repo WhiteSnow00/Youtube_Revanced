@@ -9,9 +9,9 @@ import com.google.vr.vrcore.library.api.ObjectWrapper;
 
 public class GvrUiLayout
 {
-    private final arbi impl;
+    private final ardw impl;
     
-    public GvrUiLayout(final arbi impl) {
+    public GvrUiLayout(final ardw impl) {
         this.impl = impl;
     }
     

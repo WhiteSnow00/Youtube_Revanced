@@ -4,17 +4,27 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.remoteloaded;
 
-import j$.time.Duration;
-import android.content.Context;
+import com.google.protobuf.MessageLite;
+import com.google.common.util.concurrent.ListenableFuture;
 
-final class n extends abff
+final class n implements tmx
 {
-    public n(final Context context) {
-        super(context, (tku)new m());
+    public n() {
     }
     
-    @Override
-    public final Duration a() {
-        return o.a;
+    public final ListenableFuture a() {
+        return afwm.m((Object)aqre.a);
+    }
+    
+    public final ListenableFuture b(final aezf aezf) {
+        return afvn.a;
+    }
+    
+    public final MessageLite c() {
+        return (MessageLite)aqre.a;
+    }
+    
+    public final ashi d() {
+        return ashi.K((Object)aqre.a);
     }
 }

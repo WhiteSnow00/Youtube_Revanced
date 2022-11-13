@@ -18,7 +18,7 @@ public class PhoneEntity extends AbstractSafeParcelable implements Phone
     public final String c;
     
     static {
-        CREATOR = (Parcelable$Creator)new njx(11);
+        CREATOR = (Parcelable$Creator)new nlj(10);
     }
     
     public PhoneEntity(final PersonFieldMetadataEntity a, final String b, final String c) {
@@ -28,7 +28,7 @@ public class PhoneEntity extends AbstractSafeParcelable implements Phone
     }
     
     public final PersonFieldMetadata a() {
-        return this.a;
+        return (PersonFieldMetadata)this.a;
     }
     
     public final String b() {
@@ -47,18 +47,18 @@ public class PhoneEntity extends AbstractSafeParcelable implements Phone
             return true;
         }
         final Phone phone = (Phone)o;
-        return kgk.ba((Object)this.a(), (Object)phone.a()) && kgk.ba((Object)this.c(), (Object)phone.c()) && kgk.ba((Object)this.b(), (Object)phone.b());
+        return khl.be((Object)((Phone)this).a(), (Object)phone.a()) && khl.be((Object)((Phone)this).c(), (Object)phone.c()) && khl.be((Object)((Phone)this).b(), (Object)phone.b());
     }
     
     public final int hashCode() {
-        return Arrays.hashCode(new Object[] { this.a(), this.c(), this.b() });
+        return Arrays.hashCode(new Object[] { ((Phone)this).a(), ((Phone)this).c(), ((Phone)this).b() });
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        final int i = kgk.I(parcel);
-        kgk.ab(parcel, 2, (Parcelable)this.a, n);
-        kgk.ac(parcel, 3, this.b);
-        kgk.ac(parcel, 4, this.c);
-        kgk.J(parcel, i);
+        final int m = khl.M(parcel);
+        khl.af(parcel, 2, (Parcelable)this.a, n);
+        khl.ag(parcel, 3, this.b);
+        khl.ag(parcel, 4, this.c);
+        khl.N(parcel, m);
     }
 }

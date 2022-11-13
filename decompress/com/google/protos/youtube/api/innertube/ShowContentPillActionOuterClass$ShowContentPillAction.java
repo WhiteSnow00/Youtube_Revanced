@@ -6,39 +6,39 @@ package com.google.protos.youtube.api.innertube;
 
 import com.google.protobuf.MessageLite;
 
-public final class ShowContentPillActionOuterClass$ShowContentPillAction extends agzi implements ahax
+public final class ShowContentPillActionOuterClass$ShowContentPillAction extends ahbh implements ahcw
 {
     public static final ShowContentPillActionOuterClass$ShowContentPillAction a;
-    private static volatile ahbe d;
-    public static final agzg showContentPillAction;
+    private static volatile ahdd d;
+    public static final ahbf showContentPillAction;
     public int b;
-    public aodx c;
+    public aoga c;
     private byte e;
     
     static {
         final ShowContentPillActionOuterClass$ShowContentPillAction a2 = new ShowContentPillActionOuterClass$ShowContentPillAction();
-        agzi.registerDefaultInstance((Class)ShowContentPillActionOuterClass$ShowContentPillAction.class, (agzi)(a = a2));
-        showContentPillAction = agzi.newSingularGeneratedExtension((MessageLite)aioe.a, (Object)a2, (MessageLite)a2, (agzn)null, 135486026, ahcm.k, (Class)ShowContentPillActionOuterClass$ShowContentPillAction.class);
+        ahbh.registerDefaultInstance((Class)ShowContentPillActionOuterClass$ShowContentPillAction.class, (ahbh)(a = a2));
+        showContentPillAction = ahbh.newSingularGeneratedExtension((MessageLite)aiqj.a, (Object)a2, (MessageLite)a2, (ahbm)null, 135486026, ahek.k, (Class)ShowContentPillActionOuterClass$ShowContentPillAction.class);
     }
     
     private ShowContentPillActionOuterClass$ShowContentPillAction() {
         this.e = 2;
     }
     
-    protected final Object dynamicMethod(final agzh agzh, final Object o, final Object o2) {
-        final agzh a = agzh.a;
-        final int ordinal = agzh.ordinal();
-        boolean b = true;
+    protected final Object dynamicMethod(final ahbg ahbg, final Object o, final Object o2) {
+        final ahbg a = ahbg.a;
+        final int ordinal = ahbg.ordinal();
+        byte e = 1;
         switch (ordinal) {
             default: {
                 throw new UnsupportedOperationException();
             }
             case 6: {
-                final ahbe d;
+                final ahdd d;
                 if ((d = ShowContentPillActionOuterClass$ShowContentPillAction.d) == null) {
                     synchronized (ShowContentPillActionOuterClass$ShowContentPillAction.class) {
                         if (ShowContentPillActionOuterClass$ShowContentPillAction.d == null) {
-                            ShowContentPillActionOuterClass$ShowContentPillAction.d = (ahbe)new agzb((agzi)ShowContentPillActionOuterClass$ShowContentPillAction.a);
+                            ShowContentPillActionOuterClass$ShowContentPillAction.d = (ahdd)new ahba((ahbh)ShowContentPillActionOuterClass$ShowContentPillAction.a);
                         }
                     }
                 }
@@ -48,7 +48,7 @@ public final class ShowContentPillActionOuterClass$ShowContentPillAction extends
                 return ShowContentPillActionOuterClass$ShowContentPillAction.a;
             }
             case 4: {
-                return new agza((agzi)ShowContentPillActionOuterClass$ShowContentPillAction.a);
+                return new ahaz((ahbh)ShowContentPillActionOuterClass$ShowContentPillAction.a);
             }
             case 3: {
                 return new ShowContentPillActionOuterClass$ShowContentPillAction();
@@ -58,9 +58,9 @@ public final class ShowContentPillActionOuterClass$ShowContentPillAction extends
             }
             case 1: {
                 if (o == null) {
-                    b = false;
+                    e = 0;
                 }
-                this.e = (byte)(b ? 1 : 0);
+                this.e = e;
                 return null;
             }
             case 0: {
