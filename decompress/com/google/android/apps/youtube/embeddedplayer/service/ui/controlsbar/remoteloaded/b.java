@@ -15,14 +15,14 @@ final class b implements DialogInterface$OnClickListener
     final c a;
     private final VideoQuality[] b;
     
-    public b(final c a, final VideoQuality[] array) {
+    public b(final c a, final VideoQuality[] b) {
         this.a = a;
-        array.getClass();
-        this.b = array;
+        b.getClass();
+        this.b = b;
     }
     
     public final void onClick(final DialogInterface dialogInterface, int a) {
-        final pvh i = this.a.i;
+        final oqz i = this.a.i;
         a = this.b[a].a;
         ((a)i.a).a.x(a);
         dialogInterface.dismiss();

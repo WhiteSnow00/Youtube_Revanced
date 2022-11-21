@@ -13,11 +13,15 @@ import android.app.Activity;
 public final class ExtensionEmbeddingBackend$SplitListenerWrapper
 {
     private final Activity activity;
-    private final akn callback;
+    private final akp callback;
     private final Executor executor;
     private List lastValue;
     
-    public ExtensionEmbeddingBackend$SplitListenerWrapper(final Activity activity, final Executor executor, final akn callback) {
+    public static void $r8$lambda$II-g5TJn_0XMeuorRAEqwngDE3c(final ExtensionEmbeddingBackend$SplitListenerWrapper extensionEmbeddingBackend$SplitListenerWrapper, final List list) {
+        accept$lambda$1(extensionEmbeddingBackend$SplitListenerWrapper, list);
+    }
+    
+    public ExtensionEmbeddingBackend$SplitListenerWrapper(final Activity activity, final Executor executor, final akp callback) {
         activity.getClass();
         executor.getClass();
         callback.getClass();
@@ -40,14 +44,14 @@ public final class ExtensionEmbeddingBackend$SplitListenerWrapper
                 lastValue.add(next);
             }
         }
-        if (atnh.c((Object)lastValue, (Object)this.lastValue)) {
+        if (atqz.c(lastValue, this.lastValue)) {
             return;
         }
         this.lastValue = lastValue;
         this.executor.execute(new ExtensionEmbeddingBackend$SplitListenerWrapper$$ExternalSyntheticLambda0(this, lastValue));
     }
     
-    public final akn getCallback() {
+    public final akp getCallback() {
         return this.callback;
     }
 }

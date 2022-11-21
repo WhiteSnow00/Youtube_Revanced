@@ -16,12 +16,12 @@ public final class a implements Runnable
     public final int a;
     public final int b;
     public final int c;
-    public final eoa d;
+    public final eod d;
     private final int e;
     
     public a(final h d, final int a, final int b, final int c, final int e) {
         this.e = e;
-        this.d = (eoa)d;
+        this.d = d;
         this.a = a;
         this.b = b;
         this.c = c;
@@ -29,7 +29,7 @@ public final class a implements Runnable
     
     public a(final b d, final int a, final int b, final int c, final int e) {
         this.e = e;
-        this.d = (eoa)d;
+        this.d = d;
         this.a = a;
         this.b = b;
         this.c = c;
@@ -38,7 +38,7 @@ public final class a implements Runnable
     @Override
     public final void run() {
         if (this.e != 0) {
-            final eoa d = this.d;
+            final eod d = this.d;
             final int a = this.a;
             final int b = this.b;
             final int c = this.c;
@@ -49,7 +49,7 @@ public final class a implements Runnable
             }
             return;
         }
-        final eoa d2 = this.d;
+        final eod d2 = this.d;
         final int a3 = this.a;
         final int b2 = this.b;
         final int c2 = this.c;

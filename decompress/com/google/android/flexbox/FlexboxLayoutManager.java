@@ -16,117 +16,116 @@ import android.content.Context;
 import android.util.SparseArray;
 import android.graphics.Rect;
 
-public class FlexboxLayoutManager extends nw implements lyy, oi
+public class FlexboxLayoutManager extends nx implements mar, oj
 {
-    private static final Rect g;
+    private static final Rect h;
+    private int H;
     private int I;
-    private int J;
-    private SparseArray K;
-    private final Context L;
-    private View M;
-    private int N;
-    private agls O;
+    private final SparseArray J;
+    private final Context K;
+    private View L;
+    private int M;
+    private final agpl N;
     public int a;
     public int b;
     public boolean c;
     public List d;
-    public final lzb e;
-    public nk f;
-    private int h;
+    public final mau e;
+    public nl f;
+    public nl g;
     private int i;
-    private boolean j;
-    private oc k;
-    private ok l;
-    private lzd m;
-    private lzc n;
-    private nk o;
+    private final int j;
+    private boolean k;
+    private od l;
+    private ol m;
+    private maw n;
+    private final mav o;
     private FlexboxLayoutManager$SavedState p;
     private int q;
     private int r;
     
     static {
-        g = new Rect();
+        h = new Rect();
     }
     
-    public FlexboxLayoutManager(final Context l, final AttributeSet set, int a, final int n) {
-        this.i = -1;
+    public FlexboxLayoutManager(final Context k, final AttributeSet set, int a, final int n) {
+        this.j = -1;
         this.d = new ArrayList();
-        this.e = new lzb((lyy)this);
-        this.n = new lzc(this);
+        this.e = new mau((mar)this);
+        this.o = new mav(this);
         this.q = -1;
         this.r = Integer.MIN_VALUE;
+        this.H = Integer.MIN_VALUE;
         this.I = Integer.MIN_VALUE;
-        this.J = Integer.MIN_VALUE;
-        this.K = new SparseArray();
-        this.N = -1;
-        this.O = new agls();
-        final nv az = az(l, set, a, n);
+        this.J = new SparseArray();
+        this.M = -1;
+        this.N = new agpl();
+        final nw az = az(k, set, a, n);
         a = az.a;
         if (a != 0) {
             if (a == 1) {
                 if (az.c) {
-                    this.N(3);
+                    this.M(3);
                 }
                 else {
-                    this.N(2);
+                    this.M(2);
                 }
             }
         }
         else if (az.c) {
-            this.N(1);
+            this.M(1);
         }
         else {
-            this.N(0);
+            this.M(0);
         }
         if (this.b != 1) {
             this.aR();
-            this.bC();
+            this.an();
             this.b = 1;
             this.f = null;
-            this.o = null;
+            this.g = null;
             this.aX();
         }
-        if (this.h != 4) {
+        if (this.i != 4) {
             this.aR();
-            this.bC();
-            this.h = 4;
+            this.an();
+            this.i = 4;
             this.aX();
         }
-        super.x = true;
-        this.L = l;
+        this.K = k;
     }
     
-    private final int O(final ok ok) {
+    private final int N(final ol ol) {
         if (this.as() == 0) {
             return 0;
         }
-        final int a = ok.a();
-        this.bE();
-        final View ah = this.ah(a);
-        final View ak = this.ak(a);
-        if (ok.a() != 0 && ah != null && ak != null) {
-            return Math.min(this.f.k(), this.f.a(ak) - this.f.d(ah));
+        final int a = ol.a();
+        this.bD();
+        final View ad = this.ad(a);
+        final View ai = this.ai(a);
+        if (ol.a() != 0 && ad != null && ai != null) {
+            return Math.min(this.f.k(), this.f.a(ai) - this.f.d(ad));
         }
         return 0;
     }
     
-    private final int R(final ok ok) {
+    private final int O(final ol ol) {
         if (this.as() == 0) {
             return 0;
         }
-        final int a = ok.a();
-        final View ah = this.ah(a);
-        final View ak = this.ak(a);
-        if (ok.a() != 0 && ah != null) {
-            if (ak != null) {
-                final int bo = bo(ah);
-                final int bo2 = bo(ak);
-                final int abs = Math.abs(this.f.a(ak) - this.f.d(ah));
+        final int a = ol.a();
+        final View ad = this.ad(a);
+        final View ai = this.ai(a);
+        if (ol.a() != 0 && ad != null) {
+            if (ai != null) {
+                final int bo = bo(ad);
+                final int bo2 = bo(ai);
+                final int abs = Math.abs(this.f.a(ai) - this.f.d(ad));
                 final int[] b = this.e.b;
                 final int n = b[bo];
                 if (n != 0) {
                     if (n != -1) {
-                        return Math.round(n * (abs / (float)(b[bo2] - n + 1)) + (this.f.j() - this.f.d(ah)));
+                        return Math.round(n * (abs / (float)(b[bo2] - n + 1)) + (this.f.j() - this.f.d(ad)));
                     }
                 }
             }
@@ -134,401 +133,406 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
         return 0;
     }
     
-    private final int S(final ok ok) {
+    private final int R(final ol ol) {
         if (this.as() == 0) {
             return 0;
         }
-        final int a = ok.a();
-        final View ah = this.ah(a);
-        final View ak = this.ak(a);
-        if (ok.a() != 0 && ah != null && ak != null) {
-            return (int)(Math.abs(this.f.a(ak) - this.f.d(ah)) / (float)(this.M() - this.L() + 1) * ok.a());
+        final int a = ol.a();
+        final View ad = this.ad(a);
+        final View ai = this.ai(a);
+        if (ol.a() != 0 && ad != null && ai != null) {
+            final View bm = this.bM(0, this.as());
+            int bo;
+            if (bm == null) {
+                bo = -1;
+            }
+            else {
+                bo = bo(bm);
+            }
+            return (int)(Math.abs(this.f.a(ai) - this.f.d(ad)) / (float)(this.L() - bo + 1) * ol.a());
         }
         return 0;
     }
     
-    private final int V(final oc oc, final ok ok, final lzd lzd) {
-        final int f = lzd.f;
+    private final int S(final od od, final ol ol, final maw maw) {
+        final int f = maw.f;
         if (f != Integer.MIN_VALUE) {
-            final int a = lzd.a;
+            final int a = maw.a;
             if (a < 0) {
-                lzd.f = f + a;
+                maw.f = f + a;
             }
-            this.bF(oc, lzd);
+            this.bE(od, maw);
         }
-        int a2 = lzd.a;
+        int a2 = maw.a;
         final boolean k = this.K();
         int n = a2;
         int n2 = 0;
-        while (n > 0 || this.m.b) {
+        while (n > 0 || this.n.b) {
             final List d = this.d;
-            final int d2 = lzd.d;
-            if (d2 < 0 || d2 >= ok.a()) {
+            final int d2 = maw.d;
+            if (d2 < 0 || d2 >= ol.a()) {
                 break;
             }
-            final int c = lzd.c;
+            final int c = maw.c;
             if (c < 0 || c >= d.size()) {
                 break;
             }
-            final lyz lyz = this.d.get(lzd.c);
-            lzd.d = lyz.o;
-            int n15;
-            int n17;
+            final mas mas = this.d.get(maw.c);
+            maw.d = mas.o;
+            int n16;
             int n18;
+            int n19;
             if (this.K()) {
                 final int paddingLeft = this.getPaddingLeft();
                 final int paddingRight = this.getPaddingRight();
-                final int e = super.E;
-                int e2 = lzd.e;
-                if (lzd.i == -1) {
-                    e2 -= lyz.g;
+                final int d3 = super.D;
+                int e = maw.e;
+                if (maw.i == -1) {
+                    e -= mas.g;
                 }
-                final int d3 = lzd.d;
-                final float n3 = (float)this.n.d;
-                float n4 = paddingLeft - n3;
-                float n5 = e - paddingRight - n3;
+                final int d4 = maw.d;
+                final float n3 = (float)paddingLeft;
+                final float n4 = (float)this.o.d;
                 final float max = Math.max(0.0f, 0.0f);
-                final int h = lyz.h;
-                int i = d3;
-                int n6 = 0;
-                final int n7 = e2;
-                while (i < d3 + h) {
+                final int h = mas.h;
+                float n5 = d3 - paddingRight - n4;
+                float n6 = n3 - n4;
+                int i = d4;
+                int n7 = 0;
+                final int n8 = e;
+                while (i < d4 + h) {
                     final View s = this.s(i);
-                    int n8;
-                    if (lzd.i == 1) {
-                        this.aH(s, FlexboxLayoutManager.g);
+                    int n9;
+                    if (maw.i == 1) {
+                        this.aH(s, FlexboxLayoutManager.h);
                         this.aF(s);
-                        n8 = n6;
+                        n9 = n7;
                     }
                     else {
-                        this.aH(s, FlexboxLayoutManager.g);
-                        this.aG(s, n6);
-                        n8 = n6 + 1;
+                        this.aH(s, FlexboxLayoutManager.h);
+                        this.aG(s, n7);
+                        n9 = n7 + 1;
                     }
-                    final long n9 = this.e.c[i];
-                    final int n10 = (int)n9;
-                    final int n11 = lzb.n(n9);
+                    final long n10 = this.e.c[i];
+                    final int n11 = (int)n10;
+                    final int n12 = mau.n(n10);
                     final FlexboxLayoutManager$LayoutParams flexboxLayoutManager$LayoutParams = (FlexboxLayoutManager$LayoutParams)s.getLayoutParams();
-                    if (this.bM(s, n10, n11, (nx)flexboxLayoutManager$LayoutParams)) {
-                        s.measure(n10, n11);
+                    if (this.bL(s, n11, n12, (ny)flexboxLayoutManager$LayoutParams)) {
+                        s.measure(n11, n12);
                     }
-                    final float n12 = flexboxLayoutManager$LayoutParams.leftMargin + bn(s) + n4;
-                    final float n13 = n5 - (flexboxLayoutManager$LayoutParams.rightMargin + bp(s));
-                    final int n14 = n7 + bq(s);
+                    final float n13 = flexboxLayoutManager$LayoutParams.leftMargin + bn(s) + n6;
+                    final float n14 = n5 - (flexboxLayoutManager$LayoutParams.rightMargin + bp(s));
+                    final int n15 = n8 + bq(s);
                     if (this.c) {
-                        this.e.i(s, lyz, Math.round(n13) - s.getMeasuredWidth(), n14, Math.round(n13), n14 + s.getMeasuredHeight());
+                        this.e.i(s, mas, Math.round(n14) - s.getMeasuredWidth(), n15, Math.round(n14), n15 + s.getMeasuredHeight());
                     }
                     else {
-                        final View view = s;
-                        this.e.i(view, lyz, Math.round(n12), n14, Math.round(n12) + view.getMeasuredWidth(), n14 + view.getMeasuredHeight());
+                        this.e.i(s, mas, Math.round(n13), n15, Math.round(n13) + s.getMeasuredWidth(), n15 + s.getMeasuredHeight());
                     }
-                    n4 = s.getMeasuredWidth() + flexboxLayoutManager$LayoutParams.rightMargin + bp(s) + max + n12;
-                    n5 = n13 - (s.getMeasuredWidth() + flexboxLayoutManager$LayoutParams.leftMargin + bn(s) + max);
+                    n6 = s.getMeasuredWidth() + flexboxLayoutManager$LayoutParams.rightMargin + bp(s) + max + n13;
+                    n5 = n14 - (s.getMeasuredWidth() + flexboxLayoutManager$LayoutParams.leftMargin + bn(s) + max);
                     ++i;
-                    n6 = n8;
+                    n7 = n9;
                 }
-                lzd.c += this.m.i;
-                n15 = lyz.g;
-                final int n16 = n;
-                n17 = a2;
-                n18 = n16;
+                maw.c += this.n.i;
+                n16 = mas.g;
+                final int n17 = n;
+                n18 = a2;
+                n19 = n17;
             }
             else {
-                final int n19 = a2;
+                final int n20 = a2;
                 final int paddingTop = this.getPaddingTop();
                 final int paddingBottom = this.getPaddingBottom();
-                final int f2 = super.F;
-                final int e3 = lzd.e;
-                int n20;
+                final int e2 = super.E;
+                final int e3 = maw.e;
                 int n21;
-                if (lzd.i == -1) {
-                    final int g = lyz.g;
-                    n20 = e3 + g;
-                    n21 = e3 - g;
+                int n22;
+                if (maw.i == -1) {
+                    final int g = mas.g;
+                    n21 = e3 + g;
+                    n22 = e3 - g;
                 }
                 else {
-                    n20 = e3;
                     n21 = e3;
+                    n22 = e3;
                 }
-                final int d4 = lzd.d;
-                final float n22 = (float)this.n.d;
-                float n23 = paddingTop - n22;
-                float n24 = f2 - paddingBottom - n22;
+                final int d5 = maw.d;
+                final float n23 = (float)paddingTop;
+                final float n24 = (float)this.o.d;
                 final float max2 = Math.max(0.0f, 0.0f);
-                final int h2 = lyz.h;
-                int j = d4;
-                int n25 = 0;
-                while (j < d4 + h2) {
+                final int h2 = mas.h;
+                float n25 = e2 - paddingBottom - n24;
+                float n26 = n23 - n24;
+                int j = d5;
+                int n27 = 0;
+                while (j < d5 + h2) {
                     final View s2 = this.s(j);
-                    final long n26 = this.e.c[j];
-                    final int n27 = (int)n26;
-                    final int n28 = lzb.n(n26);
+                    final long n28 = this.e.c[j];
+                    final int n29 = (int)n28;
+                    final int n30 = mau.n(n28);
                     final FlexboxLayoutManager$LayoutParams flexboxLayoutManager$LayoutParams2 = (FlexboxLayoutManager$LayoutParams)s2.getLayoutParams();
-                    if (this.bM(s2, n27, n28, (nx)flexboxLayoutManager$LayoutParams2)) {
-                        s2.measure(n27, n28);
+                    if (this.bL(s2, n29, n30, (ny)flexboxLayoutManager$LayoutParams2)) {
+                        s2.measure(n29, n30);
                     }
-                    final float n29 = n23 + (flexboxLayoutManager$LayoutParams2.topMargin + bq(s2));
-                    final float n30 = n24 - (flexboxLayoutManager$LayoutParams2.rightMargin + bk(s2));
-                    if (lzd.i == 1) {
-                        this.aH(s2, FlexboxLayoutManager.g);
+                    final float n31 = n26 + (flexboxLayoutManager$LayoutParams2.topMargin + bq(s2));
+                    final float n32 = n25 - (flexboxLayoutManager$LayoutParams2.rightMargin + bk(s2));
+                    if (maw.i == 1) {
+                        this.aH(s2, FlexboxLayoutManager.h);
                         this.aF(s2);
                     }
                     else {
-                        this.aH(s2, FlexboxLayoutManager.g);
-                        this.aG(s2, n25);
-                        ++n25;
+                        this.aH(s2, FlexboxLayoutManager.h);
+                        this.aG(s2, n27);
+                        ++n27;
                     }
-                    final int n31 = n21 + bn(s2);
-                    final int n32 = n20 - bp(s2);
+                    final int n33 = n22 + bn(s2);
+                    final int n34 = n21 - bp(s2);
                     if (this.c) {
-                        if (this.j) {
-                            this.e.j(s2, lyz, true, n32 - s2.getMeasuredWidth(), Math.round(n30) - s2.getMeasuredHeight(), n32, Math.round(n30));
+                        if (this.k) {
+                            this.e.j(s2, mas, true, n34 - s2.getMeasuredWidth(), Math.round(n32) - s2.getMeasuredHeight(), n34, Math.round(n32));
                         }
                         else {
-                            final View view2 = s2;
-                            this.e.j(view2, lyz, true, n32 - view2.getMeasuredWidth(), Math.round(n29), n32, Math.round(n29) + view2.getMeasuredHeight());
+                            this.e.j(s2, mas, true, n34 - s2.getMeasuredWidth(), Math.round(n31), n34, Math.round(n31) + s2.getMeasuredHeight());
                         }
+                    }
+                    else if (this.k) {
+                        this.e.j(s2, mas, false, n33, Math.round(n32) - s2.getMeasuredHeight(), n33 + s2.getMeasuredWidth(), Math.round(n32));
                     }
                     else {
-                        final View view3 = s2;
-                        if (this.j) {
-                            this.e.j(view3, lyz, false, n31, Math.round(n30) - view3.getMeasuredHeight(), n31 + view3.getMeasuredWidth(), Math.round(n30));
-                        }
-                        else {
-                            this.e.j(view3, lyz, false, n31, Math.round(n29), n31 + view3.getMeasuredWidth(), Math.round(n29) + view3.getMeasuredHeight());
-                        }
+                        this.e.j(s2, mas, false, n33, Math.round(n31), n33 + s2.getMeasuredWidth(), Math.round(n31) + s2.getMeasuredHeight());
                     }
-                    n23 = n29 + (s2.getMeasuredHeight() + flexboxLayoutManager$LayoutParams2.topMargin + bk(s2) + max2);
-                    n24 = n30 - (s2.getMeasuredHeight() + flexboxLayoutManager$LayoutParams2.bottomMargin + bq(s2) + max2);
+                    n26 = n31 + (s2.getMeasuredHeight() + flexboxLayoutManager$LayoutParams2.topMargin + bk(s2) + max2);
+                    n25 = n32 - (s2.getMeasuredHeight() + flexboxLayoutManager$LayoutParams2.bottomMargin + bq(s2) + max2);
                     ++j;
                 }
-                lzd.c += this.m.i;
-                n15 = lyz.g;
-                n18 = n;
-                n17 = n19;
+                maw.c += this.n.i;
+                n16 = mas.g;
+                n19 = n;
+                n18 = n20;
             }
-            n2 += n15;
+            n2 += n16;
             if (!k && this.c) {
-                lzd.e -= lyz.g * lzd.i;
+                maw.e -= mas.g * maw.i;
             }
             else {
-                lzd.e += lyz.g * lzd.i;
+                maw.e += mas.g * maw.i;
             }
-            final int n33 = n18 - lyz.g;
-            a2 = n17;
-            n = n33;
+            final int n35 = n19 - mas.g;
+            a2 = n18;
+            n = n35;
         }
-        final int a3 = lzd.a - n2;
-        lzd.a = a3;
-        final int f3 = lzd.f;
-        if (f3 != Integer.MIN_VALUE) {
-            final int f4 = f3 + n2;
-            lzd.f = f4;
+        final int a3 = maw.a - n2;
+        maw.a = a3;
+        final int f2 = maw.f;
+        if (f2 != Integer.MIN_VALUE) {
+            final int f3 = f2 + n2;
+            maw.f = f3;
             if (a3 < 0) {
-                lzd.f = f4 + a3;
+                maw.f = f3 + a3;
             }
-            this.bF(oc, lzd);
+            this.bE(od, maw);
         }
-        return a2 - lzd.a;
+        return a2 - maw.a;
     }
     
-    private final int W(int n, final oc oc, final ok ok, final boolean b) {
-        int ac;
+    private final int V(int n, final od od, final ol ol, final boolean b) {
+        int ab;
         if (!this.K() && this.c) {
             final int n2 = n - this.f.j();
             if (n2 <= 0) {
                 return 0;
             }
-            ac = this.ac(n2, oc, ok);
+            ab = this.ab(n2, od, ol);
         }
         else {
             final int n3 = this.f.f() - n;
             if (n3 <= 0) {
                 return 0;
             }
-            ac = -this.ac(-n3, oc, ok);
+            ab = -this.ab(-n3, od, ol);
         }
         if (b) {
-            n = this.f.f() - (n + ac);
+            n = this.f.f() - (n + ab);
             if (n > 0) {
                 this.f.n(n);
-                return n + ac;
+                return n + ab;
             }
         }
-        return ac;
+        return ab;
     }
     
-    private final int ab(int n, final oc oc, final ok ok, final boolean b) {
-        int ac;
+    private final int W(int n, final od od, final ol ol, final boolean b) {
+        int ab;
         if (!this.K() && this.c) {
             final int n2 = this.f.f() - n;
             if (n2 <= 0) {
                 return 0;
             }
-            ac = this.ac(-n2, oc, ok);
+            ab = this.ab(-n2, od, ol);
         }
         else {
             final int n3 = n - this.f.j();
             if (n3 <= 0) {
                 return 0;
             }
-            ac = -this.ac(n3, oc, ok);
+            ab = -this.ab(n3, od, ol);
         }
-        int n4 = ac;
+        int n4 = ab;
         if (b) {
-            n = n + ac - this.f.j();
-            n4 = ac;
+            n = n + ab - this.f.j();
+            n4 = ab;
             if (n > 0) {
                 this.f.n(-n);
-                n4 = ac - n;
+                n4 = ab - n;
             }
         }
         return n4;
     }
     
-    private final int ac(int g, final oc oc, final ok ok) {
+    private final int ab(int g, final od od, final ol ol) {
         if (this.as() == 0 || g == 0) {
             return 0;
         }
-        this.bE();
-        this.m.j = true;
+        this.bD();
+        this.n.j = true;
         final boolean b = !this.K() && this.c;
         final int i = (b ? (g < 0) : (g > 0)) ? 1 : -1;
         final int abs = Math.abs(g);
-        this.m.i = i;
+        this.n.i = i;
         final boolean k = this.K();
-        final int measureSpec = View$MeasureSpec.makeMeasureSpec(super.E, super.C);
-        final int measureSpec2 = View$MeasureSpec.makeMeasureSpec(super.F, super.D);
+        final int measureSpec = View$MeasureSpec.makeMeasureSpec(super.D, super.B);
+        final int measureSpec2 = View$MeasureSpec.makeMeasureSpec(super.E, super.C);
         final boolean b2 = !k && this.c;
-        if (i == 1) {
-            final View ab = this.aB(this.as() - 1);
-            this.m.e = this.f.a(ab);
-            final int bo = bo(ab);
-            final View al = this.al(ab, this.d.get(this.e.b[bo]));
-            lzd.a(this.m);
-            final lzd m = this.m;
-            final int d = bo + m.h;
-            m.d = d;
-            final int[] b3 = this.e.b;
-            if (b3.length <= d) {
-                m.c = -1;
-            }
-            else {
-                m.c = b3[d];
-            }
-            if (b2) {
-                m.e = this.f.d(al);
-                this.m.f = -this.f.d(al) + this.f.j();
-                final lzd j = this.m;
-                int f;
-                if ((f = j.f) < 0) {
-                    f = 0;
+        Label_0865: {
+            if (i == 1) {
+                final View ab = this.aB(this.as() - 1);
+                if (ab == null) {
+                    break Label_0865;
                 }
-                j.f = f;
-            }
-            else {
-                m.e = this.f.a(al);
-                this.m.f = this.f.a(al) - this.f.f();
-            }
-            final int c = this.m.c;
-            if ((c == -1 || c > this.d.size() - 1) && this.m.d <= this.l()) {
-                final int n = abs - this.m.f;
-                this.O.n();
-                if (n > 0) {
-                    if (k) {
-                        this.e.q(this.O, measureSpec, measureSpec2, n, this.m.d, this.d);
+                this.n.e = this.f.a(ab);
+                final int bo = bo(ab);
+                final View ak = this.ak(ab, this.d.get(this.e.b[bo]));
+                maw.a(this.n);
+                final maw n = this.n;
+                final int d = bo + n.h;
+                n.d = d;
+                final int[] b3 = this.e.b;
+                if (b3.length <= d) {
+                    n.c = -1;
+                }
+                else {
+                    n.c = b3[d];
+                }
+                if (b2) {
+                    n.e = this.f.d(ak);
+                    this.n.f = -this.f.d(ak) + this.f.j();
+                    final maw n2 = this.n;
+                    n2.f = Math.max(n2.f, 0);
+                }
+                else {
+                    n.e = this.f.a(ak);
+                    this.n.f = this.f.a(ak) - this.f.f();
+                }
+                final int c = this.n.c;
+                if ((c == -1 || c > this.d.size() - 1) && this.n.d <= this.l()) {
+                    final int n3 = abs - this.n.f;
+                    this.N.n();
+                    if (n3 > 0) {
+                        if (k) {
+                            this.e.q(this.N, measureSpec, measureSpec2, n3, this.n.d, this.d);
+                        }
+                        else {
+                            this.e.r(this.N, measureSpec, measureSpec2, n3, this.n.d, this.d);
+                        }
+                        this.e.e(measureSpec, measureSpec2, this.n.d);
+                        this.e.l(this.n.d);
                     }
-                    else {
-                        this.e.r(this.O, measureSpec, measureSpec2, n, this.m.d, this.d);
-                    }
-                    this.e.e(measureSpec, measureSpec2, this.m.d);
-                    this.e.l(this.m.d);
                 }
             }
-        }
-        else {
-            final View ab2 = this.aB(0);
-            this.m.e = this.f.d(ab2);
-            final int bo2 = bo(ab2);
-            final View ai = this.ai(ab2, this.d.get(this.e.b[bo2]));
-            lzd.a(this.m);
-            int c2;
-            if ((c2 = this.e.b[bo2]) == -1) {
-                c2 = 0;
-            }
-            if (c2 > 0) {
-                this.m.d = bo2 - ((lyz)this.d.get(c2 - 1)).h;
-            }
             else {
-                this.m.d = -1;
-            }
-            final lzd l = this.m;
-            if (c2 > 0) {
-                --c2;
-            }
-            else {
-                c2 = 0;
-            }
-            l.c = c2;
-            if (b2) {
-                l.e = this.f.a(ai);
-                this.m.f = this.f.a(ai) - this.f.f();
-                final lzd m2 = this.m;
-                int f2;
-                if ((f2 = m2.f) < 0) {
-                    f2 = 0;
+                final View ab2 = this.aB(0);
+                if (ab2 == null) {
+                    break Label_0865;
                 }
-                m2.f = f2;
+                this.n.e = this.f.d(ab2);
+                final int bo2 = bo(ab2);
+                final View ah = this.ah(ab2, this.d.get(this.e.b[bo2]));
+                maw.a(this.n);
+                int c2;
+                if ((c2 = this.e.b[bo2]) == -1) {
+                    c2 = 0;
+                }
+                if (c2 > 0) {
+                    this.n.d = bo2 - ((mas)this.d.get(c2 - 1)).h;
+                }
+                else {
+                    this.n.d = -1;
+                }
+                final maw n4 = this.n;
+                if (c2 > 0) {
+                    --c2;
+                }
+                else {
+                    c2 = 0;
+                }
+                n4.c = c2;
+                if (b2) {
+                    n4.e = this.f.a(ah);
+                    this.n.f = this.f.a(ah) - this.f.f();
+                    final maw n5 = this.n;
+                    n5.f = Math.max(n5.f, 0);
+                }
+                else {
+                    n4.e = this.f.d(ah);
+                    this.n.f = -this.f.d(ah) + this.f.j();
+                }
             }
-            else {
-                l.e = this.f.d(ai);
-                this.m.f = -this.f.d(ai) + this.f.j();
-            }
+            final maw n6 = this.n;
+            n6.a = abs - n6.f;
         }
-        final lzd m3 = this.m;
-        final int f3 = m3.f;
-        m3.a = abs - f3;
-        final int n2 = f3 + this.V(oc, ok, m3);
-        if (n2 < 0) {
+        final maw n7 = this.n;
+        final int n8 = n7.f + this.S(od, ol, n7);
+        if (n8 < 0) {
             return 0;
         }
         if (b) {
-            if (abs > n2) {
-                g = -i * n2;
+            if (abs > n8) {
+                g = -i * n8;
             }
         }
-        else if (abs > n2) {
-            g = i * n2;
+        else if (abs > n8) {
+            g = i * n8;
         }
         this.f.n(-g);
-        return this.m.g = g;
+        return this.n.g = g;
     }
     
-    private final int ad(final int n) {
+    private final int ac(final int n) {
         if (this.as() != 0 && n != 0) {
-            this.bE();
+            this.bD();
             final boolean k = this.K();
             int n2;
             if (k) {
-                n2 = this.M.getWidth();
+                n2 = this.L.getWidth();
             }
             else {
-                n2 = this.M.getHeight();
+                n2 = this.L.getHeight();
             }
             int n3;
             if (k) {
-                n3 = super.E;
+                n3 = super.D;
             }
             else {
-                n3 = super.F;
+                n3 = super.E;
             }
             int d2;
             if (this.aw() == 1) {
                 final int abs = Math.abs(n);
                 if (n < 0) {
-                    return -Math.min(n3 + this.n.d - n2, abs);
+                    return -Math.min(n3 + this.o.d - n2, abs);
                 }
-                final int d = this.n.d;
+                final int d = this.o.d;
                 final int min = n;
                 if (d + n <= 0) {
                     return min;
@@ -537,9 +541,9 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
             }
             else {
                 if (n > 0) {
-                    return Math.min(n3 - this.n.d - n2, n);
+                    return Math.min(n3 - this.o.d - n2, n);
                 }
-                if ((d2 = this.n.d) + n >= 0) {
+                if ((d2 = this.o.d) + n >= 0) {
                     return n;
                 }
             }
@@ -548,43 +552,41 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
         return 0;
     }
     
-    private final View ah(int bo) {
-        final View am = this.am(0, this.as(), bo);
-        if (am == null) {
+    private final View ad(int bo) {
+        final View al = this.al(0, this.as(), bo);
+        if (al == null) {
             return null;
         }
-        bo = bo(am);
+        bo = bo(al);
         bo = this.e.b[bo];
         if (bo == -1) {
             return null;
         }
-        return this.ai(am, this.d.get(bo));
+        return this.ah(al, this.d.get(bo));
     }
     
-    private final View ai(View view, final lyz lyz) {
+    private final View ah(View view, final mas mas) {
         final boolean k = this.K();
-        final int h = lyz.h;
+        final int h = mas.h;
         int i = 1;
         View view2 = view;
         while (i < h) {
             final View ab = this.aB(i);
             view = view2;
-            Label_0114: {
+            Label_0110: {
                 if (ab != null) {
-                    if (ab.getVisibility() == 8) {
-                        view = view2;
-                    }
-                    else {
+                    view = view2;
+                    if (ab.getVisibility() != 8) {
                         if (this.c && !k) {
                             view = view2;
                             if (this.f.a(view2) >= this.f.a(ab)) {
-                                break Label_0114;
+                                break Label_0110;
                             }
                         }
                         else {
                             view = view2;
                             if (this.f.d(view2) <= this.f.d(ab)) {
-                                break Label_0114;
+                                break Label_0110;
                             }
                         }
                         view = ab;
@@ -597,27 +599,25 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
         return view2;
     }
     
-    private final View ak(int bo) {
-        final View am = this.am(this.as() - 1, -1, bo);
-        if (am == null) {
+    private final View ai(int bo) {
+        final View al = this.al(this.as() - 1, -1, bo);
+        if (al == null) {
             return null;
         }
-        bo = bo(am);
+        bo = bo(al);
         bo = this.e.b[bo];
-        return this.al(am, this.d.get(bo));
+        return this.ak(al, this.d.get(bo));
     }
     
-    private final View al(View view, final lyz lyz) {
+    private final View ak(View view, final mas mas) {
         final boolean k = this.K();
         View view2;
-        for (int i = this.as() - 2; i > this.as() - lyz.h - 1; --i, view = view2) {
+        for (int i = this.as() - 2; i > this.as() - mas.h - 1; --i, view = view2) {
             final View ab = this.aB(i);
             view2 = view;
             if (ab != null) {
-                if (ab.getVisibility() == 8) {
-                    view2 = view;
-                }
-                else {
+                view2 = view;
+                if (ab.getVisibility() != 8) {
                     if (this.c && !k) {
                         view2 = view;
                         if (this.f.d(view) <= this.f.d(ab)) {
@@ -637,52 +637,55 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
         return view;
     }
     
-    private final View am(int i, final int n, final int n2) {
-        this.bE();
+    private final View al(final int n, final int n2, final int n3) {
         this.bD();
+        this.bC();
         final int j = this.f.j();
         final int f = this.f.f();
-        int n3;
-        if (n > i) {
-            n3 = 1;
-        }
-        else {
-            n3 = -1;
-        }
         View view = null;
+        int i = n;
         View view2 = null;
-        while (i != n) {
+        while (i != n2) {
             final View ab = this.aB(i);
-            final int bo = bo(ab);
             View view3 = view;
             View view4 = view2;
-            if (bo >= 0) {
+            if (ab != null) {
+                final int bo = bo(ab);
                 view3 = view;
                 view4 = view2;
-                if (bo < n2) {
-                    if (((nx)ab.getLayoutParams()).lv()) {
-                        view3 = view;
-                        if ((view4 = view2) == null) {
-                            view4 = ab;
+                if (bo >= 0) {
+                    view3 = view;
+                    view4 = view2;
+                    if (bo < n3) {
+                        if (((ny)ab.getLayoutParams()).lv()) {
                             view3 = view;
-                        }
-                    }
-                    else {
-                        if (this.f.d(ab) >= j && this.f.a(ab) <= f) {
-                            return ab;
-                        }
-                        if (view != null) {
-                            view3 = view;
-                            view4 = view2;
+                            if ((view4 = view2) == null) {
+                                view4 = ab;
+                                view3 = view;
+                            }
                         }
                         else {
-                            view3 = ab;
+                            if (this.f.d(ab) >= j && this.f.a(ab) <= f) {
+                                return ab;
+                            }
+                            view3 = view;
                             view4 = view2;
+                            if (view == null) {
+                                view3 = ab;
+                                view4 = view2;
+                            }
                         }
                     }
                 }
             }
-            i += n3;
+            int n4;
+            if (n2 > n) {
+                n4 = 1;
+            }
+            else {
+                n4 = -1;
+            }
+            i += n4;
             view = view3;
             view2 = view4;
         }
@@ -692,134 +695,154 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
         return view2;
     }
     
-    private final View an() {
+    private final View am() {
         return this.aB(0);
     }
     
-    private final void bC() {
+    private final void an() {
         this.d.clear();
-        this.n.b();
-        this.n.d = 0;
+        this.o.b();
+        this.o.d = 0;
     }
     
-    private final void bD() {
-        if (this.m == null) {
-            this.m = new lzd();
+    private final void bC() {
+        if (this.n == null) {
+            this.n = new maw();
         }
     }
     
-    private final void bE() {
+    private final void bD() {
         if (this.f != null) {
             return;
         }
         if (this.K()) {
             if (this.b == 0) {
-                this.f = nk.p((nw)this);
-                this.o = nk.r((nw)this);
+                this.f = nl.p((nx)this);
+                this.g = nl.r((nx)this);
                 return;
             }
-            this.f = nk.r((nw)this);
-            this.o = nk.p((nw)this);
+            this.f = nl.r((nx)this);
+            this.g = nl.p((nx)this);
         }
         else {
             if (this.b == 0) {
-                this.f = nk.r((nw)this);
-                this.o = nk.p((nw)this);
+                this.f = nl.r((nx)this);
+                this.g = nl.p((nx)this);
                 return;
             }
-            this.f = nk.p((nw)this);
-            this.o = nk.r((nw)this);
+            this.f = nl.p((nx)this);
+            this.g = nl.r((nx)this);
         }
     }
     
-    private final void bF(final oc oc, final lzd lzd) {
-        if (lzd.j) {
-            if (lzd.i == -1) {
-                if (lzd.f >= 0) {
-                    this.f.e();
-                    final int f = lzd.f;
+    private final void bE(final od od, final maw maw) {
+        if (maw.j) {
+            if (maw.i == -1) {
+                if (maw.f >= 0) {
                     int as = this.as();
                     if (as != 0) {
                         final int n = as - 1;
-                        int n2 = this.e.b[bo(this.aB(n))];
-                        if (n2 != -1) {
-                            lyz lyz = this.d.get(n2);
-                            int n3 = n;
-                            int n4;
-                            while (true) {
-                                n4 = as;
-                                if (n3 < 0) {
-                                    break;
-                                }
-                                final View ab = this.aB(n3);
-                                final int f2 = lzd.f;
-                                if (!this.K() && this.c) {
+                        final View ab = this.aB(n);
+                        if (ab != null) {
+                            int n2 = this.e.b[bo(ab)];
+                            if (n2 != -1) {
+                                mas mas = this.d.get(n2);
+                                int n3 = n;
+                                int n4;
+                                while (true) {
                                     n4 = as;
-                                    if (this.f.a(ab) > f2) {
+                                    if (n3 < 0) {
                                         break;
                                     }
-                                }
-                                else if (this.f.d(ab) < this.f.e() - f2) {
-                                    n4 = as;
-                                    break;
-                                }
-                                lyz lyz2 = lyz;
-                                int n5 = n2;
-                                if (lyz.o == bo(ab)) {
-                                    if (n2 <= 0) {
-                                        n4 = n3;
-                                        break;
+                                    final View ab2 = this.aB(n3);
+                                    int n5 = as;
+                                    mas mas2 = mas;
+                                    int n6 = n2;
+                                    if (ab2 != null) {
+                                        final int f = maw.f;
+                                        if (!this.K() && this.c) {
+                                            n4 = as;
+                                            if (this.f.a(ab2) > f) {
+                                                break;
+                                            }
+                                        }
+                                        else {
+                                            n4 = as;
+                                            if (this.f.d(ab2) < this.f.e() - f) {
+                                                break;
+                                            }
+                                        }
+                                        n5 = as;
+                                        mas2 = mas;
+                                        n6 = n2;
+                                        if (mas.o == bo(ab2)) {
+                                            if (n2 <= 0) {
+                                                n4 = n3;
+                                                break;
+                                            }
+                                            n6 = n2 + maw.i;
+                                            mas2 = (mas)this.d.get(n6);
+                                            n5 = n3;
+                                        }
                                     }
-                                    n5 = n2 + lzd.i;
-                                    lyz2 = (lyz)this.d.get(n5);
-                                    as = n3;
+                                    --n3;
+                                    as = n5;
+                                    mas = mas2;
+                                    n2 = n6;
                                 }
-                                --n3;
-                                lyz = lyz2;
-                                n2 = n5;
+                                this.bF(od, n4, n);
                             }
-                            this.bG(oc, n4, n);
                         }
                     }
                 }
             }
-            else if (lzd.f >= 0) {
+            else if (maw.f >= 0) {
                 final int as2 = this.as();
                 if (as2 != 0) {
-                    int n6 = this.e.b[bo(this.aB(0))];
-                    if (n6 != -1) {
-                        lyz lyz3 = this.d.get(n6);
-                        int i = 0;
-                        int n7 = -1;
-                        while (true) {
-                            while (i < as2) {
-                                final View ab2 = this.aB(i);
-                                final int f3 = lzd.f;
-                                if (!this.K() && this.c) {
-                                    if (this.f.e() - this.f.d(ab2) > f3) {
-                                        break;
+                    final View ab3 = this.aB(0);
+                    if (ab3 != null) {
+                        int n7 = this.e.b[bo(ab3)];
+                        if (n7 != -1) {
+                            mas mas3 = this.d.get(n7);
+                            int i = 0;
+                            int n8 = -1;
+                            while (true) {
+                                while (i < as2) {
+                                    final View ab4 = this.aB(i);
+                                    int n9 = n7;
+                                    mas mas4 = mas3;
+                                    int n10 = n8;
+                                    if (ab4 != null) {
+                                        final int f2 = maw.f;
+                                        if (!this.K() && this.c) {
+                                            if (this.f.e() - this.f.d(ab4) > f2) {
+                                                break;
+                                            }
+                                        }
+                                        else if (this.f.a(ab4) > f2) {
+                                            break;
+                                        }
+                                        n9 = n7;
+                                        mas4 = mas3;
+                                        n10 = n8;
+                                        if (mas3.p == bo(ab4)) {
+                                            if (n7 >= this.d.size() - 1) {
+                                                this.bF(od, 0, i);
+                                                return;
+                                            }
+                                            n9 = n7 + maw.i;
+                                            mas4 = this.d.get(n9);
+                                            n10 = i;
+                                        }
                                     }
+                                    ++i;
+                                    n7 = n9;
+                                    mas3 = mas4;
+                                    n8 = n10;
                                 }
-                                else if (this.f.a(ab2) > f3) {
-                                    break;
-                                }
-                                int n8 = n6;
-                                lyz lyz4 = lyz3;
-                                if (lyz3.p == bo(ab2)) {
-                                    if (n6 >= this.d.size() - 1) {
-                                        this.bG(oc, 0, i);
-                                        return;
-                                    }
-                                    n8 = n6 + lzd.i;
-                                    lyz4 = this.d.get(n8);
-                                    n7 = i;
-                                }
-                                ++i;
-                                n6 = n8;
-                                lyz3 = lyz4;
+                                i = n8;
+                                continue;
                             }
-                            i = n7;
-                            continue;
                         }
                     }
                 }
@@ -827,124 +850,119 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
         }
     }
     
-    private final void bG(final oc oc, final int n, int i) {
+    private final void bF(final od od, final int n, int i) {
         while (i >= n) {
-            this.aV(i, oc);
+            this.aV(i, od);
             --i;
         }
     }
     
-    private final void bH() {
+    private final void bG() {
         int n;
         if (this.K()) {
-            n = super.D;
-        }
-        else {
             n = super.C;
         }
-        final lzd m = this.m;
+        else {
+            n = super.B;
+        }
+        final maw n2 = this.n;
         boolean b = true;
         if (n != 0) {
             b = (n == Integer.MIN_VALUE && b);
         }
-        m.b = b;
+        n2.b = b;
     }
     
-    private final void bI(final int n) {
-        final int l = this.L();
-        final int m = this.M();
-        if (n >= m) {
+    private final void bH(final int m) {
+        if (m >= this.L()) {
             return;
         }
         final int as = this.as();
         this.e.g(as);
         this.e.h(as);
         this.e.f(as);
-        if (n >= this.e.b.length) {
+        if (m >= this.e.b.length) {
             return;
         }
-        this.N = n;
-        final View an = this.an();
-        if (an == null) {
+        this.M = m;
+        final View am = this.am();
+        if (am == null) {
             return;
         }
-        if (l <= n && n <= m) {
-            return;
-        }
-        this.q = bo(an);
+        this.q = bo(am);
         if (!this.K() && this.c) {
-            this.r = this.f.a(an) + this.f.g();
+            this.r = this.f.a(am) + this.f.g();
             return;
         }
-        this.r = this.f.d(an) - this.f.j();
+        this.r = this.f.d(am) - this.f.j();
     }
     
-    private final void bJ(final lzc lzc, final boolean b, final boolean b2) {
+    private final void bI(final mav mav, final boolean b, final boolean b2) {
         if (b2) {
-            this.bH();
+            this.bG();
         }
         else {
-            this.m.b = false;
+            this.n.b = false;
         }
         if (!this.K() && this.c) {
-            this.m.a = lzc.c - this.getPaddingRight();
+            this.n.a = mav.c - this.getPaddingRight();
         }
         else {
-            this.m.a = this.f.f() - lzc.c;
+            this.n.a = this.f.f() - mav.c;
         }
-        final lzd m = this.m;
-        m.d = lzc.a;
-        lzd.a(m);
-        final lzd i = this.m;
-        i.i = 1;
-        i.e = lzc.c;
-        i.f = Integer.MIN_VALUE;
-        i.c = lzc.b;
+        final maw n = this.n;
+        n.d = mav.a;
+        maw.a(n);
+        final maw n2 = this.n;
+        n2.i = 1;
+        n2.e = mav.c;
+        n2.f = Integer.MIN_VALUE;
+        n2.c = mav.b;
         if (b && this.d.size() > 1) {
-            final int b3 = lzc.b;
+            final int b3 = mav.b;
             if (b3 >= 0 && b3 < this.d.size() - 1) {
-                final lyz lyz = this.d.get(lzc.b);
-                final lzd j = this.m;
-                ++j.c;
-                j.d += lyz.h;
+                final mas mas = this.d.get(mav.b);
+                final maw n3 = this.n;
+                ++n3.c;
+                n3.d += mas.h;
             }
         }
     }
     
-    private final void bK(final lzc lzc, final boolean b, final boolean b2) {
+    private final void bJ(final mav mav, final boolean b, final boolean b2) {
         if (b2) {
-            this.bH();
+            this.bG();
         }
         else {
-            this.m.b = false;
+            this.n.b = false;
         }
         if (!this.K() && this.c) {
-            this.m.a = this.M.getWidth() - lzc.c - this.f.j();
+            this.n.a = this.L.getWidth() - mav.c - this.f.j();
         }
         else {
-            this.m.a = lzc.c - this.f.j();
+            this.n.a = mav.c - this.f.j();
         }
-        final lzd m = this.m;
-        m.d = lzc.a;
-        lzd.a(m);
-        final lzd i = this.m;
-        i.i = -1;
-        i.e = lzc.c;
-        i.f = Integer.MIN_VALUE;
-        i.c = lzc.b;
-        if (b && lzc.b > 0) {
+        final maw n = this.n;
+        n.d = mav.a;
+        maw.a(n);
+        final maw n2 = this.n;
+        n2.i = -1;
+        n2.e = mav.c;
+        n2.f = Integer.MIN_VALUE;
+        n2.c = mav.b;
+        if (b && mav.b > 0) {
             final int size = this.d.size();
-            final int b3 = lzc.b;
+            final int b3 = mav.b;
             if (size > b3) {
-                final lyz lyz = this.d.get(b3);
-                final lzd j = this.m;
-                --j.c;
-                j.d -= lyz.h;
+                final mas mas = this.d.get(b3);
+                final maw n3 = this.n;
+                --n3.c;
+                n3.d -= mas.h;
             }
         }
     }
     
-    private static boolean bL(final int n, int size, final int n2) {
+    private static boolean bK(final int n, int size, final int n2) {
         final int mode = View$MeasureSpec.getMode(size);
         size = View$MeasureSpec.getSize(size);
         if (n2 > 0 && n != n2) {
@@ -956,90 +974,89 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
         return size >= n;
     }
     
-    private final boolean bM(final View view, final int n, final int n2, final nx nx) {
-        return view.isLayoutRequested() || !super.y || !bL(view.getWidth(), n, nx.width) || !bL(view.getHeight(), n2, nx.height);
+    private final boolean bL(final View view, final int n, final int n2, final ny ny) {
+        return view.isLayoutRequested() || !super.x || !bK(view.getWidth(), n, ny.width) || !bK(view.getHeight(), n2, ny.height);
     }
     
-    private final View bN(int n, final int n2) {
-        int i = n;
-        if (n2 > i) {
-            n = 1;
-        }
-        else {
-            n = -1;
-        }
-        while (i != n2) {
+    private final View bM(final int n, final int n2) {
+        int n4;
+        for (int i = n; i != n2; i += n4) {
             final View ab = this.aB(i);
             final int paddingLeft = this.getPaddingLeft();
             final int paddingTop = this.getPaddingTop();
-            final int e = super.E;
+            final int d = super.D;
             final int paddingRight = this.getPaddingRight();
-            final int f = super.F;
+            final int e = super.E;
             final int paddingBottom = this.getPaddingBottom();
-            final nx nx = (nx)ab.getLayoutParams();
+            final ny ny = (ny)ab.getLayoutParams();
             final int bz = bz(ab);
-            final int leftMargin = nx.leftMargin;
-            final nx nx2 = (nx)ab.getLayoutParams();
+            final int leftMargin = ny.leftMargin;
+            final ny ny2 = (ny)ab.getLayoutParams();
             final int bb = bB(ab);
-            final int topMargin = nx2.topMargin;
-            final nx nx3 = (nx)ab.getLayoutParams();
+            final int topMargin = ny2.topMargin;
+            final ny ny3 = (ny)ab.getLayoutParams();
             final int ba = bA(ab);
-            final int rightMargin = nx3.rightMargin;
-            final nx nx4 = (nx)ab.getLayoutParams();
+            final int rightMargin = ny3.rightMargin;
+            final ny ny4 = (ny)ab.getLayoutParams();
             final int by = by(ab);
-            final int bottomMargin = nx4.bottomMargin;
+            final int bottomMargin = ny4.bottomMargin;
             boolean b = false;
-            final boolean b2 = bz - leftMargin >= e - paddingRight || ba + rightMargin >= paddingLeft;
-            if (bb - topMargin >= f - paddingBottom || by + bottomMargin >= paddingTop) {
+            final int n3 = 1;
+            final boolean b2 = bz - leftMargin >= d - paddingRight || ba + rightMargin >= paddingLeft;
+            if (bb - topMargin >= e - paddingBottom || by + bottomMargin >= paddingTop) {
                 b = true;
             }
             if (b2 && b) {
                 return ab;
             }
-            i += n;
+            if (n2 > n) {
+                n4 = n3;
+            }
+            else {
+                n4 = -1;
+            }
         }
         return null;
     }
     
-    public final void A(final View view, int n, final int n2, final lyz lyz) {
-        this.aH(view, FlexboxLayoutManager.g);
+    public final void A(final View view, int n, final int n2, final mas mas) {
+        this.aH(view, FlexboxLayoutManager.h);
         if (this.K()) {
             n = bn(view) + bp(view);
-            lyz.e += n;
-            lyz.f += n;
+            mas.e += n;
+            mas.f += n;
             return;
         }
         n = bq(view) + bk(view);
-        lyz.e += n;
-        lyz.f += n;
+        mas.e += n;
+        mas.f += n;
     }
     
-    public final int B(final ok ok) {
-        return this.O(ok);
+    public final int B(final ol ol) {
+        return this.N(ol);
     }
     
-    public final int C(final ok ok) {
-        this.R(ok);
-        return this.R(ok);
+    public final int C(final ol ol) {
+        return this.O(ol);
     }
     
-    public final int D(final ok ok) {
-        return this.S(ok);
+    public final int D(final ol ol) {
+        return this.R(ol);
     }
     
-    public final int E(final ok ok) {
-        return this.O(ok);
+    public final int E(final ol ol) {
+        return this.N(ol);
     }
     
-    public final int F(final ok ok) {
-        return this.R(ok);
+    public final int F(final ol ol) {
+        return this.O(ol);
     }
     
-    public final int G(final ok ok) {
-        return this.S(ok);
+    public final int G(final ol ol) {
+        return this.R(ol);
     }
     
-    public final void H(final lyz lyz) {
+    public final void H(final mas mas) {
     }
     
     public final void I(final List d) {
@@ -1047,7 +1064,7 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
     }
     
     public final void J(final int n, final View view) {
-        this.K.put(n, (Object)view);
+        this.J.put(n, (Object)view);
     }
     
     public final boolean K() {
@@ -1056,28 +1073,20 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
     }
     
     public final int L() {
-        final View bn = this.bN(0, this.as());
-        if (bn == null) {
+        final View bm = this.bM(this.as() - 1, -1);
+        if (bm == null) {
             return -1;
         }
-        return bo(bn);
+        return bo(bm);
     }
     
-    public final int M() {
-        final View bn = this.bN(this.as() - 1, -1);
-        if (bn == null) {
-            return -1;
-        }
-        return bo(bn);
-    }
-    
-    public final void N(final int a) {
+    public final void M(final int a) {
         if (this.a != a) {
             this.aR();
             this.a = a;
             this.f = null;
-            this.o = null;
-            this.bC();
+            this.g = null;
+            this.an();
             this.aX();
         }
     }
@@ -1086,7 +1095,11 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
         if (this.as() == 0) {
             return null;
         }
-        if (n < bo(this.aB(0))) {
+        final View ab = this.aB(0);
+        if (ab == null) {
+            return null;
+        }
+        if (n < bo(ab)) {
             n = -1;
         }
         else {
@@ -1105,9 +1118,9 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
         }
         final FlexboxLayoutManager$SavedState flexboxLayoutManager$SavedState = new FlexboxLayoutManager$SavedState();
         if (this.as() > 0) {
-            final View an = this.an();
-            flexboxLayoutManager$SavedState.a = bo(an);
-            flexboxLayoutManager$SavedState.b = this.f.d(an) - this.f.j();
+            final View am = this.am();
+            flexboxLayoutManager$SavedState.a = bo(am);
+            flexboxLayoutManager$SavedState.b = this.f.d(am) - this.f.j();
         }
         else {
             flexboxLayoutManager$SavedState.a();
@@ -1115,7 +1128,7 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
         return (Parcelable)flexboxLayoutManager$SavedState;
     }
     
-    public final void X(final RecyclerView recyclerView, final oc oc) {
+    public final void X(final RecyclerView recyclerView, final od od) {
     }
     
     public final void Z(final Parcelable parcelable) {
@@ -1130,7 +1143,7 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
     }
     
     public final void aO(final RecyclerView recyclerView) {
-        this.M = (View)recyclerView.getParent();
+        this.L = (View)recyclerView.getParent();
     }
     
     public final void aa(final int q) {
@@ -1144,21 +1157,59 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
     }
     
     public final boolean ae() {
-        return !this.K() || super.E > this.M.getWidth();
+        if (this.b == 0) {
+            return this.K();
+        }
+        if (this.K()) {
+            final int d = super.D;
+            final View l = this.L;
+            int width;
+            if (l != null) {
+                width = l.getWidth();
+            }
+            else {
+                width = 0;
+            }
+            if (d <= width) {
+                return false;
+            }
+        }
+        return true;
     }
     
     public final boolean af() {
-        return this.K() || super.F > this.M.getHeight();
+        if (this.b == 0) {
+            return !this.K();
+        }
+        if (!this.K()) {
+            final int e = super.E;
+            final View l = this.L;
+            int height;
+            if (l != null) {
+                height = l.getHeight();
+            }
+            else {
+                height = 0;
+            }
+            if (e <= height) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    public final boolean ag() {
+        return true;
     }
     
     public final void ao(final RecyclerView recyclerView, final int b) {
-        final oj oj = new oj(recyclerView.getContext());
-        oj.b = b;
-        this.bf(oj);
+        final ok ok = new ok(recyclerView.getContext());
+        ok.b = b;
+        this.bf(ok);
     }
     
     public final int b() {
-        return this.h;
+        return this.i;
     }
     
     public final void bu() {
@@ -1166,49 +1217,49 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
     }
     
     public final void bv(final int n) {
-        this.bI(n);
+        this.bH(n);
     }
     
     public final int c(final int n, final int n2, final int n3) {
-        return au(super.F, super.D, n2, n3, this.af());
+        return au(super.E, super.C, n2, n3, this.af());
     }
     
-    public final int d(int n, final oc oc, final ok ok) {
-        if (!this.K()) {
-            n = this.ac(n, oc, ok);
-            this.K.clear();
+    public final int d(int n, final od od, final ol ol) {
+        if (this.K() && this.b != 0) {
+            n = this.ac(n);
+            final mav o = this.o;
+            o.d += n;
+            this.g.n(-n);
             return n;
         }
-        n = this.ad(n);
-        final lzc n2 = this.n;
-        n2.d += n;
-        this.o.n(-n);
+        n = this.ab(n, od, ol);
+        this.J.clear();
         return n;
     }
     
-    public final int e(int n, final oc oc, final ok ok) {
-        if (this.K()) {
-            n = this.ac(n, oc, ok);
-            this.K.clear();
+    public final int e(int n, final od od, final ol ol) {
+        if (!this.K() && (this.b != 0 || this.K())) {
+            n = this.ac(n);
+            final mav o = this.o;
+            o.d += n;
+            this.g.n(-n);
             return n;
         }
-        n = this.ad(n);
-        final lzc n2 = this.n;
-        n2.d += n;
-        this.o.n(-n);
+        n = this.ab(n, od, ol);
+        this.J.clear();
         return n;
     }
     
-    public final nx f() {
-        return (nx)new FlexboxLayoutManager$LayoutParams();
+    public final ny f() {
+        return (ny)new FlexboxLayoutManager$LayoutParams();
     }
     
     public final int g(final int n, final int n2, final int n3) {
-        return au(super.E, super.C, n2, n3, this.ae());
+        return au(super.D, super.B, n2, n3, this.ae());
     }
     
-    public final nx h(final Context context, final AttributeSet set) {
-        return (nx)new FlexboxLayoutManager$LayoutParams(context, set);
+    public final ny h(final Context context, final AttributeSet set) {
+        return (ny)new FlexboxLayoutManager$LayoutParams(context, set);
     }
     
     public final int i(final View view) {
@@ -1227,14 +1278,14 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
     
     public final int j(final View view, int n, int n2) {
         if (this.K()) {
-            n = bn(view);
-            n2 = bp(view);
+            n2 = bn(view);
+            n = bp(view);
         }
         else {
-            n = bq(view);
-            n2 = bk(view);
+            n2 = bq(view);
+            n = bk(view);
         }
-        return n + n2;
+        return n2 + n;
     }
     
     public final int k() {
@@ -1242,7 +1293,7 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
     }
     
     public final int l() {
-        return this.l.a();
+        return this.m.a();
     }
     
     public final int m() {
@@ -1264,12 +1315,12 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
         return max;
     }
     
-    public final void o(final oc k, final ok l) {
-        this.k = k;
+    public final void o(final od l, final ol m) {
         this.l = l;
+        this.m = m;
         int a;
-        if ((a = l.a()) == 0) {
-            if (l.g) {
+        if ((a = m.a()) == 0) {
+            if (m.g) {
                 return;
             }
             a = 0;
@@ -1284,7 +1335,7 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
                         if (a2 != 1) {
                             if (a2 != 2) {
                                 this.c = (aw == 1);
-                                this.j = true;
+                                this.k = true;
                                 break Label_0133;
                             }
                             if (aw != 1) {
@@ -1304,79 +1355,82 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
                 c = false;
             }
             this.c = c;
-            this.j = false;
+            this.k = false;
         }
-        this.bE();
         this.bD();
+        this.bC();
         this.e.g(a);
         this.e.h(a);
         this.e.f(a);
-        this.m.j = false;
+        this.n.j = false;
         final FlexboxLayoutManager$SavedState p2 = this.p;
         if (p2 != null && p2.b(a)) {
             this.q = p2.a;
         }
-        final lzc n = this.n;
-        if (!n.f || this.q != -1 || p2 != null) {
-            n.b();
-            final lzc n2 = this.n;
+        final mav o = this.o;
+        if (!o.f || this.q != -1 || p2 != null) {
+            o.b();
+            final mav o2 = this.o;
             final FlexboxLayoutManager$SavedState p3 = this.p;
-            Label_0984: {
-                if (!l.g) {
+            Label_0994: {
+                if (!m.g) {
                     final int q = this.q;
                     if (q != -1) {
-                        if (q >= 0 && q < l.a()) {
+                        if (q >= 0 && q < m.a()) {
                             final int q2 = this.q;
-                            n2.a = q2;
-                            n2.b = this.e.b[q2];
+                            o2.a = q2;
+                            o2.b = this.e.b[q2];
                             final FlexboxLayoutManager$SavedState p4 = this.p;
-                            if (p4 != null && p4.b(l.a())) {
-                                n2.c = this.f.j() + p3.b;
-                                n2.g = true;
-                                n2.b = -1;
-                                break Label_0984;
+                            if (p4 != null && p4.b(m.a())) {
+                                o2.c = this.f.j() + p3.b;
+                                o2.g = true;
+                                o2.b = -1;
+                                break Label_0994;
                             }
                             final int r = this.r;
                             if (r == Integer.MIN_VALUE) {
                                 final View t = this.T(this.q);
                                 if (t == null) {
                                     if (this.as() > 0) {
-                                        n2.e = (this.q < bo(this.aB(0)));
+                                        final View ab = this.aB(0);
+                                        if (ab != null) {
+                                            o2.e = (this.q < bo(ab));
+                                        }
                                     }
-                                    n2.a();
-                                    break Label_0984;
+                                    o2.a();
+                                    break Label_0994;
                                 }
                                 if (this.f.b(t) > this.f.k()) {
-                                    n2.a();
-                                    break Label_0984;
+                                    o2.a();
+                                    break Label_0994;
                                 }
                                 if (this.f.d(t) - this.f.j() < 0) {
-                                    n2.c = this.f.j();
-                                    n2.e = false;
-                                    break Label_0984;
+                                    o2.c = this.f.j();
+                                    o2.e = false;
+                                    break Label_0994;
                                 }
                                 if (this.f.f() - this.f.a(t) < 0) {
-                                    n2.c = this.f.f();
-                                    n2.e = true;
-                                    break Label_0984;
+                                    o2.c = this.f.f();
+                                    o2.e = true;
+                                    break Label_0994;
                                 }
                                 int d;
-                                if (n2.e) {
+                                if (o2.e) {
                                     d = this.f.a(t) + this.f.o();
                                 }
                                 else {
                                     d = this.f.d(t);
                                 }
-                                n2.c = d;
-                                break Label_0984;
+                                o2.c = d;
+                                break Label_0994;
                             }
                             else {
                                 if (!this.K() && this.c) {
-                                    n2.c = r - this.f.g();
-                                    break Label_0984;
+                                    o2.c = r - this.f.g();
+                                    break Label_0994;
                                 }
-                                n2.c = this.f.j() + this.r;
-                                break Label_0984;
+                                o2.c = this.f.j() + this.r;
+                                break Label_0994;
                             }
                         }
                         else {
@@ -1387,193 +1441,200 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
                 }
                 if (this.as() != 0) {
                     View view;
-                    if (n2.e) {
-                        view = this.ak(l.a());
+                    if (o2.e) {
+                        view = this.ai(m.a());
                     }
                     else {
-                        view = this.ah(l.a());
+                        view = this.ad(m.a());
                     }
                     if (view != null) {
-                        final FlexboxLayoutManager h = n2.h;
-                        if (!h.K() && h.c) {
-                            if (n2.e) {
-                                n2.c = h.f.d(view) + n2.h.f.o();
-                            }
-                            else {
-                                n2.c = h.f.a(view);
-                            }
-                        }
-                        else if (n2.e) {
-                            n2.c = h.f.a(view) + n2.h.f.o();
+                        final FlexboxLayoutManager h = o2.h;
+                        nl nl;
+                        if (h.b == 0) {
+                            nl = h.g;
                         }
                         else {
-                            n2.c = h.f.d(view);
+                            nl = h.f;
+                        }
+                        if (!h.K() && h.c) {
+                            if (o2.e) {
+                                o2.c = nl.d(view) + nl.o();
+                            }
+                            else {
+                                o2.c = nl.a(view);
+                            }
+                        }
+                        else if (o2.e) {
+                            o2.c = nl.a(view) + nl.o();
+                        }
+                        else {
+                            o2.c = nl.d(view);
                         }
                         final int bo = bo(view);
-                        n2.a = bo;
-                        n2.g = false;
-                        final FlexboxLayoutManager h2 = n2.h;
+                        o2.a = bo;
+                        o2.g = false;
+                        final FlexboxLayoutManager h2 = o2.h;
                         final int[] b = h2.e.b;
-                        int n3 = bo;
+                        int n = bo;
                         if (bo == -1) {
-                            n3 = 0;
+                            n = 0;
                         }
                         int b2;
-                        if ((b2 = b[n3]) == -1) {
+                        if ((b2 = b[n]) == -1) {
                             b2 = 0;
                         }
-                        n2.b = b2;
+                        o2.b = b2;
                         final int size = h2.d.size();
-                        final int b3 = n2.b;
+                        final int b3 = o2.b;
                         if (size > b3) {
-                            n2.a = ((lyz)n2.h.d.get(b3)).o;
+                            o2.a = ((mas)o2.h.d.get(b3)).o;
                         }
-                        final boolean g = l.g;
-                        break Label_0984;
+                        final boolean g = m.g;
+                        break Label_0994;
                     }
                 }
-                n2.a();
-                n2.a = 0;
-                n2.b = 0;
+                o2.a();
+                o2.a = 0;
+                o2.b = 0;
             }
-            this.n.f = true;
+            this.o.f = true;
         }
-        this.aI(k);
-        final lzc n4 = this.n;
-        if (n4.e) {
-            this.bK(n4, false, true);
+        this.aI(l);
+        final mav o3 = this.o;
+        if (o3.e) {
+            this.bJ(o3, false, true);
         }
         else {
-            this.bJ(n4, false, true);
+            this.bI(o3, false, true);
         }
-        final int measureSpec = View$MeasureSpec.makeMeasureSpec(super.E, super.C);
-        final int measureSpec2 = View$MeasureSpec.makeMeasureSpec(super.F, super.D);
+        final int measureSpec = View$MeasureSpec.makeMeasureSpec(super.D, super.B);
+        final int measureSpec2 = View$MeasureSpec.makeMeasureSpec(super.E, super.C);
+        final int d2 = super.D;
         final int e = super.E;
-        final int f = super.F;
         boolean b5;
-        int n5;
+        int n3;
         if (this.K()) {
-            final int i = this.I;
-            final boolean b4 = i != Integer.MIN_VALUE && i != e;
-            final lzd m = this.m;
-            if (m.b) {
-                final int heightPixels = this.L.getResources().getDisplayMetrics().heightPixels;
+            final int h3 = this.H;
+            final boolean b4 = h3 != Integer.MIN_VALUE && h3 != d2;
+            final maw n2 = this.n;
+            if (n2.b) {
+                final int heightPixels = this.K.getResources().getDisplayMetrics().heightPixels;
                 b5 = b4;
-                n5 = heightPixels;
+                n3 = heightPixels;
             }
             else {
-                final int a3 = m.a;
+                final int a3 = n2.a;
                 b5 = b4;
-                n5 = a3;
+                n3 = a3;
             }
         }
         else {
-            final int j = this.J;
-            b5 = (j != Integer.MIN_VALUE && j != f);
-            final lzd m2 = this.m;
-            if (m2.b) {
-                n5 = this.L.getResources().getDisplayMetrics().widthPixels;
+            final int i = this.I;
+            b5 = (i != Integer.MIN_VALUE && i != e);
+            final maw n4 = this.n;
+            if (n4.b) {
+                n3 = this.K.getResources().getDisplayMetrics().widthPixels;
             }
             else {
-                n5 = m2.a;
+                n3 = n4.a;
             }
         }
+        this.H = d2;
         this.I = e;
-        this.J = f;
-        Label_1683: {
-            int n6;
-            if ((n6 = this.N) == -1) {
+        Label_1693: {
+            int j;
+            if ((j = this.M) == -1) {
                 if (this.q == -1 && !b5) {
-                    n6 = -1;
+                    j = -1;
                 }
                 else {
-                    if (this.n.e) {
-                        break Label_1683;
+                    if (this.o.e) {
+                        break Label_1693;
                     }
                     this.d.clear();
-                    this.O.n();
+                    this.N.n();
                     if (this.K()) {
-                        this.e.p(this.O, measureSpec, measureSpec2, n5, 0, this.n.a, this.d);
+                        this.e.p(this.N, measureSpec, measureSpec2, n3, 0, this.o.a, this.d);
                     }
                     else {
-                        this.e.p(this.O, measureSpec2, measureSpec, n5, 0, this.n.a, this.d);
+                        this.e.p(this.N, measureSpec2, measureSpec, n3, 0, this.o.a, this.d);
                     }
-                    this.d = (List)this.O.b;
+                    this.d = (List)this.N.b;
                     this.e.d(measureSpec, measureSpec2);
                     this.e.k();
-                    final lzc n7 = this.n;
-                    final int n8 = this.e.b[n7.a];
-                    n7.b = n8;
-                    this.m.c = n8;
-                    break Label_1683;
+                    final mav o4 = this.o;
+                    final int n5 = this.e.b[o4.a];
+                    o4.b = n5;
+                    this.n.c = n5;
+                    break Label_1693;
                 }
             }
-            int n9;
-            if (n6 != -1) {
-                n9 = Math.min(n6, this.n.a);
+            int n6;
+            if (j != -1) {
+                n6 = Math.min(j, this.o.a);
             }
             else {
-                n9 = this.n.a;
+                n6 = this.o.a;
             }
-            this.O.n();
+            this.N.n();
             if (this.K()) {
                 if (this.d.size() > 0) {
-                    this.e.b(this.d, n9);
-                    this.e.p(this.O, measureSpec, measureSpec2, n5, n9, this.n.a, this.d);
+                    this.e.b(this.d, n6);
+                    this.e.p(this.N, measureSpec, measureSpec2, n3, n6, this.o.a, this.d);
                 }
                 else {
                     this.e.f(a);
-                    this.e.q(this.O, measureSpec, measureSpec2, n5, 0, this.d);
+                    this.e.q(this.N, measureSpec, measureSpec2, n3, 0, this.d);
                 }
             }
             else if (this.d.size() > 0) {
-                this.e.b(this.d, n9);
-                this.e.p(this.O, measureSpec2, measureSpec, n5, n9, this.n.a, this.d);
+                this.e.b(this.d, n6);
+                this.e.p(this.N, measureSpec2, measureSpec, n3, n6, this.o.a, this.d);
             }
             else {
                 this.e.f(a);
-                this.e.r(this.O, measureSpec, measureSpec2, n5, 0, this.d);
+                this.e.r(this.N, measureSpec, measureSpec2, n3, 0, this.d);
             }
-            this.d = (List)this.O.b;
-            this.e.e(measureSpec, measureSpec2, n9);
-            this.e.l(n9);
+            this.d = (List)this.N.b;
+            this.e.e(measureSpec, measureSpec2, n6);
+            this.e.l(n6);
         }
-        int n10;
-        int n11;
-        if (this.n.e) {
-            this.V(k, l, this.m);
-            n10 = this.m.e;
-            this.bJ(this.n, true, false);
-            this.V(k, l, this.m);
-            n11 = this.m.e;
+        this.S(l, m, this.n);
+        final mav o5 = this.o;
+        int n7;
+        int n8;
+        if (o5.e) {
+            n7 = this.n.e;
+            this.bI(o5, true, false);
+            this.S(l, m, this.n);
+            n8 = this.n.e;
         }
         else {
-            this.V(k, l, this.m);
-            n11 = this.m.e;
-            this.bK(this.n, true, false);
-            this.V(k, l, this.m);
-            n10 = this.m.e;
+            n8 = this.n.e;
+            this.bJ(o5, true, false);
+            this.S(l, m, this.n);
+            n7 = this.n.e;
         }
         if (this.as() > 0) {
-            if (this.n.e) {
-                this.ab(n10 + this.W(n11, k, l, true), k, l, false);
+            if (this.o.e) {
+                this.W(n7 + this.V(n8, l, m, true), l, m, false);
                 return;
             }
-            this.W(n11 + this.ab(n10, k, l, true), k, l, false);
+            this.V(n8 + this.W(n7, l, m, true), l, m, false);
         }
     }
     
-    public final void p(final ok ok) {
+    public final void p(final ol ol) {
         this.p = null;
         this.q = -1;
         this.r = Integer.MIN_VALUE;
-        this.N = -1;
-        this.n.b();
-        this.K.clear();
+        this.M = -1;
+        this.o.b();
+        this.J.clear();
     }
     
     public final int q() {
-        return this.i;
+        return this.j;
     }
     
     public final int r() {
@@ -1588,15 +1649,15 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
     }
     
     public final View s(final int n) {
-        final View view = (View)this.K.get(n);
+        final View view = (View)this.J.get(n);
         if (view != null) {
             return view;
         }
-        return this.k.b(n);
+        return this.l.b(n);
     }
     
-    public final boolean t(final nx nx) {
-        return nx instanceof FlexboxLayoutManager$LayoutParams;
+    public final boolean t(final ny ny) {
+        return ny instanceof FlexboxLayoutManager$LayoutParams;
     }
     
     public final View u(final int n) {
@@ -1604,7 +1665,7 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
     }
     
     public final void v(final int n, final int n2) {
-        this.bI(n);
+        this.bH(n);
     }
     
     public final List w() {
@@ -1612,15 +1673,15 @@ public class FlexboxLayoutManager extends nw implements lyy, oi
     }
     
     public final void x(final int n, final int n2) {
-        this.bI(Math.min(n, n2));
+        this.bH(Math.min(n, n2));
     }
     
     public final void y(final int n, final int n2) {
-        this.bI(n);
+        this.bH(n);
     }
     
     public final void z(final int n, final int n2) {
         this.bv(n);
-        this.bI(n);
+        this.bH(n);
     }
 }

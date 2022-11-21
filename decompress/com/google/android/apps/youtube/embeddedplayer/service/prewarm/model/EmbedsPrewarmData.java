@@ -17,8 +17,8 @@ public abstract class EmbedsPrewarmData implements Parcelable
         CREATOR = (Parcelable$Creator)new f(8);
     }
     
-    public static aech c() {
-        return new aech();
+    public static aedz c() {
+        return new aedz();
     }
     
     public abstract int a();

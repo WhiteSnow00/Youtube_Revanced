@@ -23,77 +23,77 @@ import java.util.concurrent.Executor;
 import com.google.android.libraries.youtube.rendering.ui.widget.loadingframe.LoadingFrameLayout;
 import com.google.android.libraries.youtube.edit.ui.ViewAnimatorHelper;
 
-public class EditVideoActivity extends htx implements htq, rnc, tgg
+public class EditVideoActivity extends hug implements htz, roe, thj
 {
     public String A;
-    public gbx B;
-    public htu C;
+    public gcd B;
+    public hud C;
     public boolean D;
     public boolean E;
-    public qqr F;
-    public vai G;
-    public adpp H;
-    public kja I;
-    public adet J;
-    public skt K;
-    public adfs L;
-    public ziy M;
+    public qrk F;
+    public vbs G;
+    public adre H;
+    public kjk I;
+    public adgg J;
+    public slt K;
+    public adhf L;
+    public zkt M;
     private ViewAnimatorHelper al;
     private LoadingFrameLayout am;
-    private ajli an;
-    private zgm ao;
+    private ajnh an;
+    private zik ao;
     private byte[] ap;
-    private final asiq aq;
-    public afvs g;
-    public gbc h;
-    public vcy i;
-    public zmf j;
-    public vlq k;
-    public zgb l;
-    public gbu m;
-    public asid n;
-    public hts o;
-    public zhk p;
-    public htk q;
-    public acwt r;
+    private final aslm aq;
+    public afxj g;
+    public gbh h;
+    public veh i;
+    public zoa j;
+    public vmx k;
+    public zia l;
+    public gca m;
+    public askz n;
+    public hub o;
+    public zji p;
+    public hts q;
+    public acyg r;
     public Executor s;
-    public atke t;
-    public gkx u;
-    public uwo v;
+    public atnb t;
+    public glc u;
+    public uxv v;
     public View w;
     public String x;
-    public aktm y;
+    public akvn y;
     public boolean z;
     
     public EditVideoActivity() {
-        this.aq = new asiq();
+        this.aq = new aslm();
         this.D = false;
         this.E = false;
     }
     
     private final void G() {
-        final gbx b = this.B;
+        final gcd b = this.B;
         if (b != null) {
-            this.m.l((acwd)b);
+            this.m.l((acxq)b);
             this.h.e(true);
         }
     }
     
     private final void H() {
         this.u();
-        this.getWindow().setNavigationBarColor(tpe.cr((Context)this, 2130968777));
+        this.getWindow().setNavigationBarColor(tqf.cr((Context)this, 2130968777));
         ((fa)this).findViewById(2131428784).setVisibility(0);
     }
     
-    public final void f(final ajli an) {
+    public final void f(final ajnh an) {
         this.an = an;
         this.ao = this.o.b(an);
         ((fa)this).findViewById(2131428784).setVisibility(4);
     }
     
-    protected final void g(final gkv gkv) {
-        if (gkv == gkv.b) {
-            ((fa)this).setTheme(2132084278);
+    protected final void g(final gla gla) {
+        if (gla == gla.b) {
+            ((fa)this).setTheme(2132084282);
         }
     }
     
@@ -101,7 +101,7 @@ public class EditVideoActivity extends htx implements htq, rnc, tgg
     }
     
     public final void i() {
-        final zgm ao = this.ao;
+        final zik ao = this.ao;
         if (ao != null && ao.ar()) {
             this.o.d();
             ((fa)this).findViewById(2131428784).setVisibility(0);
@@ -126,7 +126,7 @@ public class EditVideoActivity extends htx implements htq, rnc, tgg
         return this.al;
     }
     
-    public final Class[] ms(final Class clazz, final Object o, final int n) {
+    public final Class[] mr(final Class clazz, final Object o, final int n) {
         Class[] array;
         if (n != -1) {
             if (n != 0) {
@@ -134,22 +134,22 @@ public class EditVideoActivity extends htx implements htq, rnc, tgg
                 sb.append(n);
                 throw new IllegalStateException(sb.toString());
             }
-            final zmu zmu = (zmu)o;
+            final zop zop = (zop)o;
             this.finish();
             array = null;
         }
         else {
-            array = new Class[] { zmu.class };
+            array = new Class[] { zop.class };
         }
         return array;
     }
     
-    public final aezp o() {
-        return (aezp)aeyo.a;
+    public final afbh o() {
+        return afag.a;
     }
     
     public final void onBackPressed() {
-        final zgm ao = this.ao;
+        final zik ao = this.ao;
         if (ao != null && ao.ar()) {
             this.o.d();
             ((fa)this).findViewById(2131428784).setVisibility(0);
@@ -165,57 +165,57 @@ public class EditVideoActivity extends htx implements htq, rnc, tgg
     
     protected final void onCreate(final Bundle bundle) {
         super.onCreate(bundle);
-        if (this.G.aU()) {
+        if (this.G.aX()) {
             int theme;
-            if (this.u.a() == gkv.b) {
-                theme = 2132084279;
+            if (this.u.a() == gla.b) {
+                theme = 2132084283;
             }
             else {
-                theme = 2132084280;
+                theme = 2132084284;
             }
             ((fa)this).setTheme(theme);
         }
-        ((dh)this).getLifecycle().b((aum)this.t.a());
-        ((qt)this).setContentView(this.w);
+        ((dh)this).getLifecycle().b((auo)this.t.a());
+        ((qu)this).setContentView(this.w);
         this.q.a((Activity)this);
         this.u();
         if (bundle != null) {
             this.A = bundle.getString("edit_video_activity_instance_uuid_key");
-            if (!this.ah.al()) {
+            if (!this.ai.aj()) {
                 final byte[] byteArray = bundle.getByteArray("get_metadata_editor_response_key");
                 if (byteArray != null) {
-                    final vlq k = this.k;
-                    final aktm a = aktm.a;
+                    final vmx k = this.k;
+                    final akvn a = akvn.a;
                     a.getClass();
-                    if ((this.y = (aktm)k.a(byteArray, (MessageLite)a)) == null) {
+                    if ((this.y = (akvn)k.a(byteArray, (MessageLite)a)) == null) {
                         throw new RuntimeException("Failed to parse a known parcelable proto");
                     }
                 }
             }
-            this.ao = (zgm)((bu)this).getSupportFragmentManager().g(bundle, "thumbnailFragmentTag");
+            this.ao = (zik)((bu)this).getSupportFragmentManager().g(bundle, "thumbnailFragmentTag");
             if (this.o.h()) {
                 final byte[] byteArray2 = bundle.getByteArray("edit_thumbnail_command_key");
                 if (byteArray2 != null) {
-                    this.an = (ajli)this.k.a(byteArray2, (MessageLite)ajli.a);
+                    this.an = (ajnh)this.k.a(byteArray2, (MessageLite)ajnh.a);
                 }
-                this.o.f(bundle, this.an, this.ao, (zgu)null);
+                this.o.f(bundle, this.an, this.ao, (zit)null);
             }
             this.p.j(bundle);
         }
         if (TextUtils.isEmpty((CharSequence)this.A)) {
             this.A = UUID.randomUUID().toString();
         }
-        if (this.ah.al()) {
-            final hol hol = new hol(this, 12);
-            teu.n((aun)this, this.F.a(), (ttg)new hlo((Runnable)hol, 12), (ttg)new fdc(this, (Runnable)hol, 17));
+        if (this.ai.aj()) {
+            final hou hou = new hou(this, 11);
+            tfx.n((aup)this, this.F.a(), (tui)new hlw((Runnable)hou, 14), (tui)new fdf(this, (Runnable)hou, 18));
         }
         this.r.h(((fa)this).findViewById(16908290));
-        this.al = (ViewAnimatorHelper)((fa)this).findViewById(2131432362);
+        this.al = (ViewAnimatorHelper)((fa)this).findViewById(2131432363);
         this.am = (LoadingFrameLayout)((fa)this).findViewById(2131428783);
         this.h.f((BottomUiContainer)((fa)this).findViewById(2131427886));
         this.v.a();
-        ((faq)this).pF().b(xaa.b(49953), (aiqj)null, (alhi)null);
-        if (this.G.aU()) {
+        ((fat)this).pE().b(xbf.b(49953), (aisc)null, (alji)null);
+        if (this.G.aX()) {
             ((fa)this).findViewById(2131429690).setBackgroundResource(0);
         }
     }
@@ -223,9 +223,9 @@ public class EditVideoActivity extends htx implements htq, rnc, tgg
     protected final void onDestroy() {
         super.onDestroy();
         this.z = true;
-        final hts o = this.o;
+        final hub o = this.o;
         o.d.dispose();
-        final zaz h = o.h;
+        final zct h = o.h;
         final Iterator<Object> iterator = ((List<Object>)h.b).iterator();
         while (iterator.hasNext()) {
             try {
@@ -237,7 +237,7 @@ public class EditVideoActivity extends htx implements htq, rnc, tgg
         this.aq.dispose();
         this.I.b();
         if (this.isFinishing()) {
-            teu.m(this.F.b((aezf)glc.t, (Executor)this.g), (tes)new hug(this.J, 1, (byte[])null, (byte[])null, (byte[])null));
+            tfx.m(this.F.b((afax)glh.t, (Executor)this.g), (tfv)new fci(this.J, 20, (byte[])null, (byte[])null, (byte[])null));
         }
     }
     
@@ -262,25 +262,25 @@ public class EditVideoActivity extends htx implements htq, rnc, tgg
     
     protected final void onSaveInstanceState(final Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        if (this.ah.al()) {
+        if (this.ai.aj()) {
             final String a = this.A;
             a.getClass();
             bundle.putString("edit_video_activity_instance_uuid_key", a);
-            teu.n((aun)this, this.F.b((aezf)new ggp(this, 18), (Executor)afum.a), (ttg)new hlo(this, 11), (ttg)hid.r);
+            tfx.n((aup)this, this.F.b((afax)new ggu(this, 18), (Executor)afwd.a), (tui)new hlw(this, 13), (tui)him.r);
         }
         else {
-            final aktm y = this.y;
+            final akvn y = this.y;
             if (y != null) {
-                bundle.putByteArray("get_metadata_editor_response_key", ((agzk)y).toByteArray());
+                bundle.putByteArray("get_metadata_editor_response_key", ((ahbc)y).toByteArray());
             }
         }
         if (this.o.h()) {
-            final ajli an = this.an;
+            final ajnh an = this.an;
             if (an != null) {
-                bundle.putByteArray("edit_thumbnail_command_key", ((agzk)an).toByteArray());
+                bundle.putByteArray("edit_thumbnail_command_key", an.toByteArray());
             }
             final cl supportFragmentManager = ((bu)this).getSupportFragmentManager();
-            final zgm ao = this.ao;
+            final zik ao = this.ao;
             ao.getClass();
             supportFragmentManager.J(bundle, "thumbnailFragmentTag", (br)ao);
         }
@@ -297,17 +297,17 @@ public class EditVideoActivity extends htx implements htq, rnc, tgg
         }
         final Intent intent = this.getIntent();
         if (!"android.intent.action.EDIT".equals(intent.getAction())) {
-            ttr.b("Unsupported action: ".concat(String.valueOf(intent.getAction())));
+            tut.b("Unsupported action: ".concat(String.valueOf(intent.getAction())));
             this.finish();
             return;
         }
         if ((this.x = intent.getStringExtra("video_id")) == null) {
-            ttr.b("VideoId not provided.");
+            tut.b("VideoId not provided.");
             this.finish();
             return;
         }
         this.ap = intent.getByteArrayExtra("click_tracking_params");
-        if (this.ah.al()) {
+        if (this.ai.aj()) {
             this.E = true;
             if (this.D) {
                 this.w();
@@ -327,38 +327,38 @@ public class EditVideoActivity extends htx implements htq, rnc, tgg
         if (this.z) {
             return;
         }
-        tpe.x((Context)this, 2132017974, 0);
+        tqf.x((Context)this, 2132017974, 0);
         final Intent intent = new Intent();
         intent.putExtra("refresh_my_videos", true);
         this.setResult(-1, intent);
         this.finish();
     }
     
-    public final void q(final alvj e) {
-        final ahaz builder = aktl.a.createBuilder();
+    public final void q(final alxj e) {
+        final ahcr builder = ((ahcz)akvm.a).createBuilder();
         final String x = this.x;
         builder.copyOnWrite();
-        final aktl aktl = (aktl)builder.instance;
+        final akvm akvm = (akvm)builder.instance;
         x.getClass();
-        aktl.b |= 0x2;
-        aktl.d = x;
+        akvm.b |= 0x2;
+        akvm.d = x;
         if (e != null) {
             builder.copyOnWrite();
-            final aktl aktl2 = (aktl)builder.instance;
-            aktl2.e = e;
-            aktl2.b |= 0x4;
+            final akvm akvm2 = (akvm)builder.instance;
+            akvm2.e = e;
+            akvm2.b |= 0x4;
         }
-        teu.n((aun)this, this.L.e(builder, this.s, this.ap), (ttg)new hlo(this, 14), (ttg)new hlo(this, 15));
+        tfx.n((aup)this, this.L.e(builder, this.s, this.ap), (tui)new hlw(this, 16), (tui)new hlw(this, 17));
     }
     
     public final void r() {
-        final htu c = this.C;
+        final hud c = this.C;
         if (c != null) {
-            final boolean ad = ((huc)this).ad;
+            final boolean ad = ((hul)this).ad;
             boolean b = false;
             Label_0045: {
                 if (!ad) {
-                    if (!((huc)this).ac) {
+                    if (!((hul)this).ac) {
                         b = b;
                         if (!this.K.a) {
                             break Label_0045;
@@ -376,10 +376,10 @@ public class EditVideoActivity extends htx implements htq, rnc, tgg
     }
     
     public final void t() {
-        final zgm zgm = (zgm)((bu)this).getSupportFragmentManager().f("edit_thumbnails_fragment");
-        if (zgm != null) {
-            zgm.af = true;
-            zgm.d();
+        final zik zik = (zik)((bu)this).getSupportFragmentManager().f("edit_thumbnails_fragment");
+        if (zik != null) {
+            zik.af = true;
+            zik.d();
             return;
         }
         this.H();
@@ -387,54 +387,54 @@ public class EditVideoActivity extends htx implements htq, rnc, tgg
     
     final void u() {
         ((fa)this).setSupportActionBar((Toolbar)this.q.c);
-        this.C = new htu(this);
-        ((faq)this).ol().c((Collection)afeq.r((Object)this.C));
+        this.C = new hud(this);
+        ((fat)this).oi().c((Collection)afgh.r(this.C));
         final ep supportActionBar = ((fa)this).getSupportActionBar();
         supportActionBar.o(2132017978);
         supportActionBar.j(true);
-        supportActionBar.m(agx.a((Context)this, 2131233638));
+        supportActionBar.m(agy.a((Context)this, 2131233639));
         supportActionBar.A();
-        ((huc)this).aa.d((View)this.q.c, ((fa)this).findViewById(2131430801), ((fa)this).findViewById(2131428812));
-        this.aq.c(((asht)this.K.b).af(this.n).aH((asjm)new hsf(this, 4)));
+        ((hul)this).aa.d((View)this.q.c, ((fa)this).findViewById(2131430801), ((fa)this).findViewById(2131428812));
+        this.aq.c(((askp)this.K.b).af(this.n).aH((asmi)new hsn(this, 6)));
     }
     
     public final void v() {
-        tbi.f();
-        final aktm y = this.y;
+        tcl.l();
+        final akvn y = this.y;
         y.getClass();
         if ((y.b & 0x200) != 0x0) {
-            ((faq)this).pF().D((wzz)new wyt(y.g));
+            ((fat)this).pE().D((xbe)new wzy(y.g));
         }
-        final aktm y2 = this.y;
-        tbi.f();
-        for (final akuh akuh : y2.f) {
-            aore aore;
-            if ((aore = akuh.b) == null) {
-                aore = aore.a;
+        final akvn y2 = this.y;
+        tcl.l();
+        for (final akwh akwh : y2.f) {
+            aotq aotq;
+            if ((aotq = akwh.b) == null) {
+                aotq = aotq.a;
             }
-            aorf aorf;
-            if ((aorf = aore.b) == null) {
-                aorf = aorf.a;
+            aotr aotr;
+            if ((aotr = aotq.b) == null) {
+                aotr = aotr.a;
             }
-            if ((aorf.b & 0x1) != 0x0) {
-                aore aore2;
-                if ((aore2 = akuh.b) == null) {
-                    aore2 = aore.a;
+            if ((aotr.b & 0x1) != 0x0) {
+                aotq aotq2;
+                if ((aotq2 = akwh.b) == null) {
+                    aotq2 = aotq.a;
                 }
-                aorf aorf2;
-                if ((aorf2 = aore2.b) == null) {
-                    aorf2 = aorf.a;
+                aotr aotr2;
+                if ((aotr2 = aotq2.b) == null) {
+                    aotr2 = aotr.a;
                 }
-                anyv anyv;
-                if ((anyv = aorf2.c) == null) {
-                    anyv = anyv.a;
+                aobc aobc;
+                if ((aobc = aotr2.c) == null) {
+                    aobc = aobc.a;
                 }
-                final vgu vgu = new vgu(anyv);
-                akug akug;
-                if ((akug = y2.e) == null) {
-                    akug = akug.a;
+                final vic vic = new vic(aobc);
+                amjt amjt;
+                if ((amjt = y2.e) == null) {
+                    amjt = amjt.a;
                 }
-                ((huc)this).D(vgu, akug);
+                ((hul)this).D(vic, amjt);
                 this.al.b(2131430801);
                 break;
             }
@@ -443,31 +443,31 @@ public class EditVideoActivity extends htx implements htq, rnc, tgg
     }
     
     public final void w() {
-        tbi.f();
+        tcl.l();
         if (this.y != null) {
             this.v();
             return;
         }
-        tvb.n(this.x);
+        twd.n(this.x);
         this.am.a();
         this.am.c();
-        if (((huc)this).F() && acuq.g((Context)this) && !this.ah.ak()) {
-            this.l.b((zga)new zfs(this, 1));
+        if (((hul)this).F() && acwc.g((Context)this) && !this.ai.ai()) {
+            this.l.b((zhz)new zhr(this, 1));
             return;
         }
         this.q(null);
     }
     
     protected final boolean x() {
-        return ((huc)this).ac || this.K.a;
+        return ((hul)this).ac || this.K.a;
     }
     
-    public final void y(final ahaz ahaz) {
+    public final void y(final ahcr ahcr) {
         this.C.b(false);
         this.G();
         if (this.p.r()) {
-            this.p.u(ahaz);
+            this.p.u(ahcr);
         }
-        teu.n((aun)this, this.L.f(ahaz, this.s, (byte[])null), (ttg)new hlo(this, 13), (ttg)new htt(this, ahaz));
+        tfx.n((aup)this, this.L.f(ahcr, this.s, (byte[])null), (tui)new hlw(this, 15), (tui)new huc(this, ahcr));
     }
 }

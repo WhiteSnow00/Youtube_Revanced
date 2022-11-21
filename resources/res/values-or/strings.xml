@@ -199,7 +199,7 @@
     <string name="accessibility_turn_flashlight_on_button">ଫ୍ଲାସ୍‍ଲାଇଟ୍‌କୁ ଚାଲୁ କରନ୍ତୁ</string>
     <string name="accessibility_undo_dislike_video">ନାପସନ୍ଦ ବଟନ୍‍ ପୂର୍ବବତ୍‍ କରନ୍ତୁ</string>
     <string name="accessibility_undo_like_video">ଲାଇକ୍‍ ବଟନ୍‍ ପୂର୍ବବତ୍‍ କରନ୍ତୁ</string>
-    <string name="accessibility_user_image">ଉପଯୋଗକର୍ତ୍ତା ଛବି ବଟନ୍‍</string>
+    <string name="accessibility_user_image">ୟୁଜର ଇମେଜ ବଟନ</string>
     <string name="accessibility_video_reply_button">ପ୍ରତ୍ୟୁତ୍ତର ପାଇଁ ଭିଡିଓ ସଂଲଗ୍ନ କରନ୍ତୁ</string>
     <string name="accessibility_video_time">ଭିଡିଓର ବର୍ତ୍ତମାନର ସମୟ: %1$s</string>
     <string name="accessibility_watch_metadata_row">%1$s %2$s</string>
@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">ଡିଭାଇସ୍ ଥିମ୍ ବ୍ୟବହାର କରନ୍ତୁ</string>
     <string name="app_theme_appearance_summary">ଆପଣଙ୍କ ପସନ୍ଦର ହାଲୁକା କିମ୍ବା ଗାଢ଼ ଥିମ୍ ବାଛନ୍ତୁ</string>
     <string name="app_theme_appearance_title">ଏପିଏରେନ୍ସ</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">ପ୍ରୟୋଗ କରନ୍ତୁ</string>
     <string name="approve_playlist_sync">ନୂଆ ଭିଡିଓଗୁଡ଼ିକୁ ସିଙ୍କ୍‌ କରନ୍ତୁ</string>
     <string name="audio_playback_failed_snackbar_action_button">ପୁଣି ଚେଷ୍ଟା କର</string>
@@ -274,7 +274,7 @@
     <string name="autoconnect_title_no_device_name">ଟିଭିରେ YouTube ଦେଖୁଛନ୍ତି?</string>
     <string name="autonav_a11y">ଅଟୋପ୍ଲେ</string>
     <string name="available_storage">ଉପଲବ୍ଧ ଷ୍ଟୋରେଜ୍‌</string>
-    <string name="avatar_description">YouTube ଉପଯୋଗକର୍ତ୍ତା ପ୍ରତିଛବି</string>
+    <string name="avatar_description">YouTube ୟୁଜର ଇମେଜ</string>
     <string name="back_button">ପଛକୁ ଫେରନ୍ତୁ</string>
     <string name="background_audio_policy_off">ବନ୍ଦ</string>
     <string name="background_audio_policy_on">ସର୍ବଦା ଚାଲୁ ରଖନ୍ତୁ</string>
@@ -479,7 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">ଡାଟା ମନିଟରିଂ ଓ ନିୟନ୍ତ୍ରଣ</string>
     <string name="data_saving_persistent_title">ଡାଟା ସେଭିଂ</string>
     <string name="data_saving_select_quality_every_video_switch_title">ସମସ୍ତ ଭିଡିଓ ପାଇଁ ଗୁଣବତ୍ତା ଚୟନ କରନ୍ତୁ</string>
-    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">ସ୍ମାର୍ଟ ଡାଉନଲୋଡର ଗୁଣବତ୍ତା କମ୍ କରନ୍ତୁ</string>
     <string name="data_saving_snack_bar_action_button">ଦେଖନ୍ତୁ</string>
     <string name="data_saving_snack_bar_text">ଏହି ପରିବର୍ତ୍ତନ ଆପଣଙ୍କର ଡାଟା ସେଭିଂ ସେଟିଂସକୁ ପ୍ରଭାବିତ କରେ</string>
     <string name="data_saving_upload_wifi_only_switch_title">କେବଳ ୱାଇ-ଫାଇ ମାଧ୍ୟମରେ ଅପଲୋଡ୍ କରନ୍ତୁ</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">ଷ୍ଟ୍ରିମ୍ ଶେଷ କରନ୍ତୁ</string>
     <string name="lc_retry_yes">ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ</string>
     <string name="lc_rotate_device">ଡିଭାଇସ୍‌ଟିକୁ ଘୂରାନ୍ତୁ</string>
+    <string name="lc_sharedmde_required_field_error">ଟାଇଟେଲ ଏବଂ ଅଡିଏନ୍ସ ଆବଶ୍ୟକ।</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">ପୋର୍ଟେଟ୍‌ରେ ଷ୍ଟ୍ରୀମ୍‌ କରନ୍ତୁ</string>
     <string name="lc_stream_start_error">ଷ୍ଟ୍ରିମ୍‍ ଆରମ୍ଭ କରିବାକୁ ଅସମର୍ଥ। ଆପଣଙ୍କ ଇଣ୍ଟର୍ନେଟ୍ ସଂଯୋଗକୁ ଯାଞ୍ଚ କରନ୍ତୁ।</string>
@@ -1727,6 +1728,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">ଭିଡିଓ ପ୍ରିଭ୍ୟୁ। ବିରତ କରିବାକୁ ଟାପ୍ କରନ୍ତୁ।</string>
     <string name="shorts_a11y_video_preview_tap_to_play">ଭିଡିଓ ପ୍ରିଭ୍ୟୁ। ପ୍ଲେ କରିବାକୁ ଟାପ୍ କରନ୍ତୁ।</string>
     <string name="shorts_a11y_zoom_control">ଜୁମ୍ ନିୟନ୍ତ୍ରଣ</string>
+    <string name="shorts_audio_failure_toast">ସାଉଣ୍ଡ ଯୋଗ କରିବାରେ ବିଫଳ ହୋଇଛି। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
     <string name="shorts_camera_allow_access_subtitle">ଆପଣଙ୍କ କ୍ୟାମେରା ଓ ମାଇକ୍ରୋଫୋନକୁ ଆକ୍ସେସ୍ କରିବା ପାଇଁ ଅନୁମତି ଦିଅନ୍ତୁ</string>
     <string name="shorts_camera_allow_access_title">ଏକ ସର୍ଟ ଭିଡିଓ ତିଆରି କରନ୍ତୁ</string>
     <string name="shorts_camera_close_confirmation_cancel">ବାତିଲ୍ କରନ୍ତୁ</string>

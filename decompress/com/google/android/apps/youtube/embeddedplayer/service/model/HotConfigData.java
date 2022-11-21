@@ -12,14 +12,14 @@ import android.os.Parcelable$Creator;
 public class HotConfigData implements BusSupported$Data
 {
     public static final Parcelable$Creator CREATOR;
-    public final ajnf a;
+    public final ajpe a;
     
     static {
-        final ajnf a = ajnf.a;
-        CREATOR = (Parcelable$Creator)new ics(16);
+        final ajpe a = ajpe.a;
+        CREATOR = (Parcelable$Creator)new idb(16);
     }
     
-    public HotConfigData(final ajnf a) {
+    public HotConfigData(final ajpe a) {
         this.a = a;
     }
     
@@ -34,7 +34,7 @@ public class HotConfigData implements BusSupported$Data
     
     @Override
     public final boolean equals(final Object o) {
-        return o instanceof HotConfigData && adkp.ae(this.a, ((HotConfigData)o).a);
+        return o instanceof HotConfigData && aexq.c(this.a, ((HotConfigData)o).a);
     }
     
     @Override
@@ -43,6 +43,6 @@ public class HotConfigData implements BusSupported$Data
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        vdh.bp((MessageLite)this.a, parcel);
+        ume.ad((MessageLite)this.a, parcel);
     }
 }

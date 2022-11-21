@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Օգտագործել սարքի թեման</string>
     <string name="app_theme_appearance_summary">Ընտրեք հավելվածի թեմայի գույնը</string>
     <string name="app_theme_appearance_title">Տեսք</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Կիրառել</string>
     <string name="approve_playlist_sync">Համաժամացնել նոր տեսանյութերը</string>
     <string name="audio_playback_failed_snackbar_action_button">Փորձել նորից</string>
@@ -479,7 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Տվյալների վերահսկում և կառավարում</string>
     <string name="data_saving_persistent_title">Թրաֆիկի տնտեսում</string>
     <string name="data_saving_select_quality_every_video_switch_title">Ընտրել որակ յուրաքանչյուր տեսանյութի համար</string>
-    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Նվազեցնել խելացի ներբեռնումների որակը</string>
     <string name="data_saving_snack_bar_action_button">Դիտել</string>
     <string name="data_saving_snack_bar_text">Փոփոխությունը կազդի թրաֆիկի տնտեսման կարգավորումների վրա։</string>
     <string name="data_saving_upload_wifi_only_switch_title">Վերբեռնել միայն Wi-Fi ցանցով</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">Ավարտել հեռարձակումը</string>
     <string name="lc_retry_yes">Փորձել նորից</string>
     <string name="lc_rotate_device">Պտտեք սարքը</string>
+    <string name="lc_sharedmde_required_field_error">Անհրաժեշտ է նշել անվանումը և լսարանը։</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Ուղղաձիգ դիրքով</string>
     <string name="lc_stream_start_error">Չհաջողվեց սկսել հեռարձակումը: Ստուգեք կապը:</string>
@@ -1728,6 +1729,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Տեսանյութի նախադիտում։ Հպեք դադարեցնելու համար։</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Տեսանյութի նախադիտում։ Հպեք նվագարկելու համար։</string>
     <string name="shorts_a11y_zoom_control">Մեծացնելու կարգավորիչ</string>
+    <string name="shorts_audio_failure_toast">Չհաջողվեց ավելացնել ձայնը։ Նորից փորձեք։</string>
     <string name="shorts_camera_allow_access_subtitle">Թույլատրեք տեսախցիկի և խոսափողի օգտագործումը</string>
     <string name="shorts_camera_allow_access_title">Ստեղծեք կարճ հոլովակ</string>
     <string name="shorts_camera_close_confirmation_cancel">Չեղարկել</string>

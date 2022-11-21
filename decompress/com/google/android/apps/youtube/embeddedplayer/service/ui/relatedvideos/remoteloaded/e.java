@@ -9,7 +9,7 @@ import com.google.android.apps.youtube.embeddedplayer.service.model.BitmapKey;
 import android.widget.TextView;
 import com.google.android.apps.youtube.embeddedplayer.service.model.RelatedVideoItem;
 import android.view.View$OnClickListener;
-import com.google.android.apps.youtube.embeddedplayer.service.jar.client.v;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.a;
 import android.view.View;
 import com.google.android.apps.youtube.embeddedplayer.service.errorlogging.remoteloaded.c;
 import android.view.LayoutInflater;
@@ -20,7 +20,7 @@ import com.google.android.apps.youtube.embeddedplayer.service.interactionlogging
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.List;
 
-final class e extends nq
+final class e extends nr
 {
     private static final List f;
     public List a;
@@ -51,7 +51,7 @@ final class e extends nq
         return 0;
     }
     
-    public final /* bridge */ on g(ViewGroup viewGroup, int b) {
+    public final /* bridge */ oo g(ViewGroup viewGroup, int b) {
         final boolean i = this.i;
         final com.google.android.apps.youtube.embeddedplayer.service.imageclient.shared.e j = this.j;
         final WeakReference h = this.h;
@@ -59,23 +59,23 @@ final class e extends nq
         Label_0120: {
             if (i) {
                 try {
-                    viewGroup = (ViewGroup)LayoutInflater.from(viewGroup.getContext()).inflate(2131625293, viewGroup, false);
+                    viewGroup = (ViewGroup)LayoutInflater.from(viewGroup.getContext()).inflate(2131625295, viewGroup, false);
                     break Label_0120;
                 }
                 catch (final RuntimeException ex) {
                     c.a().c(com.google.android.apps.youtube.embeddedplayer.service.errorlogging.remoteloaded.b.b, "Error inflating related videos", (Throwable)ex);
-                    afse.o("Error inflating related videos: ".concat(ex.toString()));
+                    aftr.k("Error inflating related videos: ".concat(ex.toString()));
                     return new d(viewGroup.getContext(), new View(viewGroup.getContext()), j, h);
                 }
             }
-            viewGroup = (ViewGroup)LayoutInflater.from(viewGroup.getContext()).inflate(2131625293, viewGroup, false);
+            viewGroup = (ViewGroup)LayoutInflater.from(viewGroup.getContext()).inflate(2131625295, viewGroup, false);
         }
         final d d2 = new d((View)viewGroup, j, h);
-        ((View)viewGroup).setOnClickListener((View$OnClickListener)new v(d2, 8));
+        ((View)viewGroup).setOnClickListener((View$OnClickListener)new a(d2, 7));
         return d2;
     }
     
-    public final long mR(final int n) {
+    public final long mO(final int n) {
         final String h = this.a.get(n).h();
         if (h != null) {
             return h.hashCode();
@@ -83,8 +83,8 @@ final class e extends nq
         return 0L;
     }
     
-    public final /* bridge */ void q(final on on, final int n) {
-        final d d = (d)on;
+    public final /* bridge */ void q(final oo oo, final int n) {
+        final d d = (d)oo;
         final RelatedVideoItem relatedVideoItem = this.a.get(n);
         final TextView v = d.v;
         final String s = "";
@@ -106,7 +106,7 @@ final class e extends nq
             d.E();
         }
         BitmapKey a = relatedVideoItem.a();
-        if (a == null || !a.equals((Object)d.t)) {
+        if (a == null || !a.equals(d.t)) {
             d.E();
         }
         final SelectableItemKey selectableItemKey = null;
@@ -119,9 +119,9 @@ final class e extends nq
             b = relatedVideoItem.b();
         }
         d.u = b;
-        final ahab c = relatedVideoItem.c();
+        final ahbt c = relatedVideoItem.c();
         if (c == null) {
-            afse.p("Unable to log visibility of related video item, tracking params are null");
+            aftr.l("Unable to log visibility of related video item, tracking params are null");
         }
         else {
             this.g.d(c.I());

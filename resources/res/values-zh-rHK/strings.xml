@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">使用裝置主題背景</string>
     <string name="app_theme_appearance_summary">選擇您偏好的淺色或深色主題背景</string>
     <string name="app_theme_appearance_title">外觀</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">套用</string>
     <string name="approve_playlist_sync">同步處理新影片</string>
     <string name="audio_playback_failed_snackbar_action_button">再試一次</string>
@@ -480,7 +480,7 @@
     <string name="data_saving_monitoring_and_control_category_title">資料監察和控制</string>
     <string name="data_saving_persistent_title">節省數據用量</string>
     <string name="data_saving_select_quality_every_video_switch_title">選擇播放每部影片的畫質</string>
-    <string name="data_saving_smart_downloads_quality_switch_title">降低智慧下載畫質</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">降低智能下載畫質</string>
     <string name="data_saving_snack_bar_action_button">查看</string>
     <string name="data_saving_snack_bar_text">是次變動會影響你的「節省數據用量」設定</string>
     <string name="data_saving_upload_wifi_only_switch_title">僅透過 Wi-Fi 上載</string>
@@ -829,6 +829,7 @@
     <string name="lc_retry_no">結束串流播放</string>
     <string name="lc_retry_yes">再試一次</string>
     <string name="lc_rotate_device">請旋轉裝置</string>
+    <string name="lc_sharedmde_required_field_error">需要提供標題及觀眾。</string>
     <string name="lc_statistic_item_cd">%1$s：%2$s</string>
     <string name="lc_stream_in_portrait">以直向模式串流</string>
     <string name="lc_stream_start_error">無法開始串流，請檢查連線。</string>
@@ -1733,6 +1734,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">影片預覽。輕按即可暫停。</string>
     <string name="shorts_a11y_video_preview_tap_to_play">影片預覽。輕按即可播放。</string>
     <string name="shorts_a11y_zoom_control">縮放控制</string>
+    <string name="shorts_audio_failure_toast">無法加入音效，請再試一次。</string>
     <string name="shorts_camera_allow_access_subtitle">允許存取相機和麥克風</string>
     <string name="shorts_camera_allow_access_title">製作 Shorts</string>
     <string name="shorts_camera_close_confirmation_cancel">取消</string>

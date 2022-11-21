@@ -4,13 +4,12 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.shared;
 
-import com.google.android.apps.youtube.embeddedplayer.service.jar.client.r;
+import com.google.android.apps.youtube.embeddedplayer.service.jar.client.q;
 import android.os.Parcel;
-import com.google.android.apps.youtube.embeddedplayer.service.jar.client.a;
 import android.os.Handler;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public final class b extends eoa implements c
+public final class b extends eod implements c
 {
     public final com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.c a;
     public final AtomicInteger b;
@@ -31,8 +30,8 @@ public final class b extends eoa implements c
         this.d = d;
         this.b = new AtomicInteger();
         this.c = new AtomicInteger();
-        this.e = (Runnable)new a(a, 15);
-        this.f = (Runnable)new a(a, 16, (byte[])null);
+        this.e = new com.google.android.apps.youtube.embeddedplayer.service.jar.client.b(a, 13);
+        this.f = new com.google.android.apps.youtube.embeddedplayer.service.jar.client.b(a, 14, null);
         a.b(this);
     }
     
@@ -50,9 +49,9 @@ public final class b extends eoa implements c
                 return false;
             }
             case 9: {
-                eob.k(parcel);
+                eoe.k(parcel);
                 this.enforceNoDataAvail(parcel);
-                this.d.post((Runnable)new a(this, 13));
+                this.d.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.jar.client.b(this, 11));
                 parcel2.writeNoException();
                 break;
             }
@@ -88,10 +87,10 @@ public final class b extends eoa implements c
                 break;
             }
             case 3: {
-                int1 = parcel.readInt();
                 n = parcel.readInt();
+                int1 = parcel.readInt();
                 this.enforceNoDataAvail(parcel);
-                this.k(int1, n);
+                this.k(n, int1);
                 parcel2.writeNoException();
                 break;
             }
@@ -112,7 +111,7 @@ public final class b extends eoa implements c
     }
     
     public final void g(final int n) {
-        this.d.post((Runnable)new ccm(this, n, 20));
+        this.d.post((Runnable)new ccp(this, n, 20));
     }
     
     public final void h() {
@@ -127,14 +126,14 @@ public final class b extends eoa implements c
         final Handler d = this.d;
         final com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.c a = this.a;
         a.getClass();
-        d.post((Runnable)new a(a, 14));
+        d.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.jar.client.b(a, 12));
     }
     
     public final void k(final int n, final int n2) {
-        this.d.post((Runnable)new r(this, n, n2, 2));
+        this.d.post((Runnable)new q(this, n, n2, 2));
     }
     
     public final void l(final int n) {
-        this.d.post((Runnable)new ccm(this, n, 19));
+        this.d.post((Runnable)new ccp(this, n, 19));
     }
 }

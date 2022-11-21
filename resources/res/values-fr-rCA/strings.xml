@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Même thème que l\'appareil</string>
     <string name="app_theme_appearance_summary">Choisissez entre les thèmes clair et sombre</string>
     <string name="app_theme_appearance_title">Apparence</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Appliquer</string>
     <string name="approve_playlist_sync">Synchroniser de nouvelles vidéos</string>
     <string name="audio_playback_failed_snackbar_action_button">Réessayer</string>
@@ -481,7 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Surveillance et contrôle des données</string>
     <string name="data_saving_persistent_title">Économies de données</string>
     <string name="data_saving_select_quality_every_video_switch_title">Sélectionner la qualité pour chaque vidéo</string>
-    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Réduire la qualité des téléchargements intelligents</string>
     <string name="data_saving_snack_bar_action_button">Afficher</string>
     <string name="data_saving_snack_bar_text">Cette modification a une incidence sur vos paramètres d\'économies de données</string>
     <string name="data_saving_upload_wifi_only_switch_title">Téléversement par Wi-Fi uniquement</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Arrêter la diffusion</string>
     <string name="lc_retry_yes">Réessayer</string>
     <string name="lc_rotate_device">Tourner l\'appareil</string>
+    <string name="lc_sharedmde_required_field_error">Le titre et l\'auditoire sont requis.</string>
     <string name="lc_statistic_item_cd">%1$s : %2$s</string>
     <string name="lc_stream_in_portrait">Diffuser en mode portrait</string>
     <string name="lc_stream_start_error">Démarrage de la diffusion impossible. Vérifiez votre connexion.</string>
@@ -1748,6 +1749,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Aperçu de la vidéo. Touchez pour mettre en pause.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Aperçu de la vidéo. Touchez pour faire jouer.</string>
     <string name="shorts_a11y_zoom_control">Contrôle du zoom</string>
+    <string name="shorts_audio_failure_toast">Échec de l\'ajout du son. Veuillez réessayer.</string>
     <string name="shorts_camera_allow_access_subtitle">Autorisez l\'accès à votre caméra et à votre microphone</string>
     <string name="shorts_camera_allow_access_title">Créer une courte vidéo</string>
     <string name="shorts_camera_close_confirmation_cancel">Annuler</string>

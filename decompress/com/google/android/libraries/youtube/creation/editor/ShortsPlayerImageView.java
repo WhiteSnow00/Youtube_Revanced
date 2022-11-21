@@ -13,7 +13,7 @@ import android.support.v7.widget.AppCompatImageView;
 public class ShortsPlayerImageView extends AppCompatImageView
 {
     public float a;
-    public tyn b;
+    public tzp b;
     
     public ShortsPlayerImageView(final Context context) {
         this(context, null);
@@ -29,7 +29,7 @@ public class ShortsPlayerImageView extends AppCompatImageView
     }
     
     protected final void onMeasure(int round, int round2) {
-        final tyn b = this.b;
+        final tzp b = this.b;
         if (b != null && b.b && this.a != 0.0f) {
             final int size = View$MeasureSpec.getSize(round2);
             final int size2 = View$MeasureSpec.getSize(round);

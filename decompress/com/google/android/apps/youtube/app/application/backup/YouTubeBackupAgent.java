@@ -29,32 +29,32 @@ import android.content.Context;
 import java.util.HashMap;
 import java.util.Map;
 
-public class YouTubeBackupAgent extends tdi
+public class YouTubeBackupAgent extends tem
 {
     public static final Class[] a;
     private static final Map f;
-    public vaf b;
-    public vlq c;
+    public vbo b;
+    public vmx c;
     
     static {
-        a = new Class[] { fex.class, fmy.class, aald.class, aale.class, rig.class, tfg.class, zvf.class, adkp.class, yag.class, llp.class, jwp.class, jzg.class, fbu.class, kzr.class, glb.class };
+        a = new Class[] { ffa.class, fnb.class, aamz.class, aana.class, rje.class, tgj.class, zxd.class, adme.class, ych.class, lma.class, jwx.class, jzq.class, fbx.class, kzz.class, glg.class };
         final HashMap f2 = new HashMap();
-        f2.put("youtube", ewl.a);
+        f2.put("youtube", ewn.a);
         f = f2;
     }
     
     public static FileObserver a(final Context context) {
-        final ewj ewj = new ewj(context.getDatabasePath("identity.db").getPath(), context);
-        ((FileObserver)ewj).startWatching();
-        return (FileObserver)ewj;
+        final ewl ewl = new ewl(context.getDatabasePath("identity.db").getPath(), context);
+        ((FileObserver)ewl).startWatching();
+        return (FileObserver)ewl;
     }
     
     public static void d(final Context context) {
         final SharedPreferences sharedPreferences = context.getSharedPreferences("youtube", 0);
-        if (sharedPreferences.getBoolean("got_future_restore", false) && tum.a(context) >= sharedPreferences.getInt("future_restore_version", Integer.MAX_VALUE)) {
-            final ewk ewk = new ewk(sharedPreferences);
-            ttr.g("Triggering manual restore.");
-            new BackupManager(context).requestRestore((RestoreObserver)ewk);
+        if (sharedPreferences.getBoolean("got_future_restore", false) && tvo.a(context) >= sharedPreferences.getInt("future_restore_version", Integer.MAX_VALUE)) {
+            final ewm ewm = new ewm(sharedPreferences);
+            tut.g("Triggering manual restore.");
+            new BackupManager(context).requestRestore((RestoreObserver)ewm);
         }
     }
     
@@ -64,11 +64,11 @@ public class YouTubeBackupAgent extends tdi
     }
     
     public static void f(final Context context) {
-        context.getSharedPreferences("youtube", 0).registerOnSharedPreferenceChangeListener((SharedPreferences$OnSharedPreferenceChangeListener)new jqc(context, 1));
+        context.getSharedPreferences("youtube", 0).registerOnSharedPreferenceChangeListener((SharedPreferences$OnSharedPreferenceChangeListener)new jqj(context, 1));
     }
     
-    public static boolean g(final vlq vlq) {
-        return vlq == null || vlq.g("enable_backup_and_restore");
+    public static boolean g(final vmx vmx) {
+        return vmx == null || vmx.g("enable_backup_and_restore");
     }
     
     private final File k() {
@@ -81,43 +81,43 @@ public class YouTubeBackupAgent extends tdi
     
     private static final void m(final File file, final File file2) {
         try {
-            afpj.a(file, file2);
+            afqz.a(file, file2);
         }
         catch (final IOException ex) {
-            ttr.g("Unable to copy identity database.");
+            tut.g("Unable to copy identity database.");
         }
     }
     
     private static final void n(final File file) {
         if (!file.delete()) {
-            ttr.g("Unable to delete identity database file from files directory.");
+            tut.g("Unable to delete identity database file from files directory.");
         }
     }
     
-    protected final afeq b() {
-        final afel d = afeq.d();
-        d.h(vyg.t(this.getApplicationContext()));
-        d.h(aakt.d(this.getApplicationContext()));
-        d.h(aale.n(this.getApplicationContext()));
-        d.h(tfg.k(this.getApplicationContext(), "commonui", "pivotbar_proto.pb"));
-        d.h(tfg.k(this.getApplicationContext(), "commonui", "topbar_proto.pb"));
-        d.h(fqy.a(this.getApplicationContext()));
-        d.h(tfg.k(this.getApplicationContext(), "commonui", "theme_proto.pb"));
-        d.h(tfg.k(this.getApplicationContext(), "commonui", "spatial_audio_mealbar_proto.pb"));
-        d.h(fbu.a(this.getApplicationContext()));
-        d.h(kzr.a(this.getApplicationContext()));
-        final vaf b = this.b;
+    protected final afgh b() {
+        final afgc d = afgh.d();
+        d.h(wbe.C(this.getApplicationContext()));
+        d.h(aamp.d(this.getApplicationContext()));
+        d.h(aana.n(this.getApplicationContext()));
+        d.h(tgj.l(this.getApplicationContext(), "commonui", "pivotbar_proto.pb"));
+        d.h(tgj.l(this.getApplicationContext(), "commonui", "topbar_proto.pb"));
+        d.h(fra.a(this.getApplicationContext()));
+        d.h(tgj.l(this.getApplicationContext(), "commonui", "theme_proto.pb"));
+        d.h(tgj.l(this.getApplicationContext(), "commonui", "spatial_audio_mealbar_proto.pb"));
+        d.h(fbx.a(this.getApplicationContext()));
+        d.h(kzz.a(this.getApplicationContext()));
+        final vbo b = this.b;
         if (b != null) {
-            amjm amjm;
-            if ((amjm = b.b().m) == null) {
-                amjm = amjm.a;
+            amlr amlr;
+            if ((amlr = b.b().m) == null) {
+                amlr = amlr.a;
             }
-            anqt anqt;
-            if ((anqt = amjm.f) == null) {
-                anqt = anqt.a;
+            ansz ansz;
+            if ((ansz = amlr.f) == null) {
+                ansz = ansz.a;
             }
-            if (anqt.g) {
-                d.h(tfg.k(this.getApplicationContext(), "offline", "offlinemainbackedup.pb"));
+            if (ansz.g) {
+                d.h(tgj.l(this.getApplicationContext(), "offline", "offlinemainbackedup.pb"));
             }
         }
         return d.g();
@@ -143,15 +143,15 @@ public class YouTubeBackupAgent extends tdi
         int i = 0;
         while (true) {
             while (i < 10000) {
-                Object o2;
+                afbh afbh;
                 if (o == null) {
-                    o2 = aeyo.a;
+                    afbh = afag.a;
                 }
                 else if (o instanceof Application) {
-                    o2 = aezp.k((Object)o);
+                    afbh = afbh.k(o);
                 }
                 else if (o instanceof Service) {
-                    o2 = aezp.k((Object)((Service)o).getApplication());
+                    afbh = afbh.k(((Service)o).getApplication());
                 }
                 else {
                     if (!(o instanceof Activity)) {
@@ -164,31 +164,31 @@ public class YouTubeBackupAgent extends tdi
                         ++i;
                         continue;
                     }
-                    o2 = aezp.k((Object)((Activity)o).getApplication());
+                    afbh = afbh.k(((Activity)o).getApplication());
                 }
-                final aezp aezp = (aezp)((aezp)o2).b((aezf)new sts((Class)ewi.class, 16)).d((afaq)fkw.q);
-                if (!aezp.h()) {
-                    ttr.l("Skipping auto-backup due to unknown component");
+                final afbh afbh2 = (afbh)afbh.b((afax)new sur((Class)ewk.class, 16)).d((afci)fkz.q);
+                if (!afbh2.h()) {
+                    tut.l("Skipping auto-backup due to unknown component");
                     return;
                 }
-                ((ewi)aezp.c()).wv(this);
+                ((ewk)afbh2.c()).xg(this);
                 if (g(this.c)) {
-                    ((obm)this).addHelper("persistent_backup_agent_helper_prefs", (BackupHelper)new SharedPreferencesBackupHelper((Context)this, new String[] { "persistent_backup_agent_helper" }));
-                    super.e = tfg.r(this.getApplicationContext(), false);
-                    super.d = mdp.R();
-                    final afeq b = this.b();
-                    final afih afih = (afih)b;
-                    final String[] array = new String[afih.c];
-                    for (int j = 0; j < afih.c; ++j) {
+                    ((occ)this).addHelper("persistent_backup_agent_helper_prefs", (BackupHelper)new SharedPreferencesBackupHelper((Context)this, new String[] { "persistent_backup_agent_helper" }));
+                    super.e = tgj.s(this.getApplicationContext(), false);
+                    super.d = med.am();
+                    final afgh b = this.b();
+                    final afjx afjx = (afjx)b;
+                    final String[] array = new String[afjx.c];
+                    for (int j = 0; j < afjx.c; ++j) {
                         final Context applicationContext = this.getApplicationContext();
                         final eg e = super.e;
-                        final Uri uri = (Uri)b.get(j);
-                        final qpb b2 = qpb.b();
+                        final Uri uri = b.get(j);
+                        final qpv b2 = qpv.b();
                         b2.c();
                         String s = null;
                         Label_0389: {
                             try {
-                                final File file = (File)e.ag(uri, (qnx)b2);
+                                final File file = (File)e.ag(uri, (qor)b2);
                                 final File filesDir = applicationContext.getFilesDir();
                                 if (file.getPath().startsWith(filesDir.getPath())) {
                                     s = file.getPath().replace(filesDir.getPath(), "");
@@ -196,7 +196,7 @@ public class YouTubeBackupAgent extends tdi
                                 }
                             }
                             catch (final IOException ex) {
-                                ttr.d("Failed to find the file from given uri", (Throwable)ex);
+                                tut.d("Failed to find the file from given uri", (Throwable)ex);
                             }
                             final List pathSegments = uri.getPathSegments();
                             if (pathSegments.size() > 1) {
@@ -213,7 +213,7 @@ public class YouTubeBackupAgent extends tdi
                 }
                 return;
             }
-            Object o2 = aeyo.a;
+            afbh afbh = afag.a;
             continue;
         }
     }
@@ -223,17 +223,17 @@ public class YouTubeBackupAgent extends tdi
             return;
         }
         final Context applicationContext = this.getApplicationContext();
-        final int a = tum.a(applicationContext);
+        final int a = tvo.a(applicationContext);
         if (a == 0) {
             return;
         }
         if (n > a && Build$VERSION.SDK_INT <= 32) {
             applicationContext.getSharedPreferences("youtube", 0).edit().putBoolean("got_future_restore", true).putInt("future_restore_version", n).apply();
-            ttr.g("Restore from future version skipped - will trigger a manual restore at next update.");
+            tut.g("Restore from future version skipped - will trigger a manual restore at next update.");
             return;
         }
         super.onRestore(backupDataInput, n, parcelFileDescriptor);
-        ttr.g("Restore initiated.");
+        tut.g("Restore initiated.");
         final File l = this.l();
         m(l, this.k());
         n(l);

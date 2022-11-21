@@ -8,7 +8,7 @@ import android.os.Parcel;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.service.a;
 import android.os.Handler;
 
-public final class h extends enz implements i
+public final class h extends eod implements i
 {
     public b a;
     private final Handler b;
@@ -23,7 +23,7 @@ public final class h extends enz implements i
     }
     
     public final void a() {
-        this.b.post((Runnable)new a(this, 12));
+        this.b.post((Runnable)new a(this, 8));
     }
     
     protected final boolean dispatchTransaction(final int n, final Parcel parcel, final Parcel parcel2, final int n2) {

@@ -4,10 +4,10 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.mutedautoplay.remoteloaded;
 
-import com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.service.e;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.errorscreen.remoteloaded.f;
 import android.graphics.drawable.Drawable;
 
-public final class b extends cjv
+public final class b extends cjy
 {
     public final MutedAutoplayIndicator b;
     
@@ -15,7 +15,8 @@ public final class b extends cjv
         this.b = b;
     }
     
+    @Override
     public final void b(final Drawable drawable) {
-        this.b.post((Runnable)new e(this, 4));
+        this.b.post((Runnable)new f(this, 2));
     }
 }

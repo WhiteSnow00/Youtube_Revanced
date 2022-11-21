@@ -14,20 +14,20 @@ import android.content.Context;
 import com.google.common.util.concurrent.ListenableFuture;
 import androidx.preference.ListPreference;
 
-public class ProtoDataStoreListPreference extends ListPreference implements tsh
+public class ProtoDataStoreListPreference extends ListPreference implements ttk
 {
-    public tsj G;
-    private tsf H;
-    private tqd I;
-    private aemc J;
+    public ttl G;
+    private tth H;
+    private tre I;
+    private aenv J;
     private ListenableFuture K;
-    private aun L;
+    private aup L;
     private Object M;
     
     public ProtoDataStoreListPreference(final Context context, final AttributeSet set) {
         super(context, set);
-        this.K = afwm.m((Object)null);
-        adkp.I(TextUtils.isEmpty((CharSequence)((Preference)this).s) ^ true, "Make sure key attribute is set in the xml file.");
+        this.K = afxr.l(null);
+        adme.L(TextUtils.isEmpty((CharSequence)((Preference)this).s) ^ true, "Make sure key attribute is set in the xml file.");
     }
     
     public final void F(final Object o) {
@@ -38,11 +38,11 @@ public class ProtoDataStoreListPreference extends ListPreference implements tsh
     public final boolean R(final Object o) {
         final boolean r = super.R(o);
         if (r) {
-            final aun l = this.L;
+            final aup l = this.L;
             final ListenableFuture ac = this.ac((String)o);
-            final tqd i = this.I;
+            final tre i = this.I;
             i.getClass();
-            teu.n(l, ac, (ttg)new tsi(i, 1), (ttg)new sxu(this, o, 14));
+            tfx.n(l, ac, (tui)new tti(i, 2), (tui)new syx(this, o, 15));
         }
         return r;
     }
@@ -80,23 +80,23 @@ public class ProtoDataStoreListPreference extends ListPreference implements tsh
         super.o(s);
     }
     
-    public final void ah(final tqd i) {
+    public final void ah(final tre i) {
         i.getClass();
         this.I = i;
     }
     
-    public final void ai(final aun l) {
+    public final void ai(final aup l) {
         this.L = l;
     }
     
     public final void aj(final Map map) {
-        final tsf h = map.get(((Preference)this).s);
+        final tth h = map.get(((Preference)this).s);
         h.getClass();
         this.H = h;
         final String s = (String)this.M;
-        final aemc j = new aemc((afty)new qqz(teu.b(this.L, h.a(), (aezf)new rrw(this, s, 5)), 4), (Executor)afum.a);
+        final aenv j = new aenv((afvp)new qrs(tfx.b(this.L, h.a(), (afax)new rsy(this, s, 5)), 4), (Executor)afwd.a);
         this.J = j;
-        teu.n(this.L, j.c(), (ttg)new sxu(this, s, 15), (ttg)new sxu(this, s, 16));
+        tfx.n(this.L, j.c(), (tui)new syx(this, s, 16), (tui)new syx(this, s, 17));
     }
     
     @Override
@@ -112,10 +112,10 @@ public class ProtoDataStoreListPreference extends ListPreference implements tsh
     public final void o(final String s) {
         final ListenableFuture ac = this.ac(s);
         this.K = ac;
-        final aun l = this.L;
-        final tqd i = this.I;
+        final aup l = this.L;
+        final tre i = this.I;
         i.getClass();
-        teu.n(l, ac, (ttg)new tsi(i, 1), (ttg)new sxu(this, s, 17));
+        tfx.n(l, ac, (tui)new tti(i, 2), (tui)new syx(this, s, 18));
     }
     
     protected final String s(final String s) {

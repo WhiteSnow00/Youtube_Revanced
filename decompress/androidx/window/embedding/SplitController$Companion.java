@@ -13,6 +13,10 @@ public final class SplitController$Companion
     private SplitController$Companion() {
     }
     
+    public SplitController$Companion(final atqv atqv) {
+        this();
+    }
+    
     public final SplitController getInstance() {
         if (SplitController.access$getGlobalInstance$cp() == null) {
             final ReentrantLock access$getGlobalLock$cp = SplitController.access$getGlobalLock$cp();
@@ -37,7 +41,7 @@ public final class SplitController$Companion
         final SplitController instance = this.getInstance();
         Object a = splitRules$window_release;
         if (splitRules$window_release == null) {
-            a = atkj.a;
+            a = atob.a;
         }
         SplitController.access$setStaticSplitRules(instance, (Set)a);
     }

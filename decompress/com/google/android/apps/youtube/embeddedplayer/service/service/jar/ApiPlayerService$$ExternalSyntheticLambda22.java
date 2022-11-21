@@ -11,9 +11,9 @@ import com.google.android.apps.youtube.embeddedplayer.service.model.IpcCompatibl
 
 public final class ApiPlayerService$$ExternalSyntheticLambda22 implements Runnable
 {
-    public ApiPlayerService a;
-    public IpcCompatiblePlaybackState b;
-    public ConditionVariable c;
+    public final ApiPlayerService a;
+    public final IpcCompatiblePlaybackState b;
+    public final ConditionVariable c;
     
     public ApiPlayerService$$ExternalSyntheticLambda22(final ApiPlayerService a, final IpcCompatiblePlaybackState b, final ConditionVariable c) {
         this.a = a;
@@ -26,27 +26,25 @@ public final class ApiPlayerService$$ExternalSyntheticLambda22 implements Runnab
         final ApiPlayerService a = this.a;
         final IpcCompatiblePlaybackState b = this.b;
         final ConditionVariable c = this.c;
-        final lor a2 = a.a;
-        if (b != null) {
-            final ApiPlayerStateCache h = a2.h;
-            final int b2 = b.b;
-            final PlaybackServiceState a3 = h.a;
-            PlaybackServiceState a4;
-            final PlaybackServiceState playbackServiceState = a4 = null;
-            if (a3 != null) {
-                a4 = playbackServiceState;
-                if (b2 == a3.hashCode()) {
-                    a4 = h.a;
-                }
+        final lpe a2 = a.a;
+        final ApiPlayerStateCache h = a2.h;
+        final int b2 = b.b;
+        final PlaybackServiceState a3 = h.a;
+        PlaybackServiceState a4;
+        final PlaybackServiceState playbackServiceState = a4 = null;
+        if (a3 != null) {
+            a4 = playbackServiceState;
+            if (b2 == a3.hashCode()) {
+                a4 = h.a;
             }
-            if (a4 != null) {
-                a2.t(a4);
-            }
-            else {
-                final PlaybackStartDescriptor c2 = b.c;
-                if (c2 != null) {
-                    a2.l(c2, b.a, a2.f);
-                }
+        }
+        if (a4 != null) {
+            a2.t(a4);
+        }
+        else {
+            final PlaybackStartDescriptor c2 = b.c;
+            if (c2 != null) {
+                a2.l(c2, b.a, a2.f);
             }
         }
         c.open();

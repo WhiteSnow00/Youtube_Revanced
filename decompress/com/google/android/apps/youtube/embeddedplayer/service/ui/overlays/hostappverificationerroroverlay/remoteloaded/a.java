@@ -16,6 +16,7 @@ public final class a implements b
         this.a = a;
     }
     
+    @Override
     public final void a() {
         final i a = this.a;
         if (a != null) {
@@ -23,7 +24,7 @@ public final class a implements b
                 a.a();
             }
             catch (final RemoteException ex) {
-                jfi.ak(ex);
+                lma.y(ex);
             }
         }
     }

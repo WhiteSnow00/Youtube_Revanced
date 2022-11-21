@@ -11,7 +11,7 @@ public final class a
     private int c;
     private boolean d;
     private int e;
-    private agyc f;
+    private ahbt f;
     private byte g;
     
     public final SubscriptionNotificationMenuItem a() {
@@ -49,7 +49,7 @@ public final class a
         this.g |= 0x1;
     }
     
-    public final void e(final agyc f) {
+    public final void e(final ahbt f) {
         if (f != null) {
             this.f = f;
             return;

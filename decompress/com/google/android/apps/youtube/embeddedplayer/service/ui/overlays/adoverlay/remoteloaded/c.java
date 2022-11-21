@@ -8,7 +8,7 @@ import android.os.RemoteException;
 import android.os.Bundle;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.shared.f;
 
-public final class c implements sln
+public final class c implements smo
 {
     public f a;
     
@@ -24,7 +24,7 @@ public final class c implements sln
                 a.a(null);
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -36,7 +36,7 @@ public final class c implements sln
                 a.b();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -51,7 +51,7 @@ public final class c implements sln
                 a.d();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -63,7 +63,7 @@ public final class c implements sln
                 a.e(n, n2);
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }

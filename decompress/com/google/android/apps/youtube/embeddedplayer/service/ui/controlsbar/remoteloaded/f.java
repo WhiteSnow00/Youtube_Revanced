@@ -42,9 +42,9 @@ public final class f extends View
     private long t;
     private String u;
     private String v;
-    private final pvh w;
+    private final oqz w;
     
-    public f(final Context context, final pvh w, final byte[] array, final byte[] array2, final byte[] array3) {
+    public f(final Context context, final oqz w, final byte[] array, final byte[] array2) {
         super(context);
         this.w = w;
     }
@@ -231,7 +231,7 @@ public final class f extends View
         }
         final Map m = this.m;
         if (m != null && this.s > 0L) {
-            final TimelineMarker[] array = m.get(abea.a);
+            final TimelineMarker[] array = m.get(abfg.a);
             if (array != null) {
                 final Rect bounds = this.a.getBounds();
                 this.j.top = bounds.top;
@@ -294,8 +294,8 @@ public final class f extends View
             }
             else if (this.p) {
                 this.e();
-                final pvh w = this.w;
-                ((a)w.a).a.r((long)(int)this.q);
+                final oqz w = this.w;
+                ((a)w.a).a.r((int)this.q);
                 ((a)w.a).B();
                 return true;
             }
@@ -309,7 +309,7 @@ public final class f extends View
                 this.b.setState(View.PRESSED_ENABLED_STATE_SET);
                 this.q = this.c((int)motionEvent.getX());
                 this.g();
-                final pvh w2 = this.w;
+                final oqz w2 = this.w;
                 ((a)w2.a).A();
                 ((a)w2.a).a.q();
                 return true;

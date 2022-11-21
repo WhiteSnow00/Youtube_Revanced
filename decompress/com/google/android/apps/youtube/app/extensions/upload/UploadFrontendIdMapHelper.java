@@ -21,7 +21,7 @@ public class UploadFrontendIdMapHelper implements Parcelable
     public Set b;
     
     static {
-        CREATOR = (Parcelable$Creator)new fzn(17);
+        CREATOR = (Parcelable$Creator)new fzs(17);
     }
     
     public UploadFrontendIdMapHelper(final int n) {
@@ -31,7 +31,7 @@ public class UploadFrontendIdMapHelper implements Parcelable
     
     public UploadFrontendIdMapHelper(final Parcel parcel) {
         final int int1 = parcel.readInt();
-        this.a = (Map)new abh(int1);
+        this.a = (Map)new abi(int1);
         final int n = 0;
         for (int i = 0; i < int1; ++i) {
             this.a.put(parcel.readParcelable(Uri.class.getClassLoader()), parcel.readString());
@@ -47,9 +47,9 @@ public class UploadFrontendIdMapHelper implements Parcelable
         return this.a.get(uri);
     }
     
-    public final void b(final String s, final adkb adkb) {
+    public final void b(final String s, final adlq adlq) {
         if (!this.d(s)) {
-            adkb.f(s, aphu.j);
+            adlq.f(s, apkg.j);
             this.b.add(s);
         }
     }

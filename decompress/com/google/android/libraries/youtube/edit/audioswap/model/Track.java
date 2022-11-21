@@ -19,12 +19,12 @@ public class Track implements Parcelable
     public final Spanned b;
     public final int c;
     public final Uri d;
-    public final aotp e;
+    public final aowb e;
     public final Spanned f;
     private final Spanned g;
     
     static {
-        CREATOR = (Parcelable$Creator)new ukg(1);
+        CREATOR = (Parcelable$Creator)new ulj(1);
     }
     
     public Track(final Parcel parcel) {
@@ -38,32 +38,32 @@ public class Track implements Parcelable
         final Uri d = (Uri)parcel.readValue(Uri.class.getClassLoader());
         d.getClass();
         this.d = d;
-        aotp e = null;
+        aowb e = null;
         try {
             try {
                 final int int1 = parcel.readInt();
                 final byte[] array = new byte[int1];
                 parcel.readByteArray(array);
                 if (int1 > 0) {
-                    e = (aotp)ahbh.parseFrom((ahbh)aotp.a, array);
+                    e = (aowb)ahcz.parseFrom((ahcz)aowb.a, array);
                 }
                 this.e = e;
             }
             finally {}
         }
-        catch (final ahca ahca) {
-            ttr.d("Cannot deserialize thumbnail details", (Throwable)ahca);
+        catch (final ahds ahds) {
+            tut.d("Cannot deserialize thumbnail details", (Throwable)ahds);
             this.e = null;
         }
         this.g = (Spanned)parcel.readValue(Spanned.class.getClassLoader());
         this.f = (Spanned)parcel.readValue(Spanned.class.getClassLoader());
-        adkp.H(this.c > 0);
+        adme.K(this.c > 0);
         return;
         this.e = null;
     }
     
-    public Track(final Spanned a, final Spanned b, final int c, final Uri d, final aotp e, final Spanned g, final Spanned f) {
-        adkp.H(c > 0);
+    public Track(final Spanned a, final Spanned b, final int c, final Uri d, final aowb e, final Spanned g, final Spanned f) {
+        adme.K(c > 0);
         a.getClass();
         this.a = a;
         b.getClass();
@@ -89,7 +89,7 @@ public class Track implements Parcelable
             return false;
         }
         final Track track = (Track)o;
-        return TextUtils.equals((CharSequence)this.b, (CharSequence)track.b) && TextUtils.equals((CharSequence)this.a, (CharSequence)track.a) && this.c == track.c && adkp.ae(this.d, track.d) && adkp.ae(this.e, track.e) && TextUtils.equals((CharSequence)this.g, (CharSequence)track.g) && TextUtils.equals((CharSequence)this.f, (CharSequence)track.f);
+        return TextUtils.equals((CharSequence)this.b, (CharSequence)track.b) && TextUtils.equals((CharSequence)this.a, (CharSequence)track.a) && this.c == track.c && aexq.c(this.d, track.d) && aexq.c(this.e, track.e) && TextUtils.equals((CharSequence)this.g, (CharSequence)track.g) && TextUtils.equals((CharSequence)this.f, (CharSequence)track.f);
     }
     
     @Override
@@ -102,10 +102,10 @@ public class Track implements Parcelable
         parcel.writeValue((Object)this.b);
         parcel.writeInt(this.c);
         parcel.writeValue((Object)this.d);
-        final aotp e = this.e;
+        final aowb e = this.e;
         byte[] byteArray;
         if (e != null) {
-            byteArray = ((agzk)e).toByteArray();
+            byteArray = ((ahbc)e).toByteArray();
         }
         else {
             byteArray = new byte[0];

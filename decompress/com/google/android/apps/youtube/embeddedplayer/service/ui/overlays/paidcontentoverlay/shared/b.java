@@ -5,19 +5,20 @@
 package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.shared;
 
 import android.os.Parcel;
-import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.a;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.remoteloaded.a;
+import com.google.android.apps.youtube.embeddedplayer.service.jar.client.x;
 import android.os.Handler;
 
-public final class b extends enz implements c
+public final class b extends eod implements c
 {
-    public final abcp a;
+    public final abfp a;
     private final Handler b;
     
     public b() {
         super("com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.shared.IPaidContentOverlayClient");
     }
     
-    public b(final abcp a, final Handler b) {
+    public b(final abfp a, final Handler b) {
         super("com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.shared.IPaidContentOverlayClient");
         a.getClass();
         this.a = a;
@@ -26,11 +27,11 @@ public final class b extends enz implements c
     }
     
     public final void a(final boolean b) {
-        this.b.post((Runnable)new a(this, b, 18));
+        this.b.post((Runnable)new x(this, b, 20));
     }
     
     public final void b(final boolean b) {
-        this.b.post((Runnable)new a(this, b, 19));
+        this.b.post((Runnable)new a(this, b, 1));
     }
     
     protected final boolean dispatchTransaction(final int n, final Parcel parcel, final Parcel parcel2, final int n2) {
@@ -39,13 +40,13 @@ public final class b extends enz implements c
                 return false;
             }
             case 6: {
-                final boolean k = eoa.k(parcel);
+                final boolean k = eoe.k(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.b(k);
                 break;
             }
             case 5: {
-                final boolean i = eoa.k(parcel);
+                final boolean i = eoe.k(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.h(i);
                 break;
@@ -57,13 +58,13 @@ public final class b extends enz implements c
                 break;
             }
             case 3: {
-                final CharSequence b = eoa.b(parcel);
+                final CharSequence b = eoe.b(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.i(b);
                 break;
             }
             case 2: {
-                final boolean j = eoa.k(parcel);
+                final boolean j = eoe.k(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.a(j);
                 break;
@@ -78,18 +79,18 @@ public final class b extends enz implements c
     }
     
     public final void g(final long n) {
-        this.b.post((Runnable)new gtg(this, n, 8));
+        this.b.post((Runnable)new gtw(this, n, 8));
     }
     
     public final void h(final boolean b) {
-        this.b.post((Runnable)new a(this, b, 20));
+        this.b.post((Runnable)new a(this, b, 0));
     }
     
     public final void i(final CharSequence charSequence) {
-        this.b.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.remoteloaded.a(this, charSequence, 0));
+        this.b.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.remoteloaded.a(this, charSequence, 3));
     }
     
     public final void j() {
-        this.b.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.service.a(this, 14));
+        this.b.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.service.a(this, 10));
     }
 }

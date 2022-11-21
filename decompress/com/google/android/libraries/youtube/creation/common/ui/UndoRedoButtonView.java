@@ -39,7 +39,7 @@ public class UndoRedoButtonView extends FrameLayout
         this.h = 0;
         this.g = g;
         if (set != null) {
-            final TypedArray obtainStyledAttributes = g.getTheme().obtainStyledAttributes(set, txl.c, 0, 0);
+            final TypedArray obtainStyledAttributes = g.getTheme().obtainStyledAttributes(set, tyn.c, 0, 0);
             if (obtainStyledAttributes.getInt(0, 0) != 0) {
                 h = 1;
             }
@@ -47,7 +47,7 @@ public class UndoRedoButtonView extends FrameLayout
             obtainStyledAttributes.recycle();
             return;
         }
-        ((ImageView)this.findViewById(2131427928)).setImageResource(2131231428);
+        ((ImageView)this.findViewById(2131427928)).setImageResource(2131231426);
     }
     
     public final void a() {
@@ -56,7 +56,7 @@ public class UndoRedoButtonView extends FrameLayout
         }
         final AnimatorSet a = this.a;
         if (this.c == null) {
-            (this.c = (ValueAnimator)ObjectAnimator.ofFloat((Object)this, View.ALPHA, new float[] { 0.0f, 1.0f }).setDuration(300L)).addListener((Animator$AnimatorListener)new txn(this));
+            (this.c = (ValueAnimator)ObjectAnimator.ofFloat((Object)this, View.ALPHA, new float[] { 0.0f, 1.0f }).setDuration(300L)).addListener((Animator$AnimatorListener)new tyo(this));
         }
         final ValueAnimator c = this.c;
         if (this.d == null) {
@@ -77,7 +77,7 @@ public class UndoRedoButtonView extends FrameLayout
             if (this.getVisibility() != 8) {
                 final AnimatorSet b = this.b;
                 if (this.e == null) {
-                    (this.e = (ValueAnimator)ObjectAnimator.ofFloat((Object)this, View.ALPHA, new float[] { 1.0f, 0.0f }).setDuration(300L)).addListener((Animator$AnimatorListener)new txo(this));
+                    (this.e = (ValueAnimator)ObjectAnimator.ofFloat((Object)this, View.ALPHA, new float[] { 1.0f, 0.0f }).setDuration(300L)).addListener((Animator$AnimatorListener)new typ(this));
                 }
                 final ValueAnimator e = this.e;
                 if (this.f == null) {
@@ -96,14 +96,14 @@ public class UndoRedoButtonView extends FrameLayout
     }
     
     public final void c() {
-        LayoutInflater.from(this.g).inflate(2131625659, (ViewGroup)this);
+        LayoutInflater.from(this.g).inflate(2131625661, (ViewGroup)this);
         final ImageView imageView = (ImageView)this.findViewById(2131427928);
         int imageResource;
         if (1 != this.h) {
-            imageResource = 2131231428;
+            imageResource = 2131231426;
         }
         else {
-            imageResource = 2131231427;
+            imageResource = 2131231425;
         }
         imageView.setImageResource(imageResource);
     }

@@ -14,9 +14,9 @@ import android.os.RemoteException;
 import com.google.android.apps.youtube.embeddedplayer.service.innertube.model.PermissionsWrapper;
 import com.google.android.apps.youtube.embeddedplayer.service.csi.shared.model.Tick;
 
-public final class EmbedFragmentService$$ExternalSyntheticLambda6 implements tet
+public final class EmbedFragmentService$$ExternalSyntheticLambda6 implements tfw
 {
-    public EmbedFragmentService a;
+    public final EmbedFragmentService a;
     
     public EmbedFragmentService$$ExternalSyntheticLambda6(final EmbedFragmentService a) {
         this.a = a;
@@ -24,56 +24,55 @@ public final class EmbedFragmentService$$ExternalSyntheticLambda6 implements tet
     
     public final void a(Object a) {
         final EmbedFragmentService a2 = this.a;
-        final aknl aknl = (aknl)a;
-        final int v = EmbedFragmentService.v;
+        final akpm akpm = (akpm)a;
         a2.f.f(Tick.k);
-        if (aknl != null) {
+        if (akpm != null) {
             final j d = a2.d;
             if (d != null) {
                 try {
-                    ajnl ajnl;
-                    if ((ajnl = aknl.g) == null) {
-                        ajnl = ajnl.a;
+                    ajpk ajpk;
+                    if ((ajpk = akpm.g) == null) {
+                        ajpk = ajpk.a;
                     }
-                    d.b(new PermissionsWrapper(ajnl));
+                    d.b(new PermissionsWrapper(ajpk));
                 }
                 catch (final RemoteException ex) {
                     a2.l();
                 }
             }
-            akwz akwz;
-            if ((aknl.b & 0x20) != 0x0) {
-                if ((akwz = aknl.f) == null) {
-                    akwz = akwz.a;
+            akyz akyz;
+            if ((akpm.b & 0x20) != 0x0) {
+                if ((akyz = akpm.f) == null) {
+                    akyz = akyz.a;
                 }
             }
             else {
-                final ahaz builder = akwz.a.createBuilder();
+                final ahcr builder = akyz.a.createBuilder();
                 builder.copyOnWrite();
-                final akwz akwz2 = (akwz)builder.instance;
-                akwz2.c = 0;
-                akwz2.b |= 0x1;
-                akwz = (akwz)builder.build();
+                final akyz akyz2 = (akyz)builder.instance;
+                akyz2.c = 0;
+                akyz2.b |= 0x1;
+                akyz = (akyz)builder.build();
             }
-            a2.q(akwz);
-            ajnc ajnc;
-            if ((ajnc = aknl.d) == null) {
-                ajnc = ajnc.a;
+            a2.q(akyz);
+            ajpb ajpb;
+            if ((ajpb = akpm.d) == null) {
+                ajpb = ajpb.a;
             }
-            if (ajnc.b == 131195200) {
-                a2.e.d(a2.q, aknl);
-                ajnc ajnc2;
-                if ((ajnc2 = aknl.d) == null) {
-                    ajnc2 = ajnc.a;
+            if (ajpb.b == 131195200) {
+                a2.e.d(a2.q, akpm);
+                ajpb ajpb2;
+                if ((ajpb2 = akpm.d) == null) {
+                    ajpb2 = ajpb.a;
                 }
-                if (ajnc2.b == 131195200) {
-                    a = ajnc2.c;
+                if (ajpb2.b == 131195200) {
+                    a = ajpb2.c;
                 }
                 else {
-                    a = ajnd.a;
+                    a = ajpc.a;
                 }
-                if (((ajnd)a).c == 6) {
-                    final int intValue = (int)((ajnd)a).d;
+                if (((ajpc)a).c == 6) {
+                    final int intValue = (int)((ajpc)a).d;
                     final j d2 = a2.d;
                     if (d2 != null) {
                         try {
@@ -82,44 +81,44 @@ public final class EmbedFragmentService$$ExternalSyntheticLambda6 implements tet
                         catch (final RemoteException ex2) {}
                     }
                 }
-                if ((((ajnd)a).b & 0x4) != 0x0) {
-                    aotp aotp;
-                    if ((aotp = ((ajnd)a).e) == null) {
-                        aotp = aotp.a;
+                if ((((ajpc)a).b & 0x4) != 0x0) {
+                    aowb aowb;
+                    if ((aowb = ((ajpc)a).e) == null) {
+                        aowb = aowb.a;
                     }
-                    a2.v(aotp);
+                    a2.v(aowb);
                 }
-                if ((((ajnd)a).b & 0x80) != 0x0) {
-                    anuv anuv;
-                    if ((anuv = ((ajnd)a).f) == null) {
-                        anuv = anuv.a;
+                if ((((ajpc)a).b & 0x80) != 0x0) {
+                    anxb anxb;
+                    if ((anxb = ((ajpc)a).f) == null) {
+                        anxb = anxb.a;
                     }
-                    final ajni ajni = (ajni)((ahbc)anuv).rx((ahaq)ajnj.a);
-                    a2.g.a(ajni, (b)a2);
-                    anuv anuv2;
-                    if ((anuv2 = ajni.e) == null) {
-                        anuv2 = anuv.a;
+                    final ajph ajph = (ajph)((ahcu)anxb).rx((ahci)ajpi.a);
+                    a2.g.a(ajph, (b)a2);
+                    anxb anxb2;
+                    if ((anxb2 = ajph.e) == null) {
+                        anxb2 = anxb.a;
                     }
-                    anuv anuv3;
-                    if ((anuv3 = ((ajnh)((ahbc)anuv2).rx((ahaq)ajnj.c)).c) == null) {
-                        anuv3 = anuv.a;
+                    anxb anxb3;
+                    if ((anxb3 = ((ajpg)((ahcu)anxb2).rx((ahci)ajpi.c)).c) == null) {
+                        anxb3 = anxb.a;
                     }
-                    a2.i.b((aome)((ahbc)anuv3).rx((ahaq)SubscribeButtonRendererOuterClass.subscribeButtonRenderer), (e)a2, a2.k, (com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.shared.b)a2);
+                    a2.i.b((aooo)((ahcu)anxb3).rx((ahci)SubscribeButtonRendererOuterClass.subscribeButtonRenderer), (e)a2, a2.k, (com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.shared.b)a2);
                 }
-                if ((((ajnd)a).b & 0x200) != 0x0) {
+                if ((((ajpc)a).b & 0x200) != 0x0) {
                     final a m = a2.m;
-                    anuv anuv4;
-                    if ((anuv4 = ((ajnd)a).h) == null) {
-                        anuv4 = anuv.a;
+                    anxb anxb4;
+                    if ((anxb4 = ((ajpc)a).h) == null) {
+                        anxb4 = anxb.a;
                     }
-                    m.b((aicz)((ahbc)anuv4).rx((ahaq)ButtonRendererOuterClass.buttonRenderer), (com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.shared.b)a2);
+                    m.b((aies)((ahcu)anxb4).rx((ahci)ButtonRendererOuterClass.buttonRenderer), (com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.shared.b)a2);
                 }
-                if ((((ajnd)a).b & 0x100) != 0x0) {
-                    anuv anuv5;
-                    if ((anuv5 = ((ajnd)a).g) == null) {
-                        anuv5 = anuv.a;
+                if ((((ajpc)a).b & 0x100) != 0x0) {
+                    anxb anxb5;
+                    if ((anxb5 = ((ajpc)a).g) == null) {
+                        anxb5 = anxb.a;
                     }
-                    a2.r(anuv5, a2.t, a2.g.b.toString());
+                    a2.r(anxb5, a2.t, a2.g.b.toString());
                 }
             }
         }

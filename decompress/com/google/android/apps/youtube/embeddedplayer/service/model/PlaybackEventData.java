@@ -12,7 +12,7 @@ public abstract class PlaybackEventData implements BusSupported$Data
     public static final Parcelable$Creator CREATOR;
     
     static {
-        CREATOR = (Parcelable$Creator)new ics(19);
+        CREATOR = (Parcelable$Creator)new idb(19);
     }
     
     public static e g() {

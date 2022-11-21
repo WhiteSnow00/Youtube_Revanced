@@ -14,7 +14,7 @@ public final class c
     public final Bitmap d;
     
     static {
-        a = kzr.m((CharSequence)"", (CharSequence)"", (Bitmap)null);
+        a = lma.g((CharSequence)"", (CharSequence)"", (Bitmap)null);
     }
     
     public c() {

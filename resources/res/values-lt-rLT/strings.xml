@@ -50,11 +50,11 @@
     <string name="litho_channel_guidelines_off">Kanalo gairės yra rodomos</string>
     <string name="litho_channel_guidelines_on">Kanalo gairės yra paslėptos</string>
     <string name="litho_community_guidelines">Pašalinti bendruomenės gaires</string>
+    <string name="accessibility_settings_edu_opt_in_text">Įjungti prieinamumo valdiklius vaizdo grotuvui?</string>
+    <string name="accessibility_settings_edu_opt_out_text">Tavo valdikliai yra modifikuoti, kadangi yra įjungtas prieinamumo servisas.</string>
     <string name="litho_community_guidelines_off">Bendruomenės gairės yra rodomos</string>
     <string name="litho_community_guidelines_on">Bendruomenės gairės yra paslėptos</string>
     <string name="litho_community_posts">Šalinti bendruomenės įrašus</string>
-    <string name="accessibility_settings_edu_opt_in_text">Įjungti prieinamumo valdiklius vaizdo grotuvui?</string>
-    <string name="accessibility_settings_edu_opt_out_text">Tavo valdikliai yra modifikuoti, kadangi yra įjungtas prieinamumo servisas.</string>
     <string name="litho_community_posts_off">Bendruomenės įrašai yra rodomi</string>
     <string name="litho_community_posts_on">Bendruomenės įrašai yra paslėpti</string>
     <string name="litho_compact_banner">Pašalinti kompaktiškas reklamjuostes</string>

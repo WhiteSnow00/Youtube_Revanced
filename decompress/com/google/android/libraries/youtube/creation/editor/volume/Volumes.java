@@ -16,51 +16,68 @@ public final class Volumes implements Parcelable
     public final Map a;
     
     static {
-        CREATOR = (Parcelable$Creator)new rhy(16);
+        CREATOR = (Parcelable$Creator)new rix(16);
     }
     
     private Volumes() {
-        this.a = new EnumMap(apoy.class);
-        f((uar)new uaq(this));
+        this.a = new EnumMap(aprk.class);
+        this.d((ubv)new ubu(this, 0));
     }
     
     public Volumes(final float n, final float n2) {
         this();
-        this.a.put(apoy.b, n);
-        this.a.put(apoy.c, n2);
-        this.a.put(apoy.d, 0.0f);
+        this.a.put(aprk.b, n);
+        this.a.put(aprk.c, n2);
+        this.a.put(aprk.d, 0.0f);
     }
     
     public Volumes(final Volumes volumes) {
-        this.a = new EnumMap(apoy.class);
-        f((uar)new uap(this, volumes, 2));
+        this.a = new EnumMap(aprk.class);
+        this.d((ubv)new ubt(this, volumes, 2));
     }
     
-    public static Volumes b() {
+    public static Volumes c() {
         return new Volumes();
     }
     
-    private static final void f(final uar uar) {
-        for (final apoy apoy : apoy.values()) {
-            if (apoy != apoy.a) {
-                uar.a(apoy);
-            }
-        }
+    public static boolean g(final float n) {
+        return aftw.c((double)n, -1.0, 0.008999999612569809);
     }
     
-    public final float a(final apoy apoy) {
-        final Float n = this.a.get(apoy);
+    public final float a(final aprk aprk) {
+        final Float n = this.a.get(aprk);
         if (n == null) {
-            ttr.b("Unexpected null volume");
+            tut.b("Unexpected null volume");
             return 1.0f;
         }
         return n;
     }
     
-    public final boolean c(final Volumes volumes) {
-        for (final apoy apoy : apoy.values()) {
-            if (apoy != apoy.a) {
-                if (!afsh.c((double)this.a(apoy), (double)volumes.a(apoy), 0.008999999612569809)) {
+    public final float b(final aprk aprk) {
+        final float a = this.a(aprk);
+        if (g(a)) {
+            String.valueOf(aprk);
+            return 1.0f;
+        }
+        return a;
+    }
+    
+    public final void d(final ubv ubv) {
+        for (final aprk aprk : aprk.values()) {
+            if (aprk != aprk.a) {
+                ubv.a(aprk);
+            }
+        }
+    }
+    
+    public final int describeContents() {
+        return 0;
+    }
+    
+    public final boolean e(final Volumes volumes) {
+        for (final aprk aprk : aprk.values()) {
+            if (aprk != aprk.a) {
+                if (!aftw.c((double)this.b(aprk), (double)volumes.b(aprk), 0.008999999612569809)) {
                     return false;
                 }
             }
@@ -68,38 +85,34 @@ public final class Volumes implements Parcelable
         return true;
     }
     
-    public final boolean d() {
-        return this.c(b());
+    public final boolean f() {
+        return this.e(c());
     }
     
-    public final int describeContents() {
-        return 0;
-    }
-    
-    public final void e(final float n, final apoy apoy) {
+    public final void h(final float n, final aprk aprk) {
         if (n > 1.0f) {
             final StringBuilder sb = new StringBuilder("Ignoreing unsupported volume: ");
             sb.append(n);
-            ttr.g(sb.toString());
+            tut.g(sb.toString());
             return;
         }
-        if (n < 0.0f) {
-            ttr.g("Ignoreing negative volume");
+        if (n < 0.0f && !g(n)) {
+            tut.g("Ignoreing negative volume");
             return;
         }
-        this.a.put(apoy, n);
+        this.a.put(aprk, n);
     }
     
     @Override
     public final String toString() {
         final StringBuilder sb = new StringBuilder();
         sb.append("Volumes:");
-        f((uar)new uap(this, sb, 0));
+        this.d((ubv)new ubt(this, sb, 0));
         return sb.toString();
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        f((uar)new uap(this, parcel, 1));
+        this.d((ubv)new ubt(this, parcel, 1));
         parcel.writeInt(-1);
     }
 }

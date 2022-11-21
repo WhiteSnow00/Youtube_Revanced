@@ -8,12 +8,15 @@ import com.google.android.apps.youtube.embeddedplayer.service.layoutpolicy.remot
 
 public final class a implements h
 {
+    @Override
     public final void a() {
     }
     
+    @Override
     public final void b() {
     }
     
+    @Override
     public final void c() {
     }
 }

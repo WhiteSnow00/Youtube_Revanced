@@ -12,7 +12,7 @@ public final class a
     public String a;
     public String b;
     private int c;
-    private agyc d;
+    private ahbt d;
     private byte e;
     
     public final WatchLaterButtonData a() {
@@ -34,7 +34,7 @@ public final class a
         this.e = 1;
     }
     
-    public final void c(final agyc d) {
+    public final void c(final ahbt d) {
         if (d != null) {
             this.d = d;
             return;
@@ -61,7 +61,7 @@ public final class a
         this.e = 1;
     }
     
-    public final void f(final agyc d) {
+    public final void f(final ahbt d) {
         if (d != null) {
             this.d = d;
             return;

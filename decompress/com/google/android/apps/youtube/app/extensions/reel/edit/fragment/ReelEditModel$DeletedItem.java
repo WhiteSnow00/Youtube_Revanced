@@ -13,11 +13,11 @@ public abstract class ReelEditModel$DeletedItem implements Parcelable
     public static final Parcelable$Creator CREATOR;
     
     static {
-        CREATOR = (Parcelable$Creator)new fzn(13);
+        CREATOR = (Parcelable$Creator)new fzs(13);
     }
     
     public static final ReelEditModel$DeletedItem c(final int n, final ReelItemEditModel reelItemEditModel) {
-        adkp.H(n >= 0);
+        adme.K(n >= 0);
         return (ReelEditModel$DeletedItem)new AutoValue_ReelEditModel_DeletedItem(n, reelItemEditModel);
     }
     

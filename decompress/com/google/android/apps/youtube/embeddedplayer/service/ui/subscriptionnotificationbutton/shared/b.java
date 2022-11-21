@@ -14,7 +14,7 @@ public interface b
     
     void A(final SubscriptionNotificationMenuData p0);
     
-    void rd(final c p0);
+    void ri(final c p0);
     
     void z(final SubscriptionNotificationButtonData p0);
 }

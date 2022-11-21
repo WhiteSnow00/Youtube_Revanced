@@ -14,12 +14,12 @@ public final class UrlLinkFrame extends Id3Frame
     public final String b;
     
     static {
-        CREATOR = (Parcelable$Creator)new bvm(0);
+        CREATOR = (Parcelable$Creator)new bvp(0);
     }
     
     public UrlLinkFrame(final Parcel parcel) {
         final String string = parcel.readString();
-        final int a = bax.a;
+        final int a = baz.a;
         super(string);
         this.a = parcel.readString();
         this.b = parcel.readString();
@@ -38,7 +38,7 @@ public final class UrlLinkFrame extends Id3Frame
         if (o != null) {
             if (this.getClass() == o.getClass()) {
                 final UrlLinkFrame urlLinkFrame = (UrlLinkFrame)o;
-                if (this.f.equals(urlLinkFrame.f) && bax.aa((Object)this.a, (Object)urlLinkFrame.a) && bax.aa((Object)this.b, (Object)urlLinkFrame.b)) {
+                if (this.f.equals(urlLinkFrame.f) && baz.aa(this.a, urlLinkFrame.a) && baz.aa(this.b, urlLinkFrame.b)) {
                     return true;
                 }
             }

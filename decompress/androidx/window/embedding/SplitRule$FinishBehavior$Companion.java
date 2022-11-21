@@ -9,6 +9,10 @@ public final class SplitRule$FinishBehavior$Companion
     private SplitRule$FinishBehavior$Companion() {
     }
     
+    public SplitRule$FinishBehavior$Companion(final atqv atqv) {
+        this();
+    }
+    
     public final SplitRule$FinishBehavior getFinishBehaviorFromValue$window_release(final int n) {
         SplitRule$FinishBehavior splitRule$FinishBehavior;
         if (n == SplitRule$FinishBehavior.NEVER.getValue$window_release()) {

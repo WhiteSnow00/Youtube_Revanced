@@ -33,13 +33,13 @@ public class ColorChip extends View
         super(e, obtainStyledAttributes, n);
         this.g = new Paint();
         this.e = e;
-        obtainStyledAttributes = (AttributeSet)e.getTheme().obtainStyledAttributes(obtainStyledAttributes, uhu.a, 0, 0);
+        obtainStyledAttributes = (AttributeSet)e.getTheme().obtainStyledAttributes(obtainStyledAttributes, uix.a, 0, 0);
         try {
-            this.a = ((TypedArray)obtainStyledAttributes).getColor(0, this.a(2131102276));
+            this.a = ((TypedArray)obtainStyledAttributes).getColor(0, this.a(2131102272));
             this.b = ((TypedArray)obtainStyledAttributes).getColor(1, 0);
             this.c = ((TypedArray)obtainStyledAttributes).getColor(2, this.a);
             this.d = ((TypedArray)obtainStyledAttributes).getColor(3, this.b);
-            this.f = this.a(2131102254);
+            this.f = this.a(2131102250);
         }
         finally {
             ((TypedArray)obtainStyledAttributes).recycle();
@@ -63,7 +63,7 @@ public class ColorChip extends View
             final float n5 = (float)n;
             canvas.drawCircle(n3, n4, n5, g);
             this.g.setColor(this.a);
-            canvas.drawCircle(n3, n4, n5 - this.e.getResources().getDimension(2131170089), this.g);
+            canvas.drawCircle(n3, n4, n5 - this.e.getResources().getDimension(2131170128), this.g);
         }
     }
 }

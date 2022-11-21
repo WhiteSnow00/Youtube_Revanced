@@ -4,6 +4,10 @@
     <integer name="grid_shelf_num_columns">3</integer>
     <integer name="horizontal_shelf_num_columns">3</integer>
     <integer name="lc_scheduled_events_columns">2</integer>
+    <integer name="quick_actions_widget_preview_cell_height">3</integer>
+    <integer name="quick_actions_widget_preview_cell_width">2</integer>
+    <integer name="search_widget_preview_cell_height">2</integer>
+    <integer name="search_widget_preview_cell_width">2</integer>
     <integer name="topic_channel_banner_translation_x">0</integer>
     <integer name="watch_card_related_entities_count">4</integer>
 </resources>

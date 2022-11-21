@@ -6,7 +6,7 @@ package com.google.android.gms.auth;
 
 import android.content.Intent;
 
-public class UserRecoverableAuthException extends mgo
+public class UserRecoverableAuthException extends mih
 {
     public final Intent b;
     

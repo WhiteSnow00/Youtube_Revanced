@@ -8,9 +8,9 @@ import android.view.KeyEvent;
 
 public final class ApiPlayerService$$ExternalSyntheticLambda28 implements Runnable
 {
-    public ApiPlayerService a;
-    public int b;
-    public KeyEvent c;
+    public final ApiPlayerService a;
+    public final int b;
+    public final KeyEvent c;
     
     public ApiPlayerService$$ExternalSyntheticLambda28(final ApiPlayerService a, final int b, final KeyEvent c) {
         this.a = a;

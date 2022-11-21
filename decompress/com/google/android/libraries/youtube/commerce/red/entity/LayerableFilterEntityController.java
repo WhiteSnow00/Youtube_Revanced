@@ -4,21 +4,21 @@
 
 package com.google.android.libraries.youtube.commerce.red.entity;
 
-public class LayerableFilterEntityController implements thj
+public class LayerableFilterEntityController implements tim
 {
-    public aezp a;
-    public aezp b;
-    private final otk c;
+    public afbh a;
+    public afbh b;
+    private final ouc c;
     
-    public LayerableFilterEntityController(final otk c) {
+    public LayerableFilterEntityController(final ouc c) {
         this.c = c;
-        final aeyo a = aeyo.a;
-        this.a = (aezp)a;
-        this.b = (aezp)a;
+        final afag a = afag.a;
+        this.a = a;
+        this.b = a;
     }
     
-    public final thh g() {
-        return thh.a;
+    public final tik g() {
+        return tik.a;
     }
     
     public final void j() {
@@ -27,30 +27,30 @@ public class LayerableFilterEntityController implements thj
         }
     }
     
-    public final void lW(final aun aun) {
+    public final void lW(final aup aup) {
     }
     
-    public final void mM(final aun aun) {
+    public final void mp(final aup aup) {
+    }
+    
+    public final void mx(final aup aup) {
+    }
+    
+    public final void oO(final aup aup) {
         this.j();
     }
     
-    public final void mq(final aun aun) {
+    public final void oT(final aup aup) {
     }
     
-    public final void my(final aun aun) {
+    public final void oU() {
+        tgj.h((tim)this);
     }
     
-    public final void oS(final aun aun) {
+    public final void oX() {
+        tgj.g((tim)this);
     }
     
-    public final void oT() {
-        tfg.g((thj)this);
-    }
-    
-    public final void oW() {
-        tfg.f((thj)this);
-    }
-    
-    public final void oX(final aun aun) {
+    public final void oY(final aup aup) {
     }
 }

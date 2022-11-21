@@ -10,38 +10,36 @@ import androidx.preference.Preference;
 
 public class DigestNotificationPreference extends Preference
 {
-    private final jqj a;
-    private final anxs b;
-    private final wwu c;
-    private jqi d;
+    private final jrt a;
+    private final aocc b;
+    private final xaa c;
+    private jrs d;
     
-    public DigestNotificationPreference(final Context context, final jqj a, final wwu c, final anxs b) {
+    public DigestNotificationPreference(final Context context, final jrt a, final xaa c, final aocc b) {
         super(context);
         this.a = a;
         this.c = c;
         this.b = b;
         this.I("daily_digest_notification_preference");
-        super.B = 2131625357;
+        super.B = 2131625364;
     }
     
-    @Override
     protected final void C() {
         super.Q();
-        final jqi d = this.d;
+        final jrs d = this.d;
         if (d != null) {
-            d.c((acir)null);
+            d.c((acmh)null);
             this.d = null;
         }
     }
     
-    @Override
-    public final void rH(final cfi cfi) {
-        super.rH(cfi);
+    public final void rN(final cfm cfm) {
+        super.rN(cfm);
         if (this.d == null) {
-            this.d = this.a.b((ViewGroup)cfi.a);
-            ((ViewGroup)cfi.a).addView(this.d.a());
+            this.d = this.a.b((ViewGroup)cfm.a);
+            ((ViewGroup)cfm.a).addView(this.d.a());
         }
-        this.d.g(new acij(), (jqq)jqt.a(this.b));
-        this.c.n().l((wxz)new wws(this.b.q));
+        this.d.g(new aclz(), (jsa)jsd.a(this.b));
+        this.c.pE().l((xbe)new wzy(this.b.q));
     }
 }

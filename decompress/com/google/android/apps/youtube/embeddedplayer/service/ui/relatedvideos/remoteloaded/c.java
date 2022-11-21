@@ -4,11 +4,11 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.relatedvideos.remoteloaded;
 
-import com.google.android.apps.youtube.embeddedplayer.service.model.BitmapKey;
 import android.graphics.Bitmap;
+import com.google.android.apps.youtube.embeddedplayer.service.model.BitmapKey;
 import android.net.Uri;
 
-public final class c implements tcc
+public final class c implements tdg
 {
     private final int a;
     
@@ -16,7 +16,15 @@ public final class c implements tcc
         this.a = a;
     }
     
-    public final void b(final Object o, final Object o2) {
+    public final void c(final Object o, final Exception ex) {
+        if (this.a != 0) {
+            final Uri uri = (Uri)o;
+            return;
+        }
+        final BitmapKey bitmapKey = (BitmapKey)o;
+    }
+    
+    public final void d(final Object o, final Object o2) {
         if (this.a != 0) {
             final Uri uri = (Uri)o;
             final Bitmap bitmap = (Bitmap)o2;
@@ -24,13 +32,5 @@ public final class c implements tcc
         }
         final BitmapKey bitmapKey = (BitmapKey)o;
         final Bitmap bitmap2 = (Bitmap)o2;
-    }
-    
-    public final void sd(final Object o, final Exception ex) {
-        if (this.a != 0) {
-            final Uri uri = (Uri)o;
-            return;
-        }
-        final BitmapKey bitmapKey = (BitmapKey)o;
     }
 }

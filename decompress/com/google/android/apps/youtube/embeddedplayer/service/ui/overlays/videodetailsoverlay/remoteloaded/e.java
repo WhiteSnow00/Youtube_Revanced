@@ -45,24 +45,24 @@ public final class e implements View$OnClickListener, com.google.android.apps.yo
     private final TextView j;
     private final TextView k;
     private final Set l;
-    private agyc m;
+    private ahbt m;
     private final TextView n;
     private final TextView o;
     private final Set p;
-    private agyc q;
+    private ahbt q;
     private final SubscribeButton r;
     private final SubscriptionNotificationButton s;
     private final View t;
     private final Animation u;
     private final Animation v;
-    private final cbh w;
+    private final cbl w;
     
     private e(final Context context, final FrameLayout c) {
-        this.m = agyc.b;
-        this.q = agyc.b;
+        this.m = ahbt.b;
+        this.q = ahbt.b;
         this.g = com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.remoteloaded.b.a;
         this.c = c;
-        LayoutInflater.from(context).inflate(2131625706, (ViewGroup)c);
+        LayoutInflater.from(context).inflate(2131625712, (ViewGroup)c);
         this.i = (CircularImageView)c.findViewById(2131428150);
         final TextView j = (TextView)c.findViewById(2131428260);
         this.j = j;
@@ -81,8 +81,8 @@ public final class e implements View$OnClickListener, com.google.android.apps.yo
         (this.p = p2).add(viewById);
         p2.add(n);
         p2.add(o);
-        this.r = (SubscribeButton)c.findViewById(2131431807);
-        final SubscriptionNotificationButton s = (SubscriptionNotificationButton)c.findViewById(2131431813);
+        this.r = (SubscribeButton)c.findViewById(2131431811);
+        final SubscriptionNotificationButton s = (SubscriptionNotificationButton)c.findViewById(2131431817);
         this.s = s;
         s.a = (h)new i(context);
         final int integer = context.getResources().getInteger(2131492906);
@@ -91,7 +91,7 @@ public final class e implements View$OnClickListener, com.google.android.apps.yo
         final long n2 = integer;
         loadAnimation.setDuration(n2);
         (this.v = AnimationUtils.loadAnimation(context, 2130772040)).setDuration(n2);
-        this.w = new cbh(this, 12);
+        this.w = new cbl(this, 12);
         this.a = 1;
         this.b = 1;
     }
@@ -102,8 +102,8 @@ public final class e implements View$OnClickListener, com.google.android.apps.yo
         e.j.setOnClickListener((View$OnClickListener)e);
         e.k.setOnClickListener((View$OnClickListener)e);
         e.r.setOnClickListener((View$OnClickListener)e);
-        e.r.f = (f)e;
-        return (e)(e.s.c = (com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.remoteloaded.f)e);
+        e.r.f = e;
+        return (e)(e.s.c = e);
     }
     
     private final void o() {
@@ -131,7 +131,7 @@ public final class e implements View$OnClickListener, com.google.android.apps.yo
             r.setVisibility(8);
         }
         final SubscriptionNotificationButton s = this.s;
-        if (s.e.equals(SubscriptionNotificationButtonData.a) || s.f.equals((Object)SubscriptionNotificationMenuData.a)) {
+        if (s.e.equals(SubscriptionNotificationButtonData.a) || s.f.equals(SubscriptionNotificationMenuData.a)) {
             this.s.setVisibility(8);
             return;
         }
@@ -319,7 +319,7 @@ public final class e implements View$OnClickListener, com.google.android.apps.yo
         }
     }
     
-    public final void rc(final SubscribeButtonData subscribeButtonData) {
+    public final void rh(final SubscribeButtonData subscribeButtonData) {
         final SubscribeButton r = this.r;
         r.e = subscribeButtonData.a();
         r.b = subscribeButtonData.d();
@@ -332,7 +332,7 @@ public final class e implements View$OnClickListener, com.google.android.apps.yo
         }
     }
     
-    public final void rd(final com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.remoteloaded.c b) {
+    public final void ri(final com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.remoteloaded.c b) {
         this.s.b = b;
     }
     

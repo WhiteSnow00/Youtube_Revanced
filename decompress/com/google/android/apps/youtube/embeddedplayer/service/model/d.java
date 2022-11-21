@@ -10,7 +10,7 @@ public final class d
     public final boolean b;
     
     static {
-        a = kzr.l(false);
+        a = jzq.w(false);
     }
     
     public d(final boolean b) {

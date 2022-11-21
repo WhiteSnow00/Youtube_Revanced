@@ -19,7 +19,7 @@ public class EditTextPreference extends DialogPreference
     }
     
     public EditTextPreference(final Context context, final AttributeSet set) {
-        this(context, set, vh.c(context, 2130969299, 16842898));
+        this(context, set, vh.c(context, 2130969297, 16842898));
     }
     
     public EditTextPreference(final Context context, final AttributeSet set, final int n) {
@@ -28,12 +28,12 @@ public class EditTextPreference extends DialogPreference
     
     public EditTextPreference(final Context context, final AttributeSet set, final int n, final int n2) {
         super(context, set, n, n2);
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, cfk.d, n, n2);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, cfn.d, n, n2);
         if (vh.i(obtainStyledAttributes, 0, 0, false)) {
-            if (ceg.b == null) {
-                ceg.b = new ceg(1);
+            if (cej.b == null) {
+                cej.b = new cej(1);
             }
-            ((Preference)this).L((cep)ceg.b);
+            ((Preference)this).L((ces)cej.b);
         }
         obtainStyledAttributes.recycle();
     }

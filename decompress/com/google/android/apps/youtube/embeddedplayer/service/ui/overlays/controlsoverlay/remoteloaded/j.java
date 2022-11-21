@@ -7,32 +7,35 @@ package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.contr
 import android.view.View;
 import android.view.MotionEvent;
 
-final class j implements trz
+final class j implements ttf
 {
-    final l a;
+    final k a;
     
-    public j(final l a) {
+    public j(final k a) {
         this.a = a;
     }
     
-    public final boolean c(final MotionEvent motionEvent, final boolean b) {
-        if (((abbk)this.a).mn()) {
-            final l a = this.a;
-            if (a.M) {
-                if (!a.E.e) {
-                    if (aegg.b((int)motionEvent.getX(), this.a.g.getWidth(), false) != 0) {
-                        return true;
-                    }
-                }
+    public final void b(final MotionEvent motionEvent) {
+        if (!this.a.mm()) {
+            return;
+        }
+        if (this.a.U(motionEvent)) {
+            final k a = this.a;
+            final o e = a.E;
+            if (e.e) {
+                e.a(motionEvent, (View)a.g);
+                return;
             }
         }
-        return false;
-    }
-    
-    public final void pg(final MotionEvent motionEvent, final boolean b) {
-        if (this.a.U(motionEvent)) {
-            final l a = this.a;
-            a.E.a(motionEvent, (View)a.g);
+        final k a2 = this.a;
+        if (a2.I) {
+            if (!a2.H.o) {
+                a2.O();
+            }
+        }
+        else if (a2.T()) {
+            a2.H();
+            this.a.Q(true);
         }
     }
 }

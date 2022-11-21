@@ -7,7 +7,7 @@ package com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remot
 import android.content.Context;
 import com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.shared.b;
 
-public abstract class a extends zdt implements c
+public abstract class a extends zfo implements c
 {
     private int a;
     private int b;

@@ -4,8 +4,8 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.service.jar;
 
+import com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.d;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.subscribebutton.shared.c;
-import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.videodetailsoverlay.remoteloaded.d;
 import android.os.RemoteException;
 import android.os.IBinder$DeathRecipient;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.videodetailsoverlay.service.a;
@@ -33,18 +33,18 @@ class EmbedFragmentServiceFactoryService$1 implements Runnable
     public final void run() {
         final EmbedFragmentServiceFactoryService e = this.e;
         final EmbedFragmentService embedFragmentService = new EmbedFragmentService(e.a, e.b, this.a, e.c, e.d, this.b, (byte[])null);
-        embedFragmentService.s = (vcy)new EmbedFragmentService$$ExternalSyntheticLambda10(embedFragmentService);
+        embedFragmentService.s = (veh)new EmbedFragmentService$$ExternalSyntheticLambda10(embedFragmentService);
         embedFragmentService.g = new a(embedFragmentService.s, embedFragmentService.c);
         embedFragmentService.i = embedFragmentService.b.j().d(embedFragmentService.s);
         embedFragmentService.k = embedFragmentService.b.i().c(embedFragmentService.s);
         embedFragmentService.m = embedFragmentService.b.k().e(embedFragmentService.s);
         embedFragmentService.o = com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.service.a.b(embedFragmentService.e, embedFragmentService.a);
-        embedFragmentService.h = (d)embedFragmentService.g;
+        embedFragmentService.h = embedFragmentService.g;
         embedFragmentService.j = (c)embedFragmentService.i;
         embedFragmentService.l = (com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.remoteloaded.c)embedFragmentService.k;
         embedFragmentService.n = (com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.remoteloaded.c)embedFragmentService.m;
-        embedFragmentService.p = (com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.d)embedFragmentService.o;
-        embedFragmentService.u.b((lpo)embedFragmentService);
+        embedFragmentService.p = (d)embedFragmentService.o;
+        embedFragmentService.u.a((lqd)embedFragmentService);
         try {
             final j d = embedFragmentService.d;
             if (d != null) {

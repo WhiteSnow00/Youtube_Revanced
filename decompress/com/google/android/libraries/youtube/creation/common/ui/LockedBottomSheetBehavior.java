@@ -20,31 +20,25 @@ public final class LockedBottomSheetBehavior extends BottomSheetBehavior
         super(context, set);
     }
     
-    @Override
     public final boolean j(final CoordinatorLayout coordinatorLayout, final View view, final View view2, final float n, final float n2) {
         return false;
     }
     
-    @Override
     public final boolean l(final CoordinatorLayout coordinatorLayout, final View view, final View view2, final View view3, final int n, final int n2) {
         return false;
     }
     
-    @Override
     public final boolean m(final CoordinatorLayout coordinatorLayout, final View view, final MotionEvent motionEvent) {
         return false;
     }
     
-    @Override
-    public final void qH(final CoordinatorLayout coordinatorLayout, final View view, final View view2, final int n) {
+    public final void qG(final CoordinatorLayout coordinatorLayout, final View view, final View view2, final int n) {
     }
     
-    @Override
-    public final boolean qK(final CoordinatorLayout coordinatorLayout, final View view, final MotionEvent motionEvent) {
+    public final boolean qJ(final CoordinatorLayout coordinatorLayout, final View view, final MotionEvent motionEvent) {
         return false;
     }
     
-    @Override
     public final void ss(final CoordinatorLayout coordinatorLayout, final View view, final View view2, final int n, final int n2, final int[] array, final int n3) {
     }
 }

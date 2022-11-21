@@ -36,7 +36,7 @@ public final class SplitInfo
         }
         final ActivityStack primaryActivityStack = this.primaryActivityStack;
         final SplitInfo splitInfo = (SplitInfo)o;
-        return atnh.c((Object)primaryActivityStack, (Object)splitInfo.primaryActivityStack) && atnh.c((Object)this.secondaryActivityStack, (Object)splitInfo.secondaryActivityStack) && atnh.c((Object)this.splitAttributes, (Object)splitInfo.splitAttributes);
+        return atqz.c(primaryActivityStack, splitInfo.primaryActivityStack) && atqz.c(this.secondaryActivityStack, splitInfo.secondaryActivityStack) && atqz.c(this.splitAttributes, splitInfo.splitAttributes);
     }
     
     public final ActivityStack getPrimaryActivityStack() {

@@ -16,14 +16,14 @@ import android.widget.FrameLayout;
 
 public class RecordButtonView extends FrameLayout
 {
-    public ImageView a;
-    public FrameLayout b;
-    public ProgressBar c;
-    private FrameLayout d;
+    public final ImageView a;
+    public final FrameLayout b;
+    public final ProgressBar c;
+    private final FrameLayout d;
     
     public RecordButtonView(final Context context, final AttributeSet set) {
         super(context, set);
-        LayoutInflater.from(context).inflate(2131625193, (ViewGroup)this, true);
+        LayoutInflater.from(context).inflate(2131625195, (ViewGroup)this, true);
         this.a = (ImageView)this.findViewById(2131430836);
         this.d = (FrameLayout)this.findViewById(2131430839);
         this.c = (ProgressBar)this.findViewById(2131430824);

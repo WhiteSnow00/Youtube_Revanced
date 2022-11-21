@@ -4,22 +4,46 @@
 
 package com.google.android.apps.youtube.app.player.overlay.storyboard;
 
-public final class DefaultScrubberEventLogger$LifecycleObserver implements tfh
+public final class DefaultScrubberEventLogger$LifecycleObserver implements tio
 {
-    final /* synthetic */ jbl a;
-    private final asib b;
+    final jct a;
+    private final aslm b;
     
-    public DefaultScrubberEventLogger$LifecycleObserver(final jbl a) {
+    public DefaultScrubberEventLogger$LifecycleObserver(final jct a) {
         this.a = a;
-        this.b = new asib();
+        this.b = new aslm();
     }
     
-    public final void oS(final aum aum) {
+    public final tik g() {
+        return tik.b;
+    }
+    
+    public final void lW(final aup aup) {
+    }
+    
+    public final void mp(final aup aup) {
+    }
+    
+    public final void mx(final aup aup) {
+    }
+    
+    public final void oO(final aup aup) {
+    }
+    
+    public final void oT(final aup aup) {
         this.b.b();
-        this.b.c(((asgt)this.a.a.q().d).R().P(ashw.a()).am((asix)new jbf(this.a, 3), (asix)iwn.p));
+        this.b.c(((aske)this.a.a.p().d).R().P(aslh.a()).an((asmi)new jcf(this.a, 5), (asmi)ixz.o));
     }
     
-    public final void oW(final aum aum) {
+    public final void oU() {
+        tgj.d((tio)this);
+    }
+    
+    public final void oX() {
+        tgj.c((tio)this);
+    }
+    
+    public final void oY(final aup aup) {
         this.b.b();
     }
 }

@@ -11,5 +11,5 @@ public interface h
 {
     public static final h a = new g();
     
-    void a(final SubscriptionNotificationMenuData p0, final int p1, final View p2, final akn p3);
+    void a(final SubscriptionNotificationMenuData p0, final int p1, final View p2, final akp p3);
 }

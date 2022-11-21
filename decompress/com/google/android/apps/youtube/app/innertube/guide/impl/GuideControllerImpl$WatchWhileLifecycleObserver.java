@@ -4,42 +4,42 @@
 
 package com.google.android.apps.youtube.app.innertube.guide.impl;
 
-public final class GuideControllerImpl$WatchWhileLifecycleObserver implements thj
+public final class GuideControllerImpl$WatchWhileLifecycleObserver implements tim
 {
-    public final atjz a;
+    public final atmw a;
     
     public GuideControllerImpl$WatchWhileLifecycleObserver() {
-        this.a = (atjz)atjs.e();
+        this.a = (atmw)atmp.e();
     }
     
-    public final thh g() {
-        return thh.a;
+    public final tik g() {
+        return tik.a;
     }
     
-    public final void lW(final aun aun) {
+    public final void lW(final aup aup) {
     }
     
-    public final void mM(final aun aun) {
+    public final void mp(final aup aup) {
+        this.a.tt((Object)txd.a);
     }
     
-    public final void mq(final aun aun) {
-        this.a.tu((Object)twb.a);
+    public final void mx(final aup aup) {
     }
     
-    public final void my(final aun aun) {
+    public final void oO(final aup aup) {
     }
     
-    public final void oS(final aun aun) {
+    public final void oT(final aup aup) {
     }
     
-    public final void oT() {
-        tfg.g((thj)this);
+    public final void oU() {
+        tgj.h((tim)this);
     }
     
-    public final void oW() {
-        tfg.f((thj)this);
+    public final void oX() {
+        tgj.g((tim)this);
     }
     
-    public final void oX(final aun aun) {
+    public final void oY(final aup aup) {
     }
 }

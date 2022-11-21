@@ -9,20 +9,20 @@ import android.support.v7.widget.RecyclerView;
 import android.content.Context;
 import com.google.android.libraries.youtube.rendering.ui.OverScrollLinearLayoutManager;
 
-public final class LinearScrollToItemLayoutManager extends OverScrollLinearLayoutManager implements acph
+public final class LinearScrollToItemLayoutManager extends OverScrollLinearLayoutManager implements acsw
 {
-    public final uuh a;
+    public final uxh a;
     public int b;
     private Runnable d;
     
     private LinearScrollToItemLayoutManager(final Context context) {
-        this.a = new uuh(context, 0, 500);
-        this.d = (Runnable)thr.d;
+        this.a = new uxh(context, 0, 500);
+        this.d = (Runnable)tkz.d;
     }
     
     public static LinearScrollToItemLayoutManager r(final Context context) {
         final LinearScrollToItemLayoutManager linearScrollToItemLayoutManager = new LinearScrollToItemLayoutManager(context);
-        linearScrollToItemLayoutManager.d = (Runnable)new upe(linearScrollToItemLayoutManager, 12);
+        linearScrollToItemLayoutManager.d = (Runnable)new usc(linearScrollToItemLayoutManager, 11);
         return linearScrollToItemLayoutManager;
     }
     
@@ -32,21 +32,21 @@ public final class LinearScrollToItemLayoutManager extends OverScrollLinearLayou
             this.bD(b);
             return;
         }
-        ((nw)this).aa(b);
+        ((nx)this).aa(b);
         this.b = b;
         recyclerView.post(this.d);
     }
     
     public final void bD(final int b) {
         this.a.n();
-        final uuh a = this.a;
-        ((oj)a).b = b;
-        ((nw)this).bf((oj)a);
+        final uxh a = this.a;
+        ((ok)a).b = b;
+        ((nx)this).bf((ok)a);
     }
     
     public final void c(final RecyclerView recyclerView, final int b, final int n) {
-        final uuh uuh = new uuh(recyclerView.getContext(), n, 800);
-        ((oj)uuh).b = b;
-        ((nw)this).bf((oj)uuh);
+        final uxh uxh = new uxh(recyclerView.getContext(), n, 800);
+        ((ok)uxh).b = b;
+        ((nx)this).bf((ok)uxh);
     }
 }

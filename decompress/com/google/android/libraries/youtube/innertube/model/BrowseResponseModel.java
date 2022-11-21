@@ -11,36 +11,36 @@ import java.util.Map;
 import android.os.Parcelable$Creator;
 import android.os.Parcelable;
 
-public class BrowseResponseModel implements Parcelable, abxy
+public class BrowseResponseModel implements Parcelable, acbl
 {
     public static final Parcelable$Creator CREATOR;
-    public final akfw a;
+    public final akka a;
     public Object b;
     private final Map c;
-    private afcr d;
+    private afgh d;
     
     static {
-        CREATOR = (Parcelable$Creator)new uik(7);
+        CREATOR = (Parcelable$Creator)new ulj(7);
     }
     
-    public BrowseResponseModel(final akfw a) {
+    public BrowseResponseModel(final akka a) {
         this.a = a;
         this.c = new HashMap();
     }
     
-    public static BrowseResponseModel e(final byte[] array, final vjl vjl) {
+    public static BrowseResponseModel e(final byte[] array, final vmx vmx) {
         if (array == null) {
             return null;
         }
-        return new BrowseResponseModel((akfw)vjl.a(array, (MessageLite)akfw.a));
+        return new BrowseResponseModel((akka)vmx.a(array, (MessageLite)akka.a));
     }
     
-    public final ansr a() {
-        ansr ansr;
-        if ((ansr = this.a.i) == null) {
-            ansr = ansr.a;
+    public final anxa a() {
+        anxa anxa;
+        if ((anxa = this.a.i) == null) {
+            anxa = anxa.a;
         }
-        return ansr;
+        return anxa;
     }
     
     public final Object b() {
@@ -59,42 +59,42 @@ public class BrowseResponseModel implements Parcelable, abxy
         return 0;
     }
     
-    public final veu f() {
-        akfx akfx;
-        if ((akfx = this.a.f) == null) {
-            akfx = akfx.a;
+    public final vic f() {
+        akkb akkb;
+        if ((akkb = this.a.f) == null) {
+            akkb = akkb.a;
         }
-        if (akfx.b == 49399797) {
-            akfx akfx2;
-            if ((akfx2 = this.a.f) == null) {
-                akfx2 = akfx.a;
+        if (akkb.b == 49399797) {
+            akkb akkb2;
+            if ((akkb2 = this.a.f) == null) {
+                akkb2 = akkb.a;
             }
-            anws a;
-            if (akfx2.b == 49399797) {
-                a = (anws)akfx2.c;
+            aobc a;
+            if (akkb2.b == 49399797) {
+                a = (aobc)akkb2.c;
             }
             else {
-                a = anws.a;
+                a = aobc.a;
             }
-            return new veu(a);
+            return new vic(a);
         }
         return null;
     }
     
-    public final afcr g() {
+    public final afgh g() {
         if (this.d == null) {
-            akfx akfx;
-            if ((akfx = this.a.f) == null) {
-                akfx = akfx.a;
+            akkb akkb;
+            if ((akkb = this.a.f) == null) {
+                akkb = akkb.a;
             }
-            akgf a;
-            if (akfx.b == 58173949) {
-                a = (akgf)akfx.c;
+            akkj a;
+            if (akkb.b == 58173949) {
+                a = (akkj)akkb.c;
             }
             else {
-                a = akgf.a;
+                a = akkj.a;
             }
-            this.d = (afcr)((ashp)ashe.R((Iterable)a.c).J((asjd)uvw.i).W((asjc)uwd.r).aI((asjc)sjx.u)).ab();
+            this.d = (afgh)((asla)askp.U((Iterable)a.c).K((asmo)uyx.i).Z((asmn)uzb.u).aO((asmn)twx.c)).ac();
         }
         return this.d;
     }
@@ -115,19 +115,19 @@ public class BrowseResponseModel implements Parcelable, abxy
     }
     
     public final byte[] k() {
-        return ((agxl)this.a).toByteArray();
+        return ((ahbc)this.a).toByteArray();
     }
     
     @Override
     public final String toString() {
-        final akfw a = this.a;
+        final akka a = this.a;
         if (a == null) {
             return "(null)";
         }
-        return ((agzi)a).toString();
+        return ((ahcz)a).toString();
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        uji.ag((MessageLite)this.a, parcel);
+        ume.ad((MessageLite)this.a, parcel);
     }
 }

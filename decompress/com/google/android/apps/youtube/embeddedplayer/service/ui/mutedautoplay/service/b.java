@@ -8,36 +8,36 @@ import com.google.android.libraries.youtube.innertube.model.player.PlayerRespons
 import com.google.protos.youtube.api.innertube.PlayerMutedAutoplayOverlayRendererOuterClass;
 import com.google.android.apps.youtube.embeddedplayer.service.model.SelectableItemKey;
 import com.google.android.apps.youtube.embeddedplayer.service.model.MutedAutoplayState;
-import com.google.android.apps.youtube.embeddedplayer.service.jar.client.k;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.d;
 import android.content.Context;
 import com.google.android.apps.youtube.embeddedplayer.service.uiregistrar.service.c;
 import com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.service.e;
 
-public final class b implements tgg
+public final class b implements thj
 {
     public final e a;
     public final c b;
     public a c;
-    public aanw d;
-    public abke e;
-    public anfu f;
-    public anft g;
-    public anfv h;
-    public final atjm i;
+    public aapt d;
+    public abll e;
+    public anib f;
+    public ania g;
+    public anic h;
+    public final atmj i;
     private final Context j;
     
-    public b(final Context j, final e a, final c b, final elx elx, final byte[] array, final byte[] array2, final byte[] array3) {
-        final atjm e = atjm.e();
+    public b(final Context j, final e a, final c b, final ema ema, final byte[] array, final byte[] array2) {
+        final atmj e = atmj.e();
         this.i = e;
         this.j = j;
         this.a = a;
         this.b = b;
-        ((asht)e).aH((asjm)new k(elx, 17, (byte[])null, (byte[])null, (byte[])null));
+        ((askp)e).aH(new d(ema, 1, null, null));
     }
     
     public final void a(final int n) {
-        final atjm i = this.i;
-        final anfu f = this.f;
+        final atmj i = this.i;
+        final anib f = this.f;
         MutedAutoplayState a;
         if (f == null) {
             a = MutedAutoplayState.a;
@@ -48,7 +48,7 @@ public final class b implements tgg
             c.d.append(1, (Object)f);
             final SelectableItemKey a2 = c.a;
             final a c2 = this.c;
-            final anft g = this.g;
+            final ania g = this.g;
             SelectableItemKey selectableItemKey;
             if (g == null) {
                 selectableItemKey = c2.a;
@@ -58,7 +58,7 @@ public final class b implements tgg
                 selectableItemKey = c2.b;
             }
             final a c3 = this.c;
-            final anfv h = this.h;
+            final anic h = this.h;
             SelectableItemKey selectableItemKey2;
             if (h == null) {
                 selectableItemKey2 = c3.a;
@@ -67,24 +67,24 @@ public final class b implements tgg
                 c3.d.append(3, (Object)h);
                 selectableItemKey2 = c3.c;
             }
-            final anft g2 = this.g;
+            final ania g2 = this.g;
             Object o;
             if (g2 != null) {
-                ajut ajut;
+                ajws ajws;
                 if ((g2.b & 0x1) != 0x0) {
-                    if ((ajut = g2.c) == null) {
-                        ajut = ajut.a;
+                    if ((ajws = g2.c) == null) {
+                        ajws = ajws.a;
                     }
                 }
                 else {
-                    ajut = null;
+                    ajws = null;
                 }
-                o = acak.b(ajut);
+                o = acbu.b(ajws);
             }
             else {
                 o = this.j.getString(2132017788);
             }
-            final anfv h2 = this.h;
+            final anic h2 = this.h;
             long n2;
             if (h2 != null) {
                 n2 = h2.c;
@@ -94,22 +94,22 @@ public final class b implements tgg
             }
             a = new MutedAutoplayState(a2, selectableItemKey, selectableItemKey2, (CharSequence)o, n2, n);
         }
-        i.tu((Object)a);
+        i.tt((Object)a);
         if (n == 1) {
-            final anfu f2 = this.f;
+            final anib f2 = this.f;
             if (f2 != null) {
                 this.a.q(f2.f.I());
             }
         }
         else if (n == 2) {
-            final anft g3 = this.g;
+            final ania g3 = this.g;
             if (g3 != null) {
                 this.a.q(g3.d.I());
             }
         }
     }
     
-    public final Class[] ms(final Class clazz, final Object o, int ordinal) {
+    public final Class[] mr(final Class clazz, final Object o, int ordinal) {
         Class[] array2;
         if (ordinal != -1) {
             final Class[] array = null;
@@ -121,7 +121,7 @@ public final class b implements tgg
                             sb.append(ordinal);
                             throw new IllegalStateException(sb.toString());
                         }
-                        final aanw d = (aanw)o;
+                        final aapt d = (aapt)o;
                         this.d = d;
                         if (!d.e() && d.a() != 7 && d.a() != 4) {
                             if (d.f()) {
@@ -136,40 +136,40 @@ public final class b implements tgg
                         }
                     }
                     else {
-                        this.c.e = ((aant)o).e();
+                        this.c.e = ((aapq)o).e();
                         array2 = array;
                     }
                 }
                 else {
-                    final aans aans = (aans)o;
-                    final PlayerResponseModel b = aans.b();
-                    anfu f = null;
+                    final aapp aapp = (aapp)o;
+                    final PlayerResponseModel b = aapp.b();
+                    anib f = null;
                     Label_0287: {
                         if (b != null) {
-                            final akxi z = b.z();
-                            akxc akxc;
-                            if ((akxc = z.D) == null) {
-                                akxc = akxc.a;
+                            final akzi z = b.z();
+                            akzc akzc;
+                            if ((akzc = z.D) == null) {
+                                akzc = akzc.a;
                             }
-                            if ((akxc.b & 0x1) != 0x0) {
-                                akxc akxc2;
-                                if ((akxc2 = z.D) == null) {
-                                    akxc2 = akxc.a;
+                            if ((akzc.b & 0x1) != 0x0) {
+                                akzc akzc2;
+                                if ((akzc2 = z.D) == null) {
+                                    akzc2 = akzc.a;
                                 }
-                                anej anej;
-                                if ((anej = akxc2.c) == null) {
-                                    anej = anej.a;
+                                angq angq;
+                                if ((angq = akzc2.c) == null) {
+                                    angq = angq.a;
                                 }
-                                anuv anuv;
-                                if ((anuv = anej.g) == null) {
-                                    anuv = anuv.a;
+                                anxb anxb;
+                                if ((anxb = angq.g) == null) {
+                                    anxb = anxb.a;
                                 }
-                                if (anuv.ry((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.playerMutedAutoplayOverlayRenderer)) {
-                                    anuv anuv2;
-                                    if ((anuv2 = anej.g) == null) {
-                                        anuv2 = anuv.a;
+                                if (((ahcu)anxb).ry((ahci)PlayerMutedAutoplayOverlayRendererOuterClass.playerMutedAutoplayOverlayRenderer)) {
+                                    anxb anxb2;
+                                    if ((anxb2 = angq.g) == null) {
+                                        anxb2 = anxb.a;
                                     }
-                                    f = (anfu)anuv2.rx((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.playerMutedAutoplayOverlayRenderer);
+                                    f = (anib)((ahcu)anxb2).rx((ahci)PlayerMutedAutoplayOverlayRendererOuterClass.playerMutedAutoplayOverlayRenderer);
                                     break Label_0287;
                                 }
                             }
@@ -177,47 +177,47 @@ public final class b implements tgg
                         f = null;
                     }
                     this.f = f;
-                    anft g = null;
+                    ania g = null;
                     Label_0358: {
                         if (f != null) {
-                            anuv anuv3;
-                            if ((anuv3 = f.e) == null) {
-                                anuv3 = anuv.a;
+                            anxb anxb3;
+                            if ((anxb3 = f.e) == null) {
+                                anxb3 = anxb.a;
                             }
-                            if (anuv3.ry((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.b)) {
-                                anuv anuv4;
-                                if ((anuv4 = f.e) == null) {
-                                    anuv4 = anuv.a;
+                            if (((ahcu)anxb3).ry((ahci)PlayerMutedAutoplayOverlayRendererOuterClass.b)) {
+                                anxb anxb4;
+                                if ((anxb4 = f.e) == null) {
+                                    anxb4 = anxb.a;
                                 }
-                                g = (anft)anuv4.rx((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.b);
+                                g = (ania)((ahcu)anxb4).rx((ahci)PlayerMutedAutoplayOverlayRendererOuterClass.b);
                                 break Label_0358;
                             }
                         }
                         g = null;
                     }
                     this.g = g;
-                    final anfu f2 = this.f;
-                    anfv h = null;
+                    final anib f2 = this.f;
+                    anic h = null;
                     Label_0435: {
                         if (f2 != null) {
-                            anuv anuv5;
-                            if ((anuv5 = f2.d) == null) {
-                                anuv5 = anuv.a;
+                            anxb anxb5;
+                            if ((anxb5 = f2.d) == null) {
+                                anxb5 = anxb.a;
                             }
-                            if (anuv5.ry((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.a)) {
-                                anuv anuv6;
-                                if ((anuv6 = f2.d) == null) {
-                                    anuv6 = anuv.a;
+                            if (((ahcu)anxb5).ry((ahci)PlayerMutedAutoplayOverlayRendererOuterClass.a)) {
+                                anxb anxb6;
+                                if ((anxb6 = f2.d) == null) {
+                                    anxb6 = anxb.a;
                                 }
-                                h = (anfv)anuv6.rx((ahaq)PlayerMutedAutoplayOverlayRendererOuterClass.a);
+                                h = (anic)((ahcu)anxb6).rx((ahci)PlayerMutedAutoplayOverlayRendererOuterClass.a);
                                 break Label_0435;
                             }
                         }
                         h = null;
                     }
                     this.h = h;
-                    this.e = aans.c();
-                    final abke a = abke.a;
+                    this.e = aapp.c();
+                    final abll a = abll.a;
                     ordinal = this.e.ordinal();
                     if (ordinal != 0) {
                         if (ordinal != 2) {
@@ -254,16 +254,16 @@ public final class b implements tgg
             }
             else {
                 array2 = array;
-                if (((aani)o).c() == abkb.e) {
-                    final aanw d2 = this.d;
+                if (((aapf)o).c() == abli.e) {
+                    final aapt d2 = this.d;
                     array2 = array;
                     if (d2 != null) {
                         array2 = array;
                         if (d2.a() == 4) {
-                            final abke e = this.e;
+                            final abll e = this.e;
                             array2 = array;
                             if (e != null) {
-                                if (e != abke.a) {
+                                if (e != abll.a) {
                                     this.a(2);
                                     return null;
                                 }
@@ -275,7 +275,7 @@ public final class b implements tgg
             }
         }
         else {
-            array2 = new Class[] { aani.class, aans.class, aant.class, aanw.class };
+            array2 = new Class[] { aapf.class, aapp.class, aapq.class, aapt.class };
         }
         return array2;
     }

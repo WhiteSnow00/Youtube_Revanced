@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Темата на устройството</string>
     <string name="app_theme_appearance_summary">Изберете светла или тъмна тема според предпочитанието си</string>
     <string name="app_theme_appearance_title">Облик</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Прилагане</string>
     <string name="approve_playlist_sync">Синхронизиране на нови видеоклипове</string>
     <string name="audio_playback_failed_snackbar_action_button">Нов опит</string>
@@ -481,7 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Наблюдение и управление на данните</string>
     <string name="data_saving_persistent_title">Запазване на данни</string>
     <string name="data_saving_select_quality_every_video_switch_title">Избиране на качеството за всеки видеоклип</string>
-    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Намаляване качеството на интелигентните изтегляния</string>
     <string name="data_saving_snack_bar_action_button">Преглед</string>
     <string name="data_saving_snack_bar_text">Тази промяна засяга настройките ви за спестяване на данни</string>
     <string name="data_saving_upload_wifi_only_switch_title">Качване само чрез Wi-Fi</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Край на потока</string>
     <string name="lc_retry_yes">Нов опит</string>
     <string name="lc_rotate_device">Завъртете устройството</string>
+    <string name="lc_sharedmde_required_field_error">Полетата „Заглавие“ и „Аудитория“ са задължителни.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Предаване във вертикален режим</string>
     <string name="lc_stream_start_error">Потокът не може да стартира. Проверете връзката си.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Визуализация на видеоклипа. Докоснете, за да поставите на пауза.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Визуализация на видеоклипа. Докоснете, за да пуснете.</string>
     <string name="shorts_a11y_zoom_control">Контрол за промяна на мащаба</string>
+    <string name="shorts_audio_failure_toast">Добавянето на звука не бе успешно. Моля, опитайте отново.</string>
     <string name="shorts_camera_allow_access_subtitle">Разрешете достъпа до камерата и микрофона</string>
     <string name="shorts_camera_allow_access_title">Създаване на кратък видеоклип</string>
     <string name="shorts_camera_close_confirmation_cancel">Отказ</string>

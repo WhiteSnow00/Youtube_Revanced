@@ -50,11 +50,11 @@
     <string name="litho_channel_guidelines_off">Kanal təlimatlarının silinməsi söndürülüb</string>
     <string name="litho_channel_guidelines_on">Kanal təlimatlarının silinməsi aktivdir</string>
     <string name="litho_community_guidelines">İcma Qaydalarının silinməsi</string>
+    <string name="accessibility_settings_edu_opt_in_text">Video pleyer üçün əlçatımlılıq kontrolları işə salınsın?</string>
+    <string name="accessibility_settings_edu_opt_out_text">Əlçatımlılıq xidməti açıq olduğuna görə kontrollarınız dəyişdirildi.</string>
     <string name="litho_community_guidelines_off">İcma Qaydalarının silinməsi deaktiv edilib</string>
     <string name="litho_community_guidelines_on">İcma Qaydalarının silinməsi aktiv edilib</string>
     <string name="litho_community_posts">İcma postunun silinməsi</string>
-    <string name="accessibility_settings_edu_opt_in_text">Video pleyer üçün əlçatımlılıq kontrolları işə salınsın?</string>
-    <string name="accessibility_settings_edu_opt_out_text">Əlçatımlılıq xidməti açıq olduğuna görə kontrollarınız dəyişdirildi.</string>
     <string name="litho_community_posts_off">İcma postlarının silinməsi deaktiv edilib</string>
     <string name="litho_community_posts_on">İcma postlarının silinməsi aktiv edilib</string>
     <string name="litho_compact_banner">Kompakt bannerin silinməsi</string>

@@ -4,7 +4,6 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded;
 
-import java.util.List;
 import android.view.SurfaceHolder;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.shared.g;
 import java.util.Iterator;
@@ -55,61 +54,61 @@ public final class e implements Runnable
         this.a = a;
     }
     
-    public e(final mje b, final int a, final int c) {
+    public e(final mjs b, final int a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public e(final mma b, final int a, final int c) {
+    public e(final mmo b, final int a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public e(final mnv b, final int a, final int c) {
+    public e(final mok b, final int a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public e(final msi b, final int a, final int c) {
+    public e(final msw b, final int a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public e(final rdi b, final int a, final int c) {
+    public e(final rei b, final int a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public e(final rzv b, final int a, final int c, final byte[] array, final byte[] array2) {
+    public e(final saw b, final int a, final int c, final byte[] array, final byte[] array2) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public e(final tnz b, final int a, final int c) {
+    public e(final toz b, final int a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public e(final ugq b, final int a, final int c) {
+    public e(final uht b, final int a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public e(final whu b, final int a, final int c) {
+    public e(final wjc b, final int a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public e(final wie b, final int a, final int c) {
+    public e(final wjm b, final int a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
@@ -123,11 +122,11 @@ public final class e implements Runnable
             default: {
                 final Object b = this.b;
                 final int a = this.a;
-                final wie wie = (wie)b;
-                final adtj a2 = wie.A;
+                final wjm wjm = (wjm)b;
+                final adva a2 = wjm.A;
                 if (a2 != null) {
                     a2.a(a);
-                    wie.A = null;
+                    wjm.A = null;
                     return;
                 }
                 break;
@@ -135,137 +134,137 @@ public final class e implements Runnable
             case 19: {
                 final Object b2 = this.b;
                 final int a3 = this.a;
-                final whv m = ((wie)b2).m;
+                final wjd m = ((wjm)b2).m;
                 if (m != null) {
                     m.a(a3);
                 }
                 return;
             }
             case 18: {
-                ((whu)this.b).b(new int[] { this.a });
+                ((wjc)this.b).b(new int[] { this.a });
                 return;
             }
             case 17: {
                 final Object b3 = this.b;
                 final int a4 = this.a;
-                final ugq ugq = (ugq)b3;
-                if (!tpe.bQ(ugq.d)) {
+                final uht uht = (uht)b3;
+                if (!tqf.bQ(uht.d)) {
                     return;
                 }
-                ugq.e.setAlpha(1.0f);
-                ugq.e.setVisibility(0);
-                ugq.d(ugq.c);
-                tpe.aG((View)ugq.e, (atke)new qav(19), tpe.an(new tut[] { tpe.aE(-1, -2), tpe.aB(a4 - ugq.e.getMeasuredHeight()) }), (Class)FrameLayout$LayoutParams.class);
+                uht.e.setAlpha(1.0f);
+                uht.e.setVisibility(0);
+                uht.d(uht.c);
+                tqf.aG((View)uht.e, (atnb)new qbm(19), tqf.an(new tvv[] { tqf.aE(-1, -2), tqf.aB(a4 - uht.e.getMeasuredHeight()) }), (Class)FrameLayout$LayoutParams.class);
                 return;
             }
             case 16: {
-                ((tnz)this.b).e(this.a, -1);
+                ((toz)this.b).e(this.a, -1);
                 return;
             }
             case 15: {
                 final Object b4 = this.b;
                 final int a5 = this.a;
-                final rzv rzv = (rzv)b4;
-                final zme c2 = ((zmf)rzv.d).c();
-                final afeq y = ((rmk)rzv.a).y();
+                final saw saw = (saw)b4;
+                final znz c2 = ((zoa)saw.d).c();
+                final afgh y = ((rnk)saw.a).y();
                 int n;
-                if ("youtube-direct".equals(rky.a(c2))) {
-                    final afih afih = (afih)y;
-                    final int c3 = afih.c;
+                if ("youtube-direct".equals(rmc.b(c2))) {
+                    final afjx afjx = (afjx)y;
+                    final int c3 = afjx.c;
                     boolean b5 = false;
                     while (i < c3) {
-                        b5 |= c2.b().equals(((List<aejz>)y).get(i).c);
+                        b5 |= c2.b().equals(y.get(i).c);
                         ++i;
                     }
                     if (b5) {
                         n = 13;
                     }
-                    else if (((List)y).isEmpty()) {
+                    else if (y.isEmpty()) {
                         n = 10;
                     }
-                    else if (afih.c == 1) {
+                    else if (afjx.c == 1) {
                         n = 11;
                     }
                     else {
                         n = 12;
                     }
                 }
-                else if ("youtube-delegated".equals(rky.a(c2))) {
+                else if ("youtube-delegated".equals(rmc.b(c2))) {
                     n = 14;
                 }
-                else if ("youtube-incognito".equals(rky.a(c2))) {
+                else if ("youtube-incognito".equals(rmc.b(c2))) {
                     n = 15;
                 }
                 else {
                     n = 16;
                 }
-                rzv.h(a5, 3, n);
+                saw.h(a5, 3, n);
                 return;
             }
             case 14: {
-                final rdi rdi = (rdi)this.b;
-                if (rdi.i != null) {
-                    rdi.l(this.a);
+                final rei rei = (rei)this.b;
+                if (rei.i != null) {
+                    rei.l(this.a);
                 }
                 return;
             }
             case 13: {
-                ((msi)this.b).k(this.a);
+                ((msw)this.b).k(this.a);
                 return;
             }
             case 12: {
-                ((mnv)this.b).o.U(this.a);
+                ((mok)this.b).o.l(this.a);
                 return;
             }
             case 11: {
-                ((mma)this.b).stopSelf(this.a);
+                ((mmo)this.b).stopSelf(this.a);
                 return;
             }
             case 10: {
                 final Object b6 = this.b;
                 final int a6 = this.a;
                 if (a6 == 0) {
-                    final mjf a7 = ((mje)b6).a;
+                    final mjt a7 = ((mjs)b6).a;
                     a7.s = 2;
                     a7.c = true;
                     a7.d = true;
                     synchronized (a7.r) {
-                        final Iterator iterator = ((mje)b6).a.r.iterator();
+                        final Iterator iterator = ((mjs)b6).a.r.iterator();
                         while (iterator.hasNext()) {
-                            ((jgk)iterator.next()).P();
+                            ((mgh)iterator.next()).g();
                         }
                         return;
                     }
                 }
-                final mje mje = (mje)b6;
-                final mjf a8 = mje.a;
+                final mjs mjs = (mjs)b6;
+                final mjt a8 = mjs.a;
                 a8.s = 1;
                 synchronized (a8.r) {
-                    final Iterator iterator2 = ((mje)b6).a.r.iterator();
+                    final Iterator iterator2 = ((mjs)b6).a.r.iterator();
                     while (iterator2.hasNext()) {
-                        ((jgk)iterator2.next()).Q(a6);
+                        ((mgh)iterator2.next()).h(a6);
                     }
                     monitorexit(a8.r);
-                    mje.a.i();
+                    mjs.a.i();
                 }
             }
             case 9: {
                 final Object b7 = this.b;
                 final int a9 = this.a;
-                final mjf a10 = ((mje)b7).a;
+                final mjt a10 = ((mjs)b7).a;
                 a10.s = 3;
                 synchronized (a10.r) {
-                    final Iterator iterator3 = ((mje)b7).a.r.iterator();
+                    final Iterator iterator3 = ((mjs)b7).a.r.iterator();
                     while (iterator3.hasNext()) {
-                        ((jgk)iterator3.next()).R(a9);
+                        ((mgh)iterator3.next()).i(a9);
                     }
                 }
             }
             case 8: {
                 final Object b8 = this.b;
                 final int a11 = this.a;
-                final mje mje2 = (mje)b8;
-                final mjf a12 = mje2.a;
+                final mjs mjs2 = (mjs)b8;
+                final mjt a12 = mjs2.a;
                 a12.l = -1;
                 a12.m = -1;
                 a12.h = null;
@@ -274,25 +273,25 @@ public final class e implements Runnable
                 a12.n();
                 a12.k = false;
                 a12.n = null;
-                final mjf a13 = mje2.a;
+                final mjt a13 = mjs2.a;
                 a13.s = 1;
                 synchronized (a13.r) {
-                    final Iterator iterator4 = ((mje)b8).a.r.iterator();
+                    final Iterator iterator4 = ((mjs)b8).a.r.iterator();
                     while (iterator4.hasNext()) {
-                        ((jgk)iterator4.next()).S(a11);
+                        ((mgh)iterator4.next()).j(a11);
                     }
                     monitorexit(a13.r);
-                    mje2.a.i();
-                    final mjf a14 = mje2.a;
-                    a14.o((moc)a14.b);
+                    mjs2.a.i();
+                    final mjt a14 = mjs2.a;
+                    a14.o((mor)a14.b);
                 }
             }
             case 7: {
-                ((mje)this.b).a.v.U(this.a);
+                ((mjs)this.b).a.v.l(this.a);
                 return;
             }
             case 6: {
-                ((h)this.b).a.g(this.a);
+                ((h)this.b).a.d(this.a);
                 return;
             }
             case 5: {
@@ -306,7 +305,7 @@ public final class e implements Runnable
             case 3: {
                 final Object b9 = this.b;
                 final int a15 = this.a;
-                final abis b10 = abis.b;
+                final abjz b10 = abjz.b;
                 final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.e e = (com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.e)b9;
                 e.c(b10);
                 e.c.x(a15);

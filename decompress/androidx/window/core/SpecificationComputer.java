@@ -24,5 +24,5 @@ public abstract class SpecificationComputer
         return sb.toString();
     }
     
-    public abstract SpecificationComputer require(final String p0, final atml p1);
+    public abstract SpecificationComputer require(final String p0, final atqd p1);
 }

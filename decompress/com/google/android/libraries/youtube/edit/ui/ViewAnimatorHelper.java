@@ -25,35 +25,34 @@ public class ViewAnimatorHelper extends ViewAnimator
     }
     
     public final void b(final int id) {
-        ViewStub child = null;
+        Object child = null;
         int i;
-        View view;
-        for (i = 0; i < this.getChildCount(); ++i, child = (ViewStub)view) {
-            view = (View)(child = (ViewStub)this.getChildAt(i));
-            if (view.getId() == id) {
+        for (i = 0; i < this.getChildCount(); ++i) {
+            child = this.getChildAt(i);
+            if (((View)child).getId() == id) {
                 break;
             }
         }
         if (child != null) {
-            Object inflate = child;
+            View inflate = (View)child;
             if (child instanceof ViewStub) {
-                final View view2 = (View)(inflate = child.inflate());
-                if (view2.getId() == -1) {
-                    view2.setId(id);
-                    inflate = view2;
+                final View view = inflate = ((ViewStub)child).inflate();
+                if (view.getId() == -1) {
+                    view.setId(id);
+                    inflate = view;
                 }
             }
             this.setDisplayedChild(i);
-            final trb trb = (trb)this.a.get(id);
-            if (trb != null) {
-                trb.a(inflate);
+            final tui tui = (tui)this.a.get(id);
+            if (tui != null) {
+                tui.a((Object)inflate);
             }
             return;
         }
         throw new IllegalArgumentException(String.format("No such child with id: %s", id));
     }
     
-    public final void c(final int n, final trb trb) {
-        this.a.put(n, (Object)trb);
+    public final void c(final int n, final tui tui) {
+        this.a.put(n, (Object)tui);
     }
 }

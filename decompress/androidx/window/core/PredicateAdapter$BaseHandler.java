@@ -10,9 +10,9 @@ import java.lang.reflect.InvocationHandler;
 
 abstract class PredicateAdapter$BaseHandler implements InvocationHandler
 {
-    private final atob clazz;
+    private final atrt clazz;
     
-    public PredicateAdapter$BaseHandler(final atob clazz) {
+    public PredicateAdapter$BaseHandler(final atrt clazz) {
         clazz.getClass();
         this.clazz = clazz;
     }
@@ -27,12 +27,12 @@ abstract class PredicateAdapter$BaseHandler implements InvocationHandler
         boolean b = false;
         Serializable s;
         if (test) {
-            final atob clazz = this.clazz;
+            final atrt clazz = this.clazz;
             Object o4 = o3;
             if (array != null) {
                 o4 = array[0];
             }
-            arxi.e(clazz, o4);
+            asbp.f(clazz, o4);
             s = this.invokeTest(o, o4);
         }
         else if (this.isEquals(method, array)) {
@@ -68,21 +68,21 @@ abstract class PredicateAdapter$BaseHandler implements InvocationHandler
     
     protected final boolean isEquals(final Method method, final Object[] array) {
         method.getClass();
-        return atnh.c((Object)method.getName(), (Object)"equals") && method.getReturnType().equals(Boolean.TYPE) && array != null && array.length == 1;
+        return atqz.c(method.getName(), "equals") && method.getReturnType().equals(Boolean.TYPE) && array != null && array.length == 1;
     }
     
     protected final boolean isHashCode(final Method method, final Object[] array) {
         method.getClass();
-        return atnh.c((Object)method.getName(), (Object)"hashCode") && method.getReturnType().equals(Integer.TYPE) && array == null;
+        return atqz.c(method.getName(), "hashCode") && method.getReturnType().equals(Integer.TYPE) && array == null;
     }
     
     protected final boolean isTest(final Method method, final Object[] array) {
         method.getClass();
-        return atnh.c((Object)method.getName(), (Object)"test") && method.getReturnType().equals(Boolean.TYPE) && array != null && array.length == 1;
+        return atqz.c(method.getName(), "test") && method.getReturnType().equals(Boolean.TYPE) && array != null && array.length == 1;
     }
     
     protected final boolean isToString(final Method method, final Object[] array) {
         method.getClass();
-        return atnh.c((Object)method.getName(), (Object)"toString") && method.getReturnType().equals(String.class) && array == null;
+        return atqz.c(method.getName(), "toString") && method.getReturnType().equals(String.class) && array == null;
     }
 }

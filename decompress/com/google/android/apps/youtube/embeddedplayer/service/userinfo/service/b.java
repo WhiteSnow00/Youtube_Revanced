@@ -9,15 +9,15 @@ import android.view.ViewGroup;
 import com.google.android.libraries.youtube.common.ui.AccessibilityLayerLayout;
 import j$.util.Optional;
 
-public final class b implements tec
+public final class b implements thj
 {
     public final Object a;
     public Object b;
-    private final /* synthetic */ int c;
+    private final int c;
     
     public b(final int c) {
         this.c = c;
-        this.a = atix.e();
+        this.a = atmp.e();
         this.b = Optional.empty();
     }
     
@@ -26,7 +26,7 @@ public final class b implements tec
         this.a = a;
     }
     
-    public final Class[] ms(final Class clazz, Object o, int ordinal) {
+    public final Class[] mr(final Class clazz, Object o, int ordinal) {
         final int c = this.c;
         Class[] array = null;
         final Class[] array2 = null;
@@ -38,7 +38,7 @@ public final class b implements tec
                     sb.append(ordinal);
                     throw new IllegalStateException(sb.toString());
                 }
-                final zkv zkv = (zkv)o;
+                final zon zon = (zon)o;
                 final View viewById = ((bu)this.a).findViewById(2131427411);
                 if (viewById instanceof AccessibilityLayerLayout) {
                     final AccessibilityLayerLayout accessibilityLayerLayout = (AccessibilityLayerLayout)viewById;
@@ -65,7 +65,7 @@ public final class b implements tec
                 }
             }
             else {
-                array3 = new Class[] { zkv.class };
+                array3 = new Class[] { zon.class };
             }
             return array3;
         }
@@ -77,34 +77,33 @@ public final class b implements tec
                         sb2.append(ordinal);
                         throw new IllegalStateException(sb2.toString());
                     }
-                    if (!((zkx)o).a()) {
+                    if (!((zop)o).a()) {
                         o = this.a;
-                        ((atix)o).tr((Object)aeet.b);
+                        ((atmp)o).tt((Object)aein.b);
                     }
                 }
                 else {
-                    final rjt rjt = (rjt)o;
-                    final rjs a = rjs.a;
-                    ordinal = rjt.a().ordinal();
+                    final rmw rmw = (rmw)o;
+                    final rmv a = rmv.a;
+                    ordinal = rmw.a().ordinal();
                     if (ordinal != 0) {
                         if (ordinal == 1) {
                             o = this.a;
-                            ((atix)o).tr((Object)aeet.c);
+                            ((atmp)o).tt((Object)aein.c);
                         }
                     }
                     else {
-                        o = this.a;
-                        ((atix)o).tr((Object)aeet.a);
+                        ((atmp)this.a).tt((Object)aein.a);
                     }
                 }
             }
             else {
-                afqg.r(((rjr)o).a().getMessage());
-                ((atix)this.a).tr((Object)aeet.d);
+                aftr.k(((rmu)o).a().getMessage());
+                ((atmp)this.a).tt((Object)aein.d);
             }
         }
         else {
-            array = new Class[] { rjr.class, rjt.class, zkx.class };
+            array = new Class[] { rmu.class, rmw.class, zop.class };
         }
         return array;
     }

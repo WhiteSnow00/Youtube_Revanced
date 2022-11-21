@@ -24,14 +24,14 @@ import android.support.v7.widget.AppCompatImageView;
 
 public class LottieAnimationView extends AppCompatImageView
 {
-    public static final cuk a;
-    public cuk b;
+    public static final cun a;
+    public cun b;
     public int c;
-    public final cui d;
+    public final cul d;
     public boolean e;
-    public ctv f;
-    private final cuk g;
-    private final cuk h;
+    public cty f;
+    private final cun g;
+    private final cun h;
     private boolean i;
     private String j;
     private int k;
@@ -42,19 +42,19 @@ public class LottieAnimationView extends AppCompatImageView
     private boolean p;
     private final Set q;
     private int r;
-    private cuq s;
+    private cut s;
     private int t;
     
     static {
-        a = (cuk)new ctr();
+        a = (cun)new ctu();
     }
     
     public LottieAnimationView(final Context context) {
         super(context);
-        this.g = (cuk)new cts(this, 1);
-        this.h = (cuk)new cts(this, 0);
+        this.g = (cun)new ctv(this, 1);
+        this.h = (cun)new ctv(this, 0);
         this.c = 0;
-        this.d = new cui();
+        this.d = new cul();
         this.l = false;
         this.m = false;
         this.n = false;
@@ -64,15 +64,15 @@ public class LottieAnimationView extends AppCompatImageView
         this.t = 1;
         this.q = new HashSet();
         this.r = 0;
-        this.v(null, 2130969797);
+        this.v(null, 2130969795);
     }
     
     public LottieAnimationView(final Context context, final AttributeSet set) {
         super(context, set);
-        this.g = (cuk)new cts(this, 1);
-        this.h = (cuk)new cts(this, 0);
+        this.g = (cun)new ctv(this, 1);
+        this.h = (cun)new ctv(this, 0);
         this.c = 0;
-        this.d = new cui();
+        this.d = new cul();
         this.l = false;
         this.m = false;
         this.n = false;
@@ -82,15 +82,15 @@ public class LottieAnimationView extends AppCompatImageView
         this.t = 1;
         this.q = new HashSet();
         this.r = 0;
-        this.v(set, 2130969797);
+        this.v(set, 2130969795);
     }
     
     public LottieAnimationView(final Context context, final AttributeSet set, final int n) {
         super(context, set, n);
-        this.g = (cuk)new cts(this, 1);
-        this.h = (cuk)new cts(this, 0);
+        this.g = (cun)new ctv(this, 1);
+        this.h = (cun)new ctv(this, 0);
         this.c = 0;
-        this.d = new cui();
+        this.d = new cul();
         this.l = false;
         this.m = false;
         this.n = false;
@@ -104,7 +104,7 @@ public class LottieAnimationView extends AppCompatImageView
     }
     
     private final void t() {
-        final cuq s = this.s;
+        final cut s = this.s;
         if (s != null) {
             s.g(this.g);
             this.s.f(this.h);
@@ -125,9 +125,9 @@ public class LottieAnimationView extends AppCompatImageView
                     }
                 }
                 else {
-                    final ctv f = this.f;
+                    final cty f = this.f;
                     if (f == null || !f.k || Build$VERSION.SDK_INT >= 28) {
-                        final ctv f2 = this.f;
+                        final cty f2 = this.f;
                         n3 = n2;
                         if (f2 == null) {
                             break Label_0088;
@@ -150,7 +150,7 @@ public class LottieAnimationView extends AppCompatImageView
     
     private final void v(final AttributeSet set, int n) {
         final Context context = this.getContext();
-        final int[] a = cur.a;
+        final int[] a = cuu.a;
         boolean b = false;
         final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, a, n, 0);
         this.e = obtainStyledAttributes.getBoolean(1, true);
@@ -198,7 +198,7 @@ public class LottieAnimationView extends AppCompatImageView
         this.d.h = obtainStyledAttributes.getString(7);
         this.m(obtainStyledAttributes.getFloat(9, 0.0f));
         final boolean boolean1 = obtainStyledAttributes.getBoolean(3, false);
-        final cui d = this.d;
+        final cul d = this.d;
         if (d.i != boolean1) {
             d.i = boolean1;
             if (d.a != null) {
@@ -207,23 +207,23 @@ public class LottieAnimationView extends AppCompatImageView
         }
         if (obtainStyledAttributes.hasValue(2)) {
             n = obtainStyledAttributes.getResourceId(2, -1);
-            this.d.f(new cwj(new String[] { "**" }), (Object)cun.E, new czt((Object)new cus(td.d(this.getContext(), n).getDefaultColor())));
+            this.d.f(new cwm(new String[] { "**" }), (Object)cuq.E, new czw((Object)new cuv(tc.c(this.getContext(), n).getDefaultColor())));
         }
         if (obtainStyledAttributes.hasValue(14)) {
             this.d.c = obtainStyledAttributes.getFloat(14, 1.0f);
         }
         if (obtainStyledAttributes.hasValue(11)) {
             final int int1 = obtainStyledAttributes.getInt(11, 0);
-            cij.b();
+            ciz.h();
             if ((n = int1) >= 3) {
                 n = 0;
             }
-            this.r(cij.b()[n]);
+            this.r(ciz.h()[n]);
         }
         this.d.e = obtainStyledAttributes.getBoolean(6, false);
         obtainStyledAttributes.recycle();
-        final cui d2 = this.d;
-        if (czr.b(this.getContext()) != 0.0f) {
+        final cul d2 = this.d;
+        if (czu.b(this.getContext()) != 0.0f) {
             b = true;
         }
         d2.d = (boolean)b;
@@ -232,11 +232,11 @@ public class LottieAnimationView extends AppCompatImageView
     }
     
     public final void a(final Animator$AnimatorListener animator$AnimatorListener) {
-        ((czi)this.d.b).addListener(animator$AnimatorListener);
+        ((czl)this.d.b).addListener(animator$AnimatorListener);
     }
     
-    public final void b(final cwj cwj, final Object o, final czv czv) {
-        this.d.f(cwj, o, (czt)new ctu(czv));
+    public final void b(final cwm cwm, final Object o, final czy czy) {
+        this.d.f(cwm, o, (czw)new ctx(czy));
     }
     
     public final void buildDrawingCache(final boolean b) {
@@ -246,14 +246,14 @@ public class LottieAnimationView extends AppCompatImageView
             this.r(2);
         }
         --this.r;
-        ctq.a();
+        ctt.a();
     }
     
     public final void c() {
         this.n = false;
         this.m = false;
         this.l = false;
-        final cui d = this.d;
+        final cul d = this.d;
         d.f.clear();
         d.b.cancel();
         this.u();
@@ -290,50 +290,50 @@ public class LottieAnimationView extends AppCompatImageView
     public final void g(final int k) {
         this.k = k;
         this.j = null;
-        cuq cuq;
+        cut cut;
         if (this.isInEditMode()) {
-            cuq = new cuq((Callable)new ctt(this, k), true);
+            cut = new cut((Callable)new ctw(this, k), true);
         }
         else if (this.e) {
             final Context context = this.getContext();
-            cuq = cua.k(context, k, cua.n(context, k));
+            cut = cud.k(context, k, cud.n(context, k));
         }
         else {
-            cuq = cua.k(this.getContext(), k, (String)null);
+            cut = cud.k(this.getContext(), k, (String)null);
         }
-        this.k(cuq);
+        this.k(cut);
     }
     
     public final void h(final String j) {
         this.j = j;
         this.k = 0;
-        cuq cuq;
+        cut cut;
         if (this.isInEditMode()) {
-            cuq = new cuq((Callable)new cty(this, j, 1), true);
+            cut = new cut((Callable)new cub(this, j, 1), true);
         }
         else if (this.e) {
-            cuq = cua.h(this.getContext(), j);
+            cut = cud.h(this.getContext(), j);
         }
         else {
-            cuq = cua.i(this.getContext(), j, (String)null);
+            cut = cud.i(this.getContext(), j, (String)null);
         }
-        this.k(cuq);
+        this.k(cut);
     }
     
     public final void i(final String s) {
-        cuq cuq;
+        cut cut;
         if (this.e) {
-            cuq = cua.l(this.getContext(), s);
+            cut = cud.l(this.getContext(), s);
         }
         else {
-            cuq = cua.m(this.getContext(), s, (String)null);
+            cut = cud.m(this.getContext(), s, (String)null);
         }
-        this.k(cuq);
+        this.k(cut);
     }
     
     public final void invalidateDrawable(final Drawable drawable) {
         final Drawable drawable2 = this.getDrawable();
-        final cui d = this.d;
+        final cul d = this.d;
         if (drawable2 == d) {
             super.invalidateDrawable((Drawable)d);
             return;
@@ -341,7 +341,7 @@ public class LottieAnimationView extends AppCompatImageView
         super.invalidateDrawable(drawable);
     }
     
-    public final void j(final ctv f) {
+    public final void j(final cty f) {
         this.d.setCallback((Drawable$Callback)this);
         this.f = f;
         this.o = true;
@@ -355,7 +355,7 @@ public class LottieAnimationView extends AppCompatImageView
         }
         else if (!r) {
             final boolean q = this.q();
-            this.setImageDrawable((Drawable)null);
+            this.setImageDrawable(null);
             this.setImageDrawable((Drawable)this.d);
             if (q) {
                 this.d.k();
@@ -365,11 +365,11 @@ public class LottieAnimationView extends AppCompatImageView
         this.requestLayout();
         final Iterator iterator = this.q.iterator();
         while (iterator.hasNext()) {
-            ((cum)iterator.next()).a(f);
+            ((cup)iterator.next()).a(f);
         }
     }
     
-    public final void k(final cuq s) {
+    public final void k(final cut s) {
         this.f = null;
         this.d.h();
         this.t();
@@ -444,10 +444,10 @@ public class LottieAnimationView extends AppCompatImageView
         final boolean q = this.d.q();
         boolean d = true;
         if (!q) {
-            d = (!anb.am((View)this) && this.n && d);
+            d = (!anc.am((View)this) && this.n && d);
         }
         lottieAnimationView$SavedState.d = d;
-        final cui d2 = this.d;
+        final cul d2 = this.d;
         lottieAnimationView$SavedState.e = d2.h;
         lottieAnimationView$SavedState.f = d2.b.getRepeatMode();
         lottieAnimationView$SavedState.g = this.d.e();
@@ -488,24 +488,27 @@ public class LottieAnimationView extends AppCompatImageView
         this.u();
     }
     
-    public final void s(final cum cum) {
-        final ctv f = this.f;
+    public final void s(final cup cup) {
+        final cty f = this.f;
         if (f != null) {
-            cum.a(f);
+            cup.a(f);
         }
-        this.q.add(cum);
+        this.q.add(cup);
     }
     
+    @Override
     public final void setImageBitmap(final Bitmap imageBitmap) {
         this.t();
         super.setImageBitmap(imageBitmap);
     }
     
+    @Override
     public final void setImageDrawable(final Drawable imageDrawable) {
         this.t();
         super.setImageDrawable(imageDrawable);
     }
     
+    @Override
     public final void setImageResource(final int imageResource) {
         this.t();
         super.setImageResource(imageResource);
@@ -514,16 +517,16 @@ public class LottieAnimationView extends AppCompatImageView
     public final void unscheduleDrawable(final Drawable drawable) {
         Label_0061: {
             if (!this.o) {
-                final cui d = this.d;
+                final cul d = this.d;
                 if (drawable == d && d.q()) {
                     this.d();
                     break Label_0061;
                 }
             }
-            if (!this.o && drawable instanceof cui) {
-                final cui cui = (cui)drawable;
-                if (cui.q()) {
-                    cui.i();
+            if (!this.o && drawable instanceof cul) {
+                final cul cul = (cul)drawable;
+                if (cul.q()) {
+                    cul.i();
                 }
             }
         }

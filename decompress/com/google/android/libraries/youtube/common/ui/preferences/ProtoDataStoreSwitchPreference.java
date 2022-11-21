@@ -13,25 +13,25 @@ import android.content.Context;
 import com.google.common.util.concurrent.ListenableFuture;
 import androidx.preference.SwitchPreference;
 
-public class ProtoDataStoreSwitchPreference extends SwitchPreference implements tsh
+public class ProtoDataStoreSwitchPreference extends SwitchPreference implements ttk
 {
-    public tsj c;
-    private tsf d;
-    private tqd e;
+    public ttl c;
+    private tth d;
+    private tre e;
     private ListenableFuture f;
-    private aun g;
+    private aup g;
     private Object h;
     private ListenableFuture i;
     
     public ProtoDataStoreSwitchPreference(final Context context) {
         super(context);
-        this.f = afwm.m((Object)null);
+        this.f = afxr.l(null);
     }
     
     public ProtoDataStoreSwitchPreference(final Context context, final AttributeSet set) {
         super(context, set);
-        this.f = afwm.m((Object)null);
-        adkp.I(TextUtils.isEmpty((CharSequence)((Preference)this).s) ^ true, "Make sure key attribute is set in the xml file.");
+        this.f = afxr.l(null);
+        adme.L(TextUtils.isEmpty((CharSequence)((Preference)this).s) ^ true, "Make sure key attribute is set in the xml file.");
     }
     
     private final ListenableFuture am(final Boolean b) {
@@ -46,11 +46,11 @@ public class ProtoDataStoreSwitchPreference extends SwitchPreference implements 
     public final boolean R(final Object o) {
         final boolean r = super.R(o);
         if (r) {
-            final aun g = this.g;
+            final aup g = this.g;
             final ListenableFuture am = this.am((Boolean)o);
-            final tqd e = this.e;
+            final tre e = this.e;
             e.getClass();
-            teu.n(g, am, (ttg)new tsi(e, 3), (ttg)new sxu(this, o, 18));
+            tfx.n(g, am, (tui)new tti(e, 5), (tui)new syx(this, o, 19));
         }
         return r;
     }
@@ -63,23 +63,23 @@ public class ProtoDataStoreSwitchPreference extends SwitchPreference implements 
     }
     
     public final ListenableFuture af() {
-        return teu.b(this.g, this.i, (aezf)new sts(this, 13));
+        return tfx.b(this.g, this.i, (afax)new sur(this, 13));
     }
     
     public final ListenableFuture ag(final Boolean b) {
-        return afwm.n(teu.b(this.g, afsw.e((ListenableFuture)afvk.m(this.d.a()), (Class)Exception.class, (aezf)new sts(b, 14), teu.a), (aezf)new sts(this, 12)));
+        return afxr.m(tfx.b(this.g, afun.e((ListenableFuture)afxb.m(this.d.a()), (Class)Exception.class, (afax)new sur(b, 14), tfx.a), (afax)new sur(this, 12)));
     }
     
-    public final void ah(final tqd e) {
+    public final void ah(final tre e) {
         this.e = e;
     }
     
-    public final void ai(final aun g) {
+    public final void ai(final aup g) {
         this.g = g;
     }
     
     public final void aj(final Map map) {
-        final tsf d = map.get(((Preference)this).s);
+        final tth d = map.get(((Preference)this).s);
         d.getClass();
         this.d = d;
         this.i = this.ag((Boolean)this.h);
@@ -99,10 +99,10 @@ public class ProtoDataStoreSwitchPreference extends SwitchPreference implements 
     public final void k(final boolean b) {
         final ListenableFuture am = this.am(b);
         this.f = am;
-        final aun g = this.g;
-        final tqd e = this.e;
+        final aup g = this.g;
+        final tre e = this.e;
         e.getClass();
-        teu.n(g, am, (ttg)new tsi(e, 3), (ttg)new jnh(this, b, 5));
+        tfx.n(g, am, (tui)new tti(e, 5), (tui)new jns(this, b, 5));
     }
     
     protected final Object lj(final TypedArray typedArray, final int n) {

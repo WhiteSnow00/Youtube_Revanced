@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Gerätedesign verwenden</string>
     <string name="app_theme_appearance_summary">Einstellungen für helles oder dunkles Design wählen</string>
     <string name="app_theme_appearance_title">Darstellung</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Übernehmen</string>
     <string name="approve_playlist_sync">Neue Videos synchronisieren</string>
     <string name="audio_playback_failed_snackbar_action_button">Wiederholen</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Stream beenden</string>
     <string name="lc_retry_yes">Noch mal versuchen</string>
     <string name="lc_rotate_device">Gerät drehen</string>
+    <string name="lc_sharedmde_required_field_error">Titel und Zielgruppe sind erforderlich.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Im Hochformat streamen</string>
     <string name="lc_stream_start_error">Stream konnte nicht gestartet werden. Überprüfe die Verbindung.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Videovorschau. Zum Pausieren tippen.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Videovorschau. Zum Abspielen tippen.</string>
     <string name="shorts_a11y_zoom_control">Zoom-Steuerung</string>
+    <string name="shorts_audio_failure_toast">Ton konnte nicht hinzugefügt werden. Bitte versuche es noch einmal.</string>
     <string name="shorts_camera_allow_access_subtitle">Zugriff auf deine Kamera und dein Mikrofon erlauben</string>
     <string name="shorts_camera_allow_access_title">Kurzvideo erstellen</string>
     <string name="shorts_camera_close_confirmation_cancel">Abbrechen</string>

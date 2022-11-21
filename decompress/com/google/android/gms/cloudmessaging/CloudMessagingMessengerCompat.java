@@ -14,10 +14,10 @@ import android.os.Parcelable;
 public class CloudMessagingMessengerCompat implements Parcelable
 {
     public static final Parcelable$Creator CREATOR;
-    Messenger a;
+    final Messenger a;
     
     static {
-        CREATOR = (Parcelable$Creator)new mob(2);
+        CREATOR = (Parcelable$Creator)new mpu(0);
     }
     
     public CloudMessagingMessengerCompat(final IBinder binder) {
@@ -25,15 +25,11 @@ public class CloudMessagingMessengerCompat implements Parcelable
     }
     
     public final IBinder a() {
-        final Messenger a = this.a;
-        a.getClass();
-        return a.getBinder();
+        return this.a.getBinder();
     }
     
     public final void b(final Message message) {
-        final Messenger a = this.a;
-        a.getClass();
-        a.send(message);
+        this.a.send(message);
     }
     
     public final int describeContents() {
@@ -59,8 +55,6 @@ public class CloudMessagingMessengerCompat implements Parcelable
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        final Messenger a = this.a;
-        a.getClass();
-        parcel.writeStrongBinder(a.getBinder());
+        parcel.writeStrongBinder(this.a.getBinder());
     }
 }

@@ -15,7 +15,6 @@ public class ReelPlayerView extends PlayerView
 {
     public boolean a;
     public boolean b;
-    public boolean c;
     
     public ReelPlayerView(final Context context) {
         super(context);
@@ -25,9 +24,9 @@ public class ReelPlayerView extends PlayerView
         super(context, set);
     }
     
-    protected final void onMeasure(int measuredHeight, int measuredWidth) {
-        super.onMeasure(measuredHeight, measuredWidth);
-        final View m = ((abue)this).m;
+    protected final void onMeasure(int measuredWidth, int measuredHeight) {
+        super.onMeasure(measuredWidth, measuredHeight);
+        final View m = ((abvo)this).m;
         if (m == null) {
             return;
         }
@@ -36,7 +35,7 @@ public class ReelPlayerView extends PlayerView
         final int measuredWidth2 = m.getMeasuredWidth();
         final int measuredHeight2 = m.getMeasuredHeight();
         Size size;
-        if (this.c) {
+        if (this.b) {
             int n = measuredWidth;
             int n2 = measuredHeight;
             if (measuredWidth > 0) {
@@ -76,12 +75,11 @@ public class ReelPlayerView extends PlayerView
             int n10 = measuredHeight;
             if (measuredWidth2 > 0) {
                 final double n11 = measuredHeight2;
-                final boolean b = this.b;
                 final double n12 = measuredWidth2;
                 Double.isNaN(n11);
                 Double.isNaN(n12);
                 final double n13 = n11 / n12;
-                if (b && n13 > 1.5) {
+                if (n13 > 1.5) {
                     final double n14 = measuredHeight;
                     Double.isNaN(n14);
                     n9 = (int)(n14 / n13);

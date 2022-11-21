@@ -6,7 +6,6 @@ package com.google.android.apps.youtube.embeddedplayer.service.layoutpolicy.remo
 
 import android.view.Window;
 import android.view.ViewGroup;
-import com.google.android.apps.youtube.embeddedplayer.service.jar.client.k;
 import com.google.android.apps.youtube.embeddedplayer.service.jar.b;
 import android.os.Looper;
 import android.os.Handler$Callback;
@@ -18,8 +17,8 @@ import android.view.View;
 
 public final class f implements i
 {
-    public static final afft a;
-    public static final afft b;
+    public static final afhk a;
+    public static final afhk b;
     private String A;
     public final View c;
     public final h d;
@@ -34,7 +33,7 @@ public final class f implements i
     public int m;
     public e n;
     public final c o;
-    public final asiq p;
+    public final aslm p;
     private final a r;
     private final Rect s;
     private final Rect t;
@@ -46,8 +45,8 @@ public final class f implements i
     private String z;
     
     static {
-        a = afft.x((Object)"com.google.android.googlequicksearchbox", (Object)"com.google.android.apps.magazines", (Object)"com.google.android.apps.newsstand_exp", (Object)"com.google.android.apps.newsstand_internal", (Object)"com.google.android.apps.newsstand_staging", (Object)"com.google.android.apps.newsstanddev", (Object[])new String[] { "com.google.android.play.games" });
-        b = afft.x((Object)"com.android.vending", (Object)"com.google.android.apps.magazines", (Object)"com.google.android.apps.messaging", (Object)"com.google.android.apps.newsstand_exp", (Object)"com.google.android.apps.newsstand_internal", (Object)"com.google.android.apps.newsstand_staging", (Object[])new String[] { "com.google.android.apps.newsstanddev", "com.google.android.googlequicksearchbox", "com.google.android.music", "com.google.android.play.games" });
+        a = afhk.x("com.google.android.googlequicksearchbox", "com.google.android.apps.magazines", "com.google.android.apps.newsstand_exp", "com.google.android.apps.newsstand_internal", "com.google.android.apps.newsstand_staging", "com.google.android.apps.newsstanddev", "com.google.android.play.games");
+        b = afhk.x("com.android.vending", "com.google.android.apps.magazines", "com.google.android.apps.messaging", "com.google.android.apps.newsstand_exp", "com.google.android.apps.newsstand_internal", "com.google.android.apps.newsstand_staging", "com.google.android.apps.newsstanddev", "com.google.android.googlequicksearchbox", "com.google.android.music", "com.google.android.play.games");
     }
     
     private f(final View c, final a r, final h d, final c o) {
@@ -55,7 +54,7 @@ public final class f implements i
         final Random e = new Random();
         this.m = 4;
         this.n = com.google.android.apps.youtube.embeddedplayer.service.layoutpolicy.remoteloaded.e.a;
-        this.p = new asiq();
+        this.p = new aslm();
         c.getClass();
         this.c = c;
         this.r = r;
@@ -64,11 +63,11 @@ public final class f implements i
         d.getClass();
         this.d = d;
         this.e = e;
-        adkp.I(true, "normalMinimumPeriod must be >= 0");
-        adkp.I(true, "normalMaximumPeriod must be >= 0");
-        adkp.I(true, "recheckMinimumPeriod must be >= 0");
-        adkp.I(true, "recheckMaximumPeriod must be >= 0");
-        this.f = new Handler(mainLooper, (Handler$Callback)new bne(this, 4));
+        adme.L(true, "normalMinimumPeriod must be >= 0");
+        adme.L(true, "normalMaximumPeriod must be >= 0");
+        adme.L(true, "recheckMinimumPeriod must be >= 0");
+        adme.L(true, "recheckMaximumPeriod must be >= 0");
+        this.f = new Handler(mainLooper, (Handler$Callback)new bnh(this, 4));
         this.s = new Rect();
         this.t = new Rect();
         this.u = new Rect();
@@ -82,7 +81,7 @@ public final class f implements i
     
     public static f b(final View view, final a a, final h h, final c c) {
         final f f = new f(view, a, h, c);
-        f.p.c(com.google.android.apps.youtube.embeddedplayer.service.jar.b.a.a(new k(f, 11)));
+        f.p.c(com.google.android.apps.youtube.embeddedplayer.service.jar.b.a.a((asmi)new lol(f, 15)));
         return f;
     }
     
@@ -114,15 +113,15 @@ public final class f implements i
     @Override
     public final void c() {
         if (!this.j()) {
-            afse.p("Video playback stopped because of an unauthorized overlay on top of player. ".concat(String.valueOf(this.z)));
+            aftr.l("Video playback stopped because of an unauthorized overlay on top of player. ".concat(String.valueOf(this.z)));
             return;
         }
         if (!this.i()) {
-            afse.p("Video playback stopped because the player view is too small. ".concat(String.valueOf(this.A)));
+            aftr.l("Video playback stopped because the player view is too small. ".concat(String.valueOf(this.A)));
             return;
         }
         if (!this.l()) {
-            afse.p("Video playback stopped because the player view is not visible. ".concat(String.valueOf(this.l)));
+            aftr.l("Video playback stopped because the player view is not visible. ".concat(String.valueOf(this.l)));
         }
     }
     

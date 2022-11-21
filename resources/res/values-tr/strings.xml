@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Cihaz temasını kullan</string>
     <string name="app_theme_appearance_summary">Açık/koyu tema tercihinizi belirtin</string>
     <string name="app_theme_appearance_title">Görünüm</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Uygula</string>
     <string name="approve_playlist_sync">Yeni videoları senkronize et</string>
     <string name="audio_playback_failed_snackbar_action_button">Tekrar Dene</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Yayını Sonlandır</string>
     <string name="lc_retry_yes">Tekrar dene</string>
     <string name="lc_rotate_device">Cihazı döndürün</string>
+    <string name="lc_sharedmde_required_field_error">Başlık ve kitle alanlarının doldurulması zorunludur.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Dikey modda yayın</string>
     <string name="lc_stream_start_error">Yayın başlatılamıyor. Bağlantınızı kontrol edin.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Video önizlemesi. Duraklatmak için dokunun.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Video önizlemesi. Oynatmak için dokunun.</string>
     <string name="shorts_a11y_zoom_control">Yakınlaştırma denetimi</string>
+    <string name="shorts_audio_failure_toast">Ses eklenemedi. Lütfen tekrar deneyin.</string>
     <string name="shorts_camera_allow_access_subtitle">Kamera ve mikrofonunuza erişim izni verin</string>
     <string name="shorts_camera_allow_access_title">Kısa video oluştur</string>
     <string name="shorts_camera_close_confirmation_cancel">İptal</string>

@@ -4,25 +4,49 @@
 
 package com.google.android.apps.youtube.app.player.overlay;
 
-public class OverlayVerticalDragEngagementPanelResizeInputSource$1 implements tfh
+public class OverlayVerticalDragEngagementPanelResizeInputSource$1 implements tio
 {
-    public final /* synthetic */ iwq a;
+    public final ixx a;
     
-    public OverlayVerticalDragEngagementPanelResizeInputSource$1(final iwq a) {
+    public OverlayVerticalDragEngagementPanelResizeInputSource$1(final ixx a) {
         this.a = a;
     }
     
-    public final void oS(final aum aum) {
-        if (!aexs.f(this.a.a)) {
-            final iwq a = this.a;
-            a.b.c(((asgt)a.d).al((asix)new iws(this, 1)));
-            final iwq a2 = this.a;
-            a2.c.b(a2);
+    public final tik g() {
+        return tik.b;
+    }
+    
+    public final void lW(final aup aup) {
+    }
+    
+    public final void mp(final aup aup) {
+    }
+    
+    public final void mx(final aup aup) {
+    }
+    
+    public final void oO(final aup aup) {
+    }
+    
+    public final void oT(final aup aup) {
+        if (!afbj.f(this.a.a)) {
+            final ixx a = this.a;
+            a.b.c(((aske)a.d).am((asmi)new ixu(this, 2)));
+            final ixx a2 = this.a;
+            a2.c.b((abiy)a2);
         }
     }
     
-    public final void oW(final aum aum) {
-        final iwq a = this.a;
+    public final void oU() {
+        tgj.d((tio)this);
+    }
+    
+    public final void oX() {
+        tgj.c((tio)this);
+    }
+    
+    public final void oY(final aup aup) {
+        final ixx a = this.a;
         a.c.a.remove(a);
         this.a.b.b();
     }

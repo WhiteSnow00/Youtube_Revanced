@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Користи тему уређаја</string>
     <string name="app_theme_appearance_summary">Изаберите жељену тему, тамну или светлу</string>
     <string name="app_theme_appearance_title">Изглед</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Примени</string>
     <string name="approve_playlist_sync">Синхронизуј нове видео снимке</string>
     <string name="audio_playback_failed_snackbar_action_button">Пробај поново</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Заврши стрим</string>
     <string name="lc_retry_yes">Пробај поново</string>
     <string name="lc_rotate_device">Ротирајте уређај</string>
+    <string name="lc_sharedmde_required_field_error">Наслов и публика су обавезни.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Усправни стрим</string>
     <string name="lc_stream_start_error">Стрим не може да се покрене. Проверите везу.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Преглед видео снимка. Додирните да бисте паузирали.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Преглед видео снимка. Додирните да бисте играли.</string>
     <string name="shorts_a11y_zoom_control">Контрола зума</string>
+    <string name="shorts_audio_failure_toast">Додавање звука није успело. Пробајте поново.</string>
     <string name="shorts_camera_allow_access_subtitle">Дозволите приступ камери и микрофону</string>
     <string name="shorts_camera_allow_access_title">Направите Short</string>
     <string name="shorts_camera_close_confirmation_cancel">Откажи</string>

@@ -10,115 +10,115 @@ import com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnot
 import android.os.Parcel;
 import android.os.IBinder;
 
-public final class d extends eny implements f
+public final class d extends eoc implements f
 {
     public d(final IBinder binder) {
         super(binder, "com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.IControlsOverlayServiceListener");
     }
     
     public final void A(final int n) {
-        final Parcel qq = this.qQ();
-        qq.writeInt(n);
-        this.qS(9, qq);
+        final Parcel qv = this.qV();
+        qv.writeInt(n);
+        this.qX(9, qv);
     }
     
     public final void B() {
-        this.qS(21, this.qQ());
+        this.qX(21, this.qV());
     }
     
     public final void a() {
-        this.qS(10, this.qQ());
+        this.qX(10, this.qV());
     }
     
     public final void b() {
-        this.qS(12, this.qQ());
+        this.qX(12, this.qV());
     }
     
     public final void g() {
-        this.qS(7, this.qQ());
+        this.qX(7, this.qV());
     }
     
     public final void h() {
-        this.qS(24, this.qQ());
+        this.qX(24, this.qV());
     }
     
     public final void i() {
-        this.qS(2, this.qQ());
+        this.qX(2, this.qV());
     }
     
     public final void j() {
-        this.qS(1, this.qQ());
+        this.qX(1, this.qV());
     }
     
     public final void k() {
-        this.qS(17, this.qQ());
+        this.qX(17, this.qV());
     }
     
     public final void l() {
-        this.qS(8, this.qQ());
+        this.qX(8, this.qV());
     }
     
     public final void m() {
-        this.qS(5, this.qQ());
+        this.qX(5, this.qV());
     }
     
     public final void n() {
-        this.qS(4, this.qQ());
+        this.qX(4, this.qV());
     }
     
     public final void o() {
-        this.qS(15, this.qQ());
+        this.qX(15, this.qV());
     }
     
     public final void p() {
-        this.qS(14, this.qQ());
+        this.qX(14, this.qV());
     }
     
     public final void q() {
-        this.qS(3, this.qQ());
+        this.qX(3, this.qV());
     }
     
     public final void r(final long n) {
-        final Parcel qq = this.qQ();
-        qq.writeLong(n);
-        this.qS(6, qq);
+        final Parcel qv = this.qV();
+        qv.writeLong(n);
+        this.qX(6, qv);
     }
     
     public final void s() {
-        this.qS(23, this.qQ());
+        this.qX(23, this.qV());
     }
     
     public final void t() {
-        this.qS(22, this.qQ());
+        this.qX(22, this.qV());
     }
     
     public final void u() {
-        this.qS(11, this.qQ());
+        this.qX(11, this.qV());
     }
     
     public final void v() {
-        this.qS(19, this.qQ());
+        this.qX(19, this.qV());
     }
     
     public final void w(final SubscriptionNotificationMenuItem subscriptionNotificationMenuItem) {
-        final Parcel qq = this.qQ();
-        eoa.h(qq, (Parcelable)subscriptionNotificationMenuItem);
-        this.qS(20, qq);
+        final Parcel qv = this.qV();
+        eoe.h(qv, (Parcelable)subscriptionNotificationMenuItem);
+        this.qX(20, qv);
     }
     
     public final void x() {
-        this.qS(18, this.qQ());
+        this.qX(18, this.qV());
     }
     
     public final void y(final boolean b) {
-        final Parcel qq = this.qQ();
-        eoa.f(qq, b);
-        this.qS(13, qq);
+        final Parcel qv = this.qV();
+        eoe.f(qv, b);
+        this.qX(13, qv);
     }
     
     public final void z(final SubtitleTrack subtitleTrack) {
-        final Parcel qq = this.qQ();
-        eoa.h(qq, (Parcelable)subtitleTrack);
-        this.qS(16, qq);
+        final Parcel qv = this.qV();
+        eoe.h(qv, (Parcelable)subtitleTrack);
+        this.qX(16, qv);
     }
 }

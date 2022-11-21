@@ -15,21 +15,21 @@ import android.os.SystemClock;
 import android.app.Activity;
 import android.content.Context;
 
-public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
+public final class Shell_MediaSearchActivity extends evt implements aeqn, aerf
 {
-    private ewa m;
-    private final aerz n;
+    private ewc m;
+    private final aets n;
     private boolean o;
     private Context p;
-    private auo q;
+    private auq q;
     private boolean r;
     
     public Shell_MediaSearchActivity() {
-        this.n = aerz.a((Activity)this);
+        this.n = aets.a((Activity)this);
         SystemClock.elapsedRealtime();
     }
     
-    private final ewa n() {
+    private final ewc n() {
         this.o();
         return this.m;
     }
@@ -40,11 +40,11 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
         // 
         // Original Bytecode:
         // 
-        //     1: getfield        com/google/android/apps/youtube/app/application/Shell_MediaSearchActivity.m:Lewa;
-        //     4: ifnonnull       330
+        //     1: getfield        com/google/android/apps/youtube/app/application/Shell_MediaSearchActivity.m:Lewc;
+        //     4: ifnonnull       323
         //     7: aload_0        
         //     8: getfield        com/google/android/apps/youtube/app/application/Shell_MediaSearchActivity.o:Z
-        //    11: ifeq            320
+        //    11: ifeq            313
         //    14: aload_0        
         //    15: getfield        com/google/android/apps/youtube/app/application/Shell_MediaSearchActivity.r:Z
         //    18: ifeq            41
@@ -58,160 +58,161 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
         //    37: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
         //    40: athrow         
         //    41: ldc             "CreateComponent"
-        //    43: invokestatic    aeux.o:(Ljava/lang/String;)Laetf;
+        //    43: invokestatic    aewp.o:(Ljava/lang/String;)Laeux;
         //    46: astore_2       
         //    47: aload_0        
-        //    48: invokevirtual   evo.aR:()Ljava/lang/Object;
+        //    48: invokevirtual   evq.aR:()Ljava/lang/Object;
         //    51: pop            
         //    52: aload_2        
-        //    53: invokevirtual   aetf.close:()V
+        //    53: invokevirtual   aeux.close:()V
         //    56: ldc             "CreatePeer"
-        //    58: invokestatic    aeux.o:(Ljava/lang/String;)Laetf;
+        //    58: invokestatic    aewp.o:(Ljava/lang/String;)Laeux;
         //    61: astore_1       
         //    62: aload_0        
-        //    63: invokevirtual   evo.aR:()Ljava/lang/Object;
+        //    63: invokevirtual   evq.aR:()Ljava/lang/Object;
         //    66: astore          5
         //    68: aload           5
-        //    70: checkcast       Lesp;
-        //    73: getfield        esp.b:Leqy;
-        //    76: getfield        eqy.kz:Latke;
-        //    79: invokeinterface atke.a:()Ljava/lang/Object;
+        //    70: checkcast       Lesr;
+        //    73: getfield        esr.b:Lera;
+        //    76: getfield        era.jR:Latnb;
+        //    79: invokeinterface atnb.a:()Ljava/lang/Object;
         //    84: checkcast       Lcom/google/android/apps/youtube/embeddedplayer/service/clientinfo/service/c;
         //    87: astore_2       
         //    88: aload           5
-        //    90: checkcast       Lesp;
-        //    93: getfield        esp.d:Latke;
-        //    96: invokeinterface atke.a:()Ljava/lang/Object;
+        //    90: checkcast       Lesr;
+        //    93: getfield        esr.d:Latnb;
+        //    96: invokeinterface atnb.a:()Ljava/lang/Object;
         //   101: checkcast       Landroid/app/Activity;
-        //   104: astore          4
-        //   106: aload           4
-        //   108: instanceof      Lcom/google/android/apps/youtube/app/application/Shell_MediaSearchActivity;
-        //   111: ifeq            197
-        //   114: aload           4
-        //   116: checkcast       Lcom/google/android/apps/youtube/app/application/Shell_MediaSearchActivity;
-        //   119: astore_3       
-        //   120: aload_3        
-        //   121: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
-        //   124: pop            
-        //   125: aload           5
-        //   127: checkcast       Lesp;
-        //   130: getfield        esp.e:Latke;
-        //   133: invokeinterface atke.a:()Ljava/lang/Object;
-        //   138: checkcast       Laeij;
-        //   141: astore          4
-        //   143: aload           5
-        //   145: checkcast       Lesp;
-        //   148: getfield        esp.b:Leqy;
-        //   151: getfield        eqy.a:Lera;
-        //   154: getfield        era.co:Latke;
-        //   157: invokeinterface atke.a:()Ljava/lang/Object;
-        //   162: checkcast       Lrzv;
-        //   165: astore          5
-        //   167: new             Lewa;
-        //   170: astore          6
-        //   172: aload           6
-        //   174: aload_2        
+        //   104: astore_3       
+        //   105: aload_3        
+        //   106: instanceof      Lcom/google/android/apps/youtube/app/application/Shell_MediaSearchActivity;
+        //   109: ifeq            196
+        //   112: aload_3        
+        //   113: checkcast       Lcom/google/android/apps/youtube/app/application/Shell_MediaSearchActivity;
+        //   116: astore          4
+        //   118: aload           4
+        //   120: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
+        //   123: pop            
+        //   124: aload           5
+        //   126: checkcast       Lesr;
+        //   129: getfield        esr.e:Latnb;
+        //   132: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   137: checkcast       Laekc;
+        //   140: astore_3       
+        //   141: aload           5
+        //   143: checkcast       Lesr;
+        //   146: getfield        esr.b:Lera;
+        //   149: getfield        era.a:Lerc;
+        //   152: getfield        erc.cp:Latnb;
+        //   155: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   160: checkcast       Lsaw;
+        //   163: astore          6
+        //   165: new             Lewc;
+        //   168: astore          5
+        //   170: aload           5
+        //   172: aload_2        
+        //   173: aload           4
         //   175: aload_3        
-        //   176: aload           4
-        //   178: aload           5
+        //   176: aload           6
+        //   178: aconst_null    
+        //   179: aconst_null    
         //   180: aconst_null    
         //   181: aconst_null    
-        //   182: aconst_null    
-        //   183: invokespecial   ewa.<init>:(Lcom/google/android/apps/youtube/embeddedplayer/service/clientinfo/service/c;Lcom/google/android/apps/youtube/app/application/Shell_MediaSearchActivity;Laeij;Lrzv;[B[B[B)V
-        //   186: aload_0        
-        //   187: aload           6
-        //   189: putfield        com/google/android/apps/youtube/app/application/Shell_MediaSearchActivity.m:Lewa;
-        //   192: aload_1        
-        //   193: invokevirtual   aetf.close:()V
-        //   196: return         
-        //   197: new             Ljava/lang/IllegalStateException;
-        //   200: astore_3       
-        //   201: ldc             Lewa;.class
-        //   203: invokevirtual   java/lang/Object.toString:()Ljava/lang/String;
-        //   206: astore_2       
-        //   207: aload           4
-        //   209: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
-        //   212: invokestatic    java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
-        //   215: astore          4
-        //   217: new             Ljava/lang/StringBuilder;
-        //   220: astore          5
-        //   222: aload           5
-        //   224: ldc             "Attempt to inject a Activity wrapper of type "
-        //   226: invokespecial   java/lang/StringBuilder.<init>:(Ljava/lang/String;)V
-        //   229: aload           5
-        //   231: aload_2        
-        //   232: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   235: pop            
-        //   236: aload           5
-        //   238: ldc             ", but the wrapper available is of type: "
-        //   240: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   243: pop            
-        //   244: aload           5
-        //   246: aload           4
-        //   248: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   251: pop            
-        //   252: aload           5
-        //   254: ldc             ". Does your peer's @Inject constructor reference the wrong wrapper class?"
-        //   256: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   259: pop            
-        //   260: aload_3        
-        //   261: aload           5
-        //   263: invokevirtual   java/lang/StringBuilder.toString:()Ljava/lang/String;
-        //   266: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
-        //   269: aload_3        
-        //   270: athrow         
-        //   271: astore_2       
-        //   272: goto            289
-        //   275: astore_2       
-        //   276: new             Ljava/lang/IllegalStateException;
-        //   279: astore_3       
+        //   182: invokespecial   ewc.<init>:(Lcom/google/android/apps/youtube/embeddedplayer/service/clientinfo/service/c;Lcom/google/android/apps/youtube/app/application/Shell_MediaSearchActivity;Laekc;Lsaw;[B[B[B[B)V
+        //   185: aload_0        
+        //   186: aload           5
+        //   188: putfield        com/google/android/apps/youtube/app/application/Shell_MediaSearchActivity.m:Lewc;
+        //   191: aload_1        
+        //   192: invokevirtual   aeux.close:()V
+        //   195: return         
+        //   196: new             Ljava/lang/IllegalStateException;
+        //   199: astore_2       
+        //   200: ldc             Lewc;.class
+        //   202: invokevirtual   java/lang/Object.toString:()Ljava/lang/String;
+        //   205: astore          4
+        //   207: aload_3        
+        //   208: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
+        //   211: invokestatic    java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+        //   214: astore          5
+        //   216: new             Ljava/lang/StringBuilder;
+        //   219: astore_3       
+        //   220: aload_3        
+        //   221: ldc             "Attempt to inject a Activity wrapper of type "
+        //   223: invokespecial   java/lang/StringBuilder.<init>:(Ljava/lang/String;)V
+        //   226: aload_3        
+        //   227: aload           4
+        //   229: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   232: pop            
+        //   233: aload_3        
+        //   234: ldc             ", but the wrapper available is of type: "
+        //   236: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   239: pop            
+        //   240: aload_3        
+        //   241: aload           5
+        //   243: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   246: pop            
+        //   247: aload_3        
+        //   248: ldc             ". Does your peer's @Inject constructor reference the wrong wrapper class?"
+        //   250: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   253: pop            
+        //   254: aload_2        
+        //   255: aload_3        
+        //   256: invokevirtual   java/lang/StringBuilder.toString:()Ljava/lang/String;
+        //   259: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
+        //   262: aload_2        
+        //   263: athrow         
+        //   264: astore_2       
+        //   265: goto            282
+        //   268: astore_2       
+        //   269: new             Ljava/lang/IllegalStateException;
+        //   272: astore_3       
+        //   273: aload_3        
+        //   274: ldc             "Missing entry point. If you're in a test with explicit entry points specified in your @TestRoot, check that you're not missing the one for this class."
+        //   276: aload_2        
+        //   277: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;Ljava/lang/Throwable;)V
         //   280: aload_3        
-        //   281: ldc             "Missing entry point. If you're in a test with explicit entry points specified in your @TestRoot, check that you're not missing the one for this class."
-        //   283: aload_2        
-        //   284: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;Ljava/lang/Throwable;)V
-        //   287: aload_3        
-        //   288: athrow         
-        //   289: aload_1        
-        //   290: invokevirtual   aetf.close:()V
-        //   293: goto            302
-        //   296: astore_1       
-        //   297: aload_2        
-        //   298: aload_1        
-        //   299: invokestatic    ezt.a:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-        //   302: aload_2        
-        //   303: athrow         
-        //   304: astore_1       
-        //   305: aload_2        
-        //   306: invokevirtual   aetf.close:()V
-        //   309: goto            318
-        //   312: astore_2       
-        //   313: aload_1        
-        //   314: aload_2        
-        //   315: invokestatic    ezt.a:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-        //   318: aload_1        
-        //   319: athrow         
-        //   320: new             Ljava/lang/IllegalStateException;
-        //   323: dup            
-        //   324: ldc             "createPeer() called outside of onCreate"
-        //   326: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
-        //   329: athrow         
-        //   330: return         
+        //   281: athrow         
+        //   282: aload_1        
+        //   283: invokevirtual   aeux.close:()V
+        //   286: goto            295
+        //   289: astore_1       
+        //   290: aload_2        
+        //   291: aload_1        
+        //   292: invokestatic    ffa.h:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   295: aload_2        
+        //   296: athrow         
+        //   297: astore_1       
+        //   298: aload_2        
+        //   299: invokevirtual   aeux.close:()V
+        //   302: goto            311
+        //   305: astore_2       
+        //   306: aload_1        
+        //   307: aload_2        
+        //   308: invokestatic    ffa.h:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   311: aload_1        
+        //   312: athrow         
+        //   313: new             Ljava/lang/IllegalStateException;
+        //   316: dup            
+        //   317: ldc             "createPeer() called outside of onCreate"
+        //   319: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
+        //   322: athrow         
+        //   323: return         
         //    Exceptions:
         //  Try           Handler
         //  Start  End    Start  End    Type                          
         //  -----  -----  -----  -----  ------------------------------
-        //  47     52     304    320    Any
-        //  62     68     275    289    Ljava/lang/ClassCastException;
-        //  62     68     271    304    Any
-        //  68     192    271    304    Any
-        //  197    271    271    304    Any
-        //  276    289    271    304    Any
-        //  289    293    296    302    Any
-        //  305    309    312    318    Any
+        //  47     52     297    313    Any
+        //  62     68     268    282    Ljava/lang/ClassCastException;
+        //  62     68     264    297    Any
+        //  68     191    264    297    Any
+        //  196    264    264    297    Any
+        //  269    282    264    297    Any
+        //  282    286    289    295    Any
+        //  298    302    305    311    Any
         // 
         // The error that occurred was:
         // 
-        // java.lang.IllegalStateException: Expression is linked from several locations: Label_0289:
+        // java.lang.IllegalStateException: Expression is linked from several locations: Label_0282:
         //     at com.strobel.decompiler.ast.Error.expressionLinkedFromMultipleLocations(Error.java:27)
         //     at com.strobel.decompiler.ast.AstOptimizer.mergeDisparateObjectInitializations(AstOptimizer.java:2604)
         //     at com.strobel.decompiler.ast.AstOptimizer.optimize(AstOptimizer.java:235)
@@ -235,7 +236,7 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
     }
     
     public final /* bridge */ Object aN() {
-        final ewa m = this.m;
+        final ewc m = this.m;
         if (m == null) {
             throw new IllegalStateException("peer() called before initialized.");
         }
@@ -250,18 +251,18 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
         if ((context = this.getBaseContext()) == null) {
             context = this.p;
         }
-        aeuz.c(context);
+        agsk.ag(context);
         super.applyOverrideConfiguration(configuration);
     }
     
     protected final void attachBaseContext(final Context p) {
-        aeuz.b(this.p = p);
+        agsk.af(this.p = p);
         super.attachBaseContext(p);
         this.p = null;
     }
     
-    public final arku b() {
-        return (arku)aeps.a((Activity)this);
+    public final arno b() {
+        return aerl.a((Activity)this);
     }
     
     public final int e() {
@@ -274,7 +275,7 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
     }
     
     public final void finish() {
-        final aett b = this.n.b();
+        final aevl b = this.n.b();
         try {
             super.finish();
             b.close();
@@ -286,7 +287,7 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                ezt.a(t, t2);
+                ffa.h(t, t2);
             }
         }
     }
@@ -295,11 +296,11 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
         return 0;
     }
     
-    public final aui getLifecycle() {
+    public final auk getLifecycle() {
         if (this.q == null) {
-            this.q = (auo)new aepn((bu)this);
+            this.q = new aerg((bu)this);
         }
-        return (aui)this.q;
+        return (auk)this.q;
     }
     
     protected final Class i() {
@@ -308,7 +309,7 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
     }
     
     public final void invalidateOptionsMenu() {
-        final aett s = aeux.s();
+        final aevl s = aewp.s();
         try {
             super.invalidateOptionsMenu();
             s.close();
@@ -320,7 +321,7 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                ezt.a(t, t2);
+                ffa.h(t, t2);
             }
         }
     }
@@ -334,24 +335,24 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
     }
     
     protected final void onActivityResult(final int n, final int n2, final Intent intent) {
-        final aett q = this.n.q();
+        final aevl r = this.n.r();
         try {
             super.onActivityResult(n, n2, intent);
-            q.close();
+            r.close();
         }
         finally {
             try {
-                q.close();
+                r.close();
             }
             finally {
                 final Throwable t;
-                ezt.a((Throwable)intent, t);
+                ffa.h((Throwable)intent, t);
             }
         }
     }
     
     public final void onBackPressed() {
-        final aett c = this.n.c();
+        final aevl c = this.n.c();
         try {
             super.onBackPressed();
             c.close();
@@ -363,74 +364,74 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                ezt.a(t, t2);
+                ffa.h(t, t2);
             }
         }
     }
     
     public final void onConfigurationChanged(final Configuration configuration) {
-        final aett r = this.n.r();
+        final aevl s = this.n.s();
         try {
             super.onConfigurationChanged(configuration);
-            r.close();
+            s.close();
         }
         finally {
             try {
-                r.close();
+                s.close();
             }
             finally {
                 final Throwable t;
-                ezt.a((Throwable)configuration, t);
+                ffa.h((Throwable)configuration, t);
             }
         }
     }
     
     protected final void onCreate(final Bundle bundle) {
-        final aett s = this.n.s();
+        final aevl t = this.n.t();
         try {
             this.o = true;
             this.o();
-            ((aepn)((dh)this).getLifecycle()).h(this.n);
-            ((aepr)((evo)this).aR()).xU().i();
+            ((aerg)((dh)this).getLifecycle()).h(this.n);
+            ((aerk)((evq)this).aR()).xT().i();
             super.onCreate(bundle);
             this.o = false;
-            if (s != null) {
-                s.close();
+            if (t != null) {
+                t.close();
             }
         }
         finally {
-            if (s != null) {
+            if (t != null) {
                 try {
-                    s.close();
+                    t.close();
                 }
                 finally {
-                    final Throwable t;
-                    ezt.a((Throwable)bundle, t);
+                    final Throwable t2;
+                    ffa.h((Throwable)bundle, t2);
                 }
             }
         }
     }
     
     public final boolean onCreatePanelMenu(final int n, final Menu menu) {
-        final aett t = this.n.t();
+        final aevl u = this.n.u();
         try {
             super.onCreatePanelMenu(n, menu);
-            t.close();
+            u.close();
             return true;
         }
         finally {
             try {
-                t.close();
+                u.close();
             }
             finally {
-                final Throwable t2;
-                ezt.a((Throwable)menu, t2);
+                final Throwable t;
+                ffa.h((Throwable)menu, t);
             }
         }
     }
     
     protected final void onDestroy() {
-        final aett d = this.n.d();
+        final aevl d = this.n.d();
         try {
             super.onDestroy();
             this.r = true;
@@ -443,16 +444,16 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                ezt.a(t, t2);
+                ffa.h(t, t2);
             }
         }
     }
     
-    protected final void onLocalesChanged(final ajp ajp) {
+    protected final void onLocalesChanged(final ajq ajq) {
     }
     
     protected final void onNewIntent(final Intent intent) {
-        final aett e = this.n.e(intent);
+        final aevl e = this.n.e(intent);
         try {
             super.onNewIntent(intent);
             if (e != null) {
@@ -466,7 +467,7 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
                 }
                 finally {
                     final Throwable t;
-                    ezt.a((Throwable)intent, t);
+                    ffa.h((Throwable)intent, t);
                 }
             }
         }
@@ -476,25 +477,25 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
     }
     
     public final boolean onOptionsItemSelected(final MenuItem menuItem) {
-        final aett u = this.n.u();
+        final aevl v = this.n.v();
         try {
             final boolean onOptionsItemSelected = super.onOptionsItemSelected(menuItem);
-            u.close();
+            v.close();
             return onOptionsItemSelected;
         }
         finally {
             try {
-                u.close();
+                v.close();
             }
             finally {
                 final Throwable t;
-                ezt.a((Throwable)menuItem, t);
+                ffa.h((Throwable)menuItem, t);
             }
         }
     }
     
     protected final void onPause() {
-        final aett f = this.n.f();
+        final aevl f = this.n.f();
         try {
             super.onPause();
             if (f != null) {
@@ -509,52 +510,52 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    ezt.a(t, t2);
+                    ffa.h(t, t2);
                 }
             }
         }
     }
     
     public final void onPictureInPictureModeChanged(final boolean b, final Configuration configuration) {
-        final aett v = this.n.v();
+        final aevl w = this.n.w();
         try {
             super.onPictureInPictureModeChanged(b, configuration);
-            v.close();
+            w.close();
         }
         finally {
             try {
-                v.close();
+                w.close();
             }
             finally {
                 final Throwable t;
-                ezt.a((Throwable)configuration, t);
+                ffa.h((Throwable)configuration, t);
             }
         }
     }
     
     protected final void onPostCreate(final Bundle bundle) {
-        final aett w = this.n.w();
+        final aevl x = this.n.x();
         try {
             super.onPostCreate(bundle);
-            if (w != null) {
-                w.close();
+            if (x != null) {
+                x.close();
             }
         }
         finally {
-            if (w != null) {
+            if (x != null) {
                 try {
-                    w.close();
+                    x.close();
                 }
                 finally {
                     final Throwable t;
-                    ezt.a((Throwable)bundle, t);
+                    ffa.h((Throwable)bundle, t);
                 }
             }
         }
     }
     
     protected final void onPostResume() {
-        final aett g = this.n.g();
+        final aevl g = this.n.g();
         try {
             super.onPostResume();
             g.close();
@@ -566,13 +567,13 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                ezt.a(t, t2);
+                ffa.h(t, t2);
             }
         }
     }
     
     public final boolean onPrepareOptionsMenu(final Menu menu) {
-        final aett s = aeux.s();
+        final aevl s = aewp.s();
         try {
             final boolean onPrepareOptionsMenu = super.onPrepareOptionsMenu(menu);
             s.close();
@@ -584,30 +585,30 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
             }
             finally {
                 final Throwable t;
-                ezt.a((Throwable)menu, t);
+                ffa.h((Throwable)menu, t);
             }
         }
     }
     
     public final void onRequestPermissionsResult(final int n, final String[] array, final int[] array2) {
-        final aett x = this.n.x();
+        final aevl y = this.n.y();
         try {
             super.onRequestPermissionsResult(n, array, array2);
-            x.close();
+            y.close();
         }
         finally {
             try {
-                x.close();
+                y.close();
             }
             finally {
                 final Throwable t;
-                ezt.a((Throwable)(Object)array, t);
+                ffa.h((Throwable)(Object)array, t);
             }
         }
     }
     
     protected final void onResume() {
-        final aett h = this.n.h();
+        final aevl h = this.n.h();
         try {
             super.onResume();
             if (h != null) {
@@ -622,35 +623,35 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    ezt.a(t, t2);
+                    ffa.h(t, t2);
                 }
             }
         }
     }
     
     protected final void onSaveInstanceState(final Bundle bundle) {
-        final aett y = this.n.y();
+        final aevl z = this.n.z();
         try {
             super.onSaveInstanceState(bundle);
-            if (y != null) {
-                y.close();
+            if (z != null) {
+                z.close();
             }
         }
         finally {
-            if (y != null) {
+            if (z != null) {
                 try {
-                    y.close();
+                    z.close();
                 }
                 finally {
                     final Throwable t;
-                    ezt.a((Throwable)bundle, t);
+                    ffa.h((Throwable)bundle, t);
                 }
             }
         }
     }
     
     protected final void onStart() {
-        final aett i = this.n.i();
+        final aevl i = this.n.i();
         try {
             super.onStart();
             if (i != null) {
@@ -665,14 +666,14 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    ezt.a(t, t2);
+                    ffa.h(t, t2);
                 }
             }
         }
     }
     
     protected final void onStop() {
-        final aett j = this.n.j();
+        final aevl j = this.n.j();
         try {
             super.onStop();
             if (j != null) {
@@ -687,14 +688,14 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    ezt.a(t, t2);
+                    ffa.h(t, t2);
                 }
             }
         }
     }
     
     public final boolean onSupportNavigateUp() {
-        final aett k = this.n.k();
+        final aevl k = this.n.k();
         try {
             final boolean onSupportNavigateUp = super.onSupportNavigateUp();
             k.close();
@@ -707,13 +708,13 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                ezt.a(t, t2);
+                ffa.h(t, t2);
             }
         }
     }
     
     public final void onUserInteraction() {
-        final aett l = this.n.l();
+        final aevl l = this.n.l();
         try {
             super.onUserInteraction();
             l.close();
@@ -725,21 +726,21 @@ public final class Shell_MediaSearchActivity extends evr implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                ezt.a(t, t2);
+                ffa.h(t, t2);
             }
         }
     }
     
     public final void startActivity(final Intent intent) {
-        if (aefb.P(intent, this.getApplicationContext())) {
-            aeun.j(intent);
+        if (adme.ah(intent, this.getApplicationContext())) {
+            aewf.j(intent);
         }
         super.startActivity(intent);
     }
     
     public final void startActivity(final Intent intent, final Bundle bundle) {
-        if (aefb.P(intent, this.getApplicationContext())) {
-            aeun.j(intent);
+        if (adme.ah(intent, this.getApplicationContext())) {
+            aewf.j(intent);
         }
         super.startActivity(intent, bundle);
     }

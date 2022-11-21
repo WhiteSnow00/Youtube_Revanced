@@ -9,58 +9,58 @@ import android.os.Parcel;
 import android.graphics.Rect;
 import android.os.IBinder;
 
-public final class d extends enz implements f
+public final class d extends eoc implements f
 {
     public d(final IBinder binder) {
         super(binder, "com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.shared.ISurfaceHolderClient");
     }
     
     public final Rect a() {
-        final Parcel qx = this.qX(3, this.qW());
-        final Rect rect = (Rect)eob.a(qx, Rect.CREATOR);
-        qx.recycle();
+        final Parcel qw = this.qW(3, this.qV());
+        final Rect rect = (Rect)eoe.a(qw, Rect.CREATOR);
+        qw.recycle();
         return rect;
     }
     
     public final void b(final int n, final int n2) {
-        final Parcel qw = this.qW();
-        qw.writeInt(n);
-        qw.writeInt(n2);
-        this.qY(5, qw);
+        final Parcel qv = this.qV();
+        qv.writeInt(n);
+        qv.writeInt(n2);
+        this.qX(5, qv);
     }
     
     public final void g(final int n) {
-        final Parcel qw = this.qW();
-        qw.writeInt(n);
-        this.qY(6, qw);
+        final Parcel qv = this.qV();
+        qv.writeInt(n);
+        this.qX(6, qv);
     }
     
     public final void h(final boolean b) {
-        final Parcel qw = this.qW();
-        eob.f(qw, b);
-        this.qY(4, qw);
+        final Parcel qv = this.qV();
+        eoe.f(qv, b);
+        this.qX(4, qv);
     }
     
     public final void i() {
-        this.qY(7, this.qW());
+        this.qX(7, this.qV());
     }
     
     public final void j(final i i) {
-        final Parcel qw = this.qW();
-        eob.j(qw, (IInterface)i);
-        this.qY(1, qw);
+        final Parcel qv = this.qV();
+        eoe.j(qv, (IInterface)i);
+        this.qX(1, qv);
     }
     
     public final void k(final int n) {
-        final Parcel qw = this.qW();
-        qw.writeInt(n);
-        this.qY(8, qw);
+        final Parcel qv = this.qV();
+        qv.writeInt(n);
+        this.qX(8, qv);
     }
     
     public final boolean l() {
-        final Parcel qx = this.qX(2, this.qW());
-        final boolean k = eob.k(qx);
-        qx.recycle();
+        final Parcel qw = this.qW(2, this.qV());
+        final boolean k = eoe.k(qw);
+        qw.recycle();
         return k;
     }
 }

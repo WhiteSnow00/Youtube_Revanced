@@ -12,11 +12,11 @@ public abstract class FragmentKeyData implements BusSupported$Data
     public static final Parcelable$Creator CREATOR;
     
     static {
-        CREATOR = (Parcelable$Creator)new ics(15);
+        CREATOR = (Parcelable$Creator)new idb(15);
     }
     
-    public static elx b() {
-        return new elx((short[])null);
+    public static ema b() {
+        return new ema();
     }
     
     public abstract String a();

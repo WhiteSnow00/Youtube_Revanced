@@ -50,11 +50,11 @@
     <string name="litho_channel_guidelines_off">चॅनेल मार्गदर्शक तत्त्वे दर्शविली आहेत</string>
     <string name="litho_channel_guidelines_on">चॅनल मार्गदर्शक तत्त्वे लपवलेली आहेत</string>
     <string name="litho_community_guidelines">समुदाय मार्गदर्शक तत्त्वे काढा</string>
+    <string name="accessibility_settings_edu_opt_in_text">व्हिडिओ प्लेअर साठी ॲक्सेसिबिल्टी कंट्रोल चालू करा?</string>
+    <string name="accessibility_settings_edu_opt_out_text">तुमची नियंत्रणे सुधारित केली आहेत कारण accessibility सेवा सुरू आहे.</string>
     <string name="litho_community_guidelines_off">समुदाय मार्गदर्शक तत्त्वे दर्शविली आहेत</string>
     <string name="litho_community_guidelines_on">समुदाय मार्गदर्शक तत्त्वे लपलेली आहेत</string>
     <string name="litho_community_posts">समुदाय पोस्ट काढा</string>
-    <string name="accessibility_settings_edu_opt_in_text">व्हिडिओ प्लेअर साठी ॲक्सेसिबिल्टी कंट्रोल चालू करा?</string>
-    <string name="accessibility_settings_edu_opt_out_text">तुमची नियंत्रणे सुधारित केली आहेत कारण accessibility सेवा सुरू आहे.</string>
     <string name="litho_community_posts_off">समुदाय पोस्ट दाखवल्या आहेत</string>
     <string name="litho_community_posts_on">समुदाय पोस्ट लपवल्या आहेत</string>
     <string name="litho_compact_banner">कॉम्पॅक्ट बॅनर काढा</string>

@@ -16,8 +16,8 @@ import android.content.ContentProvider;
 
 public class YouTubeSuggestionProvider extends ContentProvider
 {
-    private final acww a() {
-        return ((jle)ahbz.az(this.getContext(), (Class)jle.class)).zQ().p();
+    private final adal a() {
+        return ((jmr)aegu.N(this.getContext(), jmr.class)).AC().p();
     }
     
     public final int delete(final Uri uri, final String s, final String[] array) {
@@ -29,9 +29,9 @@ public class YouTubeSuggestionProvider extends ContentProvider
     }
     
     public final Uri insert(final Uri uri, final ContentValues contentValues) {
-        final acww a = this.a();
+        final adal a = this.a();
         if (a.a.f && !a.c.c().g()) {
-            ((SQLiteOpenHelper)a.m.b).getWritableDatabase().insert("suggestions", "query", contentValues);
+            ((SQLiteOpenHelper)a.m.a).getWritableDatabase().insert("suggestions", "query", contentValues);
         }
         return null;
     }
@@ -48,17 +48,17 @@ public class YouTubeSuggestionProvider extends ContentProvider
         else {
             lowerCase = "";
         }
-        array = (String[])(Object)new acwt();
+        array = (String[])(Object)new adai();
         try {
             final Collection h = this.a().h(lowerCase);
-            ((acwt)(Object)array).a.clear();
+            ((adai)(Object)array).a.clear();
             final Iterator iterator = h.iterator();
             while (iterator.hasNext()) {
-                ((acwt)(Object)array).a.add(iterator.next());
+                ((adai)(Object)array).a.add(iterator.next());
             }
         }
         catch (final IOException ex) {
-            trn.n("error fetching suggestions", (Throwable)ex);
+            tut.n("error fetching suggestions", (Throwable)ex);
         }
         return (Cursor)(Object)array;
     }

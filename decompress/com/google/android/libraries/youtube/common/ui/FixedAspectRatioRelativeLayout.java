@@ -26,7 +26,7 @@ public class FixedAspectRatioRelativeLayout extends RelativeLayout
     
     public FixedAspectRatioRelativeLayout(final Context context, final AttributeSet set) {
         super(context, set);
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, tqs.d);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, trt.d);
         this.a = obtainStyledAttributes.getFraction(0, 1, 1, 1.0f);
         this.b = obtainStyledAttributes.getBoolean(1, false);
         this.c = obtainStyledAttributes.getDimensionPixelSize(3, Integer.MAX_VALUE);

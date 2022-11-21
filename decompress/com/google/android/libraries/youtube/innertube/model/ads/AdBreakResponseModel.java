@@ -15,26 +15,26 @@ import android.os.Parcelable;
 public class AdBreakResponseModel implements Parcelable
 {
     public static final Parcelable$Creator CREATOR;
-    public final akes a;
+    public final akiw a;
     private final long b;
     
     static {
-        CREATOR = (Parcelable$Creator)new uik(11);
+        CREATOR = (Parcelable$Creator)new ulj(11);
     }
     
-    public AdBreakResponseModel(final akes a, final long b) {
+    public AdBreakResponseModel(final akiw a, final long b) {
         a.getClass();
         this.a = a;
         this.b = b;
     }
     
-    public final ahiv a() {
+    public final ahmk a() {
         if (this.a.c.size() == 0) {
             return null;
         }
-        for (final aket aket : this.a.c) {
-            if (aket.b == 84813246) {
-                return (ahiv)aket.c;
+        for (final akix akix : this.a.c) {
+            if (akix.b == 84813246) {
+                return (ahmk)akix.c;
             }
         }
         return null;
@@ -45,28 +45,28 @@ public class AdBreakResponseModel implements Parcelable
         if (this.a.c.size() == 0) {
             return list;
         }
-        final Iterator<Object> iterator = this.a.c.iterator();
-        ahiv a;
-        aket aket;
+        final Iterator<Object> iterator = ((List<Object>)this.a.c).iterator();
+        ahmk a;
+        akix akix;
         do {
             final Object d = list;
             if (!iterator.hasNext()) {
                 return (List)d;
             }
-            aket = iterator.next();
-            if (aket.b == 84813246) {
-                a = (ahiv)aket.c;
+            akix = iterator.next();
+            if (akix.b == 84813246) {
+                a = (ahmk)akix.c;
             }
             else {
-                a = ahiv.a;
+                a = ahmk.a;
             }
         } while (a.d.size() <= 0);
-        ahiv a2;
-        if (aket.b == 84813246) {
-            a2 = (ahiv)aket.c;
+        ahmk a2;
+        if (akix.b == 84813246) {
+            a2 = (ahmk)akix.c;
         }
         else {
-            a2 = ahiv.a;
+            a2 = ahmk.a;
         }
         final Object d = a2.d;
         return (List)d;
@@ -81,7 +81,7 @@ public class AdBreakResponseModel implements Parcelable
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        aeda.au(parcel, (MessageLite)this.a);
+        adzw.aD(parcel, (MessageLite)this.a);
         parcel.writeLong(this.b);
     }
 }

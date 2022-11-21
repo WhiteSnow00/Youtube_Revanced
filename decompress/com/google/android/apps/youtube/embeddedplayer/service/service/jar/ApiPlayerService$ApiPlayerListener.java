@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.os.RemoteException;
 import com.google.android.apps.youtube.embeddedplayer.service.jar.client.g;
 
-final class ApiPlayerService$ApiPlayerListener implements loq
+final class ApiPlayerService$ApiPlayerListener implements lpd
 {
     public g a;
     
@@ -242,7 +242,7 @@ final class ApiPlayerService$ApiPlayerListener implements loq
             return;
         }
         try {
-            a.j(afse.q(n));
+            a.j(aftr.m(n));
         }
         catch (final RemoteException ex) {}
     }

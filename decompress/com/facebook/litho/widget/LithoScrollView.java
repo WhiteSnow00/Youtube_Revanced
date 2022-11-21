@@ -13,14 +13,14 @@ import android.content.Context;
 import android.view.ViewTreeObserver$OnPreDrawListener;
 import androidx.core.widget.NestedScrollView;
 
-public class LithoScrollView extends NestedScrollView implements duw
+public class LithoScrollView extends NestedScrollView implements duz
 {
-    public final dvu d;
+    public final dvx d;
     public ViewTreeObserver$OnPreDrawListener e;
     public boolean f;
-    public ebv g;
-    public aulc h;
-    private elx i;
+    public eby g;
+    public aunx h;
+    private ema i;
     
     public LithoScrollView(final Context context) {
         this(context, null);
@@ -32,7 +32,7 @@ public class LithoScrollView extends NestedScrollView implements duw
     
     public LithoScrollView(final Context context, final AttributeSet set, final int n) {
         super(context, set, n);
-        this.addView((View)(this.d = new dvu(context)));
+        this.addView((View)(this.d = new dvx(context)));
     }
     
     public final void a(final List list) {
@@ -41,7 +41,7 @@ public class LithoScrollView extends NestedScrollView implements duw
     
     public final void c(final int n) {
         super.c(n);
-        final ebv g = this.g;
+        final eby g = this.g;
         if (g != null) {
             g.d();
         }
@@ -52,7 +52,7 @@ public class LithoScrollView extends NestedScrollView implements duw
     }
     
     public final boolean dispatchTouchEvent(final MotionEvent motionEvent) {
-        final elx i = this.i;
+        final ema i = this.i;
         if (i != null) {
             i.k((View)this, motionEvent);
         }
@@ -61,7 +61,7 @@ public class LithoScrollView extends NestedScrollView implements duw
     
     public final void draw(final Canvas canvas) {
         super.draw(canvas);
-        final ebv g = this.g;
+        final eby g = this.g;
         if (g != null) {
             g.a((View)this);
         }
@@ -76,11 +76,11 @@ public class LithoScrollView extends NestedScrollView implements duw
         if (this.f) {
             this.d.t();
         }
-        final aulc h = this.h;
+        final aunx h = this.h;
         if (h != null) {
             h.a = this.getScrollY();
         }
-        final ebv g = this.g;
+        final eby g = this.g;
         if (g != null) {
             g.b((View)this);
         }
@@ -88,18 +88,18 @@ public class LithoScrollView extends NestedScrollView implements duw
     
     public final boolean onTouchEvent(final MotionEvent motionEvent) {
         final boolean onTouchEvent = super.onTouchEvent(motionEvent);
-        final ebv g = this.g;
+        final eby g = this.g;
         if (g != null) {
             g.c((View)this, motionEvent);
         }
         return onTouchEvent;
     }
     
-    public final elx p() {
+    public final ema p() {
         return this.i;
     }
     
-    public final void q(final elx i) {
+    public final void q(final ema i) {
         this.i = i;
     }
 }

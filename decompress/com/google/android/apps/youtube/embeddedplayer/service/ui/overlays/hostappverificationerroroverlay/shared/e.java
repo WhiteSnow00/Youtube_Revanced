@@ -4,13 +4,14 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared;
 
+import com.google.android.apps.youtube.embeddedplayer.service.jar.client.x;
 import android.os.IInterface;
 import android.os.IBinder;
 import android.os.Parcel;
 import android.os.Handler;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.remoteloaded.a;
 
-public final class e extends enz implements f
+public final class e extends eod implements f
 {
     public c a;
     public a b;
@@ -27,11 +28,11 @@ public final class e extends enz implements f
     }
     
     public final void a() {
-        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.service.a(this, 11));
+        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.service.a(this, 7));
     }
     
     public final void b(final i i) {
-        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.c(this, i, 19));
+        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.remoteloaded.a(this, i, 1));
     }
     
     protected final boolean dispatchTransaction(final int n, final Parcel parcel, final Parcel parcel2, final int n2) {
@@ -43,34 +44,34 @@ public final class e extends enz implements f
                 this.a();
             }
             else {
-                final boolean k = eoa.k(parcel);
+                final boolean k = eoe.k(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.g(k);
             }
         }
         else {
             final IBinder strongBinder = parcel.readStrongBinder();
-            Object o;
+            i i;
             if (strongBinder == null) {
-                o = null;
+                i = null;
             }
             else {
                 final IInterface queryLocalInterface = strongBinder.queryLocalInterface("com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.IHostAppVerificationErrorOverlayServiceListener");
                 if (queryLocalInterface instanceof i) {
-                    o = queryLocalInterface;
+                    i = (i)queryLocalInterface;
                 }
                 else {
-                    o = new g(strongBinder);
+                    i = new g(strongBinder);
                 }
             }
             this.enforceNoDataAvail(parcel);
-            this.b((i)o);
+            this.b(i);
         }
         parcel2.writeNoException();
         return true;
     }
     
     public final void g(final boolean b) {
-        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.a(this, b, 17));
+        this.c.post((Runnable)new x(this, b, 19));
     }
 }

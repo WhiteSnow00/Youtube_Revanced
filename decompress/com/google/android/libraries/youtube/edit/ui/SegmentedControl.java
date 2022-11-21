@@ -35,7 +35,7 @@ public class SegmentedControl extends FrameLayout
     public int d;
     public boolean e;
     public boolean f;
-    public usi g;
+    public uvg g;
     public List h;
     private ObjectAnimator i;
     
@@ -55,7 +55,7 @@ public class SegmentedControl extends FrameLayout
         (this.b = b).setLayoutParams((ViewGroup$LayoutParams)new FrameLayout$LayoutParams(-2, -2));
         Label_0109: {
             if (obtainStyledAttributes != null) {
-                obtainStyledAttributes = (AttributeSet)this.getContext().getTheme().obtainStyledAttributes(obtainStyledAttributes, ugk.b, 0, 0);
+                obtainStyledAttributes = (AttributeSet)this.getContext().getTheme().obtainStyledAttributes(obtainStyledAttributes, ujr.b, 0, 0);
                 try {
                     resourceId = ((TypedArray)obtainStyledAttributes).getResourceId(0, 0);
                     this.c = ((TypedArray)obtainStyledAttributes).getDimensionPixelSize(1, 0);
@@ -68,24 +68,24 @@ public class SegmentedControl extends FrameLayout
             resourceId = 0;
         }
         if (this.c == 0) {
-            this.c = this.getResources().getDimensionPixelSize(2131169500);
+            this.c = this.getResources().getDimensionPixelSize(2131169538);
         }
         int n;
         if (resourceId != 0) {
             n = resourceId;
         }
         else {
-            resourceId = 2131233225;
+            resourceId = 2131233226;
             n = 0;
         }
         b.setImageResource(resourceId);
         b.setTag((Object)n);
         b.setVisibility(8);
-        b.setId(2131431342);
+        b.setId(2131431346);
         b.setTranslationY((float)this.c);
         this.addView((View)b);
         (this.a = new LinearLayout((Context)new ContextThemeWrapper(this.getContext(), 2132083534))).setOrientation(0);
-        this.a.setId(2131431341);
+        this.a.setId(2131431345);
         this.addView((View)this.a);
     }
     
@@ -107,9 +107,9 @@ public class SegmentedControl extends FrameLayout
     private final int i(final float n) {
         final int a = this.a();
         final boolean b = true;
-        agot.D(a > 0);
+        adme.T(a > 0);
         final int min = Math.min(this.a() - 1, (int)(n / this.getWidth() * this.a()));
-        agot.D(min < this.a() && b);
+        adme.T(min < this.a() && b);
         if (this.j()) {
             return this.a() - 1 - min;
         }
@@ -117,7 +117,7 @@ public class SegmentedControl extends FrameLayout
     }
     
     private final boolean j() {
-        return ana.f((View)this) == 1;
+        return anc.f((View)this) == 1;
     }
     
     public final int a() {
@@ -136,15 +136,15 @@ public class SegmentedControl extends FrameLayout
             final SegmentedControlSegment segmentedControlSegment = (SegmentedControlSegment)view;
             segmentedControlSegment.setSaveEnabled(false);
             if (segmentedControlSegment.isChecked()) {
-                segmentedControlSegment.post((Runnable)new upt(this, segmentedControlSegment, 6));
+                segmentedControlSegment.post((Runnable)new ukz(this, segmentedControlSegment, 12));
             }
-            segmentedControlSegment.setOnCheckedChangeListener((CompoundButton$OnCheckedChangeListener)new jqg(this, segmentedControlSegment, 3));
+            segmentedControlSegment.setOnCheckedChangeListener((CompoundButton$OnCheckedChangeListener)new jrq(this, segmentedControlSegment, 3));
             if (this.a() == 1) {
-                view.addOnLayoutChangeListener((View$OnLayoutChangeListener)new jbw(this, 18));
+                view.addOnLayoutChangeListener((View$OnLayoutChangeListener)new jdi(this, 18));
             }
             return;
         }
-        if (view.getId() != 2131431341 && view.getId() != 2131431342) {
+        if (view.getId() != 2131431345 && view.getId() != 2131431346) {
             throw new IllegalArgumentException("SegmentControl only supports children of type SegmentedControlSegment");
         }
         super.addView(view, n, viewGroup$LayoutParams);
@@ -179,10 +179,10 @@ public class SegmentedControl extends FrameLayout
                     this.i.cancel();
                 }
                 final int width = this.c().getWidth();
-                (this.i = ObjectAnimator.ofFloat((Object)this.b, "translationX", new float[] { (float)this.h(d2 * width + this.c), (float)this.h(width * this.d + this.c) })).setInterpolator((TimeInterpolator)new atr());
+                (this.i = ObjectAnimator.ofFloat((Object)this.b, "translationX", new float[] { (float)this.h(d2 * width + this.c), (float)this.h(width * this.d + this.c) })).setInterpolator((TimeInterpolator)new atu());
                 this.i.setDuration(300L);
-                this.i.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new usg(this, 0));
-                this.i.addListener((Animator$AnimatorListener)new ush(this));
+                this.i.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new uve(this, 0));
+                this.i.addListener((Animator$AnimatorListener)new uvf(this));
                 this.i.start();
             }
             else {
@@ -196,7 +196,7 @@ public class SegmentedControl extends FrameLayout
                     }
                 }
             }
-            final usi g = this.g;
+            final uvg g = this.g;
             if (g != null && b2) {
                 g.e(d, b);
             }
@@ -225,7 +225,7 @@ public class SegmentedControl extends FrameLayout
         if (a == 0) {
             return;
         }
-        final float n = 1.0f / a;
+        final float n = (float)a;
         final float g2 = this.g(g / this.getWidth());
         final int i = this.i(g);
         final SegmentedControlSegment b = this.b(i);
@@ -238,8 +238,9 @@ public class SegmentedControl extends FrameLayout
         else {
             n3 = Math.min(a - 1, i + 1);
         }
+        g = 1.0f / n;
         final SegmentedControlSegment b2 = this.b(n3);
-        g = this.g((g2 - i * n) / n);
+        g = this.g((g2 - i * g) / g);
         int k;
         if (g < 0.05f) {
             b.a();
@@ -291,7 +292,7 @@ public class SegmentedControl extends FrameLayout
         Parcelable parcelable2 = parcelable;
         if (parcelable instanceof Bundle) {
             final Bundle bundle = (Bundle)parcelable;
-            this.post((Runnable)new wlr(this, bundle.getInt("VISIBILITY"), bundle.getInt("SELECTED_SPEED_INDEX"), 1));
+            this.post((Runnable)new woy(this, bundle.getInt("VISIBILITY"), bundle.getInt("SELECTED_SPEED_INDEX"), 1));
             parcelable2 = bundle.getParcelable("SUPER_STATE");
         }
         super.onRestoreInstanceState(parcelable2);

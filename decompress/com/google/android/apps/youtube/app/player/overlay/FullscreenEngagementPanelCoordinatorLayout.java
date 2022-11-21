@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 import android.content.Context;
 import android.util.DisplayMetrics;
 
-public class FullscreenEngagementPanelCoordinatorLayout extends ivf
+public class FullscreenEngagementPanelCoordinatorLayout extends iwn
 {
     public int i;
     public int j;
@@ -29,23 +29,22 @@ public class FullscreenEngagementPanelCoordinatorLayout extends ivf
     public FullscreenEngagementPanelCoordinatorLayout(final Context context, final AttributeSet set, final int n) {
         super(context, set, n);
         this.k = context.getResources().getDisplayMetrics();
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, ixg.a);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, iyn.a);
         this.m = obtainStyledAttributes.getDimensionPixelSize(0, 0);
         this.l = obtainStyledAttributes.getDimensionPixelSize(1, 0);
         obtainStyledAttributes.recycle();
     }
     
-    @Override
     protected final void onMeasure(int n, final int n2) {
         final long n3 = View$MeasureSpec.getSize(n);
         final long max = Math.max(n3 / 2L, View$MeasureSpec.getSize(n2));
-        if ((n = tmy.aZ(this.k, this.i)) <= 0) {
+        if ((n = tqf.aZ(this.k, this.i)) <= 0) {
             n = this.l;
         }
-        final long n4 = n;
-        if ((n = tmy.aZ(this.k, this.j)) <= 0) {
-            n = this.m;
+        int n4;
+        if ((n4 = tqf.aZ(this.k, this.j)) <= 0) {
+            n4 = this.m;
         }
-        super.onMeasure(View$MeasureSpec.makeMeasureSpec((int)tmy.aO(n3 - max, n4, (long)n), 1073741824), n2);
+        super.onMeasure(View$MeasureSpec.makeMeasureSpec((int)tqf.aO(n3 - max, (long)n, (long)n4), 1073741824), n2);
     }
 }

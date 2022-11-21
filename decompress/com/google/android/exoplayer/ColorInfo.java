@@ -20,7 +20,7 @@ public final class ColorInfo implements Parcelable
     private int e;
     
     static {
-        CREATOR = (Parcelable$Creator)new f(16);
+        CREATOR = (Parcelable$Creator)new f(15);
     }
     
     public ColorInfo(final int a, final int b, final int c, final byte[] d) {
@@ -81,7 +81,7 @@ public final class ColorInfo implements Parcelable
         final int a = this.a;
         final int b = this.b;
         final int c = this.c;
-        final boolean b2 = this.d != null;
+        final byte[] d = this.d;
         final StringBuilder sb = new StringBuilder("ColorInfo(");
         sb.append(a);
         sb.append(", ");
@@ -89,7 +89,7 @@ public final class ColorInfo implements Parcelable
         sb.append(", ");
         sb.append(c);
         sb.append(", ");
-        sb.append(b2);
+        sb.append(d != null);
         sb.append(")");
         return sb.toString();
     }

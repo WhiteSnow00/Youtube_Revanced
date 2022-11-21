@@ -9,9 +9,9 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public final class ApiPlayerService$$ExternalSyntheticLambda18 implements Runnable
 {
-    public ApiPlayerService a;
-    public AtomicBoolean b;
-    public ConditionVariable c;
+    public final ApiPlayerService a;
+    public final AtomicBoolean b;
+    public final ConditionVariable c;
     
     public ApiPlayerService$$ExternalSyntheticLambda18(final ApiPlayerService a, final AtomicBoolean b, final ConditionVariable c) {
         this.a = a;

@@ -17,17 +17,17 @@ public final class GeobFrame extends Id3Frame
     public final byte[] d;
     
     static {
-        CREATOR = (Parcelable$Creator)new app(17);
+        CREATOR = (Parcelable$Creator)new apq(17);
     }
     
     public GeobFrame(final Parcel parcel) {
         super("GEOB");
         final String string = parcel.readString();
-        final int a = bax.a;
+        final int a = baz.a;
         this.a = string;
         this.b = parcel.readString();
         this.c = parcel.readString();
-        this.d = (byte[])bax.L((Object)parcel.createByteArray());
+        this.d = (byte[])baz.L(parcel.createByteArray());
     }
     
     public GeobFrame(final String a, final String b, final String c, final byte[] d) {
@@ -45,7 +45,7 @@ public final class GeobFrame extends Id3Frame
         if (o != null) {
             if (this.getClass() == o.getClass()) {
                 final GeobFrame geobFrame = (GeobFrame)o;
-                if (bax.aa((Object)this.a, (Object)geobFrame.a) && bax.aa((Object)this.b, (Object)geobFrame.b) && bax.aa((Object)this.c, (Object)geobFrame.c) && Arrays.equals(this.d, geobFrame.d)) {
+                if (baz.aa(this.a, geobFrame.a) && baz.aa(this.b, geobFrame.b) && baz.aa(this.c, geobFrame.c) && Arrays.equals(this.d, geobFrame.d)) {
                     return true;
                 }
             }

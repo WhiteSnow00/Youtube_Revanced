@@ -18,7 +18,7 @@ public final class MlltFrame extends Id3Frame
     public final int[] e;
     
     static {
-        CREATOR = (Parcelable$Creator)new app(19);
+        CREATOR = (Parcelable$Creator)new apq(19);
     }
     
     public MlltFrame(final int a, final int b, final int c, final int[] d, final int[] e) {
@@ -35,8 +35,8 @@ public final class MlltFrame extends Id3Frame
         this.a = parcel.readInt();
         this.b = parcel.readInt();
         this.c = parcel.readInt();
-        this.d = (int[])bax.L((Object)parcel.createIntArray());
-        this.e = (int[])bax.L((Object)parcel.createIntArray());
+        this.d = (int[])baz.L(parcel.createIntArray());
+        this.e = (int[])baz.L(parcel.createIntArray());
     }
     
     public final int describeContents() {

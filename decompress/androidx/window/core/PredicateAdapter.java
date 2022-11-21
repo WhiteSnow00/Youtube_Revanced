@@ -22,19 +22,19 @@ public final class PredicateAdapter
         return loadClass;
     }
     
-    public final Object buildPairPredicate(final atob atob, final atob atob2, final atmp atmp) {
-        atob.getClass();
-        atob2.getClass();
-        atmp.getClass();
-        final Object proxyInstance = Proxy.newProxyInstance(this.loader, new Class[] { this.predicateClassOrThrow() }, (InvocationHandler)new PredicateAdapter$PairPredicateStubHandler(atob, atob2, atmp));
+    public final Object buildPairPredicate(final atrt atrt, final atrt atrt2, final atqh atqh) {
+        atrt.getClass();
+        atrt2.getClass();
+        atqh.getClass();
+        final Object proxyInstance = Proxy.newProxyInstance(this.loader, new Class[] { this.predicateClassOrThrow() }, (InvocationHandler)new PredicateAdapter$PairPredicateStubHandler(atrt, atrt2, atqh));
         proxyInstance.getClass();
         return proxyInstance;
     }
     
-    public final Object buildPredicate(final atob atob, final atml atml) {
-        atob.getClass();
-        atml.getClass();
-        final Object proxyInstance = Proxy.newProxyInstance(this.loader, new Class[] { this.predicateClassOrThrow() }, (InvocationHandler)new PredicateAdapter$PredicateStubHandler(atob, atml));
+    public final Object buildPredicate(final atrt atrt, final atqd atqd) {
+        atrt.getClass();
+        atqd.getClass();
+        final Object proxyInstance = Proxy.newProxyInstance(this.loader, new Class[] { this.predicateClassOrThrow() }, (InvocationHandler)new PredicateAdapter$PredicateStubHandler(atrt, atqd));
         proxyInstance.getClass();
         return proxyInstance;
     }

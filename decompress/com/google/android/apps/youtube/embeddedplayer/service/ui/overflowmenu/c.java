@@ -5,6 +5,7 @@
 package com.google.android.apps.youtube.embeddedplayer.service.ui.overflowmenu;
 
 import com.google.android.libraries.youtube.innertube.model.media.VideoQuality;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.d;
 import android.content.Context;
 import android.content.DialogInterface$OnDismissListener;
 import android.content.DialogInterface$OnShowListener;
@@ -14,8 +15,8 @@ public final class c
     public final DialogInterface$OnShowListener a;
     public final DialogInterface$OnDismissListener b;
     public Context c;
-    public com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.c d;
-    public abef e;
+    public d d;
+    public abfl e;
     public VideoQuality[] f;
     public int g;
     public int h;

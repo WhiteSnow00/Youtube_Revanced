@@ -8,8 +8,8 @@ import android.os.ConditionVariable;
 
 public final class ApiPlayerService$$ExternalSyntheticLambda24 implements Runnable
 {
-    public ApiPlayerService a;
-    public ConditionVariable b;
+    public final ApiPlayerService a;
+    public final ConditionVariable b;
     
     public ApiPlayerService$$ExternalSyntheticLambda24(final ApiPlayerService a, final ConditionVariable b) {
         this.a = a;

@@ -15,29 +15,29 @@ public abstract class ReelEditModel implements Parcelable
     public static final Parcelable$Creator CREATOR;
     
     static {
-        CREATOR = (Parcelable$Creator)new fzn(12);
+        CREATOR = (Parcelable$Creator)new fzs(12);
     }
     
-    public static zxh g() {
-        final zxh zxh = new zxh();
-        zxh.l(0);
-        return zxh;
+    public static zze g() {
+        final zze zze = new zze();
+        zze.m(0);
+        return zze;
     }
     
     public abstract int a();
     
     public abstract ReelEditModel$DeletedItem b();
     
-    public abstract afeq c();
+    public abstract afgh c();
     
-    public abstract zxh d();
+    public abstract zze d();
     
     public final int describeContents() {
         return 0;
     }
     
     public final ReelItemEditModel e() {
-        return (ReelItemEditModel)this.c().get(this.a());
+        return this.c().get(this.a());
     }
     
     public final RecordingInfo f() {

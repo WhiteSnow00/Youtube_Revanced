@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">ಸಾಧನದ ಥೀಮ್ ಅನ್ನು ಬಳಸಿ</string>
     <string name="app_theme_appearance_summary">ನಿಮ್ಮ ಲೈಟ್ ಅಥವಾ ಡಾರ್ಕ್‌ ಥೀಮ್ ಆದ್ಯತೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
     <string name="app_theme_appearance_title">ಗೋಚರತೆ</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">ಅನ್ವಯಿಸು</string>
     <string name="approve_playlist_sync">ಹೊಸ ವೀಡಿಯೊಗಳನ್ನು ಸಿಂಕ್ ಮಾಡಿ</string>
     <string name="audio_playback_failed_snackbar_action_button">ಪುನಃ ಪ್ರಯತ್ನಿಸಿ</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">ಸ್ಟ್ರೀಮ್‌ ಕೊನೆಗೊಳಿಸಿ</string>
     <string name="lc_retry_yes">ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು</string>
     <string name="lc_rotate_device">ಸಾಧನ ತಿರುಗಿಸಿ</string>
+    <string name="lc_sharedmde_required_field_error">ಶೀರ್ಷಿಕೆ ಮತ್ತು ಪ್ರೇಕ್ಷಕರ ಅಗತ್ಯವಿದೆ.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">ಪೋರ್ಟ್ರೇಟ್ ಮೋಡ್‍ನಲ್ಲಿ ಸ್ಟ್ರೀಮ್ ಮಾಡಿ</string>
     <string name="lc_stream_start_error">ಸ್ಟ್ರೀಮ್ ಅನ್ನು ಪ್ರಾರಂಭಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ.</string>
@@ -1729,6 +1730,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">ವೀಡಿಯೊ ಪೂರ್ವವೀಕ್ಷಣೆ. ವಿರಾಮಗೊಳಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">ವೀಡಿಯೊ ಪೂರ್ವವೀಕ್ಷಣೆ. ಪ್ಲೇ ಮಾಡಲು ಟ್ಯಾಪ್‌ ಮಾಡಿ.</string>
     <string name="shorts_a11y_zoom_control">ಝೂಮ್ ನಿಯಂತ್ರಣ</string>
+    <string name="shorts_audio_failure_toast">ಧ್ವನಿ ಸೇರಿಸಲು ವಿಫಲವಾಗಿದೆ. ಪುನಃ ಪ್ರಯತ್ನಿಸಿ.</string>
     <string name="shorts_camera_allow_access_subtitle">ನಿಮ್ಮ ಕ್ಯಾಮರಾ ಮತ್ತು ಮೈಕ್ರೋಫೋನ್‌ಗೆ ಪ್ರವೇಶವನ್ನು ಅನುಮತಿಸಿ</string>
     <string name="shorts_camera_allow_access_title">ಕಿರು-ವೀಡಿಯೊ ರಚಿಸಿ</string>
     <string name="shorts_camera_close_confirmation_cancel">ರದ್ದುಗೊಳಿಸಿ</string>

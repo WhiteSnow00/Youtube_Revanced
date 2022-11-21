@@ -26,7 +26,7 @@ public class PlaylistThumbnailView extends ViewGroup
     public int a;
     public ImageView b;
     public YouTubeTextView c;
-    protected tnw d;
+    protected trc d;
     private Rect e;
     private Rect f;
     private Paint g;
@@ -70,19 +70,19 @@ public class PlaylistThumbnailView extends ViewGroup
         this.f = new Rect();
         (this.b = new ImageView(context)).setScaleType(ImageView$ScaleType.CENTER_CROP);
         this.b.setLayoutParams(new ViewGroup$LayoutParams(-2, -1));
-        (this.c = new YouTubeTextView(context)).setTypeface(abyk.a.a(context));
+        (this.c = new YouTubeTextView(context)).setTypeface(acbx.a.a(context));
         this.c.setGravity(81);
         (this.g = new Paint()).setStyle(Paint$Style.FILL);
         this.p = true;
-        this.d = new tnw(context);
+        this.d = new trc(context);
         final Resources resources = this.getResources();
         this.h = resources.getFraction(2131361819, 1, 1);
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, jff.a, k, n);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, jgr.a, k, n);
         this.q = obtainStyledAttributes.getBoolean(5, false);
-        this.i = obtainStyledAttributes.getDimension(2, resources.getDimension(2131167013));
-        this.j = resources.getDimension(2131166503);
+        this.i = obtainStyledAttributes.getDimension(2, resources.getDimension(2131167015));
+        this.j = resources.getDimension(2131166504);
         this.c.setTextSize(0, this.i);
-        k = tmy.cn(context, 2130970884);
+        k = tqf.cr(context, 2130970882);
         this.o = k;
         this.c.setTextColor(k);
         k = obtainStyledAttributes.getResourceId(0, 0);
@@ -90,8 +90,8 @@ public class PlaylistThumbnailView extends ViewGroup
         this.l = 2131233059;
         this.m = 2131233058;
         this.b(k);
-        this.n = resources.getColor(obtainStyledAttributes.getResourceId(3, 2131102261));
-        this.a = resources.getColor(obtainStyledAttributes.getResourceId(4, 2131102262));
+        this.n = resources.getColor(obtainStyledAttributes.getResourceId(3, 2131102285));
+        this.a = resources.getColor(obtainStyledAttributes.getResourceId(4, 2131102286));
         obtainStyledAttributes.recycle();
         this.u = 1;
         this.t = new Rect();
@@ -107,10 +107,11 @@ public class PlaylistThumbnailView extends ViewGroup
                 final int width = rect.width();
                 final int height = rect.height();
                 final int u = this.u;
-                int n3 = 0;
                 int n10 = 0;
-                Label_0181: {
+                int n11 = 0;
+                Label_0185: {
                     int n2 = 0;
+                    int n3 = 0;
                     Label_0177: {
                         if (u != 4 && u != 6) {
                             if (intrinsicWidth <= width) {
@@ -119,35 +120,35 @@ public class PlaylistThumbnailView extends ViewGroup
                                     break Label_0177;
                                 }
                             }
-                            final float n4 = (float)width;
-                            final float n5 = intrinsicWidth / n4;
-                            final float n6 = (float)height;
-                            final float n7 = intrinsicHeight / n6;
-                            int n8;
-                            if (n5 > n7) {
-                                n8 = (int)(n4 / n5);
+                            final float n4 = (float)intrinsicWidth;
+                            final float n5 = (float)width;
+                            final float n6 = (float)intrinsicHeight;
+                            final float n7 = (float)height;
+                            final float n8 = n4 / n5;
+                            final float n9 = n6 / n7;
+                            if (n8 > n9) {
+                                n10 = (int)(n5 / n8);
                             }
                             else {
-                                n8 = (int)(n6 / n7);
+                                n10 = (int)(n7 / n9);
                             }
-                            final int n9 = n8;
-                            n10 = n8;
-                            n3 = n9;
-                            break Label_0181;
+                            n11 = n10;
+                            break Label_0185;
                         }
-                        n2 = (int)this.getResources().getDimension(2131166502);
-                        n3 = (int)this.getResources().getDimension(2131166502);
+                        n2 = (int)this.getResources().getDimension(2131166503);
+                        n3 = (int)this.getResources().getDimension(2131166503);
                     }
+                    n11 = n3;
                     n10 = n2;
                 }
-                alg.a(n, n10, n3, rect, this.t, ana.f((View)this));
+                ali.a(n, n10, n11, rect, this.t, anc.f((View)this));
                 drawable.setBounds(this.t.left, this.t.top, this.t.right, this.t.bottom);
             }
         }
     }
     
     private final boolean i() {
-        return ana.f((View)this) == 1;
+        return anc.f((View)this) == 1;
     }
     
     public final void a(final boolean r) {
@@ -179,7 +180,7 @@ public class PlaylistThumbnailView extends ViewGroup
     
     public final void b(int o) {
         if (o != 0) {
-            this.h(this.s = agw.a(this.getContext(), o), this.e, 49);
+            this.h(this.s = agy.a(this.getContext(), o), this.e, 49);
             o = this.o;
             this.s = this.d.b(this.s, o);
         }
@@ -220,7 +221,7 @@ public class PlaylistThumbnailView extends ViewGroup
     public final void e(final boolean p) {
         if (this.p != p) {
             this.p = p;
-            tmy.v((View)this.c, p);
+            tqf.v((View)this.c, p);
             this.invalidate();
         }
     }
@@ -237,7 +238,7 @@ public class PlaylistThumbnailView extends ViewGroup
             return;
         }
         if (u == 3) {
-            this.a = this.getResources().getColor(2131102343);
+            this.a = this.getResources().getColor(2131102367);
             this.removeView((View)this.c);
             this.a(true);
             return;
@@ -322,19 +323,19 @@ public class PlaylistThumbnailView extends ViewGroup
             else {
                 n2 = size;
             }
-            final int n3 = (int)(size * 0.1f);
+            final float n3 = (float)size;
             final int u = this.u;
             final int n4 = u - 1;
             if (u == 0) {
                 throw null;
             }
             final int n5 = 0;
-            Label_0455: {
+            Label_0476: {
                 if (n4 != 2) {
                     if (n4 == 3) {
                         this.f.set(0, 0, size2, size);
-                        this.e.set(this.f.left, this.f.top + this.f.height() / 2 - (int)this.getResources().getDimension(2131166502) / 2, this.f.right, this.f.bottom);
-                        break Label_0455;
+                        this.e.set(this.f.left, this.f.top + this.f.height() / 2 - (int)this.getResources().getDimension(2131166503) / 2, this.f.right, this.f.bottom);
+                        break Label_0476;
                     }
                     if (n4 != 5) {
                         if (this.i()) {
@@ -343,13 +344,16 @@ public class PlaylistThumbnailView extends ViewGroup
                         else {
                             this.f.set(n2, 0, size2, size);
                         }
-                        final int n6 = n3 / 2;
-                        this.c.measure(View$MeasureSpec.makeMeasureSpec(this.f.width(), 1073741824), View$MeasureSpec.makeMeasureSpec(this.f.height() / 2 - n6, 1073741824));
-                        this.e.set(this.f.left, this.f.top + this.f.height() / 2 + n6, this.f.right, this.f.bottom);
-                        break Label_0455;
+                        final YouTubeTextView c = this.c;
+                        final int measureSpec3 = View$MeasureSpec.makeMeasureSpec(this.f.width(), 1073741824);
+                        final int n6 = this.f.height() / 2;
+                        final int n7 = (int)(n3 * 0.1f) / 2;
+                        c.measure(measureSpec3, View$MeasureSpec.makeMeasureSpec(n6 - n7, 1073741824));
+                        this.e.set(this.f.left, this.f.top + this.f.height() / 2 + n7, this.f.right, this.f.bottom);
+                        break Label_0476;
                     }
                 }
-                this.f.set(0, size - (int)this.getResources().getDimension(2131166502), size2, size);
+                this.f.set(0, size - (int)this.getResources().getDimension(2131166503), size2, size);
                 this.e.set(this.f.left, this.f.top, this.f.right, this.f.bottom);
             }
             final int childCount = this.getChildCount();

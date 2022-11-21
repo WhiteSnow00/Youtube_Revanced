@@ -4,7 +4,6 @@
 
 package com.google.android.apps.youtube.app.extensions.reel.creation.shorts.music.ui;
 
-import java.util.List;
 import java.util.function.Function;
 import java.util.Collection;
 import j$.util.Collection$_EL;
@@ -16,7 +15,7 @@ import android.widget.SeekBar;
 
 public final class DspSeekBar extends SeekBar
 {
-    public hcz a;
+    public hdh a;
     private final Context b;
     private Drawable c;
     private Drawable d;
@@ -48,7 +47,7 @@ public final class DspSeekBar extends SeekBar
     }
     
     private final float a(final long n) {
-        final hcz a = this.a;
+        final hdh a = this.a;
         long longValue = 0L;
         Label_0034: {
             if (a != null) {
@@ -67,22 +66,22 @@ public final class DspSeekBar extends SeekBar
     }
     
     private final void b() {
-        this.c = fc.b(this.b, 2131233269);
-        this.d = fc.b(this.b, 2131233270);
-        this.e = fc.b(this.b, 2131233271);
-        this.f = fc.b(this.b, 2131233272);
+        this.c = fc.b(this.b, 2131233270);
+        this.d = fc.b(this.b, 2131233271);
+        this.e = fc.b(this.b, 2131233272);
+        this.f = fc.b(this.b, 2131233273);
     }
     
     protected final void onDraw(final Canvas canvas) {
         monitorenter(this);
         try {
-            final hcz a = this.a;
+            final hdh a = this.a;
             if (a == null) {
                 super.onDraw(canvas);
                 monitorexit(this);
                 return;
             }
-            final aezp b = a.b();
+            final afbh b = a.b();
             Drawable thumb;
             if (b.h()) {
                 thumb = this.f;
@@ -99,7 +98,7 @@ public final class DspSeekBar extends SeekBar
             final int n3 = this.getThumb().getIntrinsicWidth() / 2;
             final int n4 = (int)this.a(this.getProgress() * n);
             final int n5 = this.getThumb().getIntrinsicWidth() / 2;
-            final aoej c = this.a.c;
+            final aogq c = this.a.c;
             Long value;
             if (c != null) {
                 value = c.c;
@@ -118,16 +117,16 @@ public final class DspSeekBar extends SeekBar
                     this.c.draw(canvas);
                 }
             }
-            final hcz a2 = this.a;
-            afeq q;
+            final hdh a2 = this.a;
+            afgh q;
             if (a2.b.isEmpty()) {
-                q = afeq.q();
+                q = afgh.q();
             }
             else {
-                q = (afeq)Collection$_EL.stream((Collection)a2.b).map((Function)gnx.u).collect(afci.a);
+                q = (afgh)Collection$_EL.stream((Collection)a2.b).map((Function)hdp.b).collect(afdz.a);
             }
-            for (int size = ((List)q).size(), i = 0; i < size; ++i) {
-                final Long n10 = (Long)((List)q).get(i);
+            for (int size = q.size(), i = 0; i < size; ++i) {
+                final Long n10 = q.get(i);
                 if (!b.h() || !n10.equals(b.c())) {
                     final int n11 = (int)(this.a(n10) * n);
                     if (n11 < n7 || n11 > n6) {

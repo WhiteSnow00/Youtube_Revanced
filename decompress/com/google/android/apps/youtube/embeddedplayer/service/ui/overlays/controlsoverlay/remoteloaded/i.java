@@ -4,29 +4,35 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.remoteloaded;
 
-final class i implements abhb
+import android.view.View;
+import android.view.MotionEvent;
+
+final class i implements ttb
 {
-    final l a;
+    final k a;
     
-    public i(final l a) {
+    public i(final k a) {
         this.a = a;
     }
     
-    public final void K() {
-        final l a = this.a;
-        if (a.N) {
-            return;
+    public final boolean c(final MotionEvent motionEvent, final boolean b) {
+        if (this.a.mm()) {
+            final k a = this.a;
+            if (a.M) {
+                if (!a.E.e) {
+                    if (aehz.b((int)motionEvent.getX(), this.a.g.getWidth(), false) != 0) {
+                        return true;
+                    }
+                }
+            }
         }
-        a.N = true;
-        a.V();
+        return false;
     }
     
-    public final void L() {
-        final l a = this.a;
-        if (!a.N) {
-            return;
+    public final void ph(final MotionEvent motionEvent, final boolean b) {
+        if (this.a.U(motionEvent)) {
+            final k a = this.a;
+            a.E.a(motionEvent, (View)a.g);
         }
-        a.N = false;
-        a.V();
     }
 }

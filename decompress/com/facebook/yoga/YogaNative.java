@@ -7,7 +7,7 @@ package com.facebook.yoga;
 public class YogaNative
 {
     static {
-        agse.c(egz.a, new String[0]);
+        agtw.c(ehc.a, new String[0]);
     }
     
     public static native void jni_YGConfigFreeJNI(final long p0);

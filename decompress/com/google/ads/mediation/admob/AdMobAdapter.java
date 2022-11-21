@@ -7,7 +7,7 @@ package com.google.ads.mediation.admob;
 import android.text.TextUtils;
 import android.os.Bundle;
 
-public final class AdMobAdapter extends eiu
+public final class AdMobAdapter extends eix
 {
     static final String AD_JSON_PARAMETER = "adJson";
     static final String AD_PARAMETER = "_ad";

@@ -8,7 +8,7 @@ import android.view.View$OnClickListener;
 import android.os.RemoteException;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.shared.c;
 
-public final class a implements abek
+public final class a implements abfp
 {
     public c a;
     
@@ -77,7 +77,7 @@ public final class a implements abek
     public final void h() {
     }
     
-    public final void tf(final boolean b) {
+    public final void te(final boolean b) {
         final c a = this.a;
         if (a == null) {
             return;

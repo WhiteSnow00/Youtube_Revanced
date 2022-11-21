@@ -13,8 +13,8 @@ import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.contro
 import java.util.List;
 import android.graphics.Bitmap;
 import android.view.KeyEvent;
-import com.google.android.libraries.youtube.innertube.model.media.VideoQuality;
 import com.google.android.libraries.youtube.player.features.overlay.controls.ControlsOverlayStyle;
+import com.google.android.libraries.youtube.innertube.model.media.VideoQuality;
 import com.google.android.libraries.youtube.player.subtitles.model.SubtitleTrack;
 import com.google.android.libraries.youtube.player.features.overlay.controls.ControlsState;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.model.WatchLaterButtonData;
@@ -28,17 +28,17 @@ import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.contro
 import com.google.android.apps.youtube.embeddedplayer.service.ui.subscribebutton.shared.e;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.videodetailsoverlay.shared.b;
 
-public final class d implements aazx, abbm, abcm, abbe, b, e, com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.shared.b, com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.shared.b, com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.b, h
+public final class d implements abcy, abeo, abfm, abee, b, e, com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.shared.b, com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.shared.b, com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.b, h
 {
     public c a;
     private final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.e b;
     
-    public d(final Handler handler, final tdz tdz, final c a, final com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.service.e e) {
+    public d(final Handler handler, final thg thg, final c a, final com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.service.e e) {
         this.a = a;
-        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.e b = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.e(handler, tdz, e);
+        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.e b = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.e(handler, thg, e);
         this.b = b;
         try {
-            a.j((f)b);
+            a.j(b);
         }
         catch (final RemoteException ex) {}
     }
@@ -139,18 +139,7 @@ public final class d implements aazx, abbm, abcm, abbe, b, e, com.google.android
         catch (final RemoteException ex) {}
     }
     
-    public final void k(final ControlsOverlayStyle controlsOverlayStyle) {
-        final c a = this.a;
-        if (a == null) {
-            return;
-        }
-        try {
-            a.y(controlsOverlayStyle);
-        }
-        catch (final RemoteException ex) {}
-    }
-    
-    public final void l(final abbl b) {
+    public final void l(final aben b) {
         this.b.b = b;
     }
     
@@ -187,7 +176,7 @@ public final class d implements aazx, abbm, abcm, abbe, b, e, com.google.android
         catch (final RemoteException ex) {}
     }
     
-    public final void oD(final boolean b) {
+    public final void oB(final boolean b) {
         final c a = this.a;
         if (a == null) {
             return;
@@ -198,7 +187,7 @@ public final class d implements aazx, abbm, abcm, abbe, b, e, com.google.android
         catch (final RemoteException ex) {}
     }
     
-    public final void oE() {
+    public final void oC() {
         final c a = this.a;
         if (a == null) {
             return;
@@ -209,7 +198,7 @@ public final class d implements aazx, abbm, abcm, abbe, b, e, com.google.android
         catch (final RemoteException ex) {}
     }
     
-    public final void oF() {
+    public final void oD() {
         final c a = this.a;
         if (a == null) {
             return;
@@ -220,7 +209,7 @@ public final class d implements aazx, abbm, abcm, abbe, b, e, com.google.android
         catch (final RemoteException ex) {}
     }
     
-    public final void oG(final String s, final boolean b) {
+    public final void oE(final String s, final boolean b) {
         final c a = this.a;
         if (a == null) {
             return;
@@ -231,13 +220,24 @@ public final class d implements aazx, abbm, abcm, abbe, b, e, com.google.android
         catch (final RemoteException ex) {}
     }
     
-    public final void oH(final boolean b) {
+    public final void oF(final boolean b) {
         final c a = this.a;
         if (a == null) {
             return;
         }
         try {
             a.n(b);
+        }
+        catch (final RemoteException ex) {}
+    }
+    
+    public final void oV(final ControlsOverlayStyle controlsOverlayStyle) {
+        final c a = this.a;
+        if (a == null) {
+            return;
+        }
+        try {
+            a.y(controlsOverlayStyle);
         }
         catch (final RemoteException ex) {}
     }
@@ -281,13 +281,13 @@ public final class d implements aazx, abbm, abcm, abbe, b, e, com.google.android
         catch (final RemoteException ex) {}
     }
     
-    public final void pj(final aazw a) {
+    public final void pm(final abcx a) {
         final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.e b = this.b;
         a.getClass();
         b.a = a;
     }
     
-    public final void pk(final boolean b) {
+    public final void pn(final boolean b) {
         final c a = this.a;
         if (a == null) {
             return;
@@ -309,35 +309,6 @@ public final class d implements aazx, abbm, abcm, abbe, b, e, com.google.android
         catch (final RemoteException ex) {}
     }
     
-    public final void qW(final boolean b) {
-        final c a = this.a;
-        if (a == null) {
-            return;
-        }
-        try {
-            a.h(b);
-        }
-        catch (final RemoteException ex) {}
-    }
-    
-    public final void qX(final boolean b) {
-        final c a = this.a;
-        if (a == null) {
-            return;
-        }
-        try {
-            a.r(b);
-        }
-        catch (final RemoteException ex) {}
-    }
-    
-    public final void qY(final abbd d) {
-        this.b.d = d;
-    }
-    
-    public final void qZ(final g g) {
-    }
-    
     public final void r(final boolean b) {
         final c a = this.a;
         if (a == null) {
@@ -349,7 +320,36 @@ public final class d implements aazx, abbm, abcm, abbe, b, e, com.google.android
         catch (final RemoteException ex) {}
     }
     
-    public final void ra(final ShareButtonData shareButtonData) {
+    public final void rb(final boolean b) {
+        final c a = this.a;
+        if (a == null) {
+            return;
+        }
+        try {
+            a.h(b);
+        }
+        catch (final RemoteException ex) {}
+    }
+    
+    public final void rc(final boolean b) {
+        final c a = this.a;
+        if (a == null) {
+            return;
+        }
+        try {
+            a.r(b);
+        }
+        catch (final RemoteException ex) {}
+    }
+    
+    public final void rd(final abed d) {
+        this.b.d = d;
+    }
+    
+    public final void re(final g g) {
+    }
+    
+    public final void rf(final ShareButtonData shareButtonData) {
         final c a = this.a;
         if (a == null) {
             return;
@@ -360,7 +360,7 @@ public final class d implements aazx, abbm, abcm, abbe, b, e, com.google.android
         catch (final RemoteException ex) {}
     }
     
-    public final void rb(final boolean b) {
+    public final void rg(final boolean b) {
         final c a = this.a;
         if (a == null) {
             return;
@@ -371,7 +371,7 @@ public final class d implements aazx, abbm, abcm, abbe, b, e, com.google.android
         catch (final RemoteException ex) {}
     }
     
-    public final void rc(final SubscribeButtonData subscribeButtonData) {
+    public final void rh(final SubscribeButtonData subscribeButtonData) {
         final c a = this.a;
         if (a == null) {
             return;
@@ -382,15 +382,19 @@ public final class d implements aazx, abbm, abcm, abbe, b, e, com.google.android
         catch (final RemoteException ex) {}
     }
     
-    public final void rd(final com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.remoteloaded.c g) {
+    public final void ri(final com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.remoteloaded.c g) {
         this.b.g = g;
     }
     
-    public final void re(final abcl c) {
+    public final void rj(final long n, final long n2, final long n3, final long n4, final long n5) {
+        aana.e((abcy)this, n, n3, n4, n5);
+    }
+    
+    public final void rk(final abfl c) {
         this.b.c = c;
     }
     
-    public final void rf() {
+    public final void rl() {
         final c a = this.a;
         if (a == null) {
             return;
@@ -442,13 +446,17 @@ public final class d implements aazx, abbm, abcm, abbe, b, e, com.google.android
         this.b.f = f;
     }
     
-    public final void y(final ancs ancs, final boolean b) {
+    public final void x() {
+        aana.c((abcy)this);
+    }
+    
+    public final void y(final anhd anhd, final boolean b) {
         final c a = this.a;
         if (a == null) {
             return;
         }
         try {
-            a.m(new PlayerErrorMessageRendererWrapper(ancs), b);
+            a.m(new PlayerErrorMessageRendererWrapper(anhd), b);
         }
         catch (final RemoteException ex) {}
     }

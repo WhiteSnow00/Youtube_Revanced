@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Eszköz témájának használata</string>
     <string name="app_theme_appearance_summary">A sötét vagy a világos téma beállításának kiválasztása</string>
     <string name="app_theme_appearance_title">Megjelenés</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Alkalmaz</string>
     <string name="approve_playlist_sync">Új videók szinkronizálása</string>
     <string name="audio_playback_failed_snackbar_action_button">Újra</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Stream befejezése</string>
     <string name="lc_retry_yes">Próbáld újra</string>
     <string name="lc_rotate_device">Forgass el!</string>
+    <string name="lc_sharedmde_required_field_error">A cím és a közönség megadása kötelező.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Streamelés álló elrendezésben</string>
     <string name="lc_stream_start_error">Nem lehet elindítani a streamet. Ellenőrizd a kapcsolatot.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Videó előnézete. Koppints a szüneteltetéshez.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Videó előnézete. Koppints a lejátszáshoz.</string>
     <string name="shorts_a11y_zoom_control">Nagyítás/kicsinyítés vezérlése</string>
+    <string name="shorts_audio_failure_toast">Nem sikerült hozzáadni a hangot. Próbálkozz újra.</string>
     <string name="shorts_camera_allow_access_subtitle">Engedélyezd a kamera és a mikrofon elérését</string>
     <string name="shorts_camera_allow_access_title">Rövid videó készítése</string>
     <string name="shorts_camera_close_confirmation_cancel">Mégse</string>

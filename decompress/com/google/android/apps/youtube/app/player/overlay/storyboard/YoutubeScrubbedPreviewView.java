@@ -7,7 +7,7 @@ package com.google.android.apps.youtube.app.player.overlay.storyboard;
 import android.util.AttributeSet;
 import android.content.Context;
 
-public class YoutubeScrubbedPreviewView extends abgl
+public class YoutubeScrubbedPreviewView extends abjn
 {
     public YoutubeScrubbedPreviewView(final Context context) {
         super(context);
@@ -17,7 +17,8 @@ public class YoutubeScrubbedPreviewView extends abgl
         super(context, set);
     }
     
+    @Override
     protected final int a() {
-        return 2131625311;
+        return 2131625318;
     }
 }

@@ -20,8 +20,8 @@ public final class d extends a
         return null;
     }
     
-    public final zdu B() {
-        return zdu.c;
+    public final zfp B() {
+        return zfp.c;
     }
     
     public final void C() {

@@ -7,7 +7,7 @@ package com.google.android.apps.youtube.embeddedplayer.service.service.jar;
 import android.graphics.Bitmap;
 import android.net.Uri;
 
-final class EmbedFragmentService$ThumbnailCallback implements tcc
+final class EmbedFragmentService$ThumbnailCallback implements tdg
 {
     final EmbedFragmentService a;
     
@@ -15,13 +15,13 @@ final class EmbedFragmentService$ThumbnailCallback implements tcc
         this.a = a;
     }
     
-    public final /* bridge */ void b(final Object o, final Object o2) {
-        final Uri uri = (Uri)o;
-        this.a.B((Bitmap)o2);
-    }
-    
-    public final /* bridge */ void sd(final Object o, final Exception ex) {
+    public final /* bridge */ void c(final Object o, final Exception ex) {
         final Uri uri = (Uri)o;
         this.a.B((Bitmap)null);
+    }
+    
+    public final /* bridge */ void d(final Object o, final Object o2) {
+        final Uri uri = (Uri)o;
+        this.a.B((Bitmap)o2);
     }
 }

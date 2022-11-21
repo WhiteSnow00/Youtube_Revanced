@@ -4,7 +4,7 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.subtitlesoverlay.shared;
 
-import com.google.android.apps.youtube.embeddedplayer.service.jar.client.s;
+import com.google.android.apps.youtube.embeddedplayer.service.jar.client.q;
 import java.util.ArrayList;
 import java.util.List;
 import com.google.android.libraries.youtube.player.subtitles.model.SubtitleWindowSnapshot;
@@ -13,16 +13,16 @@ import android.os.Parcel;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.service.a;
 import android.os.Handler;
 
-public final class b extends enz implements c
+public final class b extends eod implements c
 {
-    public final abbh a;
+    public final abeh a;
     private final Handler b;
     
     public b() {
         super("com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.subtitlesoverlay.shared.ISubtitlesOverlayClient");
     }
     
-    public b(final abbh a, final Handler b) {
+    public b(final abeh a, final Handler b) {
         super("com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.subtitlesoverlay.shared.ISubtitlesOverlayClient");
         a.getClass();
         this.a = a;
@@ -31,11 +31,11 @@ public final class b extends enz implements c
     }
     
     public final void a() {
-        this.b.post((Runnable)new a(this, 15));
+        this.b.post((Runnable)new a(this, 11));
     }
     
     public final void b() {
-        this.b.post((Runnable)new a(this, 16));
+        this.b.post((Runnable)new a(this, 12));
     }
     
     protected final boolean dispatchTransaction(int int1, final Parcel parcel, final Parcel parcel2, int int2) {
@@ -44,14 +44,14 @@ public final class b extends enz implements c
                 return false;
             }
             case 6: {
-                int2 = parcel.readInt();
                 int1 = parcel.readInt();
+                int2 = parcel.readInt();
                 this.enforceNoDataAvail(parcel);
-                this.h(int2, int1);
+                this.h(int1, int2);
                 break;
             }
             case 5: {
-                final SubtitlesStyle subtitlesStyle = (SubtitlesStyle)eoa.a(parcel, SubtitlesStyle.CREATOR);
+                final SubtitlesStyle subtitlesStyle = (SubtitlesStyle)eoe.a(parcel, SubtitlesStyle.CREATOR);
                 this.enforceNoDataAvail(parcel);
                 this.i(subtitlesStyle);
                 break;
@@ -82,18 +82,18 @@ public final class b extends enz implements c
     }
     
     public final void g(final float n) {
-        this.b.post((Runnable)new hqh(this, n, 2));
+        this.b.post((Runnable)new hrk(this, n, 2));
     }
     
     public final void h(final int n, final int n2) {
-        this.b.post((Runnable)new s(this, n, n2, 5));
+        this.b.post((Runnable)new q(this, n, n2, 5));
     }
     
     public final void i(final SubtitlesStyle subtitlesStyle) {
-        this.b.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.remoteloaded.a(this, subtitlesStyle, 3));
+        this.b.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.remoteloaded.a(this, subtitlesStyle, 5));
     }
     
     public final void j(final List list) {
-        this.b.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.remoteloaded.a(this, list, 2));
+        this.b.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.remoteloaded.a(this, list, 4));
     }
 }

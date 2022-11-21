@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">მოწყობილობის თემის გამოყენება</string>
     <string name="app_theme_appearance_summary">აირჩიეთ ნათელი ან მუქი თემის პარამეტრი</string>
     <string name="app_theme_appearance_title">იერსახე</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">გააქტიურება</string>
     <string name="approve_playlist_sync">ახალი ვიდეოების სინქრონიზაცია</string>
     <string name="audio_playback_failed_snackbar_action_button">ხელახლა ცდა</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">ნაკადის დასრულება</string>
     <string name="lc_retry_yes">ხელახლა ცდა</string>
     <string name="lc_rotate_device">შეატრიალეთ მოწყობილობა</string>
+    <string name="lc_sharedmde_required_field_error">საჭიროა სათაური და აუდიტორია.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">ნაკადი პორტრეტის რეჟიმში</string>
     <string name="lc_stream_start_error">ნაკადის დაწყება ვერ ხერხდება. შეამოწმეთ კავშირი.</string>
@@ -1728,6 +1729,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">ვიდეოს გადახედვა. შეეხეთ პაუზისთვის.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">ვიდეოს გადახედვა. შეეხეთ დასაკრავად.</string>
     <string name="shorts_a11y_zoom_control">მასშტაბირების კონტროლი</string>
+    <string name="shorts_audio_failure_toast">ხმის დამატება ვერ მოხერხდა. გთხოვთ, ცადოთ ხელახლა.</string>
     <string name="shorts_camera_allow_access_subtitle">დაუშვით წვდომა თქვენს კამერასა და მიკროფონზე</string>
     <string name="shorts_camera_allow_access_title">მოკლე ვიდეოს შექმნა</string>
     <string name="shorts_camera_close_confirmation_cancel">გაუქმება</string>

@@ -62,7 +62,7 @@ public class ReelPlayerProgressPresenter extends View
         this.v = new Paint(1);
         this.w = new Paint(1);
         this.x = new RectF();
-        this.y = new hol(this, 8);
+        this.y = (Runnable)new hou(this, 7);
     }
     
     public ReelPlayerProgressPresenter(final Context context, final AttributeSet set) {
@@ -81,7 +81,7 @@ public class ReelPlayerProgressPresenter extends View
         this.v = new Paint(1);
         this.w = new Paint(1);
         this.x = new RectF();
-        this.y = new hol(this, 8);
+        this.y = (Runnable)new hou(this, 7);
     }
     
     private static float e(final DisplayMetrics displayMetrics, final float n) {
@@ -104,13 +104,13 @@ public class ReelPlayerProgressPresenter extends View
         }
     }
     
-    public final void b(final anti anti, final boolean b, int n, int i, int n2, float e) {
+    public final void b(final anvo anvo, final boolean b, int n, int i, int n2, float e) {
         this.t = true;
         final int d = this.d;
         final int e2 = this.e;
         final int k = this.k;
         int d2;
-        if (anti == null) {
+        if (anvo == null) {
             if (b) {
                 d2 = 1;
             }
@@ -119,20 +119,20 @@ public class ReelPlayerProgressPresenter extends View
             }
         }
         else {
-            d2 = anti.d;
+            d2 = anvo.d;
         }
         this.d = d2;
         int e3;
-        if (anti == null) {
+        if (anvo == null) {
             e3 = 0;
         }
         else {
-            e3 = anti.c - 1;
+            e3 = anvo.c - 1;
         }
         this.e = e3;
         this.a();
-        if (anti != null) {
-            this.setContentDescription((CharSequence)this.getResources().getString(2132019353, new Object[] { anti.c, anti.d }));
+        if (anvo != null) {
+            this.setContentDescription((CharSequence)this.getResources().getString(2132019355, new Object[] { anvo.c, anvo.d }));
         }
         this.b = 0L;
         this.a = 0L;

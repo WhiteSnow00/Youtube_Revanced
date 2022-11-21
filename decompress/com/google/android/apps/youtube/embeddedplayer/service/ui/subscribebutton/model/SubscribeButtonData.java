@@ -25,13 +25,13 @@ public abstract class SubscribeButtonData implements Parcelable
         a.e(0);
         a.a = null;
         a.b = null;
-        a.f(ahab.b);
+        a.f(ahbt.b);
         return a;
     }
     
     public abstract int a();
     
-    public abstract ahab b();
+    public abstract ahbt b();
     
     public abstract String c();
     

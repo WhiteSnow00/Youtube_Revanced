@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">የመሳሪያ ገጽታ ይጠቀሙ</string>
     <string name="app_theme_appearance_summary">የብርሃን ወይም ጠቆር ያለ ገጽታ አማራጭ ይምረጡ</string>
     <string name="app_theme_appearance_title">መልክ</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">ተግብር</string>
     <string name="approve_playlist_sync">አዳዲስ ቪዲዮዎችን አስምር</string>
     <string name="audio_playback_failed_snackbar_action_button">እንደገና ይሞክሩ</string>
@@ -829,6 +829,7 @@
     <string name="lc_retry_no">ዥረት ያቁሙ</string>
     <string name="lc_retry_yes">በድጋሚ ይሞክሩ</string>
     <string name="lc_rotate_device">መሳሪያ ያሽከርክሩ</string>
+    <string name="lc_sharedmde_required_field_error">ርዕስ እና ታዳሚ ያስፈልጋሉ።</string>
     <string name="lc_statistic_item_cd">%1$s፦ %2$s</string>
     <string name="lc_stream_in_portrait">ዥረት በቁመት</string>
     <string name="lc_stream_start_error">ዥረት ማስጀመር አልተቻልም። ግንኙነትዎን ይፈትሹ።</string>
@@ -1734,6 +1735,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">የቪድዮ ቅድመ እይታ። ባለበት ለማቆም መታ ያድርጉ።</string>
     <string name="shorts_a11y_video_preview_tap_to_play">የቪድዮ ቅድመ እይታ። ለማጫወት መታ ያድርጉ።</string>
     <string name="shorts_a11y_zoom_control">የማጉያ መቆጣጠሪያ</string>
+    <string name="shorts_audio_failure_toast">ድምጽ ማከል አልተሳካም፣ እባክዎ እንደገና ይሞክሩ።</string>
     <string name="shorts_camera_allow_access_subtitle">ለካሜራዎ እና ማይክሮፎንዎ መዳረሻ ይፍቀዱ</string>
     <string name="shorts_camera_allow_access_title">Short ይፍጠሩ</string>
     <string name="shorts_camera_close_confirmation_cancel">ይቅር</string>

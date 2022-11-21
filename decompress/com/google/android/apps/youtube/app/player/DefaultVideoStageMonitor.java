@@ -8,29 +8,29 @@ import com.google.android.libraries.youtube.innertube.model.player.PlayerRespons
 import java.util.HashSet;
 import java.util.Set;
 
-public class DefaultVideoStageMonitor implements thl, irz
+public class DefaultVideoStageMonitor implements tio, isi
 {
     public final Set a;
-    public aans b;
-    private final asiq c;
-    private final hzm d;
+    public aapp b;
+    private final aslm c;
+    private final cdr d;
     
-    public DefaultVideoStageMonitor(final hzm d, final byte[] array, final byte[] array2) {
+    public DefaultVideoStageMonitor(final cdr d, final byte[] array) {
         this.d = d;
-        this.c = new asiq();
+        this.c = new aslm();
         this.a = new HashSet();
     }
     
-    public final thh g() {
-        return thh.b;
+    public final tik g() {
+        return tik.b;
     }
     
-    public final aans j() {
+    public final aapp j() {
         return this.b;
     }
     
     public final String k() {
-        final aans b = this.b;
+        final aapp b = this.b;
         PlayerResponseModel playerResponseModel = null;
         Label_0054: {
             if (b != null) {
@@ -51,32 +51,32 @@ public class DefaultVideoStageMonitor implements thl, irz
         return null;
     }
     
-    public final void lW(final aun aun) {
+    public final void lW(final aup aup) {
     }
     
-    public final void mM(final aun aun) {
+    public final void mp(final aup aup) {
     }
     
-    public final void mq(final aun aun) {
+    public final void mx(final aup aup) {
     }
     
-    public final void my(final aun aun) {
+    public final void oO(final aup aup) {
     }
     
-    public final void oS(final aun aun) {
+    public final void oT(final aup aup) {
         this.c.b();
-        this.c.c(((ashi)this.d.b).Y((asjr)iqm.f).an((asjm)new ihl(this, 16), (asjm)hot.q));
+        this.c.c(((aske)this.d.b).Y((asmn)iqv.g).an((asmi)new ihk(this, 18), (asmi)hoq.r));
     }
     
-    public final void oT() {
-        tfg.c((thl)this);
+    public final void oU() {
+        tgj.d((tio)this);
     }
     
-    public final void oW() {
-        tfg.b((thl)this);
+    public final void oX() {
+        tgj.c((tio)this);
     }
     
-    public final void oX(final aun aun) {
+    public final void oY(final aup aup) {
         this.c.b();
     }
 }

@@ -101,7 +101,7 @@ public final class a implements g
     }
     
     @Override
-    public final void u(final sln a) {
+    public final void u(final smo a) {
         this.b.a = a;
     }
     
@@ -154,13 +154,13 @@ public final class a implements g
     }
     
     @Override
-    public final void z(final ajrv ajrv) {
+    public final void z(final ajtu ajtu) {
         final c a = this.a;
         if (a == null) {
             return;
         }
         try {
-            a.o(new FancyDismissibleDialogRendererWrapper(ajrv));
+            a.o(new FancyDismissibleDialogRendererWrapper(ajtu));
         }
         catch (final RemoteException ex) {}
     }

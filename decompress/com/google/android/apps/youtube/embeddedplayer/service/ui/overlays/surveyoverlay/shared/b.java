@@ -13,9 +13,9 @@ import android.os.Parcel;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.service.a;
 import android.os.Handler;
 
-public final class b extends enz implements c
+public final class b extends eod implements c
 {
-    public final shm a;
+    public final sks a;
     public com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.surveyoverlay.remoteloaded.b b;
     private final Handler c;
     
@@ -23,7 +23,7 @@ public final class b extends enz implements c
         super("com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.surveyoverlay.shared.ISurveyOverlayClient");
     }
     
-    public b(final shm a, final Handler c) {
+    public b(final sks a, final Handler c) {
         super("com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.surveyoverlay.shared.ISurveyOverlayClient");
         a.getClass();
         this.a = a;
@@ -33,16 +33,16 @@ public final class b extends enz implements c
     
     public final void a() {
         final Handler c = this.c;
-        final shm a = this.a;
+        final sks a = this.a;
         a.getClass();
-        c.post((Runnable)new a(a, 19));
+        c.post((Runnable)new a(a, 15));
     }
     
     public final void b() {
         final Handler c = this.c;
-        final shm a = this.a;
+        final sks a = this.a;
         a.getClass();
-        c.post((Runnable)new a(a, 17));
+        c.post((Runnable)new a(a, 13));
     }
     
     public final void c() {
@@ -75,13 +75,13 @@ public final class b extends enz implements c
             case 4: {
                 final String string = parcel.readString();
                 final ArrayList stringArrayList = parcel.createStringArrayList();
-                final boolean k = eoa.k(parcel);
+                final boolean k = eoe.k(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.j(string, stringArrayList, k);
                 break;
             }
             case 3: {
-                final boolean i = eoa.k(parcel);
+                final boolean i = eoe.k(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.h(i);
                 break;
@@ -92,21 +92,21 @@ public final class b extends enz implements c
             }
             case 1: {
                 final IBinder strongBinder = parcel.readStrongBinder();
-                Object o;
+                f f;
                 if (strongBinder == null) {
-                    o = null;
+                    f = null;
                 }
                 else {
                     final IInterface queryLocalInterface = strongBinder.queryLocalInterface("com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.surveyoverlay.shared.ISurveyOverlayServiceListener");
                     if (queryLocalInterface instanceof f) {
-                        o = queryLocalInterface;
+                        f = (f)queryLocalInterface;
                     }
                     else {
-                        o = new d(strongBinder);
+                        f = new d(strongBinder);
                     }
                 }
                 this.enforceNoDataAvail(parcel);
-                this.g((f)o);
+                this.g(f);
                 break;
             }
         }
@@ -115,18 +115,18 @@ public final class b extends enz implements c
     }
     
     public final void g(final f f) {
-        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.remoteloaded.a(this, f, 4));
+        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.remoteloaded.a(this, f, 6));
     }
     
     public final void h(final boolean b) {
-        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.player.remoteloaded.a(this, b, 1));
+        this.c.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.remoteloaded.a(this, b, 2));
     }
     
     public final void i() {
         final Handler c = this.c;
-        final shm a = this.a;
+        final sks a = this.a;
         a.getClass();
-        c.post((Runnable)new a(a, 18));
+        c.post((Runnable)new a(a, 14));
     }
     
     public final void j(final String s, final List list, final boolean b) {

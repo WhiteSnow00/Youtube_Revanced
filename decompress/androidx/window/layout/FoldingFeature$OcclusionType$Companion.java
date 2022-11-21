@@ -9,7 +9,7 @@ public final class FoldingFeature$OcclusionType$Companion
     private FoldingFeature$OcclusionType$Companion() {
     }
     
-    public FoldingFeature$OcclusionType$Companion(final atny atny) {
+    public FoldingFeature$OcclusionType$Companion(final atqv atqv) {
         this();
     }
 }

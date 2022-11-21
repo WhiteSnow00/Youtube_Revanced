@@ -16,50 +16,50 @@ import androidx.preference.Preference;
 
 public class ThirdPartyAccountPreference extends Preference
 {
-    public ajvb a;
-    public final vax b;
-    private final vbq c;
-    private asic d;
+    public final ajzf a;
+    public final veh b;
+    private final vey c;
+    private asln d;
     
-    public ThirdPartyAccountPreference(final Activity activity, final vax b, final aceo aceo, final vbq c, final ajvb a) {
-        final ajsq ajsq = null;
+    public ThirdPartyAccountPreference(final Activity activity, final veh b, final acig acig, final vey c, final ajzf a) {
+        final ajws ajws = null;
         super((Context)activity, (AttributeSet)null);
         this.b = b;
         this.a = a;
         this.c = c;
-        ajsq ajsq2 = ajsq;
-        if ((a.b & 0x1) != 0x0 && (ajsq2 = a.c) == null) {
-            ajsq2 = ajsq.a;
+        ajws ajws2 = ajws;
+        if ((a.b & 0x1) != 0x0 && (ajws2 = a.c) == null) {
+            ajws2 = ajws.a;
         }
-        this.N((CharSequence)abyh.b(ajsq2));
-        this.k((uwr)new uwq(this, 1));
-        super.o = (cem)new joe(this, 10);
-        final int dimensionPixelSize = activity.getResources().getDimensionPixelSize(2131170104);
-        aorm aorm;
-        if ((aorm = a.f) == null) {
-            aorm = aorm.a;
+        this.N((CharSequence)acbu.b(ajws2));
+        this.k((uzu)new uzt(this, 1));
+        super.o = (ceq)new jpq(this, 11);
+        final int dimensionPixelSize = activity.getResources().getDimensionPixelSize(2131170144);
+        aowb aowb;
+        if ((aowb = a.f) == null) {
+            aowb = aowb.a;
         }
-        final Uri f = actc.F(aorm, dimensionPixelSize);
-        if (f != null) {
-            this.H(agw.a((Context)activity, 2131233373));
-            aceo.k(f, (szx)new kau(this, activity, 5));
+        final Uri p5 = aamz.P(aowb, dimensionPixelSize);
+        if (p5 != null) {
+            this.H(agy.a((Context)activity, 2131233374));
+            acig.k(p5, (tdg)new kcf(this, activity, 5));
         }
         if ((a.b & 0x200) != 0x0) {
-            this.d = c.b().h(a.j, false).aa(ashw.a()).aC((asix)new uvl(this, 20), (asix)uwh.b);
+            this.d = c.b().i(a.j, false).af(aslh.a()).aI((asmi)new uzc(this, 8), (asmi)uzs.a);
         }
     }
     
     protected final void C() {
         super.Q();
-        final asic d = this.d;
+        final asln d = this.d;
         if (d != null) {
-            asjg.b((AtomicReference)d);
+            asmr.b((AtomicReference)d);
             this.d = null;
         }
     }
     
-    public final void k(final uwr uwr) {
-        final ajvb a = this.a;
+    public final void k(final uzu uzu) {
+        final ajzf a = this.a;
         final int b = a.b;
         String s;
         if ((b & 0x200) != 0x0) {
@@ -71,39 +71,39 @@ public class ThirdPartyAccountPreference extends Preference
                 s2 = a.k;
             }
             else {
-                aioe aioe;
-                if ((aioe = a.h) == null) {
-                    aioe = aioe.a;
+                aisc aisc;
+                if ((aisc = a.h) == null) {
+                    aisc = aisc.a;
                 }
-                anss anss;
-                if ((anss = ((GamingAccountLinkSettingCommandOuterClass$GamingAccountLinkSettingCommand)((agzd)aioe).rr((agyr)GamingAccountLinkSettingCommandOuterClass$GamingAccountLinkSettingCommand.gamingAccountLinkSettingCommand)).c) == null) {
-                    anss = anss.a;
+                anxb anxb;
+                if ((anxb = ((GamingAccountLinkSettingCommandOuterClass$GamingAccountLinkSettingCommand)((ahcu)aisc).rx((ahci)GamingAccountLinkSettingCommandOuterClass$GamingAccountLinkSettingCommand.gamingAccountLinkSettingCommand)).c) == null) {
+                    anxb = anxb.a;
                 }
-                s2 = ((ajuf)((agzd)anss).rr((agyr)GamingAccountLinkSettingRendererOuterClass.gamingAccountLinkSettingRenderer)).h;
+                s2 = ((ajyj)((ahcu)anxb).rx((ahci)GamingAccountLinkSettingRendererOuterClass.gamingAccountLinkSettingRenderer)).h;
             }
-            s = vek.f(122, s2);
+            s = vht.f(122, s2);
         }
-        this.c.b().f(s).E(ashw.a()).s((asix)new uvl(uwr, 19)).p((asir)new snt(this, uwr, 11)).ab();
+        this.c.b().g(s).E(aslh.a()).s((asmi)new uzc(uzu, 7)).p((asmc)new sqx(this, uzu, 11)).ab();
     }
     
     public final void l(final boolean b) {
-        final ajsq ajsq = null;
-        ajsq ajsq2 = null;
+        final ajws ajws = null;
+        ajws ajws2 = null;
         Spanned spanned;
         if (b) {
-            final ajvb a = this.a;
-            if ((a.b & 0x2) != 0x0 && (ajsq2 = a.d) == null) {
-                ajsq2 = ajsq.a;
+            final ajzf a = this.a;
+            if ((a.b & 0x2) != 0x0 && (ajws2 = a.d) == null) {
+                ajws2 = ajws.a;
             }
-            spanned = abyh.b(ajsq2);
+            spanned = acbu.b(ajws2);
         }
         else {
-            final ajvb a2 = this.a;
-            ajsq ajsq3 = ajsq;
-            if ((a2.b & 0x4) != 0x0 && (ajsq3 = a2.e) == null) {
-                ajsq3 = ajsq.a;
+            final ajzf a2 = this.a;
+            ajws ajws3 = ajws;
+            if ((a2.b & 0x4) != 0x0 && (ajws3 = a2.e) == null) {
+                ajws3 = ajws.a;
             }
-            spanned = abyh.b(ajsq3);
+            spanned = acbu.b(ajws3);
         }
         this.n((CharSequence)spanned);
     }

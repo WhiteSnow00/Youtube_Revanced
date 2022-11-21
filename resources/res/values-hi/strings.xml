@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">डिवाइस की थीम का इस्तेमाल करें</string>
     <string name="app_theme_appearance_summary">हल्के या गहरे रंग वाली थीम में से अपनी पसंद की थीम चुनें</string>
     <string name="app_theme_appearance_title">थीम चुनें</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">लागू करें</string>
     <string name="approve_playlist_sync">नए वीडियो समन्वयित करें</string>
     <string name="audio_playback_failed_snackbar_action_button">फिर कोशिश करें</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">स्ट्रीम बंद करें</string>
     <string name="lc_retry_yes">फिर से कोशिश करें</string>
     <string name="lc_rotate_device">डिवाइस घुमाएं</string>
+    <string name="lc_sharedmde_required_field_error">स्ट्रीम का टाइटल और दर्शकों की कैटगरी चुनना ज़रूरी है.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">पोर्ट्रेट मोड में स्ट्रीम करें</string>
     <string name="lc_stream_start_error">स्ट्रीम शुरू नहीं हो पा रही है. अपना इंटरनेट कनेक्शन जाँचें.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">वीडियो की झलक. रोकने के लिए टैप करें.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">वीडियो की झलक. चलाने के लिए टैप करें.</string>
     <string name="shorts_a11y_zoom_control">ज़ूम कम या ज़्यादा करने वाला स्लाइडर</string>
+    <string name="shorts_audio_failure_toast">ऑडियो ट्रैक नहीं जोड़ा जा सका. कृपया फिर से कोशिश करें.</string>
     <string name="shorts_camera_allow_access_subtitle">अपने डिवाइस के कैमरे और माइक्रोफ़ोन को ऐक्सेस करने की अनुमति दें</string>
     <string name="shorts_camera_allow_access_title">एक शॉर्ट वीडियो बनाएं</string>
     <string name="shorts_camera_close_confirmation_cancel">रद्द करें</string>

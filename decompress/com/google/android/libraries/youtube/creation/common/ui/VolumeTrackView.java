@@ -19,7 +19,7 @@ import android.widget.LinearLayout;
 public final class VolumeTrackView extends LinearLayout
 {
     public SeekBar a;
-    public hak b;
+    public has b;
     private ImageView c;
     private TextView d;
     private TextView e;
@@ -38,36 +38,36 @@ public final class VolumeTrackView extends LinearLayout
     
     public VolumeTrackView(final Context context, final AttributeSet set, int resourceId) {
         super(context, set, resourceId);
-        LayoutInflater.from(context).inflate(2131625759, (ViewGroup)this);
-        final TextView d = (TextView)this.findViewById(2131432172);
+        LayoutInflater.from(context).inflate(2131625761, (ViewGroup)this);
+        final TextView d = (TextView)this.findViewById(2131432173);
         d.getClass();
         this.d = d;
-        final TextView e = (TextView)this.findViewById(2131432170);
+        final TextView e = (TextView)this.findViewById(2131432171);
         e.getClass();
         this.e = e;
-        final String string = context.getString(2132020167);
+        final String string = context.getString(2132020170);
         string.getClass();
         this.f = string;
-        final ImageView c = (ImageView)this.findViewById(2131432171);
+        final ImageView c = (ImageView)this.findViewById(2131432172);
         c.getClass();
         this.c = c;
-        final SeekBar a = (SeekBar)this.findViewById(2131431571);
+        final SeekBar a = (SeekBar)this.findViewById(2131431572);
         a.getClass();
-        (this.a = a).setOnSeekBarChangeListener((SeekBar$OnSeekBarChangeListener)new hgl(this, 3));
+        (this.a = a).setOnSeekBarChangeListener((SeekBar$OnSeekBarChangeListener)new hgt(this, 3));
         if (set == null) {
             return;
         }
-        final TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(set, txl.d, 0, 0);
-        resourceId = obtainStyledAttributes.getResourceId(0, -1);
-        if (resourceId != -1) {
-            this.g = context.getResources().getDrawable(resourceId);
+        final TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(set, tyn.d, 0, 0);
+        final int resourceId2 = obtainStyledAttributes.getResourceId(0, -1);
+        if (resourceId2 != -1) {
+            this.g = context.getResources().getDrawable(resourceId2);
             final ImageView c2 = this.c;
             c2.getClass();
             c2.setImageDrawable(this.g);
         }
-        final int resourceId2 = obtainStyledAttributes.getResourceId(1, -1);
-        if (resourceId != -1) {
-            this.h = context.getResources().getDrawable(resourceId2);
+        resourceId = obtainStyledAttributes.getResourceId(1, -1);
+        if (resourceId2 != -1) {
+            this.h = context.getResources().getDrawable(resourceId);
         }
         this.b(obtainStyledAttributes.getString(2));
     }

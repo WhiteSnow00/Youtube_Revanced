@@ -14,7 +14,7 @@ public final class Version implements Comparable
     private static final Version VERSION_0_1;
     private static final Version VERSION_1_0;
     private static final String VERSION_PATTERN_STRING = "(\\d+)(?:\\.(\\d+))(?:\\.(\\d+))(?:-(.+))?";
-    private final atjm bigInteger$delegate;
+    private final atne bigInteger$delegate;
     private final String description;
     private final int major;
     private final int minor;
@@ -32,7 +32,27 @@ public final class Version implements Comparable
         this.minor = minor;
         this.patch = patch;
         this.description = description;
-        this.bigInteger$delegate = atqc.f((atma)new Version$bigInteger$2(this));
+        this.bigInteger$delegate = aqvs.s((atps)new Version$bigInteger$2(this));
+    }
+    
+    public Version(final int n, final int n2, final int n3, final String s, final atqv atqv) {
+        this(n, n2, n3, s);
+    }
+    
+    public static final Version access$getCURRENT$cp() {
+        return Version.CURRENT;
+    }
+    
+    public static final Version access$getUNKNOWN$cp() {
+        return Version.UNKNOWN;
+    }
+    
+    public static final Version access$getVERSION_0_1$cp() {
+        return Version.VERSION_0_1;
+    }
+    
+    public static final Version access$getVERSION_1_0$cp() {
+        return Version.VERSION_1_0;
     }
     
     private final BigInteger getBigInteger() {
@@ -48,6 +68,11 @@ public final class Version implements Comparable
     public int compareTo(final Version version) {
         version.getClass();
         return this.getBigInteger().compareTo(version.getBigInteger());
+    }
+    
+    @Override
+    public /* bridge */ int compareTo(final Object o) {
+        return this.compareTo((Version)o);
     }
     
     @Override
@@ -84,7 +109,7 @@ public final class Version implements Comparable
     @Override
     public String toString() {
         String string;
-        if (!aubt.e((CharSequence)this.description)) {
+        if (!auop.m((CharSequence)this.description)) {
             final StringBuilder sb = new StringBuilder("-");
             sb.append(this.description);
             string = sb.toString();

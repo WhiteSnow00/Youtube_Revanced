@@ -7,9 +7,9 @@ package com.google.android.apps.youtube.embeddedplayer.service.service.jar;
 import android.os.RemoteException;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.player.shared.c;
 
-public final class ApiPlayerService$$ExternalSyntheticLambda35 implements ttg
+public final class ApiPlayerService$$ExternalSyntheticLambda35 implements tui
 {
-    public c a;
+    public final c a;
     
     public ApiPlayerService$$ExternalSyntheticLambda35(final c a) {
         this.a = a;

@@ -18,7 +18,7 @@ public class RelatedVideosScreen implements BusSupported$Data
     public static final Parcelable$Creator CREATOR;
     public static final RelatedVideosScreen a;
     public final CharSequence b;
-    public final afeq c;
+    public final afgh c;
     
     static {
         a = new RelatedVideosScreen("", new ArrayList());
@@ -27,7 +27,7 @@ public class RelatedVideosScreen implements BusSupported$Data
     
     public RelatedVideosScreen(final CharSequence b, final List list) {
         this.b = b;
-        this.c = afeq.o((Collection)list);
+        this.c = afgh.o(list);
     }
     
     @Override
@@ -45,7 +45,7 @@ public class RelatedVideosScreen implements BusSupported$Data
             return false;
         }
         final RelatedVideosScreen relatedVideosScreen = (RelatedVideosScreen)o;
-        return relatedVideosScreen.b.toString().contentEquals(this.b) && agpi.V((List)this.c, (Object)relatedVideosScreen.c);
+        return relatedVideosScreen.b.toString().contentEquals(this.b) && agpx.T(this.c, relatedVideosScreen.c);
     }
     
     @Override
@@ -55,6 +55,6 @@ public class RelatedVideosScreen implements BusSupported$Data
     
     public final void writeToParcel(final Parcel parcel, final int n) {
         TextUtils.writeToParcel(this.b, parcel, n);
-        parcel.writeTypedArray((Parcelable[])((afeh)this.c).toArray(new RelatedVideoItem[0]), n);
+        parcel.writeTypedArray((Parcelable[])this.c.toArray(new RelatedVideoItem[0]), n);
     }
 }

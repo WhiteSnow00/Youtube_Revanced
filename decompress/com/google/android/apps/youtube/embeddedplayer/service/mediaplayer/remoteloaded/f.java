@@ -28,7 +28,7 @@ public final class f implements SurfaceHolder$Callback
                 a.a(n, n2, n3);
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -40,7 +40,7 @@ public final class f implements SurfaceHolder$Callback
                 a.b(surfaceHolder.getSurface());
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
             final d b = this.b;
             if (b != null) {
@@ -57,7 +57,7 @@ public final class f implements SurfaceHolder$Callback
                 a.g();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
             final d b = this.b;
             if (b != null) {

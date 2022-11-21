@@ -35,16 +35,16 @@ public final class SplitPairFilter
         if (className.length() == 0 || className2.length() == 0) {
             throw new IllegalArgumentException("Activity class name must not be empty.");
         }
-        if (aubt.j((CharSequence)packageName, (CharSequence)"*") && aubt.l((CharSequence)packageName, "*", 0, false, 6) != packageName.length() - 1) {
+        if (auop.r((CharSequence)packageName, (CharSequence)"*") && auop.t((CharSequence)packageName, "*", 0, false, 6) != packageName.length() - 1) {
             throw new IllegalArgumentException("Wildcard in package name is only allowed at the end.");
         }
-        if (aubt.j((CharSequence)className, (CharSequence)"*") && aubt.l((CharSequence)className, "*", 0, false, 6) != className.length() - 1) {
+        if (auop.r((CharSequence)className, (CharSequence)"*") && auop.t((CharSequence)className, "*", 0, false, 6) != className.length() - 1) {
             throw new IllegalArgumentException("Wildcard in class name is only allowed at the end.");
         }
-        if (aubt.j((CharSequence)packageName2, (CharSequence)"*") && aubt.l((CharSequence)packageName2, "*", 0, false, 6) != packageName2.length() - 1) {
+        if (auop.r((CharSequence)packageName2, (CharSequence)"*") && auop.t((CharSequence)packageName2, "*", 0, false, 6) != packageName2.length() - 1) {
             throw new IllegalArgumentException("Wildcard in package name is only allowed at the end.");
         }
-        if (aubt.j((CharSequence)className2, (CharSequence)"*") && aubt.l((CharSequence)className2, "*", 0, false, 6) != className2.length() - 1) {
+        if (auop.r((CharSequence)className2, (CharSequence)"*") && auop.t((CharSequence)className2, "*", 0, false, 6) != className2.length() - 1) {
             throw new IllegalArgumentException("Wildcard in class name is only allowed at the end.");
         }
     }
@@ -63,7 +63,7 @@ public final class SplitPairFilter
         }
         final ComponentName primaryActivityName = this.primaryActivityName;
         final SplitPairFilter splitPairFilter = (SplitPairFilter)o;
-        return atnh.c((Object)primaryActivityName, (Object)splitPairFilter.primaryActivityName) && atnh.c((Object)this.secondaryActivityName, (Object)splitPairFilter.secondaryActivityName) && atnh.c((Object)this.secondaryActivityIntentAction, (Object)splitPairFilter.secondaryActivityIntentAction);
+        return atqz.c(primaryActivityName, splitPairFilter.primaryActivityName) && atqz.c(this.secondaryActivityName, splitPairFilter.secondaryActivityName) && atqz.c(this.secondaryActivityIntentAction, splitPairFilter.secondaryActivityIntentAction);
     }
     
     public final ComponentName getPrimaryActivityName() {
@@ -101,7 +101,7 @@ public final class SplitPairFilter
         if (componentsMatching$window_release) {
             if (MatcherUtils.INSTANCE.isIntentMatching$window_release(intent, this.getSecondaryActivityInfo())) {
                 final String secondaryActivityIntentAction = this.secondaryActivityIntentAction;
-                if (secondaryActivityIntentAction != null && !atnh.c((Object)secondaryActivityIntentAction, (Object)intent.getAction())) {
+                if (secondaryActivityIntentAction != null && !atqz.c(secondaryActivityIntentAction, intent.getAction())) {
                     return false;
                 }
                 b = true;

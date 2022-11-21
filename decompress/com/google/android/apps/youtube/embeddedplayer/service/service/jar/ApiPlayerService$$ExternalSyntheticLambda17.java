@@ -9,9 +9,9 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public final class ApiPlayerService$$ExternalSyntheticLambda17 implements Runnable
 {
-    public ApiPlayerService a;
-    public AtomicReference b;
-    public ConditionVariable c;
+    public final ApiPlayerService a;
+    public final AtomicReference b;
+    public final ConditionVariable c;
     
     public ApiPlayerService$$ExternalSyntheticLambda17(final ApiPlayerService a, final AtomicReference b, final ConditionVariable c) {
         this.a = a;

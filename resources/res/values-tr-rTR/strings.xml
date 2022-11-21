@@ -49,12 +49,15 @@
     <string name="litho_channel_guidelines">Kanal yönergelerini gizle</string>
     <string name="litho_channel_guidelines_off">Gizlenmiyor</string>
     <string name="litho_channel_guidelines_on">Gizlendi</string>
+    <string name="litho_chapter_teaser">Bölüm fragmanı seçeneği</string>
+    <string name="litho_chapter_teaser_off">Gizlenmiyor</string>
+    <string name="litho_chapter_teaser_on">Gizleniyor</string>
     <string name="litho_community_guidelines">Topluluk kurallarını gizle</string>
+    <string name="accessibility_settings_edu_opt_in_text">Video oynatıcı için erişilebilirlik denetimlerini açılsın mı?</string>
+    <string name="accessibility_settings_edu_opt_out_text">Bir erişilebilirlik hizmeti açık olduğu için kontrolleriniz değiştirildi.</string>
     <string name="litho_community_guidelines_off">Gizlenmiyor</string>
     <string name="litho_community_guidelines_on">Gizlendi</string>
     <string name="litho_community_posts">Topluluk gönderilerini gizle</string>
-    <string name="accessibility_settings_edu_opt_in_text">Video oynatıcı için erişilebilirlik denetimlerini açılsın mı?</string>
-    <string name="accessibility_settings_edu_opt_out_text">Bir erişilebilirlik hizmeti açık olduğu için kontrolleriniz değiştirildi.</string>
     <string name="litho_community_posts_off">Gizlenmiyor</string>
     <string name="litho_community_posts_on">Gizlendi</string>
     <string name="litho_compact_banner">Kompakt afiş kaldırma</string>
@@ -93,6 +96,9 @@
     <string name="litho_paid_content">Ücretli içeriği gizle</string>
     <string name="litho_paid_content_off">Gizlenmiyor</string>
     <string name="litho_paid_content_on">Gizlendi</string>
+    <string name="litho_self_sponsor">Kendinden sponsorlu kartlar</string>
+    <string name="litho_self_sponsor_off">Gizlenmiyor</string>
+    <string name="litho_self_sponsor_on">Gizleniyor</string>
     <string name="microg_not_installed_notice">Lütfen MicroG yükleyin</string>
     <string name="microg_not_installed_warning">MicroG bulunamadı</string>
     <string name="microg_notification_settings">Bildirim ayarları</string>
@@ -188,9 +194,6 @@
     <string name="revanced_endscreen_overlay_summary_off">Gizlenmiyor</string>
     <string name="revanced_endscreen_overlay_summary_on">Gizleniyor</string>
     <string name="revanced_endscreen_overlay_title">Bitiş ekranı arayüzü</string>
-    <string name="revanced_expansion_card_summary_off">Gizlenmiyor</string>
-    <string name="revanced_expansion_card_summary_on">Gizleniyor</string>
-    <string name="revanced_expansion_card_title">Kart genişlemeleri</string>
     <string name="revanced_experimental_flag">Deneysel parametreler</string>
     <string name="revanced_extended_settings">ReVanced Gelişmiş ayarlar</string>
     <string name="revanced_extended_summary">Gelişmiş ayarlar</string>
@@ -335,7 +338,7 @@
     <string name="revanced_shorts_player_comments_button_title">Shorts oynatıcı yorumlar butonu</string>
     <string name="revanced_shorts_player_remix_button_summary_off">Gizleniyor</string>
     <string name="revanced_shorts_player_remix_button_summary_on">Gizlenmiyor</string>
-    <string name="revanced_shorts_player_remix_button_title">Shorts oynatıcı \"bu sesi kullan\" seçeneği</string>
+    <string name="revanced_shorts_player_remix_button_title">Shorts oynatıcı remiks seçeneği</string>
     <string name="revanced_shorts_player_subscriptions_summary_off">Gizleniyor</string>
     <string name="revanced_shorts_player_subscriptions_summary_on">Gizlenmiyor</string>
     <string name="revanced_shorts_player_subscriptions_title">Shorts abonelikler afişi</string>

@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Použiť motív zariadenia</string>
     <string name="app_theme_appearance_summary">Výber nastavenia svetlého alebo tmavého motívu</string>
     <string name="app_theme_appearance_title">Vzhľad</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Použiť</string>
     <string name="approve_playlist_sync">Synchronizovať nové videá</string>
     <string name="audio_playback_failed_snackbar_action_button">Skúsiť znova</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Ukončiť stream</string>
     <string name="lc_retry_yes">Skúsiť znova</string>
     <string name="lc_rotate_device">Otočte zariadenie</string>
+    <string name="lc_sharedmde_required_field_error">Názov a publikum sú povinné.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Stream na výšku</string>
     <string name="lc_stream_start_error">Nemožno spustiť stream. Skontrolujte pripojenie.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Ukážka videa. Pozastaviť klepnutím.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Ukážka videa. Prehrať klepnutím.</string>
     <string name="shorts_a11y_zoom_control">Ovládanie lupy</string>
+    <string name="shorts_audio_failure_toast">Nepodarilo sa pridať zvuk. Skúste to znova.</string>
     <string name="shorts_camera_allow_access_subtitle">Povoľte prístup ku kamere a mikrofónu</string>
     <string name="shorts_camera_allow_access_title">Vytvorenie krátkeho videa Shorts</string>
     <string name="shorts_camera_close_confirmation_cancel">Zrušiť</string>

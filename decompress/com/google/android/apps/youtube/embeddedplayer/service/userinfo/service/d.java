@@ -11,29 +11,29 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.Executor;
 import android.content.SharedPreferences;
 
-public final class d implements znq
+public final class d implements zri
 {
     public final SharedPreferences a;
     public String b;
-    public final uyi c;
-    private final atjj d;
-    private final atjj e;
+    public final vbs c;
+    private final atnb d;
+    private final atnb e;
     private final Executor f;
     private boolean g;
     
-    public d(final SharedPreferences a, final atjj e, final atjj d, final Executor f, final com.google.android.apps.youtube.embeddedplayer.service.clientinfo.service.d d2, final uyi c) {
+    public d(final SharedPreferences a, final atnb e, final atnb d, final Executor f, final com.google.android.apps.youtube.embeddedplayer.service.clientinfo.service.d d2, final vbs c) {
         this.b = "";
         this.d = d;
         this.a = a;
         this.c = c;
-        if (c.L()) {
+        if (c.M()) {
             this.b = d2.a;
         }
         this.e = e;
         this.f = f;
     }
     
-    public final void a(final String s, final zkh zkh) {
+    public final void a(final String s, final znz znz) {
         if (this.a.getString("visitor_id", (String)null) != null) {
             return;
         }
@@ -48,17 +48,17 @@ public final class d implements znq
             if (this.g) {
                 return;
             }
-            final addp addp = (addp)this.e.a();
-            final vpd n = addp.n();
-            ((vii)n).k(uyp.b);
+            final adhd adhd = (adhd)this.e.a();
+            final vso n = adhd.n();
+            ((vls)n).k(vby.b);
             try {
-                akjf akjf;
-                if ((akjf = ((albr)addp.o(n, this.f).get(4L, TimeUnit.SECONDS)).b) == null) {
-                    akjf = akjf.a;
+                aknj aknj;
+                if ((aknj = ((alfu)adhd.o(n, this.f).get(4L, TimeUnit.SECONDS)).b) == null) {
+                    aknj = aknj.a;
                 }
-                final String c = akjf.c;
+                final String c = aknj.c;
                 if (!TextUtils.isEmpty((CharSequence)c)) {
-                    if (this.c.L()) {
+                    if (this.c.M()) {
                         this.a.edit().putString(String.valueOf(this.b).concat("_visitor_id"), c).apply();
                     }
                     else {
@@ -80,16 +80,16 @@ public final class d implements znq
     }
     
     public final void c(final int n) {
-        final adcr adcr = (adcr)this.d.a();
-        final agza builder = ((agzi)ahzu.a).createBuilder();
+        final aefs aefs = (aefs)this.d.a();
+        final ahcr builder = aidl.a.createBuilder();
         builder.copyOnWrite();
-        final ahzu ahzu = (ahzu)builder.instance;
-        ahzu.c = n - 1;
-        ahzu.b |= 0x1;
-        final ahzu ahzu2 = (ahzu)builder.build();
-        final aklo d = aklq.d();
-        ((agza)d).copyOnWrite();
-        aklq.cj((aklq)d.instance, ahzu2);
-        adcr.aM((aklq)((agza)d).build());
+        final aidl aidl = (aidl)builder.instance;
+        aidl.c = n - 1;
+        aidl.b |= 0x1;
+        final aidl aidl2 = (aidl)builder.build();
+        final akps d = akpu.d();
+        ((ahcr)d).copyOnWrite();
+        akpu.ck((akpu)d.instance, aidl2);
+        aefs.bn((akpu)((ahcr)d).build());
     }
 }

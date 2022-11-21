@@ -57,9 +57,7 @@ public final class BackStackRecordState implements Parcelable
             this.b = new ArrayList(size);
             this.c = new int[size];
             this.d = new int[size];
-            int i = 0;
-            int n = 0;
-            while (i < size) {
+            for (int i = 0, n = 0; i < size; ++i, ++n) {
                 final cs cs = av.d.get(i);
                 final int[] a = this.a;
                 final int n2 = n + 1;
@@ -81,13 +79,11 @@ public final class BackStackRecordState implements Parcelable
                 a2[n3] = cs.d;
                 final int n5 = n4 + 1;
                 a2[n4] = cs.e;
-                final int n6 = n5 + 1;
+                n = n5 + 1;
                 a2[n5] = cs.f;
-                a2[n6] = cs.g;
+                a2[n] = cs.g;
                 this.c[i] = cs.h.ordinal();
                 this.d[i] = cs.i.ordinal();
-                ++i;
-                n = n6 + 1;
             }
             this.e = av.i;
             this.f = av.l;

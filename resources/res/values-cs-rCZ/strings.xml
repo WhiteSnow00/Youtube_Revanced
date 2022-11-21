@@ -50,11 +50,11 @@
     <string name="litho_channel_guidelines_off">Pokyny kanálu jsou zobrazeny</string>
     <string name="litho_channel_guidelines_on">Pokyny kanálu jsou skryté</string>
     <string name="litho_community_guidelines">Odstranit komunitní pravidla</string>
+    <string name="accessibility_settings_edu_opt_in_text">Zapnout ovládání usnadnění pro video přehrávač?</string>
+    <string name="accessibility_settings_edu_opt_out_text">Vaše ovládací prvky jsou upraveny, protože je zapnuta služba usnadnění.</string>
     <string name="litho_community_guidelines_off">Komunitní pravidla jsou zobrazeny</string>
     <string name="litho_community_guidelines_on">Komunitní pravidla jsou skryté</string>
     <string name="litho_community_posts">Odstranit příspěvky v komunitě</string>
-    <string name="accessibility_settings_edu_opt_in_text">Zapnout ovládání usnadnění pro video přehrávač?</string>
-    <string name="accessibility_settings_edu_opt_out_text">Vaše ovládací prvky jsou upraveny, protože je zapnuta služba usnadnění.</string>
     <string name="litho_community_posts_off">Komunitní příspěvky jsou zobrazeny</string>
     <string name="litho_community_posts_on">Komunitní příspěvky jsou skryty</string>
     <string name="litho_compact_banner">Odstranit aktuální banery</string>

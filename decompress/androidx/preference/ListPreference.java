@@ -24,7 +24,7 @@ public class ListPreference extends DialogPreference
     }
     
     public ListPreference(final Context context, final AttributeSet set) {
-        this(context, set, vh.c(context, 2130969243, 16842897));
+        this(context, set, vh.c(context, 2130969241, 16842897));
     }
     
     public ListPreference(final Context context, final AttributeSet set, final int n) {
@@ -33,17 +33,17 @@ public class ListPreference extends DialogPreference
     
     public ListPreference(final Context context, final AttributeSet set, final int n, final int n2) {
         super(context, set, n, n2);
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, cfk.e, n, n2);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, cfn.e, n, n2);
         this.g = vh.k(obtainStyledAttributes, 2, 0);
         this.h = vh.k(obtainStyledAttributes, 3, 1);
         if (vh.i(obtainStyledAttributes, 4, 4, false)) {
-            if (ceg.a == null) {
-                ceg.a = new ceg(0);
+            if (cej.a == null) {
+                cej.a = new cej(0);
             }
-            ((Preference)this).L((cep)ceg.a);
+            ((Preference)this).L((ces)cej.a);
         }
         obtainStyledAttributes.recycle();
-        final TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(set, cfk.g, n, n2);
+        final TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(set, cfn.g, n, n2);
         this.G = vh.h(obtainStyledAttributes2, 33, 7);
         obtainStyledAttributes2.recycle();
     }
@@ -113,7 +113,7 @@ public class ListPreference extends DialogPreference
     }
     
     public CharSequence m() {
-        final cep f = ((Preference)this).F;
+        final ces f = ((Preference)this).F;
         if (f != null) {
             return f.a((Preference)this);
         }

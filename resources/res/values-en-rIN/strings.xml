@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Use device theme</string>
     <string name="app_theme_appearance_summary">Choose your light or dark theme preference</string>
     <string name="app_theme_appearance_title">Appearance</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Apply</string>
     <string name="approve_playlist_sync">Sync new videos</string>
     <string name="audio_playback_failed_snackbar_action_button">Try again</string>
@@ -790,6 +790,7 @@
     <string name="lc_retry_no">End stream</string>
     <string name="lc_retry_yes">Try again</string>
     <string name="lc_rotate_device">Rotate device</string>
+    <string name="lc_sharedmde_required_field_error">Title and audience are required.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Stream in portrait</string>
     <string name="lc_stream_start_error">Unable to start stream. Check your connection.</string>
@@ -1689,6 +1690,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Video preview. Tap to pause.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Video preview. Tap to play.</string>
     <string name="shorts_a11y_zoom_control">Zoom control</string>
+    <string name="shorts_audio_failure_toast">Failed to add sound. Please try again.</string>
     <string name="shorts_camera_allow_access_subtitle">Allow access to your camera and microphone</string>
     <string name="shorts_camera_allow_access_title">Create a Short</string>
     <string name="shorts_camera_close_confirmation_cancel">Cancel</string>

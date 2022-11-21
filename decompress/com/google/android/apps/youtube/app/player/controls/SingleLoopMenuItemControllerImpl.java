@@ -9,76 +9,79 @@ import android.animation.ValueAnimator;
 import com.google.android.apps.youtube.app.common.player.PlaybackLoopShuffleMonitor;
 import android.content.Context;
 
-public class SingleLoopMenuItemControllerImpl implements isf, tfh, fns
+public class SingleLoopMenuItemControllerImpl implements ito, tio, foa
 {
-    public final abns a;
-    public final wwv b;
-    public final ftc c;
-    public irv d;
+    public final abqz a;
+    public final xab b;
+    public final ftq c;
+    public itc d;
     public boolean e;
     public boolean f;
     public boolean g;
-    public abim h;
+    public abll h;
     private final Context i;
     private final PlaybackLoopShuffleMonitor j;
-    private final asib k;
+    private final aslm k;
     private final int l;
     private ValueAnimator m;
     
-    public SingleLoopMenuItemControllerImpl(final Context i, final PlaybackLoopShuffleMonitor j, final abns a, final wwv b, final ftc c) {
-        this.h = abim.a;
+    public SingleLoopMenuItemControllerImpl(final Context i, final PlaybackLoopShuffleMonitor j, final abqz a, final xab b, final ftq c) {
+        this.h = abll.a;
         this.i = i;
         this.j = j;
         this.a = a;
         this.b = b;
         this.c = c;
-        this.k = new asib();
-        this.l = tmy.ct(i, 2130970911).orElse(0);
+        this.k = new aslm();
+        this.l = tqf.cx(i, 2130970909).orElse(0);
         c.a("menu_item_single_video_playback_loop", false);
     }
     
     private final String m(final boolean b) {
-        final Context i = this.i;
         int n;
         if (!b) {
-            n = 2132019825;
+            n = 2132019829;
         }
         else {
-            n = 2132019826;
+            n = 2132019830;
         }
-        return i.getString(n);
+        return this.i.getString(n);
     }
     
     private final void n() {
-        final irv d = this.d;
+        final itc d = this.d;
         if (d == null) {
             return;
         }
-        d.f(this.m(this.e));
-        final irv d2 = this.d;
+        ((actj)d).f(this.m(this.e));
+        final itc d2 = this.d;
         final Context i = this.i;
         int n;
         if (!this.e) {
-            n = 2131233638;
+            n = 2131233641;
         }
         else {
-            n = 2131233491;
+            n = 2131233492;
         }
-        ((qjg)d2).e = tmy.k(i, n, 2130970924);
+        ((qlk)d2).e = tqf.k(i, n, 2130970922);
     }
     
-    public final irv a() {
+    public final itc a() {
         if (this.d == null) {
-            (this.d = new irv(this.i.getString(2132019824), (irt)new irq(this, 9))).g(this.f);
+            ((actj)(this.d = new itc(this.i.getString(2132019828), (ita)new isx(this, 9)))).g(this.f);
             this.n();
         }
-        final irv d = this.d;
-        if (d != null && d.g) {
-            this.b.D((wxz)new wws(wya.c(123601)));
+        final itc d = this.d;
+        if (d != null && ((actj)d).g) {
+            this.b.D((xbe)new wzy(xbf.c(123601)));
         }
-        final irv d2 = this.d;
+        final itc d2 = this.d;
         d2.getClass();
         return d2;
+    }
+    
+    public final tik g() {
+        return tik.b;
     }
     
     public final void j(final int n, final boolean b) {
@@ -93,8 +96,8 @@ public class SingleLoopMenuItemControllerImpl implements isf, tfh, fns
         this.e = (e2 != 0);
         if ((e ? 1 : 0) != e2) {
             this.n();
-            if (this.h == abim.j && this.e) {
-                this.a.n().a(abmp.c);
+            if (this.h == abll.j && this.e) {
+                this.a.m().a(abpx.c);
             }
             this.c.f(this.m(this.e), Boolean.valueOf(this.e));
         }
@@ -102,9 +105,9 @@ public class SingleLoopMenuItemControllerImpl implements isf, tfh, fns
     
     public final void k() {
         this.g = false;
-        final irv d = this.d;
-        if (d != null && d.g) {
-            this.b.o((wxz)new wws(wya.c(123601)), (alff)null);
+        final itc d = this.d;
+        if (d != null && ((actj)d).g) {
+            this.b.o((xbe)new wzy(xbf.c(123601)), (alji)null);
         }
         final ValueAnimator m = this.m;
         if (m != null) {
@@ -116,9 +119,9 @@ public class SingleLoopMenuItemControllerImpl implements isf, tfh, fns
     
     public final void l(final boolean b) {
         this.g = true;
-        final irv d = this.d;
-        if (d != null && d.g) {
-            this.b.t((wxz)new wws(wya.c(123601)), (alff)null);
+        final itc d = this.d;
+        if (d != null && ((actj)d).g) {
+            this.b.t((xbe)new wzy(xbf.c(123601)), (alji)null);
             if (!b) {
                 return;
             }
@@ -127,7 +130,7 @@ public class SingleLoopMenuItemControllerImpl implements isf, tfh, fns
                 m.cancel();
             }
             (this.m = ValueAnimator.ofArgb(new int[] { this.l, 0 }).setDuration(3000L)).setStartDelay(1000L);
-            this.m.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new qh(this, 12));
+            this.m.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new qi(this, 12));
             this.m.start();
         }
         else if (!b) {
@@ -136,33 +139,57 @@ public class SingleLoopMenuItemControllerImpl implements isf, tfh, fns
         this.c.b("menu_item_single_video_playback_loop", Boolean.valueOf(true));
     }
     
-    public final void oO() {
+    public final void lW(final aup aup) {
+    }
+    
+    public final void mp(final aup aup) {
+    }
+    
+    public final void mx(final aup aup) {
+    }
+    
+    public final void oO(final aup aup) {
+    }
+    
+    public final void oP() {
         this.d = null;
     }
     
-    public final String oQ() {
+    public final boolean oQ() {
+        return false;
+    }
+    
+    public final String oR() {
         return "menu_item_single_video_playback_loop";
     }
     
-    public final void oS(final aum aum) {
+    public final void oT(final aup aup) {
         final boolean e = this.j.b == 2;
         this.e = e;
         this.c.f(this.m(e), Boolean.valueOf(this.e));
-        this.j.j((fns)this);
-        final asib k = this.k;
-        asic asic;
-        if (((uyi)this.a.cd().h).bx()) {
-            asic = this.a.R().am((asix)new isg(this, 0), (asix)irb.k);
+        this.j.j((foa)this);
+        final aslm k = this.k;
+        asln asln;
+        if (((vbs)this.a.cg().g).bA()) {
+            asln = this.a.Q().an((asmi)new itn(this, 2), (asmi)isj.k);
         }
         else {
-            asic = this.a.Q().R().P(ashw.a()).am((asix)new isg(this, 0), (asix)irb.k);
+            asln = this.a.P().R().P(aslh.a()).an((asmi)new itn(this, 2), (asmi)isj.k);
         }
-        k.c(asic);
-        this.k.c(((asgt)this.a.q().b).am((asix)new isg(this, 2), (asix)irb.k));
+        k.c(asln);
+        this.k.c(((aske)this.a.p().b).an((asmi)new itn(this, 3), (asmi)isj.k));
     }
     
-    public final void oW(final aum aum) {
-        this.j.k((fns)this);
+    public final void oU() {
+        tgj.d((tio)this);
+    }
+    
+    public final void oX() {
+        tgj.c((tio)this);
+    }
+    
+    public final void oY(final aup aup) {
+        this.j.k((foa)this);
         this.k.b();
     }
 }

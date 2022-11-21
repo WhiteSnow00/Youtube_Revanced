@@ -35,11 +35,11 @@ public final class a
         this.d |= 0x1;
     }
     
-    public final lln d() {
+    public final lly d() {
         if (this.d == 3) {
             final String a = this.a;
             if (a != null) {
-                return new lln(a, this.b, this.c);
+                return new lly(a, this.b, this.c);
             }
         }
         final StringBuilder sb = new StringBuilder();

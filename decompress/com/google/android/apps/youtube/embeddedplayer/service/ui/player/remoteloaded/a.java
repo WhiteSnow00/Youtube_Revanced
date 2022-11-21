@@ -24,7 +24,7 @@ public final class a implements Runnable
                 a.a();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }

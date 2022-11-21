@@ -14,7 +14,7 @@ public abstract class EmbeddingRule
     
     @Override
     public boolean equals(final Object o) {
-        return this == o || (o instanceof EmbeddingRule && atnh.c((Object)this.tag, (Object)((EmbeddingRule)o).tag));
+        return this == o || (o instanceof EmbeddingRule && atqz.c(this.tag, ((EmbeddingRule)o).tag));
     }
     
     public final String getTag() {

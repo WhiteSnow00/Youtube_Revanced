@@ -20,8 +20,8 @@ public final class f implements Animation$AnimationListener
     public f(final ImageView a, final Animation b) {
         this.a = a;
         this.b = b;
-        this.c = a(a.getResources(), 2131168628);
-        this.d = a(a.getResources(), 2131168627);
+        this.c = a(a.getResources(), 2131168667);
+        this.d = a(a.getResources(), 2131168666);
     }
     
     static float a(final Resources resources, final int n) {

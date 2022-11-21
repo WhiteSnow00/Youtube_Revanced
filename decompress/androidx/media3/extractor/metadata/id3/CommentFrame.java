@@ -15,13 +15,13 @@ public final class CommentFrame extends Id3Frame
     public final String c;
     
     static {
-        CREATOR = (Parcelable$Creator)new app(16);
+        CREATOR = (Parcelable$Creator)new apq(16);
     }
     
     public CommentFrame(final Parcel parcel) {
         super("COMM");
         final String string = parcel.readString();
-        final int a = bax.a;
+        final int a = baz.a;
         this.a = string;
         this.b = parcel.readString();
         this.c = parcel.readString();
@@ -41,7 +41,7 @@ public final class CommentFrame extends Id3Frame
         if (o != null) {
             if (this.getClass() == o.getClass()) {
                 final CommentFrame commentFrame = (CommentFrame)o;
-                if (bax.aa((Object)this.b, (Object)commentFrame.b) && bax.aa((Object)this.a, (Object)commentFrame.a) && bax.aa((Object)this.c, (Object)commentFrame.c)) {
+                if (baz.aa(this.b, commentFrame.b) && baz.aa(this.a, commentFrame.a) && baz.aa(this.c, commentFrame.c)) {
                     return true;
                 }
             }

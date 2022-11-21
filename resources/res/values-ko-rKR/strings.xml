@@ -49,12 +49,15 @@
     <string name="litho_channel_guidelines">채널 가이드라인 숨기기</string>
     <string name="litho_channel_guidelines_off">채널 가이드라인을 보여줍니다</string>
     <string name="litho_channel_guidelines_on">채널 가이드라인을 숨깁니다</string>
+    <string name="litho_chapter_teaser">영상 하단 챕터 티저</string>
+    <string name="litho_chapter_teaser_off">챕터 티저를 보여줍니다</string>
+    <string name="litho_chapter_teaser_on">챕터 티저를 숨깁니다</string>
     <string name="litho_community_guidelines">커뮤니티 가이드라인 제거</string>
+    <string name="accessibility_settings_edu_opt_in_text">플레이어에서 접근성 컨트롤을 표시하시겠습니까?</string>
+    <string name="accessibility_settings_edu_opt_out_text">접근성 서비스가 켜져있기 때문에 플레이어 컨트롤이 변경되었습니다.</string>
     <string name="litho_community_guidelines_off">커뮤니티 가이드라인을 보여줍니다</string>
     <string name="litho_community_guidelines_on">커뮤니티 가이드라인을 숨깁니다</string>
     <string name="litho_community_posts">커뮤니티 게시물 제거</string>
-    <string name="accessibility_settings_edu_opt_in_text">플레이어에서 접근성 컨트롤을 표시하시겠습니까?</string>
-    <string name="accessibility_settings_edu_opt_out_text">접근성 서비스가 켜져있기 때문에 플레이어 컨트롤이 변경되었습니다.</string>
     <string name="litho_community_posts_off">커뮤니티 게시물을 보여줍니다</string>
     <string name="litho_community_posts_on">커뮤니티 게시물을 숨깁니다</string>
     <string name="litho_compact_banner">영상 하단 정보 패널 제거</string>
@@ -93,6 +96,9 @@
     <string name="litho_paid_content">유료광고 포함 라벨 제거</string>
     <string name="litho_paid_content_off">유료광고 포함 라벨을 보여줍니다</string>
     <string name="litho_paid_content_on">유료광고 포함 라벨을 숨깁니다</string>
+    <string name="litho_self_sponsor">셀프 스폰서 카드 제거</string>
+    <string name="litho_self_sponsor_off">셀프 스폰서 카드를 보여줍니다</string>
+    <string name="litho_self_sponsor_on">셀프 스폰서 카드를 숨깁니다</string>
     <string name="microg_not_installed_notice">MicroG를 설치해 주세요</string>
     <string name="microg_not_installed_warning">MicroG가 설치되지 않았습니다.</string>
     <string name="microg_notification_settings">알림 설정</string>
@@ -188,9 +194,6 @@
     <string name="revanced_endscreen_overlay_summary_off">추천 영상 오버레이를 보여줍니다</string>
     <string name="revanced_endscreen_overlay_summary_on">추천 영상 오버레이를 숨깁니다</string>
     <string name="revanced_endscreen_overlay_title">추천 영상 오버레이</string>
-    <string name="revanced_expansion_card_summary_off">영상 추가 정보 카드를 보여줍니다</string>
-    <string name="revanced_expansion_card_summary_on">영상 추가 정보 카드를 숨깁니다</string>
-    <string name="revanced_expansion_card_title">영상 추가 정보 카드</string>
     <string name="revanced_experimental_flag">실험적 플래그</string>
     <string name="revanced_extended_settings">ReVanced Extended 설정</string>
     <string name="revanced_extended_summary">Extended 관련 설정입니다</string>

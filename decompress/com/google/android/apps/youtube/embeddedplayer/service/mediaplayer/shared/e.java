@@ -5,15 +5,15 @@
 package com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.shared;
 
 import java.util.concurrent.atomic.AtomicBoolean;
-import com.google.android.apps.youtube.embeddedplayer.service.jar.client.a;
-import com.google.android.apps.youtube.embeddedplayer.service.jar.client.z;
+import com.google.android.apps.youtube.embeddedplayer.service.jar.client.b;
+import com.google.android.apps.youtube.embeddedplayer.service.jar.client.x;
 import android.os.IInterface;
 import android.os.IBinder;
 import android.os.Parcelable;
 import android.os.Parcel;
 import android.view.SurfaceView;
 import android.view.View;
-import com.google.android.apps.youtube.embeddedplayer.service.jar.client.r;
+import com.google.android.apps.youtube.embeddedplayer.service.jar.client.q;
 import android.os.ConditionVariable;
 import java.util.concurrent.atomic.AtomicReference;
 import android.graphics.Rect;
@@ -22,7 +22,7 @@ import com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remote
 import android.view.SurfaceHolder;
 import android.content.Context;
 
-public final class e extends eoa implements f
+public final class e extends eod implements f
 {
     public final Context a;
     public com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.f b;
@@ -47,13 +47,13 @@ public final class e extends eoa implements f
     public final Rect a() {
         final AtomicReference atomicReference = new AtomicReference();
         final ConditionVariable conditionVariable = new ConditionVariable();
-        this.e.post((Runnable)new jvg(this, atomicReference, conditionVariable, 10));
+        this.e.post((Runnable)new jvo(this, atomicReference, conditionVariable, 10));
         conditionVariable.block();
         return (Rect)atomicReference.get();
     }
     
     public final void b(final int n, final int n2) {
-        this.e.post((Runnable)new r(this, n, n2, 3));
+        this.e.post((Runnable)new q(this, n, n2, 3));
     }
     
     public final void c() {
@@ -97,15 +97,15 @@ public final class e extends eoa implements f
                 break;
             }
             case 5: {
-                n = parcel.readInt();
                 int1 = parcel.readInt();
+                n = parcel.readInt();
                 this.enforceNoDataAvail(parcel);
-                this.b(n, int1);
+                this.b(int1, n);
                 parcel2.writeNoException();
                 break;
             }
             case 4: {
-                final boolean k = eob.k(parcel);
+                final boolean k = eoe.k(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.h(k);
                 parcel2.writeNoException();
@@ -114,13 +114,13 @@ public final class e extends eoa implements f
             case 3: {
                 final Rect a = this.a();
                 parcel2.writeNoException();
-                eob.i(parcel2, (Parcelable)a);
+                eoe.i(parcel2, (Parcelable)a);
                 break;
             }
             case 2: {
                 final boolean l = this.l();
                 parcel2.writeNoException();
-                eob.f(parcel2, l);
+                eoe.f(parcel2, l);
                 break;
             }
             case 1: {
@@ -152,15 +152,15 @@ public final class e extends eoa implements f
     }
     
     public final void h(final boolean b) {
-        this.e.post((Runnable)new z(this, b, 2));
+        this.e.post((Runnable)new x(this, b, 2));
     }
     
     public final void i() {
-        this.e.post((Runnable)new a(this, 18));
+        this.e.post((Runnable)new b(this, 16));
     }
     
     public final void j(final i i) {
-        this.e.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.databus.remoteloaded.a(this, i, 14));
+        this.e.post((Runnable)new lqa(this, i, 16));
     }
     
     public final void k(final int n) {
@@ -170,7 +170,7 @@ public final class e extends eoa implements f
     public final boolean l() {
         final AtomicBoolean atomicBoolean = new AtomicBoolean();
         final ConditionVariable conditionVariable = new ConditionVariable();
-        this.e.post((Runnable)new jvg(this, atomicBoolean, conditionVariable, 11));
+        this.e.post((Runnable)new jvo(this, atomicBoolean, conditionVariable, 11));
         conditionVariable.block();
         return atomicBoolean.get();
     }

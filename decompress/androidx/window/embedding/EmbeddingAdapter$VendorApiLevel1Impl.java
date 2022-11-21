@@ -20,33 +20,33 @@ final class EmbeddingAdapter$VendorApiLevel1Impl
     }
     
     private final boolean isSplitAttributesSupported(final SplitAttributes splitAttributes) {
-        return splitAttributes.getSplitType() instanceof SplitAttributes$SplitType$RatioSplitType && aqqn.A((Object[])new SplitAttributes$LayoutDirection[] { SplitAttributes$LayoutDirection.LEFT_TO_RIGHT, SplitAttributes$LayoutDirection.RIGHT_TO_LEFT, SplitAttributes$LayoutDirection.LOCALE }, (Object)splitAttributes.getLayoutDirection());
+        return splitAttributes.getSplitType() instanceof SplitAttributes$SplitType$RatioSplitType && atyb.i((Object[])new SplitAttributes$LayoutDirection[] { SplitAttributes$LayoutDirection.LEFT_TO_RIGHT, SplitAttributes$LayoutDirection.RIGHT_TO_LEFT, SplitAttributes$LayoutDirection.LOCALE }, (Object)splitAttributes.getLayoutDirection());
     }
     
-    private final atjp translateSplitAttributesCompatInternal(final SplitAttributes splitAttributes) {
+    private final atnh translateSplitAttributesCompatInternal(final SplitAttributes splitAttributes) {
         final boolean splitAttributesSupported = this.isSplitAttributesSupported(splitAttributes);
         int n = 3;
-        atjp atjp;
+        atnh atnh;
         if (!splitAttributesSupported) {
-            atjp = new atjp((Object)0.0f, (Object)3);
+            atnh = new atnh(0.0f, 3);
         }
         else {
             final float value$window_release = splitAttributes.getSplitType().getValue$window_release();
             final SplitAttributes$LayoutDirection layoutDirection = splitAttributes.getLayoutDirection();
-            if (!atnh.c((Object)layoutDirection, (Object)SplitAttributes$LayoutDirection.LOCALE)) {
-                if (atnh.c((Object)layoutDirection, (Object)SplitAttributes$LayoutDirection.LEFT_TO_RIGHT)) {
+            if (!atqz.c(layoutDirection, SplitAttributes$LayoutDirection.LOCALE)) {
+                if (atqz.c(layoutDirection, SplitAttributes$LayoutDirection.LEFT_TO_RIGHT)) {
                     n = 0;
                 }
                 else {
-                    if (!atnh.c((Object)layoutDirection, (Object)SplitAttributes$LayoutDirection.RIGHT_TO_LEFT)) {
+                    if (!atqz.c(layoutDirection, SplitAttributes$LayoutDirection.RIGHT_TO_LEFT)) {
                         throw new IllegalStateException("Unsupported layout direction must be covered in @isSplitAttributesSupported!");
                     }
                     n = 1;
                 }
             }
-            atjp = new atjp((Object)value$window_release, (Object)n);
+            atnh = new atnh(value$window_release, n);
         }
-        return atjp;
+        return atnh;
     }
     
     public final SplitAttributes getSplitAttributesCompat(final SplitInfo splitInfo) {
@@ -60,7 +60,7 @@ final class EmbeddingAdapter$VendorApiLevel1Impl
     public final SplitPairRule$Builder setDefaultSplitAttributesCompat(SplitPairRule$Builder setLayoutDirection, final SplitAttributes splitAttributes) {
         setLayoutDirection.getClass();
         splitAttributes.getClass();
-        final atjp translateSplitAttributesCompatInternal = this.translateSplitAttributesCompatInternal(splitAttributes);
+        final atnh translateSplitAttributesCompatInternal = this.translateSplitAttributesCompatInternal(splitAttributes);
         setLayoutDirection = setLayoutDirection.setSplitRatio(((Number)translateSplitAttributesCompatInternal.a).floatValue()).setLayoutDirection(((Number)translateSplitAttributesCompatInternal.b).intValue());
         setLayoutDirection.getClass();
         return setLayoutDirection;
@@ -69,7 +69,7 @@ final class EmbeddingAdapter$VendorApiLevel1Impl
     public final SplitPlaceholderRule$Builder setDefaultSplitAttributesCompat(SplitPlaceholderRule$Builder setLayoutDirection, final SplitAttributes splitAttributes) {
         setLayoutDirection.getClass();
         splitAttributes.getClass();
-        final atjp translateSplitAttributesCompatInternal = this.translateSplitAttributesCompatInternal(splitAttributes);
+        final atnh translateSplitAttributesCompatInternal = this.translateSplitAttributesCompatInternal(splitAttributes);
         setLayoutDirection = setLayoutDirection.setSplitRatio(((Number)translateSplitAttributesCompatInternal.a).floatValue()).setLayoutDirection(((Number)translateSplitAttributesCompatInternal.b).intValue());
         setLayoutDirection.getClass();
         return setLayoutDirection;

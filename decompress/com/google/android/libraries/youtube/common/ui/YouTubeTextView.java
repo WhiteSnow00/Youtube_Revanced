@@ -99,7 +99,7 @@ public class YouTubeTextView extends TextView
         int n5 = -1;
         while (i < indexCount) {
             final int index = typedArray.getIndex(i);
-            final int[] a = tqs.a;
+            final int[] a = trt.a;
             int int1;
             int int2;
             int int3;
@@ -187,34 +187,34 @@ public class YouTubeTextView extends TextView
             n5 = int4;
         }
         final Context context = this.getContext();
-        acan acan;
+        acbx acbx;
         if (n2 != -1) {
-            acan = acan.c(n2);
+            acbx = acbx.c(n2);
         }
         else if (n3 != -1) {
-            acan = acan.d(n3);
+            acbx = acbx.d(n3);
         }
         else {
-            final acan acan2 = acan = null;
+            final acbx acbx2 = acbx = null;
             if (n4 != -1) {
-                final acan[] values = acan.values();
+                final acbx[] values = acbx.values();
                 final int length = values.length;
                 int n6 = n;
                 while (true) {
-                    acan = acan2;
+                    acbx = acbx2;
                     if (n6 >= length) {
                         break;
                     }
-                    acan = values[n6];
-                    if (acan.v == n4) {
+                    acbx = values[n6];
+                    if (acbx.v == n4) {
                         break;
                     }
                     ++n6;
                 }
             }
         }
-        if (acan != null) {
-            this.setTypeface(acan.b(context, n5), n5);
+        if (acbx != null) {
+            this.setTypeface(acbx.b(context, n5), n5);
         }
     }
     
@@ -223,13 +223,13 @@ public class YouTubeTextView extends TextView
             return;
         }
         final Resources$Theme theme = context.getTheme();
-        final TypedArray obtainStyledAttributes = theme.obtainStyledAttributes((AttributeSet)null, tqs.i, resourceId, n);
+        final TypedArray obtainStyledAttributes = theme.obtainStyledAttributes((AttributeSet)null, trt.i, resourceId, n);
         this.a(obtainStyledAttributes);
         obtainStyledAttributes.recycle();
-        final TypedArray obtainStyledAttributes2 = theme.obtainStyledAttributes(set, tqs.i, 0, 0);
+        final TypedArray obtainStyledAttributes2 = theme.obtainStyledAttributes(set, trt.i, 0, 0);
         resourceId = obtainStyledAttributes2.getResourceId(0, 0);
         if (resourceId != 0) {
-            final TypedArray obtainStyledAttributes3 = theme.obtainStyledAttributes(resourceId, tqs.i);
+            final TypedArray obtainStyledAttributes3 = theme.obtainStyledAttributes(resourceId, trt.i);
             this.a(obtainStyledAttributes3);
             obtainStyledAttributes3.recycle();
         }
@@ -260,7 +260,7 @@ public class YouTubeTextView extends TextView
     public final void d() {
         this.b = true;
         final boolean longClickable = this.isLongClickable();
-        this.setMovementMethod(tro.a());
+        this.setMovementMethod(tsp.a());
         this.setLongClickable(longClickable);
     }
     
@@ -294,31 +294,31 @@ public class YouTubeTextView extends TextView
     
     public final void setText(final CharSequence charSequence, final TextView$BufferType textView$BufferType) {
         if (charSequence instanceof Spanned) {
-            final int dimensionPixelSize = this.getContext().getResources().getDimensionPixelSize(2131169854);
+            final int dimensionPixelSize = this.getContext().getResources().getDimensionPixelSize(2131169893);
             final Spanned spanned = (Spanned)charSequence;
             final int length = charSequence.length();
             int i = 0;
-            for (final acad acad : (acad[])spanned.getSpans(0, length, (Class)acad.class)) {
+            for (final acbn acbn : (acbn[])spanned.getSpans(0, length, (Class)acbn.class)) {
                 if (this.d) {
-                    acad.a.setColor(this.e);
-                    acad.b = true;
+                    acbn.a.setColor(this.e);
+                    acbn.b = true;
                 }
-                acad.a.setStrokeWidth((float)dimensionPixelSize);
+                acbn.a.setStrokeWidth((float)dimensionPixelSize);
             }
             int n;
             if (this.k) {
                 n = this.l;
             }
             else {
-                n = this.getContext().getResources().getDimensionPixelSize(2131170191);
+                n = this.getContext().getResources().getDimensionPixelSize(2131170230);
             }
-            for (acae[] array2 = (acae[])spanned.getSpans(0, charSequence.length(), (Class)acae.class); i < array2.length; ++i) {
-                final acae acae = array2[i];
+            for (acbo[] array2 = (acbo[])spanned.getSpans(0, charSequence.length(), (Class)acbo.class); i < array2.length; ++i) {
+                final acbo acbo = array2[i];
                 if (this.f) {
-                    acae.a.setColor(this.j);
-                    acae.b = true;
+                    acbo.a.setColor(this.j);
+                    acbo.b = true;
                 }
-                acae.a.setStrokeWidth((float)n);
+                acbo.a.setStrokeWidth((float)n);
             }
         }
         super.setText(charSequence, textView$BufferType);
@@ -326,7 +326,7 @@ public class YouTubeTextView extends TextView
     }
     
     public final void setTextAppearance(final Context context, final int n) {
-        final acan c = acan.c(-1);
+        final acbx c = acbx.c(-1);
         if (c != null) {
             this.setTypeface(c.b(this.getContext(), 0), 0);
         }
@@ -339,7 +339,7 @@ public class YouTubeTextView extends TextView
         this.f = false;
         this.k = false;
         super.setTextAppearance(context, n);
-        final TypedArray obtainStyledAttributes = this.getContext().obtainStyledAttributes(n, tqs.i);
+        final TypedArray obtainStyledAttributes = this.getContext().obtainStyledAttributes(n, trt.i);
         this.a(obtainStyledAttributes);
         obtainStyledAttributes.recycle();
     }

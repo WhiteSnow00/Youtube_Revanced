@@ -20,15 +20,15 @@ public abstract class VideoDetailsExpanded implements Parcelable
         CREATOR = (Parcelable$Creator)new f(7);
     }
     
-    public static pa d() {
-        final pa pa = new pa((short[])null);
-        pa.a = null;
-        pa.b = null;
-        pa.j(ahab.b);
-        return pa;
+    public static pb d() {
+        final pb pb = new pb((short[])null);
+        pb.a = null;
+        pb.b = null;
+        pb.j(ahbt.b);
+        return pb;
     }
     
-    public abstract ahab a();
+    public abstract ahbt a();
     
     public abstract CharSequence b();
     

@@ -50,11 +50,11 @@
     <string name="litho_channel_guidelines_off">Правілы канала адлюстраваны</string>
     <string name="litho_channel_guidelines_on">Правілы канала схаваны</string>
     <string name="litho_community_guidelines">Выдаліць правілы супольнасці</string>
+    <string name="accessibility_settings_edu_opt_in_text">Уключыць спецыяльныя магчымасці для відэаплэера?</string>
+    <string name="accessibility_settings_edu_opt_out_text">Вашы элементы кіравання зменены, таму што служба спецыяльных магчымасцяў уключана.</string>
     <string name="litho_community_guidelines_off">Паказваць правілы супольнасці</string>
     <string name="litho_community_guidelines_on">Правілы супольнасці схаваныя</string>
     <string name="litho_community_posts">Выдаліць ​​​​публікацыі ў супольнасці</string>
-    <string name="accessibility_settings_edu_opt_in_text">Уключыць спецыяльныя магчымасці для відэаплэера?</string>
-    <string name="accessibility_settings_edu_opt_out_text">Вашы элементы кіравання зменены, таму што служба спецыяльных магчымасцяў уключана.</string>
     <string name="litho_community_posts_off">Паказваюцца паведамленні ў супольнасці</string>
     <string name="litho_community_posts_on">Паведамленні ў супольнасці схаваны</string>
     <string name="litho_compact_banner">Выдаліць кампактныя банеры</string>

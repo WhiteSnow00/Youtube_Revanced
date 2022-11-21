@@ -12,7 +12,7 @@ public abstract class AdEventData implements BusSupported$Data
     public static final Parcelable$Creator CREATOR;
     
     static {
-        CREATOR = (Parcelable$Creator)new ics(11);
+        CREATOR = (Parcelable$Creator)new idb(11);
     }
     
     public static a c() {

@@ -15,7 +15,7 @@ public final class PrivateCommand extends SpliceCommand
     public final byte[] c;
     
     static {
-        CREATOR = (Parcelable$Creator)new bvm(5);
+        CREATOR = (Parcelable$Creator)new bvp(5);
     }
     
     public PrivateCommand(final long b, final byte[] c, final long a) {
@@ -27,7 +27,7 @@ public final class PrivateCommand extends SpliceCommand
     public PrivateCommand(final Parcel parcel) {
         this.a = parcel.readLong();
         this.b = parcel.readLong();
-        this.c = (byte[])bax.L((Object)parcel.createByteArray());
+        this.c = (byte[])baz.L(parcel.createByteArray());
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {

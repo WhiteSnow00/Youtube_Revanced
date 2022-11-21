@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">ໃຊ້ຮູບແບບສີສັນຂອງອຸປະກອນ</string>
     <string name="app_theme_appearance_summary">ເລືອກການຕັ້ງຄ່າຮູບແບບສີສັນແຈ້ງ ຫຼື ມືດຂອງທ່ານ</string>
     <string name="app_theme_appearance_title">ຮູບແບບໜ້າຕາ</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">ສະໝັກ</string>
     <string name="approve_playlist_sync">ຊິ້ງຂໍ້ມູນວິດີໂອໃໝ່</string>
     <string name="audio_playback_failed_snackbar_action_button">ລອງໃໝ່</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">ສິ້ນສຸດການຖ່າຍທອດ</string>
     <string name="lc_retry_yes">ລອງໃໝ່</string>
     <string name="lc_rotate_device">ໝຸນຈໍອຸປະກອນ</string>
+    <string name="lc_sharedmde_required_field_error">ຕ້ອງລະບຸຊື່ ແລະ ຜູ້ຊົມ.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">ຖ່າຍທອດໃນແບບລວງຕັ້ງ</string>
     <string name="lc_stream_start_error">ບໍ່ສາມາດຖ່າຍທອດສົດໄດ້. ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ຂອງທ່ານ.</string>
@@ -1728,6 +1729,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">ຕົວຢ່າງວິດີໂອ. ແຕະເພື່ອຢຸດຊົ່ວຄາວ.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">ຕົວຢ່າງວິດີໂອ. ແຕະເພື່ອຫຼິ້ນ.</string>
     <string name="shorts_a11y_zoom_control">ຕົວຄວບຄຸມການຊູມ</string>
+    <string name="shorts_audio_failure_toast">ເພີ່ມສຽງບໍ່ສຳເລັດ. ກະລຸນາລອງໃໝ່.</string>
     <string name="shorts_camera_allow_access_subtitle">ກະລຸນາອະນຸຍາດການເຂົ້າເຖິງກ້ອງຖ່າຍຮູບ ແລະ ໄມໂຄຣໂຟນຂອງທ່ານ</string>
     <string name="shorts_camera_allow_access_title">ສ້າງ Short</string>
     <string name="shorts_camera_close_confirmation_cancel">ຍົກເລີກ</string>

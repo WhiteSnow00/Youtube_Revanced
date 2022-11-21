@@ -53,7 +53,7 @@ public final class Bounds
         else {
             class2 = null;
         }
-        if (!atnh.c((Object)class1, (Object)class2)) {
+        if (!atqz.c(class1, class2)) {
             return false;
         }
         o.getClass();

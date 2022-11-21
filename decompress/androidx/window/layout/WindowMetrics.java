@@ -11,33 +11,33 @@ import androidx.window.core.Bounds;
 public final class WindowMetrics
 {
     private final Bounds _bounds;
-    private final aob _windowInsetsCompat;
+    private final aoc _windowInsetsCompat;
     
-    public WindowMetrics(final Rect rect, final aob aob) {
+    public WindowMetrics(final Rect rect, final aoc aoc) {
         rect.getClass();
-        aob.getClass();
-        this(new Bounds(rect), aob);
+        aoc.getClass();
+        this(new Bounds(rect), aoc);
     }
     
-    public WindowMetrics(final Rect rect, aob a, final int n, final atny atny) {
+    public WindowMetrics(final Rect rect, aoc a, final int n, final atqv atqv) {
         if ((n & 0x2) != 0x0) {
             Object o;
             if (Build$VERSION.SDK_INT >= 30) {
-                o = new ans();
+                o = new ant();
             }
             else if (Build$VERSION.SDK_INT >= 29) {
-                o = new anr();
+                o = new ans();
             }
             else {
-                o = new anq();
+                o = new anr();
             }
-            a = ((ant)o).a();
+            a = ((anu)o).a();
             a.getClass();
         }
         this(rect, a);
     }
     
-    public WindowMetrics(final Bounds bounds, final aob windowInsetsCompat) {
+    public WindowMetrics(final Bounds bounds, final aoc windowInsetsCompat) {
         bounds.getClass();
         windowInsetsCompat.getClass();
         this._bounds = bounds;
@@ -57,19 +57,19 @@ public final class WindowMetrics
         else {
             class2 = null;
         }
-        if (!atoc.c((Object)class1, (Object)class2)) {
+        if (!atqz.c(class1, class2)) {
             return false;
         }
         o.getClass();
         final WindowMetrics windowMetrics = (WindowMetrics)o;
-        return atoc.c((Object)this._bounds, (Object)windowMetrics._bounds) && atoc.c((Object)this._windowInsetsCompat, (Object)windowMetrics._windowInsetsCompat);
+        return atqz.c(this._bounds, windowMetrics._bounds) && atqz.c(this._windowInsetsCompat, windowMetrics._windowInsetsCompat);
     }
     
     public final Rect getBounds() {
         return this._bounds.toRect();
     }
     
-    public final aob getWindowInsets() {
+    public final aoc getWindowInsets() {
         return this._windowInsetsCompat;
     }
     

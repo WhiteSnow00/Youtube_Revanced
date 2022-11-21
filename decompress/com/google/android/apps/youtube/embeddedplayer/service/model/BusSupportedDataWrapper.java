@@ -15,7 +15,7 @@ public class BusSupportedDataWrapper implements Parcelable
     private final b b;
     
     static {
-        CREATOR = (Parcelable$Creator)new ics(13);
+        CREATOR = (Parcelable$Creator)new idb(13);
     }
     
     public BusSupportedDataWrapper(final BusSupported$Data a) {

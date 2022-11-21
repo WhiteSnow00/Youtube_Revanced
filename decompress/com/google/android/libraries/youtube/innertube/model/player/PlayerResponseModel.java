@@ -12,15 +12,15 @@ import android.os.Parcelable;
 
 public interface PlayerResponseModel extends Parcelable
 {
-    akvf A();
+    akzj A();
     
-    amth B();
+    amxq B();
     
-    anbt C();
+    ange C();
     
-    anbz D();
+    angk D();
     
-    aplu E();
+    apqk E();
     
     String F();
     
@@ -38,9 +38,9 @@ public interface PlayerResponseModel extends Parcelable
     
     List M();
     
-    void N(final vey p0);
+    void N(final vig p0);
     
-    boolean O(final vhm p0);
+    boolean O(final vku p0);
     
     boolean P();
     
@@ -66,17 +66,17 @@ public interface PlayerResponseModel extends Parcelable
     
     ListenableFuture a();
     
-    aioe[] aa();
+    aisc[] aa();
     
-    aioe[] ab();
+    aisc[] ab();
     
-    akva[] ac();
+    akze[] ac();
     
-    vup ad(final vhm p0);
+    vxu ad(final vku p0);
     
-    ahhb b();
+    ahkq b();
     
-    ahle c();
+    ahot c();
     
     String d();
     
@@ -92,7 +92,7 @@ public interface PlayerResponseModel extends Parcelable
     
     long k();
     
-    vey l();
+    vig l();
     
     PlayerConfigModel m();
     
@@ -102,23 +102,23 @@ public interface PlayerResponseModel extends Parcelable
     
     PlayerResponseModel p();
     
-    PlayerResponseModel q(final vhm p0);
+    PlayerResponseModel q(final vku p0);
     
     PlayerResponseModelImpl$MutableContext r();
     
-    ahiv s();
+    ahmk s();
     
-    ahkk t();
+    ahnz t();
     
-    ahlt u();
+    ahpi u();
     
-    ainb v();
+    aiqz v();
     
-    ajaz w();
+    ajfb w();
     
-    akuo x();
+    akys x();
     
-    akuv y();
+    akyz y();
     
-    akve z();
+    akzi z();
 }

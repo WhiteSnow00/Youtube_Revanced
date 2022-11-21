@@ -16,7 +16,7 @@ public class FlexboxLayoutManager$SavedState implements Parcelable
     public int b;
     
     static {
-        CREATOR = (Parcelable$Creator)new f(20);
+        CREATOR = (Parcelable$Creator)new f(19);
     }
     
     public FlexboxLayoutManager$SavedState() {
@@ -47,11 +47,13 @@ public class FlexboxLayoutManager$SavedState implements Parcelable
     
     @Override
     public final String toString() {
+        final int a = this.a;
+        final int b = this.b;
         final StringBuilder sb = new StringBuilder("SavedState{mAnchorPosition=");
-        sb.append(this.a);
+        sb.append(a);
         sb.append(", mAnchorOffset=");
-        sb.append(this.b);
-        sb.append('}');
+        sb.append(b);
+        sb.append("}");
         return sb.toString();
     }
     

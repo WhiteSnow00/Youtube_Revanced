@@ -9,8 +9,8 @@ import android.os.Parcelable;
 
 public abstract class ShortsVideoMetadata implements Parcelable
 {
-    public static twy e() {
-        return new twy();
+    public static tya e() {
+        return new tya();
     }
     
     public abstract int a();

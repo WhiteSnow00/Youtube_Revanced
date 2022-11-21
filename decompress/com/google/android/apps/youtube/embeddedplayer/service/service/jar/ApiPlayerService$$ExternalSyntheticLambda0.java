@@ -6,8 +6,8 @@ package com.google.android.apps.youtube.embeddedplayer.service.service.jar;
 
 public final class ApiPlayerService$$ExternalSyntheticLambda0 implements Runnable
 {
-    public ApiPlayerService a;
-    public int b;
+    public final ApiPlayerService a;
+    public final int b;
     
     public ApiPlayerService$$ExternalSyntheticLambda0(final ApiPlayerService a, final int b) {
         this.a = a;

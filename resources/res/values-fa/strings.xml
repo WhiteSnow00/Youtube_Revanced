@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">استفاده از زمینه دستگاه</string>
     <string name="app_theme_appearance_summary">انتخاب زمینه تیره یا روشن ترجیحی شما</string>
     <string name="app_theme_appearance_title">ظاهر</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">اعمال</string>
     <string name="approve_playlist_sync">همگام‌سازی ویدیوهای جدید</string>
     <string name="audio_playback_failed_snackbar_action_button">امتحان مجدد</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">اتمام پخش جریانی</string>
     <string name="lc_retry_yes">دوباره تلاش کنید</string>
     <string name="lc_rotate_device">دستگاه را بچرخانید</string>
+    <string name="lc_sharedmde_required_field_error">«عنوان» و «مخاطب» الزامی است.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">پخش درحالت عمودی</string>
     <string name="lc_stream_start_error">قادر به شروع پخش جریانی نیست. اتصال اینترنت خود را بررسی کنید.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">پیش‌نمایش ویدیو. برای توقف موقت ضربه بزنید.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">پیش‌نمایش ویدیو. برای پخش ضربه بزنید.</string>
     <string name="shorts_a11y_zoom_control">کنترل بزرگنمایی</string>
+    <string name="shorts_audio_failure_toast">صدا اضافه نشد. لطفاً دوباره امتحان کنید.</string>
     <string name="shorts_camera_allow_access_subtitle">به دوربین و میکروفون اجازه دسترسی بدهید</string>
     <string name="shorts_camera_allow_access_title">‏ایجاد «فیلم کوتاه YouTube»</string>
     <string name="shorts_camera_close_confirmation_cancel">لغو</string>

@@ -10,7 +10,7 @@ public interface b
 {
     public static final b S = new a();
     
-    void rg(final ShareButtonData p0);
+    void rf(final ShareButtonData p0);
     
     void t(final d p0);
 }

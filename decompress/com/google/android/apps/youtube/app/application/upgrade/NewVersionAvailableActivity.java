@@ -13,11 +13,11 @@ import android.view.View;
 import android.widget.TextView;
 import android.view.View$OnClickListener;
 
-public class NewVersionAvailableActivity extends ewv implements View$OnClickListener
+public class NewVersionAvailableActivity extends ewx implements View$OnClickListener
 {
-    public wyw b;
-    public trc c;
-    public vaf d;
+    public xab b;
+    public tsd c;
+    public vbo d;
     private boolean e;
     private TextView f;
     private TextView g;
@@ -29,72 +29,72 @@ public class NewVersionAvailableActivity extends ewv implements View$OnClickList
     private final void b() {
         final Intent k = this.k;
         if (k != null) {
-            this.b.J(3, (wzz)new wyt(xaa.c(24403)), (alhi)null);
+            this.b.J(3, (xbe)new wzy(xbf.c(24403)), (alji)null);
             this.startActivity(k);
         }
         this.finish();
     }
     
     private final void d() {
-        amie amie;
-        if ((amie = this.d.b().i) == null) {
-            amie = amie.a;
+        amkj amkj;
+        if ((amkj = this.d.b().i) == null) {
+            amkj = amkj.a;
         }
-        apgn apgn;
-        if ((apgn = amie.e) == null) {
-            apgn = apgn.a;
+        apiz apiz;
+        if ((apiz = amkj.e) == null) {
+            apiz = apiz.a;
         }
-        if ((apgn.b & 0x40) != 0x0) {
-            alyb alyb;
-            if ((alyb = apgn.d) == null) {
-                alyb = alyb.a;
+        if ((apiz.b & 0x40) != 0x0) {
+            amab amab;
+            if ((amab = apiz.d) == null) {
+                amab = amab.a;
             }
-            ajut ajut;
-            if ((ajut = alyb.d) == null) {
-                ajut = ajut.a;
+            ajws ajws;
+            if ((ajws = amab.d) == null) {
+                ajws = ajws.a;
             }
-            final Spanned b = acak.b(ajut);
+            final Spanned b = acbu.b(ajws);
             if (b != null) {
                 final TextView g = this.g;
                 if (g != null) {
                     g.setText((CharSequence)b);
                 }
             }
-            ajut ajut2;
-            if ((ajut2 = alyb.c) == null) {
-                ajut2 = ajut.a;
+            ajws ajws2;
+            if ((ajws2 = amab.c) == null) {
+                ajws2 = ajws.a;
             }
-            final Spanned b2 = acak.b(ajut2);
+            final Spanned b2 = acbu.b(ajws2);
             if (b2 != null) {
                 final TextView f = this.f;
                 if (f != null) {
                     f.setText((CharSequence)b2);
                 }
             }
-            final lpt lpt = new lpt(this, 1);
-            ajut ajut3;
-            if ((ajut3 = alyb.b) == null) {
-                ajut3 = ajut.a;
+            final lqi lqi = new lqi(this, 1);
+            ajws ajws3;
+            if ((ajws3 = amab.b) == null) {
+                ajws3 = ajws.a;
             }
-            final Spanned a = vde.a(ajut3, (vcy)lpt, false);
+            final Spanned a = ven.a(ajws3, (veh)lqi, false);
             if (a != null) {
                 final TextView i = this.i;
                 if (i != null) {
                     i.setText((CharSequence)a);
                 }
             }
-            ajut ajut4;
-            if ((ajut4 = alyb.e) == null) {
-                ajut4 = ajut.a;
+            ajws ajws4;
+            if ((ajws4 = amab.e) == null) {
+                ajws4 = ajws.a;
             }
-            final Spanned b3 = acak.b(ajut4);
+            final Spanned b3 = acbu.b(ajws4);
             if (b3 != null && b3.length() > 0) {
                 final TextView h = this.h;
                 if (h != null) {
                     h.setText((CharSequence)b3);
                 }
             }
-            if (alyb.f) {
+            if (amab.f) {
                 final TextView f2 = this.f;
                 if (f2 != null) {
                     f2.setVisibility(8);
@@ -118,7 +118,7 @@ public class NewVersionAvailableActivity extends ewv implements View$OnClickList
     
     public final void onClick(final View view) {
         if (view == this.f) {
-            this.b.J(3, (wzz)new wyt(xaa.c(24404)), (alhi)null);
+            this.b.J(3, (xbe)new wzy(xbf.c(24404)), (alji)null);
             String s;
             if (!this.e) {
                 s = "unknown";
@@ -126,7 +126,7 @@ public class NewVersionAvailableActivity extends ewv implements View$OnClickList
             else {
                 s = "force";
             }
-            tcg.i((Activity)this, s, tum.d((Context)this));
+            tdk.i((Activity)this, s, tvo.c((Context)this));
             this.finish();
             return;
         }
@@ -136,30 +136,30 @@ public class NewVersionAvailableActivity extends ewv implements View$OnClickList
     }
     
     public final void onCreate(final Bundle bundle) {
-        glb.c((Context)this);
+        glg.b((Context)this);
         super.onCreate(bundle);
-        ((qt)this).setContentView(2131624910);
+        ((qu)this).setContentView(2131624912);
         final Intent intent = this.getIntent();
         this.k = (Intent)intent.getParcelableExtra("forward_intent");
         this.e = intent.getBooleanExtra("show_force_upgrade", false);
         (this.f = (TextView)((fa)this).findViewById(2131429429)).setOnClickListener((View$OnClickListener)this);
         this.j = ((fa)this).findViewById(2131429430);
-        this.i = (TextView)((fa)this).findViewById(2131432237);
-        this.h = (TextView)((fa)this).findViewById(2131432095);
+        this.i = (TextView)((fa)this).findViewById(2131432238);
+        this.h = (TextView)((fa)this).findViewById(2131432096);
         this.g = (TextView)((fa)this).findViewById(2131429494);
         this.d();
         if (this.e) {
-            this.b.b(xaa.b(24402), (aiqj)null, (alhi)null);
-            this.b.l((wzz)new wyt(xaa.c(24404)));
+            this.b.b(xbf.b(24402), (aisc)null, (alji)null);
+            this.b.l((xbe)new wzy(xbf.c(24404)));
             final TextView g = this.g;
             if (g != null) {
                 g.setVisibility(8);
             }
         }
         else {
-            this.b.b(xaa.b(24400), (aiqj)null, (alhi)null);
-            this.b.l((wzz)new wyt(xaa.c(24404)));
-            this.b.l((wzz)new wyt(xaa.c(24403)));
+            this.b.b(xbf.b(24400), (aisc)null, (alji)null);
+            this.b.l((xbe)new wzy(xbf.c(24404)));
+            this.b.l((xbe)new wzy(xbf.c(24403)));
             final TextView g2 = this.g;
             if (g2 != null) {
                 g2.setOnClickListener((View$OnClickListener)this);
@@ -173,7 +173,7 @@ public class NewVersionAvailableActivity extends ewv implements View$OnClickList
     }
     
     public final void onUserInteraction() {
-        final trc c = this.c;
+        final tsd c = this.c;
         if (c != null) {
             c.b();
         }

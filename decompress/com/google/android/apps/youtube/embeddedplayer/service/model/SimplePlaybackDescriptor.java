@@ -49,20 +49,20 @@ public class SimplePlaybackDescriptor implements Parcelable
     }
     
     public static SimplePlaybackDescriptor b(final String s, final int n, final int n2, final int n3) {
-        return kzr.j(2, (String)null, s, new ArrayList(), n, n2, n3);
+        return jzq.u(2, (String)null, s, new ArrayList(), n, n2, n3);
     }
     
     public static SimplePlaybackDescriptor c(final String s, final int n) {
-        return kzr.j(1, s, (String)null, new ArrayList(), n, 0, 0);
+        return jzq.u(1, s, (String)null, new ArrayList(), n, 0, 0);
     }
     
     public static SimplePlaybackDescriptor d(final String s, final int n, final int n2) {
-        return kzr.j(1, s, (String)null, new ArrayList(), n, 0, n2);
+        return jzq.u(1, s, (String)null, new ArrayList(), n, 0, n2);
     }
     
     public static SimplePlaybackDescriptor e(final List list, final int n, final int n2, final int n3) {
         new ArrayList();
-        return kzr.j(3, (String)null, (String)null, new ArrayList(list), n, n2, n3);
+        return jzq.u(3, (String)null, (String)null, new ArrayList(list), n, n2, n3);
     }
     
     public static Optional f(String s, final List list, final String s2, final int n, int n2, final int n3) {
@@ -96,7 +96,7 @@ public class SimplePlaybackDescriptor implements Parcelable
         if (n4 == 1) {
             n2 = 0;
         }
-        return Optional.of((Object)kzr.j(n4, s, s3, list3, n, n2, n3));
+        return Optional.of((Object)jzq.u(n4, s, s3, list3, n, n2, n3));
     }
     
     public final SimplePlaybackDescriptor a(final int n) {
@@ -111,7 +111,7 @@ public class SimplePlaybackDescriptor implements Parcelable
         if (n == 2) {
             g = 0;
         }
-        return kzr.j(a, b, c, list, n, f, g);
+        return jzq.u(a, b, c, list, n, f, g);
     }
     
     public final int describeContents() {

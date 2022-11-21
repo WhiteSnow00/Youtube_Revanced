@@ -36,14 +36,14 @@ public class SwipeLayout extends FrameLayout
     public View g;
     public boolean h;
     private int k;
-    private aqi l;
+    private aqj l;
     private View m;
     private Drawable n;
     private Drawable o;
-    private ark p;
+    private arl p;
     private GestureDetector q;
     private final PointF r;
-    private final aqh s;
+    private final aqi s;
     private final GestureDetector$SimpleOnGestureListener t;
     
     static {
@@ -56,8 +56,8 @@ public class SwipeLayout extends FrameLayout
         this.f = true;
         this.h = true;
         this.r = new PointF();
-        this.s = (aqh)new tsp(this);
-        this.t = (GestureDetector$SimpleOnGestureListener)new tsq(this);
+        this.s = (aqi)new ttr(this);
+        this.t = (GestureDetector$SimpleOnGestureListener)new tts(this);
         this.t(context, null, 0, 0);
     }
     
@@ -66,8 +66,8 @@ public class SwipeLayout extends FrameLayout
         this.f = true;
         this.h = true;
         this.r = new PointF();
-        this.s = (aqh)new tsp(this);
-        this.t = (GestureDetector$SimpleOnGestureListener)new tsq(this);
+        this.s = (aqi)new ttr(this);
+        this.t = (GestureDetector$SimpleOnGestureListener)new tts(this);
         this.t(context, set, 0, 0);
     }
     
@@ -76,8 +76,8 @@ public class SwipeLayout extends FrameLayout
         this.f = true;
         this.h = true;
         this.r = new PointF();
-        this.s = (aqh)new tsp(this);
-        this.t = (GestureDetector$SimpleOnGestureListener)new tsq(this);
+        this.s = (aqi)new ttr(this);
+        this.t = (GestureDetector$SimpleOnGestureListener)new tts(this);
         this.t(context, set, n, 0);
     }
     
@@ -86,18 +86,18 @@ public class SwipeLayout extends FrameLayout
         this.f = true;
         this.h = true;
         this.r = new PointF();
-        this.s = (aqh)new tsp(this);
-        this.t = (GestureDetector$SimpleOnGestureListener)new tsq(this);
+        this.s = (aqi)new ttr(this);
+        this.t = (GestureDetector$SimpleOnGestureListener)new tts(this);
         this.t(context, set, n, n2);
     }
     
     private final void t(final Context context, final AttributeSet set, int n, final int n2) {
         this.q = new GestureDetector(this.getContext(), (GestureDetector$OnGestureListener)this.t);
         final ViewConfiguration value = ViewConfiguration.get(this.getContext());
-        this.a = tpe.aZ(this.getResources().getDisplayMetrics(), 40);
+        this.a = tqf.aZ(this.getResources().getDisplayMetrics(), 40);
         this.b = value.getScaledMinimumFlingVelocity();
-        this.k = tpe.aZ(this.getResources().getDisplayMetrics(), 5);
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, tsl.a, n, n2);
+        this.k = tqf.aZ(this.getResources().getDisplayMetrics(), 5);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, ttn.a, n, n2);
         n = obtainStyledAttributes.getResourceId(3, 0);
         if (n != 0) {
             this.m = LayoutInflater.from(this.getContext()).inflate(n, (ViewGroup)this, false);
@@ -111,23 +111,23 @@ public class SwipeLayout extends FrameLayout
         obtainStyledAttributes.recycle();
     }
     
-    private final void u(final View view, final tsr tsr, final float n) {
+    private final void u(final View view, final ttt ttt, final float n) {
         if (view == null) {
             return;
         }
         if (view.getWidth() == 0) {
-            view.getViewTreeObserver().addOnGlobalLayoutListener((ViewTreeObserver$OnGlobalLayoutListener)new tso(this, view, tsr, n));
+            view.getViewTreeObserver().addOnGlobalLayoutListener((ViewTreeObserver$OnGlobalLayoutListener)new ttq(this, view, ttt, n));
             return;
         }
-        this.m((int)tsr.a(), n);
+        this.m((int)ttt.a(), n);
     }
     
     private final void v(int e) {
         final View c = this.c;
         if (c != null) {
-            anb.E(c, e - c.getLeft());
-            if (!((arh)this.e()).l) {
-                ((arh)this.e()).g((float)e);
+            anc.E(c, e - c.getLeft());
+            if (!((ari)this.e()).l) {
+                ((ari)this.e()).g((float)e);
             }
             e = this.e;
             final int n = 0;
@@ -209,15 +209,15 @@ public class SwipeLayout extends FrameLayout
         return view;
     }
     
-    public final ark e() {
+    public final arl e() {
         if (this.p == null) {
-            final ark p = new ark(new arj());
-            final arl n = new arl(0.0f);
+            final arl p = new arl(new ark());
+            final arm n = new arm(0.0f);
             n.c();
             n.e(1500.0f);
             p.n = n;
-            ((arh)p).f((arf)new tsm(this));
-            ((arh)p).g(0.0f);
+            ((ari)p).f((arg)new tto(this));
+            ((ari)p).g(0.0f);
             this.p = p;
         }
         return this.p;
@@ -237,11 +237,11 @@ public class SwipeLayout extends FrameLayout
     }
     
     public final void i(final float n) {
-        this.u(this.c(), (tsr)new tsn(this, 0), n);
+        this.u(this.c(), (ttt)new ttp(this, 0), n);
     }
     
     public final void j(final float n) {
-        this.u(this.d(), (tsr)new tsn(this, 1), n);
+        this.u(this.d(), (ttt)new ttp(this, 1), n);
     }
     
     public final void k(final View g) {
@@ -287,13 +287,13 @@ public class SwipeLayout extends FrameLayout
     
     public final void m(final int n, final float g) {
         final int left = this.c.getLeft();
-        if (left == n && !((arh)this.e()).l) {
+        if (left == n && !((ari)this.e()).l) {
             return;
         }
-        if (!((arh)this.e()).l) {
-            final ark e = this.e();
-            ((arh)e).g((float)left);
-            ((arh)e).g = g;
+        if (!((ari)this.e()).l) {
+            final arl e = this.e();
+            ((ari)e).g((float)left);
+            ((ari)e).g = g;
         }
         this.e().h((float)n);
     }
@@ -319,7 +319,7 @@ public class SwipeLayout extends FrameLayout
     protected final void onAttachedToWindow() {
         super.onAttachedToWindow();
         this.c = this.getChildAt(this.getChildCount() - 1);
-        this.l = aqi.c((ViewGroup)this, 1.0f, this.s);
+        this.l = aqj.c((ViewGroup)this, 1.0f, this.s);
     }
     
     public final boolean onInterceptTouchEvent(final MotionEvent motionEvent) {
@@ -417,7 +417,7 @@ public class SwipeLayout extends FrameLayout
     }
     
     public final boolean q() {
-        return anb.f((View)this) == 1;
+        return anc.f((View)this) == 1;
     }
     
     public final boolean r() {

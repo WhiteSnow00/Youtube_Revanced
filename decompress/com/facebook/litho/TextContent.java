@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface TextContent
 {
-    public static final TextContent b = new dwu();
+    public static final TextContent b = new dwx();
     
     List getTextItems();
 }

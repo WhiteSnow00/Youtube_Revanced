@@ -7,13 +7,12 @@ package com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.share
 import android.os.IInterface;
 import android.os.IBinder;
 import android.os.Parcel;
-import com.google.android.apps.youtube.embeddedplayer.service.databus.remoteloaded.a;
 import android.os.Handler;
 import com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.h;
 import com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.remoteloaded.g;
 import android.content.Context;
 
-public final class k extends eoa implements l
+public final class k extends eod implements l
 {
     public final Context a;
     public g b;
@@ -33,7 +32,7 @@ public final class k extends eoa implements l
     }
     
     public final void a(final o o) {
-        this.d.post((Runnable)new a(this, o, 15));
+        this.d.post((Runnable)new lqa(this, o, 17));
     }
     
     protected final boolean dispatchTransaction(final int n, final Parcel parcel, final Parcel parcel2, final int n2) {

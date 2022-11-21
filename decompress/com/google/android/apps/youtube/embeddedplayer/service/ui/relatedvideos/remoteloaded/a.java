@@ -13,20 +13,20 @@ final class a extends hy
     public a() {
     }
     
-    public final void b(final Rect rect, final View view, final RecyclerView recyclerView, final ok ok) {
+    public final void b(final Rect rect, final View view, final RecyclerView recyclerView, final ol ol) {
         final int c = recyclerView.c(view);
-        final int dimensionPixelSize = view.getResources().getDimensionPixelSize(2131169356);
+        final int dimensionPixelSize = view.getResources().getDimensionPixelSize(2131169395);
         rect.left = dimensionPixelSize;
         rect.right = dimensionPixelSize;
         if (c < 0) {
             return;
         }
         if (c <= 0) {
-            rect.left = view.getResources().getDimensionPixelSize(2131169355);
+            rect.left = view.getResources().getDimensionPixelSize(2131169394);
         }
-        final nq m = recyclerView.m;
+        final nr m = recyclerView.m;
         if (m != null && c >= m.a() - 1) {
-            rect.right = view.getResources().getDimensionPixelSize(2131169355);
+            rect.right = view.getResources().getDimensionPixelSize(2131169394);
         }
     }
 }

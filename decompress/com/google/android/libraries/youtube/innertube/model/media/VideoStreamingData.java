@@ -34,19 +34,19 @@ public class VideoStreamingData implements Parcelable
     public Set E;
     public final int F;
     public final int G;
-    public vup H;
-    private bjg I;
-    private vhj J;
+    public vxu H;
+    private bjk I;
+    private vkr J;
     private Integer K;
     private Map L;
-    public final akvi b;
-    public final akvk c;
+    public final akzm b;
+    public final akzo c;
     public final String d;
     public final long e;
     public final long f;
     public final long g;
     public final int h;
-    public final amaq i;
+    public final amew i;
     public final PlayerThreedRendererModel j;
     public final String k;
     public final int l;
@@ -66,34 +66,40 @@ public class VideoStreamingData implements Parcelable
     public final boolean z;
     
     static {
-        a = new vhi(akvi.b, akvk.a).a();
-        CREATOR = (Parcelable$Creator)new uik(16);
+        a = new vkq(akzm.b, akzo.a).a();
+        CREATOR = (Parcelable$Creator)new ulj(16);
     }
     
     @Deprecated
-    public VideoStreamingData(final akvi b, final akvk c, final amwy amwy, long e, final long g, final PlayerThreedRendererModel j, final String k, int u, final boolean m, final boolean n, final vup h, final byte[] array) {
+    public VideoStreamingData(final akzm b, final akzo c, final anbj anbj, long n, long min, final PlayerThreedRendererModel j, final String k, int u, final boolean m, final boolean n2, final vxu h, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4) {
         this.K = null;
         b.getClass();
         this.b = b;
         c.getClass();
         this.c = c;
         this.d = c.c;
-        final long e2 = c.e;
-        long millis = -9223372036854775807L;
-        if (e2 != -9223372036854775807L) {
-            millis = TimeUnit.SECONDS.toMillis(e2);
+        final long e = c.e;
+        final long n3 = 0L;
+        long n4;
+        if (h != null && h.g()) {
+            n4 = TimeUnit.SECONDS.toMillis(Math.max(0L, e));
         }
-        this.e = millis;
-        this.f = e;
-        this.g = g;
+        else if (e != -9223372036854775807L) {
+            n4 = TimeUnit.SECONDS.toMillis(e);
+        }
+        else {
+            n4 = -9223372036854775807L;
+        }
+        this.f = n;
+        this.g = min;
         int i;
         if ((i = c.k) < 0) {
             i = 3;
         }
         this.h = i;
-        amaq l;
-        if ((l = amaq.b(c.j)) == null) {
-            l = amaq.a;
+        amew l;
+        if ((l = amew.b(c.j)) == null) {
+            l = amew.a;
         }
         this.i = l;
         j.getClass();
@@ -102,238 +108,264 @@ public class VideoStreamingData implements Parcelable
         this.k = k;
         this.l = u;
         this.m = m;
-        this.n = n;
+        this.n = n2;
         this.H = h;
         final ArrayList list = new ArrayList();
         final ArrayList list2 = new ArrayList();
-        final Iterator<Object> iterator = b.e.iterator();
+        final Iterator<Object> iterator = ((List<Object>)b.e).iterator();
+        min = Long.MAX_VALUE;
+        n = n4;
         while (iterator.hasNext()) {
-            final FormatStreamModel formatStreamModel = new FormatStreamModel(iterator.next(), this.d, this.e, m, h, null);
+            final FormatStreamModel formatStreamModel = new FormatStreamModel(iterator.next(), this.d, n, m, h, null, null, null, null);
             list.add(formatStreamModel);
             list2.add(formatStreamModel);
+            if (h != null && h.i()) {
+                final long c2 = formatStreamModel.c;
+                if (c2 <= n3) {
+                    continue;
+                }
+                min = Math.min(min, c2);
+            }
         }
-        final ArrayList list3 = new ArrayList();
+        final ArrayList list3 = list2;
+        if (h != null && h.i()) {
+            if (min == Long.MAX_VALUE) {
+                min = n;
+            }
+            this.e = min;
+        }
+        else {
+            this.e = n;
+        }
         final ArrayList list4 = new ArrayList();
         final ArrayList list5 = new ArrayList();
-        final Iterator<Object> iterator2 = b.f.iterator();
-        boolean a = false;
-        int n2 = 0;
-        boolean y = false;
-        int u2 = 0;
-        int n3 = 0;
-        int n4 = 0;
-        boolean b2 = false;
-        boolean c2 = false;
-        boolean d = false;
+        final ArrayList list6 = new ArrayList();
+        final Iterator<Object> iterator2 = ((List<Object>)b.f).iterator();
+        int n5 = 0;
+        int n6 = 0;
         u = 3;
-        int u3 = 3;
-        boolean x = false;
-        final ArrayList list6 = list4;
-        while (iterator2.hasNext()) {
-            final ajsj ajsj = iterator2.next();
-            final String d2 = this.d;
-            e = this.e;
-            final FormatStreamModel formatStreamModel2 = new FormatStreamModel(ajsj, d2, e, m, h, null);
-            list.add(formatStreamModel2);
-            list3.add(formatStreamModel2);
+        int u2 = 3;
+        int n7 = 0;
+        int n8 = 0;
+        int n9 = 0;
+        boolean a = false;
+        boolean b2 = false;
+        boolean c3 = false;
+        boolean d = false;
+        int n10 = 0;
+        final ArrayList list7 = list;
+        final ArrayList list8 = list3;
+        final ArrayList list9 = list5;
+        final ArrayList list10 = list6;
+        final Iterator<Object> iterator3 = iterator2;
+        while (iterator3.hasNext()) {
+            final FormatStreamModel formatStreamModel2 = new FormatStreamModel(iterator3.next(), this.d, n, m, h, null, null, null, null);
+            list7.add(formatStreamModel2);
+            list4.add(formatStreamModel2);
             if (formatStreamModel2.z()) {
-                list6.add(formatStreamModel2);
+                list9.add(formatStreamModel2);
             }
             else if (formatStreamModel2.P()) {
-                list5.add(formatStreamModel2);
+                list10.add(formatStreamModel2);
             }
-            final int n5 = n4;
-            int n7 = 0;
-            int n8 = 0;
-            int n9 = 0;
-            Label_0739: {
-                if (n5 == 0 && formatStreamModel2.F()) {
-                    final int n6 = u2;
-                    n7 = n3;
-                    n8 = 1;
-                    n9 = n6;
+            Label_0792: {
+                if (n6 == 0 && formatStreamModel2.F()) {
+                    n6 = 1;
                 }
-                else if (u2 == 0 && formatStreamModel2.B()) {
-                    n7 = n3;
-                    n9 = 1;
-                    n8 = n5;
+                else if (n5 == 0 && formatStreamModel2.B()) {
+                    n5 = 1;
                 }
-                else if (n3 == 0 && formatStreamModel2.Q()) {
-                    n9 = u2;
+                else if (n7 == 0 && formatStreamModel2.Q()) {
                     n7 = 1;
-                    n8 = n5;
                 }
                 else {
-                    Label_0636: {
-                        if (u == 3) {
-                            Label_0610: {
+                    Label_0722: {
+                        if (u2 == 3) {
+                            Label_0712: {
                                 if (formatStreamModel2.g) {
                                     if (formatStreamModel2.h == 10 && formatStreamModel2.G()) {
-                                        break Label_0610;
+                                        break Label_0712;
                                     }
                                 }
-                                else if (vha.A().contains(formatStreamModel2.e())) {
-                                    break Label_0610;
+                                else if (vki.A().contains(formatStreamModel2.e())) {
+                                    break Label_0712;
                                 }
-                                u = 3;
-                                break Label_0636;
+                                u2 = 3;
+                                break Label_0722;
                             }
-                            u = formatStreamModel2.U();
-                            final int n10 = u2;
-                            n7 = n3;
-                            n8 = n5;
-                            n9 = n10;
-                            break Label_0739;
+                            u2 = formatStreamModel2.U();
+                            break Label_0792;
                         }
                     }
-                    if ((u3 = u3) == 3) {
-                        Label_0720: {
+                    if (u == 3) {
+                        Label_0782: {
                             if (formatStreamModel2.g) {
                                 if (formatStreamModel2.G() && formatStreamModel2.h == 9) {
-                                    break Label_0720;
+                                    break Label_0782;
                                 }
                             }
-                            else if (vha.d().contains(formatStreamModel2.e())) {
-                                break Label_0720;
+                            else if (vki.d().contains(formatStreamModel2.e())) {
+                                break Label_0782;
                             }
-                            final int n11 = u2;
-                            n7 = n3;
-                            u3 = 3;
-                            n8 = n5;
-                            n9 = n11;
-                            break Label_0739;
+                            u = 3;
+                            break Label_0792;
                         }
-                        u3 = formatStreamModel2.U();
+                        u = formatStreamModel2.U();
                     }
-                    n7 = n3;
-                    n9 = u2;
-                    n8 = n5;
                 }
             }
-            Label_0954: {
-                Label_0784: {
+            Label_1008: {
+                Label_0837: {
                     if (formatStreamModel2.g) {
                         if (formatStreamModel2.h != 3) {
-                            break Label_0784;
+                            break Label_0837;
                         }
                     }
-                    else if (!vha.y().contains(formatStreamModel2.e())) {
-                        break Label_0784;
+                    else if (!vki.y().contains(formatStreamModel2.e())) {
+                        break Label_0837;
                     }
                     a = true;
-                    break Label_0954;
+                    break Label_1008;
                 }
                 if (formatStreamModel2.K()) {
                     b2 = true;
                 }
                 else {
-                    Label_0843: {
+                    Label_0896: {
                         if (formatStreamModel2.g) {
                             if (formatStreamModel2.h != 5) {
-                                break Label_0843;
+                                break Label_0896;
                             }
                         }
-                        else if (!vha.p().contains(formatStreamModel2.e())) {
-                            break Label_0843;
+                        else if (!vki.p().contains(formatStreamModel2.e())) {
+                            break Label_0896;
                         }
-                        c2 = true;
-                        break Label_0954;
+                        c3 = true;
+                        break Label_1008;
                     }
-                    final ajsj a2 = formatStreamModel2.a;
+                    final ajwl a2 = formatStreamModel2.a;
                     boolean b3 = false;
-                    Label_0894: {
+                    Label_0948: {
                         if ((a2.c & 0x10000) != 0x0) {
-                            final int p12 = afld.P(a2.u);
-                            if (p12 != 0) {
-                                if (p12 != 1) {
+                            final int bu = adzw.bU(a2.u);
+                            if (bu != 0) {
+                                if (bu != 1) {
                                     b3 = true;
-                                    break Label_0894;
+                                    break Label_0948;
                                 }
                             }
                         }
                         b3 = false;
                     }
                     if (formatStreamModel2.g) {
-                        if (formatStreamModel2.h != 3 || a2.F != 6 || b3) {
-                            break Label_0954;
+                        if (formatStreamModel2.h != 3 || a2.G != 6 || b3) {
+                            break Label_1008;
                         }
                     }
-                    else if (!vha.a().contains(formatStreamModel2.e())) {
-                        break Label_0954;
+                    else if (!vki.a().contains(formatStreamModel2.e())) {
+                        break Label_1008;
                     }
                     d = true;
                 }
             }
-            if (!x && formatStreamModel2.R()) {
-                x = true;
+            if (n10 == 0 && formatStreamModel2.R()) {
+                n10 = 1;
             }
-            y |= formatStreamModel2.L();
-            if (n2 == 0 && formatStreamModel2.E()) {
-                n2 = 1;
+            n8 |= (formatStreamModel2.L() ? 1 : 0);
+            if (n9 == 0 && formatStreamModel2.E()) {
+                n9 = 1;
             }
-            final int n12 = n8;
-            u2 = n9;
-            n3 = n7;
-            n4 = n12;
         }
-        final ArrayList list7 = new ArrayList();
-        boolean w = n4 != 0;
-        boolean v = n3 != 0;
-        boolean z = n2 != 0;
-        if (amwy != null) {
-            w = (n4 != 0);
-            v = (n3 != 0);
-            z = (n2 != 0);
-            if (!amwy.c.isEmpty()) {
-                final Iterator<Object> iterator3 = amwy.c.iterator();
+        final int n11 = n10;
+        final int n12 = n6;
+        final int n13 = n9;
+        final int n14 = u2;
+        final int n15 = u;
+        final int n16 = n8;
+        final ArrayList list11 = new ArrayList();
+        ArrayList list12 = list10;
+        ArrayList list13 = list11;
+        boolean z = n13 != 0;
+        boolean y = n16 != 0;
+        boolean x = n11 != 0;
+        int g = n15;
+        int f = n14;
+        boolean v = n7 != 0;
+        boolean u3 = n5 != 0;
+        boolean w = n12 != 0;
+        if (anbj != null) {
+            list12 = list10;
+            list13 = list11;
+            z = (n13 != 0);
+            y = (n16 != 0);
+            x = (n11 != 0);
+            g = n15;
+            f = n14;
+            v = (n7 != 0);
+            u3 = (n5 != 0);
+            w = (n12 != 0);
+            if (!((List)anbj.c).isEmpty()) {
+                final Iterator<Object> iterator4 = ((List<Object>)anbj.c).iterator();
+                final boolean b4 = n12 != 0;
+                final boolean b5 = n5 != 0;
+                u = n14;
+                final boolean b6 = n11 != 0;
+                final ArrayList list14 = list11;
                 while (true) {
-                    w = (n4 != 0);
-                    v = (n3 != 0);
-                    z = (n2 != 0);
-                    if (!iterator3.hasNext()) {
+                    list12 = list10;
+                    list13 = list14;
+                    z = (n13 != 0);
+                    y = (n16 != 0);
+                    x = b6;
+                    g = n15;
+                    f = u;
+                    v = (n7 != 0);
+                    u3 = b5;
+                    w = b4;
+                    if (!iterator4.hasNext()) {
                         break;
                     }
-                    list7.add(new FormatStreamModel(iterator3.next(), this.d, this.e, m, h, null));
+                    list14.add(new FormatStreamModel(iterator4.next(), this.d, this.e, m, h, null, null, null, null));
                 }
             }
         }
-        this.o = Collections.unmodifiableList((List<?>)list);
-        this.p = Collections.unmodifiableList((List<?>)list2);
-        this.q = Collections.unmodifiableList((List<?>)list3);
-        this.r = Collections.unmodifiableList((List<?>)list6);
-        this.s = Collections.unmodifiableList((List<?>)list5);
-        this.t = Collections.unmodifiableList((List<?>)list7);
+        this.o = Collections.unmodifiableList((List<?>)list7);
+        this.p = Collections.unmodifiableList((List<?>)list8);
+        this.q = Collections.unmodifiableList((List<?>)list4);
+        this.r = Collections.unmodifiableList((List<?>)list9);
+        this.s = Collections.unmodifiableList((List<?>)list12);
+        this.t = Collections.unmodifiableList((List<?>)list13);
         this.x = x;
-        this.F = u;
-        this.G = u3;
-        this.u = (u2 != 0);
+        this.F = f;
+        this.G = g;
+        this.u = u3;
         this.v = v;
         this.w = w;
         this.y = y;
         this.z = z;
         this.A = a;
         this.B = b2;
-        this.C = c2;
+        this.C = c3;
         this.D = d;
     }
     
-    private static final vhj E(final FormatStreamModel formatStreamModel) {
+    private static final vkr E(final FormatStreamModel formatStreamModel) {
         if (formatStreamModel.V() == 3) {
-            return vhj.b;
+            return vkr.b;
         }
         if (formatStreamModel.V() == 4) {
-            return vhj.c;
+            return vkr.c;
         }
         if (formatStreamModel.V() != 5) {
-            final int bf = aqql.bf(formatStreamModel.a.v);
-            if (bf != 0) {
-                if (bf == 2) {
-                    return vhj.d;
+            final int ay = aqvq.aY(formatStreamModel.a.v);
+            if (ay != 0) {
+                if (ay == 2) {
+                    return vkr.d;
                 }
             }
-            return vhj.a;
+            return vkr.a;
         }
-        return vhj.f;
+        return vkr.f;
     }
     
     public static String m(final List list) {
@@ -346,10 +378,10 @@ public class VideoStreamingData implements Parcelable
         return sb.toString();
     }
     
-    public static boolean v(final akvi akvi, final PlayerConfigModel playerConfigModel) {
+    public static boolean v(final akzm akzm, final PlayerConfigModel playerConfigModel) {
         if (playerConfigModel.K() == null) {
-            if (akvi.f.size() > 0) {
-                final Uri parse = Uri.parse(akvi.f.get(0).e);
+            if (akzm.f.size() > 0) {
+                final Uri parse = Uri.parse(((ajwl)akzm.f.get(0)).e);
                 String s;
                 if ((s = parse.getQueryParameter("maxdsq")) == null) {
                     s = parse.getQueryParameter("max_sq");
@@ -381,14 +413,19 @@ public class VideoStreamingData implements Parcelable
     
     public final int a(int intValue) {
         monitorenter(this);
-        int n = intValue;
-        if (intValue <= 0) {
-            n = Integer.MAX_VALUE;
-        }
         try {
             if (this.K == null) {
                 this.K = 0;
-                for (final FormatStreamModel formatStreamModel : this.s) {
+                final Iterator iterator = this.s.iterator();
+                while (iterator.hasNext()) {
+                    int n;
+                    if (intValue <= 0) {
+                        n = Integer.MAX_VALUE;
+                    }
+                    else {
+                        n = intValue;
+                    }
+                    final FormatStreamModel formatStreamModel = (FormatStreamModel)iterator.next();
                     if (formatStreamModel.f() <= n) {
                         this.K = Math.max(this.K, formatStreamModel.f());
                     }
@@ -412,7 +449,7 @@ public class VideoStreamingData implements Parcelable
     }
     
     @Deprecated
-    public final bjg c(final String s) {
+    public final bjk c(final String s) {
         monitorenter(this);
         try {
             if (this.I == null) {
@@ -433,14 +470,25 @@ public class VideoStreamingData implements Parcelable
                 }
                 final ArrayList list3 = new ArrayList(2);
                 if (!list.isEmpty()) {
-                    list3.add(new bje(-1, 1, (List)list, (List)Collections.emptyList(), (List)Collections.emptyList(), (List)Collections.emptyList()));
+                    list3.add(new bji(-1, 1, (List)list, (List)Collections.emptyList(), (List)Collections.emptyList(), (List)Collections.emptyList()));
                 }
                 if (!list2.isEmpty()) {
-                    list3.add(new bje(-1, 2, (List)list2, (List)Collections.emptyList(), (List)Collections.emptyList(), (List)Collections.emptyList()));
+                    list3.add(new bji(-1, 2, (List)list2, (List)Collections.emptyList(), (List)Collections.emptyList(), (List)Collections.emptyList()));
                 }
-                this.I = new bjg(-9223372036854775807L, this.e, -9223372036854775807L, false, -9223372036854775807L, -9223372036854775807L, -9223372036854775807L, -9223372036854775807L, (bjk)null, (bjx)null, (bjv)null, (Uri)null, (List)Collections.singletonList(new adff(null, 0L, list3, Collections.emptyList())));
+                final vxu h = this.H;
+                long n;
+                if (h != null && h.g()) {
+                    n = this.e;
+                    if (n <= 0L) {
+                        n = -9223372036854775807L;
+                    }
+                }
+                else {
+                    n = this.e;
+                }
+                this.I = new bjk(-9223372036854775807L, n, -9223372036854775807L, false, -9223372036854775807L, -9223372036854775807L, -9223372036854775807L, -9223372036854775807L, (bjo)null, (bkb)null, (bjz)null, (Uri)null, (List)Collections.singletonList(new adix(null, 0L, list3, Collections.emptyList())));
             }
-            final bjg i = this.I;
+            final bjk i = this.I;
             monitorexit(this);
             return i;
         }
@@ -463,32 +511,32 @@ public class VideoStreamingData implements Parcelable
         return 0;
     }
     
-    public final vhj e() {
+    public final vkr e() {
         monitorenter(this);
         try {
             Label_0137: {
                 if (this.J == null) {
                     if (this.j.a == 1) {
-                        this.J = vhj.d;
+                        this.J = vkr.d;
                     }
                     else {
                         for (final FormatStreamModel formatStreamModel : this.q) {
-                            if (E(formatStreamModel) != vhj.a) {
+                            if (E(formatStreamModel) != vkr.a) {
                                 this.J = E(formatStreamModel);
                                 break Label_0137;
                             }
                         }
                         for (final FormatStreamModel formatStreamModel2 : this.p) {
-                            if (E(formatStreamModel2) != vhj.a) {
+                            if (E(formatStreamModel2) != vkr.a) {
                                 this.J = E(formatStreamModel2);
                                 break Label_0137;
                             }
                         }
-                        this.J = vhj.a;
+                        this.J = vkr.a;
                     }
                 }
             }
-            final vhj j = this.J;
+            final vkr j = this.J;
             monitorexit(this);
             return j;
         }
@@ -505,41 +553,41 @@ public class VideoStreamingData implements Parcelable
         }
         if (o instanceof VideoStreamingData) {
             final VideoStreamingData videoStreamingData = (VideoStreamingData)o;
-            if (this.e == videoStreamingData.e && this.f == videoStreamingData.f && aeda.v((Object)this.d, (Object)videoStreamingData.d) && aeda.v((Object)this.b, (Object)videoStreamingData.b) && this.h == videoStreamingData.h && aeda.v((Object)this.j, (Object)videoStreamingData.j) && aeda.v((Object)this.k, (Object)videoStreamingData.k) && this.l == videoStreamingData.l && this.m == videoStreamingData.m && this.n == videoStreamingData.n) {
+            if (this.e == videoStreamingData.e && this.f == videoStreamingData.f && aexq.c(this.d, videoStreamingData.d) && aexq.c(this.b, videoStreamingData.b) && this.h == videoStreamingData.h && aexq.c(this.j, videoStreamingData.j) && aexq.c(this.k, videoStreamingData.k) && this.l == videoStreamingData.l && this.m == videoStreamingData.m && this.n == videoStreamingData.n) {
                 return true;
             }
         }
         return false;
     }
     
-    public final VideoStreamingData f(final aext aext) {
-        final agza builder = ((agzi)this.b).toBuilder();
+    public final VideoStreamingData f(final afbk afbk) {
+        final ahcr builder = this.b.toBuilder();
         builder.copyOnWrite();
-        ((akvi)builder.instance).f = akvi.emptyProtobufList();
-        for (final ajsj ajsj : this.b.f) {
-            if (aext.a(ajsj)) {
-                builder.aV(ajsj);
+        ((akzm)builder.instance).f = ahcz.emptyProtobufList();
+        for (final ajwl ajwl : this.b.f) {
+            if (afbk.a(ajwl)) {
+                builder.aW(ajwl);
             }
         }
-        return this.j((akvi)builder.build());
+        return this.j((akzm)builder.build());
     }
     
     public final VideoStreamingData g(final PlayerConfigModel f) {
-        final agza builder = ((agzi)this.b).toBuilder();
+        final ahcr builder = this.b.toBuilder();
         builder.copyOnWrite();
-        ((akvi)builder.instance).f = akvi.emptyProtobufList();
-        final vhi vhi = new vhi((akvi)builder.build(), this.c);
-        vhi.c = this.f;
-        vhi.h = this.j;
-        vhi.e = this.k;
-        vhi.f = f;
-        vhi.i = this.n;
-        vhi.k = this.H;
-        return vhi.a();
+        ((akzm)builder.instance).f = ahcz.emptyProtobufList();
+        final vkq vkq = new vkq((akzm)builder.build(), this.c);
+        vkq.c = this.f;
+        vkq.h = this.j;
+        vkq.e = this.k;
+        vkq.f = f;
+        vkq.i = this.n;
+        vkq.k = this.H;
+        return vkq.a();
     }
     
     public final VideoStreamingData h() {
-        return this.f((aext)oof.l);
+        return this.f((afbk)oqb.l);
     }
     
     @Override
@@ -548,15 +596,15 @@ public class VideoStreamingData implements Parcelable
     }
     
     public final VideoStreamingData i() {
-        return this.f((aext)oof.m);
+        return this.f((afbk)oqb.m);
     }
     
-    public final VideoStreamingData j(final akvi akvi) {
-        return new VideoStreamingData(akvi, this.c, null, this.f, this.g, this.j, this.k, this.l, this.m, this.n, this.H, null);
+    public final VideoStreamingData j(final akzm akzm) {
+        return new VideoStreamingData(akzm, this.c, null, this.f, this.g, this.j, this.k, this.l, this.m, this.n, this.H, null, null, null, null);
     }
     
-    public final afcr k() {
-        return (afcr)Collection$_EL.stream((Collection)new agzs((List)this.b.n, akvi.a)).map((Function)tko.n).collect(afaj.a);
+    public final afgh k() {
+        return (afgh)Collection$_EL.stream((Collection)new ahdj((List)this.b.n, akzm.a)).map((Function)tip.p).collect(afdz.a);
     }
     
     public final String l() {
@@ -583,7 +631,7 @@ public class VideoStreamingData implements Parcelable
     }
     
     public final boolean o() {
-        final Iterator iterator = vha.u().iterator();
+        final Iterator iterator = vki.u().iterator();
         while (iterator.hasNext()) {
             if (this.q((int)iterator.next())) {
                 return true;
@@ -601,7 +649,7 @@ public class VideoStreamingData implements Parcelable
     }
     
     public final boolean r() {
-        return this.e() == vhj.d || this.e() == vhj.c;
+        return this.e() == vkr.d || this.e() == vkr.c;
     }
     
     public final boolean s() {
@@ -674,7 +722,7 @@ public class VideoStreamingData implements Parcelable
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        uji.ag((MessageLite)this.b, parcel);
+        ume.ad((MessageLite)this.b, parcel);
         this.j.writeToParcel(parcel, n);
         parcel.writeString(this.d);
         parcel.writeLong(this.e);
@@ -685,7 +733,7 @@ public class VideoStreamingData implements Parcelable
         parcel.writeString(this.k);
         parcel.writeInt(this.l);
         parcel.writeInt((int)(this.m ? 1 : 0));
-        uji.ag((MessageLite)this.c, parcel);
+        ume.ad((MessageLite)this.c, parcel);
         parcel.writeInt((int)(this.n ? 1 : 0));
     }
     
@@ -706,7 +754,7 @@ public class VideoStreamingData implements Parcelable
     public final boolean z() {
         final Iterator iterator = this.o.iterator();
         while (iterator.hasNext()) {
-            if (((FormatStreamModel)iterator.next()).e() != vfj.b.bT) {
+            if (((FormatStreamModel)iterator.next()).e() != vir.b.bT) {
                 return false;
             }
         }

@@ -10,7 +10,7 @@ import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adover
 import android.os.Handler;
 import com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.service.b;
 
-public final class h extends eoa implements i
+public final class h extends eod implements i
 {
     public final b a;
     private final Handler b;
@@ -30,7 +30,7 @@ public final class h extends eoa implements i
     }
     
     public final void b(final Surface surface) {
-        this.b.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.databus.remoteloaded.a(this, surface, 16));
+        this.b.post((Runnable)new lqa(this, surface, 18));
     }
     
     protected final boolean dispatchTransaction(int int1, final Parcel parcel, final Parcel parcel2, int int2) {
@@ -42,15 +42,15 @@ public final class h extends eoa implements i
                 this.g();
             }
             else {
-                int2 = parcel.readInt();
-                final int int3 = parcel.readInt();
                 int1 = parcel.readInt();
+                final int int3 = parcel.readInt();
+                int2 = parcel.readInt();
                 this.enforceNoDataAvail(parcel);
-                this.a(int2, int3, int1);
+                this.a(int1, int3, int2);
             }
         }
         else {
-            final Surface surface = (Surface)eob.a(parcel, Surface.CREATOR);
+            final Surface surface = (Surface)eoe.a(parcel, Surface.CREATOR);
             this.enforceNoDataAvail(parcel);
             this.b(surface);
         }
@@ -62,6 +62,6 @@ public final class h extends eoa implements i
         final Handler b = this.b;
         final b a = this.a;
         a.getClass();
-        b.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.jar.client.a(a, 19));
+        b.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.jar.client.b(a, 17));
     }
 }

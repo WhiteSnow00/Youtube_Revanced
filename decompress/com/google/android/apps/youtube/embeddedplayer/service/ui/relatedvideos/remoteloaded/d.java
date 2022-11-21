@@ -17,7 +17,7 @@ import com.google.android.apps.youtube.embeddedplayer.service.model.SelectableIt
 import com.google.android.apps.youtube.embeddedplayer.service.model.BitmapKey;
 import com.google.android.apps.youtube.embeddedplayer.service.imageclient.shared.e;
 
-public final class d extends on
+public final class d extends oo
 {
     public static final int B = 0;
     public int A;
@@ -28,7 +28,7 @@ public final class d extends on
     public final TextView w;
     public final ImageView x;
     public final WeakReference y;
-    public final tcc z;
+    public final tdg z;
     
     public d(final Context context, final View view, final e c, final WeakReference y) {
         super(view);
@@ -37,7 +37,7 @@ public final class d extends on
         this.v = new TextView(context);
         this.w = new TextView(context);
         this.x = new ImageView(context);
-        this.z = (tcc)new c(0);
+        this.z = (tdg)new c(0);
     }
     
     public d(final View view, final e c, final WeakReference y) {
@@ -48,24 +48,24 @@ public final class d extends on
         this.w = (TextView)view.findViewById(2131431135);
         this.x = (ImageView)view.findViewById(2131431134);
         this.A = 1;
-        this.z = (tcc)new hxl(this, 6);
+        this.z = (tdg)new hxt(this, 6);
     }
     
     public final void E() {
         final BitmapKey t = this.t;
         while (true) {
             if (t == null) {
-                break Label_0084;
+                break Label_0082;
             }
             final e c = this.C;
-            final tcc z = this.z;
+            final tdg z = this.z;
             final Set set = c.a.get(t);
             if (set == null) {
-                break Label_0084;
+                break Label_0082;
             }
             set.remove(z);
             if (!set.isEmpty()) {
-                break Label_0084;
+                break Label_0082;
             }
             c.a.remove(t);
             try {
@@ -97,7 +97,7 @@ public final class d extends on
                 return;
             }
             final e c = this.C;
-            final tcc z = this.z;
+            final tdg z = this.z;
             final Set set = c.a.get(t);
             while (true) {
                 if (set != null) {

@@ -26,7 +26,27 @@ public final class SplitController
     
     private SplitController() {
         this.embeddingBackend = (EmbeddingBackend)ExtensionEmbeddingBackend.Companion.getInstance();
-        this.staticSplitRules = (Set)atkj.a;
+        this.staticSplitRules = (Set)atob.a;
+    }
+    
+    public SplitController(final atqv atqv) {
+        this();
+    }
+    
+    public static final SplitController access$getGlobalInstance$cp() {
+        return SplitController.globalInstance;
+    }
+    
+    public static final ReentrantLock access$getGlobalLock$cp() {
+        return SplitController.globalLock;
+    }
+    
+    public static final void access$setGlobalInstance$cp(final SplitController globalInstance) {
+        SplitController.globalInstance = globalInstance;
+    }
+    
+    public static final void access$setStaticSplitRules(final SplitController splitController, final Set staticSplitRules) {
+        splitController.setStaticSplitRules(staticSplitRules);
     }
     
     public static final SplitController getInstance() {
@@ -42,11 +62,11 @@ public final class SplitController
         this.embeddingBackend.setSplitRules(set);
     }
     
-    public final void addSplitListener(final Activity activity, final Executor executor, final akn akn) {
+    public final void addSplitListener(final Activity activity, final Executor executor, final akp akp) {
         activity.getClass();
         executor.getClass();
-        akn.getClass();
-        this.embeddingBackend.registerSplitListenerForActivity(activity, executor, akn);
+        akp.getClass();
+        this.embeddingBackend.registerSplitListenerForActivity(activity, executor, akp);
     }
     
     public final void clearRegisteredRules() {
@@ -79,9 +99,9 @@ public final class SplitController
         this.embeddingBackend.registerRule(embeddingRule);
     }
     
-    public final void removeSplitListener(final akn akn) {
-        akn.getClass();
-        this.embeddingBackend.unregisterSplitListenerForActivity(akn);
+    public final void removeSplitListener(final akp akp) {
+        akp.getClass();
+        this.embeddingBackend.unregisterSplitListenerForActivity(akp);
     }
     
     public final void setSplitAttributesCalculator(final SplitAttributesCalculator splitAttributesCalculator) {

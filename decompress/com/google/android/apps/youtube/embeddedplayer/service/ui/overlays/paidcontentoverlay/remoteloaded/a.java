@@ -7,7 +7,7 @@ package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidc
 import android.graphics.drawable.TransitionDrawable;
 import j$.util.Optional;
 import android.animation.AnimatorSet;
-import com.google.android.youtube.api.jar.client.f;
+import com.google.android.youtube.api.jar.client.e;
 import com.google.android.libraries.youtube.livecreation.screencast.ScreencastHostService;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.shared.b;
 
@@ -17,31 +17,31 @@ public final class a implements Runnable
     public final Object b;
     private final int c;
     
-    public a(final aapl b, final boolean a, final int c) {
+    public a(final aark b, final boolean a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public a(final aarm b, final boolean a, final int c) {
+    public a(final aatc b, final boolean a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public a(final aast b, final boolean a, final int c) {
+    public a(final aaud b, final boolean a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public a(final aawr b, final boolean a, final int c) {
+    public a(final aaya b, final boolean a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public a(final arcx b, final boolean a, final int c) {
+    public a(final arft b, final boolean a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
@@ -71,49 +71,49 @@ public final class a implements Runnable
         this.a = a;
     }
     
-    public a(final f b, final boolean a, final int c) {
+    public a(final e b, final boolean a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public a(final nhk b, final boolean a, final int c) {
+    public a(final nib b, final boolean a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public a(final txx b, final boolean a, final int c) {
+    public a(final tyy b, final boolean a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public a(final tzx b, final boolean a, final int c) {
+    public a(final ubb b, final boolean a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public a(final wsr b, final boolean a, final int c) {
+    public a(final wtx b, final boolean a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public a(final xoj b, final boolean a, final int c) {
+    public a(final xpv b, final boolean a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public a(final xqs b, final boolean a, final int c) {
+    public a(final xsb b, final boolean a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public a(final ynp b, final boolean a, final int c) {
+    public a(final ypn b, final boolean a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
@@ -125,26 +125,26 @@ public final class a implements Runnable
         int visibility = 8;
         switch (c) {
             default: {
-                ((arcx)this.b).b.setVisibility(arcx.a(this.a));
+                ((arft)this.b).b.setVisibility(arft.a(this.a));
                 return;
             }
             case 19: {
-                if (!this.a && ((arcx)this.b).h == null) {
+                if (!this.a && ((arft)this.b).h == null) {
                     return;
                 }
-                ((arcx)this.b).b().setVisibility(arcx.a(this.a));
+                ((arft)this.b).b().setVisibility(arft.a(this.a));
                 return;
             }
             case 18: {
-                ((aehe)((f)this.b).a).Q(this.a);
+                ((aeix)((e)this.b).a).Q(this.a);
                 return;
             }
             case 17: {
-                ((aawr)this.b).h(this.a);
+                ((aaya)this.b).h(this.a);
                 return;
             }
             case 16: {
-                final aasr j = ((aast)this.b).j;
+                final aaub j = ((aaud)this.b).j;
                 if (!this.a) {
                     visibility = 0;
                 }
@@ -154,7 +154,7 @@ public final class a implements Runnable
             case 15: {
                 final Object b = this.b;
                 final boolean a = this.a;
-                final aarl k = ((aarm)b).k;
+                final aatb k = ((aatc)b).k;
                 if (!a) {
                     visibility = 0;
                 }
@@ -164,13 +164,13 @@ public final class a implements Runnable
             case 14: {
                 final Object b2 = this.b;
                 final boolean a2 = this.a;
-                final aapl aapl = (aapl)b2;
-                final aapk i = aapl.k;
+                final aark aark = (aark)b2;
+                final aarj i = aark.k;
                 if (i != null) {
                     if (!a2) {
                         i.setProgress(0);
                     }
-                    final aapk l = aapl.k;
+                    final aarj l = aark.k;
                     if (!a2) {
                         visibility = 0;
                     }
@@ -179,90 +179,90 @@ public final class a implements Runnable
                 return;
             }
             case 13: {
-                ((ynp)this.b).y(this.a);
+                ((ypn)this.b).y(this.a);
                 return;
             }
             case 12: {
                 final Object b3 = this.b;
                 if (this.a) {
-                    final xqs xqs = (xqs)b3;
-                    final xrh h = xqs.h;
+                    final xsb xsb = (xsb)b3;
+                    final xsq h = xsb.h;
                     if (h != null) {
-                        xqs.b.a(h.b, "canceled");
-                        ttr.c("MDX.tvsignin.ExpressTvSignInDrawerController", "sending cancel message");
+                        xsb.b.a(h.b, "canceled");
+                        tut.c("MDX.tvsignin.ExpressTvSignInDrawerController", "sending cancel message");
                     }
                 }
-                final xqs xqs2 = (xqs)b3;
-                xqs2.e.m(b3);
-                final rzv m = xqs2.k;
+                final xsb xsb2 = (xsb)b3;
+                xsb2.e.m(b3);
+                final saw m = xsb2.k;
                 if (m != null) {
-                    qdt.h();
-                    final pwz o = rzv.o((cl)m.a);
-                    if (o != null) {
-                        ((bi)o).dismiss();
+                    qem.r();
+                    final pxs n = saw.n((cl)m.a);
+                    if (n != null) {
+                        ((bi)n).dismiss();
                     }
                 }
-                xqs2.g = null;
-                xqs2.i = false;
-                xqs2.h = null;
-                xqs2.k = null;
+                xsb2.g = null;
+                xsb2.i = false;
+                xsb2.h = null;
+                xsb2.k = null;
                 return;
             }
             case 11: {
-                ((xoj)this.b).e.d(this.a);
+                ((xpv)this.b).e.d(this.a);
                 return;
             }
             case 10: {
-                tpe.v(((wsr)this.b).aC, this.a ^ true);
+                tqf.v(((wtx)this.b).aC, this.a ^ true);
                 return;
             }
             case 9: {
-                tpe.v(((wsr)this.b).aC, this.a ^ true);
+                tqf.v(((wtx)this.b).aC, this.a ^ true);
                 return;
             }
             case 8: {
                 final Object b4 = this.b;
                 final boolean a3 = this.a;
                 final ScreencastHostService screencastHostService = (ScreencastHostService)b4;
-                final wpp l2 = screencastHostService.l;
+                final wqu l2 = screencastHostService.l;
                 l2.b.f(a3);
                 l2.c.p(a3);
-                screencastHostService.l.j(wpf.b, screencastHostService.getString(2132019588));
+                screencastHostService.l.j(wqk.b, screencastHostService.getString(2132019590));
                 return;
             }
             case 7: {
                 final Object b5 = this.b;
                 final boolean a4 = this.a;
-                final tzx tzx = (tzx)b5;
-                if (tzx.e == a4) {
+                final ubb ubb = (ubb)b5;
+                if (ubb.e == a4) {
                     return;
                 }
-                tzx.e = a4;
-                tzx.g = Optional.of((Object)vdh.aN((txq)tzx.d, a4, (AnimatorSet)tzx.g.orElse((Object)null)));
+                ubb.e = a4;
+                ubb.g = Optional.of((Object)ume.B((tyr)ubb.d, a4, (AnimatorSet)ubb.g.orElse((Object)null)));
                 return;
             }
             case 6: {
                 final Object b6 = this.b;
                 final boolean a5 = this.a;
                 if (a5) {
-                    ((tzx)b6).b.performHapticFeedback(1);
+                    ((ubb)b6).b.performHapticFeedback(1);
                 }
-                final tzx tzx2 = (tzx)b6;
-                if (tzx2.c.getAnimation() != null && tzx2.c.getAnimation().hasStarted() && !tzx2.c.getAnimation().hasEnded()) {
-                    tzx2.c.getAnimation().reset();
+                final ubb ubb2 = (ubb)b6;
+                if (ubb2.c.getAnimation() != null && ubb2.c.getAnimation().hasStarted() && !ubb2.c.getAnimation().hasEnded()) {
+                    ubb2.c.getAnimation().reset();
                 }
-                float n;
+                float n2;
                 if (!a5) {
-                    n = 1.0f;
+                    n2 = 1.0f;
                 }
                 else {
-                    n = 1.1667f;
+                    n2 = 1.1667f;
                 }
-                tzx2.c.animate().scaleX(n).scaleY(n).setDuration(75L).start();
-                final TransitionDrawable transitionDrawable = (TransitionDrawable)tzx2.c.getBackground();
+                ubb2.c.animate().scaleX(n2).scaleY(n2).setDuration(75L).start();
+                final TransitionDrawable transitionDrawable = (TransitionDrawable)ubb2.c.getBackground();
                 if (a5) {
                     transitionDrawable.startTransition(75);
-                    tzx2.a.J(3, (wzz)new wyt(xaa.c(39104)), (alhi)null);
+                    ubb2.a.J(3, (xbe)new wzy(xbf.c(39104)), (alji)null);
                     return;
                 }
                 transitionDrawable.reverseTransition(75);
@@ -271,25 +271,25 @@ public final class a implements Runnable
             case 5: {
                 final Object b7 = this.b;
                 if (this.a) {
-                    final txx txx = (txx)b7;
-                    txx.i();
-                    ((uae)txx.a.a()).c(true);
+                    final tyy tyy = (tyy)b7;
+                    tyy.i();
+                    ((ubi)tyy.a.a()).c(true);
                     return;
                 }
-                ((txx)b7).n();
+                ((tyy)b7).n();
                 return;
             }
             case 4: {
-                final boolean v = ((nhk)this.b).x.v();
-                final boolean u = ((nhk)this.b).x.u();
-                ((nhk)this.b).x.t(this.a);
+                final boolean v = ((nib)this.b).x.v();
+                final boolean u = ((nib)this.b).x.u();
+                ((nib)this.b).x.t(this.a);
                 if (u == this.a) {
-                    ((nhk)this.b).x.aA().k.b("Default data collection state already set to", (Object)this.a);
+                    ((nib)this.b).x.aA().k.b("Default data collection state already set to", (Object)this.a);
                 }
-                if (((nhk)this.b).x.v() == v || ((nhk)this.b).x.v() != ((nhk)this.b).x.u()) {
-                    ((nhk)this.b).x.aA().h.c("Default data collection is different than actual status", (Object)this.a, (Object)v);
+                if (((nib)this.b).x.v() == v || ((nib)this.b).x.v() != ((nib)this.b).x.u()) {
+                    ((nib)this.b).x.aA().h.c("Default data collection is different than actual status", (Object)this.a, (Object)v);
                 }
-                ((nhk)this.b).V();
+                ((nib)this.b).V();
                 return;
             }
             case 3: {

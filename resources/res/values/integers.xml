@@ -62,7 +62,7 @@
     <integer name="gm_sys_motion_duration_short2">150</integer>
     <integer name="google_btn_anim_delay_ms">100</integer>
     <integer name="google_btn_anim_duration_ms">100</integer>
-    <integer name="google_play_services_version">224500000</integer>
+    <integer name="google_play_services_version">224602000</integer>
     <integer name="grid_shelf_num_columns">2</integer>
     <integer name="hide_password_duration">320</integer>
     <integer name="horizontal_shelf_num_columns">1</integer>
@@ -151,6 +151,8 @@
     <integer name="preview_card_video_card_title_max_lines">3</integer>
     <integer name="preview_card_video_description_row_number">4</integer>
     <integer name="preview_to_player_anim_duration_ms">750</integer>
+    <integer name="quick_actions_widget_preview_cell_height">2</integer>
+    <integer name="quick_actions_widget_preview_cell_width">3</integer>
     <integer name="reel_camera_time_progress_bar_max">10000</integer>
     <integer name="reel_edit_swipe_effect_text_view_shadow_radius">10</integer>
     <integer name="reel_edit_video_tap_for_more_shadow">1</integer>
@@ -168,6 +170,8 @@
     <integer name="screencast_live_chat_height_percent">50</integer>
     <integer name="screencast_live_chat_width_percent">100</integer>
     <integer name="scrubber_overlay_animation_duration">300</integer>
+    <integer name="search_widget_preview_cell_height">1</integer>
+    <integer name="search_widget_preview_cell_width">4</integer>
     <integer name="section_list_drawer_selected_avatar_color_alpha">bf</integer>
     <integer name="share_panel_landscape_columns">5</integer>
     <integer name="share_panel_portrait_columns">3</integer>

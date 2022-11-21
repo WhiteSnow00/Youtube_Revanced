@@ -30,7 +30,7 @@ public final class SplitRuleParser
     
     private final void addRule(final EmbeddingRule embeddingRule) {
         final String tag = embeddingRule.getTag();
-        if (!aqzg.K((Iterable)this.tags, (Object)tag)) {
+        if (!atzd.k((Iterable)this.tags, (Object)tag)) {
             this.splitRuleConfigs.add(embeddingRule);
             if (tag != null) {
                 this.tags.add(tag);
@@ -53,16 +53,16 @@ public final class SplitRuleParser
         if (string.charAt(0) == '.') {
             return new ComponentName(substring, String.valueOf(substring).concat(string));
         }
-        final int k = aubt.k(string, '/', 0, 6);
+        final int s = auop.s((CharSequence)string, '/', 0, 6);
         String substring2 = substring;
         substring = string;
-        if (k > 0) {
-            substring2 = string.substring(0, k);
+        if (s > 0) {
+            substring2 = string.substring(0, s);
             substring2.getClass();
-            substring = string.substring(k + 1);
+            substring = string.substring(s + 1);
             substring.getClass();
         }
-        if (!atnh.c(substring, "*") && aubt.k(substring, '.', 0, 6) < 0) {
+        if (!atqz.c(substring, "*") && auop.s((CharSequence)substring, '.', 0, 6) < 0) {
             final StringBuilder sb = new StringBuilder(substring2);
             sb.append('.');
             sb.append(substring);
@@ -103,7 +103,7 @@ public final class SplitRuleParser
         final String string = obtainStyledAttributes.getString(R$styleable.ActivityRule_tag);
         final boolean boolean1 = obtainStyledAttributes.getBoolean(R$styleable.ActivityRule_alwaysExpand, false);
         obtainStyledAttributes.recycle();
-        final ActivityRule$Builder activityRule$Builder = new ActivityRule$Builder((Set)atkj.a);
+        final ActivityRule$Builder activityRule$Builder = new ActivityRule$Builder((Set)atob.a);
         activityRule$Builder.setAlwaysExpand(boolean1);
         if (string != null) {
             activityRule$Builder.setTag(string);
@@ -128,22 +128,22 @@ public final class SplitRuleParser
         final int splitPairRule_splitMinWidth = R$styleable.SplitPairRule_splitMinWidth;
         final Resources resources = context.getResources();
         resources.getClass();
-        final float dimension = obtainStyledAttributes.getDimension(splitPairRule_splitMinWidth, this.defaultMinDimension(resources));
+        final int n = (int)obtainStyledAttributes.getDimension(splitPairRule_splitMinWidth, this.defaultMinDimension(resources));
         final int splitPairRule_splitMinHeight = R$styleable.SplitPairRule_splitMinHeight;
         final Resources resources2 = context.getResources();
         resources2.getClass();
-        final float dimension2 = obtainStyledAttributes.getDimension(splitPairRule_splitMinHeight, this.defaultMinDimension(resources2));
+        final int n2 = (int)obtainStyledAttributes.getDimension(splitPairRule_splitMinHeight, this.defaultMinDimension(resources2));
         final int splitPairRule_splitMinSmallestWidth = R$styleable.SplitPairRule_splitMinSmallestWidth;
         final Resources resources3 = context.getResources();
         resources3.getClass();
-        final float dimension3 = obtainStyledAttributes.getDimension(splitPairRule_splitMinSmallestWidth, this.defaultMinDimension(resources3));
+        final int n3 = (int)obtainStyledAttributes.getDimension(splitPairRule_splitMinSmallestWidth, this.defaultMinDimension(resources3));
         final int int1 = obtainStyledAttributes.getInt(R$styleable.SplitPairRule_splitLayoutDirection, SplitAttributes$LayoutDirection.LOCALE.getValue$window_release());
         final int int2 = obtainStyledAttributes.getInt(R$styleable.SplitPairRule_finishPrimaryWithSecondary, SplitRule$FinishBehavior.NEVER.getValue$window_release());
         final int int3 = obtainStyledAttributes.getInt(R$styleable.SplitPairRule_finishSecondaryWithPrimary, SplitRule$FinishBehavior.ALWAYS.getValue$window_release());
         final boolean boolean1 = obtainStyledAttributes.getBoolean(R$styleable.SplitPairRule_clearTop, false);
         obtainStyledAttributes.recycle();
         final SplitAttributes buildSplitAttributesFromValue$window_release = SplitAttributes.Companion.buildSplitAttributesFromValue$window_release(float1, int1);
-        final SplitPairRule$Builder splitPairRule$Builder = new SplitPairRule$Builder((Set)atkj.a, (int)dimension, (int)dimension2, (int)dimension3);
+        final SplitPairRule$Builder splitPairRule$Builder = new SplitPairRule$Builder((Set)atob.a, n, n2, n3);
         splitPairRule$Builder.setTag(string);
         splitPairRule$Builder.setFinishPrimaryWithSecondary(SplitRule$FinishBehavior.Companion.getFinishBehaviorFromValue$window_release(int2));
         splitPairRule$Builder.setFinishSecondaryWithPrimary(SplitRule$FinishBehavior.Companion.getFinishBehaviorFromValue$window_release(int3));
@@ -163,25 +163,25 @@ public final class SplitRuleParser
             final int splitPlaceholderRule_splitMinWidth = R$styleable.SplitPlaceholderRule_splitMinWidth;
             final Resources resources = context.getResources();
             resources.getClass();
-            final float dimension = obtainStyledAttributes.getDimension(splitPlaceholderRule_splitMinWidth, this.defaultMinDimension(resources));
+            final int n = (int)obtainStyledAttributes.getDimension(splitPlaceholderRule_splitMinWidth, this.defaultMinDimension(resources));
             final int splitPlaceholderRule_splitMinHeight = R$styleable.SplitPlaceholderRule_splitMinHeight;
             final Resources resources2 = context.getResources();
             resources2.getClass();
-            final float dimension2 = obtainStyledAttributes.getDimension(splitPlaceholderRule_splitMinHeight, this.defaultMinDimension(resources2));
+            final int n2 = (int)obtainStyledAttributes.getDimension(splitPlaceholderRule_splitMinHeight, this.defaultMinDimension(resources2));
             final int splitPlaceholderRule_splitMinSmallestWidth = R$styleable.SplitPlaceholderRule_splitMinSmallestWidth;
             final Resources resources3 = context.getResources();
             resources3.getClass();
-            final float dimension3 = obtainStyledAttributes.getDimension(splitPlaceholderRule_splitMinSmallestWidth, this.defaultMinDimension(resources3));
+            final int n3 = (int)obtainStyledAttributes.getDimension(splitPlaceholderRule_splitMinSmallestWidth, this.defaultMinDimension(resources3));
             final int int2 = obtainStyledAttributes.getInt(R$styleable.SplitPlaceholderRule_splitLayoutDirection, SplitAttributes$LayoutDirection.LOCALE.getValue$window_release());
             obtainStyledAttributes.recycle();
             final SplitAttributes buildSplitAttributesFromValue$window_release = SplitAttributes.Companion.buildSplitAttributesFromValue$window_release(float1, int2);
             final String packageName = context.getApplicationContext().getPackageName();
             packageName.getClass();
             final ComponentName buildClassName = this.buildClassName(packageName, string2);
-            final atkj a = atkj.a;
+            final atob a = atob.a;
             final Intent setComponent = new Intent().setComponent(buildClassName);
             setComponent.getClass();
-            final SplitPlaceholderRule$Builder splitPlaceholderRule$Builder = new SplitPlaceholderRule$Builder((Set)a, setComponent, (int)dimension, (int)dimension2, (int)dimension3);
+            final SplitPlaceholderRule$Builder splitPlaceholderRule$Builder = new SplitPlaceholderRule$Builder((Set)a, setComponent, n, n2, n3);
             splitPlaceholderRule$Builder.setTag(string);
             splitPlaceholderRule$Builder.setSticky(boolean1);
             splitPlaceholderRule$Builder.setFinishPrimaryWithPlaceholder(SplitRule$FinishBehavior.Companion.getFinishBehaviorFromValue$window_release(int1));
@@ -198,121 +198,124 @@ public final class SplitRuleParser
             xml.getClass();
             final int depth = xml.getDepth();
             n = xml.next();
-            Object o = null;
-            Object o3;
-            Object o2 = o3 = o;
+            EmbeddingRule embeddingRule = null;
+            SplitPlaceholderRule splitPlaceholderRule;
+            Object o = splitPlaceholderRule = null;
             while (n != 1 && (n != 3 || xml.getDepth() > depth)) {
-                if (xml.getEventType() == 2 && !atnh.c("split-config", xml.getName())) {
+                if (xml.getEventType() == 2 && !atqz.c("split-config", xml.getName())) {
                     final String name = xml.getName();
-                    Object o4 = o;
-                    ActivityRule activityRule = (ActivityRule)o2;
-                    Object o5 = o3;
-                    Label_0545: {
+                    Object o2 = embeddingRule;
+                    Object o3 = o;
+                    SplitPlaceholderRule splitPlaceholderRule2 = splitPlaceholderRule;
+                    Label_0552: {
                         if (name != null) {
                             SplitPairRule splitPairRule = null;
-                            Label_0420: {
-                                ActivityRule activityRule2 = null;
-                                Label_0292: {
+                            Label_0425: {
+                                Label_0294: {
+                                    SplitPlaceholderRule splitPlaceholderRule3 = null;
                                     switch (name.hashCode()) {
                                         default: {
-                                            o4 = o;
-                                            activityRule = (ActivityRule)o2;
-                                            o5 = o3;
-                                            break Label_0545;
+                                            o2 = embeddingRule;
+                                            o3 = o;
+                                            splitPlaceholderRule2 = splitPlaceholderRule;
+                                            break Label_0552;
                                         }
                                         case 2050988213: {
-                                            if (!name.equals("SplitPlaceholderRule")) {
-                                                o4 = o;
-                                                activityRule = (ActivityRule)o2;
-                                                o5 = o3;
-                                                break Label_0545;
+                                            o2 = embeddingRule;
+                                            o3 = o;
+                                            splitPlaceholderRule2 = splitPlaceholderRule;
+                                            if (name.equals("SplitPlaceholderRule")) {
+                                                splitPlaceholderRule3 = this.parseSplitPlaceholderRule(context, xml);
+                                                this.addRule((EmbeddingRule)splitPlaceholderRule3);
+                                                o2 = null;
+                                                o = null;
+                                                break;
                                             }
-                                            o4 = this.parseSplitPlaceholderRule(context, xml);
-                                            this.addRule((EmbeddingRule)o4);
-                                            o2 = (o3 = null);
-                                            break;
+                                            break Label_0552;
                                         }
                                         case 1793077963: {
-                                            if (!name.equals("ActivityRule")) {
-                                                o4 = o;
-                                                activityRule = (ActivityRule)o2;
-                                                o5 = o3;
-                                                break Label_0545;
+                                            o2 = embeddingRule;
+                                            o3 = o;
+                                            splitPlaceholderRule2 = splitPlaceholderRule;
+                                            if (name.equals("ActivityRule")) {
+                                                o2 = this.parseSplitActivityRule(context, xml);
+                                                this.addRule((EmbeddingRule)o2);
+                                                o = null;
+                                                splitPlaceholderRule = null;
+                                                break Label_0294;
                                             }
-                                            activityRule2 = this.parseSplitActivityRule(context, xml);
-                                            this.addRule((EmbeddingRule)activityRule2);
-                                            o4 = (o3 = null);
-                                            break Label_0292;
+                                            break Label_0552;
                                         }
                                         case 1579230604: {
+                                            o2 = embeddingRule;
+                                            o3 = o;
+                                            splitPlaceholderRule2 = splitPlaceholderRule;
                                             if (!name.equals("SplitPairFilter")) {
-                                                o4 = o;
-                                                activityRule = (ActivityRule)o2;
-                                                o5 = o3;
-                                                break Label_0545;
+                                                break Label_0552;
                                             }
-                                            if (o3 != null) {
+                                            if (o != null) {
                                                 final SplitPairFilter splitPairFilter = this.parseSplitPairFilter(context, xml);
-                                                this.removeRule((EmbeddingRule)o3);
-                                                splitPairRule = ((SplitPairRule)o3).plus$window_release(splitPairFilter);
+                                                this.removeRule((EmbeddingRule)o);
+                                                splitPairRule = ((SplitPairRule)o).plus$window_release(splitPairFilter);
                                                 this.addRule((EmbeddingRule)splitPairRule);
-                                                o4 = o;
-                                                break Label_0420;
+                                                o2 = embeddingRule;
+                                                break Label_0425;
                                             }
                                             throw new IllegalArgumentException("Found orphaned SplitPairFilter outside of SplitPairRule");
                                         }
                                         case 520447504: {
-                                            if (!name.equals("SplitPairRule")) {
-                                                o4 = o;
-                                                activityRule = (ActivityRule)o2;
-                                                o5 = o3;
-                                                break Label_0545;
+                                            o2 = embeddingRule;
+                                            o3 = o;
+                                            splitPlaceholderRule2 = splitPlaceholderRule;
+                                            if (name.equals("SplitPairRule")) {
+                                                splitPairRule = this.parseSplitPairRule(context, xml);
+                                                this.addRule((EmbeddingRule)splitPairRule);
+                                                o2 = null;
+                                                splitPlaceholderRule = null;
+                                                break Label_0425;
                                             }
-                                            splitPairRule = this.parseSplitPairRule(context, xml);
-                                            this.addRule((EmbeddingRule)splitPairRule);
-                                            o4 = (o2 = null);
-                                            break Label_0420;
+                                            break Label_0552;
                                         }
                                         case 511422343: {
                                             if (!name.equals("ActivityFilter")) {
-                                                o4 = o;
-                                                activityRule = (ActivityRule)o2;
-                                                o5 = o3;
-                                                break Label_0545;
+                                                o2 = embeddingRule;
+                                                o3 = o;
+                                                splitPlaceholderRule2 = splitPlaceholderRule;
+                                                break Label_0552;
                                             }
-                                            if (o2 == null && o == null) {
+                                            if (embeddingRule == null && splitPlaceholderRule == null) {
                                                 throw new IllegalArgumentException("Found orphaned ActivityFilter");
                                             }
                                             final ActivityFilter activityFilter = this.parseActivityFilter(context, xml);
-                                            if (o2 != null) {
-                                                this.removeRule((EmbeddingRule)o2);
-                                                activityRule2 = ((ActivityRule)o2).plus$window_release(activityFilter);
-                                                this.addRule((EmbeddingRule)activityRule2);
-                                                o4 = o;
-                                                break Label_0292;
+                                            if (embeddingRule != null) {
+                                                this.removeRule(embeddingRule);
+                                                o2 = ((ActivityRule)embeddingRule).plus$window_release(activityFilter);
+                                                this.addRule((EmbeddingRule)o2);
+                                                break Label_0294;
                                             }
-                                            this.removeRule((EmbeddingRule)o);
-                                            o4 = ((SplitPlaceholderRule)o).plus$window_release(activityFilter);
-                                            this.addRule((EmbeddingRule)o4);
+                                            this.removeRule((EmbeddingRule)splitPlaceholderRule);
+                                            splitPlaceholderRule3 = splitPlaceholderRule.plus$window_release(activityFilter);
+                                            this.addRule((EmbeddingRule)splitPlaceholderRule3);
+                                            o2 = embeddingRule;
                                             break;
                                         }
                                     }
-                                    activityRule = (ActivityRule)o2;
-                                    o5 = o3;
-                                    break Label_0545;
+                                    o3 = o;
+                                    splitPlaceholderRule2 = splitPlaceholderRule3;
+                                    break Label_0552;
                                 }
-                                activityRule = activityRule2;
-                                o5 = o3;
-                                break Label_0545;
+                                o3 = o;
+                                splitPlaceholderRule2 = splitPlaceholderRule;
+                                break Label_0552;
                             }
-                            activityRule = (ActivityRule)o2;
-                            o5 = splitPairRule;
+                            o3 = splitPairRule;
+                            splitPlaceholderRule2 = splitPlaceholderRule;
                         }
                     }
                     n = xml.next();
-                    o = o4;
-                    o2 = activityRule;
-                    o3 = o5;
+                    embeddingRule = (EmbeddingRule)o2;
+                    o = o3;
+                    splitPlaceholderRule = splitPlaceholderRule2;
                 }
                 else {
                     n = xml.next();
@@ -331,8 +334,8 @@ public final class SplitRuleParser
         this.splitRuleConfigs.remove(embeddingRule);
         final ArrayList tags = this.tags;
         final String tag = embeddingRule.getTag();
-        if (tags instanceof atnq && !(tags instanceof atnr)) {
-            atnp.a(tags, "kotlin.collections.MutableCollection");
+        if (tags instanceof atri && !(tags instanceof atrj)) {
+            atrh.a(tags, "kotlin.collections.MutableCollection");
         }
         tags.remove(tag);
     }

@@ -16,7 +16,7 @@ public abstract class RelatedVideoItem implements BusSupported$Data
     public static final RelatedVideoItem a;
     
     static {
-        a = kzr.k("", (CharSequence)"", (CharSequence)"", (CharSequence)"", new BitmapKey(0, 0), new SelectableItemKey(0, 0), ahab.b);
+        a = jzq.v("", (CharSequence)"", (CharSequence)"", (CharSequence)"", new BitmapKey(0, 0), new SelectableItemKey(0, 0), ahbt.b);
         CREATOR = (Parcelable$Creator)new f(1);
     }
     
@@ -24,7 +24,7 @@ public abstract class RelatedVideoItem implements BusSupported$Data
     
     public abstract SelectableItemKey b();
     
-    public abstract ahab c();
+    public abstract ahbt c();
     
     @Override
     public final b d() {

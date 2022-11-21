@@ -7,38 +7,38 @@ package com.google.android.apps.youtube.embeddedplayer.service.ui.errorscreen.re
 import android.text.style.ClickableSpan;
 import java.util.Map;
 
-public final class e implements acaf
+public final class e implements acbp
 {
     public final Object a;
     public final Object b;
     private final int c;
     
-    public e(final f a, final vdc b, final int c) {
+    public e(final g a, final vel b, final int c) {
         this.c = c;
         this.a = a;
         this.b = b;
     }
     
-    public e(final gch a, final Map b, final int c) {
+    public e(final gcn a, final Map b, final int c) {
         this.c = c;
         this.a = a;
         this.b = b;
     }
     
-    public e(final vdc b, final vcy a, final int c) {
+    public e(final vel b, final veh a, final int c) {
         this.c = c;
         this.b = b;
         this.a = a;
     }
     
-    public final ClickableSpan a(final aiqj aiqj) {
+    public final ClickableSpan a(final aisc aisc) {
         final int c = this.c;
         if (c == 0) {
-            return ((vdc)this.b).a(((f)this.a).b, (Map)null, aiqj);
+            return ((vel)this.b).a(((g)this.a).b, (Map)null, aisc);
         }
         if (c != 1) {
-            return ((vdc)this.b).a((vcy)this.a, (Map)null, aiqj);
+            return ((vel)this.b).a((veh)this.a, (Map)null, aisc);
         }
-        return vdd.a(false).a(((gch)this.a).a, (Map)this.b, aiqj);
+        return vem.a(false).a(((gcn)this.a).a, (Map)this.b, aisc);
     }
 }

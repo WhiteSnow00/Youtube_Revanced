@@ -11,18 +11,18 @@ import com.google.android.libraries.youtube.innertube.model.WatchNextResponseMod
 import android.content.Context;
 import android.app.Activity;
 
-public class MusicDeeplinkMenuItemController implements iss, thl, tgg
+public class MusicDeeplinkMenuItemController implements itb, tio, thj
 {
-    public final vcy a;
-    public amgp b;
+    public final veh a;
+    public amis b;
     private final Activity c;
-    private final abpu d;
-    private final acpk e;
-    private asir f;
-    private ist g;
+    private final abqz d;
+    private final acqv e;
+    private asln f;
+    private itc g;
     private boolean h;
     
-    public MusicDeeplinkMenuItemController(final Activity c, final abpu d, final vcy a, final acpk e) {
+    public MusicDeeplinkMenuItemController(final Activity c, final abqz d, final veh a, final acqv e) {
         c.getClass();
         this.c = c;
         d.getClass();
@@ -33,113 +33,112 @@ public class MusicDeeplinkMenuItemController implements iss, thl, tgg
         this.e = e;
     }
     
-    private final void k(final akdh akdh, final boolean b) {
-        final int a = this.e.a(akdh);
+    private final void k(final akfi akfi, final boolean b) {
+        final int a = this.e.a(akfi);
         if (a == 0) {
             return;
         }
-        final ist g = this.g;
+        final itc g = this.g;
         if (g != null) {
             if (b) {
-                ((qkq)g).e = tpe.k((Context)this.c, a, 2130970924);
+                ((qlk)g).e = tqf.k((Context)this.c, a, 2130970922);
                 return;
             }
-            ((qkq)g).f = tpe.k((Context)this.c, a, 2130970924);
+            ((qlk)g).f = tqf.k((Context)this.c, a, 2130970922);
         }
     }
     
     private final void l() {
-        final amgp b = this.b;
+        final amis b = this.b;
         if (b != null) {
-            final CharSequence h = vyg.h(b);
-            final ist g = this.g;
-            if (g != null && h != null) {
-                ((qkq)g).c = h.toString();
+            final CharSequence q = wbe.q(b);
+            final itc g = this.g;
+            if (g != null && q != null) {
+                ((qlk)g).c = q.toString();
             }
-            final akdi f = vyg.f(b);
-            if (f != null) {
-                akdh akdh;
-                if ((akdh = akdh.b(f.c)) == null) {
-                    akdh = akdh.a;
+            final akfj o = wbe.o(b);
+            if (o != null) {
+                akfi akfi;
+                if ((akfi = akfi.b(o.c)) == null) {
+                    akfi = akfi.a;
                 }
-                this.k(akdh, true);
+                this.k(akfi, true);
             }
-            final akdi g2 = vyg.g(b);
-            if (g2 != null) {
-                akdh akdh2;
-                if ((akdh2 = akdh.b(g2.c)) == null) {
-                    akdh2 = akdh.a;
+            final akfj p = wbe.p(b);
+            if (p != null) {
+                akfi akfi2;
+                if ((akfi2 = akfi.b(p.c)) == null) {
+                    akfi2 = akfi.a;
                 }
-                this.k(akdh2, false);
+                this.k(akfi2, false);
             }
         }
-        final ist g3 = this.g;
-        if (g3 != null) {
-            g3.g(this.h);
+        final itc g2 = this.g;
+        if (g2 != null) {
+            ((actj)g2).g(this.h);
         }
     }
     
-    @Override
-    public final ist a() {
+    public final itc a() {
         if (this.g == null) {
-            this.g = new ist("", new iso(this, 5));
+            this.g = new itc("", (ita)new isx(this, 5));
             this.l();
         }
-        final ist g = this.g;
+        final itc g = this.g;
         g.getClass();
         return g;
     }
     
-    public final thh g() {
-        return thh.b;
+    public final tik g() {
+        return tik.b;
     }
     
-    public final void j(final aani aani) {
-        final WatchNextResponseModel a = aani.a();
+    public final void j(final aapf aapf) {
+        final WatchNextResponseModel a = aapf.a();
         final boolean b = false;
         boolean h;
         if (a == null) {
             h = b;
         }
         else {
-            final angl i = a.i;
+            final anis i = a.i;
             h = b;
             if (i != null) {
                 h = b;
                 if ((i.b & 0x1) != 0x0) {
-                    angk angk;
-                    if ((angk = i.e) == null) {
-                        angk = angk.a;
+                    anir anir;
+                    if ((anir = i.e) == null) {
+                        anir = anir.a;
                     }
                     h = b;
-                    if ((angk.b & 0x1) != 0x0) {
-                        angk angk2;
-                        if ((angk2 = i.e) == null) {
-                            angk2 = angk.a;
+                    if ((anir.b & 0x1) != 0x0) {
+                        anir anir2;
+                        if ((anir2 = i.e) == null) {
+                            anir2 = anir.a;
                         }
-                        amgs amgs;
-                        if ((amgs = angk2.c) == null) {
-                            amgs = amgs.a;
+                        amiv amiv;
+                        if ((amiv = anir2.c) == null) {
+                            amiv = amiv.a;
                         }
-                        final Iterator<Object> iterator = ((List<Object>)amgs.c).iterator();
+                        final Iterator<Object> iterator = ((List<Object>)amiv.c).iterator();
                         while (true) {
                             h = b;
                             if (!iterator.hasNext()) {
                                 break;
                             }
-                            final amgp b2 = iterator.next();
+                            final amis b2 = iterator.next();
                             if ((b2.b & 0x1) == 0x0) {
                                 continue;
                             }
-                            final akdi f = vyg.f(b2);
-                            if (f == null) {
+                            final akfj o = wbe.o(b2);
+                            if (o == null) {
                                 continue;
                             }
-                            akdh akdh;
-                            if ((akdh = akdh.b(f.c)) == null) {
-                                akdh = akdh.a;
+                            akfi akfi;
+                            if ((akfi = akfi.b(o.c)) == null) {
+                                akfi = akfi.a;
                             }
-                            if (akdh == akdh.pr) {
+                            if (akfi == akfi.pt) {
                                 this.b = b2;
                                 h = true;
                                 break;
@@ -155,16 +154,13 @@ public class MusicDeeplinkMenuItemController implements iss, thl, tgg
         }
     }
     
-    public final void lW(final aun aun) {
+    public final void lW(final aup aup) {
     }
     
-    public final void mM(final aun aun) {
+    public final void mp(final aup aup) {
     }
     
-    public final void mq(final aun aun) {
-    }
-    
-    public final Class[] ms(final Class clazz, final Object o, final int n) {
+    public final Class[] mr(final Class clazz, final Object o, final int n) {
         Class[] array;
         if (n != -1) {
             if (n != 0) {
@@ -172,56 +168,56 @@ public class MusicDeeplinkMenuItemController implements iss, thl, tgg
                 sb.append(n);
                 throw new IllegalStateException(sb.toString());
             }
-            this.j((aani)o);
+            this.j((aapf)o);
             array = null;
         }
         else {
-            array = new Class[] { aani.class };
+            array = new Class[] { aapf.class };
         }
         return array;
     }
     
-    public final void my(final aun aun) {
+    public final void mx(final aup aup) {
     }
     
-    @Override
-    public final void oO() {
+    public final void oO(final aup aup) {
+    }
+    
+    public final void oP() {
         this.g = null;
     }
     
-    @Override
-    public final boolean oP() {
+    public final boolean oQ() {
         return true;
     }
     
-    @Override
-    public final String oQ() {
+    public final String oR() {
         return "menu_item_listen_in_yt_music";
     }
     
-    public final void oS(final aun aun) {
-        asir f;
-        if (((vai)this.d.ci().g).bx()) {
-            f = this.d.Q().an((asjm)new irw(this, 16), (asjm)ise.f);
+    public final void oT(final aup aup) {
+        asln f;
+        if (((vbs)this.d.cg().g).bA()) {
+            f = this.d.Q().an((asmi)new isd(this, 18), (asmi)isj.g);
         }
         else {
-            f = this.d.P().R().P(asil.a()).an((asjm)new irw(this, 16), (asjm)ise.f);
+            f = this.d.P().R().P(aslh.a()).an((asmi)new isd(this, 18), (asmi)isj.g);
         }
         this.f = f;
     }
     
-    public final void oT() {
-        tfg.c((thl)this);
+    public final void oU() {
+        tgj.d((tio)this);
     }
     
-    public final void oW() {
-        tfg.b((thl)this);
+    public final void oX() {
+        tgj.c((tio)this);
     }
     
-    public final void oX(final aun aun) {
-        final asir f = this.f;
+    public final void oY(final aup aup) {
+        final asln f = this.f;
         if (f != null) {
-            athz.f((AtomicReference)f);
+            atkw.f((AtomicReference)f);
             this.f = null;
         }
     }

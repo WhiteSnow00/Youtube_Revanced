@@ -14,7 +14,7 @@ public final class TimeSignalCommand extends SpliceCommand
     public final long b;
     
     static {
-        CREATOR = (Parcelable$Creator)new bvm(9);
+        CREATOR = (Parcelable$Creator)new bvp(9);
     }
     
     public TimeSignalCommand(final long a, final long b) {
@@ -22,10 +22,10 @@ public final class TimeSignalCommand extends SpliceCommand
         this.b = b;
     }
     
-    public static long d(final bas bas, final long n) {
-        final long n2 = bas.i();
+    public static long d(final bat bat, final long n) {
+        final long n2 = bat.i();
         if ((0x80L & n2) != 0x0L) {
-            return 0x1FFFFFFFFL & ((n2 & 0x1L) << 32 | bas.q()) + n;
+            return 0x1FFFFFFFFL & ((n2 & 0x1L) << 32 | bat.q()) + n;
         }
         return -9223372036854775807L;
     }

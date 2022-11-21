@@ -9,10 +9,10 @@ import java.lang.reflect.InvocationHandler;
 
 final class ConsumerAdapter$ConsumerHandler implements InvocationHandler
 {
-    private final atob clazz;
-    private final atml consumer;
+    private final atrt clazz;
+    private final atqd consumer;
     
-    public ConsumerAdapter$ConsumerHandler(final atob clazz, final atml consumer) {
+    public ConsumerAdapter$ConsumerHandler(final atrt clazz, final atqd consumer) {
         clazz.getClass();
         consumer.getClass();
         this.clazz = clazz;
@@ -20,19 +20,19 @@ final class ConsumerAdapter$ConsumerHandler implements InvocationHandler
     }
     
     private final boolean isAccept(final Method method, final Object[] array) {
-        return atnh.c((Object)method.getName(), (Object)"accept") && array != null && array.length == 1;
+        return atqz.c(method.getName(), "accept") && array != null && array.length == 1;
     }
     
     private final boolean isEquals(final Method method, final Object[] array) {
-        return atnh.c((Object)method.getName(), (Object)"equals") && method.getReturnType().equals(Boolean.TYPE) && array != null && array.length == 1;
+        return atqz.c(method.getName(), "equals") && method.getReturnType().equals(Boolean.TYPE) && array != null && array.length == 1;
     }
     
     private final boolean isHashCode(final Method method, final Object[] array) {
-        return atnh.c((Object)method.getName(), (Object)"hashCode") && method.getReturnType().equals(Integer.TYPE) && array == null;
+        return atqz.c(method.getName(), "hashCode") && method.getReturnType().equals(Integer.TYPE) && array == null;
     }
     
     private final boolean isToString(final Method method, final Object[] array) {
-        return atnh.c((Object)method.getName(), (Object)"toString") && method.getReturnType().equals(String.class) && array == null;
+        return atqz.c(method.getName(), "toString") && method.getReturnType().equals(String.class) && array == null;
     }
     
     @Override
@@ -45,14 +45,14 @@ final class ConsumerAdapter$ConsumerHandler implements InvocationHandler
         boolean b = false;
         Object o4;
         if (accept) {
-            final atob clazz = this.clazz;
+            final atrt clazz = this.clazz;
             o = o3;
             if (array != null) {
                 o = array[0];
             }
-            arxi.e(clazz, o);
+            asbp.f(clazz, o);
             this.invokeAccept(o);
-            o4 = atjv.a;
+            o4 = atnn.a;
         }
         else if (this.isEquals(method, array)) {
             Object o5 = o2;

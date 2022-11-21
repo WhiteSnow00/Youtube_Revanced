@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">डिव्हाइस थीम वापरा</string>
     <string name="app_theme_appearance_summary">तुमचे फिकट किंवा गडद थीम प्राधान्य निवडा</string>
     <string name="app_theme_appearance_title">स्वरूप</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">लागू करा</string>
     <string name="approve_playlist_sync">नवीन व्हिडिओ संंकालित करा</string>
     <string name="audio_playback_failed_snackbar_action_button">परत प्रयत्न करा</string>
@@ -479,7 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">डेटा निरीक्षण आणि नियंत्रण</string>
     <string name="data_saving_persistent_title">डेटा सेव्ह करणे</string>
     <string name="data_saving_select_quality_every_video_switch_title">प्रत्येक व्हिडिओसाठी गुणवत्ता निवडा</string>
-    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">स्मार्ट डाउनलोडची गुणवत्ता कमी करा</string>
     <string name="data_saving_snack_bar_action_button">पहा</string>
     <string name="data_saving_snack_bar_text">या बदलामुळे तुमच्या डेटा सेव्हिंग सेटिंग्जवर परिणाम होतो</string>
     <string name="data_saving_upload_wifi_only_switch_title">फक्त वाय-फाय वर अपलोड करा</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">स्ट्रीम थांबवा</string>
     <string name="lc_retry_yes">पुन्हा प्रयत्न करा</string>
     <string name="lc_rotate_device">डिव्हाइस फिरवा</string>
+    <string name="lc_sharedmde_required_field_error">शीर्षक आणि प्रेक्षक या गोष्टी नमूद करणे आवश्यक आहे.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">पोर्ट्रेटमध्ये स्ट्रीम करा</string>
     <string name="lc_stream_start_error">स्ट्रीम सुरू करू शकत नाही. तुमचे कनेक्शन तपासा.</string>
@@ -1729,6 +1730,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">व्हिडिओचे पूर्वावलोकन. थांबवण्‍यासाठी टॅप करा.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">व्हिडिओचे पूर्वावलोकन. प्ले करण्यासाठी टॅप करा.</string>
     <string name="shorts_a11y_zoom_control">झूम नियंत्रण</string>
+    <string name="shorts_audio_failure_toast">आवाज जोडता आला नाही, कृपया पुन्हा प्रयत्न करा.</string>
     <string name="shorts_camera_allow_access_subtitle">तुमचा कॅमेरा आणि मायक्रोफोनला अ‍ॅक्सेसची अनुमती द्या</string>
     <string name="shorts_camera_allow_access_title">Short तयार करा</string>
     <string name="shorts_camera_close_confirmation_cancel">रद्द करा</string>

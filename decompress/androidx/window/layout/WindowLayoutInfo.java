@@ -17,7 +17,7 @@ public final class WindowLayoutInfo
     
     @Override
     public boolean equals(final Object o) {
-        return this == o || (o != null && atoc.c((Object)this.getClass(), (Object)o.getClass()) && atoc.c((Object)this.displayFeatures, (Object)((WindowLayoutInfo)o).displayFeatures));
+        return this == o || (o != null && atqz.c(this.getClass(), o.getClass()) && atqz.c(this.displayFeatures, ((WindowLayoutInfo)o).displayFeatures));
     }
     
     public final List getDisplayFeatures() {
@@ -31,6 +31,6 @@ public final class WindowLayoutInfo
     
     @Override
     public String toString() {
-        return atvx.o((Iterable)this.displayFeatures, (CharSequence)", ", (CharSequence)"WindowLayoutInfo{ DisplayFeatures[", (CharSequence)"] }", (atng)null, 56);
+        return atzd.n((Iterable)this.displayFeatures, (CharSequence)", ", (CharSequence)"WindowLayoutInfo{ DisplayFeatures[", (CharSequence)"] }", (atqd)null, 56);
     }
 }

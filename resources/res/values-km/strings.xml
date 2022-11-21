@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">ប្រើប្រាស់​រចនាប័ទ្មឧបករណ៍</string>
     <string name="app_theme_appearance_summary">ជ្រើសរើសចំណូលចិត្តរចនាប័ទ្ម​ងងឹត ឬភ្លឺរបស់​អ្នក</string>
     <string name="app_theme_appearance_title">រូបរាង</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube​​</string>
     <string name="apply">អនុវត្ត</string>
     <string name="approve_playlist_sync">ធ្វើ​សមកាលកម្ម​​វីដេអូ​ថ្មី</string>
     <string name="audio_playback_failed_snackbar_action_button">ព្យាយាម​ម្តងទៀត</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">បញ្ចប់​ការផ្សាយ</string>
     <string name="lc_retry_yes">ព្យាយាម​ម្ដងទៀត</string>
     <string name="lc_rotate_device">បង្វិល​ឧបករណ៍</string>
+    <string name="lc_sharedmde_required_field_error">តម្រូវ​ឱ្យ​​មានចំណងជើង និងទស្សនិកជន។</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">ផ្សាយ​បញ្ឈរ</string>
     <string name="lc_stream_start_error">មិន​អាច​ចាប់ផ្ដើម​ការ​ផ្សាយ​បាន​ទេ។ សូម​ពិនិត្យ​មើល​ការតភ្ជាប់អ៊ីនធឺណិត។</string>
@@ -1728,6 +1729,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">ការមើល​វីដេអូ​សាកល្បង។ ចុច​ដើម្បី​​ផ្អាក។</string>
     <string name="shorts_a11y_video_preview_tap_to_play">ការមើល​វីដេអូ​សាកល្បង។ ចុច​ដើម្បី​ចាក់។</string>
     <string name="shorts_a11y_zoom_control">គ្រប់គ្រង​ការពង្រីកបង្រួម</string>
+    <string name="shorts_audio_failure_toast">មិន​អាច​បញ្ចូលសំឡេង​បានទេ។ សូមព្យាយាម​ម្ដង​ទៀត។</string>
     <string name="shorts_camera_allow_access_subtitle">អនុញ្ញាតឲ្យចូលប្រើកាមេរ៉ា និងមីក្រូហ្វូនរបស់អ្នក</string>
     <string name="shorts_camera_allow_access_title">បង្កើត​វីដេអូ​ខ្លី</string>
     <string name="shorts_camera_close_confirmation_cancel">បោះបង់</string>

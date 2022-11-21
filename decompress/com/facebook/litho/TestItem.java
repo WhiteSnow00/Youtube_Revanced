@@ -38,7 +38,7 @@ public class TestItem
     }
     
     public String getTextContent() {
-        final List textItems = com.c((List)Collections.singletonList(this.d)).getTextItems();
+        final List textItems = cpc.c((List)Collections.singletonList(this.d)).getTextItems();
         final StringBuilder sb = new StringBuilder();
         for (int size = textItems.size(), i = 0; i < size; ++i) {
             sb.append((CharSequence)textItems.get(i));

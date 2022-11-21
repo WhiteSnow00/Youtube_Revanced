@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 
 public class InterceptTouchListenerLinearLayout extends LinearLayout
 {
-    private uwp a;
+    private uzr a;
     
     public InterceptTouchListenerLinearLayout(final Context context) {
         super(context);
@@ -26,12 +26,12 @@ public class InterceptTouchListenerLinearLayout extends LinearLayout
         super(context, set, n);
     }
     
-    public final void a(final uwp a) {
+    public final void a(final uzr a) {
         this.setOnTouchListener((View$OnTouchListener)(this.a = a));
     }
     
     public final boolean onInterceptTouchEvent(final MotionEvent motionEvent) {
-        final uwp a = this.a;
+        final uzr a = this.a;
         if (a != null) {
             final int actionMasked = motionEvent.getActionMasked();
             boolean b = false;
@@ -43,22 +43,22 @@ public class InterceptTouchListenerLinearLayout extends LinearLayout
                         }
                     }
                     else {
-                        final uwi uwi = (uwi)a;
-                        if (uwi.b(uwi.a, motionEvent)) {
+                        final uzk uzk = (uzk)a;
+                        if (uzk.b(uzk.a, motionEvent)) {
                             return true;
                         }
                         return false;
                     }
                 }
-                final uwi uwi2 = (uwi)a;
-                if (!uwi2.b(uwi2.a, motionEvent)) {
-                    uwi2.a.g();
+                final uzk uzk2 = (uzk)a;
+                if (!uzk2.b(uzk2.a, motionEvent)) {
+                    uzk2.a.g();
                     return false;
                 }
                 b = true;
                 return b;
             }
-            ((uwi)a).a.h(motionEvent);
+            ((uzk)a).a.h(motionEvent);
             return false;
         }
         return super.onInterceptTouchEvent(motionEvent);

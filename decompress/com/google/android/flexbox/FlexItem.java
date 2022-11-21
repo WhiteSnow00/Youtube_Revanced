@@ -38,5 +38,9 @@ public interface FlexItem extends Parcelable
     
     int o();
     
-    boolean p();
+    void p(final int p0);
+    
+    void q(final int p0);
+    
+    boolean r();
 }

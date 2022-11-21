@@ -8,10 +8,10 @@ import j$.util.Optional;
 import com.google.android.apps.youtube.embeddedplayer.service.hostappverification.b;
 import com.google.android.apps.youtube.embeddedplayer.service.model.SimplePlaybackDescriptor;
 
-public final class EmbedFragmentService$$ExternalSyntheticLambda1 implements tet
+public final class EmbedFragmentService$$ExternalSyntheticLambda1 implements tfw
 {
-    public EmbedFragmentService a;
-    public SimplePlaybackDescriptor b;
+    public final EmbedFragmentService a;
+    public final SimplePlaybackDescriptor b;
     
     public EmbedFragmentService$$ExternalSyntheticLambda1(final EmbedFragmentService a, final SimplePlaybackDescriptor b) {
         this.a = a;

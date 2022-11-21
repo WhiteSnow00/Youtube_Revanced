@@ -17,151 +17,151 @@ import java.util.List;
 import android.os.Parcelable$Creator;
 import android.os.Parcelable;
 
-public class WatchNextResponseModel implements Parcelable, abxy
+public class WatchNextResponseModel implements Parcelable, acbl
 {
     public static final Parcelable$Creator CREATOR;
-    public final alcj a;
+    public final algm a;
     public final String b;
-    public final aioe c;
+    public final aisc c;
     public final List d;
-    public veu e;
-    public alca f;
-    public angx g;
-    public ves h;
-    public aneh i;
+    public vic e;
+    public algd f;
+    public anli g;
+    public via h;
+    public anis i;
     private final Map j;
     private List k;
-    private aplc l;
-    private aplg m;
-    private aoap n;
+    private apps l;
+    private appw m;
+    private aoey n;
     private Object o;
     
     static {
-        CREATOR = (Parcelable$Creator)new uik(9);
+        CREATOR = (Parcelable$Creator)new ulj(9);
     }
     
-    public WatchNextResponseModel(final alcj a) {
+    public WatchNextResponseModel(final algm a) {
         a.getClass();
         this.d = new ArrayList();
         this.j = new HashMap();
         final int b = a.b;
-        final ves ves = null;
-        aioe c;
+        final via via = null;
+        aisc c;
         if ((b & 0x1000) != 0x0) {
             if ((c = a.o) == null) {
-                c = aioe.a;
+                c = aisc.a;
             }
         }
         else {
             c = null;
         }
         String b2 = null;
-        Label_0146: {
+        Label_0135: {
             if ((this.c = c) != null) {
-                if (((agzd)c).rs((agyr)WatchEndpointOuterClass.watchEndpoint)) {
-                    b2 = ((apqg)((agzd)c).rr((agyr)WatchEndpointOuterClass.watchEndpoint)).d;
-                    break Label_0146;
+                if (((ahcu)c).ry((ahci)WatchEndpointOuterClass.watchEndpoint)) {
+                    b2 = ((apuw)((ahcu)c).rx((ahci)WatchEndpointOuterClass.watchEndpoint)).d;
+                    break Label_0135;
                 }
-                if (((agzd)c).rs((agyr)OfflineWatchEndpointOuterClass.offlineWatchEndpoint)) {
-                    b2 = ((amuk)((agzd)c).rr((agyr)OfflineWatchEndpointOuterClass.offlineWatchEndpoint)).c;
-                    break Label_0146;
+                if (((ahcu)c).ry((ahci)OfflineWatchEndpointOuterClass.offlineWatchEndpoint)) {
+                    b2 = ((amyt)((ahcu)c).rx((ahci)OfflineWatchEndpointOuterClass.offlineWatchEndpoint)).c;
+                    break Label_0135;
                 }
             }
             b2 = null;
         }
         this.b = b2;
-        alck alck;
-        if ((alck = a.e) == null) {
-            alck = alck.a;
+        algn algn;
+        if ((algn = a.e) == null) {
+            algn = algn.a;
         }
-        if (alck.b == 51779735) {
-            alck alck2;
-            if ((alck2 = a.e) == null) {
-                alck2 = alck.a;
+        if (algn.b == 51779735) {
+            algn algn2;
+            if ((algn2 = a.e) == null) {
+                algn2 = algn.a;
             }
-            alca a2;
-            if (alck2.b == 51779735) {
-                a2 = (alca)alck2.c;
+            algd a2;
+            if (algn2.b == 51779735) {
+                a2 = (algd)algn2.c;
             }
             else {
-                a2 = alca.a;
+                a2 = algd.a;
             }
             this.f = a2;
         }
         this.a = a;
-        final alca f = this.f;
+        final algd f = this.f;
         if (f != null && (f.b & 0x1) != 0x0) {
             this.k = new ArrayList();
-            albz albz;
-            if ((albz = f.c) == null) {
-                albz = albz.a;
+            algc algc;
+            if ((algc = f.c) == null) {
+                algc = algc.a;
             }
-            if (albz.b == 49399797) {
-                albz albz2;
-                if ((albz2 = f.c) == null) {
-                    albz2 = albz.a;
+            if (algc.b == 49399797) {
+                algc algc2;
+                if ((algc2 = f.c) == null) {
+                    algc2 = algc.a;
                 }
-                anws a3;
-                if (albz2.b == 49399797) {
-                    a3 = (anws)albz2.c;
+                aobc a3;
+                if (algc2.b == 49399797) {
+                    a3 = (aobc)algc2.c;
                 }
                 else {
-                    a3 = anws.a;
+                    a3 = aobc.a;
                 }
-                this.e = new veu(a3);
+                this.e = new vic(a3);
                 this.f(a3);
             }
             else {
-                final albz c2 = f.c;
-                albz a4;
+                final algc c2 = f.c;
+                algc a4;
                 if (c2 == null) {
-                    a4 = albz.a;
+                    a4 = algc.a;
                 }
                 else {
                     a4 = c2;
                 }
                 if (a4.b == 91700600) {
-                    albz a5;
+                    algc a5;
                     if ((a5 = c2) == null) {
-                        a5 = albz.a;
+                        a5 = algc.a;
                     }
-                    alcn a6;
+                    algq a6;
                     if (a5.b == 91700600) {
-                        a6 = (alcn)a5.c;
+                        a6 = (algq)a5.c;
                     }
                     else {
-                        a6 = alcn.a;
+                        a6 = algq.a;
                     }
-                    for (final alcm alcm : a6.b) {
-                        if (alcm.b == 58174010) {
-                            final zvt zvt = new zvt((aopg)alcm.c);
-                            this.k.add(zvt);
-                            if (zvt.e() == null) {
+                    for (final algp algp : a6.b) {
+                        if (algp.b == 58174010) {
+                            final zzm zzm = new zzm((aotv)algp.c);
+                            this.k.add(zzm);
+                            if (zzm.e() == null) {
                                 continue;
                             }
-                            this.f(zvt.e().a);
+                            this.f(zzm.e().a);
                         }
                     }
                 }
             }
         }
-        final alca f2 = this.f;
+        final algd f2 = this.f;
         if (f2 != null && (f2.b & 0x2) != 0x0) {
-            alby alby;
-            if ((alby = f2.d) == null) {
-                alby = alby.a;
+            algb algb;
+            if ((algb = f2.d) == null) {
+                algb = algb.a;
             }
-            if (alby.b == 50631000) {
-                alby alby2;
-                if ((alby2 = f2.d) == null) {
-                    alby2 = alby.a;
+            if (algb.b == 50631000) {
+                algb algb2;
+                if ((algb2 = f2.d) == null) {
+                    algb2 = algb.a;
                 }
-                angx a7;
-                if (alby2.b == 50631000) {
-                    a7 = (angx)alby2.c;
+                anli a7;
+                if (algb2.b == 50631000) {
+                    a7 = (anli)algb2.c;
                 }
                 else {
-                    a7 = angx.a;
+                    a7 = anli.a;
                 }
                 this.g = a7;
             }
@@ -169,141 +169,141 @@ public class WatchNextResponseModel implements Parcelable, abxy
             if (b3 != null) {
                 b3.hashCode();
             }
-            final angx g = this.g;
+            final anli g = this.g;
             if (g != null) {
                 g.m.hashCode();
             }
         }
-        final alca f3 = this.f;
-        final aexi a8 = aexi.a;
-        ves h = ves;
+        final algd f3 = this.f;
+        final afaz a8 = afaz.a;
+        via h = via;
         if (f3 != null) {
-            albw albw;
-            if ((albw = f3.e) == null) {
-                albw = albw.a;
+            alfz alfz;
+            if ((alfz = f3.e) == null) {
+                alfz = alfz.a;
             }
-            h = ves;
-            if (albw.b == 46659098) {
-                albw albw2;
-                if ((albw2 = f3.e) == null) {
-                    albw2 = albw.a;
+            h = via;
+            if (alfz.b == 46659098) {
+                alfz alfz2;
+                if ((alfz2 = f3.e) == null) {
+                    alfz2 = alfz.a;
                 }
-                ahvo a9;
-                if (albw2.b == 46659098) {
-                    a9 = (ahvo)albw2.c;
+                ahzf a9;
+                if (alfz2.b == 46659098) {
+                    a9 = (ahzf)alfz2.c;
                 }
                 else {
-                    a9 = ahvo.a;
+                    a9 = ahzf.a;
                 }
-                h = new ves(a9, (aexg)a8);
+                h = new via(a9, (afax)a8);
             }
         }
         this.h = h;
-        this.d.addAll(a.v);
-        albu albu;
-        if ((albu = a.g) == null) {
-            albu = albu.a;
+        this.d.addAll((Collection)a.v);
+        alfx alfx;
+        if ((alfx = a.g) == null) {
+            alfx = alfx.a;
         }
-        if (albu.b == 78882851) {
-            albu albu2;
-            if ((albu2 = a.g) == null) {
-                albu2 = albu.a;
+        if (alfx.b == 78882851) {
+            alfx alfx2;
+            if ((alfx2 = a.g) == null) {
+                alfx2 = alfx.a;
             }
-            aneh a10;
-            if (albu2.b == 78882851) {
-                a10 = (aneh)albu2.c;
+            anis a10;
+            if (alfx2.b == 78882851) {
+                a10 = (anis)alfx2.c;
             }
             else {
-                a10 = aneh.a;
+                a10 = anis.a;
             }
             this.i = a10;
         }
     }
     
-    private final void f(final anws anws) {
-        final Iterator<Object> iterator = anws.d.iterator();
-    Label_0232:
+    private final void f(final aobc aobc) {
+        final Iterator<Object> iterator = ((List<Object>)aobc.d).iterator();
+    Label_0216:
         while (iterator.hasNext()) {
-            alib alib;
-            if ((alib = iterator.next().j) == null) {
-                alib = alib.a;
+            alme alme;
+            if ((alme = iterator.next().j) == null) {
+                alme = alme.a;
             }
-            for (final alie alie : alib.e) {
-                if (this.l == null && (alie.c & 0x200) != 0x0) {
-                    aplc l;
-                    if ((l = alie.I) == null) {
-                        l = aplc.a;
+            for (final almh almh : alme.e) {
+                if (this.l == null && (almh.c & 0x200) != 0x0) {
+                    apps l;
+                    if ((l = almh.I) == null) {
+                        l = apps.a;
                     }
                     this.l = l;
                 }
-                else if (this.m == null && (alie.c & 0x400) != 0x0) {
-                    aplg m;
-                    if ((m = alie.J) == null) {
-                        m = aplg.a;
+                else if (this.m == null && (almh.c & 0x400) != 0x0) {
+                    appw m;
+                    if ((m = almh.J) == null) {
+                        m = appw.a;
                     }
                     this.m = m;
                 }
                 else {
-                    if (this.n != null || (alie.e & 0x4) == 0x0) {
+                    if (this.n != null || (almh.e & 0x4) == 0x0) {
                         continue;
                     }
-                    aoap n;
-                    if ((n = alie.R) == null) {
-                        n = aoap.a;
+                    aoey n;
+                    if ((n = almh.R) == null) {
+                        n = aoey.a;
                     }
                     this.n = n;
                 }
                 if (this.l != null && this.m != null && this.n != null) {
-                    break Label_0232;
+                    break Label_0216;
                 }
             }
         }
-        final Iterator<Object> iterator3 = anws.d.iterator();
+        final Iterator<Object> iterator3 = ((List<Object>)aobc.d).iterator();
         while (iterator3.hasNext()) {
-            aobk aobk;
-            if ((aobk = iterator3.next().v) == null) {
-                aobk = aobk.a;
+            aoft aoft;
+            if ((aoft = iterator3.next().v) == null) {
+                aoft = aoft.a;
             }
-            aobm aobm;
-            if ((aobm = aobk.r) == null) {
-                aobm = aobm.a;
+            aofv aofv;
+            if ((aofv = aoft.r) == null) {
+                aofv = aofv.a;
             }
-            akah akah;
-            if ((akah = aobm.e) == null) {
-                akah = akah.a;
+            akel akel;
+            if ((akel = aofv.e) == null) {
+                akel = akel.a;
             }
-            for (final akai akai : akah.c) {
-                if ((akai.b & 0x80000) != 0x0) {
-                    ajxs ajxs;
-                    if ((ajxs = akai.x) == null) {
-                        ajxs = ajxs.a;
+            for (final akem akem : akel.c) {
+                if ((akem.b & 0x80000) != 0x0) {
+                    akbw akbw;
+                    if ((akbw = akem.x) == null) {
+                        akbw = akbw.a;
                     }
-                    aioe aioe;
-                    if ((aioe = ajxs.m) == null) {
-                        aioe = aioe.a;
+                    aisc aisc;
+                    if ((aisc = akbw.m) == null) {
+                        aisc = aisc.a;
                     }
-                    final apqg apqg = (apqg)((agzd)aioe).rr((agyr)WatchEndpointOuterClass.watchEndpoint);
-                    if ((apqg.b & 0x40000) == 0x0) {
+                    final apuw apuw = (apuw)((ahcu)aisc).rx((ahci)WatchEndpointOuterClass.watchEndpoint);
+                    if ((apuw.b & 0x80000) == 0x0) {
                         continue;
                     }
                     final Map j = this.j;
-                    final String d = apqg.d;
-                    amvn amvn;
-                    if ((amvn = apqg.q) == null) {
-                        amvn = amvn.a;
+                    final String d = apuw.d;
+                    amzw amzw;
+                    if ((amzw = apuw.q) == null) {
+                        amzw = amzw.a;
                     }
-                    j.put(d, amvn);
+                    j.put(d, amzw);
                 }
             }
         }
     }
     
-    public final ansr a() {
-        ansr ansr;
-        if ((ansr = this.a.f) == null) {
-            ansr = ansr.a;
+    public final anxa a() {
+        anxa anxa;
+        if ((anxa = this.a.f) == null) {
+            anxa = anxa.a;
         }
-        return ansr;
+        return anxa;
     }
     
     public final Object b() {
@@ -323,14 +323,14 @@ public class WatchNextResponseModel implements Parcelable, abxy
     }
     
     public final int e() {
-        int cl;
-        if ((cl = aqql.cl(this.a.B)) == 0) {
-            cl = 1;
+        int ce;
+        if ((ce = aqvq.ce(this.a.B)) == 0) {
+            ce = 1;
         }
-        return cl;
+        return ce;
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        uji.ag((MessageLite)this.a, parcel);
+        ume.ad((MessageLite)this.a, parcel);
     }
 }

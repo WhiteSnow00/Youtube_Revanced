@@ -393,10 +393,6 @@
     </attr>
     <attr name="blueButtonBackground" format="reference|color">
     </attr>
-    <attr name="blueRadioButtonBackground" format="reference">
-    </attr>
-    <attr name="blueRadioButtonTextColor" format="reference|color">
-    </attr>
     <attr name="borderColor" format="color">
     </attr>
     <attr name="borderSize" format="dimension">

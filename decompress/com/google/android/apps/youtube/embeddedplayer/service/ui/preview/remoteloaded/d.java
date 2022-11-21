@@ -20,7 +20,7 @@ final class d extends FrameLayout
     }
     
     public final boolean onFilterTouchEventForSecurity(final MotionEvent motionEvent) {
-        final skt s = this.a.s;
+        final slt s = this.a.s;
         final int flags = motionEvent.getFlags();
         boolean a = true;
         if (0x1 != (flags & 0x1)) {

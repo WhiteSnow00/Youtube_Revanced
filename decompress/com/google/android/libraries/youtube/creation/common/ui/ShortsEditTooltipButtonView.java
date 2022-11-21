@@ -24,15 +24,15 @@ public final class ShortsEditTooltipButtonView extends LinearLayout
     
     public ShortsEditTooltipButtonView(Context obtainStyledAttributes, final AttributeSet set) {
         super(obtainStyledAttributes, set);
-        LayoutInflater.from(this.getContext()).inflate(2131625403, (ViewGroup)this);
+        LayoutInflater.from(this.getContext()).inflate(2131625405, (ViewGroup)this);
         this.setVerticalGravity(16);
         this.setOrientation(0);
-        this.b = (ImageView)this.findViewById(2131431487);
-        this.a = (TextView)this.findViewById(2131431488);
+        this.b = (ImageView)this.findViewById(2131431488);
+        this.a = (TextView)this.findViewById(2131431489);
         if (set == null) {
             return;
         }
-        obtainStyledAttributes = (Context)this.getContext().getTheme().obtainStyledAttributes(set, txl.b, 0, 0);
+        obtainStyledAttributes = (Context)this.getContext().getTheme().obtainStyledAttributes(set, tyn.b, 0, 0);
         try {
             final int resourceId = ((TypedArray)obtainStyledAttributes).getResourceId(2, -1);
             if (resourceId != -1) {

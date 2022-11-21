@@ -13,9 +13,9 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public final class ApiPlayerService$$ExternalSyntheticLambda4 implements Runnable
 {
-    public ApiPlayerService a;
-    public AtomicReference b;
-    public ConditionVariable c;
+    public final ApiPlayerService a;
+    public final AtomicReference b;
+    public final ConditionVariable c;
     
     public ApiPlayerService$$ExternalSyntheticLambda4(final ApiPlayerService a, final AtomicReference b, final ConditionVariable c) {
         this.a = a;
@@ -28,7 +28,7 @@ public final class ApiPlayerService$$ExternalSyntheticLambda4 implements Runnabl
         final ApiPlayerService a = this.a;
         final AtomicReference b = this.b;
         final ConditionVariable c = this.c;
-        final lor a2 = a.a;
+        final lpe a2 = a.a;
         final PlaybackServiceState c2 = a2.c();
         final int hashCode = c2.hashCode();
         a2.h.a = c2;
@@ -36,9 +36,9 @@ public final class ApiPlayerService$$ExternalSyntheticLambda4 implements Runnabl
         final PlaybackStartDescriptor e = a2.e;
         PlaybackStartDescriptor playbackStartDescriptor;
         if (e != null) {
-            final Optional of = Optional.of((Object)e.B(a2.Y));
+            final Optional of = Optional.of((Object)e.B(a2.aa));
             final PlaybackStartDescriptor a3 = a2.e.e().a();
-            final abvx p = a2.i.p();
+            final abxg p = a2.i.p();
             empty = of;
             playbackStartDescriptor = a3;
             if (p != null) {

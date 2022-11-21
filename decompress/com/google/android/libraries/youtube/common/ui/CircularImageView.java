@@ -17,14 +17,14 @@ import android.widget.ImageView;
 public class CircularImageView extends ImageView
 {
     public float a;
-    private tps b;
+    private tqt b;
     private InsetDrawable c;
-    private tps d;
-    private int e;
+    private tqt d;
+    private final int e;
     
     public CircularImageView(final Context context, final AttributeSet set) {
         super(context, set);
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, tqs.b);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, trt.b);
         this.a = obtainStyledAttributes.getDimension(1, 0.0f);
         this.e = obtainStyledAttributes.getColor(0, -16777216);
     }
@@ -43,7 +43,7 @@ public class CircularImageView extends ImageView
     }
     
     public final Drawable getBackground() {
-        final tps d = this.d;
+        final tqt d = this.d;
         if (d != null) {
             return d.a;
         }
@@ -51,7 +51,7 @@ public class CircularImageView extends ImageView
     }
     
     public final Drawable getDrawable() {
-        final tps b = this.b;
+        final tqt b = this.b;
         if (b != null) {
             return b.a;
         }
@@ -69,16 +69,16 @@ public class CircularImageView extends ImageView
     
     public final void setBackgroundDrawable(final Drawable drawable) {
         if (drawable == null) {
-            final tps d = this.d;
+            final tqt d = this.d;
             if (d != null) {
                 d.a((Drawable)null);
             }
             super.setBackgroundDrawable((Drawable)null);
             return;
         }
-        final tps d2 = this.d;
+        final tqt d2 = this.d;
         if (d2 == null) {
-            this.d = new tps(drawable, this.a, this.e);
+            this.d = new tqt(drawable, this.a, this.e);
         }
         else {
             d2.a(drawable);
@@ -93,16 +93,16 @@ public class CircularImageView extends ImageView
     
     public final void setImageDrawable(final Drawable drawable) {
         if (drawable == null) {
-            final tps b = this.b;
+            final tqt b = this.b;
             if (b != null) {
                 b.a((Drawable)null);
             }
             super.setImageDrawable((Drawable)null);
             return;
         }
-        final tps b2 = this.b;
+        final tqt b2 = this.b;
         if (b2 == null) {
-            this.b = new tps(drawable, this.a, this.e);
+            this.b = new tqt(drawable, this.a, this.e);
         }
         else {
             b2.a(drawable);

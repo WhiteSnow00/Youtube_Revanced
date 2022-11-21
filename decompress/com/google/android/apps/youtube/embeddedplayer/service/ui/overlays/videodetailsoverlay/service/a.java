@@ -17,13 +17,13 @@ public final class a implements d
 {
     public b a;
     public CharSequence b;
-    private final vax c;
-    private final aceo d;
-    private aioe e;
-    private ajld f;
-    private szz g;
+    private final veh c;
+    private final acig d;
+    private aisc e;
+    private ajph f;
+    private tdi g;
     
-    public a(final vax c, final aceo d) {
+    public a(final veh c, final acig d) {
         this.b = "";
         c.getClass();
         this.c = c;
@@ -31,36 +31,36 @@ public final class a implements d
         this.d = d;
     }
     
-    public final void a(ajld f, final b a) {
+    public final void a(ajph f, final b a) {
         f.getClass();
         this.f = f;
         a.getClass();
         this.a = a;
         f = this.f;
-        aioe e = null;
+        aisc e = null;
         Label_0176: {
             if ((f.b & 0x4) != 0x0) {
-                anss anss;
-                if ((anss = f.d) == null) {
-                    anss = anss.a;
+                anxb anxb;
+                if ((anxb = f.d) == null) {
+                    anxb = anxb.a;
                 }
-                final ajlb ajlb = (ajlb)((agzd)anss).rr((agyr)ajle.b);
-                ajsq ajsq;
-                if ((ajsq = ajlb.b) == null) {
-                    ajsq = ajsq.a;
+                final ajpf ajpf = (ajpf)((ahcu)anxb).rx((ahci)ajpi.b);
+                ajws ajws;
+                if ((ajws = ajpf.b) == null) {
+                    ajws = ajws.a;
                 }
-                if (ajsq.c.size() > 0) {
-                    ajsq ajsq2;
-                    if ((ajsq2 = ajlb.b) == null) {
-                        ajsq2 = ajsq.a;
+                if (ajws.c.size() > 0) {
+                    ajws ajws2;
+                    if ((ajws2 = ajpf.b) == null) {
+                        ajws2 = ajws.a;
                     }
-                    if ((((ajss)ajsq2.c.get(0)).b & 0x400) != 0x0) {
-                        ajsq ajsq3;
-                        if ((ajsq3 = ajlb.b) == null) {
-                            ajsq3 = ajsq.a;
+                    if ((((ajwu)ajws2.c.get(0)).b & 0x400) != 0x0) {
+                        ajws ajws3;
+                        if ((ajws3 = ajpf.b) == null) {
+                            ajws3 = ajws.a;
                         }
-                        if ((e = ((ajss)ajsq3.c.get(0)).m) == null) {
-                            e = aioe.a;
+                        if ((e = ((ajwu)ajws3.c.get(0)).m) == null) {
+                            e = aisc.a;
                         }
                         break Label_0176;
                     }
@@ -70,85 +70,86 @@ public final class a implements d
         }
         this.e = e;
         f = this.f;
-        Uri e2;
+        Uri o;
         if ((f.b & 0x1) != 0x0) {
-            aorm aorm;
-            if ((aorm = f.c) == null) {
-                aorm = aorm.a;
+            aowb aowb;
+            if ((aowb = f.c) == null) {
+                aowb = aowb.a;
             }
-            e2 = actc.E(aorm, 2131165780, 2131165780);
+            o = aamz.O(aowb, 2131165780, 2131165780);
         }
         else {
-            e2 = null;
+            o = null;
         }
-        if (e2 == null) {
-            a.p((Bitmap)null);
+        if (o == null) {
+            a.p(null);
         }
         else {
-            final szz g = this.g;
+            final tdi g = this.g;
             if (g != null) {
-                g.d();
+                g.b();
             }
-            final szz c = szz.c((szx)new hwo(this, 5));
-            this.g = c;
-            this.d.k(e2, (szx)c);
+            final tdi a2 = tdi.a((tdg)new hxt(this, 5));
+            this.g = a2;
+            this.d.k(o, (tdg)a2);
         }
         VideoDetailsCollapsed videoDetailsCollapsed = VideoDetailsCollapsed.a;
         VideoDetailsExpanded videoDetailsExpanded = VideoDetailsExpanded.a;
-        final ajld f2 = this.f;
+        final ajph f2 = this.f;
         if ((f2.b & 0x4) != 0x0) {
-            anss anss2;
-            if ((anss2 = f2.d) == null) {
-                anss2 = anss.a;
+            anxb anxb2;
+            if ((anxb2 = f2.d) == null) {
+                anxb2 = anxb.a;
             }
-            final ajlb ajlb2 = (ajlb)((agzd)anss2).rr((agyr)ajle.b);
-            ajsq ajsq4;
-            if ((ajsq4 = ajlb2.b) == null) {
-                ajsq4 = ajsq.a;
+            final ajpf ajpf2 = (ajpf)((ahcu)anxb2).rx((ahci)ajpi.b);
+            ajws ajws4;
+            if ((ajws4 = ajpf2.b) == null) {
+                ajws4 = ajws.a;
             }
-            this.b = (CharSequence)abyh.b(ajsq4);
-            ajsq ajsq5;
-            if ((ajsq5 = ajlb2.c) == null) {
-                ajsq5 = ajsq.a;
+            this.b = (CharSequence)acbu.b(ajws4);
+            ajws ajws5;
+            if ((ajws5 = ajpf2.c) == null) {
+                ajws5 = ajws.a;
             }
-            final Spanned b = abyh.b(ajsq5);
-            final pa d = VideoDetailsCollapsed.d();
+            final Spanned b = acbu.b(ajws5);
+            final pb d = VideoDetailsCollapsed.d();
             d.b = this.b;
             d.c = b;
-            d.l(ajlb2.d);
+            d.l(ajpf2.d);
             videoDetailsCollapsed = d.k();
         }
-        final ajld f3 = this.f;
+        final ajph f3 = this.f;
         if ((f3.b & 0x8) != 0x0) {
-            anss anss3;
-            if ((anss3 = f3.e) == null) {
-                anss3 = anss.a;
+            anxb anxb3;
+            if ((anxb3 = f3.e) == null) {
+                anxb3 = anxb.a;
             }
-            final ajlc ajlc = (ajlc)((agzd)anss3).rr((agyr)ajle.c);
-            ajsq ajsq6;
-            if ((ajsq6 = ajlc.b) == null) {
-                ajsq6 = ajsq.a;
+            final ajpg ajpg = (ajpg)((ahcu)anxb3).rx((ahci)ajpi.c);
+            ajws ajws6;
+            if ((ajws6 = ajpg.b) == null) {
+                ajws6 = ajws.a;
             }
-            final Spanned b2 = abyh.b(ajsq6);
-            ajsq ajsq7;
-            if ((ajsq7 = ajlc.d) == null) {
-                ajsq7 = ajsq.a;
+            final Spanned b2 = acbu.b(ajws6);
+            ajws ajws7;
+            if ((ajws7 = ajpg.d) == null) {
+                ajws7 = ajws.a;
             }
-            final Spanned b3 = abyh.b(ajsq7);
-            final pa d2 = VideoDetailsExpanded.d();
+            final Spanned b3 = acbu.b(ajws7);
+            final pb d2 = VideoDetailsExpanded.d();
             d2.a = b2;
             d2.b = b3;
-            d2.j(ajlc.e);
+            d2.j(ajpg.e);
             videoDetailsExpanded = d2.i();
         }
-        final mpp c2 = VideoDetails.c();
-        c2.d(videoDetailsCollapsed);
-        c2.e(videoDetailsExpanded);
-        a.D(c2.c());
+        final mri c = VideoDetails.c();
+        c.d(videoDetailsCollapsed);
+        c.e(videoDetailsExpanded);
+        a.D(c.c());
     }
     
+    @Override
     public final void j() {
-        final aioe e = this.e;
+        final aisc e = this.e;
         if (e == null) {
             return;
         }

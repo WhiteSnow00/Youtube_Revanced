@@ -10,7 +10,7 @@ public interface e
 {
     public static final e S = new d();
     
-    void rc(final SubscribeButtonData p0);
+    void rh(final SubscribeButtonData p0);
     
     void w(final c p0);
 }

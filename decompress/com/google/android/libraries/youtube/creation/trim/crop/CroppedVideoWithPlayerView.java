@@ -12,11 +12,11 @@ import android.util.AttributeSet;
 import android.content.Context;
 import com.google.android.libraries.youtube.player.ui.PlayerView;
 
-public class CroppedVideoWithPlayerView extends PlayerView implements uep
+public class CroppedVideoWithPlayerView extends PlayerView implements ufu
 {
     float a;
     int b;
-    private float c;
+    private float e;
     private float f;
     private double g;
     
@@ -24,7 +24,7 @@ public class CroppedVideoWithPlayerView extends PlayerView implements uep
         super(context);
         this.b = 1;
         this.a = 0.0f;
-        this.c = 0.0f;
+        this.e = 0.0f;
         this.f = 0.5f;
         this.g = 1.0;
     }
@@ -33,7 +33,7 @@ public class CroppedVideoWithPlayerView extends PlayerView implements uep
         super(context, set);
         this.b = 1;
         this.a = 0.0f;
-        this.c = 0.0f;
+        this.e = 0.0f;
         this.f = 0.5f;
         this.g = 1.0;
     }
@@ -43,7 +43,7 @@ public class CroppedVideoWithPlayerView extends PlayerView implements uep
     }
     
     public final float d() {
-        final View m = ((abue)this).m;
+        final View m = ((abvo)this).m;
         final int measuredWidth = m.getMeasuredWidth();
         boolean b = false;
         if (measuredWidth != 0) {
@@ -52,7 +52,7 @@ public class CroppedVideoWithPlayerView extends PlayerView implements uep
                 b = true;
             }
         }
-        adkp.H(b);
+        adme.K(b);
         return (float)this.g;
     }
     
@@ -65,63 +65,64 @@ public class CroppedVideoWithPlayerView extends PlayerView implements uep
     }
     
     public final boolean g() {
-        return tpe.by(this.b, this.c);
+        return tqf.by(this.b, this.e);
     }
     
     public final void h(final int b) {
         this.b = b;
-        final zdi d = super.d;
-        if (d == null) {
+        final zfd c = super.c;
+        if (c == null) {
             return;
         }
-        ((ViewGroup)d).setClipChildren(b != 2);
+        ((ViewGroup)c).setClipChildren(b != 2);
         this.requestLayout();
     }
     
     public final void j(float a) {
-        final int measuredWidth = ((abue)this).m.getMeasuredWidth();
+        final int measuredWidth = ((abvo)this).m.getMeasuredWidth();
         final float n = (float)this.getMeasuredWidth();
         final float n2 = (float)this.getMeasuredHeight();
         final float n3 = (float)measuredWidth;
         final float e = this.e();
         final int b = this.b;
         final float a2 = this.a;
-        final float c = this.c;
-        ueo ueo2;
-        final ueo ueo = ueo2 = null;
+        final float e2 = this.e;
+        uft uft2;
+        final uft uft = uft2 = null;
         if (b == 2) {
-            if (n / n2 >= c) {
-                ueo2 = ueo;
+            if (n / n2 >= e2) {
+                uft2 = uft;
             }
             else {
-                float n4 = a2 + a;
-                a = (n3 - n) / 2.0f + e;
+                a += a2;
+                final float n4 = (n3 - n) / 2.0f + e;
                 final float n5 = n3 / 2.0f;
-                final float n6 = n5 + a;
-                final float n7 = n5 + n4;
-                final float n8 = n5 - a;
+                final float n6 = n5 + n4;
+                final float n7 = n5 + a;
+                final float n8 = n5 - n4;
+                float n9;
                 if (n7 < n8) {
-                    n4 = n8 - n5;
-                    a = n8;
+                    a = n8 - n5;
+                    n9 = n8;
                 }
                 else {
-                    a = n7;
+                    n9 = n7;
                     if (n7 > n6) {
-                        n4 = n6 - n5;
-                        a = n6;
+                        a = n6 - n5;
+                        n9 = n6;
                     }
                 }
-                final float n9 = n6 - e;
-                final float n10 = n8 / n9;
-                final float n11 = n6 / n9;
-                a /= n9;
-                ueo2 = new ueo(n4, a, (a - n10) / (n11 - n10));
+                final float n10 = n6 - e;
+                final float n11 = n8 / n10;
+                final float n12 = n6 / n10;
+                final float n13 = n9 / n10;
+                uft2 = new uft(a, n13, (n13 - n11) / (n12 - n11));
             }
         }
-        if (ueo2 != null) {
-            a = ueo2.a;
+        if (uft2 != null) {
+            a = uft2.a;
             this.a = a;
-            this.f = ueo2.b;
+            this.f = uft2.b;
             this.scrollTo((int)a, 0);
         }
     }
@@ -129,18 +130,18 @@ public class CroppedVideoWithPlayerView extends PlayerView implements uep
     protected final void onMeasure(int measuredWidth, int measuredHeight) {
         super.onMeasure(measuredWidth, measuredHeight);
         if (this.b != 1) {
-            final View m = ((abue)this).m;
+            final View m = ((abvo)this).m;
             if (m == null) {
                 return;
             }
-            final int measuredWidth2 = this.getMeasuredWidth();
+            measuredWidth = this.getMeasuredWidth();
             measuredHeight = this.getMeasuredHeight();
             this.g = 1.0;
-            measuredWidth = m.getMeasuredWidth();
+            final int measuredWidth2 = m.getMeasuredWidth();
             final int measuredHeight2 = m.getMeasuredHeight();
             if (this.b == 2 && measuredHeight > 0 && measuredHeight2 > 0) {
-                final double n = measuredWidth2;
-                final double n2 = measuredWidth;
+                final double n = measuredWidth;
+                final double n2 = measuredWidth2;
                 final double n3 = measuredHeight;
                 final double n4 = measuredHeight2;
                 Double.isNaN(n);
@@ -148,16 +149,16 @@ public class CroppedVideoWithPlayerView extends PlayerView implements uep
                 final double n5 = n / n3;
                 Double.isNaN(n2);
                 Double.isNaN(n4);
-                this.g = tpe.bx(n5, n2 / n4);
+                this.g = tqf.bx(n5, n2 / n4);
             }
-            final double n6 = measuredWidth;
+            final double n6 = measuredWidth2;
             final double g = this.g;
             Double.isNaN(n6);
             final double n7 = measuredHeight2;
             Double.isNaN(n7);
             measuredWidth = (int)(n6 * g);
             measuredHeight = (int)(n7 * g);
-            this.c = measuredWidth / (float)measuredHeight;
+            this.e = measuredWidth / (float)measuredHeight;
             final Size size = new Size(measuredWidth, measuredHeight);
             m.measure(View$MeasureSpec.makeMeasureSpec(size.getWidth(), 1073741824), View$MeasureSpec.makeMeasureSpec(size.getHeight(), 1073741824));
         }

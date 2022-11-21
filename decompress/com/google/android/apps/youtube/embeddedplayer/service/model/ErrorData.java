@@ -14,7 +14,7 @@ public class ErrorData implements BusSupported$Data
     public final int a;
     
     static {
-        CREATOR = (Parcelable$Creator)new ics(14);
+        CREATOR = (Parcelable$Creator)new idb(14);
     }
     
     public ErrorData(final int a) {

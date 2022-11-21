@@ -31,10 +31,10 @@ public final class ActivityFilter
         if (className.length() <= 0) {
             throw new IllegalArgumentException("Activity class name must not be empty.");
         }
-        if (aubt.j((CharSequence)packageName, (CharSequence)"*") && aubt.l((CharSequence)packageName, "*", 0, false, 6) != packageName.length() - 1) {
+        if (auop.r((CharSequence)packageName, (CharSequence)"*") && auop.t((CharSequence)packageName, "*", 0, false, 6) != packageName.length() - 1) {
             throw new IllegalArgumentException("Wildcard in package name is only allowed at the end.");
         }
-        if (aubt.j((CharSequence)className, (CharSequence)"*") && aubt.l((CharSequence)className, "*", 0, false, 6) != className.length() - 1) {
+        if (auop.r((CharSequence)className, (CharSequence)"*") && auop.t((CharSequence)className, "*", 0, false, 6) != className.length() - 1) {
             throw new IllegalArgumentException("Wildcard in class name is only allowed at the end.");
         }
     }
@@ -49,14 +49,18 @@ public final class ActivityFilter
         }
         final ActivityComponentInfo activityComponentInfo = this.activityComponentInfo;
         final ActivityFilter activityFilter = (ActivityFilter)o;
-        return atnh.c((Object)activityComponentInfo, (Object)activityFilter.activityComponentInfo) && atnh.c((Object)this.intentAction, (Object)activityFilter.intentAction);
+        return atqz.c(activityComponentInfo, activityFilter.activityComponentInfo) && atqz.c(this.intentAction, activityFilter.intentAction);
     }
     
     public final ActivityComponentInfo getActivityComponentInfo$window_release() {
         return this.activityComponentInfo;
     }
     
-    public final String getIntentAction$window_release() {
+    public final ComponentName getComponentName() {
+        return new ComponentName(this.activityComponentInfo.getPackageName(), this.activityComponentInfo.getClassName());
+    }
+    
+    public final String getIntentAction() {
         return this.intentAction;
     }
     
@@ -89,7 +93,7 @@ public final class ActivityFilter
                 else {
                     action = null;
                 }
-                if (atnh.c((Object)intentAction, (Object)action)) {
+                if (atqz.c(intentAction, action)) {
                     return true;
                 }
                 b = b;
@@ -101,29 +105,13 @@ public final class ActivityFilter
         return b;
     }
     
-    public final boolean matchesClassName(final Class clazz) {
-        clazz.getClass();
-        return atnh.c((Object)this.activityComponentInfo.getClassName(), (Object)clazz.getName());
-    }
-    
-    public final boolean matchesClassNameOrWildCard(final Class clazz) {
-        boolean b;
-        if (clazz != null) {
-            b = this.matchesClassName(clazz);
-        }
-        else {
-            b = aubt.j((CharSequence)this.activityComponentInfo.getClassName(), (CharSequence)"*");
-        }
-        return b;
-    }
-    
     public final boolean matchesIntent(final Intent intent) {
         intent.getClass();
         final boolean intentMatching$window_release = MatcherUtils.INSTANCE.isIntentMatching$window_release(intent, this.activityComponentInfo);
         boolean b = false;
         if (intentMatching$window_release) {
             final String intentAction = this.intentAction;
-            if (intentAction != null && !atnh.c((Object)intentAction, (Object)intent.getAction())) {
+            if (intentAction != null && !atqz.c(intentAction, intent.getAction())) {
                 return false;
             }
             b = true;

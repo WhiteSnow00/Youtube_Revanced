@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Naudoti įrenginio temą</string>
     <string name="app_theme_appearance_summary">Pasirinkite temos nuostatą: šviesiąją arba tamsiąją</string>
     <string name="app_theme_appearance_title">Išvaizda</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Taikyti</string>
     <string name="approve_playlist_sync">Sinchronizuoti naujus vaizdo įrašus</string>
     <string name="audio_playback_failed_snackbar_action_button">Bandyti vėl</string>
@@ -481,7 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Duomenų stebėjimas ir kontrolė</string>
     <string name="data_saving_persistent_title">Duomenų saugojimas</string>
     <string name="data_saving_select_quality_every_video_switch_title">Pasirinkti kiekvieno vaizdo įrašo kokybę atskirai</string>
-    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Sumažinti išmaniųjų atsisiuntimų kokybę</string>
     <string name="data_saving_snack_bar_action_button">Peržiūrėti</string>
     <string name="data_saving_snack_bar_text">Šis pakeitimas turi įtakos duomenų išsaugojimo nustatymams</string>
     <string name="data_saving_upload_wifi_only_switch_title">Įkelti tik per „Wi-Fi“</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Stabdyti srautą</string>
     <string name="lc_retry_yes">Bandyti dar kartą</string>
     <string name="lc_rotate_device">Pasukite įrenginį</string>
+    <string name="lc_sharedmde_required_field_error">Būtina nurodyti pavadinimą ir auditoriją.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Perduoti srautu stačią vaizdą</string>
     <string name="lc_stream_start_error">Nepavyksta pradėti srautinio perdavimo. Patikrinkite ryšį.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Pirminė vaizdo įrašo peržiūra. Pristabdykite palietę.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Pirminė vaizdo įrašo peržiūra. Paleiskite palietę.</string>
     <string name="shorts_a11y_zoom_control">Mastelio valdymas</string>
+    <string name="shorts_audio_failure_toast">Nepavyko pridėti garso. Bandykite dar kartą.</string>
     <string name="shorts_camera_allow_access_subtitle">Leiskite pasiekti fotoaparatą ir mikrofoną</string>
     <string name="shorts_camera_allow_access_title">Sukurkite trumpą vaizdo įrašą</string>
     <string name="shorts_camera_close_confirmation_cancel">Atšaukti</string>

@@ -10,7 +10,7 @@ import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveov
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.shared.e;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.shared.c;
 
-public final class a implements abcg
+public final class a implements abdn
 {
     public c a;
     private final e b;
@@ -20,7 +20,7 @@ public final class a implements abcg
         final e b = new e();
         this.b = b;
         try {
-            a.i((f)b);
+            a.i(b);
         }
         catch (final RemoteException ex) {}
     }
@@ -85,7 +85,7 @@ public final class a implements abcg
         catch (final RemoteException ex) {}
     }
     
-    public final void q(final abcf a) {
+    public final void q(final abdm a) {
         this.b.a = a;
     }
     

@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Qurilmadagi mavzuni ishlatish</string>
     <string name="app_theme_appearance_summary">Och rangli yoki tungi mavzuni tanlang</string>
     <string name="app_theme_appearance_title">Koʻrinishi</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Tatbiq etish</string>
     <string name="approve_playlist_sync">Yangi videolarni sinxronlash</string>
     <string name="audio_playback_failed_snackbar_action_button">Qayta urinish</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">Strimni tugatish</string>
     <string name="lc_retry_yes">Qayta urinish</string>
     <string name="lc_rotate_device">Qurilmani buring</string>
+    <string name="lc_sharedmde_required_field_error">Sarlavha va auditoriya zarur.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Vertikal rejim</string>
     <string name="lc_stream_start_error">Translatsiya boshlanmadi. Aloqani tekshiring.</string>
@@ -1728,6 +1729,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Videoga razm solish. Pauza qilish uchun bosing.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Videoga razm solish. Ijro qilish uchun bosing.</string>
     <string name="shorts_a11y_zoom_control">Zumni boshqarish</string>
+    <string name="shorts_audio_failure_toast">Tovush kiritilmadi. Qayta urining.</string>
     <string name="shorts_camera_allow_access_subtitle">Kamera va mikrofondan foydalanishga ruxsat bering</string>
     <string name="shorts_camera_allow_access_title">Qisqa video yarating</string>
     <string name="shorts_camera_close_confirmation_cancel">Bekor qilish</string>

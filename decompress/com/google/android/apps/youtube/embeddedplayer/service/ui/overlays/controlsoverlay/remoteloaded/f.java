@@ -4,180 +4,57 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.remoteloaded;
 
-import com.google.android.libraries.youtube.player.features.overlay.timebar.TimeBar;
-import com.google.android.libraries.youtube.common.ui.TouchImageView;
-import java.util.Iterator;
-import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
-import com.google.android.apps.youtube.embeddedplayer.service.ui.overflowmenu.b;
-import com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.remoteloaded.c;
-import android.widget.AdapterView$OnItemClickListener;
-import java.util.List;
-import com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.model.a;
-import java.util.ArrayList;
 import android.view.View;
-import android.view.View$OnClickListener;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
+import android.content.Context;
+import android.widget.FrameLayout;
 
-final class f implements View$OnClickListener
+final class f extends FrameLayout
 {
-    final l a;
+    final k a;
     
-    public f(final l a) {
+    public f(final k a, final Context context) {
         this.a = a;
+        super(context);
     }
     
-    public final void onClick(final View view) {
-        final l a = this.a;
-        if (view == a.q) {
-            if (a.J && a.H.u) {
-                if (a.T()) {
-                    a.H();
-                    a.Q(true);
-                }
-                a.b.a();
+    public final boolean onInterceptTouchEvent(final MotionEvent motionEvent) {
+        this.a.H();
+        return super.onInterceptTouchEvent(motionEvent);
+    }
+    
+    public final boolean onKeyDown(final int n, final KeyEvent keyEvent) {
+        final boolean b = !keyEvent.isSystem() || aamp.j(n);
+        if (b) {
+            this.a.v();
+        }
+        final k a = this.a;
+        if (a.G.a == abde.d && b && n != 20 && n != 21 && n != 22 && n != 19) {
+            a.b.o();
+            return true;
+        }
+        return super.onKeyDown(n, keyEvent);
+    }
+    
+    public final boolean onTouchEvent(final MotionEvent motionEvent) {
+        if (super.onTouchEvent(motionEvent)) {
+            return true;
+        }
+        if (motionEvent.getActionMasked() == 1) {
+            final k a = this.a;
+            if (a.G.a == abde.d) {
+                a.b.o();
+                return true;
             }
         }
-        else if (view == a.r) {
-            if (a.K && a.H.u) {
-                if (a.T()) {
-                    a.H();
-                    a.Q(true);
-                }
-                a.b.b();
-            }
+        final k a2 = this.a;
+        if (a2.M) {
+            ((ttg)a2.c).d((View)a2.g, motionEvent);
         }
-        else if (view == a.p) {
-            final abbx a2 = a.G.a;
-            if (a2 == abbx.f) {
-                a.b.n();
-                return;
-            }
-            if (a2 == abbx.b) {
-                a.b.e();
-                return;
-            }
-            if (a2 == abbx.c) {
-                a.b.f();
-            }
+        else if (motionEvent.getActionMasked() == 1) {
+            this.a.f.b(motionEvent);
         }
-        else {
-            if (view == a.y) {
-                a.b.l();
-                return;
-            }
-            if (view == a.z) {
-                a.b.m();
-                return;
-            }
-            if (view == a.m) {
-                final c d = a.d;
-                if (d != null) {
-                    d.k();
-                    final l a3 = this.a;
-                    a3.C.b(a3.m.a.I());
-                }
-            }
-            else {
-                if (view == a.n) {
-                    a.e.t();
-                    return;
-                }
-                if (view == a.o) {
-                    a.C.a(16499);
-                    final b d2 = a.D;
-                    final ArrayList list = new ArrayList();
-                    if (d2.b()) {
-                        if (d2.i == null) {
-                            d2.a();
-                        }
-                        list.add(d2.i);
-                    }
-                    if (d2.m) {
-                        if (d2.h == null) {
-                            final Drawable drawable = d2.f.getResources().getDrawable(2131231311, d2.f.getTheme());
-                            final a h = new a(d2.f.getResources().getString(2132019071), 1);
-                            h.d = drawable;
-                            h.f = d2.f.getText(2132017236);
-                            h.h = 70346;
-                            d2.h = h;
-                        }
-                        list.add(d2.h);
-                    }
-                    if (d2.n) {
-                        if (d2.j == null) {
-                            final Drawable drawable2 = d2.f.getResources().getDrawable(2131233049);
-                            final String d3 = d2.p.d();
-                            final String c = d2.p.c();
-                            if (d2.n && d3 != null && c != null) {
-                                final a j = new a(d3, 2);
-                                j.d = drawable2;
-                                j.f = c;
-                                j.g = d2.p.b();
-                                d2.j = j;
-                            }
-                        }
-                        final a i = d2.j;
-                        if (i != null) {
-                            list.add(i);
-                        }
-                    }
-                    if (d2.q) {
-                        if (d2.k == null) {
-                            final Resources resources = d2.f.getResources();
-                            final Drawable drawable3 = resources.getDrawable(2131232756);
-                            final a k = new a(resources.getString(2132019686), 3);
-                            k.d = drawable3;
-                            k.f = d2.f.getText(2132017399);
-                            d2.k = k;
-                        }
-                        final a l = d2.k;
-                        if (l != null) {
-                            list.add(l);
-                        }
-                    }
-                    final com.google.android.apps.youtube.embeddedplayer.service.ui.overflowmenu.a a4 = new com.google.android.apps.youtube.embeddedplayer.service.ui.overflowmenu.a(d2, list, 0);
-                    final kzr t = d2.t;
-                    (d2.e = kzr.i(0, (List)list, (AdapterView$OnItemClickListener)a4, d2.f, d2.a, d2.b)).show();
-                    if (d2.q && d2.k != null) {
-                        d2.r.u();
-                    }
-                    for (final a a5 : list) {
-                        final int h2 = a5.h;
-                        if (h2 != 0) {
-                            d2.g.c(h2);
-                        }
-                        else {
-                            final ahab g = a5.g;
-                            if (g == null) {
-                                continue;
-                            }
-                            d2.g.d(g.I());
-                        }
-                    }
-                }
-                else {
-                    final TouchImageView m = a.j;
-                    if (view == m) {
-                        a.b.w(m.isSelected() ^ true);
-                        return;
-                    }
-                    if (view == a.k) {
-                        if (!a.I) {
-                            a.H();
-                            this.a.Q(true);
-                        }
-                    }
-                    else if (view == a.l) {
-                        final long a6 = a.i.a;
-                        a.b.r(a6);
-                        abdr.K((abdv)this.a.i, a6);
-                        final TimeBar h3 = this.a.h;
-                        ((abdr)h3).C = a6;
-                        ((abdr)h3).ma();
-                        this.a.S(true);
-                    }
-                }
-            }
-        }
+        return true;
     }
 }

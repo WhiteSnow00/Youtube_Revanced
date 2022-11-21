@@ -22,6 +22,10 @@ public class SplitAttributes$SplitType
         this.value = value;
     }
     
+    public static final SplitAttributes$SplitType$ExpandContainersSplitType access$getEXPAND_CONTAINERS$cp() {
+        return SplitAttributes$SplitType.EXPAND_CONTAINERS;
+    }
+    
     public static final SplitAttributes$SplitType buildSplitTypeFromValue$window_release(final float n) {
         return SplitAttributes$SplitType.Companion.buildSplitTypeFromValue$window_release(n);
     }
@@ -52,7 +56,7 @@ public class SplitAttributes$SplitType
         }
         final float value = this.value;
         final SplitAttributes$SplitType splitAttributes$SplitType = (SplitAttributes$SplitType)o;
-        return value == splitAttributes$SplitType.value && atnh.c((Object)this.description, (Object)splitAttributes$SplitType.description);
+        return value == splitAttributes$SplitType.value && atqz.c(this.description, splitAttributes$SplitType.description);
     }
     
     public final String getDescription$window_release() {

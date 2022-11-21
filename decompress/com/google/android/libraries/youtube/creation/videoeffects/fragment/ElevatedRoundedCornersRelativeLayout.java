@@ -42,18 +42,18 @@ public final class ElevatedRoundedCornersRelativeLayout extends RelativeLayout
         this.b = new Path();
         this.getBackground().getClass();
         final Resources resources = obtainStyledAttributes.getResources();
-        final int dimensionPixelSize2 = resources.getDimensionPixelSize(2131166340);
+        final int dimensionPixelSize2 = resources.getDimensionPixelSize(2131166342);
         this.c = dimensionPixelSize2;
-        dimensionPixelSize = resources.getDimensionPixelSize(2131166341);
-        this.d = dimensionPixelSize;
-        final int dimensionPixelSize3 = resources.getDimensionPixelSize(2131166342);
-        this.e = dimensionPixelSize3;
-        this.f = resources.getColor(2131099884);
-        obtainStyledAttributes = (Context)obtainStyledAttributes.getTheme().obtainStyledAttributes(set, ugh.a, 0, 0);
+        final int dimensionPixelSize3 = resources.getDimensionPixelSize(2131166343);
+        this.d = dimensionPixelSize3;
+        dimensionPixelSize = resources.getDimensionPixelSize(2131166344);
+        this.e = dimensionPixelSize;
+        this.f = resources.getColor(2131099880);
+        obtainStyledAttributes = (Context)obtainStyledAttributes.getTheme().obtainStyledAttributes(set, uhk.a, 0, 0);
         try {
             a.setColor(((ColorDrawable)this.getBackground()).getColor());
             this.setBackgroundColor(0);
-            this.setPadding(this.getPaddingLeft() + dimensionPixelSize2 - dimensionPixelSize, this.getPaddingTop() + dimensionPixelSize2 - dimensionPixelSize3, this.getPaddingRight() + dimensionPixelSize2 + dimensionPixelSize, this.getPaddingBottom() + dimensionPixelSize2 + dimensionPixelSize3);
+            this.setPadding(this.getPaddingLeft() + dimensionPixelSize2 - dimensionPixelSize3, this.getPaddingTop() + dimensionPixelSize2 - dimensionPixelSize, this.getPaddingRight() + dimensionPixelSize2 + dimensionPixelSize3, this.getPaddingBottom() + dimensionPixelSize2 + dimensionPixelSize);
             final float dimension = ((TypedArray)obtainStyledAttributes).getDimension(0, 0.0f);
             if (dimension > 0.0f) {
                 this.h = new CornerPathEffect(dimension);

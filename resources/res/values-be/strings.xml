@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Выкарыстоўваць тэму прылады</string>
     <string name="app_theme_appearance_summary">Выберыце светлую або цёмную тэму</string>
     <string name="app_theme_appearance_title">Выгляд</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Ужыць</string>
     <string name="approve_playlist_sync">Сінхранізацыя новых відэа</string>
     <string name="audio_playback_failed_snackbar_action_button">Паўтарыць</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">Завяршыць трансляцыю</string>
     <string name="lc_retry_yes">Паўтарыць спробу</string>
     <string name="lc_rotate_device">Павярніце прыладу</string>
+    <string name="lc_sharedmde_required_field_error">Запоўніце палі \"Назва\" і \"Аўдыторыя\".</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Трансліраваць у кніжнай арыентацыі</string>
     <string name="lc_stream_start_error">Немагчыма пачаць трансляцыю. Праверце падключэнне.</string>
@@ -1728,6 +1729,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Перадпрагляд відэа. Націсніце, каб прыпыніць.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Перадпрагляд відэа. Націсніце, каб прайграць.</string>
     <string name="shorts_a11y_zoom_control">Кіраванне маштабаваннем</string>
+    <string name="shorts_audio_failure_toast">Не ўдалося дадаць гук. Паўтарыце спробу.</string>
     <string name="shorts_camera_allow_access_subtitle">Дазвольце доступ да камеры і мікрафона</string>
     <string name="shorts_camera_allow_access_title">Стварыце кароткае відэа</string>
     <string name="shorts_camera_close_confirmation_cancel">Скасаваць</string>

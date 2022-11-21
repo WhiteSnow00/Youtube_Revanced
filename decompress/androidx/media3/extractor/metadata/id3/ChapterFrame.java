@@ -20,13 +20,13 @@ public final class ChapterFrame extends Id3Frame
     private final Id3Frame[] g;
     
     static {
-        CREATOR = (Parcelable$Creator)new app(14);
+        CREATOR = (Parcelable$Creator)new apq(14);
     }
     
     public ChapterFrame(final Parcel parcel) {
         super("CHAP");
         final String string = parcel.readString();
-        final int a = bax.a;
+        final int a = baz.a;
         this.a = string;
         this.b = parcel.readInt();
         this.c = parcel.readInt();
@@ -60,7 +60,7 @@ public final class ChapterFrame extends Id3Frame
         if (o != null) {
             if (this.getClass() == o.getClass()) {
                 final ChapterFrame chapterFrame = (ChapterFrame)o;
-                if (this.b == chapterFrame.b && this.c == chapterFrame.c && this.d == chapterFrame.d && this.e == chapterFrame.e && bax.aa((Object)this.a, (Object)chapterFrame.a) && Arrays.equals(this.g, chapterFrame.g)) {
+                if (this.b == chapterFrame.b && this.c == chapterFrame.c && this.d == chapterFrame.d && this.e == chapterFrame.e && baz.aa(this.a, chapterFrame.a) && Arrays.equals(this.g, chapterFrame.g)) {
                     return true;
                 }
             }

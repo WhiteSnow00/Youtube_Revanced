@@ -50,11 +50,11 @@
     <string name="litho_channel_guidelines_off">チャンネルのガイドラインの削除がオフになっています</string>
     <string name="litho_channel_guidelines_on">チャンネルのガイドラインの削除がオンになっています</string>
     <string name="litho_community_guidelines">コミュニティガイドラインを削除</string>
+    <string name="accessibility_settings_edu_opt_in_text">ビデオプレーヤーのアクセシビリティコントロールをオンにしますか？</string>
+    <string name="accessibility_settings_edu_opt_out_text">アクセシビリティサービスがオンになっているため、コントロールは変更されます。</string>
     <string name="litho_community_guidelines_off">コミュニティガイドラインの削除はオフです</string>
     <string name="litho_community_guidelines_on">コミュニティガイドラインの削除はオンです</string>
     <string name="litho_community_posts">コミュニティの投稿を削除</string>
-    <string name="accessibility_settings_edu_opt_in_text">ビデオプレーヤーのアクセシビリティコントロールをオンにしますか？</string>
-    <string name="accessibility_settings_edu_opt_out_text">アクセシビリティサービスがオンになっているため、コントロールは変更されます。</string>
     <string name="litho_community_posts_off">コミュニティの投稿を削除はオフです</string>
     <string name="litho_community_posts_on">コミュニティの投稿を削除はオンです</string>
     <string name="litho_compact_banner">コンパクトなバナーを削除</string>

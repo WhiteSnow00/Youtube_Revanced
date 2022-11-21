@@ -10,15 +10,15 @@ import android.os.Bundle;
 import android.content.Intent;
 import com.google.protobuf.ExtensionRegistryLite;
 
-public class ReelCameraActivity extends hgz implements hii, wyv
+public class ReelCameraActivity extends hhh implements hir, xaa
 {
-    public hig b;
-    public xac c;
-    public trc d;
-    public vai e;
-    private aiqj f;
+    public hip b;
+    public xbh c;
+    public tsd d;
+    public vbs e;
+    private aisc f;
     
-    public final aiqj b() {
+    public final aisc b() {
         Label_0046: {
             if (this.f != null) {
                 break Label_0046;
@@ -32,10 +32,10 @@ public class ReelCameraActivity extends hgz implements hii, wyv
                 break Label_0046;
             }
             try {
-                this.f = (aiqj)ahbh.parseFrom((ahbh)aiqj.a, byteArrayExtra, ExtensionRegistryLite.getGeneratedRegistry());
+                this.f = (aisc)ahcz.parseFrom((ahcz)aisc.a, byteArrayExtra, ExtensionRegistryLite.getGeneratedRegistry());
                 return this.f;
             }
-            catch (final ahca ahca) {
+            catch (final ahds ahds) {
                 return this.f;
             }
         }
@@ -55,9 +55,9 @@ public class ReelCameraActivity extends hgz implements hii, wyv
     }
     
     public final void onCreate(Bundle bundle) {
-        glb.c((Context)this);
+        glg.b((Context)this);
         super.onCreate(bundle);
-        if (this.e.aU()) {
+        if (this.e.aX()) {
             ((fa)this).setTheme(2132083492);
         }
         if (bundle != null) {
@@ -67,17 +67,17 @@ public class ReelCameraActivity extends hgz implements hii, wyv
             bundle = null;
         }
         this.c.M(bundle, this.b());
-        ((qt)this).setContentView(2131625192);
+        ((qu)this).setContentView(2131625194);
         final br e = ((bu)this).getSupportFragmentManager().e(2131430850);
-        if (e instanceof hig) {
-            final hig b = (hig)e;
+        if (e instanceof hip) {
+            final hip b = (hip)e;
             this.b = b;
-            b.aq = (hii)this;
+            b.aq = (hir)this;
             return;
         }
-        final hig p = hig.p(this.b(), false, false);
+        final hip p = hip.p(this.b(), false, false);
         this.b = p;
-        p.aq = (hii)this;
+        p.aq = (hir)this;
         final ct i = ((bu)this).getSupportFragmentManager().i();
         i.A(2131430850, (br)this.b);
         i.a();
@@ -108,14 +108,14 @@ public class ReelCameraActivity extends hgz implements hii, wyv
     }
     
     public final void onUserInteraction() {
-        final trc d = this.d;
+        final tsd d = this.d;
         if (d != null) {
             d.b();
         }
         super.onUserInteraction();
     }
     
-    public final wyw pF() {
-        return (wyw)this.c;
+    public final xab pE() {
+        return (xab)this.c;
     }
 }

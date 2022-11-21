@@ -11,18 +11,18 @@ import java.util.List;
 import android.os.Parcelable$Creator;
 import android.os.Parcelable;
 
-public class AdBreakRendererModel implements Parcelable, zhp
+public class AdBreakRendererModel implements Parcelable, zlh
 {
     public static final Parcelable$Creator CREATOR;
-    public static final vfa a;
-    public ahiv b;
+    public static final vii a;
+    public final ahmk b;
     
     static {
-        CREATOR = (Parcelable$Creator)new uik(10);
-        a = new vfa();
+        CREATOR = (Parcelable$Creator)new ulj(10);
+        a = new vii();
     }
     
-    public AdBreakRendererModel(final ahiv b) {
+    public AdBreakRendererModel(final ahmk b) {
         b.getClass();
         this.b = b;
     }
@@ -32,15 +32,15 @@ public class AdBreakRendererModel implements Parcelable, zhp
     }
     
     public final List b() {
-        return this.b.d;
+        return (List)this.b.d;
     }
     
     public final List c() {
-        return this.b.h;
+        return (List)this.b.h;
     }
     
     public final List d() {
-        return this.b.g;
+        return (List)this.b.g;
     }
     
     public final int describeContents() {
@@ -49,7 +49,11 @@ public class AdBreakRendererModel implements Parcelable, zhp
     
     @Override
     public final boolean equals(final Object o) {
-        return o != null && this.getClass().equals(o.getClass()) && aeda.v((Object)this.b, (Object)((AdBreakRendererModel)o).b);
+        return o != null && this.getClass().equals(o.getClass()) && aexq.c(this.b, ((AdBreakRendererModel)o).b);
+    }
+    
+    public final /* bridge */ zlg h() {
+        return (zlg)new vii(this);
     }
     
     @Override
@@ -58,6 +62,6 @@ public class AdBreakRendererModel implements Parcelable, zhp
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        uji.ag((MessageLite)this.b, parcel);
+        ume.ad((MessageLite)this.b, parcel);
     }
 }

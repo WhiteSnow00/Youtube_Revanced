@@ -23,8 +23,8 @@ public final class c extends a implements SurfaceHolder$Callback
         return this.c;
     }
     
-    public final zdu B() {
-        return zdu.d;
+    public final zfp B() {
+        return zfp.d;
     }
     
     public final void C() {
@@ -39,7 +39,7 @@ public final class c extends a implements SurfaceHolder$Callback
     }
     
     public final void surfaceChanged(final SurfaceHolder surfaceHolder, final int n, final int n2, final int n3) {
-        final zdr b = this.b;
+        final zfm b = this.b;
         if (b != null) {
             b.d();
         }
@@ -47,7 +47,7 @@ public final class c extends a implements SurfaceHolder$Callback
     
     public final void surfaceCreated(final SurfaceHolder surfaceHolder) {
         this.d = true;
-        final zdr b = this.b;
+        final zfm b = this.b;
         if (b != null) {
             b.e();
         }
@@ -55,7 +55,7 @@ public final class c extends a implements SurfaceHolder$Callback
     
     public final void surfaceDestroyed(final SurfaceHolder surfaceHolder) {
         this.d = false;
-        final zdr b = this.b;
+        final zfm b = this.b;
         if (b != null) {
             b.f();
         }

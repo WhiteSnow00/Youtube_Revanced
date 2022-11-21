@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">ใช้ธีมของอุปกรณ์</string>
     <string name="app_theme_appearance_summary">เลือกการตั้งค่าธีมเป็นสว่างหรือมืด</string>
     <string name="app_theme_appearance_title">ธีมของแอป</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">นำไปใช้</string>
     <string name="approve_playlist_sync">ซิงค์วิดีโอใหม่</string>
     <string name="audio_playback_failed_snackbar_action_button">ลองอีกครั้ง</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">สิ้นสุดการสตรีม</string>
     <string name="lc_retry_yes">ลองอีกครั้ง</string>
     <string name="lc_rotate_device">หมุนอุปกรณ์</string>
+    <string name="lc_sharedmde_required_field_error">ต้องระบุชื่อและผู้ชม</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">สตรีมในแนวตั้ง</string>
     <string name="lc_stream_start_error">ไม่สามารถเริ่มสตรีมได้ โปรดตรวจสอบการเชื่อมต่อของคุณ</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">ตัวอย่างวิดีโอ แตะเพื่อหยุดชั่วคราว</string>
     <string name="shorts_a11y_video_preview_tap_to_play">ตัวอย่างวิดีโอ แตะเพื่อเล่น</string>
     <string name="shorts_a11y_zoom_control">ตัวควบคุมการซูม</string>
+    <string name="shorts_audio_failure_toast">ใส่เสียงไม่สำเร็จ โปรดลองอีกครั้ง</string>
     <string name="shorts_camera_allow_access_subtitle">อนุญาตให้เข้าถึงกล้องและไมโครโฟน</string>
     <string name="shorts_camera_allow_access_title">สร้าง Shorts</string>
     <string name="shorts_camera_close_confirmation_cancel">ยกเลิก</string>

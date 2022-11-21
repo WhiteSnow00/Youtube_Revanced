@@ -6,15 +6,15 @@ package com.google.android.apps.youtube.app.player.controls;
 
 import java.util.concurrent.atomic.AtomicReference;
 
-public class PreviousPaddleMenuItemController implements thl, abcy
+public class PreviousPaddleMenuItemController implements tio, abee
 {
-    public final ftk a;
+    public final ftq a;
     public boolean b;
     public boolean c;
-    private asir d;
-    private final abbf e;
+    private asln d;
+    private final abcl e;
     
-    public PreviousPaddleMenuItemController(final ftk a, final abbf e) {
+    public PreviousPaddleMenuItemController(final ftq a, final abcl e) {
         (this.a = a).a("menu_item_previous_paddle", false);
         this.e = e;
     }
@@ -24,7 +24,7 @@ public class PreviousPaddleMenuItemController implements thl, abcy
             return;
         }
         this.b = b;
-        final ftk a = this.a;
+        final ftq a = this.a;
         boolean b2 = false;
         if (b) {
             b2 = b2;
@@ -35,45 +35,45 @@ public class PreviousPaddleMenuItemController implements thl, abcy
         a.a("menu_item_previous_paddle", b2);
     }
     
-    public final thh g() {
-        return thh.b;
+    public final tik g() {
+        return tik.b;
     }
     
-    public final void lW(final aun aun) {
+    public final void lW(final aup aup) {
     }
     
-    public final void mM(final aun aun) {
+    public final void mp(final aup aup) {
     }
     
-    public final void mq(final aun aun) {
+    public final void mx(final aup aup) {
     }
     
-    public final void my(final aun aun) {
+    public final void oB(final boolean b) {
     }
     
-    public final void oD(final boolean b) {
+    public final void oO(final aup aup) {
     }
     
-    public final void oS(final aun aun) {
-        this.d = this.e.a().an((asjm)new irw(this, 19), (asjm)ise.h);
+    public final void oT(final aup aup) {
+        this.d = this.e.a().an((asmi)new itn(this, 1), (asmi)isj.i);
     }
     
-    public final void oT() {
-        tfg.c((thl)this);
+    public final void oU() {
+        tgj.d((tio)this);
     }
     
-    public final void oW() {
-        tfg.b((thl)this);
+    public final void oX() {
+        tgj.c((tio)this);
     }
     
-    public final void oX(final aun aun) {
-        final asir d = this.d;
+    public final void oY(final aup aup) {
+        final asln d = this.d;
         if (d != null) {
-            athz.f((AtomicReference)d);
+            atkw.f((AtomicReference)d);
             this.d = null;
         }
     }
     
-    public final void re(final abcx abcx) {
+    public final void rd(final abed abed) {
     }
 }

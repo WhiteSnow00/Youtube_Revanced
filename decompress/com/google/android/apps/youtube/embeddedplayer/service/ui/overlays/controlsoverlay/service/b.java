@@ -4,15 +4,15 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.service;
 
-import com.google.android.apps.youtube.embeddedplayer.service.jar.client.n;
-import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.remoteloaded.e;
+import com.google.android.apps.youtube.embeddedplayer.service.jar.client.m;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.d;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.h;
 import com.google.android.libraries.youtube.innertube.model.player.PlayerResponseModel;
 import com.google.android.libraries.youtube.innertube.model.WatchNextResponseModel;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.service.a;
 import com.google.protos.youtube.api.innertube.SubscribeButtonRendererOuterClass;
 
-public final class b implements abps, tgg
+public final class b implements abqx, thj
 {
     final c a;
     
@@ -24,63 +24,63 @@ public final class b implements abps, tgg
         final c a = this.a;
         if (a.r) {
             if (a.q) {
-                angq angq;
-                if ((angq = a.o.j) == null) {
-                    angq = angq.a;
+                anix anix;
+                if ((anix = a.o.j) == null) {
+                    anix = anix.a;
                 }
-                ajni a2;
-                if (angq.b == 149559471) {
-                    a2 = (ajni)angq.c;
+                ajph a2;
+                if (anix.b == 149559471) {
+                    a2 = (ajph)anix.c;
                 }
                 else {
-                    a2 = ajni.a;
+                    a2 = ajph.a;
                 }
                 final c a3 = this.a;
                 a3.e.a(a2, a3.d);
-                anuv anuv;
-                if ((anuv = a2.e) == null) {
-                    anuv = anuv.a;
+                anxb anxb;
+                if ((anxb = a2.e) == null) {
+                    anxb = anxb.a;
                 }
-                anuv anuv2;
-                if ((anuv2 = ((ajnh)anuv.rx((ahaq)ajnj.c)).c) == null) {
-                    anuv2 = anuv.a;
+                anxb anxb2;
+                if ((anxb2 = ((ajpg)((ahcu)anxb).rx((ahci)ajpi.c)).c) == null) {
+                    anxb2 = anxb.a;
                 }
-                final aome aome = (aome)anuv2.rx((ahaq)SubscribeButtonRendererOuterClass.subscribeButtonRenderer);
+                final aooo aooo = (aooo)((ahcu)anxb2).rx((ahci)SubscribeButtonRendererOuterClass.subscribeButtonRenderer);
                 final c a4 = this.a;
-                a4.g.b(aome, a4.f, a4.i, a4.h);
+                a4.g.b(aooo, a4.f, a4.i, a4.h);
                 final c a5 = this.a;
                 final a k = a5.k;
-                angc angc;
-                if ((angc = a5.o.g) == null) {
-                    angc = angc.a;
+                anij anij;
+                if ((anij = a5.o.g) == null) {
+                    anij = anij.a;
                 }
-                aicz a6;
-                if (angc.b == 65153809) {
-                    a6 = (aicz)angc.c;
+                aies a6;
+                if (anij.b == 65153809) {
+                    a6 = (aies)anij.c;
                 }
                 else {
-                    a6 = aicz.a;
+                    a6 = aies.a;
                 }
                 k.b(a6, this.a.j);
                 final c a7 = this.a;
-                final angl o = a7.o;
+                final anis o = a7.o;
                 final String s = a7.s;
                 final String t = a7.t;
-                angm angm;
-                if ((angm = o.f) == null) {
-                    angm = angm.a;
+                anit anit;
+                if ((anit = o.f) == null) {
+                    anit = anit.a;
                 }
-                if ((angm.b & 0x1) != 0x0) {
+                if ((anit.b & 0x1) != 0x0) {
                     final com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.service.a m = this.a.m;
-                    angm angm2;
-                    if ((angm2 = o.f) == null) {
-                        angm2 = angm.a;
+                    anit anit2;
+                    if ((anit2 = o.f) == null) {
+                        anit2 = anit.a;
                     }
-                    aicz aicz;
-                    if ((aicz = angm2.c) == null) {
-                        aicz = aicz.a;
+                    aies aies;
+                    if ((aies = anit2.c) == null) {
+                        aies = aies.a;
                     }
-                    m.c(aicz, this.a.l, s, t, false, -1);
+                    m.c(aies, this.a.l, s, t, false, -1);
                 }
             }
         }
@@ -88,44 +88,44 @@ public final class b implements abps, tgg
     
     private final void d() {
         final c a = this.a;
-        a.u.h(2131427613, a.p != null);
+        a.u.e(2131427613, a.p != null);
     }
     
-    public final void a(final aani aani) {
-        final WatchNextResponseModel a = aani.a();
-        if (!aani.c().b(abkb.e)) {
+    public final void a(final aapf aapf) {
+        final WatchNextResponseModel a = aapf.a();
+        if (!aapf.c().b(abli.e)) {
             this.a.q = false;
         }
-        if (aani.c() != abkb.e || a == null) {
+        if (aapf.c() != abli.e || a == null) {
             this.a.p = null;
             this.d();
             return;
         }
         final c a2 = this.a;
-        aldx aldx;
-        if ((aldx = a.a.g) == null) {
-            aldx = aldx.a;
+        alfx alfx;
+        if ((alfx = a.a.g) == null) {
+            alfx = alfx.a;
         }
-        angl a3;
-        if (aldx.b == 78882851) {
-            a3 = (angl)aldx.c;
+        anis a3;
+        if (alfx.b == 78882851) {
+            a3 = (anis)alfx.c;
         }
         else {
-            a3 = angl.a;
+            a3 = anis.a;
         }
         a2.o = a3;
         this.a.q = true;
         this.c();
         final c a4 = this.a;
-        final angl o = a4.o;
+        final anis o = a4.o;
         if ((o.b & 0x400000) != 0x0) {
-            aida aida;
-            if ((aida = o.q) == null) {
-                aida = aida.a;
+            aiet aiet;
+            if ((aiet = o.q) == null) {
+                aiet = aiet.a;
             }
-            aicz p;
-            if ((p = aida.c) == null) {
-                p = aicz.a;
+            aies p;
+            if ((p = aiet.c) == null) {
+                p = aies.a;
             }
             a4.p = p;
             this.d();
@@ -135,49 +135,49 @@ public final class b implements abps, tgg
         this.d();
     }
     
-    public final void b(final aans aans) {
-        final PlayerResponseModel b = aans.b();
-        if (!aans.c().c(abke.i)) {
+    public final void b(final aapp aapp) {
+        final PlayerResponseModel b = aapp.b();
+        if (!aapp.c().c(abll.i)) {
             this.a.r = false;
         }
-        if (aans.c() != abke.c || b == null) {
-            if (aans.c() == abke.i) {
+        if (aapp.c() != abll.c || b == null) {
+            if (aapp.c() == abll.i) {
                 if (b != null) {
                     this.a.s = b.K();
                     this.a.t = b.J();
                 }
                 final c a = this.a;
                 a.r = true;
-                a.a.rd(false);
+                a.a.rc(false);
                 this.c();
             }
             return;
         }
-        akxc akxc;
-        if ((akxc = b.z().D) == null) {
-            akxc = akxc.a;
+        akzc akzc;
+        if ((akzc = b.z().D) == null) {
+            akzc = akzc.a;
         }
-        anej anej;
-        if ((anej = akxc.c) == null) {
-            anej = anej.a;
+        angq angq;
+        if ((angq = akzc.c) == null) {
+            angq = angq.a;
         }
-        if ((anej.b & 0x20) != 0x0) {
+        if ((angq.b & 0x20) != 0x0) {
             final h a2 = this.a.a;
-            anej anej2;
-            if ((anej2 = akxc.c) == null) {
-                anej2 = anej.a;
+            angq angq2;
+            if ((angq2 = akzc.c) == null) {
+                angq2 = angq.a;
             }
-            a2.rd(anej2.h);
+            a2.rc(angq2.h);
             return;
         }
-        this.a.a.rd(false);
+        this.a.a.rc(false);
     }
     
-    public final asir[] lX(final abpu abpu) {
-        return new asir[] { ((ashi)abpu.p().a).an((asjm)new e(this, 2), (asjm)n.g), abpu.P().an((asjm)new e(this, 3), (asjm)n.g) };
+    public final asln[] lX(final abqz abqz) {
+        return new asln[] { ((aske)abqz.p().a).an(new d(this, 6), (asmi)m.g), abqz.P().an(new d(this, 7), (asmi)m.g) };
     }
     
-    public final Class[] ms(final Class clazz, final Object o, final int n) {
+    public final Class[] mr(final Class clazz, final Object o, final int n) {
         Class[] array;
         if (n != -1) {
             array = null;
@@ -187,14 +187,14 @@ public final class b implements abps, tgg
                     sb.append(n);
                     throw new IllegalStateException(sb.toString());
                 }
-                this.b((aans)o);
+                this.b((aapp)o);
             }
             else {
-                this.a((aani)o);
+                this.a((aapf)o);
             }
         }
         else {
-            array = new Class[] { aani.class, aans.class };
+            array = new Class[] { aapf.class, aapp.class };
         }
         return array;
     }

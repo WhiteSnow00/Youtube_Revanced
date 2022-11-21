@@ -17,7 +17,7 @@ public final class IpcCompatiblePlaybackState implements Parcelable
     public final PlaybackStartDescriptor c;
     
     static {
-        CREATOR = (Parcelable$Creator)new ics(17);
+        CREATOR = (Parcelable$Creator)new idb(17);
     }
     
     public IpcCompatiblePlaybackState(final int b, final PlaybackStartDescriptor c, final boolean a) {

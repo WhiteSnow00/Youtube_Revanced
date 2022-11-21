@@ -19,20 +19,20 @@ public final class ChapterTocFrame extends Id3Frame
     private final Id3Frame[] e;
     
     static {
-        CREATOR = (Parcelable$Creator)new app(15);
+        CREATOR = (Parcelable$Creator)new apq(15);
     }
     
     public ChapterTocFrame(final Parcel parcel) {
         super("CTOC");
         final String string = parcel.readString();
-        final int a = bax.a;
+        final int a = baz.a;
         this.a = string;
         final byte byte1 = parcel.readByte();
         final boolean b = true;
         int i = 0;
         this.b = (byte1 != 0);
         this.c = (parcel.readByte() != 0 && b);
-        this.d = (String[])bax.L((Object)parcel.createStringArray());
+        this.d = (String[])baz.L(parcel.createStringArray());
         final int int1 = parcel.readInt();
         this.e = new Id3Frame[int1];
         while (i < int1) {
@@ -57,7 +57,7 @@ public final class ChapterTocFrame extends Id3Frame
         if (o != null) {
             if (this.getClass() == o.getClass()) {
                 final ChapterTocFrame chapterTocFrame = (ChapterTocFrame)o;
-                if (this.b == chapterTocFrame.b && this.c == chapterTocFrame.c && bax.aa((Object)this.a, (Object)chapterTocFrame.a) && Arrays.equals(this.d, chapterTocFrame.d) && Arrays.equals(this.e, chapterTocFrame.e)) {
+                if (this.b == chapterTocFrame.b && this.c == chapterTocFrame.c && baz.aa(this.a, chapterTocFrame.a) && Arrays.equals(this.d, chapterTocFrame.d) && Arrays.equals(this.e, chapterTocFrame.e)) {
                     return true;
                 }
             }

@@ -17,53 +17,58 @@ public class LoggingUrlModel implements Comparable, Parcelable
 {
     public static final Parcelable$Creator CREATOR;
     public final String a;
-    public final aeyr b;
+    public final afci b;
     public final Set c;
     
     static {
-        CREATOR = (Parcelable$Creator)new uik(17);
+        CREATOR = (Parcelable$Creator)new ulj(17);
     }
     
-    public LoggingUrlModel(final alud alud) {
-        final int b = alud.b;
+    public LoggingUrlModel(final alyh alyh) {
+        final int b = alyh.b;
         boolean b2 = true;
         if (0x1 != (b & 0x1)) {
             b2 = false;
         }
-        agot.D(b2);
-        this.a = alud.c;
-        this.b = agnj.E((aeyr)new uzv(this, 12));
+        adme.T(b2);
+        this.a = alyh.c;
+        this.b = adzw.M((afci)new vdf(this, 11));
         this.c = new HashSet();
-        if (alud.d.size() != 0) {
-            for (final aluc aluc : alud.d) {
+        if (alyh.d.size() != 0) {
+            for (final alyg alyg : alyh.d) {
                 final Set c = this.c;
-                alub alub;
-                if ((alub = alub.b(aluc.c)) == null) {
-                    alub = alub.a;
+                alyf alyf;
+                if ((alyf = alyf.b(alyg.c)) == null) {
+                    alyf = alyf.a;
                 }
-                c.add(alub);
+                c.add(alyf);
             }
         }
     }
     
-    public LoggingUrlModel(final lpw lpw) {
+    public LoggingUrlModel(final lro lro) {
         String c;
-        if ((lpw.b & 0x1) != 0x0) {
-            c = lpw.c;
+        if ((lro.b & 0x1) != 0x0) {
+            c = lro.c;
         }
         else {
             c = "";
         }
         this.a = c;
-        this.b = agnj.E((aeyr)new uzv(this, 11));
+        this.b = adzw.M((afci)new vdf(this, 10));
         this.c = new HashSet();
-        final Iterator<Object> iterator = ((List<Object>)lpw.d).iterator();
+        final Iterator<Object> iterator = ((List<Object>)lro.d).iterator();
         while (iterator.hasNext()) {
-            final alub b = alub.b((int)iterator.next());
+            final alyf b = alyf.b((int)iterator.next());
             if (b != null) {
                 this.c.add(b);
             }
         }
+    }
+    
+    @Override
+    public final /* bridge */ int compareTo(final Object o) {
+        return this.a.compareTo(((LoggingUrlModel)o).a);
     }
     
     public final int describeContents() {
@@ -71,24 +76,24 @@ public class LoggingUrlModel implements Comparable, Parcelable
     }
     
     public final void writeToParcel(final Parcel parcel, int h) {
-        final agza builder = ((agzi)lpw.a).createBuilder();
+        final ahcr builder = ((ahcz)lro.a).createBuilder();
         final String a = this.a;
         builder.copyOnWrite();
-        final lpw lpw = (lpw)builder.instance;
+        final lro lro = (lro)builder.instance;
         a.getClass();
-        lpw.b |= 0x1;
-        lpw.c = a;
+        lro.b |= 0x1;
+        lro.c = a;
         final Iterator iterator = this.c.iterator();
         while (iterator.hasNext()) {
-            h = ((alub)iterator.next()).h;
+            h = ((alyf)iterator.next()).h;
             builder.copyOnWrite();
-            final lpw lpw2 = (lpw)builder.instance;
-            final agzq d = lpw2.d;
+            final lro lro2 = (lro)builder.instance;
+            final ahdh d = lro2.d;
             if (!d.c()) {
-                lpw2.d = agzi.mutableCopy(d);
+                lro2.d = ahcz.mutableCopy(d);
             }
-            lpw2.d.g(h);
+            lro2.d.g(h);
         }
-        uji.ag((MessageLite)builder.build(), parcel);
+        ume.ad((MessageLite)builder.build(), parcel);
     }
 }

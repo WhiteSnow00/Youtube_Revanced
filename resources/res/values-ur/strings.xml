@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">آلہ کی تھیم استعمال کریں</string>
     <string name="app_theme_appearance_summary">اپنی ہلکی یا گہری تھیم کی ترجیح کا استعمال کریں</string>
     <string name="app_theme_appearance_title">ظہور</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">لاگو کریں</string>
     <string name="approve_playlist_sync">نئی ویڈیوز کی مطابقت پذیری کریں</string>
     <string name="audio_playback_failed_snackbar_action_button">پھر کوشش کریں</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">سلسلہ بندی ختم کریں</string>
     <string name="lc_retry_yes">دوبارہ کوشش کریں</string>
     <string name="lc_rotate_device">آلہ کو گھمائیں</string>
+    <string name="lc_sharedmde_required_field_error">عنوان اور ناظرین درکار ہیں۔</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">سلسلہ پورٹریٹ میں ہے</string>
     <string name="lc_stream_start_error">سلسلہ شروع کرنے سے قاصر۔ اپنا کنکشن چیک کریں۔</string>
@@ -1729,6 +1730,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">ویڈیو کا پیش منظر۔ موقوف کرنے کیلئے تھپتھپائیں۔</string>
     <string name="shorts_a11y_video_preview_tap_to_play">ویڈیو کا پیش منظر۔ چلانے کیلئے تھپتھپائیں۔</string>
     <string name="shorts_a11y_zoom_control">زوم کنٹرول</string>
+    <string name="shorts_audio_failure_toast">آواز شامل کرنے میں ناکام۔ براہ کرم دوبارہ شامل کریں۔</string>
     <string name="shorts_camera_allow_access_subtitle">اپنے کیمرا اور مائیکروفون تک رسائی کی اجازت دیں</string>
     <string name="shorts_camera_allow_access_title">‏ایک Short بنائیں</string>
     <string name="shorts_camera_close_confirmation_cancel">منسوخ کریں</string>

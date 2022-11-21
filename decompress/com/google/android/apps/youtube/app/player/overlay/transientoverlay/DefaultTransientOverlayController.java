@@ -6,64 +6,70 @@ package com.google.android.apps.youtube.app.player.overlay.transientoverlay;
 
 import j$.util.Optional;
 
-public final class DefaultTransientOverlayController implements kzc, jcm
+public final class DefaultTransientOverlayController implements lao, jdx
 {
-    public final ixh a;
-    public final asho b;
-    public final asho c;
-    public final atie d;
-    public final atie e;
-    public final atie f;
-    private final abns g;
-    private final itx h;
-    private final atie i;
-    private final asgt j;
-    private final asgt k;
-    private final asgt l;
-    private final itw m;
-    private final asib n;
+    public final iyo a;
+    public final askz b;
+    public final askz c;
+    public final atlt d;
+    public final atlt e;
+    public final atlt f;
+    private final abqz g;
+    private final ivf h;
+    private final atlt i;
+    private final aske j;
+    private final aske k;
+    private final aske l;
+    private final ive m;
+    private final aslm n;
     private boolean o;
     
-    public DefaultTransientOverlayController(final abns g, final itx h, final ixh a, final asho b, final asho c) {
+    public DefaultTransientOverlayController(final abqz g, final ivf h, final iyo a, final askz b, final askz c) {
         this.g = g;
         this.h = h;
         this.a = a;
         this.b = b;
         this.c = c;
-        this.m = (itw)new jci(this);
-        this.n = new asib();
-        final atie ak = ((atie)atid.aE((Object)Optional.empty())).aK();
-        this.d = ak;
-        final atie ak2 = ((atie)atig.aD()).aK();
-        this.i = ak2;
+        this.m = (ive)new jdt(this);
+        this.n = new aslm();
+        final atlt al = ((atlt)atls.aF((Object)Optional.empty())).aL();
+        this.d = al;
+        final atlt al2 = ((atlt)atlv.aE()).aL();
+        this.i = al2;
         final Boolean value = false;
-        final atie ak3 = ((atie)atid.aE((Object)value)).aK();
-        this.e = ak3;
-        final atie ak4 = ((atie)atid.aE((Object)value)).aK();
-        this.f = ak4;
-        final asgt p5 = asgt.e((aujo)g.q().c, (aujo)g.w().L((asjc)iqc.u), (asit)iun.m).p();
-        final asgt e = asgt.e((aujo)ak4, (aujo)ak3, (asit)iun.j);
-        final asgt p6 = asgt.N((aujo)ak2, (aujo)asgt.e((aujo)e, (aujo)p5, (asit)iun.k)).p();
-        this.j = asgt.e((aujo)asgt.O((aujo)ak, (aujo)p5.Y((asjc)new jax(e, 5)), (aujo)g.R().L((asjc)jch.c).af((aujo)p6, (asit)iun.n).B((asjd)iuc.k).L((asjc)jch.d)), (aujo)p6, (asit)iun.l).B((asjd)iuc.i).Y((asjc)new jax(this, 6));
-        final asgt y = ((asgt)ak).B((asjd)iuc.h).Y((asjc)iqc.t);
+        final atlt al3 = ((atlt)atls.aF((Object)value)).aL();
+        this.e = al3;
+        final atlt al4 = ((atlt)atls.aF((Object)value)).aL();
+        this.f = al4;
+        final aske p5 = aske.e((aumz)g.p().c, g.v().L((asmn)jdb.d), (asme)ivv.m).p();
+        final aske e = aske.e((aumz)al4, (aumz)al3, (asme)ivv.j);
+        final aske p6 = aske.N((aumz)al2, aske.e(e, p5, (asme)ivv.k)).p();
+        this.j = aske.e(aske.O((aumz)al, p5.Y((asmn)new jbl(e, 7)), g.Q().L((asmn)jdb.g).af(p6, (asme)ivv.n).B((asmo)iuv.m).L((asmn)jdb.h)), p6, (asme)ivv.l).B((asmo)iuv.k).Y((asmn)new jbl(this, 8));
+        final aske y = ((aske)al).B((asmo)iuv.j).Y((asmn)jdb.c);
         this.k = y;
-        this.l = y.L((asjc)jch.b).V();
+        this.l = y.L((asmn)jdb.e).V();
         this.o = false;
     }
     
-    public final asgt j() {
+    public final tik g() {
+        return tik.a;
+    }
+    
+    public final aske j() {
         return this.l;
     }
     
     public final void k() {
-        this.i.tr((Object)jcl.c);
+        this.i.tt((Object)jdw.c);
     }
     
-    public final void l(final long n, final long n2, final long n3, final jbh jbh) {
-        this.d.tr((Object)Optional.of((Object)new jcj(n, n2, n3, jbh)));
+    public final void l(final long n, final long n2, final long n3, final jcp jcp) {
+        this.d.tt((Object)Optional.of((Object)new jdu(n, n2, n3, jcp)));
     }
     
-    @Override
+    public final void lW(final aup aup) {
+    }
+    
     public final void m(final int n) {
         final boolean o = n != 0;
         if (this.o == o) {
@@ -71,19 +77,39 @@ public final class DefaultTransientOverlayController implements kzc, jcm
         }
         if (o) {
             this.h.a(this.m);
-            this.n.f(new asic[] { this.k.al((asix)new jbf(this, 17)), this.j.ak() });
+            this.n.f(this.k.am((asmi)new jds(this, 1)), this.j.al());
         }
         else {
             this.h.b(this.m);
             this.n.b();
-            this.d.tr((Object)Optional.empty());
+            this.d.tt((Object)Optional.empty());
         }
         this.o = o;
     }
     
-    public final void mM(final aum aum) {
+    public final void mp(final aup aup) {
+    }
+    
+    public final void mx(final aup aup) {
+    }
+    
+    public final void oO(final aup aup) {
         this.h.b(this.m);
         this.n.b();
         this.o = false;
+    }
+    
+    public final void oT(final aup aup) {
+    }
+    
+    public final void oU() {
+        tgj.h((tim)this);
+    }
+    
+    public final void oX() {
+        tgj.g((tim)this);
+    }
+    
+    public final void oY(final aup aup) {
     }
 }

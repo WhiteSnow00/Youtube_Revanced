@@ -9,7 +9,7 @@ import android.view.GestureDetector$OnGestureListener;
 import android.util.AttributeSet;
 import android.content.Context;
 
-public class ReelWatchPagerViewPager extends trr
+public class ReelWatchPagerViewPager extends tss
 {
     public boolean h;
     public boolean i;
@@ -19,7 +19,7 @@ public class ReelWatchPagerViewPager extends trr
         super(context, set);
         this.h = false;
         this.i = false;
-        this.j = new bx(context, (GestureDetector$OnGestureListener)new hpf(this));
+        this.j = new bx(context, (GestureDetector$OnGestureListener)new hpn(this));
     }
     
     public final boolean onInterceptTouchEvent(final MotionEvent motionEvent) {

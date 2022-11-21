@@ -13,7 +13,7 @@ public final class a implements Runnable
     public final Object a;
     private final int b;
     
-    public a(final abcg a, final int b) {
+    public a(final abdn a, final int b) {
         this.b = b;
         this.a = a;
     }
@@ -48,151 +48,178 @@ public final class a implements Runnable
         this.a = a;
     }
     
+    public a(final com.google.android.apps.youtube.embeddedplayer.service.ui.preview.service.e a, final int b) {
+        this.b = b;
+        this.a = a;
+    }
+    
     public a(final com.google.android.apps.youtube.embeddedplayer.service.ui.preview.shared.b a, final int b) {
         this.b = b;
         this.a = a;
     }
     
-    public a(final sjs a, final int b) {
+    public a(final sks a, final int b) {
         this.b = b;
         this.a = a;
     }
     
     @Override
     public final void run() {
-        switch (this.b) {
+        final int b = this.b;
+        String s = "due to no playlist being set.";
+        switch (b) {
             default: {
-                ((com.google.android.apps.youtube.embeddedplayer.service.ui.preview.shared.b)this.a).a.n();
+                final Object d = ((com.google.android.apps.youtube.embeddedplayer.service.ui.preview.service.e)this.a).d;
+                if (d != null) {
+                    final com.google.android.apps.youtube.embeddedplayer.service.ui.preview.service.a a = (com.google.android.apps.youtube.embeddedplayer.service.ui.preview.service.a)d;
+                    if (a.k()) {
+                        a.g();
+                        return;
+                    }
+                }
+                if (d instanceof com.google.android.apps.youtube.embeddedplayer.service.ui.preview.service.b) {
+                    s = "as already at the start of the playlist.";
+                }
+                aftr.l("Ignoring call to previous() on YouTubeThumbnailView ".concat(s));
                 return;
             }
             case 19: {
-                ((com.google.android.apps.youtube.embeddedplayer.service.ui.preview.shared.b)this.a).a.mk();
+                final Object d2 = ((com.google.android.apps.youtube.embeddedplayer.service.ui.preview.service.e)this.a).d;
+                if (d2 != null) {
+                    final com.google.android.apps.youtube.embeddedplayer.service.ui.preview.service.a a2 = (com.google.android.apps.youtube.embeddedplayer.service.ui.preview.service.a)d2;
+                    if (a2.j()) {
+                        a2.f();
+                        return;
+                    }
+                }
+                if (d2 instanceof com.google.android.apps.youtube.embeddedplayer.service.ui.preview.service.b) {
+                    s = "as already at the end of the playlist.";
+                }
+                aftr.l("Ignoring call to next() on YouTubeThumbnailView ".concat(s));
                 return;
             }
             case 18: {
-                ((com.google.android.apps.youtube.embeddedplayer.service.ui.preview.shared.b)this.a).a.mm();
+                ((com.google.android.apps.youtube.embeddedplayer.service.ui.preview.shared.b)this.a).a.n();
                 return;
             }
             case 17: {
-                ((sjs)this.a).f();
+                ((com.google.android.apps.youtube.embeddedplayer.service.ui.preview.shared.b)this.a).a.mk();
                 return;
             }
             case 16: {
-                ((sjs)this.a).n();
+                ((com.google.android.apps.youtube.embeddedplayer.service.ui.preview.shared.b)this.a).a.ow();
                 return;
             }
             case 15: {
-                ((sjs)this.a).i();
+                ((sks)this.a).f();
                 return;
             }
             case 14: {
-                ((com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.subtitlesoverlay.shared.b)this.a).a.f();
+                ((sks)this.a).n();
                 return;
             }
             case 13: {
-                ((com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.subtitlesoverlay.shared.b)this.a).a.e();
+                ((sks)this.a).i();
                 return;
             }
             case 12: {
-                ((b)this.a).a.g();
+                ((com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.subtitlesoverlay.shared.b)this.a).a.f();
                 return;
             }
             case 11: {
-                ((abcg)this.a).mk();
+                ((com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.subtitlesoverlay.shared.b)this.a).a.e();
                 return;
             }
             case 10: {
-                final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.b a = ((h)this.a).a;
-                if (a != null) {
-                    a.a();
-                }
+                ((b)this.a).a.g();
                 return;
             }
             case 9: {
-                final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.c a2 = ((com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.e)this.a).a;
-                if (a2 != null) {
-                    a2.m();
-                }
+                ((abdn)this.a).mk();
                 return;
             }
             case 8: {
-                final c c = (c)this.a;
-                final aicz p = c.p;
-                if (p == null) {
-                    afse.o("Watch in YouTube button renderer not available.");
-                    return;
+                final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.b a3 = ((h)this.a).a;
+                if (a3 != null) {
+                    a3.a();
                 }
-                c.n.j(p.w.I());
-                final vcy c2 = c.c;
-                aiqj aiqj;
-                if ((aiqj = p.o) == null) {
-                    aiqj = aiqj.a;
-                }
-                vcx.a(c2, aiqj);
                 return;
             }
             case 7: {
-                final Object a3 = this.a;
-                final abis b = abis.b;
-                final e e = (e)a3;
-                e.c(b);
+                final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.c a4 = ((com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.e)this.a).a;
+                if (a4 != null) {
+                    a4.m();
+                }
+                return;
+            }
+            case 6: {
+                final c c = (c)this.a;
+                final aies p = c.p;
+                if (p == null) {
+                    aftr.k("Watch in YouTube button renderer not available.");
+                    return;
+                }
+                c.n.j(p.w.I());
+                final veh c2 = c.c;
+                aisc aisc;
+                if ((aisc = p.o) == null) {
+                    aisc = aisc.a;
+                }
+                veg.a(c2, aisc);
+                return;
+            }
+            case 5: {
+                final Object a5 = this.a;
+                final abjz b2 = abjz.b;
+                final e e = (e)a5;
+                e.c(b2);
                 e.a.q();
                 e.j = false;
                 return;
             }
-            case 6: {
-                final Object a4 = this.a;
-                final abis a5 = abis.a;
-                final e e2 = (e)a4;
-                e2.c(a5);
+            case 4: {
+                final Object a6 = this.a;
+                final abjz a7 = abjz.a;
+                final e e2 = (e)a6;
+                e2.c(a7);
                 e2.d.b();
                 e2.j = false;
                 return;
             }
-            case 5: {
-                final Object a6 = this.a;
-                final abis b2 = abis.b;
-                final e e3 = (e)a6;
-                e3.c(b2);
+            case 3: {
+                final Object a8 = this.a;
+                final abjz b3 = abjz.b;
+                final e e3 = (e)a8;
+                e3.c(b3);
                 e3.a.f();
                 e3.j = false;
                 return;
             }
-            case 4: {
-                final Object a7 = this.a;
-                final abis b3 = abis.b;
-                final e e4 = (e)a7;
-                e4.c(b3);
+            case 2: {
+                final Object a9 = this.a;
+                final abjz b4 = abjz.b;
+                final e e4 = (e)a9;
+                e4.c(b4);
                 e4.a.n();
                 e4.j = false;
                 return;
             }
-            case 3: {
-                final Object a8 = this.a;
-                final abis b4 = abis.b;
-                final e e5 = (e)a8;
-                e5.c(b4);
-                e5.a.o();
+            case 1: {
+                final Object a10 = this.a;
+                final abjz b5 = abjz.b;
+                final e e5 = (e)a10;
+                e5.c(b5);
+                e5.a.m();
                 e5.j = false;
                 return;
             }
-            case 2: {
-                final Object a9 = this.a;
-                final abis b5 = abis.b;
-                final e e6 = (e)a9;
-                e6.c(b5);
-                e6.a.m();
-                e6.j = false;
-                return;
-            }
-            case 1: {
-                ((e)this.a).f.h();
-                return;
-            }
             case 0: {
-                final e e7 = (e)this.a;
-                e7.a.c();
-                e7.j = false;
+                final Object a11 = this.a;
+                final abjz b6 = abjz.b;
+                final e e6 = (e)a11;
+                e6.c(b6);
+                e6.a.o();
+                e6.j = false;
             }
         }
     }

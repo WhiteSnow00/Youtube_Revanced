@@ -8,16 +8,16 @@ public final class AutoValue_VideoDetailsExpanded extends VideoDetailsExpanded
 {
     private final CharSequence b;
     private final CharSequence c;
-    private final ahab d;
+    private final ahbt d;
     
-    public AutoValue_VideoDetailsExpanded(final CharSequence b, final CharSequence c, final ahab d) {
+    public AutoValue_VideoDetailsExpanded(final CharSequence b, final CharSequence c, final ahbt d) {
         this.b = b;
         this.c = c;
         this.d = d;
     }
     
     @Override
-    public final ahab a() {
+    public final ahbt a() {
         return this.d;
     }
     

@@ -11,7 +11,7 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 public class ShortsEditCoordinatorLayout extends CoordinatorLayout
 {
-    public ttg i;
+    public tui i;
     
     public ShortsEditCoordinatorLayout(final Context context) {
         super(context);
@@ -26,7 +26,7 @@ public class ShortsEditCoordinatorLayout extends CoordinatorLayout
     }
     
     public final boolean onInterceptTouchEvent(final MotionEvent motionEvent) {
-        final ttg i = this.i;
+        final tui i = this.i;
         if (i != null) {
             i.a((Object)motionEvent);
         }

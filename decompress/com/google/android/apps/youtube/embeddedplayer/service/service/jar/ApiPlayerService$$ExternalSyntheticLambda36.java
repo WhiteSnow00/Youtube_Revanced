@@ -11,16 +11,17 @@ import com.google.android.apps.youtube.embeddedplayer.service.innertube.endpoint
 
 public final class ApiPlayerService$$ExternalSyntheticLambda36 implements a
 {
-    public c a;
+    public final c a;
     
     public ApiPlayerService$$ExternalSyntheticLambda36(final c a) {
         this.a = a;
     }
     
-    public final void a(final ajrv ajrv) {
+    @Override
+    public final void a(final ajtu ajtu) {
         final c a = this.a;
         try {
-            a.o(new FancyDismissibleDialogRendererWrapper(ajrv));
+            a.o(new FancyDismissibleDialogRendererWrapper(ajtu));
         }
         catch (final RemoteException ex) {}
     }

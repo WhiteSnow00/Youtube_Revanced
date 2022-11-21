@@ -9,7 +9,7 @@ public final class HardwareFoldingFeature$Type$Companion
     private HardwareFoldingFeature$Type$Companion() {
     }
     
-    public HardwareFoldingFeature$Type$Companion(final atny atny) {
+    public HardwareFoldingFeature$Type$Companion(final atqv atqv) {
         this();
     }
     

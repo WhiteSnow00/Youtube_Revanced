@@ -50,11 +50,11 @@
     <string name="litho_channel_guidelines_off">Вилучення рекомендацій по каналу вимкнено</string>
     <string name="litho_channel_guidelines_on">Вилучення рекомендацій по каналу увімкнено</string>
     <string name="litho_community_guidelines">Гайди спільноти</string>
+    <string name="accessibility_settings_edu_opt_in_text">Увімкнути спеціальні можливості для відеоплеєра?</string>
+    <string name="accessibility_settings_edu_opt_out_text">Керування змінено, оскільки служба спеціальних можливостей увімкнена.</string>
     <string name="litho_community_guidelines_off">Вилучення гайдiв спільноти вимкнено</string>
     <string name="litho_community_guidelines_on">Вилучення гайдiв спільноти увімкнено</string>
     <string name="litho_community_posts">Публікації в спільноті</string>
-    <string name="accessibility_settings_edu_opt_in_text">Увімкнути спеціальні можливості для відеоплеєра?</string>
-    <string name="accessibility_settings_edu_opt_out_text">Керування змінено, оскільки служба спеціальних можливостей увімкнена.</string>
     <string name="litho_community_posts_off">Вилучення публікацій у спільноті вимкнено</string>
     <string name="litho_community_posts_on">Вилучення публікацій у спільноті увімкнено</string>
     <string name="litho_compact_banner">Компактний банер</string>

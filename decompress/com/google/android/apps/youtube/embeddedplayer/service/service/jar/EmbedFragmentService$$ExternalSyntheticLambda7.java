@@ -8,8 +8,8 @@ import com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnot
 
 public final class EmbedFragmentService$$ExternalSyntheticLambda7 implements Runnable
 {
-    public EmbedFragmentService a;
-    public SubscriptionNotificationMenuItem b;
+    public final EmbedFragmentService a;
+    public final SubscriptionNotificationMenuItem b;
     
     public EmbedFragmentService$$ExternalSyntheticLambda7(final EmbedFragmentService a, final SubscriptionNotificationMenuItem b) {
         this.a = a;

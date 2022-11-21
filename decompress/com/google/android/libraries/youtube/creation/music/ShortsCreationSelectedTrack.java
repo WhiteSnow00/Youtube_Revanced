@@ -17,61 +17,61 @@ public abstract class ShortsCreationSelectedTrack implements Parcelable
     
     static {
         a = new byte[0];
-        CREATOR = (Parcelable$Creator)new rhy(17);
+        CREATOR = (Parcelable$Creator)new rix(17);
     }
     
-    public static ubk r() {
-        final ubk ubk = new ubk((byte[])null);
-        ubk.h(0L);
-        ubk.h = (aezp)aeyo.a;
-        ubk.g(15000L);
-        ubk.f(15000L);
-        ubk.j(false);
-        ubk.d(false);
-        return ubk;
+    public static ucq r() {
+        final ucq ucq = new ucq((byte[])null);
+        ucq.h(0L);
+        ucq.h = afag.a;
+        ucq.g(15000L);
+        ucq.f(15000L);
+        ucq.j(false);
+        ucq.d(false);
+        ucq.e(false);
+        return ucq;
     }
     
     public static ShortsCreationSelectedTrack s(final SfvAudioItemSelectCommandOuterClass$SfvAudioItemSelectCommand sfvAudioItemSelectCommandOuterClass$SfvAudioItemSelectCommand) {
-        final ubk r = r();
+        final ucq r = r();
         r.i(sfvAudioItemSelectCommandOuterClass$SfvAudioItemSelectCommand.c);
-        r.e(false);
         r.a = sfvAudioItemSelectCommandOuterClass$SfvAudioItemSelectCommand.d;
-        r.h(tpe.bL(sfvAudioItemSelectCommandOuterClass$SfvAudioItemSelectCommand));
+        r.h(tqf.bL(sfvAudioItemSelectCommandOuterClass$SfvAudioItemSelectCommand));
         if ((sfvAudioItemSelectCommandOuterClass$SfvAudioItemSelectCommand.b & 0x8) != 0x0) {
-            aiqj b;
+            aisc b;
             if ((b = sfvAudioItemSelectCommandOuterClass$SfvAudioItemSelectCommand.g) == null) {
-                b = aiqj.a;
+                b = aisc.a;
             }
             r.b = b;
         }
         if ((sfvAudioItemSelectCommandOuterClass$SfvAudioItemSelectCommand.b & 0x4) != 0x0) {
-            aobi aobi;
-            if ((aobi = sfvAudioItemSelectCommandOuterClass$SfvAudioItemSelectCommand.e) == null) {
-                aobi = aobi.a;
+            aodp aodp;
+            if ((aodp = sfvAudioItemSelectCommandOuterClass$SfvAudioItemSelectCommand.e) == null) {
+                aodp = aodp.a;
             }
-            if ((aobi.b & 0x1) != 0x0) {
-                aobi aobi2;
-                if ((aobi2 = sfvAudioItemSelectCommandOuterClass$SfvAudioItemSelectCommand.e) == null) {
-                    aobi2 = aobi.a;
+            if ((aodp.b & 0x1) != 0x0) {
+                aodp aodp2;
+                if ((aodp2 = sfvAudioItemSelectCommandOuterClass$SfvAudioItemSelectCommand.e) == null) {
+                    aodp2 = aodp.a;
                 }
-                aotp d;
-                if ((d = aobi2.c) == null) {
-                    d = aotp.a;
+                aowb d;
+                if ((d = aodp2.c) == null) {
+                    d = aowb.a;
                 }
                 r.d = d;
             }
-            final aobi e = sfvAudioItemSelectCommandOuterClass$SfvAudioItemSelectCommand.e;
-            aobi a;
+            final aodp e = sfvAudioItemSelectCommandOuterClass$SfvAudioItemSelectCommand.e;
+            aodp a;
             if (e == null) {
-                a = aobi.a;
+                a = aodp.a;
             }
             else {
                 a = e;
             }
             if ((a.b & 0x2) != 0x0) {
-                aobi a2;
+                aodp a2;
                 if ((a2 = e) == null) {
-                    a2 = aobi.a;
+                    a2 = aodp.a;
                 }
                 r.f = a2.d;
             }
@@ -80,75 +80,74 @@ public abstract class ShortsCreationSelectedTrack implements Parcelable
         return r.a();
     }
     
-    public static ShortsCreationSelectedTrack t(final aoep aoep) {
-        final ubk r = r();
-        r.i(aoep.c);
-        if ((aoep.b & 0x2) != 0x0) {
-            aotp d;
-            if ((d = aoep.d) == null) {
-                d = aotp.a;
+    public static ShortsCreationSelectedTrack t(final aogw aogw) {
+        final ucq r = r();
+        r.i(aogw.c);
+        if ((aogw.b & 0x2) != 0x0) {
+            aowb d;
+            if ((d = aogw.d) == null) {
+                d = aowb.a;
             }
             r.d = d;
         }
-        if ((aoep.b & 0x4) != 0x0) {
-            r.f = aoep.e;
+        final int b = aogw.b;
+        if ((b & 0x4) != 0x0) {
+            r.f = aogw.e;
         }
-        r.e(false);
-        r.a = aoep.g;
-        if ((aoep.b & 0x40) != 0x0) {
-            aiqj b;
-            if ((b = aoep.h) == null) {
-                b = aiqj.a;
+        r.a = aogw.g;
+        if ((b & 0x40) != 0x0) {
+            aisc b2;
+            if ((b2 = aogw.h) == null) {
+                b2 = aisc.a;
             }
-            r.b = b;
+            r.b = b2;
         }
-        r.h(tpe.bN(aoep));
+        r.h(tqf.bN(aogw));
         return r.a();
     }
     
-    public static ShortsCreationSelectedTrack u(final arbc arbc) {
-        final ubk r = r();
-        r.i(arbc.c);
-        arbb arbb;
-        if ((arbb = arbc.e) == null) {
-            arbb = arbb.a;
+    public static ShortsCreationSelectedTrack u(final ardx ardx) {
+        final ucq r = r();
+        r.i(ardx.c);
+        ardw ardw;
+        if ((ardw = ardx.e) == null) {
+            ardw = ardw.a;
         }
-        if ((arbb.b & 0x2) != 0x0) {
-            arbb arbb2;
-            if ((arbb2 = arbc.e) == null) {
-                arbb2 = arbb.a;
+        if ((ardw.b & 0x2) != 0x0) {
+            ardw ardw2;
+            if ((ardw2 = ardx.e) == null) {
+                ardw2 = ardw.a;
             }
-            aotp d;
-            if ((d = arbb2.d) == null) {
-                d = aotp.a;
+            aowb d;
+            if ((d = ardw2.d) == null) {
+                d = aowb.a;
             }
             r.d = d;
         }
-        final arbb e = arbc.e;
-        arbb a;
+        final ardw e = ardx.e;
+        ardw a;
         if (e == null) {
-            a = arbb.a;
+            a = ardw.a;
         }
         else {
             a = e;
         }
         if ((a.b & 0x1) != 0x0) {
-            arbb a2;
+            ardw a2;
             if ((a2 = e) == null) {
-                a2 = arbb.a;
+                a2 = ardw.a;
             }
             r.f = a2.c;
         }
-        if ((arbc.b & 0x10) != 0x0) {
-            aiqj b;
-            if ((b = arbc.g) == null) {
-                b = aiqj.a;
+        if ((ardx.b & 0x10) != 0x0) {
+            aisc b;
+            if ((b = ardx.g) == null) {
+                b = aisc.a;
             }
             r.b = b;
         }
-        r.e(false);
-        r.h(tpe.bO(arbc));
-        r.a = arbc.f;
+        r.h(tqf.bO(ardx));
+        r.a = ardx.f;
         r.d(true);
         return r.a();
     }
@@ -165,19 +164,19 @@ public abstract class ShortsCreationSelectedTrack implements Parcelable
         return 0;
     }
     
-    public abstract ubk e();
+    public abstract ucq e();
     
-    public abstract aezp f();
+    public abstract afbh f();
     
-    public abstract aezp g();
+    public abstract afbh g();
     
-    public abstract aiqj h();
+    public abstract aisc h();
     
-    public abstract aiqj i();
+    public abstract aisc i();
     
-    public abstract aoek j();
+    public abstract aogr j();
     
-    public abstract aotp k();
+    public abstract aowb k();
     
     public abstract String l();
     
@@ -194,14 +193,13 @@ public abstract class ShortsCreationSelectedTrack implements Parcelable
     public final void writeToParcel(final Parcel parcel, int length) {
         parcel.writeString(this.n());
         parcel.writeLong(this.c());
-        parcel.writeInt((int)(this.p() ? 1 : 0));
         parcel.writeString(this.l());
         byte[] array;
         if (this.k() == null) {
             array = ShortsCreationSelectedTrack.a;
         }
         else {
-            array = ((agzk)this.k()).toByteArray();
+            array = ((ahbc)this.k()).toByteArray();
         }
         parcel.writeByteArray(array);
         parcel.writeString(this.m());
@@ -234,7 +232,7 @@ public abstract class ShortsCreationSelectedTrack implements Parcelable
         }
         parcel.writeInt(length);
         if (this.i() != null) {
-            parcel.writeByteArray(((agzk)this.i()).toByteArray());
+            parcel.writeByteArray(((ahbc)this.i()).toByteArray());
         }
         length = n;
         if (this.h() != null) {
@@ -242,7 +240,7 @@ public abstract class ShortsCreationSelectedTrack implements Parcelable
         }
         parcel.writeInt(length);
         if (this.h() != null) {
-            parcel.writeByteArray(((agzk)this.h()).toByteArray());
+            parcel.writeByteArray(((ahbc)this.h()).toByteArray());
         }
     }
 }

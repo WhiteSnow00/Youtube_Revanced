@@ -13,7 +13,7 @@ import android.content.Context;
 import android.widget.TextView;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.b;
 
-public final class c extends aazp implements com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.c
+public final class c extends abcq implements com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.shared.c
 {
     public b a;
     public boolean b;
@@ -26,6 +26,30 @@ public final class c extends aazp implements com.google.android.apps.youtube.emb
     
     public final ViewGroup$LayoutParams a() {
         return new ViewGroup$LayoutParams(-1, -1);
+    }
+    
+    public final /* bridge */ View c(final Context context) {
+        final com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.remoteloaded.b b = new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.hostappverificationerroroverlay.remoteloaded.b(this, context);
+        b.setBackgroundColor(-16777216);
+        LayoutInflater.from(context).inflate(2131624392, (ViewGroup)b);
+        this.d = (TextView)b.findViewById(2131428834);
+        return (View)b;
+    }
+    
+    public final /* bridge */ void e(final Context context, final View view) {
+        final FrameLayout frameLayout = (FrameLayout)view;
+        if (this.ab(1)) {
+            if (this.mm()) {
+                int text;
+                if (!this.b) {
+                    text = 2132018809;
+                }
+                else {
+                    text = 2132019522;
+                }
+                this.d.setText(text);
+            }
+        }
     }
     
     public final void m() {
@@ -44,7 +68,7 @@ public final class c extends aazp implements com.google.android.apps.youtube.emb
         this.aa();
     }
     
-    public final boolean oU() {
+    public final boolean oW() {
         return this.e;
     }
 }

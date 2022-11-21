@@ -7,7 +7,7 @@ package com.google.android.apps.youtube.embeddedplayer.service.service.jar;
 import android.os.RemoteException;
 import com.google.android.apps.youtube.embeddedplayer.service.jar.client.g;
 
-final class ApiPlayerService$ApiPlayerEmbedConfigProvider implements aegw
+final class ApiPlayerService$ApiPlayerEmbedConfigProvider implements aeip
 {
     public g a;
     
@@ -15,6 +15,7 @@ final class ApiPlayerService$ApiPlayerEmbedConfigProvider implements aegw
         this.a = a;
     }
     
+    @Override
     public final String a(String a) {
         final g a2 = this.a;
         if (a2 == null) {

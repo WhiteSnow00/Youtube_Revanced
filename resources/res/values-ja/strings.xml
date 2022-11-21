@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">デバイスのモードを使用する</string>
     <string name="app_theme_appearance_summary">ライト / ダークモードの設定を選択します</string>
     <string name="app_theme_appearance_title">デザイン</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">適用</string>
     <string name="approve_playlist_sync">新しい動画を同期</string>
     <string name="audio_playback_failed_snackbar_action_button">再試行</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">配信を終了</string>
     <string name="lc_retry_yes">再試行</string>
     <string name="lc_rotate_device">デバイスを回転させてください</string>
+    <string name="lc_sharedmde_required_field_error">タイトルと視聴者層は必須項目です。</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">縦向きで配信</string>
     <string name="lc_stream_start_error">ストリーミングを開始できません。接続を確認してください。</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">動画のプレビュー。タップして一時停止します。</string>
     <string name="shorts_a11y_video_preview_tap_to_play">動画のプレビュー。タップして再生します。</string>
     <string name="shorts_a11y_zoom_control">ズーム コントロール</string>
+    <string name="shorts_audio_failure_toast">音声を追加できませんでした。もう一度お試しください。</string>
     <string name="shorts_camera_allow_access_subtitle">カメラとマイクへのアクセスを許可してください</string>
     <string name="shorts_camera_allow_access_title">ショート動画の作成</string>
     <string name="shorts_camera_close_confirmation_cancel">キャンセル</string>

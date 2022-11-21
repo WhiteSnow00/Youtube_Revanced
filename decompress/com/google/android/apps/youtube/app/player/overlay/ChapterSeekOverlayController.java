@@ -6,35 +6,34 @@ package com.google.android.apps.youtube.app.player.overlay;
 
 import com.google.android.libraries.youtube.player.features.overlay.controls.ControlsState;
 import com.google.android.libraries.youtube.player.features.overlay.controls.ControlsOverlayStyle;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.android.libraries.youtube.player.features.overlay.timebar.TimelineMarker;
 
-public class ChapterSeekOverlayController implements itw, tfh, aayr
+public class ChapterSeekOverlayController implements ive, tio, abbw
 {
     public int a;
-    private final abns b;
-    private final abfc c;
+    private final abqz b;
+    private final abid c;
     private final boolean d;
-    private final asib e;
-    private final aays f;
+    private final aslm e;
+    private final abbx f;
     private boolean g;
     private boolean h;
     
-    public ChapterSeekOverlayController(final aays f, final abns b, final abfc c, final uyf uyf) {
+    public ChapterSeekOverlayController(final abbx f, final abqz b, final abid c, final vbo vbo) {
         this.f = f;
         this.b = b;
         this.c = c;
-        alvl alvl;
-        if ((alvl = uyf.b().e) == null) {
-            alvl = alvl.a;
+        alzp alzp;
+        if ((alzp = vbo.b().e) == null) {
+            alzp = alzp.a;
         }
-        this.d = alvl.aX;
-        this.e = new asib();
+        this.d = alzp.aV;
+        this.e = new aslm();
     }
     
-    public final void c(final TimelineMarker timelineMarker, final TimelineMarker timelineMarker2, final abcg abcg, int a) {
-        if (abcg == abcg.f) {
+    public final void c(final TimelineMarker timelineMarker, final TimelineMarker timelineMarker2, final abfg abfg, int a) {
+        if (abfg == abfg.f) {
             if (timelineMarker2 != null) {
                 long a2;
                 if (timelineMarker != null) {
@@ -46,7 +45,7 @@ public class ChapterSeekOverlayController implements itw, tfh, aayr
                 if (!this.g && !this.h) {
                     a = this.a;
                     if (a == 9 || a == 10) {
-                        final abfc c = this.c;
+                        final abid c = this.c;
                         if (!c.d) {
                             final CharSequence d = timelineMarker2.d;
                             if (timelineMarker2.a > a2) {
@@ -55,14 +54,13 @@ public class ChapterSeekOverlayController implements itw, tfh, aayr
                             else {
                                 a = 2;
                             }
-                            final abfi h = c.h;
+                            final abij h = c.h;
                             if (h != null) {
                                 h.a();
                                 ((TextView)h.f.a).setText(d);
                                 ((TextView)h.f.a).setWidth(h.c.getWidth() / 2);
                                 ((TextView)h.f.a).setTranslationX(0.0f);
                                 h.b.setTranslationX(0.0f);
-                                final LinearLayout b = h.b;
                                 float scaleX;
                                 if (a == 1) {
                                     scaleX = 1.0f;
@@ -70,12 +68,12 @@ public class ChapterSeekOverlayController implements itw, tfh, aayr
                                 else {
                                     scaleX = -1.0f;
                                 }
-                                b.setScaleX(scaleX);
-                                h.d.K();
+                                h.b.setScaleX(scaleX);
+                                h.d.L();
                                 h.e.b(true);
-                                h.a.b();
+                                h.a.c();
                                 h.f.b(true);
-                                ((TextView)h.f.a).postDelayed((Runnable)new abdq(h, 4), 650L);
+                                ((TextView)h.f.a).postDelayed((Runnable)new abgl(h, 5), 650L);
                             }
                         }
                     }
@@ -84,29 +82,108 @@ public class ChapterSeekOverlayController implements itw, tfh, aayr
         }
     }
     
-    @Override
-    public final void m(final boolean h) {
+    public final void d(final abfg abfg) {
+    }
+    
+    public final tik g() {
+        return tik.b;
+    }
+    
+    public final void i(final boolean b) {
+    }
+    
+    public final void j(final ControlsOverlayStyle controlsOverlayStyle) {
+    }
+    
+    public final void l(final ivh ivh) {
+    }
+    
+    public final void lW(final aup aup) {
+    }
+    
+    public final void m(final boolean b) {
+    }
+    
+    public final void mp(final aup aup) {
+    }
+    
+    public final void mx(final aup aup) {
+    }
+    
+    public final void n(final boolean h) {
         this.h = h;
     }
     
-    public final void oS(final aum aum) {
+    public final void oO(final aup aup) {
+    }
+    
+    public final void oS(final abfg abfg, final boolean b) {
+    }
+    
+    public final void oT(final aup aup) {
         if (!this.d) {
             return;
         }
-        this.e.c(((asgt)this.b.q().k).R().P(ashw.a()).am((asix)new isg(this, 14), (asix)irb.m));
-        this.f.i(abcg.f, (aayr)this);
+        this.e.c(((aske)this.b.p().k).R().P(aslh.a()).an((asmi)new itn(this, 15), (asmi)isj.m));
+        this.f.i(abfg.f, (abbw)this);
     }
     
-    public final void oW(final aum aum) {
+    public final void oU() {
+        tgj.d((tio)this);
+    }
+    
+    public final void oX() {
+        tgj.c((tio)this);
+    }
+    
+    public final void oY(final aup aup) {
         if (!this.d) {
             return;
         }
         this.e.b();
-        this.f.l(abcg.f, (aayr)this);
+        this.f.l(abfg.f, (abbw)this);
     }
     
-    @Override
-    public final void w(final boolean g) {
+    public final void oZ(final boolean b) {
+    }
+    
+    public final void pa(final ControlsState controlsState) {
+    }
+    
+    public final void pb(final tst tst) {
+    }
+    
+    public final void pc(final boolean b) {
+    }
+    
+    public final void pd(final boolean b) {
+    }
+    
+    public final void r(final boolean b) {
+    }
+    
+    public final void s(final fku fku) {
+    }
+    
+    public final void t(final boolean b) {
+    }
+    
+    public final void u(final boolean b) {
+    }
+    
+    public final void v(final boolean b) {
+    }
+    
+    public final void w(final boolean b) {
+    }
+    
+    public final void x(final boolean g) {
         this.g = g;
+    }
+    
+    public final void y(final int n) {
+    }
+    
+    public final void z(final boolean b) {
     }
 }

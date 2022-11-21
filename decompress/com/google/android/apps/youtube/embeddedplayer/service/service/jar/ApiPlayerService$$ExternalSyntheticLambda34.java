@@ -8,7 +8,7 @@ import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.contro
 
 public final class ApiPlayerService$$ExternalSyntheticLambda34 implements Runnable
 {
-    public d a;
+    public final d a;
     
     public ApiPlayerService$$ExternalSyntheticLambda34(final d a) {
         this.a = a;

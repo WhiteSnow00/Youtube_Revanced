@@ -12,15 +12,27 @@ import java.lang.reflect.Method;
 
 public final class EmbeddingCompat$Companion
 {
+    public static atnn $r8$lambda$6PyLpcVV902c0I_YKmt66yyoLX0(final Object o, final Method method, final Object[] array) {
+        return embeddingComponent$lambda$1(o, method, array);
+    }
+    
+    public static atnn $r8$lambda$LYyK7ytY5mU8W4eb_Z4KEMQSr64(final Object o, final Method method, final Object[] array) {
+        return embeddingComponent$lambda$0(o, method, array);
+    }
+    
     private EmbeddingCompat$Companion() {
     }
     
-    private static final atjv embeddingComponent$lambda$0(final Object o, final Method method, final Object[] array) {
-        return atjv.a;
+    public EmbeddingCompat$Companion(final atqv atqv) {
+        this();
     }
     
-    private static final atjv embeddingComponent$lambda$1(final Object o, final Method method, final Object[] array) {
-        return atjv.a;
+    private static final atnn embeddingComponent$lambda$0(final Object o, final Method method, final Object[] array) {
+        return atnn.a;
+    }
+    
+    private static final atnn embeddingComponent$lambda$1(final Object o, final Method method, final Object[] array) {
+        return atnn.a;
     }
     
     public final ActivityEmbeddingComponent embeddingComponent() {

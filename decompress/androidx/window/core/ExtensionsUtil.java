@@ -13,15 +13,14 @@ public final class ExtensionsUtil
     
     static {
         INSTANCE = new ExtensionsUtil();
-        TAG = atno.b((Class)ExtensionsUtil.class).c();
+        TAG = atrg.b(ExtensionsUtil.class).c();
     }
     
     private ExtensionsUtil() {
     }
     
     public final int getSafeVendorApiLevel() {
-        final boolean b = false;
-        int vendorApiLevel;
+        int vendorApiLevel = 0;
         try {
             vendorApiLevel = WindowExtensionsProvider.getWindowExtensions().getVendorApiLevel();
         }
@@ -29,10 +28,8 @@ public final class ExtensionsUtil
             if (BuildConfig.INSTANCE.getVerificationMode() == VerificationMode.LOG) {
                 return 0;
             }
-            vendorApiLevel = (b ? 1 : 0);
         }
         catch (final NoClassDefFoundError noClassDefFoundError) {
-            vendorApiLevel = (b ? 1 : 0);
             if (BuildConfig.INSTANCE.getVerificationMode() != VerificationMode.LOG) {}
         }
         return vendorApiLevel;

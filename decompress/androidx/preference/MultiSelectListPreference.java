@@ -15,15 +15,15 @@ import java.util.Set;
 
 public class MultiSelectListPreference extends DialogPreference
 {
-    public CharSequence[] g;
-    public CharSequence[] h;
-    public Set i;
+    public final CharSequence[] g;
+    public final CharSequence[] h;
+    public final Set i;
     
     public MultiSelectListPreference(final Context context, final AttributeSet set) {
-        final int c = vh.c(context, 2130969243, 16842897);
+        final int c = vh.c(context, 2130969241, 16842897);
         super(context, set, c, 0);
         this.i = new HashSet();
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, cfk.f, c, 0);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, cfn.f, c, 0);
         this.g = vh.k(obtainStyledAttributes, 2, 0);
         this.h = vh.k(obtainStyledAttributes, 3, 1);
         obtainStyledAttributes.recycle();

@@ -16,14 +16,27 @@ public class VideoQuality implements Comparable, Parcelable
     private final boolean c;
     
     static {
-        CREATOR = (Parcelable$Creator)new uik(15);
+        CREATOR = (Parcelable$Creator)new ulj(15);
     }
     
     public VideoQuality(final int a, final String b, final boolean c) {
         this.a = a;
-        tsx.n(b);
+        twd.n(b);
         this.b = b;
         this.c = c;
+    }
+    
+    public VideoQuality(final FormatStreamModel formatStreamModel) {
+        this(formatStreamModel.f(), formatStreamModel.u(), formatStreamModel.J());
+    }
+    
+    @Override
+    public final /* bridge */ int compareTo(final Object o) {
+        final VideoQuality videoQuality = (VideoQuality)o;
+        if (videoQuality == null) {
+            return 1;
+        }
+        return this.a - videoQuality.a;
     }
     
     public final int describeContents() {

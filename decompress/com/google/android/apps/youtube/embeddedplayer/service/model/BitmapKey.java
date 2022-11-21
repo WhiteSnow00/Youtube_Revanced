@@ -15,7 +15,7 @@ public class BitmapKey implements Parcelable
     public final int b;
     
     static {
-        CREATOR = (Parcelable$Creator)new ics(12);
+        CREATOR = (Parcelable$Creator)new idb(12);
     }
     
     public BitmapKey(final int a, final int b) {

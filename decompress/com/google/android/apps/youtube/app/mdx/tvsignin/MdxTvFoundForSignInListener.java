@@ -13,36 +13,36 @@ import android.os.Looper;
 import android.os.Handler;
 import java.util.concurrent.Executor;
 
-public class MdxTvFoundForSignInListener implements thl, xrk, tgg
+public class MdxTvFoundForSignInListener implements tio, xst, thj
 {
-    public final arkg a;
-    public final arkg b;
-    public final atke c;
-    public final arkg d;
+    public final arna a;
+    public final arna b;
+    public final atnb c;
+    public final arna d;
     public final Executor e;
     public boolean f;
     public boolean g;
     public boolean h;
-    public aezp i;
-    public aezp j;
-    private final arkg k;
-    private final arkg l;
-    private final arkg m;
-    private final arkg n;
-    private final arkg o;
-    private final xfl p;
+    public afbh i;
+    public afbh j;
+    private final arna k;
+    private final arna l;
+    private final arna m;
+    private final arna n;
+    private final arna o;
+    private final xgt p;
     private final Handler q;
-    private final xbt r;
-    private final arkg s;
-    private final arkg t;
-    private final asiq u;
-    private final arkg v;
+    private final xda r;
+    private final arna s;
+    private final arna t;
+    private final aslm u;
+    private final arna v;
     
-    public MdxTvFoundForSignInListener(final arkg k, final arkg o, final arkg l, final arkg m, final arkg n, final arkg a, final arkg b, final atke c, final arkg d, final Executor e, final xbt r, final xfl p15, final arkg s, final arkg t, final arkg v) {
-        this.u = new asiq();
-        final aeyo a2 = aeyo.a;
-        this.i = (aezp)a2;
-        this.j = (aezp)a2;
+    public MdxTvFoundForSignInListener(final arna k, final arna o, final arna l, final arna m, final arna n, final arna a, final arna b, final atnb c, final arna d, final Executor e, final xda r, final xgt p15, final arna s, final arna t, final arna v) {
+        this.u = new aslm();
+        final afag a2 = afag.a;
+        this.i = a2;
+        this.j = a2;
         this.k = k;
         this.o = o;
         this.l = l;
@@ -62,28 +62,28 @@ public class MdxTvFoundForSignInListener implements thl, xrk, tgg
     }
     
     public static void k(final Throwable t) {
-        ttr.f("MdxTvFFSignInListener", "Failed to store passive last time shown.", t);
+        tut.f("MdxTvFFSignInListener", "Failed to store passive last time shown.", t);
     }
     
     public static void l(final Throwable t) {
-        ttr.f("MdxTvFFSignInListener", "Failed to denylist screen after successfully finishing.", t);
+        tut.f("MdxTvFFSignInListener", "Failed to denylist screen after successfully finishing.", t);
     }
     
-    public final thh g() {
-        return thh.b;
+    public final tik g() {
+        return tik.b;
     }
     
-    public final void j(final xrg xrg) {
-        final fkr j = ((fjv)this.o.a()).j();
-        final int a = xrg.a();
+    public final void j(final xsp xsp) {
+        final fku j = ((fjy)this.o.a()).j();
+        final int a = xsp.a();
         int n = 0;
-        if (a == 0 || xrg.a() == 1) {
-            final boolean b = j != fkr.a || (((xnt)this.n.a()).g() != null && ((xnt)this.n.a()).g().v() != null);
-            if (xrg.a() == 1 && this.f && this.j.h() && (boolean)this.j.c()) {
-                if (((xbv)this.t.a()).ay) {
-                    final Iterator iterator = ((xnj)this.s.a()).f().iterator();
+        if (a == 0 || xsp.a() == 1) {
+            final boolean b = j != fku.a || (((xpf)this.n.a()).g() != null && ((xpf)this.n.a()).g().v() != null);
+            if (xsp.a() == 1 && this.f && this.j.h() && (boolean)this.j.c()) {
+                if (((xdc)this.t.a()).ay) {
+                    final Iterator iterator = ((xov)this.s.a()).f().iterator();
                     while (iterator.hasNext()) {
-                        final AppStatus a2 = ((xje)iterator.next()).a;
+                        final AppStatus a2 = ((xkp)iterator.next()).a;
                         if (a2 != null && a2.a() == 1 && a2.e() != null) {
                             ++n;
                         }
@@ -92,19 +92,19 @@ public class MdxTvFoundForSignInListener implements thl, xrk, tgg
                         return;
                     }
                 }
-                this.q.postDelayed((Runnable)new hss(this, xrg, b, 2), TimeUnit.SECONDS.toMillis(2L));
+                this.q.postDelayed((Runnable)new hta(this, xsp, b, 2), TimeUnit.SECONDS.toMillis(2L));
                 return;
             }
-            if (xrg.a() == 0 && this.g) {
-                ((gbc)this.b.a()).e(true);
-                this.n(xrg.d(), b);
+            if (xsp.a() == 0 && this.g) {
+                ((gbh)this.b.a()).e(true);
+                this.n(xsp.d(), b);
             }
         }
-        if ((!j.k() && j != fkr.g && j != fkr.e) || xrg.a() != 2) {
-            if (xrg.a() == 2 && this.h) {
+        if ((!j.k() && j != fku.g && j != fku.e) || xsp.a() != 2) {
+            if (xsp.a() == 2 && this.h) {
                 final MdxAssistedTvSignInDialogFragmentController mdxAssistedTvSignInDialogFragmentController = (MdxAssistedTvSignInDialogFragmentController)this.k.a();
                 if (!mdxAssistedTvSignInDialogFragmentController.b.getBoolean("MdxDisableMdxAssistedSignInTvDenylist", false)) {
-                    final String concat = "mdx.mdx_assisted_tv_sign_in_last_shown_time_ms_".concat(((xjr)xrg.c()).b);
+                    final String concat = "mdx.mdx_assisted_tv_sign_in_last_shown_time_ms_".concat(((xlc)xsp.c()).b);
                     final long millis = TimeUnit.DAYS.toMillis(mdxAssistedTvSignInDialogFragmentController.d);
                     if (mdxAssistedTvSignInDialogFragmentController.b.contains(concat)) {
                         final long long1 = mdxAssistedTvSignInDialogFragmentController.b.getLong(concat, 0L);
@@ -119,11 +119,11 @@ public class MdxTvFoundForSignInListener implements thl, xrk, tgg
                 }
                 ((DialogFragmentController)mdxAssistedTvSignInDialogFragmentController).k();
                 if (((DialogFragmentController)mdxAssistedTvSignInDialogFragmentController).i() == null) {
-                    final xrd a3 = mdxAssistedTvSignInDialogFragmentController.a;
-                    final ibo ibo = new ibo();
-                    ibo.ag = a3;
-                    aepz.e((br)ibo, ((zlv)mdxAssistedTvSignInDialogFragmentController.g.a()).a(((zmf)mdxAssistedTvSignInDialogFragmentController.f.a()).c()));
-                    ((DialogFragmentController)mdxAssistedTvSignInDialogFragmentController).pQ((bi)ibo);
+                    final xsm a3 = mdxAssistedTvSignInDialogFragmentController.a;
+                    final ibx ibx = new ibx();
+                    ibx.ag = a3;
+                    aers.e((br)ibx, ((znq)mdxAssistedTvSignInDialogFragmentController.g.a()).a(((zoa)mdxAssistedTvSignInDialogFragmentController.f.a()).c()));
+                    ((DialogFragmentController)mdxAssistedTvSignInDialogFragmentController).pP((bi)ibx);
                 }
             }
             return;
@@ -131,22 +131,19 @@ public class MdxTvFoundForSignInListener implements thl, xrk, tgg
         ((MdxAssistedTvSignInDialogFragmentController)this.k.a()).g();
     }
     
-    public final void lW(final aun aun) {
+    public final void lW(final aup aup) {
     }
     
     public final void m(final Optional optional, final int n) {
         if (n == 1 && optional.isPresent()) {
-            teu.m(((qqr)this.c.a()).b((aezf)new hxb((xiz)optional.get(), 3), this.e), (tes)gnn.n);
+            tfx.m(((qrk)this.c.a()).b((afax)new hxi((xkk)optional.get(), 3), this.e), (tfv)gny.m);
         }
     }
     
-    public final void mM(final aun aun) {
+    public final void mp(final aup aup) {
     }
     
-    public final void mq(final aun aun) {
-    }
-    
-    public final Class[] ms(final Class clazz, final Object o, final int n) {
+    public final Class[] mr(final Class clazz, final Object o, final int n) {
         Class[] array;
         if (n != -1) {
             if (n != 0) {
@@ -154,47 +151,50 @@ public class MdxTvFoundForSignInListener implements thl, xrk, tgg
                 sb.append(n);
                 throw new IllegalStateException(sb.toString());
             }
-            final xrg xrg = (xrg)o;
-            final boolean e = xrg.e();
+            final xsp xsp = (xsp)o;
+            final boolean e = xsp.e();
             array = null;
             if (e) {
-                if (xrg.a() != 1) {
-                    this.j(xrg);
+                if (xsp.a() != 1) {
+                    this.j(xsp);
                 }
                 else if (!this.j.h()) {
-                    this.i = aezp.k((Object)xrg);
+                    this.i = afbh.k(xsp);
                 }
                 else {
-                    this.j(xrg);
+                    this.j(xsp);
                 }
             }
         }
         else {
-            array = new Class[] { xrg.class };
+            array = new Class[] { xsp.class };
         }
         return array;
     }
     
-    public final void my(final aun aun) {
+    public final void mx(final aup aup) {
     }
     
     public final boolean n(final String s, final boolean b) {
-        return ((xqr)this.l.a()).a((fa)this.m.a(), ((fa)this.m.a()).getString(2132018586, new Object[] { s }), aezp.k((Object)((fa)this.m.a()).getString(2132018585)), b);
+        return ((xsa)this.l.a()).a((fa)this.m.a(), ((fa)this.m.a()).getString(2132018588, new Object[] { s }), afbh.k(((fa)this.m.a()).getString(2132018587)), b);
     }
     
-    public final void oS(final aun aun) {
-        this.u.f(new asir[] { this.r.r().q(tpe.cl(((msr)this.v.a()).K())).aH((asjm)new iad(this, 8)), this.r.s().q(tpe.cl(((msr)this.v.a()).K())).aH((asjm)new iad(this, 9)), this.r.k().q(tpe.cl(((msr)this.v.a()).K())).aH((asjm)new iad(this, 7)), ((asht)this.p.a).q(tpe.cl(((msr)this.v.a()).K())).aH((asjm)new iad(this, 6)) });
+    public final void oO(final aup aup) {
     }
     
-    public final void oT() {
-        tfg.c((thl)this);
+    public final void oT(final aup aup) {
+        this.u.f(this.r.r().q(tqf.cl(((mtf)this.v.a()).q())).aH((asmi)new iam(this, 10)), this.r.s().q(tqf.cl(((mtf)this.v.a()).q())).aH((asmi)new iam(this, 11)), this.r.k().q(tqf.cl(((mtf)this.v.a()).q())).aH((asmi)new iam(this, 9)), ((askp)this.p.a).q(tqf.cl(((mtf)this.v.a()).q())).aH((asmi)new iam(this, 8)));
     }
     
-    public final void oW() {
-        tfg.b((thl)this);
+    public final void oU() {
+        tgj.d((tio)this);
     }
     
-    public final void oX(final aun aun) {
+    public final void oX() {
+        tgj.c((tio)this);
+    }
+    
+    public final void oY(final aup aup) {
         this.u.b();
     }
 }

@@ -14,6 +14,10 @@ public final class ExtensionEmbeddingBackend$Companion
     private ExtensionEmbeddingBackend$Companion() {
     }
     
+    public ExtensionEmbeddingBackend$Companion(final atqv atqv) {
+        this();
+    }
+    
     private final EmbeddingInterfaceCompat initAndVerifyEmbeddingExtension() {
         final EmbeddingInterfaceCompat embeddingInterfaceCompat = null;
         EmbeddingInterfaceCompat embeddingInterfaceCompat2 = null;

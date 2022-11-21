@@ -17,16 +17,16 @@ public abstract class ReelItemEditModel implements Parcelable
     public static final Parcelable$Creator CREATOR;
     
     static {
-        CREATOR = (Parcelable$Creator)new fzn(14);
+        CREATOR = (Parcelable$Creator)new fzs(14);
     }
     
-    public static hjm g() {
-        final hjm hjm = new hjm();
-        hjm.c(false);
-        return hjm;
+    public static hju g() {
+        final hju hju = new hju();
+        hju.c(false);
+        return hju;
     }
     
-    public abstract hjm a();
+    public abstract hju a();
     
     public abstract EditableVideoEdits b();
     

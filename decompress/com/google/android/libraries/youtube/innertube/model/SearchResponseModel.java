@@ -9,27 +9,27 @@ import android.os.Parcel;
 import android.os.Parcelable$Creator;
 import android.os.Parcelable;
 
-public class SearchResponseModel implements Parcelable, abxy
+public class SearchResponseModel implements Parcelable, acbl
 {
     public static final Parcelable$Creator CREATOR;
-    public akww a;
-    private veu b;
+    public final alaz a;
+    private vic b;
     private Object c;
     
     static {
-        CREATOR = (Parcelable$Creator)new uik(8);
+        CREATOR = (Parcelable$Creator)new ulj(8);
     }
     
-    public SearchResponseModel(final akww a) {
+    public SearchResponseModel(final alaz a) {
         this.a = a;
     }
     
-    public final ansr a() {
-        ansr ansr;
-        if ((ansr = this.a.g) == null) {
-            ansr = ansr.a;
+    public final anxa a() {
+        anxa anxa;
+        if ((anxa = this.a.g) == null) {
+            anxa = anxa.a;
         }
-        return ansr;
+        return anxa;
     }
     
     public final Object b() {
@@ -48,22 +48,22 @@ public class SearchResponseModel implements Parcelable, abxy
         return 0;
     }
     
-    public final veu e() {
-        final veu b = this.b;
+    public final vic e() {
+        final vic b = this.b;
         if (b != null) {
             return b;
         }
-        akwx akwx;
-        if ((akwx = this.a.e) == null) {
-            akwx = akwx.a;
+        alba alba;
+        if ((alba = this.a.e) == null) {
+            alba = alba.a;
         }
-        if (akwx.b == 49399797) {
-            this.b = new veu((anws)akwx.c);
+        if (alba.b == 49399797) {
+            this.b = new vic((aobc)alba.c);
         }
         return this.b;
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        uji.ag((MessageLite)this.a, parcel);
+        ume.ad((MessageLite)this.a, parcel);
     }
 }

@@ -12,18 +12,18 @@ import android.widget.LinearLayout;
 
 public final class CameraToolbarLayout extends LinearLayout
 {
-    public pvh a;
+    public oqz a;
     
     public CameraToolbarLayout(final Context context, final AttributeSet set) {
         super(context, set);
     }
     
     public final boolean onInterceptTouchEvent(final MotionEvent motionEvent) {
-        final pvh a = this.a;
+        final oqz a = this.a;
         if (a != null) {
-            final EffectsFeatureDescriptionView ao = ((gww)a.a).ao;
-            if (ao != null) {
-                ao.d();
+            final EffectsFeatureDescriptionView an = ((gxg)a.a).an;
+            if (an != null) {
+                an.d();
             }
         }
         return false;

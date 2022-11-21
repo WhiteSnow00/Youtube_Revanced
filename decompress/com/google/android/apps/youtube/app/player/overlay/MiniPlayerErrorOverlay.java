@@ -11,60 +11,53 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.content.Context;
 
-public class MiniPlayerErrorOverlay implements fqb, aazr, tfh
+public class MiniPlayerErrorOverlay implements fqm, abcs, tio
 {
     public boolean a;
     public boolean b;
     private final Context c;
-    private final abns d;
-    private final asib e;
-    private final asho f;
+    private final abqz d;
+    private final aslm e;
+    private final askz f;
     private View g;
-    private aazq h;
-    private fkk i;
+    private abcr h;
+    private fku i;
     
-    public MiniPlayerErrorOverlay(final Context c, final abns d, final asho f) {
-        this.i = fkk.a;
+    public MiniPlayerErrorOverlay(final Context c, final abqz d, final askz f) {
+        this.i = fku.a;
         this.c = c;
         this.d = d;
-        this.e = new asib();
+        this.e = new aslm();
         this.f = f;
     }
     
     private final void l() {
-        if (this.mn()) {
+        if (this.mm()) {
             return;
         }
-        final View inflate = LayoutInflater.from(this.c).inflate(2131624833, (ViewGroup)null);
+        final View inflate = LayoutInflater.from(this.c).inflate(2131624836, (ViewGroup)null);
         this.g = inflate;
-        final aazq h = this.h;
+        final abcr h = this.h;
         if (h != null) {
-            h.d((aazr)this, inflate);
+            h.d((abcs)this, inflate);
         }
         this.a = (inflate.getParent() != null);
-        inflate.addOnAttachStateChangeListener((View$OnAttachStateChangeListener)new ie(this, 5));
+        inflate.addOnAttachStateChangeListener((View$OnAttachStateChangeListener)new if(this, 5));
     }
     
     public final ViewGroup$LayoutParams a() {
         return new ViewGroup$LayoutParams(-1, -1);
     }
     
-    @Override
-    public final void j(final fkk i) {
-        if (this.i == i) {
-            return;
-        }
-        this.i = i;
-        if (!this.mn()) {
-            this.k();
-        }
+    public final tik g() {
+        return tik.b;
     }
     
-    public final void k() {
-        if (!this.mn() && this.ow(this.i) && this.b) {
+    public final void j() {
+        if (!this.mm() && this.ot(this.i) && this.b) {
             this.l();
         }
-        if (!this.mn()) {
+        if (!this.mm()) {
             return;
         }
         final View g = this.g;
@@ -76,7 +69,20 @@ public class MiniPlayerErrorOverlay implements fqb, aazr, tfh
                 b2 = true;
             }
         }
-        tmy.v(g, b2);
+        tqf.v(g, b2);
+    }
+    
+    public final void k(final fku i) {
+        if (this.i == i) {
+            return;
+        }
+        this.i = i;
+        if (!this.mm()) {
+            this.j();
+        }
+    }
+    
+    public final void lW(final aup aup) {
     }
     
     public final View md() {
@@ -86,29 +92,45 @@ public class MiniPlayerErrorOverlay implements fqb, aazr, tfh
         return g;
     }
     
-    public final void ml(final aazq h) {
+    public final void ml(final abcr h) {
         this.h = h;
     }
     
-    public final boolean mn() {
+    public final boolean mm() {
         return this.g != null;
     }
     
-    public final String mr() {
+    public final void mp(final aup aup) {
+    }
+    
+    public final String mq() {
         return "player_overlay_mini_player_error";
     }
     
-    public final void oS(final aum aum) {
-        this.e.c(((asgt)this.d.q().h).R().P(this.f).am((asix)new ivc(this, 16), (asix)irb.t));
-        this.e.c(((asgt)this.d.q().k).R().P(this.f).am((asix)new ivc(this, 17), (asix)irb.t));
+    public final void mx(final aup aup) {
     }
     
-    public final void oW(final aum aum) {
+    public final void oO(final aup aup) {
+    }
+    
+    public final void oT(final aup aup) {
+        this.e.c(((aske)this.d.p().h).R().P(this.f).an((asmi)new iwh(this, 18), (asmi)isj.t));
+        this.e.c(((aske)this.d.p().k).R().P(this.f).an((asmi)new iwh(this, 19), (asmi)isj.t));
+    }
+    
+    public final void oU() {
+        tgj.d((tio)this);
+    }
+    
+    public final void oX() {
+        tgj.c((tio)this);
+    }
+    
+    public final void oY(final aup aup) {
         this.e.b();
     }
     
-    @Override
-    public final boolean ow(final fkk fkk) {
-        return fkk.m() || fkk == fkk.g;
+    public final boolean ot(final fku fku) {
+        return fku.m() || fku == fku.g;
     }
 }

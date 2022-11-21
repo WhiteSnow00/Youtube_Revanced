@@ -9,7 +9,7 @@ public final class FoldingFeature$State$Companion
     private FoldingFeature$State$Companion() {
     }
     
-    public FoldingFeature$State$Companion(final atny atny) {
+    public FoldingFeature$State$Companion(final atqv atqv) {
         this();
     }
 }

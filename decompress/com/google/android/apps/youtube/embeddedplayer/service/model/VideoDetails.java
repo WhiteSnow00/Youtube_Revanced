@@ -18,11 +18,11 @@ public abstract class VideoDetails implements Parcelable
         CREATOR = (Parcelable$Creator)new f(5);
     }
     
-    public static mqu c() {
-        final mqu mqu = new mqu();
-        mqu.d(VideoDetailsCollapsed.a);
-        mqu.e(VideoDetailsExpanded.a);
-        return mqu;
+    public static mri c() {
+        final mri mri = new mri();
+        mri.d(VideoDetailsCollapsed.a);
+        mri.e(VideoDetailsExpanded.a);
+        return mri;
     }
     
     public abstract VideoDetailsCollapsed a();

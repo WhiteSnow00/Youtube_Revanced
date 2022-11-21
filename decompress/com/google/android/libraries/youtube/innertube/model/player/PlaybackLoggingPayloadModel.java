@@ -12,16 +12,34 @@ import android.os.Parcelable;
 public class PlaybackLoggingPayloadModel implements Comparable, Parcelable
 {
     public static final Parcelable$Creator CREATOR;
-    public final agyc a;
+    public final ahbt a;
     public final int b;
     
     static {
-        CREATOR = (Parcelable$Creator)new uik(18);
+        CREATOR = (Parcelable$Creator)new ulj(18);
     }
     
-    public PlaybackLoggingPayloadModel(final andn andn) {
-        this.a = andn.c;
-        this.b = andn.d;
+    public PlaybackLoggingPayloadModel(final anhy anhy) {
+        this.a = anhy.c;
+        this.b = anhy.d;
+    }
+    
+    @Override
+    public final /* bridge */ int compareTo(final Object o) {
+        final PlaybackLoggingPayloadModel playbackLoggingPayloadModel = (PlaybackLoggingPayloadModel)o;
+        final int b = this.b;
+        final int b2 = playbackLoggingPayloadModel.b;
+        int n;
+        if (b != b2) {
+            if (b < b2) {
+                return -1;
+            }
+            n = 1;
+        }
+        else {
+            n = 0;
+        }
+        return n;
     }
     
     public final int describeContents() {

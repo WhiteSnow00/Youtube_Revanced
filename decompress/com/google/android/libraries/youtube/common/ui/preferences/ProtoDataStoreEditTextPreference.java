@@ -14,17 +14,17 @@ import android.util.AttributeSet;
 import android.content.Context;
 import androidx.preference.EditTextPreference;
 
-public class ProtoDataStoreEditTextPreference extends EditTextPreference implements tsh
+public class ProtoDataStoreEditTextPreference extends EditTextPreference implements ttk
 {
-    private tsf G;
-    private aemc H;
+    private tth G;
+    private aenv H;
     private Object I;
-    private tqd h;
-    private aun i;
+    private tre h;
+    private aup i;
     
     public ProtoDataStoreEditTextPreference(final Context context, final AttributeSet set) {
         super(context, set);
-        adkp.I(TextUtils.isEmpty((CharSequence)((Preference)this).s) ^ true, "Make sure key attribute is set in the xml file.");
+        adme.L(TextUtils.isEmpty((CharSequence)((Preference)this).s) ^ true, "Make sure key attribute is set in the xml file.");
     }
     
     public final void F(final Object o) {
@@ -35,11 +35,11 @@ public class ProtoDataStoreEditTextPreference extends EditTextPreference impleme
     public final boolean R(final Object o) {
         final boolean r = super.R(o);
         if (r) {
-            final aun i = this.i;
+            final aup i = this.i;
             final ListenableFuture b = this.G.b(o);
-            final tqd h = this.h;
+            final tre h = this.h;
             h.getClass();
-            teu.n(i, b, (ttg)new spu(h, 19), (ttg)new stt(10));
+            tfx.n(i, b, (tui)new tti(h, 1), (tui)new sus(10));
         }
         return r;
     }
@@ -47,23 +47,23 @@ public class ProtoDataStoreEditTextPreference extends EditTextPreference impleme
     protected final void Z(final String s) {
     }
     
-    public final void ah(final tqd h) {
+    public final void ah(final tre h) {
         h.getClass();
         this.h = h;
     }
     
-    public final void ai(final aun i) {
+    public final void ai(final aup i) {
         this.i = i;
     }
     
     public final void aj(final Map map) {
-        final tsf g = map.get(((Preference)this).s);
+        final tth g = map.get(((Preference)this).s);
         g.getClass();
         this.G = g;
         final String s = (String)this.I;
-        final aemc h = new aemc((afty)new qqz(teu.b(this.i, g.a(), (aezf)new sts(this, 10)), 3), (Executor)afum.a);
+        final aenv h = new aenv((afvp)new qrs(tfx.b(this.i, g.a(), (afax)new sur(this, 10)), 3), (Executor)afwd.a);
         this.H = h;
-        teu.n(this.i, h.c(), (ttg)new sxu(this, s, 13), (ttg)new spu(this, 20));
+        tfx.n(this.i, h.c(), (tui)new syx(this, s, 14), (tui)new tti(this, 0));
     }
     
     @Override

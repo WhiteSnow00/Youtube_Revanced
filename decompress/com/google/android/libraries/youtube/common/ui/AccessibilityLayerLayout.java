@@ -25,33 +25,33 @@ public class AccessibilityLayerLayout extends FrameLayout
         super(context, set);
         this.f = false;
         this.g = false;
-        new tpb(this);
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, tqs.a);
+        new tqc(this);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, trt.a);
         this.a = obtainStyledAttributes.getResourceId(0, 0);
         final int resourceId = obtainStyledAttributes.getResourceId(1, 0);
         this.b = resourceId;
         obtainStyledAttributes.recycle();
         this.c = this.findViewById(this.a);
         this.d = this.findViewById(resourceId);
-        anb.N((View)this, (akw)new tpa(this));
-        anb.X((View)this, 1);
-        this.setOnHierarchyChangeListener((ViewGroup$OnHierarchyChangeListener)new tpc(this, 0));
+        anc.N((View)this, (akx)new tqb(this));
+        anc.X((View)this, 1);
+        this.setOnHierarchyChangeListener((ViewGroup$OnHierarchyChangeListener)new tqd(this, 0));
     }
     
     public final void a() {
         for (int i = 0; i < this.getChildCount(); ++i) {
             final View child = this.getChildAt(i);
             if (this.e(child)) {
-                anb.X(child, 0);
+                anc.X(child, 0);
             }
             else {
-                anb.X(child, 4);
+                anc.X(child, 4);
             }
         }
     }
     
     public final void b(final View c) {
-        if (c != null && tpe.z((View)this, c)) {
+        if (c != null && tqf.z((View)this, c)) {
             this.a = c.getId();
             this.c = c;
             this.c(true);

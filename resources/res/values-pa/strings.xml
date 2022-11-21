@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">ਡੀਵਾਈਸ ਥੀਮ ਵਰਤੋ</string>
     <string name="app_theme_appearance_summary">ਆਪਣੀ ਹਲਕੇ ਜਾਂ ਗੂੜ੍ਹੇ ਥੀਮ ਦੀ ਤਰਜੀਹ ਚੁਣੋ</string>
     <string name="app_theme_appearance_title">ਦਿੱਖ</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">ਲਾਗੂ ਕਰੋ</string>
     <string name="approve_playlist_sync">ਨਵੇਂ ਵਿਡੀਓਜ਼ ਸਿੰਕ ਕਰੋ</string>
     <string name="audio_playback_failed_snackbar_action_button">ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">ਸਟ੍ਰੀਮ ਸਮਾਪਤ ਕਰੋ</string>
     <string name="lc_retry_yes">ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
     <string name="lc_rotate_device">ਡੀਵਾਈਸ ਘੁੰਮਾਓ</string>
+    <string name="lc_sharedmde_required_field_error">ਸਿਰਲੇਖ ਅਤੇ ਦਰਸ਼ਕ ਲੋੜੀਂਦੇ ਹਨ।</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">ਸਟ੍ਰੀਮ ਪੋਰਟਰੇਟ ਮੋਡ ਵਿੱਚ ਹੋਵੇਗਾ</string>
     <string name="lc_stream_start_error">ਸਟ੍ਰੀਮ ਸ਼ੁਰੂ ਨਹੀਂ ਹੋ ਸਕੀ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ।</string>
@@ -1728,6 +1729,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">ਵੀਡੀਓ ਦੀ ਪੂਰਵ-ਝਲਕ। ਰੋਕਣ ਲਈ ਟੈਪ ਕਰੋ।</string>
     <string name="shorts_a11y_video_preview_tap_to_play">ਵੀਡੀਓ ਦੀ ਪੂਰਵ-ਝਲਕ। ਚਲਾਉਣ ਲਈ ਟੈਪ ਕਰੋ।</string>
     <string name="shorts_a11y_zoom_control">ਜ਼ੂਮ ਕੰਟਰੋਲ</string>
+    <string name="shorts_audio_failure_toast">ਧੁਨੀ ਨੂੰ ਸ਼ਾਮਲ ਕਰਨਾ ਅਸਫਲ ਰਿਹਾ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
     <string name="shorts_camera_allow_access_subtitle">ਆਪਣੇ ਕੈਮਰੇ ਅਤੇ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦਿਓ</string>
     <string name="shorts_camera_allow_access_title">ਇੱਕ Short ਬਣਾਓ</string>
     <string name="shorts_camera_close_confirmation_cancel">ਰੱਦ ਕਰੋ</string>

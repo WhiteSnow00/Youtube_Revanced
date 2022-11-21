@@ -24,7 +24,7 @@ public final class b extends a
         final TextView textView2 = (TextView)view.findViewById(2131429588);
         final TextView textView3 = (TextView)view.findViewById(2131429587);
         final ImageView imageView2 = (ImageView)view.findViewById(2131429581);
-        kzr.h((a)this, view, textView, imageView, textView3, textView2);
+        jzq.s((a)this, view, textView, imageView, textView3, textView2);
         if (this.i) {
             imageView2.setVisibility(0);
             return;

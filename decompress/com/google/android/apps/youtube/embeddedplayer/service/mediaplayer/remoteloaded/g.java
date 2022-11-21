@@ -31,7 +31,7 @@ public final class g implements TextureView$SurfaceTextureListener
             this.a.b(surface);
         }
         catch (final RemoteException ex) {
-            mft.v(ex);
+            lma.y(ex);
         }
         final h b = this.b;
         if (b != null) {
@@ -46,7 +46,7 @@ public final class g implements TextureView$SurfaceTextureListener
                 a.g();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
             final h b = this.b;
             if (b != null) {
@@ -63,7 +63,7 @@ public final class g implements TextureView$SurfaceTextureListener
                 a.a(n, n2);
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -75,7 +75,7 @@ public final class g implements TextureView$SurfaceTextureListener
                 a.h();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }

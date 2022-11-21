@@ -58,22 +58,22 @@ import android.graphics.Rect;
 import j$.util.Optional;
 import android.view.ViewGroup;
 
-public class ShortsVideoTrimView2 extends ViewGroup implements uem
+public class ShortsVideoTrimView2 extends ViewGroup implements ufr
 {
     public Optional A;
     public Optional B;
-    public ueh C;
+    public ufm C;
     public boolean D;
     public float E;
     public long F;
     public final Optional G;
-    public uel H;
-    public aeea I;
+    public ufq H;
+    public aefs I;
     private boolean J;
     private final Rect K;
     private final Rect L;
     private final Path M;
-    private qyn N;
+    private qzj N;
     private final int O;
     private final int P;
     private final int Q;
@@ -81,9 +81,9 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     private final int S;
     private final int T;
     private final int U;
-    private int V;
+    private final int V;
     private final boolean W;
-    public uek a;
+    public ufp a;
     private float aA;
     private long aB;
     private long aC;
@@ -101,18 +101,18 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     private final boolean ac;
     private final boolean ad;
     private final boolean ae;
-    private udo af;
-    private final uef ag;
-    private final ueb ah;
-    private final uec ai;
+    private uet af;
+    private final ufk ag;
+    private final ufg ah;
+    private final ufh ai;
     private final ImageView aj;
     private final ImageView ak;
     private final View al;
-    private final rfv am;
+    private final rgw am;
     private final List an;
     private final List ao;
     private boolean ap;
-    private qyn aq;
+    private qzj aq;
     private final Vibrator ar;
     private int as;
     private long at;
@@ -122,13 +122,13 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     private float ax;
     private float ay;
     private float az;
-    public ued b;
+    public ufi b;
     public final float c;
     public int d;
     final int e;
     public final int f;
     public final int g;
-    public final qlj h;
+    public final qmd h;
     final Paint i;
     public final boolean j;
     public float k;
@@ -140,9 +140,9 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     public long q;
     public float r;
     public long s;
-    public uee t;
+    public ufj t;
     public final Rect u;
-    public qyu v;
+    public qzq v;
     public EditableVideo w;
     VideoMetaData x;
     public Optional y;
@@ -153,12 +153,12 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         this.K = new Rect();
         this.L = new Rect();
         this.M = new Path();
-        this.h = new qlj();
+        this.h = new qmd();
         final boolean b = false;
-        this.ag = new uef(this, 0);
-        this.ah = new ueb(this);
-        this.ai = new uec();
-        this.t = uee.a;
+        this.ag = new ufk(this, 0);
+        this.ah = new ufg(this);
+        this.ai = new ufh();
+        this.t = ufj.a;
         this.u = new Rect();
         this.y = Optional.empty();
         this.z = Optional.empty();
@@ -169,32 +169,32 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         this.g = ViewConfiguration.get(context).getScaledTouchSlop();
         this.V = ViewConfiguration.getLongPressTimeout();
         final Resources resources = context.getResources();
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, udq.b);
-        final TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(set, udq.a);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, uev.b);
+        final TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(set, uev.a);
         final float fraction = obtainStyledAttributes.getFraction(7, 1, 100, 1.0f);
         this.c = fraction;
-        this.d = (int)(resources.getDimension(2131170309) * fraction);
-        final int p2 = (int)obtainStyledAttributes2.getDimension(1, resources.getDimension(2131170301) * fraction);
+        this.d = (int)(resources.getDimension(2131170348) * fraction);
+        final int p2 = (int)obtainStyledAttributes2.getDimension(1, resources.getDimension(2131170340) * fraction);
         this.P = p2;
         this.ap = obtainStyledAttributes.getBoolean(6, true);
         final int integer = obtainStyledAttributes.getInteger(8, 1);
         boolean b2 = false;
-        Label_0294: {
+        Label_0292: {
             if (integer >= 0) {
-                tpe.bz();
+                tqf.bz();
                 if (integer < 2) {
                     b2 = true;
-                    break Label_0294;
+                    break Label_0292;
                 }
             }
             b2 = false;
         }
-        adkp.H(b2);
-        this.aL = tpe.bz()[integer];
-        final int resourceId = obtainStyledAttributes.getResourceId(4, 2131233395);
-        final int resourceId2 = obtainStyledAttributes.getResourceId(4, 2131233396);
-        final int resourceId3 = obtainStyledAttributes.getResourceId(2, 2131102320);
-        final Drawable a = agx.a(context, resourceId);
+        adme.K(b2);
+        this.aL = tqf.bz()[integer];
+        final int resourceId = obtainStyledAttributes.getResourceId(4, 2131233396);
+        final int resourceId2 = obtainStyledAttributes.getResourceId(4, 2131233397);
+        final int resourceId3 = obtainStyledAttributes.getResourceId(2, 2131102316);
+        final Drawable a = agy.a(context, resourceId);
         int intrinsicWidth;
         if (a == null) {
             intrinsicWidth = 0;
@@ -211,16 +211,16 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         this.ae = boolean2;
         obtainStyledAttributes.recycle();
         this.j = obtainStyledAttributes2.getBoolean(0, false);
-        this.Q = resources.getDimensionPixelSize(2131170305);
-        this.O = obtainStyledAttributes2.getDimensionPixelSize(2, resources.getDimensionPixelSize(2131170304));
-        this.R = resources.getDimensionPixelSize(2131170308);
-        this.f = resources.getInteger(2131493126);
-        this.S = resources.getInteger(2131493123);
-        final int integer2 = resources.getInteger(2131493122);
+        this.Q = resources.getDimensionPixelSize(2131170344);
+        this.O = obtainStyledAttributes2.getDimensionPixelSize(2, resources.getDimensionPixelSize(2131170343));
+        this.R = resources.getDimensionPixelSize(2131170347);
+        this.f = resources.getInteger(2131493130);
+        this.S = resources.getInteger(2131493127);
+        final int integer2 = resources.getInteger(2131493126);
         this.T = integer2;
-        this.U = resources.getInteger(2131493124);
+        this.U = resources.getInteger(2131493128);
         this.aH = integer2;
-        this.aI = (float)resources.getDimensionPixelSize(2131170292);
+        this.aI = (float)resources.getDimensionPixelSize(2131170331);
         obtainStyledAttributes2.recycle();
         final Paint i = new Paint();
         (this.i = i).setColor(resources.getColor(resourceId3));
@@ -231,7 +231,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         this.an = new ArrayList();
         this.ao = new ArrayList();
         this.al = new View(context);
-        this.am = new rfv(context);
+        this.am = new rgw(context);
         final boolean w = context.checkCallingOrSelfPermission("android.permission.VIBRATE") == 0;
         this.W = w;
         boolean aa = b;
@@ -245,7 +245,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         this.ar = (Vibrator)context.getSystemService("vibrator");
         Optional g;
         if (boolean2) {
-            g = Optional.of((Object)new udp());
+            g = Optional.of((Object)new ueu());
         }
         else {
             g = Optional.empty();
@@ -293,7 +293,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     }
     
     private final float ad(final long n) {
-        final qyu v = this.v;
+        final qzq v = this.v;
         float b;
         if (v == null) {
             b = 0.0f;
@@ -305,7 +305,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     }
     
     private final long ae(final long n) {
-        final ueh a = ueh.a;
+        final ufm a = ufm.a;
         final int al = this.aL;
         if (al == 0) {
             throw null;
@@ -314,26 +314,26 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
             return n;
         }
         final long e = e(n, 0L, this.g());
-        return (long)this.z.map((Function)new xro(n, 1)).map((Function)new udv(n, e)).orElse((Object)e);
+        return (long)this.z.map((Function)new xsy(n, 1)).map((Function)new ufa(n, e)).orElse((Object)e);
     }
     
     private static long af(final long n) {
-        return afsp.a(afsp.c(n).truncatedTo((TemporalUnit)ChronoUnit.MILLIS));
+        return afuf.a(afuf.c(n).truncatedTo((TemporalUnit)ChronoUnit.MILLIS));
     }
     
     private final ImageView ag(final Context context, final int n) {
-        final rfu imageDrawable = new rfu(context, n, (float)this.P);
+        final rgv imageDrawable = new rgv(context, n, (float)this.P);
         final AppCompatImageView appCompatImageView = new AppCompatImageView(context);
-        ((ImageView)appCompatImageView).setImageDrawable((Drawable)imageDrawable);
-        ((ImageView)appCompatImageView).setScaleType(ImageView$ScaleType.FIT_XY);
-        return (ImageView)appCompatImageView;
+        appCompatImageView.setImageDrawable((Drawable)imageDrawable);
+        appCompatImageView.setScaleType(ImageView$ScaleType.FIT_XY);
+        return appCompatImageView;
     }
     
-    private final uee ah(int max) {
+    private final ufj ah(int max) {
         final boolean b = false;
-        adkp.H(max >= 0);
+        adme.K(max >= 0);
         if (max == 0) {
-            return uee.a;
+            return ufj.a;
         }
         final VideoMetaData x = this.x;
         float a;
@@ -355,7 +355,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
                         b2 = true;
                     }
                 }
-                adkp.H(b2);
+                adme.K(b2);
                 if (n2 != 90) {
                     n = a;
                     if (n2 != 270) {
@@ -369,7 +369,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         final float n4 = (float)max;
         max = Math.max(1, (int)Math.floor(n4 / (n3 * n)));
         final float n5 = n4 / max;
-        return new uee(n5, n5 / n, max);
+        return new ufj(n5, n5 / n, max);
     }
     
     private final void ai(final ImageView imageView, final RectF rectF) {
@@ -436,43 +436,43 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         this.al();
         final EditableVideo w2 = this.w;
         if (w2 != null) {
-            w2.v((qzg)this);
-            this.y.ifPresent((Consumer)lld.m);
+            w2.v((rad)this);
+            this.y.ifPresent((Consumer)llt.l);
             this.y = Optional.empty();
-            this.A.ifPresent((Consumer)new ucm(this, 10));
+            this.A.ifPresent((Consumer)new txl(this, 14));
             this.A = Optional.empty();
-            this.z.ifPresent((Consumer)new ucm(this, 11));
+            this.z.ifPresent((Consumer)new txl(this, 15));
             this.z = Optional.empty();
-            this.B.ifPresent((Consumer)new ucm(this, 12));
+            this.B.ifPresent((Consumer)new txl(this, 16));
             this.B = Optional.empty();
         }
         this.w = w;
         this.x = x;
         if (w != null) {
-            w.q((qzg)this);
+            w.q((rad)this);
         }
     }
     
     private final void al() {
         if (this.ac && this.S()) {
-            this.aj(false, this.C == ueh.a);
+            this.aj(false, this.C == ufm.a);
         }
         if (this.D) {
-            adkp.Q(true);
+            adme.T(true);
             final EditableVideo w = this.w;
             if (w != null) {
-                final ueh c = this.C;
+                final ufm c = this.C;
                 if (c != null) {
                     w.t((Set)c.e);
                 }
             }
             this.D = false;
-            final qyn aq = this.aq;
+            final qzj aq = this.aq;
             if (aq != null) {
                 aq.a();
             }
             if (this.W()) {
-                adkp.Q(this.W());
+                adme.T(this.W());
                 this.k = 0.0f;
                 final long p = this.p;
                 long q = this.q;
@@ -487,33 +487,33 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
                     o = this.o();
                     n = o - this.i();
                 }
-                final qyu v = this.v;
+                final qzq v = this.v;
                 if (v != null) {
                     v.k(n, o);
                 }
                 this.A();
                 this.N();
-                this.y.ifPresent((Consumer)lld.l);
+                this.y.ifPresent((Consumer)llt.k);
             }
             this.ag.a(0.0f);
             final ViewParent parent = this.getParent();
             if (parent != null) {
                 parent.requestDisallowInterceptTouchEvent(false);
             }
-            if (this.C == ueh.a) {
+            if (this.C == ufm.a) {
                 this.y();
             }
             else {
-                final ueh c2 = this.C;
-                if (c2 == ueh.b) {
+                final ufm c2 = this.C;
+                if (c2 == ufm.b) {
                     this.y();
                 }
-                else if (c2 == ueh.c) {
+                else if (c2 == ufm.c) {
                     final long k = this.k();
                     this.z(k);
-                    final uel h = this.H;
+                    final ufq h = this.H;
                     if (h != null) {
-                        h.a(false, afsp.c(k).toMillis());
+                        h.a(false, afuf.c(k).toMillis());
                     }
                     this.O();
                 }
@@ -523,10 +523,10 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     }
     
     private final void am(final float n) {
-        adkp.Q(this.C != null);
+        adme.T(this.C != null);
         final float ay = this.ay;
         final float n2 = (float)this.u.width();
-        final qyu v = this.v;
+        final qzq v = this.v;
         long d;
         if (v == null) {
             d = 0L;
@@ -537,7 +537,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         final boolean b = this.ag.b();
         final float n3 = 0.0f;
         if (!b && this.C != null) {
-            final ueh a = ueh.a;
+            final ufm a = ufm.a;
             final int ordinal = this.C.ordinal();
             if (ordinal != 0) {
                 if (ordinal != 1) {
@@ -547,7 +547,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
                         }
                     }
                     else {
-                        this.G.ifPresent((Consumer)new uds(this, n, 0));
+                        this.G.ifPresent((Consumer)new uex(this, n, 0));
                     }
                 }
                 else {
@@ -586,7 +586,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
                 final float n10 = (float)(i * n8);
                 final float z = this.Z();
                 final float aa = this.aa();
-                final ueh c = this.C;
+                final ufm c = this.C;
                 float max = z;
                 float min = aa;
                 if (c != null) {
@@ -617,8 +617,9 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
                                     }
                                 }
                                 final float n18 = az + n17;
-                                min = this.aA + n17;
+                                final float n19 = this.aA + n17;
                                 max = n18;
+                                min = n19;
                             }
                         }
                         else {
@@ -649,58 +650,58 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
             }
             this.invalidate();
         }
-        float n19 = n3;
+        float n20 = n3;
         if (this.S()) {
-            n19 = n3;
+            n20 = n3;
             if (this.W()) {
-                n19 = n3;
+                n20 = n3;
                 if (this.o() - this.p() < this.i()) {
                     final int left2 = this.u.left;
                     final int e = this.e;
                     final int right = this.u.right;
                     final int e2 = this.e;
                     if (Math.max(0.0f, n - (left2 - e)) < this.R) {
-                        n19 = -1.0f;
+                        n20 = -1.0f;
                     }
                     else {
-                        n19 = 0.0f;
+                        n20 = 0.0f;
                     }
                     if (Math.max(0.0f, right + e2 - n) < this.R) {
-                        n19 = 1.0f;
+                        n20 = 1.0f;
                     }
                 }
             }
         }
-        this.ag.a(n19);
+        this.ag.a(n20);
     }
     
-    private final void an(float n, float z) {
+    private final void an(float n, float n2) {
         this.aj.setX(n - this.e + this.aw);
-        this.ak.setX(z - this.e + this.ax);
+        this.ak.setX(n2 - this.e + this.ax);
         this.ap();
-        final rfv am = this.am;
+        final rgw am = this.am;
         am.b = n + this.aw;
-        am.c = z + this.ax;
+        am.c = n2 + this.ax;
         if (this.N != null) {
-            n = (float)Math.round(afsp.c(this.n(this.aa()) - this.n(this.Z())).toMillis() / 100.0f);
-            final String string = this.getContext().getResources().getString(2132019662);
+            n = (float)Math.round(afuf.c(this.n(this.aa()) - this.n(this.Z())).toMillis() / 100.0f);
+            final String string = this.getContext().getResources().getString(2132019664);
             final StringBuilder sb = new StringBuilder();
             sb.append(n / 10.0f);
             sb.append(string);
             final String string2 = sb.toString();
-            final float n2 = (this.aa() - this.Z()) / 2.0f;
-            z = this.Z();
+            n2 = (this.aa() - this.Z()) / 2.0f;
+            final float z = this.Z();
             final float y = this.aj.getY();
             n = this.aj.getHeight() / 2.0f;
-            final qyn n3 = this.N;
+            final qzj n3 = this.N;
             if (n3 != null && n3.b != null) {
-                final qyl c = n3.c;
+                final qzh c = n3.c;
                 if (c != null) {
                     final int n4 = (int)(y + n);
                     final int n5 = (int)(n2 + z);
                     c.e(string2);
                     final int[] c2 = n3.c(n5, n4, (View)this);
-                    final qyl c3 = n3.c;
+                    final qzh c3 = n3.c;
                     c3.d(c2[0], c2[1] + c3.getIntrinsicHeight() / 2, n3.a.getWidth());
                 }
             }
@@ -719,11 +720,11 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
                 final int g = x.g(n);
                 if (g != this.aF) {
                     if (this.W() && !this.R()) {
-                        final afsr a = afsr.a;
+                        final afuh a = afuh.a;
                         this.aG = Instant.now().toEpochMilli();
                         final int u = this.U;
                         this.aH = u;
-                        this.postDelayed((Runnable)new tla(this, 18), (long)u);
+                        this.postDelayed((Runnable)new tpk(this, 15), (long)u);
                     }
                     this.aF = g;
                 }
@@ -762,15 +763,15 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         final Rect rect = new Rect(left, top, right, n3);
         Range range;
         if (this.o) {
-            range = Range.create((Comparable)afsp.c(this.p()), (Comparable)afsp.c(this.o()));
+            range = Range.create((Comparable)afuf.c(this.p()), (Comparable)afuf.c(this.o()));
         }
         else if (this.v != null) {
-            range = Range.create((Comparable)Duration.ZERO, (Comparable)afsp.c(this.v.b));
+            range = Range.create((Comparable)Duration.ZERO, (Comparable)afuf.c(this.v.b));
         }
         else {
             range = Range.create((Comparable)Duration.ZERO, (Comparable)Duration.ZERO);
         }
-        ((udp)this.G.get()).d(rect, range);
+        ((ueu)this.G.get()).d(rect, range);
     }
     
     private final void aq() {
@@ -785,7 +786,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         return n3;
     }
     
-    public static qyu r(final EditableVideo editableVideo, final long n) {
+    public static qzq r(final EditableVideo editableVideo, long n) {
         final long h = editableVideo.b.h;
         final long h2 = editableVideo.h();
         long min;
@@ -801,33 +802,36 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         if (n == -1L) {
             n3 = n2;
         }
-        if (n2 < n3 || l > n3 + min) {
-            n3 = n2;
+        if (n2 >= n3 && l <= n3 + min) {
+            n = n3;
         }
-        final qyu qyu = new qyu(min, h);
-        qyu.i(n3, n3 + min, false, false);
-        return qyu;
+        else {
+            n = n2;
+        }
+        final qzq qzq = new qzq(min, h);
+        qzq.i(n, n + min, false, false);
+        return qzq;
     }
     
     public final void A() {
         final ArrayList list = new ArrayList(this.ao);
         this.ao.clear();
         for (int size = list.size(), i = 0; i < size; ++i) {
-            final rfa rfa = (rfa)list.get(i);
-            final ObjectAnimator ofInt = ObjectAnimator.ofInt((Object)rfa, "alpha", new int[] { 0 });
-            ofInt.addListener((Animator$AnimatorListener)new uea(this, rfa));
+            final rga rga = (rga)list.get(i);
+            final ObjectAnimator ofInt = ObjectAnimator.ofInt((Object)rga, "alpha", new int[] { 0 });
+            ofInt.addListener((Animator$AnimatorListener)new uff(this, rga));
             ofInt.start();
         }
-        final qyu v = this.v;
+        final qzq v = this.v;
         if (v != null) {
             v.g = true;
         }
         this.P(this.t);
-        for (final rfa rfa2 : this.ao) {
-            rfa2.c(true);
-            ObjectAnimator.ofInt((Object)rfa2, "alpha", new int[] { 0, 255 }).start();
+        for (final rga rga2 : this.ao) {
+            rga2.c(true);
+            ObjectAnimator.ofInt((Object)rga2, "alpha", new int[] { 0, 255 }).start();
         }
-        final qyu v2 = this.v;
+        final qzq v2 = this.v;
         if (v2 != null) {
             v2.g = false;
         }
@@ -835,9 +839,9 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     
     public final void B() {
         this.s();
-        final qyu v = this.v;
+        final qzq v = this.v;
         if (v != null) {
-            v.h((qyr)this);
+            v.h((qzn)this);
         }
     }
     
@@ -856,7 +860,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     public final void E(long ae) {
         long max = ae;
         if (!this.W()) {
-            final qyu v = this.v;
+            final qzq v = this.v;
             long e;
             if (v == null) {
                 e = 0L;
@@ -874,7 +878,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         this.H(ae);
     }
     
-    public final void F(final qyn aq) {
+    public final void F(final qzj aq) {
         this.aq = aq;
         if (aq != null) {
             aq.d = this.c;
@@ -884,7 +888,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     public final void G(long ae) {
         long min = ae;
         if (!this.W()) {
-            final qyu v = this.v;
+            final qzq v = this.v;
             long e;
             if (v == null) {
                 e = 0L;
@@ -903,7 +907,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     }
     
     public final void H(final long n) {
-        this.G.ifPresent((Consumer)new udt(n, 0));
+        this.G.ifPresent((Consumer)new uey(n, 0));
     }
     
     public final void I(final long n) {
@@ -911,31 +915,31 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         this.z(n);
     }
     
-    public final void J(final qyu v) {
-        final qyu v2 = this.v;
+    public final void J(final qzq v) {
+        final qzq v2 = this.v;
         if (v2 != null) {
-            v2.h((qyr)this);
+            v2.h((qzn)this);
         }
         this.v = v;
         this.ap();
-        v.f((qyr)this);
+        v.f((qzn)this);
         this.F = v.e(0.0f);
     }
     
-    public final void K(final EditableVideo editableVideo, final udg udg) {
-        this.L(editableVideo, udg, r(editableVideo, this.F), true);
+    public final void K(final EditableVideo editableVideo, final uel uel) {
+        this.L(editableVideo, uel, r(editableVideo, this.F), true);
     }
     
-    public final void L(final EditableVideo editableVideo, final udg udg, final qyu qyu, final boolean o) {
+    public final void L(final EditableVideo editableVideo, final uel uel, final qzq qzq, final boolean o) {
         final VideoMetaData b = editableVideo.b;
-        adkp.H(b.equals(udg.a()));
+        adme.K(b.equals((Object)uel.a()));
         if (!(this.o = o)) {
-            final qyn n = this.N;
+            final qzj n = this.N;
             if (n != null) {
                 n.a();
             }
         }
-        this.G.ifPresent((Consumer)new iyg(o, 5));
+        this.G.ifPresent((Consumer)new iyp(o, 5));
         final boolean n2 = o && editableVideo.M();
         this.n = n2;
         if (n2) {
@@ -946,15 +950,15 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
             this.aj.setVisibility(8);
             this.ak.setVisibility(8);
         }
-        if (editableVideo.equals(this.w) && udg == this.y.orElse((Object)null)) {
+        if (editableVideo.equals(this.w) && uel == this.y.orElse((Object)null)) {
             return;
         }
         this.ak(editableVideo, b);
-        this.J(qyu);
-        this.z = Optional.of((Object)udg.b());
-        this.B = Optional.of((Object)udg.d());
-        this.post((Runnable)new tei(this, udg, 14));
-        final ued b2 = this.b;
+        this.J(qzq);
+        this.z = Optional.of((Object)uel.b());
+        this.B = Optional.of((Object)uel.d());
+        this.post((Runnable)new swa(this, uel, 18));
+        final ufi b2 = this.b;
         if (b2 != null) {
             b2.a();
         }
@@ -975,7 +979,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         this.aC = this.o();
         this.az = this.Z();
         this.aA = this.aa();
-        final qyu v = this.v;
+        final qzq v = this.v;
         final long n = 0L;
         long e;
         if (v == null) {
@@ -985,7 +989,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
             e = v.e(0.0f);
         }
         this.aD = e;
-        final qyu v2 = this.v;
+        final qzq v2 = this.v;
         long e2;
         if (v2 == null) {
             e2 = n;
@@ -1005,15 +1009,15 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         if (x == null) {
             return;
         }
-        this.A.ifPresent((Consumer)new udu(this, af));
-        this.y.ifPresent((Consumer)new rrp(this, af, x, 2));
+        this.A.ifPresent((Consumer)new uez(this, af));
+        this.y.ifPresent((Consumer)new rsr(this, af, x, 2));
     }
     
-    public final void P(uee t) {
+    public final void P(ufj t) {
         t.getClass();
         this.t = t;
         if (this.j) {
-            this.G.ifPresent((Consumer)new ucm(this, 3));
+            this.G.ifPresent((Consumer)new txl(this, 7));
         }
         t = this.t;
         final float b = t.b;
@@ -1028,7 +1032,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
             optional2 = optional;
             if (this.A.isPresent()) {
                 optional2 = optional;
-                if (((rfi)this.A.get()).m()) {
+                if (((rgi)this.A.get()).m()) {
                     optional2 = this.A;
                 }
             }
@@ -1037,15 +1041,15 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         int n4;
         for (n4 = (i = -n2); i < n3; ++i) {
             final int n5 = i - n4;
-            rfa rfa;
+            rga rga;
             if (this.ao.size() > n5) {
-                rfa = this.ao.get(n5);
+                rga = this.ao.get(n5);
             }
             else {
-                rfa = new rfa();
-                this.ao.add(n5, rfa);
-                rfa.setCallback((Drawable$Callback)this);
-                this.an.add(rfa);
+                rga = new rga();
+                this.ao.add(n5, rga);
+                rga.setCallback((Drawable$Callback)this);
+                this.an.add(rga);
             }
             final float n6 = this.u.left + i * b + n;
             final float n7 = this.t.b + n6;
@@ -1056,26 +1060,26 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
             if (c > n9) {
                 n10 = n8 - (c - n9) / 2.0f;
             }
-            rfa.setBounds((int)n6, (int)n10, (int)n7, (int)(c + n10));
+            rga.setBounds((int)n6, (int)n10, (int)n7, (int)(c + n10));
             final long n11 = this.n(n6 + (n7 - n6) / 2.0f);
-            rfa.b = n11;
+            rga.b = n11;
             if (optional2.isPresent()) {
-                final rew g = ((rfi)optional2.get()).g(n11, true);
-                final rew a = rfa.a;
-                Label_0631: {
+                final rfw g = ((rgi)optional2.get()).g(n11, true);
+                final rfw a = rga.a;
+                Label_0632: {
                     if (a != null && g != null) {
                         final long a2 = a.a();
                         final long a3 = g.a();
                         if (a3 > a2) {
                             if (Math.abs(n11 - a3) >= Math.abs(n11 - a2)) {
-                                break Label_0631;
+                                break Label_0632;
                             }
                         }
                         else if (a3 == a2) {
-                            break Label_0631;
+                            break Label_0632;
                         }
                     }
-                    rfa.b(g);
+                    rga.b(g);
                 }
                 if (g != null) {
                     g.d();
@@ -1084,14 +1088,14 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         }
         while (this.ao.size() > n3 - n4) {
             final List ao = this.ao;
-            this.u((rfa)ao.remove(ao.size() - 1));
+            this.u((rga)ao.remove(ao.size() - 1));
         }
         if (this.ap && !this.ao.isEmpty() && this.l) {
             this.ap = false;
             for (int j = 0; j < this.ao.size(); ++j) {
-                final rfa rfa2 = this.ao.get(j);
-                rfa2.c(false);
-                rfa2.d(j * 50);
+                final rga rga2 = this.ao.get(j);
+                rga2.c(false);
+                rga2.d(j * 50);
             }
         }
     }
@@ -1101,7 +1105,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     }
     
     public final boolean R() {
-        final afsr a = afsr.a;
+        final afuh a = afuh.a;
         final long epochMilli = Instant.now().toEpochMilli();
         if (epochMilli - this.aG >= this.aH) {
             this.w(this.S);
@@ -1113,25 +1117,25 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     }
     
     public final boolean S() {
-        return this.C == ueh.a || this.C == ueh.b;
+        return this.C == ufm.a || this.C == ufm.b;
     }
     
     public final boolean T() {
-        final qyu v = this.v;
+        final qzq v = this.v;
         return v != null && v.e(1.0f) > this.g();
     }
     
     public final boolean U() {
-        final qyu v = this.v;
+        final qzq v = this.v;
         return v != null && v.e(0.0f) < 0L;
     }
     
     public final boolean V() {
-        return !this.l || !Collection$_EL.stream((Collection)this.ao).allMatch((Predicate)lay.u);
+        return !this.l || !Collection$_EL.stream((Collection)this.ao).allMatch((Predicate)lbg.u);
     }
     
     public final boolean W() {
-        final qyu v = this.v;
+        final qzq v = this.v;
         return v != null && v.c;
     }
     
@@ -1172,10 +1176,10 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         this.ao(-1L);
     }
     
-    public final void d(final rew rew) {
+    public final void d(final rfw rfw) {
         final VideoMetaData x = this.x;
-        if (rew.f() == 2 && this.j && x != null && Y(this.k(), x) == rew.a) {
-            this.G.ifPresent((Consumer)new ucm(rew, 5));
+        if (rfw.f() == 2 && this.j && x != null && Y(this.k(), x) == rfw.a) {
+            this.G.ifPresent((Consumer)new txl(rfw, 9));
         }
     }
     
@@ -1236,7 +1240,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
                 g2 = this.g();
             }
         }
-        final qyu v = this.v;
+        final qzq v = this.v;
         float b2;
         if (v == null) {
             b2 = 0.0f;
@@ -1245,41 +1249,41 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
             b2 = v.b(n8);
         }
         this.k -= b2 * this.u.width();
-        final qyu v2 = this.v;
+        final qzq v2 = this.v;
         if (v2 != null) {
             v2.i(n8, g2, false, false);
         }
         final long g3 = this.g();
-        final qyu v3 = this.v;
-        if (v3 == null) {
-            e = 0L;
-        }
-        else {
-            e = v3.e(this.ab(this.au));
-        }
-        final qyu v4 = this.v;
+        final qzq v3 = this.v;
         long e2;
-        if (v4 == null) {
+        if (v3 == null) {
             e2 = 0L;
         }
         else {
-            e2 = v4.e(this.ab(this.av));
+            e2 = v3.e(this.ab(this.au));
+        }
+        final qzq v4 = this.v;
+        if (v4 == null) {
+            e = 0L;
+        }
+        else {
+            e = v4.e(this.ab(this.av));
         }
         this.aw = 0.0f;
-        if (e < 0L) {
-            this.aw = this.ad(e) - this.ad(0L);
-            e = n;
+        if (e2 < 0L) {
+            this.aw = this.ad(e2) - this.ad(0L);
+            e2 = n;
         }
         this.ax = 0.0f;
-        if (e2 > g3) {
-            this.ax = this.ad(e2) - this.ad(g3);
-            e2 = g3;
+        if (e > g3) {
+            this.ax = this.ad(e) - this.ad(g3);
+            e = g3;
         }
         final EditableVideo w = this.w;
         if (w != null) {
-            w.F(e, e2);
+            w.F(e2, e);
         }
-        this.H(e);
+        this.H(e2);
         this.P(this.t);
         return this.aD - n8;
     }
@@ -1331,27 +1335,27 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     }
     
     public final long k() {
-        return afsp.a((Duration)this.G.map((Function)tms.g).orElse((Object)Duration.ZERO));
+        return afuf.a((Duration)this.G.map((Function)tip.i).orElse((Object)Duration.ZERO));
     }
     
-    public final void l(final qyu qyu) {
-        for (final rfa rfa : this.an) {
-            final float ad = this.ad(rfa.b);
-            final Rect bounds = rfa.getBounds();
+    public final void l(final qzq qzq) {
+        for (final rga rga : this.an) {
+            final float ad = this.ad(rga.b);
+            final Rect bounds = rga.getBounds();
             final float n = bounds.centerX() - ad;
             if (n != 0.0f) {
                 final float n2 = (float)bounds.left;
                 final int top = bounds.top;
                 final int width = bounds.width();
                 final int n3 = (int)(n2 - n);
-                rfa.setBounds(n3, top, width + n3, bounds.bottom);
+                rga.setBounds(n3, top, width + n3, bounds.bottom);
             }
         }
         this.Q();
         this.invalidate();
-        final uek a = this.a;
+        final ufp a = this.a;
         if (a != null) {
-            a.nw(qyu.e(0.0f));
+            a.nt(qzq.e(0.0f));
         }
     }
     
@@ -1362,7 +1366,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     }
     
     public final long n(final float n) {
-        final qyu v = this.v;
+        final qzq v = this.v;
         if (v == null) {
             return 0L;
         }
@@ -1392,9 +1396,9 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         else {
             canvas.clipPath(this.M);
         }
-        canvas.drawColor(this.getResources().getColor(2131102286));
+        canvas.drawColor(this.getResources().getColor(2131102282));
         if (this.l) {
-            for (final rfa rfa : this.an) {
+            for (final rga rga : this.an) {
                 final EditableVideo w = this.w;
                 int f;
                 if (w == null) {
@@ -1403,11 +1407,11 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
                 else {
                     f = w.f();
                 }
-                rfa.a(canvas, f);
+                rga.a(canvas, f);
             }
         }
         if (this.j) {
-            canvas.drawColor(this.getResources().getColor(2131102288));
+            canvas.drawColor(this.getResources().getColor(2131102284));
         }
         canvas.restore();
         if (this.n) {
@@ -1420,11 +1424,11 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     
     public final void onFinishInflate() {
         super.onFinishInflate();
-        this.af = new udo(this);
+        this.af = new uet(this);
         final Resources resources = this.getContext().getResources();
         this.m = true;
-        this.s = TimeUnit.MILLISECONDS.toMicros(resources.getInteger(2131493127));
-        this.r = (float)resources.getInteger(2131493125);
+        this.s = TimeUnit.MILLISECONDS.toMicros(resources.getInteger(2131493131));
+        this.r = (float)resources.getInteger(2131493129);
         this.aj.setContentDescription((CharSequence)resources.getString(2132017554));
         this.aj.setFocusable(true);
         this.addView((View)this.aj);
@@ -1438,24 +1442,24 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         if (this.ab) {
             this.setClipToPadding(false);
         }
-        this.aj.setAccessibilityDelegate((View$AccessibilityDelegate)new udw(this));
-        this.ak.setAccessibilityDelegate((View$AccessibilityDelegate)new udx(this));
-        this.G.ifPresent((Consumer)new ucm(this, 6));
+        this.aj.setAccessibilityDelegate((View$AccessibilityDelegate)new ufb(this));
+        this.ak.setAccessibilityDelegate((View$AccessibilityDelegate)new ufc(this));
+        this.G.ifPresent((Consumer)new txl(this, 10));
         final View q = this.q();
         if (q != null) {
-            q.setAccessibilityDelegate((View$AccessibilityDelegate)new udy(this));
+            q.setAccessibilityDelegate((View$AccessibilityDelegate)new ufd(this));
         }
-        this.al.setAccessibilityDelegate((View$AccessibilityDelegate)new udz(this));
-        final qyn n = new qyn(this.getContext(), (View)this);
+        this.al.setAccessibilityDelegate((View$AccessibilityDelegate)new ufe(this));
+        final qzj n = new qzj(this.getContext(), (View)this);
         this.N = n;
-        n.e = resources.getColor(2131102421);
-        final qyn n2 = this.N;
-        final float g = (float)resources.getDimensionPixelSize(2131169732);
-        final int color = resources.getColor(2131102002);
+        n.e = resources.getColor(2131102417);
+        final qzj n2 = this.N;
+        final float g = (float)resources.getDimensionPixelSize(2131169771);
+        final int color = resources.getColor(2131101998);
         n2.g = g;
         n2.f = color;
-        this.N.h = resources.getDimension(2131169733);
-        final qyn n3 = this.N;
+        this.N.h = resources.getDimension(2131169772);
+        final qzj n3 = this.N;
         if (n3 == null) {
             return;
         }
@@ -1470,7 +1474,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         if (actionMasked != 0) {
             if (actionMasked != 1) {
                 if (actionMasked == 3) {
-                    final udo af = this.af;
+                    final uet af = this.af;
                     if (af != null) {
                         af.a();
                     }
@@ -1478,7 +1482,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
                 }
             }
             else if (motionEvent.getActionIndex() == motionEvent.findPointerIndex(this.as)) {
-                final udo af2 = this.af;
+                final uet af2 = this.af;
                 if (af2 != null) {
                     af2.a();
                 }
@@ -1493,7 +1497,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
             this.at = motionEvent.getEventTime();
             this.aq();
             if (!this.n && this.ae) {
-                this.C = ueh.c;
+                this.C = ufm.c;
             }
             else {
                 final float e = this.E;
@@ -1525,21 +1529,21 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
                     x = -1.0f;
                     n5 = -1.0f;
                 }
-                ueh c;
+                ufm c;
                 if (q != null && e >= x && e <= n5) {
-                    c = ueh.c;
+                    c = ufm.c;
                 }
                 else if (e >= n && e <= n2 && (q == null || e <= x)) {
-                    c = ueh.a;
+                    c = ufm.a;
                 }
                 else if (e >= n3 && e <= right2 && (q == null || e >= n5)) {
-                    c = ueh.b;
+                    c = ufm.b;
                 }
                 else if (this.g() > this.i()) {
-                    c = ueh.d;
+                    c = ufm.d;
                 }
                 else if (e >= this.u.left && e <= this.u.right) {
-                    c = ueh.c;
+                    c = ufm.c;
                 }
                 else {
                     c = null;
@@ -1549,23 +1553,23 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
             if (this.C != null) {
                 this.N();
                 if (this.S()) {
-                    final udo af3 = this.af;
+                    final uet af3 = this.af;
                     if (af3 != null) {
                         af3.b((long)this.V, this.E);
                     }
                     if (this.ac && !this.D) {
-                        this.aj(true, this.C == ueh.a);
+                        this.aj(true, this.C == ufm.a);
                     }
                 }
                 else {
                     this.y();
                 }
-                if (this.C == ueh.c) {
+                if (this.C == ufm.c) {
                     this.v();
                     this.am(this.E);
-                    final uel h = this.H;
+                    final ufq h = this.H;
                     if (h != null) {
-                        h.a(true, afsp.c(this.k()).toMillis());
+                        h.a(true, afuf.c(this.k()).toMillis());
                     }
                 }
             }
@@ -1573,7 +1577,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         return this.C != null;
     }
     
-    protected final void onLayout(final boolean b, int bottom, int top, int n, int n2) {
+    protected final void onLayout(final boolean b, int top, int bottom, int n, int n2) {
         this.K.set(this.getPaddingLeft(), this.getPaddingTop(), this.getWidth() - this.getPaddingRight(), this.getHeight() - this.getPaddingBottom());
         final Path m = this.M;
         final float ad = this.ad(0L);
@@ -1600,7 +1604,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         n2 -= n;
         this.ak.layout(n2, top, n + n + n2, bottom);
         this.Q();
-        final uee ah = this.ah(this.u.width());
+        final ufj ah = this.ah(this.u.width());
         if (!ah.equals(this.t)) {
             this.P(ah);
             this.x();
@@ -1609,26 +1613,26 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         this.am.setBounds(this.K);
         this.getHitRect(this.L);
         if (Build$VERSION.SDK_INT >= 29) {
-            this.setSystemGestureExclusionRects((List)afeq.r((Object)this.L));
+            this.setSystemGestureExclusionRects((List)afgh.r(this.L));
         }
-        final uel h = this.H;
+        final ufq h = this.H;
         if (h != null) {
             h.b();
         }
     }
     
     protected final void onMeasure(int n, int measureSpec) {
-        adkp.Q(View$MeasureSpec.getMode(n) != 0);
+        adme.T(View$MeasureSpec.getMode(n) != 0);
         final int size = View$MeasureSpec.getSize(n);
         final int n2 = this.getPaddingTop() + this.d + this.getPaddingBottom();
         this.setMeasuredDimension(resolveSizeAndState(size, n, 0), resolveSizeAndState(n2, measureSpec, 0));
         n = this.e;
-        measureSpec = View$MeasureSpec.makeMeasureSpec(n + n, 1073741824);
-        n = View$MeasureSpec.makeMeasureSpec(this.d, 1073741824);
-        this.G.ifPresent((Consumer)new iza(n2, 7));
-        this.aj.measure(measureSpec, n);
-        this.ak.measure(measureSpec, n);
-        this.al.measure(measureSpec, n);
+        n = View$MeasureSpec.makeMeasureSpec(n + n, 1073741824);
+        measureSpec = View$MeasureSpec.makeMeasureSpec(this.d, 1073741824);
+        this.G.ifPresent((Consumer)new izi(n2, 7));
+        this.aj.measure(n, measureSpec);
+        this.ak.measure(n, measureSpec);
+        this.al.measure(n, measureSpec);
     }
     
     public final void onRestoreInstanceState(Parcelable parcelable) {
@@ -1641,7 +1645,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
                 parcelable = parcelable3;
             }
             this.F = bundle.getLong("trimLayoutStartTimeKey", 0L);
-            final qyu v = this.v;
+            final qzq v = this.v;
             parcelable2 = parcelable;
             if (v != null) {
                 v.i(bundle.getLong("trimLayoutStartTimeKey", 0L), bundle.getLong("trimLayoutEndTimeKey", this.i()), false, false);
@@ -1656,10 +1660,10 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         final Bundle bundle = new Bundle();
         bundle.putParcelable("superViewInstanceState", super.onSaveInstanceState());
         bundle.putBoolean("trimHandleInteractionAlreadyLogged", this.J);
-        final qyu v = this.v;
+        final qzq v = this.v;
         if (v != null) {
             bundle.putLong("trimLayoutStartTimeKey", v.e(0.0f));
-            final qyu v2 = this.v;
+            final qzq v2 = this.v;
             long e;
             if (v2 == null) {
                 e = 0L;
@@ -1682,32 +1686,32 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         final float ac = ac(motionEvent, this.as);
         final long eventTime = motionEvent.getEventTime();
         final int actionMasked = motionEvent.getActionMasked();
-        Label_0483: {
+        Label_0484: {
             if (actionMasked != 1) {
                 if (actionMasked != 2) {
                     if (actionMasked == 3) {
-                        final udo af = this.af;
+                        final uet af = this.af;
                         if (af != null) {
                             af.a();
                         }
                         this.al();
-                        break Label_0483;
+                        break Label_0484;
                     }
                     if (actionMasked != 6) {
-                        break Label_0483;
+                        break Label_0484;
                     }
                 }
                 else {
                     if (!this.n && !this.ae) {
-                        break Label_0483;
+                        break Label_0484;
                     }
                     if (!this.D && Math.abs(this.ay - ac) > this.g) {
                         this.v();
                     }
                     if (!this.D) {
-                        break Label_0483;
+                        break Label_0484;
                     }
-                    final udo af2 = this.af;
+                    final uet af2 = this.af;
                     if (af2 != null) {
                         af2.b((long)this.V, ac);
                     }
@@ -1715,30 +1719,30 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
                     final long n = eventTime - this.at;
                     if (n > 0L) {
                         final float e = this.E;
-                        final uec ai = this.ai;
+                        final ufh ai = this.ai;
                         final Object c = ai.c;
                         final int b = ai.b;
                         ((float[])c)[b] = (ac - e) / n;
                         ai.b = (b + 1 & 0x1);
                         ai.a = Math.min(ai.a + 1, 2);
                     }
-                    break Label_0483;
+                    break Label_0484;
                 }
             }
             if (motionEvent.getActionIndex() == motionEvent.findPointerIndex(this.as)) {
-                final udo af3 = this.af;
+                final uet af3 = this.af;
                 if (af3 != null) {
                     af3.a();
                 }
-                if (this.C == ueh.d && this.ai.a()) {
-                    final qyu v = this.v;
+                if (this.C == ufm.d && this.ai.a()) {
+                    final qzq v = this.v;
                     long d;
                     if (v == null) {
                         d = 0L;
                     }
                     else {
-                        final uec ai2 = this.ai;
-                        adkp.Q(ai2.a());
+                        final ufh ai2 = this.ai;
+                        adme.T(ai2.a());
                         float n2 = 0.0f;
                         int n3 = 0;
                         int a;
@@ -1752,7 +1756,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
                         }
                         d = v.d(n2 / a / this.u.width());
                     }
-                    final ueb ah = this.ah;
+                    final ufg ah = this.ah;
                     if (ah.e == 1) {
                         if (!ah.d.U() && !ah.d.T()) {
                             ah.e = 2;
@@ -1765,7 +1769,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
                         ah.d.postOnAnimation((Runnable)ah);
                     }
                     ah.a = (float)d;
-                    final uec ai3 = this.ai;
+                    final ufh ai3 = this.ai;
                     ai3.a = 0;
                     ai3.b = 0;
                     this.N();
@@ -1787,20 +1791,20 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     }
     
     final View q() {
-        return (View)this.G.map((Function)tms.f).orElse((Object)null);
+        return (View)this.G.map((Function)tip.h).orElse((Object)null);
     }
     
-    public final void rG(final rfi rfi) {
-        this.post((Runnable)new tei(this, rfi, 13));
+    public final void rG(final rgi rgi) {
+        this.post((Runnable)new swa(this, rgi, 17));
     }
     
     public final void rH(final Exception ex) {
-        ttr.d("Failed to render thumbnail", (Throwable)ex);
+        tut.d("Failed to render thumbnail", (Throwable)ex);
     }
     
     public final void s() {
         this.ak(null, null);
-        this.J(qyu.a);
+        this.J(qzq.a);
     }
     
     public final void setVisibility(final int visibility) {
@@ -1822,19 +1826,19 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     public final void t() {
     }
     
-    public final void u(final rfa rfa) {
-        rfa.b((rew)null);
-        rfa.setCallback((Drawable$Callback)null);
-        this.an.remove(rfa);
+    public final void u(final rga rga) {
+        rga.b((rfw)null);
+        rga.setCallback((Drawable$Callback)null);
+        this.an.remove(rga);
     }
     
     public final void v() {
-        adkp.Q(this.C != null);
-        adkp.Q(this.D ^ true);
+        adme.T(this.C != null);
+        adme.T(this.D ^ true);
         this.D = true;
         final EditableVideo w = this.w;
         if (w != null) {
-            final ueh c = this.C;
+            final ufm c = this.C;
             if (c != null) {
                 w.s((Set)c.e);
             }
@@ -1846,7 +1850,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
     }
     
     protected final boolean verifyDrawable(final Drawable drawable) {
-        return super.verifyDrawable(drawable) || drawable instanceof rfa;
+        return super.verifyDrawable(drawable) || drawable instanceof rga;
     }
     
     public final void w(final int n) {
@@ -1863,7 +1867,7 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         if (x == null) {
             return;
         }
-        final uee t = this.t;
+        final ufj t = this.t;
         final long i = this.i();
         int d = 0;
         Label_0069: {
@@ -1879,24 +1883,24 @@ public class ShortsVideoTrimView2 extends ViewGroup implements uem
         if (d == 0) {
             return;
         }
-        this.y.ifPresent((Consumer)new ktv(this, d, 6));
+        this.y.ifPresent((Consumer)new kuf(this, d, 6));
     }
     
     final void y() {
-        final aeea i = this.I;
+        final aefs i = this.I;
         if (i == null) {
-            ttr.l("The interaction logger is null.");
+            tut.l("The interaction logger is null.");
             return;
         }
-        i.cG(xaa.c(110247)).i();
+        i.cp(xbf.c(110247)).i();
     }
     
     public final void z(final long n) {
-        final uel h = this.H;
+        final ufq h = this.H;
         if (h == null) {
-            ttr.b("PlayheadPositionListener is null.");
+            tut.b("PlayheadPositionListener is null.");
             return;
         }
-        h.accept((Object)afsp.c(n).toMillis());
+        h.accept((Object)afuf.c(n).toMillis());
     }
 }

@@ -10,11 +10,11 @@ import android.view.View;
 import android.util.AttributeSet;
 import android.content.Context;
 
-public class YouTubePlayerViewNotForReflection extends fnp implements fju
+public class YouTubePlayerViewNotForReflection extends fns implements fjx
 {
     public boolean a;
-    private fkr b;
-    private foh c;
+    private fku b;
+    private fok e;
     
     public YouTubePlayerViewNotForReflection(final Context context) {
         this(context, null);
@@ -22,28 +22,28 @@ public class YouTubePlayerViewNotForReflection extends fnp implements fju
     
     public YouTubePlayerViewNotForReflection(final Context context, final AttributeSet set) {
         super(context, set);
-        this.b = fkr.a;
+        this.b = fku.a;
         this.a = false;
-        anb.X((View)this, 2);
+        anc.X((View)this, 2);
     }
     
     private final boolean g() {
-        return !this.b.h() && this.c != null;
+        return !this.b.h() && this.e != null;
     }
     
     public void extractSmartClipData(final int n, final int n2, final int n3, final int n4) {
     }
     
     public final void f() {
-        final boolean v = this.d.v();
+        final boolean v = this.c.v();
         boolean b = true;
         final int n = 0;
         final boolean b2 = v && this.b.o();
         if (!this.a || this.b.k()) {
             b = false;
         }
-        final zdi d = this.d;
-        if (d == null) {
+        final zfd c = this.c;
+        if (c == null) {
             return;
         }
         int visibility = 0;
@@ -56,38 +56,38 @@ public class YouTubePlayerViewNotForReflection extends fnp implements fju
             }
             visibility = 8;
         }
-        ((View)d).setVisibility(visibility);
+        ((View)c).setVisibility(visibility);
     }
     
-    public final void lU(final foh c) {
-        if (this.c == c) {
+    public final void lU(final fok e) {
+        if (this.e == e) {
             return;
         }
-        this.c = c;
+        this.e = e;
         this.requestLayout();
     }
     
     protected final void mh(final View view, final Rect rect, final int n, final int n2, final int n3, final int n4) {
-        if (view == ((abue)this).m && this.g()) {
-            final foh c = this.c;
-            c.getClass();
-            c.c(view);
+        if (view == ((abvo)this).m && this.g()) {
+            final fok e = this.e;
+            e.getClass();
+            e.c(view);
             return;
         }
         super.mh(view, rect, n, n2, n3, n4);
     }
     
     protected final void mi(final View view, final Rect rect, final int n, final int n2) {
-        if (view == ((abue)this).m && this.g()) {
-            final foh c = this.c;
-            c.getClass();
-            c.d(view, n, n2);
+        if (view == ((abvo)this).m && this.g()) {
+            final fok e = this.e;
+            e.getClass();
+            e.d(view, n, n2);
             return;
         }
         super.mi(view, rect, n, n2);
     }
     
-    public final void n(final fkr b) {
+    public final void n(final fku b) {
         if (b == this.b) {
             return;
         }
@@ -95,8 +95,8 @@ public class YouTubePlayerViewNotForReflection extends fnp implements fju
         this.f();
     }
     
-    public final void oK(final fkr fkr, final fkr fkr2) {
-        fal.b((fju)this, fkr2);
+    public final void oI(final fku fku, final fku fku2) {
+        gag.i((fjx)this, fku2);
     }
     
     protected final void onLayout(final boolean b, final int n, final int n2, final int n3, final int n4) {
@@ -105,9 +105,9 @@ public class YouTubePlayerViewNotForReflection extends fnp implements fju
             this.setBackgroundColor(-16777216);
             return;
         }
-        final foh c = this.c;
-        c.getClass();
-        this.setBackgroundColor(c.b());
+        final fok e = this.e;
+        e.getClass();
+        this.setBackgroundColor(e.b());
     }
     
     public final boolean onTouchEvent(final MotionEvent motionEvent) {
@@ -116,7 +116,7 @@ public class YouTubePlayerViewNotForReflection extends fnp implements fju
     
     public final void requestLayout() {
         super.requestLayout();
-        final View m = ((abue)this).m;
+        final View m = ((abvo)this).m;
         if (m != null) {
             m.forceLayout();
         }

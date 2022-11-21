@@ -10,5 +10,5 @@ public interface c
 {
     void a();
     
-    void b(final akwz p0, final boolean p1, final Optional p2);
+    void b(final akyz p0, final boolean p1, final Optional p2);
 }

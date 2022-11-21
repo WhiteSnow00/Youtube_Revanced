@@ -21,7 +21,7 @@ public class LottieAnimationView$SavedState extends View$BaseSavedState
     int g;
     
     static {
-        CREATOR = (Parcelable$Creator)new bvm(19);
+        CREATOR = (Parcelable$Creator)new bvp(19);
     }
     
     public LottieAnimationView$SavedState(final Parcel parcel) {

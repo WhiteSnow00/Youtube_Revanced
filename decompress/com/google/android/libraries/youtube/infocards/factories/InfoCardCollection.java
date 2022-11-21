@@ -15,81 +15,81 @@ import android.os.Parcelable;
 public class InfoCardCollection implements Parcelable
 {
     public static final Parcelable$Creator CREATOR;
-    public final akck a;
+    public final akgo a;
     private List b;
     
     static {
-        CREATOR = (Parcelable$Creator)new uik(6);
+        CREATOR = (Parcelable$Creator)new ulj(6);
     }
     
-    public InfoCardCollection(final akck a) {
+    public InfoCardCollection(final akgo a) {
         a.getClass();
         this.a = a;
     }
     
     public final CharSequence a() {
-        final akck a = this.a;
-        ajsq ajsq;
+        final akgo a = this.a;
+        ajws ajws;
         if ((a.b & 0x4) != 0x0) {
-            if ((ajsq = a.f) == null) {
-                ajsq = ajsq.a;
+            if ((ajws = a.f) == null) {
+                ajws = ajws.a;
             }
         }
         else {
-            ajsq = null;
+            ajws = null;
         }
-        return (CharSequence)abyh.b(ajsq);
+        return (CharSequence)acbu.b(ajws);
     }
     
     public final List b() {
         if (this.b == null) {
             this.b = new ArrayList();
-            final Iterator<Object> iterator = this.a.c.iterator();
+            final Iterator<Object> iterator = ((List<Object>)this.a.c).iterator();
             while (iterator.hasNext()) {
-                akco akco;
-                if ((akco = iterator.next().b) == null) {
-                    akco = akco.a;
+                akgs akgs;
+                if ((akgs = iterator.next().b) == null) {
+                    akgs = akgs.a;
                 }
-                this.b.add(new ardu(akco));
+                this.b.add(new arjd(akgs));
             }
         }
         return this.b;
     }
     
     public final byte[] c() {
-        akcj akcj;
-        if ((akcj = this.a.h) == null) {
-            akcj = akcj.a;
+        akgn akgn;
+        if ((akgn = this.a.h) == null) {
+            akgn = akgn.a;
         }
-        if ((akcj.b & 0x2) != 0x0) {
-            akcj akcj2;
-            if ((akcj2 = this.a.h) == null) {
-                akcj2 = akcj.a;
+        if ((akgn.b & 0x2) != 0x0) {
+            akgn akgn2;
+            if ((akgn2 = this.a.h) == null) {
+                akgn2 = akgn.a;
             }
-            akcn akcn;
-            if ((akcn = akcj2.c) == null) {
-                akcn = akcn.a;
+            akgr akgr;
+            if ((akgr = akgn2.c) == null) {
+                akgr = akgr.a;
             }
-            return akcn.b.I();
+            return akgr.b.I();
         }
         return null;
     }
     
     public final byte[] d() {
-        akcj akcj;
-        if ((akcj = this.a.g) == null) {
-            akcj = akcj.a;
+        akgn akgn;
+        if ((akgn = this.a.g) == null) {
+            akgn = akgn.a;
         }
-        if ((akcj.b & 0x2) != 0x0) {
-            akcj akcj2;
-            if ((akcj2 = this.a.g) == null) {
-                akcj2 = akcj.a;
+        if ((akgn.b & 0x2) != 0x0) {
+            akgn akgn2;
+            if ((akgn2 = this.a.g) == null) {
+                akgn2 = akgn.a;
             }
-            akcn akcn;
-            if ((akcn = akcj2.c) == null) {
-                akcn = akcn.a;
+            akgr akgr;
+            if ((akgr = akgn2.c) == null) {
+                akgr = akgr.a;
             }
-            return akcn.b.I();
+            return akgr.b.I();
         }
         return null;
     }
@@ -99,6 +99,6 @@ public class InfoCardCollection implements Parcelable
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        aeda.au(parcel, (MessageLite)this.a);
+        adzw.aD(parcel, (MessageLite)this.a);
     }
 }

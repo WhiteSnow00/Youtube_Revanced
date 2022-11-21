@@ -12,10 +12,10 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import android.content.Context;
 import java.util.List;
 
-public class RtlAwareViewPager extends trr
+public class RtlAwareViewPager extends tss
 {
     public final List i;
-    public ckv j;
+    public cky j;
     
     public RtlAwareViewPager(final Context context) {
         super(context);
@@ -30,7 +30,7 @@ public class RtlAwareViewPager extends trr
     }
     
     private final void x() {
-        ((ViewPager)this).f = (ckv)new tqw(this, 0);
+        ((ViewPager)this).f = (cky)new trx(this, 0);
     }
     
     public final int a() {
@@ -51,12 +51,12 @@ public class RtlAwareViewPager extends trr
         super.addView(view, this.z(n), viewGroup$LayoutParams);
     }
     
-    public final void e(final ckv ckv) {
-        this.i.add(ckv);
+    public final void e(final cky cky) {
+        this.i.add(cky);
     }
     
-    public final void j(final ckv ckv) {
-        this.i.remove(ckv);
+    public final void j(final cky cky) {
+        this.i.remove(cky);
     }
     
     public final void l(final int n) {
@@ -67,7 +67,7 @@ public class RtlAwareViewPager extends trr
         super.m(this.z(n), b);
     }
     
-    public final void q(final ckv j) {
+    public final void q(final cky j) {
         this.j = j;
     }
     

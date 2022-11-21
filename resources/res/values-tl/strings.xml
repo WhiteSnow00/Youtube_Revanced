@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Gamitin ang tema ng device</string>
     <string name="app_theme_appearance_summary">Piliin ang kagustuhan mo sa maliwanag o madilim na tema</string>
     <string name="app_theme_appearance_title">Hitsura</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Ilapat</string>
     <string name="approve_playlist_sync">I-sync ang mga bagong video</string>
     <string name="audio_playback_failed_snackbar_action_button">Subukan Ulit</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Tapusin ang Stream</string>
     <string name="lc_retry_yes">Subukan ulit</string>
     <string name="lc_rotate_device">I-rotate ang device</string>
+    <string name="lc_sharedmde_required_field_error">Kinakailangan ang Pamagat at Audience.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Mag-stream nang naka-portrait</string>
     <string name="lc_stream_start_error">Hindi masimulan ang stream. Tingnan ang iyong koneksyon.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Preview ng video. I-tap para i-pause.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Preview ng video. I-tap para i-play.</string>
     <string name="shorts_a11y_zoom_control">Kontrol ng pag-zoom</string>
+    <string name="shorts_audio_failure_toast">Hindi naidagdag ang tunog. Subukan ulit.</string>
     <string name="shorts_camera_allow_access_subtitle">Payagan ang access sa iyong camera at mikropono</string>
     <string name="shorts_camera_allow_access_title">Gumawa ng Short</string>
     <string name="shorts_camera_close_confirmation_cancel">Kanselahin</string>

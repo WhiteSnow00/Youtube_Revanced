@@ -13,26 +13,26 @@ import com.google.android.libraries.youtube.player.sequencer.state.SequenceNavig
 public final class ReelSequenceNavigator$ReelSequenceNavigatorState implements SequenceNavigatorState
 {
     public static final Parcelable$Creator CREATOR;
-    private akqn a;
+    private akso a;
     
     static {
-        CREATOR = (Parcelable$Creator)new fzn(16);
+        CREATOR = (Parcelable$Creator)new fzs(16);
     }
     
-    public ReelSequenceNavigator$ReelSequenceNavigatorState(final akqn a) {
+    public ReelSequenceNavigator$ReelSequenceNavigatorState(final akso a) {
         this.a = a;
     }
     
     public ReelSequenceNavigator$ReelSequenceNavigatorState(final Parcel parcel) {
         try {
             if (parcel.readInt() != 0) {
-                this.a = (akqn)adyf.at(parcel, (MessageLite)akqn.a, ExtensionRegistryLite.getGeneratedRegistry());
+                this.a = (akso)adzw.ax(parcel, (MessageLite)akso.a, ExtensionRegistryLite.getGeneratedRegistry());
                 return;
             }
             this.a = null;
         }
-        catch (final ahca ahca) {
-            ttr.d("Invalid ReelItemWatchResponse", (Throwable)ahca);
+        catch (final ahds ahds) {
+            tut.d("Invalid ReelItemWatchResponse", (Throwable)ahds);
         }
     }
     
@@ -48,9 +48,9 @@ public final class ReelSequenceNavigator$ReelSequenceNavigatorState implements S
             n = 0;
         }
         parcel.writeInt(n);
-        final akqn a = this.a;
+        final akso a = this.a;
         if (a != null) {
-            adyf.az(parcel, (MessageLite)a);
+            adzw.aD(parcel, (MessageLite)a);
         }
     }
 }

@@ -9,13 +9,13 @@ import android.content.Context;
 
 public final class WindowInfoTracker$_CC
 {
-    public static atui $default$windowLayoutInfo(final WindowInfoTracker windowInfoTracker, final Context context) {
+    public static atxe $default$windowLayoutInfo(final WindowInfoTracker windowInfoTracker, final Context context) {
         context.getClass();
-        final atui windowLayoutInfo = windowInfoTracker.windowLayoutInfo((Activity)context);
+        final atxe windowLayoutInfo = windowInfoTracker.windowLayoutInfo((Activity)context);
         if (windowLayoutInfo != null) {
             return windowLayoutInfo;
         }
-        throw new atkj((byte[])null);
+        throw new atng((byte[])null);
     }
     
     static {

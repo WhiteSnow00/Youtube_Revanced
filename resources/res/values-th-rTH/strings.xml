@@ -50,11 +50,11 @@
     <string name="litho_channel_guidelines_off">หลักเกณฑ์ของช่อง เปิดใช้งาน</string>
     <string name="litho_channel_guidelines_on">หลักเกณฑ์ของช่อง ปิดใช้งาน</string>
     <string name="litho_community_guidelines">ลบหลักเกณฑ์ของชุมชน</string>
+    <string name="accessibility_settings_edu_opt_in_text">เปิดการควบคุมการเข้าถึงสำหรับโปรแกรมเล่นวิดีโอไหม?</string>
+    <string name="accessibility_settings_edu_opt_out_text">การควบคุมของคุณได้รับการแก้ไขเนื่องจากบริการการเข้าถึงเปิดอยู่</string>
     <string name="litho_community_guidelines_off">แนวทางปฏิบัติของชุมชน เปิดใช้งาน</string>
     <string name="litho_community_guidelines_on">แนวทางปฏิบัติของชุมชน ปิดใช้งาน</string>
     <string name="litho_community_posts">ซ่อนโพสต์ชุมชน</string>
-    <string name="accessibility_settings_edu_opt_in_text">เปิดการควบคุมการเข้าถึงสำหรับโปรแกรมเล่นวิดีโอไหม?</string>
-    <string name="accessibility_settings_edu_opt_out_text">การควบคุมของคุณได้รับการแก้ไขเนื่องจากบริการการเข้าถึงเปิดอยู่</string>
     <string name="litho_community_posts_off">โพสต์ชุมชน เปิดใช้งาน</string>
     <string name="litho_community_posts_on">โพสต์ชุมชน ปิดใช้งาน</string>
     <string name="litho_compact_banner">ลบแบนเนอร์ขนาดกะทัดรัด</string>
@@ -184,8 +184,6 @@
     <string name="revanced_endscreen_cards_summary_on">End screen cards เปิดใช้งาน</string>
     <string name="revanced_endscreen_overlay_summary_off">Endscreen overlay เปิดใช้งาน</string>
     <string name="revanced_endscreen_overlay_summary_on">Endscreen overlay ปิดใช้งาน</string>
-    <string name="revanced_expansion_card_summary_off">Expansion cards เปิดใช้งาน</string>
-    <string name="revanced_expansion_card_summary_on">Expansion cards ปิดใช้งาน</string>
     <string name="revanced_experimental_flag">Experimental Flags</string>
     <string name="revanced_extended_settings">การตั้งค่า ReVanced Extended</string>
     <string name="revanced_extended_summary">Extended related settings</string>
@@ -374,8 +372,8 @@
     <string name="revanced_uri_redirect_summary_off">ปฏิบัติตามนโยบายการเปลี่ยนเส้นทางของ YouTube</string>
     <string name="revanced_uri_redirect_summary_on">เปิด url โดยข้าม youtube.com/redirect</string>
     <string name="revanced_uri_redirect_title">YouTube link redirect</string>
-    <string name="revanced_video_ads_summary_off">โฆษณาในวีดิโอจะซ่อน</string>
-    <string name="revanced_video_ads_summary_on">โฆษณาในวีดิโอจะแสดง</string>
+    <string name="revanced_video_ads_summary_off">โฆษณาในวีดิโอ ปิดใช้งาน</string>
+    <string name="revanced_video_ads_summary_on">โฆษณาในวีดิโอ เปิดใช้งาน</string>
     <string name="revanced_video_ads_title">ซ่อนโฆษณาในวิดีโอ</string>
     <string name="revanced_video_quality_common_error">กำหนดคุณภาพล้มเหลว</string>
     <string name="revanced_video_quality_internet_error">ไม่มีการเชื่อมต่ออินเทอร์เน็ต</string>
@@ -391,6 +389,8 @@
     <string name="revanced_view_products_summary_off">View products banner เปิดใช้งาน</string>
     <string name="revanced_view_products_summary_on">View products banner ปิดใช้งาน</string>
     <string name="revanced_view_products_title">View products banner</string>
+    <string name="revanced_web_search_panels_summary_off">Web search panels เปิดใช้งาน</string>
+    <string name="revanced_web_search_panels_summary_on">Web search panels ปิดใช้งาน</string>
     <string name="revanced_whitelisting_add_failed">Failed to add channel %s to the %s whitelist</string>
     <string name="revanced_whitelisting_added">Channel %s was added to the %s whitelist</string>
     <string name="revanced_whitelisting_ads">โฆษณา</string>

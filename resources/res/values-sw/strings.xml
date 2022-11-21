@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Tumia mandhari ya kifaa</string>
     <string name="app_theme_appearance_summary">Chagua mapendeleo yako ya mandhari meupe au meusi</string>
     <string name="app_theme_appearance_title">Mwonekano</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Tumia</string>
     <string name="approve_playlist_sync">Sawazisha video mpya</string>
     <string name="audio_playback_failed_snackbar_action_button">Jaribu Tena</string>
@@ -480,7 +480,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Kufuatilia na kudhibiti data</string>
     <string name="data_saving_persistent_title">Kuokoa data</string>
     <string name="data_saving_select_quality_every_video_switch_title">Chagua ubora wa kila video</string>
-    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Kupunguza ubora wa Upakuaji wa kiotomatiki</string>
     <string name="data_saving_snack_bar_action_button">Angalia</string>
     <string name="data_saving_snack_bar_text">Mabadiliko haya yataathiri mipangilio yako ya kuhifadhi data</string>
     <string name="data_saving_upload_wifi_only_switch_title">Pakia kwenye Wi-Fi pekee</string>
@@ -829,6 +829,7 @@
     <string name="lc_retry_no">Zima Mtiririko</string>
     <string name="lc_retry_yes">Jaribu tena</string>
     <string name="lc_rotate_device">Zungusha kifaa</string>
+    <string name="lc_sharedmde_required_field_error">Unatakiwa kuweka Jina na Hadhira.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Tiririsha kiwima</string>
     <string name="lc_stream_start_error">Imeshindwa kuanza kutiririsha. Angalia muunganisho wako.</string>
@@ -1734,6 +1735,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Onyesho la kukagua video. Gusa ili usitishe.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Onyesho la kukagua video. Gusa ili ucheze.</string>
     <string name="shorts_a11y_zoom_control">Kidhibiti cha ukuzaji</string>
+    <string name="shorts_audio_failure_toast">Imeshindwa kuweka sauti. Tafadhali jaribu tena.</string>
     <string name="shorts_camera_allow_access_subtitle">Ruhusu ufikiaji wa kamera na maikrofoni yako</string>
     <string name="shorts_camera_allow_access_title">Tunga Video Fupi</string>
     <string name="shorts_camera_close_confirmation_cancel">Ghairi</string>

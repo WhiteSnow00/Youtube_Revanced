@@ -12,15 +12,15 @@ import android.content.Context;
 import android.view.View;
 import android.graphics.Rect;
 
-public class SizeAdjustableOverlayWrapperLayout extends ivg implements absb
+public class SizeAdjustableOverlayWrapperLayout extends iwo implements abvm
 {
-    public jcu a;
+    public jee a;
     public final Rect b;
-    public absb c;
+    public abvm c;
     public View d;
     public boolean e;
     public boolean f;
-    private asic g;
+    private asln g;
     
     public SizeAdjustableOverlayWrapperLayout(final Context context) {
         super(context);
@@ -37,11 +37,11 @@ public class SizeAdjustableOverlayWrapperLayout extends ivg implements absb
     private final boolean i() {
         this.md();
         this.md();
-        return ana.f((View)this) == 1;
+        return anc.f((View)this) == 1;
     }
     
     public final ViewGroup$LayoutParams a() {
-        final absb c = this.c;
+        final abvm c = this.c;
         c.getClass();
         return c.a();
     }
@@ -69,7 +69,7 @@ public class SizeAdjustableOverlayWrapperLayout extends ivg implements absb
     
     public final View md() {
         if (this.d == null) {
-            final absb c = this.c;
+            final abvm c = this.c;
             if (c != null) {
                 this.h(c.md());
             }
@@ -77,24 +77,24 @@ public class SizeAdjustableOverlayWrapperLayout extends ivg implements absb
         return (View)this;
     }
     
-    public final String mr() {
-        final absb c = this.c;
+    public final String mq() {
+        final abvm c = this.c;
         if (c == null) {
             return null;
         }
-        return c.mr();
+        return c.mq();
     }
     
     protected final void onAttachedToWindow() {
         super.onAttachedToWindow();
-        this.g = this.a.b().R().al((asix)new iws(this, 14));
+        this.g = this.a.b().R().am((asmi)new ixu(this, 16));
     }
     
     protected final void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        final asic g = this.g;
-        if (g != null && !g.tx()) {
-            athh.f((AtomicReference)this.g);
+        final asln g = this.g;
+        if (g != null && !g.tz()) {
+            atkw.f((AtomicReference)this.g);
         }
     }
     

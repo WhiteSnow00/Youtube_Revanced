@@ -1,0 +1,69 @@
+import com.google.protobuf.MessageLite;
+
+// 
+// Decompiled by Procyon v0.6.0
+// 
+
+public final class ampb extends ahcz implements aheo
+{
+    public static final ampb a;
+    private static volatile ahev b;
+    private int c;
+    private ahjl d;
+    private byte e;
+    
+    static {
+        ahcz.registerDefaultInstance(ampb.class, a = new ampb());
+    }
+    
+    private ampb() {
+        this.e = 2;
+        emptyProtobufList();
+        final ahbt b = ahbt.b;
+    }
+    
+    @Override
+    protected final Object dynamicMethod(final ahcy ahcy, final Object o, final Object o2) {
+        final ahcy a = ahcy.a;
+        final int ordinal = ahcy.ordinal();
+        byte e = 1;
+        switch (ordinal) {
+            default: {
+                throw new UnsupportedOperationException();
+            }
+            case 6: {
+                final ahev b;
+                if ((b = ampb.b) == null) {
+                    synchronized (ampb.class) {
+                        if (ampb.b == null) {
+                            ampb.b = (ahev)new ahcs((ahcz)ampb.a);
+                        }
+                    }
+                }
+                return b;
+            }
+            case 5: {
+                return ampb.a;
+            }
+            case 4: {
+                return new ahcr((ahcz)ampb.a);
+            }
+            case 3: {
+                return new ampb();
+            }
+            case 2: {
+                return ahcz.newMessageInfo((MessageLite)ampb.a, "\u0001\u0001\u0000\u0001\u0002\u0002\u0001\u0000\u0000\u0001\u0002\u1409\u0000", new Object[] { "c", "d" });
+            }
+            case 1: {
+                if (o == null) {
+                    e = 0;
+                }
+                this.e = e;
+                return null;
+            }
+            case 0: {
+                return this.e;
+            }
+        }
+    }
+}

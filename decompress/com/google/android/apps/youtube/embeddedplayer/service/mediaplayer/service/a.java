@@ -10,10 +10,10 @@ import android.view.SurfaceControl;
 import android.os.RemoteException;
 import com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.shared.c;
 
-public abstract class a implements zds
+public abstract class a implements zfn
 {
     public c a;
-    public zdr b;
+    public zfm b;
     
     public a(final c a) {
         this.a = a;
@@ -83,7 +83,7 @@ public abstract class a implements zds
         return null;
     }
     
-    public final bse i() {
+    public final bsh i() {
         return null;
     }
     
@@ -98,8 +98,8 @@ public abstract class a implements zds
         catch (final RemoteException ex) {}
     }
     
-    public final void k(final Bitmap bitmap, final tcc tcc) {
-        tcc.sd((Object)bitmap, new Exception());
+    public final void k(final Bitmap bitmap, final tdg tdg) {
+        tdg.c((Object)bitmap, new Exception());
     }
     
     public final void l(final Object o) {
@@ -120,7 +120,7 @@ public abstract class a implements zds
         if (this.a == null) {
             return;
         }
-        final zdr b = this.b;
+        final zfm b = this.b;
         if (b != null) {
             b.f();
         }
@@ -139,14 +139,14 @@ public abstract class a implements zds
     public final void p(final boolean b, final byte[] array, final long n, final long n2) {
     }
     
-    public final void q(final zdr b) {
+    public final void q(final zfm b) {
         this.b = b;
     }
     
-    public final void r(final zdu zdu) {
+    public final void r(final zfp zfp) {
     }
     
-    public final void s(final zdv zdv) {
+    public final void s(final zfq zfq) {
     }
     
     public final void t(final int n, final int n2) {

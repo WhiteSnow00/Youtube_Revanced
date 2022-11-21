@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">పరికర థీమ్‌ను ఉపయోగించు</string>
     <string name="app_theme_appearance_summary">రూపానికి సంబంధించి లేతరంగు లేదా ముదురు రంగు ప్రాధాన్యతను ఎంచుకోండి</string>
     <string name="app_theme_appearance_title">కనిపించే తీరు</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">వర్తింప చేయి</string>
     <string name="approve_playlist_sync">కొత్త వీడియోలను సింక్ చేయండి</string>
     <string name="audio_playback_failed_snackbar_action_button">మళ్లీ ట్రై చేయి</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">ప్రసారాన్ని ముగించు</string>
     <string name="lc_retry_yes">మళ్లీ ప్రయత్నించండి</string>
     <string name="lc_rotate_device">పరికరాన్ని తిప్పండి</string>
+    <string name="lc_sharedmde_required_field_error">టైటిల్, ప్రేక్షకులు అవసరం.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">పోర్ట్రెయిట్‌లో ప్రసారం చేయబడుతుంది</string>
     <string name="lc_stream_start_error">ప్రసారం ప్రారంభించడం సాధ్యం కాలేదు. మీ కనెక్షన్‌ని చెక్ చేయండి.</string>
@@ -1729,6 +1730,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">వీడియో ప్రివ్యూ. పాజ్ చేయడానికి ట్యాప్ చేయండి.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">వీడియో ప్రివ్యూ. ప్లే చేయడానికి ట్యాప్ చేయండి.</string>
     <string name="shorts_a11y_zoom_control">జూమ్ నియంత్రణ</string>
+    <string name="shorts_audio_failure_toast">సౌండ్‌ను జోడించడం విఫలమైంది. దయచేసి మళ్లీ ట్రై చేయండి.</string>
     <string name="shorts_camera_allow_access_subtitle">మీ కెమెరాకు, మైక్రోఫోన్‌కు యాక్సెస్ ఇవ్వండి</string>
     <string name="shorts_camera_allow_access_title">ఒక షార్ట్‌ను క్రియేట్ చేయండి</string>
     <string name="shorts_camera_close_confirmation_cancel">రద్దు చేయండి</string>

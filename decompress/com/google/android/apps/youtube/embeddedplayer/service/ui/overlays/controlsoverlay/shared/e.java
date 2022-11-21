@@ -4,20 +4,22 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared;
 
+import com.google.android.apps.youtube.embeddedplayer.service.jar.client.x;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.b;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.service.a;
 import com.google.android.libraries.youtube.player.subtitles.model.SubtitleTrack;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.model.SubscriptionNotificationMenuItem;
 import android.os.Parcel;
-import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.service.a;
 import android.os.Handler;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.subscribebutton.shared.c;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.videodetailsoverlay.remoteloaded.d;
 
-public final class e extends enz implements f
+public final class e extends eod implements f
 {
-    public aazw a;
-    public abbl b;
-    public abcl c;
-    public abbd d;
+    public abcx a;
+    public aben b;
+    public abfl c;
+    public abed d;
     public d e;
     public c f;
     public com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.remoteloaded.c g;
@@ -25,14 +27,14 @@ public final class e extends enz implements f
     public com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.d i;
     public volatile boolean j;
     private final Handler k;
-    private final tdz l;
+    private final thg l;
     private final com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.service.e m;
     
     public e() {
         super("com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.IControlsOverlayServiceListener");
     }
     
-    public e(final Handler k, final tdz l, final com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.service.e m) {
+    public e(final Handler k, final thg l, final com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.service.e m) {
         super("com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.IControlsOverlayServiceListener");
         this.i = com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.d.d;
         this.k = k;
@@ -47,20 +49,20 @@ public final class e extends enz implements f
     }
     
     public final void B() {
-        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.service.e(this, 20));
+        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.errorscreen.remoteloaded.f(this, 16));
     }
     
     public final void a() {
-        this.k.post((Runnable)new a(this, 3));
+        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.errorscreen.remoteloaded.f(this, 20));
     }
     
     public final void b() {
-        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.service.e(this, 19));
+        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.errorscreen.remoteloaded.f(this, 15));
     }
     
-    public final void c(final abgz abgz) {
+    public final void c(final abjz abjz) {
         if (this.j) {
-            this.l.f((Object)abgz);
+            this.l.f((Object)abjz);
         }
     }
     
@@ -86,7 +88,7 @@ public final class e extends enz implements f
                 break;
             }
             case 20: {
-                final SubscriptionNotificationMenuItem subscriptionNotificationMenuItem = (SubscriptionNotificationMenuItem)eoa.a(parcel, SubscriptionNotificationMenuItem.CREATOR);
+                final SubscriptionNotificationMenuItem subscriptionNotificationMenuItem = (SubscriptionNotificationMenuItem)eoe.a(parcel, SubscriptionNotificationMenuItem.CREATOR);
                 this.enforceNoDataAvail(parcel);
                 this.w(subscriptionNotificationMenuItem);
                 break;
@@ -104,7 +106,7 @@ public final class e extends enz implements f
                 break;
             }
             case 16: {
-                final SubtitleTrack subtitleTrack = (SubtitleTrack)eoa.a(parcel, SubtitleTrack.CREATOR);
+                final SubtitleTrack subtitleTrack = (SubtitleTrack)eoe.a(parcel, SubtitleTrack.CREATOR);
                 this.enforceNoDataAvail(parcel);
                 this.z(subtitleTrack);
                 break;
@@ -118,7 +120,7 @@ public final class e extends enz implements f
                 break;
             }
             case 13: {
-                final boolean k = eoa.k(parcel);
+                final boolean k = eoe.k(parcel);
                 this.enforceNoDataAvail(parcel);
                 this.y(k);
                 break;
@@ -181,53 +183,53 @@ public final class e extends enz implements f
     }
     
     public final void g() {
-        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.service.e(this, 17));
+        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.errorscreen.remoteloaded.f(this, 13));
     }
     
     public final void h() {
-        this.k.post((Runnable)new a(this, 0));
+        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.errorscreen.remoteloaded.f(this, 18));
     }
     
     public final void i() {
-        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.service.e(this, 15));
+        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.errorscreen.remoteloaded.f(this, 11));
     }
     
     public final void j() {
-        this.k.post((Runnable)new a(this, 7));
+        this.k.post((Runnable)new a(this, 3));
     }
     
     public final void k() {
-        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.service.e(this, 18));
+        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.errorscreen.remoteloaded.f(this, 14));
     }
     
     public final void l() {
-        this.k.post((Runnable)new a(this, 8));
+        this.k.post((Runnable)new a(this, 4));
     }
     
     public final void m() {
-        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.service.e(this, 16));
-        this.m.p(wya.c(28239));
+        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.errorscreen.remoteloaded.f(this, 12));
+        this.m.p(xbf.c(28239));
     }
     
     public final void n() {
-        this.k.post((Runnable)new a(this, 4));
-        this.m.p(wya.c(28240));
+        this.k.post((Runnable)new a(this, 1));
+        this.m.p(xbf.c(28240));
     }
     
     public final void o() {
-        this.k.post((Runnable)new a(this, 6));
+        this.k.post((Runnable)new a(this, 2));
     }
     
     public final void p() {
-        this.k.post((Runnable)new a(this, 5));
+        this.k.post((Runnable)new a(this, 0));
     }
     
     public final void q() {
-        this.k.post((Runnable)new a(this, 9));
+        this.k.post((Runnable)new a(this, 5));
     }
     
     public final void r(final long n) {
-        this.k.post((Runnable)new gtg(this, n, 7));
+        this.k.post((Runnable)new gtw(this, n, 7));
     }
     
     public final void s() {
@@ -239,17 +241,17 @@ public final class e extends enz implements f
     }
     
     public final void u() {
-        this.k.post((Runnable)new a(this, 1));
-        this.m.p(wya.c(28666));
-        this.m.p(wya.c(23851));
+        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.errorscreen.remoteloaded.f(this, 17));
+        this.m.p(xbf.c(28666));
+        this.m.p(xbf.c(23851));
     }
     
     public final void v() {
-        this.k.post((Runnable)new a(this, 2));
+        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.errorscreen.remoteloaded.f(this, 19));
     }
     
     public final void w(final SubscriptionNotificationMenuItem subscriptionNotificationMenuItem) {
-        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.c(this, subscriptionNotificationMenuItem, 18));
+        this.k.post((Runnable)new b(this, subscriptionNotificationMenuItem, 20));
     }
     
     public final void x() {
@@ -257,10 +259,10 @@ public final class e extends enz implements f
     }
     
     public final void y(final boolean b) {
-        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.a(this, b, 16));
+        this.k.post((Runnable)new x(this, b, 18));
     }
     
     public final void z(final SubtitleTrack subtitleTrack) {
-        this.k.post((Runnable)new com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.adoverlay.remoteloaded.c(this, subtitleTrack, 17));
+        this.k.post((Runnable)new b(this, subtitleTrack, 19));
     }
 }

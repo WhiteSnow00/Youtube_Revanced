@@ -16,14 +16,14 @@ public final class SpliceScheduleCommand extends SpliceCommand
     public final List a;
     
     static {
-        CREATOR = (Parcelable$Creator)new bvm(8);
+        CREATOR = (Parcelable$Creator)new bvp(8);
     }
     
     public SpliceScheduleCommand(final Parcel parcel) {
         final int int1 = parcel.readInt();
-        final ArrayList list = new ArrayList<bvp>(int1);
+        final ArrayList list = new ArrayList<bvs>(int1);
         for (int i = 0; i < int1; ++i) {
-            list.add(bvp.a(parcel));
+            list.add(bvs.a(parcel));
         }
         this.a = Collections.unmodifiableList((List<?>)list);
     }
@@ -36,7 +36,7 @@ public final class SpliceScheduleCommand extends SpliceCommand
         final int size = this.a.size();
         parcel.writeInt(size);
         for (i = 0; i < size; ++i) {
-            bvp.c((bvp)this.a.get(i), parcel);
+            bvs.c((bvs)this.a.get(i), parcel);
         }
     }
 }

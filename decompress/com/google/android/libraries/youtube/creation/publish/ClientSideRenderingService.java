@@ -24,26 +24,26 @@ import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import android.os.IBinder;
 
-public class ClientSideRenderingService extends uda
+public class ClientSideRenderingService extends uef
 {
     public static final String a;
     public static final String b;
     static final int c;
     public String d;
     public String e;
-    public ucu f;
-    public ueu g;
-    public vdr h;
-    public zmf i;
+    public udz f;
+    public ufz g;
+    public vey h;
+    public zoa i;
     public String j;
-    public vfp k;
+    public vgx k;
     public int l;
     public int m;
     public int n;
     public long o;
-    public pvh p;
+    public oqz p;
     private final IBinder q;
-    private uco r;
+    private udt r;
     
     static {
         a = String.valueOf(ClientSideRenderingService.class.getName()).concat(".task_id");
@@ -52,28 +52,28 @@ public class ClientSideRenderingService extends uda
     }
     
     public ClientSideRenderingService() {
-        this.q = (IBinder)new aafl(this);
+        this.q = (IBinder)new aahi(this);
     }
     
-    public static String a(final String s, final String s2, String string, final String s3, final String s4) {
-        final boolean f = aezr.f(s3);
+    public static String a(String string, final String s, final String s2, final String s3, final String s4) {
+        final boolean f = afbj.f(s3);
         final int n = 0;
         final int n2 = 0;
         int hashCode = n;
         if (!f) {
-            arad g;
+            arcy g;
             try {
                 final BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(s3));
-                g = arad.g((InputStream)bufferedInputStream, ExtensionRegistryLite.getGeneratedRegistry());
+                g = arcy.g(bufferedInputStream, ExtensionRegistryLite.getGeneratedRegistry());
                 bufferedInputStream.close();
             }
             catch (final IOException ex) {
-                ttr.c("YOUTUBE_SHORTS_CSR", "StateEvent file not found or can't be parsed!");
+                tut.c("YOUTUBE_SHORTS_CSR", "StateEvent file not found or can't be parsed!");
                 g = null;
             }
             hashCode = n;
             if (g != null) {
-                final ahaz builder = ((ahbh)g).toBuilder();
+                final ahcr builder = g.toBuilder();
                 int n3 = 0;
                 int i;
                 while (true) {
@@ -81,60 +81,60 @@ public class ClientSideRenderingService extends uda
                     if (n3 >= g.b()) {
                         break;
                     }
-                    final aqzs aqzs = (aqzs)((ahbh)g.d(n3)).toBuilder();
-                    ((ahaz)aqzs).copyOnWrite();
-                    aqzt.w((aqzt)aqzs.instance);
+                    final arcn arcn = (arcn)((ahcz)g.d(n3)).toBuilder();
+                    ((ahcr)arcn).copyOnWrite();
+                    arco.w((arco)arcn.instance);
                     builder.copyOnWrite();
-                    arad.j((arad)builder.instance, n3, (aqzt)((ahaz)aqzs).build());
+                    arcy.j((arcy)builder.instance, n3, (arco)((ahcr)arcn).build());
                     ++n3;
                 }
                 while (i < g.a()) {
-                    final ahaz builder2 = ((ahbh)g.c(i)).toBuilder();
+                    final ahcr builder2 = g.c(i).toBuilder();
                     builder2.copyOnWrite();
-                    final aqyp aqyp = (aqyp)builder2.instance;
-                    aqyp.b &= 0xFFFFFFFE;
-                    aqyp.c = 0L;
+                    final arbk arbk = (arbk)builder2.instance;
+                    arbk.b &= 0xFFFFFFFE;
+                    arbk.c = 0L;
                     builder.copyOnWrite();
-                    arad.k((arad)builder.instance, i, (aqyp)builder2.build());
+                    arcy.k((arcy)builder.instance, i, (arbk)builder2.build());
                     ++i;
                 }
-                hashCode = ((ahbh)builder.build()).hashCode();
+                hashCode = builder.build().hashCode();
             }
         }
         final StringBuilder sb = new StringBuilder("videoFileUri=");
-        sb.append(s);
-        sb.append("&startPositionUs=");
-        sb.append(s2);
-        sb.append("&endPositionUs=");
         sb.append(string);
+        sb.append("&startPositionUs=");
+        sb.append(s);
+        sb.append("&endPositionUs=");
+        sb.append(s2);
         sb.append("&stateEventHashCode=");
         sb.append(hashCode);
         sb.append("&filterName=");
         sb.append(s4);
         string = sb.toString();
-        final afoi a = afol.a();
+        final afpy a = afqb.a();
         final Charset utf_8 = StandardCharsets.UTF_8;
-        final afoj a2 = ((afod)a).a();
-        ((afoe)a2).e(string.toString().getBytes(utf_8));
+        final afpz a2 = ((afpt)a).a();
+        ((afpu)a2).e(string.toString().getBytes(utf_8));
         return a2.g().toString();
     }
     
     private final void e() {
-        final uco r = this.r;
-        if (r != null && ((ucz)r).a == ucn.b) {
-            final uco r2 = this.r;
-            synchronized (((ucz)r2).b) {
-                final utd m = ((ucz)r2).m;
+        final udt r = this.r;
+        if (r != null && ((uee)r).a == uds.b) {
+            final udt r2 = this.r;
+            synchronized (((uee)r2).b) {
+                final uue m = ((uee)r2).m;
                 if (m == null) {
-                    ((ucz)r2).b();
+                    ((uee)r2).b();
                 }
                 else {
-                    final utg i = m.i;
+                    final uuh i = m.i;
                     if (i != null) {
                         i.b();
                         m.i = null;
                     }
-                    final qzi j = m.j;
+                    final rag j = m.j;
                     if (j != null) {
                         j.a();
                     }
@@ -165,17 +165,17 @@ public class ClientSideRenderingService extends uda
     
     public final int onStartCommand(Intent launchIntentForPackage, int c, final int n) {
         final String stringExtra = launchIntentForPackage.getStringExtra(ClientSideRenderingService.a);
-        if (adkp.ae(stringExtra, this.d)) {
-            final EnumSet<ucn> of = EnumSet.of(ucn.a, ucn.b);
-            final uco r = this.r;
-            ucn ucn;
+        if (aexq.c(stringExtra, this.d)) {
+            final EnumSet<uds> of = EnumSet.of(uds.a, uds.b);
+            final udt r = this.r;
+            uds uds;
             if (r != null) {
-                ucn = ((ucz)r).a;
+                uds = ((uee)r).a;
             }
             else {
-                ucn = ucn.f;
+                uds = uds.f;
             }
-            if (of.contains(ucn)) {
+            if (of.contains(uds)) {
                 return 2;
             }
         }
@@ -183,9 +183,9 @@ public class ClientSideRenderingService extends uda
         if (stringExtra2 != null) {
             final Bundle bundle = new Bundle();
             bundle.putString("frontend_id_key", stringExtra2);
-            this.k = (vfp)this.h.a(this.i.c());
-            this.j = vgl.f(397, stringExtra2);
-            this.g.o(bundle, (aiqj)null);
+            this.k = (vgx)this.h.a(this.i.c());
+            this.j = vht.f(397, stringExtra2);
+            this.g.o(bundle, (aisc)null);
         }
         this.e();
         this.d = stringExtra;
@@ -193,7 +193,7 @@ public class ClientSideRenderingService extends uda
         uri.getClass();
         final String queryParameter = uri.getQueryParameter("videoEffectsStateFilePath");
         final String queryParameter2 = uri.getQueryParameter("filter");
-        adkp.Q(tpe.bB(queryParameter, queryParameter2));
+        adme.T(tqf.bB(queryParameter, queryParameter2));
         final String queryParameter3 = uri.getQueryParameter("videoFileUri");
         queryParameter3.getClass();
         final long micros = TimeUnit.MILLISECONDS.toMicros(launchIntentForPackage.getLongExtra("EXTRA_CSR_VIDEO_DURATION_MS", 0L));
@@ -213,7 +213,7 @@ public class ClientSideRenderingService extends uda
         else {
             long2 = micros;
         }
-        final bny g = rlc.g((Context)this, Uri.parse(queryParameter3), long1, long2);
+        final bob e = rmc.e((Context)this, Uri.parse(queryParameter3), long1, long2);
         this.l = launchIntentForPackage.getIntExtra("EXTRA_CSR_VIDEO_WIDTH", 720);
         this.m = launchIntentForPackage.getIntExtra("EXTRA_CSR_VIDEO_HEIGHT", 1280);
         this.n = launchIntentForPackage.getIntExtra("EXTRA_CSR_TARGET_OUTPUT_VIDEO_QUALITY", 5);
@@ -221,25 +221,25 @@ public class ClientSideRenderingService extends uda
         final String stringExtra3 = launchIntentForPackage.getStringExtra(ClientSideRenderingService.b);
         stringExtra3.getClass();
         this.e = stringExtra3;
-        final File ba = tpe.bA(new File(this.e), String.valueOf(this.d).concat(".mp4"));
-        final pvh p3 = this.p;
-        final ucz r2 = new ucz((ubg)((eqr)p3.a).b.e.a(), (ScheduledExecutorService)((eqr)p3.a).a.r.a(), (uly)((eqr)p3.a).a.a.at.a(), (uly)((eqr)p3.a).a.a.at.a(), (gxp)((eqr)p3.a).b.f.a(), (pvh)((eqr)p3.a).b.i.a(), new ucy(g, ba, queryParameter, queryParameter2, this.l, this.m, this.n), (aujg)((eqr)p3.a).a.a.ar.a(), (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null);
-        this.r = (uco)r2;
-        final uct l = new uct(this);
-        final ucz ucz = r2;
-        r2.l = (ucu)l;
-        r2.d.c((uph)new ucx(r2));
+        final File ba = tqf.bA(new File(this.e), String.valueOf(this.d).concat(".mp4"));
+        final oqz p3 = this.p;
+        final uee r2 = new uee((ucm)((eqt)p3.a).b.e.a(), (ScheduledExecutorService)((eqt)p3.a).a.r.a(), (unb)((eqt)p3.a).a.a.av.a(), (unb)((eqt)p3.a).a.a.av.a(), (gxz)((eqt)p3.a).b.f.a(), (oqz)((eqt)p3.a).b.i.a(), new ued(e, ba, queryParameter, queryParameter2, this.l, this.m, this.n), (aapu)((eqt)p3.a).a.a.ar.a(), (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null, (byte[])null);
+        this.r = (udt)r2;
+        final udy l = new udy(this);
+        final uee uee = r2;
+        r2.l = (udz)l;
+        r2.d.c((uqi)new uec(r2));
         c = ClientSideRenderingService.c;
-        final afq afq = new afq((Context)this, "ClientSideRenderingServiceNotificationChannel");
-        afq.q(2131231928);
-        afq.i((CharSequence)((Context)this).getString(2132019990));
+        final afr afr = new afr((Context)this, "ClientSideRenderingServiceNotificationChannel");
+        afr.q(2131231926);
+        afr.i((CharSequence)((Context)this).getString(2132019993));
         launchIntentForPackage = ((Context)this).getPackageManager().getLaunchIntentForPackage(((Context)this).getPackageName());
         if (launchIntentForPackage != null) {
             launchIntentForPackage.setFlags(270532608);
             launchIntentForPackage.setComponent(new ComponentName((Context)this, (Class)ClientSideRenderingService.class));
-            afq.g = qlc.b((Context)this, launchIntentForPackage, 67108864);
+            afr.g = qlw.b((Context)this, launchIntentForPackage, 67108864);
         }
-        this.startForeground(c, afq.a());
+        this.startForeground(c, afr.a());
         return 2;
     }
     

@@ -13,7 +13,7 @@ public final class PlayerViewModeData implements BusSupported$Data
     public final int a;
     
     static {
-        CREATOR = (Parcelable$Creator)new ics(20);
+        CREATOR = (Parcelable$Creator)new idb(20);
     }
     
     public PlayerViewModeData(final int a) {

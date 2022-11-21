@@ -29,22 +29,22 @@ public class ShortsPlayerView extends FrameLayout
     public final ShortsPlayerTextureView a;
     public final RelativeLayout b;
     public final ShortsPlayerImageView c;
-    public final tyj d;
+    public final tzl d;
     final FrameLayout e;
-    public txz f;
-    public uon g;
+    public tza f;
+    public upp g;
     public float h;
     public boolean i;
-    public tyn j;
+    public tzp j;
     public float k;
     public float l;
     public boolean m;
     public boolean n;
     public double o;
     public double p;
-    public azf q;
-    public uml r;
-    public aujg s;
+    public azg q;
+    public unn r;
+    public aapu s;
     private int t;
     private int u;
     private boolean v;
@@ -63,20 +63,20 @@ public class ShortsPlayerView extends FrameLayout
         this.v = true;
         this.m = false;
         this.n = false;
-        View.inflate(context, 2131625416, (ViewGroup)this);
-        final View viewById = this.findViewById(2131432343);
+        View.inflate(context, 2131625418, (ViewGroup)this);
+        final View viewById = this.findViewById(2131432344);
         viewById.getClass();
         this.a = (ShortsPlayerTextureView)viewById;
-        final RelativeLayout b = (RelativeLayout)this.findViewById(2131431501);
+        final RelativeLayout b = (RelativeLayout)this.findViewById(2131431502);
         b.getClass();
         this.b = b;
         final View viewById2 = this.findViewById(2131429172);
         viewById2.getClass();
         (this.c = (ShortsPlayerImageView)viewById2).setScaleType(ImageView$ScaleType.MATRIX);
         this.findViewById(2131430625);
-        final FrameLayout e = (FrameLayout)this.findViewById(2131432333);
+        final FrameLayout e = (FrameLayout)this.findViewById(2131432334);
         this.e = e;
-        this.d = new tyj((View)e);
+        this.d = new tzl((View)e);
     }
     
     public static final float i(final float n, final float n2, final float n3) {
@@ -125,22 +125,22 @@ public class ShortsPlayerView extends FrameLayout
     
     public final void c(final boolean b) {
         if (b) {
-            final tyj d = this.d;
+            final tzl d = this.d;
             if (!d.f) {
                 d.a();
                 final View d2 = d.d;
                 d.e = new AnimatorSet();
                 final AnimatorSet e = d.e;
                 final ObjectAnimator setDuration = ObjectAnimator.ofFloat((Object)d2, View.ALPHA, new float[] { 0.0f, 1.0f }).setDuration(300L);
-                ((ValueAnimator)setDuration).addListener((Animator$AnimatorListener)new tyg(d2));
-                ((ValueAnimator)setDuration).setInterpolator(tyj.a);
+                ((ValueAnimator)setDuration).addListener((Animator$AnimatorListener)new tzi(d2));
+                ((ValueAnimator)setDuration).setInterpolator(tzl.a);
                 e.play((Animator)setDuration);
                 d.e.start();
                 d.f = true;
             }
         }
         else {
-            final tyj d3 = this.d;
+            final tzl d3 = this.d;
             if (d3.f) {
                 if (d3.e.isRunning()) {
                     d3.e.end();
@@ -149,8 +149,8 @@ public class ShortsPlayerView extends FrameLayout
                 d3.e = new AnimatorSet();
                 final AnimatorSet e2 = d3.e;
                 final ObjectAnimator setDuration2 = ObjectAnimator.ofFloat((Object)d4, View.ALPHA, new float[] { 1.0f, 0.0f }).setDuration(300L);
-                ((ValueAnimator)setDuration2).addListener((Animator$AnimatorListener)new tyh(d4));
-                ((ValueAnimator)setDuration2).setInterpolator(tyj.a);
+                ((ValueAnimator)setDuration2).addListener((Animator$AnimatorListener)new tzj(d4));
+                ((ValueAnimator)setDuration2).setInterpolator(tzl.a);
                 e2.play((Animator)setDuration2);
                 d3.e.start();
                 d3.f = false;
@@ -180,11 +180,11 @@ public class ShortsPlayerView extends FrameLayout
             this.requestLayout();
             return;
         }
-        ttr.b("Changing the video aspect ratio after it's initialized is not allowed");
+        tut.b("Changing the video aspect ratio after it's initialized is not allowed");
     }
     
     public final void g() {
-        final uon g = this.g;
+        final upp g = this.g;
         if (g != null) {
             if (!this.i) {
                 if (this.h != 0.0f) {
@@ -200,7 +200,7 @@ public class ShortsPlayerView extends FrameLayout
     }
     
     public final boolean h() {
-        final tyn j = this.j;
+        final tzp j = this.j;
         return j != null && j.b;
     }
     
@@ -221,7 +221,7 @@ public class ShortsPlayerView extends FrameLayout
     }
     
     protected final void onMeasure(int n, int n2) {
-        final tyn j = this.j;
+        final tzp j = this.j;
         if (j != null && j.b) {
             if (this.h == 0.0f) {
                 super.onMeasure(n, n2);

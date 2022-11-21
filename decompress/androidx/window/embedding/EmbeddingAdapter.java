@@ -32,6 +32,10 @@ public final class EmbeddingAdapter
     private final PredicateAdapter predicateAdapter;
     private final int vendorApiLevel;
     
+    public static SplitAttributes $r8$lambda$UZaNoXnWEe-fPYDvRnnAj_AMnz8(final EmbeddingAdapter embeddingAdapter, final SplitAttributesCalculator splitAttributesCalculator, final SplitAttributesCalculator$SplitAttributesCalculatorParams splitAttributesCalculator$SplitAttributesCalculatorParams) {
+        return translateSplitAttributesCalculator$lambda$0(embeddingAdapter, splitAttributesCalculator, splitAttributesCalculator$SplitAttributesCalculatorParams);
+    }
+    
     public EmbeddingAdapter(final PredicateAdapter predicateAdapter) {
         predicateAdapter.getClass();
         this.predicateAdapter = predicateAdapter;
@@ -186,15 +190,15 @@ public final class EmbeddingAdapter
     }
     
     private final Object translateActivityIntentPredicates(final Set set) {
-        return this.predicateAdapter.buildPairPredicate(atno.b((Class)Activity.class), atno.b((Class)Intent.class), (atmp)new EmbeddingAdapter$translateActivityIntentPredicates$1(set));
+        return this.predicateAdapter.buildPairPredicate(atrg.b(Activity.class), atrg.b(Intent.class), (atqh)new EmbeddingAdapter$translateActivityIntentPredicates$1(set));
     }
     
     private final Object translateActivityPairPredicates(final Set set) {
-        return this.predicateAdapter.buildPairPredicate(atno.b((Class)Activity.class), atno.b((Class)Activity.class), (atmp)new EmbeddingAdapter$translateActivityPairPredicates$1(set));
+        return this.predicateAdapter.buildPairPredicate(atrg.b(Activity.class), atrg.b(Activity.class), (atqh)new EmbeddingAdapter$translateActivityPairPredicates$1(set));
     }
     
     private final Object translateActivityPredicates(final Set set) {
-        return this.predicateAdapter.buildPredicate(atno.b((Class)Activity.class), (atml)new EmbeddingAdapter$translateActivityPredicates$1(set));
+        return this.predicateAdapter.buildPredicate(atrg.b(Activity.class), (atqd)new EmbeddingAdapter$translateActivityPredicates$1(set));
     }
     
     private final androidx.window.extensions.embedding.ActivityRule translateActivityRule(final ActivityRule activityRule, final Class clazz) {
@@ -211,14 +215,14 @@ public final class EmbeddingAdapter
     
     private final int translateFinishBehavior(final SplitRule$FinishBehavior splitRule$FinishBehavior) {
         int n;
-        if (atnh.c((Object)splitRule$FinishBehavior, (Object)SplitRule$FinishBehavior.NEVER)) {
+        if (atqz.c(splitRule$FinishBehavior, SplitRule$FinishBehavior.NEVER)) {
             n = 0;
         }
-        else if (atnh.c((Object)splitRule$FinishBehavior, (Object)SplitRule$FinishBehavior.ALWAYS)) {
+        else if (atqz.c(splitRule$FinishBehavior, SplitRule$FinishBehavior.ALWAYS)) {
             n = 1;
         }
         else {
-            if (!atnh.c((Object)splitRule$FinishBehavior, (Object)SplitRule$FinishBehavior.ADJACENT)) {
+            if (!atqz.c(splitRule$FinishBehavior, SplitRule$FinishBehavior.ADJACENT)) {
                 new StringBuilder("Unknown finish behavior:").append(splitRule$FinishBehavior);
                 throw new IllegalArgumentException("Unknown finish behavior:".concat(String.valueOf(splitRule$FinishBehavior)));
             }
@@ -244,11 +248,11 @@ public final class EmbeddingAdapter
     }
     
     private final Object translateIntentPredicates(final Set set) {
-        return this.predicateAdapter.buildPredicate(atno.b((Class)Intent.class), (atml)new EmbeddingAdapter$translateIntentPredicates$1(set));
+        return this.predicateAdapter.buildPredicate(atrg.b(Intent.class), (atqd)new EmbeddingAdapter$translateIntentPredicates$1(set));
     }
     
     private final Object translateParentMetricsPredicate(final SplitRule splitRule) {
-        return this.predicateAdapter.buildPredicate(atno.b((Class)WindowMetrics.class), (atml)new EmbeddingAdapter$translateParentMetricsPredicate$1(splitRule));
+        return this.predicateAdapter.buildPredicate(atrg.b(WindowMetrics.class), (atqd)new EmbeddingAdapter$translateParentMetricsPredicate$1(splitRule));
     }
     
     private final SplitAttributes$SplitType$RatioSplitType translateRatio(final androidx.window.embedding.SplitAttributes$SplitType$RatioSplitType splitAttributes$SplitType$RatioSplitType) {
@@ -260,20 +264,20 @@ public final class EmbeddingAdapter
             final androidx.window.extensions.embedding.SplitAttributes$Builder setSplitType = new androidx.window.extensions.embedding.SplitAttributes$Builder().setSplitType(this.translateSplitType(splitAttributes.getSplitType()));
             final SplitAttributes$LayoutDirection layoutDirection = splitAttributes.getLayoutDirection();
             int layoutDirection2;
-            if (atnh.c((Object)layoutDirection, (Object)SplitAttributes$LayoutDirection.LOCALE)) {
+            if (atqz.c(layoutDirection, SplitAttributes$LayoutDirection.LOCALE)) {
                 layoutDirection2 = 3;
             }
-            else if (atnh.c((Object)layoutDirection, (Object)SplitAttributes$LayoutDirection.LEFT_TO_RIGHT)) {
+            else if (atqz.c(layoutDirection, SplitAttributes$LayoutDirection.LEFT_TO_RIGHT)) {
                 layoutDirection2 = 0;
             }
-            else if (atnh.c((Object)layoutDirection, (Object)SplitAttributes$LayoutDirection.RIGHT_TO_LEFT)) {
+            else if (atqz.c(layoutDirection, SplitAttributes$LayoutDirection.RIGHT_TO_LEFT)) {
                 layoutDirection2 = 1;
             }
-            else if (atnh.c((Object)layoutDirection, (Object)SplitAttributes$LayoutDirection.TOP_TO_BOTTOM)) {
+            else if (atqz.c(layoutDirection, SplitAttributes$LayoutDirection.TOP_TO_BOTTOM)) {
                 layoutDirection2 = 4;
             }
             else {
-                if (!atnh.c((Object)layoutDirection, (Object)SplitAttributes$LayoutDirection.BOTTOM_TO_TOP)) {
+                if (!atqz.c(layoutDirection, SplitAttributes$LayoutDirection.BOTTOM_TO_TOP)) {
                     final StringBuilder sb = new StringBuilder("Unsupported layoutDirection:");
                     sb.append(splitAttributes);
                     sb.append(".layoutDirection");
@@ -359,13 +363,13 @@ public final class EmbeddingAdapter
         final String splitRuleTag = splitAttributesCalculator$SplitAttributesCalculatorParams.getSplitRuleTag();
         final Rect bounds = parentWindowMetrics.getBounds();
         bounds.getClass();
-        final androidx.window.layout.WindowMetrics windowMetrics = new androidx.window.layout.WindowMetrics(bounds, aoa.o(parentWindowMetrics.getWindowInsets()));
+        final androidx.window.layout.WindowMetrics windowMetrics = new androidx.window.layout.WindowMetrics(bounds, aoc.o(parentWindowMetrics.getWindowInsets()));
         return new androidx.window.embedding.SplitAttributesCalculator$SplitAttributesCalculatorParams(windowMetrics, parentConfiguration, this.translate(defaultSplitAttributes), defaultMinSizeSatisfied, ExtensionsWindowLayoutInfoAdapter.INSTANCE.translate$window_release(windowMetrics, parentWindowLayoutInfo), splitRuleTag);
     }
     
     public final List translate(final List list) {
         list.getClass();
-        final ArrayList list2 = new ArrayList(aqzg.L((Iterable)list));
+        final ArrayList list2 = new ArrayList(atzd.l((Iterable)list));
         final Iterator iterator = list.iterator();
         while (iterator.hasNext()) {
             list2.add(this.translate((SplitInfo)iterator.next()));
@@ -377,9 +381,9 @@ public final class EmbeddingAdapter
         set.getClass();
         final Class predicateClassOrNull$window_release = this.predicateAdapter.predicateClassOrNull$window_release();
         if (predicateClassOrNull$window_release == null) {
-            return (Set)atkj.a;
+            return (Set)atob.a;
         }
-        final ArrayList list = new ArrayList(aqzg.L((Iterable)set));
+        final ArrayList list = new ArrayList(atzd.l((Iterable)set));
         for (final EmbeddingRule embeddingRule : set) {
             androidx.window.extensions.embedding.EmbeddingRule embeddingRule2;
             if (embeddingRule instanceof SplitPairRule) {
@@ -396,7 +400,7 @@ public final class EmbeddingAdapter
             }
             list.add(embeddingRule2);
         }
-        return aqzg.J((Iterable)list);
+        return atzd.j((Iterable)list);
     }
     
     public final androidx.window.extensions.embedding.SplitAttributesCalculator translateSplitAttributesCalculator(final SplitAttributesCalculator splitAttributesCalculator) {

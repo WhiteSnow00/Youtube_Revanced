@@ -15,7 +15,7 @@ public class MdxWatchDrawerLayout$SavedState extends View$BaseSavedState
     boolean a;
     
     static {
-        CREATOR = (Parcelable$Creator)new ics(0);
+        CREATOR = (Parcelable$Creator)new idb(0);
     }
     
     public MdxWatchDrawerLayout$SavedState(final Parcel parcel) {

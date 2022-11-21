@@ -50,11 +50,11 @@
     <string name="litho_channel_guidelines_off">La rimozione delle linee guida del canale è disattivata</string>
     <string name="litho_channel_guidelines_on">La rimozione delle linee guida del canale è attivata</string>
     <string name="litho_community_guidelines">Rimozione linee guida Community</string>
+    <string name="accessibility_settings_edu_opt_in_text">Attivare i controlli di accessibilità per il lettore video?</string>
+    <string name="accessibility_settings_edu_opt_out_text">I tuoi controlli sono modificati perché un servizio di accessibilità è attivo.</string>
     <string name="litho_community_guidelines_off">La rimozione delle linee guida Community è disattivata</string>
     <string name="litho_community_guidelines_on">La rimozione delle linee guida Community è attivata</string>
     <string name="litho_community_posts">Rimozione post Community</string>
-    <string name="accessibility_settings_edu_opt_in_text">Attivare i controlli di accessibilità per il lettore video?</string>
-    <string name="accessibility_settings_edu_opt_out_text">I tuoi controlli sono modificati perché un servizio di accessibilità è attivo.</string>
     <string name="litho_community_posts_off">La rimozione post Community è disattivata</string>
     <string name="litho_community_posts_on">La rimozione post Community è attivata</string>
     <string name="litho_compact_banner">Rimozione banner compatto</string>

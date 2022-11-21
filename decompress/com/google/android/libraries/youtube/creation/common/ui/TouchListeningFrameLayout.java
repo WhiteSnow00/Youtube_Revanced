@@ -11,7 +11,7 @@ import android.widget.FrameLayout;
 
 public class TouchListeningFrameLayout extends FrameLayout
 {
-    public ttg a;
+    public tui a;
     
     public TouchListeningFrameLayout(final Context context) {
         super(context);
@@ -26,7 +26,7 @@ public class TouchListeningFrameLayout extends FrameLayout
     }
     
     public final boolean onInterceptTouchEvent(final MotionEvent motionEvent) {
-        final ttg a = this.a;
+        final tui a = this.a;
         if (a != null) {
             a.a((Object)motionEvent);
         }

@@ -11,7 +11,7 @@ import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.contro
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.shared.g;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.videodetailsoverlay.remoteloaded.d;
 
-public final class c implements abbr, abdh, abef, abcx, d, com.google.android.apps.youtube.embeddedplayer.service.ui.subscribebutton.shared.c, com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.remoteloaded.c, com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.remoteloaded.c, com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.d, g
+public final class c implements abcx, aben, abfl, abed, d, com.google.android.apps.youtube.embeddedplayer.service.ui.subscribebutton.shared.c, com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnotificationbutton.remoteloaded.c, com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.remoteloaded.c, com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.d, g
 {
     public f a;
     
@@ -27,7 +27,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.g();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -39,7 +39,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.l();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -51,7 +51,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.a();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -63,7 +63,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.b();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -75,7 +75,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.i();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -87,7 +87,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.j();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -99,7 +99,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.k();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -111,7 +111,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.v();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -123,7 +123,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.w(subscriptionNotificationMenuItem);
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -135,7 +135,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.x();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -147,7 +147,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.B();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -159,7 +159,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.m();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -171,7 +171,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.n();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -183,7 +183,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.o();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -195,7 +195,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.p();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -210,7 +210,19 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.q();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
+            }
+        }
+    }
+    
+    public final void qZ() {
+        final f a = this.a;
+        if (a != null) {
+            try {
+                a.h();
+            }
+            catch (final RemoteException ex) {
+                lma.y(ex);
             }
         }
     }
@@ -222,36 +234,24 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.r(n);
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
     
-    public final void ra() {
-        final f a = this.a;
-        if (a != null) {
-            try {
-                a.h();
-            }
-            catch (final RemoteException ex) {
-                mft.v(ex);
-            }
-        }
-    }
-    
-    public final void rb(final SubtitleTrack subtitleTrack) {
+    public final void ra(final SubtitleTrack subtitleTrack) {
         final f a = this.a;
         if (a != null) {
             try {
                 a.z(subtitleTrack);
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
     
-    public final void s(final long n, final anza anza) {
+    public final void s(final long n, final aobh aobh) {
         this.r(n);
     }
     
@@ -262,7 +262,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.s();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -274,7 +274,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.t();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -286,7 +286,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.u();
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -298,7 +298,7 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.y(b);
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
@@ -310,11 +310,11 @@ public final class c implements abbr, abdh, abef, abcx, d, com.google.android.ap
                 a.A(n);
             }
             catch (final RemoteException ex) {
-                mft.v(ex);
+                lma.y(ex);
             }
         }
     }
     
-    public final void y(final apoc apoc) {
+    public final void y(final apqo apqo) {
     }
 }

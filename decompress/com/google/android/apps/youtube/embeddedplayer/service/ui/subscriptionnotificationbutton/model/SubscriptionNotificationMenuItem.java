@@ -15,7 +15,7 @@ public abstract class SubscriptionNotificationMenuItem implements Parcelable
     
     static {
         g().a();
-        CREATOR = (Parcelable$Creator)new f(14);
+        CREATOR = (Parcelable$Creator)new f(13);
     }
     
     public static a g() {
@@ -25,7 +25,7 @@ public abstract class SubscriptionNotificationMenuItem implements Parcelable
         a.b(0);
         a.a = null;
         a.b = null;
-        a.e(agyc.b);
+        a.e(ahbt.b);
         return a;
     }
     
@@ -33,7 +33,7 @@ public abstract class SubscriptionNotificationMenuItem implements Parcelable
     
     public abstract int b();
     
-    public abstract agyc c();
+    public abstract ahbt c();
     
     public abstract String d();
     

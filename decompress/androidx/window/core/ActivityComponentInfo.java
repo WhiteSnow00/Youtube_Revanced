@@ -40,12 +40,12 @@ public final class ActivityComponentInfo
         else {
             class2 = null;
         }
-        if (!atnh.c((Object)class1, (Object)class2)) {
+        if (!atqz.c(class1, class2)) {
             return false;
         }
         o.getClass();
         final ActivityComponentInfo activityComponentInfo = (ActivityComponentInfo)o;
-        return atnh.c((Object)this.packageName, (Object)activityComponentInfo.packageName) && atnh.c((Object)this.className, (Object)activityComponentInfo.className);
+        return atqz.c(this.packageName, activityComponentInfo.packageName) && atqz.c(this.className, activityComponentInfo.className);
     }
     
     public final String getClassName() {

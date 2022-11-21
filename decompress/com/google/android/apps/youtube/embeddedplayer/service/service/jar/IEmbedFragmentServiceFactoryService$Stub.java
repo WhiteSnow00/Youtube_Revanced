@@ -10,7 +10,7 @@ import com.google.android.apps.youtube.embeddedplayer.service.jar.client.h;
 import com.google.android.apps.youtube.embeddedplayer.service.jar.client.j;
 import android.os.Parcel;
 
-public abstract class IEmbedFragmentServiceFactoryService$Stub extends eoa implements IEmbedFragmentServiceFactoryService
+public abstract class IEmbedFragmentServiceFactoryService$Stub extends eod implements IEmbedFragmentServiceFactoryService
 {
     public IEmbedFragmentServiceFactoryService$Stub() {
         super("com.google.android.apps.youtube.embeddedplayer.service.service.jar.IEmbedFragmentServiceFactoryService");
@@ -36,7 +36,7 @@ public abstract class IEmbedFragmentServiceFactoryService$Stub extends eoa imple
             this.enforceNoDataAvail(parcel);
             final IEmbedFragmentService a = this.a((j)o, int1);
             parcel2.writeNoException();
-            eob.j(parcel2, (IInterface)a);
+            eoe.j(parcel2, (IInterface)a);
             return true;
         }
         return false;

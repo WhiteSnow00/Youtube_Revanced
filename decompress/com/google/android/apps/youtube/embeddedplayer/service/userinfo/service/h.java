@@ -4,75 +4,53 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.userinfo.service;
 
-import java.util.Set;
-import android.content.SharedPreferences$Editor;
+import com.google.android.apps.youtube.embeddedplayer.service.clientinfo.service.d;
+import android.content.SharedPreferences;
 
-final class h implements SharedPreferences$Editor
+public final class h implements vnf
 {
-    private final SharedPreferences$Editor a;
-    private final String b;
-    private final uyi c;
+    private final SharedPreferences a;
+    private final zoa b;
+    private String c;
+    private final vbs d;
     
-    public h(final SharedPreferences$Editor a, final String b, final uyi c) {
+    public h(final SharedPreferences a, final zoa b, final d d, final vbs d2) {
+        this.c = "";
         this.a = a;
         this.b = b;
-        this.c = c;
-    }
-    
-    private final String a(final String s) {
-        return j.i(s, this.b);
-    }
-    
-    public final void apply() {
-        this.a.apply();
-    }
-    
-    public final SharedPreferences$Editor clear() {
-        this.a.clear();
-        return (SharedPreferences$Editor)this;
-    }
-    
-    public final boolean commit() {
-        return this.a.commit();
-    }
-    
-    public final SharedPreferences$Editor putBoolean(final String s, final boolean b) {
-        this.a.putBoolean(this.a(s), b);
-        return (SharedPreferences$Editor)this;
-    }
-    
-    public final SharedPreferences$Editor putFloat(final String s, final float n) {
-        this.a.putFloat(this.a(s), n);
-        return (SharedPreferences$Editor)this;
-    }
-    
-    public final SharedPreferences$Editor putInt(final String s, final int n) {
-        this.a.putInt(this.a(s), n);
-        return (SharedPreferences$Editor)this;
-    }
-    
-    public final SharedPreferences$Editor putLong(final String s, final long n) {
-        this.a.putLong(this.a(s), n);
-        return (SharedPreferences$Editor)this;
-    }
-    
-    public final SharedPreferences$Editor putString(final String s, final String s2) {
-        if (this.c.K() && s.equals(this.a("visitor_id"))) {
-            this.a.putString(s, s2);
+        this.d = d2;
+        if (d2.M()) {
+            this.c = d.a;
         }
-        else {
-            this.a.putString(this.a(s), s2);
+    }
+    
+    public final void c(final aknj aknj) {
+        if ((aknj.b & 0x2) != 0x0 && !aknj.c.isEmpty()) {
+            final String c = aknj.c;
+            if (this.b.c().g()) {
+                if (!c.equals(this.a.getString("incognito_visitor_id", (String)null))) {
+                    this.a.edit().putString("incognito_visitor_id", c).apply();
+                }
+            }
+            else if (this.d.M()) {
+                final String value = String.valueOf(this.c);
+                final SharedPreferences a = this.a;
+                final String concat = value.concat("_visitor_id");
+                if (!c.equals(a.getString(concat, (String)null))) {
+                    this.a.edit().putString(concat, c).apply();
+                }
+            }
+            else if (!c.equals(this.a.getString("visitor_id", (String)null))) {
+                this.a.edit().putString("visitor_id", c).apply();
+            }
         }
-        return (SharedPreferences$Editor)this;
     }
     
-    public final SharedPreferences$Editor putStringSet(final String s, final Set set) {
-        this.a.putStringSet(this.a(s), set);
-        return (SharedPreferences$Editor)this;
+    public final void d(final vmz vmz, final aknj aknj, final znz znz) {
+        vqf.d((vnf)this, aknj);
     }
     
-    public final SharedPreferences$Editor remove(final String s) {
-        this.a.remove(this.a(s));
-        return (SharedPreferences$Editor)this;
+    public final boolean f(final vmz vmz) {
+        return !((vls)vmz).o() && (!((vls)vmz).r.equals("visitor_id") || this.b.c().g());
     }
 }

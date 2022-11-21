@@ -18,7 +18,7 @@ import android.os.Parcelable;
 public class FormatStreamModel implements Parcelable
 {
     public static final Parcelable$Creator CREATOR;
-    public final ajsj a;
+    public final ajwl a;
     public final String b;
     public final long c;
     public final Uri d;
@@ -30,22 +30,29 @@ public class FormatStreamModel implements Parcelable
     private final String j;
     
     static {
-        CREATOR = (Parcelable$Creator)new uik(12);
+        CREATOR = (Parcelable$Creator)new ulj(12);
     }
     
-    public FormatStreamModel(final ajsj ajsj, final String s, final long n) {
-        this(ajsj, s, n, false, null, null);
+    public FormatStreamModel(final ajwl ajwl, final String s, final long n) {
+        this(ajwl, s, n, false, null, null, null, null, null);
     }
     
-    public FormatStreamModel(final ajsj a, String string, long o, final boolean i, final vup vup, final byte[] array) {
+    public FormatStreamModel(final ajwl a, String string, long o, final boolean i, final vxu vxu, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4) {
         final boolean b = false;
         this.g = false;
         this.a = a;
         this.b = string;
-        this.c = o;
+        long e = o;
+        if (vxu != null) {
+            e = o;
+            if (vxu.i()) {
+                e = a.E;
+            }
+        }
+        this.c = e;
         this.d = Uri.parse(a.e);
-        final String m = whx.M(a.d, a.q);
-        this.e = m;
+        final String l = wbe.L(a.d, a.q);
+        this.e = l;
         int f;
         if ((f = a.h) <= 0) {
             f = (int)(a.g * 0.8f);
@@ -63,7 +70,7 @@ public class FormatStreamModel implements Parcelable
             final StringBuilder sb = new StringBuilder();
             sb.append(string);
             sb.append(".");
-            sb.append(m);
+            sb.append(l);
             sb.append(".");
             sb.append(o);
             string = sb.toString();
@@ -71,17 +78,17 @@ public class FormatStreamModel implements Parcelable
         this.j = string;
         final boolean b2 = true;
         boolean g = b;
-        if (vup != null) {
+        if (vxu != null) {
             g = b;
-            if (vup.i(((uyi)vup.b).l(45374643L))) {
+            if (vxu.h(((vbs)vxu.b).l(45374643L))) {
                 g = true;
             }
         }
         this.g = g;
         int h = b2 ? 1 : 0;
-        Label_0466: {
+        Label_0492: {
             if (g) {
-                final String a2 = vhd.a(a.f);
+                final String a2 = vkl.a(a.f);
                 h = (b2 ? 1 : 0);
                 if (a2 != null) {
                     if (!a2.contains(",")) {
@@ -126,7 +133,7 @@ public class FormatStreamModel implements Parcelable
                             if (!a2.contains("mp4v")) {
                                 h = (b2 ? 1 : 0);
                                 if (!a2.contains("avc1")) {
-                                    break Label_0466;
+                                    break Label_0492;
                                 }
                             }
                             h = 11;
@@ -142,8 +149,8 @@ public class FormatStreamModel implements Parcelable
         return n == -2 || n == -1;
     }
     
-    public static boolean H(final ajsj ajsj) {
-        return ((Set)vha.k.a()).contains(ajsj.d);
+    public static boolean H(final ajwl ajwl) {
+        return ((Set)vki.k.a()).contains(ajwl.d);
     }
     
     public static boolean O(final int n) {
@@ -152,16 +159,16 @@ public class FormatStreamModel implements Parcelable
     
     public static int g(final int n, final int n2) {
         if (n < n2) {
-            return vfi.a(n2, n);
+            return viq.a(n2, n);
         }
-        return vfi.a(n, n2);
+        return viq.a(n, n2);
     }
     
     public static String o(String c) {
         if (TextUtils.isEmpty((CharSequence)c)) {
             return "";
         }
-        final agza builder = ((agzi)aqvc.a).createBuilder();
+        final ahcr builder = aral.a.createBuilder();
         final String[] split = c.split(":", -1);
         for (int length = split.length, i = 0; i < length; ++i) {
             final String[] split2 = split[i].split("=", -1);
@@ -179,28 +186,28 @@ public class FormatStreamModel implements Parcelable
             else {
                 d = "";
             }
-            final agza builder2 = ((agzi)aqvb.a).createBuilder();
+            final ahcr builder2 = arak.a.createBuilder();
             builder2.copyOnWrite();
-            final aqvb aqvb = (aqvb)builder2.instance;
+            final arak arak = (arak)builder2.instance;
             c.getClass();
-            aqvb.b |= 0x1;
-            aqvb.c = c;
+            arak.b |= 0x1;
+            arak.c = c;
             builder2.copyOnWrite();
-            final aqvb aqvb2 = (aqvb)builder2.instance;
+            final arak arak2 = (arak)builder2.instance;
             d.getClass();
-            aqvb2.b |= 0x2;
-            aqvb2.d = d;
+            arak2.b |= 0x2;
+            arak2.d = d;
             builder.copyOnWrite();
-            final aqvc aqvc = (aqvc)builder.instance;
-            final aqvb aqvb3 = (aqvb)builder2.build();
-            aqvb3.getClass();
-            final agzy b = aqvc.b;
+            final aral aral = (aral)builder.instance;
+            final arak arak3 = (arak)builder2.build();
+            arak3.getClass();
+            final ahdp b = aral.b;
             if (!b.c()) {
-                aqvc.b = agzi.mutableCopy(b);
+                aral.b = ahcz.mutableCopy(b);
             }
-            aqvc.b.add(aqvb3);
+            aral.b.add((Object)arak3);
         }
-        return Base64.encodeToString(((agxl)builder.build()).toByteArray(), 11);
+        return Base64.encodeToString(builder.build().toByteArray(), 11);
     }
     
     public final boolean B() {
@@ -212,33 +219,33 @@ public class FormatStreamModel implements Parcelable
             contains = false;
         }
         else {
-            contains = vha.e().contains(this.e());
+            contains = vki.e().contains(this.e());
         }
         return contains;
     }
     
     public final boolean C() {
-        ahum ahum;
-        if ((ahum = this.a.w) == null) {
-            ahum = ahum.a;
+        ahyd ahyd;
+        if ((ahyd = this.a.w) == null) {
+            ahyd = ahyd.a;
         }
-        return ahum.e;
+        return ahyd.e;
     }
     
     public final boolean D() {
-        return this.a.H;
+        return this.a.I;
     }
     
     public final boolean E() {
-        final ajsj a = this.a;
+        final ajwl a = this.a;
         if ((a.c & 0x80000) != 0x0) {
-            ajsi ajsi;
-            if ((ajsi = a.x) == null) {
-                ajsi = ajsi.a;
+            ajwk ajwk;
+            if ((ajwk = a.x) == null) {
+                ajwk = ajwk.a;
             }
-            final int u = afld.U(ajsi.d);
-            if (u != 0) {
-                if (u == 2) {
+            final int bz = adzw.bZ(ajwk.d);
+            if (bz != 0) {
+                if (bz == 2) {
                     return true;
                 }
             }
@@ -255,7 +262,7 @@ public class FormatStreamModel implements Parcelable
             contains = false;
         }
         else {
-            contains = vha.r().contains(this.e());
+            contains = vki.r().contains(this.e());
         }
         return contains;
     }
@@ -263,63 +270,63 @@ public class FormatStreamModel implements Parcelable
     public final boolean G() {
         boolean h;
         if (this.g) {
-            final ajsj a = this.a;
-            ajsi ajsi;
-            if ((ajsi = a.x) == null) {
-                ajsi = ajsi.a;
+            final ajwl a = this.a;
+            ajwk ajwk;
+            if ((ajwk = a.x) == null) {
+                ajwk = ajwk.a;
             }
-            final int s = afld.S(ajsi.b);
+            final int bx = adzw.bX(ajwk.b);
             final boolean b = false;
-            Label_0100: {
-                if (s != 0) {
-                    if (s == 10) {
-                        break Label_0100;
+            Label_0104: {
+                if (bx != 0) {
+                    if (bx == 10) {
+                        break Label_0104;
                     }
                 }
-                ajsi ajsi2;
-                if ((ajsi2 = a.x) == null) {
-                    ajsi2 = ajsi.a;
+                ajwk ajwk2;
+                if ((ajwk2 = a.x) == null) {
+                    ajwk2 = ajwk.a;
                 }
-                final int s2 = afld.S(ajsi2.b);
-                if (s2 == 0) {
+                final int bx2 = adzw.bX(ajwk2.b);
+                if (bx2 == 0) {
                     h = b;
                     return h;
                 }
                 h = b;
-                if (s2 != 2) {
+                if (bx2 != 2) {
                     return h;
                 }
             }
-            final ajsi x = a.x;
-            ajsi a2;
+            final ajwk x = a.x;
+            ajwk a2;
             if (x == null) {
-                a2 = ajsi.a;
+                a2 = ajwk.a;
             }
             else {
                 a2 = x;
             }
-            final int r = afld.R(a2.c);
-            Label_0148: {
-                if (r == 0) {
-                    break Label_0148;
+            final int bw = adzw.bW(a2.c);
+            Label_0155: {
+                if (bw == 0) {
+                    break Label_0155;
                 }
-                if (r != 17) {
-                    break Label_0148;
+                if (bw != 17) {
+                    break Label_0155;
                 }
                 h = true;
                 return h;
             }
-            ajsi a3;
+            ajwk a3;
             if ((a3 = x) == null) {
-                a3 = ajsi.a;
+                a3 = ajwk.a;
             }
-            final int r2 = afld.R(a3.c);
-            if (r2 == 0) {
+            final int bw2 = adzw.bW(a3.c);
+            if (bw2 == 0) {
                 h = b;
             }
             else {
                 h = b;
-                if (r2 == 19) {
+                if (bw2 == 19) {
                     return true;
                 }
             }
@@ -335,7 +342,7 @@ public class FormatStreamModel implements Parcelable
         boolean b = true;
         if (k <= 32) {
             if (!this.g) {
-                if (!vha.t().contains(this.a.d)) {
+                if (!vki.t().contains(this.a.d)) {
                     return false;
                 }
                 b = b;
@@ -348,7 +355,7 @@ public class FormatStreamModel implements Parcelable
     }
     
     public final boolean J() {
-        return tmy.cL(this.d);
+        return tqf.cP(this.d);
     }
     
     public final boolean K() {
@@ -360,14 +367,14 @@ public class FormatStreamModel implements Parcelable
             contains = false;
         }
         else {
-            contains = vha.v().contains(this.e());
+            contains = vki.v().contains(this.e());
         }
         return contains;
     }
     
     public final boolean L() {
-        final int t = afld.T(this.a.B);
-        return t != 0 && t == 4;
+        final int by = adzw.bY(this.a.B);
+        return by != 0 && by == 4;
     }
     
     public final boolean M() {
@@ -379,7 +386,7 @@ public class FormatStreamModel implements Parcelable
             contains = false;
         }
         else {
-            contains = vha.x().contains(this.e());
+            contains = vki.x().contains(this.e());
         }
         return contains;
     }
@@ -390,7 +397,7 @@ public class FormatStreamModel implements Parcelable
     }
     
     public final boolean P() {
-        return vhd.d(this.t());
+        return vkl.d(this.t());
     }
     
     public final boolean Q() {
@@ -402,15 +409,15 @@ public class FormatStreamModel implements Parcelable
             contains = false;
         }
         else {
-            contains = vha.B().contains(this.e());
+            contains = vki.B().contains(this.e());
         }
         return contains;
     }
     
     public final boolean R() {
-        final Iterator<Object> iterator = new agzs((List)this.a.r, ajsj.a).iterator();
+        final Iterator<Object> iterator = ((List<Object>)new ahdj((List)this.a.r, ajwl.a)).iterator();
         while (iterator.hasNext()) {
-            if (iterator.next() == allr.f) {
+            if (iterator.next() == alpu.f) {
                 return true;
             }
         }
@@ -450,41 +457,41 @@ public class FormatStreamModel implements Parcelable
     }
     
     final int U() {
-        final ajsj a = this.a;
-        int r;
+        final ajwl a = this.a;
+        int bw;
         if ((a.c & 0x80000) != 0x0) {
-            ajsi ajsi;
-            if ((ajsi = a.x) == null) {
-                ajsi = ajsi.a;
+            ajwk ajwk;
+            if ((ajwk = a.x) == null) {
+                ajwk = ajwk.a;
             }
-            if ((r = afld.R(ajsi.c)) == 0) {
-                r = 1;
+            if ((bw = adzw.bW(ajwk.c)) == 0) {
+                bw = 1;
             }
         }
         else {
-            r = 3;
+            bw = 3;
         }
-        return r;
+        return bw;
     }
     
     public final int V() {
-        int q;
-        if ((q = afld.Q(this.a.t)) == 0) {
-            q = 1;
+        int bv;
+        if ((bv = adzw.bV(this.a.t)) == 0) {
+            bv = 1;
         }
-        return q;
+        return bv;
     }
     
-    public final adcr W() {
-        return adcr.bB(this.d);
+    public final aefs W() {
+        return aefs.cA(this.d);
     }
     
     public final float a() {
-        return (float)this.a.F;
+        return (float)this.a.G;
     }
     
     public final float b() {
-        return this.a.G;
+        return this.a.H;
     }
     
     public final int c() {
@@ -512,19 +519,19 @@ public class FormatStreamModel implements Parcelable
             return false;
         }
         final FormatStreamModel formatStreamModel = (FormatStreamModel)o;
-        return this.c == formatStreamModel.c && aeda.v((Object)this.b, (Object)formatStreamModel.b) && ((agzi)this.a).equals((Object)formatStreamModel.a);
+        return this.c == formatStreamModel.c && aexq.c(this.b, formatStreamModel.b) && ((ahcz)this.a).equals(formatStreamModel.a);
     }
     
     public final int f() {
         if (this.P()) {
             return g(this.i(), this.d());
         }
-        if (this.z() && (this.g || vha.b().contains(this.e()))) {
+        if (this.z() && (this.g || vki.b().contains(this.e()))) {
             final boolean g = this.g;
-            final int aw = aesy.aW(this.a.D);
+            final int am = aegu.am(this.a.D);
             final int n = 1;
             int n2;
-            if ((n2 = aw) == 0) {
+            if ((n2 = am) == 0) {
                 n2 = 1;
             }
             final int e = this.e();
@@ -543,13 +550,13 @@ public class FormatStreamModel implements Parcelable
                 }
             }
             else {
-                final Set set = (Set)vha.f.a();
+                final Set set = (Set)vki.f.a();
                 final Integer value = e;
                 if (set.contains(value)) {
                     return n;
                 }
-                if (!((Set)vha.g.a()).contains(value)) {
-                    if (((Set)vha.h.a()).contains(value)) {
+                if (!((Set)vki.g.a()).contains(value)) {
+                    if (((Set)vki.h.a()).contains(value)) {
                         return 4;
                     }
                     return 3;
@@ -569,7 +576,6 @@ public class FormatStreamModel implements Parcelable
     @Override
     public final int hashCode() {
         final long c = this.c;
-        final int n = (int)(c ^ c >>> 32);
         final String b = this.b;
         int hashCode;
         if (b == null) {
@@ -578,7 +584,7 @@ public class FormatStreamModel implements Parcelable
         else {
             hashCode = b.hashCode();
         }
-        return ((n + 31) * 31 + hashCode) * 31 + ((agzi)this.a).hashCode();
+        return (((int)(c ^ c >>> 32) + 31) * 31 + hashCode) * 31 + ((ahcz)this.a).hashCode();
     }
     
     public final int i() {
@@ -594,26 +600,26 @@ public class FormatStreamModel implements Parcelable
     }
     
     public final Uri l(final String s) {
-        final adcr w = this.W();
-        w.bu(s);
-        return w.bt();
+        final aefs w = this.W();
+        w.bJ(s);
+        return w.bI();
     }
     
-    public final ayf m() {
-        final aye aye = new aye();
-        aye.a = this.e;
-        aye.j = this.v();
-        final String a = vhd.a(this.t());
-        aye.h = a;
+    public final ayh m() {
+        final ayg ayg = new ayg();
+        ayg.a = this.e;
+        ayg.j = this.v();
+        final String a = vkl.a(this.t());
+        ayg.h = a;
         final int f = this.f;
-        aye.f = f;
-        aye.g = f;
+        ayg.f = f;
+        ayg.g = f;
         final boolean p = this.P();
         int d = 4;
         if (p) {
-            aye.k = ayy.f(a);
-            aye.p = this.i();
-            aye.q = this.d();
+            ayg.k = aza.f(a);
+            ayg.p = this.i();
+            ayg.q = this.d();
             final int c = this.c();
             float r;
             if (c > 0) {
@@ -622,89 +628,89 @@ public class FormatStreamModel implements Parcelable
             else {
                 r = -1.0f;
             }
-            aye.r = r;
-            aye.d = 4;
+            ayg.r = r;
+            ayg.d = 4;
         }
         else {
-            aye.k = ayy.c(a);
+            ayg.k = aza.c(a);
             if (this.C()) {
                 d = 1;
             }
-            aye.d = d;
-            aye.c = this.q();
+            ayg.d = d;
+            ayg.c = this.q();
         }
-        return aye.a();
+        return ayg.a();
     }
     
-    public final bjn n(String j) {
-        final ayf m = this.m();
+    public final bjr n(final String s) {
+        final ayh m = this.m();
         final long o = this.a.o;
-        final String string = this.l(j).toString();
-        ajsk ajsk;
-        if ((ajsk = this.a.m) == null) {
-            ajsk = ajsk.a;
+        final String string = this.l(s).toString();
+        ajwm ajwm;
+        if ((ajwm = this.a.m) == null) {
+            ajwm = ajwm.a;
         }
-        final long c = ajsk.c;
-        final ajsj a = this.a;
-        ajsk ajsk2;
-        if ((ajsk2 = a.m) == null) {
-            ajsk2 = ajsk.a;
+        final long c = ajwm.c;
+        final ajwl a = this.a;
+        ajwm ajwm2;
+        if ((ajwm2 = a.m) == null) {
+            ajwm2 = ajwm.a;
         }
-        final long d = ajsk2.d;
-        final ajsk n = a.n;
-        ajsk a2;
+        final long d = ajwm2.d;
+        final ajwm n = a.n;
+        ajwm a2;
         if (n == null) {
-            a2 = ajsk.a;
+            a2 = ajwm.a;
         }
         else {
             a2 = n;
         }
         final long c2 = a2.c;
-        ajsk a3 = n;
+        ajwm a3 = n;
         if (n == null) {
-            a3 = ajsk.a;
+            a3 = ajwm.a;
         }
         final long d2 = a3.d;
-        final afcr q = afcr.q();
-        j = this.j;
+        final afgh q = afgh.q();
+        final String j = this.j;
         final long i = this.j();
-        final bjt bjt = new bjt(new bjl((String)null, c, d - c + 1L), 1L, 0L, c2, d2 - c2 + 1L);
-        final afcr r = afcr.r((Object)new bjf(string, string, Integer.MIN_VALUE, 1));
-        afcr.q();
-        afcr.q();
-        return new bjn(m, (List)r, bjt, (List)q, j, i);
+        final bjx bjx = new bjx(new bjp((String)null, c, d - c + 1L), 1L, 0L, c2, d2 - c2 + 1L);
+        final afgh r = afgh.r(new bjj(string, string, Integer.MIN_VALUE, 1));
+        afgh.q();
+        afgh.q();
+        return new bjr(m, (List)r, bjx, (List)q, j, i);
     }
     
     public final String p() {
-        ahum ahum;
-        if ((ahum = this.a.w) == null) {
-            ahum = ahum.a;
+        ahyd ahyd;
+        if ((ahyd = this.a.w) == null) {
+            ahyd = ahyd.a;
         }
-        return ahum.c;
+        return ahyd.c;
     }
     
     public final String q() {
-        ahum ahum;
-        if ((ahum = this.a.w) == null) {
-            ahum = ahum.a;
+        ahyd ahyd;
+        if ((ahyd = this.a.w) == null) {
+            ahyd = ahyd.a;
         }
-        return ahum.d;
+        return ahyd.d;
     }
     
     public final String r() {
-        aico aico;
-        if ((aico = this.a.C) == null) {
-            aico = aico.a;
+        aigf aigf;
+        if ((aigf = this.a.C) == null) {
+            aigf = aigf.a;
         }
-        return aico.c;
+        return aigf.c;
     }
     
     public final String s() {
-        aico aico;
-        if ((aico = this.a.C) == null) {
-            aico = aico.a;
+        aigf aigf;
+        if ((aigf = this.a.C) == null) {
+            aigf = aigf.a;
         }
-        return aico.e;
+        return aigf.e;
     }
     
     public final String t() {
@@ -743,7 +749,7 @@ public class FormatStreamModel implements Parcelable
             string = sb2.toString();
         }
         final String t = this.t();
-        final String string3 = new agzs((List)this.a.r, ajsj.a).toString();
+        final String string3 = new ahdj((List)this.a.r, ajwl.a).toString();
         final String value = String.valueOf(this.d);
         final StringBuilder sb3 = new StringBuilder("FormatStream(itag=");
         sb3.append(e);
@@ -770,14 +776,14 @@ public class FormatStreamModel implements Parcelable
         if (p) {
             final int i = this.i();
             final int d = this.d();
-            final int[] a = vfi.a;
+            final int[] a = viq.a;
             int n2;
             if (i >= 0 && d >= 0 && (i != 0 || d != 0)) {
-                final int[] b = vfi.b;
+                final int[] b = viq.b;
                 int min;
                 int max;
                 int n;
-                for (min = Math.min(i, d), max = Math.max(i, d), n = 0; n < 10 && max < vfi.a[n] * 1.3f && min < vfi.b[n] * 1.3f; ++n) {}
+                for (min = Math.min(i, d), max = Math.max(i, d), n = 0; n < 10 && max < viq.a[n] * 1.3f && min < viq.b[n] * 1.3f; ++n) {}
                 n2 = b[Math.max(0, n - 1)];
             }
             else {
@@ -813,7 +819,7 @@ public class FormatStreamModel implements Parcelable
     }
     
     public final String v() {
-        return vhd.b(this.t());
+        return vkl.b(this.t());
     }
     
     public final String w() {
@@ -821,7 +827,7 @@ public class FormatStreamModel implements Parcelable
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        uji.ag((MessageLite)this.a, parcel);
+        ume.ad((MessageLite)this.a, parcel);
         parcel.writeString(this.b);
         parcel.writeLong(this.c);
         parcel.writeInt((int)(this.i ? 1 : 0));
@@ -848,12 +854,12 @@ public class FormatStreamModel implements Parcelable
             }
         }
         else {
-            contains = vha.c().contains(this.e());
+            contains = vki.c().contains(this.e());
         }
         return contains;
     }
     
     public final boolean z() {
-        return vhd.c(this.t());
+        return vkl.c(this.t());
     }
 }

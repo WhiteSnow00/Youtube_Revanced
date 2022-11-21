@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">சாதன தீமினைப் பயன்படுத்து</string>
     <string name="app_theme_appearance_summary">லைட்/டார்க் தீம் விருப்பத்தைத் தேர்ந்தெடுக்கவும்</string>
     <string name="app_theme_appearance_title">தோற்றம்</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">பயன்படுத்து</string>
     <string name="approve_playlist_sync">புதிய வீடியோக்களை ஒத்திசை</string>
     <string name="audio_playback_failed_snackbar_action_button">மீண்டும் முயல்க</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">பிளே ஆவதை நிறுத்து</string>
     <string name="lc_retry_yes">மீண்டும் முயற்சிக்கவும்</string>
     <string name="lc_rotate_device">சாதனத்தைச் சுழற்றவும்</string>
+    <string name="lc_sharedmde_required_field_error">தலைப்பையும் பார்வையாளர்கள் விவரங்களையும் வழங்க வேண்டும்.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">நீளவாக்கில் ஸ்ட்ரீம் செய்க</string>
     <string name="lc_stream_start_error">ஸ்ட்ரீமைத் தொடங்க முடியவில்லை. இணைப்பை சரிபார்க்கவும்.</string>
@@ -1729,6 +1730,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">வீடியோ மாதிரிக்காட்சி. இடைநிறுத்த, தட்டவும்.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">வீடியோ மாதிரிக்காட்சி. பிளே செய்ய, தட்டவும்.</string>
     <string name="shorts_a11y_zoom_control">அளவை மாற்றுவதற்கான கட்டுப்பாடு</string>
+    <string name="shorts_audio_failure_toast">ஒலியைச் சேர்க்க முடியவில்லை. மீண்டும் முயலவும்.</string>
     <string name="shorts_camera_allow_access_subtitle">கேமரா &amp; மைக்ரோஃபோனுக்கான அணுகலை வழங்குங்கள்</string>
     <string name="shorts_camera_allow_access_title">சிறிய வீடியோவை உருவாக்குங்கள்</string>
     <string name="shorts_camera_close_confirmation_cancel">மூடுக</string>

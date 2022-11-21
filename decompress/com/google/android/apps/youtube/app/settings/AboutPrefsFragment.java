@@ -10,33 +10,33 @@ import android.os.Bundle;
 import android.view.ViewGroup;
 import android.view.LayoutInflater;
 
-public final class AboutPrefsFragment extends jnv
+public final class AboutPrefsFragment extends jph
 {
-    public hyc ae;
-    private asic af;
-    public acxu c;
+    public hzf ae;
+    private asln af;
+    public adbk c;
     public SettingsDataAccess d;
-    public elw e;
+    public ema e;
     
     public final void aM() {
-        ((cex)this).a.g("youtube");
+        ((cfb)this).a.g("youtube");
     }
     
     public final RecyclerView n(final LayoutInflater layoutInflater, final ViewGroup viewGroup, final Bundle bundle) {
         final RecyclerView n = super.n(layoutInflater, viewGroup, bundle);
-        n.ae((nt)null);
+        n.ae((nu)null);
         return n;
     }
     
-    public final void no() {
-        super.no();
+    public final void nl() {
+        super.nl();
         this.e.a = this;
-        this.af = this.d.g((Runnable)new jcd(this, 20));
+        this.af = this.d.g((Runnable)new jin(this, 16));
     }
     
-    public final void np() {
-        super.np();
+    public final void nm() {
+        super.nm();
         this.e.a = null;
-        athh.f((AtomicReference)this.af);
+        atkw.f((AtomicReference)this.af);
     }
 }

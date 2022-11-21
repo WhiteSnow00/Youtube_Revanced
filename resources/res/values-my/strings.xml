@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">စက်အပြင်အဆင်ကို သုံးရန်</string>
     <string name="app_theme_appearance_summary">သင်၏ လင်းသော သို့မဟုတ် အမှောင်နောက်ခံကို ရွေးပါ</string>
     <string name="app_theme_appearance_title">အပြင်အဆင်</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">သက်ရောက်စေရန်</string>
     <string name="approve_playlist_sync">ဗီဒီယိုသစ်များကို စင့်ခ်လုပ်ပါ</string>
     <string name="audio_playback_failed_snackbar_action_button">ထပ်စမ်းရန်</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">လွှင့်ခြင်း ရပ်ရန်</string>
     <string name="lc_retry_yes">ထပ်ကြိုးစားရန်</string>
     <string name="lc_rotate_device">စက်ကို လှည့်ပါ</string>
+    <string name="lc_sharedmde_required_field_error">ခေါင်းစဉ်နှင့် ပရိသတ် လိုအပ်သည်။</string>
     <string name="lc_statistic_item_cd">%1$s− %2$s</string>
     <string name="lc_stream_in_portrait">ထောင်လိုက်ထုတ်လွှင့်မှု</string>
     <string name="lc_stream_start_error">တိုက်ရိုက်လွှင့်ခြင်းကို စတင်၍မရပါ။ ချိတ်ဆက်မှုကို စစ်ဆေးကြည့်ပါ။</string>
@@ -1728,6 +1729,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">ဗီဒီယို အစမ်းကြည့်ရှုပါ။ ခေတ္တရပ်ရန် တို့ပါ။</string>
     <string name="shorts_a11y_video_preview_tap_to_play">ဗီဒီယို အစမ်းကြည့်ရှုပါ။ ဖွင့်ရန် တို့ပါ။</string>
     <string name="shorts_a11y_zoom_control">ဇူးမ် ထိန်းချုပ်မှု</string>
+    <string name="shorts_audio_failure_toast">အသံထည့်၍ မရပါ။ ထပ်စမ်းကြည့်ပါ။</string>
     <string name="shorts_camera_allow_access_subtitle">ကင်မရာနှင့် မိုက်ခရိုဖုန်းကို သုံးခွင့်ပြုပါ</string>
     <string name="shorts_camera_allow_access_title">\'ဗီဒီယိုတို\' ထုတ်လုပ်ရန်</string>
     <string name="shorts_camera_close_confirmation_cancel">မလုပ်တော့</string>

@@ -12,7 +12,7 @@ public final class SpliceNullCommand extends SpliceCommand
     public static final Parcelable$Creator CREATOR;
     
     static {
-        CREATOR = (Parcelable$Creator)new bvm(7);
+        CREATOR = (Parcelable$Creator)new bvp(7);
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {

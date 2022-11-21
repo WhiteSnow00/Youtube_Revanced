@@ -4,51 +4,51 @@
 
 package com.google.android.apps.youtube.app.extensions.upload;
 
-public class UploadSnackbarController$1 implements thl
+public class UploadSnackbarController$1 implements tio
 {
-    final qcy a;
+    final qdr a;
     
-    public UploadSnackbarController$1(final qcy a, final byte[] array, final byte[] array2, final byte[] array3) {
+    public UploadSnackbarController$1(final qdr a, final byte[] array, final byte[] array2, final byte[] array3) {
         this.a = a;
     }
     
-    public final thh g() {
-        return thh.b;
+    public final tik g() {
+        return tik.b;
     }
     
-    public final void lW(final aun aun) {
+    public final void lW(final aup aup) {
     }
     
-    public final void mM(final aun aun) {
+    public final void mp(final aup aup) {
     }
     
-    public final void mq(final aun aun) {
+    public final void mx(final aup aup) {
     }
     
-    public final void my(final aun aun) {
+    public final void oO(final aup aup) {
     }
     
-    public final void oS(final aun aun) {
-        final qcy a = this.a;
-        apim apim;
-        if ((apim = ((vaf)a.e).b().q) == null) {
-            apim = apim.a;
+    public final void oT(final aup aup) {
+        final qdr a = this.a;
+        apky apky;
+        if ((apky = ((vbo)a.e).b().q) == null) {
+            apky = apky.a;
         }
-        if (apim.d) {
-            ((asiq)a.b).c(((vdr)a.f).b().h(adkf.a, false).i(ashb.e).P((asid)a.c).B((asjs)fma.q).L((asjr)hsb.f).L((asjr)hsb.g).am((asjm)new hsf(a, 6, (byte[])null, (byte[])null, (byte[])null)));
-            ((asiq)a.b).c(((vdr)a.f).b().f(adkf.a).v((asjs)fma.r).C((asjr)hsb.h).C((asjr)hsb.i).v((asjs)fma.s).ac((asjm)new hsf(a, 6, (byte[])null, (byte[])null, (byte[])null)));
+        if (apky.d) {
+            ((aslm)a.b).c(((vey)a.f).b().i(adlu.a, false).i(asjx.e).P((askz)a.c).B((asmo)fmd.r).L((asmn)hsj.f).L((asmn)hsj.g).am((asmi)new hsn(a, 8, (byte[])null, (byte[])null, (byte[])null)));
+            ((aslm)a.b).c(((vey)a.f).b().g(adlu.a).v((asmo)fmd.s).C((asmn)hsj.h).C((asmn)hsj.i).v((asmo)fmd.t).ac((asmi)new hsn(a, 8, (byte[])null, (byte[])null, (byte[])null)));
         }
     }
     
-    public final void oT() {
-        tfg.c((thl)this);
+    public final void oU() {
+        tgj.d((tio)this);
     }
     
-    public final void oW() {
-        tfg.b((thl)this);
+    public final void oX() {
+        tgj.c((tio)this);
     }
     
-    public final void oX(final aun aun) {
-        ((asiq)this.a.b).b();
+    public final void oY(final aup aup) {
+        ((aslm)this.a.b).b();
     }
 }

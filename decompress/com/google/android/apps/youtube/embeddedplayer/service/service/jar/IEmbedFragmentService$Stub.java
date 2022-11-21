@@ -11,7 +11,7 @@ import com.google.android.apps.youtube.embeddedplayer.service.ui.subscriptionnot
 import android.os.IInterface;
 import android.os.Parcel;
 
-public abstract class IEmbedFragmentService$Stub extends eoa implements IEmbedFragmentService
+public abstract class IEmbedFragmentService$Stub extends eod implements IEmbedFragmentService
 {
     public IEmbedFragmentService$Stub() {
         super("com.google.android.apps.youtube.embeddedplayer.service.service.jar.IEmbedFragmentService");
@@ -25,13 +25,13 @@ public abstract class IEmbedFragmentService$Stub extends eoa implements IEmbedFr
             case 12: {
                 final d d = this.d();
                 parcel2.writeNoException();
-                eob.j(parcel2, (IInterface)d);
+                eoe.j(parcel2, (IInterface)d);
                 break;
             }
             case 11: {
                 final c b = this.b();
                 parcel2.writeNoException();
-                eob.j(parcel2, (IInterface)b);
+                eoe.j(parcel2, (IInterface)b);
                 break;
             }
             case 10: {
@@ -50,7 +50,7 @@ public abstract class IEmbedFragmentService$Stub extends eoa implements IEmbedFr
                 break;
             }
             case 7: {
-                final SubscriptionNotificationMenuItem subscriptionNotificationMenuItem = (SubscriptionNotificationMenuItem)eob.a(parcel, SubscriptionNotificationMenuItem.CREATOR);
+                final SubscriptionNotificationMenuItem subscriptionNotificationMenuItem = (SubscriptionNotificationMenuItem)eoe.a(parcel, SubscriptionNotificationMenuItem.CREATOR);
                 this.enforceNoDataAvail(parcel);
                 this.i(subscriptionNotificationMenuItem);
                 parcel2.writeNoException();
@@ -85,7 +85,7 @@ public abstract class IEmbedFragmentService$Stub extends eoa implements IEmbedFr
                 break;
             }
             case 1: {
-                final SimplePlaybackDescriptor simplePlaybackDescriptor = (SimplePlaybackDescriptor)eob.a(parcel, SimplePlaybackDescriptor.CREATOR);
+                final SimplePlaybackDescriptor simplePlaybackDescriptor = (SimplePlaybackDescriptor)eoe.a(parcel, SimplePlaybackDescriptor.CREATOR);
                 this.enforceNoDataAvail(parcel);
                 this.u(simplePlaybackDescriptor);
                 parcel2.writeNoException();

@@ -34,8 +34,8 @@ public class ShortsRecordButtonView extends FrameLayout
     public final ImageView g;
     final GradientDrawable h;
     final GradientDrawable i;
-    int j;
-    int k;
+    final int j;
+    final int k;
     public boolean l;
     public boolean m;
     private final FrameLayout n;
@@ -44,21 +44,21 @@ public class ShortsRecordButtonView extends FrameLayout
     
     public ShortsRecordButtonView(final Context context, final AttributeSet set) {
         super(context, set);
-        LayoutInflater.from(context).inflate(2131625418, (ViewGroup)this, true);
-        (this.n = (FrameLayout)this.findViewById(2131431508)).setAccessibilityDelegate((View$AccessibilityDelegate)new hke());
+        LayoutInflater.from(context).inflate(2131625420, (ViewGroup)this, true);
+        (this.n = (FrameLayout)this.findViewById(2131431509)).setAccessibilityDelegate((View$AccessibilityDelegate)new hkm());
         this.d();
-        final ImageView f = (ImageView)this.findViewById(2131431506);
+        final ImageView f = (ImageView)this.findViewById(2131431507);
         this.f = f;
-        final ImageView g = (ImageView)this.findViewById(2131431507);
+        final ImageView g = (ImageView)this.findViewById(2131431508);
         this.g = g;
         this.h = (GradientDrawable)g.getDrawable();
         this.i = (GradientDrawable)f.getDrawable();
-        this.b = this.getResources().getDimensionPixelSize(2131169703);
-        this.j = this.getResources().getColor(2131102099);
-        this.k = this.getResources().getColor(2131102100);
-        this.c = this.getResources().getDimensionPixelSize(2131169700);
-        this.d = this.getResources().getDimensionPixelSize(2131169699);
-        this.e = this.getResources().getDimensionPixelOffset(2131169704);
+        this.b = this.getResources().getDimensionPixelSize(2131169742);
+        this.j = this.getResources().getColor(2131102095);
+        this.k = this.getResources().getColor(2131102096);
+        this.c = this.getResources().getDimensionPixelSize(2131169739);
+        this.d = this.getResources().getDimensionPixelSize(2131169738);
+        this.e = this.getResources().getDimensionPixelOffset(2131169743);
     }
     
     public static void a(final View view, final float n, final float n2) {
@@ -80,21 +80,21 @@ public class ShortsRecordButtonView extends FrameLayout
             if (this.p) {
                 final ObjectAnimator ofFloat = ObjectAnimator.ofFloat((Object)this.g, "scaleX", new float[] { 1.2222222f });
                 ofFloat.setDuration(100L);
-                ofFloat.setInterpolator((TimeInterpolator)new att());
+                ofFloat.setInterpolator((TimeInterpolator)new atv());
                 final ObjectAnimator ofFloat2 = ObjectAnimator.ofFloat((Object)this.g, "scaleY", new float[] { 1.2222222f });
                 ofFloat2.setDuration(100L);
-                ofFloat2.setInterpolator((TimeInterpolator)new att());
+                ofFloat2.setInterpolator((TimeInterpolator)new atv());
                 final ObjectAnimator ofFloat3 = ObjectAnimator.ofFloat((Object)this.f, "scaleX", new float[] { 0.5714286f });
                 ofFloat3.setDuration(100L);
-                ofFloat3.setInterpolator((TimeInterpolator)new att());
+                ofFloat3.setInterpolator((TimeInterpolator)new atv());
                 final ObjectAnimator ofFloat4 = ObjectAnimator.ofFloat((Object)this.f, "scaleY", new float[] { 0.5714286f });
                 ofFloat4.setDuration(100L);
-                ofFloat4.setInterpolator((TimeInterpolator)new att());
+                ofFloat4.setInterpolator((TimeInterpolator)new atv());
                 final ObjectAnimator ofFloat5 = ObjectAnimator.ofFloat((Object)this.i, "cornerRadius", new float[] { (float)this.c });
                 ofFloat5.setDuration(100L);
-                ofFloat5.setInterpolator((TimeInterpolator)new att());
+                ofFloat5.setInterpolator((TimeInterpolator)new atv());
                 final int k = this.k;
-                ofFloat2.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new hkg(this, k, k));
+                ofFloat2.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new hko(this, k, k));
                 final AnimatorSet a2 = new AnimatorSet();
                 a2.playTogether(new Animator[] { (Animator)ofFloat, (Animator)ofFloat2, (Animator)ofFloat3, (Animator)ofFloat4, (Animator)ofFloat5 });
                 (this.a = (Animator)a2).start();
@@ -103,18 +103,18 @@ public class ShortsRecordButtonView extends FrameLayout
             final AnimatorSet a3 = new AnimatorSet();
             final ObjectAnimator ofFloat6 = ObjectAnimator.ofFloat((Object)this.g, "scaleX", new float[] { 1.8472222f });
             ofFloat6.setDuration(500L);
-            ofFloat6.setInterpolator((TimeInterpolator)new att());
+            ofFloat6.setInterpolator((TimeInterpolator)new atv());
             final ObjectAnimator ofFloat7 = ObjectAnimator.ofFloat((Object)this.g, "scaleY", new float[] { 1.8472222f });
             ofFloat7.setDuration(500L);
-            ofFloat7.setInterpolator((TimeInterpolator)new att());
+            ofFloat7.setInterpolator((TimeInterpolator)new atv());
             final ObjectAnimator ofFloat8 = ObjectAnimator.ofFloat((Object)this.f, "scaleX", new float[] { 1.0f });
             ofFloat8.setDuration(200L);
-            ofFloat8.setInterpolator((TimeInterpolator)new att());
+            ofFloat8.setInterpolator((TimeInterpolator)new atv());
             final ObjectAnimator ofFloat9 = ObjectAnimator.ofFloat((Object)this.f, "scaleY", new float[] { 1.0f });
             ofFloat9.setDuration(200L);
-            ofFloat9.setInterpolator((TimeInterpolator)new att());
+            ofFloat9.setInterpolator((TimeInterpolator)new atv());
             final int i = this.k;
-            ofFloat7.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new hkg(this, i, i));
+            ofFloat7.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new hko(this, i, i));
             final AnimatorSet set = new AnimatorSet();
             set.playTogether(new Animator[] { (Animator)ofFloat6, (Animator)ofFloat7, (Animator)ofFloat8, (Animator)ofFloat9 });
             final ObjectAnimator ofFloat10 = ObjectAnimator.ofFloat((Object)this.g, "scaleX", new float[] { 1.8472222f, 1.5277778f });
@@ -126,7 +126,7 @@ public class ShortsRecordButtonView extends FrameLayout
             ofFloat11.setRepeatCount(-1);
             ofFloat11.setRepeatMode(2);
             final int j = this.k;
-            ofFloat11.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new hkg(this, j, j));
+            ofFloat11.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new hko(this, j, j));
             final AnimatorSet set2 = new AnimatorSet();
             set2.playTogether(new Animator[] { (Animator)ofFloat10, (Animator)ofFloat11 });
             a3.playSequentially(new Animator[] { (Animator)set, (Animator)set2 });
@@ -155,7 +155,7 @@ public class ShortsRecordButtonView extends FrameLayout
     }
     
     public final void d() {
-        this.setContentDescription(this.getResources().getString(2132019713));
+        this.setContentDescription(this.getResources().getString(2132019715));
     }
     
     public final void e(final int n, final int n2) {
@@ -188,10 +188,10 @@ public class ShortsRecordButtonView extends FrameLayout
         final ObjectAnimator ofFloat4 = ObjectAnimator.ofFloat((Object)this.f, "scaleY", new float[] { 1.0f, 0.9f });
         ofFloat4.setDuration(100L);
         ofFloat4.setInterpolator((TimeInterpolator)new LinearInterpolator());
-        ofFloat2.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new hkg(this, this.j, this.k));
+        ofFloat2.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new hko(this, this.j, this.k));
         final AnimatorSet a2 = new AnimatorSet();
         a2.playTogether(new Animator[] { (Animator)ofFloat, (Animator)ofFloat2, (Animator)ofFloat3, (Animator)ofFloat4 });
-        (this.a = (Animator)a2).addListener((Animator$AnimatorListener)new hkf(this));
+        (this.a = (Animator)a2).addListener((Animator$AnimatorListener)new hkn(this));
         this.a.start();
     }
     
@@ -208,20 +208,20 @@ public class ShortsRecordButtonView extends FrameLayout
         if (this.p) {
             final ObjectAnimator ofFloat = ObjectAnimator.ofFloat((Object)this.g, "scaleX", new float[] { 1.0f });
             ofFloat.setDuration(200L);
-            ofFloat.setInterpolator((TimeInterpolator)new att());
+            ofFloat.setInterpolator((TimeInterpolator)new atv());
             final ObjectAnimator ofFloat2 = ObjectAnimator.ofFloat((Object)this.g, "scaleY", new float[] { 1.0f });
             ofFloat2.setDuration(200L);
-            ofFloat2.setInterpolator((TimeInterpolator)new att());
+            ofFloat2.setInterpolator((TimeInterpolator)new atv());
             final ObjectAnimator ofFloat3 = ObjectAnimator.ofFloat((Object)this.f, "scaleX", new float[] { 1.0f });
             ofFloat3.setDuration(200L);
-            ofFloat3.setInterpolator((TimeInterpolator)new att());
+            ofFloat3.setInterpolator((TimeInterpolator)new atv());
             final ObjectAnimator ofFloat4 = ObjectAnimator.ofFloat((Object)this.f, "scaleY", new float[] { 1.0f });
             ofFloat4.setDuration(200L);
-            ofFloat4.setInterpolator((TimeInterpolator)new att());
+            ofFloat4.setInterpolator((TimeInterpolator)new atv());
             final ObjectAnimator ofFloat5 = ObjectAnimator.ofFloat((Object)this.i, "cornerRadius", new float[] { (float)this.d });
             ofFloat5.setDuration(200L);
-            ofFloat5.setInterpolator((TimeInterpolator)new att());
-            ofFloat2.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new hkg(this, this.k, this.j));
+            ofFloat5.setInterpolator((TimeInterpolator)new atv());
+            ofFloat2.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new hko(this, this.k, this.j));
             final AnimatorSet a2 = new AnimatorSet();
             a2.playTogether(new Animator[] { (Animator)ofFloat, (Animator)ofFloat2, (Animator)ofFloat3, (Animator)ofFloat4, (Animator)ofFloat5 });
             (this.a = (Animator)a2).start();
@@ -233,11 +233,11 @@ public class ShortsRecordButtonView extends FrameLayout
             ofFloat7.setDuration(200L);
             final ObjectAnimator ofFloat8 = ObjectAnimator.ofFloat((Object)this.f, "scaleX", new float[] { 1.0f });
             ofFloat8.setDuration(200L);
-            ofFloat8.setInterpolator((TimeInterpolator)new att());
+            ofFloat8.setInterpolator((TimeInterpolator)new atv());
             final ObjectAnimator ofFloat9 = ObjectAnimator.ofFloat((Object)this.f, "scaleY", new float[] { 1.0f });
             ofFloat9.setDuration(200L);
-            ofFloat9.setInterpolator((TimeInterpolator)new att());
-            ofFloat7.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new hkg(this, this.k, this.j));
+            ofFloat9.setInterpolator((TimeInterpolator)new atv());
+            ofFloat7.addUpdateListener((ValueAnimator$AnimatorUpdateListener)new hko(this, this.k, this.j));
             final AnimatorSet a3 = new AnimatorSet();
             a3.playTogether(new Animator[] { (Animator)ofFloat6, (Animator)ofFloat7, (Animator)ofFloat8, (Animator)ofFloat9 });
             (this.a = (Animator)a3).start();

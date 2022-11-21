@@ -16,7 +16,7 @@ public abstract class WatchLaterButtonData implements Parcelable
     
     static {
         a = e().a();
-        CREATOR = (Parcelable$Creator)new f(15);
+        CREATOR = (Parcelable$Creator)new f(14);
     }
     
     public static a e() {
@@ -24,13 +24,13 @@ public abstract class WatchLaterButtonData implements Parcelable
         a.b(0);
         a.a = null;
         a.b = null;
-        a.c(agyc.b);
+        a.c(ahbt.b);
         return a;
     }
     
     public abstract int a();
     
-    public abstract agyc b();
+    public abstract ahbt b();
     
     public abstract String c();
     

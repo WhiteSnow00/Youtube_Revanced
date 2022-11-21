@@ -4,9 +4,10 @@
 
 package com.android.billingclient.api;
 
+import java.util.Collections;
 import java.util.List;
 
-class BillingClientNativeCallback implements dac, dai, dak
+class BillingClientNativeCallback implements daf, dal, dan
 {
     public static native void nativeOnAcknowledgePurchaseResponse(final int p0, final String p1, final long p2);
     
@@ -30,15 +31,19 @@ class BillingClientNativeCallback implements dac, dai, dak
         nativeOnBillingServiceDisconnected();
     }
     
-    public final void b(final daf daf) {
-        nativeOnBillingSetupFinished(daf.a, daf.b, 0L);
+    public final void b(final dai dai) {
+        nativeOnBillingSetupFinished(dai.a, dai.b, 0L);
     }
     
-    public final void c(final daf daf, final List list) {
-        throw null;
+    public final void c(final dai dai, final List list) {
+        List<Object> emptyList = list;
+        if (list == null) {
+            emptyList = Collections.emptyList();
+        }
+        nativeOnSkuDetailsResponse(dai.a, dai.b, emptyList.toArray(new SkuDetails[emptyList.size()]), 0L);
     }
     
-    public final void d(final daf daf) {
+    public final void d(final dai dai) {
         throw null;
     }
 }

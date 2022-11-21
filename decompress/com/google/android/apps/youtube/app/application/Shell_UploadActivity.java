@@ -14,17 +14,17 @@ import android.os.SystemClock;
 import android.app.Activity;
 import android.content.Context;
 
-public final class Shell_UploadActivity extends evu implements aeou, aepm
+public final class Shell_UploadActivity extends evw implements aeqn, aerf
 {
-    private ewd m;
-    private final aerz n;
+    private ewf m;
+    private final aets n;
     private boolean o;
     private Context p;
-    private auo q;
+    private auq q;
     private boolean r;
     
     public Shell_UploadActivity() {
-        this.n = aerz.a((Activity)this);
+        this.n = aets.a((Activity)this);
         SystemClock.elapsedRealtime();
     }
     
@@ -34,7 +34,7 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
         // 
         // Original Bytecode:
         // 
-        //     1: getfield        com/google/android/apps/youtube/app/application/Shell_UploadActivity.m:Lewd;
+        //     1: getfield        com/google/android/apps/youtube/app/application/Shell_UploadActivity.m:Lewf;
         //     4: ifnonnull       306
         //     7: aload_0        
         //     8: getfield        com/google/android/apps/youtube/app/application/Shell_UploadActivity.o:Z
@@ -52,69 +52,69 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
         //    37: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
         //    40: athrow         
         //    41: ldc             "CreateComponent"
-        //    43: invokestatic    aeux.o:(Ljava/lang/String;)Laetf;
+        //    43: invokestatic    aewp.o:(Ljava/lang/String;)Laeux;
         //    46: astore_2       
         //    47: aload_0        
-        //    48: invokevirtual   evo.aR:()Ljava/lang/Object;
+        //    48: invokevirtual   evq.aR:()Ljava/lang/Object;
         //    51: pop            
         //    52: aload_2        
-        //    53: invokevirtual   aetf.close:()V
+        //    53: invokevirtual   aeux.close:()V
         //    56: ldc             "CreatePeer"
-        //    58: invokestatic    aeux.o:(Ljava/lang/String;)Laetf;
+        //    58: invokestatic    aewp.o:(Ljava/lang/String;)Laeux;
         //    61: astore_1       
         //    62: aload_0        
-        //    63: invokevirtual   evo.aR:()Ljava/lang/Object;
-        //    66: astore          5
-        //    68: aload           5
-        //    70: checkcast       Lesp;
-        //    73: getfield        esp.d:Latke;
-        //    76: invokeinterface atke.a:()Ljava/lang/Object;
+        //    63: invokevirtual   evq.aR:()Ljava/lang/Object;
+        //    66: astore          4
+        //    68: aload           4
+        //    70: checkcast       Lesr;
+        //    73: getfield        esr.d:Latnb;
+        //    76: invokeinterface atnb.a:()Ljava/lang/Object;
         //    81: checkcast       Landroid/app/Activity;
-        //    84: astore          4
-        //    86: aload           4
+        //    84: astore          5
+        //    86: aload           5
         //    88: instanceof      Lcom/google/android/apps/youtube/app/application/Shell_UploadActivity;
         //    91: ifeq            173
-        //    94: aload           4
+        //    94: aload           5
         //    96: checkcast       Lcom/google/android/apps/youtube/app/application/Shell_UploadActivity;
-        //    99: astore_2       
-        //   100: aload_2        
+        //    99: astore_3       
+        //   100: aload_3        
         //   101: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
         //   104: pop            
-        //   105: aload           5
-        //   107: checkcast       Lesp;
-        //   110: getfield        esp.e:Latke;
-        //   113: invokeinterface atke.a:()Ljava/lang/Object;
-        //   118: checkcast       Laeij;
-        //   121: astore_3       
-        //   122: aload           5
-        //   124: checkcast       Lesp;
-        //   127: getfield        esp.b:Leqy;
-        //   130: getfield        eqy.a:Lera;
-        //   133: getfield        era.co:Latke;
-        //   136: invokeinterface atke.a:()Ljava/lang/Object;
-        //   141: checkcast       Lrzv;
+        //   105: aload           4
+        //   107: checkcast       Lesr;
+        //   110: getfield        esr.e:Latnb;
+        //   113: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   118: checkcast       Laekc;
+        //   121: astore_2       
+        //   122: aload           4
+        //   124: checkcast       Lesr;
+        //   127: getfield        esr.b:Lera;
+        //   130: getfield        era.a:Lerc;
+        //   133: getfield        erc.cp:Latnb;
+        //   136: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   141: checkcast       Lsaw;
         //   144: astore          5
-        //   146: new             Lewd;
+        //   146: new             Lewf;
         //   149: astore          4
         //   151: aload           4
-        //   153: aload_2        
-        //   154: aload_3        
+        //   153: aload_3        
+        //   154: aload_2        
         //   155: aload           5
         //   157: aconst_null    
         //   158: aconst_null    
-        //   159: invokespecial   ewd.<init>:(Lcom/google/android/apps/youtube/app/application/Shell_UploadActivity;Laeij;Lrzv;[B[B)V
+        //   159: invokespecial   ewf.<init>:(Lcom/google/android/apps/youtube/app/application/Shell_UploadActivity;Laekc;Lsaw;[B[B)V
         //   162: aload_0        
         //   163: aload           4
-        //   165: putfield        com/google/android/apps/youtube/app/application/Shell_UploadActivity.m:Lewd;
+        //   165: putfield        com/google/android/apps/youtube/app/application/Shell_UploadActivity.m:Lewf;
         //   168: aload_1        
-        //   169: invokevirtual   aetf.close:()V
+        //   169: invokevirtual   aeux.close:()V
         //   172: return         
         //   173: new             Ljava/lang/IllegalStateException;
-        //   176: astore_2       
-        //   177: ldc             Lewd;.class
+        //   176: astore_3       
+        //   177: ldc             Lewf;.class
         //   179: invokevirtual   java/lang/Object.toString:()Ljava/lang/String;
-        //   182: astore_3       
-        //   183: aload           4
+        //   182: astore_2       
+        //   183: aload           5
         //   185: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
         //   188: invokestatic    java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
         //   191: astore          4
@@ -124,7 +124,7 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
         //   200: ldc             "Attempt to inject a Activity wrapper of type "
         //   202: invokespecial   java/lang/StringBuilder.<init>:(Ljava/lang/String;)V
         //   205: aload           5
-        //   207: aload_3        
+        //   207: aload_2        
         //   208: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
         //   211: pop            
         //   212: aload           5
@@ -139,11 +139,11 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
         //   230: ldc             ". Does your peer's @Inject constructor reference the wrong wrapper class?"
         //   232: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
         //   235: pop            
-        //   236: aload_2        
+        //   236: aload_3        
         //   237: aload           5
         //   239: invokevirtual   java/lang/StringBuilder.toString:()Ljava/lang/String;
         //   242: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
-        //   245: aload_2        
+        //   245: aload_3        
         //   246: athrow         
         //   247: astore_2       
         //   248: goto            265
@@ -157,22 +157,22 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
         //   263: aload_2        
         //   264: athrow         
         //   265: aload_1        
-        //   266: invokevirtual   aetf.close:()V
+        //   266: invokevirtual   aeux.close:()V
         //   269: goto            278
         //   272: astore_1       
         //   273: aload_2        
         //   274: aload_1        
-        //   275: invokestatic    fex.a:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   275: invokestatic    fao.a:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
         //   278: aload_2        
         //   279: athrow         
         //   280: astore_1       
         //   281: aload_2        
-        //   282: invokevirtual   aetf.close:()V
+        //   282: invokevirtual   aeux.close:()V
         //   285: goto            294
         //   288: astore_2       
         //   289: aload_1        
         //   290: aload_2        
-        //   291: invokestatic    fex.a:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   291: invokestatic    fao.a:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
         //   294: aload_1        
         //   295: athrow         
         //   296: new             Ljava/lang/IllegalStateException;
@@ -220,7 +220,7 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
     }
     
     public final /* bridge */ Object aN() {
-        final ewd m = this.m;
+        final ewf m = this.m;
         if (m == null) {
             throw new IllegalStateException("peer() called before initialized.");
         }
@@ -235,18 +235,18 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
         if ((context = this.getBaseContext()) == null) {
             context = this.p;
         }
-        aeuz.c(context);
+        agsk.ag(context);
         super.applyOverrideConfiguration(configuration);
     }
     
     protected final void attachBaseContext(final Context p) {
-        aeuz.b(this.p = p);
+        agsk.af(this.p = p);
         super.attachBaseContext(p);
         this.p = null;
     }
     
-    public final arku b() {
-        return (arku)aeps.a((Activity)this);
+    public final arno b() {
+        return aerl.a((Activity)this);
     }
     
     public final int e() {
@@ -259,7 +259,7 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
     }
     
     public final void finish() {
-        final aett b = this.n.b();
+        final aevl b = this.n.b();
         try {
             super.finish();
             b.close();
@@ -271,7 +271,7 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                fex.a(t, t2);
+                fao.a(t, t2);
             }
         }
     }
@@ -280,11 +280,11 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
         return 0;
     }
     
-    public final aui getLifecycle() {
+    public final auk getLifecycle() {
         if (this.q == null) {
-            this.q = (auo)new aepn((bu)this);
+            this.q = new aerg((bu)this);
         }
-        return (aui)this.q;
+        return (auk)this.q;
     }
     
     protected final Class i() {
@@ -293,7 +293,7 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
     }
     
     public final void invalidateOptionsMenu() {
-        final aett s = aeux.s();
+        final aevl s = aewp.s();
         try {
             super.invalidateOptionsMenu();
             s.close();
@@ -305,7 +305,7 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                fex.a(t, t2);
+                fao.a(t, t2);
             }
         }
     }
@@ -319,24 +319,24 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
     }
     
     protected final void onActivityResult(final int n, final int n2, final Intent intent) {
-        final aett q = this.n.q();
+        final aevl r = this.n.r();
         try {
             super.onActivityResult(n, n2, intent);
-            q.close();
+            r.close();
         }
         finally {
             try {
-                q.close();
+                r.close();
             }
             finally {
                 final Throwable t;
-                fex.a((Throwable)intent, t);
+                fao.a((Throwable)intent, t);
             }
         }
     }
     
     public final void onBackPressed() {
-        final aett c = this.n.c();
+        final aevl c = this.n.c();
         try {
             super.onBackPressed();
             c.close();
@@ -348,74 +348,74 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                fex.a(t, t2);
+                fao.a(t, t2);
             }
         }
     }
     
     public final void onConfigurationChanged(final Configuration configuration) {
-        final aett r = this.n.r();
+        final aevl s = this.n.s();
         try {
             super.onConfigurationChanged(configuration);
-            r.close();
+            s.close();
         }
         finally {
             try {
-                r.close();
+                s.close();
             }
             finally {
                 final Throwable t;
-                fex.a((Throwable)configuration, t);
+                fao.a((Throwable)configuration, t);
             }
         }
     }
     
     protected final void onCreate(final Bundle bundle) {
-        final aett s = this.n.s();
+        final aevl t = this.n.t();
         try {
             this.o = true;
             this.n();
-            ((aepn)((dh)this).getLifecycle()).h(this.n);
-            ((aepr)((evo)this).aR()).xU().i();
+            ((aerg)((dh)this).getLifecycle()).h(this.n);
+            ((aerk)((evq)this).aR()).xT().i();
             super.onCreate(bundle);
             this.o = false;
-            if (s != null) {
-                s.close();
+            if (t != null) {
+                t.close();
             }
         }
         finally {
-            if (s != null) {
+            if (t != null) {
                 try {
-                    s.close();
+                    t.close();
                 }
                 finally {
-                    final Throwable t;
-                    fex.a((Throwable)bundle, t);
+                    final Throwable t2;
+                    fao.a((Throwable)bundle, t2);
                 }
             }
         }
     }
     
     public final boolean onCreatePanelMenu(final int n, final Menu menu) {
-        final aett t = this.n.t();
+        final aevl u = this.n.u();
         try {
             super.onCreatePanelMenu(n, menu);
-            t.close();
+            u.close();
             return true;
         }
         finally {
             try {
-                t.close();
+                u.close();
             }
             finally {
-                final Throwable t2;
-                fex.a((Throwable)menu, t2);
+                final Throwable t;
+                fao.a((Throwable)menu, t);
             }
         }
     }
     
     protected final void onDestroy() {
-        final aett d = this.n.d();
+        final aevl d = this.n.d();
         try {
             super.onDestroy();
             this.r = true;
@@ -428,16 +428,16 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                fex.a(t, t2);
+                fao.a(t, t2);
             }
         }
     }
     
-    protected final void onLocalesChanged(final ajp ajp) {
+    protected final void onLocalesChanged(final ajq ajq) {
     }
     
     protected final void onNewIntent(final Intent intent) {
-        final aett e = this.n.e(intent);
+        final aevl e = this.n.e(intent);
         try {
             super.onNewIntent(intent);
             if (e != null) {
@@ -451,7 +451,7 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
                 }
                 finally {
                     final Throwable t;
-                    fex.a((Throwable)intent, t);
+                    fao.a((Throwable)intent, t);
                 }
             }
         }
@@ -461,25 +461,25 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
     }
     
     public final boolean onOptionsItemSelected(final MenuItem menuItem) {
-        final aett u = this.n.u();
+        final aevl v = this.n.v();
         try {
             final boolean onOptionsItemSelected = super.onOptionsItemSelected(menuItem);
-            u.close();
+            v.close();
             return onOptionsItemSelected;
         }
         finally {
             try {
-                u.close();
+                v.close();
             }
             finally {
                 final Throwable t;
-                fex.a((Throwable)menuItem, t);
+                fao.a((Throwable)menuItem, t);
             }
         }
     }
     
     protected final void onPause() {
-        final aett f = this.n.f();
+        final aevl f = this.n.f();
         try {
             super.onPause();
             if (f != null) {
@@ -494,52 +494,52 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    fex.a(t, t2);
+                    fao.a(t, t2);
                 }
             }
         }
     }
     
     public final void onPictureInPictureModeChanged(final boolean b, final Configuration configuration) {
-        final aett v = this.n.v();
+        final aevl w = this.n.w();
         try {
             super.onPictureInPictureModeChanged(b, configuration);
-            v.close();
+            w.close();
         }
         finally {
             try {
-                v.close();
+                w.close();
             }
             finally {
                 final Throwable t;
-                fex.a((Throwable)configuration, t);
+                fao.a((Throwable)configuration, t);
             }
         }
     }
     
     protected final void onPostCreate(final Bundle bundle) {
-        final aett w = this.n.w();
+        final aevl x = this.n.x();
         try {
             super.onPostCreate(bundle);
-            if (w != null) {
-                w.close();
+            if (x != null) {
+                x.close();
             }
         }
         finally {
-            if (w != null) {
+            if (x != null) {
                 try {
-                    w.close();
+                    x.close();
                 }
                 finally {
                     final Throwable t;
-                    fex.a((Throwable)bundle, t);
+                    fao.a((Throwable)bundle, t);
                 }
             }
         }
     }
     
     protected final void onPostResume() {
-        final aett g = this.n.g();
+        final aevl g = this.n.g();
         try {
             super.onPostResume();
             g.close();
@@ -551,13 +551,13 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                fex.a(t, t2);
+                fao.a(t, t2);
             }
         }
     }
     
     public final boolean onPrepareOptionsMenu(final Menu menu) {
-        final aett s = aeux.s();
+        final aevl s = aewp.s();
         try {
             final boolean onPrepareOptionsMenu = super.onPrepareOptionsMenu(menu);
             s.close();
@@ -569,30 +569,30 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
             }
             finally {
                 final Throwable t;
-                fex.a((Throwable)menu, t);
+                fao.a((Throwable)menu, t);
             }
         }
     }
     
     public final void onRequestPermissionsResult(final int n, final String[] array, final int[] array2) {
-        final aett x = this.n.x();
+        final aevl y = this.n.y();
         try {
             super.onRequestPermissionsResult(n, array, array2);
-            x.close();
+            y.close();
         }
         finally {
             try {
-                x.close();
+                y.close();
             }
             finally {
                 final Throwable t;
-                fex.a((Throwable)(Object)array, t);
+                fao.a((Throwable)(Object)array, t);
             }
         }
     }
     
     protected final void onResume() {
-        final aett h = this.n.h();
+        final aevl h = this.n.h();
         try {
             super.onResume();
             if (h != null) {
@@ -607,35 +607,35 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    fex.a(t, t2);
+                    fao.a(t, t2);
                 }
             }
         }
     }
     
     protected final void onSaveInstanceState(final Bundle bundle) {
-        final aett y = this.n.y();
+        final aevl z = this.n.z();
         try {
             super.onSaveInstanceState(bundle);
-            if (y != null) {
-                y.close();
+            if (z != null) {
+                z.close();
             }
         }
         finally {
-            if (y != null) {
+            if (z != null) {
                 try {
-                    y.close();
+                    z.close();
                 }
                 finally {
                     final Throwable t;
-                    fex.a((Throwable)bundle, t);
+                    fao.a((Throwable)bundle, t);
                 }
             }
         }
     }
     
     protected final void onStart() {
-        final aett i = this.n.i();
+        final aevl i = this.n.i();
         try {
             super.onStart();
             if (i != null) {
@@ -650,14 +650,14 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    fex.a(t, t2);
+                    fao.a(t, t2);
                 }
             }
         }
     }
     
     protected final void onStop() {
-        final aett j = this.n.j();
+        final aevl j = this.n.j();
         try {
             super.onStop();
             if (j != null) {
@@ -672,14 +672,14 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    fex.a(t, t2);
+                    fao.a(t, t2);
                 }
             }
         }
     }
     
     public final boolean onSupportNavigateUp() {
-        final aett k = this.n.k();
+        final aevl k = this.n.k();
         try {
             final boolean onSupportNavigateUp = super.onSupportNavigateUp();
             k.close();
@@ -692,13 +692,13 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                fex.a(t, t2);
+                fao.a(t, t2);
             }
         }
     }
     
     public final void onUserInteraction() {
-        final aett l = this.n.l();
+        final aevl l = this.n.l();
         try {
             super.onUserInteraction();
             l.close();
@@ -710,21 +710,21 @@ public final class Shell_UploadActivity extends evu implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                fex.a(t, t2);
+                fao.a(t, t2);
             }
         }
     }
     
     public final void startActivity(final Intent intent) {
-        if (aefb.P(intent, this.getApplicationContext())) {
-            aeun.j(intent);
+        if (adme.ah(intent, this.getApplicationContext())) {
+            aewf.j(intent);
         }
         super.startActivity(intent);
     }
     
     public final void startActivity(final Intent intent, final Bundle bundle) {
-        if (aefb.P(intent, this.getApplicationContext())) {
-            aeun.j(intent);
+        if (adme.ah(intent, this.getApplicationContext())) {
+            aewf.j(intent);
         }
         super.startActivity(intent, bundle);
     }

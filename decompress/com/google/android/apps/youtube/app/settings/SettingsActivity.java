@@ -30,21 +30,21 @@ import android.os.SystemClock;
 import android.app.Activity;
 import android.content.Context;
 
-public final class SettingsActivity extends jmz implements aemu, aenm
+public final class SettingsActivity extends jol implements aeqn, aerf
 {
-    private jnm b;
-    private final aepy c;
+    private joz b;
+    private final aets c;
     private boolean d;
     private Context e;
-    private aun f;
+    private auq f;
     private boolean g;
     
     public SettingsActivity() {
-        this.c = aepy.a((Activity)this);
+        this.c = aets.a((Activity)this);
         SystemClock.elapsedRealtime();
     }
     
-    private final jnm h() {
+    private final joz h() {
         this.i();
         return this.b;
     }
@@ -55,11 +55,11 @@ public final class SettingsActivity extends jmz implements aemu, aenm
         // 
         // Original Bytecode:
         // 
-        //     1: getfield        com/google/android/apps/youtube/app/settings/SettingsActivity.b:Ljnm;
-        //     4: ifnonnull       655
+        //     1: getfield        com/google/android/apps/youtube/app/settings/SettingsActivity.b:Ljoz;
+        //     4: ifnonnull       673
         //     7: aload_0        
         //     8: getfield        com/google/android/apps/youtube/app/settings/SettingsActivity.d:Z
-        //    11: ifeq            645
+        //    11: ifeq            663
         //    14: aload_0        
         //    15: getfield        com/google/android/apps/youtube/app/settings/SettingsActivity.g:Z
         //    18: ifeq            41
@@ -73,286 +73,286 @@ public final class SettingsActivity extends jmz implements aemu, aenm
         //    37: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
         //    40: athrow         
         //    41: ldc             "CreateComponent"
-        //    43: invokestatic    aesw.o:(Ljava/lang/String;)Laere;
-        //    46: astore_1       
+        //    43: invokestatic    aewp.o:(Ljava/lang/String;)Laeux;
+        //    46: astore_2       
         //    47: aload_0        
-        //    48: invokevirtual   jmz.aR:()Ljava/lang/Object;
+        //    48: invokevirtual   jol.aR:()Ljava/lang/Object;
         //    51: pop            
-        //    52: aload_1        
-        //    53: invokevirtual   aere.close:()V
+        //    52: aload_2        
+        //    53: invokevirtual   aeux.close:()V
         //    56: ldc             "CreatePeer"
-        //    58: invokestatic    aesw.o:(Ljava/lang/String;)Laere;
-        //    61: astore_2       
+        //    58: invokestatic    aewp.o:(Ljava/lang/String;)Laeux;
+        //    61: astore_1       
         //    62: aload_0        
-        //    63: invokevirtual   jmz.aR:()Ljava/lang/Object;
-        //    66: astore_3       
-        //    67: aload_3        
-        //    68: checkcast       Lesm;
-        //    71: getfield        esm.d:Latjj;
-        //    74: invokeinterface atjj.a:()Ljava/lang/Object;
-        //    79: checkcast       Landroid/app/Activity;
-        //    82: astore          4
-        //    84: aload           4
-        //    86: instanceof      Lcom/google/android/apps/youtube/app/settings/SettingsActivity;
-        //    89: ifeq            517
-        //    92: aload           4
-        //    94: checkcast       Lcom/google/android/apps/youtube/app/settings/SettingsActivity;
-        //    97: astore          5
-        //    99: aload           5
-        //   101: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
-        //   104: pop            
-        //   105: aload_3        
-        //   106: checkcast       Lesm;
-        //   109: getfield        esm.b:Leqv;
-        //   112: getfield        eqv.fo:Latjj;
-        //   115: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   120: checkcast       Lgko;
-        //   123: astore          6
-        //   125: aload_3        
-        //   126: checkcast       Lesm;
-        //   129: getfield        esm.F:Latjj;
-        //   132: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   137: checkcast       Lfxo;
-        //   140: astore          4
-        //   142: aload_3        
-        //   143: checkcast       Lesm;
-        //   146: getfield        esm.b:Leqv;
-        //   149: getfield        eqv.pD:Latjj;
-        //   152: invokestatic    arjc.b:(Latjj;)Larhr;
-        //   155: astore          7
-        //   157: aload_3        
-        //   158: checkcast       Lesm;
-        //   161: getfield        esm.b:Leqv;
-        //   164: getfield        eqv.r:Latjj;
-        //   167: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   172: checkcast       Ljava/util/concurrent/Executor;
-        //   175: astore          8
-        //   177: aload_3        
-        //   178: checkcast       Lesm;
-        //   181: getfield        esm.b:Leqv;
-        //   184: getfield        eqv.lm:Latjj;
-        //   187: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   192: checkcast       Lvns;
-        //   195: astore          9
-        //   197: aload_3        
-        //   198: checkcast       Lesm;
-        //   201: getfield        esm.b:Leqv;
-        //   204: getfield        eqv.G:Latjj;
-        //   207: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   212: checkcast       Landroid/os/Handler;
-        //   215: astore_1       
-        //   216: aload_3        
-        //   217: checkcast       Lesm;
-        //   220: getfield        esm.fn:Latjj;
-        //   223: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   228: checkcast       Ltlb;
-        //   231: astore          10
-        //   233: aload_3        
-        //   234: checkcast       Lesm;
-        //   237: getfield        esm.fF:Latjj;
-        //   240: invokestatic    arjc.b:(Latjj;)Larhr;
-        //   243: astore          11
-        //   245: aload_3        
-        //   246: checkcast       Lesm;
-        //   249: getfield        esm.fE:Latjj;
-        //   252: invokestatic    arjc.b:(Latjj;)Larhr;
-        //   255: astore          12
-        //   257: aload_3        
-        //   258: checkcast       Lesm;
-        //   261: invokevirtual   esm.zI:()Ltdg;
-        //   264: astore          13
-        //   266: aload_3        
-        //   267: checkcast       Lesm;
-        //   270: getfield        esm.aQ:Latjj;
-        //   273: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   278: checkcast       Lgau;
-        //   281: astore          14
-        //   283: aload_3        
-        //   284: checkcast       Lesm;
-        //   287: getfield        esm.fG:Latjj;
-        //   290: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   295: checkcast       Ljpa;
-        //   298: astore          15
-        //   300: aload_3        
-        //   301: checkcast       Lesm;
-        //   304: getfield        esm.fH:Latjj;
-        //   307: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   312: checkcast       Lkgk;
-        //   315: astore          16
-        //   317: aload_3        
-        //   318: checkcast       Lesm;
-        //   321: getfield        esm.n:Latjj;
-        //   324: invokestatic    arjc.b:(Latjj;)Larhr;
-        //   327: astore          17
-        //   329: aload_3        
-        //   330: checkcast       Lesm;
-        //   333: getfield        esm.b:Leqv;
-        //   336: getfield        eqv.a:Leqx;
-        //   339: getfield        eqx.cn:Latjj;
-        //   342: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   347: checkcast       Lrxr;
-        //   350: astore          18
-        //   352: aload_3        
-        //   353: checkcast       Lesm;
-        //   356: getfield        esm.b:Leqv;
-        //   359: getfield        eqv.dj:Latjj;
-        //   362: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   367: checkcast       Ltox;
-        //   370: astore          19
-        //   372: aload_3        
-        //   373: checkcast       Lesm;
-        //   376: getfield        esm.e:Latjj;
-        //   379: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   384: checkcast       Laegi;
-        //   387: astore          20
-        //   389: aload_3        
-        //   390: checkcast       Lesm;
-        //   393: getfield        esm.b:Leqv;
-        //   396: getfield        eqv.jV:Latjj;
-        //   399: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   404: checkcast       Luyi;
-        //   407: astore          16
-        //   409: aload_3        
-        //   410: checkcast       Lesm;
-        //   413: getfield        esm.cH:Latjj;
-        //   416: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   421: checkcast       Lacyh;
-        //   424: astore          21
-        //   426: aload_3        
-        //   427: checkcast       Lesm;
-        //   430: getfield        esm.b:Leqv;
-        //   433: getfield        eqv.jW:Latjj;
-        //   436: invokeinterface atjj.a:()Ljava/lang/Object;
-        //   441: checkcast       Laeby;
-        //   444: astore          22
-        //   446: new             Ljnm;
-        //   449: astore_3       
-        //   450: aload_3        
-        //   451: aload           5
-        //   453: aload           6
-        //   455: aload           4
-        //   457: aload           7
-        //   459: aload           8
-        //   461: aload           9
-        //   463: aload_1        
-        //   464: aload           10
-        //   466: aload           11
-        //   468: aload           12
-        //   470: aload           13
-        //   472: aload           14
-        //   474: aload           15
-        //   476: aload           17
-        //   478: aload           18
-        //   480: aload           19
-        //   482: aload           20
-        //   484: aload           16
-        //   486: aload           21
-        //   488: aload           22
-        //   490: aconst_null    
-        //   491: aconst_null    
-        //   492: aconst_null    
-        //   493: aconst_null    
-        //   494: aconst_null    
-        //   495: aconst_null    
-        //   496: invokespecial   jnm.<init>:(Lcom/google/android/apps/youtube/app/settings/SettingsActivity;Lgko;Lfxo;Larhr;Ljava/util/concurrent/Executor;Lvns;Landroid/os/Handler;Ltlb;Larhr;Larhr;Ltdg;Lgau;Ljpa;Larhr;Lrxr;Ltox;Laegi;Luyi;Lacyh;Laeby;[B[B[B[B[B[B)V
-        //   499: aload_0        
-        //   500: aload_3        
-        //   501: putfield        com/google/android/apps/youtube/app/settings/SettingsActivity.b:Ljnm;
-        //   504: aload_2        
-        //   505: invokevirtual   aere.close:()V
-        //   508: aload_0        
-        //   509: getfield        com/google/android/apps/youtube/app/settings/SettingsActivity.b:Ljnm;
-        //   512: aload_0        
-        //   513: putfield        jnm.z:Lcom/google/android/apps/youtube/app/settings/SettingsActivity;
-        //   516: return         
-        //   517: new             Ljava/lang/IllegalStateException;
-        //   520: astore_1       
-        //   521: ldc             Ljnm;.class
-        //   523: invokevirtual   java/lang/Object.toString:()Ljava/lang/String;
-        //   526: astore          15
-        //   528: aload           4
-        //   530: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
-        //   533: invokestatic    java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
-        //   536: astore          10
-        //   538: new             Ljava/lang/StringBuilder;
-        //   541: astore          4
-        //   543: aload           4
-        //   545: ldc             "Attempt to inject a Activity wrapper of type "
-        //   547: invokespecial   java/lang/StringBuilder.<init>:(Ljava/lang/String;)V
+        //    63: invokevirtual   jol.aR:()Ljava/lang/Object;
+        //    66: astore          21
+        //    68: aload           21
+        //    70: checkcast       Lesr;
+        //    73: getfield        esr.d:Latnb;
+        //    76: invokeinterface atnb.a:()Ljava/lang/Object;
+        //    81: checkcast       Landroid/app/Activity;
+        //    84: astore          4
+        //    86: aload           4
+        //    88: instanceof      Lcom/google/android/apps/youtube/app/settings/SettingsActivity;
+        //    91: ifeq            540
+        //    94: aload           4
+        //    96: checkcast       Lcom/google/android/apps/youtube/app/settings/SettingsActivity;
+        //    99: astore          4
+        //   101: aload           4
+        //   103: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
+        //   106: pop            
+        //   107: aload           21
+        //   109: checkcast       Lesr;
+        //   112: getfield        esr.b:Lera;
+        //   115: getfield        era.fe:Latnb;
+        //   118: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   123: checkcast       Lglc;
+        //   126: astore          9
+        //   128: aload           21
+        //   130: checkcast       Lesr;
+        //   133: getfield        esr.G:Latnb;
+        //   136: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   141: checkcast       Lfyb;
+        //   144: astore          7
+        //   146: aload           21
+        //   148: checkcast       Lesr;
+        //   151: getfield        esr.b:Lera;
+        //   154: getfield        era.oW:Latnb;
+        //   157: invokestatic    arol.b:(Latnb;)Larna;
+        //   160: astore_3       
+        //   161: aload           21
+        //   163: checkcast       Lesr;
+        //   166: getfield        esr.b:Lera;
+        //   169: getfield        era.r:Latnb;
+        //   172: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   177: checkcast       Ljava/util/concurrent/Executor;
+        //   180: astore          11
+        //   182: aload           21
+        //   184: checkcast       Lesr;
+        //   187: getfield        esr.b:Lera;
+        //   190: getfield        era.kI:Latnb;
+        //   193: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   198: checkcast       Lvre;
+        //   201: astore_2       
+        //   202: aload           21
+        //   204: checkcast       Lesr;
+        //   207: getfield        esr.b:Lera;
+        //   210: getfield        era.G:Latnb;
+        //   213: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   218: checkcast       Landroid/os/Handler;
+        //   221: astore          12
+        //   223: aload           21
+        //   225: checkcast       Lesr;
+        //   228: getfield        esr.fv:Latnb;
+        //   231: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   236: checkcast       Ltog;
+        //   239: astore          6
+        //   241: aload           21
+        //   243: checkcast       Lesr;
+        //   246: getfield        esr.fN:Latnb;
+        //   249: invokestatic    arol.b:(Latnb;)Larna;
+        //   252: astore          13
+        //   254: aload           21
+        //   256: checkcast       Lesr;
+        //   259: getfield        esr.fM:Latnb;
+        //   262: invokestatic    arol.b:(Latnb;)Larna;
+        //   265: astore          10
+        //   267: aload           21
+        //   269: checkcast       Lesr;
+        //   272: invokevirtual   esr.yJ:()Lsrr;
+        //   275: astore          14
+        //   277: aload           21
+        //   279: checkcast       Lesr;
+        //   282: getfield        esr.aS:Latnb;
+        //   285: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   290: checkcast       Lgbh;
+        //   293: astore          5
+        //   295: aload           21
+        //   297: checkcast       Lesr;
+        //   300: getfield        esr.fO:Latnb;
+        //   303: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   308: checkcast       Ljqk;
+        //   311: astore          8
+        //   313: aload           21
+        //   315: checkcast       Lesr;
+        //   318: getfield        esr.fP:Latnb;
+        //   321: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   326: checkcast       Lmgh;
+        //   329: astore          15
+        //   331: aload           21
+        //   333: checkcast       Lesr;
+        //   336: getfield        esr.n:Latnb;
+        //   339: invokestatic    arol.b:(Latnb;)Larna;
+        //   342: astore          19
+        //   344: aload           21
+        //   346: checkcast       Lesr;
+        //   349: getfield        esr.b:Lera;
+        //   352: getfield        era.a:Lerc;
+        //   355: getfield        erc.cp:Latnb;
+        //   358: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   363: checkcast       Lsaw;
+        //   366: astore          15
+        //   368: aload           21
+        //   370: checkcast       Lesr;
+        //   373: getfield        esr.b:Lera;
+        //   376: getfield        era.dm:Latnb;
+        //   379: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   384: checkcast       Ltsd;
+        //   387: astore          16
+        //   389: aload           21
+        //   391: checkcast       Lesr;
+        //   394: getfield        esr.e:Latnb;
+        //   397: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   402: checkcast       Laekc;
+        //   405: astore          20
+        //   407: aload           21
+        //   409: checkcast       Lesr;
+        //   412: getfield        esr.b:Lera;
+        //   415: getfield        era.js:Latnb;
+        //   418: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   423: checkcast       Lvbs;
+        //   426: astore          17
+        //   428: aload           21
+        //   430: checkcast       Lesr;
+        //   433: getfield        esr.cQ:Latnb;
+        //   436: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   441: checkcast       Ladbx;
+        //   444: astore          18
+        //   446: aload           21
+        //   448: checkcast       Lesr;
+        //   451: getfield        esr.b:Lera;
+        //   454: getfield        era.jt:Latnb;
+        //   457: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   462: checkcast       Laefs;
+        //   465: astore          22
+        //   467: new             Ljoz;
+        //   470: astore          21
+        //   472: aload           21
+        //   474: aload           4
+        //   476: aload           9
+        //   478: aload           7
+        //   480: aload_3        
+        //   481: aload           11
+        //   483: aload_2        
+        //   484: aload           12
+        //   486: aload           6
+        //   488: aload           13
+        //   490: aload           10
+        //   492: aload           14
+        //   494: aload           5
+        //   496: aload           8
+        //   498: aload           19
+        //   500: aload           15
+        //   502: aload           16
+        //   504: aload           20
+        //   506: aload           17
+        //   508: aload           18
+        //   510: aload           22
+        //   512: aconst_null    
+        //   513: aconst_null    
+        //   514: aconst_null    
+        //   515: aconst_null    
+        //   516: aconst_null    
+        //   517: aconst_null    
+        //   518: invokespecial   joz.<init>:(Lcom/google/android/apps/youtube/app/settings/SettingsActivity;Lglc;Lfyb;Larna;Ljava/util/concurrent/Executor;Lvre;Landroid/os/Handler;Ltog;Larna;Larna;Lsrr;Lgbh;Ljqk;Larna;Lsaw;Ltsd;Laekc;Lvbs;Ladbx;Laefs;[B[B[B[B[B[B)V
+        //   521: aload_0        
+        //   522: aload           21
+        //   524: putfield        com/google/android/apps/youtube/app/settings/SettingsActivity.b:Ljoz;
+        //   527: aload_1        
+        //   528: invokevirtual   aeux.close:()V
+        //   531: aload_0        
+        //   532: getfield        com/google/android/apps/youtube/app/settings/SettingsActivity.b:Ljoz;
+        //   535: aload_0        
+        //   536: putfield        joz.z:Lcom/google/android/apps/youtube/app/settings/SettingsActivity;
+        //   539: return         
+        //   540: new             Ljava/lang/IllegalStateException;
+        //   543: astore_2       
+        //   544: ldc             Ljoz;.class
+        //   546: invokevirtual   java/lang/Object.toString:()Ljava/lang/String;
+        //   549: astore_3       
         //   550: aload           4
-        //   552: aload           15
-        //   554: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   557: pop            
-        //   558: aload           4
-        //   560: ldc             ", but the wrapper available is of type: "
-        //   562: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   565: pop            
-        //   566: aload           4
-        //   568: aload           10
-        //   570: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   573: pop            
-        //   574: aload           4
-        //   576: ldc             ". Does your peer's @Inject constructor reference the wrong wrapper class?"
-        //   578: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   581: pop            
-        //   582: aload_1        
-        //   583: aload           4
-        //   585: invokevirtual   java/lang/StringBuilder.toString:()Ljava/lang/String;
-        //   588: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
-        //   591: aload_1        
-        //   592: athrow         
-        //   593: astore_1       
-        //   594: goto            614
-        //   597: astore_1       
-        //   598: new             Ljava/lang/IllegalStateException;
-        //   601: astore          15
-        //   603: aload           15
-        //   605: ldc             "Missing entry point. If you're in a test with explicit entry points specified in your @TestRoot, check that you're not missing the one for this class."
-        //   607: aload_1        
-        //   608: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;Ljava/lang/Throwable;)V
-        //   611: aload           15
+        //   552: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
+        //   555: invokestatic    java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+        //   558: astore          4
+        //   560: new             Ljava/lang/StringBuilder;
+        //   563: astore          5
+        //   565: aload           5
+        //   567: ldc             "Attempt to inject a Activity wrapper of type "
+        //   569: invokespecial   java/lang/StringBuilder.<init>:(Ljava/lang/String;)V
+        //   572: aload           5
+        //   574: aload_3        
+        //   575: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   578: pop            
+        //   579: aload           5
+        //   581: ldc             ", but the wrapper available is of type: "
+        //   583: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   586: pop            
+        //   587: aload           5
+        //   589: aload           4
+        //   591: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   594: pop            
+        //   595: aload           5
+        //   597: ldc             ". Does your peer's @Inject constructor reference the wrong wrapper class?"
+        //   599: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   602: pop            
+        //   603: aload_2        
+        //   604: aload           5
+        //   606: invokevirtual   java/lang/StringBuilder.toString:()Ljava/lang/String;
+        //   609: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
+        //   612: aload_2        
         //   613: athrow         
-        //   614: aload_2        
-        //   615: invokevirtual   aere.close:()V
-        //   618: goto            627
-        //   621: astore_2       
-        //   622: aload_1        
-        //   623: aload_2        
-        //   624: invokestatic    com/google/android/apps/youtube/app/settings/SettingsActivity$$ExternalSyntheticBackport0.m:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-        //   627: aload_1        
-        //   628: athrow         
-        //   629: astore_2       
-        //   630: aload_1        
-        //   631: invokevirtual   aere.close:()V
-        //   634: goto            643
-        //   637: astore_1       
-        //   638: aload_2        
-        //   639: aload_1        
-        //   640: invokestatic    com/google/android/apps/youtube/app/settings/SettingsActivity$$ExternalSyntheticBackport0.m:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-        //   643: aload_2        
-        //   644: athrow         
-        //   645: new             Ljava/lang/IllegalStateException;
-        //   648: dup            
-        //   649: ldc             "createPeer() called outside of onCreate"
-        //   651: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
-        //   654: athrow         
-        //   655: return         
+        //   614: astore_2       
+        //   615: goto            632
+        //   618: astore_2       
+        //   619: new             Ljava/lang/IllegalStateException;
+        //   622: astore_3       
+        //   623: aload_3        
+        //   624: ldc             "Missing entry point. If you're in a test with explicit entry points specified in your @TestRoot, check that you're not missing the one for this class."
+        //   626: aload_2        
+        //   627: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;Ljava/lang/Throwable;)V
+        //   630: aload_3        
+        //   631: athrow         
+        //   632: aload_1        
+        //   633: invokevirtual   aeux.close:()V
+        //   636: goto            645
+        //   639: astore_1       
+        //   640: aload_2        
+        //   641: aload_1        
+        //   642: invokestatic    com/google/android/apps/youtube/app/settings/SettingsActivity$$ExternalSyntheticBackport0.m:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   645: aload_2        
+        //   646: athrow         
+        //   647: astore_1       
+        //   648: aload_2        
+        //   649: invokevirtual   aeux.close:()V
+        //   652: goto            661
+        //   655: astore_2       
+        //   656: aload_1        
+        //   657: aload_2        
+        //   658: invokestatic    com/google/android/apps/youtube/app/settings/SettingsActivity$$ExternalSyntheticBackport0.m:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   661: aload_1        
+        //   662: athrow         
+        //   663: new             Ljava/lang/IllegalStateException;
+        //   666: dup            
+        //   667: ldc             "createPeer() called outside of onCreate"
+        //   669: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
+        //   672: athrow         
+        //   673: return         
         //    Exceptions:
         //  Try           Handler
         //  Start  End    Start  End    Type                          
         //  -----  -----  -----  -----  ------------------------------
-        //  47     52     629    645    Any
-        //  62     67     597    614    Ljava/lang/ClassCastException;
-        //  62     67     593    629    Any
-        //  67     504    593    629    Any
-        //  517    593    593    629    Any
-        //  598    614    593    629    Any
-        //  614    618    621    627    Any
-        //  630    634    637    643    Any
+        //  47     52     647    663    Any
+        //  62     68     618    632    Ljava/lang/ClassCastException;
+        //  62     68     614    647    Any
+        //  68     527    614    647    Any
+        //  540    614    614    647    Any
+        //  619    632    614    647    Any
+        //  632    636    639    645    Any
+        //  648    652    655    661    Any
         // 
         // The error that occurred was:
         // 
-        // java.lang.IllegalStateException: Expression is linked from several locations: Label_0614:
+        // java.lang.IllegalStateException: Expression is linked from several locations: Label_0632:
         //     at com.strobel.decompiler.ast.Error.expressionLinkedFromMultipleLocations(Error.java:27)
         //     at com.strobel.decompiler.ast.AstOptimizer.mergeDisparateObjectInitializations(AstOptimizer.java:2604)
         //     at com.strobel.decompiler.ast.AstOptimizer.optimize(AstOptimizer.java:235)
@@ -376,7 +376,7 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     public final boolean a(final Preference preference) {
-        final jnm h = this.h();
+        final joz h = this.h();
         boolean b;
         if (!"accessibility_hide_player_controls_setting_key".equals(preference.s)) {
             b = false;
@@ -384,12 +384,12 @@ public final class SettingsActivity extends jmz implements aemu, aenm
         else {
             if (((bu)h.a).getSupportFragmentManager().f("PREF_DIALOG") == null) {
                 final String s = preference.s;
-                final joh joh = new joh();
+                final jpt jpt = new jpt();
                 final Bundle bundle = new Bundle(1);
                 bundle.putString("key", s);
-                joh.ag(bundle);
-                joh.aG(((bu)h.a).getSupportFragmentManager().e(2131431390));
-                joh.rD(((bu)h.a).getSupportFragmentManager(), "PREF_DIALOG");
+                jpt.ag(bundle);
+                jpt.aG(((bu)h.a).getSupportFragmentManager().e(2131431394));
+                jpt.rJ(((bu)h.a).getSupportFragmentManager(), "PREF_DIALOG");
                 return true;
             }
             b = true;
@@ -397,24 +397,28 @@ public final class SettingsActivity extends jmz implements aemu, aenm
         return b;
     }
     
+    public final /* bridge */ Object aN() {
+        return this.f();
+    }
+    
     public final void applyOverrideConfiguration(final Configuration configuration) {
         Context context;
         if ((context = this.getBaseContext()) == null) {
             context = this.e;
         }
-        aety.b(context);
+        agsk.ag(context);
         super.applyOverrideConfiguration(configuration);
     }
     
     protected final void attachBaseContext(final Context e) {
-        aety.a(this.e = e);
+        agsk.af(this.e = e);
         super.attachBaseContext(e);
         this.e = null;
     }
     
     public final boolean b(final Preference preference) {
-        final jnm h = this.h();
-        final blt ao = h.e().ao;
+        final joz h = this.h();
+        final blx ao = h.e().ao;
         final String s = preference.s;
         final boolean equals = ao.m(2132017616).equals(s);
         final boolean b = true;
@@ -424,12 +428,12 @@ public final class SettingsActivity extends jmz implements aemu, aenm
             i = b;
         }
         else {
-            final boolean equals2 = ao.m(2132019896).equals(s);
-            final aioe aioe = null;
-            final aioe aioe2 = null;
-            final aioe aioe3 = null;
+            final boolean equals2 = ao.m(2132019900).equals(s);
+            final aisc aisc = null;
+            final aisc aisc2 = null;
+            final aisc aisc3 = null;
             if (equals2) {
-                final Intent j = ((c)ao.d).j();
+                final Intent n = ((c)ao.d).n();
                 final Iterator iterator = ((SettingsDataAccess)ao.c).h().iterator();
                 Object next;
                 do {
@@ -438,18 +442,18 @@ public final class SettingsActivity extends jmz implements aemu, aenm
                         return i;
                     }
                     next = iterator.next();
-                } while (!aiko.class.isInstance(next));
-                final aiko aiko = (aiko)next;
-                aioe aioe4 = aioe3;
-                if ((aiko.b & 0x1) != 0x0 && (aioe4 = aiko.c) == null) {
-                    aioe4 = aioe.a;
+                } while (!aiof.class.isInstance(next));
+                final aiof aiof = (aiof)next;
+                aisc aisc4 = aisc3;
+                if ((aiof.b & 0x1) != 0x0 && (aisc4 = aiof.c) == null) {
+                    aisc4 = aisc.a;
                 }
-                j.putExtra("navigation_endpoint", ((agxl)((wwv)ao.b).f(aioe4)).toByteArray());
-                ((Activity)ao.a).startActivity(j);
+                n.putExtra("navigation_endpoint", ((ahbc)((xab)ao.b).f(aisc4)).toByteArray());
+                ((Activity)ao.a).startActivity(n);
                 i = b;
             }
             else if (ao.m(2132017780).equals(s)) {
-                final Intent k = ((c)ao.d).j();
+                final Intent n2 = ((c)ao.d).n();
                 final Iterator iterator2 = ((SettingsDataAccess)ao.c).h().iterator();
                 Object next2;
                 do {
@@ -458,22 +462,22 @@ public final class SettingsActivity extends jmz implements aemu, aenm
                         return i;
                     }
                     next2 = iterator2.next();
-                } while (!(next2 instanceof aikh));
-                final aikh aikh = (aikh)next2;
-                aioe aioe5 = aioe;
-                if ((aikh.b & 0x1) != 0x0 && (aioe5 = aikh.c) == null) {
-                    aioe5 = aioe.a;
+                } while (!(next2 instanceof ainy));
+                final ainy ainy = (ainy)next2;
+                aisc aisc5 = aisc;
+                if ((ainy.b & 0x1) != 0x0 && (aisc5 = ainy.c) == null) {
+                    aisc5 = aisc.a;
                 }
-                k.putExtra("navigation_endpoint", ((agxl)((wwv)ao.b).f(aioe5)).toByteArray());
-                ((Activity)ao.a).startActivity(k);
+                n2.putExtra("navigation_endpoint", ((ahbc)((xab)ao.b).f(aisc5)).toByteArray());
+                ((Activity)ao.a).startActivity(n2);
                 i = b;
             }
             else {
-                final boolean equals3 = ao.m(2132020217).equals(s);
-                int l = 0;
+                final boolean equals3 = ao.m(2132020221).equals(s);
+                int j = 0;
                 final boolean b2 = false;
-                if (!equals3 && !ao.m(2132020218).equals(s)) {
-                    if (ao.m(2132020219).equals(s)) {
+                if (!equals3 && !ao.m(2132020222).equals(s)) {
+                    if (ao.m(2132020223).equals(s)) {
                         final Iterator iterator3 = ((SettingsDataAccess)ao.c).h().iterator();
                         Object next3;
                         do {
@@ -482,16 +486,16 @@ public final class SettingsActivity extends jmz implements aemu, aenm
                                 return i;
                             }
                             next3 = iterator3.next();
-                        } while (!aikq.class.isInstance(next3));
-                        aioe aioe6;
-                        if ((aioe6 = ((aikq)next3).c) == null) {
-                            aioe6 = aioe.a;
+                        } while (!aioh.class.isInstance(next3));
+                        aisc aisc6;
+                        if ((aisc6 = ((aioh)next3).c) == null) {
+                            aisc6 = aisc.a;
                         }
-                        ((wwv)ao.b).J(3, (wxz)new wws(aioe6.c), (alff)null);
-                        ((Activity)ao.a).startActivity(new Intent("android.intent.action.VIEW", Uri.parse(((apgo)((agzd)aioe6).rr((agyr)UrlEndpointOuterClass.urlEndpoint)).c)));
+                        ((xab)ao.b).J(3, (xbe)new wzy(aisc6.c), (alji)null);
+                        ((Activity)ao.a).startActivity(new Intent("android.intent.action.VIEW", Uri.parse(((aple)((ahcu)aisc6).rx((ahci)UrlEndpointOuterClass.urlEndpoint)).c)));
                         i = b;
                     }
-                    else if (ao.m(2132018157).equals(s)) {
+                    else if (ao.m(2132018159).equals(s)) {
                         final Iterator iterator4 = ((SettingsDataAccess)ao.c).i().iterator();
                         while (true) {
                             i = b;
@@ -499,24 +503,24 @@ public final class SettingsActivity extends jmz implements aemu, aenm
                                 break;
                             }
                             final Object next4 = iterator4.next();
-                            if (!(next4 instanceof aiki)) {
+                            if (!(next4 instanceof ainz)) {
                                 continue;
                             }
-                            final aiki aiki = (aiki)next4;
+                            final ainz ainz = (ainz)next4;
                             i = b;
-                            if ((aiki.b & 0x4) == 0x0) {
+                            if ((ainz.b & 0x4) == 0x0) {
                                 break;
                             }
                             final Object e = ao.e;
-                            aioe aioe7;
-                            if ((aioe7 = aiki.d) == null) {
-                                aioe7 = aioe.a;
+                            aisc aisc7;
+                            if ((aisc7 = ainz.d) == null) {
+                                aisc7 = aisc.a;
                             }
-                            ((vax)e).a(aioe7);
+                            ((veh)e).a(aisc7);
                         }
                     }
-                    else if (ao.m(2132019291).equals(s)) {
-                        final Intent m = ((c)ao.d).j();
+                    else if (ao.m(2132019294).equals(s)) {
+                        final Intent n3 = ((c)ao.d).n();
                         final Iterator iterator5 = ((SettingsDataAccess)ao.c).i().iterator();
                         Object next5;
                         do {
@@ -525,35 +529,35 @@ public final class SettingsActivity extends jmz implements aemu, aenm
                                 return i;
                             }
                             next5 = iterator5.next();
-                        } while (!(next5 instanceof aikn));
-                        final aikn aikn = (aikn)next5;
-                        aioe aioe8 = aioe2;
-                        if ((aikn.b & 0x1) != 0x0 && (aioe8 = aikn.c) == null) {
-                            aioe8 = aioe.a;
+                        } while (!(next5 instanceof aioe));
+                        final aioe aioe = (aioe)next5;
+                        aisc aisc8 = aisc2;
+                        if ((aioe.b & 0x1) != 0x0 && (aisc8 = aioe.c) == null) {
+                            aisc8 = aisc.a;
                         }
-                        m.putExtra("navigation_endpoint", ((agxl)((wwv)ao.b).f(aioe8)).toByteArray());
-                        ((Activity)ao.a).startActivity(m);
+                        n3.putExtra("navigation_endpoint", ((ahbc)((xab)ao.b).f(aisc8)).toByteArray());
+                        ((Activity)ao.a).startActivity(n3);
                         i = b;
                     }
                     else {
                         final String s2 = preference.s;
-                        if (h.a.getString(2132019488).equals(s2)) {
-                            final blt blt = new blt((Activity)h.a, h.e, h.f, h.g, h.y, (byte[])null, (byte[])null, (byte[])null);
-                            kgk.E((Handler)blt.e, (Context)blt.a, "Refreshing...", false);
-                            ((Executor)blt.d).execute(new jnu(blt, 2, null, null, null));
+                        if (h.a.getString(2132019491).equals(s2)) {
+                            final blx blx = new blx((Activity)h.a, h.e, h.f, h.g, h.y, null, null, null);
+                            mgh.Q((Handler)blx.e, (Context)blx.a, "Refreshing...", false);
+                            ((Executor)blx.d).execute((Runnable)new jov(blx, 4, (byte[])null, (byte[])null, (byte[])null));
                             i = b;
                         }
-                        else if (h.a.getString(2132019078).equals(s2)) {
-                            final boolean b3 = h.x.aT() && h.x.aU();
-                            final rf w = h.w;
+                        else if (h.a.getString(2132019081).equals(s2)) {
+                            final boolean b3 = h.x.aX() && h.x.aY();
+                            final rg w = h.w;
                             i = b;
                             if (w != null) {
                                 final SettingsActivity a = h.a;
                                 boolean b4 = b2;
-                                if (h.b.a() == gkm.b) {
+                                if (h.b.a() == gla.b) {
                                     b4 = true;
                                 }
-                                w.b((Object)xkm.al((Context)a, b4, b3));
+                                w.b((Object)xny.K((Context)a, b4, b3));
                                 return true;
                             }
                         }
@@ -565,40 +569,40 @@ public final class SettingsActivity extends jmz implements aemu, aenm
                     }
                 }
                 else {
-                    final Intent j2 = ((c)ao.d).j();
-                    while (l < ((SettingsDataAccess)ao.c).h().size()) {
-                        final Object value = ((SettingsDataAccess)ao.c).h().get(l);
-                        if (value instanceof aikp) {
-                            final aikp aikp = (aikp)value;
-                            if ((aikp.b & 0x1) != 0x0) {
-                                final agza builder = aikp.toBuilder();
+                    final Intent n4 = ((c)ao.d).n();
+                    while (j < ((SettingsDataAccess)ao.c).h().size()) {
+                        final Object value = ((SettingsDataAccess)ao.c).h().get(j);
+                        if (value instanceof aiog) {
+                            final aiog aiog = (aiog)value;
+                            if ((aiog.b & 0x1) != 0x0) {
+                                final ahcr builder = ((ahcz)aiog).toBuilder();
                                 final Object b5 = ao.b;
-                                aioe aioe9;
-                                if ((aioe9 = aikp.c) == null) {
-                                    aioe9 = aioe.a;
+                                aisc aisc9;
+                                if ((aisc9 = aiog.c) == null) {
+                                    aisc9 = aisc.a;
                                 }
-                                final aioe f = ((wwv)b5).f(aioe9);
+                                final aisc f = ((xab)b5).f(aisc9);
                                 builder.copyOnWrite();
-                                final aikp aikp2 = (aikp)builder.instance;
+                                final aiog aiog2 = (aiog)builder.instance;
                                 f.getClass();
-                                aikp2.c = f;
-                                aikp2.b |= 0x1;
-                                final aikp aikp3 = (aikp)builder.build();
-                                aioe aioe10;
-                                if ((aioe10 = aikp3.c) == null) {
-                                    aioe10 = aioe.a;
+                                aiog2.c = f;
+                                aiog2.b |= 0x1;
+                                final aiog aiog3 = (aiog)builder.build();
+                                aisc aisc10;
+                                if ((aisc10 = aiog3.c) == null) {
+                                    aisc10 = aisc.a;
                                 }
-                                j2.putExtra("navigation_endpoint", ((agxl)aioe10).toByteArray());
-                                ((SettingsDataAccess)ao.c).h().set(l, aikp3);
+                                n4.putExtra("navigation_endpoint", ((ahbc)aisc10).toByteArray());
+                                ((SettingsDataAccess)ao.c).h().set(j, aiog3);
                                 break;
                             }
                             break;
                         }
                         else {
-                            ++l;
+                            ++j;
                         }
                     }
-                    ((Activity)ao.a).startActivity(j2);
+                    ((Activity)ao.a).startActivity(n4);
                     i = b;
                 }
             }
@@ -606,8 +610,12 @@ public final class SettingsActivity extends jmz implements aemu, aenm
         return i;
     }
     
-    public final jnm f() {
-        final jnm b = this.b;
+    public final arno e() {
+        return aerl.a((Activity)this);
+    }
+    
+    public final joz f() {
+        final joz b = this.b;
         if (b == null) {
             throw new IllegalStateException("peer() called before initialized.");
         }
@@ -618,7 +626,7 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     public final void finish() {
-        final aers b = this.c.b();
+        final aevl b = this.c.b();
         try {
             super.finish();
             b.close();
@@ -639,15 +647,15 @@ public final class SettingsActivity extends jmz implements aemu, aenm
         super.setTitle(title);
     }
     
-    public final auh getLifecycle() {
+    public final auk getLifecycle() {
         if (this.f == null) {
-            this.f = (aun)new aenn((bu)this);
+            this.f = new aerg((bu)this);
         }
-        return (auh)this.f;
+        return (auk)this.f;
     }
     
     public final void invalidateOptionsMenu() {
-        final aers s = aesw.s();
+        final aevl s = aewp.s();
         try {
             super.invalidateOptionsMenu();
             s.close();
@@ -665,14 +673,14 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     protected final void onActivityResult(final int n, final int n2, final Intent intent) {
-        final aers q = this.c.q();
+        final aevl r = this.c.r();
         try {
             super.onActivityResult(n, n2, intent);
-            q.close();
+            r.close();
         }
         finally {
             try {
-                q.close();
+                r.close();
             }
             finally {
                 final Throwable t;
@@ -682,7 +690,7 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     public final void onBackPressed() {
-        final aers c = this.c.c();
+        final aevl c = this.c.c();
         try {
             super.onBackPressed();
             c.close();
@@ -700,14 +708,14 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     public final void onConfigurationChanged(final Configuration configuration) {
-        final aers r = this.c.r();
+        final aevl s = this.c.s();
         try {
             super.onConfigurationChanged(configuration);
-            r.close();
+            s.close();
         }
         finally {
             try {
-                r.close();
+                s.close();
             }
             finally {
                 final Throwable t;
@@ -717,19 +725,19 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     protected final void onCreate(final Bundle bundle) {
-        final aers s = this.c.s();
+        final aevl t = this.c.t();
         try {
             this.d = true;
             this.i();
-            ((aenn)((dh)this).getLifecycle()).h(this.c);
-            ((aenr)this.aR()).xM().i();
+            ((aerg)((dh)this).getLifecycle()).h(this.c);
+            ((aerk)this.aR()).xT().i();
             super.onCreate(bundle);
-            final jnm h = this.h();
-            ((qt)h.a).setContentView((View)h.j.a());
+            final joz h = this.h();
+            ((qu)h.a).setContentView((View)h.j.a());
             h.l.f((BottomUiContainer)((fa)h.a).findViewById(2131427886));
             h.h.a();
             final SettingsActivity a = h.a;
-            new ggx((Activity)a).b((Context)a);
+            new ghk((Activity)a).b((Context)a);
             final Intent intent = h.a.getIntent();
             if ("android.intent.action.MANAGE_NETWORK_USAGE".equals(intent.getAction())) {
                 intent.putExtra(":android:no_headers", true);
@@ -737,65 +745,65 @@ public final class SettingsActivity extends jmz implements aemu, aenm
             }
             h.o = intent.getBooleanExtra("com.google.android.apps.youtube.app.settings.NavigateBackFinishes", false);
             h.p = intent.getBooleanExtra("com.google.android.apps.youtube.app.settings.AllowDeeplinkingNavigation", false);
-            h.q = aexs.e(intent.getStringExtra(":android:show_fragment"));
-            final Toolbar supportActionBar = (Toolbar)((fa)h.a).findViewById(2131432122);
-            final Drawable mutate = ((fa)h.a).getResources().getDrawable(2131233636).mutate();
-            tnw.e(mutate, tmy.ct((Context)h.a, 2130970924).orElse(0), PorterDuff$Mode.SRC_IN);
+            h.q = afbj.e(intent.getStringExtra(":android:show_fragment"));
+            final Toolbar supportActionBar = (Toolbar)((fa)h.a).findViewById(2131432126);
+            final Drawable mutate = ((fa)h.a).getResources().getDrawable(2131233639).mutate();
+            trc.e(mutate, tqf.cx((Context)h.a, 2130970922).orElse(0), PorterDuff$Mode.SRC_IN);
             supportActionBar.s(mutate);
             ((fa)h.a).setSupportActionBar(supportActionBar);
-            Optional.ofNullable((Object)((fa)h.a).getSupportActionBar()).ifPresent((Consumer)hus.p);
+            Optional.ofNullable((Object)((fa)h.a).getSupportActionBar()).ifPresent((Consumer)hvy.o);
             if (intent.getBooleanExtra("background_settings", false)) {
-                tcp.n((aum)h.a, ((fbj)h.d.a()).a(), (trb)jmg.p, (trb)tcp.b);
+                tfx.n((aup)h.a, ((fbq)h.d.a()).a(), (tui)jnu.o, (tui)tfx.b);
             }
             h.c.a();
             if (bundle != null && bundle.containsKey("CONFIGURATION_CHANGE_KEY")) {
                 h.u = bundle.getString("LAST_SHOWN_FRAGMENT_KEY", h.u);
                 h.n = (AccountId)bundle.getParcelable("ACCOUNT_ID");
                 h.v = true;
-                ((qt)h.a).getOnBackPressedDispatcher().b((aum)h.a, h.r);
+                ((qu)h.a).getOnBackPressedDispatcher().b((aup)h.a, h.r);
             }
             else {
-                ((toa)h.k.a()).h(((fa)h.a).findViewById(2131431392), 0);
-                h.w = ((qt)h.a).registerForActivityResult((rl)new ro(), (rd)new gtr(h, 4));
+                ((trg)h.k.a()).h(((fa)h.a).findViewById(2131431396), 0);
+                h.w = ((qu)h.a).registerForActivityResult((rm)new rp(), (re)new guh(h, 4));
             }
             this.d = false;
-            if (s != null) {
-                s.close();
+            if (t != null) {
+                t.close();
             }
         }
         finally {
-            if (s != null) {
+            if (t != null) {
                 try {
-                    s.close();
+                    t.close();
                 }
                 finally {
-                    final Throwable t;
-                    SettingsActivity$$ExternalSyntheticBackport0.m((Throwable)bundle, t);
+                    final Throwable t2;
+                    SettingsActivity$$ExternalSyntheticBackport0.m((Throwable)bundle, t2);
                 }
             }
         }
     }
     
     public final boolean onCreatePanelMenu(final int n, final Menu menu) {
-        final aers t = this.c.t();
+        final aevl u = this.c.u();
         try {
             super.onCreatePanelMenu(n, menu);
-            t.close();
+            u.close();
             return true;
         }
         finally {
             try {
-                t.close();
+                u.close();
             }
             finally {
-                final Throwable t2;
-                SettingsActivity$$ExternalSyntheticBackport0.m((Throwable)menu, t2);
+                final Throwable t;
+                SettingsActivity$$ExternalSyntheticBackport0.m((Throwable)menu, t);
             }
         }
     }
     
     protected final void onDestroy() {
-        final aers d = this.c.d();
+        final aevl d = this.c.d();
         try {
             super.onDestroy();
             this.h().h.b();
@@ -814,11 +822,11 @@ public final class SettingsActivity extends jmz implements aemu, aenm
         }
     }
     
-    protected final void onLocalesChanged(final ajo ajo) {
+    protected final void onLocalesChanged(final ajq ajq) {
     }
     
     protected final void onNewIntent(final Intent intent) {
-        final aers e = this.c.e(intent);
+        final aevl e = this.c.e(intent);
         try {
             super.onNewIntent(intent);
             this.h().f(intent);
@@ -843,23 +851,23 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     public final boolean onOptionsItemSelected(final MenuItem menuItem) {
-        final aers u = this.c.u();
+        final aevl v = this.c.v();
         try {
-            final jnm h = this.h();
+            final joz h = this.h();
             boolean onOptionsItemSelected;
             if (menuItem.getItemId() == 16908332) {
-                ((qt)h.a).getOnBackPressedDispatcher().c();
+                ((qu)h.a).getOnBackPressedDispatcher().c();
                 onOptionsItemSelected = true;
             }
             else {
-                onOptionsItemSelected = ((jnn)h).z.onOptionsItemSelected(menuItem);
+                onOptionsItemSelected = ((jpa)h).z.onOptionsItemSelected(menuItem);
             }
-            u.close();
+            v.close();
             return onOptionsItemSelected;
         }
         finally {
             try {
-                u.close();
+                v.close();
             }
             finally {
                 final Throwable t;
@@ -869,7 +877,7 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     protected final void onPause() {
-        final aers f = this.c.f();
+        final aevl f = this.c.f();
         try {
             super.onPause();
             this.h().c.b();
@@ -892,14 +900,14 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     public final void onPictureInPictureModeChanged(final boolean b, final Configuration configuration) {
-        final aers v = this.c.v();
+        final aevl w = this.c.w();
         try {
             super.onPictureInPictureModeChanged(b, configuration);
-            v.close();
+            w.close();
         }
         finally {
             try {
-                v.close();
+                w.close();
             }
             finally {
                 final Throwable t;
@@ -909,17 +917,17 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     protected final void onPostCreate(final Bundle bundle) {
-        final aers w = this.c.w();
+        final aevl x = this.c.x();
         try {
             super.onPostCreate(bundle);
-            if (w != null) {
-                w.close();
+            if (x != null) {
+                x.close();
             }
         }
         finally {
-            if (w != null) {
+            if (x != null) {
                 try {
-                    w.close();
+                    x.close();
                 }
                 finally {
                     final Throwable t;
@@ -930,7 +938,7 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     protected final void onPostResume() {
-        final aers g = this.c.g();
+        final aevl g = this.c.g();
         try {
             super.onPostResume();
             g.close();
@@ -948,7 +956,7 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     public final boolean onPrepareOptionsMenu(final Menu menu) {
-        final aers s = aesw.s();
+        final aevl s = aewp.s();
         try {
             final boolean onPrepareOptionsMenu = super.onPrepareOptionsMenu(menu);
             s.close();
@@ -966,15 +974,15 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     public final void onRequestPermissionsResult(final int n, final String[] array, final int[] array2) {
-        final aers x = this.c.x();
+        final aevl y = this.c.y();
         try {
             super.onRequestPermissionsResult(n, array, array2);
             this.h().m.c(n, array2);
-            x.close();
+            y.close();
         }
         finally {
             try {
-                x.close();
+                y.close();
             }
             finally {
                 final Throwable t;
@@ -985,27 +993,27 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     
     protected final void onRestart() {
         super.onRestart();
-        final jnm h = this.h();
+        final joz h = this.h();
         if (h.s != h.b.a()) {
             final Handler handler = new Handler(Looper.getMainLooper());
             final SettingsActivity a = h.a;
             a.getClass();
-            handler.postAtFrontOfQueue((Runnable)new jnu(a, 1));
+            handler.postAtFrontOfQueue((Runnable)new jov(a, 2));
         }
     }
     
     protected final void onResume() {
-        final aers h = this.c.h();
+        final aevl h = this.c.h();
         try {
             super.onResume();
-            final jnm h2 = this.h();
+            final joz h2 = this.h();
             h2.c.e();
-            ((jnn)h2).g(h2.a.getString(2132019680));
-            final jnr jnr = (jnr)((bu)h2.a).getSupportFragmentManager().f(jnr.class.getName());
-            if (jnr != null) {
-                jnr.d.b(wya.b(12924), (aioe)null, (alff)null);
+            ((jpa)h2).g((CharSequence)h2.a.getString(2132019683));
+            final jpe jpe = (jpe)((bu)h2.a).getSupportFragmentManager().f(jpe.class.getName());
+            if (jpe != null) {
+                jpe.d.b(xbf.b(12924), (aisc)null, (alji)null);
             }
-            final tox t = h2.t;
+            final tsd t = h2.t;
             if (t != null) {
                 t.b();
             }
@@ -1028,21 +1036,21 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     protected final void onSaveInstanceState(final Bundle bundle) {
-        final aers y = this.c.y();
+        final aevl z = this.c.z();
         try {
             super.onSaveInstanceState(bundle);
-            final jnm h = this.h();
+            final joz h = this.h();
             bundle.putBoolean("CONFIGURATION_CHANGE_KEY", true);
             bundle.putString("LAST_SHOWN_FRAGMENT_KEY", h.u);
             bundle.putParcelable("ACCOUNT_ID", (Parcelable)h.n);
-            if (y != null) {
-                y.close();
+            if (z != null) {
+                z.close();
             }
         }
         finally {
-            if (y != null) {
+            if (z != null) {
                 try {
-                    y.close();
+                    z.close();
                 }
                 finally {
                     final Throwable t;
@@ -1059,20 +1067,20 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     protected final void onStart() {
-        final aers i = this.c.i();
+        final aevl i = this.c.i();
         try {
             super.onStart();
-            final jnm h = this.h();
+            final joz h = this.h();
             if (h.v) {
                 h.v = false;
-                final cer cer = (cer)((bu)h.a).getSupportFragmentManager().f("androidx.preference.PreferenceFragment.DIALOG");
-                if (cer != null && cer.aQ() != null) {
-                    final String s = ((Preference)cer.aQ()).s;
+                final cev cev = (cev)((bu)h.a).getSupportFragmentManager().f("androidx.preference.PreferenceFragment.DIALOG");
+                if (cev != null && cev.aQ() != null) {
+                    final String s = ((Preference)cev.aQ()).s;
                     if ("country".equals(s)) {
-                        ((bi)cer).dismiss();
+                        ((bi)cev).dismiss();
                     }
                     else if ("voice_language".equals(s)) {
-                        ((bi)cer).dismiss();
+                        ((bi)cev).dismiss();
                     }
                 }
             }
@@ -1095,7 +1103,7 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     protected final void onStop() {
-        final aers j = this.c.j();
+        final aevl j = this.c.j();
         try {
             super.onStop();
             this.h();
@@ -1118,7 +1126,7 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     public final boolean onSupportNavigateUp() {
-        final aers k = this.c.k();
+        final aevl k = this.c.k();
         try {
             final boolean onSupportNavigateUp = super.onSupportNavigateUp();
             k.close();
@@ -1137,14 +1145,14 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     public final void onUserInteraction() {
-        final aers l = this.c.l();
+        final aevl l = this.c.l();
         try {
-            final jnm h = this.h();
-            final tox t = h.t;
+            final joz h = this.h();
+            final tsd t = h.t;
             if (t != null) {
                 t.b();
             }
-            ((jnn)h).z.onUserInteraction();
+            ((jpa)h).z.onUserInteraction();
             l.close();
         }
         finally {
@@ -1160,19 +1168,19 @@ public final class SettingsActivity extends jmz implements aemu, aenm
     }
     
     public final void setTitle(final CharSequence charSequence) {
-        ((jnn)this.h()).g(charSequence);
+        ((jpa)this.h()).g(charSequence);
     }
     
     public final void startActivity(final Intent intent) {
-        if (agnj.K(intent, this.getApplicationContext())) {
-            aesm.j(intent);
+        if (adme.ah(intent, this.getApplicationContext())) {
+            aewf.j(intent);
         }
         super.startActivity(intent);
     }
     
     public final void startActivity(final Intent intent, final Bundle bundle) {
-        if (agnj.K(intent, this.getApplicationContext())) {
-            aesm.j(intent);
+        if (adme.ah(intent, this.getApplicationContext())) {
+            aewf.j(intent);
         }
         super.startActivity(intent, bundle);
     }

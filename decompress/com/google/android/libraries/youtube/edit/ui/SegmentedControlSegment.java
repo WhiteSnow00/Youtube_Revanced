@@ -10,7 +10,7 @@ import android.view.View$AccessibilityDelegate;
 import android.util.AttributeSet;
 import android.content.Context;
 
-public class SegmentedControlSegment extends lm
+public class SegmentedControlSegment extends ln
 {
     private float a;
     private float b;
@@ -46,7 +46,7 @@ public class SegmentedControlSegment extends lm
     
     private final void d(AttributeSet obtainStyledAttributes) {
         if (obtainStyledAttributes != null) {
-            obtainStyledAttributes = (AttributeSet)this.getContext().getTheme().obtainStyledAttributes(obtainStyledAttributes, ugk.c, 0, 0);
+            obtainStyledAttributes = (AttributeSet)this.getContext().getTheme().obtainStyledAttributes(obtainStyledAttributes, ujr.c, 0, 0);
             try {
                 this.c = ((TypedArray)obtainStyledAttributes).getColor(1, 0);
                 this.d = ((TypedArray)obtainStyledAttributes).getColor(0, 0);
@@ -55,7 +55,7 @@ public class SegmentedControlSegment extends lm
                 ((TypedArray)obtainStyledAttributes).recycle();
             }
         }
-        this.setAccessibilityDelegate((View$AccessibilityDelegate)new usj());
+        this.setAccessibilityDelegate((View$AccessibilityDelegate)new uvh());
     }
     
     public final void a() {

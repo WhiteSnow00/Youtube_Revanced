@@ -50,11 +50,11 @@
     <string name="litho_channel_guidelines_off">চ্যানেল এর গাইডলাইন সরানো বন্ধ করুন</string>
     <string name="litho_channel_guidelines_on">চ্যানেল এর গাইডলাইন সরানো চালু করুন</string>
     <string name="litho_community_guidelines">চ্যানেল এর গাইডলাইন সরান</string>
+    <string name="accessibility_settings_edu_opt_in_text">ভিডিও প্লেয়ারের জন্য অ্যাক্সেসিবিলিটি কন্ট্রোল চালু করবেন?</string>
+    <string name="accessibility_settings_edu_opt_out_text">\"আপনার নিয়ন্ত্রণ করে গুলো পরিবর্তন করা হয়েছে কারণ একটি অ্যাক্সেসযোগ্যতা পরিষেবা চালু আছে\"</string>
     <string name="litho_community_guidelines_off">চ্যানেল এর গাইডলাইন সরানো বন্ধ হয়েছে</string>
     <string name="litho_community_guidelines_on">চ্যানেল এর গাইডলাইন সরানো চালু হয়েছে</string>
     <string name="litho_community_posts">কমিউনিটি পোস্ট সরান</string>
-    <string name="accessibility_settings_edu_opt_in_text">ভিডিও প্লেয়ারের জন্য অ্যাক্সেসিবিলিটি কন্ট্রোল চালু করবেন?</string>
-    <string name="accessibility_settings_edu_opt_out_text">\"আপনার নিয়ন্ত্রণ করে গুলো পরিবর্তন করা হয়েছে কারণ একটি অ্যাক্সেসযোগ্যতা পরিষেবা চালু আছে\"</string>
     <string name="litho_community_posts_off">কমিউনিটি পোস্ট সরানো বন্ধ হয়েছে</string>
     <string name="litho_community_posts_on">কমিউনিটি পোস্ট সরানো চালু হয়েছে</string>
     <string name="litho_compact_banner">কমপ্যাক্ট ব্যানার সরান</string>

@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Uporabi temo naprave</string>
     <string name="app_theme_appearance_summary">Izberite nastavitev svetle ali temne teme</string>
     <string name="app_theme_appearance_title">Videz</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Uporabi</string>
     <string name="approve_playlist_sync">Sinhroniziraj nove videoposnetke</string>
     <string name="audio_playback_failed_snackbar_action_button">Poskusi znova</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Končaj tok</string>
     <string name="lc_retry_yes">Poskusite znova</string>
     <string name="lc_rotate_device">Zasukajte napravo</string>
+    <string name="lc_sharedmde_required_field_error">Naslov in občinstvo sta obvezni polji.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Pretočno predvajanje v pokončni usmerjenosti</string>
     <string name="lc_stream_start_error">Pretočnega predvajanja ni mogoče začeti. Preverite povezavo.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Predogled videoposnetka. Dotaknite se, da začasno ustavite.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Predogled videoposnetka. Dotaknite se za predvajanje.</string>
     <string name="shorts_a11y_zoom_control">Nadzor povečave/pomanjšave</string>
+    <string name="shorts_audio_failure_toast">Dodajanje zvoka ni uspelo. Poskusite znova.</string>
     <string name="shorts_camera_allow_access_subtitle">Dovolite dostop do fotoaparata in mikrofona</string>
     <string name="shorts_camera_allow_access_title">Ustvarjanje kratkega videoposnetka</string>
     <string name="shorts_camera_close_confirmation_cancel">Prekliči</string>

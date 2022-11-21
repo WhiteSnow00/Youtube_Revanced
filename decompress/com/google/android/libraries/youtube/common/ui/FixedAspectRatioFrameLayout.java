@@ -21,7 +21,7 @@ public class FixedAspectRatioFrameLayout extends FrameLayout
     
     public FixedAspectRatioFrameLayout(final Context context, final AttributeSet set) {
         super(context, set);
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, tqs.c);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, trt.c);
         this.a = obtainStyledAttributes.getFraction(0, 1, 1, 1.0f);
         obtainStyledAttributes.recycle();
     }

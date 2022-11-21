@@ -20,14 +20,14 @@ import android.widget.FrameLayout;
 import com.google.android.apps.youtube.embeddedplayer.service.model.c;
 import android.widget.TextView;
 
-public final class g extends abbk
+public final class g extends abcq
 {
     public TextView a;
     public TextView b;
     public f c;
-    public asir d;
+    public asln d;
     public c e;
-    public asir f;
+    public asln f;
     public boolean g;
     private FrameLayout h;
     private boolean i;
@@ -36,32 +36,30 @@ public final class g extends abbk
     public g(final Context context) {
         super(context);
         this.g = true;
-        this.j = (View$OnLayoutChangeListener)new jcy(this, 13);
+        this.j = (View$OnLayoutChangeListener)new jdi(this, 13);
     }
     
-    @Override
     public final ViewGroup$LayoutParams a() {
         return new ViewGroup$LayoutParams(-1, -1);
     }
     
-    @Override
     public final /* bridge */ View c(final Context context) {
         this.h = new FrameLayout(context);
         final LayoutInflater from = LayoutInflater.from(context);
         Label_0082: {
             if (this.g) {
                 try {
-                    from.inflate(2131625099, (ViewGroup)this.h);
+                    from.inflate(2131625101, (ViewGroup)this.h);
                     break Label_0082;
                 }
                 catch (final RuntimeException ex) {
                     com.google.android.apps.youtube.embeddedplayer.service.errorlogging.remoteloaded.c.a().c(com.google.android.apps.youtube.embeddedplayer.service.errorlogging.remoteloaded.b.b, "Unable to inflate LazyPreviewThumbnailOverlay", (Throwable)ex);
-                    afse.o("Unable to inflate LazyPreviewThumbnailOverlay: ".concat(ex.toString()));
+                    aftr.k("Unable to inflate LazyPreviewThumbnailOverlay: ".concat(ex.toString()));
                     final FrameLayout frameLayout = this.h;
                     return (View)frameLayout;
                 }
             }
-            from.inflate(2131625099, (ViewGroup)this.h);
+            from.inflate(2131625101, (ViewGroup)this.h);
         }
         this.i = true;
         this.a = (TextView)this.h.findViewById(2131428843);
@@ -77,10 +75,9 @@ public final class g extends abbk
         return (View)frameLayout;
     }
     
-    @Override
     public final void e(final Context context, final View view) {
         final FrameLayout frameLayout = (FrameLayout)view;
-        if (this.mn()) {
+        if (this.mm()) {
             this.a.setText(this.e.b);
             this.b.setText(this.e.c);
             final Bitmap d = this.e.d;
@@ -105,18 +102,17 @@ public final class g extends abbk
         this.Z(2);
     }
     
-    public final abbn mj(final Context context) {
-        final abbn mj = super.mj(context);
+    public final abct mj(final Context context) {
+        final abct mj = super.mj(context);
         mj.e = false;
         mj.b();
         mj.a();
         return mj;
     }
     
-    @Override
     public final void mk() {
         super.X();
-        if (this.mn()) {
+        if (this.mm()) {
             this.a.setVisibility(8);
             this.b.setVisibility(8);
             final f c = this.c;
@@ -125,9 +121,8 @@ public final class g extends abbk
         }
     }
     
-    @Override
-    public final boolean mn() {
-        return this.i && super.mn();
+    public final boolean mm() {
+        return this.i && super.mm();
     }
     
     public final void n() {
@@ -135,12 +130,11 @@ public final class g extends abbk
         this.Z(1);
     }
     
-    @Override
-    public final boolean oV() {
+    public final boolean oW() {
         return this.e != null;
     }
     
-    public final abbp ox() {
-        return super.ox();
+    public final abcv ou() {
+        return super.ou();
     }
 }

@@ -17,17 +17,17 @@ public final class ApicFrame extends Id3Frame
     public final byte[] d;
     
     static {
-        CREATOR = (Parcelable$Creator)new app(12);
+        CREATOR = (Parcelable$Creator)new apq(12);
     }
     
     public ApicFrame(final Parcel parcel) {
         super("APIC");
         final String string = parcel.readString();
-        final int a = bax.a;
+        final int a = baz.a;
         this.a = string;
         this.b = parcel.readString();
         this.c = parcel.readInt();
-        this.d = (byte[])bax.L((Object)parcel.createByteArray());
+        this.d = (byte[])baz.L(parcel.createByteArray());
     }
     
     public ApicFrame(final String a, final String b, final int c, final byte[] d) {
@@ -38,8 +38,8 @@ public final class ApicFrame extends Id3Frame
         this.d = d;
     }
     
-    public final void b(final ayw ayw) {
-        ayw.b(this.d, this.c);
+    public final void b(final ayx ayx) {
+        ayx.b(this.d, this.c);
     }
     
     public final boolean equals(final Object o) {
@@ -49,7 +49,7 @@ public final class ApicFrame extends Id3Frame
         if (o != null) {
             if (this.getClass() == o.getClass()) {
                 final ApicFrame apicFrame = (ApicFrame)o;
-                if (this.c == apicFrame.c && bax.aa((Object)this.a, (Object)apicFrame.a) && bax.aa((Object)this.b, (Object)apicFrame.b) && Arrays.equals(this.d, apicFrame.d)) {
+                if (this.c == apicFrame.c && baz.aa(this.a, apicFrame.a) && baz.aa(this.b, apicFrame.b) && Arrays.equals(this.d, apicFrame.d)) {
                     return true;
                 }
             }

@@ -23,17 +23,17 @@ public final class b
     public Object c;
     public final Object d;
     
-    public b(final Context a, final aeby d, final byte[] array, final byte[] array2, final byte[] array3) {
+    public b(final Context a, final aefs d, final byte[] array, final byte[] array2, final byte[] array3) {
         this.a = a;
         this.d = d;
     }
     
-    public b(final List list, final Handler handler, final lzi d, final f b, final byte[] array, final byte[] array2) {
+    public b(final List list, final Handler handler, final mbb d, final f b, final byte[] array, final byte[] array2) {
         this.d = d;
         this.b = b;
         this.a = new SparseArray();
         this.c = new h(handler, d, (byte[])null, (byte[])null);
-        final afif d2 = ((afcr)list).D();
+        final aflv d2 = ((afgh)list).D();
         while (((Iterator)d2).hasNext()) {
             final int intValue = (int)((Iterator)d2).next();
             final a a = new a(this, intValue);
@@ -70,9 +70,9 @@ public final class b
                 final Object d = this.d;
                 final int key = ((SparseArray)this.a).keyAt(i);
                 final j j = (j)((SparseArray)this.a).valueAt(i);
-                final cgi cgi = (cgi)((SparseArray)((lzi)d).a).get(key);
-                if (cgi != null) {
-                    ((Set)cgi.b).remove(j);
+                final cgm cgm = (cgm)((SparseArray)((mbb)d).a).get(key);
+                if (cgm != null) {
+                    ((Set)cgm.b).remove(j);
                 }
             }
             ((SparseArray)this.a).clear();

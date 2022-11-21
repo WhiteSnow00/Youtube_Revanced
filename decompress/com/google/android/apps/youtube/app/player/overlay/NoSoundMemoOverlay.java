@@ -18,11 +18,11 @@ import android.text.Spanned;
 import android.animation.AnimatorSet;
 import android.content.Context;
 
-public class NoSoundMemoOverlay extends aazp implements abnq, tfh
+public class NoSoundMemoOverlay extends abcq implements abqx, tio
 {
     private static final long a;
     private final Context b;
-    private final asib c;
+    private final aslm c;
     private AnimatorSet d;
     private Spanned e;
     private TextView f;
@@ -33,13 +33,13 @@ public class NoSoundMemoOverlay extends aazp implements abnq, tfh
     
     public NoSoundMemoOverlay(final Context b) {
         super(b);
-        this.c = new asib();
+        this.c = new aslm();
         this.b = b;
     }
     
     private static ObjectAnimator m(final TextView textView, final float n) {
         final ObjectAnimator ofFloat = ObjectAnimator.ofFloat((Object)textView, "alpha", new float[] { n });
-        ofFloat.setInterpolator((TimeInterpolator)new fyf());
+        ofFloat.setInterpolator((TimeInterpolator)new fys());
         ofFloat.setDuration(300L);
         return ofFloat;
     }
@@ -53,7 +53,7 @@ public class NoSoundMemoOverlay extends aazp implements abnq, tfh
     }
     
     public final View c(final Context context) {
-        final FrameLayout frameLayout = (FrameLayout)View.inflate(context, 2131624913, (ViewGroup)null);
+        final FrameLayout frameLayout = (FrameLayout)View.inflate(context, 2131624916, (ViewGroup)null);
         final TextView f = (TextView)frameLayout.findViewById(2131429859);
         this.f = f;
         final AnimatorSet d = new AnimatorSet();
@@ -71,13 +71,17 @@ public class NoSoundMemoOverlay extends aazp implements abnq, tfh
         this.l();
     }
     
+    public final tik g() {
+        return tik.b;
+    }
+    
     public final void k(final Spanned e) {
         if (!TextUtils.equals((CharSequence)this.e, (CharSequence)e)) {
             this.e = e;
             this.Y();
         }
         if (n(this.e)) {
-            this.mm();
+            this.ow();
             return;
         }
         this.mk();
@@ -86,37 +90,57 @@ public class NoSoundMemoOverlay extends aazp implements abnq, tfh
     public final void l() {
         final AnimatorSet d = this.d;
         if (d != null && !d.isRunning()) {
-            if (this.oU()) {
+            if (this.oW()) {
                 this.d.start();
             }
         }
     }
     
-    public final asic[] lX(final abns abns) {
-        return new asic[] { ((asgt)abns.q().b).am((asix)new ivc(this, 19), (asix)iwn.a) };
+    public final void lW(final aup aup) {
     }
     
-    protected final aazs mj(final Context context) {
-        final aazs mj = super.mj(context);
+    public final asln[] lX(final abqz abqz) {
+        return new asln[] { ((aske)abqz.p().b).an((asmi)new ixu(this, 1), (asmi)ixz.b) };
+    }
+    
+    protected final abct mj(final Context context) {
+        final abct mj = super.mj(context);
         mj.a = 0;
         mj.b = 0;
         return mj;
     }
     
-    public final String mr() {
+    public final void mp(final aup aup) {
+    }
+    
+    public final String mq() {
         return "player_overlay_no_sound_memo";
     }
     
-    public final void oS(final aum aum) {
-        this.c.b();
-        this.c.c(asgt.m((asgv)new iwo(this.b, 0), asgm.e).al((asix)new ivc(this, 20)));
+    public final void mx(final aup aup) {
     }
     
-    public final boolean oU() {
+    public final void oO(final aup aup) {
+    }
+    
+    public final void oT(final aup aup) {
+        this.c.b();
+        this.c.c(aske.m((askg)new ixv(this.b, 0), asjx.e).am((asmi)new ixu(this, 0)));
+    }
+    
+    public final void oU() {
+        tgj.d((tio)this);
+    }
+    
+    public final boolean oW() {
         return n(this.e);
     }
     
-    public final void oW(final aum aum) {
+    public final void oX() {
+        tgj.c((tio)this);
+    }
+    
+    public final void oY(final aup aup) {
         this.c.b();
     }
 }

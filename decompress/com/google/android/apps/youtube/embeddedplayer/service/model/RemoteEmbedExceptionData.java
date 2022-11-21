@@ -54,7 +54,7 @@ public class RemoteEmbedExceptionData implements Parcelable
             sb.append(" ");
             sb.append(message);
             string = sb.toString();
-            final Throwable b2 = (Throwable)Class.forName(tvb.i(canonicalName)).getConstructor(String.class).newInstance(tvb.i(string));
+            final Throwable b2 = (Throwable)Class.forName(twd.i(canonicalName)).getConstructor(String.class).newInstance(twd.i(string));
             b2.initCause(this.a.getCause());
             b2.setStackTrace(this.a.getStackTrace());
             return this.b = b2;

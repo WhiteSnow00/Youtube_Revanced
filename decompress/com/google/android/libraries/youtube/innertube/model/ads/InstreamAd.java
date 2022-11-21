@@ -8,13 +8,13 @@ import android.net.Uri;
 import android.os.Parcelable;
 
 @Deprecated
-public interface InstreamAd extends Parcelable, vfe
+public interface InstreamAd extends Parcelable, vim
 {
     int c();
     
     Uri d();
     
-    vfc f();
+    vik f();
     
     String g();
     
@@ -24,7 +24,7 @@ public interface InstreamAd extends Parcelable, vfe
     
     String k();
     
-    boolean l(final oas p0);
+    boolean l(final oco p0);
     
     boolean m();
     

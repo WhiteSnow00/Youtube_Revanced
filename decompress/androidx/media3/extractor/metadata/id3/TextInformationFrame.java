@@ -16,12 +16,12 @@ public final class TextInformationFrame extends Id3Frame
     public final String b;
     
     static {
-        CREATOR = (Parcelable$Creator)new bvm(1);
+        CREATOR = (Parcelable$Creator)new bvp(1);
     }
     
     public TextInformationFrame(final Parcel parcel) {
         final String string = parcel.readString();
-        final int a = bax.a;
+        final int a = baz.a;
         super(string);
         this.a = parcel.readString();
         this.b = parcel.readString();
@@ -55,7 +55,7 @@ public final class TextInformationFrame extends Id3Frame
         }
     }
     
-    public final void b(final ayw p0) {
+    public final void b(final ayx p0) {
         // 
         // This method could not be decompiled.
         // 
@@ -277,17 +277,17 @@ public final class TextInformationFrame extends Id3Frame
         //   655: aload_1        
         //   656: aload_0        
         //   657: getfield        androidx/media3/extractor/metadata/id3/TextInformationFrame.b:Ljava/lang/String;
-        //   660: putfield        ayw.p:Ljava/lang/CharSequence;
+        //   660: putfield        ayx.p:Ljava/lang/CharSequence;
         //   663: return         
         //   664: aload_1        
         //   665: aload_0        
         //   666: getfield        androidx/media3/extractor/metadata/id3/TextInformationFrame.b:Ljava/lang/String;
-        //   669: putfield        ayw.r:Ljava/lang/CharSequence;
+        //   669: putfield        ayx.r:Ljava/lang/CharSequence;
         //   672: return         
         //   673: aload_1        
         //   674: aload_0        
         //   675: getfield        androidx/media3/extractor/metadata/id3/TextInformationFrame.b:Ljava/lang/String;
-        //   678: putfield        ayw.q:Ljava/lang/CharSequence;
+        //   678: putfield        ayx.q:Ljava/lang/CharSequence;
         //   681: return         
         //   682: aload_0        
         //   683: getfield        androidx/media3/extractor/metadata/id3/TextInformationFrame.b:Ljava/lang/String;
@@ -311,19 +311,19 @@ public final class TextInformationFrame extends Id3Frame
         //   720: iconst_2       
         //   721: invokeinterface java/util/List.get:(I)Ljava/lang/Object;
         //   726: checkcast       Ljava/lang/Integer;
-        //   729: putfield        ayw.o:Ljava/lang/Integer;
+        //   729: putfield        ayx.o:Ljava/lang/Integer;
         //   732: aload_1        
         //   733: aload           4
         //   735: iconst_1       
         //   736: invokeinterface java/util/List.get:(I)Ljava/lang/Object;
         //   741: checkcast       Ljava/lang/Integer;
-        //   744: putfield        ayw.n:Ljava/lang/Integer;
+        //   744: putfield        ayx.n:Ljava/lang/Integer;
         //   747: aload_1        
         //   748: aload           4
         //   750: iconst_0       
         //   751: invokeinterface java/util/List.get:(I)Ljava/lang/Object;
         //   756: checkcast       Ljava/lang/Integer;
-        //   759: putfield        ayw.m:Ljava/lang/Integer;
+        //   759: putfield        ayx.m:Ljava/lang/Integer;
         //   762: return         
         //   763: aload_0        
         //   764: getfield        androidx/media3/extractor/metadata/id3/TextInformationFrame.b:Ljava/lang/String;
@@ -347,19 +347,19 @@ public final class TextInformationFrame extends Id3Frame
         //   801: iconst_2       
         //   802: invokeinterface java/util/List.get:(I)Ljava/lang/Object;
         //   807: checkcast       Ljava/lang/Integer;
-        //   810: putfield        ayw.l:Ljava/lang/Integer;
+        //   810: putfield        ayx.l:Ljava/lang/Integer;
         //   813: aload_1        
         //   814: aload           4
         //   816: iconst_1       
         //   817: invokeinterface java/util/List.get:(I)Ljava/lang/Object;
         //   822: checkcast       Ljava/lang/Integer;
-        //   825: putfield        ayw.k:Ljava/lang/Integer;
+        //   825: putfield        ayx.k:Ljava/lang/Integer;
         //   828: aload_1        
         //   829: aload           4
         //   831: iconst_0       
         //   832: invokeinterface java/util/List.get:(I)Ljava/lang/Object;
         //   837: checkcast       Ljava/lang/Integer;
-        //   840: putfield        ayw.j:Ljava/lang/Integer;
+        //   840: putfield        ayx.j:Ljava/lang/Integer;
         //   843: return         
         //   844: aload_0        
         //   845: getfield        androidx/media3/extractor/metadata/id3/TextInformationFrame.b:Ljava/lang/String;
@@ -378,23 +378,23 @@ public final class TextInformationFrame extends Id3Frame
         //   870: aload_1        
         //   871: iload_2        
         //   872: invokestatic    java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
-        //   875: putfield        ayw.k:Ljava/lang/Integer;
+        //   875: putfield        ayx.k:Ljava/lang/Integer;
         //   878: aload_1        
         //   879: iload_3        
         //   880: invokestatic    java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
-        //   883: putfield        ayw.l:Ljava/lang/Integer;
+        //   883: putfield        ayx.l:Ljava/lang/Integer;
         //   886: return         
         //   887: aload_1        
         //   888: aload_0        
         //   889: getfield        androidx/media3/extractor/metadata/id3/TextInformationFrame.b:Ljava/lang/String;
         //   892: invokestatic    java/lang/Integer.parseInt:(Ljava/lang/String;)I
         //   895: invokestatic    java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
-        //   898: putfield        ayw.j:Ljava/lang/Integer;
+        //   898: putfield        ayx.j:Ljava/lang/Integer;
         //   901: return         
         //   902: aload_0        
         //   903: getfield        androidx/media3/extractor/metadata/id3/TextInformationFrame.b:Ljava/lang/String;
         //   906: ldc             "/"
-        //   908: invokestatic    bax.ap:(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+        //   908: invokestatic    baz.ap:(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
         //   911: astore          4
         //   913: aload           4
         //   915: iconst_0       
@@ -417,30 +417,30 @@ public final class TextInformationFrame extends Id3Frame
         //   946: aload_1        
         //   947: iload_2        
         //   948: invokestatic    java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
-        //   951: putfield        ayw.h:Ljava/lang/Integer;
+        //   951: putfield        ayx.h:Ljava/lang/Integer;
         //   954: aload_1        
         //   955: aload           4
-        //   957: putfield        ayw.i:Ljava/lang/Integer;
+        //   957: putfield        ayx.i:Ljava/lang/Integer;
         //   960: return         
         //   961: aload_1        
         //   962: aload_0        
         //   963: getfield        androidx/media3/extractor/metadata/id3/TextInformationFrame.b:Ljava/lang/String;
-        //   966: putfield        ayw.c:Ljava/lang/CharSequence;
+        //   966: putfield        ayx.c:Ljava/lang/CharSequence;
         //   969: return         
         //   970: aload_1        
         //   971: aload_0        
         //   972: getfield        androidx/media3/extractor/metadata/id3/TextInformationFrame.b:Ljava/lang/String;
-        //   975: putfield        ayw.d:Ljava/lang/CharSequence;
+        //   975: putfield        ayx.d:Ljava/lang/CharSequence;
         //   978: return         
         //   979: aload_1        
         //   980: aload_0        
         //   981: getfield        androidx/media3/extractor/metadata/id3/TextInformationFrame.b:Ljava/lang/String;
-        //   984: putfield        ayw.b:Ljava/lang/CharSequence;
+        //   984: putfield        ayx.b:Ljava/lang/CharSequence;
         //   987: return         
         //   988: aload_1        
         //   989: aload_0        
         //   990: getfield        androidx/media3/extractor/metadata/id3/TextInformationFrame.b:Ljava/lang/String;
-        //   993: putfield        ayw.a:Ljava/lang/CharSequence;
+        //   993: putfield        ayx.a:Ljava/lang/CharSequence;
         //   996: return         
         //   997: astore_1       
         //   998: goto            886
@@ -490,7 +490,7 @@ public final class TextInformationFrame extends Id3Frame
         if (o != null) {
             if (this.getClass() == o.getClass()) {
                 final TextInformationFrame textInformationFrame = (TextInformationFrame)o;
-                if (bax.aa((Object)this.f, (Object)textInformationFrame.f) && bax.aa((Object)this.a, (Object)textInformationFrame.a) && bax.aa((Object)this.b, (Object)textInformationFrame.b)) {
+                if (baz.aa(this.f, textInformationFrame.f) && baz.aa(this.a, textInformationFrame.a) && baz.aa(this.b, textInformationFrame.b)) {
                     return true;
                 }
             }

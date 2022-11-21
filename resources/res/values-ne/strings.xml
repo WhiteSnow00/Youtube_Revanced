@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">यन्त्रको विषयवस्तु प्रयोग गर्नुहोस्</string>
     <string name="app_theme_appearance_summary">उज्यालो वा अँध्यारो विषयवस्तुसम्बन्धी आफ्नो प्राथमिकता छनौट गर्नुहोस्</string>
     <string name="app_theme_appearance_title">स्वरूप</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">लागू गर्नुहोस्</string>
     <string name="approve_playlist_sync">नयाँ भिडियोहरू सिंक गर्नुहोस्</string>
     <string name="audio_playback_failed_snackbar_action_button">फेरि प्रयास गर्नुहोस्</string>
@@ -479,7 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">डेटा अनुगमन र नियन्त्रण</string>
     <string name="data_saving_persistent_title">डेटा सेभिङ</string>
     <string name="data_saving_select_quality_every_video_switch_title">सबै भिडियोको गुणस्तर चयन गर्नुहोस्</string>
-    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">स्मार्ट डाउनलोडमार्फत डाउनलोड गरिने भिडियोको गुणस्तर घटाउनुहोस्</string>
     <string name="data_saving_snack_bar_action_button">हेर्नुहोस्</string>
     <string name="data_saving_snack_bar_text">तपाईंले यो सेटिङ बदल्नुभयो भने डेटा बचत गर्नेसम्बन्धी तपाईंको सेटिङ प्रभावित हुन्छ</string>
     <string name="data_saving_upload_wifi_only_switch_title">Wi-Fi चलाएका बेलामा मात्र अपलोड गरियोस्</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">स्ट्रिम अन्त्य गर्नु…</string>
     <string name="lc_retry_yes">फेरि प्रयास गर्नु</string>
     <string name="lc_rotate_device">यन्त्र घुमाउनुहोस्</string>
+    <string name="lc_sharedmde_required_field_error">\"शीर्षक\" र \"दर्शक\" फिल्ड खाली छाड्न मिल्दैन।</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">पोर्ट्रेट मोडमा स्ट्रिम गर्नुहोस्</string>
     <string name="lc_stream_start_error">स्ट्रिम सुरु गर्न सकिएन। आफ्नो इन्टरनेट जडानको जाँच गर्नुहोस्।</string>
@@ -1728,6 +1729,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">भिडियोको प्रिभ्यु। पज गर्न ट्याप गर्नुहोस्।</string>
     <string name="shorts_a11y_video_preview_tap_to_play">भिडियोको प्रिभ्यु। प्ले गर्न ट्याप गर्नुहोस्।</string>
     <string name="shorts_a11y_zoom_control">जुमको नियन्त्रण</string>
+    <string name="shorts_audio_failure_toast">साउन्ड हाल्न सकिएन। कृपया फेरि प्रयास गर्नुहोस्।</string>
     <string name="shorts_camera_allow_access_subtitle">तपाईंको डिभाइसको क्यामेरा र माइक्रोफोन प्रयोग गर्ने अनुमति दिनुहोस्</string>
     <string name="shorts_camera_allow_access_title">छोटो भिडियो बनाउनुहोस्</string>
     <string name="shorts_camera_close_confirmation_cancel">रद्द गर्नुहोस्</string>

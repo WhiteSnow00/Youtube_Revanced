@@ -4,7 +4,7 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.errorscreen.remoteloaded;
 
-import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.remoteloaded.q;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.controlsoverlay.remoteloaded.p;
 import android.view.MotionEvent;
 import android.content.Context;
 import android.widget.FrameLayout;
@@ -25,9 +25,9 @@ final class a extends FrameLayout
         if (motionEvent.getActionMasked() == 1) {
             final b a = this.a;
             if (a.c) {
-                final pvh e = a.e;
+                final oqz e = a.e;
                 if (e != null) {
-                    ((q)((pvh)e.a).a).o();
+                    ((p)((oqz)e.a).a).o();
                 }
             }
         }

@@ -31,7 +31,7 @@ public class ProxyBillingActivity extends Activity
         final Bundle bundle2 = null;
         if (i != 100 && i != 110) {
             if (i == 101) {
-                i = dam.i(intent);
+                i = dap.i(intent);
                 final ResultReceiver b = this.b;
                 if (b != null) {
                     Bundle extras;
@@ -48,11 +48,11 @@ public class ProxyBillingActivity extends Activity
                 final StringBuilder sb = new StringBuilder("Got onActivityResult with wrong requestCode: ");
                 sb.append(i);
                 sb.append("; skipping...");
-                dam.f("ProxyBillingActivity", sb.toString());
+                dap.f("ProxyBillingActivity", sb.toString());
             }
         }
         else {
-            final int a = dam.c(intent, "ProxyBillingActivity").a;
+            final int a = dap.c(intent, "ProxyBillingActivity").a;
             Label_0193: {
                 int n2;
                 if ((n2 = n) == -1) {
@@ -66,7 +66,7 @@ public class ProxyBillingActivity extends Activity
                 sb2.append(n2);
                 sb2.append(" and billing's responseCode: ");
                 sb2.append(a);
-                dam.f("ProxyBillingActivity", sb2.toString());
+                dap.f("ProxyBillingActivity", sb2.toString());
                 n = a;
             }
             final ResultReceiver a2 = this.a;
@@ -97,7 +97,7 @@ public class ProxyBillingActivity extends Activity
                     }
                     else {
                         intent = this.a();
-                        dam.f("ProxyBillingActivity", "Got null bundle!");
+                        dap.f("ProxyBillingActivity", "Got null bundle!");
                         intent.putExtra("RESPONSE_CODE", 6);
                         intent.putExtra("DEBUG_MESSAGE", "An internal error occurred.");
                     }
@@ -118,7 +118,7 @@ public class ProxyBillingActivity extends Activity
     protected final void onCreate(final Bundle bundle) {
         super.onCreate(bundle);
         if (bundle == null) {
-            final int a = dam.a;
+            final int a = dap.a;
             Label_0179: {
                 PendingIntent pendingIntent2;
                 if (this.getIntent().hasExtra("BUY_INTENT")) {
@@ -153,7 +153,7 @@ public class ProxyBillingActivity extends Activity
                     return;
                 }
                 catch (final IntentSender$SendIntentException ex) {
-                    dam.g("ProxyBillingActivity", "Got exception while trying to start a purchase flow.", (Throwable)ex);
+                    dap.g("ProxyBillingActivity", "Got exception while trying to start a purchase flow.", (Throwable)ex);
                     final ResultReceiver a2 = this.a;
                     if (a2 != null) {
                         a2.send(6, (Bundle)null);
@@ -179,7 +179,7 @@ public class ProxyBillingActivity extends Activity
                 }
             }
         }
-        final int a4 = dam.a;
+        final int a4 = dap.a;
         this.c = bundle.getBoolean("send_cancelled_broadcast_if_finished", false);
         if (bundle.containsKey("result_receiver")) {
             this.a = (ResultReceiver)bundle.getParcelable("result_receiver");

@@ -7,56 +7,56 @@ package com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.share
 import android.os.Parcel;
 import android.os.IBinder;
 
-public final class a extends enz implements c
+public final class a extends eoc implements c
 {
     public a(final IBinder binder) {
         super(binder, "com.google.android.apps.youtube.embeddedplayer.service.mediaplayer.shared.IApiMediaViewClient");
     }
     
     public final int a() {
-        final Parcel qx = this.qX(2, this.qW());
-        final int int1 = qx.readInt();
-        qx.recycle();
+        final Parcel qw = this.qW(2, this.qV());
+        final int int1 = qw.readInt();
+        qw.recycle();
         return int1;
     }
     
     public final int b() {
-        final Parcel qx = this.qX(1, this.qW());
-        final int int1 = qx.readInt();
-        qx.recycle();
+        final Parcel qw = this.qW(1, this.qV());
+        final int int1 = qw.readInt();
+        qw.recycle();
         return int1;
     }
     
     public final void g(final int n) {
-        final Parcel qw = this.qW();
-        qw.writeInt(n);
-        this.qY(6, qw);
+        final Parcel qv = this.qV();
+        qv.writeInt(n);
+        this.qX(6, qv);
     }
     
     public final void h() {
-        this.qY(8, this.qW());
+        this.qX(8, this.qV());
     }
     
     public final void i(final int n) {
-        final Parcel qw = this.qW();
-        qw.writeInt(n);
-        this.qY(7, qw);
+        final Parcel qv = this.qV();
+        qv.writeInt(n);
+        this.qX(7, qv);
     }
     
     public final void j() {
-        this.qY(4, this.qW());
+        this.qX(4, this.qV());
     }
     
     public final void k(final int n, final int n2) {
-        final Parcel qw = this.qW();
-        qw.writeInt(n);
-        qw.writeInt(n2);
-        this.qY(3, qw);
+        final Parcel qv = this.qV();
+        qv.writeInt(n);
+        qv.writeInt(n2);
+        this.qX(3, qv);
     }
     
     public final void l(final int n) {
-        final Parcel qw = this.qW();
-        qw.writeInt(n);
-        this.qY(5, qw);
+        final Parcel qv = this.qV();
+        qv.writeInt(n);
+        this.qX(5, qv);
     }
 }

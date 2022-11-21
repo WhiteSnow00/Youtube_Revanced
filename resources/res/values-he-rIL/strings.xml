@@ -50,11 +50,11 @@
     <string name="litho_channel_guidelines_off">הנחיות הערוץ מוצגות</string>
     <string name="litho_channel_guidelines_on">הנחיות הערוץ מוסתרות</string>
     <string name="litho_community_guidelines">מחק את הנחיות הקהילה</string>
+    <string name="accessibility_settings_edu_opt_in_text">להפעיל את בקרות הנגישות של נגן הווידאו?</string>
+    <string name="accessibility_settings_edu_opt_out_text">הפקדים שלך השתנו כי שירות נגישות מופעל.</string>
     <string name="litho_community_guidelines_off">הנחיות הקהילה מוצגות</string>
     <string name="litho_community_guidelines_on">הנחיות הקהילה מוסתרות</string>
     <string name="litho_community_posts">מחק את תגובות הקהילה</string>
-    <string name="accessibility_settings_edu_opt_in_text">להפעיל את בקרות הנגישות של נגן הווידאו?</string>
-    <string name="accessibility_settings_edu_opt_out_text">הפקדים שלך השתנו כי שירות נגישות מופעל.</string>
     <string name="litho_community_posts_off">תגובות הקהילה מוצגות</string>
     <string name="litho_community_posts_on">תגובות הקהילה מוסתרות</string>
     <string name="litho_compact_banner">הסר באנרים קומפקטיים</string>

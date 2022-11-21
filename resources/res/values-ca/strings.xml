@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Utilitza el tema del dispositiu</string>
     <string name="app_theme_appearance_summary">Tria el tema clar o fosc segons les teves preferències</string>
     <string name="app_theme_appearance_title">Aparença</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Aplica</string>
     <string name="approve_playlist_sync">Sincronitza els vídeos nous</string>
     <string name="audio_playback_failed_snackbar_action_button">Torna-ho a provar</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Finalitza la reproducció</string>
     <string name="lc_retry_yes">Torna-ho a provar</string>
     <string name="lc_rotate_device">Gira el dispositiu</string>
+    <string name="lc_sharedmde_required_field_error">El títol i el públic són obligatoris.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Reproducció vertical</string>
     <string name="lc_stream_start_error">No s\'ha pogut iniciar la reproducció en temps real. Comprova la connexió.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Previsualització del vídeo. Toca per posar en pausa.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Previsualització del vídeo. Toca per reproduir.</string>
     <string name="shorts_a11y_zoom_control">Control de zoom</string>
+    <string name="shorts_audio_failure_toast">No s\'ha pogut afegir so. Torna-ho a provar.</string>
     <string name="shorts_camera_allow_access_subtitle">Permet l\'accés a la càmera i al micròfon</string>
     <string name="shorts_camera_allow_access_title">Crea un curt</string>
     <string name="shorts_camera_close_confirmation_cancel">Cancel·la</string>

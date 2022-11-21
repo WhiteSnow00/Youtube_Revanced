@@ -35,8 +35,8 @@ public class RoundedLinearLayout extends LinearLayout
     public RoundedLinearLayout(final Context context, final AttributeSet set) {
         super(context, set);
         final DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, tqs.f);
-        final int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(6, tpe.aZ(displayMetrics, 16));
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, trt.f);
+        final int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(6, tqf.aZ(displayMetrics, 16));
         this.e = new RectF();
         this.f = new Path();
         this.a = obtainStyledAttributes.getDimensionPixelSize(5, dimensionPixelSize);
@@ -87,7 +87,7 @@ public class RoundedLinearLayout extends LinearLayout
         super.onSizeChanged(n, n2, n3, n4);
         if (n != 0) {
             if (n2 != 0) {
-                final int f = anb.f((View)this);
+                final int f = anc.f((View)this);
                 n4 = 0;
                 if (f == 0) {
                     n3 = 0;

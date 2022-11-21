@@ -16,12 +16,12 @@ import android.widget.TextView;
 import android.widget.SeekBar;
 import android.view.View;
 
-public class UnifyTrimVideoControllerView extends rbi
+public class UnifyTrimVideoControllerView extends reb
 {
     public final View f;
     long g;
-    public eg h;
-    public qpt i;
+    public hew h;
+    public oqz i;
     private final SeekBar j;
     private final TextView k;
     private final TextView l;
@@ -38,14 +38,14 @@ public class UnifyTrimVideoControllerView extends rbi
         this.o = 0L;
         this.g = 0L;
         this.r = 0L;
-        LayoutInflater.from(p2).inflate(2131625725, (ViewGroup)this, true);
+        LayoutInflater.from(p2).inflate(2131625731, (ViewGroup)this, true);
         this.p = p2;
-        final SeekBar j = (SeekBar)this.findViewById(2131430419);
+        final SeekBar j = (SeekBar)this.findViewById(2131430420);
         this.j = j;
-        this.m(this.k = (TextView)this.findViewById(2131430418), this.l = (TextView)this.findViewById(2131432304), j);
-        this.f = this.findViewById(2131432332);
-        j.setOnTouchListener((View$OnTouchListener)new gby(this, 19));
-        super.a = (Runnable)new upe(this, 7);
+        this.m(this.k = (TextView)this.findViewById(2131430419), this.l = (TextView)this.findViewById(2131432308), j);
+        this.f = this.findViewById(2131432336);
+        j.setOnTouchListener((View$OnTouchListener)new gcl(this, 19));
+        super.a = (Runnable)new usc(this, 6);
     }
     
     private final int F(final long n) {
@@ -53,7 +53,7 @@ public class UnifyTrimVideoControllerView extends rbi
     }
     
     private final void G() {
-        final lqw c = this.c;
+        final lso c = this.c;
         if (c != null && this.o > 0L) {
             final long g = c.c() * 1000L;
             this.g = g;
@@ -66,7 +66,7 @@ public class UnifyTrimVideoControllerView extends rbi
     final String A(final long n) {
         final Context p = this.p;
         p.getClass();
-        return qhd.k(p, n, false);
+        return qjg.f(p, n, false);
     }
     
     public final void B(final boolean q) {
@@ -81,21 +81,21 @@ public class UnifyTrimVideoControllerView extends rbi
     }
     
     final void C() {
-        final eg h = this.h;
+        final hew h = this.h;
         if (h == null) {
-            trn.b("TapFeedbackController is null");
+            tut.b("TapFeedbackController is null");
             return;
         }
-        h.ad();
+        h.d();
     }
     
     final void D() {
-        final eg h = this.h;
+        final hew h = this.h;
         if (h == null) {
-            trn.b("TapFeedbackController is null");
+            tut.b("TapFeedbackController is null");
             return;
         }
-        h.ac();
+        h.c();
     }
     
     protected final void E() {
@@ -112,7 +112,7 @@ public class UnifyTrimVideoControllerView extends rbi
             }
             final long n2 = g / 1000L;
             k.setText((CharSequence)this.A(n2));
-            this.k.setContentDescription((CharSequence)qhd.l(this.getContext(), 2132017811, n2));
+            this.k.setContentDescription((CharSequence)qjg.g(this.getContext(), 2132017811, n2));
         }
     }
     
@@ -136,14 +136,14 @@ public class UnifyTrimVideoControllerView extends rbi
             this.E();
             this.o(this.g);
             if (this.q) {
-                final qpt i = this.i;
+                final oqz i = this.i;
                 final long g = this.g;
-                final hek hek = (hek)i.a;
-                final uac ai = hek.ai;
-                if (ai != null) {
-                    final ShortsVideoTrimView2 a = hek.a;
+                final hfn hfn = (hfn)i.a;
+                final udk g2 = hfn.g;
+                if (g2 != null) {
+                    final ShortsVideoTrimView2 a = hfn.a;
                     if (a != null) {
-                        a.X(ai.c - g);
+                        a.X(g2.c - g);
                     }
                 }
             }
@@ -201,7 +201,7 @@ public class UnifyTrimVideoControllerView extends rbi
         final TextView l = this.l;
         if (l != null) {
             l.setText((CharSequence)this.A(this.n / 1000L));
-            this.l.setContentDescription((CharSequence)qhd.l(this.getContext(), 2132017978, this.n / 1000L));
+            this.l.setContentDescription((CharSequence)qjg.g(this.getContext(), 2132017979, this.n / 1000L));
         }
     }
     

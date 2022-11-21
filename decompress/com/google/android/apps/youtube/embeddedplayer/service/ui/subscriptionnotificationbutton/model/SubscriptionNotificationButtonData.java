@@ -16,23 +16,23 @@ public abstract class SubscriptionNotificationButtonData implements Parcelable
     
     static {
         a = e().d();
-        CREATOR = (Parcelable$Creator)new f(12);
+        CREATOR = (Parcelable$Creator)new f(11);
     }
     
-    public static qdp e() {
-        final qdp qdp = new qdp();
-        qdp.f(0);
-        qdp.e(0);
-        qdp.d = null;
-        qdp.g(agyc.b);
-        return qdp;
+    public static qfs e() {
+        final qfs qfs = new qfs();
+        qfs.f(0);
+        qfs.e(0);
+        qfs.d = null;
+        qfs.g(ahbt.b);
+        return qfs;
     }
     
     public abstract int a();
     
     public abstract int b();
     
-    public abstract agyc c();
+    public abstract ahbt c();
     
     public abstract String d();
     

@@ -34,7 +34,7 @@
     <string name="accessibility_audio_muted">ഓഡിയോ മ്യൂട്ട് ചെയ്‌തു</string>
     <string name="accessibility_audio_toggle">പ്ലേബാക്ക് ഓഡിയോ മ്യൂട്ട് ചെയ്യാനോ അൺമ്യൂട്ട് ചെയ്യാനോ ടാപ്പ് ചെയ്യുക</string>
     <string name="accessibility_audio_unmuted">ഓഡിയോ അൺമ്യൂട്ട് ചെയ്‌തു</string>
-    <string name="accessibility_autoplay_enabled">സ്വയമേവ പ്ലേചെയ്യൽ പ്രവർത്തനക്ഷമമാണ്</string>
+    <string name="accessibility_autoplay_enabled">സ്വയമേവ പ്ലേ ചെയ്യൽ പ്രവർത്തനക്ഷമമാണ്</string>
     <string name="accessibility_back">മടങ്ങുക</string>
     <string name="accessibility_back_button">മടങ്ങുക</string>
     <string name="accessibility_bottom_sheet_close_button">അടയ്ക്കുക</string>
@@ -42,7 +42,7 @@
     <string name="accessibility_camera_from_player_button">Shorts ക്യാമറ തുറക്കുക</string>
     <string name="accessibility_camera_relight_off_text">ലൈറ്റിംഗ് ഓഫാണ്</string>
     <string name="accessibility_camera_relight_on_text">ലൈറ്റിംഗ് ഓണാണ്</string>
-    <string name="accessibility_captions_button_name">അടിക്കുറിപ്പുകൾ</string>
+    <string name="accessibility_captions_button_name">സബ്ടൈറ്റിലുകൾ</string>
     <string name="accessibility_captions_toggle">അടിക്കുറിപ്പുകൾ മാറ്റാൻ ടാപ്പ് ചെയ്യുക</string>
     <string name="accessibility_captions_unavailable">അടിക്കുറിപ്പുകൾ ലഭ്യമല്ല</string>
     <string name="accessibility_channel_banner">ചാനൽ ബാനർ</string>
@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">ഉപകരണ തീം ഉപയോഗിക്കുക</string>
     <string name="app_theme_appearance_summary">നിങ്ങളുടെ ലൈറ്റ് അല്ലെങ്കിൽ ഡാർക്ക് തീം മുൻ‌ഗണന തിരഞ്ഞെടുക്കുക</string>
     <string name="app_theme_appearance_title">ദൃശ്യപരത</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">ബാധകമാക്കുക</string>
     <string name="approve_playlist_sync">പുതിയ വീഡിയോകൾ സമന്വയിപ്പിക്കുക</string>
     <string name="audio_playback_failed_snackbar_action_button">വീണ്ടും ശ്രമിക്കൂ</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">സ്‌ട്രീം നിർത്തുക</string>
     <string name="lc_retry_yes">വീണ്ടും ശ്രമിക്കുക</string>
     <string name="lc_rotate_device">ഉപകരണം തിരിക്കുക</string>
+    <string name="lc_sharedmde_required_field_error">പേര് നൽകുക, പ്രേക്ഷകരെ തിരഞ്ഞെടുക്കുക.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">പോർട്രെയ്റ്റിലുള്ള സ്‌ട്രീം</string>
     <string name="lc_stream_start_error">സ്‌ട്രീം ആരംഭിക്കാനായില്ല. കണക്ഷൻ പരിശോധിക്കുക.</string>
@@ -1272,7 +1273,7 @@
     <string name="other_methods_modal_cancel_text">റദ്ദാക്കുക</string>
     <string name="other_methods_modal_header">പരിശോധിച്ചുറപ്പിക്കാൻ ഒരു മാർഗ്ഗം തിരഞ്ഞെടുക്കുക</string>
     <string name="other_methods_suffix">പരിശോധിച്ച് ഉറപ്പിക്കാൻ മറ്റൊരു മാർഗ്ഗം തിരഞ്ഞെടുക്കുക.</string>
-    <string name="overflow_captions">അടിക്കുറിപ്പുകൾ</string>
+    <string name="overflow_captions">സബ്ടൈറ്റിലുകൾ</string>
     <string name="overflow_quality">നിലവാരം</string>
     <string name="overflow_search_filter">ഫിൽട്ടറുകൾ</string>
     <string name="panel_accessibility_back">മടങ്ങുക</string>
@@ -1311,7 +1312,7 @@
     <string name="persistent_video_quality_mobile_network_heading">മൊബൈൽ നെറ്റ്‌വര്‍ക്കുകളിലെ വീഡിയോ നിലവാരം</string>
     <string name="persistent_video_quality_wifi_heading">വൈഫൈയിലെ വീഡിയോ നിലവാരം</string>
     <string name="photos_album_display_name">ഫോട്ടോകൾ</string>
-    <string name="pip_cancel_autoplay">അടുത്ത വീഡിയോയുടെ ഓട്ടോപ്ലേ റദ്ദാക്കൂ</string>
+    <string name="pip_cancel_autoplay">അടുത്ത വീഡിയോയുടെ സ്വയമേവ പ്ലേ ചെയ്യൽ റദ്ദാക്കൂ</string>
     <string name="pip_is_not_available_for_this_video">ഈ വീഡിയോ \'ചിത്രത്തിനുള്ളിൽ ചിത്രം\' മോഡിൽ കാണാനാവില്ല</string>
     <string name="pip_paid_product_badge">സ്‌പോൺസർ ചെയ്‌തത്</string>
     <string name="pip_play_next_video">അടുത്ത വീഡിയോ പ്ലേ ചെയ്യുക</string>
@@ -1442,7 +1443,7 @@
     <string name="pref_smart_downloads_opted_in_title">സ്‌മാർട്ട് ഡൗൺലോഡുകൾ</string>
     <string name="pref_smart_downloads_quality_title">സ്‌മാർട്ട് ഡൗൺലോഡുകളുടെ നിലവാരം</string>
     <string name="pref_smart_downloads_summary">നിർദ്ദേശിക്കുന്ന വീഡിയോകൾ വൈഫൈയിലൂടെ സ്വയമേവ ഡൗൺലോഡ് ചെയ്യുക</string>
-    <string name="pref_subtitles_category">അടിക്കുറിപ്പുകൾ</string>
+    <string name="pref_subtitles_category">സബ്ടൈറ്റിലുകൾ</string>
     <string name="pref_upload_policy_summary">അപ്‌ലോഡുകൾക്കായി നെറ്റ്‌വർക്ക് മുൻഗണനകൾ വ്യക്തമാക്കുക</string>
     <string name="pref_upload_policy_title">അപ്‌ലോഡുകൾ</string>
     <string name="pref_voice_language_title">ശബ്‌ദ തിരയലിന്റെ ഭാഷ</string>
@@ -1729,6 +1730,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">വീഡിയോ പ്രിവ്യു. താൽക്കാലികമായി നിർത്താൻ ടാപ്പ് ചെയ്യുക.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">വീഡിയോ പ്രിവ്യു. പ്ലേ ചെയ്യാൻ ടാപ്പ് ചെയ്യുക.</string>
     <string name="shorts_a11y_zoom_control">സൂം നിയന്ത്രണം</string>
+    <string name="shorts_audio_failure_toast">ശബ്‌ദം ചേർക്കാനായില്ല. വീണ്ടും ശ്രമിക്കുക.</string>
     <string name="shorts_camera_allow_access_subtitle">ക്യാമറയിലേക്കും മൈക്കിലേക്കും ആക്‌സസ് അനുവദിക്കുക</string>
     <string name="shorts_camera_allow_access_title">Short വീഡിയോ സൃഷ്ടിക്കുക</string>
     <string name="shorts_camera_close_confirmation_cancel">റദ്ദാക്കുക</string>
@@ -1853,7 +1855,7 @@
     <string name="spatial_audio_mealbar_message">ഈ വീഡിയോയിൽ സ്പേഷ്യൽ ഓഡിയോ ഉണ്ട്, നിങ്ങൾ അവിടെ ഉണ്ടായിരുന്നതുപോലുള്ള പ്രതീതിയിൽ നിങ്ങളെ കേൾക്കാൻ അനുവദിക്കുന്ന പുതിയ തരത്തിലുള്ള ശബ്ദം.\10ഹെഡ്ഫോണുകളോടൊപ്പമുള്ള മികച്ച അനുഭവം.</string>
     <string name="spatial_audio_mealbar_title">സ്പേഷ്യൽ ഓഡിയോ</string>
     <string name="speaking_animation">മൈക്കിലേക്ക് സംസാരിക്കുന്നതിന്റെ ആനിമേഷൻ</string>
-    <string name="spotlight_controls_captions">അടിക്കുറിപ്പുകൾ</string>
+    <string name="spotlight_controls_captions">സബ്ടൈറ്റിലുകൾ</string>
     <string name="spotlight_controls_next">അടുത്തത്</string>
     <string name="spotlight_controls_volume">ശബ്‌ദം</string>
     <string name="spotlight_controls_watch_later">പിന്നീട് കാണുക</string>
@@ -1888,7 +1890,7 @@
     <string name="subscriptions">സബ്‌സ്‌ക്രിപ്‌ഷനുകൾ</string>
     <string name="subscriptions_notifications_channel">സബ്‌സ്ക്രിപ്ഷനുകൾ</string>
     <string name="subtitle_menu_settings_footer_info">അടിക്കുറിപ്പുകൾ ഡിഫോൾട്ടായി ഓണാക്കി വയ്ക്കാൻ നിങ്ങളുടെ ഉപകരണ ക്രമീകരണത്തിൽ അടിക്കുറിപ്പുകളുടെ ദൃശ്യപരത ക്രമീകരിക്കുക.</string>
-    <string name="subtitles">അടിക്കുറിപ്പുകൾ</string>
+    <string name="subtitles">സബ്ടൈറ്റിലുകൾ</string>
     <string name="subtitles_auto_translate_menu_item_secondary_text">%s (സ്വയം വിവർത്തനം ചെയ്തത്)</string>
     <string name="subtitles_cc_turned_off">സബ്ടൈറ്റിലുകൾ/CC ഓഫാക്കി</string>
     <string name="subtitles_cc_turned_on_with_language">സബ്ടൈറ്റിലുകൾ/CC ഓണാക്കി (%s)</string>

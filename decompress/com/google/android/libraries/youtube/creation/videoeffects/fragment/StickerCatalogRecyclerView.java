@@ -16,7 +16,7 @@ public class StickerCatalogRecyclerView extends RecyclerView
     public StickerCatalogRecyclerView(final Context context, final AttributeSet set) {
         super(context, set);
         this.getContext();
-        this.af((nw)(this.aa = new GridLayoutManager(4)));
-        this.ae((nt)null);
+        this.af((nx)(this.aa = new GridLayoutManager(4)));
+        this.ae((nu)null);
     }
 }

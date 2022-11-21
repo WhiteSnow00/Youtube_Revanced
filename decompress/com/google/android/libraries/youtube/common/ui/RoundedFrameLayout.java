@@ -29,9 +29,9 @@ public class RoundedFrameLayout extends FrameLayout
     public RoundedFrameLayout(final Context context, final AttributeSet set) {
         super(context, set);
         final DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, tqs.e);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, trt.e);
         this.b = new RectF();
-        this.a = obtainStyledAttributes.getDimensionPixelSize(0, tpe.aZ(displayMetrics, 16));
+        this.a = obtainStyledAttributes.getDimensionPixelSize(0, tqf.aZ(displayMetrics, 16));
         this.setWillNotDraw(false);
         obtainStyledAttributes.recycle();
     }
@@ -43,7 +43,7 @@ public class RoundedFrameLayout extends FrameLayout
             canvas.clipPath(d);
         }
         else {
-            ttr.b("Rounded frame layout rectPath is null");
+            tut.b("Rounded frame layout rectPath is null");
         }
         super.draw(canvas);
         canvas.restore();

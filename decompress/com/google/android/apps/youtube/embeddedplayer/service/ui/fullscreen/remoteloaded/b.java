@@ -4,18 +4,18 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.fullscreen.remoteloaded;
 
-import com.google.android.apps.youtube.embeddedplayer.service.jar.l;
+import com.google.android.apps.youtube.embeddedplayer.service.jar.k;
 import android.app.Activity;
 import android.view.Window;
 import android.app.ActionBar;
 import com.google.android.apps.youtube.embeddedplayer.service.jar.a;
 import android.content.Context;
 
-public final class b implements tpy, tqp
+public final class b implements tqz, trq
 {
     public final Context a;
     public final a b;
-    public tpz c;
+    public tra c;
     public boolean d;
     public int e;
     public boolean f;
@@ -27,15 +27,15 @@ public final class b implements tpy, tqp
     public boolean l;
     public boolean m;
     public boolean n;
-    public final tqm o;
+    public final trn o;
     public boolean p;
-    public final pvh q;
+    public final oqz q;
     private final ActionBar r;
     private final Window s;
     private int t;
     private boolean u;
     
-    public b(final Context a, final a b, final pvh q, final tqm o, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4) {
+    public b(final Context a, final a b, final oqz q, final trn o, final byte[] array, final byte[] array2, final byte[] array3) {
         this.a = a;
         this.b = b;
         this.q = q;
@@ -71,13 +71,13 @@ public final class b implements tpy, tqp
     }
     
     public final void d() {
-        ((tpw)this.o).q(1);
+        ((tqx)this.o).q(1);
         this.e();
     }
     
     public final void e() {
         if (this.n) {
-            final tqm o = this.o;
+            final trn o = this.o;
             final boolean p = this.p;
             int n = 1;
             if (!p) {
@@ -88,7 +88,7 @@ public final class b implements tpy, tqp
                     n = 0;
                 }
             }
-            ((tpw)o).k(n);
+            ((tqx)o).k(n);
         }
     }
     
@@ -111,7 +111,7 @@ public final class b implements tpy, tqp
         else if (k && this.e == 1) {
             this.c.disable();
         }
-        final tqm o = this.o;
+        final trn o = this.o;
         n = n3;
         if (this.l) {
             n = n3;
@@ -140,30 +140,30 @@ public final class b implements tpy, tqp
             j = this.i;
         }
         this.t = j;
-        ((Activity)((l)this.b).a).setRequestedOrientation(j);
+        ((Activity)((k)this.b).a).setRequestedOrientation(j);
     }
     
     public final boolean i() {
         return this.t != this.i;
     }
     
-    public final void mW(final boolean b, final int n) {
+    public final void mT(final boolean b, final int n) {
         if (b && this.k && !this.g && !this.h) {
-            this.q.l(true);
+            this.q.k(true);
         }
     }
     
-    public final void mx(final boolean b, final int n) {
+    public final void mw(final boolean b, final int n) {
         this.h = false;
         if (this.f && this.j) {
             if (b) {
                 if (this.k && !this.g) {
-                    this.q.l(true);
+                    this.q.k(true);
                 }
             }
             else if (this.i()) {
                 if (this.d) {
-                    this.q.l(false);
+                    this.q.k(false);
                 }
                 this.h(this.i);
             }
@@ -172,7 +172,7 @@ public final class b implements tpy, tqp
     
     public final void y() {
         if (this.f && this.g && this.n) {
-            ((aehe)this.q.a).as();
+            ((aeix)this.q.a).as();
         }
     }
 }

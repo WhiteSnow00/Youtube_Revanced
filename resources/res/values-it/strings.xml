@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Utilizza tema del dispositivo</string>
     <string name="app_theme_appearance_summary">Scegli se utilizzare il tema scuro o il tema chiaro</string>
     <string name="app_theme_appearance_title">Aspetto</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Applica</string>
     <string name="approve_playlist_sync">Sincronizza nuovi video</string>
     <string name="audio_playback_failed_snackbar_action_button">Riprova</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Termina streaming</string>
     <string name="lc_retry_yes">Riprova</string>
     <string name="lc_rotate_device">Ruota il dispositivo</string>
+    <string name="lc_sharedmde_required_field_error">Titolo e Pubblico sono obbligatori.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Streaming verticale</string>
     <string name="lc_stream_start_error">Impossibile avviare lo streaming. Controlla la connessione.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Anteprima video. Tocca per mettere in pausa.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Anteprima video. Tocca per giocare.</string>
     <string name="shorts_a11y_zoom_control">Controllo zoom</string>
+    <string name="shorts_audio_failure_toast">Impossibile aggiungere l\'audio. Riprova.</string>
     <string name="shorts_camera_allow_access_subtitle">Consenti l\'accesso alla fotocamera e al microfono</string>
     <string name="shorts_camera_allow_access_title">Crea uno Short</string>
     <string name="shorts_camera_close_confirmation_cancel">Annulla</string>

@@ -17,7 +17,7 @@ public class a
     public Drawable d;
     public String e;
     public CharSequence f;
-    public ahab g;
+    public ahbt g;
     public int h;
     
     public a(final String b, final int a) {
@@ -26,6 +26,6 @@ public class a
     }
     
     public void a(final View view) {
-        kzr.h(this, view, (TextView)view.findViewById(2131429586), (ImageView)view.findViewById(2131429582), (TextView)view.findViewById(2131429587), (TextView)view.findViewById(2131429588));
+        jzq.s(this, view, (TextView)view.findViewById(2131429586), (ImageView)view.findViewById(2131429582), (TextView)view.findViewById(2131429587), (TextView)view.findViewById(2131429588));
     }
 }

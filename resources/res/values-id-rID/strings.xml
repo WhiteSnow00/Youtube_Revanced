@@ -49,12 +49,15 @@
     <string name="litho_channel_guidelines">Penghapusan pedoman channel</string>
     <string name="litho_channel_guidelines_off">Penghapusan pedoman channel dinonaktifkan</string>
     <string name="litho_channel_guidelines_on">Penghapusan pedoman channel diaktifkan</string>
+    <string name="litho_chapter_teaser">Teaser chapter di bawah video</string>
+    <string name="litho_chapter_teaser_off">Teaser chapter ditampilkan</string>
+    <string name="litho_chapter_teaser_on">Teaser chapter disembunyikan</string>
     <string name="litho_community_guidelines">Penghapusan pedoman komunitas</string>
+    <string name="accessibility_settings_edu_opt_in_text">Mengaktifkan kontrol aksesibilitas untuk pemutar video?</string>
+    <string name="accessibility_settings_edu_opt_out_text">Kontrol anda dimodifikasi karena layanan aksesibilitas aktif.</string>
     <string name="litho_community_guidelines_off">Penghapusan pedoman komunitas dinonaktifkan</string>
     <string name="litho_community_guidelines_on">Penghapusan pedoman komunitas diaktifkan</string>
     <string name="litho_community_posts">Penghapusan postingan komunitas</string>
-    <string name="accessibility_settings_edu_opt_in_text">Mengaktifkan kontrol aksesibilitas untuk pemutar video?</string>
-    <string name="accessibility_settings_edu_opt_out_text">Kontrol anda dimodifikasi karena layanan aksesibilitas aktif.</string>
     <string name="litho_community_posts_off">Penghapusan postingan komunitas dinonaktifkan</string>
     <string name="litho_community_posts_on">Penghapusan postingan komunitas diaktifkan</string>
     <string name="litho_compact_banner">Penghapusan spanduk ringkas</string>
@@ -93,6 +96,9 @@
     <string name="litho_paid_content">Penghapusan konten berbayar</string>
     <string name="litho_paid_content_off">Penghapusan konten berbayar dinonaktifkan</string>
     <string name="litho_paid_content_on">Penghapusan konten berbayar diaktifkan</string>
+    <string name="litho_self_sponsor">Penghapusan kartu sponsor diri sendiri</string>
+    <string name="litho_self_sponsor_off">Kartu sponsor diri sendiri ditampilkan</string>
+    <string name="litho_self_sponsor_on">Kartu sponsor diri sendiri disembunyikan</string>
     <string name="microg_not_installed_notice">Silahkan instal MicroG</string>
     <string name="microg_not_installed_warning">MicroG tidak ditemukan</string>
     <string name="microg_notification_settings">Pengaturan notifikasi</string>
@@ -188,9 +194,6 @@
     <string name="revanced_endscreen_overlay_summary_off">Overlay layar akhir ditampilkan</string>
     <string name="revanced_endscreen_overlay_summary_on">Overlay layar akhir disembunyikan</string>
     <string name="revanced_endscreen_overlay_title">Overlay layar akhir</string>
-    <string name="revanced_expansion_card_summary_off">Kartu ekspansi ditampilkan</string>
-    <string name="revanced_expansion_card_summary_on">Kartu ekspansi disembunyikan</string>
-    <string name="revanced_expansion_card_title">Kartu ekspansi</string>
     <string name="revanced_experimental_flag">Pengaturan eksperimental</string>
     <string name="revanced_extended_settings">Pengaturan ReVanced Extended</string>
     <string name="revanced_extended_summary">Pengaturan yang terkait dengan extended</string>

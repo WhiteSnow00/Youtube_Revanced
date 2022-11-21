@@ -8,14 +8,14 @@ import java.util.Iterator;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class YogaNodeJNIBase extends ehb implements Cloneable
+public abstract class YogaNodeJNIBase extends ehe implements Cloneable
 {
     protected long a;
     private float[] arr;
     public Object b;
     private YogaNodeJNIBase c;
     private List d;
-    private bkv e;
+    private bih e;
     private int mLayoutDirection;
     
     YogaNodeJNIBase() {
@@ -32,22 +32,22 @@ public abstract class YogaNodeJNIBase extends ehb implements Cloneable
         throw new IllegalStateException("Failed to allocate native memory");
     }
     
-    private static ehd ac(final long n) {
-        return new ehd(Float.intBitsToFloat((int)n), (int)(n >> 32));
+    private static ehg ac(final long n) {
+        return new ehg(Float.intBitsToFloat((int)n), (int)(n >> 32));
     }
     
     private final void ad() {
         final Object b = this.b;
-        if (b instanceof eha) {
-            final dty dty = (dty)b;
-            final dva ao = dty.ao();
-            if (ao != null && ((dty)ao).d == 8) {
-                dty.bw(4);
+        if (b instanceof ehd) {
+            final dub dub = (dub)b;
+            final dvd ao = dub.ao();
+            if (ao != null && ((dub)ao).d == 8) {
+                dub.bw(4);
             }
             if (ao != null) {
-                final dtz j = ((dty)ao).j;
+                final duc j = ((dub)ao).j;
                 if (j != null && j.s == 2) {
-                    dty.bi().k(false);
+                    dub.bi().k(false);
                 }
             }
         }
@@ -240,7 +240,7 @@ public abstract class YogaNodeJNIBase extends ehb implements Cloneable
         return 0.0f;
     }
     
-    public final void aa(final bkv e) {
+    public final void aa(final bih e) {
         this.e = e;
         YogaNative.jni_YGNodeSetHasMeasureFuncJNI(this.a, e != null);
     }
@@ -296,7 +296,7 @@ public abstract class YogaNodeJNIBase extends ehb implements Cloneable
         return d.size();
     }
     
-    public final egx f() {
+    public final eha f() {
         final float[] arr = this.arr;
         int mLayoutDirection;
         if (arr != null) {
@@ -305,18 +305,18 @@ public abstract class YogaNodeJNIBase extends ehb implements Cloneable
         else {
             mLayoutDirection = this.mLayoutDirection;
         }
-        return egx.a(mLayoutDirection);
+        return eha.a(mLayoutDirection);
     }
     
-    public final egx g() {
-        return egx.a(YogaNative.jni_YGNodeStyleGetDirectionJNI(this.a));
+    public final eha g() {
+        return eha.a(YogaNative.jni_YGNodeStyleGetDirectionJNI(this.a));
     }
     
-    public final /* bridge */ ehb h() {
+    public final /* bridge */ ehe h() {
         return this.ab();
     }
     
-    public final /* bridge */ ehb i(final int n) {
+    public final /* bridge */ ehe i(final int n) {
         final List d = this.d;
         if (d != null) {
             return (YogaNodeJNIBase)d.get(n);
@@ -324,15 +324,15 @@ public abstract class YogaNodeJNIBase extends ehb implements Cloneable
         throw new IllegalStateException("YogaNode does not have children");
     }
     
-    public final ehb j() {
+    public final ehe j() {
         return this.c;
     }
     
-    public final ehd k() {
+    public final ehg k() {
         return ac(YogaNative.jni_YGNodeStyleGetHeightJNI(this.a));
     }
     
-    public final ehd l() {
+    public final ehg l() {
         return ac(YogaNative.jni_YGNodeStyleGetWidthJNI(this.a));
     }
     
@@ -342,12 +342,12 @@ public abstract class YogaNodeJNIBase extends ehb implements Cloneable
     
     public final long measure(float h, int n, float g, int n2) {
         if (this.e != null) {
-            n = epf.L(n);
-            n2 = epf.L(n2);
+            n = epi.K(n);
+            n2 = epi.K(n2);
             final Object m = this.m();
-            final dst ab = ((dva)m).ab();
-            ((dva)m).at();
-            final dsx p4 = ab.p;
+            final dsw ab = ((dvd)m).ab();
+            ((dvd)m).at();
+            final dta p4 = ab.p;
             Label_0068: {
                 if (p4 == null) {
                     break Label_0068;
@@ -358,31 +358,31 @@ public abstract class YogaNodeJNIBase extends ehb implements Cloneable
                         n3 = 0L;
                     }
                     else {
-                        dtw i;
-                        if (((dty)m).c) {
-                            i = ((dty)m).i;
+                        dtz i;
+                        if (((dub)m).c) {
+                            i = ((dub)m).i;
                         }
                         else {
                             i = null;
                         }
-                        final int h2 = bkw.h(h, n);
-                        final int h3 = bkw.h(g, n2);
-                        ((dty)m).e = h2;
-                        ((dty)m).f = h3;
-                        dsx dsx = ((dty)m).a;
+                        final int t = bkx.t(h, n);
+                        final int t2 = bkx.t(g, n2);
+                        ((dub)m).e = t;
+                        ((dub)m).f = t2;
+                        dta dta = ((dub)m).a;
                         Label_0470: {
-                            if (!dst.A(dsx, ab) && !((dva)m).aT()) {
-                                if (i == null || i.g != h2 || i.h != h3) {
-                                    final dwq dwq = new dwq(Integer.MIN_VALUE, Integer.MIN_VALUE);
-                                    ((dtd)ab).Z(p4, (dtb)m, h2, h3, dwq);
-                                    n = dwq.a;
+                            if (!dsw.A(dta, ab) && !((dvd)m).aT()) {
+                                if (i == null || i.g != t || i.h != t2) {
+                                    final dwt dwt = new dwt(Integer.MIN_VALUE, Integer.MIN_VALUE);
+                                    ((dtg)ab).Z(p4, (dte)m, t, t2, dwt);
+                                    n = dwt.a;
                                     if (n >= 0) {
-                                        n2 = dwq.b;
+                                        n2 = dwt.b;
                                         if (n2 >= 0) {
-                                            final dtw j = ((dty)m).i;
+                                            final dtz j = ((dub)m).i;
                                             if (j != null) {
-                                                j.g = h2;
-                                                j.h = h3;
+                                                j.g = t;
+                                                j.h = t2;
                                                 j.e = (float)n;
                                                 j.f = (float)n2;
                                             }
@@ -394,59 +394,59 @@ public abstract class YogaNodeJNIBase extends ehb implements Cloneable
                                     sb.append(value);
                                     throw new IllegalStateException(sb.toString());
                                 }
-                                ((dtd)ab).ax();
+                                ((dtg)ab).ax();
                                 n = (int)i.e;
                                 n2 = (int)i.f;
                             }
                             else {
-                                final dst aa = ((dva)m).aa();
-                                ((dva)m).bT();
-                                dst ab2;
+                                final dsw aa = ((dvd)m).aa();
+                                ((dvd)m).bT();
+                                dsw ab2;
                                 if (ab == (ab2 = aa)) {
-                                    if (((dva)m).ao() != null) {
-                                        ab2 = ((dva)m).ao().ab();
-                                        ((dva)m).ao().at();
+                                    if (((dvd)m).ao() != null) {
+                                        ab2 = ((dvd)m).ao().ab();
+                                        ((dvd)m).ao().at();
                                     }
                                     else {
                                         ab2 = null;
                                     }
                                 }
                                 if (ab2 != null) {
-                                    dsx = ab2.p;
+                                    dta = ab2.p;
                                 }
-                                final dva h4 = dvc.h(dsx, (dva)m, h2, h3, (pa)null);
-                                n = h4.H();
-                                n2 = h4.a();
+                                final dvd h2 = dvf.h(dta, (dvd)m, t, t2, (pb)null);
+                                n = h2.H();
+                                n2 = h2.a();
                             }
                         }
                         g = (float)n;
-                        ((dty)m).g = g;
+                        ((dub)m).g = g;
                         h = (float)n2;
-                        ((dty)m).h = h;
-                        n2 = Float.floatToRawIntBits(g);
-                        n = Float.floatToRawIntBits(h);
-                        n3 = ((long)n | (long)n2 << 32);
+                        ((dub)m).h = h;
+                        n = Float.floatToRawIntBits(g);
+                        n2 = Float.floatToRawIntBits(h);
+                        n3 = ((long)n2 | (long)n << 32);
                     }
                     return n3;
                 }
                 catch (final Exception ex) {
-                    throw coy.d(p4, ex);
+                    throw cqj.d(p4, ex);
                 }
             }
         }
         throw new RuntimeException("Measure function isn't defined!");
     }
     
-    public final void n(final ehb ehb, final int n) {
-        if (!(ehb instanceof YogaNodeJNIBase)) {
+    public final void n(final ehe ehe, final int n) {
+        if (!(ehe instanceof YogaNodeJNIBase)) {
             return;
         }
-        final YogaNodeJNIBase yogaNodeJNIBase = (YogaNodeJNIBase)ehb;
+        final YogaNodeJNIBase yogaNodeJNIBase = (YogaNodeJNIBase)ehe;
         if (yogaNodeJNIBase.c == null) {
             if (this.d == null) {
                 this.d = new ArrayList(4);
             }
-            this.d.add(n, ehb);
+            this.d.add(n, ehe);
             yogaNodeJNIBase.c = this;
             YogaNative.jni_YGNodeInsertChildJNI(this.a, yogaNodeJNIBase.a, n);
             return;
@@ -476,16 +476,16 @@ public abstract class YogaNodeJNIBase extends ehb implements Cloneable
         YogaNative.jni_YGNodeCalculateLayoutJNI(this.a, n, n2, array2, array);
     }
     
-    public final void p(final egv egv) {
-        YogaNative.jni_YGNodeStyleSetAlignContentJNI(this.a, egv.i);
+    public final void p(final egy egy) {
+        YogaNative.jni_YGNodeStyleSetAlignContentJNI(this.a, egy.i);
     }
     
-    public final void q(final egv egv) {
-        YogaNative.jni_YGNodeStyleSetAlignItemsJNI(this.a, egv.i);
+    public final void q(final egy egy) {
+        YogaNative.jni_YGNodeStyleSetAlignItemsJNI(this.a, egy.i);
     }
     
-    public final void r(final egv egv) {
-        YogaNative.jni_YGNodeStyleSetAlignSelfJNI(this.a, egv.i);
+    public final void r(final egy egy) {
+        YogaNative.jni_YGNodeStyleSetAlignSelfJNI(this.a, egy.i);
     }
     
     public final void s(final float n) {
@@ -496,8 +496,8 @@ public abstract class YogaNodeJNIBase extends ehb implements Cloneable
         this.b = b;
     }
     
-    public final void u(final egx egx) {
-        YogaNative.jni_YGNodeStyleSetDirectionJNI(this.a, egx.d);
+    public final void u(final eha eha) {
+        YogaNative.jni_YGNodeStyleSetDirectionJNI(this.a, eha.d);
     }
     
     public final void v(final float n) {

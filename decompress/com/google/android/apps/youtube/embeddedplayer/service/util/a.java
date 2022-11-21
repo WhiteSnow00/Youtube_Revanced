@@ -14,12 +14,12 @@ import j$.util.Optional;
 
 public final class a
 {
-    private static final afcr a;
-    private static final afcr b;
+    private static final afgh a;
+    private static final afgh b;
     
     static {
-        a = afcr.u((Object)"youtube.com", (Object)"www.youtube.com", (Object)"m.youtube.com", (Object)"youtu.be");
-        b = afcr.s((Object)"start", (Object)"t");
+        a = afgh.u("youtube.com", "www.youtube.com", "m.youtube.com", "youtu.be");
+        b = afgh.s("start", "t");
     }
     
     public static Optional a(String s) {
@@ -33,7 +33,7 @@ public final class a
                 uri = Uri.fromParts("https", s, (String)null);
             }
             s = uri.getHost();
-            if (s != null && com.google.android.apps.youtube.embeddedplayer.service.util.a.a.contains((Object)aeda.w(s))) {
+            if (s != null && com.google.android.apps.youtube.embeddedplayer.service.util.a.a.contains(aewr.b(s))) {
                 final List pathSegments = uri.getPathSegments();
                 if (pathSegments != null && pathSegments.size() > 0 && pathSegments.size() <= 2) {
                     optional = Optional.of((Object)uri);
@@ -57,7 +57,7 @@ public final class a
                 optional2 = Optional.empty();
             }
             else {
-                optional2 = SimplePlaybackDescriptor.f((String)pathSegments2.get(0), (List)null, (String)null, b(uri2), 0, e(uri2));
+                optional2 = SimplePlaybackDescriptor.f(pathSegments2.get(0), null, null, b(uri2), 0, e(uri2));
             }
             return optional2;
         }
@@ -74,7 +74,7 @@ public final class a
             else {
                 list = null;
             }
-            optional3 = SimplePlaybackDescriptor.f((String)f(uri2).orElse((Object)null), (List)list, uri2.getQueryParameter("list"), b(uri2), d(uri2), e(uri2));
+            optional3 = SimplePlaybackDescriptor.f((String)f(uri2).orElse((Object)null), list, uri2.getQueryParameter("list"), b(uri2), d(uri2), e(uri2));
         }
         if (optional3.isEmpty()) {
             final List pathSegments3 = uri2.getPathSegments();
@@ -86,7 +86,7 @@ public final class a
                 optional4 = Optional.empty();
             }
             else {
-                optional4 = SimplePlaybackDescriptor.f((String)f(uri2).orElse((Object)null), (List)null, uri2.getQueryParameter("list"), b(uri2), d(uri2), e(uri2));
+                optional4 = SimplePlaybackDescriptor.f((String)f(uri2).orElse((Object)null), null, uri2.getQueryParameter("list"), b(uri2), d(uri2), e(uri2));
             }
             return optional4;
         }
@@ -122,8 +122,8 @@ public final class a
         if (c != 0) {
             return c;
         }
-        final afcr b = com.google.android.apps.youtube.embeddedplayer.service.util.a.b;
-        final int c2 = ((afgh)b).c;
+        final afgh b = com.google.android.apps.youtube.embeddedplayer.service.util.a.b;
+        final int c2 = ((afjx)b).c;
         int n = 0;
         int i;
         do {
@@ -131,7 +131,7 @@ public final class a
             if (n >= c2) {
                 return n2;
             }
-            i = c(uri, ((List<String>)b).get(n));
+            i = c(uri, b.get(n));
             ++n;
         } while (i == 0);
         return (int)Duration.ofSeconds((long)i).toMillis();

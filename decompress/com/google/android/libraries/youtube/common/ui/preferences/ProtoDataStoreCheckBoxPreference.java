@@ -13,40 +13,40 @@ import android.content.Context;
 import com.google.common.util.concurrent.ListenableFuture;
 import androidx.preference.CheckBoxPreference;
 
-public class ProtoDataStoreCheckBoxPreference extends CheckBoxPreference implements tsh
+public class ProtoDataStoreCheckBoxPreference extends CheckBoxPreference implements ttk
 {
-    private tsf c;
-    private tqd d;
+    private tth c;
+    private tre d;
     private ListenableFuture e;
-    private aun f;
+    private aup f;
     private Object g;
     
     public ProtoDataStoreCheckBoxPreference(final Context context) {
         super(context);
-        this.e = afwm.m((Object)null);
+        this.e = afxr.l(null);
         this.g = false;
-        adkp.I(TextUtils.isEmpty((CharSequence)((Preference)this).s) ^ true, "Make sure key attribute is set in the xml file.");
+        adme.L(TextUtils.isEmpty((CharSequence)((Preference)this).s) ^ true, "Make sure key attribute is set in the xml file.");
     }
     
     public ProtoDataStoreCheckBoxPreference(final Context context, final AttributeSet set) {
         super(context, set);
-        this.e = afwm.m((Object)null);
+        this.e = afxr.l(null);
         this.g = false;
-        adkp.I(TextUtils.isEmpty((CharSequence)((Preference)this).s) ^ true, "Make sure key attribute is set in the xml file.");
+        adme.L(TextUtils.isEmpty((CharSequence)((Preference)this).s) ^ true, "Make sure key attribute is set in the xml file.");
     }
     
     public ProtoDataStoreCheckBoxPreference(final Context context, final AttributeSet set, final int n) {
         super(context, set, n);
-        this.e = afwm.m((Object)null);
+        this.e = afxr.l(null);
         this.g = false;
-        adkp.I(TextUtils.isEmpty((CharSequence)((Preference)this).s) ^ true, "Make sure key attribute is set in the xml file.");
+        adme.L(TextUtils.isEmpty((CharSequence)((Preference)this).s) ^ true, "Make sure key attribute is set in the xml file.");
     }
     
     public ProtoDataStoreCheckBoxPreference(final Context context, final AttributeSet set, final int n, final int n2) {
         super(context, set, n, n2);
-        this.e = afwm.m((Object)null);
+        this.e = afxr.l(null);
         this.g = false;
-        adkp.I(TextUtils.isEmpty((CharSequence)((Preference)this).s) ^ true, "Make sure key attribute is set in the xml file.");
+        adme.L(TextUtils.isEmpty((CharSequence)((Preference)this).s) ^ true, "Make sure key attribute is set in the xml file.");
     }
     
     private final ListenableFuture am(final Boolean b) {
@@ -61,11 +61,11 @@ public class ProtoDataStoreCheckBoxPreference extends CheckBoxPreference impleme
     public final boolean R(final Object o) {
         final boolean r = super.R(o);
         if (r) {
-            final aun f = this.f;
+            final aup f = this.f;
             final ListenableFuture am = this.am((Boolean)o);
-            final tqd d = this.d;
+            final tre d = this.d;
             d.getClass();
-            teu.n(f, am, (ttg)new spu(d, 17), (ttg)new stt(9));
+            tfx.n(f, am, (tui)new ski(d, 19), (tui)new sus(9));
         }
         return r;
     }
@@ -84,19 +84,19 @@ public class ProtoDataStoreCheckBoxPreference extends CheckBoxPreference impleme
         super.k(b);
     }
     
-    public final void ah(final tqd d) {
+    public final void ah(final tre d) {
         this.d = d;
     }
     
-    public final void ai(final aun f) {
+    public final void ai(final aup f) {
         this.f = f;
     }
     
     public final void aj(final Map map) {
-        final tsf c = map.get(((Preference)this).s);
+        final tth c = map.get(((Preference)this).s);
         c.getClass();
         this.c = c;
-        teu.n(this.f, c.a(), (ttg)new sxu(this, (Boolean)this.g, 12), (ttg)new spu(this, 18));
+        tfx.n(this.f, c.a(), (tui)new syx(this, (Boolean)this.g, 13), (tui)new ski(this, 20));
     }
     
     public final void ak(final boolean b) {
@@ -114,10 +114,10 @@ public class ProtoDataStoreCheckBoxPreference extends CheckBoxPreference impleme
     public final void k(final boolean b) {
         final ListenableFuture am = this.am(b);
         this.e = am;
-        final aun f = this.f;
-        final tqd d = this.d;
+        final aup f = this.f;
+        final tre d = this.d;
         d.getClass();
-        teu.n(f, am, (ttg)new spu(d, 17), (ttg)new jnh(this, b, 4));
+        tfx.n(f, am, (tui)new ski(d, 19), (tui)new jns(this, b, 4));
     }
     
     protected final Object lj(final TypedArray typedArray, final int n) {

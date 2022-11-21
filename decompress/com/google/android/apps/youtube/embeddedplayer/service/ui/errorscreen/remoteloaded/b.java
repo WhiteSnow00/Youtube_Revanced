@@ -15,13 +15,13 @@ import android.widget.TextView;
 import android.content.Context;
 import android.text.Spanned;
 
-public final class b extends abbk
+public final class b extends abcq
 {
     public Spanned a;
     public CharSequence b;
     public boolean c;
     public boolean d;
-    public pvh e;
+    public oqz e;
     private String f;
     
     public b(final Context context) {
@@ -36,10 +36,10 @@ public final class b extends abbk
     }
     
     private final void n(final Context context, final FrameLayout frameLayout) {
-        if (this.mn()) {
+        if (this.mm()) {
             String f;
-            if (tpe.bm(context)) {
-                f = context.getString(2132019933);
+            if (tqf.bm(context)) {
+                f = context.getString(2132019936);
             }
             else {
                 f = context.getString(2132017710);
@@ -62,35 +62,32 @@ public final class b extends abbk
             textView.setText((CharSequence)append2);
             this.m(textView);
         }
-        if (!this.mn()) {
+        if (!this.mm()) {
             return;
         }
         if (this.a == null) {
-            ((TextView)frameLayout.findViewById(2131432448)).setVisibility(8);
+            ((TextView)frameLayout.findViewById(2131432449)).setVisibility(8);
             return;
         }
-        adkp.H(this.c ^ true);
-        final TextView textView2 = (TextView)frameLayout.findViewById(2131432448);
+        adme.K(this.c ^ true);
+        final TextView textView2 = (TextView)frameLayout.findViewById(2131432449);
         textView2.setText((CharSequence)this.a);
         textView2.setVisibility(0);
         this.m(textView2);
     }
     
-    @Override
     public final ViewGroup$LayoutParams a() {
         return new ViewGroup$LayoutParams(-1, -1);
     }
     
-    @Override
     public final /* bridge */ View c(final Context context) {
         final LayoutInflater from = LayoutInflater.from(context);
         final a a = new a(this, context);
-        from.inflate(2131624390, (ViewGroup)a);
+        from.inflate(2131624391, (ViewGroup)a);
         this.n(context, a);
         return (View)a;
     }
     
-    @Override
     public final /* bridge */ void e(final Context context, final View view) {
         final FrameLayout frameLayout = (FrameLayout)view;
         if (this.ab(1)) {
@@ -98,8 +95,7 @@ public final class b extends abbk
         }
     }
     
-    @Override
-    public final boolean oV() {
+    public final boolean oW() {
         return this.d;
     }
 }

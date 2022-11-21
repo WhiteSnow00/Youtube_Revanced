@@ -9,7 +9,7 @@ public final class FoldingFeature$Orientation$Companion
     private FoldingFeature$Orientation$Companion() {
     }
     
-    public FoldingFeature$Orientation$Companion(final atny atny) {
+    public FoldingFeature$Orientation$Companion(final atqv atqv) {
         this();
     }
 }

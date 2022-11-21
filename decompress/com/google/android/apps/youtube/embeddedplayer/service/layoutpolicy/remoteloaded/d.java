@@ -218,8 +218,8 @@ public final class d implements Application$ActivityLifecycleCallbacks, c
         if (view == null) {
             return;
         }
-        final Optional r = kzr.r(view.getContext());
-        if (r.isPresent() && activity == r.get() && this.h) {
+        final Optional l = lma.l(view.getContext());
+        if (l.isPresent() && activity == l.get() && this.h) {
             this.d(true);
         }
     }

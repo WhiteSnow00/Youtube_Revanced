@@ -14,21 +14,21 @@ import android.graphics.drawable.Drawable;
 import android.content.res.Resources;
 import android.util.Log;
 import com.google.android.libraries.youtube.innertube.model.media.VideoQuality;
-import com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.d;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.model.WatchLaterButtonData;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.model.a;
 import android.content.Context;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.d;
 import android.content.DialogInterface$OnDismissListener;
 import android.content.DialogInterface$OnShowListener;
 
-public final class b implements abdi, abeg, com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.shared.b, com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.b
+public final class b implements abeo, abfm, com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.shared.b, com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.b
 {
     private static final String u = "b";
     public final DialogInterface$OnShowListener a;
     public final DialogInterface$OnDismissListener b;
     public final c c;
-    public abbr d;
-    public com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.c e;
+    public abcx d;
+    public d e;
     public Context f;
     public com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.remoteloaded.b g;
     public a h;
@@ -41,14 +41,14 @@ public final class b implements abdi, abeg, com.google.android.apps.youtube.embe
     public com.google.android.apps.youtube.embeddedplayer.service.ui.watchlaterbutton.remoteloaded.c o;
     public WatchLaterButtonData p;
     public boolean q;
-    public d r;
-    public final qoa s;
-    public final kzr t;
+    public com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.d r;
+    public final qou s;
+    public final jzq t;
     private VideoQuality[] v;
     private int w;
     private int x;
     
-    public b(final Context f, final DialogInterface$OnShowListener a, final DialogInterface$OnDismissListener b, final c c, final qoa s, final kzr t, final byte[] array, final byte[] array2, final byte[] array3) {
+    public b(final Context f, final DialogInterface$OnShowListener a, final DialogInterface$OnDismissListener b, final c c, final qou s, final jzq t, final byte[] array, final byte[] array2, final byte[] array3) {
         this.g = com.google.android.apps.youtube.embeddedplayer.service.interactionlogging.remoteloaded.b.a;
         this.p = WatchLaterButtonData.a;
         this.r = com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.d.d;
@@ -71,8 +71,8 @@ public final class b implements abdi, abeg, com.google.android.apps.youtube.embe
     public final void a() {
         if (this.b()) {
             final Resources resources = this.f.getResources();
-            final Drawable drawable = resources.getDrawable(2131231312, this.f.getTheme());
-            final a i = new a(resources.getString(2132019076), 0);
+            final Drawable drawable = resources.getDrawable(2131231310, this.f.getTheme());
+            final a i = new a(resources.getString(2132019078), 0);
             i.d = drawable;
             final int w = this.w;
             String b = null;
@@ -112,7 +112,7 @@ public final class b implements abdi, abeg, com.google.android.apps.youtube.embe
         this.s.b = b;
     }
     
-    public final void l(final abdh d) {
+    public final void l(final aben d) {
         this.s.d = d;
     }
     
@@ -148,8 +148,8 @@ public final class b implements abdi, abeg, com.google.android.apps.youtube.embe
                     s2 = "";
                 }
             }
-            final String string2 = this.f.getString(2132019308);
-            final String string3 = this.f.getString(2132019312, new Object[] { s2 });
+            final String string2 = this.f.getString(2132019310);
+            final String string3 = this.f.getString(2132019314, new Object[] { s2 });
             final StringBuilder sb = new StringBuilder();
             sb.append(string2);
             sb.append(" ");
@@ -163,7 +163,7 @@ public final class b implements abdi, abeg, com.google.android.apps.youtube.embe
         if (this.i == null) {
             this.a();
         }
-        this.i.e = aezr.e(string);
+        this.i.e = afbj.e(string);
         final c c = this.c;
         c.f = array;
         c.h = c.g;
@@ -172,8 +172,8 @@ public final class b implements abdi, abeg, com.google.android.apps.youtube.embe
     }
     
     public final void q(final List f) {
-        final qoa s = this.s;
-        final com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.c e = this.e;
+        final qou s = this.s;
+        final d e = this.e;
         s.f = f;
         final ArrayList list = new ArrayList();
         for (final SubtitleTrack subtitleTrack : f) {
@@ -183,21 +183,21 @@ public final class b implements abdi, abeg, com.google.android.apps.youtube.embe
                 b.b();
             }
         }
-        s.c = kzr.i(2132019902, (List)list, (AdapterView$OnItemClickListener)new ou(s, 4, (byte[])null), (Context)s.e, (DialogInterface$OnShowListener)s.g, (DialogInterface$OnDismissListener)s.a);
-        e.b((com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.c)s.c);
+        s.c = jzq.t(2132019905, (List)list, (AdapterView$OnItemClickListener)new ov(s, 4, (byte[])null), (Context)s.e, (DialogInterface$OnShowListener)s.g, (DialogInterface$OnDismissListener)s.a);
+        e.b((d)s.c);
     }
     
-    public final void rc(final boolean b) {
+    public final void rb(final boolean b) {
     }
     
-    public final void rg(final ShareButtonData shareButtonData) {
+    public final void rf(final ShareButtonData shareButtonData) {
     }
     
-    public final void rk(final abef e) {
+    public final void rk(final abfl e) {
         this.c.e = e;
     }
     
-    public final void t(final d r) {
+    public final void t(final com.google.android.apps.youtube.embeddedplayer.service.ui.sharebutton.shared.d r) {
         this.r = r;
     }
 }

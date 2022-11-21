@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Koristi temu uređaja</string>
     <string name="app_theme_appearance_summary">Izaberite željenu temu, tamnu ili svetlu</string>
     <string name="app_theme_appearance_title">Izgled</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Primeni</string>
     <string name="approve_playlist_sync">Sinhronizuj nove video snimke</string>
     <string name="audio_playback_failed_snackbar_action_button">Probaj ponovo</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">Završi strim</string>
     <string name="lc_retry_yes">Probaj ponovo</string>
     <string name="lc_rotate_device">Rotirajte uređaj</string>
+    <string name="lc_sharedmde_required_field_error">Naslov i publika su obavezni.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Uspravni strim</string>
     <string name="lc_stream_start_error">Strim ne može da se pokrene. Proverite vezu.</string>
@@ -1728,6 +1729,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Pregled video snimka. Dodirnite da biste pauzirali.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Pregled video snimka. Dodirnite da biste igrali.</string>
     <string name="shorts_a11y_zoom_control">Kontrola zuma</string>
+    <string name="shorts_audio_failure_toast">Dodavanje zvuka nije uspelo. Probajte ponovo.</string>
     <string name="shorts_camera_allow_access_subtitle">Dozvolite pristup kameri i mikrofonu</string>
     <string name="shorts_camera_allow_access_title">Napravite Short</string>
     <string name="shorts_camera_close_confirmation_cancel">Otkaži</string>

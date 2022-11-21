@@ -5,6 +5,7 @@
 package com.google.android.apps.youtube.embeddedplayer.service.ui.overflowmenu;
 
 import com.google.android.libraries.youtube.innertube.model.media.VideoQuality;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.d;
 import java.util.ArrayList;
 import android.content.DialogInterface;
 import android.view.View;
@@ -44,7 +45,7 @@ public final class a implements AdapterView$OnItemClickListener
             final b b = (b)a2;
             b.g.a(70347);
             final c c = b.c;
-            final com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.c e = b.e;
+            final d e = b.e;
             final ArrayList list = new ArrayList();
             final VideoQuality[] f = c.f;
             final int length = f.length;
@@ -62,26 +63,26 @@ public final class a implements AdapterView$OnItemClickListener
                     final int g = c.g;
                     String s;
                     if (g > 0 && g < c.f.length) {
-                        s = c.c.getResources().getString(2132019312, new Object[] { c.f[c.g].b });
+                        s = c.c.getResources().getString(2132019314, new Object[] { c.f[c.g].b });
                     }
                     else {
                         final int h = c.h;
                         if (h > 0 && h < c.f.length) {
-                            s = c.c.getResources().getString(2132019312, new Object[] { c.f[c.h].b });
+                            s = c.c.getResources().getString(2132019314, new Object[] { c.f[c.h].b });
                         }
                         else {
                             s = "";
                         }
                     }
-                    ((com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.model.a)b2).e = " ".concat(String.valueOf(s));
-                    ((com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.model.a)b2).c = true;
+                    b2.e = " ".concat(String.valueOf(s));
+                    b2.c = true;
                     b2.b();
                 }
                 list.add(b2);
                 ++a;
                 ++i;
             }
-            e.b(c.d = kzr.i(2132019314, (List)list, (AdapterView$OnItemClickListener)new ou(c, 3), c.c, c.a, c.b));
+            e.b(c.d = jzq.t(2132019316, (List)list, (AdapterView$OnItemClickListener)new ov(c, 3), c.c, c.a, c.b));
             return;
         }
         if (a == 1) {

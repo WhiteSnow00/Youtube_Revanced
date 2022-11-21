@@ -15,21 +15,21 @@ import android.os.SystemClock;
 import android.app.Activity;
 import android.content.Context;
 
-public final class Shell_ResultsActivity extends evs implements aeou, aepm
+public final class Shell_ResultsActivity extends evu implements aeqn, aerf
 {
-    private ewb m;
-    private final aerz n;
+    private ewd m;
+    private final aets n;
     private boolean o;
     private Context p;
-    private auo q;
+    private auq q;
     private boolean r;
     
     public Shell_ResultsActivity() {
-        this.n = aerz.a((Activity)this);
+        this.n = aets.a((Activity)this);
         SystemClock.elapsedRealtime();
     }
     
-    private final ewb n() {
+    private final ewd n() {
         this.o();
         return this.m;
     }
@@ -40,11 +40,11 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
         // 
         // Original Bytecode:
         // 
-        //     1: getfield        com/google/android/apps/youtube/app/application/Shell_ResultsActivity.m:Lewb;
-        //     4: ifnonnull       322
+        //     1: getfield        com/google/android/apps/youtube/app/application/Shell_ResultsActivity.m:Lewd;
+        //     4: ifnonnull       324
         //     7: aload_0        
         //     8: getfield        com/google/android/apps/youtube/app/application/Shell_ResultsActivity.o:Z
-        //    11: ifeq            312
+        //    11: ifeq            314
         //    14: aload_0        
         //    15: getfield        com/google/android/apps/youtube/app/application/Shell_ResultsActivity.r:Z
         //    18: ifeq            41
@@ -58,160 +58,161 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
         //    37: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
         //    40: athrow         
         //    41: ldc             "CreateComponent"
-        //    43: invokestatic    aeux.o:(Ljava/lang/String;)Laetf;
+        //    43: invokestatic    aewp.o:(Ljava/lang/String;)Laeux;
         //    46: astore_2       
         //    47: aload_0        
-        //    48: invokevirtual   evo.aR:()Ljava/lang/Object;
+        //    48: invokevirtual   evq.aR:()Ljava/lang/Object;
         //    51: pop            
         //    52: aload_2        
-        //    53: invokevirtual   aetf.close:()V
+        //    53: invokevirtual   aeux.close:()V
         //    56: ldc             "CreatePeer"
-        //    58: invokestatic    aeux.o:(Ljava/lang/String;)Laetf;
+        //    58: invokestatic    aewp.o:(Ljava/lang/String;)Laeux;
         //    61: astore_1       
         //    62: aload_0        
-        //    63: invokevirtual   evo.aR:()Ljava/lang/Object;
+        //    63: invokevirtual   evq.aR:()Ljava/lang/Object;
         //    66: astore          5
         //    68: aload           5
-        //    70: checkcast       Lesp;
-        //    73: getfield        esp.b:Leqy;
-        //    76: getfield        eqy.kz:Latke;
-        //    79: invokeinterface atke.a:()Ljava/lang/Object;
+        //    70: checkcast       Lesr;
+        //    73: getfield        esr.b:Lera;
+        //    76: getfield        era.jR:Latnb;
+        //    79: invokeinterface atnb.a:()Ljava/lang/Object;
         //    84: checkcast       Lcom/google/android/apps/youtube/embeddedplayer/service/clientinfo/service/c;
         //    87: astore_2       
         //    88: aload           5
-        //    90: checkcast       Lesp;
-        //    93: getfield        esp.d:Latke;
-        //    96: invokeinterface atke.a:()Ljava/lang/Object;
+        //    90: checkcast       Lesr;
+        //    93: getfield        esr.d:Latnb;
+        //    96: invokeinterface atnb.a:()Ljava/lang/Object;
         //   101: checkcast       Landroid/app/Activity;
         //   104: astore_3       
         //   105: aload_3        
         //   106: instanceof      Lcom/google/android/apps/youtube/app/application/Shell_ResultsActivity;
-        //   109: ifeq            194
+        //   109: ifeq            196
         //   112: aload_3        
         //   113: checkcast       Lcom/google/android/apps/youtube/app/application/Shell_ResultsActivity;
-        //   116: astore_3       
-        //   117: aload_3        
-        //   118: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
-        //   121: pop            
-        //   122: aload           5
-        //   124: checkcast       Lesp;
-        //   127: getfield        esp.e:Latke;
-        //   130: invokeinterface atke.a:()Ljava/lang/Object;
-        //   135: checkcast       Laeij;
-        //   138: astore          4
-        //   140: aload           5
-        //   142: checkcast       Lesp;
-        //   145: getfield        esp.b:Leqy;
-        //   148: getfield        eqy.a:Lera;
-        //   151: getfield        era.co:Latke;
-        //   154: invokeinterface atke.a:()Ljava/lang/Object;
-        //   159: checkcast       Lrzv;
-        //   162: astore          6
-        //   164: new             Lewb;
-        //   167: astore          5
-        //   169: aload           5
-        //   171: aload_2        
-        //   172: aload_3        
+        //   116: astore          4
+        //   118: aload           4
+        //   120: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
+        //   123: pop            
+        //   124: aload           5
+        //   126: checkcast       Lesr;
+        //   129: getfield        esr.e:Latnb;
+        //   132: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   137: checkcast       Laekc;
+        //   140: astore_3       
+        //   141: aload           5
+        //   143: checkcast       Lesr;
+        //   146: getfield        esr.b:Lera;
+        //   149: getfield        era.a:Lerc;
+        //   152: getfield        erc.cp:Latnb;
+        //   155: invokeinterface atnb.a:()Ljava/lang/Object;
+        //   160: checkcast       Lsaw;
+        //   163: astore          6
+        //   165: new             Lewd;
+        //   168: astore          5
+        //   170: aload           5
+        //   172: aload_2        
         //   173: aload           4
-        //   175: aload           6
-        //   177: aconst_null    
+        //   175: aload_3        
+        //   176: aload           6
         //   178: aconst_null    
         //   179: aconst_null    
-        //   180: invokespecial   ewb.<init>:(Lcom/google/android/apps/youtube/embeddedplayer/service/clientinfo/service/c;Lcom/google/android/apps/youtube/app/application/Shell_ResultsActivity;Laeij;Lrzv;[B[B[B)V
-        //   183: aload_0        
-        //   184: aload           5
-        //   186: putfield        com/google/android/apps/youtube/app/application/Shell_ResultsActivity.m:Lewb;
-        //   189: aload_1        
-        //   190: invokevirtual   aetf.close:()V
-        //   193: return         
-        //   194: new             Ljava/lang/IllegalStateException;
-        //   197: astore          4
-        //   199: ldc             Lewb;.class
-        //   201: invokevirtual   java/lang/Object.toString:()Ljava/lang/String;
-        //   204: astore_2       
-        //   205: aload_3        
-        //   206: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
-        //   209: invokestatic    java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
-        //   212: astore          5
-        //   214: new             Ljava/lang/StringBuilder;
-        //   217: astore_3       
-        //   218: aload_3        
-        //   219: ldc             "Attempt to inject a Activity wrapper of type "
-        //   221: invokespecial   java/lang/StringBuilder.<init>:(Ljava/lang/String;)V
-        //   224: aload_3        
-        //   225: aload_2        
-        //   226: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   229: pop            
-        //   230: aload_3        
-        //   231: ldc             ", but the wrapper available is of type: "
-        //   233: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   236: pop            
-        //   237: aload_3        
-        //   238: aload           5
-        //   240: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   243: pop            
-        //   244: aload_3        
-        //   245: ldc             ". Does your peer's @Inject constructor reference the wrong wrapper class?"
-        //   247: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   250: pop            
-        //   251: aload           4
-        //   253: aload_3        
-        //   254: invokevirtual   java/lang/StringBuilder.toString:()Ljava/lang/String;
-        //   257: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
-        //   260: aload           4
-        //   262: athrow         
-        //   263: astore_2       
-        //   264: goto            281
-        //   267: astore_2       
-        //   268: new             Ljava/lang/IllegalStateException;
-        //   271: astore_3       
-        //   272: aload_3        
-        //   273: ldc             "Missing entry point. If you're in a test with explicit entry points specified in your @TestRoot, check that you're not missing the one for this class."
-        //   275: aload_2        
-        //   276: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;Ljava/lang/Throwable;)V
-        //   279: aload_3        
-        //   280: athrow         
-        //   281: aload_1        
-        //   282: invokevirtual   aetf.close:()V
-        //   285: goto            294
-        //   288: astore_1       
-        //   289: aload_2        
-        //   290: aload_1        
-        //   291: invokestatic    fwc.o:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-        //   294: aload_2        
-        //   295: athrow         
-        //   296: astore_1       
-        //   297: aload_2        
-        //   298: invokevirtual   aetf.close:()V
-        //   301: goto            310
-        //   304: astore_2       
-        //   305: aload_1        
-        //   306: aload_2        
-        //   307: invokestatic    fwc.o:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-        //   310: aload_1        
-        //   311: athrow         
-        //   312: new             Ljava/lang/IllegalStateException;
-        //   315: dup            
-        //   316: ldc             "createPeer() called outside of onCreate"
-        //   318: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
-        //   321: athrow         
-        //   322: return         
+        //   180: aconst_null    
+        //   181: aconst_null    
+        //   182: invokespecial   ewd.<init>:(Lcom/google/android/apps/youtube/embeddedplayer/service/clientinfo/service/c;Lcom/google/android/apps/youtube/app/application/Shell_ResultsActivity;Laekc;Lsaw;[B[B[B[B)V
+        //   185: aload_0        
+        //   186: aload           5
+        //   188: putfield        com/google/android/apps/youtube/app/application/Shell_ResultsActivity.m:Lewd;
+        //   191: aload_1        
+        //   192: invokevirtual   aeux.close:()V
+        //   195: return         
+        //   196: new             Ljava/lang/IllegalStateException;
+        //   199: astore          4
+        //   201: ldc             Lewd;.class
+        //   203: invokevirtual   java/lang/Object.toString:()Ljava/lang/String;
+        //   206: astore_2       
+        //   207: aload_3        
+        //   208: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
+        //   211: invokestatic    java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+        //   214: astore          5
+        //   216: new             Ljava/lang/StringBuilder;
+        //   219: astore_3       
+        //   220: aload_3        
+        //   221: ldc             "Attempt to inject a Activity wrapper of type "
+        //   223: invokespecial   java/lang/StringBuilder.<init>:(Ljava/lang/String;)V
+        //   226: aload_3        
+        //   227: aload_2        
+        //   228: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   231: pop            
+        //   232: aload_3        
+        //   233: ldc             ", but the wrapper available is of type: "
+        //   235: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   238: pop            
+        //   239: aload_3        
+        //   240: aload           5
+        //   242: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   245: pop            
+        //   246: aload_3        
+        //   247: ldc             ". Does your peer's @Inject constructor reference the wrong wrapper class?"
+        //   249: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   252: pop            
+        //   253: aload           4
+        //   255: aload_3        
+        //   256: invokevirtual   java/lang/StringBuilder.toString:()Ljava/lang/String;
+        //   259: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
+        //   262: aload           4
+        //   264: athrow         
+        //   265: astore_2       
+        //   266: goto            283
+        //   269: astore_3       
+        //   270: new             Ljava/lang/IllegalStateException;
+        //   273: astore_2       
+        //   274: aload_2        
+        //   275: ldc             "Missing entry point. If you're in a test with explicit entry points specified in your @TestRoot, check that you're not missing the one for this class."
+        //   277: aload_3        
+        //   278: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;Ljava/lang/Throwable;)V
+        //   281: aload_2        
+        //   282: athrow         
+        //   283: aload_1        
+        //   284: invokevirtual   aeux.close:()V
+        //   287: goto            296
+        //   290: astore_1       
+        //   291: aload_2        
+        //   292: aload_1        
+        //   293: invokestatic    ezw.a:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   296: aload_2        
+        //   297: athrow         
+        //   298: astore_1       
+        //   299: aload_2        
+        //   300: invokevirtual   aeux.close:()V
+        //   303: goto            312
+        //   306: astore_2       
+        //   307: aload_1        
+        //   308: aload_2        
+        //   309: invokestatic    ezw.a:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   312: aload_1        
+        //   313: athrow         
+        //   314: new             Ljava/lang/IllegalStateException;
+        //   317: dup            
+        //   318: ldc             "createPeer() called outside of onCreate"
+        //   320: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
+        //   323: athrow         
+        //   324: return         
         //    Exceptions:
         //  Try           Handler
         //  Start  End    Start  End    Type                          
         //  -----  -----  -----  -----  ------------------------------
-        //  47     52     296    312    Any
-        //  62     68     267    281    Ljava/lang/ClassCastException;
-        //  62     68     263    296    Any
-        //  68     189    263    296    Any
-        //  194    263    263    296    Any
-        //  268    281    263    296    Any
-        //  281    285    288    294    Any
-        //  297    301    304    310    Any
+        //  47     52     298    314    Any
+        //  62     68     269    283    Ljava/lang/ClassCastException;
+        //  62     68     265    298    Any
+        //  68     191    265    298    Any
+        //  196    265    265    298    Any
+        //  270    283    265    298    Any
+        //  283    287    290    296    Any
+        //  299    303    306    312    Any
         // 
         // The error that occurred was:
         // 
-        // java.lang.IllegalStateException: Expression is linked from several locations: Label_0281:
+        // java.lang.IllegalStateException: Expression is linked from several locations: Label_0283:
         //     at com.strobel.decompiler.ast.Error.expressionLinkedFromMultipleLocations(Error.java:27)
         //     at com.strobel.decompiler.ast.AstOptimizer.mergeDisparateObjectInitializations(AstOptimizer.java:2604)
         //     at com.strobel.decompiler.ast.AstOptimizer.optimize(AstOptimizer.java:235)
@@ -235,7 +236,7 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
     }
     
     public final /* bridge */ Object aN() {
-        final ewb m = this.m;
+        final ewd m = this.m;
         if (m == null) {
             throw new IllegalStateException("peer() called before initialized.");
         }
@@ -250,18 +251,18 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
         if ((context = this.getBaseContext()) == null) {
             context = this.p;
         }
-        aeuz.c(context);
+        agsk.ag(context);
         super.applyOverrideConfiguration(configuration);
     }
     
     protected final void attachBaseContext(final Context p) {
-        aeuz.b(this.p = p);
+        agsk.af(this.p = p);
         super.attachBaseContext(p);
         this.p = null;
     }
     
-    public final arku b() {
-        return (arku)aeps.a((Activity)this);
+    public final arno b() {
+        return aerl.a((Activity)this);
     }
     
     public final int e() {
@@ -274,7 +275,7 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
     }
     
     public final void finish() {
-        final aett b = this.n.b();
+        final aevl b = this.n.b();
         try {
             super.finish();
             b.close();
@@ -286,7 +287,7 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                fwc.o(t, t2);
+                ezw.a(t, t2);
             }
         }
     }
@@ -295,11 +296,11 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
         return 0;
     }
     
-    public final aui getLifecycle() {
+    public final auk getLifecycle() {
         if (this.q == null) {
-            this.q = (auo)new aepn((bu)this);
+            this.q = new aerg((bu)this);
         }
-        return (aui)this.q;
+        return (auk)this.q;
     }
     
     protected final Class i() {
@@ -308,7 +309,7 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
     }
     
     public final void invalidateOptionsMenu() {
-        final aett s = aeux.s();
+        final aevl s = aewp.s();
         try {
             super.invalidateOptionsMenu();
             s.close();
@@ -320,7 +321,7 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                fwc.o(t, t2);
+                ezw.a(t, t2);
             }
         }
     }
@@ -334,24 +335,24 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
     }
     
     protected final void onActivityResult(final int n, final int n2, final Intent intent) {
-        final aett q = this.n.q();
+        final aevl r = this.n.r();
         try {
             super.onActivityResult(n, n2, intent);
-            q.close();
+            r.close();
         }
         finally {
             try {
-                q.close();
+                r.close();
             }
             finally {
                 final Throwable t;
-                fwc.o((Throwable)intent, t);
+                ezw.a((Throwable)intent, t);
             }
         }
     }
     
     public final void onBackPressed() {
-        final aett c = this.n.c();
+        final aevl c = this.n.c();
         try {
             super.onBackPressed();
             c.close();
@@ -363,74 +364,74 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                fwc.o(t, t2);
+                ezw.a(t, t2);
             }
         }
     }
     
     public final void onConfigurationChanged(final Configuration configuration) {
-        final aett r = this.n.r();
+        final aevl s = this.n.s();
         try {
             super.onConfigurationChanged(configuration);
-            r.close();
+            s.close();
         }
         finally {
             try {
-                r.close();
+                s.close();
             }
             finally {
                 final Throwable t;
-                fwc.o((Throwable)configuration, t);
+                ezw.a((Throwable)configuration, t);
             }
         }
     }
     
     protected final void onCreate(final Bundle bundle) {
-        final aett s = this.n.s();
+        final aevl t = this.n.t();
         try {
             this.o = true;
             this.o();
-            ((aepn)((dh)this).getLifecycle()).h(this.n);
-            ((aepr)((evo)this).aR()).xU().i();
+            ((aerg)((dh)this).getLifecycle()).h(this.n);
+            ((aerk)((evq)this).aR()).xT().i();
             super.onCreate(bundle);
             this.o = false;
-            if (s != null) {
-                s.close();
+            if (t != null) {
+                t.close();
             }
         }
         finally {
-            if (s != null) {
+            if (t != null) {
                 try {
-                    s.close();
+                    t.close();
                 }
                 finally {
-                    final Throwable t;
-                    fwc.o((Throwable)bundle, t);
+                    final Throwable t2;
+                    ezw.a((Throwable)bundle, t2);
                 }
             }
         }
     }
     
     public final boolean onCreatePanelMenu(final int n, final Menu menu) {
-        final aett t = this.n.t();
+        final aevl u = this.n.u();
         try {
             super.onCreatePanelMenu(n, menu);
-            t.close();
+            u.close();
             return true;
         }
         finally {
             try {
-                t.close();
+                u.close();
             }
             finally {
-                final Throwable t2;
-                fwc.o((Throwable)menu, t2);
+                final Throwable t;
+                ezw.a((Throwable)menu, t);
             }
         }
     }
     
     protected final void onDestroy() {
-        final aett d = this.n.d();
+        final aevl d = this.n.d();
         try {
             super.onDestroy();
             this.r = true;
@@ -443,16 +444,16 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                fwc.o(t, t2);
+                ezw.a(t, t2);
             }
         }
     }
     
-    protected final void onLocalesChanged(final ajp ajp) {
+    protected final void onLocalesChanged(final ajq ajq) {
     }
     
     protected final void onNewIntent(final Intent intent) {
-        final aett e = this.n.e(intent);
+        final aevl e = this.n.e(intent);
         try {
             super.onNewIntent(intent);
             if (e != null) {
@@ -466,7 +467,7 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
                 }
                 finally {
                     final Throwable t;
-                    fwc.o((Throwable)intent, t);
+                    ezw.a((Throwable)intent, t);
                 }
             }
         }
@@ -476,25 +477,25 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
     }
     
     public final boolean onOptionsItemSelected(final MenuItem menuItem) {
-        final aett u = this.n.u();
+        final aevl v = this.n.v();
         try {
             final boolean onOptionsItemSelected = super.onOptionsItemSelected(menuItem);
-            u.close();
+            v.close();
             return onOptionsItemSelected;
         }
         finally {
             try {
-                u.close();
+                v.close();
             }
             finally {
                 final Throwable t;
-                fwc.o((Throwable)menuItem, t);
+                ezw.a((Throwable)menuItem, t);
             }
         }
     }
     
     protected final void onPause() {
-        final aett f = this.n.f();
+        final aevl f = this.n.f();
         try {
             super.onPause();
             if (f != null) {
@@ -509,52 +510,52 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    fwc.o(t, t2);
+                    ezw.a(t, t2);
                 }
             }
         }
     }
     
     public final void onPictureInPictureModeChanged(final boolean b, final Configuration configuration) {
-        final aett v = this.n.v();
+        final aevl w = this.n.w();
         try {
             super.onPictureInPictureModeChanged(b, configuration);
-            v.close();
+            w.close();
         }
         finally {
             try {
-                v.close();
+                w.close();
             }
             finally {
                 final Throwable t;
-                fwc.o((Throwable)configuration, t);
+                ezw.a((Throwable)configuration, t);
             }
         }
     }
     
     protected final void onPostCreate(final Bundle bundle) {
-        final aett w = this.n.w();
+        final aevl x = this.n.x();
         try {
             super.onPostCreate(bundle);
-            if (w != null) {
-                w.close();
+            if (x != null) {
+                x.close();
             }
         }
         finally {
-            if (w != null) {
+            if (x != null) {
                 try {
-                    w.close();
+                    x.close();
                 }
                 finally {
                     final Throwable t;
-                    fwc.o((Throwable)bundle, t);
+                    ezw.a((Throwable)bundle, t);
                 }
             }
         }
     }
     
     protected final void onPostResume() {
-        final aett g = this.n.g();
+        final aevl g = this.n.g();
         try {
             super.onPostResume();
             g.close();
@@ -566,13 +567,13 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                fwc.o(t, t2);
+                ezw.a(t, t2);
             }
         }
     }
     
     public final boolean onPrepareOptionsMenu(final Menu menu) {
-        final aett s = aeux.s();
+        final aevl s = aewp.s();
         try {
             final boolean onPrepareOptionsMenu = super.onPrepareOptionsMenu(menu);
             s.close();
@@ -584,30 +585,30 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
             }
             finally {
                 final Throwable t;
-                fwc.o((Throwable)menu, t);
+                ezw.a((Throwable)menu, t);
             }
         }
     }
     
     public final void onRequestPermissionsResult(final int n, final String[] array, final int[] array2) {
-        final aett x = this.n.x();
+        final aevl y = this.n.y();
         try {
             super.onRequestPermissionsResult(n, array, array2);
-            x.close();
+            y.close();
         }
         finally {
             try {
-                x.close();
+                y.close();
             }
             finally {
                 final Throwable t;
-                fwc.o((Throwable)(Object)array, t);
+                ezw.a((Throwable)(Object)array, t);
             }
         }
     }
     
     protected final void onResume() {
-        final aett h = this.n.h();
+        final aevl h = this.n.h();
         try {
             super.onResume();
             if (h != null) {
@@ -622,35 +623,35 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    fwc.o(t, t2);
+                    ezw.a(t, t2);
                 }
             }
         }
     }
     
     protected final void onSaveInstanceState(final Bundle bundle) {
-        final aett y = this.n.y();
+        final aevl z = this.n.z();
         try {
             super.onSaveInstanceState(bundle);
-            if (y != null) {
-                y.close();
+            if (z != null) {
+                z.close();
             }
         }
         finally {
-            if (y != null) {
+            if (z != null) {
                 try {
-                    y.close();
+                    z.close();
                 }
                 finally {
                     final Throwable t;
-                    fwc.o((Throwable)bundle, t);
+                    ezw.a((Throwable)bundle, t);
                 }
             }
         }
     }
     
     protected final void onStart() {
-        final aett i = this.n.i();
+        final aevl i = this.n.i();
         try {
             super.onStart();
             if (i != null) {
@@ -665,14 +666,14 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    fwc.o(t, t2);
+                    ezw.a(t, t2);
                 }
             }
         }
     }
     
     protected final void onStop() {
-        final aett j = this.n.j();
+        final aevl j = this.n.j();
         try {
             super.onStop();
             if (j != null) {
@@ -687,14 +688,14 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
                 finally {
                     final Throwable t;
                     final Throwable t2;
-                    fwc.o(t, t2);
+                    ezw.a(t, t2);
                 }
             }
         }
     }
     
     public final boolean onSupportNavigateUp() {
-        final aett k = this.n.k();
+        final aevl k = this.n.k();
         try {
             final boolean onSupportNavigateUp = super.onSupportNavigateUp();
             k.close();
@@ -707,13 +708,13 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                fwc.o(t, t2);
+                ezw.a(t, t2);
             }
         }
     }
     
     public final void onUserInteraction() {
-        final aett l = this.n.l();
+        final aevl l = this.n.l();
         try {
             super.onUserInteraction();
             l.close();
@@ -725,21 +726,21 @@ public final class Shell_ResultsActivity extends evs implements aeou, aepm
             finally {
                 final Throwable t;
                 final Throwable t2;
-                fwc.o(t, t2);
+                ezw.a(t, t2);
             }
         }
     }
     
     public final void startActivity(final Intent intent) {
-        if (aefb.P(intent, this.getApplicationContext())) {
-            aeun.j(intent);
+        if (adme.ah(intent, this.getApplicationContext())) {
+            aewf.j(intent);
         }
         super.startActivity(intent);
     }
     
     public final void startActivity(final Intent intent, final Bundle bundle) {
-        if (aefb.P(intent, this.getApplicationContext())) {
-            aeun.j(intent);
+        if (adme.ah(intent, this.getApplicationContext())) {
+            aewf.j(intent);
         }
         super.startActivity(intent, bundle);
     }

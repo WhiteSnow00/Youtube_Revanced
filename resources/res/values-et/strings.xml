@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Kasuta seadme teemat</string>
     <string name="app_theme_appearance_summary">Valige heleda või tumeda teema eelistus</string>
     <string name="app_theme_appearance_title">Välimus</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Rakenda</string>
     <string name="approve_playlist_sync">Sünkrooni uued videod</string>
     <string name="audio_playback_failed_snackbar_action_button">Proovi uuesti</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">Lõpeta otseülekanne</string>
     <string name="lc_retry_yes">Proovi uuesti</string>
     <string name="lc_rotate_device">Pöörake seadet</string>
+    <string name="lc_sharedmde_required_field_error">Pealkiri ja vaatajaskond on nõutav.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Vertikaalpaigutuses otseülekanne</string>
     <string name="lc_stream_start_error">Otseülekannet ei õnnestu alustada. Kontrollige ühendust.</string>
@@ -1729,6 +1730,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Video eelvaade. Puudutage peatamiseks.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Video eelvaade. Puudutage esitamiseks.</string>
     <string name="shorts_a11y_zoom_control">Suuminupp</string>
+    <string name="shorts_audio_failure_toast">Heli lisamine ebaõnnestus. Proovige uuesti.</string>
     <string name="shorts_camera_allow_access_subtitle">Lubage juurdepääs kaamerale ja mikrofonile</string>
     <string name="shorts_camera_allow_access_title">Looge lühivideo</string>
     <string name="shorts_camera_close_confirmation_cancel">Loobu</string>

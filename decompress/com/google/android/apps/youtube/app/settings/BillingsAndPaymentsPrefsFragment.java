@@ -11,28 +11,28 @@ import android.view.LayoutInflater;
 import android.os.Bundle;
 import android.view.View;
 
-public final class BillingsAndPaymentsPrefsFragment extends jnx
+public final class BillingsAndPaymentsPrefsFragment extends jpj
 {
-    public acxu c;
+    public adbk c;
     public SettingsDataAccess d;
-    asic e;
+    asln e;
     
     public final void aM() {
     }
     
     public final void ab(final View view, final Bundle bundle) {
         super.ab(view, bundle);
-        this.e = this.d.g((Runnable)new jmw(this, 1));
+        this.e = this.d.g((Runnable)new jin(this, 17));
     }
     
     public final RecyclerView n(final LayoutInflater layoutInflater, final ViewGroup viewGroup, final Bundle bundle) {
         final RecyclerView n = super.n(layoutInflater, viewGroup, bundle);
-        n.ae((nt)null);
+        n.ae((nu)null);
         return n;
     }
     
-    public final void np() {
-        super.np();
-        athh.f((AtomicReference)this.e);
+    public final void nm() {
+        super.nm();
+        atkw.f((AtomicReference)this.e);
     }
 }

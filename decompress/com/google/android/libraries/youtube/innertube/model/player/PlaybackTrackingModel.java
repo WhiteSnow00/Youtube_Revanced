@@ -31,32 +31,32 @@ public class PlaybackTrackingModel implements Parcelable
     public final int i;
     public final int[] j;
     public final Vss3ConfigModel k;
-    private final akuw n;
+    private final akza n;
     
     static {
-        (l = new HashSet()).add(vhp.d);
-        (m = new HashSet()).add(vhp.a);
-        CREATOR = (Parcelable$Creator)new uik(19);
+        (l = new HashSet()).add(vkx.d);
+        (m = new HashSet()).add(vkx.a);
+        CREATOR = (Parcelable$Creator)new ulj(19);
     }
     
     public PlaybackTrackingModel() {
         this(null);
     }
     
-    public PlaybackTrackingModel(final akuw akuw) {
-        akuw a = akuw;
-        if (akuw == null) {
-            a = akuw.a;
+    public PlaybackTrackingModel(final akza akza) {
+        akza a = akza;
+        if (akza == null) {
+            a = akza.a;
         }
         this.n = a;
         final Vss3ConfigModel vss3ConfigModel = null;
         TrackingUrlModel b;
         if (a != null && (a.b & 0x1) != 0x0) {
-            aluf aluf;
-            if ((aluf = a.c) == null) {
-                aluf = aluf.a;
+            alyj alyj;
+            if ((alyj = a.c) == null) {
+                alyj = alyj.a;
             }
-            b = new TrackingUrlModel(aluf);
+            b = new TrackingUrlModel(alyj);
         }
         else {
             b = null;
@@ -64,11 +64,11 @@ public class PlaybackTrackingModel implements Parcelable
         this.b = b;
         TrackingUrlModel c;
         if (a != null && (a.b & 0x2) != 0x0) {
-            aluf aluf2;
-            if ((aluf2 = a.d) == null) {
-                aluf2 = aluf.a;
+            alyj alyj2;
+            if ((alyj2 = a.d) == null) {
+                alyj2 = alyj.a;
             }
-            c = new TrackingUrlModel(aluf2);
+            c = new TrackingUrlModel(alyj2);
         }
         else {
             c = null;
@@ -76,11 +76,11 @@ public class PlaybackTrackingModel implements Parcelable
         this.c = c;
         TrackingUrlModel d;
         if (a != null && (a.b & 0x4) != 0x0) {
-            aluf aluf3;
-            if ((aluf3 = a.e) == null) {
-                aluf3 = aluf.a;
+            alyj alyj3;
+            if ((alyj3 = a.e) == null) {
+                alyj3 = alyj.a;
             }
-            d = new TrackingUrlModel(aluf3);
+            d = new TrackingUrlModel(alyj3);
         }
         else {
             d = null;
@@ -88,11 +88,11 @@ public class PlaybackTrackingModel implements Parcelable
         this.d = d;
         LoggingUrlModel e;
         if (a != null && (a.b & 0x8000) != 0x0) {
-            alud alud;
-            if ((alud = a.o) == null) {
-                alud = alud.a;
+            alyh alyh;
+            if ((alyh = a.o) == null) {
+                alyh = alyh.a;
             }
-            e = new LoggingUrlModel(alud);
+            e = new LoggingUrlModel(alyh);
         }
         else {
             e = null;
@@ -100,11 +100,11 @@ public class PlaybackTrackingModel implements Parcelable
         this.e = e;
         TrackingUrlModel f;
         if (a != null && (a.b & 0x20) != 0x0) {
-            aluf aluf4;
-            if ((aluf4 = a.i) == null) {
-                aluf4 = aluf.a;
+            alyj alyj4;
+            if ((alyj4 = a.i) == null) {
+                alyj4 = alyj.a;
             }
-            f = new TrackingUrlModel(aluf4);
+            f = new TrackingUrlModel(alyj4);
         }
         else {
             f = null;
@@ -112,11 +112,11 @@ public class PlaybackTrackingModel implements Parcelable
         this.f = f;
         TrackingUrlModel a2;
         if (a != null && (a.b & 0x4000) != 0x0) {
-            aluf aluf5;
-            if ((aluf5 = a.n) == null) {
-                aluf5 = aluf.a;
+            alyj alyj5;
+            if ((alyj5 = a.n) == null) {
+                alyj5 = alyj.a;
             }
-            a2 = new TrackingUrlModel(aluf5);
+            a2 = new TrackingUrlModel(alyj5);
         }
         else {
             a2 = null;
@@ -125,59 +125,59 @@ public class PlaybackTrackingModel implements Parcelable
         final ArrayList g = new ArrayList();
         this.g = g;
         if (a != null && (a.b & 0x10) != 0x0) {
-            aluf aluf6;
-            if ((aluf6 = a.h) == null) {
-                aluf6 = aluf.a;
+            alyj alyj6;
+            if ((alyj6 = a.h) == null) {
+                alyj6 = alyj.a;
             }
-            g.add(new TrackingUrlModel(aluf6, PlaybackTrackingModel.l));
+            g.add(new TrackingUrlModel(alyj6, PlaybackTrackingModel.l));
         }
         if (a != null && (a.b & 0x40) != 0x0) {
-            aluf aluf7;
-            if ((aluf7 = a.j) == null) {
-                aluf7 = aluf.a;
+            alyj alyj7;
+            if ((alyj7 = a.j) == null) {
+                alyj7 = alyj.a;
             }
-            g.add(new TrackingUrlModel(aluf7, PlaybackTrackingModel.m));
+            g.add(new TrackingUrlModel(alyj7, PlaybackTrackingModel.m));
         }
         if (a != null && (a.b & 0x80) != 0x0) {
-            aluf aluf8;
-            if ((aluf8 = a.k) == null) {
-                aluf8 = aluf.a;
+            alyj alyj8;
+            if ((alyj8 = a.k) == null) {
+                alyj8 = alyj.a;
             }
-            g.add(new TrackingUrlModel(aluf8, PlaybackTrackingModel.m));
+            g.add(new TrackingUrlModel(alyj8, PlaybackTrackingModel.m));
         }
         if (a != null && (a.b & 0x100) != 0x0) {
-            aluf aluf9;
-            if ((aluf9 = a.l) == null) {
-                aluf9 = aluf.a;
+            alyj alyj9;
+            if ((alyj9 = a.l) == null) {
+                alyj9 = alyj.a;
             }
-            g.add(new TrackingUrlModel(aluf9));
+            g.add(new TrackingUrlModel(alyj9));
         }
         if (a != null && (a.b & 0x200) != 0x0) {
-            aluf aluf10;
-            if ((aluf10 = a.m) == null) {
-                aluf10 = aluf.a;
+            alyj alyj10;
+            if ((alyj10 = a.m) == null) {
+                alyj10 = alyj.a;
             }
-            g.add(new TrackingUrlModel(aluf10));
+            g.add(new TrackingUrlModel(alyj10));
         }
         if (a != null && a.f.size() != 0) {
-            this.j = aesy.D((Collection)a.f);
+            this.j = afxr.I((Collection)a.f);
         }
         else {
             this.j = null;
         }
-        Label_0656: {
+        Label_0654: {
             if (a != null) {
                 final int g2 = a.g;
                 if (g2 > 0) {
                     this.i = g2;
-                    break Label_0656;
+                    break Label_0654;
                 }
             }
             this.i = 0;
         }
         this.h = new ArrayList();
-        if (a != null && !a.p.isEmpty()) {
-            final Iterator<Object> iterator = a.p.iterator();
+        if (a != null && !((List)a.p).isEmpty()) {
+            final Iterator<Object> iterator = ((List<Object>)a.p).iterator();
             while (iterator.hasNext()) {
                 this.h.add(new PlaybackLoggingPayloadModel(iterator.next()));
             }
@@ -186,11 +186,11 @@ public class PlaybackTrackingModel implements Parcelable
         if (a != null) {
             k = vss3ConfigModel;
             if ((a.b & 0x40000) != 0x0) {
-                apnz apnz;
-                if ((apnz = a.q) == null) {
-                    apnz = apnz.a;
+                apsp apsp;
+                if ((apsp = a.q) == null) {
+                    apsp = apsp.a;
                 }
-                k = new Vss3ConfigModel(apnz);
+                k = new Vss3ConfigModel(apsp);
             }
         }
         this.k = k;
@@ -206,7 +206,7 @@ public class PlaybackTrackingModel implements Parcelable
             return false;
         }
         final PlaybackTrackingModel playbackTrackingModel = (PlaybackTrackingModel)o;
-        return aeda.v((Object)this.b, (Object)playbackTrackingModel.b) && aeda.v((Object)this.c, (Object)playbackTrackingModel.c) && aeda.v((Object)this.d, (Object)playbackTrackingModel.d) && aeda.v((Object)this.e, (Object)playbackTrackingModel.e) && aeda.v((Object)this.f, (Object)playbackTrackingModel.f) && aeda.v((Object)this.g, (Object)playbackTrackingModel.g) && aeda.v((Object)this.h, (Object)playbackTrackingModel.h) && aeda.v((Object)this.a, (Object)playbackTrackingModel.a) && this.i == playbackTrackingModel.i && Arrays.equals(this.j, playbackTrackingModel.j);
+        return aexq.c(this.b, playbackTrackingModel.b) && aexq.c(this.c, playbackTrackingModel.c) && aexq.c(this.d, playbackTrackingModel.d) && aexq.c(this.e, playbackTrackingModel.e) && aexq.c(this.f, playbackTrackingModel.f) && aexq.c(this.g, playbackTrackingModel.g) && aexq.c(this.h, playbackTrackingModel.h) && aexq.c(this.a, playbackTrackingModel.a) && this.i == playbackTrackingModel.i && Arrays.equals(this.j, playbackTrackingModel.j);
     }
     
     @Override
@@ -260,7 +260,7 @@ public class PlaybackTrackingModel implements Parcelable
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        final byte[] byteArray = ((agxl)this.n).toByteArray();
+        final byte[] byteArray = this.n.toByteArray();
         parcel.writeInt(byteArray.length);
         parcel.writeByteArray(byteArray);
     }

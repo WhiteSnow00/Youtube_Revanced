@@ -16,7 +16,7 @@ public class ReelSequenceController$PendingContinuation implements Parcelable
     public int c;
     
     static {
-        CREATOR = (Parcelable$Creator)new fzn(15);
+        CREATOR = (Parcelable$Creator)new fzs(15);
     }
     
     public ReelSequenceController$PendingContinuation() {
@@ -30,9 +30,9 @@ public class ReelSequenceController$PendingContinuation implements Parcelable
         this.b = parcel.readString();
         final int int1 = parcel.readInt();
         if (int1 >= 0) {
-            hnu.a();
+            htr.b();
             if (int1 < 2) {
-                this.c = hnu.a()[int1];
+                this.c = htr.b()[int1];
                 return;
             }
         }
@@ -40,7 +40,7 @@ public class ReelSequenceController$PendingContinuation implements Parcelable
     }
     
     public final boolean a() {
-        return !aezr.f(this.b);
+        return !afbj.f(this.b);
     }
     
     public final int describeContents() {

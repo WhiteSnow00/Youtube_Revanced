@@ -11,7 +11,7 @@ import android.content.Context;
 public class PreferenceCategory extends PreferenceGroup
 {
     public PreferenceCategory(final Context context, final AttributeSet set) {
-        super(context, set, vh.c(context, 2130970119, 16842892), (byte[])null);
+        super(context, set, vh.c(context, 2130970117, 16842892), (byte[])null);
     }
     
     public final boolean U() {
@@ -22,10 +22,10 @@ public class PreferenceCategory extends PreferenceGroup
         return !super.U();
     }
     
-    public final void rN(final cfj cfj) {
-        super.rN(cfj);
+    public final void rN(final cfm cfm) {
+        super.rN(cfm);
         if (Build$VERSION.SDK_INT >= 28) {
-            ceq.a(cfj.a, true);
+            cet.a(cfm.a, true);
         }
     }
 }

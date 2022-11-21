@@ -27,17 +27,17 @@ public final class ShortsEditToolButtonView extends FrameLayout
     public ShortsEditToolButtonView(final Context a, final AttributeSet set) {
         super(a, set);
         this.a = a;
-        LayoutInflater.from(a).inflate(2131625401, (ViewGroup)this);
-        final ImageView b = (ImageView)this.findViewById(2131431484);
+        LayoutInflater.from(a).inflate(2131625403, (ViewGroup)this);
+        final ImageView b = (ImageView)this.findViewById(2131431485);
         b.getClass();
         this.b = b;
-        final TextView c = (TextView)this.findViewById(2131431485);
+        final TextView c = (TextView)this.findViewById(2131431486);
         c.getClass();
         this.c = c;
         if (set == null) {
             return;
         }
-        final TypedArray obtainStyledAttributes = a.getTheme().obtainStyledAttributes(set, txl.a, 0, 0);
+        final TypedArray obtainStyledAttributes = a.getTheme().obtainStyledAttributes(set, tyn.a, 0, 0);
         if (obtainStyledAttributes.hasValue(4)) {
             final ImageView b2 = this.b;
             b2.getClass();
@@ -71,6 +71,6 @@ public final class ShortsEditToolButtonView extends FrameLayout
         final Context context = this.getContext();
         final ImageView b2 = this.b;
         b2.getClass();
-        vdh.P(context, b2, b);
+        vfw.Q(context, b2, b);
     }
 }

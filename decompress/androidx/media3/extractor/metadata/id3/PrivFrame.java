@@ -15,15 +15,15 @@ public final class PrivFrame extends Id3Frame
     public final byte[] b;
     
     static {
-        CREATOR = (Parcelable$Creator)new app(20);
+        CREATOR = (Parcelable$Creator)new apq(20);
     }
     
     public PrivFrame(final Parcel parcel) {
         super("PRIV");
         final String string = parcel.readString();
-        final int a = bax.a;
+        final int a = baz.a;
         this.a = string;
-        this.b = (byte[])bax.L((Object)parcel.createByteArray());
+        this.b = (byte[])baz.L(parcel.createByteArray());
     }
     
     public PrivFrame(final String a, final byte[] b) {
@@ -39,7 +39,7 @@ public final class PrivFrame extends Id3Frame
         if (o != null) {
             if (this.getClass() == o.getClass()) {
                 final PrivFrame privFrame = (PrivFrame)o;
-                if (bax.aa((Object)this.a, (Object)privFrame.a) && Arrays.equals(this.b, privFrame.b)) {
+                if (baz.aa(this.a, privFrame.a) && Arrays.equals(this.b, privFrame.b)) {
                     return true;
                 }
             }

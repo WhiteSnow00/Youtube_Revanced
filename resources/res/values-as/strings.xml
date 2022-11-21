@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">ডিভাইচৰ থীম ব্যৱহাৰ কৰক</string>
     <string name="app_theme_appearance_summary">আপোনাৰ পাতল ৰঙৰ অথবা গাঢ় ৰঙৰ থীমৰ অগ্ৰাধিকাৰ বাছনি কৰক</string>
     <string name="app_theme_appearance_title">ৰূপ</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">প্ৰয়োগ কৰক</string>
     <string name="approve_playlist_sync">নতুন ভিডিঅ’ ছিংক কৰক</string>
     <string name="audio_playback_failed_snackbar_action_button">পুনৰ চেষ্টা কৰক</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">ষ্ট্ৰীম শেষ কৰক</string>
     <string name="lc_retry_yes">আকৌ চেষ্টা কৰক</string>
     <string name="lc_rotate_device">ডিভাইচটো ঘূৰাওক</string>
+    <string name="lc_sharedmde_required_field_error">শিৰোনাম আৰু দৰ্শকৰ ক্ষেত্ৰ পূৰ কৰাটো আৱশ্যকীয়।</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">প\'ৰ্ট্ৰেইট ম\'ডত ষ্ট্ৰিম কৰক</string>
     <string name="lc_stream_start_error">ষ্ট্ৰীম কৰিব পৰা নগ’ল। আপোনাৰ ইণ্টাৰনেট সংযোগ পৰীক্ষা কৰক।</string>
@@ -1727,6 +1728,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">ভিডিঅ’ৰ পূৰ্বদৰ্শন। পজ কৰিবলৈ টিপক।</string>
     <string name="shorts_a11y_video_preview_tap_to_play">ভিডিঅ’ৰ পূৰ্বদৰ্শন। প্লে’ কৰিবলৈ টিপক।</string>
     <string name="shorts_a11y_zoom_control">জুমৰ নিয়ন্ত্ৰণ</string>
+    <string name="shorts_audio_failure_toast">ধ্বনি যোগ দিব পৰা নগ’ল। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক।</string>
     <string name="shorts_camera_allow_access_subtitle">কেমেৰা আৰু মাইক্ৰ’ফ’ন এক্সেছ কৰিবলৈ অনুমতি দিয়ক</string>
     <string name="shorts_camera_allow_access_title">এটা Short সৃষ্টি কৰক</string>
     <string name="shorts_camera_close_confirmation_cancel">বাতিল কৰক</string>

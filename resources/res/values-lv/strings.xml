@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Izmantot ierīces motīvu</string>
     <string name="app_theme_appearance_summary">Izvēlieties gaišā vai tumšā motīva preferenci</string>
     <string name="app_theme_appearance_title">Izskats</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Lietot</string>
     <string name="approve_playlist_sync">Sinhronizēt jaunus videoklipus</string>
     <string name="audio_playback_failed_snackbar_action_button">Mēģināt vēlreiz</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Pārtraukt straumi</string>
     <string name="lc_retry_yes">Mēģināt vēlreiz</string>
     <string name="lc_rotate_device">Pagrieziet ierīci</string>
+    <string name="lc_sharedmde_required_field_error">Obligāti jānorāda nosaukums un mērķauditorija.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Straumēt portreta režīmā</string>
     <string name="lc_stream_start_error">Nevar sākt straumi. Pārbaudiet savienojumu.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Videoklipa priekšskatījums. Pieskarieties, lai pārtrauktu.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Videoklipa priekšskatījums. Pieskarieties, lai atskaņotu.</string>
     <string name="shorts_a11y_zoom_control">Tālummaiņas vadība</string>
+    <string name="shorts_audio_failure_toast">Neizdevās pievienot skaņu. Lūdzu, mēģiniet vēlreiz.</string>
     <string name="shorts_camera_allow_access_subtitle">Atļaujiet piekļuvi kamerai un mikrofonam</string>
     <string name="shorts_camera_allow_access_title">Īsa videoklipa izveide</string>
     <string name="shorts_camera_close_confirmation_cancel">Atcelt</string>

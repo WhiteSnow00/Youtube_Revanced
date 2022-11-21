@@ -13,15 +13,18 @@ final class a implements b
     public a() {
     }
     
+    @Override
     public final void C(final d d) {
-        afqg.s("No-op VideoDetaisOverlay invoked.");
+        aftr.l("No-op VideoDetaisOverlay invoked.");
     }
     
+    @Override
     public final void D(final VideoDetails videoDetails) {
-        afqg.s("No-op VideoDetaisOverlay invoked.");
+        aftr.l("No-op VideoDetaisOverlay invoked.");
     }
     
+    @Override
     public final void p(final Bitmap bitmap) {
-        afqg.s("No-op VideoDetaisOverlay invoked.");
+        aftr.l("No-op VideoDetaisOverlay invoked.");
     }
 }

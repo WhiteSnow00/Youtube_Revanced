@@ -4,59 +4,21 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.jar;
 
-import com.google.android.apps.youtube.embeddedplayer.service.model.PlaybackEventData;
-import com.google.android.apps.youtube.embeddedplayer.service.model.BusSupported$Data;
-import com.google.android.apps.youtube.embeddedplayer.service.jar.client.t;
-import com.google.android.apps.youtube.embeddedplayer.service.databus.remoteloaded.b;
-
-public final class j implements b
+public enum j
 {
-    private i a;
-    private i b;
-    private i c;
+    a("VALID", 0, 0), 
+    b("STACK_UNCLEAN", 1, 0), 
+    c("OVERLAPPING", 2, 2132019155), 
+    d("OBSCURED", 3, 2132019992);
     
-    public j() {
-        this.a = i.a;
-        final i a = i.a;
-        this.b = a;
-        this.c = a;
+    private static final j[] f;
+    public final int e;
+    
+    private j(final String s, final int n, final int e) {
+        this.e = e;
     }
     
-    final void a(final t t) {
-        synchronized (this) {
-            if (this.a.c(t)) {
-                return;
-            }
-            this.a = new i(t);
-            final i b = this.b;
-            this.c = b;
-            if (b.equals(i.a)) {
-                this.b = this.a;
-            }
-        }
-    }
-    
-    public final void b(final BusSupported$Data busSupported$Data) {
-        synchronized (this) {
-            if (!busSupported$Data.d().equals(com.google.android.apps.youtube.embeddedplayer.service.model.b.f) || !(busSupported$Data instanceof PlaybackEventData)) {
-                return;
-            }
-            final PlaybackEventData playbackEventData = (PlaybackEventData)busSupported$Data;
-            if (playbackEventData.b() == 5) {
-                this.c.b(playbackEventData);
-                this.c = i.a;
-                this.b = this.a;
-                return;
-            }
-            if (playbackEventData.b() == 1) {
-                this.c.a();
-                this.c = i.a;
-                this.b = this.a;
-            }
-            this.b.b(playbackEventData);
-        }
-    }
-    
-    public final void d() {
+    public final boolean a() {
+        return this.equals(j.a);
     }
 }

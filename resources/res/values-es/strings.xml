@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Usar el tema del dispositivo</string>
     <string name="app_theme_appearance_summary">Decide si quieres usar el tema claro o el oscuro</string>
     <string name="app_theme_appearance_title">Aspecto</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Aplicar</string>
     <string name="approve_playlist_sync">Sincronizar vídeos nuevos</string>
     <string name="audio_playback_failed_snackbar_action_button">Reintentar</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Terminar emisión</string>
     <string name="lc_retry_yes">Reintentar</string>
     <string name="lc_rotate_device">Gira el dispositivo</string>
+    <string name="lc_sharedmde_required_field_error">El título y la audiencia son obligatorios.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Emitir en modo vertical</string>
     <string name="lc_stream_start_error">No se ha podido iniciar la emisión. Comprueba tu conexión a Internet.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Vista previa del vídeo. Toca para pausar.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Vista previa del vídeo. Toca para reproducir contenido.</string>
     <string name="shorts_a11y_zoom_control">Control de zoom</string>
+    <string name="shorts_audio_failure_toast">No se ha podido añadir sonido. Inténtalo de nuevo.</string>
     <string name="shorts_camera_allow_access_subtitle">Permite el acceso a la cámara y al micrófono.</string>
     <string name="shorts_camera_allow_access_title">Crear un Short</string>
     <string name="shorts_camera_close_confirmation_cancel">Cancelar</string>

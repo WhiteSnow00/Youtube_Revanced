@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">기기 테마 사용</string>
     <string name="app_theme_appearance_summary">밝은 테마 또는 어두운 테마 환경설정을 선택하세요.</string>
     <string name="app_theme_appearance_title">디자인</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">적용</string>
     <string name="approve_playlist_sync">새 동영상 동기화</string>
     <string name="audio_playback_failed_snackbar_action_button">다시 시도</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">스트림 종료</string>
     <string name="lc_retry_yes">다시 시도하세요.</string>
     <string name="lc_rotate_device">기기를 회전시키세요</string>
+    <string name="lc_sharedmde_required_field_error">제목과 시청자층은 필수 항목입니다.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">세로 모드 스트리밍</string>
     <string name="lc_stream_start_error">스트림을 시작할 수 없습니다. 인터넷 연결을 확인하세요.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">동영상을 미리 봅니다. 탭하여 일시중지하세요.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">동영상을 미리 봅니다. 탭하여 재생하세요.</string>
     <string name="shorts_a11y_zoom_control">확대/축소 컨트롤</string>
+    <string name="shorts_audio_failure_toast">사운드를 추가할 수 없습니다. 다시 시도해 보세요.</string>
     <string name="shorts_camera_allow_access_subtitle">카메라와 마이크에 대한 액세스를 허용하세요.</string>
     <string name="shorts_camera_allow_access_title">Shorts 동영상 만들기</string>
     <string name="shorts_camera_close_confirmation_cancel">취소</string>

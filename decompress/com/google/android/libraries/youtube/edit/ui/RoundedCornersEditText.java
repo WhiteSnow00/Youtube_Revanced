@@ -18,17 +18,17 @@ import android.widget.EditText;
 public class RoundedCornersEditText extends EditText
 {
     public boolean a;
-    private usl b;
+    private final uvj b;
     
     public RoundedCornersEditText(final Context context, final AttributeSet set) {
         super(context, set);
         this.a = true;
-        this.b = new usl();
+        this.b = new uvj();
     }
     
     public final void a(final int d) {
         if (this.a) {
-            final usl b = this.b;
+            final uvj b = this.b;
             if (d != b.d) {
                 b.b.setPathEffect((PathEffect)new CornerPathEffect((float)d));
                 b.d = d;
@@ -46,7 +46,7 @@ public class RoundedCornersEditText extends EditText
     
     protected final void onDraw(final Canvas canvas) {
         if (this.a) {
-            final usl b = this.b;
+            final uvj b = this.b;
             if (b.b.getColor() != 0) {
                 if (this.getText().length() != 0) {
                     final int[] array = new int[2];
@@ -63,8 +63,8 @@ public class RoundedCornersEditText extends EditText
                     final int hashCode = b.a.toString().hashCode();
                     if (hashCode != b.c) {
                         b.c = hashCode;
-                        final vem f = b.f;
-                        final athj e = b.e;
+                        final vfw f = b.f;
+                        final atky e = b.e;
                         e.a = 0;
                         ((PriorityQueue)e.b).clear();
                         final int lineCount = this.getLineCount();
@@ -72,24 +72,24 @@ public class RoundedCornersEditText extends EditText
                         for (int i = 0; i < lineCount; ++i) {
                             final int lineStart = this.getLayout().getLineStart(i);
                             if (lineStart != length && this.getText().charAt(lineStart) != '\n') {
-                                e.r(this.getLayout().getLineLeft(i) + this.getPaddingLeft() - usl.a((EditText)this), this.getLayout().getLineRight(i) + this.getPaddingLeft() + usl.a((EditText)this));
+                                e.r(this.getLayout().getLineLeft(i) + this.getPaddingLeft() - uvj.a((EditText)this), this.getLayout().getLineRight(i) + this.getPaddingLeft() + uvj.a((EditText)this));
                             }
                             else {
                                 e.r(0.0f, 0.0f);
                             }
                         }
                         final float n = this.getTextSize() * 0.6f;
-                        final vem f2 = b.f;
-                        final athj e2 = b.e;
+                        final vfw f2 = b.f;
+                        final atky e2 = b.e;
                         while (!((PriorityQueue)e2.b).isEmpty()) {
-                            final usk usk = ((PriorityQueue)e2.b).poll();
-                            final aexq q = e2.q(usk.a - 1);
+                            final uvi uvi = ((PriorityQueue)e2.b).poll();
+                            final afbh q = e2.q(uvi.a - 1);
                             if (q.h()) {
-                                vem.M(e2, usk, (usk)q.c(), n);
+                                vfw.X(e2, uvi, (uvi)q.c(), n);
                             }
-                            final aexq q2 = e2.q(usk.a + 1);
+                            final afbh q2 = e2.q(uvi.a + 1);
                             if (q2.h()) {
-                                vem.M(e2, usk, (usk)q2.c(), n);
+                                vfw.X(e2, uvi, (uvi)q2.c(), n);
                             }
                         }
                     }

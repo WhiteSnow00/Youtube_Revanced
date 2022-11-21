@@ -12,6 +12,10 @@ public final class Version$Companion
     private Version$Companion() {
     }
     
+    public Version$Companion(final atqv atqv) {
+        this();
+    }
+    
     public final Version getCURRENT() {
         return Version.access$getCURRENT$cp();
     }
@@ -30,7 +34,7 @@ public final class Version$Companion
     
     public final Version parse(String group) {
         if (group != null) {
-            if (!aubt.e((CharSequence)group)) {
+            if (!auop.m((CharSequence)group)) {
                 final Matcher matcher = Pattern.compile("(\\d+)(?:\\.(\\d+))(?:\\.(\\d+))(?:-(.+))?").matcher(group);
                 if (!matcher.matches()) {
                     return null;

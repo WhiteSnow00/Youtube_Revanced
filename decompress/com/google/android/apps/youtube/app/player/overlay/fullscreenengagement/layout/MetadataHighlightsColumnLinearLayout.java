@@ -21,11 +21,11 @@ public class MetadataHighlightsColumnLinearLayout extends LinearLayout
     
     public MetadataHighlightsColumnLinearLayout(final Context context, final AttributeSet set) {
         super(context, set);
-        final int dimensionPixelSize = context.getResources().getDimensionPixelSize(2131167939);
+        final int dimensionPixelSize = context.getResources().getDimensionPixelSize(2131167977);
         this.a = dimensionPixelSize + dimensionPixelSize;
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, jav.a, 0, 0);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes(set, jcd.a, 0, 0);
         this.b = obtainStyledAttributes.getInteger(2, 1);
-        this.d = aeh.t(obtainStyledAttributes.getInteger(0, 1), 1, this.b);
+        this.d = aaa.a(obtainStyledAttributes.getInteger(0, 1), 1, this.b);
         this.c = obtainStyledAttributes.getDimensionPixelSize(1, 0);
         obtainStyledAttributes.recycle();
     }
@@ -33,9 +33,9 @@ public class MetadataHighlightsColumnLinearLayout extends LinearLayout
     public final void b(final int e) {
         if (this.e != e) {
             this.e = e;
-            final TypedArray obtainStyledAttributes = this.getContext().obtainStyledAttributes(this.e, jav.a);
+            final TypedArray obtainStyledAttributes = this.getContext().obtainStyledAttributes(this.e, jcd.a);
             this.b = obtainStyledAttributes.getInteger(2, 1);
-            this.d = aeh.t(obtainStyledAttributes.getInteger(0, 1), 1, this.b);
+            this.d = aaa.a(obtainStyledAttributes.getInteger(0, 1), 1, this.b);
             this.c = obtainStyledAttributes.getDimensionPixelSize(1, 0);
             obtainStyledAttributes.recycle();
             this.requestLayout();
@@ -48,8 +48,8 @@ public class MetadataHighlightsColumnLinearLayout extends LinearLayout
             return;
         }
         final int size = View$MeasureSpec.getSize(a);
-        final int c = alk.c((ViewGroup$MarginLayoutParams)this.getLayoutParams());
-        final int b = alk.b((ViewGroup$MarginLayoutParams)this.getLayoutParams());
+        final int c = alm.c((ViewGroup$MarginLayoutParams)this.getLayoutParams());
+        final int b = alm.b((ViewGroup$MarginLayoutParams)this.getLayoutParams());
         final int b2 = this.b;
         a = this.a;
         final int n2 = (size + (c + b) - b2 * a - this.c) / b2;

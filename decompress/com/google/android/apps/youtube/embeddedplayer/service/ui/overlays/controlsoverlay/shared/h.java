@@ -6,7 +6,7 @@ package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.contr
 
 public interface h
 {
-    void rd(final boolean p0);
+    void rc(final boolean p0);
     
-    void rf(final g p0);
+    void re(final g p0);
 }

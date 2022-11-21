@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">උපාංග තේමාව භාවිතා කරන්න</string>
     <string name="app_theme_appearance_summary">ඔබේ ආලෝක හෝ අඳුරු තේමා මනාපය තෝරා ගන්න</string>
     <string name="app_theme_appearance_title">පෙනුම</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">යොදන්න</string>
     <string name="approve_playlist_sync">නව වීඩියෝ සමමුහුර්ත කරන්න</string>
     <string name="audio_playback_failed_snackbar_action_button">නැවත උත්සාහ කර.</string>
@@ -479,7 +479,7 @@
     <string name="data_saving_monitoring_and_control_category_title">දත්ත අධීක්ෂණය සහ පාලනය</string>
     <string name="data_saving_persistent_title">දත්ත සුරැකුම</string>
     <string name="data_saving_select_quality_every_video_switch_title">සෑම වීඩියෝවක් සඳහාම ගුණත්වය තෝරන්න</string>
-    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">ස්මාර්ට් බාගැනීම් ගුණත්වය අඩු කරන්න</string>
     <string name="data_saving_snack_bar_action_button">බලන්න</string>
     <string name="data_saving_snack_bar_text">මෙම වෙනස ඔබේ දත්ත සුරැකීමේ සැකසීම්වලට බලපායි</string>
     <string name="data_saving_upload_wifi_only_switch_title">Wi-Fi ඔස්සේ පමණක් උඩුගත කරන්න</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">ප්‍රවාහය නිමාව</string>
     <string name="lc_retry_yes">නැවත උත්සාහ කරන්න</string>
     <string name="lc_rotate_device">උපාංගය කරකවන්න</string>
+    <string name="lc_sharedmde_required_field_error">මාතෘකාව සහ ප්‍රේක්ෂකයින් අවශ්‍යයි.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">ප්‍රතිමූර්තියක ප්‍රවාහය</string>
     <string name="lc_stream_start_error">ප්‍රවාහය ඇරඹිය නොහැකිය. ඔබේ සබැඳුම පරීක්ෂා කරන්න.</string>
@@ -1728,6 +1729,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">වීඩියෝ පෙරදසුන. විරාමයට තට්ටු කරන්න.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">වීඩියෝ පෙරදසුන. වාදනයට තට්ටු කරන්න.</string>
     <string name="shorts_a11y_zoom_control">විශාලනය පාලනය</string>
+    <string name="shorts_audio_failure_toast">ශබ්දය එක් කිරීමට අසමත් විය. නැවත උත්සාහ කරන්න.</string>
     <string name="shorts_camera_allow_access_subtitle">ඔබේ කැමරාවට සහ මයික්‍රෆෝනයට ප්‍රවේශයට ඉඩ දෙන්න</string>
     <string name="shorts_camera_allow_access_title">Short එකක් තනන්න</string>
     <string name="shorts_camera_close_confirmation_cancel">අවලංගු කරන්න</string>

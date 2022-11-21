@@ -12,89 +12,92 @@ import android.view.View;
 import android.os.Handler;
 import android.content.Context;
 
-public class PipPaidProductBadgeOverlay implements fqb, aazr, tfh
+public class PipPaidProductBadgeOverlay implements fqm, abcs, tio
 {
     public boolean a;
     public boolean b;
     public boolean c;
     public long d;
     private final Context e;
-    private final abns f;
+    private final abqz f;
     private final Handler g;
-    private final asib h;
+    private final aslm h;
     private final Runnable i;
-    private final oas j;
+    private final oco j;
     private View k;
-    private aazq l;
-    private fkk m;
+    private abcr l;
+    private fku m;
     private boolean n;
     private long o;
-    private final arud p;
+    private final arzb p;
     
-    public PipPaidProductBadgeOverlay(final Context e, final abns f, final Handler g, final oas j, final arud p7, final byte[] array, final byte[] array2) {
-        this.m = fkk.a;
+    public PipPaidProductBadgeOverlay(final Context e, final abqz f, final Handler g, final oco j, final arzb p7, final byte[] array, final byte[] array2) {
+        this.m = fku.a;
         this.e = e;
         this.f = f;
         this.g = g;
         this.j = j;
         this.p = p7;
-        this.h = new asib();
-        this.i = (Runnable)new ihc(this, 17);
+        this.h = new aslm();
+        this.i = (Runnable)new ipi(this, 14);
         this.d = 10000L;
     }
     
     private final void m() {
-        if (this.mn()) {
+        if (this.mm()) {
             return;
         }
-        final View inflate = LayoutInflater.from(this.e).inflate(2131625015, (ViewGroup)null);
+        final View inflate = LayoutInflater.from(this.e).inflate(2131625018, (ViewGroup)null);
         this.k = inflate;
-        final aazq l = this.l;
+        final abcr l = this.l;
         if (l != null) {
-            l.d((aazr)this, inflate);
+            l.d((abcs)this, inflate);
         }
         this.a = (inflate.getParent() != null);
-        inflate.addOnAttachStateChangeListener((View$OnAttachStateChangeListener)new ie(this, 6));
+        inflate.addOnAttachStateChangeListener((View$OnAttachStateChangeListener)new if(this, 6));
     }
     
     private final boolean n() {
-        alvs alvs;
-        if ((alvs = this.p.f().e) == null) {
-            alvs = alvs.a;
+        alzw alzw;
+        if ((alzw = this.p.f().e) == null) {
+            alzw = alzw.a;
         }
-        return alvs.aI;
+        return alzw.aI;
     }
     
     public final ViewGroup$LayoutParams a() {
         return new ViewGroup$LayoutParams(-1, -1);
     }
     
-    @Override
-    public final void j(final fkk m) {
-        if (this.m == m) {
-            return;
-        }
-        this.m = m;
-        if (!this.mn()) {
-            this.l();
-        }
+    public final tik g() {
+        return tik.b;
     }
     
-    public final void k() {
+    public final void j() {
         if (!this.n) {
             return;
         }
         this.g.removeCallbacks(this.i);
         this.d = Math.max(0L, this.d - (this.j.c() - this.o));
-        tmy.v(this.k, false);
+        tqf.v(this.k, false);
         this.n = false;
     }
     
+    public final void k(final fku m) {
+        if (this.m == m) {
+            return;
+        }
+        this.m = m;
+        if (!this.mm()) {
+            this.l();
+        }
+    }
+    
     public final void l() {
-        if (!this.mn() && this.m.f() && this.n()) {
+        if (!this.mm() && this.m.f() && this.n()) {
             this.m();
         }
-        if (!this.mn()) {
+        if (!this.mm()) {
             return;
         }
         if (this.a && !this.b && this.c) {
@@ -102,13 +105,16 @@ public class PipPaidProductBadgeOverlay implements fqb, aazr, tfh
                 if (this.n()) {
                     this.n = true;
                     this.o = this.j.c();
-                    tmy.v(this.k, true);
+                    tqf.v(this.k, true);
                     this.g.postDelayed(this.i, this.d);
                 }
             }
             return;
         }
-        this.k();
+        this.j();
+    }
+    
+    public final void lW(final aup aup) {
     }
     
     public final View md() {
@@ -118,28 +124,44 @@ public class PipPaidProductBadgeOverlay implements fqb, aazr, tfh
         return k;
     }
     
-    public final void ml(final aazq l) {
+    public final void ml(final abcr l) {
         this.l = l;
     }
     
-    public final boolean mn() {
+    public final boolean mm() {
         return this.k != null;
     }
     
-    public final String mr() {
+    public final void mp(final aup aup) {
+    }
+    
+    public final String mq() {
         return "player_overlay_pip_paid_product_badge";
     }
     
-    public final void oS(final aum aum) {
-        this.h.c(((asgt)this.f.q().b).am((asix)new iws(this, 0), (asix)iwn.c));
+    public final void mx(final aup aup) {
     }
     
-    public final void oW(final aum aum) {
+    public final void oO(final aup aup) {
+    }
+    
+    public final void oT(final aup aup) {
+        this.h.c(((aske)this.f.p().b).an((asmi)new ixu(this, 3), (asmi)ixz.a));
+    }
+    
+    public final void oU() {
+        tgj.d((tio)this);
+    }
+    
+    public final void oX() {
+        tgj.c((tio)this);
+    }
+    
+    public final void oY(final aup aup) {
         this.h.b();
     }
     
-    @Override
-    public final boolean ow(final fkk fkk) {
-        return fkk.f();
+    public final boolean ot(final fku fku) {
+        return fku.f();
     }
 }

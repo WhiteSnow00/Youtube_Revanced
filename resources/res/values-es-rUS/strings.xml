@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Usar tema del dispositivo</string>
     <string name="app_theme_appearance_summary">Elige el tema oscuro o claro</string>
     <string name="app_theme_appearance_title">Apariencia</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Aplicar</string>
     <string name="approve_playlist_sync">Sincronizar videos nuevos</string>
     <string name="audio_playback_failed_snackbar_action_button">Reintentar</string>
@@ -481,7 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Control y supervisión de datos</string>
     <string name="data_saving_persistent_title">Ahorro de datos</string>
     <string name="data_saving_select_quality_every_video_switch_title">Seleccionar la calidad de cada video</string>
-    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Reducir la calidad de las Descargas inteligentes</string>
     <string name="data_saving_snack_bar_action_button">Ver</string>
     <string name="data_saving_snack_bar_text">Este cambio afecta tu configuración de ahorro de datos.</string>
     <string name="data_saving_upload_wifi_only_switch_title">Subir solo con Wi-Fi</string>
@@ -610,7 +610,7 @@
     <string name="editor_reposition_hint">Arrastra la imagen para cambiar su posición</string>
     <string name="enter_fullscreen_chat">Ingresar al chat en pantalla completa</string>
     <string name="error_a11y_label">Error: invalid</string>
-    <string name="error_audio_cast_background">No olvides mantener YouTube abierto cuando transmitas al altavoz.</string>
+    <string name="error_audio_cast_background">No olvides mantener YouTube abierto cuando transmitas a la bocina.</string>
     <string name="error_browser_not_found">No se encontró ningún navegador para abrir la solicitud.</string>
     <string name="error_comment_failed">Hubo un problema al publicar tu comentario. Vuelve a intentarlo.</string>
     <string name="error_connecting_to_screen">Se produjo un error al conectarse con %1$s.</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Terminar transmisión</string>
     <string name="lc_retry_yes">Volver a intentarlo</string>
     <string name="lc_rotate_device">Rotar dispositivo</string>
+    <string name="lc_sharedmde_required_field_error">El título y el público son obligatorios.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Transmitir en modo vertical</string>
     <string name="lc_stream_start_error">No se pudo comenzar la transmisión. Verifica tu conexión.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Vista previa del video. Presiona para pausar.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Vista previa del video. Presiona para reproducir.</string>
     <string name="shorts_a11y_zoom_control">Control de zoom</string>
+    <string name="shorts_audio_failure_toast">No se pudo agregar el sonido. Vuelve a intentarlo.</string>
     <string name="shorts_camera_allow_access_subtitle">Permite el acceso a la cámara y el micrófono.</string>
     <string name="shorts_camera_allow_access_title">Crea un Short</string>
     <string name="shorts_camera_close_confirmation_cancel">Cancelar</string>

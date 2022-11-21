@@ -26,6 +26,7 @@ public final class IntListPreference extends ListPreference
         ((Preference)this).ab(Integer.parseInt(s));
     }
     
+    @Override
     public final CharSequence m() {
         final int p = ((Preference)this).p(-1);
         if (p >= 0) {

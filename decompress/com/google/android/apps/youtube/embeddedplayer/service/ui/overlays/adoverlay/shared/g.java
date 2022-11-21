@@ -20,7 +20,7 @@ public interface g
     
     void s(final boolean p0);
     
-    void u(final sln p0);
+    void u(final smo p0);
     
     void v(final boolean p0);
     
@@ -30,5 +30,5 @@ public interface g
     
     void y(final boolean p0);
     
-    void z(final ajrv p0);
+    void z(final ajtu p0);
 }

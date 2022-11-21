@@ -8,22 +8,22 @@ import java.util.concurrent.atomic.AtomicReference;
 import android.content.Context;
 import android.app.Activity;
 
-public class ReportVideoController implements tfh
+public class ReportVideoController implements tio
 {
     public final Activity a;
-    public final zki b;
-    public final tny c;
-    public final zkw d;
-    public final absi e;
-    public alcc f;
-    private final thh g;
-    private final isc h;
-    private final asho i;
-    private final abns j;
-    private asic k;
-    private final aja l;
+    public final zoa b;
+    public final tre c;
+    public final zoo d;
+    public final abvt e;
+    public algf f;
+    private final tkq g;
+    private final itj h;
+    private final askz i;
+    private final abqz j;
+    private asln k;
+    private final ajc l;
     
-    public ReportVideoController(final Activity a, final thh g, final zki b, final tny c, final zkw d, final absi e, final isc h, final aja l, final abns j, final asho i, final byte[] array, final byte[] array2, final byte[] array3) {
+    public ReportVideoController(final Activity a, final tkq g, final zoa b, final tre c, final zoo d, final abvt e, final itj h, final ajc l, final abqz j, final askz i, final byte[] array, final byte[] array2, final byte[] array3) {
         this.a = a;
         this.g = g;
         this.b = b;
@@ -38,42 +38,66 @@ public class ReportVideoController implements tfh
         this.f = null;
     }
     
-    public final void j(final alcc alcc) {
+    public final tik g() {
+        return tik.b;
+    }
+    
+    public final void j(final algf algf) {
         if (!this.g.p()) {
-            tmy.x((Context)this.a, 2132018403, 1);
+            tqf.x((Context)this.a, 2132018406, 1);
             return;
         }
-        final int b = alcc.b;
+        final int b = algf.b;
         if (b != 77875886) {
             if (b == 113762946) {
-                final aja l = this.l;
-                final antf antf = (antf)alcc.c;
-                final abtt q = ((abno)l.b).q();
+                final ajc l = this.l;
+                final anxo anxo = (anxo)algf.c;
+                final abxg q = ((abqv)l.c).q();
                 if (q != null) {
-                    ((ackj)l.c).a = aexq.k(q.c());
+                    ((acnz)l.b).a = afbh.k(q.c());
                 }
-                ((agiy)l.a).d(antf, l.c);
+                ((agmq)l.a).d(anxo, l.b);
             }
             return;
         }
-        this.h.a((amvz)alcc.c);
+        this.h.a((anai)algf.c);
     }
     
-    public final void oS(final aum aum) {
-        asic k;
-        if (((uyi)this.j.cd().h).bx()) {
-            k = this.j.R().am((asix)new isg(this, 1), (asix)irb.j);
+    public final void lW(final aup aup) {
+    }
+    
+    public final void mp(final aup aup) {
+    }
+    
+    public final void mx(final aup aup) {
+    }
+    
+    public final void oO(final aup aup) {
+    }
+    
+    public final void oT(final aup aup) {
+        asln k;
+        if (((vbs)this.j.cg().g).bA()) {
+            k = this.j.Q().an((asmi)new itn(this, 0), (asmi)isj.j);
         }
         else {
-            k = this.j.Q().R().P(this.i).am((asix)new isg(this, 1), (asix)irb.j);
+            k = this.j.P().R().P(this.i).an((asmi)new itn(this, 0), (asmi)isj.j);
         }
         this.k = k;
     }
     
-    public final void oW(final aum aum) {
-        final asic k = this.k;
+    public final void oU() {
+        tgj.d((tio)this);
+    }
+    
+    public final void oX() {
+        tgj.c((tio)this);
+    }
+    
+    public final void oY(final aup aup) {
+        final asln k = this.k;
         if (k != null) {
-            athh.f((AtomicReference)k);
+            atkw.f((AtomicReference)k);
             this.k = null;
         }
     }

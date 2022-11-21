@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Folosește tema dispozitivului</string>
     <string name="app_theme_appearance_summary">Selectează tema luminoasă sau pe cea întunecată</string>
     <string name="app_theme_appearance_title">Aspect</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Aplică</string>
     <string name="approve_playlist_sync">Sincronizează videoclipuri noi</string>
     <string name="audio_playback_failed_snackbar_action_button">Încearcă din nou</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Încheie streamul</string>
     <string name="lc_retry_yes">Încearcă din nou</string>
     <string name="lc_rotate_device">Rotește dispozitivul</string>
+    <string name="lc_sharedmde_required_field_error">Titlul și publicul sunt obligatorii.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Redă un stream în mod portret</string>
     <string name="lc_stream_start_error">Fluxul nu poate fi inițiat. Verifică-ți conexiunea.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Previzualizarea videoclipului. Atinge pentru a întrerupe.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Previzualizarea videoclipului. Atinge pentru a reda.</string>
     <string name="shorts_a11y_zoom_control">Comandă de mărire/micșorare</string>
+    <string name="shorts_audio_failure_toast">Sunetul nu a fost adăugat. Încearcă din nou.</string>
     <string name="shorts_camera_allow_access_subtitle">Permite accesul la cameră și microfon</string>
     <string name="shorts_camera_allow_access_title">Creează un videoclip scurt</string>
     <string name="shorts_camera_close_confirmation_cancel">Anulează</string>

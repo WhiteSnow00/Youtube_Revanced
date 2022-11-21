@@ -9,7 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import java.util.concurrent.atomic.AtomicBoolean;
 import android.support.v7.widget.GridLayoutManager;
 
-final class b extends iw
+final class b extends hz
 {
     private final GridLayoutManager a;
     private final AtomicBoolean b;

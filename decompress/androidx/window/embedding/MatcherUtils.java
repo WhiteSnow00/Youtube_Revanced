@@ -23,18 +23,18 @@ public final class MatcherUtils
     }
     
     private final boolean wildcardMatch(final String s, String substring) {
-        if (!aubt.j((CharSequence)substring, (CharSequence)"*")) {
+        if (!auop.r((CharSequence)substring, (CharSequence)"*")) {
             return false;
         }
-        if (atnh.c((Object)substring, (Object)"*")) {
+        if (atqz.c(substring, "*")) {
             return true;
         }
-        if (aubt.l((CharSequence)substring, "*", 0, false, 6) == aubt.q((CharSequence)substring, "*")) {
+        if (auop.t((CharSequence)substring, "*", 0, false, 6) == auop.y((CharSequence)substring, "*")) {
             substring.getClass();
             if (substring.endsWith("*")) {
                 substring = substring.substring(0, substring.length() - 1);
                 substring.getClass();
-                return aubt.o(s, substring);
+                return auop.w(s, substring);
             }
         }
         throw new IllegalArgumentException("Name pattern with a wildcard must only contain a single wildcard in the end");
@@ -55,11 +55,11 @@ public final class MatcherUtils
     public final boolean areComponentsMatching$window_release(final ActivityComponentInfo activityComponentInfo, final ActivityComponentInfo activityComponentInfo2) {
         activityComponentInfo2.getClass();
         if (activityComponentInfo == null) {
-            return atnh.c((Object)activityComponentInfo2.getPackageName(), (Object)"*") && atnh.c((Object)activityComponentInfo2.getClassName(), (Object)"*");
+            return atqz.c(activityComponentInfo2.getPackageName(), "*") && atqz.c(activityComponentInfo2.getClassName(), "*");
         }
-        if (!aubt.j((CharSequence)activityComponentInfo.toString(), (CharSequence)"*")) {
-            final boolean b = atnh.c((Object)activityComponentInfo.getPackageName(), (Object)activityComponentInfo2.getPackageName()) || this.wildcardMatch(activityComponentInfo.getPackageName(), activityComponentInfo2.getPackageName());
-            final boolean b2 = atnh.c((Object)activityComponentInfo.getClassName(), (Object)activityComponentInfo2.getClassName()) || this.wildcardMatch(activityComponentInfo.getClassName(), activityComponentInfo2.getClassName());
+        if (!auop.r((CharSequence)activityComponentInfo.toString(), (CharSequence)"*")) {
+            final boolean b = atqz.c(activityComponentInfo.getPackageName(), activityComponentInfo2.getPackageName()) || this.wildcardMatch(activityComponentInfo.getPackageName(), activityComponentInfo2.getPackageName());
+            final boolean b2 = atqz.c(activityComponentInfo.getClassName(), activityComponentInfo2.getClassName()) || this.wildcardMatch(activityComponentInfo.getClassName(), activityComponentInfo2.getClassName());
             return b && b2;
         }
         throw new IllegalArgumentException("Wildcard can only be part of the rule.");
@@ -92,6 +92,6 @@ public final class MatcherUtils
             return this.areComponentsMatching$window_release(activityComponentInfo2, activityComponentInfo);
         }
         final String package1 = intent.getPackage();
-        return package1 != null && ((atnh.c((Object)package1, (Object)activityComponentInfo.getPackageName()) || this.wildcardMatch(package1, activityComponentInfo.getPackageName())) && atnh.c((Object)activityComponentInfo.getClassName(), (Object)"*"));
+        return package1 != null && ((atqz.c(package1, activityComponentInfo.getPackageName()) || this.wildcardMatch(package1, activityComponentInfo.getPackageName())) && atqz.c(activityComponentInfo.getClassName(), "*"));
     }
 }

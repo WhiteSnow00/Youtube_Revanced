@@ -18,6 +18,16 @@ public final class ActivityStack
         this.isEmpty = isEmpty;
     }
     
+    public ActivityStack(final List list, final boolean b, int n, final atqv atqv) {
+        if ((n & 0x2) != 0x0) {
+            n = 0;
+        }
+        else {
+            n = 1;
+        }
+        this(list, (boolean)(((b ? 1 : 0) & n) != 0x0));
+    }
+    
     public final boolean contains(final Activity activity) {
         activity.getClass();
         return this.activities.contains(activity);
@@ -36,12 +46,12 @@ public final class ActivityStack
         else {
             class2 = null;
         }
-        if (!atnh.c((Object)class1, (Object)class2)) {
+        if (!atqz.c(class1, class2)) {
             return false;
         }
         o.getClass();
         final ActivityStack activityStack = (ActivityStack)o;
-        return atnh.c((Object)this.activities, (Object)activityStack.activities) && this.isEmpty == activityStack.isEmpty;
+        return atqz.c(this.activities, activityStack.activities) && this.isEmpty == activityStack.isEmpty;
     }
     
     public final List getActivities$window_release() {

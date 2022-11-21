@@ -14,7 +14,7 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import android.util.AttributeSet;
 import android.content.Context;
 
-public final class UserMentionSuggestionsOverscrollBehavior extends aei
+public final class UserMentionSuggestionsOverscrollBehavior extends aej
 {
     private boolean a;
     private int b;
@@ -29,8 +29,8 @@ public final class UserMentionSuggestionsOverscrollBehavior extends aei
         this.c = -1;
     }
     
-    public final boolean qJ(final CoordinatorLayout coordinatorLayout, final View view, final View view2) {
-        final aei a = ((aek)view2.getLayoutParams()).a;
+    public final boolean qI(final CoordinatorLayout coordinatorLayout, final View view, final View view2) {
+        final aej a = ((ael)view2.getLayoutParams()).a;
         if (view instanceof ScrollView) {
             if (a instanceof BottomSheetBehavior) {
                 final EditText editText = (EditText)coordinatorLayout.findViewById(2131428424);
@@ -44,11 +44,11 @@ public final class UserMentionSuggestionsOverscrollBehavior extends aei
                 final int lineAscent = layout.getLineAscent(lineForOffset);
                 final View viewById = coordinatorLayout.findViewById(2131429009);
                 final ViewGroup$LayoutParams layoutParams = viewById.getLayoutParams();
-                final BottomSheetBehavior y = BottomSheetBehavior.y(view2);
+                final BottomSheetBehavior z = BottomSheetBehavior.z(view2);
                 final int[] array = new int[2];
                 view2.getLocationOnScreen(array);
                 final int n = array[1];
-                if (y.z == 5) {
+                if (z.z == 5) {
                     return this.a = false;
                 }
                 if (!this.a) {

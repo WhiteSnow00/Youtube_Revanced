@@ -4,7 +4,6 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.mutedautoplay.remoteloaded;
 
-import com.google.android.apps.youtube.embeddedplayer.service.jar.client.v;
 import java.util.concurrent.atomic.AtomicReference;
 import com.google.android.apps.youtube.embeddedplayer.service.errorlogging.remoteloaded.c;
 import android.view.ViewGroup;
@@ -12,7 +11,6 @@ import android.view.LayoutInflater;
 import android.widget.FrameLayout;
 import android.view.View;
 import android.view.ViewGroup$LayoutParams;
-import com.google.android.apps.youtube.embeddedplayer.service.jar.client.k;
 import com.google.android.apps.youtube.embeddedplayer.service.jar.b;
 import android.content.Context;
 import android.widget.TextView;
@@ -24,11 +22,11 @@ import android.view.View$OnClickListener;
 import android.widget.RelativeLayout;
 import com.google.android.libraries.youtube.common.ui.TouchImageView;
 
-public final class a extends abbk
+public final class a extends abcq
 {
     public TouchImageView a;
     public RelativeLayout b;
-    public final asiq c;
+    public final aslm c;
     public final View$OnClickListener d;
     public Handler e;
     public SelectableItemKey f;
@@ -43,59 +41,56 @@ public final class a extends abbk
     private MutedAutoplayIndicator o;
     private TextView p;
     private boolean q;
-    private final asir r;
-    private atib s;
+    private final asln r;
+    private atky s;
     
     public a(final Context context, final View$OnClickListener d) {
         super(context);
-        this.c = new asiq();
+        this.c = new aslm();
         this.n = true;
         this.d = d;
-        this.r = com.google.android.apps.youtube.embeddedplayer.service.jar.b.a.c((asjm)new k(this, 16), (asjr)lmw.j);
+        this.r = com.google.android.apps.youtube.embeddedplayer.service.jar.b.a.c((asmi)new lol(this, 20), (asmn)lnj.j);
     }
     
-    @Override
     public final ViewGroup$LayoutParams a() {
         return new ViewGroup$LayoutParams(-1, -1);
     }
     
-    @Override
     public final /* bridge */ View c(final Context context) {
         final FrameLayout frameLayout = new FrameLayout(context);
         final LayoutInflater from = LayoutInflater.from(context);
         Label_0068: {
             if (this.n) {
                 try {
-                    from.inflate(2131624893, (ViewGroup)frameLayout);
+                    from.inflate(2131624895, (ViewGroup)frameLayout);
                     break Label_0068;
                 }
                 catch (final RuntimeException ex) {
                     com.google.android.apps.youtube.embeddedplayer.service.errorlogging.remoteloaded.c.a().c(com.google.android.apps.youtube.embeddedplayer.service.errorlogging.remoteloaded.b.b, "Unable to inflate LazyMutedAutoplayOverlay", (Throwable)ex);
-                    afse.o("Unable to inflate LazyMutedAutoplayOverlay: ".concat(ex.toString()));
+                    aftr.k("Unable to inflate LazyMutedAutoplayOverlay: ".concat(ex.toString()));
                     return (View)frameLayout;
                 }
             }
-            from.inflate(2131624893, (ViewGroup)frameLayout);
+            from.inflate(2131624895, (ViewGroup)frameLayout);
         }
-        if (!this.r.tA()) {
-            asjv.b((AtomicReference)this.r);
+        if (!this.r.tz()) {
+            asmr.b((AtomicReference)this.r);
         }
         this.q = true;
         this.o = (MutedAutoplayIndicator)frameLayout.findViewById(2131427657);
         this.b = (RelativeLayout)frameLayout.findViewById(2131428884);
         this.p = (TextView)frameLayout.findViewById(2131428886);
         this.a = (TouchImageView)frameLayout.findViewById(2131427614);
-        this.s = new atib((TouchImageView)frameLayout.findViewById(2131428885));
-        frameLayout.setOnClickListener((View$OnClickListener)new v(this, 3));
-        this.b.setOnClickListener((View$OnClickListener)new v(this, 3));
-        this.a.setOnClickListener((View$OnClickListener)new v(this, 3));
+        this.s = new atky((TouchImageView)frameLayout.findViewById(2131428885));
+        frameLayout.setOnClickListener((View$OnClickListener)new com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.a(this, 2));
+        this.b.setOnClickListener((View$OnClickListener)new com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.a(this, 2));
+        this.a.setOnClickListener((View$OnClickListener)new com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet.a(this, 2));
         return (View)frameLayout;
     }
     
-    @Override
     public final /* bridge */ void e(final Context context, final View view) {
         final FrameLayout frameLayout = (FrameLayout)view;
-        if (!this.mn()) {
+        if (!this.mm()) {
             return;
         }
         this.s.E(this.k);
@@ -104,7 +99,7 @@ public final class a extends abbk
     }
     
     public final void m(final int n) {
-        if (!this.mn()) {
+        if (!this.mm()) {
             return;
         }
         if (n == 1) {
@@ -128,26 +123,24 @@ public final class a extends abbk
         this.b.setVisibility(0);
     }
     
-    public final abbn mj(final Context context) {
-        final abbn mj = super.mj(context);
+    public final abct mj(final Context context) {
+        final abct mj = super.mj(context);
         mj.e = false;
         mj.b();
         mj.a();
         return mj;
     }
     
-    @Override
-    public final boolean mn() {
-        return this.q && super.mn();
+    public final boolean mm() {
+        return this.q && super.mm();
     }
     
-    @Override
-    public final boolean oV() {
+    public final boolean oW() {
         final int m = this.m;
         return m == 2 || m == 4;
     }
     
-    public final abbp ox() {
-        return super.ox();
+    public final abcv ou() {
+        return super.ou();
     }
 }

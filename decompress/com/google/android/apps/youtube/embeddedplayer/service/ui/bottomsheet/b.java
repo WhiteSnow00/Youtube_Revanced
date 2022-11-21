@@ -4,28 +4,42 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet;
 
-import android.os.Bundle;
 import android.view.View;
 
-final class b extends akw
+public final class b extends advd
 {
-    final c a;
+    final d a;
     
-    public b(final c a) {
+    public b(final d a) {
         this.a = a;
     }
     
-    public final void c(final View view, final aom aom) {
-        super.c(view, aom);
-        aom.g(1048576);
-        aom.v(true);
+    @Override
+    public final void a(final View view, final float n) {
+        final d a = this.a;
+        if (a.c) {
+            a.a(0.6f);
+            return;
+        }
+        if (n >= 0.0f) {
+            a.a(n * 0.6f);
+        }
     }
     
-    public final boolean i(final View view, final int n, final Bundle bundle) {
-        if (n == 1048576) {
+    @Override
+    public final void b(final View view, final int n) {
+        int n2 = n;
+        Label_0023: {
+            if (n != 5) {
+                if ((n2 = n) != 4) {
+                    break Label_0023;
+                }
+                n2 = 4;
+            }
             this.a.cancel();
-            return true;
         }
-        return super.i(view, n, bundle);
+        if (n2 == 3) {
+            this.a.c = false;
+        }
     }
 }

@@ -6,11 +6,11 @@ package com.google.android.apps.youtube.embeddedplayer.service.service.jar;
 
 public final class ApiPlayerService$$ExternalSyntheticLambda16 implements Runnable
 {
-    public ApiPlayerService a;
-    public String b;
-    public int c;
-    public int d;
-    public int e;
+    public final ApiPlayerService a;
+    public final String b;
+    public final int c;
+    public final int d;
+    public final int e;
     
     public ApiPlayerService$$ExternalSyntheticLambda16(final ApiPlayerService a, final String b, final int c, final int d, final int e) {
         this.a = a;

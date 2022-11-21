@@ -10,17 +10,17 @@ import android.view.MenuItem;
 import android.app.Activity;
 import j$.util.Optional;
 
-public class WatchOnTvMenuItem implements fzq, thl
+public class WatchOnTvMenuItem implements fzv, tio
 {
     public boolean a;
     public Optional b;
     private final Activity c;
-    private final gkx d;
-    private final xbt e;
-    private asir f;
-    private final vai g;
+    private final glc d;
+    private final xda e;
+    private asln f;
+    private final vbs g;
     
-    public WatchOnTvMenuItem(final Activity c, final gkx d, final xbt e, final vai g) {
+    public WatchOnTvMenuItem(final Activity c, final glc d, final xda e, final vbs g) {
         this.c = c;
         this.d = d;
         this.e = e;
@@ -29,12 +29,12 @@ public class WatchOnTvMenuItem implements fzq, thl
         this.g = g;
     }
     
-    private final asir s() {
-        return this.e.o().af(asil.a()).aH((asjm)new iad(this, 4));
+    private final asln s() {
+        return this.e.o().af(aslh.a()).aH((asmi)new iam(this, 6));
     }
     
-    public final thh g() {
-        return thh.b;
+    public final tik g() {
+        return tik.b;
     }
     
     public final int j() {
@@ -45,23 +45,20 @@ public class WatchOnTvMenuItem implements fzq, thl
         return 0;
     }
     
-    public final fzh l() {
+    public final fzm l() {
         return null;
     }
     
-    public final void lW(final aun aun) {
+    public final void lW(final aup aup) {
     }
     
     public final void m() {
     }
     
-    public final void mM(final aun aun) {
+    public final void mp(final aup aup) {
     }
     
-    public final void mq(final aun aun) {
-    }
-    
-    public final void my(final aun aun) {
+    public final void mx(final aup aup) {
     }
     
     public final boolean n() {
@@ -77,33 +74,36 @@ public class WatchOnTvMenuItem implements fzq, thl
         menuItem.setShowAsAction(0);
     }
     
-    public final void oS(final aun aun) {
-        if (this.f.tA()) {
+    public final void oO(final aup aup) {
+    }
+    
+    public final void oT(final aup aup) {
+        if (this.f.tz()) {
             this.f = this.s();
         }
     }
     
-    public final void oT() {
-        tfg.c((thl)this);
+    public final void oU() {
+        tgj.d((tio)this);
     }
     
-    public final void oW() {
-        tfg.b((thl)this);
+    public final void oX() {
+        tgj.c((tio)this);
     }
     
-    public final void oX(final aun aun) {
-        asjv.b((AtomicReference)this.f);
+    public final void oY(final aup aup) {
+        asmr.b((AtomicReference)this.f);
     }
     
     public final boolean p() {
-        final boolean au = this.g.aU();
+        final boolean ax = this.g.aX();
         boolean b = false;
-        final boolean b2 = au && this.g.aV();
+        final boolean b2 = ax && this.g.aY();
         final Activity c = this.c;
-        if (this.d.a() == gkv.b) {
+        if (this.d.a() == gla.b) {
             b = true;
         }
-        c.startActivity(xmm.X((Context)c, b, b2));
+        c.startActivity(xny.K((Context)c, b, b2));
         return true;
     }
     
@@ -112,6 +112,6 @@ public class WatchOnTvMenuItem implements fzq, thl
     }
     
     public final CharSequence r() {
-        return this.c.getString(2132018663);
+        return this.c.getString(2132018665);
     }
 }

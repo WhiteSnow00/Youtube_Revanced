@@ -13,13 +13,13 @@ import android.view.View;
 
 public class MusicWaveformView extends View
 {
-    public final hdo a;
+    public final hdx a;
     float b;
     float c;
     public float d;
     public float e;
     AttributeSet f;
-    public hda g;
+    public hdi g;
     private boolean h;
     private float i;
     private float j;
@@ -37,11 +37,11 @@ public class MusicWaveformView extends View
     public MusicWaveformView(final Context context, final AttributeSet f, final int n) {
         super(context, f, n);
         this.f = f;
-        final hdo a = new hdo(context);
+        final hdx a = new hdx(context);
         (this.a = a).d();
         a.c(f, false);
         final float dimension = context.getResources().getDimension(2131165623);
-        final float dimension2 = context.getResources().getDimension(2131168251);
+        final float dimension2 = context.getResources().getDimension(2131168290);
         this.d(dimension, dimension2, Resources.getSystem().getDisplayMetrics().widthPixels - (dimension + dimension) - (dimension2 + dimension2));
     }
     
@@ -59,7 +59,7 @@ public class MusicWaveformView extends View
         this.f(n, n2);
     }
     
-    public final void b(final long p0, final long p1, final byte[] p2, final afeq p3) {
+    public final void b(final long p0, final long p1, final byte[] p2, final afgh p3) {
         // 
         // This method could not be decompiled.
         // 
@@ -79,7 +79,7 @@ public class MusicWaveformView extends View
         //    23: pop            
         //    24: aload           5
         //    26: invokevirtual   java/lang/StringBuilder.toString:()Ljava/lang/String;
-        //    29: invokestatic    ttr.b:(Ljava/lang/String;)V
+        //    29: invokestatic    tut.b:(Ljava/lang/String;)V
         //    32: return         
         //    33: new             Ljava/io/ByteArrayInputStream;
         //    36: astore          8
@@ -87,16 +87,16 @@ public class MusicWaveformView extends View
         //    40: aload           5
         //    42: invokespecial   java/io/ByteArrayInputStream.<init>:([B)V
         //    45: aload           8
-        //    47: invokestatic    aewd.a:(Ljava/io/InputStream;)Laewd;
+        //    47: invokestatic    aexv.a:(Ljava/io/InputStream;)Laexv;
         //    50: astore          5
         //    52: aload           5
-        //    54: getfield        aewd.a:I
+        //    54: getfield        aexv.a:I
         //    57: istore          7
         //    59: aload           5
-        //    61: getfield        aewd.d:Ljava/lang/Object;
+        //    61: getfield        aexv.d:Ljava/lang/Object;
         //    64: astore          5
         //    66: aload_0        
-        //    67: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/music/ui/MusicWaveformView.a:Lhdo;
+        //    67: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/music/ui/MusicWaveformView.a:Lhdx;
         //    70: lload_1        
         //    71: lload_3        
         //    72: aload_0        
@@ -105,7 +105,7 @@ public class MusicWaveformView extends View
         //    78: checkcast       [B
         //    81: iload           7
         //    83: aload           6
-        //    85: invokevirtual   hdo.f:(JJF[BILafeq;)V
+        //    85: invokevirtual   hdx.f:(JJF[BILafgh;)V
         //    88: aload_0        
         //    89: lload_1        
         //    90: lload_3        
@@ -141,7 +141,7 @@ public class MusicWaveformView extends View
         //   146: astore          5
         //   148: ldc             "Error reading the raw waveform bytes. "
         //   150: aload           5
-        //   152: invokestatic    ttr.d:(Ljava/lang/String;Ljava/lang/Throwable;)V
+        //   152: invokestatic    tut.d:(Ljava/lang/String;Ljava/lang/Throwable;)V
         //   155: aload_0        
         //   156: lload_1        
         //   157: lload_3        
@@ -218,7 +218,7 @@ public class MusicWaveformView extends View
                     final float k = this.k;
                     final float d = this.d;
                     final float x = motionEvent.getX();
-                    final hdo a = this.a;
+                    final hdx a = this.a;
                     final float d2 = d + (k - x) / a.d;
                     this.d = d2;
                     float n = d2;
@@ -226,9 +226,9 @@ public class MusicWaveformView extends View
                         this.d = 0.0f;
                         n = 0.0f;
                     }
-                    final boolean nt = this.g.nt((long)(a.e * n));
-                    this.h = nt;
-                    if (nt) {
+                    final boolean nq = this.g.nq((long)(a.e * n));
+                    this.h = nq;
+                    if (nq) {
                         this.d = this.l;
                     }
                     this.e = this.d;

@@ -15,22 +15,22 @@ import com.google.android.apps.youtube.embeddedplayer.service.errorlogging.share
 import android.os.Parcel;
 import android.os.IBinder;
 
-public class IEmbedFragmentService$Stub$Proxy extends enz implements IEmbedFragmentService
+public class IEmbedFragmentService$Stub$Proxy extends eoc implements IEmbedFragmentService
 {
     public IEmbedFragmentService$Stub$Proxy(final IBinder binder) {
         super(binder, "com.google.android.apps.youtube.embeddedplayer.service.service.jar.IEmbedFragmentService");
     }
     
     public final int a() {
-        final Parcel qx = this.qX(3, this.qW());
-        final int int1 = qx.readInt();
-        qx.recycle();
+        final Parcel qw = this.qW(3, this.qV());
+        final int int1 = qw.readInt();
+        qw.recycle();
         return int1;
     }
     
     public final c b() {
-        final Parcel qx = this.qX(11, this.qW());
-        final IBinder strongBinder = qx.readStrongBinder();
+        final Parcel qw = this.qW(11, this.qV());
+        final IBinder strongBinder = qw.readStrongBinder();
         Object o;
         if (strongBinder == null) {
             o = null;
@@ -44,13 +44,13 @@ public class IEmbedFragmentService$Stub$Proxy extends enz implements IEmbedFragm
                 o = new a(strongBinder);
             }
         }
-        qx.recycle();
+        qw.recycle();
         return (c)o;
     }
     
     public final d d() {
-        final Parcel qx = this.qX(12, this.qW());
-        final IBinder strongBinder = qx.readStrongBinder();
+        final Parcel qw = this.qW(12, this.qV());
+        final IBinder strongBinder = qw.readStrongBinder();
         Object o;
         if (strongBinder == null) {
             o = null;
@@ -64,49 +64,49 @@ public class IEmbedFragmentService$Stub$Proxy extends enz implements IEmbedFragm
                 o = new b(strongBinder);
             }
         }
-        qx.recycle();
+        qw.recycle();
         return (d)o;
     }
     
     public final void e(final int n) {
-        final Parcel qw = this.qW();
-        qw.writeInt(28572);
-        this.qY(4, qw);
+        final Parcel qv = this.qV();
+        qv.writeInt(28572);
+        this.qX(4, qv);
     }
     
     public final void f() {
-        this.qY(10, this.qW());
+        this.qX(10, this.qV());
     }
     
     public final void g() {
-        this.qY(9, this.qW());
+        this.qX(9, this.qV());
     }
     
     public final void h() {
-        this.qY(6, this.qW());
+        this.qX(6, this.qV());
     }
     
     public final void i(final SubscriptionNotificationMenuItem subscriptionNotificationMenuItem) {
-        final Parcel qw = this.qW();
-        eob.h(qw, (Parcelable)subscriptionNotificationMenuItem);
-        this.qY(7, qw);
+        final Parcel qv = this.qV();
+        eoe.h(qv, (Parcelable)subscriptionNotificationMenuItem);
+        this.qX(7, qv);
     }
     
     public final void j() {
-        this.qY(5, this.qW());
+        this.qX(5, this.qV());
     }
     
     public final void k() {
-        this.qY(8, this.qW());
+        this.qX(8, this.qV());
     }
     
     public final void l() {
-        this.qY(2, this.qW());
+        this.qX(2, this.qV());
     }
     
     public final void u(final SimplePlaybackDescriptor simplePlaybackDescriptor) {
-        final Parcel qw = this.qW();
-        eob.h(qw, (Parcelable)simplePlaybackDescriptor);
-        this.qY(1, qw);
+        final Parcel qv = this.qV();
+        eoe.h(qv, (Parcelable)simplePlaybackDescriptor);
+        this.qX(1, qv);
     }
 }

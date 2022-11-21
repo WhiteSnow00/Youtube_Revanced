@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Använd enhetens tema</string>
     <string name="app_theme_appearance_summary">Välj inställningar för ljust eller mörkt tema</string>
     <string name="app_theme_appearance_title">Utseende</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Använd</string>
     <string name="approve_playlist_sync">Synkronisera nya videor</string>
     <string name="audio_playback_failed_snackbar_action_button">Försök igen</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Avsluta stream</string>
     <string name="lc_retry_yes">Försök igen</string>
     <string name="lc_rotate_device">Rotera enheten</string>
+    <string name="lc_sharedmde_required_field_error">Titel och målgrupp krävs.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Streama i stående format</string>
     <string name="lc_stream_start_error">Kunde inte starta streamen. Kontrollera anslutningen.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Förhandsgranskning av video. Tryck för att pausa.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Förhandsgranskning av video. Tryck för att spela upp.</string>
     <string name="shorts_a11y_zoom_control">Zoomkontroll</string>
+    <string name="shorts_audio_failure_toast">Det gick inte att lägga till ljud. Försök igen.</string>
     <string name="shorts_camera_allow_access_subtitle">Tillåt åtkomst till kameran och mikrofonen</string>
     <string name="shorts_camera_allow_access_title">Skapa en Shorts-video</string>
     <string name="shorts_camera_close_confirmation_cancel">Avbryt</string>

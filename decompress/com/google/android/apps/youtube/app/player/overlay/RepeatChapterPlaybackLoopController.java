@@ -6,24 +6,24 @@ package com.google.android.apps.youtube.app.player.overlay;
 
 import android.content.Context;
 
-public final class RepeatChapterPlaybackLoopController implements uut, tfh
+public final class RepeatChapterPlaybackLoopController implements uxt, tio
 {
-    public final atjj a;
+    public final atnb a;
     public final Context b;
-    public final aaxs c;
-    public final jcm d;
-    public final jbg e;
-    public final aays f;
-    public final wvu g;
+    public final abav c;
+    public final jdx d;
+    public final jco e;
+    public final abbx f;
+    public final wza g;
     public int h;
     public String i;
-    public final agkw j;
-    private final utk k;
-    private final jdt l;
-    private final asib m;
-    private final asib n;
+    public final agop j;
+    private final uwk k;
+    private final jfe l;
+    private final aslm m;
+    private final aslm n;
     
-    public RepeatChapterPlaybackLoopController(final atjj a, final Context b, final utk k, final jdt l, final agkw j, final aaxs c, final jcm d, final jbg e, final aays f, final wvu g, final byte[] array, final byte[] array2) {
+    public RepeatChapterPlaybackLoopController(final atnb a, final Context b, final uwk k, final jfe l, final agop j, final abav c, final jdx d, final jco e, final abbx f, final wza g, final byte[] array, final byte[] array2, final byte[] array3, final byte[] array4) {
         this.h = 0;
         this.a = a;
         this.b = b;
@@ -35,39 +35,63 @@ public final class RepeatChapterPlaybackLoopController implements uut, tfh
         this.e = e;
         this.f = f;
         this.g = g;
-        this.m = new asib();
-        this.n = new asib();
+        this.m = new aslm();
+        this.n = new aslm();
+    }
+    
+    public final tik g() {
+        return tik.b;
     }
     
     public final void j() {
         this.m.b();
     }
     
-    public final void oS(final aum aum) {
-        this.k.E().i((uut)this);
-        this.n.c(this.l.z().al((asix)new iws(this, 11)));
-        this.n.c(((asgt)this.l.q().d).R().al((asix)new iws(this, 12)));
+    public final void lW(final aup aup) {
     }
     
-    public final void oW(final aum aum) {
-        this.k.E().j((uut)this);
+    public final void mJ(final uwd uwd) {
+        if (uwd == null) {
+            this.j();
+            return;
+        }
+        final ajrp b = uwd.B();
+        if (b != null && b.d == 1 && ((String)b.e).equals("engagement-panel-macro-markers-description-chapters")) {
+            this.m.b();
+            this.m.c(this.l.z().am((asmi)new ixu(this, 15)));
+            return;
+        }
+        this.j();
+    }
+    
+    public final void mp(final aup aup) {
+    }
+    
+    public final void mx(final aup aup) {
+    }
+    
+    public final void oO(final aup aup) {
+    }
+    
+    public final void oT(final aup aup) {
+        this.k.g().a((uxt)this);
+        this.n.c(this.l.y().am((asmi)new ixu(this, 13)));
+        this.n.c(((aske)this.l.p().d).R().am((asmi)new ixu(this, 14)));
+    }
+    
+    public final void oU() {
+        tgj.d((tio)this);
+    }
+    
+    public final void oX() {
+        tgj.c((tio)this);
+    }
+    
+    public final void oY(final aup aup) {
+        this.k.g().b((uxt)this);
         if (!this.m.b) {
             this.j();
         }
         this.n.b();
-    }
-    
-    public final void pw(final utd utd) {
-        if (utd == null) {
-            this.j();
-            return;
-        }
-        final ajnl c = utd.C();
-        if (c != null && c.d == 1 && ((String)c.e).equals("engagement-panel-macro-markers-description-chapters")) {
-            this.m.b();
-            this.m.c(this.l.A().al((asix)new iws(this, 13)));
-            return;
-        }
-        this.j();
     }
 }

@@ -50,11 +50,11 @@
     <string name="litho_channel_guidelines_off">Csatornára vonatkozó irányelvek eltávolítása ki van kapcsolva</string>
     <string name="litho_channel_guidelines_on">Csatornára vonatkozó irányelvek eltávolítása be van kapcsolva</string>
     <string name="litho_community_guidelines">Közösségi Irányelvek eltávolítása</string>
+    <string name="accessibility_settings_edu_opt_in_text">Bekapcsolja a kisegítő lehetőségeket a videó lejátszóban?</string>
+    <string name="accessibility_settings_edu_opt_out_text">A vezérlők módosultak, mert be van kapcsolva egy kisegítő szolgáltatás.</string>
     <string name="litho_community_guidelines_off">Közösségi Irányelvek eltávolítása ki van kapcsolva</string>
     <string name="litho_community_guidelines_on">Közösségi Irányelvek eltávolítása be van kapcsolva</string>
     <string name="litho_community_posts">Közösségi bejegyzés eltávolítása</string>
-    <string name="accessibility_settings_edu_opt_in_text">Bekapcsolja a kisegítő lehetőségeket a videó lejátszóban?</string>
-    <string name="accessibility_settings_edu_opt_out_text">A vezérlők módosultak, mert be van kapcsolva egy kisegítő szolgáltatás.</string>
     <string name="litho_community_posts_off">Közösségi bejegyzés eltávolítása ki van kapcsolva</string>
     <string name="litho_community_posts_on">Közösségi bejegyzés eltávolítása be van kapcsolva</string>
     <string name="litho_compact_banner">Kompakt banner eltávolítása</string>

@@ -40,8 +40,8 @@ public class ShortsIntensitySliderView extends LinearLayout
     }
     
     private final void c(final Context context) {
-        LayoutInflater.from(context).inflate(2131625410, (ViewGroup)this, true);
+        LayoutInflater.from(context).inflate(2131625412, (ViewGroup)this, true);
         this.b = (YouTubeTextView)this.findViewById(2131430665);
-        (this.c = (AppCompatSeekBar)this.findViewById(2131431338)).setOnSeekBarChangeListener((SeekBar$OnSeekBarChangeListener)new hbu(this, this.c.getPaddingLeft() + this.c.getPaddingRight(), (LinearLayout$LayoutParams)this.b.getLayoutParams()));
+        (this.c = (AppCompatSeekBar)this.findViewById(2131431339)).setOnSeekBarChangeListener((SeekBar$OnSeekBarChangeListener)new hcb(this, this.c.getPaddingLeft() + this.c.getPaddingRight(), (LinearLayout$LayoutParams)this.b.getLayoutParams()));
     }
 }

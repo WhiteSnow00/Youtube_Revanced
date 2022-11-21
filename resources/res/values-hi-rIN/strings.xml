@@ -50,11 +50,11 @@
     <string name="litho_channel_guidelines_off">चैनल दिशानिर्देश चालू है</string>
     <string name="litho_channel_guidelines_on">चैनल दिशानिर्देश हटाने की सुविधा चालू है</string>
     <string name="litho_community_guidelines">समुदाय दिशानिर्देश हटाना</string>
+    <string name="accessibility_settings_edu_opt_in_text">वीडियो प्लेयर के लिए सुलभता नियंत्रण चालू करें?</string>
+    <string name="accessibility_settings_edu_opt_out_text">एक्सेसिबिलिटी सर्विसेज की वजह से आपके कंट्रोल्स बदल गए है</string>
     <string name="litho_community_guidelines_off">समुदाय दिशानिर्देश निकालना बंद कर दिया गया है</string>
     <string name="litho_community_guidelines_on">समुदाय दिशानिर्देश हटाने की सुविधा चालू है</string>
     <string name="litho_community_posts">समुदाय पोस्ट हटाना</string>
-    <string name="accessibility_settings_edu_opt_in_text">वीडियो प्लेयर के लिए सुलभता नियंत्रण चालू करें?</string>
-    <string name="accessibility_settings_edu_opt_out_text">एक्सेसिबिलिटी सर्विसेज की वजह से आपके कंट्रोल्स बदल गए है</string>
     <string name="litho_community_posts_off">समुदाय पोस्ट हटाने की सुविधा बंद है</string>
     <string name="litho_community_posts_on">समुदाय पोस्ट हटाने की सुविधा चालू है</string>
     <string name="litho_compact_banner">कॉम्पैक्ट बैनर हटाना</string>
@@ -188,9 +188,6 @@
     <string name="revanced_endscreen_overlay_summary_off">एंडस्क्रीन ओवरले दिखाई दे रहे हैं</string>
     <string name="revanced_endscreen_overlay_summary_on">एंडस्क्रीन ओवरले छिपे हुए हैं</string>
     <string name="revanced_endscreen_overlay_title">एंडस्क्रीन ओवरले</string>
-    <string name="revanced_expansion_card_summary_off">विस्तार कार्ड दिखाए गए हैं</string>
-    <string name="revanced_expansion_card_summary_on">विस्तार कार्ड छिपे हुए हैं</string>
-    <string name="revanced_expansion_card_title">विस्तार कार्ड</string>
     <string name="revanced_experimental_flag">प्रायोगिक झंडे</string>
     <string name="revanced_extended_settings">ReVanced Extended सेटिंग्स</string>
     <string name="revanced_extended_summary">विस्तारित संबंधित सेटिंग्स</string>

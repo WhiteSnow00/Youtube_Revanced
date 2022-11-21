@@ -17,7 +17,7 @@ public final class g implements Runnable
     public final Object a;
     private final int b;
     
-    public g(final aehq a, final int b) {
+    public g(final aejj a, final int b) {
         this.b = b;
         this.a = a;
     }
@@ -37,47 +37,37 @@ public final class g implements Runnable
         this.a = a;
     }
     
-    public g(final ltt a, final int b) {
+    public g(final luh a, final int b) {
         this.b = b;
         this.a = a;
     }
     
-    public g(final lys a, final int b) {
+    public g(final lzg a, final int b) {
         this.b = b;
         this.a = a;
     }
     
-    public g(final lzw a, final int b) {
+    public g(final mak a, final int b) {
         this.b = b;
         this.a = a;
     }
     
-    public g(final mar a, final int b) {
+    public g(final mbf a, final int b) {
         this.b = b;
         this.a = a;
     }
     
-    public g(final mcm a, final int b) {
+    public g(final mda a, final int b) {
         this.b = b;
         this.a = a;
     }
     
-    public g(final mct a, final int b) {
+    public g(final mdh a, final int b) {
         this.b = b;
         this.a = a;
     }
     
-    public g(final mla a, final int b) {
-        this.b = b;
-        this.a = a;
-    }
-    
-    public g(final mle a, final int b) {
-        this.b = b;
-        this.a = a;
-    }
-    
-    public g(final mlp a, final int b) {
+    public g(final mlo a, final int b) {
         this.b = b;
         this.a = a;
     }
@@ -87,88 +77,129 @@ public final class g implements Runnable
         this.a = a;
     }
     
+    public g(final mmd a, final int b) {
+        this.b = b;
+        this.a = a;
+    }
+    
+    public g(final mmg a, final int b) {
+        this.b = b;
+        this.a = a;
+    }
+    
+    public g(final mnv a, final int b) {
+        this.b = b;
+        this.a = a;
+    }
+    
+    public g(final mpa a, final int b) {
+        this.b = b;
+        this.a = a;
+    }
+    
     @Override
     public final void run() {
-        final int b = this.b;
-        String s = "due to no playlist being set.";
-        switch (b) {
+        switch (this.b) {
             default: {
                 final Object a = this.a;
-                final mof a2 = mls.a;
-                final mls mls = (mls)a;
-                a2.a("transfer with type = %d has timed out", new Object[] { mls.e });
-                mls.b(101);
-                return;
+                final Object a2 = mpa.a;
+                monitorenter(a2);
+                try {
+                    if (((mpa)a).b == -1L) {
+                        monitorexit(a2);
+                        return;
+                    }
+                    ((mpa)a).d(15);
+                    monitorexit(a2);
+                    return;
+                }
+                finally {
+                    monitorexit(a2);
+                    while (true) {}
+                }
+                break;
             }
             case 19: {
-                ((mlp)this.a).u();
+                ((mnv)this.a).c(false);
                 return;
             }
             case 18: {
-                ((mlp)this.a).v();
+                final Object a3 = this.a;
+                final mou a4 = mmg.a;
+                final mmg mmg = (mmg)a3;
+                a4.a("transfer with type = %d has timed out", new Object[] { mmg.e });
+                mmg.b(101);
                 return;
             }
             case 17: {
-                final mle mle = (mle)this.a;
-                if (!mle.g.isEmpty()) {
+                ((mmd)this.a).y();
+                return;
+            }
+            case 16: {
+                ((mmd)this.a).z();
+                return;
+            }
+            case 15: {
+                final mls mls = (mls)this.a;
+                if (!mls.g.isEmpty()) {
                     long n;
-                    if (!mle.h.equals(mle.g)) {
+                    if (!mls.h.equals(mls.g)) {
                         n = 86400000L;
                     }
                     else {
                         n = 172800000L;
                     }
                     final long currentTimeMillis = System.currentTimeMillis();
-                    final long i = mle.i;
+                    final long i = mls.i;
                     if (i == 0L || currentTimeMillis - i >= n) {
-                        final ahaz builder = afqx.a.createBuilder();
-                        final String a3 = mle.a;
+                        final ahcr builder = ((ahcz)afsm.a).createBuilder();
+                        final String a5 = mls.a;
                         builder.copyOnWrite();
-                        final afqx afqx = (afqx)builder.instance;
-                        a3.getClass();
-                        afqx.b |= 0x2;
-                        afqx.d = a3;
-                        final String d = mle.d;
+                        final afsm afsm = (afsm)builder.instance;
+                        a5.getClass();
+                        afsm.b |= 0x2;
+                        afsm.d = a5;
+                        final String d = mls.d;
                         builder.copyOnWrite();
-                        final afqx afqx2 = (afqx)builder.instance;
+                        final afsm afsm2 = (afsm)builder.instance;
                         d.getClass();
-                        afqx2.b |= 0x1;
-                        afqx2.c = d;
-                        final afqx c = (afqx)builder.build();
+                        afsm2.b |= 0x1;
+                        afsm2.c = d;
+                        final afsm c = (afsm)builder.build();
                         final ArrayList list = new ArrayList();
-                        list.addAll(mle.g);
-                        final ahaz builder2 = afqw.a.createBuilder();
+                        list.addAll(mls.g);
+                        final ahcr builder2 = ((ahcz)afsl.a).createBuilder();
                         builder2.copyOnWrite();
-                        final afqw afqw = (afqw)builder2.instance;
-                        final ahbp d2 = afqw.d;
+                        final afsl afsl = (afsl)builder2.instance;
+                        final ahdh d2 = afsl.d;
                         if (!d2.c()) {
-                            afqw.d = ahbh.mutableCopy(d2);
+                            afsl.d = ahcz.mutableCopy(d2);
                         }
                         final Iterator iterator = list.iterator();
                         while (iterator.hasNext()) {
-                            afqw.d.g(((afqv)iterator.next()).ad);
+                            afsl.d.g(((afsk)iterator.next()).ad);
                         }
                         builder2.copyOnWrite();
-                        final afqw afqw2 = (afqw)builder2.instance;
+                        final afsl afsl2 = (afsl)builder2.instance;
                         c.getClass();
-                        afqw2.c = c;
-                        afqw2.b |= 0x1;
-                        final afqw afqw3 = (afqw)builder2.build();
-                        final afqz b2 = afra.b();
-                        ((ahaz)b2).copyOnWrite();
-                        afra.h((afra)b2.instance, afqw3);
-                        mle.b.a((afra)((ahaz)b2).build(), 243);
-                        final SharedPreferences$Editor edit = mle.c.edit();
-                        if (!mle.h.equals(mle.g)) {
-                            mle.h.clear();
-                            mle.h.addAll(mle.g);
-                            final Iterator iterator2 = mle.h.iterator();
+                        afsl2.c = c;
+                        afsl2.b |= 0x1;
+                        final afsl afsl3 = (afsl)builder2.build();
+                        final afso b = afsp.b();
+                        ((ahcr)b).copyOnWrite();
+                        afsp.h((afsp)b.instance, afsl3);
+                        mls.b.a((afsp)((ahcr)b).build(), 243);
+                        final SharedPreferences$Editor edit = mls.c.edit();
+                        if (!mls.h.equals(mls.g)) {
+                            mls.h.clear();
+                            mls.h.addAll(mls.g);
+                            final Iterator iterator2 = mls.h.iterator();
                             while (iterator2.hasNext()) {
-                                final String h = mle.h((afqv)iterator2.next());
-                                final String d3 = mle.d(h);
-                                final String c2 = mle.c("feature_usage_timestamp_reported_feature_", h);
+                                final String h = mls.h((afsk)iterator2.next());
+                                final String d3 = mls.d(h);
+                                final String c2 = mls.c("feature_usage_timestamp_reported_feature_", h);
                                 if (!TextUtils.equals((CharSequence)d3, (CharSequence)c2)) {
-                                    final long long1 = mle.c.getLong(d3, 0L);
+                                    final long long1 = mls.c.getLong(d3, 0L);
                                     edit.remove(d3);
                                     if (long1 == 0L) {
                                         continue;
@@ -177,149 +208,119 @@ public final class g implements Runnable
                                 }
                             }
                         }
-                        mle.i = currentTimeMillis;
+                        mls.i = currentTimeMillis;
                         edit.putLong("feature_usage_last_report_time", currentTimeMillis).apply();
                     }
                 }
                 return;
             }
-            case 16: {
-                final mla mla = (mla)this.a;
-                final mlb e = mla.e;
-                if (e != null) {
-                    mla.b.a(mla.c.b(e), 223);
-                }
-                mla.g();
-                return;
-            }
-            case 15: {
-                mft.i((String)this.a);
-                return;
-            }
             case 14: {
-                final mcj a4 = ((mct)this.a).a;
-                if (a4 != null) {
-                    try {
-                        a4.a();
-                    }
-                    catch (final RemoteException ex) {
-                        mgj.f("Could not notify onAdFailedToLoad event.", (Throwable)ex);
-                    }
+                final mlo mlo = (mlo)this.a;
+                final mlp e = mlo.e;
+                if (e != null) {
+                    mlo.b.a(mlo.c.b(e), 223);
                 }
+                mlo.g();
                 return;
             }
             case 13: {
-                final mcj a5 = ((mcm)this.a).a.a;
-                if (a5 != null) {
+                mgh.d((String)this.a);
+                return;
+            }
+            case 12: {
+                final mcx a6 = ((mdh)this.a).a;
+                if (a6 != null) {
                     try {
-                        a5.a();
+                        a6.a();
                     }
-                    catch (final RemoteException ex2) {
-                        mgj.f("Could not notify onAdFailedToLoad event.", (Throwable)ex2);
+                    catch (final RemoteException ex) {
+                        mgx.f("Could not notify onAdFailedToLoad event.", (Throwable)ex);
                     }
                 }
                 return;
             }
-            case 12: {
-                final Object a6 = this.a;
-                try {
-                    ((mar)a6).a.e();
-                }
-                catch (final IllegalStateException ex3) {
-                    mfy.a(((mar)a6).getContext()).c((Throwable)ex3, "BaseAdView.resume");
-                }
-            }
             case 11: {
-                final Object a7 = this.a;
-                try {
-                    ((mar)a7).a.b();
+                final mcx a7 = ((mda)this.a).a.a;
+                if (a7 != null) {
+                    try {
+                        a7.a();
+                    }
+                    catch (final RemoteException ex2) {
+                        mgx.f("Could not notify onAdFailedToLoad event.", (Throwable)ex2);
+                    }
                 }
-                catch (final IllegalStateException ex4) {
-                    mfy.a(((mar)a7).getContext()).c((Throwable)ex4, "BaseAdView.destroy");
-                }
+                return;
             }
             case 10: {
                 final Object a8 = this.a;
                 try {
-                    ((mar)a8).a.d();
+                    ((mbf)a8).a.e();
                 }
-                catch (final IllegalStateException ex5) {
-                    mfy.a(((mar)a8).getContext()).c((Throwable)ex5, "BaseAdView.pause");
+                catch (final IllegalStateException ex3) {
+                    mgm.a(((mbf)a8).getContext()).c((Throwable)ex3, "BaseAdView.resume");
                 }
             }
             case 9: {
-                ((lzw)this.a).d();
-                return;
+                final Object a9 = this.a;
+                try {
+                    ((mbf)a9).a.b();
+                }
+                catch (final IllegalStateException ex4) {
+                    mgm.a(((mbf)a9).getContext()).c((Throwable)ex4, "BaseAdView.destroy");
+                }
             }
             case 8: {
-                ((lzw)this.a).c();
-                return;
+                final Object a10 = this.a;
+                try {
+                    ((mbf)a10).a.d();
+                }
+                catch (final IllegalStateException ex5) {
+                    mgm.a(((mbf)a10).getContext()).c((Throwable)ex5, "BaseAdView.pause");
+                }
             }
             case 7: {
-                ((lys)this.a).i(true);
+                ((mak)this.a).d();
                 return;
             }
             case 6: {
-                final mcb l = ((ltt)this.a).l;
+                ((mak)this.a).c();
+                return;
+            }
+            case 5: {
+                ((lzg)this.a).i(true);
+                return;
+            }
+            case 4: {
+                final mcp l = ((luh)this.a).l;
                 if (l.c != null) {
                     l.c = null;
                 }
                 return;
             }
-            case 5: {
+            case 3: {
                 final c c3 = (c)this.a;
-                final angr c4 = c3.c;
+                final aniy c4 = c3.c;
                 if (c4 != null && (c4.c & 0x4) != 0x0) {
                     c3.j.j(c4.g.I());
                 }
                 return;
             }
-            case 4: {
+            case 2: {
                 ((c)this.a).c();
                 return;
             }
-            case 3: {
-                ((aehq)this.a).b.a = null;
-                System.gc();
-                return;
-            }
-            case 2: {
+            case 1: {
                 final Object d4 = ((e)this.a).d;
                 if (d4 == null) {
-                    afse.p("Ignoring call to first() on YouTubeThumbnailView due to no playlist being set.");
+                    aftr.l("Ignoring call to first() on YouTubeThumbnailView due to no playlist being set.");
                     return;
                 }
                 ((a)d4).e();
                 return;
             }
-            case 1: {
-                final Object d5 = ((e)this.a).d;
-                if (d5 != null) {
-                    final a a9 = (a)d5;
-                    if (a9.j()) {
-                        a9.f();
-                        return;
-                    }
-                }
-                if (d5 instanceof b) {
-                    s = "as already at the end of the playlist.";
-                }
-                afse.p("Ignoring call to next() on YouTubeThumbnailView ".concat(s));
-                return;
-            }
             case 0: {
-                final Object d6 = ((e)this.a).d;
-                if (d6 != null) {
-                    final a a10 = (a)d6;
-                    if (a10.k()) {
-                        a10.g();
-                        return;
-                    }
-                }
-                if (d6 instanceof b) {
-                    s = "as already at the start of the playlist.";
-                }
-                afse.p("Ignoring call to previous() on YouTubeThumbnailView ".concat(s));
+                ((aejj)this.a).b.a = null;
+                System.gc();
             }
         }
     }

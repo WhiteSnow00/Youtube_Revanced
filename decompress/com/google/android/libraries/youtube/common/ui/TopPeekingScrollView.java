@@ -13,7 +13,7 @@ import android.content.Context;
 import android.view.View;
 import android.graphics.Rect;
 
-public class TopPeekingScrollView extends tqx
+public class TopPeekingScrollView extends try
 {
     private static final Rect n;
     public int k;
@@ -37,7 +37,7 @@ public class TopPeekingScrollView extends tqx
     
     public TopPeekingScrollView(final Context context, final AttributeSet set, final int n) {
         super(context, set, n);
-        this.i = context.obtainStyledAttributes(set, tqs.h).getBoolean(0, false);
+        this.i = context.obtainStyledAttributes(set, trt.h).getBoolean(0, false);
     }
     
     public final void addView(final View view) {
@@ -84,14 +84,13 @@ public class TopPeekingScrollView extends tqx
         return false;
     }
     
-    protected void onLayout(final boolean b, int n, final int n2, int k, final int n3) {
-        TopPeekingScrollView.n.set(n, n2, k, this.k);
+    protected void onLayout(final boolean b, int n, final int n2, int measuredWidth, final int n3) {
+        TopPeekingScrollView.n.set(n, n2, measuredWidth, this.k);
         if (this.getChildCount() > 0) {
             final View child = this.getChildAt(0);
-            n = k - n;
-            final int measuredWidth = child.getMeasuredWidth();
-            k = this.k;
-            child.layout((n - measuredWidth) / 2, n2 + k, (n - child.getMeasuredWidth()) / 2 + child.getMeasuredWidth(), n3);
+            n = measuredWidth - n;
+            measuredWidth = child.getMeasuredWidth();
+            child.layout((n - measuredWidth) / 2, n2 + this.k, (n - child.getMeasuredWidth()) / 2 + child.getMeasuredWidth(), n3);
         }
         this.b(0, this.p);
     }

@@ -6,9 +6,9 @@ package com.bumptech.glide.module;
 
 import android.content.Context;
 
-public abstract class AppGlideModule extends dnd implements dnb
+public abstract class AppGlideModule extends dng implements dne
 {
-    public void applyOptions(final Context context, final dbx dbx) {
+    public void applyOptions(final Context context, final dca dca) {
     }
     
     public boolean isManifestParsingEnabled() {

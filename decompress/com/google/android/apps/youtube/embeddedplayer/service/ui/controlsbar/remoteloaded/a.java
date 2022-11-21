@@ -25,7 +25,7 @@ public final class a extends ViewGroup implements View$OnClickListener
     public f f;
     public ImageButton g;
     public ImageButton h;
-    public abbr i;
+    public abcx i;
     public TextView j;
     
     public a(final Context context) {
@@ -70,7 +70,7 @@ public final class a extends ViewGroup implements View$OnClickListener
     }
     
     public final void onClick(final View view) {
-        adkp.R(this.i != null, (Object)"listener not set for ControlsOverlay");
+        adme.U(this.i != null, "listener not set for ControlsOverlay");
         final ImageButton h = this.h;
         if (view == h) {
             this.b(h.isSelected() ^ true);
@@ -92,27 +92,27 @@ public final class a extends ViewGroup implements View$OnClickListener
         }
     }
     
-    protected final void onLayout(final boolean b, int n, int c, final int n2, final int n3) {
+    protected final void onLayout(final boolean b, int n, int n2, final int n3, final int n4) {
         final View e = this.e;
         final int measuredHeight = e.getMeasuredHeight();
-        c = n3 - c;
-        n = n2 - n;
-        e.layout(0, c - measuredHeight, n, c);
-        c = this.e.getTop() + 2;
+        n2 = n4 - n2;
+        n = n3 - n;
+        e.layout(0, n2 - measuredHeight, n, n2);
+        n2 = this.e.getTop() + 2;
         final c d = this.d;
-        d.layout(0, c - d.getMeasuredHeight(), n, c);
-        c = this.c;
+        d.layout(0, n2 - d.getMeasuredHeight(), n, n2);
+        n2 = this.c;
         if (this.f.getVisibility() != 8) {
-            n = this.d(this.f, c);
+            n = this.d(this.f, n2);
         }
         else {
-            this.d((View)this.j, c);
+            this.d((View)this.j, n2);
             n = this.f.getMeasuredWidth();
         }
-        c = c + n + this.c;
-        n = this.d((View)this.g, c);
+        n = n2 + n + this.c;
+        n2 = this.d((View)this.g, n);
         if (this.h.getVisibility() != 8) {
-            this.d((View)this.h, c + n);
+            this.d((View)this.h, n + n2);
         }
     }
     

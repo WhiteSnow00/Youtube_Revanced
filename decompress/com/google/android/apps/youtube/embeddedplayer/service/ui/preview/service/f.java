@@ -8,7 +8,7 @@ import android.graphics.Bitmap;
 import android.os.RemoteException;
 import com.google.android.apps.youtube.embeddedplayer.service.ui.preview.shared.c;
 
-public final class f implements abdl
+public final class f implements aber
 {
     public c a;
     
@@ -27,17 +27,6 @@ public final class f implements abdl
         catch (final RemoteException ex) {}
     }
     
-    public final void mm() {
-        final c a = this.a;
-        if (a == null) {
-            return;
-        }
-        try {
-            a.h();
-        }
-        catch (final RemoteException ex) {}
-    }
-    
     public final void n() {
         final c a = this.a;
         if (a == null) {
@@ -45,6 +34,17 @@ public final class f implements abdl
         }
         try {
             a.b();
+        }
+        catch (final RemoteException ex) {}
+    }
+    
+    public final void ow() {
+        final c a = this.a;
+        if (a == null) {
+            return;
+        }
+        try {
+            a.h();
         }
         catch (final RemoteException ex) {}
     }

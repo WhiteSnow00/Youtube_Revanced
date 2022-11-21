@@ -18,8 +18,8 @@ public final class ConsumerAdapter
         this.loader = loader;
     }
     
-    private final Object buildConsumer(final atob atob, final atml atml) {
-        final Object proxyInstance = Proxy.newProxyInstance(this.loader, new Class[] { this.unsafeConsumerClass() }, new ConsumerAdapter$ConsumerHandler(atob, atml));
+    private final Object buildConsumer(final atrt atrt, final atqd atqd) {
+        final Object proxyInstance = Proxy.newProxyInstance(this.loader, new Class[] { this.unsafeConsumerClass() }, new ConsumerAdapter$ConsumerHandler(atrt, atqd));
         proxyInstance.getClass();
         return proxyInstance;
     }
@@ -30,12 +30,12 @@ public final class ConsumerAdapter
         return loadClass;
     }
     
-    public final void addConsumer(final Object o, final atob atob, final String s, final atml atml) {
+    public final void addConsumer(final Object o, final atrt atrt, final String s, final atqd atqd) {
         o.getClass();
-        atob.getClass();
+        atrt.getClass();
         s.getClass();
-        atml.getClass();
-        o.getClass().getMethod(s, this.unsafeConsumerClass()).invoke(o, this.buildConsumer(atob, atml));
+        atqd.getClass();
+        o.getClass().getMethod(s, this.unsafeConsumerClass()).invoke(o, this.buildConsumer(atrt, atqd));
     }
     
     public final Class consumerClassOrNull$window_release() {
@@ -49,46 +49,46 @@ public final class ConsumerAdapter
         return unsafeConsumerClass;
     }
     
-    public final void createConsumer(final Object o, final atob atob, final String s, final Activity activity, final atml atml) {
+    public final void createConsumer(final Object o, final atrt atrt, final String s, final Activity activity, final atqd atqd) {
         o.getClass();
-        atob.getClass();
+        atrt.getClass();
         s.getClass();
         activity.getClass();
-        atml.getClass();
-        o.getClass().getMethod(s, Activity.class, this.unsafeConsumerClass()).invoke(o, activity, this.buildConsumer(atob, atml));
+        atqd.getClass();
+        o.getClass().getMethod(s, Activity.class, this.unsafeConsumerClass()).invoke(o, activity, this.buildConsumer(atrt, atqd));
     }
     
-    public final ConsumerAdapter$Subscription createSubscription(final Object o, final atob atob, final String s, final String s2, final Activity activity, final atml atml) {
+    public final ConsumerAdapter$Subscription createSubscription(final Object o, final atrt atrt, final String s, final String s2, final Activity activity, final atqd atqd) {
         o.getClass();
-        atob.getClass();
+        atrt.getClass();
         s.getClass();
         s2.getClass();
         activity.getClass();
-        atml.getClass();
-        final Object buildConsumer = this.buildConsumer(atob, atml);
+        atqd.getClass();
+        final Object buildConsumer = this.buildConsumer(atrt, atqd);
         o.getClass().getMethod(s, Activity.class, this.unsafeConsumerClass()).invoke(o, activity, buildConsumer);
         return (ConsumerAdapter$Subscription)new ConsumerAdapter$createSubscription$1(o.getClass().getMethod(s2, this.unsafeConsumerClass()), o, buildConsumer);
     }
     
-    public final ConsumerAdapter$Subscription createSubscription(final Object o, final atob atob, final String s, final String s2, final Context context, final atml atml) {
+    public final ConsumerAdapter$Subscription createSubscription(final Object o, final atrt atrt, final String s, final String s2, final Context context, final atqd atqd) {
         o.getClass();
-        atob.getClass();
+        atrt.getClass();
         s.getClass();
         s2.getClass();
         context.getClass();
-        atml.getClass();
-        final Object buildConsumer = this.buildConsumer(atob, atml);
+        atqd.getClass();
+        final Object buildConsumer = this.buildConsumer(atrt, atqd);
         o.getClass().getMethod(s, Context.class, this.unsafeConsumerClass()).invoke(o, context, buildConsumer);
         return (ConsumerAdapter$Subscription)new ConsumerAdapter$createSubscription$2(o.getClass().getMethod(s2, this.unsafeConsumerClass()), o, buildConsumer);
     }
     
-    public final ConsumerAdapter$Subscription createSubscriptionNoActivity(final Object o, final atob atob, final String s, final String s2, final atml atml) {
+    public final ConsumerAdapter$Subscription createSubscriptionNoActivity(final Object o, final atrt atrt, final String s, final String s2, final atqd atqd) {
         o.getClass();
-        atob.getClass();
+        atrt.getClass();
         s.getClass();
         s2.getClass();
-        atml.getClass();
-        final Object buildConsumer = this.buildConsumer(atob, atml);
+        atqd.getClass();
+        final Object buildConsumer = this.buildConsumer(atrt, atqd);
         o.getClass().getMethod(s, this.unsafeConsumerClass()).invoke(o, buildConsumer);
         return (ConsumerAdapter$Subscription)new ConsumerAdapter$createSubscriptionNoActivity$1(o.getClass().getMethod(s2, this.unsafeConsumerClass()), o, buildConsumer);
     }

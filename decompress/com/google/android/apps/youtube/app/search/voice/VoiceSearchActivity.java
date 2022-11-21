@@ -6,17 +6,19 @@ package com.google.android.apps.youtube.app.search.voice;
 
 import java.io.InputStream;
 import java.io.IOException;
+import java.util.concurrent.Executor;
+import java.util.Locale;
 import android.animation.TimeInterpolator;
 import java.util.concurrent.TimeUnit;
 import android.os.Looper;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import android.view.View$OnClickListener;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.concurrent.atomic.AtomicBoolean;
 import android.content.res.Configuration;
 import android.text.TextUtils;
 import java.util.Iterator;
 import android.os.Bundle;
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.concurrent.atomic.AtomicBoolean;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.view.ViewGroup$MarginLayoutParams;
@@ -27,10 +29,11 @@ import java.util.concurrent.ScheduledExecutorService;
 import com.google.android.libraries.youtube.search.voice.MicrophoneView;
 import android.os.Handler;
 import android.view.animation.Interpolator;
+import android.media.AudioRecord;
 import com.google.android.apps.youtube.embeddedplayer.service.hostappverification.e;
 import android.widget.RelativeLayout;
+import com.google.common.util.concurrent.ListenableFuture;
 import android.media.SoundPool;
-import android.media.AudioRecord;
 import android.view.View;
 import java.util.List;
 import android.widget.ImageView;
@@ -39,73 +42,77 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import com.google.android.libraries.youtube.rendering.ui.permissions.PermissionDescriptor;
 
-public class VoiceSearchActivity extends jlm implements acst, jmc, cp, tec
+public class VoiceSearchActivity extends jna implements acwj, jnq, cp, thj
 {
-    private static final PermissionDescriptor[] ax;
-    public atjj A;
-    public atjj B;
-    public ConnectivitySlimStatusBarController C;
-    public acxf D;
-    public Runnable E;
-    public TextView F;
+    public static final int ay = 0;
+    private static final PermissionDescriptor[] az;
+    public atnb A;
+    public atnb B;
+    public tpw C;
+    public ConnectivitySlimStatusBarController D;
+    public adav E;
+    public Runnable F;
     public TextView G;
     public TextView H;
     public TextView I;
     public TextView J;
     public TextView K;
-    public ViewGroup L;
-    public boolean M;
+    public TextView L;
+    public ViewGroup M;
     public boolean N;
     public boolean O;
-    public LinearLayout P;
-    public ImageView Q;
-    public List R;
-    public int S;
-    public String T;
-    public View U;
-    public byte[] V;
-    public ImageView W;
-    public jlt X;
-    AudioRecord Y;
-    public int Z;
+    public boolean P;
+    public boolean Q;
+    public LinearLayout R;
+    public ImageView S;
+    public List T;
+    public int U;
+    public String V;
+    public View W;
+    public byte[] X;
+    public ImageView Y;
+    public jng Z;
     private boolean aA;
-    private SoundPool aB;
-    private int aC;
-    private gkm aD;
-    private String aE;
-    private jli aF;
-    private boolean aG;
-    private boolean aH;
-    private RelativeLayout aI;
-    private ViewGroup aJ;
-    private int aK;
-    private String aL;
-    private acdx aM;
-    private e aN;
-    public int aa;
+    private ImageView aB;
+    private boolean aC;
+    private SoundPool aD;
+    private int aE;
+    private gla aF;
+    private String aG;
+    private ListenableFuture aH;
+    private jmv aI;
+    private boolean aJ;
+    private boolean aK;
+    private RelativeLayout aL;
+    private ViewGroup aM;
+    private int aN;
+    private String aO;
+    private achp aP;
+    private e aQ;
+    AudioRecord aa;
     public int ab;
-    public boolean ac;
-    public boolean ad;
+    public int ac;
+    public int ad;
     public boolean ae;
-    public anyc af;
+    public boolean af;
     public boolean ag;
-    public ahca ah;
-    public String ai;
-    public final Interpolator aj;
-    public uyf ak;
-    public acss al;
-    public uyi am;
-    public uyi an;
-    public uyi ao;
-    public arud ap;
-    public adjo aq;
-    public adbp ar;
-    public e as;
-    public agjt at;
-    public alm au;
-    public cxz av;
-    private boolean ay;
-    private ImageView az;
+    public aocm ah;
+    public boolean ai;
+    public ahfq aj;
+    public String ak;
+    public final Interpolator al;
+    public vbo am;
+    public acwi an;
+    public vbs ao;
+    public vbs ap;
+    public vbs aq;
+    public acws ar;
+    public adnd as;
+    public arzb at;
+    public e au;
+    public alo av;
+    public agnl aw;
+    public cyd ax;
     public Handler b;
     public MicrophoneView c;
     public TextView d;
@@ -113,111 +120,122 @@ public class VoiceSearchActivity extends jlm implements acst, jmc, cp, tec
     public int f;
     public int g;
     public boolean h;
-    public acxg i;
+    public adaw i;
     public cl j;
-    public acsu k;
-    public acvr l;
+    public acwk k;
+    public aczg l;
     public boolean m;
     public boolean n;
     public int o;
-    public wyo p;
-    public tox q;
-    public wwv r;
-    public acxp s;
-    public vjl t;
-    public thh u;
-    public gko v;
-    public tdz w;
+    public xbu p;
+    public tsd q;
+    public xab r;
+    public adbf s;
+    public vmx t;
+    public tkq u;
+    public glc v;
+    public thg w;
     public ScheduledExecutorService x;
-    public afts y;
-    public acup z;
+    public afxk y;
+    public acyg z;
     
     static {
-        ax = new PermissionDescriptor[] { new PermissionDescriptor(2, wya.c(65799), wya.c(65800)) };
+        az = new PermissionDescriptor[] { new PermissionDescriptor(2, xbf.c(65799), xbf.c(65800)) };
     }
     
     public VoiceSearchActivity() {
-        this.l = acvr.a().a();
+        this.l = aczg.a().a();
         this.o = 0;
-        this.R = Collections.emptyList();
-        this.aj = (Interpolator)apb.c(0.05f, 0.0f, 0.0f, 1.0f);
+        this.aH = afxe.a;
+        this.T = Collections.emptyList();
+        this.al = (Interpolator)apd.c(0.05f, 0.0f, 0.0f, 1.0f);
     }
     
-    private final Boolean D() {
+    private final Boolean E() {
         return ((fa)this).getResources().getConfiguration().screenHeightDp >= 400;
     }
     
-    private final void E() {
+    private final void F() {
         final Resources resources = ((fa)this).getResources();
-        final int n = (int)resources.getDimension(2131170090);
-        int n2;
-        int n5;
-        int n6;
+        final int n = (int)resources.getDimension(2131170130);
+        int dimensionPixelSize;
         int n7;
-        if (tmy.bq((Context)this)) {
+        int n8;
+        int n9;
+        if (tqf.bq((Context)this)) {
+            int n2;
             float n3;
             float n4;
-            if (tmy.bo((Context)this)) {
-                n2 = resources.getDimensionPixelSize(2131167973);
-                n3 = 0.22f;
-                n4 = 0.2f;
+            if (tqf.bo((Context)this)) {
+                n2 = resources.getDimensionPixelSize(2131168011);
+                n3 = 0.2f;
+                n4 = 0.22f;
             }
             else {
-                n2 = resources.getDimensionPixelSize(2131167972);
-                n3 = 0.24f;
-                n4 = 0.1f;
+                n2 = resources.getDimensionPixelSize(2131168010);
+                n3 = 0.1f;
+                n4 = 0.24f;
             }
-            n5 = resources.getDimensionPixelSize(2131169825);
-            this.U.setOnApplyWindowInsetsListener((View$OnApplyWindowInsetsListener)new jmf(this, 0));
-            n6 = (int)(n3 * (tmy.bb((Context)this) - this.o));
-            n7 = (int)(n4 * tmy.bd((Context)this));
+            dimensionPixelSize = resources.getDimensionPixelSize(2131169865);
+            this.W.setOnApplyWindowInsetsListener((View$OnApplyWindowInsetsListener)new jnt(this, 0));
+            final int bb = tqf.bb((Context)this);
+            final int o = this.o;
+            final int n5 = (int)(n3 * tqf.bd((Context)this));
+            final int n6 = (int)(n4 * (bb - o));
+            n7 = n2;
+            n8 = n5;
+            n9 = n6;
         }
         else {
-            float n8;
-            if (this.D()) {
-                n2 = (int)resources.getDimension(2131167970);
-                n8 = resources.getDimension(2131170091);
+            int n10;
+            float n11;
+            if (this.E()) {
+                n10 = (int)resources.getDimension(2131168008);
+                n11 = resources.getDimension(2131170131);
             }
             else {
-                n2 = (int)resources.getDimension(2131167971);
-                n8 = resources.getDimension(2131170092);
+                n10 = (int)resources.getDimension(2131168009);
+                n11 = resources.getDimension(2131170132);
             }
-            n6 = (int)n8;
-            n7 = (int)resources.getDimension(2131170090);
-            n5 = resources.getDimensionPixelSize(2131169824);
+            n9 = (int)n11;
+            final int n12 = (int)resources.getDimension(2131170130);
+            final int dimensionPixelSize2 = resources.getDimensionPixelSize(2131169864);
+            n7 = n10;
+            n8 = n12;
+            dimensionPixelSize = dimensionPixelSize2;
         }
-        tmy.aF((View)this.c, tmy.ay(0, 0, 0, n2), (Class)ViewGroup$MarginLayoutParams.class);
-        tmy.aF((View)this.aI, tmy.ay(n7, n6, n7, n), (Class)ViewGroup$MarginLayoutParams.class);
-        tmy.aF((View)this.G, tmy.ay(0, 0, 0, n5), (Class)ViewGroup$MarginLayoutParams.class);
+        tqf.aF((View)this.c, tqf.ay(0, 0, 0, n7), (Class)ViewGroup$MarginLayoutParams.class);
+        tqf.aF((View)this.aL, tqf.ay(n8, n9, n8, n), (Class)ViewGroup$MarginLayoutParams.class);
+        tqf.aF((View)this.H, tqf.ay(0, 0, 0, dimensionPixelSize), (Class)ViewGroup$MarginLayoutParams.class);
         final Resources resources2 = ((fa)this).getResources();
-        float n9;
-        float n10;
-        int n11;
-        if (tmy.bq((Context)this)) {
-            n9 = (float)resources2.getDimensionPixelSize(2131170325);
-            n10 = (float)resources2.getDimensionPixelSize(2131170323);
-            n11 = resources2.getDimensionPixelSize(2131170321);
+        float n13;
+        float n14;
+        int n15;
+        if (tqf.bq((Context)this)) {
+            n13 = (float)resources2.getDimensionPixelSize(2131170365);
+            n14 = (float)resources2.getDimensionPixelSize(2131170363);
+            n15 = resources2.getDimensionPixelSize(2131170361);
         }
         else {
-            n9 = (float)resources2.getDimensionPixelSize(2131170324);
-            n10 = (float)resources2.getDimensionPixelSize(2131170322);
-            n11 = resources2.getDimensionPixelSize(2131170320);
+            n13 = (float)resources2.getDimensionPixelSize(2131170364);
+            n14 = (float)resources2.getDimensionPixelSize(2131170362);
+            n15 = resources2.getDimensionPixelSize(2131170360);
         }
-        final float n12 = (float)n11;
-        this.G.setTextSize(0, n10);
-        this.G.setLineSpacing(n12, 1.0f);
-        this.d.setTextSize(0, n10);
-        this.d.setLineSpacing(n12, 1.0f);
-        this.F.setTextSize(0, n10);
-        this.F.setLineSpacing(n12, 1.0f);
-        this.I.setTextSize(0, n9);
-        this.J.setTextSize(0, n9);
-        this.H.setTextSize(0, n9);
+        final float n16 = (float)n15;
+        this.H.setTextSize(0, n14);
+        this.H.setLineSpacing(n16, 1.0f);
+        this.d.setTextSize(0, n14);
+        this.d.setLineSpacing(n16, 1.0f);
+        this.G.setTextSize(0, n14);
+        this.G.setLineSpacing(n16, 1.0f);
+        this.J.setTextSize(0, n13);
+        this.K.setTextSize(0, n13);
+        this.I.setTextSize(0, n13);
     }
     
-    private final void F() {
+    private final void G() {
         this.setVisible(false);
-        this.aH = true;
+        this.aK = true;
         final Intent intent = this.getIntent();
         intent.putExtra("RegularVoiceSearch", true);
         this.setResult(-1, intent);
@@ -225,78 +243,84 @@ public class VoiceSearchActivity extends jlm implements acst, jmc, cp, tec
     }
     
     public final boolean A() {
-        return gkt.aN(this.ap);
+        final AtomicBoolean atomicBoolean = new AtomicBoolean();
+        asmr.b((AtomicReference)this.ap.cl().aC(false).aa((asmi)new jnd(atomicBoolean, 5)));
+        return atomicBoolean.get();
     }
     
-    public final int B() {
-        return gkt.aQ(this.ap);
+    public final boolean B() {
+        return fao.bE(this.at);
     }
     
     public final int C() {
-        return gkt.aR(this.ap);
+        return fao.bH(this.at);
+    }
+    
+    public final int D() {
+        return fao.bI(this.at);
     }
     
     public final void a(final String s, final Bundle bundle) {
         if (s.equals("VaaConsentWebViewRequestKey")) {
-            this.b.post((Runnable)new jku(this, bundle, 4));
+            this.b.post((Runnable)new jdo(this, bundle, 6));
             return;
         }
-        trn.m("VoiceSearchActivity", "Unexpected fragment result request key: ".concat(String.valueOf(s)));
-    }
-    
-    public final void aL() {
-        this.n();
+        tut.m("VoiceSearchActivity", "Unexpected fragment result request key: ".concat(String.valueOf(s)));
     }
     
     public final void aM() {
-        this.ay = false;
-        this.U.setVisibility(8);
-        this.b.post((Runnable)new jcd(this, 16));
+        this.n();
+    }
+    
+    public final void aN() {
+        this.aA = false;
+        this.W.setVisibility(8);
+        this.b.post((Runnable)new jin(this, 12));
     }
     
     public final void b() {
-        this.H.setVisibility(4);
-        this.I.setVisibility(8);
-        this.v();
+        this.I.setVisibility(4);
+        this.J.setVisibility(8);
+        this.w();
     }
     
     public final void c(final String text, final String s) {
-        this.K.setText((CharSequence)text);
-        this.K.requestLayout();
-        final acxg i = this.i;
+        this.L.setText((CharSequence)text);
+        this.L.requestLayout();
+        final adaw i = this.i;
         if (i != null) {
             i.a();
             this.i = null;
         }
-        this.w(s);
+        this.x(s);
     }
     
     public final float d() {
-        return gkt.ae(this.ap);
+        return fao.aW(this.at);
     }
     
     public final int f() {
-        return gkt.af(this.ap);
+        return fao.aX(this.at);
     }
     
-    public final acxe g() {
-        return (acxe)new jmh(this);
+    public final adau g() {
+        return (adau)new jnv(this);
     }
     
-    public final aexq h() {
-        return gkt.an(this.ap);
+    public final afbh h() {
+        return fao.bf(this.at);
     }
     
     public final String i() {
-        return gkt.ap(this.ap);
+        return fao.bh(this.at);
     }
     
     public final String j() {
-        final String n = adbp.n();
+        final String c = acws.c();
         final String a = this.ar.a();
-        if (!n.isEmpty() && !a.isEmpty()) {
+        if (!c.isEmpty() && !a.isEmpty()) {
             final StringBuilder sb = new StringBuilder();
-            sb.append(n);
+            sb.append(c);
             sb.append("-");
             sb.append(a);
             return sb.toString();
@@ -305,21 +329,21 @@ public class VoiceSearchActivity extends jlm implements acst, jmc, cp, tec
     }
     
     public final void k() {
-        final boolean booleanValue = this.D();
+        final boolean booleanValue = this.E();
         int n = 0;
-        if ((booleanValue || (boolean)(((fa)this).getResources().getConfiguration().screenWidthDp >= 400)) && !this.R.isEmpty()) {
-            final StringBuilder text = new StringBuilder(((fa)this).getResources().getString(2132020000));
-            if (this.D()) {
+        if ((booleanValue || (boolean)(((fa)this).getResources().getConfiguration().screenWidthDp >= 400)) && !this.T.isEmpty()) {
+            final StringBuilder text = new StringBuilder(((fa)this).getResources().getString(2132020004));
+            if (this.E()) {
                 text.append("\n\n''");
             }
             else {
                 text.append("\n''");
             }
-            text.append(this.R.get(0));
+            text.append(this.T.get(0));
             text.append("''");
-            this.J.setText((CharSequence)text);
+            this.K.setText((CharSequence)text);
             final StringBuilder text2 = new StringBuilder();
-            for (final String s : this.R) {
+            for (final String s : this.T) {
                 ++n;
                 text2.append("''");
                 text2.append(s);
@@ -329,25 +353,25 @@ public class VoiceSearchActivity extends jlm implements acst, jmc, cp, tec
                 }
                 text2.append("\n\n");
             }
-            this.I.setText((CharSequence)text2);
+            this.J.setText((CharSequence)text2);
         }
     }
     
     public final void l() {
-        if (this.D != null) {
+        if (this.E != null) {
             return;
         }
-        this.D = (acxf)new jmn(this, 1);
+        this.E = (adav)new joa(this, 1);
     }
     
     public final void m() {
-        final ViewGroup l = this.L;
-        if (l != null) {
-            l.setVisibility(4);
+        final ViewGroup m = this.M;
+        if (m != null) {
+            m.setVisibility(4);
         }
     }
     
-    public final Class[] ms(final Class clazz, final Object o, final int n) {
+    public final Class[] mr(final Class clazz, final Object o, final int n) {
         Class[] array2;
         if (n != -1) {
             if (n != 0) {
@@ -355,19 +379,19 @@ public class VoiceSearchActivity extends jlm implements acst, jmc, cp, tec
                 sb.append(n);
                 throw new IllegalStateException(sb.toString());
             }
-            final boolean a = ((tge)o).a();
-            this.ad = a;
-            this.C.r(a ^ true);
-            final boolean ad = this.ad;
+            final boolean a = ((tjn)o).a();
+            this.af = a;
+            this.D.r(a ^ true);
+            final boolean af = this.af;
             final Class[] array = null;
-            if (ad) {
-                this.b.removeCallbacks(this.E);
-                this.G.setText(((fa)this).getResources().getText(2132020209));
+            if (af) {
+                this.b.removeCallbacks(this.F);
+                this.H.setText(((fa)this).getResources().getText(2132020213));
                 this.c.setEnabled(true);
                 this.c.setVisibility(0);
                 array2 = array;
-                if (this.L != null) {
-                    if (!TextUtils.isEmpty((CharSequence)this.ai)) {
+                if (this.M != null) {
+                    if (!TextUtils.isEmpty((CharSequence)this.ak)) {
                         this.o();
                         return null;
                     }
@@ -375,7 +399,7 @@ public class VoiceSearchActivity extends jlm implements acst, jmc, cp, tec
                 }
             }
             else if (this.h) {
-                this.b.postDelayed(this.E, 3000L);
+                this.b.postDelayed(this.F, 3000L);
                 array2 = array;
             }
             else {
@@ -384,7 +408,7 @@ public class VoiceSearchActivity extends jlm implements acst, jmc, cp, tec
             }
         }
         else {
-            array2 = new Class[] { tge.class };
+            array2 = new Class[] { tjn.class };
         }
         return array2;
     }
@@ -396,11 +420,11 @@ public class VoiceSearchActivity extends jlm implements acst, jmc, cp, tec
     }
     
     public final void o() {
-        tcp.n((aum)this, ((tku)this.A.a()).a(), (trb)ifc.s, (trb)new jly(this, 7));
+        tfx.n((aup)this, ((tnz)this.A.a()).a(), (tui)igg.r, (tui)new jnl(this, 9));
     }
     
     public final void onBackPressed() {
-        this.r.J(3, (wxz)new wws(wya.c(88272)), (alff)null);
+        this.r.J(3, (xbe)new wzy(xbf.c(88272)), (alji)null);
         final Intent intent = this.getIntent();
         intent.putExtra("AssistantCsn", this.r.i());
         this.setResult(1, intent);
@@ -409,396 +433,422 @@ public class VoiceSearchActivity extends jlm implements acst, jmc, cp, tec
     
     public final void onConfigurationChanged(final Configuration configuration) {
         super.onConfigurationChanged(configuration);
-        final tox q = this.q;
+        final tsd q = this.q;
         if (q != null) {
             q.b();
         }
-        this.E();
+        this.F();
         this.k();
     }
     
     protected final void onCreate(final Bundle bundle) {
         super.onCreate(bundle);
         final Boolean value = false;
-        final SoundPool ab = new SoundPool(5, 3, 0);
-        this.aB = ab;
-        this.aC = ab.load((Context)this, 2131951697, 0);
-        this.e = this.aB.load((Context)this, 2131951708, 0);
-        this.f = this.aB.load((Context)this, 2131951696, 0);
-        this.g = this.aB.load((Context)this, 2131951660, 0);
-        this.aD = this.v.a();
-        final boolean b = this.ao.aT() && this.ao.aU();
-        final gkm a = gkm.a;
-        final int ordinal = this.aD.ordinal();
+        final SoundPool ad = new SoundPool(5, 3, 0);
+        this.aD = ad;
+        this.aE = ad.load((Context)this, 2131951697, 0);
+        this.e = this.aD.load((Context)this, 2131951708, 0);
+        this.f = this.aD.load((Context)this, 2131951696, 0);
+        this.g = this.aD.load((Context)this, 2131951660, 0);
+        this.aF = this.v.a();
+        final boolean b = this.aq.aX() && this.aq.aY();
+        final gla a = gla.a;
+        final int ordinal = this.aF.ordinal();
         if (ordinal != 0) {
             if (ordinal == 1) {
                 if (b) {
-                    ((fa)this).setTheme(2132084273);
+                    ((fa)this).setTheme(2132084277);
                 }
                 else {
-                    ((fa)this).setTheme(2132084272);
+                    ((fa)this).setTheme(2132084276);
                 }
             }
         }
         else if (b) {
-            ((fa)this).setTheme(2132084289);
+            ((fa)this).setTheme(2132084293);
         }
         else {
-            ((fa)this).setTheme(2132084288);
+            ((fa)this).setTheme(2132084292);
         }
         final AtomicBoolean atomicBoolean = new AtomicBoolean();
-        asjg.b((AtomicReference)this.am.ck().aw((Object)value).Z((asix)new jmj(atomicBoolean, 1)));
+        asmr.b((AtomicReference)this.ao.cp().aC(value).aa((asmi)new jnd(atomicBoolean, 5)));
         if (atomicBoolean.get()) {
-            ((qt)this).setContentView(2131625751);
+            ((qu)this).setContentView(2131625757);
         }
         else {
-            ((qt)this).setContentView(2131625750);
+            ((qu)this).setContentView(2131625756);
         }
         final cl supportFragmentManager = ((bu)this).getSupportFragmentManager();
         this.j = supportFragmentManager;
-        if (bundle != null && (this.k = (acsu)supportFragmentManager.g(bundle, "permission_request_fragment")) != null && (!TextUtils.equals((CharSequence)this.aE, (CharSequence)"PERMISSION_REQUEST_FRAGMENT") || !acsm.f((Context)this, VoiceSearchActivity.ax))) {
+        if (bundle != null && (this.k = (acwk)supportFragmentManager.g(bundle, "permission_request_fragment")) != null && (!TextUtils.equals((CharSequence)this.aG, (CharSequence)"PERMISSION_REQUEST_FRAGMENT") || !acwc.f((Context)this, VoiceSearchActivity.az))) {
             final ct i = this.j.i();
             i.m((br)this.k);
             i.d();
         }
-        this.U = ((fa)this).findViewById(2131429083);
-        (this.az = (ImageView)((fa)this).findViewById(2131427738)).setOnClickListener((View$OnClickListener)new jlq(this, 7));
+        this.W = ((fa)this).findViewById(2131429083);
+        (this.aB = (ImageView)((fa)this).findViewById(2131427738)).setOnClickListener((View$OnClickListener)new jnm(this, 4));
         final MicrophoneView c = (MicrophoneView)((fa)this).findViewById(2131429875);
         this.c = c;
-        ((FloatingActionButton)c.findViewById(2131428685)).setImageDrawable(tmy.k(this.c.getContext(), 2131233821, 2130970924));
-        ((FloatingActionButton)this.c.findViewById(2131428876)).setImageResource(2131233563);
-        this.c.setOnClickListener((View$OnClickListener)new jlq(this, 8));
-        this.G = (TextView)((fa)this).findViewById(2131431697);
-        this.d = (TextView)((fa)this).findViewById(2131431674);
-        this.F = (TextView)((fa)this).findViewById(2131432231);
-        this.H = (TextView)((fa)this).findViewById(2131428922);
-        this.I = (TextView)((fa)this).findViewById(2131428924);
-        this.J = (TextView)((fa)this).findViewById(2131429591);
+        ((FloatingActionButton)c.findViewById(2131428685)).setImageDrawable(tqf.k(this.c.getContext(), 2131233827, 2130970922));
+        ((FloatingActionButton)this.c.findViewById(2131428876)).setImageResource(2131233564);
+        this.c.setOnClickListener((View$OnClickListener)new jnm(this, 5));
+        this.H = (TextView)((fa)this).findViewById(2131431701);
+        this.d = (TextView)((fa)this).findViewById(2131431678);
+        this.G = (TextView)((fa)this).findViewById(2131432235);
+        this.I = (TextView)((fa)this).findViewById(2131428922);
+        this.J = (TextView)((fa)this).findViewById(2131428924);
+        this.K = (TextView)((fa)this).findViewById(2131429591);
         final AtomicBoolean atomicBoolean2 = new AtomicBoolean();
-        asjg.b((AtomicReference)this.an.l(45374875L).aw((Object)value).Z((asix)new jmj(atomicBoolean2, 1)));
+        asmr.b((AtomicReference)this.ap.l(45374875L).aC(value).aa((asmi)new jnd(atomicBoolean2, 5)));
         if (atomicBoolean2.get()) {
-            this.J.setOnClickListener((View$OnClickListener)new jlq(this, 9));
+            this.K.setOnClickListener((View$OnClickListener)new jnm(this, 6));
         }
-        this.aI = (RelativeLayout)((fa)this).findViewById(2131432394);
-        this.K = (TextView)((fa)this).findViewById(2131432387);
-        this.P = (LinearLayout)((fa)this).findViewById(2131432388);
-        this.Q = (ImageView)((fa)this).findViewById(2131432389);
-        this.W = (ImageView)((fa)this).findViewById(2131431622);
-        this.L = (ViewGroup)((fa)this).findViewById(2131432282);
-        final View viewById = ((fa)this).findViewById(2131432281);
+        this.aL = (RelativeLayout)((fa)this).findViewById(2131432398);
+        this.L = (TextView)((fa)this).findViewById(2131432391);
+        this.R = (LinearLayout)((fa)this).findViewById(2131432392);
+        this.S = (ImageView)((fa)this).findViewById(2131432393);
+        this.Y = (ImageView)((fa)this).findViewById(2131431626);
+        this.M = (ViewGroup)((fa)this).findViewById(2131432286);
+        final View viewById = ((fa)this).findViewById(2131432285);
         if (viewById != null) {
-            viewById.setOnClickListener((View$OnClickListener)new jlq(this, 5));
+            viewById.setOnClickListener((View$OnClickListener)new jnm(this, 7));
         }
-        ViewGroup aj;
-        if ((aj = (ViewGroup)((fa)this).findViewById(2131431596)) == null) {
-            aj = (ViewGroup)((fa)this).findViewById(2131427835);
+        ViewGroup am;
+        if ((am = (ViewGroup)((fa)this).findViewById(2131431600)) == null) {
+            am = (ViewGroup)((fa)this).findViewById(2131427835);
         }
-        this.aJ = aj;
-        this.aM = new acdx((Context)this);
-        final jli k = jfi.k((Context)this);
-        this.aF = k;
-        (this.C = this.as.h((Context)this, k)).g(this.aJ);
-        this.ad = this.u.o();
-        this.E = (Runnable)new jcd(this, 15);
-        if (gkt.u(this.ak)) {
-            final e u = this.au.U(this.j());
-            this.aN = u;
-            tcp.n((aum)this, u.g(), (trb)new jly(this, 5), (trb)new jly(this, 6));
+        this.aM = am;
+        this.aP = new achp((Context)this);
+        final jmv s = mgh.S((Context)this);
+        this.aI = s;
+        (this.D = this.au.h((Context)this, s)).g(this.aM);
+        this.af = this.u.o();
+        this.F = (Runnable)new jin(this, 11);
+        if (fao.au(this.am)) {
+            final e s2 = this.av.S(this.j());
+            this.aQ = s2;
+            tfx.n((aup)this, s2.g(), (tui)new jnl(this, 7), (tui)new jnl(this, 8));
         }
-        this.ab = this.getIntent().getIntExtra("MicSampleRate", 16000);
-        this.Z = this.getIntent().getIntExtra("MicAudioFormatEncoding", 2);
-        this.aa = this.getIntent().getIntExtra("MicChannelConfig", 16);
-        this.E();
+        this.ad = this.getIntent().getIntExtra("MicSampleRate", 16000);
+        this.ab = this.getIntent().getIntExtra("MicAudioFormatEncoding", 2);
+        this.ac = this.getIntent().getIntExtra("MicChannelConfig", 16);
+        this.F();
         this.k();
-        this.aK = this.getIntent().getIntExtra("ParentVeType", 0);
-        this.aL = this.getIntent().getStringExtra("ParentCSN");
-        this.T = this.getIntent().getStringExtra("searchEndpointParams");
-        this.V = this.getIntent().getByteArrayExtra("SearchboxStats");
-        final acvq a2 = acvr.a();
+        this.aN = this.getIntent().getIntExtra("ParentVeType", 0);
+        this.aO = this.getIntent().getStringExtra("ParentCSN");
+        this.V = this.getIntent().getStringExtra("searchEndpointParams");
+        this.X = this.getIntent().getByteArrayExtra("SearchboxStats");
+        final aczf a2 = aczg.a();
         a2.c(this.getIntent().getBooleanExtra("IS_SHORTS_CONTEXT", false));
         a2.b(this.getIntent().getBooleanExtra("IS_SHORTS_CHIP_SELECTED", false));
         this.l = a2.a();
-        final agzc agzc = (agzc)((agzi)aioe.a).createBuilder();
-        final agza builder = ((agzi)amob.a).createBuilder();
-        final int ak = this.aK;
+        final ahct ahct = (ahct)((ahcz)aisc.a).createBuilder();
+        final ahcr builder = ((ahcz)amsl.a).createBuilder();
+        final int an = this.aN;
         builder.copyOnWrite();
-        final amob amob = (amob)builder.instance;
-        amob.b |= 0x2;
-        amob.d = ak;
-        final String al = this.aL;
-        if (al != null) {
+        final amsl amsl = (amsl)builder.instance;
+        amsl.b |= 0x2;
+        amsl.d = an;
+        final String ao = this.aO;
+        if (ao != null) {
             builder.copyOnWrite();
-            final amob amob2 = (amob)builder.instance;
-            amob2.b |= 0x1;
-            amob2.c = al;
+            final amsl amsl2 = (amsl)builder.instance;
+            amsl2.b |= 0x1;
+            amsl2.c = ao;
         }
-        agzc.e((agyr)amoa.b, (Object)builder.build());
-        this.r.b(wya.b(22678), (aioe)((agza)agzc).build(), (alff)null);
-        this.r.l((wxz)new wws(wya.c(22156)));
-        this.r.l((wxz)new wws(wya.c(88272)));
-        this.aA = true;
+        ahct.e((ahci)amsk.b, (Object)builder.build());
+        this.r.b(xbf.b(22678), (aisc)((ahcr)ahct).build(), (alji)null);
+        this.r.l((xbe)new wzy(xbf.c(22156)));
+        this.r.l((xbe)new wzy(xbf.c(88272)));
+        this.aC = true;
     }
     
     public final void onDestroy() {
         this.h = false;
         this.q();
-        final acxg i = this.i;
+        final adaw i = this.i;
         if (i != null) {
             i.a();
             this.i = null;
         }
-        this.D = null;
+        this.E = null;
         this.c.setOnClickListener((View$OnClickListener)null);
-        this.az.setOnClickListener((View$OnClickListener)null);
+        this.aB.setOnClickListener((View$OnClickListener)null);
         this.r.s();
-        final ConnectivitySlimStatusBarController c = this.C;
-        if (c != null) {
-            c.k();
+        final ConnectivitySlimStatusBarController d = this.D;
+        if (d != null) {
+            d.k();
         }
         super.onDestroy();
     }
     
     public final void onPause() {
         super.onPause();
-        if (this.aH) {
+        if (this.aK) {
             this.overridePendingTransition(0, 0);
-            this.aH = false;
+            this.aK = false;
         }
-        if (this.an.cj()) {
-            tcp.o((aum)this, this.at.m(), (trb)ifc.n, (trb)ifc.o);
+        if (this.ap.co()) {
+            tfx.o((aup)this, this.aw.m(), (tui)igg.k, (tui)igg.l);
         }
     }
     
     public final void onRestart() {
         super.onRestart();
-        if (this.aD != this.v.a()) {
-            new Handler(Looper.getMainLooper()).postAtFrontOfQueue((Runnable)new jcd(this, 14));
+        if (this.aF != this.v.a()) {
+            new Handler(Looper.getMainLooper()).postAtFrontOfQueue((Runnable)new jin(this, 10));
         }
     }
     
     public final void onResume() {
         super.onResume();
         this.w.g((Object)this);
-        this.C.r(true);
-        final tox q = this.q;
+        this.D.r(true);
+        final tsd q = this.q;
         if (q != null) {
             q.b();
         }
-        if (td.c((Context)this, "android.permission.RECORD_AUDIO") == 0) {
+        if (tc.b((Context)this, "android.permission.RECORD_AUDIO") == 0) {
             final AudioRecord a = this.s.a();
-            if ((this.Y = a) == null) {
-                this.F();
+            if ((this.aa = a) == null) {
+                this.G();
                 return;
             }
-            this.Z = a.getAudioFormat();
-            this.aa = this.Y.getChannelConfiguration();
-            this.ab = this.Y.getSampleRate();
-            this.r.l((wxz)new wws(wya.c(62943)));
-            if (gkt.aw(this.ap) && this.p.t(alku.K)) {
-                this.p.y("voz_vp", alku.K);
+            this.ab = a.getAudioFormat();
+            this.ac = this.aa.getChannelConfiguration();
+            this.ad = this.aa.getSampleRate();
+            this.r.l((xbe)new wzy(xbf.c(62943)));
+            if (fao.bn(this.at) && this.p.t(alox.K)) {
+                this.p.y("voz_vp", alox.K);
             }
-            if (gkt.u(this.ak)) {
-                tcp.n((aum)this, afva.t(this.av.F(), 300L, TimeUnit.MILLISECONDS, this.x), (trb)new jly(this, 3), (trb)new jly(this, 4));
+            if (fao.au(this.am)) {
+                tfx.n((aup)this, afxr.s(this.ax.G(), 300L, TimeUnit.MILLISECONDS, this.x), (tui)new jnl(this, 5), (tui)new jnl(this, 6));
                 return;
             }
-            this.w("");
+            this.x("");
         }
         else {
-            final PermissionDescriptor[] ax = VoiceSearchActivity.ax;
-            if (!acsm.f((Context)this, ax)) {
+            final PermissionDescriptor[] az = VoiceSearchActivity.az;
+            if (!acwc.f((Context)this, az)) {
                 this.n();
                 return;
             }
-            if (this.ay) {
+            if (this.aA) {
                 return;
             }
             if (this.k == null) {
-                final acss al = this.al;
-                al.e(ax);
-                al.f = wya.b(69076);
-                al.g = wya.c(69077);
-                al.h = wya.c(69078);
-                al.i = wya.c(69079);
-                al.b(2132020185);
-                al.c(2132020186);
-                al.c = 2132019105;
-                this.k = (acsu)al.a();
+                final acwi an = this.an;
+                an.e(az);
+                an.f = xbf.b(69076);
+                an.g = xbf.c(69077);
+                an.h = xbf.c(69078);
+                an.i = xbf.c(69079);
+                an.b(2132020189);
+                an.c(2132020190);
+                an.c = 2132019108;
+                this.k = an.a();
             }
-            this.k.aK((acst)this);
+            this.k.aK((acwj)this);
             int n;
-            if (this.ao.aT() && this.ao.aU()) {
-                n = 2132084273;
+            if (this.aq.aX() && this.aq.aY()) {
+                n = 2132084277;
             }
             else {
-                n = 2132084272;
+                n = 2132084276;
             }
-            this.k.aL((Context)new rq((Context)this, n));
-            this.x((br)this.k, "PERMISSION_REQUEST_FRAGMENT");
-            this.ay = true;
+            this.k.aL((Context)new rr((Context)this, n));
+            this.y((br)this.k, "PERMISSION_REQUEST_FRAGMENT");
+            this.aA = true;
         }
     }
     
     public final void onStop() {
+        this.C.d(false);
         super.onStop();
         this.w.m((Object)this);
-        if (!this.aG) {
+        if (!this.aJ) {
             this.n();
         }
     }
     
     public final void onUserInteraction() {
-        final tox q = this.q;
+        final tsd q = this.q;
         if (q != null) {
             q.b();
         }
         super.onUserInteraction();
     }
     
-    public final void onWindowFocusChanged(final boolean ag) {
-        super.onWindowFocusChanged(ag);
-        this.aG = ag;
+    public final void onWindowFocusChanged(final boolean aj) {
+        super.onWindowFocusChanged(aj);
+        this.aJ = aj;
     }
     
     public final void p(final int n) {
-        final SoundPool ab = this.aB;
-        if (ab != null) {
-            ab.play(n, 1.0f, 1.0f, 0, 0, 1.0f);
+        final SoundPool ad = this.aD;
+        if (ad != null) {
+            ad.play(n, 1.0f, 1.0f, 0, 0, 1.0f);
         }
     }
     
     public final void q() {
-        final SoundPool ab = this.aB;
-        if (ab != null) {
-            ab.release();
-            this.aB = null;
+        final SoundPool ad = this.aD;
+        if (ad != null) {
+            ad.release();
+            this.aD = null;
         }
     }
     
     public final void r() {
         this.h = false;
-        this.M = false;
         this.N = false;
-        final acxg i = this.i;
+        this.O = false;
+        final adaw i = this.i;
         if (i != null) {
             i.c();
         }
-        this.u();
+        this.v();
     }
     
     public final void s() {
         this.h = false;
-        this.M = false;
         this.N = false;
-        final acxg i = this.i;
+        this.O = false;
+        final adaw i = this.i;
         if (i != null) {
             i.c();
         }
-        this.H.setVisibility(0);
+        this.I.setVisibility(0);
         this.d.setVisibility(8);
-        this.F.setVisibility(8);
+        this.G.setVisibility(8);
+        this.K.setVisibility(8);
         this.J.setVisibility(8);
-        this.I.setVisibility(8);
-        this.G.setText(((fa)this).getResources().getText(2132020208));
-        this.G.setVisibility(0);
+        this.aH.cancel(false);
+        this.H.setText(((fa)this).getResources().getText(2132020212));
+        this.H.setVisibility(0);
         this.c.setVisibility(8);
         this.c.d();
-        this.W.animate().alpha(0.0f).setDuration(200L).setInterpolator((TimeInterpolator)this.aj);
+        this.Y.animate().alpha(0.0f).setDuration(200L).setInterpolator((TimeInterpolator)this.al);
         this.m();
     }
     
-    public final void t() {
-        if (this.z()) {
-            tcp.i(((tku)this.B.a()).a(), (tco)new hfi(this, 19));
-            return;
+    public final void t(final String s) {
+        String j = s;
+        if (s.isEmpty()) {
+            j = this.j();
         }
-        this.ag = false;
-        this.ah = ahca.a;
+        this.C.a(Locale.forLanguageTag(j));
     }
     
     public final void u() {
-        this.H.setVisibility(0);
-        this.G.setVisibility(0);
-        this.d.setVisibility(8);
-        this.F.setVisibility(8);
-        this.J.setVisibility(8);
-        this.I.setVisibility(8);
-        this.c.setEnabled(true);
-        this.c.setVisibility(0);
-        this.c.d();
-        this.W.animate().alpha(0.0f).setDuration(200L).setInterpolator((TimeInterpolator)this.aj);
-        if (!this.ad) {
-            this.G.setText(((fa)this).getResources().getText(2132020208));
-            this.c.setEnabled(false);
+        if (this.A()) {
+            tfx.i(((tnz)this.B.a()).a(), (tfw)new hzj(this, 15));
             return;
         }
-        if (!this.ac) {
-            this.G.setText(((fa)this).getResources().getText(2132017885));
-            this.r.l((wxz)new wws(wya.c(159814)));
-            return;
-        }
-        if (!aexs.f(this.I.getText().toString())) {
-            this.G.setText(((fa)this).getResources().getText(2132020000));
-            this.I.setVisibility(0);
-            return;
-        }
-        this.G.setText(((fa)this).getResources().getText(2132019998));
+        this.ai = false;
+        this.aj = ahfq.a;
     }
     
     public final void v() {
-        this.h = true;
-        this.O = false;
-        this.ac = false;
+        this.I.setVisibility(0);
+        this.H.setVisibility(0);
         this.d.setVisibility(8);
-        this.I.setVisibility(4);
-        this.H.setVisibility(4);
-        this.d.setText((CharSequence)"");
-        this.F.setText((CharSequence)"");
+        this.G.setVisibility(8);
+        this.K.setVisibility(8);
+        this.J.setVisibility(8);
         this.c.setEnabled(true);
         this.c.setVisibility(0);
-        this.G.setText(2132018356);
-        this.G.setVisibility(0);
-        final acxg i = this.i;
+        this.c.d();
+        this.Y.animate().alpha(0.0f).setDuration(200L).setInterpolator((TimeInterpolator)this.al);
+        this.aH.cancel(false);
+        if (!this.af) {
+            this.H.setText(((fa)this).getResources().getText(2132020212));
+            this.c.setEnabled(false);
+            return;
+        }
+        if (!this.ae) {
+            this.H.setText(((fa)this).getResources().getText(2132017886));
+            this.r.l((xbe)new wzy(xbf.c(159814)));
+            final String s = (String)this.ap.o(45383946L).j().af();
+            if (!s.isEmpty()) {
+                tfx.k(this.ax.G(), (Executor)this.x, (tfv)new hwb(this, 8), (tfw)new hzj(this, 16));
+                if (!this.Q) {
+                    if ("try_again".equals(s)) {
+                        this.C.b(2132017886, new Object[0]);
+                        return;
+                    }
+                    if ("tap_mic_to_try_again".equals(s)) {
+                        this.C.b(2132017887, new Object[0]);
+                    }
+                }
+            }
+            return;
+        }
+        if (!afbj.f(this.J.getText().toString())) {
+            this.H.setText(((fa)this).getResources().getText(2132020004));
+            this.J.setVisibility(0);
+            return;
+        }
+        this.H.setText(((fa)this).getResources().getText(2132020002));
+    }
+    
+    public final void w() {
+        this.h = true;
+        this.P = false;
+        this.ae = false;
+        this.Q = false;
+        this.d.setVisibility(8);
+        this.J.setVisibility(4);
+        this.I.setVisibility(4);
+        this.d.setText((CharSequence)"");
+        this.G.setText((CharSequence)"");
+        this.c.setEnabled(true);
+        this.c.setVisibility(0);
+        this.C.d(false);
+        this.H.setText(2132018359);
+        this.H.setVisibility(0);
+        final adaw i = this.i;
         if (i != null && i.f()) {
-            this.p(this.aC);
+            this.p(this.aE);
             this.c.f();
         }
         else {
-            this.F();
+            this.G();
         }
-        this.W.animate().alpha(1.0f).setDuration(200L).setInterpolator((TimeInterpolator)this.aj);
-        final gkm a = this.v.a();
-        this.aD = a;
+        this.Y.animate().alpha(1.0f).setDuration(200L).setInterpolator((TimeInterpolator)this.al);
+        final gla a = this.v.a();
+        this.aF = a;
         InputStream inputStream;
-        if (a == gkm.b) {
-            inputStream = ((fa)this).getResources().openRawResource(2131231328);
+        if (a == gla.b) {
+            inputStream = ((fa)this).getResources().openRawResource(2131231326);
         }
         else {
-            inputStream = ((fa)this).getResources().openRawResource(2131231329);
+            inputStream = ((fa)this).getResources().openRawResource(2131231327);
         }
         byte[] d;
         try {
-            d = afna.d(inputStream);
+            d = afqq.d(inputStream);
         }
         catch (final IOException ex) {
-            trn.d("Error converting speaking gif asset to byte array", (Throwable)ex);
+            tut.d("Error converting speaking gif asset to byte array", (Throwable)ex);
             d = null;
         }
         if (d != null) {
             try {
-                this.W.setImageDrawable(((acdw)this.aM).a(d));
+                this.Y.setImageDrawable(((acho)this.aP).a(d));
             }
-            catch (final tty tty) {
-                trn.d("Error downloading or decoding speaking gif asset.", (Throwable)tty);
+            catch (final txe txe) {
+                tut.d("Error downloading or decoding speaking gif asset.", (Throwable)txe);
             }
         }
-        final String s = (String)this.an.o(45372964L).j().af();
+        final String s = (String)this.ap.o(45372964L).j().af();
         if (!s.isEmpty()) {
-            tcp.n((aum)this, afva.o((afrx)new fdq(this, s, 9), 8L, TimeUnit.SECONDS, this.y), (trb)ifc.k, (trb)ifc.l);
+            tfx.n((aup)this, this.aH = afxr.n((afvp)new fea(this, s, 9), 8L, TimeUnit.SECONDS, this.y), (tui)igg.o, (tui)igg.p);
         }
     }
     
-    public final void w(String j) {
-        this.t();
+    public final void x(String j) {
+        this.u();
         final boolean empty = j.isEmpty();
         boolean z = true;
         boolean b;
@@ -810,66 +860,60 @@ public class VoiceSearchActivity extends jlm implements acst, jmc, cp, tec
             b = true;
         }
         this.l();
-        final acxe g = this.g();
+        final adau g = this.g();
         if (this.i == null) {
-            final acxh l = this.aq.l(this.D, g, this.ab, j, this.V, this.B(), this.Z, this.aa, this.T, this.j());
-            l.H = this.C();
+            final adax l = this.as.l(this.E, g, this.ad, j, this.X, this.C(), this.ab, this.ac, this.V, this.j());
+            l.H = this.D();
             l.A = this.d();
             l.c(this.f());
             l.C = this.h();
-            l.s = this.A();
-            if (!gkt.u(this.ak) || !b) {
+            l.s = this.B();
+            if (!fao.au(this.am) || !b) {
                 z = false;
             }
             l.z = z;
-            l.b(aexq.k((Object)this.i()));
-            l.E = gkt.al(this.ap);
-            l.t = this.y();
-            l.w = this.an.cj();
+            l.b(afbh.k(this.i()));
+            l.E = fao.bd(this.at);
+            l.t = this.z();
+            l.w = this.ap.co();
             l.F = this.l;
-            l.x = this.ag;
-            l.y = this.ah;
+            l.x = this.ai;
+            l.y = this.aj;
             this.i = l.a();
         }
-        if (!this.ad) {
+        if (!this.af) {
             this.s();
             return;
         }
-        if (this.aA) {
-            this.aA = false;
-            this.v();
+        if (this.aC) {
+            this.aC = false;
+            this.w();
         }
     }
     
-    public final void x(final br br, final String ae) {
-        final br f = this.j.f(this.aE);
+    public final void y(final br br, final String ag) {
+        final br f = this.j.f(this.aG);
         br.getClass();
-        tsx.n(ae);
+        twd.n(ag);
         final ct i = this.j.i();
-        if (f != null && f.ar() && !f.equals(br)) {
+        if (f != null && f.ar() && !f.equals((Object)br)) {
             i.m(f);
         }
-        this.U.setVisibility(0);
+        this.W.setVisibility(0);
         if (!br.ar()) {
-            i.r(2131429083, br, ae);
+            i.r(2131429083, br, ag);
         }
         else if (br.as()) {
             i.o(br);
         }
         i.i = 4099;
         i.d();
-        this.aE = ae;
-    }
-    
-    public final boolean y() {
-        final AtomicBoolean atomicBoolean = new AtomicBoolean();
-        asjg.b((AtomicReference)this.an.cc().aw((Object)false).Z((asix)new jmj(atomicBoolean, 1)));
-        return atomicBoolean.get();
+        this.aG = ag;
     }
     
     public final boolean z() {
         final AtomicBoolean atomicBoolean = new AtomicBoolean();
-        asjg.b((AtomicReference)this.an.cg().aw((Object)false).Z((asix)new jmj(atomicBoolean, 1)));
+        asmr.b((AtomicReference)this.ap.ch().aC(false).aa((asmi)new jnd(atomicBoolean, 5)));
         return atomicBoolean.get();
     }
 }

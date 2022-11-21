@@ -43,7 +43,7 @@ public final class MediaFormat implements Parcelable
     private int y;
     
     static {
-        CREATOR = (Parcelable$Creator)new f(17);
+        CREATOR = (Parcelable$Creator)new f(16);
     }
     
     public MediaFormat(final Parcel parcel) {
@@ -85,7 +85,7 @@ public final class MediaFormat implements Parcelable
     
     public MediaFormat(final String a, final String b, final int c, final int d, final long e, final int h, final int i, final int l, final float m, final int q, final int r, final String v, final long w, List emptyList, final boolean g, final int j, final int k, final int s, final int t, final int u, final byte[] o, final int n, final ColorInfo p23) {
         this.a = a;
-        jfi.W(b);
+        jgu.ae(b);
         this.b = b;
         this.c = c;
         this.d = d;
@@ -167,7 +167,7 @@ public final class MediaFormat implements Parcelable
         if (o != null) {
             if (this.getClass() == o.getClass()) {
                 final MediaFormat mediaFormat = (MediaFormat)o;
-                if (this.g == mediaFormat.g && this.c == mediaFormat.c && this.d == mediaFormat.d && this.e == mediaFormat.e && this.h == mediaFormat.h && this.i == mediaFormat.i && this.l == mediaFormat.l && this.m == mediaFormat.m && this.j == mediaFormat.j && this.k == mediaFormat.k && this.q == mediaFormat.q && this.r == mediaFormat.r && this.s == mediaFormat.s && this.t == mediaFormat.t && this.u == mediaFormat.u && this.w == mediaFormat.w && lwj.k(this.a, mediaFormat.a) && lwj.k(this.v, mediaFormat.v) && lwj.k(this.b, mediaFormat.b) && this.f.size() == mediaFormat.f.size() && lwj.k(this.p, mediaFormat.p) && Arrays.equals(this.o, mediaFormat.o) && this.n == mediaFormat.n) {
+                if (this.g == mediaFormat.g && this.c == mediaFormat.c && this.d == mediaFormat.d && this.e == mediaFormat.e && this.h == mediaFormat.h && this.i == mediaFormat.i && this.l == mediaFormat.l && this.m == mediaFormat.m && this.j == mediaFormat.j && this.k == mediaFormat.k && this.q == mediaFormat.q && this.r == mediaFormat.r && this.s == mediaFormat.s && this.t == mediaFormat.t && this.u == mediaFormat.u && this.w == mediaFormat.w && lyc.k((Object)this.a, (Object)mediaFormat.a) && lyc.k((Object)this.v, (Object)mediaFormat.v) && lyc.k((Object)this.b, (Object)mediaFormat.b) && this.f.size() == mediaFormat.f.size() && lyc.k((Object)this.p, (Object)mediaFormat.p) && Arrays.equals(this.o, mediaFormat.o) && this.n == mediaFormat.n) {
                     for (int i = 0; i < this.f.size(); ++i) {
                         if (!Arrays.equals((byte[])this.f.get(i), (byte[])mediaFormat.f.get(i))) {
                             return false;

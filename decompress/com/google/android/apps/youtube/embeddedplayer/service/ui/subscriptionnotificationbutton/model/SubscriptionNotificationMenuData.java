@@ -16,15 +16,15 @@ public class SubscriptionNotificationMenuData implements Parcelable
 {
     public static final Parcelable$Creator CREATOR;
     public static final SubscriptionNotificationMenuData a;
-    public final afcr b;
+    public final afgh b;
     
     static {
         a = new SubscriptionNotificationMenuData(new ArrayList());
-        CREATOR = (Parcelable$Creator)new f(13);
+        CREATOR = (Parcelable$Creator)new f(12);
     }
     
     public SubscriptionNotificationMenuData(final List list) {
-        this.b = afcr.o((Collection)list);
+        this.b = afgh.o(list);
     }
     
     public final int describeContents() {
@@ -33,7 +33,7 @@ public class SubscriptionNotificationMenuData implements Parcelable
     
     @Override
     public final boolean equals(final Object o) {
-        return o instanceof SubscriptionNotificationMenuData && adwd.ar((List)this.b, ((SubscriptionNotificationMenuData)o).b);
+        return o instanceof SubscriptionNotificationMenuData && agpx.T(this.b, ((SubscriptionNotificationMenuData)o).b);
     }
     
     @Override
@@ -42,6 +42,6 @@ public class SubscriptionNotificationMenuData implements Parcelable
     }
     
     public final void writeToParcel(final Parcel parcel, final int n) {
-        parcel.writeTypedArray((Parcelable[])((afci)this.b).toArray(new SubscriptionNotificationMenuItem[0]), n);
+        parcel.writeTypedArray((Parcelable[])this.b.toArray(new SubscriptionNotificationMenuItem[0]), n);
     }
 }

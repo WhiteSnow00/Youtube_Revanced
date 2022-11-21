@@ -9,25 +9,25 @@ import android.os.IBinder;
 import android.content.Intent;
 import android.app.Service;
 
-public final class SegmentProcessingService extends heh implements aeou
+public final class SegmentProcessingService extends hep implements aeqn
 {
-    private heo a;
+    private hew a;
     private boolean b;
     private boolean c;
-    private final aglu d;
+    private final agnl d;
     
     @Deprecated
     public SegmentProcessingService() {
-        this.d = new aglu((Service)this);
-        qdt.h();
+        this.d = new agnl((Service)this);
+        qem.r();
     }
     
     public final /* bridge */ Object aN() {
         return this.b();
     }
     
-    public final heo b() {
-        final heo a = this.a;
+    public final hew b() {
+        final hew a = this.a;
         if (a == null) {
             throw new IllegalStateException("peer() called before initialized.");
         }
@@ -37,39 +37,38 @@ public final class SegmentProcessingService extends heh implements aeou
         throw new IllegalStateException("peer() called after destroyed.");
     }
     
-    public final IBinder onBind(Intent e) {
-        final aglu d = this.d;
-        final aets a = aeux.a();
+    public final IBinder onBind(final Intent intent) {
+        final agnl d = this.d;
+        final aevk a = aewp.a();
         final Object b = d.b;
         final String concat = String.valueOf(((Service)b).getClass().getName()).concat(".onBind");
-        Object o;
-        if (e == null) {
-            o = agqs.ap((Service)b, concat);
+        aevl aevl;
+        if (intent == null) {
+            aevl = agpx.aw((Service)b, concat);
         }
         else {
-            final aets aets = (aets)aeun.n(e, false);
-            if (aets != null) {
-                aeux.n(aets);
-                o = aetc.a;
+            final aevk aevk = (aevk)aewf.n(intent, false);
+            if (aevk != null) {
+                aewp.n(aevk);
+                aevl = aeuu.a;
             }
             else {
-                o = agqs.ap((Service)b, concat);
+                aevl = agpx.aw((Service)b, concat);
             }
         }
-        e = (Intent)aglu.e(a, (aett)o, (aett)aeux.o(d.f("onBind")));
+        final aevl e = agnl.e(a, aevl, aewp.o(d.f("onBind")));
         try {
             final Object c = this.b().c;
-            ((aett)e).close();
+            e.close();
             return (IBinder)c;
         }
         finally {
             try {
-                ((aett)e).close();
+                e.close();
             }
             finally {
                 final Throwable t;
-                final Throwable t2;
-                hgy.e(t, t2);
+                hhg.e((Throwable)intent, t);
             }
         }
     }
@@ -80,107 +79,107 @@ public final class SegmentProcessingService extends heh implements aeou
         // 
         // Original Bytecode:
         // 
-        //     1: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/trim/SegmentProcessingService.d:Laglu;
-        //     4: astore_2       
-        //     5: invokestatic    aeux.a:()Laets;
-        //     8: astore_3       
-        //     9: invokestatic    aeux.r:()Z
+        //     1: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/trim/SegmentProcessingService.d:Lagnl;
+        //     4: astore_3       
+        //     5: invokestatic    aewp.a:()Laevk;
+        //     8: astore_2       
+        //     9: invokestatic    aewp.r:()Z
         //    12: ifne            132
-        //    15: invokestatic    aeux.d:()Laets;
+        //    15: invokestatic    aewp.d:()Laevk;
         //    18: astore_1       
         //    19: aload_1        
         //    20: ifnull          94
-        //    23: new             Laetb;
+        //    23: new             Laeut;
         //    26: dup            
         //    27: iconst_0       
-        //    28: invokespecial   aetb.<init>:(I)V
-        //    31: astore          5
+        //    28: invokespecial   aeut.<init>:(I)V
+        //    31: astore          4
         //    33: aload_1        
-        //    34: invokestatic    aeux.n:(Laets;)V
-        //    37: invokestatic    aetj.b:()Laeth;
-        //    40: astore          4
-        //    42: aload           4
-        //    44: getstatic       aetp.c:Lagqs;
-        //    47: aload           5
-        //    49: invokeinterface aeth.a:(Lagqs;Ljava/lang/Object;)V
-        //    54: aload           4
-        //    56: checkcast       Laetj;
-        //    59: invokevirtual   aetj.e:()Laetj;
+        //    34: invokestatic    aewp.n:(Laevk;)V
+        //    37: invokestatic    aevb.b:()Laeuz;
+        //    40: astore          5
+        //    42: aload           5
+        //    44: getstatic       aevh.c:Lagpx;
+        //    47: aload           4
+        //    49: invokeinterface aeuz.a:(Lagpx;Ljava/lang/Object;)V
+        //    54: aload           5
+        //    56: checkcast       Laevb;
+        //    59: invokevirtual   aevb.e:()Laevb;
         //    62: astore          4
-        //    64: aload_2        
+        //    64: aload_3        
         //    65: ldc             "Creating "
-        //    67: aload_2        
-        //    68: getfield        aglu.b:Ljava/lang/Object;
+        //    67: aload_3        
+        //    68: getfield        agnl.b:Ljava/lang/Object;
         //    71: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
         //    74: invokevirtual   java/lang/Class.getSimpleName:()Ljava/lang/String;
         //    77: invokestatic    java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
         //    80: invokevirtual   java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
         //    83: aload           4
-        //    85: invokestatic    aeux.p:(Ljava/lang/String;Laetj;)Laetf;
-        //    88: putfield        aglu.a:Ljava/lang/Object;
+        //    85: invokestatic    aewp.p:(Ljava/lang/String;Laevb;)Laeux;
+        //    88: putfield        agnl.a:Ljava/lang/Object;
         //    91: goto            134
-        //    94: aload_2        
-        //    95: getfield        aglu.b:Ljava/lang/Object;
+        //    94: aload_3        
+        //    95: getfield        agnl.b:Ljava/lang/Object;
         //    98: checkcast       Landroid/content/Context;
-        //   101: invokestatic    afnd.v:(Landroid/content/Context;)Laetv;
+        //   101: invokestatic    afot.m:(Landroid/content/Context;)Laevn;
         //   104: ldc             "Creating "
-        //   106: aload_2        
-        //   107: getfield        aglu.b:Ljava/lang/Object;
+        //   106: aload_3        
+        //   107: getfield        agnl.b:Ljava/lang/Object;
         //   110: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
         //   113: invokevirtual   java/lang/Class.getSimpleName:()Ljava/lang/String;
         //   116: invokestatic    java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
         //   119: invokevirtual   java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
-        //   122: getstatic       aetp.a:Laetj;
-        //   125: invokevirtual   aetv.b:(Ljava/lang/String;Laetj;)Laesy;
+        //   122: getstatic       aevh.a:Laevb;
+        //   125: invokevirtual   aevn.b:(Ljava/lang/String;Laevb;)Laeuq;
         //   128: astore_1       
         //   129: goto            134
         //   132: aconst_null    
         //   133: astore_1       
-        //   134: new             Laesz;
+        //   134: new             Laeur;
         //   137: dup            
-        //   138: aload_2        
-        //   139: aload_2        
+        //   138: aload_3        
+        //   139: aload_3        
         //   140: ldc             "onCreate"
-        //   142: invokevirtual   aglu.f:(Ljava/lang/String;)Ljava/lang/String;
-        //   145: invokestatic    aeux.o:(Ljava/lang/String;)Laetf;
+        //   142: invokevirtual   agnl.f:(Ljava/lang/String;)Ljava/lang/String;
+        //   145: invokestatic    aewp.o:(Ljava/lang/String;)Laeux;
         //   148: aload_1        
-        //   149: aload_3        
+        //   149: aload_2        
         //   150: aconst_null    
-        //   151: invokespecial   aesz.<init>:(Laglu;Laett;Laett;Laets;[B)V
+        //   151: invokespecial   aeur.<init>:(Lagnl;Laevl;Laevl;Laevk;[B)V
         //   154: astore_1       
         //   155: aload_0        
         //   156: iconst_1       
         //   157: putfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/trim/SegmentProcessingService.b:Z
         //   160: aload_0        
         //   161: invokevirtual   com/google/android/apps/youtube/app/extensions/reel/creation/shorts/trim/SegmentProcessingService.getApplication:()Landroid/app/Application;
-        //   164: instanceof      Laepm;
-        //   167: invokestatic    adkp.Q:(Z)V
+        //   164: instanceof      Laerf;
+        //   167: invokestatic    adme.T:(Z)V
         //   170: aload_0        
-        //   171: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/trim/SegmentProcessingService.a:Lheo;
-        //   174: ifnonnull       450
+        //   171: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/trim/SegmentProcessingService.a:Lhew;
+        //   174: ifnonnull       449
         //   177: aload_0        
         //   178: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/trim/SegmentProcessingService.b:Z
-        //   181: ifeq            437
+        //   181: ifeq            436
         //   184: aload_0        
         //   185: getfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/trim/SegmentProcessingService.c:Z
-        //   188: ifne            424
+        //   188: ifne            423
         //   191: ldc             "CreateComponent"
-        //   193: invokestatic    aeux.o:(Ljava/lang/String;)Laetf;
+        //   193: invokestatic    aewp.o:(Ljava/lang/String;)Laeux;
         //   196: astore_3       
         //   197: aload_0        
-        //   198: invokevirtual   heh.aR:()Ljava/lang/Object;
+        //   198: invokevirtual   hep.aR:()Ljava/lang/Object;
         //   201: pop            
         //   202: aload_3        
-        //   203: invokevirtual   aetf.close:()V
+        //   203: invokevirtual   aeux.close:()V
         //   206: ldc             "CreatePeer"
-        //   208: invokestatic    aeux.o:(Ljava/lang/String;)Laetf;
+        //   208: invokestatic    aewp.o:(Ljava/lang/String;)Laeux;
         //   211: astore_2       
         //   212: aload_0        
-        //   213: invokevirtual   heh.aR:()Ljava/lang/Object;
+        //   213: invokevirtual   hep.aR:()Ljava/lang/Object;
         //   216: astore          4
         //   218: aload           4
-        //   220: checkcast       Lest;
-        //   223: getfield        est.a:Landroid/app/Service;
+        //   220: checkcast       Lesv;
+        //   223: getfield        esv.a:Landroid/app/Service;
         //   226: astore          5
         //   228: aload           5
         //   230: instanceof      Lcom/google/android/apps/youtube/app/extensions/reel/creation/shorts/trim/SegmentProcessingService;
@@ -192,149 +191,149 @@ public final class SegmentProcessingService extends heh implements aeou
         //   243: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
         //   246: pop            
         //   247: aload           4
-        //   249: checkcast       Lest;
-        //   252: getfield        est.b:Leqy;
-        //   255: getfield        eqy.qg:Lauch;
-        //   258: getfield        auch.a:Ljava/lang/Object;
-        //   261: astore          4
-        //   263: new             Lheo;
-        //   266: astore          5
-        //   268: aload           5
+        //   249: checkcast       Lesv;
+        //   252: getfield        esv.b:Lera;
+        //   255: getfield        era.py:Lagpb;
+        //   258: getfield        agpb.a:Ljava/lang/Object;
+        //   261: astore          5
+        //   263: new             Lhew;
+        //   266: astore          4
+        //   268: aload           4
         //   270: aload_3        
-        //   271: aload           4
+        //   271: aload           5
         //   273: checkcast       Landroid/content/Context;
-        //   276: invokespecial   heo.<init>:(Lcom/google/android/apps/youtube/app/extensions/reel/creation/shorts/trim/SegmentProcessingService;Landroid/content/Context;)V
+        //   276: invokespecial   hew.<init>:(Lcom/google/android/apps/youtube/app/extensions/reel/creation/shorts/trim/SegmentProcessingService;Landroid/content/Context;)V
         //   279: aload_0        
-        //   280: aload           5
-        //   282: putfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/trim/SegmentProcessingService.a:Lheo;
+        //   280: aload           4
+        //   282: putfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/trim/SegmentProcessingService.a:Lhew;
         //   285: aload_2        
-        //   286: invokevirtual   aetf.close:()V
-        //   289: goto            450
+        //   286: invokevirtual   aeux.close:()V
+        //   289: goto            449
         //   292: new             Ljava/lang/IllegalStateException;
-        //   295: astore          4
-        //   297: ldc             Lheo;.class
-        //   299: invokevirtual   java/lang/Object.toString:()Ljava/lang/String;
-        //   302: astore_3       
+        //   295: astore_3       
+        //   296: ldc             Lhew;.class
+        //   298: invokevirtual   java/lang/Object.toString:()Ljava/lang/String;
+        //   301: astore          4
         //   303: aload           5
         //   305: invokevirtual   java/lang/Object.getClass:()Ljava/lang/Class;
         //   308: invokestatic    java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
-        //   311: astore          5
+        //   311: astore          6
         //   313: new             Ljava/lang/StringBuilder;
-        //   316: astore          6
-        //   318: aload           6
+        //   316: astore          5
+        //   318: aload           5
         //   320: ldc             "Attempt to inject a Service wrapper of type "
         //   322: invokespecial   java/lang/StringBuilder.<init>:(Ljava/lang/String;)V
-        //   325: aload           6
-        //   327: aload_3        
-        //   328: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   331: pop            
-        //   332: aload           6
-        //   334: ldc_w           ", but the wrapper available is of type: "
-        //   337: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   340: pop            
-        //   341: aload           6
-        //   343: aload           5
-        //   345: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   348: pop            
-        //   349: aload           6
-        //   351: ldc_w           ". Does your peer's @Inject constructor reference the wrong wrapper class?"
-        //   354: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-        //   357: pop            
-        //   358: aload           4
-        //   360: aload           6
+        //   325: aload           5
+        //   327: aload           4
+        //   329: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   332: pop            
+        //   333: aload           5
+        //   335: ldc_w           ", but the wrapper available is of type: "
+        //   338: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   341: pop            
+        //   342: aload           5
+        //   344: aload           6
+        //   346: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   349: pop            
+        //   350: aload           5
+        //   352: ldc_w           ". Does your peer's @Inject constructor reference the wrong wrapper class?"
+        //   355: invokevirtual   java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        //   358: pop            
+        //   359: aload_3        
+        //   360: aload           5
         //   362: invokevirtual   java/lang/StringBuilder.toString:()Ljava/lang/String;
         //   365: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
-        //   368: aload           4
-        //   370: athrow         
-        //   371: astore_3       
-        //   372: goto            393
-        //   375: astore_3       
-        //   376: new             Ljava/lang/IllegalStateException;
-        //   379: astore          4
-        //   381: aload           4
-        //   383: ldc_w           "Missing entry point. If you're in a test with explicit entry points specified in your @TestRoot, check that you're not missing the one for this class."
-        //   386: aload_3        
-        //   387: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;Ljava/lang/Throwable;)V
-        //   390: aload           4
-        //   392: athrow         
-        //   393: aload_2        
-        //   394: invokevirtual   aetf.close:()V
-        //   397: goto            406
-        //   400: astore_2       
-        //   401: aload_3        
-        //   402: aload_2        
-        //   403: invokestatic    hgy.e:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-        //   406: aload_3        
-        //   407: athrow         
-        //   408: astore_2       
-        //   409: aload_3        
-        //   410: invokevirtual   aetf.close:()V
-        //   413: goto            422
-        //   416: astore_3       
-        //   417: aload_2        
-        //   418: aload_3        
-        //   419: invokestatic    hgy.e:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-        //   422: aload_2        
-        //   423: athrow         
-        //   424: new             Ljava/lang/IllegalStateException;
-        //   427: astore_2       
-        //   428: aload_2        
-        //   429: ldc_w           "createPeer() called after destroyed."
-        //   432: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
-        //   435: aload_2        
-        //   436: athrow         
-        //   437: new             Ljava/lang/IllegalStateException;
-        //   440: astore_2       
-        //   441: aload_2        
-        //   442: ldc_w           "createPeer() called outside of onCreate"
-        //   445: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
-        //   448: aload_2        
-        //   449: athrow         
-        //   450: aload_0        
-        //   451: invokespecial   heh.onCreate:()V
-        //   454: aload_0        
-        //   455: iconst_0       
-        //   456: putfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/trim/SegmentProcessingService.b:Z
-        //   459: aload_1        
-        //   460: invokeinterface aett.close:()V
-        //   465: return         
-        //   466: astore_2       
-        //   467: aload_1        
-        //   468: invokeinterface aett.close:()V
-        //   473: goto            482
-        //   476: astore_1       
-        //   477: aload_2        
-        //   478: aload_1        
-        //   479: invokestatic    hgy.e:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-        //   482: aload_2        
-        //   483: athrow         
+        //   368: aload_3        
+        //   369: athrow         
+        //   370: astore_3       
+        //   371: goto            392
+        //   374: astore_3       
+        //   375: new             Ljava/lang/IllegalStateException;
+        //   378: astore          4
+        //   380: aload           4
+        //   382: ldc_w           "Missing entry point. If you're in a test with explicit entry points specified in your @TestRoot, check that you're not missing the one for this class."
+        //   385: aload_3        
+        //   386: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;Ljava/lang/Throwable;)V
+        //   389: aload           4
+        //   391: athrow         
+        //   392: aload_2        
+        //   393: invokevirtual   aeux.close:()V
+        //   396: goto            405
+        //   399: astore_2       
+        //   400: aload_3        
+        //   401: aload_2        
+        //   402: invokestatic    hhg.e:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   405: aload_3        
+        //   406: athrow         
+        //   407: astore_2       
+        //   408: aload_3        
+        //   409: invokevirtual   aeux.close:()V
+        //   412: goto            421
+        //   415: astore_3       
+        //   416: aload_2        
+        //   417: aload_3        
+        //   418: invokestatic    hhg.e:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   421: aload_2        
+        //   422: athrow         
+        //   423: new             Ljava/lang/IllegalStateException;
+        //   426: astore_2       
+        //   427: aload_2        
+        //   428: ldc_w           "createPeer() called after destroyed."
+        //   431: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
+        //   434: aload_2        
+        //   435: athrow         
+        //   436: new             Ljava/lang/IllegalStateException;
+        //   439: astore_2       
+        //   440: aload_2        
+        //   441: ldc_w           "createPeer() called outside of onCreate"
+        //   444: invokespecial   java/lang/IllegalStateException.<init>:(Ljava/lang/String;)V
+        //   447: aload_2        
+        //   448: athrow         
+        //   449: aload_0        
+        //   450: invokespecial   hep.onCreate:()V
+        //   453: aload_0        
+        //   454: iconst_0       
+        //   455: putfield        com/google/android/apps/youtube/app/extensions/reel/creation/shorts/trim/SegmentProcessingService.b:Z
+        //   458: aload_1        
+        //   459: invokeinterface aevl.close:()V
+        //   464: return         
+        //   465: astore_2       
+        //   466: aload_1        
+        //   467: invokeinterface aevl.close:()V
+        //   472: goto            481
+        //   475: astore_1       
+        //   476: aload_2        
+        //   477: aload_1        
+        //   478: invokestatic    hhg.e:(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+        //   481: aload_2        
+        //   482: athrow         
         //    Exceptions:
         //  Try           Handler
         //  Start  End    Start  End    Type                          
         //  -----  -----  -----  -----  ------------------------------
-        //  155    197    466    484    Any
-        //  197    202    408    424    Any
-        //  202    212    466    484    Any
-        //  212    218    375    393    Ljava/lang/ClassCastException;
-        //  212    218    371    408    Any
-        //  218    285    371    408    Any
-        //  285    289    466    484    Any
-        //  292    371    371    408    Any
-        //  376    393    371    408    Any
-        //  393    397    400    406    Any
-        //  401    406    466    484    Any
-        //  406    408    466    484    Any
-        //  409    413    416    422    Any
-        //  417    422    466    484    Any
-        //  422    424    466    484    Any
-        //  424    437    466    484    Any
-        //  437    450    466    484    Any
-        //  450    459    466    484    Any
-        //  467    473    476    482    Any
+        //  155    197    465    483    Any
+        //  197    202    407    423    Any
+        //  202    212    465    483    Any
+        //  212    218    374    392    Ljava/lang/ClassCastException;
+        //  212    218    370    407    Any
+        //  218    285    370    407    Any
+        //  285    289    465    483    Any
+        //  292    370    370    407    Any
+        //  375    392    370    407    Any
+        //  392    396    399    405    Any
+        //  400    405    465    483    Any
+        //  405    407    465    483    Any
+        //  408    412    415    421    Any
+        //  416    421    465    483    Any
+        //  421    423    465    483    Any
+        //  423    436    465    483    Any
+        //  436    449    465    483    Any
+        //  449    458    465    483    Any
+        //  466    472    475    481    Any
         // 
         // The error that occurred was:
         // 
-        // java.lang.IllegalStateException: Expression is linked from several locations: Label_0393:
+        // java.lang.IllegalStateException: Expression is linked from several locations: Label_0392:
         //     at com.strobel.decompiler.ast.Error.expressionLinkedFromMultipleLocations(Error.java:27)
         //     at com.strobel.decompiler.ast.AstOptimizer.mergeDisparateObjectInitializations(AstOptimizer.java:2604)
         //     at com.strobel.decompiler.ast.AstOptimizer.optimize(AstOptimizer.java:235)
@@ -358,19 +357,19 @@ public final class SegmentProcessingService extends heh implements aeou
     }
     
     public final void onDestroy() {
-        final aglu d = this.d;
-        final aets a = aeux.a();
-        Object b;
-        if (!aeux.r()) {
-            b = afnd.v((Context)d.b).b("Destroying ".concat(String.valueOf(d.b.getClass().getSimpleName())), aetp.a);
+        final agnl d = this.d;
+        final aevk a = aewp.a();
+        aeuq b;
+        if (!aewp.r()) {
+            b = afot.m((Context)d.b).b("Destroying ".concat(String.valueOf(d.b.getClass().getSimpleName())), aevh.a);
         }
         else {
             b = null;
         }
-        final aett e = aglu.e(a, (aett)b, (aett)aeux.o(d.f("onDestroy")));
+        final aevl e = agnl.e(a, b, aewp.o(d.f("onDestroy")));
         try {
             super.onDestroy();
-            final heo b2 = this.b();
+            final hew b2 = this.b();
             ((SegmentProcessingService)b2.a).stopForeground(true);
             ((SegmentProcessingService)b2.a).stopSelf();
             this.c = true;
@@ -383,7 +382,7 @@ public final class SegmentProcessingService extends heh implements aeou
             finally {
                 final Throwable t;
                 final Throwable t2;
-                hgy.e(t, t2);
+                hhg.e(t, t2);
             }
         }
     }

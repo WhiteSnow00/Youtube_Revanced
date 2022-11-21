@@ -15,7 +15,7 @@ public class PlayerThreedRendererModel implements Parcelable
     public final int a;
     
     static {
-        CREATOR = (Parcelable$Creator)new uik(14);
+        CREATOR = (Parcelable$Creator)new ulj(14);
     }
     
     public PlayerThreedRendererModel() {

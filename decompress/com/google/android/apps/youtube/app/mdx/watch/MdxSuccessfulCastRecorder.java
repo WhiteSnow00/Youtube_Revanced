@@ -8,57 +8,57 @@ import android.content.SharedPreferences$Editor;
 import j$.time.Instant;
 import android.content.SharedPreferences;
 
-public class MdxSuccessfulCastRecorder implements xnr, thj
+public class MdxSuccessfulCastRecorder implements xpd, tim
 {
     private final SharedPreferences a;
-    private final arkg b;
+    private final arna b;
     
-    public MdxSuccessfulCastRecorder(final SharedPreferences a, final arkg b) {
+    public MdxSuccessfulCastRecorder(final SharedPreferences a, final arna b) {
         this.a = a;
         this.b = b;
     }
     
-    public final thh g() {
-        return thh.a;
+    public final tik g() {
+        return tik.a;
     }
     
-    public final void lW(final aun aun) {
+    public final void lW(final aup aup) {
     }
     
-    public final void mM(final aun aun) {
-        ((xnt)this.b.a()).k((xnr)this);
+    public final void mp(final aup aup) {
+        ((xpf)this.b.a()).i((xpd)this);
     }
     
-    public final void mq(final aun aun) {
-        ((xnt)this.b.a()).i((xnr)this);
+    public final void mx(final aup aup) {
     }
     
-    public final void my(final aun aun) {
-    }
-    
-    public final void o(final xnm xnm) {
+    public final void o(final xoy xoy) {
         final SharedPreferences$Editor edit = this.a.edit();
-        final afsr a = afsr.a;
+        final afuh a = afuh.a;
         edit.putLong("on_device_mdx_successful_cast_time", Instant.now().toEpochMilli()).apply();
     }
     
-    public final void oS(final aun aun) {
+    public final void oO(final aup aup) {
+        ((xpf)this.b.a()).k((xpd)this);
     }
     
-    public final void oT() {
-        tfg.g((thj)this);
+    public final void oT(final aup aup) {
     }
     
-    public final void oW() {
-        tfg.f((thj)this);
+    public final void oU() {
+        tgj.h((tim)this);
     }
     
-    public final void oX(final aun aun) {
+    public final void oX() {
+        tgj.g((tim)this);
     }
     
-    public final void p(final xnm xnm) {
+    public final void oY(final aup aup) {
     }
     
-    public final void q(final xnm xnm) {
+    public final void p(final xoy xoy) {
+    }
+    
+    public final void q(final xoy xoy) {
     }
 }

@@ -12,7 +12,7 @@ import android.widget.ImageView;
 public class MutedAutoplayIndicator extends ImageView
 {
     private boolean a;
-    private ckb b;
+    private cke b;
     
     public MutedAutoplayIndicator(final Context context) {
         super(context);
@@ -33,7 +33,7 @@ public class MutedAutoplayIndicator extends ImageView
     public final void a() {
         synchronized (this) {
             if (this.getVisibility() == 0) {
-                final ckb b = this.b;
+                final cke b = this.b;
                 if (b != null) {
                     b.start();
                 }
@@ -50,14 +50,14 @@ public class MutedAutoplayIndicator extends ImageView
             if (visibility == 0) {
                 this.setAlpha(0.0f);
                 if (!this.a) {
-                    this.setImageDrawable((Drawable)(this.b = ckb.a(this.getContext(), 2131230809)));
-                    final ckb b = this.b;
+                    this.setImageDrawable((Drawable)(this.b = cke.a(this.getContext(), 2131230809)));
+                    final cke b = this.b;
                     if (b != null) {
-                        b.b((cjv)new b(this));
+                        b.b(new b(this));
                         this.a = true;
                     }
                 }
-                final ckb b2 = this.b;
+                final cke b2 = this.b;
                 if (b2 != null) {
                     b2.start();
                 }
@@ -66,7 +66,7 @@ public class MutedAutoplayIndicator extends ImageView
             }
             this.animate().cancel();
             this.setAlpha(0.0f);
-            final ckb b3 = this.b;
+            final cke b3 = this.b;
             if (b3 != null) {
                 b3.stop();
             }

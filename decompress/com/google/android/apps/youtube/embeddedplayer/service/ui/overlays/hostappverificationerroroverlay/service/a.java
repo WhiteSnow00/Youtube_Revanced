@@ -22,11 +22,12 @@ public final class a implements c
         final h b = new h(handler);
         this.b = b;
         try {
-            a.b((i)b);
+            a.b(b);
         }
         catch (final RemoteException ex) {}
     }
     
+    @Override
     public final void m() {
         final f a = this.a;
         if (a == null) {
@@ -38,10 +39,12 @@ public final class a implements c
         catch (final RemoteException ex) {}
     }
     
+    @Override
     public final void n(final b a) {
         this.b.a = a;
     }
     
+    @Override
     public final void o(final boolean b) {
         final f a = this.a;
         if (a == null) {

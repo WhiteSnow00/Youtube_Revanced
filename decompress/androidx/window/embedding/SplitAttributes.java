@@ -27,6 +27,20 @@ public final class SplitAttributes
         this.layoutDirection = layoutDirection;
     }
     
+    public SplitAttributes(SplitAttributes$SplitType splitEqually, SplitAttributes$LayoutDirection locale, final int n, final atqv atqv) {
+        if ((n & 0x1) != 0x0) {
+            splitEqually = (SplitAttributes$SplitType)SplitAttributes$SplitType.Companion.splitEqually();
+        }
+        if ((n & 0x2) != 0x0) {
+            locale = SplitAttributes$LayoutDirection.LOCALE;
+        }
+        this(splitEqually, locale);
+    }
+    
+    public static final String access$getTAG$cp() {
+        return SplitAttributes.TAG;
+    }
+    
     public static final SplitAttributes buildSplitAttributesFromValue$window_release(final float n, final int n2) {
         return SplitAttributes.Companion.buildSplitAttributesFromValue$window_release(n, n2);
     }
@@ -41,7 +55,7 @@ public final class SplitAttributes
         }
         final SplitAttributes$SplitType splitType = this.splitType;
         final SplitAttributes splitAttributes = (SplitAttributes)o;
-        return atnh.c((Object)splitType, (Object)splitAttributes.splitType) && atnh.c((Object)this.layoutDirection, (Object)splitAttributes.layoutDirection);
+        return atqz.c(splitType, splitAttributes.splitType) && atqz.c(this.layoutDirection, splitAttributes.layoutDirection);
     }
     
     public final SplitAttributes$LayoutDirection getLayoutDirection() {

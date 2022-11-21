@@ -14,19 +14,19 @@ public final class ResourceProvider
     
     static {
         final HashMap hashMap = new HashMap();
-        hashMap.put("smallIconDrawableResId", 2131231143);
-        hashMap.put("stopLiveStreamDrawableResId", 2131231144);
-        hashMap.put("pauseDrawableResId", 2131231136);
-        hashMap.put("playDrawableResId", 2131231137);
-        hashMap.put("skipNextDrawableResId", 2131231141);
-        hashMap.put("skipPrevDrawableResId", 2131231142);
-        hashMap.put("forwardDrawableResId", 2131231132);
-        hashMap.put("forward10DrawableResId", 2131231133);
-        hashMap.put("forward30DrawableResId", 2131231134);
-        hashMap.put("rewindDrawableResId", 2131231138);
-        hashMap.put("rewind10DrawableResId", 2131231139);
-        hashMap.put("rewind30DrawableResId", 2131231140);
-        hashMap.put("disconnectDrawableResId", 2131231131);
+        hashMap.put("smallIconDrawableResId", 2131231141);
+        hashMap.put("stopLiveStreamDrawableResId", 2131231142);
+        hashMap.put("pauseDrawableResId", 2131231134);
+        hashMap.put("playDrawableResId", 2131231135);
+        hashMap.put("skipNextDrawableResId", 2131231139);
+        hashMap.put("skipPrevDrawableResId", 2131231140);
+        hashMap.put("forwardDrawableResId", 2131231130);
+        hashMap.put("forward10DrawableResId", 2131231131);
+        hashMap.put("forward30DrawableResId", 2131231132);
+        hashMap.put("rewindDrawableResId", 2131231136);
+        hashMap.put("rewind10DrawableResId", 2131231137);
+        hashMap.put("rewind30DrawableResId", 2131231138);
+        hashMap.put("disconnectDrawableResId", 2131231129);
         hashMap.put("notificationImageSizeDimenResId", 2131165717);
         hashMap.put("castingToDeviceStringResId", 2132017620);
         hashMap.put("stopLiveStreamStringResId", 2132017662);

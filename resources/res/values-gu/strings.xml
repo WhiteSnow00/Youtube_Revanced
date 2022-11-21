@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">ડિવાઇસની થીમનો ઉપયોગ કરો</string>
     <string name="app_theme_appearance_summary">તમારા ઝાંખી થીમ અથવા ઘેરી થીમ વિકલ્પમાંથી પસંદ કરો</string>
     <string name="app_theme_appearance_title">દેખાવ</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">લાગુ કરો</string>
     <string name="approve_playlist_sync">નવી વિડિઓઝ સમન્વયિત કરો</string>
     <string name="audio_playback_failed_snackbar_action_button">ફરી પ્રયાસ કરો</string>
@@ -824,6 +824,7 @@
     <string name="lc_retry_no">સ્ટ્રીમ સમાપ્ત કરો</string>
     <string name="lc_retry_yes">ફરી પ્રયાસ કરો</string>
     <string name="lc_rotate_device">ઉપકરણ ફેરવો</string>
+    <string name="lc_sharedmde_required_field_error">શીર્ષક અને પ્રેક્ષકોની કૅટેગરી આવશ્યક છે.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">પોર્ટ્રેટમાં સ્ટ્રીમ</string>
     <string name="lc_stream_start_error">સ્ટ્રીમ ચાલુ કરવામાં અક્ષમ. તમારુ કનેક્શન તપાસો.</string>
@@ -1729,6 +1730,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">વીડિયોનો પ્રીવ્યૂ. થોભાવવા માટે ટૅપ કરો.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">વીડિયોનો પ્રીવ્યૂ. ચલાવવા માટે ટૅપ કરો.</string>
     <string name="shorts_a11y_zoom_control">ઝૂમના લેવલનું નિયંત્રણ</string>
+    <string name="shorts_audio_failure_toast">સાઉન્ડ ઉમેરવામાં નિષ્ફળ રહ્યાં. કૃપા કરીને ફરી પ્રયાસ કરો.</string>
     <string name="shorts_camera_allow_access_subtitle">તમારા કૅમેરા અને માઇક્રોફોનના ઍક્સેસની મંજૂરી આપો</string>
     <string name="shorts_camera_allow_access_title">કોઈ Short બનાવો</string>
     <string name="shorts_camera_close_confirmation_cancel">રદ કરો</string>

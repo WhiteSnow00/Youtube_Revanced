@@ -4,9 +4,9 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.service.jar;
 
-public final class EmbedFragmentService$$ExternalSyntheticLambda5 implements tes
+public final class EmbedFragmentService$$ExternalSyntheticLambda5 implements tfv
 {
-    public EmbedFragmentService a;
+    public final EmbedFragmentService a;
     
     public EmbedFragmentService$$ExternalSyntheticLambda5(final EmbedFragmentService a) {
         this.a = a;
@@ -18,13 +18,12 @@ public final class EmbedFragmentService$$ExternalSyntheticLambda5 implements tes
     
     public final void b(final Throwable t) {
         final EmbedFragmentService a = this.a;
-        final int v = EmbedFragmentService.v;
-        final ahaz builder = akwz.a.createBuilder();
+        final ahcr builder = akyz.a.createBuilder();
         builder.copyOnWrite();
-        final akwz akwz = (akwz)builder.instance;
-        akwz.c = 0;
-        akwz.b |= 0x1;
-        a.q((akwz)builder.build());
+        final akyz akyz = (akyz)builder.instance;
+        akyz.c = 0;
+        akyz.b |= 0x1;
+        a.q((akyz)builder.build());
         a.n();
     }
 }

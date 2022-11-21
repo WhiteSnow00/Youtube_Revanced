@@ -10,16 +10,16 @@ import android.view.ViewGroup;
 import android.view.LayoutInflater;
 import android.os.Bundle;
 
-public final class PrivacyPrefsFragment extends job
+public final class PrivacyPrefsFragment extends jpn
 {
-    private asic ae;
-    public acxu c;
+    private asln ae;
+    public adbk c;
     public SettingsDataAccess d;
-    public arud e;
+    public arzb e;
     
     public final void T(final Bundle bundle) {
         super.T(bundle);
-        this.ae = this.d.g((Runnable)new jmw(this, 5));
+        this.ae = this.d.g((Runnable)new jov(this, 0));
     }
     
     public final void aM() {
@@ -27,12 +27,12 @@ public final class PrivacyPrefsFragment extends job
     
     public final RecyclerView n(final LayoutInflater layoutInflater, final ViewGroup viewGroup, final Bundle bundle) {
         final RecyclerView n = super.n(layoutInflater, viewGroup, bundle);
-        n.ae((nt)null);
+        n.ae((nu)null);
         return n;
     }
     
-    public final void np() {
-        super.np();
-        athh.f((AtomicReference)this.ae);
+    public final void nm() {
+        super.nm();
+        atkw.f((AtomicReference)this.ae);
     }
 }

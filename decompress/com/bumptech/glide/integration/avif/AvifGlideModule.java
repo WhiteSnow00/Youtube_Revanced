@@ -9,12 +9,11 @@ import android.graphics.Bitmap;
 import java.nio.ByteBuffer;
 import android.content.Context;
 
-public final class AvifGlideModule extends dnd
+public final class AvifGlideModule extends dng
 {
-    @Override
-    public void registerComponents(final Context context, final dbp dbp, final dcg dcg) {
-        final dcy dcy = new dcy(dbp.a);
-        dcg.i(ByteBuffer.class, Bitmap.class, (ddr)dcy);
-        dcg.i(InputStream.class, Bitmap.class, (ddr)new dcz(dcg.b(), dcy, dbp.c));
+    public void registerComponents(final Context context, final dbs dbs, final dcj dcj) {
+        final ddb ddb = new ddb(dbs.a);
+        dcj.i((Class)ByteBuffer.class, (Class)Bitmap.class, (ddu)ddb);
+        dcj.i((Class)InputStream.class, (Class)Bitmap.class, (ddu)new ddc(dcj.b(), ddb, dbs.c));
     }
 }

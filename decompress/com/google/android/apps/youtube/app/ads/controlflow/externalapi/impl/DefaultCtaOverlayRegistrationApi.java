@@ -4,45 +4,45 @@
 
 package com.google.android.apps.youtube.app.ads.controlflow.externalapi.impl;
 
-public class DefaultCtaOverlayRegistrationApi implements thj
+public class DefaultCtaOverlayRegistrationApi implements tim
 {
-    private final rqo a;
-    private final rqn b;
+    private final rrq a;
+    private final rrp b;
     
-    public DefaultCtaOverlayRegistrationApi(final rqo a, final rqn b) {
+    public DefaultCtaOverlayRegistrationApi(final rrq a, final rrp b) {
         this.a = a;
         this.b = b;
     }
     
-    public final thh g() {
-        return thh.a;
+    public final tik g() {
+        return tik.a;
     }
     
-    public final void lW(final aun aun) {
+    public final void lW(final aup aup) {
     }
     
-    public final void mM(final aun aun) {
-        this.a.c();
-    }
-    
-    public final void mq(final aun aun) {
+    public final void mp(final aup aup) {
         this.a.b(this.b);
     }
     
-    public final void my(final aun aun) {
+    public final void mx(final aup aup) {
     }
     
-    public final void oS(final aun aun) {
+    public final void oO(final aup aup) {
+        this.a.c();
     }
     
-    public final void oT() {
-        tfg.g((thj)this);
+    public final void oT(final aup aup) {
     }
     
-    public final void oW() {
-        tfg.f((thj)this);
+    public final void oU() {
+        tgj.h((tim)this);
     }
     
-    public final void oX(final aun aun) {
+    public final void oX() {
+        tgj.g((tim)this);
+    }
+    
+    public final void oY(final aup aup) {
     }
 }

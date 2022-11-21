@@ -25,8 +25,8 @@ public class CreationButtonView extends FrameLayout
     public TextView b;
     public ImageView c;
     public boolean d;
-    public txd e;
-    public xab f;
+    public tyf e;
+    public xbg f;
     public String g;
     private ImageView h;
     private boolean i;
@@ -41,20 +41,20 @@ public class CreationButtonView extends FrameLayout
     public CreationButtonView(final Context a, final AttributeSet set) {
         super(a, set);
         this.a = a;
-        final TypedArray obtainStyledAttributes = a.getTheme().obtainStyledAttributes(set, txl.a, 0, 0);
+        final TypedArray obtainStyledAttributes = a.getTheme().obtainStyledAttributes(set, tyn.a, 0, 0);
         final int int1 = obtainStyledAttributes.getInt(2, 0);
         int n;
         if (int1 != 1) {
             if (int1 != 2) {
-                n = 2131625212;
+                n = 2131625214;
             }
             else {
-                n = 2131625389;
+                n = 2131625391;
             }
         }
         else {
             this.i = true;
-            n = 2131625390;
+            n = 2131625392;
         }
         LayoutInflater.from(a).inflate(n, (ViewGroup)this);
         this.b = (TextView)this.findViewById(2131428805);
@@ -86,7 +86,7 @@ public class CreationButtonView extends FrameLayout
             this.setContentDescription((CharSequence)obtainStyledAttributes.getString(0));
             final int integer = obtainStyledAttributes.getInteger(6, 0);
             if (integer != 0) {
-                this.f = xaa.c(integer);
+                this.f = xbf.c(integer);
             }
             this.g = obtainStyledAttributes.getString(5);
             if (n2 == 1) {
@@ -141,21 +141,21 @@ public class CreationButtonView extends FrameLayout
     
     public final void onVisibilityChanged(final View view, final int n) {
         super.onVisibilityChanged(view, n);
-        final txd e = this.e;
+        final tyf e = this.e;
         if (e != null && view == this) {
-            final gvy gvy = (gvy)e;
-            gvy.n();
-            gvy.k();
-            gvy.g(this);
-            final List b = gvy.b();
-            final List c = gvy.c();
-            if (this.getVisibility() == 0 && (b.contains(this) || (c.contains(this) && gvy.m == 1))) {
-                if (gvy.n && this.b.getVisibility() != 0) {
-                    gvy.r(this);
+            final gwh gwh = (gwh)e;
+            gwh.n();
+            gwh.k();
+            gwh.g(this);
+            final List b = gwh.b();
+            final List c = gwh.c();
+            if (this.getVisibility() == 0 && (b.contains(this) || (c.contains(this) && gwh.m == 1))) {
+                if (gwh.n && this.b.getVisibility() != 0) {
+                    gwh.r(this);
                     return;
                 }
-                if (!gvy.n && this.b.getVisibility() == 0) {
-                    gvy.p(this);
+                if (!gwh.n && this.b.getVisibility() == 0) {
+                    gwh.p(this);
                 }
             }
         }
@@ -164,11 +164,11 @@ public class CreationButtonView extends FrameLayout
     public final void setEnabled(final boolean b) {
         super.setEnabled(b);
         this.b.setEnabled(b);
-        vdh.P(this.getContext(), this.c, b);
+        vfw.Q(this.getContext(), this.c, b);
     }
     
     public final void setOnClickListener(final View$OnClickListener view$OnClickListener) {
-        super.setOnClickListener((View$OnClickListener)new suf(this, view$OnClickListener, 13));
+        super.setOnClickListener((View$OnClickListener)new svf(this, view$OnClickListener, 13));
     }
     
     public final void setPressed(final boolean b) {

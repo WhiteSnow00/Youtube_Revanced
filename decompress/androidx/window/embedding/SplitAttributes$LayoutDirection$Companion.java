@@ -9,6 +9,10 @@ public final class SplitAttributes$LayoutDirection$Companion
     private SplitAttributes$LayoutDirection$Companion() {
     }
     
+    public SplitAttributes$LayoutDirection$Companion(final atqv atqv) {
+        this();
+    }
+    
     public final SplitAttributes$LayoutDirection getLayoutDirectionFromValue$window_release(final int n) {
         SplitAttributes$LayoutDirection splitAttributes$LayoutDirection;
         if (n == SplitAttributes$LayoutDirection.LEFT_TO_RIGHT.getValue$window_release()) {

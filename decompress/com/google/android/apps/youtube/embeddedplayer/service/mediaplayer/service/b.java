@@ -109,7 +109,7 @@ public final class b implements SurfaceHolder
     }
     
     public final void setKeepScreenOn(final boolean b) {
-        ttr.l("setKeepScreenOn should be through player Surface, not SurfaceHolder");
+        tut.l("setKeepScreenOn should be through player Surface, not SurfaceHolder");
         final f b2 = this.b;
         if (b2 == null) {
             return;

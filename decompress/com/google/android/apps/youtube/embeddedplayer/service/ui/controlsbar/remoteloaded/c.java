@@ -40,32 +40,32 @@ public final class c extends ViewGroup implements View$OnClickListener, Animatio
     public AnimationSet e;
     public VideoQuality[] f;
     public int g;
-    public abbr h;
-    public final pvh i;
+    public abcx h;
+    public final oqz i;
     private ImageButton j;
     private AlertDialog$Builder k;
     
-    private c(final Context context, final pvh i, final byte[] array, final byte[] array2, final byte[] array3) {
+    private c(final Context context, final oqz i, final byte[] array, final byte[] array2, final byte[] array3) {
         context.getClass();
         super(context);
         this.i = i;
     }
     
-    public static c a(final Context context, final pvh pvh) {
-        final c animationListener = new c(context, pvh, null, null, null);
+    public static c a(final Context context, final oqz oqz) {
+        final c animationListener = new c(context, oqz, null, null, null);
         final Context context2 = animationListener.getContext();
         final float density = animationListener.getResources().getDisplayMetrics().density;
         animationListener.a = new ImageButton(context2);
         animationListener.b = new ImageButton(context2);
         animationListener.j = new ImageButton(context2);
         animationListener.c = new TextView(context2);
-        animationListener.k = new AlertDialog$Builder(context2).setTitle((CharSequence)context2.getString(2132019314)).setNegativeButton(2132017611, (DialogInterface$OnClickListener)new gyl(8));
+        animationListener.k = new AlertDialog$Builder(context2).setTitle((CharSequence)context2.getString(2132019316)).setNegativeButton(2132017611, (DialogInterface$OnClickListener)new gyt(8));
         final StateListDrawable imageDrawable = new StateListDrawable();
-        imageDrawable.addState(View.SELECTED_STATE_SET, agx.a(context2, 2131230936));
-        imageDrawable.addState(View.EMPTY_STATE_SET, agx.a(context2, 2131230935));
+        imageDrawable.addState(View.SELECTED_STATE_SET, agy.a(context2, 2131230936));
+        imageDrawable.addState(View.EMPTY_STATE_SET, agy.a(context2, 2131230935));
         final StateListDrawable stateListDrawable = new StateListDrawable();
-        stateListDrawable.addState(View.SELECTED_STATE_SET, agx.a(context2, 2131230934));
-        stateListDrawable.addState(View.EMPTY_STATE_SET, agx.a(context2, 2131230933));
+        stateListDrawable.addState(View.SELECTED_STATE_SET, agy.a(context2, 2131230934));
+        stateListDrawable.addState(View.EMPTY_STATE_SET, agy.a(context2, 2131230933));
         animationListener.a.setImageDrawable((Drawable)imageDrawable);
         animationListener.a.setBackground((Drawable)null);
         final ImageButton a = animationListener.a;
@@ -75,8 +75,8 @@ public final class c extends ViewGroup implements View$OnClickListener, Animatio
         animationListener.a.setOnClickListener((View$OnClickListener)animationListener);
         animationListener.a.setVisibility(8);
         final StateListDrawable imageDrawable2 = new StateListDrawable();
-        imageDrawable2.addState(View.SELECTED_STATE_SET, agx.a(context2, 2131230932));
-        imageDrawable2.addState(View.EMPTY_STATE_SET, agx.a(context2, 2131230931));
+        imageDrawable2.addState(View.SELECTED_STATE_SET, agy.a(context2, 2131230932));
+        imageDrawable2.addState(View.EMPTY_STATE_SET, agy.a(context2, 2131230931));
         animationListener.b.setImageDrawable((Drawable)imageDrawable2);
         animationListener.b.setBackground((Drawable)null);
         animationListener.b.setPadding(n, n, 0, n);
@@ -89,10 +89,10 @@ public final class c extends ViewGroup implements View$OnClickListener, Animatio
         final Intent intent = new Intent("android.intent.action.VIEW", Uri.parse("https://www.youtube.com/watch?v="));
         final PackageManager packageManager = context2.getPackageManager();
         String package1;
-        if (aehy.c(packageManager)) {
+        if (aejr.c(packageManager)) {
             package1 = "com.google.android.youtube.tv";
         }
-        else if (aehy.d(packageManager)) {
+        else if (aejr.d(packageManager)) {
             package1 = "com.google.android.youtube.googletv";
         }
         else {
@@ -160,14 +160,14 @@ public final class c extends ViewGroup implements View$OnClickListener, Animatio
                         array[i] = f[i].b;
                     }
                     k.setSingleChoiceItems((CharSequence[])array, this.g, (DialogInterface$OnClickListener)new b(this, this.f)).create().show();
-                    this.i.j();
+                    this.i.i();
                     return;
                 }
             }
         }
         if (view == this.b) {
             this.h.c();
-            this.i.j();
+            this.i.i();
         }
     }
     
@@ -212,7 +212,7 @@ public final class c extends ViewGroup implements View$OnClickListener, Animatio
     
     public final void setVisibility(final int visibility) {
         super.setVisibility(visibility);
-        final pvh i = this.i;
+        final oqz i = this.i;
         final Object a = i.a;
         final boolean l = visibility == 0;
         final a a2 = (a)a;

@@ -6,13 +6,13 @@ package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveo
 
 import android.os.IBinder;
 
-public final class d extends eny implements f
+public final class d extends eoc implements f
 {
     public d(final IBinder binder) {
         super(binder, "com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.shared.ILiveOverlayServiceListener");
     }
     
-    public final void sW() {
-        this.qS(1, this.qQ());
+    public final void b() {
+        this.qX(1, this.qV());
     }
 }

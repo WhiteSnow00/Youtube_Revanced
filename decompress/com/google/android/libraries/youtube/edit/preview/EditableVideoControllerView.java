@@ -15,15 +15,15 @@ import android.util.AttributeSet;
 import android.content.Context;
 import android.widget.ImageView;
 
-public class EditableVideoControllerView extends rbi
+public class EditableVideoControllerView extends reb
 {
     private final ImageView f;
     
     public EditableVideoControllerView(final Context context, final AttributeSet set) {
         super(context, set);
         LayoutInflater.from(context).inflate(2131624379, (ViewGroup)this, true);
-        this.m((TextView)this.findViewById(2131430418), (TextView)this.findViewById(2131432304), (SeekBar)this.findViewById(2131430419));
-        (this.f = (ImageView)this.findViewById(2131430409)).setOnClickListener((View$OnClickListener)new qtr((rbi)this, 16));
+        this.m((TextView)this.findViewById(2131430419), (TextView)this.findViewById(2131432308), (SeekBar)this.findViewById(2131430420));
+        (this.f = (ImageView)this.findViewById(2131430410)).setOnClickListener((View$OnClickListener)new qwj((reb)this, 16));
     }
     
     public final void a(final EditableVideo editableVideo, final Set set) {
@@ -38,11 +38,11 @@ public class EditableVideoControllerView extends rbi
     
     public final void u() {
         if (this.z()) {
-            this.f.setImageResource(2131231877);
-            this.f.setContentDescription((CharSequence)this.getContext().getString(2132017968));
+            this.f.setImageResource(2131231875);
+            this.f.setContentDescription((CharSequence)this.getContext().getString(2132017969));
             return;
         }
-        this.f.setImageResource(2131231878);
-        this.f.setContentDescription((CharSequence)this.getContext().getString(2132017969));
+        this.f.setImageResource(2131231876);
+        this.f.setContentDescription((CharSequence)this.getContext().getString(2132017970));
     }
 }

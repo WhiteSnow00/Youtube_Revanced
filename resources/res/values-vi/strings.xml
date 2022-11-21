@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Dùng giao diện của thiết bị</string>
     <string name="app_theme_appearance_summary">Chọn giao diện sáng hoặc tối</string>
     <string name="app_theme_appearance_title">Giao diện</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Áp dụng</string>
     <string name="approve_playlist_sync">Đồng bộ hóa video mới</string>
     <string name="audio_playback_failed_snackbar_action_button">Hãy thử lại</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Dừng phát trực tiếp</string>
     <string name="lc_retry_yes">Thử lại</string>
     <string name="lc_rotate_device">Xoay thiết bị</string>
+    <string name="lc_sharedmde_required_field_error">Bắt buộc phải có tiêu đề và đối tượng.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Phát trực tiếp ở chế độ dọc</string>
     <string name="lc_stream_start_error">Không thể bắt đầu phát trực tiếp. Hãy kiểm tra kết nối của bạn.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Xem trước video. Nhấn để tạm dừng.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Xem trước video. Nhấn để phát.</string>
     <string name="shorts_a11y_zoom_control">Thanh chỉnh mức thu phóng</string>
+    <string name="shorts_audio_failure_toast">Không thêm âm thanh được. Vui lòng thử lại.</string>
     <string name="shorts_camera_allow_access_subtitle">Cho phép truy cập vào máy ảnh và micrô</string>
     <string name="shorts_camera_allow_access_title">Tạo video ngắn</string>
     <string name="shorts_camera_close_confirmation_cancel">Hủy</string>

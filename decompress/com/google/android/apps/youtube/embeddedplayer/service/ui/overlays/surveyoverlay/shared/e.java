@@ -4,15 +4,15 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.surveyoverlay.shared;
 
-import com.google.android.apps.youtube.embeddedplayer.service.jar.client.s;
+import com.google.android.apps.youtube.embeddedplayer.service.jar.client.q;
 import android.os.Parcel;
-import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.paidcontentoverlay.remoteloaded.a;
+import com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.liveoverlay.remoteloaded.a;
 import android.os.Bundle;
 import android.os.Handler;
 
-public final class e extends enz implements f
+public final class e extends eod implements f
 {
-    public shl a;
+    public skr a;
     private final Handler b;
     
     public e() {
@@ -25,11 +25,11 @@ public final class e extends enz implements f
     }
     
     public final void a(final Bundle bundle) {
-        this.b.post((Runnable)new a(this, bundle, 5));
+        this.b.post((Runnable)new a(this, bundle, 7));
     }
     
     public final void b(final int[] array) {
-        this.b.post((Runnable)new a(this, array, 6));
+        this.b.post((Runnable)new a(this, array, 8));
     }
     
     protected final boolean dispatchTransaction(int int1, final Parcel parcel, final Parcel parcel2, int int2) {
@@ -38,7 +38,7 @@ public final class e extends enz implements f
                 if (int1 != 3) {
                     return false;
                 }
-                final Bundle bundle = (Bundle)eoa.a(parcel, Bundle.CREATOR);
+                final Bundle bundle = (Bundle)eoe.a(parcel, Bundle.CREATOR);
                 this.enforceNoDataAvail(parcel);
                 this.a(bundle);
             }
@@ -49,16 +49,16 @@ public final class e extends enz implements f
             }
         }
         else {
-            int2 = parcel.readInt();
             int1 = parcel.readInt();
+            int2 = parcel.readInt();
             this.enforceNoDataAvail(parcel);
-            this.g(int2, int1);
+            this.g(int1, int2);
         }
         parcel2.writeNoException();
         return true;
     }
     
     public final void g(final int n, final int n2) {
-        this.b.post((Runnable)new s(this, n, n2, 6));
+        this.b.post((Runnable)new q(this, n, n2, 6));
     }
 }

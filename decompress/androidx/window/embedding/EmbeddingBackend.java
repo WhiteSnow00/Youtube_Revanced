@@ -22,7 +22,7 @@ public interface EmbeddingBackend
     
     void registerRule(final EmbeddingRule p0);
     
-    void registerSplitListenerForActivity(final Activity p0, final Executor p1, final akn p2);
+    void registerSplitListenerForActivity(final Activity p0, final Executor p1, final akp p2);
     
     void setSplitAttributesCalculator(final SplitAttributesCalculator p0);
     
@@ -30,5 +30,5 @@ public interface EmbeddingBackend
     
     void unregisterRule(final EmbeddingRule p0);
     
-    void unregisterSplitListenerForActivity(final akn p0);
+    void unregisterSplitListenerForActivity(final akp p0);
 }

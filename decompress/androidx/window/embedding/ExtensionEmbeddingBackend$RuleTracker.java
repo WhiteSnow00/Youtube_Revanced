@@ -10,33 +10,43 @@ import java.util.HashMap;
 
 final class ExtensionEmbeddingBackend$RuleTracker
 {
-    private final abi splitRules;
+    private final abk splitRules;
     private final HashMap tagRuleMap;
     
     public ExtensionEmbeddingBackend$RuleTracker() {
-        this.splitRules = new abi();
+        this.splitRules = new abk();
         this.tagRuleMap = new HashMap();
+    }
+    
+    public static void addOrUpdateRule$default(final ExtensionEmbeddingBackend$RuleTracker extensionEmbeddingBackend$RuleTracker, final EmbeddingRule embeddingRule, final boolean b, int n, final Object o) {
+        if ((n & 0x2) != 0x0) {
+            n = 0;
+        }
+        else {
+            n = 1;
+        }
+        extensionEmbeddingBackend$RuleTracker.addOrUpdateRule(embeddingRule, (boolean)(((b ? 1 : 0) & n) != 0x0));
     }
     
     public final void addOrUpdateRule(final EmbeddingRule embeddingRule, final boolean b) {
         embeddingRule.getClass();
-        if (this.splitRules.contains((Object)embeddingRule)) {
+        if (this.splitRules.contains(embeddingRule)) {
             return;
         }
         final String tag = embeddingRule.getTag();
         if (tag == null) {
-            this.splitRules.add((Object)embeddingRule);
+            this.splitRules.add(embeddingRule);
             return;
         }
         if (!this.tagRuleMap.containsKey(tag)) {
             this.tagRuleMap.put(tag, embeddingRule);
-            this.splitRules.add((Object)embeddingRule);
+            this.splitRules.add(embeddingRule);
             return;
         }
         if (!b) {
-            this.splitRules.remove((Object)this.tagRuleMap.get(tag));
+            this.splitRules.remove(this.tagRuleMap.get(tag));
             this.tagRuleMap.put(tag, embeddingRule);
-            this.splitRules.add((Object)embeddingRule);
+            this.splitRules.add(embeddingRule);
             return;
         }
         final StringBuilder sb = new StringBuilder("Duplicated tag: ");
@@ -52,19 +62,19 @@ final class ExtensionEmbeddingBackend$RuleTracker
     
     public final boolean contains(final EmbeddingRule embeddingRule) {
         embeddingRule.getClass();
-        return this.splitRules.contains((Object)embeddingRule);
+        return this.splitRules.contains(embeddingRule);
     }
     
-    public final abi getSplitRules() {
+    public final abk getSplitRules() {
         return this.splitRules;
     }
     
     public final void removeRule(final EmbeddingRule embeddingRule) {
         embeddingRule.getClass();
-        if (!this.splitRules.contains((Object)embeddingRule)) {
+        if (!this.splitRules.contains(embeddingRule)) {
             return;
         }
-        this.splitRules.remove((Object)embeddingRule);
+        this.splitRules.remove(embeddingRule);
         if (embeddingRule.getTag() != null) {
             this.tagRuleMap.remove(embeddingRule.getTag());
         }

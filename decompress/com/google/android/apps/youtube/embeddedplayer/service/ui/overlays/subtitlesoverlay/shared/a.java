@@ -10,42 +10,42 @@ import com.google.android.libraries.youtube.player.subtitles.model.SubtitlesStyl
 import android.os.Parcel;
 import android.os.IBinder;
 
-public final class a extends eny implements c
+public final class a extends eoc implements c
 {
     public a(final IBinder binder) {
         super(binder, "com.google.android.apps.youtube.embeddedplayer.service.ui.overlays.subtitlesoverlay.shared.ISubtitlesOverlayClient");
     }
     
     public final void a() {
-        this.qS(2, this.qQ());
+        this.qX(2, this.qV());
     }
     
     public final void b() {
-        this.qS(3, this.qQ());
+        this.qX(3, this.qV());
     }
     
     public final void g(final float n) {
-        final Parcel qq = this.qQ();
-        qq.writeFloat(n);
-        this.qS(4, qq);
+        final Parcel qv = this.qV();
+        qv.writeFloat(n);
+        this.qX(4, qv);
     }
     
     public final void h(final int n, final int n2) {
-        final Parcel qq = this.qQ();
-        qq.writeInt(n);
-        qq.writeInt(0);
-        this.qS(6, qq);
+        final Parcel qv = this.qV();
+        qv.writeInt(n);
+        qv.writeInt(0);
+        this.qX(6, qv);
     }
     
     public final void i(final SubtitlesStyle subtitlesStyle) {
-        final Parcel qq = this.qQ();
-        eoa.h(qq, (Parcelable)subtitlesStyle);
-        this.qS(5, qq);
+        final Parcel qv = this.qV();
+        eoe.h(qv, (Parcelable)subtitlesStyle);
+        this.qX(5, qv);
     }
     
     public final void j(final List list) {
-        final Parcel qq = this.qQ();
-        qq.writeTypedList(list);
-        this.qS(1, qq);
+        final Parcel qv = this.qV();
+        qv.writeTypedList(list);
+        this.qX(1, qv);
     }
 }

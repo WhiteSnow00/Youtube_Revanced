@@ -50,11 +50,11 @@
     <string name="litho_channel_guidelines_off">Kanalrichtlinien-Entfernung ist deaktiviert</string>
     <string name="litho_channel_guidelines_on">Kanalrichtlinien-Entfernung ist aktiviert</string>
     <string name="litho_community_guidelines">Communityrichtlinien entfernen</string>
+    <string name="accessibility_settings_edu_opt_in_text">Bedienungshilfen für den Video-Player aktivieren?</string>
+    <string name="accessibility_settings_edu_opt_out_text">Ihre Steuerelemente wurden geändert, weil ein Barrierefreiheitdienst aktiviert ist.</string>
     <string name="litho_community_guidelines_off">Communityrichtlinien-Entfernung ist deaktiviert</string>
     <string name="litho_community_guidelines_on">Communityrichtlinien-Entfernung ist aktiviert</string>
     <string name="litho_community_posts">Communitybeiträge entfernen</string>
-    <string name="accessibility_settings_edu_opt_in_text">Bedienungshilfen für den Video-Player aktivieren?</string>
-    <string name="accessibility_settings_edu_opt_out_text">Ihre Steuerelemente wurden geändert, weil ein Barrierefreiheitdienst aktiviert ist.</string>
     <string name="litho_community_posts_off">Communitybeitrags-Entfernung ist deaktiviert</string>
     <string name="litho_community_posts_on">Communitybeitrags-Entfernung ist aktiviert</string>
     <string name="litho_compact_banner">Entferne kompakte Werbe-Banner</string>

@@ -19,16 +19,16 @@ public abstract class ShareButtonData implements Parcelable
         CREATOR = (Parcelable$Creator)new f(9);
     }
     
-    public static aech c() {
-        final aech aech = new aech();
-        aech.l(0);
-        aech.m(ahab.b);
-        return aech;
+    public static aedz c() {
+        final aedz aedz = new aedz();
+        aedz.l(0);
+        aedz.m(ahbt.b);
+        return aedz;
     }
     
     public abstract int a();
     
-    public abstract ahab b();
+    public abstract ahbt b();
     
     public final int describeContents() {
         return 0;

@@ -8,12 +8,12 @@ import java.util.List;
 
 public final class ApiPlayerService$$ExternalSyntheticLambda7 implements Runnable
 {
-    public ApiPlayerService a;
-    public List b;
-    public int c;
-    public int d;
-    public boolean e;
-    public int f;
+    public final ApiPlayerService a;
+    public final List b;
+    public final int c;
+    public final int d;
+    public final boolean e;
+    public final int f;
     
     public ApiPlayerService$$ExternalSyntheticLambda7(final ApiPlayerService a, final List b, final int c, final int d, final boolean e, final int f) {
         this.a = a;

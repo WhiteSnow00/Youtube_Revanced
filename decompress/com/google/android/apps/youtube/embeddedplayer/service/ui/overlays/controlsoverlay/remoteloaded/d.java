@@ -10,16 +10,16 @@ import android.content.DialogInterface$OnDismissListener;
 
 public final class d implements DialogInterface$OnDismissListener
 {
-    public final l a;
+    public final k a;
     public final i b;
     
-    public d(final l a, final i b) {
+    public d(final k a, final i b) {
         this.a = a;
         this.b = b;
     }
     
     public final void onDismiss(final DialogInterface dialogInterface) {
-        final l a = this.a;
+        final k a = this.a;
         this.b.d();
         a.I();
     }

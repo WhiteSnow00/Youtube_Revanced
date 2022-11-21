@@ -12,7 +12,7 @@ public final class VorbisComment extends androidx.media3.extractor.metadata.flac
     public static final Parcelable$Creator CREATOR;
     
     static {
-        CREATOR = (Parcelable$Creator)new bvm(10);
+        CREATOR = (Parcelable$Creator)new bvp(10);
     }
     
     public VorbisComment(final Parcel parcel) {

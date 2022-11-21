@@ -10,38 +10,36 @@ import androidx.preference.Preference;
 
 public class QuietHoursNotificationPreference extends Preference
 {
-    private final jqn a;
-    private final anxs b;
-    private final wwu c;
-    private jqm d;
+    private final jrx a;
+    private final aocc b;
+    private final xaa c;
+    private jrw d;
     
-    public QuietHoursNotificationPreference(final Context context, final jqn a, final wwu c, final anxs b) {
+    public QuietHoursNotificationPreference(final Context context, final jrx a, final xaa c, final aocc b) {
         super(context);
         this.a = a;
         this.c = c;
         this.b = b;
         this.I("quiet_hours_notification_preference");
-        super.B = 2131625357;
+        super.B = 2131625364;
     }
     
-    @Override
     protected final void C() {
         super.Q();
-        final jqm d = this.d;
+        final jrw d = this.d;
         if (d != null) {
-            d.c((acir)null);
+            d.c((acmh)null);
             this.d = null;
         }
     }
     
-    @Override
-    public final void rH(final cfi cfi) {
-        super.rH(cfi);
+    public final void rN(final cfm cfm) {
+        super.rN(cfm);
         if (this.d == null) {
-            this.d = this.a.b((ViewGroup)cfi.a);
-            ((ViewGroup)cfi.a).addView(this.d.a());
+            this.d = this.a.b((ViewGroup)cfm.a);
+            ((ViewGroup)cfm.a).addView(this.d.a());
         }
-        this.d.g(new acij(), (jqr)jqt.a(this.b));
-        this.c.n().l((wxz)new wws(this.b.q));
+        this.d.g(new aclz(), (jsb)jsd.a(this.b));
+        this.c.pE().l((xbe)new wzy(this.b.q));
     }
 }

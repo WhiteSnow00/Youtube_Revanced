@@ -502,8 +502,6 @@
         <item name="backgroundTertiaryInverse">@color/yt_white3</item>
         <item name="bedtimeSlothIcon">@drawable/bedtime_sloth_dark</item>
         <item name="blueButtonBackground">@drawable/blue_button_background_dark</item>
-        <item name="blueRadioButtonBackground">@drawable/blue_radio_button_background_dark</item>
-        <item name="blueRadioButtonTextColor">@color/blue_radio_button_text_color_dark</item>
         <item name="borderlessButtonStyle">?attr/selectableItemBackgroundBorderless</item>
         <item name="bottomInsetSeparator">@drawable/bottom_inset_separator_dark</item>
         <item name="bottomSeparator">@drawable/bottom_separator_dark</item>
@@ -661,8 +659,6 @@
         <item name="backgroundTertiaryInverse">@color/yt_black3</item>
         <item name="bedtimeSlothIcon">@drawable/bedtime_sloth_light</item>
         <item name="blueButtonBackground">@drawable/blue_button_background_light</item>
-        <item name="blueRadioButtonBackground">@drawable/blue_radio_button_background_light</item>
-        <item name="blueRadioButtonTextColor">@color/blue_radio_button_text_color_light</item>
         <item name="borderlessButtonStyle">?attr/selectableItemBackgroundBorderless</item>
         <item name="bottomInsetSeparator">@drawable/bottom_inset_separator_light</item>
         <item name="bottomSeparator">@drawable/bottom_separator_light</item>
@@ -5691,6 +5687,12 @@
         <item name="cornerFamily">@null</item>
         <item name="cornerSize">4dp</item>
     </style>
+    <style name="ShapeAppearance.M3.Comp.FilledButton.Container.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.Full">
+    </style>
+    <style name="ShapeAppearance.M3.Comp.NavigationRail.ActiveIndicator.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.Full">
+    </style>
+    <style name="ShapeAppearance.M3.Comp.TextButton.Container.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.Full">
+    </style>
     <style name="ShapeAppearance.M3.Sys.Shape.Corner.ExtraLarge">
         <item name="cornerFamily">?attr/shapeCornerFamily</item>
         <item name="cornerSize">28dp</item>
@@ -5790,6 +5792,10 @@
     </style>
     <style name="ShapeAppearanceOverlay.Material3.Button">
         <item name="cornerSize">50%</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.Material3.Corner.Left">
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
     </style>
     <style name="ShapeAppearanceOverlay.Material3.Corner.Top">
         <item name="cornerSizeBottomLeft">0dp</item>
@@ -7925,6 +7931,16 @@
         <item name="ytTextPrimary">@color/yt_white3</item>
         <item name="ytTextPrimaryInverse">@color/yt_black3</item>
     </style>
+    <style name="Theme.YouTube.Dark.DarkerPalette.LongTail" parent="@style/Theme.YouTube.Dark.DarkerPalette">
+        <item name="yt10PercentLayer">?attr/ytOutline</item>
+        <item name="ytBadgeChipBackground">?attr/ytAdditiveBackground</item>
+        <item name="ytErrorBackground">?attr/ytInvertedBackground</item>
+        <item name="ytGeneralBackgroundA">?attr/ytAdditiveBackground</item>
+        <item name="ytGeneralBackgroundB">?attr/ytAdditiveBackground</item>
+        <item name="ytGeneralBackgroundC">?attr/ytAdditiveBackground</item>
+        <item name="ytSnackbarBackground">?attr/ytInvertedBackground</item>
+        <item name="ytVerifiedBadgeBackground">?attr/ytAdditiveBackground</item>
+    </style>
     <style name="Theme.YouTube.Dark.Dialog" parent="@style/Base.V23.Theme.YouTube.Dark.Dialog">
     </style>
     <style name="Theme.YouTube.Dark.Home" parent="@style/Base.V23.Theme.YouTube.Dark.Home">
@@ -8076,6 +8092,16 @@
         <item name="ytGeneralBackgroundB">?attr/ytBaseBackground</item>
         <item name="ytGeneralBackgroundC">?attr/ytBaseBackground</item>
         <item name="ytTextPrimary">@color/yt_black3</item>
+    </style>
+    <style name="Theme.YouTube.Light.DarkerPalette.LongTail" parent="@style/Theme.YouTube.Light.DarkerPalette">
+        <item name="yt10PercentLayer">?attr/ytOutline</item>
+        <item name="ytBadgeChipBackground">?attr/ytAdditiveBackground</item>
+        <item name="ytErrorBackground">?attr/ytInvertedBackground</item>
+        <item name="ytGeneralBackgroundA">?attr/ytAdditiveBackground</item>
+        <item name="ytGeneralBackgroundB">?attr/ytAdditiveBackground</item>
+        <item name="ytGeneralBackgroundC">?attr/ytAdditiveBackground</item>
+        <item name="ytSnackbarBackground">?attr/ytInvertedBackground</item>
+        <item name="ytVerifiedBadgeBackground">?attr/ytAdditiveBackground</item>
     </style>
     <style name="Theme.YouTube.Light.Dialog" parent="@style/Base.V23.Theme.YouTube.Light.Dialog">
     </style>
@@ -9304,6 +9330,16 @@
         <item name="ytTextPrimary">@color/yt_white3</item>
         <item name="ytTextPrimaryInverse">@color/yt_black3</item>
     </style>
+    <style name="Themed.YouTube.Dark.AppCompat.DarkerPalette.LongTail" parent="@style/Themed.YouTube.Dark.AppCompat.DarkerPalette">
+        <item name="yt10PercentLayer">?attr/ytOutline</item>
+        <item name="ytBadgeChipBackground">?attr/ytAdditiveBackground</item>
+        <item name="ytErrorBackground">?attr/ytInvertedBackground</item>
+        <item name="ytGeneralBackgroundA">?attr/ytAdditiveBackground</item>
+        <item name="ytGeneralBackgroundB">?attr/ytAdditiveBackground</item>
+        <item name="ytGeneralBackgroundC">?attr/ytAdditiveBackground</item>
+        <item name="ytSnackbarBackground">?attr/ytInvertedBackground</item>
+        <item name="ytVerifiedBadgeBackground">?attr/ytAdditiveBackground</item>
+    </style>
     <style name="Themed.YouTube.Dark.AppCompat.NoActionBar" parent="@style/Themed.YouTube.Dark.AppCompat">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -9598,7 +9634,21 @@
         <item name="ytGeneralBackgroundC">?attr/ytBaseBackground</item>
         <item name="ytTextPrimary">@color/yt_black3</item>
     </style>
+    <style name="Themed.YouTube.Light.AppCompat.Light.DarkerPalette.LongTail" parent="@style/Themed.YouTube.Light.AppCompat.Light.DarkerPalette">
+        <item name="yt10PercentLayer">?attr/ytOutline</item>
+        <item name="ytBadgeChipBackground">?attr/ytAdditiveBackground</item>
+        <item name="ytErrorBackground">?attr/ytInvertedBackground</item>
+        <item name="ytGeneralBackgroundA">?attr/ytAdditiveBackground</item>
+        <item name="ytGeneralBackgroundB">?attr/ytAdditiveBackground</item>
+        <item name="ytGeneralBackgroundC">?attr/ytAdditiveBackground</item>
+        <item name="ytSnackbarBackground">?attr/ytInvertedBackground</item>
+        <item name="ytVerifiedBadgeBackground">?attr/ytAdditiveBackground</item>
+    </style>
     <style name="Themed.YouTube.Light.AppCompat.Light.NoActionBar" parent="@style/Themed.YouTube.Light.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Themed.YouTube.Light.AppCompat.NoActionBar" parent="@style/Themed.YouTube.Light.AppCompat">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
@@ -11049,13 +11099,13 @@
         <item name="android:insetBottom">@dimen/m3_btn_inset</item>
         <item name="android:stateListAnimator">@animator/m3_btn_state_list_anim</item>
         <item name="backgroundTint">@color/m3_button_background_color_selector</item>
-        <item name="elevation">@dimen/m3_btn_elevation</item>
+        <item name="elevation">@dimen/m3_comp_filled_button_container_elevation</item>
         <item name="enforceTextAppearance">false</item>
-        <item name="iconSize">18dp</item>
+        <item name="iconSize">@dimen/m3_comp_filled_button_with_icon_icon_size</item>
         <item name="iconTint">@color/m3_button_foreground_color_selector</item>
         <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.Button</item>
         <item name="rippleColor">@color/m3_button_ripple_color_selector</item>
-        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Full</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.M3.Comp.FilledButton.Container.Shape</item>
     </style>
     <style name="Widget.Material3.Button.IconButton" parent="@style/Widget.Material3.Button.TextButton">
         <item name="android:paddingLeft">@dimen/m3_btn_icon_only_default_padding</item>
@@ -11086,7 +11136,7 @@
         <item name="android:paddingLeft">@dimen/m3_btn_padding_left</item>
         <item name="android:paddingRight">@dimen/m3_btn_padding_right</item>
         <item name="strokeColor">@color/m3_button_outline_color_selector</item>
-        <item name="strokeWidth">@dimen/m3_btn_stroke_size</item>
+        <item name="strokeWidth">@dimen/m3_comp_outlined_button_outline_width</item>
     </style>
     <style name="Widget.Material3.Button.TextButton" parent="@style/Widget.MaterialComponents.Button.TextButton">
         <item name="android:textAppearance">?attr/textAppearanceLabelLarge</item>
@@ -11103,7 +11153,7 @@
         <item name="iconTint">@color/m3_text_button_foreground_color_selector</item>
         <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.Button.TextButton</item>
         <item name="rippleColor">@color/m3_text_button_ripple_color_selector</item>
-        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Full</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.M3.Comp.TextButton.Container.Shape</item>
     </style>
     <style name="Widget.Material3.Button.TextButton.Dialog" parent="@style/Widget.Material3.Button.TextButton">
         <item name="android:ellipsize">end</item>
@@ -11136,32 +11186,41 @@
         <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
     </style>
     <style name="Widget.Material3.Chip.Assist" parent="@style/Base.Widget.Material3.Chip">
+        <item name="android:textAppearance">?attr/textAppearanceLabelLarge</item>
         <item name="android:textColor">@color/m3_chip_assist_text_color</item>
         <item name="android:checkable">false</item>
+        <item name="android:elevation">@dimen/m3_comp_assist_chip_flat_container_elevation</item>
         <item name="checkedIconVisible">false</item>
         <item name="chipEndPadding">8dp</item>
+        <item name="chipIconSize">@dimen/m3_comp_assist_chip_with_icon_icon_size</item>
         <item name="chipIconVisible">true</item>
-        <item name="chipMinHeight">32dp</item>
+        <item name="chipMinHeight">@dimen/m3_comp_assist_chip_container_height</item>
         <item name="chipStartPadding">8dp</item>
+        <item name="chipStrokeWidth">@dimen/m3_comp_assist_chip_flat_outline_width</item>
         <item name="closeIconEndPadding">0dp</item>
         <item name="closeIconStartPadding">0dp</item>
         <item name="closeIconVisible">false</item>
         <item name="iconEndPadding">0dp</item>
         <item name="iconStartPadding">0dp</item>
         <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.Chip.Assist</item>
+        <item name="shapeAppearance">?attr/shapeAppearanceCornerSmall</item>
         <item name="textEndPadding">8dp</item>
         <item name="textStartPadding">8dp</item>
     </style>
     <style name="Widget.Material3.Chip.Input" parent="@style/Base.Widget.Material3.Chip">
+        <item name="android:textAppearance">?attr/textAppearanceLabelLarge</item>
         <item name="android:checkable">true</item>
+        <item name="android:elevation">@dimen/m3_comp_input_chip_container_elevation</item>
         <item name="chipEndPadding">4dp</item>
-        <item name="chipIconSize">24dp</item>
-        <item name="chipMinHeight">32dp</item>
+        <item name="chipIconSize">@dimen/m3_comp_input_chip_with_avatar_avatar_size</item>
+        <item name="chipMinHeight">@dimen/m3_comp_input_chip_container_height</item>
         <item name="chipStartPadding">4dp</item>
+        <item name="chipStrokeWidth">@dimen/m3_comp_input_chip_unselected_outline_width</item>
         <item name="closeIconEndPadding">4dp</item>
         <item name="closeIconStartPadding">0dp</item>
         <item name="iconEndPadding">0dp</item>
         <item name="iconStartPadding">0dp</item>
+        <item name="shapeAppearance">?attr/shapeAppearanceCornerSmall</item>
         <item name="textEndPadding">8dp</item>
         <item name="textStartPadding">8dp</item>
     </style>
@@ -11446,15 +11505,16 @@
         <item name="android:background">?attr/colorSurface</item>
         <item name="android:minWidth">@dimen/m3_navigation_rail_default_width</item>
         <item name="backgroundTint">@null</item>
-        <item name="elevation">@dimen/m3_sys_elevation_level0</item>
+        <item name="elevation">@dimen/m3_navigation_rail_elevation</item>
         <item name="itemActiveIndicatorStyle">@style/Widget.Material3.NavigationRailView.ActiveIndicator</item>
+        <item name="itemIconSize">@dimen/m3_comp_navigation_rail_icon_size</item>
         <item name="itemIconTint">@color/m3_navigation_bar_item_with_indicator_icon_tint</item>
         <item name="itemMinHeight">@dimen/m3_navigation_rail_item_min_height</item>
         <item name="itemPaddingBottom">@dimen/m3_navigation_rail_item_padding_bottom</item>
         <item name="itemPaddingTop">@dimen/m3_navigation_rail_item_padding_top</item>
         <item name="itemRippleColor">@color/m3_navigation_bar_ripple_color_selector</item>
-        <item name="itemTextAppearanceActive">?attr/textAppearanceTitleSmall</item>
-        <item name="itemTextAppearanceInactive">?attr/textAppearanceTitleSmall</item>
+        <item name="itemTextAppearanceActive">?attr/textAppearanceLabelMedium</item>
+        <item name="itemTextAppearanceInactive">?attr/textAppearanceLabelMedium</item>
         <item name="itemTextColor">@color/m3_navigation_bar_item_with_indicator_label_tint</item>
     </style>
     <style name="Widget.Material3.NavigationRailView.ActiveIndicator">
@@ -11462,7 +11522,7 @@
         <item name="android:width">@dimen/m3_navigation_rail_item_active_indicator_width</item>
         <item name="android:color">?attr/colorSecondaryContainer</item>
         <item name="marginHorizontal">@dimen/m3_navigation_rail_item_active_indicator_margin_horizontal</item>
-        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Full</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.M3.Comp.NavigationRail.ActiveIndicator.Shape</item>
     </style>
     <style name="Widget.Material3.NavigationView" parent="@style/Widget.MaterialComponents.NavigationView">
         <item name="bottomInsetScrimEnabled">false</item>
@@ -11510,6 +11570,8 @@
     </style>
     <style name="Widget.Material3.SideSheet.Modal" parent="@style/Widget.Material3.SideSheet">
         <item name="android:elevation">@dimen/m3_side_sheet_modal_elevation</item>
+        <item name="shapeAppearance">?attr/shapeAppearanceLargeComponent</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Material3.Corner.Left</item>
     </style>
     <style name="Widget.Material3.Slider" parent="@style/Widget.MaterialComponents.Slider">
         <item name="haloColor">@color/m3_slider_halo_color</item>
@@ -12378,6 +12440,7 @@
         <item name="android:drawableStart">@drawable/yt_fill_youtube_logo_black_24</item>
         <item name="android:fontFamily">google-sans</item>
         <item name="android:textDirection">locale</item>
+        <item name="android:paddingStart">16dp</item>
     </style>
     <style name="YouTubePlayerButton" parent="@style/PlayerButton">
         <item name="android:background">?attr/ytPlayerOverlayButtonBackground</item>

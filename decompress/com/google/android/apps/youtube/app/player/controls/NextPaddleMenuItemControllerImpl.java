@@ -8,25 +8,25 @@ import java.util.concurrent.atomic.AtomicReference;
 import android.content.Context;
 import android.app.Activity;
 
-public class NextPaddleMenuItemControllerImpl implements isy, thl
+public class NextPaddleMenuItemControllerImpl implements ith, tio
 {
-    public final ftk a;
-    public final vcy b;
-    public final wyw c;
-    public ist d;
-    public amgp e;
+    public final ftq a;
+    public final veh b;
+    public final xab c;
+    public itc d;
+    public amis e;
     public boolean f;
     public boolean g;
     private final Activity h;
-    private final abpu i;
-    private final acpk j;
-    private final asid k;
-    private final abbf l;
-    private asir m;
-    private asir n;
+    private final abqz i;
+    private final acqv j;
+    private final askz k;
+    private final abcl l;
+    private asln m;
+    private asln n;
     private boolean o;
     
-    public NextPaddleMenuItemControllerImpl(final Activity h, final abpu i, final ftk a, final abbf l, final vcy b, final acpk j, final asid k, final wyw c) {
+    public NextPaddleMenuItemControllerImpl(final Activity h, final abqz i, final ftq a, final abcl l, final veh b, final acqv j, final askz k, final xab c) {
         h.getClass();
         this.h = h;
         i.getClass();
@@ -43,16 +43,16 @@ public class NextPaddleMenuItemControllerImpl implements isy, thl
         this.l = l;
     }
     
-    public final ist a() {
+    public final itc a() {
         if (this.d == null) {
-            this.d = new ist("", new iso(this, 7));
+            this.d = new itc("", (ita)new isx(this, 7));
             this.l();
         }
-        final ist d = this.d;
-        if (d != null && d.g) {
-            this.c.D((wzz)new wyt(xaa.c(138460)));
+        final itc d = this.d;
+        if (d != null && ((actj)d).g) {
+            this.c.D((xbe)new wzy(xbf.c(138460)));
         }
-        final ist d2 = this.d;
+        final itc d2 = this.d;
         d2.getClass();
         return d2;
     }
@@ -60,64 +60,62 @@ public class NextPaddleMenuItemControllerImpl implements isy, thl
     public final void b(final boolean b) {
     }
     
-    public final thh g() {
-        return thh.b;
+    public final tik g() {
+        return tik.b;
     }
     
-    @Override
     public final void j() {
         if (this.o) {
             this.o = false;
-            final ist d = this.d;
-            if (d != null && d.g) {
-                this.c.o((wzz)new wyt(xaa.c(138460)), (alhi)null);
+            final itc d = this.d;
+            if (d != null && ((actj)d).g) {
+                this.c.o((xbe)new wzy(xbf.c(138460)), (alji)null);
             }
         }
     }
     
-    @Override
     public final void k() {
         this.o = true;
-        final ist d = this.d;
-        if (d != null && d.g) {
-            this.c.t((wzz)new wyt(xaa.c(138460)), (alhi)null);
+        final itc d = this.d;
+        if (d != null && ((actj)d).g) {
+            this.c.t((xbe)new wzy(xbf.c(138460)), (alji)null);
         }
     }
     
     public final void l() {
-        final amgp e = this.e;
+        final amis e = this.e;
         final boolean b = false;
         if (e != null) {
-            final CharSequence h = vyg.h(e);
-            if (h != null) {
-                final ist d = this.d;
+            final CharSequence q = wbe.q(e);
+            if (q != null) {
+                final itc d = this.d;
                 if (d != null) {
-                    ((qkq)d).c = h.toString();
+                    ((qlk)d).c = q.toString();
                 }
             }
-            final akdi f = vyg.f(e);
+            final akfj o = wbe.o(e);
             int a;
-            if (f == null) {
+            if (o == null) {
                 a = 0;
             }
             else {
-                final acpk j = this.j;
-                akdh akdh;
-                if ((akdh = akdh.b(f.c)) == null) {
-                    akdh = akdh.a;
+                final acqv j = this.j;
+                akfi akfi;
+                if ((akfi = akfi.b(o.c)) == null) {
+                    akfi = akfi.a;
                 }
-                a = j.a(akdh);
+                a = j.a(akfi);
             }
             if (a != 0) {
-                final ist d2 = this.d;
+                final itc d2 = this.d;
                 if (d2 != null) {
-                    ((qkq)d2).e = tpe.k((Context)this.h, a, 2130970924);
+                    ((qlk)d2).e = tqf.k((Context)this.h, a, 2130970922);
                 }
             }
         }
-        final ist d3 = this.d;
+        final itc d3 = this.d;
         if (d3 != null) {
-            final boolean g = d3.g;
+            final boolean g = ((actj)d3).g;
             int n = b ? 1 : 0;
             if (this.f) {
                 n = (b ? 1 : 0);
@@ -131,34 +129,31 @@ public class NextPaddleMenuItemControllerImpl implements isy, thl
             if ((g ? 1 : 0) == n) {
                 return;
             }
-            d3.g((boolean)(n != 0));
+            ((actj)d3).g((boolean)(n != 0));
             if (n != 0) {
-                this.c.D((wzz)new wyt(xaa.c(138460)));
+                this.c.D((xbe)new wzy(xbf.c(138460)));
                 if (this.o) {
-                    this.c.t((wzz)new wyt(xaa.c(138460)), (alhi)null);
+                    this.c.t((xbe)new wzy(xbf.c(138460)), (alji)null);
                 }
             }
         }
     }
     
-    public final void lW(final aun aun) {
+    public final void lW(final aup aup) {
     }
     
-    public final void mM(final aun aun) {
+    public final void mp(final aup aup) {
     }
     
-    public final void mq(final aun aun) {
+    public final void mx(final aup aup) {
     }
     
-    public final void my(final aun aun) {
-    }
-    
-    public final void oD(final boolean f) {
+    public final void oB(final boolean f) {
         if (this.f == f) {
             return;
         }
         this.f = f;
-        final ftk a = this.a;
+        final ftq a = this.a;
         boolean b = false;
         if (f) {
             b = b;
@@ -172,51 +167,54 @@ public class NextPaddleMenuItemControllerImpl implements isy, thl
         }
     }
     
-    public final void oO() {
+    public final void oO(final aup aup) {
+    }
+    
+    public final void oP() {
         this.d = null;
     }
     
-    public final boolean oP() {
+    public final boolean oQ() {
         return true;
     }
     
-    public final String oQ() {
+    public final String oR() {
         return "menu_item_next_paddle";
     }
     
-    public final void oS(final aun aun) {
-        asir m;
-        if (((vai)this.i.ci().g).bx()) {
-            m = this.i.Q().an((asjm)new irw(this, 17), (asjm)ise.g);
+    public final void oT(final aup aup) {
+        asln m;
+        if (((vbs)this.i.cg().g).bA()) {
+            m = this.i.Q().an((asmi)new isd(this, 19), (asmi)isj.h);
         }
         else {
-            m = this.i.P().R().P(this.k).an((asjm)new irw(this, 17), (asjm)ise.g);
+            m = this.i.P().R().P(this.k).an((asmi)new isd(this, 19), (asmi)isj.h);
         }
         this.m = m;
-        this.n = this.l.a().an((asjm)new irw(this, 18), (asjm)ise.g);
+        this.n = this.l.a().an((asmi)new isd(this, 20), (asmi)isj.h);
     }
     
-    public final void oT() {
-        tfg.c((thl)this);
+    public final void oU() {
+        tgj.d((tio)this);
     }
     
-    public final void oW() {
-        tfg.b((thl)this);
+    public final void oX() {
+        tgj.c((tio)this);
     }
     
-    public final void oX(final aun aun) {
-        final asir m = this.m;
+    public final void oY(final aup aup) {
+        final asln m = this.m;
         if (m != null) {
-            athz.f((AtomicReference)m);
+            atkw.f((AtomicReference)m);
             this.m = null;
         }
-        final asir n = this.n;
+        final asln n = this.n;
         if (n != null) {
-            athz.f((AtomicReference)n);
+            atkw.f((AtomicReference)n);
             this.n = null;
         }
     }
     
-    public final void re(final abcx abcx) {
+    public final void rd(final abed abed) {
     }
 }

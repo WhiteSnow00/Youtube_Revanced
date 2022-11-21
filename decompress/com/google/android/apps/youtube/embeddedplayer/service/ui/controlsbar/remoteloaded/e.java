@@ -32,13 +32,13 @@ public final class e extends g
         this.s = new Rect();
         this.p = new RectF();
         this.q = new RectF();
-        final Drawable a = agx.a(context, 2131230951);
+        final Drawable a = agy.a(context, 2131230951);
         a.getClass();
         this.o = a;
-        final Drawable a2 = agx.a(context, 2131230952);
+        final Drawable a2 = agy.a(context, 2131230952);
         a2.getClass();
         this.n = a2;
-        final Drawable a3 = agx.a(context, 2131230954);
+        final Drawable a3 = agy.a(context, 2131230954);
         a3.getClass();
         (this.m = a3).getPadding(r);
     }

@@ -50,11 +50,11 @@
     <string name="litho_channel_guidelines_off">Channel guidelines removal is turned off</string>
     <string name="litho_channel_guidelines_on">Channel guidelines removal is turned on</string>
     <string name="litho_community_guidelines">Community Guidelines removal</string>
+    <string name="accessibility_settings_edu_opt_in_text">വീഡിയോ പ്ലെയറിനായുള്ള accessibility controls ഓണാക്കണോ?</string>
+    <string name="accessibility_settings_edu_opt_out_text">accessibility service ഓണായതിനാൽ നിങ്ങളുടെ നിയന്ത്രണങ്ങൾ പരിഷ്‌ക്കരിച്ചിരിക്കുന്നു.</string>
     <string name="litho_community_guidelines_off">Community Guidelines removal is turned off</string>
     <string name="litho_community_guidelines_on">Community Guidelines removal is turned on</string>
     <string name="litho_community_posts">Community post removal</string>
-    <string name="accessibility_settings_edu_opt_in_text">വീഡിയോ പ്ലെയറിനായുള്ള accessibility controls ഓണാക്കണോ?</string>
-    <string name="accessibility_settings_edu_opt_out_text">accessibility service ഓണായതിനാൽ നിങ്ങളുടെ നിയന്ത്രണങ്ങൾ പരിഷ്‌ക്കരിച്ചിരിക്കുന്നു.</string>
     <string name="litho_community_posts_off">Community post removal is turned off</string>
     <string name="litho_community_posts_on">Community post removal is turned on</string>
     <string name="litho_compact_banner">Compact banner removal</string>

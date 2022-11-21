@@ -250,7 +250,7 @@
     <string name="app_theme_appearance_entry_system">Как на устройстве</string>
     <string name="app_theme_appearance_summary">Выбрать цветовую схему приложения</string>
     <string name="app_theme_appearance_title">Тема</string>
-    <string name="application_name">YT RVX</string>
+    <string name="application_name">YouTube</string>
     <string name="apply">Применить</string>
     <string name="approve_playlist_sync">Синхронизировать новые видео</string>
     <string name="audio_playback_failed_snackbar_action_button">Повторить</string>
@@ -481,7 +481,7 @@
     <string name="data_saving_monitoring_and_control_category_title">Контроль трафика</string>
     <string name="data_saving_persistent_title">Экономия трафика</string>
     <string name="data_saving_select_quality_every_video_switch_title">Выбирать качество для каждого видео</string>
-    <string name="data_saving_smart_downloads_quality_switch_title">Reduce Smart downloads quality</string>
+    <string name="data_saving_smart_downloads_quality_switch_title">Снизить качество при умном скачивании</string>
     <string name="data_saving_snack_bar_action_button">Открыть</string>
     <string name="data_saving_snack_bar_text">Это изменение затронет настройки экономии трафика.</string>
     <string name="data_saving_upload_wifi_only_switch_title">Загружать только через Wi-Fi</string>
@@ -840,6 +840,7 @@
     <string name="lc_retry_no">Завершить трансляцию</string>
     <string name="lc_retry_yes">Повторить попытку</string>
     <string name="lc_rotate_device">Поверните устройство</string>
+    <string name="lc_sharedmde_required_field_error">Необходимо указать название и аудиторию.</string>
     <string name="lc_statistic_item_cd">%1$s: %2$s</string>
     <string name="lc_stream_in_portrait">Запустить трансляцию в вертикальном режиме</string>
     <string name="lc_stream_start_error">Не удалось начать трансляцию. Проверьте подключение к сети.</string>
@@ -1749,6 +1750,7 @@
     <string name="shorts_a11y_video_preview_tap_to_pause">Предварительный просмотр видео. Нажмите, чтобы приостановить воспроизведение.</string>
     <string name="shorts_a11y_video_preview_tap_to_play">Предварительный просмотр видео. Нажмите, чтобы начать воспроизведение.</string>
     <string name="shorts_a11y_zoom_control">Ползунок для изменения масштаба изображения</string>
+    <string name="shorts_audio_failure_toast">Не удалось добавить звуковую дорожку. Повторите попытку.</string>
     <string name="shorts_camera_allow_access_subtitle">Откройте доступ к камере и микрофону.</string>
     <string name="shorts_camera_allow_access_title">Создайте короткое видео</string>
     <string name="shorts_camera_close_confirmation_cancel">Отмена</string>

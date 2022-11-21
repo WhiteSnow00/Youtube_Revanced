@@ -9,9 +9,9 @@ import com.google.android.libraries.youtube.player.state.PlaybackServiceState;
 
 public final class ApiPlayerService$$ExternalSyntheticLambda23 implements Runnable
 {
-    public ApiPlayerService a;
-    public PlaybackServiceState b;
-    public ConditionVariable c;
+    public final ApiPlayerService a;
+    public final PlaybackServiceState b;
+    public final ConditionVariable c;
     
     public ApiPlayerService$$ExternalSyntheticLambda23(final ApiPlayerService a, final PlaybackServiceState b, final ConditionVariable c) {
         this.a = a;

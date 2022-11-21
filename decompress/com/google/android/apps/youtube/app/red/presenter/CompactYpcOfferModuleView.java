@@ -43,10 +43,10 @@ public class CompactYpcOfferModuleView extends ViewGroup
     
     private final void a() {
         inflate(this.getContext(), 2131624268, (ViewGroup)this);
-        this.a = (TextView)this.findViewById(2131432092);
-        this.b = (TextView)this.findViewById(2131431819);
+        this.a = (TextView)this.findViewById(2131432096);
+        this.b = (TextView)this.findViewById(2131431823);
         this.c = (TextView)this.findViewById(2131427916);
-        this.e = tmy.aZ(this.getResources().getDisplayMetrics(), 8);
+        this.e = tqf.aZ(this.getResources().getDisplayMetrics(), 8);
         this.d = new HashMap();
     }
     
@@ -57,18 +57,20 @@ public class CompactYpcOfferModuleView extends ViewGroup
         this.d.get(view).set(n, n2, n3, n4);
     }
     
-    protected final void onLayout(final boolean b, int i, int right, int left, int childCount) {
-        childCount = this.getChildCount();
-        final int n = left - i;
+    protected final void onLayout(final boolean b, final int n, int i, final int n2, int left) {
+        int childCount;
         View child;
         Rect rect;
-        for (i = 0; i < childCount; ++i) {
+        int n3;
+        int right;
+        for (childCount = this.getChildCount(), i = 0; i < childCount; ++i) {
             child = this.getChildAt(i);
             if (child.getVisibility() != 8) {
                 rect = this.d.get(child);
-                if (ana.f((View)this) == 1) {
-                    left = n - rect.right;
-                    right = n - rect.left;
+                if (anc.f((View)this) == 1) {
+                    n3 = n2 - n;
+                    left = n3 - rect.right;
+                    right = n3 - rect.left;
                 }
                 else {
                     left = rect.left;

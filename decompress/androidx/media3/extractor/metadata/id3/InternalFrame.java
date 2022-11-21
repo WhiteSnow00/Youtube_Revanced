@@ -15,13 +15,13 @@ public final class InternalFrame extends Id3Frame
     public final String c;
     
     static {
-        CREATOR = (Parcelable$Creator)new app(18);
+        CREATOR = (Parcelable$Creator)new apq(18);
     }
     
     public InternalFrame(final Parcel parcel) {
         super("----");
         final String string = parcel.readString();
-        final int a = bax.a;
+        final int a = baz.a;
         this.a = string;
         this.b = parcel.readString();
         this.c = parcel.readString();
@@ -41,7 +41,7 @@ public final class InternalFrame extends Id3Frame
         if (o != null) {
             if (this.getClass() == o.getClass()) {
                 final InternalFrame internalFrame = (InternalFrame)o;
-                if (bax.aa((Object)this.b, (Object)internalFrame.b) && bax.aa((Object)this.a, (Object)internalFrame.a) && bax.aa((Object)this.c, (Object)internalFrame.c)) {
+                if (baz.aa(this.b, internalFrame.b) && baz.aa(this.a, internalFrame.a) && baz.aa(this.c, internalFrame.c)) {
                     return true;
                 }
             }

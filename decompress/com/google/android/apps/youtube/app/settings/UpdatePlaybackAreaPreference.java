@@ -12,24 +12,23 @@ import androidx.preference.Preference;
 
 public class UpdatePlaybackAreaPreference extends Preference
 {
-    public final anxr a;
+    public final aocb a;
     public ViewSwitcher b;
-    public cem c;
-    private final wwu d;
-    private final asib e;
-    private final asho f;
-    private final aaal g;
+    public ceq c;
+    private final xaa d;
+    private final aslm e;
+    private final askz f;
+    private final aaec g;
     
-    public UpdatePlaybackAreaPreference(final Context context, final wwu d, final aaal g, final asho f, final anxr a, final byte[] array) {
+    public UpdatePlaybackAreaPreference(final Context context, final xaa d, final aaec g, final askz f, final aocb a, final byte[] array) {
         super(context);
-        this.e = new asib();
+        this.e = new aslm();
         this.d = d;
         this.a = a;
         this.g = g;
         this.f = f;
     }
     
-    @Override
     protected final void C() {
         super.Q();
         this.e.b();
@@ -41,7 +40,7 @@ public class UpdatePlaybackAreaPreference extends Preference
             return;
         }
         b.setDisplayedChild(1);
-        this.K(2132020028);
+        this.K(2132020032);
     }
     
     public final void l() {
@@ -50,31 +49,30 @@ public class UpdatePlaybackAreaPreference extends Preference
             return;
         }
         b.setDisplayedChild(0);
-        ajsq ajsq;
-        if ((ajsq = this.a.e) == null) {
-            ajsq = ajsq.a;
+        ajws ajws;
+        if ((ajws = this.a.e) == null) {
+            ajws = ajws.a;
         }
-        this.n((CharSequence)abyh.b(ajsq));
+        this.n((CharSequence)acbu.b(ajws));
     }
     
-    @Override
-    public final void rH(final cfi cfi) {
-        super.rH(cfi);
-        this.d.n().l((wxz)new wws(this.a.i));
-        (this.b = (ViewSwitcher)cfi.E(2131432481)).setDisplayedChild(0);
-        final TextView textView = (TextView)cfi.E(2131428554);
-        final anxr a = this.a;
+    public final void rN(final cfm cfm) {
+        super.rN(cfm);
+        this.d.pE().l((xbe)new wzy(this.a.i));
+        (this.b = (ViewSwitcher)cfm.E(2131432485)).setDisplayedChild(0);
+        final TextView textView = (TextView)cfm.E(2131428554);
+        final aocb a = this.a;
         if ((a.b & 0x10) != 0x0) {
-            ajsq ajsq;
-            if ((ajsq = a.f) == null) {
-                ajsq = ajsq.a;
+            ajws ajws;
+            if ((ajws = a.f) == null) {
+                ajws = ajws.a;
             }
-            textView.setText((CharSequence)abyh.b(ajsq));
-            final cem c = this.c;
+            textView.setText((CharSequence)acbu.b(ajws));
+            final ceq c = this.c;
             if (c != null) {
-                textView.setOnClickListener((View$OnClickListener)new jjz(this, c, 7));
+                textView.setOnClickListener((View$OnClickListener)new jln(this, c, 8));
             }
         }
-        this.e.f(new asic[] { this.g.q().P(this.f).am((asix)new jmj(this, 9), (asix)jky.e), ((asgt)this.g.b).R().J().P(this.f).B((asjd)iuc.n).am((asix)new jmj(this, 10), (asix)jky.e) });
+        this.e.f(this.g.q().P(this.f).an((asmi)new jnd(this, 14), (asmi)jmn.d), ((aske)this.g.b).R().J().P(this.f).B((asmo)iuv.p).an((asmi)new jqd(this, 1), (asmi)jmn.d));
     }
 }

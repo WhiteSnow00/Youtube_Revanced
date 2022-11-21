@@ -19,7 +19,7 @@ import android.view.View;
 
 public class CastSeekBar extends View
 {
-    public mmg a;
+    public mny a;
     public List b;
     private final float c;
     private final float d;
@@ -41,34 +41,40 @@ public class CastSeekBar extends View
     public CastSeekBar(final Context context, final AttributeSet set, int resourceId) {
         super(context, set, resourceId);
         this.b = new ArrayList();
-        this.setAccessibilityDelegate((View$AccessibilityDelegate)new mmh(this));
+        this.setAccessibilityDelegate((View$AccessibilityDelegate)new mnz(this));
         (this.g = new Paint(1)).setStyle(Paint$Style.FILL);
         this.c = context.getResources().getDimension(2131165720);
         this.d = context.getResources().getDimension(2131165719);
         this.e = context.getResources().getDimension(2131165721) / 2.0f;
         context.getResources().getDimension(2131165722);
         this.f = context.getResources().getDimension(2131165718);
-        final mmg a = new mmg();
+        final mny a = new mny();
         this.a = a;
         a.b = 1;
-        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes((AttributeSet)null, mjm.a, 2130968919, 2132083203);
+        final TypedArray obtainStyledAttributes = context.obtainStyledAttributes((AttributeSet)null, mlf.a, 2130968917, 2132083203);
         final int resourceId2 = obtainStyledAttributes.getResourceId(18, 0);
-        resourceId = obtainStyledAttributes.getResourceId(20, 0);
-        final int resourceId3 = obtainStyledAttributes.getResourceId(23, 0);
-        final int resourceId4 = obtainStyledAttributes.getResourceId(0, 0);
+        final int resourceId3 = obtainStyledAttributes.getResourceId(20, 0);
+        final int resourceId4 = obtainStyledAttributes.getResourceId(23, 0);
+        resourceId = obtainStyledAttributes.getResourceId(0, 0);
         this.h = context.getResources().getColor(resourceId2);
-        context.getResources().getColor(resourceId);
-        this.i = context.getResources().getColor(resourceId3);
-        this.j = context.getResources().getColor(resourceId4);
+        context.getResources().getColor(resourceId3);
+        this.i = context.getResources().getColor(resourceId4);
+        this.j = context.getResources().getColor(resourceId);
         obtainStyledAttributes.recycle();
     }
     
     private final void b(final Canvas canvas, final int n, final int n2, final int n3, final int n4, final int color) {
         this.g.setColor(color);
-        final float n5 = (float)n3;
-        final float n6 = (float)n4;
         final float e = this.e;
-        canvas.drawRect(n / n5 * n6, -e, n2 / n5 * n6, e, this.g);
+        final float n5 = -e;
+        final float n6 = (float)n2;
+        final float n7 = (float)n;
+        final float n8 = (float)n3;
+        final float n9 = n6 / n8;
+        final Paint g = this.g;
+        final float n10 = n7 / n8;
+        final float n11 = (float)n4;
+        canvas.drawRect(n10 * n11, n5, n9 * n11, e, g);
     }
     
     public final void a() {
@@ -83,9 +89,10 @@ public class CastSeekBar extends View
         final int paddingTop = this.getPaddingTop();
         final int paddingBottom = this.getPaddingBottom();
         this.a();
+        final float n2 = (float)((measuredHeight - paddingTop - paddingBottom) / 2);
         final int save2 = canvas.save();
-        canvas.translate(0.0f, (float)((measuredHeight - paddingTop - paddingBottom) / 2));
-        final mmg a = this.a;
+        canvas.translate(0.0f, n2);
+        final mny a = this.a;
         final boolean f = a.f;
         final int c = a.c;
         final int max = Math.max(0, 0);
@@ -115,23 +122,25 @@ public class CastSeekBar extends View
                 while (iterator.hasNext()) {
                     if (iterator.next() != null) {
                         final int min = Math.min(0, this.a.b);
-                        final float n2 = (float)(measuredWidth - paddingLeft - paddingRight);
-                        final float n3 = (float)this.a.b;
-                        float n4 = min * n2 / n3;
-                        final float n5 = (min + 1) * n2 / n3;
+                        final float n3 = (float)min;
+                        final float n4 = (float)(measuredWidth - paddingLeft - paddingRight);
+                        final float n5 = (float)this.a.b;
                         final float f2 = this.f;
-                        float n6 = n5;
-                        if (n5 - n4 < f2) {
-                            n6 = n4 + f2;
+                        final float n6 = (min + 1) * n4 / n5;
+                        final float n7 = n3 * n4 / n5;
+                        float n8 = n6;
+                        if (n6 - n7 < f2) {
+                            n8 = n7 + f2;
                         }
-                        if (n6 > n2) {
-                            n6 = n2;
+                        if (n8 > n4) {
+                            n8 = n4;
                         }
-                        if (n6 - n4 < f2) {
-                            n4 = n6 - f2;
+                        float n9 = n7;
+                        if (n8 - n7 < f2) {
+                            n9 = n8 - f2;
                         }
                         final float e = this.e;
-                        canvas.drawRect(n4, -e, n6, e, this.g);
+                        canvas.drawRect(n9, -e, n8, e, this.g);
                     }
                 }
                 canvas.restoreToCount(save3);

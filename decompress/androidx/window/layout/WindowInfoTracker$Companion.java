@@ -15,12 +15,12 @@ public final class WindowInfoTracker$Companion
     private static final String TAG;
     public static final int a = 0;
     private static WindowInfoTrackerDecorator decorator;
-    private static final atkh extensionBackend$delegate;
+    private static final atne extensionBackend$delegate;
     
     static {
         $$INSTANCE = new WindowInfoTracker$Companion();
-        TAG = atoj.b((Class)WindowInfoTracker.class).c();
-        extensionBackend$delegate = aqsz.x((atmv)WindowInfoTracker$Companion$extensionBackend$2.INSTANCE);
+        TAG = atrg.b(WindowInfoTracker.class).c();
+        extensionBackend$delegate = aqvs.s((atps)WindowInfoTracker$Companion$extensionBackend$2.INSTANCE);
         WindowInfoTracker$Companion.decorator = (WindowInfoTrackerDecorator)EmptyDecorator.INSTANCE;
     }
     

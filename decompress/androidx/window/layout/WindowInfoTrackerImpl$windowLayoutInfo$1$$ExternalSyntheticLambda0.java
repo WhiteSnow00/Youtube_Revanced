@@ -4,11 +4,11 @@
 
 package androidx.window.layout;
 
-public final class WindowInfoTrackerImpl$windowLayoutInfo$1$$ExternalSyntheticLambda0 implements ako
+public final class WindowInfoTrackerImpl$windowLayoutInfo$1$$ExternalSyntheticLambda0 implements akp
 {
-    public attt f$0;
+    public atwp f$0;
     
-    public WindowInfoTrackerImpl$windowLayoutInfo$1$$ExternalSyntheticLambda0(final attt f$0) {
+    public WindowInfoTrackerImpl$windowLayoutInfo$1$$ExternalSyntheticLambda0(final atwp f$0) {
         this.f$0 = f$0;
     }
     

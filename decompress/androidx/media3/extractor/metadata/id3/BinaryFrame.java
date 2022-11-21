@@ -14,14 +14,14 @@ public final class BinaryFrame extends Id3Frame
     public final byte[] a;
     
     static {
-        CREATOR = (Parcelable$Creator)new app(13);
+        CREATOR = (Parcelable$Creator)new apq(13);
     }
     
     public BinaryFrame(final Parcel parcel) {
         final String string = parcel.readString();
-        final int a = bax.a;
+        final int a = baz.a;
         super(string);
-        this.a = (byte[])bax.L((Object)parcel.createByteArray());
+        this.a = (byte[])baz.L(parcel.createByteArray());
     }
     
     public BinaryFrame(final String s, final byte[] a) {

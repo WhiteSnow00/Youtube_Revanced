@@ -4,35 +4,62 @@
 
 package com.google.android.apps.youtube.app.player.overlay;
 
-public class QuickActionsOverlay$1 implements tfh
+public class QuickActionsOverlay$1 implements tio
 {
-    final /* synthetic */ ixd a;
+    final iyk a;
     
-    public QuickActionsOverlay$1(final ixd a) {
+    public QuickActionsOverlay$1(final iyk a) {
         this.a = a;
     }
     
-    public final void oS(final aum aum) {
-        final ixd a = this.a;
+    public final tik g() {
+        return tik.b;
+    }
+    
+    public final void lW(final aup aup) {
+    }
+    
+    public final void mp(final aup aup) {
+    }
+    
+    public final void mx(final aup aup) {
+    }
+    
+    public final void oO(final aup aup) {
+        if (this.a.h.da()) {
+            this.a.a.c((acmh)null);
+        }
+    }
+    
+    public final void oT(final aup aup) {
+        final iyk a = this.a;
         if (!a.d) {
             return;
         }
         a.e.b();
-        final asib e = a.e;
-        final abns f = a.f;
-        asic asic;
-        if (((uyi)f.cd().h).bx()) {
-            asic = f.R().am((asix)new iws(a, 8), (asix)iwn.f);
+        final aslm e = a.e;
+        final abqz f = a.f;
+        asln asln;
+        if (((vbs)f.cg().g).bA()) {
+            asln = f.Q().an((asmi)new ixu(a, 10), (asmi)ixz.e);
         }
         else {
-            asic = f.Q().R().j(aajj.r(1)).am((asix)new iws(a, 8), (asix)iwn.g);
+            asln = f.P().R().j(aana.q(1)).an((asmi)new ixu(a, 10), (asmi)ixz.f);
         }
-        e.f(asic, ((asgt)f.q().a).j(aajj.r(1)).am((asix)new iws(a, 9), (asix)iwn.f));
-        a.e.c(a.c.b().al((asix)new iws(a, 6)));
-        a.e.c(a.g.A().al((asix)new iws(a, 7)));
+        e.f(asln, ((aske)f.p().a).j(aana.q(1)).an((asmi)new ixu(a, 11), (asmi)ixz.e));
+        a.e.c(a.c.b().am((asmi)new ixu(a, 8)));
+        a.e.c(a.g.B().am((asmi)new ixu(a, 9)));
     }
     
-    public final void oW(final aum aum) {
+    public final void oU() {
+        tgj.d((tio)this);
+    }
+    
+    public final void oX() {
+        tgj.c((tio)this);
+    }
+    
+    public final void oY(final aup aup) {
         this.a.e.b();
     }
 }

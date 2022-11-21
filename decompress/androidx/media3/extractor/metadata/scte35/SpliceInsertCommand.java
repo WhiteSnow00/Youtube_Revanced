@@ -28,7 +28,7 @@ public final class SpliceInsertCommand extends SpliceCommand
     public final int m;
     
     static {
-        CREATOR = (Parcelable$Creator)new bvm(6);
+        CREATOR = (Parcelable$Creator)new bvp(6);
     }
     
     public SpliceInsertCommand(final long a, final boolean b, final boolean c, final boolean d, final boolean e, final long f, final long g, final List list, final boolean i, final long j, final int k, final int l, final int m) {
@@ -60,7 +60,7 @@ public final class SpliceInsertCommand extends SpliceCommand
         final int int1 = parcel.readInt();
         final ArrayList list = new ArrayList(int1);
         for (int i = 0; i < int1; ++i) {
-            list.add((Object)new bvo(parcel.readInt(), parcel.readLong(), parcel.readLong()));
+            list.add((Object)new bvr(parcel.readInt(), parcel.readLong(), parcel.readLong()));
         }
         this.h = Collections.unmodifiableList((List<?>)list);
         boolean j = b;
@@ -84,12 +84,12 @@ public final class SpliceInsertCommand extends SpliceCommand
         parcel.writeLong(this.g);
         final int size = this.h.size();
         parcel.writeInt(size);
-        bvo bvo;
+        bvr bvr;
         for (i = 0; i < size; ++i) {
-            bvo = this.h.get(i);
-            parcel.writeInt(bvo.a);
-            parcel.writeLong(bvo.b);
-            parcel.writeLong(bvo.c);
+            bvr = this.h.get(i);
+            parcel.writeInt(bvr.a);
+            parcel.writeLong(bvr.b);
+            parcel.writeLong(bvr.c);
         }
         parcel.writeByte((byte)(byte)(this.i ? 1 : 0));
         parcel.writeLong(this.j);

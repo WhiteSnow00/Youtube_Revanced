@@ -4,110 +4,28 @@
 
 package com.google.android.apps.youtube.embeddedplayer.service.ui.bottomsheet;
 
-import j$.util.Optional;
-import android.app.Activity;
-import android.view.View$OnClickListener;
-import com.google.android.apps.youtube.embeddedplayer.service.jar.client.v;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.view.View;
-import android.view.View$OnLayoutChangeListener;
 import android.os.Bundle;
-import android.view.Window;
-import android.content.Context;
-import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import android.view.View;
 
-public final class c extends fy
+final class c extends akx
 {
-    public adtm a;
-    public BottomSheetBehavior b;
-    public boolean c;
+    final d a;
     
-    public c(final Context context) {
-        super(context, 2132083239);
+    public c(final d a) {
+        this.a = a;
     }
     
-    public final void a(final float dimAmount) {
-        final Window window = this.getWindow();
-        if (window != null) {
-            window.setDimAmount(dimAmount);
-        }
+    public final void c(final View view, final aon aon) {
+        super.c(view, aon);
+        aon.h(1048576);
+        aon.w(true);
     }
     
-    public final void b(final c c) {
-        this.c = true;
-        c.c = true;
-        c.show();
-        this.cancel();
-    }
-    
-    public final void cancel() {
-        final BottomSheetBehavior b = this.b;
-        if (b.z == 5) {
-            super.cancel();
-            return;
+    public final boolean i(final View view, final int n, final Bundle bundle) {
+        if (n == 1048576) {
+            this.a.cancel();
+            return true;
         }
-        final adtm a = this.a;
-        if (a != null) {
-            b.z(a);
-        }
-        this.b.H(5);
-    }
-    
-    protected final void onCreate(final Bundle bundle) {
-        super.onCreate(bundle);
-        final Window window = this.getWindow();
-        if (window != null) {
-            window.clearFlags(67108864);
-            window.addFlags(Integer.MIN_VALUE);
-            window.setLayout(-1, -1);
-        }
-    }
-    
-    protected final void onStart() {
-        super.onStart();
-        final BottomSheetBehavior b = this.b;
-        if (b != null) {
-            b.F(true);
-            this.b.H(4);
-            this.b.G(0);
-            final View viewById = this.findViewById(2131428832);
-            if (viewById != null) {
-                viewById.addOnLayoutChangeListener((View$OnLayoutChangeListener)new jcl(this, viewById, 5));
-            }
-        }
-    }
-    
-    public final void setContentView(final View view) {
-        final FrameLayout contentView = (FrameLayout)View.inflate(this.getContext(), 2131624383, (ViewGroup)null);
-        final CoordinatorLayout coordinatorLayout = (CoordinatorLayout)contentView.findViewById(2131428487);
-        final FrameLayout frameLayout = (FrameLayout)coordinatorLayout.findViewById(2131428832);
-        final BottomSheetBehavior b = new BottomSheetBehavior();
-        this.b = b;
-        final adtm a = this.a;
-        if (a != null) {
-            b.z(a);
-        }
-        ((aek)frameLayout.getLayoutParams()).b(this.b);
-        frameLayout.addView(view);
-        coordinatorLayout.findViewById(2131432169).setOnClickListener((View$OnClickListener)new v(this, 2));
-        anb.N((View)frameLayout, new b(this));
-        super.setContentView((View)contentView);
-    }
-    
-    public final void show() {
-        final Window window = this.getWindow();
-        if (window != null) {
-            window.setFlags(8, 8);
-            final Optional r = kzr.r(this.getContext());
-            if (r.isPresent()) {
-                window.getDecorView().setSystemUiVisibility(((Activity)r.get()).getWindow().getDecorView().getSystemUiVisibility());
-                super.show();
-                window.clearFlags(8);
-                return;
-            }
-            super.show();
-        }
+        return super.i(view, n, bundle);
     }
 }
